@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "annotations"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Annotations"
 type: reference
 tags: [wiki, no-frontmatter-fix]

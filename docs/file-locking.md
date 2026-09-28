@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "file locking"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "file locking"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: file-locking
 canonical: ../../../Themes/docs/shared-components/file-locking-pattern.md

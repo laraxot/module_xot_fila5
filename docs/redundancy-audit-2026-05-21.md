@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Redundancy Audit"
 type: concept
 status: deprecated

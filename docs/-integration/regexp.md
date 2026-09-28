@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "regexp"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # regexp
 
 <!-- Contenuto migrato da _docs/regexp.txt -->

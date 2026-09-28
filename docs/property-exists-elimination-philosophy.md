@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "property exists elimination philosophy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filosofia dell'Eliminazione di property_exists() - La Grande Purificazione
 
 ## 🙏 La Religione del Magic Method
@@ -38,8 +35,6 @@ if (isset($user->email)) {
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "property exists elimination philosophy"
 type: note
 tags: [documentation]
@@ -48,7 +43,6 @@ updated: 2026-09-26
 qmd: "property exists elimination philosophy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 🏛️ La Politica dell'Eliminazione
 
 ### Manifesto di Purificazione

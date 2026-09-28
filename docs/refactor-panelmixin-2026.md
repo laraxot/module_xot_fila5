@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Refactor Panelmixin"
 type: concept
 status: deprecated

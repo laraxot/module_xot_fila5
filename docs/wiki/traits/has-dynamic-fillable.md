@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "has dynamic fillable"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Has Dynamic Fillable"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "theme livewire"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Theme Livewire"
 type: reference
 tags: [wiki, no-frontmatter-fix]

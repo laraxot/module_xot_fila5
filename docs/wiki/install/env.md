@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "env"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Env"
 type: reference
 tags: [wiki, no-frontmatter-fix]

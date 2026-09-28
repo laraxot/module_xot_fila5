@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "database configuration critical rules"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Database Configuration - Critical Rules
 
 ## REGOLE FONDAMENTALI
@@ -59,41 +56,6 @@ $app->boot();
 return $app;
 ```
 
-<<<<<<< HEAD
-### 2. MAI Inventare Variabili Environment
-
-**❌ SBAGLIATO - NESSUNO MAI FARE QUESTO:**
-
-```bash
-# .env.testing - WRONG!
-NOTIFY_DB_DATABASE=<nome progetto>_data_test
-GEO_DB_DATABASE=<nome progetto>_data_test
-MEDIA_DB_DATABASE=<nome progetto>_data_test
-GDPR_DB_DATABASE=<nome progetto>_data_test
-MEETUP_DB_DATABASE=<nome progetto>_meetup_test
-# ... ecc
-```
-
-**Perché è SBAGLIATO:**
-1. Queste variabili NON esistono nel file `.env` principale
-2. Invenzione di variabili crea confusione e problemi di manutenzione
-3. TenantServiceProvider NON legge queste variabili
-4. Viola il principio di "copia carbone" per l'environment di testing
-
-**✅ CORRETTO - Copia Carbone di .env:**
-
-```bash
-# Se .env ha:
-DB_DATABASE=<nome progetto>_data
-DB_DATABASE_USER=<nome progetto>_user
-
-# Allora .env.testing deve avere:
-DB_DATABASE=<nome progetto>_data_test
-DB_DATABASE_USER=<nome progetto>_user_test
-
-# Tutto il resto IDENTICO!
-```
-=======
 ### 2. Isolare il template di test
 
 Non clonare `.env` né riutilizzare le sue credenziali. Il file `.env.testing` tracciato è un
@@ -102,7 +64,6 @@ I target MySQL/MariaDB devono terminare in `_test`; l’account dedicato viene f
 esternamente tramite `FIXCITY_TEST_DB_*`. Segui la policy canonica in
 [`testing-database-strategy.md`](testing-database-strategy.md). Non eseguire migrazioni finché
 un DBA autorizzato non ha predisposto database e privilegi isolati.
->>>>>>> laraxot/dev
 
 ### 3. MAI Aggiungere Connessioni Hardcode in config/database.php
 
@@ -173,22 +134,6 @@ Crea automaticamente:
   - ... ecc per tutti i moduli
 ```
 
-<<<<<<< HEAD
-## Testing Workflow Corretto
-
-```bash
-# 1. Configurazione ambiente di testing
-cd laravel
-cp .env .env.testing
-# Modifica: DB_DATABASE → DB_DATABASE_test
-
-# 2. Esegui migration (solo se necessario)
-php artisan migrate --env=testing
-
-# 3. Esegui test
-php artisan test --env=testing
-```
-=======
 ## Testing Workflow
 
 Read [`testing-database-strategy.md`](testing-database-strategy.md), then run
@@ -196,7 +141,6 @@ Read [`testing-database-strategy.md`](testing-database-strategy.md), then run
 template contains no reusable credentials; inject dedicated `FIXCITY_TEST_DB_*` values from
 a secure environment. Never copy `.env` over `.env.testing` (or vice versa). Run migrations
 only against DBA-provisioned `_test` databases after confirming the configured targets.
->>>>>>> laraxot/dev
 
 ## Pattern nei Test
 
@@ -227,11 +171,7 @@ Prima di scrivere codice di configurazione database:
 - [ ] Ho forzato le connessioni con `config()`? → **STOP! Rimuovi il codice.**
 - [ ] Ho inventato variabili environment tipo `NOTIFY_DB_DATABASE`? → **STOP! Usa solo variabili del .env.**
 - [ ] Ho aggiunto connessioni hardcode in `config/database.php`? → **STOP! Rimuovile.**
-<<<<<<< HEAD
-- [ ] `.env.testing` è una copia carbone di `.env` con solo `_test`? → **OK!**
-=======
 - [ ] `.env.testing` contains only `_test` targets and no reusable secrets? → **OK!**
->>>>>>> laraxot/dev
 
 ## Troubleshooting
 
@@ -243,11 +183,7 @@ Prima di scrivere codice di configurazione database:
 3. Forzatura delle connessioni in CreatesApplication
 
 **Soluzione:**
-<<<<<<< HEAD
-1. Verifica che `.env.testing` sia una copia di `.env` con `_test`
-=======
 1. Verifica il template con `bash bashscripts/tools/sync-env-testing.sh --check`
->>>>>>> laraxot/dev
 2. Esegui `php artisan migrate --env=testing`
 3. Rimuovi forzatura delle connessioni in CreatesApplication
 

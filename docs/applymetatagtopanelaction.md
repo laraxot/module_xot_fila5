@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "applymetatagtopanelaction"
 type: note
@@ -11,4 +8,3 @@ qmd: "applymetatagtopanelaction"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

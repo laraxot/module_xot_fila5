@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "QUICK START"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Xot Module Quick Start"
 type: guide
 tags: [xot, framework]

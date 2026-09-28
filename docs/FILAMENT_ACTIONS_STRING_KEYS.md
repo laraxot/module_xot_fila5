@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "FILAMENT ACTIONS STRING KEYS"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filament Actions - String Keys Requirement
 
 ## Critical Type Rule

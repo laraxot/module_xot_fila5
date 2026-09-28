@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "psr4 autoloading fixes"
 type: note
@@ -11,4 +8,3 @@ qmd: "psr4 autoloading fixes"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

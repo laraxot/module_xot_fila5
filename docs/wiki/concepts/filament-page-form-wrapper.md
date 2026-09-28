@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "filament page form wrapper"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Wrapper form nelle Filament Page custom — plain <form>, non componenti inesistenti"
 module: Xot
 type: concept

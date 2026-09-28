@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "merge conflicts inventory"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Merge Conflicts Inventory
 
 **Date**: 2025-11-12
@@ -207,8 +204,6 @@ This document catalogs all files containing merge conflict markers found through
 5. Finalize with non-critical files
 
 ---
-<<<<<<< HEAD
-=======
 title: "merge conflicts inventory"
 type: note
 tags: [documentation]
@@ -217,5 +212,4 @@ updated: 2026-09-26
 qmd: "merge conflicts inventory"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *This inventory will be updated as conflicts are resolved.*

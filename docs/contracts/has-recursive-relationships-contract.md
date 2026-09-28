@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "has recursive relationships contract"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # HasRecursiveRelationshipsContract Documentation
 
 ## Overview

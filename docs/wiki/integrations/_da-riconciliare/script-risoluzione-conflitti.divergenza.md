@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "script risoluzione conflitti.divergenza"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: script-risoluzione-conflitti.md"
 module: Xot
 type: note

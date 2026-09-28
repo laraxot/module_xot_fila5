@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "critical resource model alignment"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # CRITICAL: Filament Resource-Model Alignment Rules
 
 ## 🚨 ERRORE CRITICO IDENTIFICATO E RISOLTO
@@ -60,13 +57,6 @@ DatePicker::make('date_field'),                      // Date
 protected $fillable = ['id', 'categoria', 'lista_propro', 'lista_propro_sup', 'posti', 'anno'];
 
 // RISORSA SBAGLIATA (PRIMA):
-<<<<<<< HEAD
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 public function getFormSchema(): array
 ---
 title: "critical resource model alignment"
@@ -78,7 +68,6 @@ qmd: "critical resource model alignment"
 issues: []
 discussions: []
 public function getFormSchema(): array
->>>>>>> laraxot/dev
 {
     return [
         TextInput::make('id')->disabled(),
@@ -93,17 +82,9 @@ public function getFormSchema(): array
 ### ✅ CORREZIONE: Campi Allineati al Modello
 ```php
 // RISORSA CORRETTA (DOPO):
-<<<<<<< HEAD
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 public function getFormSchema(): array
 ---
 public function getFormSchema(): array
->>>>>>> laraxot/dev
 {
     return [
         TextInput::make('id')->disabled(),

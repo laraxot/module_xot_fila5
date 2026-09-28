@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "project conventions"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Project Conventions and Standards
 
 ## File Naming Standards
@@ -250,8 +247,6 @@ find Modules -name "*.md" ! -name "README.md" -exec bash -c '
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "project conventions"
 type: note
 tags: [documentation]
@@ -260,7 +255,6 @@ updated: 2026-09-26
 qmd: "project conventions"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Last Updated**: 2025-10-11
 **Status**: ✅ ACTIVE STANDARD
 **Compliance**: MANDATORY for all modules and themes

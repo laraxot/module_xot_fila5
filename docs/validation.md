@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "validation"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Validazione
 
 ## Configurazione Base

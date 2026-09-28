@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "sprint planning meeting"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Xot - Sprint Planning Meeting
 
 > Documento operativo per sprint planning. Modulo Core Framework.
@@ -49,8 +46,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "sprint planning meeting"
 type: note
 tags: [documentation]
@@ -59,7 +54,6 @@ updated: 2026-09-26
 qmd: "sprint planning meeting"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Input Richiesti
 
 ### Documenti di Riferimento

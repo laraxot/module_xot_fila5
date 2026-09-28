@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "maindashboard redirect"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Fix Redirect Loop - MainDashboard
 
 ## Problema Risolto

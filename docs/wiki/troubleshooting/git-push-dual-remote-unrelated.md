@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "git push dual remote unrelated"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "git push dual remote unrelated"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 name: git-push-dual-remote-unrelated
 description: provtv/dev push rejected non-fast-forward; git merge-base with local dev returns nothing (unrelated histories) — skipped, flagged for human decision
 metadata:

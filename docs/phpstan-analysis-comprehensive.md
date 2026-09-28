@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "phpstan analysis comprehensive"
 type: note
@@ -11,4 +8,3 @@ qmd: "phpstan analysis comprehensive"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

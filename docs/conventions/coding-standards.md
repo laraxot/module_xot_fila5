@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "coding standards"
 type: note
@@ -11,4 +8,3 @@ qmd: "coding standards"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

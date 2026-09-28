@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "blades"
 type: note
@@ -11,4 +8,3 @@ qmd: "blades"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

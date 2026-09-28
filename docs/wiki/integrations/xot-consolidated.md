@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "xot consolidated"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "xot — Consolidated Documentation"
 module: xot
 type: integration
@@ -827,17 +824,9 @@ abstract class XotBaseResource extends Resource
     /**
      * Get form schema con validation automatica
      */
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
     public function getFormSchema(): array
 ---
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             // Schema base automatico
@@ -4230,17 +4219,9 @@ class {ModelName}Resource extends XotBaseResource
     protected static ?string $model = {ModelName}::class;
 
     // UNICO metodo necessario nella Resource principale
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
     public function getFormSchema(): array
 ---
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             Section::make()  // NO ->label() - gestito automaticamente
@@ -4454,17 +4435,9 @@ Questo significa che:
 
 ```php
 /** @return array<int|string, \Filament\Schemas\Components\Component> */
-<<<<<<< HEAD
-<<<<<<< HEAD
-abstract public function getFormSchemaOld(): array;
-=======
-abstract public function getFormSchemaOld(): array;
->>>>>>> laraxot/dev
-=======
 abstract public function getFormSchemaOld(): array;
 ---
 abstract public function getFormSchemaOld(): array;
->>>>>>> laraxot/dev
 ```
 
 Questo metodo DEVE essere implementato nelle classi figlie e deve restituire un array di componenti del form. `getFormSchema()` è ora `final` e ritorna `[]` — vedi [[xotbaseresource-formschema-old-pattern]].
@@ -4498,17 +4471,9 @@ class NotificationResource extends XotBaseResource
 {
     protected static ?string $model = 'Modules\Notify\Models\Notification';
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public function getFormSchemaOld(): array
-=======
-    public function getFormSchemaOld(): array
->>>>>>> laraxot/dev
-=======
     public function getFormSchemaOld(): array
 ---
     public function getFormSchemaOld(): array
->>>>>>> laraxot/dev
     {
         return [
             Forms\Components\TextInput::make('title')

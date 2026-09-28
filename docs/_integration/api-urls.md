@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "api urls"
 type: note
@@ -11,4 +8,3 @@ qmd: "api urls"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "bad practices"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'bad_practices'
 module: Xot
 type: reference

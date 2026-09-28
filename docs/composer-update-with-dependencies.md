@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "composer update with dependencies"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Composer update -W (with-dependencies)
 
 ## Perché

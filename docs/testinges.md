@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "testinges"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "testinges"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: testinges
 canonical: ../../../Themes/docs/shared-components/testing-fixes-roadmap.md

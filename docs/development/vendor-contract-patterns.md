@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "vendor contract patterns"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Vendor Contract Patterns - Critical Rule
 
 ## Date Created
@@ -145,8 +142,6 @@ interface PassportHasApiTokensContract
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "vendor contract patterns"
 type: note
 tags: [documentation]
@@ -155,6 +150,5 @@ updated: 2026-09-26
 qmd: "vendor contract patterns"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Maintained by**: Claude Sonnet 4.5
 **Last updated**: 2025-12-12

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "code quality tools guide"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # 🔧 CODE QUALITY TOOLS GUIDE - Strumenti di Analisi Codice PHP
 
 **Data Creazione**: 2025-01-27
@@ -21,8 +18,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "code quality tools guide"
 type: note
 tags: [documentation]
@@ -31,7 +26,6 @@ updated: 2026-09-26
 qmd: "code quality tools guide"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 🎯 OVERVIEW
 
 Guida completa per l'utilizzo degli strumenti di analisi del codice PHP nel progetto FixCity. Questi strumenti garantiscono alta qualità del codice, manutenibilità e stabilità del sistema.

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan fix plan xotbaserelationmanager"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Piano Correzione PHPStan - XotBaseRelationManager
 
 **Data**: 2025-12-23
@@ -45,8 +42,6 @@ protected function getTableColumns(): array
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan fix plan xotbaserelationmanager"
 type: note
 tags: [documentation]
@@ -55,7 +50,6 @@ updated: 2026-09-26
 qmd: "phpstan fix plan xotbaserelationmanager"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ### Errore #2 e #3: canDeleteBulk() / canDetachBulk() Type Mismatch
 
 **Problema**:

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "script risoluzione conflitti conflict"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Script di Risoluzione Conflitti Git - Application Project"
 module: xot
 type: integration

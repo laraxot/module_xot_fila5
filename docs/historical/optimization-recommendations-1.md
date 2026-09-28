@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "optimization recommendations 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Raccomandazioni di Ottimizzazione - Modulo Xot
 
 ## 🎯 Stato Attuale e Problemi Critici

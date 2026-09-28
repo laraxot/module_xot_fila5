@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "milestones variant"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "milestones variant"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: milestones-1
 canonical: ../../../../Themes/docs/shared-components/04-milestones-Modules.md

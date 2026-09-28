@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "xotbaselistrecords"
 type: note
@@ -11,4 +8,3 @@ qmd: "xotbaselistrecords"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

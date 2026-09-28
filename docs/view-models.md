@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "view models"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'view_models'
 module: Xot
 type: reference

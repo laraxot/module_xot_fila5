@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "user contract improvements"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Xot Module - User Contract Improvements
 
 ## Overview

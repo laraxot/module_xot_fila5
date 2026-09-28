@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "branding getters"
 type: note
@@ -11,4 +8,3 @@ qmd: "branding getters"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

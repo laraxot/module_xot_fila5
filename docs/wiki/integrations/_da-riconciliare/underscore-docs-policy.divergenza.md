@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "underscore docs policy.divergenza"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: underscore-docs-policy.md"
 module: Xot
 type: note

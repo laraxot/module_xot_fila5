@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "github discussion xot form infolist"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Discussion: Unifying Form/Infolist base with traits HasXotForm / HasXotInfolist
 
 Repo: laraxot/module_xot_fila5

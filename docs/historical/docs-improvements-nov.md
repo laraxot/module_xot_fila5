@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "docs improvements nov"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Miglioramenti Documentazione - Novembre 2025
 
 ## 🎯 Obiettivo

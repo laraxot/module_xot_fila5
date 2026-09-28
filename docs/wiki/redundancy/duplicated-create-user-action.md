@@ -1,12 +1,9 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 updated: 2026-09-26
 qmd: "duplicated create user action"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Duplicated CreateUserAction (4 occurrences)"
 type: redundancy
 owner: Modules/Xot

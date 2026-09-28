@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "phpinsights report "
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Phpinsights Report"
 type: reference
 tags: [wiki, no-frontmatter-fix]

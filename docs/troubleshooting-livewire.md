@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "troubleshooting livewire"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Troubleshooting: Livewire 404 Error
 
 **Errore**: `404 Not Found` su `/livewire/update`
@@ -186,8 +183,6 @@ php artisan tinker --execute="echo route('livewire.update');"
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "troubleshooting livewire"
 type: note
 tags: [documentation]
@@ -196,7 +191,6 @@ updated: 2026-09-26
 qmd: "troubleshooting livewire"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Ultimo aggiornamento**: 11 Novembre 2025
 **Modulo**: Xot
 **Categoria**: Troubleshooting

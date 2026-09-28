@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "ffmpeg"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 
 on 10 Aug
 352 commits

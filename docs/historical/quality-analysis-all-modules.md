@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "quality analysis all modules"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Analisi Qualità Codice - Tutti i Moduli (PHPMD)
 
 **Data**: 2025-12-23

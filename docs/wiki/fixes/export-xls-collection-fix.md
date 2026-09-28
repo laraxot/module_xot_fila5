@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "export xls collection fix"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Export Xls Collection Fix"
 type: reference
 tags: [wiki, no-frontmatter-fix]

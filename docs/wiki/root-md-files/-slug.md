@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: " slug"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Slug"
 type: reference
 tags: [wiki, no-frontmatter-fix]

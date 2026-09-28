@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "video player"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'video_player'
 module: Xot
 type: reference

@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "kdown"
 type: note
@@ -11,4 +8,3 @@ qmd: "kdown"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

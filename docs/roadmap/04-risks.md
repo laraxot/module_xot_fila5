@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "04 risks"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Risks and dependencies (Module Xot)
 
 ## Risks

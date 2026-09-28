@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "08 billing phpstan"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # BMAD Story 08 — Billing: 12 errori PHPStan
 
 **Repo:** `git@github.com:laraxot/module_xot_fila5.git`

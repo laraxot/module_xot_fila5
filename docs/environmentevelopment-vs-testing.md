@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "environmentevelopment vs testing"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Regole Environment Development vs Testing in Laraxot
 
 ## Panoramica

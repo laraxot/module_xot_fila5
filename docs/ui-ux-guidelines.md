@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "ui ux guidelines"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # UI/UX Design Guidelines
 
 ## Overview

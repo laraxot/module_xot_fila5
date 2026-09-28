@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "xot composer"
 type: note
@@ -11,4 +8,3 @@ qmd: "xot composer"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "bmad story phpstan fix"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 BMAD Story: PHPStan + PHPMD + PHPInsights + Pest — Moduli Xot/Modules
 - Scope: Correggere konflitti git + PHPStan bootstrap + sincronizzare moduli
 - Tools: bmad create-story, phpstan, phpmd, phpinsights, pest

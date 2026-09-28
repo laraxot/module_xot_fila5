@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "index"
 type: note
@@ -11,4 +8,3 @@ qmd: "index"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

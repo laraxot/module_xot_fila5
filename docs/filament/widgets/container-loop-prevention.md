@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "container loop prevention"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Container Loop Prevention
 
 ## Root Cause Analysis (RCA)
@@ -66,8 +63,6 @@ Maximum execution time exceeded (120s)
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "container loop prevention"
 type: note
 tags: [documentation]
@@ -76,7 +71,6 @@ updated: 2026-09-26
 qmd: "container loop prevention"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Zen: "Il cache è una bugia ottimizzata"
 
 Il sistema di cache di Laravel è un'**ottimizzazione**, non una fonte di verità.

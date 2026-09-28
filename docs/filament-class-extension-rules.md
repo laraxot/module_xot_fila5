@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament class extension rules"
 type: note
@@ -11,15 +9,12 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filament Class Extension Rules - Laraxot Framework
 
 **Principio Fondamentale**: Mai estendere classi Filament direttamente - sempre usare classi XotBase
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "filament class extension rules"
 type: note
 tags: [documentation]
@@ -28,7 +23,6 @@ updated: 2026-09-26
 qmd: "filament class extension rules"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 🚨 Regola Assoluta
 
 **NON estendere MAI classi Filament direttamente**
@@ -647,15 +641,7 @@ class UserResource extends XotBaseResource
     /**
      * @return array<int|string, \Filament\Schemas\Components\Component>
      */
-<<<<<<< HEAD
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             TextInput::make('name')->required(),
@@ -689,24 +675,14 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Pages;
 
-<<<<<<< HEAD
-use Modules\Xot\Filament\Pages\XotBasePage;
-
-class DashboardPage extends XotBasePage
-=======
 use Modules\Xot\Filament\Pages\XotBaseDashboard;
 
 class Dashboard extends XotBaseDashboard
->>>>>>> laraxot/dev
 {
     // $navigationIcon NON necessario
     // $title NON necessario
     // $navigationLabel NON necessario
-<<<<<<< HEAD
-    // Gestiti automaticamente da XotBasePage
-=======
     // Gestiti automaticamente da XotBaseDashboard
->>>>>>> laraxot/dev
 }
 ```
 

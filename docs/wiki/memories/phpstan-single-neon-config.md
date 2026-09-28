@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Memoria — PHPStan solo laravel/phpstan.neon"
 type: memory
 module: Xot

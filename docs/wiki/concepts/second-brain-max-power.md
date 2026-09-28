@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "second brain max power"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: second brain max power — nota Xot
 type: concept
 module: Xot

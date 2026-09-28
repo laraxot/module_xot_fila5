@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Claude Code Setup Plugin — analisi e raccomandazione automazioni"
 module: "xot"
 type: reference

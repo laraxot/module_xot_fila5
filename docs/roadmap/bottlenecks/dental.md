@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "dental"
 type: note
@@ -11,4 +8,3 @@ qmd: "dental"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

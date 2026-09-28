@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: "phpstan baseline initial"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Phpstan baseline initial"
 type: reference
 status: active

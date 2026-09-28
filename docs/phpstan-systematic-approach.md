@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "phpstan systematic approach"
 type: note
@@ -11,4 +8,3 @@ qmd: "phpstan systematic approach"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

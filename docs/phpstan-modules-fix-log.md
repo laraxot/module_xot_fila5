@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "phpstan modules fix log"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "phpstan modules fix log"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 description: Log e pattern dei fix PHPStan su Modules (run 2026-07-07).
 ---
 

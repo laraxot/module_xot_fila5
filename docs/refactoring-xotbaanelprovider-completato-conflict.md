@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "refactoring xotbaanelprovider completato conflict"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # ✅ REFACTORING XotBasePanelProvider COMPLETATO
 
 ## OBIETTIVI RAGGIUNTI
@@ -147,8 +144,6 @@ protected function shouldDiscoverClusters(): bool
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "refactoring xotbaanelprovider completato conflict"
 type: note
 tags: [documentation]
@@ -157,7 +152,6 @@ updated: 2026-09-26
 qmd: "refactoring xotbaanelprovider completato conflict"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **REFACTORING COMPLETATO CON SUCCESSO** ✅
 
 *Data: [DATE]*

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "brand philosophy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 
 # Filosofia del Brand nel Sistema
 

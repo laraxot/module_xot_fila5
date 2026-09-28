@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "gap missings"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Gap Analysis - Missing Patterns & Documentation
 
 ## 🔍 Comprehensive Analysis of Missing Elements
@@ -384,8 +381,6 @@ class {PatternName}
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "gap missings"
 type: note
 tags: [documentation]
@@ -394,7 +389,6 @@ updated: 2026-09-26
 qmd: "gap missings"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Analysis Date**: [DATE]
 **Estimated Completion**: 14 weeks (3.5 months)
 **Priority**: High - Critical gaps affect development velocity and code quality

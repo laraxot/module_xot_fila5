@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan specific patterns"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Pattern Specifici PHPStan Level 10
 
 Questo documento raccoglie pattern specifici per risolvere errori PHPStan a livello 10, complementare alla guida generale.

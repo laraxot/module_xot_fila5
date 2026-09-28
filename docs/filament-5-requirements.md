@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament 5 requirements"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filament 5.x Requirements & Configuration
 
 **Data Analisi**: 2026-01-30
@@ -83,8 +80,6 @@ Chart.register(ChartDataLabels);  // ❌ NON funziona
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "filament 5 requirements"
 type: note
 tags: [documentation]
@@ -93,5 +88,4 @@ updated: 2026-09-26
 qmd: "filament 5 requirements"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Ultimo Aggiornamento**: 2026-01-30

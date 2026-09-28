@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "01 now"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Now (Module Xot)
 
 ## Stabilization

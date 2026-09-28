@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: " to integrate"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'To integrate — risorse esterne'
 module: Xot
 type: reference

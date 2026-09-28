@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "artisan service todo"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Task: ArtisanService TODO
 
 **Modulo**: Xot  

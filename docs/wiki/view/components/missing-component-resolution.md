@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "missing component resolution"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Missing Component Resolution"
 type: reference
 tags: [wiki, no-frontmatter-fix]

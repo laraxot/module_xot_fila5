@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "clickbait conversion guidelines"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Clickbait & Conversion Guidelines
 
 ## Overview

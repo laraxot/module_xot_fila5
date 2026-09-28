@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "panel"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Panel"
 type: reference
 tags: [wiki, no-frontmatter-fix]

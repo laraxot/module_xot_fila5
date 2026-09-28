@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "phpstanocumentation"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "phpstanocumentation"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: phpstanocumentation
 canonical: ../../../Themes/docs/shared-components/phpstan-documentation-complete.md

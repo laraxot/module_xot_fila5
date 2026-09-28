@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "00 INDEX"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 ## 🏛️ Architettura Core
 - 📐 [Architecture Complete Guide](./architecture-complete.md) - Deep dive nel sistema modulare.
 - 🧬 [Base Classes (XotBase)](./xot-base-classes.md) - Regole per estendere Resource, Page e Widget.
@@ -46,8 +43,6 @@ discussions: []
 - Tutti i moduli del sistema dipendono da **Xot**.
 
 ---
-<<<<<<< HEAD
-=======
 title: "00 INDEX"
 type: note
 tags: [documentation]
@@ -56,7 +51,6 @@ updated: 2026-09-26
 qmd: "00 INDEX"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
 
 # Xot Module Documentation Index

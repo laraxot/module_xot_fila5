@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "lang path policy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Xot Lang Path Policy
 
 ## Rule

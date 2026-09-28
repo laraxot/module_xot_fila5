@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "final method override fix"
 type: note
@@ -11,4 +8,3 @@ qmd: "final method override fix"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

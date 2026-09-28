@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "best practices"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Best Practices per Laraxot
 
 ## Riferimenti al modello User
@@ -799,8 +796,6 @@ public function createModel(array $data): MioModello
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "best practices"
 type: note
 tags: [documentation]
@@ -809,7 +804,6 @@ updated: 2026-09-26
 qmd: "best practices"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
 # Best Practices per Laraxot
 

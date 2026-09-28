@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "store"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 <?php
 
 declare(strict_types=1);

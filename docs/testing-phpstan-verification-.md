@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "testing phpstan verification "
 type: note
@@ -11,4 +8,3 @@ qmd: "testing phpstan verification "
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

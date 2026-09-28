@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "root files hygiene.divergenza"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: root-files-hygiene.md"
 module: Xot
 type: note

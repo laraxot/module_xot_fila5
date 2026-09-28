@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "sail"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Sail"
 type: reference
 tags: [wiki, no-frontmatter-fix]

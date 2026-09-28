@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "jpgraph guide"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'Jpgraph guide'
 module: Xot
 type: reference

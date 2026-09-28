@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "localization"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Guida alla Localizzazione nel Framework Laraxot <nome progetto>
 
 ## Introduzione

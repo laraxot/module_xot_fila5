@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "xotbase stats overview widget examples"
 type: note
@@ -11,4 +8,3 @@ qmd: "xotbase stats overview widget examples"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

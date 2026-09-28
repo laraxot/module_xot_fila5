@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "guida migrazione step by step"
 type: note
@@ -11,4 +8,3 @@ qmd: "guida migrazione step by step"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

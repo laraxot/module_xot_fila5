@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament extension violations fix plan"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filament Extension Rules - Correzioni Violazioni Critiche
 
 ## 🎯 Analisi Violazioni - 30 Dicembre 2025
@@ -85,8 +82,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "filament extension violations fix plan"
 type: note
 tags: [documentation]
@@ -95,7 +90,6 @@ updated: 2026-09-26
 qmd: "filament extension violations fix plan"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Status**: ✅ COMPLETATO CON SUCCESSO
 **Metodologia**: "Super Mucca" - Livello Confidenza MASSIMO 🐄
 **Qualità**: PHPStan Level 10 Certified

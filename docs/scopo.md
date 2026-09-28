@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Xot — scopo, confini e come servirlo meglio"
 type: concept
 module: Xot

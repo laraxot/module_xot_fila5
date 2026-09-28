@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "filament actions"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "filament actions"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: filament-actions
 canonical: ../../../../Themes/docs/shared-components/filament-actions.md

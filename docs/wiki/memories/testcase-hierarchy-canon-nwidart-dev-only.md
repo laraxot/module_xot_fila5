@@ -1,8 +1,5 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "testcase hierarchy canon nwidart dev only"
->>>>>>> laraxot/dev
 title: "TestCase Hierarchy — Canon (nWidart BaseTestCase dev-only)"
 type: memory
 tags: [testcase, xotbase, nwidart, laravel-modules, hierarchy]

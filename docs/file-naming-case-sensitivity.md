@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "file naming case sensitivity"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # File Naming and Case Sensitivity - Project-Wide Rules
 
 ## 🔴 Problema Critico
@@ -350,8 +347,6 @@ Questa non è solo una regola tecnica, è una **filosofia di sviluppo**:
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "file naming case sensitivity"
 type: note
 tags: [documentation]
@@ -360,7 +355,6 @@ updated: 2026-09-26
 qmd: "file naming case sensitivity"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Ultimo aggiornamento**: 2025-11-04
 **Status**: ✅ Cleanup completato, enforcement attivo
 **Revisione**: Trimestrale (ogni 3 mesi)

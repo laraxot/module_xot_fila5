@@ -15,12 +15,8 @@ use Modules\Xot\Actions\Filament\GetModulesNavigationItems;
 class ModulesOverviewWidget extends XotBaseWidget
 {
     /** @var view-string */
-<<<<<<< HEAD
-    protected string $view = 'xot::filament.widgets.modules-overview';
-=======
     /** @var view-string */
     protected string $view;
->>>>>>> laraxot/dev
 
     protected int|string|array $columnSpan = 'full';
 

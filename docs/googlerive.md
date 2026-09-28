@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "googlerive"
 type: note
@@ -11,4 +8,3 @@ qmd: "googlerive"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

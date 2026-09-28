@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "ffmpeg"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Ffmpeg"
 type: reference
 tags: [wiki, no-frontmatter-fix]

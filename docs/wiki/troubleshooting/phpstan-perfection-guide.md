@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan perfection guide"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Perfection Guide
 
 This guide documents the patterns and strategies used to achieve 100% PHPStan (Level Max) compliance across all Laraxot modules.
@@ -111,8 +108,6 @@ Module TestCase → XotBaseTestCase → Illuminate\Foundation\Testing\TestCase �
 - Geo module TestCase is the only anomaly (extends Laravel base directly instead of XotBaseTestCase)
 
 ---
-<<<<<<< HEAD
-=======
 title: "phpstan perfection guide"
 type: note
 tags: [documentation]
@@ -121,5 +116,4 @@ updated: 2026-09-26
 qmd: "phpstan perfection guide"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *Updated: June 2026*

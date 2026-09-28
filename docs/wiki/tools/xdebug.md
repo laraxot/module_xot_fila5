@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "xdebug"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Xdebug"
 type: reference
 tags: [wiki, no-frontmatter-fix]

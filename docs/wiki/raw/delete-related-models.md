@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "delete related models"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Delete Related Models"
 type: reference
 tags: [wiki, no-frontmatter-fix]

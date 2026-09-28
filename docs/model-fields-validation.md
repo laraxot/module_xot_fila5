@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "model fields validation"
 type: note
@@ -11,4 +8,3 @@ qmd: "model fields validation"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

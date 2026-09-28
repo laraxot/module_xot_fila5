@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "monitoring pulse pennant"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Monitoring Pulse Pennant"
 type: reference
 tags: [wiki, no-frontmatter-fix]

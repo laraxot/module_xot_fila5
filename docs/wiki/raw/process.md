@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "process"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Process"
 type: reference
 tags: [wiki, no-frontmatter-fix]

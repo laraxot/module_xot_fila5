@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "00 index"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Xot Module - Roadmap
 
 > Motore core Laraxot. Framework Zero-Config per Laravel 12.

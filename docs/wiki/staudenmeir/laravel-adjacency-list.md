@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "laravel adjacency list"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Laravel Adjacency List"
 type: reference
 tags: [wiki, no-frontmatter-fix]

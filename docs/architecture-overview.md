@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "architecture overview"
 type: note
@@ -11,4 +8,3 @@ qmd: "architecture overview"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

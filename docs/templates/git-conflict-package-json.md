@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "git conflict package json"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Template Gestione Conflitti Git - package.json
 
 ## File: bashscripts/package.json

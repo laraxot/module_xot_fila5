@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Correzioni Effettuate per Errori PHPStan"
 module: "Xot"
 type: concept

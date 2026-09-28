@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "improvements sumy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Riepilogo Miglioramenti e Analisi - [DATE]
 
 **Metodologia**: Super Mucca  
@@ -19,8 +16,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "improvements sumy"
 type: note
 tags: [documentation]
@@ -29,7 +24,6 @@ updated: 2026-09-26
 qmd: "improvements sumy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## ✅ Lavori Completati
 
 ### 1. Studio Best Practices

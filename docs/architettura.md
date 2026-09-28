@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "architettura"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Architettura Modulo Xot - Widgets & Wizards
 
 ## XotBaseWizardWidget

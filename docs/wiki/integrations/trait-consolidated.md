@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "trait consolidated"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "trait — Consolidated Documentation"
 module: xot
 type: integration

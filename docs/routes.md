@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "routes"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Route
 
 ## Configurazione Base

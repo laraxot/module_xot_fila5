@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: "core architecture docs"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Xot Core Architecture Docs"
 module: "Xot"
 type: source

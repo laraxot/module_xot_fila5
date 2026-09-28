@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "promptocs"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Analisi e Miglioramenti del Prompt docs.txt
 
 > **Collegamenti correlati**

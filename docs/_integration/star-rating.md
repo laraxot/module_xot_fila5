@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "star rating"
 type: note
@@ -11,4 +8,3 @@ qmd: "star rating"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

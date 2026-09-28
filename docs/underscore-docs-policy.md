@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "underscore docs policy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Underscore Docs Policy
 
 ## Regola

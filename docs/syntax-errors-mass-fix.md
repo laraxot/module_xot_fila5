@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "syntax errors mass fix"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Mass Fix Errori Sintassi PHP
 
 > **Versione**: 1.0

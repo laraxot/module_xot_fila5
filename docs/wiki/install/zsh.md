@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "zsh"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Zsh"
 type: reference
 tags: [wiki, no-frontmatter-fix]

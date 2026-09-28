@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "xotbasefield view resolution rule"
 tags: [documentation]
 created: 2026-09-26
@@ -8,7 +6,6 @@ updated: 2026-09-26
 qmd: "xotbasefield view resolution rule"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 name: xotbasefield-view-resolution-rule
 description: XotBaseField resolves its Blade view dynamically; child fields must not set $view
 type: concept

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "migration standards"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Standard per le Migrazioni in <nome progetto>
 
 ## Convenzioni di Nomenclatura
@@ -41,8 +38,6 @@ Indipendentemente dal tipo di operazione (CREATE, ADD, CHANGE, FIX), il nome del
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "migration standards"
 type: note
 tags: [documentation]
@@ -51,7 +46,6 @@ updated: 2026-09-26
 qmd: "migration standards"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Principi Fondamentali
 
 1. **Estensione della classe base**: Tutte le migrazioni devono estendere `XotBaseMigration`

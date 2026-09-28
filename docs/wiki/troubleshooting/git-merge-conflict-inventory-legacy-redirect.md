@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Git Merge Conflict Inventory"
 type: concept
 status: deprecated

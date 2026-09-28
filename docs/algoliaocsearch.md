@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "algoliaocsearch"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "algoliaocsearch"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: algoliaocsearch
 canonical: ../../../Themes/docs/shared-components/algolia-docsearch.md

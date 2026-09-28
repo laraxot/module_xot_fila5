@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: "xotbasemanagerelatedrecords post saga cleanup.story"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "XotBaseManageRelatedRecords: pulizia post-saga (classe duplicata, tooling, stash trovati)"
 type: story
 module: Xot

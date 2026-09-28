@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "pest complete guide"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Laraxot Pest PHP Testing Guide
 
 ## Panoramica
@@ -445,31 +442,18 @@ steps:
       mysql -h 127.0.0.1 -u root -ppassword -e "CREATE DATABASE IF NOT EXISTS <nome progetto>_data_test;"
       mysql -h 127.0.0.1 -u root -ppassword -e "CREATE DATABASE IF NOT EXISTS <nome progetto>_user_test;"
 
-<<<<<<< HEAD
-  - name: Setup Environment
-    working-directory: laravel
-    run: |
-      cp .env.testing .env
-      php artisan key:generate --force
-=======
   - name: Validate test environment template
     run: bash bashscripts/tools/sync-env-testing.sh --check
->>>>>>> laraxot/dev
 
   - name: Run Migrations (NEVER migrate:fresh)
     working-directory: laravel
     env:
       DB_DATABASE: <nome progetto>_data_test
       DB_DATABASE_USER: <nome progetto>_user_test
-<<<<<<< HEAD
-      DB_USERNAME: root
-      DB_PASSWORD: password
-=======
       DB_USERNAME: ${{ secrets.FIXCITY_TEST_DB_USERNAME }}
       DB_PASSWORD: ${{ secrets.FIXCITY_TEST_DB_PASSWORD }}
       DB_USERNAME_USER: ${{ secrets.FIXCITY_TEST_DB_USERNAME_USER }}
       DB_PASSWORD_USER: ${{ secrets.FIXCITY_TEST_DB_PASSWORD_USER }}
->>>>>>> laraxot/dev
     run: php artisan migrate --env=testing --force
 
   - name: Run Pest with Coverage

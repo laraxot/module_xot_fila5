@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "stack"
 type: note
@@ -11,4 +8,3 @@ qmd: "stack"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

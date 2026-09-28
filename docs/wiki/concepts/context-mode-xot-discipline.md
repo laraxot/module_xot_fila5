@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "context mode xot discipline"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Xot Module — Context-Mode Discipline"
 type: "rule"
 tags: [xot, context-mode, atomic-wiki, compression]

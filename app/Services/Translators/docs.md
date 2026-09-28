@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "docs"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 da npm
 https://github.com/rhysd/translate-markdown
 https://www.npmjs.com/package/markdown-translator

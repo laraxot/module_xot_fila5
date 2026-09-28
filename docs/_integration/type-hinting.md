@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "type hinting"
 type: note
@@ -11,4 +8,3 @@ qmd: "type hinting"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

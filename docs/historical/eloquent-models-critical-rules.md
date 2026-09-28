@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "eloquent models critical rules"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Eloquent Models - Regole Critiche per Laraxot PTVX
 
 ## DIVIETO ASSOLUTO: property_exists() con Modelli Eloquent

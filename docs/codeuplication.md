@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "codeuplication"
 type: note
@@ -11,4 +8,3 @@ qmd: "codeuplication"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

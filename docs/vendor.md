@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "vendor"
 type: note
@@ -11,4 +8,3 @@ qmd: "vendor"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

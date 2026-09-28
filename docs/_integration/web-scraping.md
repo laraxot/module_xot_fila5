@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "web scraping"
 type: note
@@ -11,4 +8,3 @@ qmd: "web scraping"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

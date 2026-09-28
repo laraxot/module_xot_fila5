@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Docs Improvements Nov"
 type: concept
 status: deprecated

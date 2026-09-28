@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "risks variant"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "risks variant"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: risks-1
 canonical: ../../../../Themes/docs/shared-components/05-risks.md

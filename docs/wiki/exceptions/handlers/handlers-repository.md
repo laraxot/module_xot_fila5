@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "handlers repository"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Handlers Repository"
 type: reference
 tags: [wiki, no-frontmatter-fix]

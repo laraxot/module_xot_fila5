@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "metatagdata philosophy"
 type: note
@@ -11,4 +8,3 @@ qmd: "metatagdata philosophy"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

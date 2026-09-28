@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "contracts and interfaces"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Xot Contracts and Interfaces Documentation
 
 **Last Updated**: 2025-01-23
@@ -547,8 +544,6 @@ class AppointmentService
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "contracts and interfaces"
 type: note
 tags: [documentation]
@@ -557,5 +552,4 @@ updated: 2026-09-26
 qmd: "contracts and interfaces"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *This documentation provides comprehensive guidance for implementing and using contracts within the Xot ecosystem, ensuring type safety and consistency across all modules.*

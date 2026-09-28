@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "has dynamic fillable"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # HasDynamicFillable
 
 `Modules\Xot\Models\Traits\HasDynamicFillable`

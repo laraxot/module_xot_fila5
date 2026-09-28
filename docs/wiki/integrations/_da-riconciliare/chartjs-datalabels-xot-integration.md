@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "chartjs datalabels xot integration"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Chart.js Datalabels Plugin Implementation in Xot Module"
 module: xot
 type: integration

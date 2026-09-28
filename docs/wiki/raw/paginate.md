@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "paginate"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Paginate"
 type: reference
 tags: [wiki, no-frontmatter-fix]

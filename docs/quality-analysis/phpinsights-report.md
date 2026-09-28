@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpinsights report"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHP Insights Analysis Report - Xot Module
 
 **Date:** 2025-11-12
@@ -215,8 +212,6 @@ protected $fillable;
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpinsights report"
 type: note
 tags: [documentation]
@@ -225,7 +220,6 @@ updated: 2026-09-26
 qmd: "phpinsights report"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Next Review:** After Phase 1 completion
 **Last Updated:** 2025-11-12 08:15 UTC
 **

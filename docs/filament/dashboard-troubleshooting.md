@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "dashboard troubleshooting"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Dashboard Troubleshooting
 
 ## Livewire Attribute Error

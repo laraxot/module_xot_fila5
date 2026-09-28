@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "philosophy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Xot Module: Philosophy, Purpose, and Design Principles
 
 **Date:** December 23, 2025

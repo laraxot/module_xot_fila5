@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "sonarqube"
 type: note
@@ -11,4 +8,3 @@ qmd: "sonarqube"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

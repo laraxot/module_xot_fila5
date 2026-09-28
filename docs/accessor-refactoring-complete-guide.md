@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "accessor refactoring complete guide"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Guida Completa: Refactoring Accessor Pattern - Progetto PTVX
 
 ## Executive Summary
@@ -335,8 +332,6 @@ Moduli con logica inline complessa:
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "accessor refactoring complete guide"
 type: note
 tags: [documentation]
@@ -345,7 +340,6 @@ updated: 2026-09-26
 qmd: "accessor refactoring complete guide"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Creato**: 2025-01-29
 **Tipo**: Guida Completa Master
 **Scope**: Tutti i moduli progetto

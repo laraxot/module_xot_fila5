@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "install module"
 type: note
@@ -11,4 +8,3 @@ qmd: "install module"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

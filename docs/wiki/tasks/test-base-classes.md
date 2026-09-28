@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "test base classes"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Test Base Classes"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "COMMON FILAMENT TRAIT CONFLICTS"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Common Filament Trait Conflicts - Xot Module
 
 ## 📋 Panoramica
@@ -82,8 +79,6 @@ class MyChartWidget extends ChartWidget
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "COMMON FILAMENT TRAIT CONFLICTS"
 type: note
 tags: [documentation]
@@ -92,7 +87,6 @@ updated: 2026-09-26
 qmd: "COMMON FILAMENT TRAIT CONFLICTS"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ### 2. HasFiltersForm (Dashboard)
 
 **Location**: `Filament\Pages\Dashboard\Concerns\HasFiltersForm`

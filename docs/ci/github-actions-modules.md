@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "github actions modules"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # GitHub Actions per moduli e temi (CI)
 
 ## Scopo

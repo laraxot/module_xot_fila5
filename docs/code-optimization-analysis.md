@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "code optimization analysis"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # xot module code and documentation optimization analysis
 
 ## comprehensive analysis

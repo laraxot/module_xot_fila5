@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "flux ui guide"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Guida a Flux UI - Laraxot PTVX
 
 Flux UI è la libreria di componenti ufficiale per Livewire, integrata nel progetto per garantire accessibilità e stile coerente.

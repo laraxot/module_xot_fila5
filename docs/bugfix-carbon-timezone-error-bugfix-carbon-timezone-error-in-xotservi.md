@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "bugfix carbon timezone error bugfix carbon timezone error in xotservi"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Bugfix: Carbon Timezone Error in XotServiceProvider
 
 ## Problema Identificato
@@ -94,8 +91,6 @@ public function registerTimezone(): void
 
 
 ---
-<<<<<<< HEAD
-=======
 title: "bugfix carbon timezone error bugfix carbon timezone error in xotservi"
 type: note
 tags: [documentation]
@@ -104,7 +99,6 @@ updated: 2026-09-26
 qmd: "bugfix carbon timezone error bugfix carbon timezone error in xotservi"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Variant 2
 
 # Bugfix: Carbon Timezone Error in XotServiceProvider

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "ACTIONS"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Xot Module — QueueableActions Pattern"
 type: guide
 tags: [actions, utilities, architecture]

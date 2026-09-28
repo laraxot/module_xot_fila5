@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "phpcheckstyle"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Phpcheckstyle"
 type: reference
 tags: [wiki, no-frontmatter-fix]

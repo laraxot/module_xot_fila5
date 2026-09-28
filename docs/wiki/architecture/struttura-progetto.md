@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "struttura progetto"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Struttura Progetto"
 type: reference
 tags: [wiki, no-frontmatter-fix]

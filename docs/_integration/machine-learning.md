@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "machine learning"
 type: note
@@ -11,4 +8,3 @@ qmd: "machine learning"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "no domain logic in xot"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Xot must not contain domain-specific logic
 
 **Date**: 2026-07-24

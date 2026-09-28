@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "mai estendere filament direttamente"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Mai Estendere Filament Direttamente"
 type: reference
 tags: [wiki, no-frontmatter-fix]

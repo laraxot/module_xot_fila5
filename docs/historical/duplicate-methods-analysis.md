@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "duplicate methods analysis"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Analisi Metodi Duplicati - Modulo Xot
 
 **Data Generazione**: 2025-10-15 06:41:17
@@ -70,8 +67,6 @@ public static function make(): self
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "duplicate methods analysis"
 type: note
 tags: [documentation]
@@ -80,7 +75,6 @@ updated: 2026-09-26
 qmd: "duplicate methods analysis"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ### 2. Metodo: `updater`
 
 **Tipo Refactoring**: `Pattern` | **Complessità**: 🔴 High | **Confidenza**: ⚠️ 50%

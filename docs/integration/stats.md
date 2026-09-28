@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "stats"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # _stats
 
 <!-- Contenuto migrato da _docs/_stats.txt -->
@@ -34,8 +31,6 @@ https://arslantariq.com/build-ui-dashboards-for-your-laravel-application/
 
 
 ---
-<<<<<<< HEAD
-=======
 title: "stats"
 type: note
 tags: [documentation]
@@ -44,7 +39,6 @@ updated: 2026-09-26
 qmd: "stats"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Merged from -stats.md
 
 

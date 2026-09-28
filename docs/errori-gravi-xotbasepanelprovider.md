@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-
-=======
 ---
 title: "errori gravi xotbasepanelprovider"
 type: note
@@ -12,4 +8,3 @@ qmd: "errori gravi xotbasepanelprovider"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

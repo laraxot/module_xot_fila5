@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament array keys rule"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filament Array Keys Rule - Array con Chiavi String
 
 **Data**: 2025-01-10
@@ -20,8 +17,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "filament array keys rule"
 type: note
 tags: [documentation]
@@ -30,7 +25,6 @@ updated: 2026-09-26
 qmd: "filament array keys rule"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 🚨 Regola Assoluta
 
 **Tutti i metodi Filament che restituiscono array DEVONO usare chiavi string quando possibile. Filament v4 accetta anche chiavi int, ma preferire sempre string.**
@@ -61,17 +55,9 @@ public function getTableActions(): array
 }
 
 // ❌ SBAGLIATO - Array numerico
-<<<<<<< HEAD
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 public function getFormSchema(): array
 ---
 public function getFormSchema(): array
->>>>>>> laraxot/dev
 {
     return [
         TextInput::make('name'),  // Chiave: 0
@@ -98,17 +84,9 @@ public function getTableActions(): array
 
 // ✅ CORRETTO - Array associativo con chiavi string
 /** @return array<string, Component> */
-<<<<<<< HEAD
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 public function getFormSchema(): array
 ---
 public function getFormSchema(): array
->>>>>>> laraxot/dev
 {
     return [
         'name_field' => TextInput::make('name'),
@@ -165,17 +143,9 @@ class UserResource extends XotBaseResource
     /**
      * @return array<string, \Filament\Forms\Components\Component>
      */
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
     public function getFormSchema(): array
 ---
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             'name_field' => TextInput::make('name'),

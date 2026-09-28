@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "queueable action execute entrypoint"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "QueueableAction execute entrypoint"
 type: rule
 module: Xot

@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: "install module"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Install module"
 type: reference
 status: active

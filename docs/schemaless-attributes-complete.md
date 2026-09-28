@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "schemaless attributes complete"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Schemaless Attributes - Pattern Completi PTVX v3.0
 
 ## 🎯 **OVERVIEW**
@@ -37,8 +34,6 @@ Questa documentazione definisce i **pattern completi e standardizzati** per l'us
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "schemaless attributes complete"
 type: note
 tags: [documentation]
@@ -47,7 +42,6 @@ updated: 2026-09-26
 qmd: "schemaless attributes complete"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 🎯 **PATTERN ARCHITETTURALI STANDARDIZZATI**
 
 ### 📋 **1. Migration Pattern XOT + Schemaless**

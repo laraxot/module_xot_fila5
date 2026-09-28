@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "xot base widget"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # XotBaseWidget
 
 La classe astratta `XotBaseWidget` fornisce una base comune per tutti i widget Filament nel modulo Xot.

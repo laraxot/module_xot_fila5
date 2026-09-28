@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Skill: Troubleshooting Filament Edit Forms in XotBaseManageRelatedRecords"
 module: "Xot"
 type: concept

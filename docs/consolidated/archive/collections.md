@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "collections"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # collections
 
 <!-- Contenuto migrato da _docs/collections.txt -->

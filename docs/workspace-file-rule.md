@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "workspace file rule"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Workspace File Naming Rule
 
 ## Rule

@@ -24,10 +24,7 @@ use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\View;
 use Modules\Xot\Actions\Composer\RegisterRuntimePsr4NamespacesAction;
 use Modules\Xot\Actions\PaDesignColorsAction;
-<<<<<<< HEAD
-=======
 use Modules\Xot\Console\Commands\BuildTestSqliteCommand;
->>>>>>> laraxot/dev
 use Modules\Xot\Console\Commands\GenerateFilamentResources;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Exports\Jobs\XotCreateXlsxFile;
@@ -51,12 +48,9 @@ class XotServiceProvider extends XotBaseServiceProvider
     public function boot(): void
     {
         parent::boot();
-<<<<<<< HEAD
-=======
         $this->publishes([
             __DIR__.'/../../resources/css/header-actions-wrap.css' => public_path('assets/xot/header-actions-wrap.css'),
         ], 'xot-assets');
->>>>>>> laraxot/dev
         $this->redirectSSL();
         $this->registerViewComposers();
         $this->registerEvents();
@@ -219,10 +213,7 @@ class XotServiceProvider extends XotBaseServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->commands([
-<<<<<<< HEAD
-=======
                 BuildTestSqliteCommand::class,
->>>>>>> laraxot/dev
                 GenerateFilamentResources::class,
                 // \Modules\Xot\Console\Commands\OptimizeFilamentMemoryCommand::class,
             ]);

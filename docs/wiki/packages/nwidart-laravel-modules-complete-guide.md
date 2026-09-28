@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "nwidart laravel modules complete guide"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Nwidart Laravel Modules Complete Guide"
 type: reference
 tags: [wiki, no-frontmatter-fix]

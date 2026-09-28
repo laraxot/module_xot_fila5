@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: " stats"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: " stats"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: -stats
 canonical: ../../../../Themes/docs/shared-components/-21.md

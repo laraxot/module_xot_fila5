@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "quality"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Checklist qualità - Xot Module
 
 - [x] PHPStan Level 10

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "nested resources"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Xot Module - Nested Resource Implementation Guide
 
 ## Overview

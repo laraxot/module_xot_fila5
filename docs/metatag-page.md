@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "metatag page"
 type: note
@@ -11,4 +8,3 @@ qmd: "metatag page"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "property exists removal report"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Report Rimozione property_exists() - Modulo Xot
 
 **Data**: 2025-01-05
@@ -287,8 +284,6 @@ La rimozione di `property_exists()` dal modulo Xot rappresenta un importante pas
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "property exists removal report"
 type: note
 tags: [documentation]
@@ -297,5 +292,4 @@ updated: 2026-09-26
 qmd: "property exists removal report"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *Report generato automaticamente - Cascade AI - 2025-01-05*

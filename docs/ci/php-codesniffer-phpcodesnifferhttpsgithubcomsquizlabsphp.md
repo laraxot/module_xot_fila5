@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "php codesniffer phpcodesnifferhttpsgithubcomsquizlabsphp"
 type: note
@@ -11,5 +9,4 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer)

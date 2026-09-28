@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "factory"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Factory"
 type: reference
 tags: [wiki, no-frontmatter-fix]

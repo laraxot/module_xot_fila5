@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "bmad method"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # bmad method in laraxot
 
 ## scopo

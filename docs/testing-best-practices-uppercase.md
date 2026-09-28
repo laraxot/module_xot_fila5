@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "testing best practices uppercase"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Testing Best Practices - Laraxot Framework
 
 ## 🏆 **Gold Standard Pattern**
@@ -51,10 +48,6 @@ test('widget can be rendered', function () {
 function mockXotData(): void
 {
     $mockXotData = \Mockery::mock(\Modules\Xot\Datas\XotData::class)->makePartial();
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 
     $mockXotData->shouldReceive('getUserClass')
         ->andReturn(\Modules\<nome progetto>\Models\User::class);
@@ -62,10 +55,6 @@ function mockXotData(): void
     $mockXotData->shouldReceive('make')
         ->andReturn($mockXotData);
 
-<<<<<<< HEAD
-=======
-    
-=======
 ---
     
 title: "testing best practices uppercase"
@@ -76,17 +65,12 @@ updated: 2026-09-26
 qmd: "testing best practices uppercase"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
     $mockXotData->shouldReceive('getUserClass')
         ->andReturn(\Modules\SaluteOra\Models\User::class);
         
     $mockXotData->shouldReceive('make')
         ->andReturn($mockXotData);
     
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
     // ✅ CRITICO: Bind nel container
     app()->instance(\Modules\Xot\Datas\XotData::class, $mockXotData);
 }
@@ -224,17 +208,9 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 # Execution time monitoring
 ./vendor/bin/pest -v {TestFile} | grep -E "(seconds|ms)"
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Success rate calculation
-=======
-# Success rate calculation  
->>>>>>> laraxot/dev
-=======
 # Success rate calculation
 ---
 # Success rate calculation  
->>>>>>> laraxot/dev
 ./vendor/bin/pest {TestFile} --compact
 
 # Memory usage monitoring

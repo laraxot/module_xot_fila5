@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "ai init issue resolution"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Risoluzione Problema con ai_init.sh
 
 ## Problema Risolto

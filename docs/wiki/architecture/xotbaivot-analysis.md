@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "xotbaivot analysis"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Xotbaivot Analysis"
 type: reference
 tags: [wiki, no-frontmatter-fix]

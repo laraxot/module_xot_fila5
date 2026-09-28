@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "testing"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'Testing — risorse esterne'
 module: Xot
 type: reference

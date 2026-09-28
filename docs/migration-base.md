@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "migration base"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "migration base"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: migration-base
 canonical: ../../../Themes/docs/shared-components/migration-base-rules.md

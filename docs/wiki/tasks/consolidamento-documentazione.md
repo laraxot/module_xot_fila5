@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "consolidamento documentazione"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Consolidamento Documentazione"
 type: reference
 tags: [wiki, no-frontmatter-fix]

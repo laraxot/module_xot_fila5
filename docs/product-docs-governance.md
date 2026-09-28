@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "product docs governance"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Product Docs Governance
 
 Regola operativa per questo repository:

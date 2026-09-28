@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "quality"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "quality"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: quality
 canonical: ../../../Themes/docs/shared-components/quality-analysis-sumy.md

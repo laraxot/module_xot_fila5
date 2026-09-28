@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "laraxot consistency philosophy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Laraxot Consistency Philosophy - Complete Guide
 
 ## Core Principle: Consistency Above All
@@ -204,8 +201,6 @@ composer dump-autoload
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "laraxot consistency philosophy"
 type: note
 tags: [documentation]
@@ -214,5 +209,4 @@ updated: 2026-09-26
 qmd: "laraxot consistency philosophy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Philosophy Summary**: In Laraxot, consistency is not just a preference - it's a fundamental architectural principle that enables maintainable, scalable applications. Follow these patterns to build software that stands the test of time.

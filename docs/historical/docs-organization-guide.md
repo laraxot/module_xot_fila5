@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "docs organization guide"
 type: note
@@ -11,15 +9,12 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Documentation Organization Guide
 
 > **Guida completa per organizzare e mantenere la documentazione dei moduli**
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "docs organization guide"
 type: note
 tags: [documentation]
@@ -28,7 +23,6 @@ updated: 2026-09-26
 qmd: "docs organization guide"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 🎯 Obiettivi
 
 1. **Struttura consistente** tra tutti i moduli

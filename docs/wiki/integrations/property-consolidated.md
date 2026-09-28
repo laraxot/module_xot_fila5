@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "property consolidated"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "property — Consolidated Documentation"
 module: xot
 type: integration

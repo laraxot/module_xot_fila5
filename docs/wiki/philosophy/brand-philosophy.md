@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "brand philosophy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Brand Philosophy"
 type: reference
 tags: [wiki, no-frontmatter-fix]

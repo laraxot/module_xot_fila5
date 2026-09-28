@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "optimization analysis dry kiss"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Analisi Ottimizzazioni Modulo Xot - DRY + KISS
 
 ## 🎯 Obiettivo Analisi
@@ -75,8 +72,6 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "optimization analysis dry kiss"
 type: note
 tags: [documentation]
@@ -85,7 +80,6 @@ updated: 2026-09-26
 qmd: "optimization analysis dry kiss"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ### 2. **Widget Base Classes Overlap - ALTO** 🔴
 
 #### Problema Attuale

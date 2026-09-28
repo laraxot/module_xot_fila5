@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "xotdata"
 type: note
@@ -11,4 +8,3 @@ qmd: "xotdata"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

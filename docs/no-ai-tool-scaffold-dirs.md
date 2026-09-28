@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "no ai tool scaffold dirs"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "No AI/tool scaffold directories in module tree — Xot (base module)"
 module: "Xot"
 type: concept

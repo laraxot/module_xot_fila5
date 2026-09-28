@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: "docs index audit.story"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Docs index audit — Xot"
 type: story
 module: Xot

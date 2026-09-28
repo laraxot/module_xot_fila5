@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "installazione iniziale"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Installazione Iniziale"
 type: reference
 tags: [wiki, no-frontmatter-fix]

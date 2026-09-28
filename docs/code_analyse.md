@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "code analyse"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'code_analyse'
 module: Xot
 type: reference

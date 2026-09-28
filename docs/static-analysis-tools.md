@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "static analysis tools"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'Static analysis tools — risorse esterne'
 module: Xot
 type: reference

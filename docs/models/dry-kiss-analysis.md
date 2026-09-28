@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "dry kiss analysis"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Analisi DRY e KISS - Architettura Modelli
 
 **Data**: 2025-10-15
@@ -378,8 +375,6 @@ Manutenibilità: +40%
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "dry kiss analysis"
 type: note
 tags: [documentation]
@@ -388,7 +383,6 @@ updated: 2026-09-26
 qmd: "dry kiss analysis"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Status**: 🟡 Analisi completata - In attesa di implementazione
 **Next**: Implementare Soluzione 1 e 2 (Priorità ALTA)
 # Analisi DRY e KISS - Architettura Modelli

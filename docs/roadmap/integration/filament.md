@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "filament"
 type: note
@@ -11,4 +8,3 @@ qmd: "filament"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

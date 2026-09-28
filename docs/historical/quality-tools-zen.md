@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "quality tools zen"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Lo Zen degli Strumenti di Qualità PHP - La Grande Unificazione
 
 **Data**: 2025-01-05
@@ -461,8 +458,6 @@ php artisan insights
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "quality tools zen"
 type: note
 tags: [documentation]
@@ -471,7 +466,6 @@ updated: 2026-09-26
 qmd: "quality tools zen"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *"Nel codice perfetto, i tipi sono evidenti, gli errori sono impossibili, e la complessità è un ricordo del passato."*
 
 **ZEN ACHIEVED** 🧘‍♂️

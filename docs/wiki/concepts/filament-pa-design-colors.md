@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament pa design colors"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filament — palette PA Design Comuni
 
 ## Scopo

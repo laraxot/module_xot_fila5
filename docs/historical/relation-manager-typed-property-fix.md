@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "relation manager typed property fix"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # XotBaseRelationManager Typed Property Fix
 
 ## Problema

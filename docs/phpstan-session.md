@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan session"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Correzioni - Sessione Novembre 2025
 
 ## 🎯 Obiettivo: 0 Errori PHPStan Livello 10
@@ -139,8 +136,6 @@ Se un metodo è garantito da interfaccia/contratto, NON serve:
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan session"
 type: note
 tags: [documentation]
@@ -149,7 +144,6 @@ updated: 2026-09-26
 qmd: "phpstan session"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Status**: In Progress
 **Target**: 0 errori PHPStan
 **Confidenza**: Massima (Supermucca Mode)

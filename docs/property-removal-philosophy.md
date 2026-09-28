@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "property removal philosophy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filosofia della Rimozione Proprietà in XotBaseResource
 
 **Data**: 2026-01-09  
@@ -49,8 +46,6 @@ Questi valori vengono risolti dinamicamente da `XotBaseResource` tramite i file 
 3. **Localizzazione**: Assicurarsi che per ogni Resource esistano le traduzioni nelle 6 lingue target (IT, EN, ES, FR, ZH, AR).
 
 ---
-<<<<<<< HEAD
-=======
 title: "property removal philosophy"
 type: note
 tags: [documentation]
@@ -59,5 +54,4 @@ updated: 2026-09-26
 qmd: "property removal philosophy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *Documentazione redatta seguendo i principi Super Mucca: DRY, KISS, Robustness.*

@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "search"
 type: note
@@ -11,4 +8,3 @@ qmd: "search"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

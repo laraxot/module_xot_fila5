@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "filament haswizard traits analysis"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Filament HasWizard Traits Analysis"
 type: concept
 sources: ["https://github.com/filamentphp/filament/blob/5.x/packages/actions/src/Concerns/HasWizard.php"]

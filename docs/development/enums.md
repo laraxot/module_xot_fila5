@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "enums"
 type: note
@@ -11,4 +8,3 @@ qmd: "enums"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

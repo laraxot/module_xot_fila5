@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "docs consolidation report conflict"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Report Consolidamento Documentazione - 27 Gennaio 2025
 
 ## Panoramica
@@ -246,8 +243,6 @@ Le prossime fasi si concentreranno sul completamento del consolidamento e sul mi
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "docs consolidation report conflict"
 type: note
 tags: [documentation]
@@ -256,7 +251,6 @@ updated: 2026-09-26
 qmd: "docs consolidation report conflict"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Data Report**: 27 Gennaio 2025
 **Stato**: Consolidamento in corso
 **Prossimo Update**: Completamento consolidamento root docs

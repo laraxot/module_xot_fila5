@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "semantic release template"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Template semantic-release (moduli e temi)
 
 ## Scopo

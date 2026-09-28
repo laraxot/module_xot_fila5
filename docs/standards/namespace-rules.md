@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "namespace rules"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Regole di Namespace
 
 ## Struttura dei Namespace

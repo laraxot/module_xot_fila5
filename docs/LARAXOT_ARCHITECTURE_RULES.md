@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "LARAXOT ARCHITECTURE RULES"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Laraxot Architecture Rules - Xot Module
 
 ## 🎯 Regole Fondamentali Laraxot
@@ -61,13 +58,6 @@ class MyResource extends XotBaseResource
 {
     protected static ?string $model = MyModel::class;
     
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
     public function getFormSchema(): array
 ---
 title: "LARAXOT ARCHITECTURE RULES"
@@ -79,7 +69,6 @@ qmd: "LARAXOT ARCHITECTURE RULES"
 issues: []
 discussions: []
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             // Form components
@@ -294,17 +283,9 @@ class QuestionChartResource extends XotBaseResource
 {
     protected static ?string $model = QuestionChart::class;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
     public function getFormSchema(): array
 ---
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             // Form components

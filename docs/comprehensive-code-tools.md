@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "comprehensive code tools"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "comprehensive code tools"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: comprehensive-code-tools
 canonical: ../../../Themes/docs/shared-components/comprehensive-code-analysis-tools.md

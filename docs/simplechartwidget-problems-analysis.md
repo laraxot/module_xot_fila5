@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "simplechartwidget problems analysis"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # SimpleChartWidget - Analisi Problemi e Miglioramenti UI/UX
 
 ## Panoramica

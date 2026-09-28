@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "vendor"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "vendor"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: vendor
 canonical: ../../../../Themes/docs/shared-components/vendor.md

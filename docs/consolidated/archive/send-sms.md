@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "send sms"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # send_sms
 
 <!-- Contenuto migrato da _docs/send_sms.txt -->

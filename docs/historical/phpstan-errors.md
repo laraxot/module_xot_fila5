@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan errors"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Errori Modulo Xot - 2025-01-22
 
 ## Analisi Completa
@@ -23,8 +20,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan errors"
 type: note
 tags: [documentation]
@@ -33,7 +28,6 @@ updated: 2026-09-26
 qmd: "phpstan errors"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Errori Identificati
 
 ### 1. ParsePrintPageStringAction.php - Offset Access e Type Mismatch

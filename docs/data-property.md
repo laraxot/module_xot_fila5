@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "data property"
 type: note
@@ -11,4 +8,3 @@ qmd: "data property"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

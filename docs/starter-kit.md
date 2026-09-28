@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "starter kit"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 
 
 https://github.com/siubie/kaido-kit

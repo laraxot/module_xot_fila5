@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "delete related models"
 type: note
@@ -11,4 +8,3 @@ qmd: "delete related models"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

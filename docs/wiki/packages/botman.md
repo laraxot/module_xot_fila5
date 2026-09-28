@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "botman"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Botman"
 type: reference
 tags: [wiki, no-frontmatter-fix]

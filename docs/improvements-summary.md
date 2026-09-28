@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "improvements summary"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Riepilogo Miglioramenti e Analisi - 2026-01-09
 
 **Data**: 2026-01-09  
@@ -20,8 +17,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "improvements summary"
 type: note
 tags: [documentation]
@@ -30,7 +25,6 @@ updated: 2026-09-26
 qmd: "improvements summary"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## ✅ Lavori Completati
 
 ### 1. Studio Best Practices

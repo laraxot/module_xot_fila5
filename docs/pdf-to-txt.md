@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: "pdf to txt"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Pdf to txt"
 type: reference
 status: active

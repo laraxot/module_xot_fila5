@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "quality analysis summary"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Riepilogo Analisi Qualità Codice Completa
 
 **Data**: 2025-12-23

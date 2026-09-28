@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 type: note
 tags: [documentation]
 created: 2026-09-26
@@ -8,17 +6,10 @@ updated: 2026-09-26
 qmd: "table setter deprecation handling.story"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 id: story-table-setter-deprecation-handling
 title: "Handling Deprecated Table Setter Methods in XotBaseManageRelatedRecords"
 descript_type: bmad
 scope: module:Xot
-<<<<<<< HEAD
-status: ready-for-dev
-github: {issues: "https://github.com/laraxot/module_xot_fila5/issues/115", discussions: "https://github.com/laraxot/module_xot_fila5/discussions/117"}
----
-
-=======
 status: blocked
 github: {issues: "https://github.com/laraxot/module_xot_fila5/issues/115", discussions: "https://github.com/laraxot/module_xot_fila5/discussions/117"}
 ---
@@ -33,7 +24,6 @@ github: {issues: "https://github.com/laraxot/module_xot_fila5/issues/115", discu
 > Prima il neon, poi questo AC. Guida canonica del metodo:
 > [`filament-gettablecolumns-deprecation.md`](../../../../../docs/wiki/memories/filament-gettablecolumns-deprecation.md).
 
->>>>>>> laraxot/dev
 # Handling Deprecated Table Setter Methods
 
 ## Context

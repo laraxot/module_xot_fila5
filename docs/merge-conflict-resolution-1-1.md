@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "merge conflict resolution 1 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Risoluzione Merge Conflicts Massivi - 2025-11-04
 
 ## 🔥 Problema Iniziale

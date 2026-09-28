@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "model contact contract"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # ModelContactContract
 
 ## Descrizione

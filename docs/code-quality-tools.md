@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "code quality tools"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "code quality tools"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: code-quality-tools
 canonical: ../../../Themes/docs/shared-components/code-quality-tools-guide.md

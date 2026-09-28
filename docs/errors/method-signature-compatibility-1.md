@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "method signature compatibility 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # errore di compatibilità nelle firme dei metodi
 
 ## problema

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "risoluzione conflitti updater"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Risoluzione Conflitti Updater"
 type: reference
 tags: [wiki, no-frontmatter-fix]

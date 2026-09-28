@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "packages"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Pacchetti del Modulo Xot
 
 ## Pacchetti Utilizzati
@@ -89,8 +86,6 @@ discussions: []
 ### Versione Incoming
 
 ---
-<<<<<<< HEAD
-=======
 title: "packages"
 type: note
 tags: [documentation]
@@ -99,4 +94,3 @@ updated: 2026-09-26
 qmd: "packages"
 issues: []
 discussions: []
->>>>>>> laraxot/dev

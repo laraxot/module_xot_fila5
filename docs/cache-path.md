@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "cache path"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Errore Cache Path Mancante
 
 ## Descrizione dell'Errore

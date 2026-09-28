@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "testing best practices"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Testing Guide for Laraxot Modules
 
 ## Introduzione

@@ -1,8 +1,5 @@
 ---
-<<<<<<< HEAD
-=======
 discussions: []
->>>>>>> laraxot/dev
 title: "Xot Tests autoload e PHPStan"
 type: concept
 module: Xot

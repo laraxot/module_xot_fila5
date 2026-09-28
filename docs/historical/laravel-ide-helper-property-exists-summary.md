@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "laravel ide helper property exists summary"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Summary: laravel-ide-helper e Eliminazione property_exists()
 
 ## Lavoro Completato

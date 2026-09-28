@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "testing migrate env testing deep dive"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Deep Dive: `php artisan migrate --env=testing` (2026-03-06)
 
 ## Scope

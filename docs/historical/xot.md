@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "xot"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Modulo Xot
 
 ## Descrizione

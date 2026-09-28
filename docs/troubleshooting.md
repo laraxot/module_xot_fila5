@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "troubleshooting"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # 🚨 **Troubleshooting Modulo Xot**
 
 ## 📋 **Panoramica**
@@ -694,8 +691,6 @@ dd(DB::getQueryLog());
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "troubleshooting"
 type: note
 tags: [documentation]
@@ -704,5 +699,4 @@ updated: 2026-09-26
 qmd: "troubleshooting"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*

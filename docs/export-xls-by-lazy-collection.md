@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "export xls by lazy collection"
 type: note
@@ -11,4 +8,3 @@ qmd: "export xls by lazy collection"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

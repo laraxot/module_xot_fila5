@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "models"
 type: note
@@ -11,4 +8,3 @@ qmd: "models"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

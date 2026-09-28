@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan level9 achievement"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # 🏆 PHPStan Level 9 Achievement - Framework Xot
 
 **Data**: 18 Agosto 2025  
@@ -130,8 +127,6 @@ public function getRules(array $config): array
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan level9 achievement"
 type: note
 tags: [documentation]
@@ -140,5 +135,4 @@ updated: 2026-09-26
 qmd: "phpstan level9 achievement"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **🎉 RISULTATO**: Il framework Xot è ora al **massimo livello di qualità** del codice PHP, pronto per supportare qualsiasi applicazione enterprise con la massima affidabilità e type safety.

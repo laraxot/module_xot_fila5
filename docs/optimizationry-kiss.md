@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "optimizationry kiss"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "optimizationry kiss"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: optimizationry-kiss
 canonical: ../../../Themes/docs/shared-components/optimization-analysis-dry-kiss-Modules.md

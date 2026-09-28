@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "docs update"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Aggiornamento Documentazione - 2 Dicembre 2025
 
 ## 🎯 Obiettivo
@@ -25,8 +22,6 @@ Aggiornamento massivo documentazione progetto con:
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "docs update"
 type: note
 tags: [documentation]
@@ -35,7 +30,6 @@ updated: 2026-09-26
 qmd: "docs update"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 📊 Stato Iniziale
 
 - **File .md totali**: 6787

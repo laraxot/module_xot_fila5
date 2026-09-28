@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "clean architecture"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Clean Architecture"
 type: reference
 tags: [wiki, no-frontmatter-fix]

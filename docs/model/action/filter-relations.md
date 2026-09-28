@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "filter relations"
 type: note
@@ -11,4 +8,3 @@ qmd: "filter relations"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

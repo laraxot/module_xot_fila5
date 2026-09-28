@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament v5 setup guide"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # 🎨 FILAMENT V5 SETUP GUIDE - Base Predict Fila5
 
 **Version**: 5.x  
@@ -21,8 +18,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "filament v5 setup guide"
 type: note
 tags: [documentation]
@@ -31,7 +26,6 @@ updated: 2026-09-26
 qmd: "filament v5 setup guide"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 📋 REQUISITI FILAMENT V5
 
 | Requisito | Versione Richiesta | Stato Attuale |

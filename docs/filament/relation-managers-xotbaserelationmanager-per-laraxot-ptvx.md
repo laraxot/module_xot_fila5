@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "relation managers xotbaserelationmanager per laraxot ptvx"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # XotBaseRelationManager per Laraxot PTVX
 
 ## Panoramica

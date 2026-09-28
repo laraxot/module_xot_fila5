@@ -33,12 +33,8 @@ class StateOverviewWidget extends XotBaseSchemaWidget
      * Vista del widget.
      */
     /** @var view-string */
-<<<<<<< HEAD
-    protected string $view = 'xot::filament.widgets.state-overview';
-=======
     /** @var view-string */
     protected string $view;
->>>>>>> laraxot/dev
 
     /**
      * Occupa tutta la larghezza disponibile.

@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: "context compression and retrieval"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Context Compression and Retrieval"
 module: "Xot"
 type: source

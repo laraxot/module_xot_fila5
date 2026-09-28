@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "critical rules consolidated"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # 🎯 CRITICAL RULES CONSOLIDATED - Laraxot Architecture
 
 ## 🚨 REGOLE ASSOLUTE DA RISPETTARE
@@ -25,13 +22,8 @@ discussions: []
     'driver' => 'mysql',
     'host' => env('DB_HOST', '127.0.0.1'),
     'database' => env('DB_DATABASE_GDPR', 'laravel_gdpr'),
-<<<<<<< HEAD
-    'username' => env('DB_USERNAME_GDPR', 'marco'),
-    'password' => env('DB_PASSWORD_GDPR', 'marco'),
-=======
     'username' => env('DB_USERNAME_GDPR'),
     'password' => env('DB_PASSWORD_GDPR'),
->>>>>>> laraxot/dev
     // ... altre configurazioni
 ],
 ```
@@ -49,22 +41,13 @@ discussions: []
 return [
     'default' => env('DB_CONNECTION', 'mysql'),
     'connections' => [
-<<<<<<< HEAD
-        'sqlite' => [...], // SOLO per sviluppo
-=======
         'sqlite' => [...], // driver disponibile; test applicativi seguono la policy Xot
->>>>>>> laraxot/dev
         'mysql' => [       // SOLO connessione base
             'driver' => 'mysql',
             'host' => env('DB_HOST', '127.0.0.1'),
             'database' => env('DB_DATABASE', '<nome progetto>_data'),
-<<<<<<< HEAD
-            'username' => env('DB_USERNAME', 'marco'),
-            'password' => env('DB_PASSWORD', 'marco'),
-=======
             'username' => env('DB_USERNAME'),
             'password' => env('DB_PASSWORD'),
->>>>>>> laraxot/dev
             // ... configurazione base
         ],
         // ❌ MAI definire connessioni modulari qui
@@ -188,18 +171,9 @@ php artisan optimize:clear
 
 ### 1. Configurazione ambiente:
 ```bash
-<<<<<<< HEAD
-# .env o .env.testing
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_DATABASE=<nome progetto>_data
-DB_USERNAME=marco
-DB_PASSWORD=marco
-=======
 # .env.testing è un template tracciato, non va derivato copiando .env.
 # Usare database _test e credenziali dedicate esportate via FIXCITY_TEST_DB_*.
 ./bashscripts/tools/sync-env-testing.sh --check
->>>>>>> laraxot/dev
 ```
 
 ### 2. TenantServiceProvider gestisce automaticamente:
@@ -242,11 +216,6 @@ CRITICAL DATABASE ERROR IDENTIFIED: Il file `/var/www/_bases/base_<nome progetto
 
 ---
 
-<<<<<<< HEAD
-**Versione**: 1.0  
-**Data**: [DATE]  
-**Importanza**: Fondamentale per l'architettura Laraxot
-=======
 title: "critical rules consolidated"
 type: note
 tags: [documentation]
@@ -258,4 +227,3 @@ discussions: []
 **Versione**: 1.0  
 **Data**: [DATE]  
 **Importanza**: Fondamentale per l'architettura Laraxot
->>>>>>> laraxot/dev

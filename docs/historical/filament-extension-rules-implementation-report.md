@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament extension rules implementation report"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filament Extension Rules Implementation Report
 
 **Date**: 18 Dicembre 2025
@@ -100,8 +97,6 @@ Created comprehensive documentation file:
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "filament extension rules implementation report"
 type: note
 tags: [documentation]
@@ -110,5 +105,4 @@ updated: 2026-09-26
 qmd: "filament extension rules implementation report"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*

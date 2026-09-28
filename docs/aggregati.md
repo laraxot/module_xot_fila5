@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "aggregati"
 type: note
@@ -11,4 +8,3 @@ qmd: "aggregati"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "elastic links"
 type: note
@@ -11,5 +9,4 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 http://127.0.0.1:9200/_cat/health?v=true

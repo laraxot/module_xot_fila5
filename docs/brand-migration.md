@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "brand migration"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 
 # Migrazione al Nuovo Sistema Brand
 

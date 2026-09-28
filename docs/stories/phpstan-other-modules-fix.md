@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "phpstan other modules fix"
 type: note
 tags: [documentation]
@@ -8,7 +6,6 @@ updated: 2026-09-26
 qmd: "phpstan other modules fix"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 id: phpstan-other-modules-fix
 slug: phpstan-other-modules
 scope:

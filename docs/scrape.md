@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "scrape"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 
 Using Laravel and Symfony/panther To Scrape Javascript Websites
 https://webmobtuts.com/backend-development/using-laravel-and-symfony-panther-to-scrape-javascript-websites/

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstanes"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Fixes Summary - 18 Agosto 2025
 
 ## 🚨 REGOLA CRITICA RISPETTATA 🚨
@@ -213,8 +210,6 @@ Il progetto ha raggiunto un livello di type safety eccellente con il 99.1% degli
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstanes"
 type: note
 tags: [documentation]
@@ -223,7 +218,6 @@ updated: 2026-09-26
 qmd: "phpstanes"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Data Completamento**: 18 Agosto 2025
 **Tempo Impiegato**: ~2 ore
 **phpstan.neon**: ✅ INTOCCATO

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "syntax errors mass fix"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Mass Fix Errori Sintassi PHP"
 module: xot
 type: integration

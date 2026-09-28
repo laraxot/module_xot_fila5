@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "mcp implementation guide"
 type: note
@@ -11,4 +8,3 @@ qmd: "mcp implementation guide"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

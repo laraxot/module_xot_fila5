@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "macro"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Macro"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan errors resolution roadmap"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Xot Module - PHPStan Level 10 Errors Resolution Roadmap
 
 **Data**: 2026-01-14  
@@ -21,8 +18,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan errors resolution roadmap"
 type: note
 tags: [documentation]
@@ -31,7 +26,6 @@ updated: 2026-09-26
 qmd: "phpstan errors resolution roadmap"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 📊 Stato Attuale
 
 **PHPStan Level**: 10

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan session sumy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Session - Gennaio 2026 - Riepilogo Completo
 
 **Status**: ✅ Completato con Successo  
@@ -21,8 +18,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan session sumy"
 type: note
 tags: [documentation]
@@ -31,7 +26,6 @@ updated: 2026-09-26
 qmd: "phpstan session sumy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 🎯 Obiettivo Raggiunto
 
 Eseguire PHPStan su tutti i moduli, comprendere logica, politica, business logic, filosofia, religione, zen, aggiornare documentazione, implementare correzioni DRY + KISS, verificare con tutti i tool.

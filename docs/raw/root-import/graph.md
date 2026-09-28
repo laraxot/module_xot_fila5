@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "graph"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 ---------------------------------------------------
 a pagamento
 https://www.fusioncharts.com/

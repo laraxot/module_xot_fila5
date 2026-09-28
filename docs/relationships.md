@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "relationships"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "relationships"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 description:
 globs:
 alwaysApply: false

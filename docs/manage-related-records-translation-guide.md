@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "manage related records translation guide"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Guida alle Traduzioni per XotBaseManageRelatedRecords
 
 ## Panoramica
@@ -379,8 +376,6 @@ class ManageProjectActivities extends XotBaseManageRelatedRecords
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "manage related records translation guide"
 type: note
 tags: [documentation]
@@ -389,7 +384,6 @@ updated: 2026-09-26
 qmd: "manage related records translation guide"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Aggiornato**: 2026-02-18
 **Autore**: Laraxot Development Team
 **Versione**: 1.0

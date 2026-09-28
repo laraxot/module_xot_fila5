@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "dependencies"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Dependencies (Module Xot)
 
 Canonical dependency map:

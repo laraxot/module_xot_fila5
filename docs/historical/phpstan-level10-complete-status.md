@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan level10 complete status"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Level 10 - Status Completo Progetto
 
 **Data**: 2026-01-27  
@@ -19,8 +16,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan level10 complete status"
 type: note
 tags: [documentation]
@@ -29,7 +24,6 @@ updated: 2026-09-26
 qmd: "phpstan level10 complete status"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 📊 Riepilogo Completo
 
 Tutti i 34 moduli del progetto sono stati analizzati con PHPStan Level 10 e risultano **0 errori**.

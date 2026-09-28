@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "critical no services rule"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Regola Critica: NO Services - Solo Spatie QueueableActions
 
 **Data Creazione**: 2025-01-18
@@ -27,8 +24,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "critical no services rule"
 type: note
 tags: [documentation]
@@ -37,7 +32,6 @@ updated: 2026-09-26
 qmd: "critical no services rule"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## ❌ COSA NON FARE MAI
 
 ### 1. Non Creare Service Classes

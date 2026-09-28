@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: " to integrate"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # ___to_integrate
 
 <!-- Contenuto migrato da _docs/___to_integrate.txt -->

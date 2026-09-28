@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "script risoluzione conflitti"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # 🐄 SUPER MUCCA - Script Risoluzione Conflitti Git
 
 ## SCRIPT CREATI
@@ -200,8 +197,6 @@ mv file.php.backup file.php
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "script risoluzione conflitti"
 type: note
 tags: [documentation]
@@ -210,7 +205,6 @@ updated: 2026-09-26
 qmd: "script risoluzione conflitti"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 🎉 SUCCESSO!
 
 **Tutti i conflitti sono stati risolti con successo!**

@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "custom casts"
 type: note
@@ -11,4 +8,3 @@ qmd: "custom casts"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

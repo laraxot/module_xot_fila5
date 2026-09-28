@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "merges census"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "merges census"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: merges-census
 canonical: ../../../Themes/docs/shared-components/merge-conflicts-census.md

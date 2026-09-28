@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "collegamenti relativi"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Collegamenti Relativi"
 type: reference
 tags: [wiki, no-frontmatter-fix]

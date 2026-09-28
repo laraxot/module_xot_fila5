@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "filament best practices"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Filament Best Practices"
 type: reference
 tags: [wiki, no-frontmatter-fix]

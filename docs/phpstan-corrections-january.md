@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan corrections january"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Corrections - Gennaio 2025
 
 **Data**: 2025-01-10
@@ -20,8 +17,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan corrections january"
 type: note
 tags: [documentation]
@@ -30,7 +25,6 @@ updated: 2026-09-26
 qmd: "phpstan corrections january"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 📊 Analisi Errori
 
 ### Categorizzazione Errori

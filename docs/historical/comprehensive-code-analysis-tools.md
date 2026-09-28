@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "comprehensive code analysis tools"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # 🔍 COMPREHENSIVE CODE ANALYSIS TOOLS GUIDE
 
 **Data Creazione**: 2025-01-27
@@ -21,8 +18,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "comprehensive code analysis tools"
 type: note
 tags: [documentation]
@@ -31,7 +26,6 @@ updated: 2026-09-26
 qmd: "comprehensive code analysis tools"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 🎯 OVERVIEW
 
 Guida completa per l'utilizzo di tutti gli strumenti di analisi del codice disponibili nel progetto FixCity. Questi strumenti garantiscono la massima qualità del codice, sicurezza e manutenibilità.

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "filters"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Filters"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "profile"
 type: note
@@ -11,4 +8,3 @@ qmd: "profile"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "critical and memories"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Laravel Pizza Project Rules and Memories
 
 ## Critical Architectural Rules

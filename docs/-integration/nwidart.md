@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "nwidart"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # nwidart
 
 <!-- Contenuto migrato da _docs/nwidart.txt -->

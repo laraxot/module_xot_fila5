@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "readme new"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Xot Module - Core Foundation"
 module: xot
 type: integration

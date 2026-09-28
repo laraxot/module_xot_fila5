@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "001 core framework improvements"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Task 001: Improve Core Framework and Base Classes
 
 ## Description
@@ -276,8 +273,6 @@ The Xot module is the foundation of the entire Laraxot architecture. It needs co
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "001 core framework improvements"
 type: note
 tags: [documentation]
@@ -286,6 +281,5 @@ updated: 2026-09-26
 qmd: "001 core framework improvements"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Status**: Pending
 **Assignee**: TBD

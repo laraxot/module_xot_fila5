@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "phpstan progress report 2025 10 13"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "phpstan progress report 2025 10 13"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 name: phpstan-progress-report-2025-10-13
 description: " Executive Summary"
 metadata:

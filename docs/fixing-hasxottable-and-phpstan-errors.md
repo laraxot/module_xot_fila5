@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "fixing hasxottable and phpstan errors"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Fixing HasXotTable Trait Errors
 
 ## Problem

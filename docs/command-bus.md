@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: "command bus"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Command bus"
 type: reference
 status: active

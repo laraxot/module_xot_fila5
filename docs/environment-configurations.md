@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "environment configurations"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "environment configurations"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: environment-configurations
 canonical: ../../../Themes/docs/shared-components/environment-configuration-issues.md

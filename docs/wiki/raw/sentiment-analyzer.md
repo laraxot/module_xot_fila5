@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "sentiment analyzer"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Sentiment Analyzer"
 type: reference
 tags: [wiki, no-frontmatter-fix]

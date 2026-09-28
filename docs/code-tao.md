@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "code tao"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 
 # Il Tao del Codice
 

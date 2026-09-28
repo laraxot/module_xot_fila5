@@ -52,12 +52,8 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
      * Vista predefinita per widget che estendono XotBaseWidget.
      * Deve essere sovrascritta nelle classi figlie.
      */
-<<<<<<< HEAD
-    protected string $view = 'xot::filament.widgets.base';
-=======
     /** @var view-string */
     protected string $view;
->>>>>>> laraxot/dev
 
     protected int|string|array $columnSpan = 'full';
 
@@ -229,23 +225,6 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
 
     private function resolveView(): void
     {
-<<<<<<< HEAD
-        $defaultView = 'xot::filament.widgets.base';
-
-        if ($this->view !== $defaultView && view()->exists($this->view)) {
-            return;
-        }
-
-        try {
-            $view = app(GetViewByClassAction::class)->execute(static::class);
-            if (view()->exists($view)) {
-                $this->view = $view;
-            }
-        } catch (\Exception $e) {
-            if (! view()->exists($this->view)) {
-                throw $e;
-            }
-=======
         /** @var view-string $defaultView */
         $defaultView = 'xot::filament.widgets.base';
 
@@ -256,7 +235,6 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
         } catch (\Throwable) {
             // A generic widget can legitimately have no module/theme override.
             $this->view = $defaultView;
->>>>>>> laraxot/dev
         }
     }
 

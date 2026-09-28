@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "hasfactory signature compatibility"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Hasfactory Signature Compatibility"
 type: reference
 tags: [wiki, no-frontmatter-fix]

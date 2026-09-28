@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "xotbaseresource"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # XotBaseResource
 
 ## Panoramica
@@ -39,13 +36,6 @@ Questo significa che:
 ### Metodi Astratti
 
 ```php
-<<<<<<< HEAD
-<<<<<<< HEAD
-abstract public function getFormSchema(): array;
-=======
-abstract public function getFormSchema(): array;
->>>>>>> laraxot/dev
-=======
 abstract public function getFormSchema(): array;
 ---
 title: "xotbaseresource"
@@ -57,7 +47,6 @@ qmd: "xotbaseresource"
 issues: []
 discussions: []
 abstract public function getFormSchema(): array;
->>>>>>> laraxot/dev
 ```
 
 Questo metodo DEVE essere implementato nelle classi figlie e deve restituire un array di componenti del form.
@@ -91,17 +80,9 @@ class NotificationResource extends XotBaseResource
 {
     protected static ?string $model = 'Modules\Notify\Models\Notification';
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
     public function getFormSchema(): array
 ---
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             Forms\Components\TextInput::make('title')

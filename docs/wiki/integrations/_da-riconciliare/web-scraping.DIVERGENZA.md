@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "web scraping.DIVERGENZA"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: web-scraping.md"
 module: Xot
 type: note

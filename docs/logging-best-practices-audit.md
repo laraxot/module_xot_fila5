@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "logging best practices audit"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "logging best practices audit"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 created_at: '2026-03-02'
 ---
 

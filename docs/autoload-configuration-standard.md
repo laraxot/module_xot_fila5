@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "autoload configuration standard"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Autoload Configuration Standard
 
 ## Overview

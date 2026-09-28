@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "module documentation standard"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Module Documentation Standard
 
 This document defines the standard structure and format for module documentation in the Laraxot architecture.
@@ -164,8 +161,6 @@ public function createUser(array $data): User
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "module documentation standard"
 type: note
 tags: [documentation]
@@ -174,6 +169,5 @@ updated: 2026-09-26
 qmd: "module documentation standard"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Last Updated**: 2025-11-11
 **Standard Version**: 1.0

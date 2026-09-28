@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "pest globally blocked sqlite connection collision"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Pest bloccato a livello globale — collisione connessione sqlite + Signature/tests/Pest.php"
 type: bugfix
 module: Xot

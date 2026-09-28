@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan session 2 final report"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Level 10 Enforcement - Session 2 Final Report
 
 **Date**: 2025-10-22
@@ -379,8 +376,6 @@ All session work documented in:
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan session 2 final report"
 type: note
 tags: [documentation]
@@ -389,6 +384,5 @@ updated: 2026-09-26
 qmd: "phpstan session 2 final report"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Session Completed**: 2025-10-22
 **Ready for Session 3**: Fix healthcare_app module (estimated 5-7 hours)

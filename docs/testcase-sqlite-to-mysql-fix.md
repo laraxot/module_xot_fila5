@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "testcase sqlite to mysql fix"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # TestCase SQLite to MySQL Fix - Xot Module
 
 ## Problema Identificato
@@ -96,8 +93,6 @@ SELECT UNHEX('48656c6c6f'); -- ✅ Funziona in MySQL
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "testcase sqlite to mysql fix"
 type: note
 tags: [documentation]
@@ -106,7 +101,6 @@ updated: 2026-09-26
 qmd: "testcase sqlite to mysql fix"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Soluzione
 
 ### Pattern Corretto

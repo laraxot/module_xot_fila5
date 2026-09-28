@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "pdf to txt"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Pdf To Txt"
 type: reference
 tags: [wiki, no-frontmatter-fix]

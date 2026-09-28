@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "livewire filament parameter passing"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Livewire Component and Filament Widget Parameter Passing Guide
 
 ## Overview

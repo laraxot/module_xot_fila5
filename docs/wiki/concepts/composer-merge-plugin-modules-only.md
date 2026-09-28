@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 created: 2026-09-26
 qmd: "composer merge plugin modules only"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Merge-plugin solo moduli"
 type: concept
 tags: [composer, merge-plugin, nwidart, modules, themes]

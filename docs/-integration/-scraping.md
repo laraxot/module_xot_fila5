@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: " scraping"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: " scraping"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: -scraping
 canonical: ../../../../Themes/docs/shared-components/-7.md

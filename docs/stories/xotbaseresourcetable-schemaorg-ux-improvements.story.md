@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: "xotbaseresourcetable schemaorg ux improvements.story"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "XotBaseResourceTable: miglioramenti UI/UX con standard schema.org"
 type: story
 module: Xot

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "links"
 type: note
@@ -11,6 +9,5 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://stitcher.io/blog/strategies
 

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "git conflict subtree error resolution"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Git Conflict Subtree Error Resolution"
 type: reference
 tags: [wiki, no-frontmatter-fix]

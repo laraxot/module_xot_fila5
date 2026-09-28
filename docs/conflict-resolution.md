@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Report Conflitti Git - Modulo Xot"
 module: "Xot"
 type: concept

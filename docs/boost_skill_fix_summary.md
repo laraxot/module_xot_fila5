@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "boost skill fix summary"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "boost skill fix summary"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: boost_skill_fix_summary
 canonical: ../../../Themes/docs/shared-components/boost-skill-fix-summary-Modules.md

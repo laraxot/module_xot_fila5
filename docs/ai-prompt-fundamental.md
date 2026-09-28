@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "ai prompt fundamental"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Regole Fondamentali per Prompt AI - healthcare_app Fila5 Mono
 # Regole Fondamentali per Prompt AI - ExternalProject Fila5 Mono
 
@@ -28,11 +25,7 @@ Create/Update code for healthcare_app Fila5 Mono with these CRITICAL rules:
 Create/Update code for ExternalProject Fila5 Mono with these CRITICAL rules:
 1. NEVER use SQLite for testing - ALWAYS MySQL with "_test" suffixed databases
 2. NEVER use RefreshDatabase trait - ALWAYS use DatabaseTransactions
-<<<<<<< HEAD
-3. ALWAYS copy .env.testing to .env before running tests: cp .env.testing .env
-=======
 3. NEVER copy `.env.testing` to `.env`; normalize with `./bashscripts/tools/sync-env-testing.sh --check` and export dedicated `FIXCITY_TEST_DB_*` credentials.
->>>>>>> laraxot/dev
 4. Handle race conditions with first() + try/catch pattern for unique constraints
 5. Follow PHPStan Level 10 compliance - explicit return types, no mixed types
 6. Use XotBase patterns for all components (XotBaseResource, BaseModel, etc.)
@@ -47,11 +40,7 @@ Create test for ProfileService in healthcare_app Fila5 Mono with these rules:
 Create test for ProfileService in ExternalProject Fila5 Mono with these rules:
 - Use DatabaseTransactions trait, NEVER RefreshDatabase
 - Test concurrent profile creation with first() + try/catch pattern
-<<<<<<< HEAD
-- Use MySQL testing configuration (.env.testing with "_test" databases)
-=======
 - Use `.env.testing` with `_test` databases and external `FIXCITY_TEST_DB_*` credentials; never copy it over `.env`
->>>>>>> laraxot/dev
 - Handle race conditions for unique user_id constraints
 - Follow PHPStan Level 10 with explicit return types
 ```
@@ -204,8 +193,6 @@ LimeSurvey specific rules:
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "ai prompt fundamental"
 type: note
 tags: [documentation]
@@ -214,13 +201,8 @@ updated: 2026-09-26
 qmd: "ai prompt fundamental"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Ultimo aggiornamento**: [DATE]  
 **MySQL Testing**: ✅ OBBLIGATORIO  
 **Race Conditions**: ✅ Pattern first() + try/catch  
 **PHPStan Level**: ✅ 10 obbligatorio  
-<<<<<<< HEAD
 **Status**: Production Ready
-=======
-**Status**: Production Ready
->>>>>>> laraxot/dev

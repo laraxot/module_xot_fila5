@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "sortable livewire"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://sbsharma.com/laravel-jquery-ui-sortable-database-update-livewire/
 
 

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "state machine"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Regole Generali sulle State Machine
 
 ## Transizioni

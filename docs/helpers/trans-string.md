@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "trans string"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # trans_string() - Helper Translation Type-Safe
 
 ## Scopo (Purpose)
@@ -235,8 +232,6 @@ assert($result === null || is_string($result));  // ✅ Never array
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "trans string"
 type: note
 tags: [documentation]
@@ -245,7 +240,6 @@ updated: 2026-09-26
 qmd: "trans string"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Data creazione**: 2025-12-12
 **Status**: ✅ Implementato e pronto all'uso
 **Priorità**: CRITICA - Risolve 374 errori PHPStan (24% del totale)

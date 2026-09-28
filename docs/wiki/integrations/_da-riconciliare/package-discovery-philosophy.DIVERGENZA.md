@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "package discovery philosophy.DIVERGENZA"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: package-discovery-philosophy.md"
 module: Xot
 type: note

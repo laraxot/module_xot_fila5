@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "git conflict package json"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Git Conflict Package Json"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "restart after phpstan guida al riavvio del sistema dopo valida"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Guida al Riavvio del Sistema Dopo Validazione PHPStan
 
 ## Introduzione

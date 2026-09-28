@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Phpstan Batch Nov"
 type: concept
 status: deprecated

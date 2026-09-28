@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "documentationlines"
 type: note
@@ -11,4 +8,3 @@ qmd: "documentationlines"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

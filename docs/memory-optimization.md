@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "memory optimization"
 type: note
@@ -11,4 +8,3 @@ qmd: "memory optimization"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

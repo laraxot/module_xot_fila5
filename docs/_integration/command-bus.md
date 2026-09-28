@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "command bus"
 type: note
@@ -11,4 +8,3 @@ qmd: "command bus"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

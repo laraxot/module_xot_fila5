@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "pest setup guide"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Pest Testing Setup Guide
 
 ## Overview

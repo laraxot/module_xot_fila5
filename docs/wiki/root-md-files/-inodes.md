@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: " inodes"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Inodes"
 type: reference
 tags: [wiki, no-frontmatter-fix]

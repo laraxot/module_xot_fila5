@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "property promotion"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Property Promotion"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "artisan serve — Redis connection refused (WSL)"
 module: Xot
 type: troubleshooting

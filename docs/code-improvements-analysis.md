@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "code improvements analysis"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Analisi Miglioramenti Codice - Best Practices 2026
 
 **Data**: 2026-01-09  
@@ -20,8 +17,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "code improvements analysis"
 type: note
 tags: [documentation]
@@ -30,7 +25,6 @@ updated: 2026-09-26
 qmd: "code improvements analysis"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 📚 Best Practices Studiate
 
 ### Risorse Analizzate

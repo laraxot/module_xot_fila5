@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "mcp servers index"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # MCP Servers Configuration - Master Index
 
 **Ultimo aggiornamento**: 2026-06-04  
@@ -168,8 +165,6 @@ Hub: [mcp-validation-quality-gate.md](../../../../docs/wiki/mcp-validation-quali
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "mcp servers index"
 type: note
 tags: [documentation]
@@ -178,7 +173,6 @@ updated: 2026-09-26
 qmd: "mcp servers index"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Related Docs
 
 - [MCP Development Skill](../../../docs/MCP-DEVELOPMENT.md)

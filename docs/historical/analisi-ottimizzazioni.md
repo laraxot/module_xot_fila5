@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "analisi ottimizzazioni"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # 🔧 analisi e ottimizzazioni - modulo xot (core)
 
 ## 🎯 panoramica analisi
@@ -412,8 +409,6 @@ php artisan test --testsuite=Xot
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "analisi ottimizzazioni"
 type: note
 tags: [documentation]
@@ -422,7 +417,6 @@ updated: 2026-09-26
 qmd: "analisi ottimizzazioni"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **priorità**: **CRITICA - INTERVENIRE IMMEDIATAMENTE**
 **effort stimato**: 5 giorni developer
 **roi atteso**: 300% primo trimestre

@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "struttura path moduli"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "struttura path moduli"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: struttura-path-moduli
 canonical: ../../../Themes/docs/shared-components/modules-path-structure.mdc

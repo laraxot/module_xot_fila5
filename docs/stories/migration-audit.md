@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "migration audit"
 type: note
 tags: [documentation]
@@ -8,7 +6,6 @@ updated: 2026-09-26
 qmd: "migration audit"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 id: migration-audit
 slug: migration-audit
 scope: [project:base_workorder_fila5]

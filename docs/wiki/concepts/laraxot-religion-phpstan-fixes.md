@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "laraxot religion phpstan fixes"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # 🧘 Laraxot Religion: Guida per Fix PHPStan
 
 > **Ogni fix deve rispettare la filosofia, religione, politica e zen di Laraxot**
@@ -256,8 +253,6 @@ Ogni fix deve includere:
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "laraxot religion phpstan fixes"
 type: note
 tags: [documentation]
@@ -266,5 +261,4 @@ updated: 2026-09-26
 qmd: "laraxot religion phpstan fixes"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Remember: Zero tolerance per shortcut. Ogni fix deve essere "The Right Way™"**

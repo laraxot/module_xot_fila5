@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "basemodel connection doctrine"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # BaseModel Connection Doctrine
 
 ## Philosophy: Connection Management for Multi-Database Architecture

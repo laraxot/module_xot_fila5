@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "store"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Store"
 type: reference
 tags: [wiki, no-frontmatter-fix]

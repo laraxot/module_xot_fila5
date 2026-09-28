@@ -30,11 +30,7 @@ class ExportTreeXlsAction extends XotBaseAction
     {
         parent::setUp();
         $this->translateLabel()
-<<<<<<< HEAD
-            //->tooltip(__('xot::actions.export_xls'))
-=======
             // ->tooltip(__('xot::actions.export_xls'))
->>>>>>> laraxot/dev
             // ->icon('heroicon-o-cloud-arrow-down')
             // ->icon('fas-file-excel')
             ->icon('xot-files.xls')

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "dual label chart widget implementation"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # SimpleChartWidget - Analisi Qualità del Codice e Best Practices
 
 ## Panoramica

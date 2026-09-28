@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "testing best practices conflict"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Testing Best Practices - Laraxot Framework
 
 ## 🏆 **Gold Standard Pattern**
@@ -247,8 +244,6 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "testing best practices conflict"
 type: note
 tags: [documentation]
@@ -257,7 +252,6 @@ updated: 2026-09-26
 qmd: "testing best practices conflict"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Status**: ✅ Best Practices Validate
 **Enforcement**: Obbligatorio per tutti i test
 **Version**: 1.0 - Gold Standard

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "conflitti merge risolti risoluzione conflitti di merge"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Risoluzione Conflitti di Merge
 
 # Risoluzione Conflitti di Merge in <nome progetto>
@@ -141,8 +138,6 @@ Durante la risoluzione dei conflitti, nel file `Modules/Xot/app/Filament/Resourc
 - [Regola generale e motivazione in FILAMENT_TABLE_COLUMNS.md](./filament_table_columns.md)
 
 ---
-<<<<<<< HEAD
-=======
 title: "conflitti merge risolti risoluzione conflitti di merge"
 type: note
 tags: [documentation]
@@ -151,7 +146,6 @@ updated: 2026-09-26
 qmd: "conflitti merge risolti risoluzione conflitti di merge"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Conclusioni
 
 La risoluzione dei conflitti di merge ha ripristinato la corretta funzionalità delle classi nel modulo Xot, permettendo l'analisi statica con PHPStan e garantendo il corretto funzionamento dell'applicazione. Le soluzioni implementate hanno mantenuto la coerenza del codice e migliorato la robustezza delle classi interessate.

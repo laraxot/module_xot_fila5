@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "datatables"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "datatables"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: datatables
 canonical: ../../../Themes/docs/shared-components/DataTables.txt

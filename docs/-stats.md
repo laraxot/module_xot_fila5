@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: " stats"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # _stats
 
 <!-- Contenuto migrato da _docs/_stats.txt -->

@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: "xot architecture guardrails"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Xot Architecture Guardrails"
 module: "Xot"
 type: concept

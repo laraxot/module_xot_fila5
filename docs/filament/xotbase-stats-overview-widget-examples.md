@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "xotbase stats overview widget examples"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "xotbase stats overview widget examples"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: xotbase-stats-overview-widget-examples
 canonical: ../../../../Themes/docs/shared-components/xotbase-stats-overview-widget-examples.md

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "best practices"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Best Practices"
 type: reference
 tags: [wiki, no-frontmatter-fix]

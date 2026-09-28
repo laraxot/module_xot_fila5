@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "xot base section rule"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Regola XotBaseSection - Politica, Filosofia, Religione, Zen
 
 ## Scopo (Purpose)
@@ -172,8 +169,6 @@ class CompanySection extends XotBaseSection
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "xot base section rule"
 type: note
 tags: [documentation]
@@ -182,7 +177,6 @@ updated: 2026-09-26
 qmd: "xot base section rule"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Data creazione**: 2025-12-12
 **Status**: ✅ Regola attiva e obbligatoria
 **Priorità**: CRITICA - Violazioni bloccano il codice

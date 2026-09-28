@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 created: 2026-09-26
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Architecture — composite filter owns columnSpan"
 type: architecture
 module: Xot

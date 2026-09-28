@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "content selection and highlighting"
 type: note
@@ -11,4 +8,3 @@ qmd: "content selection and highlighting"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

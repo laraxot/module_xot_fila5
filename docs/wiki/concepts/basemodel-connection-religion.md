@@ -1,8 +1,5 @@
 ---
-<<<<<<< HEAD
-=======
 discussions: []
->>>>>>> laraxot/dev
 title: "BaseModel — protected $connection obbligatorio"
 type: concept
 module: Xot

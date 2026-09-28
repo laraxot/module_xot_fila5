@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "page builder"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 //--- carino --
 http://preview.codecanyon.net/item/builderjs-html-email-page-builder/full_screen_preview/27146783?_ga=2.64183471.181704816.1592486325-1692742173.1592386239
 http://34.85.106.28:4001/design.php?id=1_2_1_column&type=layouts

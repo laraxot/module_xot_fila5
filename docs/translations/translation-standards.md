@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "translation standards"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 - **Documentazione**: [Progressioni Translation System](../../laravel/Modules/Progressioni/docs/translation-system.md)
 
 #### File Completati
@@ -147,8 +144,6 @@ return [
 
 *Ultimo aggiornamento: Giugno 2025*
 ---
-<<<<<<< HEAD
-=======
 title: "translation standards"
 type: note
 tags: [documentation]
@@ -157,7 +152,6 @@ updated: 2026-09-26
 qmd: "translation standards"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: translation-standards
 canonical: ../../../../Themes/docs/shared-components/translation-standards-Modules.md

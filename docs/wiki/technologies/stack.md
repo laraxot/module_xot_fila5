@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "stack"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Stack"
 type: reference
 tags: [wiki, no-frontmatter-fix]

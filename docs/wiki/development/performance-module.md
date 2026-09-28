@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "performance module"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Performance Module"
 type: reference
 tags: [wiki, no-frontmatter-fix]

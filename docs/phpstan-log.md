@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan log"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Log Correzioni PHPStan - Gennaio 2026 (Trinità: Xot, User, UI)
 
 ## 🎯 Obiettivo
@@ -32,8 +29,6 @@ Raggiungere lo Zero Absoluto degli errori PHPStan Livello 10 nei moduli core.
 - Passare al modulo `UI`.
 
 ---
-<<<<<<< HEAD
-=======
 title: "phpstan log"
 type: note
 tags: [documentation]
@@ -42,5 +37,4 @@ updated: 2026-09-26
 qmd: "phpstan log"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Zen Check**: DRY + KISS applicati. Logica centralizzata nei contratti.

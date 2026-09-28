@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "page expired"
 type: note
@@ -11,4 +8,3 @@ qmd: "page expired"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

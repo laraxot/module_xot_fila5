@@ -67,11 +67,7 @@ final class PanelModuleSupport
     public static function navigationLabel(Panel $panel): string
     {
         $name = Arr::get(self::moduleConfig($panel), 'name');
-<<<<<<< HEAD
-        if (! is_string($name) || '' === $name) {
-=======
         if (! is_string($name) || $name === '') {
->>>>>>> laraxot/dev
             return self::moduleName($panel);
         }
 
@@ -81,11 +77,7 @@ final class PanelModuleSupport
     public static function navigationIcon(Panel $panel): string
     {
         $icon = Arr::get(self::moduleConfig($panel), 'icon');
-<<<<<<< HEAD
-        if (! is_string($icon) || '' === $icon) {
-=======
         if (! is_string($icon) || $icon === '') {
->>>>>>> laraxot/dev
             return 'heroicon-o-cube';
         }
 

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "git conflicts resolution risoluzione conflitti git 6 gennaio"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Risoluzione Conflitti Git - 6 Gennaio 2025
 
 ## Data: 2025-01-06
@@ -111,8 +108,6 @@ $res=Locality::query()
 
 
 ---
-<<<<<<< HEAD
-=======
 title: "git conflicts resolution risoluzione conflitti git 6 gennaio"
 type: note
 tags: [documentation]
@@ -121,7 +116,6 @@ updated: 2026-09-26
 qmd: "git conflicts resolution risoluzione conflitti git 6 gennaio"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Variant 2
 
 # Risoluzione Conflitti Git - 6 Gennaio 2025

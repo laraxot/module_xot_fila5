@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "regole di documentazione"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Regole di Documentazione"
 module: xot
 type: integration

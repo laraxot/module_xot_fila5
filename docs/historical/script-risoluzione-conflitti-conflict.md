@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "script risoluzione conflitti conflict"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Script di Risoluzione Conflitti Git - FixCity Project
 
 ## Panoramica

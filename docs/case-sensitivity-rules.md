@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "case sensitivity rules"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Case Sensitivity Rules - Xot Module
 
 ## Problema / Problem

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "limesurveyatabase commands"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Database Analysis Commands and Tools for healthcare_app_survey
 # Database Analysis Commands and Tools for app_survey
 

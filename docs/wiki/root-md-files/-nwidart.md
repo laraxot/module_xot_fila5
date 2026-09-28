@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: " nwidart"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Nwidart"
 type: reference
 tags: [wiki, no-frontmatter-fix]

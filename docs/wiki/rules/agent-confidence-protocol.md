@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "agent confidence protocol"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "agent confidence protocol"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 name: agent-confidence-protocol-xot
 description: Strategia operativa per massimizzare confidenza agentiva nel modulo Xot (core framework)
 metadata:

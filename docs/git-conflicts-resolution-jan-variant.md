@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "git conflicts resolution jan variant"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "git conflicts resolution jan variant"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: git-conflicts-resolution-jan2025-2
 canonical: ../../../Themes/docs/shared-components/git-conflicts-resolution-jan2025-1.md

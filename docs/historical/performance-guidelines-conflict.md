@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "performance guidelines conflict"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Performance Guidelines - Xot Module
 
 ## 🎯 Purpose

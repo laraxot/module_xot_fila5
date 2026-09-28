@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "mcp integration.divergenza"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: mcp-integration.md"
 module: Xot
 type: note

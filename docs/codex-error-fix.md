@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "codex error fix"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Codex Configuration Error Fixes
 
 Questo documento descrive le correzioni applicate agli errori riscontrati durante l'avvio di `codex`.
@@ -30,8 +27,6 @@ Racchiudere sempre i valori di `name` e `description` tra virgolette doppie nel 
 **Esempio Errato:**
 ```yaml
 ---
-<<<<<<< HEAD
-=======
 title: "codex error fix"
 type: note
 tags: [documentation]
@@ -40,7 +35,6 @@ updated: 2026-09-26
 qmd: "codex error fix"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 name: { my-skill-name }
 description: Rule: always do X.
 ---

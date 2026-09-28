@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "stats"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://github.com/antonioribeiro/tracker
 https://github.com/antonioribeiro/tracker?ref=madewithlaravel.com
 

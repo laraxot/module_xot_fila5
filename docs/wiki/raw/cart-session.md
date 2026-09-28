@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "cart session"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Cart Session"
 type: reference
 tags: [wiki, no-frontmatter-fix]

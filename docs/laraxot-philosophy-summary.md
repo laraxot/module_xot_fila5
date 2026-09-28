@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "laraxot philosophy summary"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Laraxot Philosophy - Complete Summary
 
 ## Core Principles
@@ -172,8 +169,6 @@ composer dump-autoload
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "laraxot philosophy summary"
 type: note
 tags: [documentation]
@@ -182,7 +177,6 @@ updated: 2026-09-26
 qmd: "laraxot philosophy summary"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Philosophy Summary**: Laraxot values simplicity, consistency, and predictability above all else. Follow these principles to build maintainable, scalable applications with minimal technical debt.
 
 ---

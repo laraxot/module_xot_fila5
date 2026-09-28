@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "packages"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Packages"
 type: reference
 tags: [wiki, no-frontmatter-fix]

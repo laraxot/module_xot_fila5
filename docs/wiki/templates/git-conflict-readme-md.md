@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "git conflict readme md"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Git Conflict Readme Md"
 type: reference
 tags: [wiki, no-frontmatter-fix]

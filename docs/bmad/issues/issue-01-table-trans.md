@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "issue 01 table trans"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Issue GH #01 — Rimuovere TransTrait ridondante da XotBaseResourceTable
 
 **Repo:** `git@github.com:laraxot/module_xot_fila5.git`

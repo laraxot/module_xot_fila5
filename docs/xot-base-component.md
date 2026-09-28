@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "xot base component"
 type: note
@@ -11,4 +8,3 @@ qmd: "xot base component"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

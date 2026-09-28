@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Quality Report — Xot"
 type: report
 tags: [quality, phpstan, pest, coverage]

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "mcp servers index"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Mcp Servers Index"
 type: reference
 tags: [wiki, no-frontmatter-fix]

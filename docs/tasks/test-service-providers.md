@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "test service providers"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Task: Test Service Providers
 
 **Modulo**: Xot  

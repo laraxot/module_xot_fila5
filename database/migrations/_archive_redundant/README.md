@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "README"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Migration archiviate (Xot)
 
 File in questa cartella **non vengono eseguiti** da `php artisan migrate` su fresh install.

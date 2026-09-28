@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "development workflow"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Development Workflow in Laraxot
 
 ## Creating New Resources

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "flags"
 type: note
@@ -11,5 +9,4 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://smaine-milianni.medium.com/emoji-flag-in-the-symfony-countrytype-f794f39e6ac9

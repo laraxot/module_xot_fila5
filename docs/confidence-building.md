@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "confidence building"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Come Aumentare il Livello di Confidenza — Second Brain Framework
 
 **Autore:** Claude Code  
@@ -25,8 +22,6 @@ La confidenza non è certezza—è **pattern recognition + coraggio di agire**. 
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "confidence building"
 type: note
 tags: [documentation]
@@ -35,7 +30,6 @@ updated: 2026-09-26
 qmd: "confidence building"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 1️⃣ Pattern Recognition: Leggere il Codebase
 
 ### Fase 1: Esplorare per Similitudini

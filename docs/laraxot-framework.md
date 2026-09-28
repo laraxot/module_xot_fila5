@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "laraxot framework"
 type: note
@@ -11,4 +8,3 @@ qmd: "laraxot framework"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

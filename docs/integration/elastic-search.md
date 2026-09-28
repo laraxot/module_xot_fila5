@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "elastic search"
 type: note
@@ -11,4 +8,3 @@ qmd: "elastic search"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

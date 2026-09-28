@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "job"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 // controllare versione
 dispatch(new GeneratePdfJob($contract));
 

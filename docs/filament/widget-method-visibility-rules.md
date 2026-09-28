@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "widget method visibility rules"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Regole Visibilità Metodi Widget - HasXotTable
 
 **Status**: Critico

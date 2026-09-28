@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan call dynamic panel metatagdata"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Correzione chiamate dinamiche ApplyMetatagToPanelAction → MetatagData
 
 ## Contesto
@@ -54,8 +51,6 @@ Questo pattern consente:
 - Compliance con gli standard di qualità PHPStan livello 10
 
 ---
-<<<<<<< HEAD
-=======
 title: "phpstan call dynamic panel metatagdata"
 type: note
 tags: [documentation]
@@ -64,7 +59,6 @@ updated: 2026-09-26
 qmd: "phpstan call dynamic panel metatagdata"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Ultima modifica:** 2025-04-16
 **Collegamento indice:** [../../../../../docs/index.md](../../../../../docs/index.md)
 

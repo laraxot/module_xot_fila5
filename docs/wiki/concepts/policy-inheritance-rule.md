@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "policy inheritance rule"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Policy Inheritance Rule
 
 ## ⚖️ Decision: Base Policy Hierarchy

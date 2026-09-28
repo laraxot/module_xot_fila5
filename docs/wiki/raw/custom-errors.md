@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "custom errors"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Custom Errors"
 type: reference
 tags: [wiki, no-frontmatter-fix]

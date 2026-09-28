@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "PHPStan trait probes — perché sono vietati"
 type: concept
 module: Xot

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "error curl 60"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Error Curl 60"
 type: reference
 tags: [wiki, no-frontmatter-fix]

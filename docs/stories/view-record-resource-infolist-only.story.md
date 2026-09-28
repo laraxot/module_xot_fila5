@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "view record resource infolist only.story"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # BMAD Story — ViewRecord delega l'infolist alla Resource
 
 ## Understand

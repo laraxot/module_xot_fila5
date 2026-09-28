@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "sprint planning"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Xot Module - Sprint Planning
 
 **Module:** Xot  
@@ -20,8 +17,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "sprint planning"
 type: note
 tags: [documentation]
@@ -30,7 +25,6 @@ updated: 2026-09-26
 qmd: "sprint planning"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Sprint Goal
 
 Implement core extension framework with API, hooks, and event bus.

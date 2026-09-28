@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "laraxot quick reference"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "laraxot quick reference"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: laraxot-quick-reference
 canonical: ../../../Themes/docs/shared-components/laraxot-philosophy-quick-reference.md

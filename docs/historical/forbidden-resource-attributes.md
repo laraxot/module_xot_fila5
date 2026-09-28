@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "forbidden resource attributes"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Forbidden Attributes in XotBaseResource Classes
 
 ## Date: 2026-01-09

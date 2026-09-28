@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "user research"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Xot Module - User Research
 
 **Module:** Xot  
@@ -21,8 +18,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "user research"
 type: note
 tags: [documentation]
@@ -31,7 +26,6 @@ updated: 2026-09-26
 qmd: "user research"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Research Goals
 
 1. Understand developer needs

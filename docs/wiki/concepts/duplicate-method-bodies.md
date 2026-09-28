@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "corpi metodo duplicati — Xot"
 type: analysis
 module: Xot

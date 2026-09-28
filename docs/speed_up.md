@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "speed up"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'speed_up'
 module: Xot
 type: reference

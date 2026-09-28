@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "developmentlines"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "developmentlines"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: developmentlines
 canonical: ../../../Themes/docs/shared-components/development-guidelines.md

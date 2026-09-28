@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "optimization"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "optimization"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: optimization
 canonical: ../../../Themes/docs/shared-components/optimization-analysis-Modules.md

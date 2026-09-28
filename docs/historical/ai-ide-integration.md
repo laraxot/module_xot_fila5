@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "ai ide integration"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # AI/IDE Integration Guide - Xot Module
 
 ## Overview
@@ -520,8 +517,6 @@ grep -r "XotBase" .cursor/rules/ .windsurf/rules/ CLAUDE.md
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "ai ide integration"
 type: note
 tags: [documentation]
@@ -530,7 +525,6 @@ updated: 2026-09-26
 qmd: "ai ide integration"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Version**: 1.0
 **Last Updated**: December 23, 2025
 **Module**: Xot (Core Engine)

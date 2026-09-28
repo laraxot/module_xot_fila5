@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "XotBaseMigration Timestamps Rule - Single Authority Pattern"
 type: rule
 tags: [xotbasemigration, timestamps, dry-kiss, idempotency, migrations]

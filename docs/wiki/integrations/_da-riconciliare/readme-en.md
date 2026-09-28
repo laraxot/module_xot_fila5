@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "readme en"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Xot — English presentation"
 module: xot
 type: integration

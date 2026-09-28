@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "product requirements"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Product Requirements Document (PRD)
 
 ## Metadata
@@ -27,8 +24,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "product requirements"
 type: note
 tags: [documentation]
@@ -37,7 +32,6 @@ updated: 2026-09-26
 qmd: "product requirements"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 1. Panoramica del Prodotto
 
 ### Descrizione Breve
@@ -307,17 +301,9 @@ interface XotBaseResourceContract
 {
     public static function getModel(): string;
     public static function getRelations(): array;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public function getFormSchema(): array;
-=======
-    public function getFormSchema(): array;
->>>>>>> laraxot/dev
-=======
     public function getFormSchema(): array;
 ---
     public function getFormSchema(): array;
->>>>>>> laraxot/dev
     public static function getTableColumns(): array;
 }
 ```

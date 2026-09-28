@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "Content Selection and Highlighting"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'content_selection_and_highlighting'
 module: Xot
 type: reference

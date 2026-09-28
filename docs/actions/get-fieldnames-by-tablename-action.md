@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "get fieldnames by tablename action"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # GetFieldnamesByTablenameAction
 
 Questa action è responsabile del recupero dei nomi dei campi di una tabella del database.

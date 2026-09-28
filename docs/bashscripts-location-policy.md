@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "bashscripts location policy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Policy Posizione Script Bash (VINCOLANTE)
 
 ## 🚫 Regola Assoluta
@@ -164,8 +161,6 @@ git commit -m "refactor: move script to bashscripts/fix/ (location policy compli
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "bashscripts location policy"
 type: note
 tags: [documentation]
@@ -174,7 +169,6 @@ updated: 2026-09-26
 qmd: "bashscripts location policy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Ultimo aggiornamento**: Gennaio 2025
 **Motivazione**: Enforcement della separazione tra codice applicativo e script operativi
 **Filosofia**: "Separazione delle responsabilità, organizzazione scalabile, deploy pulito"

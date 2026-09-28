@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "updated architecture rules memories"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Laraxot Architecture Rules and Memory Updates
 
 ## Updated Architectural Principles

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstanes phpstan fixes risultati finali gennaio"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Fixes - Risultati Finali (Gennaio 2025)
 
 ## 📊 Statistiche Finali

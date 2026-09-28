@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "workspace file rule"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Workspace File Naming Rule"
 module: xot
 type: integration

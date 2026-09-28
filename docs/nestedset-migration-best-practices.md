@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "nestedset migration best practices"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # NestedSet Migration Best Practices - XOT Module
 
 ## Overview

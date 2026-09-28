@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "wcag accessibility guidelines"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # WCAG Accessibility Guidelines
 
 ## Overview

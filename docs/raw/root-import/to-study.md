@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "to study"
 type: note
@@ -11,6 +9,5 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://github.com/brendt/aggregate.stitcher.io/tree/v2/app/Jobs
 

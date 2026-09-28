@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "filament4 upgrade fixes"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Filament4 Upgrade Fixes"
 type: reference
 tags: [wiki, no-frontmatter-fix]

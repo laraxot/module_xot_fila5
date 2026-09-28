@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "getter zen"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Getter Zen"
 type: reference
 tags: [wiki, no-frontmatter-fix]

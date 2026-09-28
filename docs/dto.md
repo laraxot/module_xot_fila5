@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "dto"
 type: note
@@ -11,4 +8,3 @@ qmd: "dto"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

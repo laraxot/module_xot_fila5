@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "consolidamento documentazione"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Task: Consolidamento Documentazione
 
 **Modulo**: Xot  

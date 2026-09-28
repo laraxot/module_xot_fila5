@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "migrations consolidated"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Migrations - Documentazione Consolidata DRY + KISS
 
 > **🎯 Single Source of Truth**: Questo documento centralizza TUTTA la documentazione migrazioni del progetto
@@ -481,8 +478,6 @@ rm Modules/<nome progetto>/project_docs/database/migrations.md
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "migrations consolidated"
 type: note
 tags: [documentation]
@@ -491,7 +486,6 @@ updated: 2026-09-26
 qmd: "migrations consolidated"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **🎯 Obiettivo**: Da 26+ file duplicati a 1 file centralizzato
 **📈 Beneficio**: 96% riduzione duplicazioni, manutenzione semplificata
 **🔗 Vedi anche**: [database-guidelines.md](database-guidelines.md) | [best-practices.md](best-practices.md)

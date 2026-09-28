@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "ordine implementation"
 type: note
@@ -11,4 +8,3 @@ qmd: "ordine implementation"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

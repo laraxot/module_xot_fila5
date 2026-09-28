@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "laraxot philosophy sumy"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "laraxot philosophy sumy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: laraxot-philosophy-sumy
 canonical: ../../../Themes/docs/shared-components/laraxot-philosophy-summary.md

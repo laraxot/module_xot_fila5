@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "resource vs form"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # SWARM V2 — Regola architetturale + Rimozione getFormSchema da Resource
 
 **Swarm ID:** `swarm-resource-vs-form`

@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "update mysql"
 type: note
@@ -11,4 +8,3 @@ qmd: "update mysql"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "testcase sqlite to mysql"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "testcase sqlite to mysql"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: testcase-sqlite-to-mysql
 canonical: ../../../Themes/docs/shared-components/testcase-sqlite-to-mysql-fix-Modules.md

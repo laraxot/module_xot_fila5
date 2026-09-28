@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "performance module"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Test del Modulo Performance
 
 ## Struttura dei Test

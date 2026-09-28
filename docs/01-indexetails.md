@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "01 indexetails"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "01 indexetails"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: 01-indexetails
 canonical: ../../../Themes/docs/shared-components/01-index-details.md

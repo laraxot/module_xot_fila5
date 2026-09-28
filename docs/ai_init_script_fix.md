@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "ai init script fix"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Aggiornamento Importante: ai_init.sh Script
 
 ## Nota di deprecazione

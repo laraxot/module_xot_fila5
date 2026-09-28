@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "cyclomatic complexity report"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Cyclomatic Complexity Report - Module: Xot
 
 **Generated:** 2025-10-01 19:44:12
@@ -19,8 +16,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "cyclomatic complexity report"
 type: note
 tags: [documentation]
@@ -29,7 +24,6 @@ updated: 2026-09-26
 qmd: "cyclomatic complexity report"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 📊 Summary Statistics
 
 | Metric | Value |

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "critical architecture rules"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Regole Critiche di Architettura Laraxot
 
 **ULTIMO AGGIORNAMENTO**: 2025-01-XX

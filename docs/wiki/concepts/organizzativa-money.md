@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "organizzativa money"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "organizzativa money"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: organizzativa-money
 canonical: ../../../../../Themes/docs/shared-components/organizzativa-money.md

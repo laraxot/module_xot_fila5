@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "conflict resolutiones"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "conflict resolutiones"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: conflict-resolutiones
 canonical: ../../../Themes/docs/shared-components/conflict-resolution-fixes.md

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "about"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 This favicon was generated using the following graphics from Twitter Twemoji:
 
 - Graphics Title: 1f916.svg

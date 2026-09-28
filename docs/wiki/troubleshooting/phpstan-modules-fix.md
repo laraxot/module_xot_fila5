@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 created: 2026-09-26
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "PHPStan Modules — stato e fix"
 type: troubleshooting
 sources: ["phpstan analyse Modules"]

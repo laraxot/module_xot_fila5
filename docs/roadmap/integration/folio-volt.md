@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "folio volt"
 type: note
@@ -11,4 +8,3 @@ qmd: "folio volt"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

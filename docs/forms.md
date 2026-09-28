@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "forms"
 type: note
@@ -11,4 +8,3 @@ qmd: "forms"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

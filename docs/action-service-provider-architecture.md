@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "action service provider architecture"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Action Pattern and Service Provider Architecture: The Sacred Systems
 
 ## Action Pattern: The Sacred Business Logic Container

@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "memory optimization dashboard fixes"
 type: note
@@ -11,4 +8,3 @@ qmd: "memory optimization dashboard fixes"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "presenter"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # presenter
 
 <!-- Contenuto migrato da _docs/presenter.txt -->

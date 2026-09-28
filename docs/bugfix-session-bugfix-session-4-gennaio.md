@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "bugfix session bugfix session 4 gennaio"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Bugfix Session - 4 Gennaio 2025
 
 ## 🎯 Obiettivo
@@ -38,8 +35,6 @@ Press Ctrl+C to stop the server
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "bugfix session bugfix session 4 gennaio"
 type: note
 tags: [documentation]
@@ -48,7 +43,6 @@ updated: 2026-09-26
 qmd: "bugfix session bugfix session 4 gennaio"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 📊 Riepilogo Intervento
 
 ### File Fixati: 5

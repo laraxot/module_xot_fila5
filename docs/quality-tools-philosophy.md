@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "quality tools philosophy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filosofia degli Strumenti di Qualità - La Trinità del Codice Perfetto
 
 ## 🎯 Overview - I Tre Pilastri
@@ -36,8 +33,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "quality tools philosophy"
 type: note
 tags: [documentation]
@@ -46,7 +41,6 @@ updated: 2026-09-26
 qmd: "quality tools philosophy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 📚 STRUMENTO 1: Laravel IDE Helper
 
 ### 🙏 La Religione dell'Illuminazione

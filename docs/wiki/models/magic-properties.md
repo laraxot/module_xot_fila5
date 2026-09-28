@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "magic properties"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Magic Properties"
 type: reference
 tags: [wiki, no-frontmatter-fix]

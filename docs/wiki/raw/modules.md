@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "modules"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Modules"
 type: reference
 tags: [wiki, no-frontmatter-fix]

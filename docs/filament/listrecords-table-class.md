@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "listrecords table class"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # List Records — tabella via `*Table` class
 
 ## Regola (story 5.45 + 5.49)

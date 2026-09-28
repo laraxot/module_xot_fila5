@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan status"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Status - Xot Module
 
 ## Current Status: ✅ PASSED
@@ -90,8 +87,6 @@ The Xot module serves as the foundation for:
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan status"
 type: note
 tags: [documentation]
@@ -100,6 +95,5 @@ updated: 2026-09-26
 qmd: "phpstan status"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *Status: ✅ PHPStan Level 10 Compliant*
 *Last Updated: 2025-11-17*

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "form request"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'Form request — risorse esterne'
 module: Xot
 type: reference

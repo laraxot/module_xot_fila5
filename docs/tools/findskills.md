@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "FindSkills — directory 94k+ skill AI open-source"
 module: "xot"
 type: reference

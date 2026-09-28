@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "roadmap"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "roadmap"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: roadmap
 canonical: ../../../../Themes/docs/shared-components/q4-roadmap-Modules.md

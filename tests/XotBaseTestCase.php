@@ -174,27 +174,6 @@ abstract class XotBaseTestCase extends BaseTestCase
 
     protected function tearDown(): void
     {
-<<<<<<< HEAD
-        try {
-            if ($this->app instanceof Application) {
-                /** @var DatabaseManager $db */
-                $db = $this->app->make('db');
-
-                /** @var array<string, mixed> $connections */
-                $connections = (array) config('database.connections', []);
-                foreach (array_keys($connections) as $name) {
-                    $db->disconnect((string) $name);
-                }
-
-                $db->disconnect();
-                $db->purge();
-            }
-        } catch (\Throwable) {
-            // Ignore teardown disconnection issues to avoid masking test failures.
-        }
-
-=======
->>>>>>> laraxot/dev
         parent::tearDown();
     }
 
@@ -266,14 +245,11 @@ abstract class XotBaseTestCase extends BaseTestCase
             return database_path($configured);
         }
 
-<<<<<<< HEAD
-=======
         $connectionDatabase = config('database.connections.sqlite.database');
         if (is_string($connectionDatabase) && $connectionDatabase !== '' && file_exists($connectionDatabase)) {
             return $connectionDatabase;
         }
 
->>>>>>> laraxot/dev
         try {
             /** @var list<string> $found */
             $found = \Safe\glob(database_path('*.sqlite'));
@@ -304,14 +280,11 @@ abstract class XotBaseTestCase extends BaseTestCase
         }
 
         $database = self::sharedSqlitePath();
-<<<<<<< HEAD
-=======
         $forceSharedSqliteValue = config('database.testing.force_shared_sqlite');
         if ($forceSharedSqliteValue === null) {
             $forceSharedSqliteValue = getenv('FIXCITY_TEST_SQLITE') ?: false;
         }
         $forceSharedSqlite = filter_var($forceSharedSqliteValue, FILTER_VALIDATE_BOOLEAN);
->>>>>>> laraxot/dev
 
         // La connessione opzionale 'user' (driver mysql) senza database configurato
         // (DB_DATABASE_USER vuoto) ripiega su sqlite condiviso: stesso fallback di
@@ -334,35 +307,25 @@ abstract class XotBaseTestCase extends BaseTestCase
         $sqliteConnections = [];
 
         foreach (array_keys($connections) as $connection) {
-<<<<<<< HEAD
-            if (config("database.connections.{$connection}.driver") !== 'sqlite') {
-=======
             $driver = config("database.connections.{$connection}.driver");
             if (! $forceSharedSqlite && $driver !== 'sqlite') {
->>>>>>> laraxot/dev
                 continue;
             }
 
             $sqliteConnections[] = $connection;
-<<<<<<< HEAD
-=======
             if ($forceSharedSqlite) {
                 $this->app['config']->set("database.connections.{$connection}.driver", 'sqlite');
                 $this->app['config']->set("database.connections.{$connection}.prefix", '');
                 $this->app['config']->set("database.connections.{$connection}.foreign_key_constraints", true);
             }
->>>>>>> laraxot/dev
             $this->app['config']->set("database.connections.{$connection}.database", $database);
             $this->app['config']->set("database.connections.{$connection}.busy_timeout", 10000);
         }
 
-<<<<<<< HEAD
-=======
         if ($forceSharedSqlite && isset($connections['sqlite'])) {
             $this->app['config']->set('database.default', 'sqlite');
         }
 
->>>>>>> laraxot/dev
         foreach ($sqliteConnections as $connection) {
             DB::purge($connection);
         }

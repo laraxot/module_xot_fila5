@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 updated: 2026-09-26
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "IDE-helper relation errors fixes"
 type: memory
 tags: [ide-helper, relations, morphToManyX, connection, getAttribute]

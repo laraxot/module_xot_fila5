@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "phpstan progress report tests only merged"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "phpstan progress report tests only merged"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 created_at: '2025-10-13'
 ---
 

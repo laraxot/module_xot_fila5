@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "getpages redundancy rule"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Regola `getPages()` ridondante su `XotBaseResource`
 
 ## Scopo
@@ -54,13 +51,6 @@ class CoeffResource extends XotBaseResource
 {
     protected static ?string $model = Coeff::class;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
     public function getFormSchema(): array
 ---
 title: "getpages redundancy rule"
@@ -72,7 +62,6 @@ qmd: "getpages redundancy rule"
 issues: []
 discussions: []
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [ /* ... */ ];
     }

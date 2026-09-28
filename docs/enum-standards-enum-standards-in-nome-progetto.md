@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "enum standards enum standards in nome progetto"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Enum Standards in <nome progetto>
 
 This document defines the standards and best practices for working with Enums in the <nome progetto> project.
@@ -194,8 +191,6 @@ class_alias(AppointmentTypeEnum::class, 'Modules\\<nome progetto>\\Enums\\Appoin
 
 
 ---
-<<<<<<< HEAD
-=======
 title: "enum standards enum standards in nome progetto"
 type: note
 tags: [documentation]
@@ -204,7 +199,6 @@ updated: 2026-09-26
 qmd: "enum standards enum standards in nome progetto"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Variant 2
 
 # Enum Standards in <nome progetto>

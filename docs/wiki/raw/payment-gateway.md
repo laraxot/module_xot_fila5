@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "payment gateway"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Payment Gateway"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "ai init resolution"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "ai init resolution"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: ai-init-resolution
 canonical: ../../../Themes/docs/shared-components/ai-init-issue-resolution.md

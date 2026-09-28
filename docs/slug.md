@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "slug"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'Slug — risorse esterne'
 module: Xot
 type: reference

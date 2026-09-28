@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "architecture violations andes"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Violazioni Architetturali e Correzioni - Pattern XotData
 
 ## 🚨 **Violazioni Architetturali Critiche**
@@ -794,8 +791,6 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "architecture violations andes"
 type: note
 tags: [documentation]
@@ -804,5 +799,4 @@ updated: 2026-09-26
 qmd: "architecture violations andes"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Stato**: ✅ Pattern Documentato e Implementato

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "github actions modules"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Github Actions Modules"
 type: reference
 tags: [wiki, no-frontmatter-fix]

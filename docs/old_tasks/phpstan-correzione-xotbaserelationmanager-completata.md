@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan correzione xotbaserelationmanager completata"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Correzione PHPStan XotBaseRelationManager - COMPLETATA ✅
 
 **Data**: 2025-12-23  
@@ -51,8 +48,6 @@ public function getFormSchema(): array
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan correzione xotbaserelationmanager completata"
 type: note
 tags: [documentation]
@@ -61,7 +56,6 @@ updated: 2026-09-26
 qmd: "phpstan correzione xotbaserelationmanager completata"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ### Errore #2: canDeleteBulk() Type Mismatch ✅
 
 **Problema**: Filament passa `Model|stdClass|null` ma metodo accettava solo `?Model`

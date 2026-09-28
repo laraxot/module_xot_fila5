@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: " todo"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Todo"
 type: reference
 tags: [wiki, no-frontmatter-fix]

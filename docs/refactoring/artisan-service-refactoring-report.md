@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "artisan service refactoring report"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # ArtisanService Refactoring Report
 
 **Date:** 2025-10-01
@@ -20,8 +17,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "artisan service refactoring report"
 type: note
 tags: [documentation]
@@ -30,7 +25,6 @@ updated: 2026-09-26
 qmd: "artisan service refactoring report"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 📊 Summary
 
 Successfully refactored `ArtisanService::act()` method from **cyclomatic complexity 22** to **complexity 3**, achieving a **86% reduction** in complexity.

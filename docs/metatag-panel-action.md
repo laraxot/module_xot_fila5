@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "metatag panel action"
 type: note
@@ -11,4 +8,3 @@ qmd: "metatag panel action"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

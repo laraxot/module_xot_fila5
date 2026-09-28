@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan fixes "
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Correzioni PHPStan - Modulo Xot
 
 Questo documento traccia gli errori PHPStan identificati nel modulo Xot e le relative soluzioni implementate.
@@ -228,8 +225,6 @@ $result = $array[0] ?? null;
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan fixes "
 type: note
 tags: [documentation]
@@ -238,7 +233,6 @@ updated: 2026-09-26
 qmd: "phpstan fixes "
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 #### Error 2: ParsePrintPageStringAction.php:35
 **Error:** Parameter #1 $value of function count expects array|Countable, mixed given.
 **Location:** `app/Actions/ParsePrintPageStringAction.php:35`

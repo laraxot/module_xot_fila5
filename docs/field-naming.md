@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "field naming"
 type: note
@@ -11,4 +8,3 @@ qmd: "field naming"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

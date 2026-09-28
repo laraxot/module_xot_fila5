@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "sonarqube"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Sonarqube"
 type: reference
 tags: [wiki, no-frontmatter-fix]

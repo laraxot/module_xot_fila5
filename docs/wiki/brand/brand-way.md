@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "brand way"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Brand Way"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "nwidart to study"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'Nwidart to study — risorse esterne'
 module: Xot
 type: reference

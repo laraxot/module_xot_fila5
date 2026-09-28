@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "scraping"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # _scraping
 
 <!-- Contenuto migrato da _docs/_scraping.txt -->
@@ -24,8 +21,6 @@ https://github.com/oscarotero/Embed  !!!
 
 
 ---
-<<<<<<< HEAD
-=======
 title: "scraping"
 type: note
 tags: [documentation]
@@ -34,7 +29,6 @@ updated: 2026-09-26
 qmd: "scraping"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Merged from -scraping.md
 
 

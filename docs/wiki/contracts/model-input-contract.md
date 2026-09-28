@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "model input contract"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Model Input Contract"
 type: reference
 tags: [wiki, no-frontmatter-fix]

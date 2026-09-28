@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "02 next"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Next (Module Xot)
 
 ## Features

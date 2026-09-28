@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "testing architecture"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Testing Architecture and Pest Setup
 
 ## Overview

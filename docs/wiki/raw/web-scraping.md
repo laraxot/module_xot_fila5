@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "web scraping"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Web Scraping"
 type: reference
 tags: [wiki, no-frontmatter-fix]

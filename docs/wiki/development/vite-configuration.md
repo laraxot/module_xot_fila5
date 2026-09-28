@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "vite configuration"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Vite Configuration"
 type: reference
 tags: [wiki, no-frontmatter-fix]

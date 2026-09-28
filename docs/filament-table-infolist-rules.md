@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament table infolist rules"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filament Table & Infolist Rules
 
 ## Regole per Table e Infolist in Laraxot

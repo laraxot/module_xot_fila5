@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "performance guidelines"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Performance Guidelines"
 type: reference
 tags: [wiki, no-frontmatter-fix]

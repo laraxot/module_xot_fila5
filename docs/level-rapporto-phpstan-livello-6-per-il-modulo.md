@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "level rapporto phpstan livello 6 per il modulo"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Rapporto PHPStan Livello 6 per il modulo Xot
 
 Data analisi: [DATE] 21:54:44

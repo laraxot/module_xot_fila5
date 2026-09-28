@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "philosophy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Xot Module: Philosophy, Purpose, and Design Principles"
 module: xot
 type: integration

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "decision making process super mucca"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Processo Decisionale "Super Mucca" - La Litigata Interna
 
 **Data**: 2025-01-22
@@ -20,8 +17,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "decision making process super mucca"
 type: note
 tags: [documentation]
@@ -30,7 +25,6 @@ updated: 2026-09-26
 qmd: "decision making process super mucca"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 🧠 Il Dibattito Interno (La Litigata)
 
 ### Contesto

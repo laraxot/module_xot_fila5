@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "01 current state"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Current State - Xot
 
 ## Baseline

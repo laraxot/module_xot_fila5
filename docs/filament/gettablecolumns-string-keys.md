@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "gettablecolumns string keys"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Regola Critica: getTableColumns e getTableFilters — chiavi stringhe obbligatorie
 
 ## Regola Fondamentale
@@ -90,8 +87,6 @@ Questa regola si applica a:
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "gettablecolumns string keys"
 type: note
 tags: [documentation]
@@ -100,5 +95,4 @@ updated: 2026-09-26
 qmd: "gettablecolumns string keys"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *

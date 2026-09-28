@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "modern tech stack optimization modern tech stack optimization guide"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Modern Tech Stack Optimization Guide
 ## Filament 4 + Laravel 12 + PHP 8.3 Best Practices
 

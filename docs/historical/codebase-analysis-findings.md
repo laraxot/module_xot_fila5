@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "codebase analysis findings"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Analisi Completa del Codice - Regole Filament e property_exists
 
 ## Riepilogo Trovato

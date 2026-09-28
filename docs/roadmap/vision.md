@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "vision"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Visione - Xot Module
 
 Consolidare Xot come framework **Zero-Config** per Laravel 12, dove ogni nuovo modulo eredita automaticamente:

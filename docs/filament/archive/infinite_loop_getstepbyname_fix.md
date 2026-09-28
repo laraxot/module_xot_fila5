@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "infinite loop getstepbyname fix"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # CRITICAL FIX: Loop Infinito in getStepByName() - XotBaseResource
 
 ## 🚨 **PROBLEMA CRITICO RISOLTO**
@@ -136,8 +133,6 @@ $prop = property_exists($class, 'property') ? $class::$property : [];
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "infinite loop getstepbyname fix"
 type: note
 tags: [documentation]
@@ -146,7 +141,6 @@ updated: 2026-09-26
 qmd: "infinite loop getstepbyname fix"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Priorità**: 🚨 **P0 - CRITICA**  
 **Creato**: Gennaio 2025  
 **Risolto**: Gennaio 2025  

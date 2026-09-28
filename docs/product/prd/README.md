@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "README"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Xot Module - Product Requirements Document (PRD)
 
 ## Document Information
@@ -274,8 +271,6 @@ To create the most robust, scalable, and developer-friendly foundational framewo
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "README"
 type: note
 tags: [documentation]
@@ -284,5 +279,4 @@ updated: 2026-09-26
 qmd: "README"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *This PRD will be reviewed and updated quarterly based on feedback and changing requirements.*

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "volt folio best practices 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Best Practices per Volt e Folio
 
 ## Collegamenti correlati

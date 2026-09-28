@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "commons"
 type: note
@@ -11,4 +8,3 @@ qmd: "commons"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

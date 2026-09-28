@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: " process"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # _process
 
 <!-- Contenuto migrato da _docs/_process.txt -->

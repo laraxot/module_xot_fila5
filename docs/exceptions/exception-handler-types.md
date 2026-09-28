@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "exception handler types"
 type: note
@@ -11,4 +8,3 @@ qmd: "exception handler types"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

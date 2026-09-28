@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "optimizations"
 type: note
@@ -11,4 +8,3 @@ qmd: "optimizations"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

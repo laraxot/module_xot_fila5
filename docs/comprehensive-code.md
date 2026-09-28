@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "comprehensive code"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Analisi Completa del Codice - Sistema Laraxot
 
 ## Panoramica
@@ -190,13 +187,6 @@ try {
 
 ```php
 // ContactResource.php
-<<<<<<< HEAD
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 public function getFormSchema(): array
 ---
 title: "comprehensive code"
@@ -208,7 +198,6 @@ qmd: "comprehensive code"
 issues: []
 discussions: []
 public function getFormSchema(): array
->>>>>>> laraxot/dev
 {
     return [
         TextInput::make('first_name'),
@@ -217,17 +206,9 @@ public function getFormSchema(): array
 }
 
 // CustomerResource.php - PATTERN SIMILE
-<<<<<<< HEAD
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 public function getFormSchema(): array
 ---
 public function getFormSchema(): array
->>>>>>> laraxot/dev
 {
     return [
         TextInput::make('name')->required(),
@@ -323,17 +304,9 @@ protected function casts(): array
 ```php
 class ContactResource extends XotBaseResource
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
     public function getFormSchema(): array
 ---
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             TextInput::make('first_name'),
@@ -683,17 +656,9 @@ try {
 
 ```php
 // ContactResource.php
-<<<<<<< HEAD
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 public function getFormSchema(): array
 ---
 public function getFormSchema(): array
->>>>>>> laraxot/dev
 {
     return [
         TextInput::make('first_name'),
@@ -702,17 +667,9 @@ public function getFormSchema(): array
 }
 
 // CustomerResource.php - PATTERN SIMILE
-<<<<<<< HEAD
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 public function getFormSchema(): array
 ---
 public function getFormSchema(): array
->>>>>>> laraxot/dev
 {
     return [
         TextInput::make('name')->required(),
@@ -811,17 +768,9 @@ protected function casts(): array
 ```php
 class ContactResource extends XotBaseResource
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
     public function getFormSchema(): array
 ---
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             TextInput::make('first_name'),

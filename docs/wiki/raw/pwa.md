@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "pwa"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Pwa"
 type: reference
 tags: [wiki, no-frontmatter-fix]

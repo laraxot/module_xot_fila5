@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "standard codice"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Standard Codice"
 type: reference
 tags: [wiki, no-frontmatter-fix]

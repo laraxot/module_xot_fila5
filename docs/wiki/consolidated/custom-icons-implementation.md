@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "custom icons implementation"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Custom Icons Implementation"
 type: reference
 tags: [wiki, no-frontmatter-fix]

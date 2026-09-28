@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "xls"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # xls
 
 <!-- Contenuto migrato da _docs/xls.txt -->

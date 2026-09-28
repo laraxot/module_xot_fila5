@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "databaselines"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "databaselines"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: databaselines
 canonical: ../../../Themes/docs/shared-components/database-guidelines.md

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "lazy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://github.com/verlok/vanilla-lazyload   
 https://github.com/ApoorvSaxena/lozad.js
 https://github.com/malchata/yall.js

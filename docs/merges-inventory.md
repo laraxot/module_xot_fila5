@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "merges inventory"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "merges inventory"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: merges-inventory
 canonical: ../../../Themes/docs/shared-components/merge-conflicts-inventory.md

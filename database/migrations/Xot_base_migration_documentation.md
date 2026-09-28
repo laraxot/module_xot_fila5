@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "Xot base migration documentation"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 // Documentation: foreignIdFor Pattern
 
 ## Why Use foreignIdFor()

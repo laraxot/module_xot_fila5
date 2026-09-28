@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "clean architecture"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'clean_architecture'
 module: Xot
 type: reference

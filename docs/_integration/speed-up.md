@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "speed up"
 type: note
@@ -11,4 +8,3 @@ qmd: "speed up"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

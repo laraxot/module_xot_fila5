@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "xotbasepivot analysis"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # XotBasePivot - Analisi Architettuale Completa
 
 ## 🎯 Executive Summary
@@ -28,8 +25,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "xotbasepivot analysis"
 type: note
 tags: [documentation]
@@ -38,7 +33,6 @@ updated: 2026-09-26
 qmd: "xotbasepivot analysis"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 📊 Analisi Situazione Attuale
 
 ### Stato Corrente: CODICE DUPLICATO

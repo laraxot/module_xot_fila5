@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "workstreams"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "workstreams"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: workstreams
 canonical: ../../../../Themes/docs/shared-components/03-workstreams-Modules.md

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan all modules"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Analisi PHPStan - Tutti i Moduli
 
 **Obiettivo**: Analisi sistematica completa di tutti i moduli con PHPStan

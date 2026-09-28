@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "logo determination"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Determinazione del Logo Basata sul Dominio
 
 ## Introduzione

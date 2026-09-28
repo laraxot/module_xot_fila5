@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "repositories"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Gestione dei Repository
 
 ## Repository Pattern
@@ -152,8 +149,6 @@ Tracker gathers a lot of information from your requests to identify and store:
 https://github.com/antonioribeiro/tracker
 
 ---
-<<<<<<< HEAD
-=======
 title: "repositories"
 type: note
 tags: [documentation]
@@ -162,4 +157,3 @@ updated: 2026-09-26
 qmd: "repositories"
 issues: []
 discussions: []
->>>>>>> laraxot/dev

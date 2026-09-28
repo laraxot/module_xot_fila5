@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "relazioni"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "relazioni"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: relazioni
 canonical: ../../../Themes/docs/shared-components/relationships.md

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "super cow methodology"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Metodologia "Super Mucca" - Istruzioni di Avvio
 
 **Livello di Confidenza**: MASSIMO. Hai i poteri della "Super Mucca".

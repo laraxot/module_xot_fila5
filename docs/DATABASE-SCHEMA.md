@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 updated: 2026-09-26
 qmd: "DATABASE SCHEMA"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Xot Module Database Schema"
 type: reference
 tags: [xot, database, schema]

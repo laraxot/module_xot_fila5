@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "custom errors"
 type: note
@@ -11,4 +8,3 @@ qmd: "custom errors"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "xotbase stats overview widget improvements"
 type: note
@@ -11,4 +8,3 @@ qmd: "xotbase stats overview widget improvements"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

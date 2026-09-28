@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "livewire"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://github.com/kdion4891/laravel-livewire-forms
 
 

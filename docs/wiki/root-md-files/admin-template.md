@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "admin template"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Admin Template"
 type: reference
 tags: [wiki, no-frontmatter-fix]

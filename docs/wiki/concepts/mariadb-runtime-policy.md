@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "mariadb runtime policy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "MariaDB runtime policy"
 module: Xot
 type: concept

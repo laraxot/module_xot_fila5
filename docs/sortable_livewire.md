@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: "sortable livewire"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Sortable livewire"
 type: reference
 status: active

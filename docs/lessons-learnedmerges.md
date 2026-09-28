@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "lessons learnedmerges"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "lessons learnedmerges"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: lessons-learnedmerges
 canonical: ../../../Themes/docs/shared-components/lessons-learnedmerge-conflicts.md

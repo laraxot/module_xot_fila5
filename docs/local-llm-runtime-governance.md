@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "local llm runtime governance"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Local LLM Runtime Governance
 
 ## Perche' esiste

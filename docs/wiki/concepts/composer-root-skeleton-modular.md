@@ -1,8 +1,5 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "composer root skeleton modular"
->>>>>>> laraxot/dev
 title: "Composer root skeleton modulare"
 type: concept
 tags: [composer, xot, merge-plugin, nwidart, laravel-modules, skeleton]

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "philosophy master index.divergenza"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: philosophy-master-index.md"
 module: Xot
 type: note

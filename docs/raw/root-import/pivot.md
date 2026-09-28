@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "pivot"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 //https://github.com/larastan/larastan/issues/515
 
 /**

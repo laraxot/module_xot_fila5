@@ -1,12 +1,9 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Audit @phpstan-ignore in Xot"
 type: report
 created_at: '2026-09-01'

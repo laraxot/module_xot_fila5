@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "actions over services"
 type: note
@@ -11,4 +8,3 @@ qmd: "actions over services"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

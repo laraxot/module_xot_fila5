@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan analysis 8"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Analysis - 27 Gennaio 2025
 
 **Data Analisi**: 2025-01-27  
@@ -21,8 +18,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan analysis 8"
 type: note
 tags: [documentation]
@@ -31,7 +26,6 @@ updated: 2026-09-26
 qmd: "phpstan analysis 8"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 📊 Stato Attuale
 
 ### Errori Totali: 594

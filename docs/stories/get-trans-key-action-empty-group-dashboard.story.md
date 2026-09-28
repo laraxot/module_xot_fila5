@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: "get trans key action empty group dashboard.story"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "GetTransKeyAction produce una chiave di traduzione vuota per le pagine Dashboard (e altre) — genera file lang senza nome in quasi ogni modulo"
 type: story
 module: Xot

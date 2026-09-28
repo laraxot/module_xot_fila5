@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament forms components base creation"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Creazione Classi Base Forms Components - 2025-12-23
 
 **Data**: 2025-12-23
@@ -176,8 +173,6 @@ grep -r "extends.*Filament\\Forms\\Components\\" Modules/*/app/Filament/Forms/Co
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "filament forms components base creation"
 type: note
 tags: [documentation]
@@ -186,7 +181,6 @@ updated: 2026-09-26
 qmd: "filament forms components base creation"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Stato**: ✅ Classi base create e componenti refactorizzati
 **Data Creazione**: 2025-12-23
 **Conformità**: ✅ Regola fondamentale rispettata

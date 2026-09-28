@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "guess pivot action"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # GuessPivotAction Location Correction
 
 ## What was wrong

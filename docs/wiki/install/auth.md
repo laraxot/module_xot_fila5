@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "auth"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Auth"
 type: reference
 tags: [wiki, no-frontmatter-fix]

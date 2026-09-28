@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament nested resources v5 status"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filament Nested Resources: Stato in v5.x
 
 ## Scoperta Critica: Filament 5.x NON Supporta Nested Resources

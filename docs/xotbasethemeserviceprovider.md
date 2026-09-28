@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "xotbasethemeserviceprovider"
 type: note
@@ -11,4 +8,3 @@ qmd: "xotbasethemeserviceprovider"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

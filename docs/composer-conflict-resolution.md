@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "composer conflict resolution"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Risoluzione conflitti Composer (Xot)
 
 ## Scopo

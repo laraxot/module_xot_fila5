@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "architecture complete 1"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "architecture complete 1"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: architecture-complete-1
 canonical: ../../../Themes/docs/shared-components/architecture-complete-.md

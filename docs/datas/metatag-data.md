@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "metatag data"
 type: note
@@ -11,4 +8,3 @@ qmd: "metatag data"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

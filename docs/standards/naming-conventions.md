@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "naming conventions"
 type: note
@@ -11,4 +8,3 @@ qmd: "naming conventions"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

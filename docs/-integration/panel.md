@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "panel"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # panel
 
 <!-- Contenuto migrato da _docs/panel.txt -->

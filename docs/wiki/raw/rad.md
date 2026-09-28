@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "rad"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Rad"
 type: reference
 tags: [wiki, no-frontmatter-fix]

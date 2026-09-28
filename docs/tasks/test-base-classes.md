@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "test base classes"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Task: Test Base Classes
 
 **Modulo**: Xot  

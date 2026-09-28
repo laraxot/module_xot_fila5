@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "enum driven fillable pattern"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Enum Driven Fillable Pattern"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "infolist for summary"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Infolist per Summary e Author Sections
 
 ## Overview
@@ -20,8 +17,6 @@ Questa regola definisce quando usare **Filament Infolist Entries** invece di **F
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "infolist for summary"
 type: note
 tags: [documentation]
@@ -30,7 +25,6 @@ updated: 2026-09-26
 qmd: "infolist for summary"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Filament v5: Sistema Schema Unificato
 
 Filament v5 **unifica** Forms e Infolists sotto un singolo sistema **Schema**.

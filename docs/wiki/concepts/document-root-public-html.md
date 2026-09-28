@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Document root public_html"
 type: concept
 tags: [architecture, public_html, laravel]

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "bad practices"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Bad Practices"
 type: reference
 tags: [wiki, no-frontmatter-fix]

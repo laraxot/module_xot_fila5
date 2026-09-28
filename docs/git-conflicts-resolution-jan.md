@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "git conflicts resolution jan"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Risoluzione Conflitti Git - 6 Gennaio 2025
 
 ## Data: 2025-01-06
@@ -224,8 +221,6 @@ php artisan lang:check
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "git conflicts resolution jan"
 type: note
 tags: [documentation]
@@ -234,7 +229,6 @@ updated: 2026-09-26
 qmd: "git conflicts resolution jan"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Ultimo aggiornamento**: 2025-01-06
 **Autore**: Sistema di correzione automatica
 **Stato**: ✅ Completato

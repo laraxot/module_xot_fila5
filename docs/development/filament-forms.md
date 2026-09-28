@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament forms"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filament Forms
 
 ## Best Practices
@@ -29,13 +26,6 @@ class PerformanceResource extends XotBaseResource
 {
     protected static ?string $model = Performance::class;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
     public function getFormSchema(): array
 ---
 title: "filament forms"
@@ -47,7 +37,6 @@ qmd: "filament forms"
 issues: []
 discussions: []
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             Forms\Components\Card::make()
@@ -264,17 +253,9 @@ Forms\Components\Grid::make()
 ### Eventi Form
 
 ```php
-<<<<<<< HEAD
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 public function getFormSchema(): array
 ---
 public function getFormSchema(): array
->>>>>>> laraxot/dev
 {
     return [
         Forms\Components\TextInput::make('codice')

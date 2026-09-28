@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "tdd pest study"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Studio TDD, Pest e Laravel Modules
 
 ## Riferimenti Studiate

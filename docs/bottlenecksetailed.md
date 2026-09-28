@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "bottlenecksetailed"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "bottlenecksetailed"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: bottlenecksetailed
 canonical: ../../../Themes/docs/shared-components/bottlenecks-detailed.md

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "safe casting actions.divergenza"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: safe-casting-actions.md"
 module: Xot
 type: note

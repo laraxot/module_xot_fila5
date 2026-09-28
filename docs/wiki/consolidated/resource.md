@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "resource"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Resource"
 type: reference
 tags: [wiki, no-frontmatter-fix]

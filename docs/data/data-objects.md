@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "data objects"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 
 # Data Objects in Laraxot
 

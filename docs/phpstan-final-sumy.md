@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan final sumy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Level 10 - Riepilogo Finale Gennaio 2026
 
 **Status**: ✅ ANALISI COMPLETA ESTRATTA
@@ -178,8 +175,6 @@ $result = $model->traitMethod();
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan final sumy"
 type: note
 tags: [documentation]
@@ -188,5 +183,4 @@ updated: 2026-09-26
 qmd: "phpstan final sumy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Filosofia Applicata**: Ogni correzione riflette i principi DRY + KISS + SOLID, rispettando la business logic e la filosofia architetturale di Laraxot.

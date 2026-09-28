@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "task documentare actions"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Task: Documentare Actions Framework - Xot
 
 **Modulo**: Xot
@@ -20,8 +17,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "task documentare actions"
 type: note
 tags: [documentation]
@@ -30,7 +25,6 @@ updated: 2026-09-26
 qmd: "task documentare actions"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Descrizione
 
 Il modulo Xot ha 80+ Actions organizzate per dominio ma manca un documento di riferimento che le descriva tutte con input/output/uso.

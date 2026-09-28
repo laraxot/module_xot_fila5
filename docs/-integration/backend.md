@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "backend"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # backend
 
 <!-- Contenuto migrato da _docs/backend.txt -->

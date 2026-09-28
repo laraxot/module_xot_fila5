@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Rapporto PHPStan Livello 7 per il modulo Xot"
 module: "Xot"
 type: concept

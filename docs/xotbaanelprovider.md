@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "xotbaanelprovider"
 type: note
@@ -11,4 +8,3 @@ qmd: "xotbaanelprovider"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

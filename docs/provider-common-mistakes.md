@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "provider common mistakes"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Provider Common Mistakes - Comprehensive Guide
 
 **Last Updated**: 2025-12-16
@@ -44,8 +41,6 @@ class AdminPanelProvider extends XotBasePanelProvider { }
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "provider common mistakes"
 type: note
 tags: [documentation]
@@ -54,7 +49,6 @@ updated: 2026-09-26
 qmd: "provider common mistakes"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ### 2. Adding Unnecessary Methods
 
 **❌ WRONG:**

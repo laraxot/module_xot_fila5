@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "relation manager guidelines"
 type: note
@@ -11,4 +8,3 @@ qmd: "relation manager guidelines"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

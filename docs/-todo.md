@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: " todo"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: '_todo'
 module: Xot
 type: reference

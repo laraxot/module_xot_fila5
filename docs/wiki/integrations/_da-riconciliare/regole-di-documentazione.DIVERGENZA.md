@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "regole di documentazione.DIVERGENZA"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: regole-di-documentazione.md"
 module: Xot
 type: note

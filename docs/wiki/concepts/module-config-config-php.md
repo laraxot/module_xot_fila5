@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 created: 2026-09-26
 qmd: "module config config php"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: module config/config.php convention
 type: concept
 module: Xot

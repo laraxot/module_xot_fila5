@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "metodiuplicati analisi"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "metodiuplicati analisi"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: metodiuplicati-analisi
 canonical: ../../../Themes/docs/shared-components/metodi-duplicati-analisi-Modules.md

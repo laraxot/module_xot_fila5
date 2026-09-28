@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "xotbaseresource"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "xotbaseresource"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: Xot
 concept: XotBaseResource
 last_updated: 2026-04-15

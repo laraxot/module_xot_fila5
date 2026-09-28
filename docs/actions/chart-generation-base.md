@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "chart generation base"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Chart Generation Actions - Base Implementation
 
 ## Overview

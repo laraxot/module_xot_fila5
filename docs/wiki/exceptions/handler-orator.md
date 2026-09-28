@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "handler orator"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Handler Orator"
 type: reference
 tags: [wiki, no-frontmatter-fix]

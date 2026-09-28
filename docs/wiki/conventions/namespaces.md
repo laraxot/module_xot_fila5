@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "namespaces"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Namespaces"
 type: reference
 tags: [wiki, no-frontmatter-fix]

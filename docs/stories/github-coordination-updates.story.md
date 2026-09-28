@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: "github coordination updates.story"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Aggiornamento GitHub issue e discussions"
 type: story
 module: Xot

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "patterns"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Patterns"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "25e cms rm getformschema"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # 25e-cms — Rimuovere getFormSchema da MenuResource
 
 **Modulo:** Cms

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "route dyn service"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Route Dyn Service"
 type: reference
 tags: [wiki, no-frontmatter-fix]

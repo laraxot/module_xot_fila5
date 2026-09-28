@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Rapporto PHPStan Livello max per il modulo Xot"
 module: "Xot"
 type: concept

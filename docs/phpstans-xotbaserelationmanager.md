@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "phpstans xotbaserelationmanager"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "phpstans xotbaserelationmanager"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: phpstans-xotbaserelationmanager
 canonical: ../../../Themes/docs/shared-components/phpstan-errors-xotbaserelationmanager.md

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament 5 nested resources complete guide"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # 🎯 Filament 5.x Nested Resources - Guida Completa 2024
 
 ## 📋 **Introduzione a Nested Resources**
@@ -501,8 +498,6 @@ class NestedResourceGenerator
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "filament 5 nested resources complete guide"
 type: note
 tags: [documentation]
@@ -511,7 +506,6 @@ updated: 2026-09-26
 qmd: "filament 5 nested resources complete guide"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Ultimo Aggiornamento:** 2024-01-27  
 **Versione Filament:** 5.x  
 **Stato:** 📚 Completamente Analizzato e Documentato

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "xot table"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # HasXotTable Trait per Filament in Laraxot PTVX
 
 ## Panoramica

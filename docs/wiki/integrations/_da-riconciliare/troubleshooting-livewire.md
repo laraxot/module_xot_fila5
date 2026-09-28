@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "troubleshooting livewire"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Troubleshooting: Livewire 404 Error"
 module: xot
 type: integration

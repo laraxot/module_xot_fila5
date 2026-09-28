@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "fix phpstan errors"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # BMAD FIX - LEARNINGS (Second Brain Updated)
 
 ## ERRORI COMMESSI

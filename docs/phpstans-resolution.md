@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstans resolution"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Xot Module - PHPStan Level 10 Errors Resolution Roadmap
 
 **Modulo**: Xot (Base Module)  
@@ -20,8 +17,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstans resolution"
 type: note
 tags: [documentation]
@@ -30,7 +25,6 @@ updated: 2026-09-26
 qmd: "phpstans resolution"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 📊 Stato Attuale
 
 **PHPStan Level**: 10

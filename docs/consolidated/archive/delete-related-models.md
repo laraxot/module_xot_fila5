@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "delete related models"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # delete_related_models
 
 <!-- Contenuto migrato da _docs/delete_related_models.txt -->

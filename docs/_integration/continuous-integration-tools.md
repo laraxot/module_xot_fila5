@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-
-=======
 ---
 title: "continuous integration tools"
 type: note
@@ -12,4 +8,3 @@ qmd: "continuous integration tools"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

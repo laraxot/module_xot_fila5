@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "readme"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Sviluppo
 
 Questa cartella contiene la documentazione relativa agli strumenti e alle pratiche di sviluppo.

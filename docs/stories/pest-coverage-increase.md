@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "pest coverage increase"
 type: note
 tags: [documentation]
@@ -8,7 +6,6 @@ updated: 2026-09-26
 qmd: "pest coverage increase"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 id: pest-coverage-increase
 slug: pest-coverage-all-modules
 scope: [project:base_workorder_fila5, modules:All 52]

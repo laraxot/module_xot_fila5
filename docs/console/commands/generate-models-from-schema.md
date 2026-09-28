@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "generate models from schema"
 type: note
@@ -11,4 +8,3 @@ qmd: "generate models from schema"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

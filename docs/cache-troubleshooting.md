@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "cache troubleshooting"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Cache troubleshooting (module Xot)
 
 Symptom: "SQLSTATE[42S02]: Base table or view not found: 1146 Table 'fixcity_data.cache' doesn't exist"

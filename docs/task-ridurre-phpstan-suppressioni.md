@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "task ridurre phpstan suppressioni"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Task: Ridurre Suppressioni PHPStan Inline - Xot
 
 **Modulo**: Xot
@@ -20,8 +17,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "task ridurre phpstan suppressioni"
 type: note
 tags: [documentation]
@@ -30,7 +25,6 @@ updated: 2026-09-26
 qmd: "task ridurre phpstan suppressioni"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Descrizione
 
 Il modulo Xot ha 60 suppressioni `@phpstan-ignore` inline nel codice app/. Queste mascherano problemi reali di tipo che dovrebbero essere risolti correttamente.

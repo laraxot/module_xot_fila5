@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "PHPStan Session - Gennaio 2026 - Riepilogo Completo"
 module: "Xot"
 type: concept

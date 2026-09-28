@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "git sync pending modules"
 type: note
 tags: [documentation]
@@ -8,7 +6,6 @@ updated: 2026-09-26
 qmd: "git sync pending modules"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 id: git-sync-pending-modules
 slug: git-sync-pending-modules
 scope: [project:base_workorder_fila5]

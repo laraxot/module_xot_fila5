@@ -1,12 +1,9 @@
 ---
-<<<<<<< HEAD
-=======
 type: note
 tags: [documentation]
 qmd: "analysis capitalized folders metadata"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: Capitalized Folders Analysis & Data Objects Deep Dive
 created: 2026-06-30
 updated: 2026-06-30

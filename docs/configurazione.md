@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "configurazione"
 type: note
@@ -11,4 +8,3 @@ qmd: "configurazione"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

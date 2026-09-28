@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "dependency intelligence"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Dependency Intelligence - Module Xot
 
 Aggiornato da `composer show` il 2026-03-02.

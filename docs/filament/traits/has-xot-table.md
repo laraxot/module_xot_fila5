@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "has xot table"
 type: note
@@ -11,4 +8,3 @@ qmd: "has xot table"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-
-=======
 ---
 title: "relation managerlines"
 type: note
@@ -12,4 +8,3 @@ qmd: "relation managerlines"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

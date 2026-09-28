@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "PERFECTION AUDIT"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Perfection Audit — Xot Module
 
 **Data**: 2026-09-01
@@ -20,8 +17,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "PERFECTION AUDIT"
 type: note
 tags: [documentation]
@@ -30,7 +25,6 @@ updated: 2026-09-26
 qmd: "PERFECTION AUDIT"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## TL;DR
 
 Xot module docs sono **2,346+ file .md** di cui **1,170 stub vuoti** (~50% bloat). Ogni file uppercase viola la convenzione `kebab-case.md`. Risultato: impossibile onboarding, refusi, duplicati case-sensitivity (`AGENTS.md` vs `agents.md`, `INDEX.md` vs `index.md`).

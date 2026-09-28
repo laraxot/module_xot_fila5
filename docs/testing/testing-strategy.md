@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "testing strategy"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "testing strategy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: testing-strategy
 canonical: ../../../../Themes/docs/shared-components/testing-strategy.md

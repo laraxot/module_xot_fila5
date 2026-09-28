@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "route"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Route"
 type: reference
 tags: [wiki, no-frontmatter-fix]

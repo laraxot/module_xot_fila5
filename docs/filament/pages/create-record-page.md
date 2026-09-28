@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "create record page"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filament `CreateRecord` — scopo, pipeline e regola Laraxot
 
 **Fonte codice**: `vendor/filament/filament/src/Resources/Pages/CreateRecord.php` (Filament Panels).  
@@ -21,8 +18,6 @@ Questa pagina non sostituisce la doc Filament: riassume **perché** esiste la cl
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "create record page"
 type: note
 tags: [documentation]
@@ -31,7 +26,6 @@ updated: 2026-09-26
 qmd: "create record page"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Perché esiste (visione)
 
 `CreateRecord` è la **pagina di resource** del pannello admin dedicata alla creazione di un modello Eloquent da form. Incapsula:

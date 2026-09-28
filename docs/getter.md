@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "getter"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 
 # Filosofia dei Metodi Getter in Xot
 

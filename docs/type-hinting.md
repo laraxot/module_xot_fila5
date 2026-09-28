@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: "type hinting"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Type hinting"
 type: reference
 status: active

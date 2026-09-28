@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "analysis sumy"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "analysis sumy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: analysis-sumy
 canonical: ../../../../Themes/docs/shared-components/analysis-summary.md

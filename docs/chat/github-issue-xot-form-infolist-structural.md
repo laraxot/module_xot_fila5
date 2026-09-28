@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "github issue xot form infolist structural"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Issue: Structural refactor XotBaseResourceForm / XotBaseResourceInfolist → HasXotForm / HasXotInfolist
 
 Repo: laraxot/module_xot_fila5

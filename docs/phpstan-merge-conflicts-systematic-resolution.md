@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan merge conflicts systematic resolution"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Roadmap: Risoluzione Sistematica Merge Conflicts e PHPStan Errors
 
 **Data**: 2025-01-22
@@ -21,8 +18,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan merge conflicts systematic resolution"
 type: note
 tags: [documentation]
@@ -31,5 +26,4 @@ updated: 2026-09-26
 qmd: "phpstan merge conflicts systematic resolution"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 🔴 Situazione Critica

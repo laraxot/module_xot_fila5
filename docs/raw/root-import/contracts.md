@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "contracts"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 
 //--- Illuminate\Database\Eloquent\Relations\relation (abstract class Relation)
 ->getRelated()

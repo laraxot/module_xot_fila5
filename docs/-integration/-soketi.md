@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: " soketi"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: " soketi"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: -soketi
 canonical: ../../../../Themes/docs/shared-components/-5.md

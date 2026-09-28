@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "next"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "next"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: next
 canonical: ../../../../Themes/docs/shared-components/02-next-Modules.md

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "lessons learned 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Lessons Learned – Consolidated Rules (2025-08-25)
 
 This document consolidates recurring fixes and rules applied across modules. Keep files lowercase (README.md excepted).
@@ -132,8 +129,6 @@ This document consolidates recurring fixes and rules applied across modules. Kee
 - Add JS callbacks: `eventDidMount`, `eventClassNames`, `selectAllow`, `eventAllow`.
 
 ---
-<<<<<<< HEAD
-=======
 title: "lessons learned 1"
 type: note
 tags: [documentation]
@@ -142,7 +137,6 @@ updated: 2026-09-26
 qmd: "lessons learned 1"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 - Backlinks: see `Modules/<nome progetto>/docs/translation-rules-consolidated.md`, `Modules/Xot/docs/translation-structure-expanded.md`, `.windsurf/rules/full_calendar*.mdc`.
 - Backlinks: see `Modules/<nome progetto>/project_docs/translation-rules-consolidated.md`, `Modules/Xot/project_docs/translation-structure-expanded.md`, `.windsurf/rules/full_calendar*.mdc`.
 

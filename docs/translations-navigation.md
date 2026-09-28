@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "translations navigation"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "translations navigation"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: translations-navigation
 canonical: ../../../Themes/docs/shared-components/traduzioni-navigation.md

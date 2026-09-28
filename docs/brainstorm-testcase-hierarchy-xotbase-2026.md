@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Brainstorm Testcase Hierarchy Xotbase"
 type: concept
 status: deprecated

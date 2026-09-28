@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "exportxlsbycollection conflict"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Risoluzione Conflitto in ExportXlsByCollection
 
 ## Problema

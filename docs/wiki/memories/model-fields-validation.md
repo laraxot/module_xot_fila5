@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "model fields validation"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Model Fields Validation"
 type: reference
 tags: [wiki, no-frontmatter-fix]

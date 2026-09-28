@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "has recursive relationships contract update"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Has Recursive Relationships Contract Update"
 type: reference
 tags: [wiki, no-frontmatter-fix]

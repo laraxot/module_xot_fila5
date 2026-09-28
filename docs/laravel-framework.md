@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "laravel framework"
 type: note
@@ -11,4 +8,3 @@ qmd: "laravel framework"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

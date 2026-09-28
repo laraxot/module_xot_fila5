@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "widgetsization"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "widgetsization"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: widgetsization
 canonical: ../../../Themes/docs/shared-components/widgets-initialization.md

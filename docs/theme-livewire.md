@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "theme livewire"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'theme_livewire'
 module: Xot
 type: reference

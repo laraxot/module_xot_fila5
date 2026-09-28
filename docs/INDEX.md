@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: "INDEX"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Xot Module Documentation Index"
 module: "Xot"
 type: index

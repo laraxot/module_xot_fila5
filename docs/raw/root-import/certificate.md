@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "certificate"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://www.studysection.com/Tests/StartTest/laravel-5.x-advanced
 
 https://github.com/TBlindaruk/laravel-certification-preparing

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "level 10 analysis"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Level 10 Analysis - 2025-03-11
 
 ## Overview

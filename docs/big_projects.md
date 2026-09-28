@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "big projects"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'big_projects'
 module: Xot
 type: reference

@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "attach"
 type: note
@@ -11,4 +8,3 @@ qmd: "attach"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

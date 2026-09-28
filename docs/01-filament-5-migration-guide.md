@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "01 filament 5 migration guide"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # 🛠️ Filament 5.x Core Migration Guide
 
 This guide outlines the mandatory steps for upgrading Laraxot modules to Filament 5.x.

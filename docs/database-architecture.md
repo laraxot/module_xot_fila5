@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "database architecture"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Database Architecture in Laraxot
 
 ## Modular Connection Isolation (Mandatory Rule)

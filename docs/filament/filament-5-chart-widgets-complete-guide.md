@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament 5 chart widgets complete guide"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # 📚 JpGraph Class Reference - Analisi Completta 2024
 
 ## 🎯 **Introduzione alla Documentazione JpGraph**
@@ -486,8 +483,6 @@ class JpGraphChartGenerator
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "filament 5 chart widgets complete guide"
 type: note
 tags: [documentation]
@@ -496,7 +491,6 @@ updated: 2026-09-26
 qmd: "filament 5 chart widgets complete guide"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Ultimo Aggiornamento:** 2024-01-27  
 **Versione JpGraph:** 4.4.2  
 **Stato:** 📚 Completamente Analizzato e Documentato

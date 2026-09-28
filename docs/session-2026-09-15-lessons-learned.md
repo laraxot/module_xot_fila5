@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Sessione 2026-09-15/16 - Lezioni Apprese"
 type: docs
 tags: [session, lessons, pdf, filament, github]

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "completato"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Completato"
 type: reference
 tags: [wiki, no-frontmatter-fix]

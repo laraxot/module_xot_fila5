@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "filter"
 type: note
@@ -11,4 +8,3 @@ qmd: "filter"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

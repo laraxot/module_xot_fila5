@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "psr4 compliance"
 type: note
@@ -11,4 +8,3 @@ qmd: "psr4 compliance"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

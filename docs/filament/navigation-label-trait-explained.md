@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "navigation label trait explained"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # NavigationLabelTrait - Sistema di Traduzione Automatica Navigation
 
 ## Overview
@@ -338,8 +335,6 @@ Ordinare risorse per frequenza uso:
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "navigation label trait explained"
 type: note
 tags: [documentation]
@@ -348,6 +343,5 @@ updated: 2026-09-26
 qmd: "navigation label trait explained"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Ultimo aggiornamento**: 27 Ottobre 2025
 **Maintainer**: Team PTVX

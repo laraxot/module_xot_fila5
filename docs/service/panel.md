@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "panel"
 type: note
@@ -11,4 +8,3 @@ qmd: "panel"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

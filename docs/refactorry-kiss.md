@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "refactorry kiss"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "refactorry kiss"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: refactorry-kiss
 canonical: ../../../Themes/docs/shared-components/refactor-dry-kiss-sumy.md

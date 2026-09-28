@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "cache configuration fix"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Cache Configuration Fix"
 type: reference
 tags: [wiki, no-frontmatter-fix]

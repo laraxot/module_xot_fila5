@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "testing guide"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Testing Guide - Modulo Xot
 
 ## Introduzione

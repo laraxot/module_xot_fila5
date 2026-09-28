@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "accessor audit cross modules"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Audit Cross-Modules: Accessor con save() senza Guard
 
 ## Obiettivo Audit
@@ -192,8 +189,6 @@ Ogni modulo deve avere:
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "accessor audit cross modules"
 type: note
 tags: [documentation]
@@ -202,7 +197,6 @@ updated: 2026-09-26
 qmd: "accessor audit cross modules"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Creato**: 2025-01-29
 **Status**: 📊 Audit Framework Pronto
 **Prossimo**: Audit IndennitaCondizioniLavoro

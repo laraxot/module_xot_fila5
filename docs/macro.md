@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "macro"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'Macro — risorse esterne'
 module: Xot
 type: reference

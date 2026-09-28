@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "refactoring xotbaanelprovider completato"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "refactoring xotbaanelprovider completato"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: refactoring-xotbaanelprovider-completato
 canonical: ../../../Themes/docs/shared-components/refactoring-xotbaanelprovider-completato-conflict.md

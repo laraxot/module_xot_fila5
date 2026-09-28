@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "ccr deepseek fix"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Ccr Deepseek Fix"
 type: reference
 tags: [wiki, no-frontmatter-fix]

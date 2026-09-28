@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "import mdb"
 type: note
@@ -11,4 +8,3 @@ qmd: "import mdb"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "has teams"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Has Teams"
 type: reference
 tags: [wiki, no-frontmatter-fix]

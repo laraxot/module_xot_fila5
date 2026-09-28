@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "license renamed"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "License Renamed"
 type: reference
 tags: [wiki, no-frontmatter-fix]

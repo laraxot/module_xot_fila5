@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "component registration"
 type: note
@@ -11,4 +8,3 @@ qmd: "component registration"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

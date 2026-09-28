@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "current progress"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Stato Attuale del Progetto (15 marzo 2024)
 
 ## Correzioni PHPStan Completate

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan rules"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Code Quality Guide
 
 **Principi**: DRY + KISS + SOLID + Robust
@@ -20,8 +17,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan rules"
 type: note
 tags: [documentation]
@@ -30,7 +25,6 @@ updated: 2026-09-26
 qmd: "phpstan rules"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 🚨 Regola Assoluta
 
 ### Configurazione

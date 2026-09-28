@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "update"
 type: note
@@ -11,4 +8,3 @@ qmd: "update"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

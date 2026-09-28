@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "xotdata theme asset compatibility"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # XotData Theme Asset Compatibility
 
 ## Regola

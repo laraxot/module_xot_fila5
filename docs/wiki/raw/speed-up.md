@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "speed up"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Speed Up"
 type: reference
 tags: [wiki, no-frontmatter-fix]

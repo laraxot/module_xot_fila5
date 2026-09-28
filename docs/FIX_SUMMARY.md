@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "FIX SUMMARY"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Fix Summary
 
 ## ✅ Production Code Fixed (0 errors)

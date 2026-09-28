@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "filament guide"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "filament guide"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: filament-guide
 canonical: ../../../../Themes/docs/shared-components/filament-guide.md

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "method signature compatibility 1"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Method Signature Compatibility 1"
 type: reference
 tags: [wiki, no-frontmatter-fix]

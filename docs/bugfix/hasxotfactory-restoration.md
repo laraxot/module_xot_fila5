@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "hasxotfactory restoration"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Bugfix: Ripristino HasXotFactory Trait
 
 ## Data
@@ -403,8 +400,6 @@ Aggiungere al pipeline CI:
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "hasxotfactory restoration"
 type: note
 tags: [documentation]
@@ -413,7 +408,6 @@ updated: 2026-09-26
 qmd: "hasxotfactory restoration"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Stato**: ✅ **RISOLTO**
 **Priorità**: 🔴 **CRITICA**
 **Tempo di Risoluzione**: ~2 ore

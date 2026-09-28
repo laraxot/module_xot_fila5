@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament 5 upgrade guide"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Guida upgrade Filament 5 - Modulo Xot
 
 **Riferimento ufficiale:** <https://filamentphp.com/docs/5.x/upgrade-guide>

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "optimization opportunities opportunit di ottimizzazione dry kiss"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Opportunità di Ottimizzazione DRY + KISS
 
 ## Panoramica
@@ -380,8 +377,6 @@ return array_merge(
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "optimization opportunities opportunit di ottimizzazione dry kiss"
 type: note
 tags: [documentation]
@@ -390,7 +385,6 @@ updated: 2026-09-26
 qmd: "optimization opportunities opportunit di ottimizzazione dry kiss"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *Ultimo aggiornamento: Giugno 2025*
 *Autore: Analisi Automatica del Progetto*
 

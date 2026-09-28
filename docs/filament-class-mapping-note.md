@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament class mapping note"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Nota: Forms Components Base Classes
 
 **Data**: 2025-12-23

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "2026 09 06 phpstan fix campaign"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # BMAD Story — PHPStan Fix Campaign 2026-09-06
 
 ## Understand

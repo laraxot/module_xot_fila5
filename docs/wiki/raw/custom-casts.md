@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "custom casts"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Custom Casts"
 type: reference
 tags: [wiki, no-frontmatter-fix]

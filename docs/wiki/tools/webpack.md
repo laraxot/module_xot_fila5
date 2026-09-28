@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "webpack"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Webpack"
 type: reference
 tags: [wiki, no-frontmatter-fix]

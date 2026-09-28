@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "fill field with lorem"
 type: note
@@ -11,4 +8,3 @@ qmd: "fill field with lorem"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "icon rendering policy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Icon Rendering Policy
 
 ## Regola

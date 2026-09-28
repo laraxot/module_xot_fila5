@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "xot base component"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Xot Base Component"
 type: reference
 tags: [wiki, no-frontmatter-fix]

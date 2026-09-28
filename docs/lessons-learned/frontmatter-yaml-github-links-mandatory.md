@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "frontmatter yaml github links mandatory"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "frontmatter yaml github links mandatory"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 name: frontmatter-yaml-github-links-mandatory
 description: "Ogni .md di design/ADR/pattern/story richiede github_issues/github_discussions nel frontmatter, risolti verificando la repo reale del file"
 metadata:

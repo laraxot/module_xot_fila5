@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament v5 migration"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filament v5 Migration - Xot
 
 **Task ID**: XOT-FEATURE-001

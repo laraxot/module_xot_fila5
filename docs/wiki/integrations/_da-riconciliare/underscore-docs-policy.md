@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "underscore docs policy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Underscore Docs Policy"
 module: xot
 type: integration

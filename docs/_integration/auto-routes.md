@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "auto routes"
 type: note
@@ -11,4 +8,3 @@ qmd: "auto routes"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

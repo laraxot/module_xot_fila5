@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "license 2"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "License 2"
 type: reference
 tags: [wiki, no-frontmatter-fix]

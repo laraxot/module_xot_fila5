@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "no labels divieto assoluto di usare label placeh"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # DIVIETO ASSOLUTO DI USARE ->label(), ->placeholder() e ->helperText()
 
 ## Regola Fondamentale Inviolabile

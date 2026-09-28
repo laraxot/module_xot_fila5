@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "merge conflicts progress summary"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Summary Progresso Risoluzione Merge Conflicts
 
 **Data**: 2025-01-22
@@ -20,8 +17,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "merge conflicts progress summary"
 type: note
 tags: [documentation]
@@ -30,7 +25,6 @@ updated: 2026-09-26
 qmd: "merge conflicts progress summary"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## ✅ File Risolti (16)
 
 ### Modulo Xot

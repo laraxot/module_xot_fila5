@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "widget method architecture"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Architettura Widget — La Filosofia dei Metodi Privati
 
 **Status**: Active  
@@ -22,8 +19,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "widget method architecture"
 type: note
 tags: [documentation]
@@ -32,7 +27,6 @@ updated: 2026-09-26
 qmd: "widget method architecture"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Il Problema: Separazione Artificiale
 
 ### L'Esempio "Merda"

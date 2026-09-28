@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Fix Visibilità Metodi HasXotTable - 2026-01-27"
 module: "Xot"
 type: concept

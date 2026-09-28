@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "missing component resolution"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # View Caching Resolution - Missing Component Reference
 
 ## Issue

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "file locking pattern"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # File Locking Pattern - Prevenzione Race Conditions
 
 ## 🔐 Filosofia

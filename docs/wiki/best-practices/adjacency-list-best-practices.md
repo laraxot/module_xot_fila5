@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "adjacency list best practices"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Adjacency List Best Practices"
 type: reference
 tags: [wiki, no-frontmatter-fix]

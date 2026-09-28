@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "video player"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Video Player"
 type: reference
 tags: [wiki, no-frontmatter-fix]

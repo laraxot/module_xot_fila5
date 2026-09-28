@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "install from zero"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Install From Zero"
 type: reference
 tags: [wiki, no-frontmatter-fix]

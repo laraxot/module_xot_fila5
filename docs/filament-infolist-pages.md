@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament infolist pages"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Infolist Pages in Filament Resources
 
 In the Laraxot framework, when creating a "View" page for a Filament resource that extends `Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord`, it is mandatory to implement the `getInfolistSchema()` method.

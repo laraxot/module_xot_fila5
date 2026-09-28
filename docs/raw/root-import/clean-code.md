@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "clean code"
 type: note
@@ -11,5 +9,4 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://github.com/jupeter/clean-code-php#use-meaningful-and-pronounceable-variable-names

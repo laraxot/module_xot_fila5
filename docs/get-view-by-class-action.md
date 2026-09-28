@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "get view by class action"
 type: note
@@ -11,4 +8,3 @@ qmd: "get view by class action"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

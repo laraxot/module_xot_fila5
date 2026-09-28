@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "ottimizzazioni super dry kiss"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Ottimizzazioni Super DRY + KISS - Modulo Xot
 
 ## 🎯 Panoramica
@@ -312,8 +309,6 @@ class ExampleService implements ServiceInterface
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "ottimizzazioni super dry kiss"
 type: note
 tags: [documentation]
@@ -322,7 +317,6 @@ updated: 2026-09-26
 qmd: "ottimizzazioni super dry kiss"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Responsabile:** Team Core
 **Data:** 2025-01-XX
 **Stato:** In Analisi

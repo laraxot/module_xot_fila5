@@ -1,6 +1,3 @@
-<<<<<<< HEAD
- 
-=======
 ---
 title: "serviceprovider best practices"
 type: note
@@ -11,4 +8,3 @@ qmd: "serviceprovider best practices"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

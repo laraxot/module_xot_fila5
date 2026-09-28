@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "query"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://laravel-news.com/quickly-dumping-laravel-queries
 
 \DB::enableQueryLog(); // Enable query log

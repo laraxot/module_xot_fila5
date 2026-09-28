@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "performance guidelines"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Performance Guidelines - Xot Module
 
 ## 🎯 Purpose

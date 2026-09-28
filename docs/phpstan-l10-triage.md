@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "phpstan l10 triage"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "phpstan l10 triage"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 name: phpstan-l10-triage
 description: PHPStan Level 10 error triage — count per module, priority batching
 metadata:

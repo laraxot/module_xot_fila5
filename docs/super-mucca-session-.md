@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "super mucca session "
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Sessione Super Mucca - 2025-01-22
 
 **Data**: 2025-01-22
@@ -20,8 +17,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "super mucca session "
 type: note
 tags: [documentation]
@@ -30,7 +25,6 @@ updated: 2026-09-26
 qmd: "super mucca session "
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 🎯 Obiettivo della Sessione
 
 Seguire il processo completo Super Mucca:

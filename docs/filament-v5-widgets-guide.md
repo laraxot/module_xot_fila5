@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament v5 widgets guide"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filament V5 Widgets Guide - Modulo Xot
 
 **Data**: 2026-03-23  
@@ -20,8 +17,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "filament v5 widgets guide"
 type: note
 tags: [documentation]
@@ -30,7 +25,6 @@ updated: 2026-09-26
 qmd: "filament v5 widgets guide"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Panoramica
 
 Il modulo Xot fornisce le classi base per tutti i widget Filament nel progetto.

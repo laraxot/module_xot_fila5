@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "installation"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Installazione
 
 ## Requisiti di Sistema

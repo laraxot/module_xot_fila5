@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "laravel 12 best practices"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Laravel 12 Best Practices"
 type: reference
 tags: [wiki, no-frontmatter-fix]

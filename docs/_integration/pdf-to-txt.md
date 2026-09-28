@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "pdf to txt"
 type: note
@@ -11,4 +8,3 @@ qmd: "pdf to txt"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

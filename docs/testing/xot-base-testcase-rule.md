@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "xot base testcase rule"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # XotBaseTestCase: La Nostra Religione del Testing (Laraxot Zen)
 
 ## 🧘‍♂️ La Visione e la Filosofia

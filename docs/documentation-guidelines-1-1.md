@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "documentation guidelines 1 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 
 # Linee Guida per la Documentazione in Laraxot
 
@@ -56,8 +53,6 @@ Per i documenti che utilizzeranno un generatore di siti statici come Jigsaw, ini
 
 ```markdown
 ---
-<<<<<<< HEAD
-=======
 type: note
 tags: [documentation]
 created: 2026-09-26
@@ -65,7 +60,6 @@ updated: 2026-09-26
 qmd: "documentation guidelines 1 1"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: Titolo del Documento
 description: Breve descrizione del contenuto
 category: Categoria (es. Modelli, API, Config)

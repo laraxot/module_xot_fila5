@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "big projects"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://laraveldaily.com/larger-laravel-projects-12-things-to-take-care-of/
 
 

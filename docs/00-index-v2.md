@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "00 index v2"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # 📚 **Indice Documentazione Modulo Xot (Core Engine)**
 
 **Last Update**: 5 Febbraio 2026
@@ -51,8 +48,6 @@ discussions: []
 - Tutti i moduli del sistema dipendono da **Xot**.
 
 ---
-<<<<<<< HEAD
-=======
 title: "00 index v2"
 type: note
 tags: [documentation]
@@ -61,5 +56,4 @@ updated: 2026-09-26
 qmd: "00 index v2"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*

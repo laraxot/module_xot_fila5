@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "philosophy master index"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Indice Filosofico Completo - Tutti i Moduli
 
 **Data Creazione**: 2025-12-23
@@ -23,8 +20,6 @@ Questo documento fornisce un indice completo di tutta la documentazione filosofi
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "philosophy master index"
 type: note
 tags: [documentation]
@@ -33,7 +28,6 @@ updated: 2026-09-26
 qmd: "philosophy master index"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 🏗️ Moduli Core
 
 ### Xot - Il Motore Fondamentale

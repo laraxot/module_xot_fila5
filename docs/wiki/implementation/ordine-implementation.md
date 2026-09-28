@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "ordine implementation"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Ordine Implementation"
 type: reference
 tags: [wiki, no-frontmatter-fix]

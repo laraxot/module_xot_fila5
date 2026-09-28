@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "psalm"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Psalm"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "large dataset import guidelines"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Large Dataset Import Optimization Guidelines
 
 ## Overview

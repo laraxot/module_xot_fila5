@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan duplicate imports fix "
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Duplicate Imports Fix - 2026-01-05
 
 ## Analisi Errori PHPStan Modulo Xot
@@ -42,8 +39,6 @@ use Illuminate\Support\Facades\Log;  // Riga 10 - DUPLICATO!
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan duplicate imports fix "
 type: note
 tags: [documentation]
@@ -52,7 +47,6 @@ updated: 2026-09-26
 qmd: "phpstan duplicate imports fix "
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ### 2. GetProductsArrayDummyAction.php - Duplicate Imports
 **File**: `Modules/Xot/app/Actions/Dummy/GetProductsArrayDummyAction.php`
 **Riga**: 10

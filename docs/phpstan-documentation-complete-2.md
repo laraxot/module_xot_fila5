@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan documentation complete 2"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Documentation - Completion Summary
 
 **Date**: 2025-12-16
@@ -20,8 +17,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan documentation complete 2"
 type: note
 tags: [documentation]
@@ -30,7 +25,6 @@ updated: 2026-09-26
 qmd: "phpstan documentation complete 2"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Documentation Created
 
 ### 1. Module-Specific Error Documentation

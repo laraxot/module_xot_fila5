@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "route"
 type: note
@@ -11,5 +9,4 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://medium.com/@bikramtuladhar/eloquent-route-presenter-bf313165e136

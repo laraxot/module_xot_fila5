@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "xot module"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Xot Module — Overview Compilato"
 type: overview
 sources:

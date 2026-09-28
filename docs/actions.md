@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "actions"
 type: note
@@ -11,4 +8,3 @@ qmd: "actions"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

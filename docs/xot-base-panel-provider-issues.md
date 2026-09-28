@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-
-=======
 ---
 title: "xot base panel provider issues"
 type: note
@@ -12,4 +8,3 @@ qmd: "xot base panel provider issues"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament extension rules complete"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filament Class Extension Rules - Regole Complete
 
 **Principio Fondamentale**: Mai estendere classi Filament direttamente - sempre usare classi XotBase
@@ -20,8 +17,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "filament extension rules complete"
 type: note
 tags: [documentation]
@@ -30,7 +25,6 @@ updated: 2026-09-26
 qmd: "filament extension rules complete"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 🚨 Regola Assoluta
 
 **NON estendere MAI classi Filament direttamente**
@@ -314,17 +308,9 @@ Per `getFormSchema()` nei **resource e pagine**, usare array indicizzati:
 /**
  * @return array<int, Component>
  */
-<<<<<<< HEAD
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 public function getFormSchema(): array
 ---
 public function getFormSchema(): array
->>>>>>> laraxot/dev
 {
     return [
         TextInput::make('email')->email()->required(),
@@ -508,17 +494,9 @@ class UserResource extends XotBaseResource
     /**
      * @return array<int, Component>
      */
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
     public function getFormSchema(): array
 ---
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             TextInput::make('name')->required(),
@@ -541,24 +519,14 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Pages;
 
-<<<<<<< HEAD
-use Modules\Xot\Filament\Pages\XotBasePage;
-
-class DashboardPage extends XotBasePage
-=======
 use Modules\Xot\Filament\Pages\XotBaseDashboard;
 
 class Dashboard extends XotBaseDashboard
->>>>>>> laraxot/dev
 {
     // $navigationIcon NON necessario
     // $title NON necessario
     // $navigationLabel NON necessario
-<<<<<<< HEAD
-    // Gestiti automaticamente da XotBasePage
-=======
     // Gestiti dalla base XotBaseDashboard
->>>>>>> laraxot/dev
 }
 ```
 

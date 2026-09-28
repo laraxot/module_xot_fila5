@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "audit profondo ridondanze holistic"
 discussions: []
->>>>>>> laraxot/dev
 title: "audit olistico ridondanze — codice, nomi file, Markdown"
 type: redundancy
 owner: Modules/Xot

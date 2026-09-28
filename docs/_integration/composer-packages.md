@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "composer packages"
 type: note
@@ -11,4 +8,3 @@ qmd: "composer packages"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "docs organization"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "docs organization"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: docs-organization
 canonical: ../../../Themes/docs/shared-components/docs-organization-guide.md

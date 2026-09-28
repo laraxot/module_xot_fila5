@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "theme vestito philosophy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Theme System: The "Vestito" (Clothing) Philosophy
 
 ## Core Concept: Theme as "Vestito"

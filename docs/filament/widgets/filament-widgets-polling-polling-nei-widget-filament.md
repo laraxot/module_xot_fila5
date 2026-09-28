@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament widgets polling polling nei widget filament"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Polling nei Widget Filament
 
 Questo documento descrive come implementare il polling automatico nei widget Filament utilizzando il trait `CanPoll` nel progetto il progetto.

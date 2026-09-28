@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "pdf content generation technical"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # GetPdfContentByRecordAction - Documentazione Tecnica
 
 ## 📋 Overview
@@ -21,8 +18,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "pdf content generation technical"
 type: note
 tags: [documentation]
@@ -31,7 +26,6 @@ updated: 2026-09-26
 qmd: "pdf content generation technical"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 🎯 Business Logic
 
 ### Scopo

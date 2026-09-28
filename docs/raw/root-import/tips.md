@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "tips"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://github.com/phpstan/phpstan/issues/1242
 
 

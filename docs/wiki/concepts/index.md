@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "index"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Xot Module - concepts Index
 
 ## Purpose
@@ -61,8 +58,6 @@ qmd search "Xot concepts" --limit 5
 - Audit: `bash bashscripts/tools/audit-module-config-php.sh`
 
 ---
-<<<<<<< HEAD
-=======
 title: "index"
 type: note
 tags: [documentation]
@@ -71,5 +66,4 @@ updated: 2026-09-26
 qmd: "index"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *Updated: 2026-07-27*

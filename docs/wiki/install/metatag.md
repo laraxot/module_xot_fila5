@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "metatag"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Metatag"
 type: reference
 tags: [wiki, no-frontmatter-fix]

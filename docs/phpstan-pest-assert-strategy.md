@@ -1,12 +1,9 @@
 ---
-<<<<<<< HEAD
-=======
 created: 2026-09-26
 updated: 2026-09-26
 qmd: "phpstan pest assert strategy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: PHPStan + Pest→Assert Migration Strategy
 type: rule
 tags: [phpstan, pest, assert, testing, quality-gate]

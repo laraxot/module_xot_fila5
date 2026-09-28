@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "quality tools status nov"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Status Quality Tools - Novembre 2025
 
 ## 🎯 Obiettivo

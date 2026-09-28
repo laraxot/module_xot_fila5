@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "google drive"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'google_drive'
 module: Xot
 type: reference

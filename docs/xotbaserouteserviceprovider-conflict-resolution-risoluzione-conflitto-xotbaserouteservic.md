@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "xotbaserouteserviceprovider conflict resolution risoluzione conflitto xotbaserouteservic"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Risoluzione conflitto XotBaseRouteServiceProvider.php
 
 ## Problema

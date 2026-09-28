@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: "video editor"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Video editor"
 type: reference
 status: active

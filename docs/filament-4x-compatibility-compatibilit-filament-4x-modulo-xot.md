@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament 4x compatibility compatibilit filament 4x modulo xot"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Compatibilità Filament 4.x - Modulo Xot
 
 **Data**: 2025-01-27

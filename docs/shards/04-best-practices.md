@@ -1,12 +1,9 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 updated: 2026-09-26
 qmd: "04 best practices"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Laraxot - Best Practices"
 type: shard
 confidence: high

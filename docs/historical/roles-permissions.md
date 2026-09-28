@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "roles permissions"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Regole generali su roles, permissions e guard_name
 
 ## Regola generale

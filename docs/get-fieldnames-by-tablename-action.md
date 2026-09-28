@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "get fieldnames by tablename action"
 type: note
@@ -11,4 +8,3 @@ qmd: "get fieldnames by tablename action"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

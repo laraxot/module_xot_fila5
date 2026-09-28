@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "dry and grep before pseudocode"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "dry and grep before pseudocode"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 name: dry-and-grep-before-pseudocode
 description: "Prima di scrivere un metodo helper, grep nel codebase: se esiste già va estratto come riutilizzabile, non replicato"
 metadata:

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "namespace organization"
 type: note
@@ -11,13 +9,10 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 - [Documentazione Filament](../Xot/docs/filament/filament_best_practices.md)
 - [XotBasePage](../Xot/docs/filament/pages/xotbasepage.md)
 - [Linee Guida per l'Ereditarietà](../Xot/docs/filament/filament_inheritance_guidelines.md)
 ---
-<<<<<<< HEAD
-=======
 title: "namespace organization"
 type: note
 tags: [documentation]
@@ -26,7 +21,6 @@ updated: 2026-09-26
 qmd: "namespace organization"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: namespace-organization
 canonical: ../../../../Themes/docs/shared-components/namespace-organization-1.md

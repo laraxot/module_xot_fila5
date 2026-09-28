@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "namespace conventions"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Convenzioni per i Namespace nei Moduli
 
 ## Struttura Base
@@ -41,8 +38,6 @@ namespace Modules\Xot\Console\Commands;
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "namespace conventions"
 type: note
 tags: [documentation]
@@ -51,7 +46,6 @@ updated: 2026-09-26
 qmd: "namespace conventions"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 namespace Modules\Broker\app\Models;
 namespace Modules\User\app\Services;
 namespace Modules\Tenant\app\Repositories;

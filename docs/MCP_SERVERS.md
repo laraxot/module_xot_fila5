@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "MCP SERVERS"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # MCP Servers - Module Context
 
 **Module**: Xot (Base Framework)  
@@ -91,8 +88,6 @@ Use MCP to validate module compliance:
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "MCP SERVERS"
 type: note
 tags: [documentation]
@@ -101,5 +96,4 @@ updated: 2026-09-26
 qmd: "MCP SERVERS"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *This document follows DRY+KISS principles. Server list and configuration are in the master doc.*

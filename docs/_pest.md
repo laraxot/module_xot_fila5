@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: " pest"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'Pest — risorse esterne'
 module: Xot
 type: reference

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "model with author contract"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Model With Author Contract"
 type: reference
 tags: [wiki, no-frontmatter-fix]

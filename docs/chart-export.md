@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "chart export"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "chart export"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: chart-export
 canonical: ../../../Themes/docs/shared-components/chart-export-guide.md

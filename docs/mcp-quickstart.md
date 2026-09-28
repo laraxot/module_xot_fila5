@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "mcp quickstart"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # MCP Quick Start Guide
 
 ## Setup Rapido per il Nostro Progetto
@@ -100,8 +97,6 @@ cd init
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "mcp quickstart"
 type: note
 tags: [documentation]
@@ -110,7 +105,6 @@ updated: 2026-09-26
 qmd: "mcp quickstart"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Server MCP Configurati
 
 ### filesystem

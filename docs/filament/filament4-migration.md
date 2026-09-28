@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament4 migration"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filament 5.x Migration Guide
 
 **Data**: 2026-01-30

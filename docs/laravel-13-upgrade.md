@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "laravel 13 upgrade"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Upgrade Laravel 13 - Xot 🐄✨
 
 ## 🎯 Visione Architetturale
@@ -37,8 +34,6 @@ L'upgrade a Laravel 13 per il modulo **Xot** non è un mero aggiornamento tecnic
 L'aggiornamento richiede l'esecuzione di `composer go` dalla root per consolidare le dipendenze merged.
 
 ---
-<<<<<<< HEAD
-=======
 title: "laravel 13 upgrade"
 type: note
 tags: [documentation]
@@ -47,5 +42,4 @@ updated: 2026-09-26
 qmd: "laravel 13 upgrade"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Status**: Purificato e Pronto per il Futuro.

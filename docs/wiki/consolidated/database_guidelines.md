@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Linee Guida per i Database in Laraxot"
 module: "Xot"
 type: how-to

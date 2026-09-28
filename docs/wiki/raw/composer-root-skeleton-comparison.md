@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "composer root skeleton comparison"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Confronto composer root <nome progetto> vs Predict"
 type: raw-note
 module: Xot

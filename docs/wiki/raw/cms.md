@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "cms"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Cms"
 type: reference
 tags: [wiki, no-frontmatter-fix]

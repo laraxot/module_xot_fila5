@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "implementation filament phpstanes"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Implementation Summary: Filament Extension Rules & PHPStan Return Type Fixes
 
 **Date**: [DATE]
@@ -148,8 +145,6 @@ This document summarizes the successful implementation of:
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "implementation filament phpstanes"
 type: note
 tags: [documentation]
@@ -158,7 +153,6 @@ updated: 2026-09-26
 qmd: "implementation filament phpstanes"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Implemented by**: iFlow CLI
 **Reviewed**: Automated checks passed
 **Compliance**: 100% architecture compliance achieved

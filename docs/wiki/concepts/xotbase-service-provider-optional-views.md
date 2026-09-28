@@ -1,8 +1,5 @@
 ---
-<<<<<<< HEAD
-=======
 discussions: []
->>>>>>> laraxot/dev
 title: "XotBaseServiceProvider — views opzionali"
 type: concept
 module: Xot

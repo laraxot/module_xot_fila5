@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "pest execution"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "pest execution"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: pest-execution
 canonical: ../../../Themes/docs/shared-components/pest-execution-guide.md

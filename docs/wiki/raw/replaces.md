@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "replaces"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Replaces"
 type: reference
 tags: [wiki, no-frontmatter-fix]

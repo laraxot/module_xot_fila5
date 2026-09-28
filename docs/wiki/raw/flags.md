@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "flags"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Flags"
 type: reference
 tags: [wiki, no-frontmatter-fix]

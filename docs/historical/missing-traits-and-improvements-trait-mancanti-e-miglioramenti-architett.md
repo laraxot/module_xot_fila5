@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "missing traits and improvements trait mancanti e miglioramenti architett"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Trait Mancanti e Miglioramenti Architetturali
 
 ## Panoramica
@@ -632,8 +629,6 @@ class AlertWidget extends BaseTableWidget
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "missing traits and improvements trait mancanti e miglioramenti architett"
 type: note
 tags: [documentation]
@@ -642,7 +637,6 @@ updated: 2026-09-26
 qmd: "missing traits and improvements trait mancanti e miglioramenti architett"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Data Creazione**: 2025-01-06
 **Priorità**: CRITICA
 **Effort Stimato**: 20-30 ore

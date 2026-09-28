@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "readme consolidation plan"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Piano Consolidamento File readme.md Duplicati
 
 **Data**: 2026-01-09  
@@ -20,8 +17,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "readme consolidation plan"
 type: note
 tags: [documentation]
@@ -30,7 +25,6 @@ updated: 2026-09-26
 qmd: "readme consolidation plan"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 📋 File Duplicati Identificati
 
 ### Modulo Xot

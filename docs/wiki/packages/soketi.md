@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "soketi"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Soketi"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan compliance"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Compliance - Xot Module
 
 ## 📚 Documentazione Correlata
@@ -23,8 +20,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan compliance"
 type: note
 tags: [documentation]
@@ -33,7 +28,6 @@ updated: 2026-09-26
 qmd: "phpstan compliance"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Status:** 🔄 In Correzione
 **Data Inizio:** 10 Ottobre 2025
 **Target:** PHPStan Level 10 - 0 Errori

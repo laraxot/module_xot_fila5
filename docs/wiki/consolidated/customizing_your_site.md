@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "customizing your site"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "customizing your site"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: customizing_your_site
 canonical: ../../../../Themes/docs/shared-components/customizing-your-site_1-Modules.md

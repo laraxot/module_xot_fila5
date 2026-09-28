@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "overview 1"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "overview 1"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: overview-1
 canonical: ../../../../Themes/docs/shared-components/00-overview-Modules.md

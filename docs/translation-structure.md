@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "translation structure"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Translation Directory Structure
 
 ## Rule: No `lang/lang/` Redundancy

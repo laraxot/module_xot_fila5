@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan progress 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Progress Report - [DATE]
 
 ## Executive Summary
@@ -343,8 +340,6 @@ Exceptional progress with **3 modules actively improved** and **861 errors fixed
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan progress 1"
 type: note
 tags: [documentation]
@@ -353,7 +348,6 @@ updated: 2026-09-26
 qmd: "phpstan progress 1"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *Report by: Claude Code*
 *Project: FixCity PTVX Laravel*
 *Session Duration: ~2 hours*

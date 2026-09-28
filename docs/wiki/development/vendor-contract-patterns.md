@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "vendor contract patterns"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Vendor Contract Patterns"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Claude Code: Connection refused (ConnectionRefused)"
 type: troubleshooting
 tags: [claude-code, omniroute, connection-refused, proxy]

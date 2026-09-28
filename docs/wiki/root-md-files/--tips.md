@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: " tips"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Tips"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "links"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Links
 
 ## Documentazione Generale
@@ -176,8 +173,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "links"
 type: note
 tags: [documentation]
@@ -186,7 +181,6 @@ updated: 2026-09-26
 qmd: "links"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Data Creazione**: 27 Gennaio 2025
 **Stato**: Consolidato da docs/ root
 **Priorità**: MEDIA (Raccolta link)

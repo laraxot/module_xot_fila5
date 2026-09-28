@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "git conflict resolution audit"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "git conflict resolution audit"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 created_at: '2026-07-31'
 ---
 

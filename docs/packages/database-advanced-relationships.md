@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "database advanced relationships"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Relazioni Avanzate e Database - Laraxot PTVX
 
 L'architettura database utilizza librerie specializzate per gestire la complessità dei dati senza compromettere le performance.

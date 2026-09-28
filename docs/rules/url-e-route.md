@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "url e route"
 type: note
@@ -11,4 +8,3 @@ qmd: "url e route"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament haswizard study"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filament HasWizard: Study Notes
 
 ## Date

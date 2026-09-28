@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "project best practices variant"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "project best practices variant"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: project-best-practices-1
 canonical: ../../../Themes/docs/shared-components/project-best-practices-.md

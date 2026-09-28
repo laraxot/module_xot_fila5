@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "trait collision resolution"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "trait collision resolution"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: trait-collision-resolution
 canonical: ../../../Themes/docs/shared-components/trait-collision-resolution-fix.md

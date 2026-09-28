@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "aggregati"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Aggregati"
 type: reference
 tags: [wiki, no-frontmatter-fix]

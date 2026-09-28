@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "model inheritance"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "model inheritance"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: model-inheritance
 canonical: ../../../Themes/docs/shared-components/model-inheritance-rules.md

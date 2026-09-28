@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "git push resolution"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "git push resolution"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 name: xot_git_push_resolution
 description: Risoluzione completa del push del modulo Xot a provtv/dev (2026-07-28)
 metadata:

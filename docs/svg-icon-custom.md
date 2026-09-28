@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "svg icon custom"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # SVG Icon Custom — Regola
 
 ## Pattern
@@ -67,8 +64,6 @@ la stringa della chiave e l'icona si rompe. Hardcodare `xot-files.{ext}`.
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "svg icon custom"
 type: note
 tags: [documentation]
@@ -77,7 +72,6 @@ updated: 2026-09-26
 qmd: "svg icon custom"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Regola documentata**: 23 set 2026 — story BMAD `5.221` + `5.222`
 
 ## Pattern di design (story 5.223)

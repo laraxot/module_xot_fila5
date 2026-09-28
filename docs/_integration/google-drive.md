@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "google drive"
 type: note
@@ -11,4 +8,3 @@ qmd: "google drive"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

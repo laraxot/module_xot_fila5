@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "no label placeholder religion"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # NO Label/Placeholder — La Religione dell'Auto-Label
 
 **Status**: Active  
@@ -22,8 +19,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "no label placeholder religion"
 type: note
 tags: [documentation]
@@ -32,7 +27,6 @@ updated: 2026-09-26
 qmd: "no label placeholder religion"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## LA REGOLA AUREA (Da Ricordare SEMPRE)
 
 **NON userai MAI `->label()` o `->placeholder()` su componenti Filament.**

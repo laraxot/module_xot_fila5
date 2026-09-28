@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "filosofia"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Filosofia"
 type: reference
 tags: [wiki, no-frontmatter-fix]

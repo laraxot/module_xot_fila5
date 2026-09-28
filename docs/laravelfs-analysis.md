@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "laravelfs analysis"
 type: note
@@ -11,4 +8,3 @@ qmd: "laravelfs analysis"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

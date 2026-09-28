@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "translation structure expanded"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 - [Geo Module Translations](/Modules/Geo/project_docs/translation-structure-expanded.md)
 - [User Module Translations](/Modules/User/project_docs/translation-guidelines.md)
 
@@ -39,8 +36,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "translation structure expanded"
 type: note
 tags: [documentation]
@@ -49,7 +44,6 @@ updated: 2026-09-26
 qmd: "translation structure expanded"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Stato**: Documentazione completata, implementazione in corso
 **Priorità**: Media (file già corretto linguisticamente)
 **Responsabile**: Sistema automatico DRY/KISS

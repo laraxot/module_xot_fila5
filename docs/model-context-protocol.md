@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "model context protocol"
 type: note
@@ -11,4 +8,3 @@ qmd: "model context protocol"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

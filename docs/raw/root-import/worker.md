@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "worker"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 
 
 https://github.com/orobogenius/sansdaemon/blob/master/src/Traits/SansDaemonWorkerTrait.php

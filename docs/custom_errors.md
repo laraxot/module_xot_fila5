@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: "custom errors"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Custom errors"
 type: reference
 status: active

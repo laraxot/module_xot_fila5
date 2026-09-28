@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "limesurvey database analysis"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Limesurvey Database Analysis - quaeris_survey
 
 ## Overview

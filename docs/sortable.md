@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "sortable"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 
 la base
 https://jqueryui.com/draggable/#sortable

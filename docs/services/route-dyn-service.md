@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "route dyn service"
 type: note
@@ -11,4 +8,3 @@ qmd: "route dyn service"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

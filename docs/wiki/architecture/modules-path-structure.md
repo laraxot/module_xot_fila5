@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "modules path structure"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Modules Path Structure"
 type: reference
 tags: [wiki, no-frontmatter-fix]

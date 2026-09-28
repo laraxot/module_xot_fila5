@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "pwa"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # pwa
 
 <!-- Contenuto migrato da _docs/pwa.txt -->

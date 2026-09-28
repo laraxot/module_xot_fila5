@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "store"
 type: note
@@ -11,4 +8,3 @@ qmd: "store"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

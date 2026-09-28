@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "fill field with lorem"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # fill_field_with_lorem
 
 <!-- Contenuto migrato da _docs/fill_field_with_lorem.txt -->

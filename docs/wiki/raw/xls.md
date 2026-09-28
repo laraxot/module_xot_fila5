@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "xls"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Xls"
 type: reference
 tags: [wiki, no-frontmatter-fix]

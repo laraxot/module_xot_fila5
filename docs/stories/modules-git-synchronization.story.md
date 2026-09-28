@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: "modules git synchronization.story"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Sincronizzazione Git moduli separati"
 type: story
 module: Xot

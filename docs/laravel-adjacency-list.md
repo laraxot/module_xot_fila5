@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "laravel adjacency list"
 type: note
@@ -11,4 +8,3 @@ qmd: "laravel adjacency list"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

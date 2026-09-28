@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "auto routes"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Auto Routes"
 type: reference
 tags: [wiki, no-frontmatter-fix]

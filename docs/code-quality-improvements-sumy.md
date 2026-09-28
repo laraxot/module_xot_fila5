@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "code quality improvements sumy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # 📊 Code Quality Improvements Summary - [DATE]
 
 ## 🎯 Overview
@@ -161,8 +158,6 @@ This document summarizes the systematic code quality improvements made across th
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "code quality improvements sumy"
 type: note
 tags: [documentation]
@@ -171,7 +166,6 @@ updated: 2026-09-26
 qmd: "code quality improvements sumy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Tools Used**: PHPStan, PHPInsights, Claude Code
 **Quality Score**: 🎯 Excellent
 

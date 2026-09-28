@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "hasxotfactory restoration"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Hasxotfactory Restoration"
 type: reference
 tags: [wiki, no-frontmatter-fix]

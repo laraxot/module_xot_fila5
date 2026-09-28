@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "laraxot migration"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "laraxot migration"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: laraxot-migration
 canonical: ../../../Themes/docs/shared-components/laraxot-migration-philosophy-sumy.md

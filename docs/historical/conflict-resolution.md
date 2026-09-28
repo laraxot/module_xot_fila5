@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "conflict resolution"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Report Conflitti Git - Modulo Xot
 
 ## Data
@@ -44,8 +41,6 @@ discussions: []
 3. Affrontare debt PHPStan (tipi mixed) in widget e colonne custom
 
 ---
-<<<<<<< HEAD
-=======
 title: "conflict resolution"
 type: note
 tags: [documentation]
@@ -54,5 +49,4 @@ updated: 2026-09-26
 qmd: "conflict resolution"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 Ultimo aggiornamento: 2025-01-06

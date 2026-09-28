@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "phpstan error"
 type: note
@@ -11,4 +8,3 @@ qmd: "phpstan error"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

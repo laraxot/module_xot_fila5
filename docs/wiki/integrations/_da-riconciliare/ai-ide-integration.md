@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "ai ide integration"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "AI/IDE Integration Guide - Xot Module"
 module: xot
 type: integration

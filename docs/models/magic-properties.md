@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "magic properties"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Magic Properties in Laravel Eloquent Models
 
 ## Overview

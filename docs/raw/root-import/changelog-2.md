@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "changelog 2"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Changelog - Modulo Xot
 
 Tutte le modifiche significative al modulo Xot sono documentate in questo file.
@@ -75,8 +72,6 @@ All notable changes to `:package_name` will be documented in this file.
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "changelog 2"
 type: note
 tags: [documentation]
@@ -85,7 +80,6 @@ updated: 2026-09-26
 qmd: "changelog 2"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## [1.1.0] - 2025-10-29
 
 ### Fixed

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "module filament panel triad"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: trinità panel filament per modulo
 type: concept
 module: Xot

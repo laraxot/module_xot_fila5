@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "customs"
 type: note
@@ -11,4 +8,3 @@ qmd: "customs"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

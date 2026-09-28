@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "migration timestamps audit user id issue"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Nota Architetturale: Rimozione `user_id` da `XotBaseMigration::timestamps()` (2026-03-06)
 
 ## Situazione Rilevata

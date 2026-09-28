@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "pulse"
 type: note
@@ -11,4 +8,3 @@ qmd: "pulse"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

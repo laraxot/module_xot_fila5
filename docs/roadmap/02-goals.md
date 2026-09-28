@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "02 goals"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Goals - Xot
 
 ## Short Term

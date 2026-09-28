@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: "manage related records convention over configuration.story"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Xot: XotBaseManageRelatedRecords — getFormSchema()/getTableColumns() risolti per convenzione (implementato)"
 type: story
 module: Xot

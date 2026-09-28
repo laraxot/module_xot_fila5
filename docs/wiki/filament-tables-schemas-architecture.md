@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament tables schemas architecture"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filament Tables & Schemas — Obbligo Architetturale
 
 ## Perché esistono `/Tables` e `/Schemas`

@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "actions standardization"
 type: note
@@ -11,4 +8,3 @@ qmd: "actions standardization"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

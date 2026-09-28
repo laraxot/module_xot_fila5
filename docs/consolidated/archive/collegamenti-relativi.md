@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "collegamenti relativi"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Regole per i Collegamenti nella Documentazione
 
 ## Utilizzo Esclusivo di Collegamenti Relativi

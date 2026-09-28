@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "test structure philosophy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Laraxot Test Structure Philosophy
 
 ## Core Principle: Single Test Directory Structure
@@ -276,8 +273,6 @@ Modules/UI/tests/Unit/Widgets/
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "test structure philosophy"
 type: note
 tags: [documentation]
@@ -286,5 +281,4 @@ updated: 2026-09-26
 qmd: "test structure philosophy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Philosophy Summary**: In Laraxot, consistent test structure ensures reliable test execution and predictable development workflow. Choose one pattern and apply it consistently across all modules.

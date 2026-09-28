@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "chaos monkey operability rules"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Chaos Monkey Operability Rules (Xot)
 
 ## Scopo

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "frontend architecture"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Architettura Frontend
 
 ## Tecnologie Principali

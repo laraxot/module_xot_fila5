@@ -1,28 +1,19 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "phpstan partial scope false positives"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "PHPStan — falsi positivi da scope parziale (trait.unused cross-modulo)"
 type: concept
 module: Xot
 tags: [phpstan, trait, scope, cross-module, false-positive, second-brain]
 created: 2026-07-06
-<<<<<<< HEAD
-updated: 2026-07-06
-=======
 updated: 2026-09-24
->>>>>>> laraxot/dev
 related:
   - ./phpstan-fixes-log.md
 ---
 
 # PHPStan — falsi positivi da scope parziale
 
-<<<<<<< HEAD
-=======
 ## Stato dell'esempio Geo (2026-09-24)
 
 Il caso GeoTrait/TechPlanner qui sotto è **storico**: il modulo TechPlanner e
@@ -33,7 +24,6 @@ sono stati rimossi. Gli scope geografici attivi sono implementati da
 indirizzo ancora usati. L'esempio resta utile come lezione sullo scope di
 analisi, non come istruzione per conservare codice senza chiamanti.
 
->>>>>>> laraxot/dev
 ## Problema
 
 Eseguire `phpstan analyse Modules/{UnSoloModulo}` (o più moduli ma non tutti

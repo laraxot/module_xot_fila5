@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: " todo"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: " todo"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: -todo
 canonical: ../../../../Themes/docs/shared-components/-14.md

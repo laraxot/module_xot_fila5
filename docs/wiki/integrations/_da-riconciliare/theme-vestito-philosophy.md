@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "theme vestito philosophy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Theme System: The 'Vestito' (Clothing) Philosophy"
 module: xot
 type: integration

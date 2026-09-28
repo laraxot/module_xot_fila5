@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "testing refresh database rule"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Critical Rule: Never Use RefreshDatabase Trait
 
 ## Overview
@@ -246,8 +243,6 @@ This should return no results (except this documentation file).
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "testing refresh database rule"
 type: note
 tags: [documentation]
@@ -256,5 +251,4 @@ updated: 2026-09-26
 qmd: "testing refresh database rule"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Remember**: This rule is fundamental to the performance and reliability of the test suite in the Laraxot framework. Always use DatabaseTransactions or other alternatives instead of RefreshDatabase.

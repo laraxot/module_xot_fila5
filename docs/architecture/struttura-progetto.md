@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "struttura progetto"
 type: note
@@ -11,4 +8,3 @@ qmd: "struttura progetto"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

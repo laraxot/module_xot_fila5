@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "pulse"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "pulse"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: pulse
 canonical: ../../../../Themes/docs/shared-components/pulse.md

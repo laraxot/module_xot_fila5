@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "cart session"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 
 https://github.com/seikan/Cart/blob/master/class.Cart.php
 

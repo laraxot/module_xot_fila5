@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament integration"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filament Integration in Laraxot
 
 ## Resource Implementation
@@ -23,13 +20,6 @@ discussions: []
 
 ### Form Schema
 ```php
-<<<<<<< HEAD
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 public function getFormSchema(): array
 ---
 title: "filament integration"
@@ -41,7 +31,6 @@ qmd: "filament integration"
 issues: []
 discussions: []
 public function getFormSchema(): array
->>>>>>> laraxot/dev
 {
     return [
         // Campi base

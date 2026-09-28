@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "livewire components"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'livewire_components'
 module: Xot
 type: reference

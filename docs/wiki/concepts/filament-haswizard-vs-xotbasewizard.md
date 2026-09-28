@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament haswizard vs xotbasewizard"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filament HasWizard Concern vs XotBaseWizardWidget
 
 ## Date

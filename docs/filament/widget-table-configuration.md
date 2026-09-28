@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "widget table configuration"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Configurazione Tabelle Widget - Pattern e Regole
 
 **Data Creazione**: 2025-01-27  

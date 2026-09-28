@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "brand migration"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Brand Migration"
 type: reference
 tags: [wiki, no-frontmatter-fix]

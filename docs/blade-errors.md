@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "blade errors"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'blade_errors'
 module: Xot
 type: reference

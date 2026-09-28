@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "launch plan"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Product Launch Plan: Xot v1.0
 
 ## 🚀 Launch Overview

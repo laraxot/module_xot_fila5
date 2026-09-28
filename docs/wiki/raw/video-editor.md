@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "video editor"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Video Editor"
 type: reference
 tags: [wiki, no-frontmatter-fix]

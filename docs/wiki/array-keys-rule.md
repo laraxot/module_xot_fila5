@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "array keys rule"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Array Keys Rule for Filament Schemas
 
 ## Regola
@@ -93,13 +90,6 @@ public static function getTableColumns(): array
 
 ### Form
 ```php
-<<<<<<< HEAD
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 public function getFormSchema(): array
 ---
 title: "array keys rule"
@@ -111,7 +101,6 @@ qmd: "array keys rule"
 issues: []
 discussions: []
 public function getFormSchema(): array
->>>>>>> laraxot/dev
 {
     return [
         'title' => TextInput::make('title')->required()->maxLength(255),
@@ -123,17 +112,9 @@ public function getFormSchema(): array
 
 ### Infolist
 ```php
-<<<<<<< HEAD
-<<<<<<< HEAD
-public function getInfolistSchema(): array
-=======
-public function getInfolistSchema(): array
->>>>>>> laraxot/dev
-=======
 public function getInfolistSchema(): array
 ---
 public function getInfolistSchema(): array
->>>>>>> laraxot/dev
 {
     return [
         'title' => TextEntry::make('title'),

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "has recursive relationships contract update"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # HasRecursiveRelationshipsContract - Aggiornamento 2025-01-18
 
 ## 📋 Riepilogo Modifiche
@@ -235,8 +232,6 @@ public function getLocalKeyName(): string
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "has recursive relationships contract update"
 type: note
 tags: [documentation]
@@ -245,7 +240,6 @@ updated: 2026-09-26
 qmd: "has recursive relationships contract update"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Data**: 2025-01-18
 **Autore**: AI Assistant
 **Status**: ✅ Completato e verificato

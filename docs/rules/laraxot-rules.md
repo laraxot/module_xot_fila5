@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "laraxot rules"
 type: note
@@ -11,4 +8,3 @@ qmd: "laraxot rules"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

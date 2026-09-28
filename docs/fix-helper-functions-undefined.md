@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "fix helper functions undefined"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Fix: Helper Functions Undefined - Analisi e Risoluzione
 
 ## 🐛 Problema Originale
@@ -452,8 +449,6 @@ Docs: aggiornata documentazione Xot e Tenant
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "fix helper functions undefined"
 type: note
 tags: [documentation]
@@ -462,7 +457,6 @@ updated: 2026-09-26
 qmd: "fix helper functions undefined"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 🔄 Fix Aggiuntivo: getModuleModels() durante package:discover
 
 **Data**: Gennaio 2025

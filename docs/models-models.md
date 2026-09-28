@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "models models"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # _models
 
 <!-- Contenuto migrato da _docs/_models.txt -->

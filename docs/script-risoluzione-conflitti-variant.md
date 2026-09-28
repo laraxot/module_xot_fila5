@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "script risoluzione conflitti variant"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "script risoluzione conflitti variant"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: script-risoluzione-conflitti-1
 canonical: ../../../Themes/docs/shared-components/SCRIPT_RISOLUZIONE_CONFLITTI.md

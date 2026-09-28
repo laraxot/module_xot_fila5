@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "icons"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Icone e SVG nei Moduli
 
 ## Configurazione delle Icone di Navigazione

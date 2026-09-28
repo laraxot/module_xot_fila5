@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "php codesniffer phpcodesnifferhttpsgithubcomsquizlabsphp"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Php Codesniffer Phpcodesnifferhttpsgithubcomsquizlabsphp"
 type: reference
 tags: [wiki, no-frontmatter-fix]

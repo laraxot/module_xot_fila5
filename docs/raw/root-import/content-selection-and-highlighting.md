@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "content selection and highlighting"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://javascript.plainenglish.io/medium-like-text-highlighting-in-react-afa35a29a81a
 
 

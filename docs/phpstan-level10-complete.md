@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan level10 complete"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Xot Module - PHPStan Level 10 Analysis (January 2026)
 
 ## 📊 Current Status
@@ -53,8 +50,6 @@ bootstrapFiles:
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan level10 complete"
 type: note
 tags: [documentation]
@@ -63,7 +58,6 @@ updated: 2026-09-26
 qmd: "phpstan level10 complete"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ### 2. Fixed Passport Contract Compatibility
 
 **Problem**: `PassportHasApiTokensContract::withAccessToken()` signature incompatible with Laravel Passport's `OAuthenticatable` contract

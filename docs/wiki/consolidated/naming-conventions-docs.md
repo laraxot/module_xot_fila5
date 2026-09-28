@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "naming conventions docs"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Naming Conventions Docs"
 type: reference
 tags: [wiki, no-frontmatter-fix]

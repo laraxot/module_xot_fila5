@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "performance optimization.divergenza"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: performance-optimization.md"
 module: Xot
 type: note

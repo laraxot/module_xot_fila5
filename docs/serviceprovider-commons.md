@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "serviceprovider commons"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "serviceprovider commons"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: serviceprovider-commons
 canonical: ../../../Themes/docs/shared-components/serviceprovider-common-errors.md

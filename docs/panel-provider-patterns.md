@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "panel provider patterns"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Panel Provider Patterns - XotBasePanelProvider e XotBaseMainPanelProvider
 
 ## Pattern Obbligatorio: Assegnazione Valore di Ritorno Actions
@@ -126,8 +123,6 @@ Prima di considerare completo un Panel Provider, verificare:
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "panel provider patterns"
 type: note
 tags: [documentation]
@@ -136,5 +131,4 @@ updated: 2026-09-26
 qmd: "panel provider patterns"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *Ultimo aggiornamento: Dicembre 2024*

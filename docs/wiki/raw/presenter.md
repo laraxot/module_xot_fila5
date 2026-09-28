@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "presenter"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Presenter"
 type: reference
 tags: [wiki, no-frontmatter-fix]

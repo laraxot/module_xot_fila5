@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "README"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Xot Module - Product Strategy Document
 
 ## Document Information
@@ -321,8 +318,6 @@ Xot provides Laravel developers with a comprehensive, enterprise-ready foundatio
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "README"
 type: note
 tags: [documentation]
@@ -331,5 +326,4 @@ updated: 2026-09-26
 qmd: "README"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *This strategy document will be reviewed and updated quarterly based on performance data and market changes.*

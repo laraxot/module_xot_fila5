@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "analysis summary"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Analysis Summary"
 type: reference
 tags: [wiki, no-frontmatter-fix]

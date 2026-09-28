@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "machine learning"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'machine_learning'
 module: Xot
 type: reference

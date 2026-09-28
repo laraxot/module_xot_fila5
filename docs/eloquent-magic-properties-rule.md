@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "eloquent magic properties rule"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Eloquent Magic Properties - Regola Assoluta
 
 ## 🔥 REGOLA FONDAMENTALE
@@ -319,8 +316,6 @@ Quando scrivi codice con Eloquent:
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "eloquent magic properties rule"
 type: note
 tags: [documentation]
@@ -329,7 +324,6 @@ updated: 2026-09-26
 qmd: "eloquent magic properties rule"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Summary
 
 **3 Regole d'Oro**:

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "custom errors"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://tutsforweb.com/how-to-create-custom-404-page-laravel/
 
 

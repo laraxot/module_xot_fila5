@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "namespaces"
 type: note
@@ -11,4 +8,3 @@ qmd: "namespaces"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

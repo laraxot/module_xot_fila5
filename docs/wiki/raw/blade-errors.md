@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "blade errors"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Blade Errors"
 type: reference
 tags: [wiki, no-frontmatter-fix]

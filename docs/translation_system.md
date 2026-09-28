@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "translation system"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Sistema di Traduzione 
 
 ## Regola Fondamentale: NO ->label()

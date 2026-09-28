@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "gits mal risolti"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "gits mal risolti"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: gits-mal-risolti
 canonical: ../../../Themes/docs/shared-components/git-conflicts-mal-risolti.md

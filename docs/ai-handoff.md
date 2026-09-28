@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "ai handoff"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # ai handoff
 
 ## regole non negoziabili

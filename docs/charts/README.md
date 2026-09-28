@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "README"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # 📊 Xot Charts - Shared Actions & Utilities
 
 **Modulo**: Xot (Core)
@@ -20,8 +17,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "README"
 type: note
 tags: [documentation]
@@ -30,7 +25,6 @@ updated: 2026-09-26
 qmd: "README"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 📋 Overview
 
 Il modulo **Xot** fornisce **QueueableActions** e utility condivise per l'export di chart in **PNG** e **SVG** utilizzabili da tutti i moduli PTVX.

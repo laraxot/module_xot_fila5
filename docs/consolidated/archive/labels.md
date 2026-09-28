@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "labels"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Labels - File di traduzione
 
 Il file `labels.php` contiene tutte le etichette e i testi utilizzati nel modulo Xot.

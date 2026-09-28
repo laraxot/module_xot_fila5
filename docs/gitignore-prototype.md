@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "gitignore prototype"
 type: note
@@ -11,4 +8,3 @@ qmd: "gitignore prototype"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 created: 2026-09-26
 updated: 2026-09-26
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: Gerarchia widget Filament — solo XotBase*
 type: concept
 tags: [filament, widget, xotbase, architecture]

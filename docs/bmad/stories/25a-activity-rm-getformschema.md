@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "25a activity rm getformschema"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # 25a-activity — Rimuovere getFormSchema da SnapshotResource e StoredEventResource
 
 **Modulo:** Activity

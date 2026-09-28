@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "collections"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Collections"
 type: reference
 tags: [wiki, no-frontmatter-fix]

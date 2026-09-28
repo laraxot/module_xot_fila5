@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "manage related records patterns"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Sexy UI Patterns for ManageRelatedRecords
 
 ## Advanced Column Presentation

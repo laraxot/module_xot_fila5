@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "xotbase extension rules xotbase extension rules comprehensive"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # XotBase Extension Rules - Comprehensive Guide
 
 ## 🚨 Critical Architectural Rule
@@ -259,8 +256,6 @@ Always run `php artisan optimize:clear && ./vendor/bin/phpstan analyse` after ma
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "xotbase extension rules xotbase extension rules comprehensive"
 type: note
 tags: [documentation]
@@ -269,6 +264,5 @@ updated: 2026-09-26
 qmd: "xotbase extension rules xotbase extension rules comprehensive"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *Last Updated: 2025-01-10*
 *Architecture Version: XotBase 2.1*

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "dry kiss analysis"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Dry Kiss Analysis"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "xot testing guide"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Testing Xot
 
 Testing guide for Xot module and all modules that extend it.

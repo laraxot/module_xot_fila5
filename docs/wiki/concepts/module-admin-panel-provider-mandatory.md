@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "module admin panel provider mandatory"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Ogni modulo con UI Filament richiede app/Providers/Filament/AdminPanelProvider.php"
 type: concept
 module: Xot

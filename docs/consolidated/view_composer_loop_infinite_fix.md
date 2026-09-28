@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "XotComposer - Loop Infinito Fix"
 module: "Xot"
 type: concept

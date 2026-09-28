@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "moduli laraxot"
 type: note
@@ -11,4 +8,3 @@ qmd: "moduli laraxot"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "bugfix carbon timezone"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "bugfix carbon timezone"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: bugfix-carbon-timezone
 canonical: ../../../Themes/docs/shared-components/bugfix-carbon-timezone-error.md

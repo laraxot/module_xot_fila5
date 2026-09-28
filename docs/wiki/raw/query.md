@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "query"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Query"
 type: reference
 tags: [wiki, no-frontmatter-fix]

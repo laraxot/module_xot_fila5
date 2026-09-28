@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "xot base wizard widget"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # XotBaseWizardWidget
 
 Classe astratta: `Modules\Xot\Filament\Widgets\XotBaseWizardWidget`  

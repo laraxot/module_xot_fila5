@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "ecoomerce"
 type: note
@@ -11,6 +9,5 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://madewithlaravel.com/laravel-elegant-markplace
 

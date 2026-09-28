@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "heretic llm"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # heretic llm e laraxot
 
 ## cos'è heretic (sintesi)

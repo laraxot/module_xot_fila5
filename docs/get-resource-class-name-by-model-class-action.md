@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "GetResourceClassNameByModelClassAction — fallback panel-aware di XotBaseResource"
 module: "Xot"
 type: concept

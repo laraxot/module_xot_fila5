@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "machine learning"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Machine Learning"
 type: reference
 tags: [wiki, no-frontmatter-fix]

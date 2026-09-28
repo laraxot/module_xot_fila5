@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "docs"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
  * https://jasonmccreary.me/articles/start-testing-laravel/
  * https://www.5balloons.info/laravel-tdd-beginner-crud-example/
  * https://tighten.co/blog/tidying-up-your-phpunit-tests-with-data-providers/

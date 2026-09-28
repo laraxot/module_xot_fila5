@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "case sensitive filenames"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # 📋 **Regola: Nomi File Case-Sensitive**
 
 **Data**: 11 Novembre 2025
@@ -199,8 +196,6 @@ Aggiungere al workflow GitHub Actions:
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "case sensitive filenames"
 type: note
 tags: [documentation]
@@ -209,7 +204,6 @@ updated: 2026-09-26
 qmd: "case sensitive filenames"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Ultimo aggiornamento**: 11 Novembre 2025
 **Modulo**: Xot
 **Categoria**: Regole di Codice

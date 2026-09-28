@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "case sensitive filenames"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Case Sensitive Filenames"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "tools"
 type: note
@@ -11,4 +8,3 @@ qmd: "tools"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

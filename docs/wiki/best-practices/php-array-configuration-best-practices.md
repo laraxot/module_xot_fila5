@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "php array configuration best practices"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Php Array Configuration Best Practices"
 type: reference
 tags: [wiki, no-frontmatter-fix]

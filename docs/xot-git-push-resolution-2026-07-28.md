@@ -1,13 +1,10 @@
 ---
-<<<<<<< HEAD
-=======
 type: note
 created: 2026-09-26
 updated: 2026-09-26
 qmd: "xot git push resolution 2026 07 28"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Xot Git Push & PHPStan Analysis — 2026-07-28"
 date: 2026-07-28
 tags: [git, phpstan, resolution]

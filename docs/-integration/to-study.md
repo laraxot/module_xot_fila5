@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "to study"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # __to_study
 
 <!-- Contenuto migrato da _docs/__to_study.txt -->

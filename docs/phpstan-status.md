@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan status"
 type: note
@@ -11,13 +9,10 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Status — Xot
 
 Stato vivo del gate. Non copiare numeri da report storici: rimisura.
 
-<<<<<<< HEAD
-=======
 ## Misura 2026-09-24 (sera) — analyse Modules zero (restaurant_fila5)
 
 `cd laravel && ./vendor/bin/phpstan analyse Modules --memory-limit=-1` →
@@ -25,7 +20,6 @@ Stato vivo del gate. Non copiare numeri da report storici: rimisura.
 backslash; errori app/test risolti senza ignore. Write-back root:
 [phpstan-modules-swarm-session](../../../../docs/wiki/memories/phpstan-modules-swarm-session.md).
 
->>>>>>> laraxot/dev
 ## Misura 2026-09-24 (notte) — certify no-path + harness worktree
 
 `./vendor/bin/phpstan analyse` (no path CLI): **`[OK] No errors` EXIT 0**.
@@ -41,11 +35,6 @@ Pest: skip — `DB_HOST=10.100.200.53` DOWN (non host 15).
 
 `analyse Modules` dopo fix `@template TModel` / `@use GeoTrait<Address>`:
 **0** `file_errors`. Canon:
-<<<<<<< HEAD
-[geo-trait.md](../Geo/docs/traits/geo-trait.md) ·
-[phpstan-journey.md](../../../../bashscripts/ai/wiki/second-brain/phpstan-journey.md).
-
-=======
 [phpstan-journey.md](../../../../bashscripts/ai/wiki/second-brain/phpstan-journey.md).
 
 Questa misura documenta lo stato storico prima della rimozione del trait.
@@ -63,7 +52,6 @@ presente. Dopo il controllo read-only dei chiamanti e l'arresto di tutte le run,
 ha chiuso con **EXIT 0**, `totals.errors=0`, `totals.file_errors=0`.
 Report: `build/phpstan-modules-final.json`.
 
->>>>>>> laraxot/dev
 ## Misura 2026-09-24 — regressione naming (CloudStorage + Symplify)
 
 Dopo cache clear, `cd laravel && ./vendor/bin/phpstan analyse Modules` ha riportato

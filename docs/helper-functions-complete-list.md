@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "helper functions complete list"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Helper Functions Complete List - Xot Module
 
 ## 📋 Overview
@@ -24,8 +21,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "helper functions complete list"
 type: note
 tags: [documentation]
@@ -34,7 +29,6 @@ updated: 2026-09-26
 qmd: "helper functions complete list"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 🎯 Lista Completa Helper Functions
 
 ### 1. `isRunningTestBench(): bool`

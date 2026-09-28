@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "advanced framework architecture"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Architettura Avanzata del Framework Xot basata sui Principi Filament
 
 ## Introduzione

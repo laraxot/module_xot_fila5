@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "xotbase manage related records"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # XotBaseManageRelatedRecords — Reference
 
 `Modules\Xot\Filament\Resources\Pages\XotBaseManageRelatedRecords`

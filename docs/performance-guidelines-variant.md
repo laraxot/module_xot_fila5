@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "performance guidelines variant"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "performance guidelines variant"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: performance-guidelines-1
 canonical: ../../../Themes/docs/shared-components/PERFORMANCE_GUIDELINES.md

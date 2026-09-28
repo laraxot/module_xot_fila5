@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "xot philosophy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Xot Philosophy
 
 The credo of Laraxot and the non-negotiables that bind all 47 modules.

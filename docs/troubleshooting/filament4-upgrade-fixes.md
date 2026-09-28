@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament4 upgrade fixes"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Risoluzione Errori Upgrade Filament 4 - Laraxot PTVX
 
 ## Problema Iniziale: ProviderRepository array_merge()

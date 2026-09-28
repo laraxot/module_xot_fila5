@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "CHANGELOG"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Changelog
 
 All notable changes to `:package_name` will be documented in this file.
@@ -22,8 +19,6 @@ All notable changes to `:package_name` will be documented in this file.
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "CHANGELOG"
 type: note
 tags: [documentation]
@@ -32,7 +27,6 @@ updated: 2026-09-26
 qmd: "CHANGELOG"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Contenuto assorbito da `CHANGELOG.MD`
 
 # Changelog - Modulo Xot

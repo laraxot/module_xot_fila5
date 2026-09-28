@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: PHPStan Standards - Xot Module (Base Classes)
 type: technical
 tags: [phpstan, xot, base-model, information-schema]

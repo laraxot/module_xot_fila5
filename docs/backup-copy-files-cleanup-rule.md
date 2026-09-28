@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "backup copy files cleanup rule"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Backup and Copy Files Cleanup Rule
 
 > **Rule**: Backup and copy files MUST NOT exist in the repository.
@@ -22,8 +19,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "backup copy files cleanup rule"
 type: note
 tags: [documentation]
@@ -32,7 +27,6 @@ updated: 2026-09-26
 qmd: "backup copy files cleanup rule"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## The Rule
 
 **All backup and copy files MUST be:**

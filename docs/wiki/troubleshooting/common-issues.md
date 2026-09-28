@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "common issues"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Common Issues"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "mcp errors and lessons"
 type: note
@@ -11,4 +8,3 @@ qmd: "mcp errors and lessons"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

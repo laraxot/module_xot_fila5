@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "policy inheritance strategy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Policy Inheritance Strategy in Laraxot
 
 ## 🔴 REGOLA CRITICA: mai cancellare policy modello
@@ -26,8 +23,6 @@ Regola agenti: [bashscripts/ai/.agents/docs/rules/model-policy-never-delete.md](
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "policy inheritance strategy"
 type: note
 tags: [documentation]
@@ -36,7 +31,6 @@ updated: 2026-09-26
 qmd: "policy inheritance strategy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## REGOLA PERMANENTE: Gerarchia corretta delle Policy Base
 
 ### Panoramica

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament widgets v5 guide"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filament Widgets - Guida Completa v5.x
 
 **Data**: 2026-03-23  
@@ -19,8 +16,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "filament widgets v5 guide"
 type: note
 tags: [documentation]
@@ -29,7 +24,6 @@ updated: 2026-09-26
 qmd: "filament widgets v5 guide"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 📋 Overview
 
 Filament permette di costruire dashboard dinamiche composte da "widgets". Ogni widget è un elemento che visualizza dati in modo specifico:

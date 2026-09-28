@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "laravel cms"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'Laravel cms — risorse esterne'
 module: Xot
 type: reference

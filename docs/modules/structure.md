@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "structure"
 type: note
@@ -11,4 +8,3 @@ qmd: "structure"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

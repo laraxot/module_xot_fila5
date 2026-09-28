@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament guide"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Guida a Filament
 
 ## Risorse Utili

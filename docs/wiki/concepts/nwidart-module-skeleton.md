@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "nwidart module skeleton"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: Skeleton nwidart modulo
 type: concept
 module: Xot

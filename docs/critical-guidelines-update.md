@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "critical guidelines update"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Aggiornamento Linee Guida Critiche - Agosto 2025
 
 ## 1. VIOLAZIONE GRAVE: Cartella Docs Root
@@ -176,8 +173,6 @@ find  --include="*.php" | grep -v "static" | grep -v "::"
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "critical guidelines update"
 type: note
 tags: [documentation]
@@ -186,7 +181,6 @@ updated: 2026-09-26
 qmd: "critical guidelines update"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **DATA EFFETTIVA**: 2025-08-20
 **PRIORITÀ**: CRITICA
 **RESPONSABILE**: Tutto il team sviluppo

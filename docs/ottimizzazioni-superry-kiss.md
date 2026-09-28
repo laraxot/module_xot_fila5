@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "ottimizzazioni superry kiss"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "ottimizzazioni superry kiss"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: ottimizzazioni-superry-kiss
 canonical: ../../../Themes/docs/shared-components/ottimizzazioni-super-dry-kiss-Modules.md

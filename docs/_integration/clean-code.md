@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "clean code"
 type: note
@@ -11,4 +8,3 @@ qmd: "clean code"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

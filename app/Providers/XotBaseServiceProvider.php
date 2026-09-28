@@ -90,11 +90,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
             throw new \Exception('name is empty on ['.static::class.']');
         }
 
-<<<<<<< HEAD
-        $viewPath = module_path($this->name, 'resources/views');
-=======
         $viewPath = base_path('Modules/'.$this->name.'/resources/views');
->>>>>>> laraxot/dev
 
         if (! is_dir($viewPath)) {
             return;
@@ -123,13 +119,9 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 
     public function registerBladeComponents(): void
     {
-<<<<<<< HEAD
-        $componentViewPath = app(GetModulePathByGeneratorAction::class)->execute($this->name, 'component-view');
-=======
         $componentViewPath = base_path(
             'Modules/'.$this->name.'/resources/views/components',
         );
->>>>>>> laraxot/dev
 
         if (is_dir($componentViewPath)) {
             try {
@@ -139,24 +131,16 @@ abstract class XotBaseServiceProvider extends ServiceProvider
             }
         }
 
-<<<<<<< HEAD
-        $componentClassPath = app(GetModulePathByGeneratorAction::class)->execute($this->name, 'component-class');
-=======
         $componentClassPath = base_path(
             'Modules/'.$this->name.'/app/View/Components',
         );
->>>>>>> laraxot/dev
 
         $namespace = $this->module_ns.'\View\Components';
         Blade::componentNamespace($namespace, $this->nameLower);
 
-<<<<<<< HEAD
-        app(RegisterBladeComponentsAction::class)->execute($componentClassPath, $this->module_ns);
-=======
         if (is_dir($componentClassPath)) {
             app(RegisterBladeComponentsAction::class)->execute($componentClassPath, $this->module_ns);
         }
->>>>>>> laraxot/dev
     }
 
     public function registerLivewireComponents(): void
@@ -231,11 +215,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
             throw new \Exception('name is empty on ['.static::class.']');
         }
 
-<<<<<<< HEAD
-        $sourcePath = module_path($this->name, 'public');
-=======
         $sourcePath = base_path('Modules/'.$this->name.'/public');
->>>>>>> laraxot/dev
 
         if (! File::isDirectory($sourcePath)) {
             return;

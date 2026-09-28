@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "ai methodologies"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # AI Methodologies Handbook
 
 This file is a DRY local index for AI workflows in this module or theme.

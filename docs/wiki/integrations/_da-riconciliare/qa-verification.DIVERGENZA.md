@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "qa verification.DIVERGENZA"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: qa-verification.md"
 module: Xot
 type: note

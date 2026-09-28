@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "xotbasewizardwidget vs filament haswizard"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "XotBaseWizardWidget vs Filament HasWizard - Architecture Analysis"
 type: concept
 sources:

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "inheritance"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Inheritance"
 type: reference
 tags: [wiki, no-frontmatter-fix]

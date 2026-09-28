@@ -1,13 +1,10 @@
 ---
-<<<<<<< HEAD
-=======
 type: note
 created: 2026-09-26
 updated: 2026-09-26
 qmd: "pest5 configuring tests"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: pest 5 configuring-tests — bootstrap senza require_once
 description: Tre strati bootstrap Laraxot — XotBasePest PSR-4, Helpers.php dominio, pest()->extend con gate PHPStan.
 document_type: concept

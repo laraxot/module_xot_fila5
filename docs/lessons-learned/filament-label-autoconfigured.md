@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "filament label autoconfigured"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "filament label autoconfigured"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 name: filament-label-autoconfigured
 description: "Mai ->label() esplicito sui componenti Filament: AutoLabelAction lo sovrascrive comunque via LangServiceProvider"
 metadata:

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "logging best practices "
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Logging Best Practices - 2026-03-02
 
 ## Problem Analysis
@@ -469,8 +466,6 @@ Excessive logging is a performance killer that provides little value. By followi
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "logging best practices "
 type: note
 tags: [documentation]
@@ -479,7 +474,6 @@ updated: 2026-09-26
 qmd: "logging best practices "
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Status**: Ready for Implementation
 **Priority**: HIGH
 **Estimated Impact**: 10-15% performance improvement

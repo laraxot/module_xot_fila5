@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "laraxot meetup service provider refactor"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Laraxot MeetupServiceProvider Refactor - 2025-12-16
 
 **Data**: 2025-12-16
@@ -20,8 +17,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "laraxot meetup service provider refactor"
 type: note
 tags: [documentation]
@@ -30,7 +25,6 @@ updated: 2026-09-26
 qmd: "laraxot meetup service provider refactor"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 🎯 Missione Compiuta
 
 **File**: `Modules/Meetup/app/Providers/MeetupServiceProvider.php`

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "CREDITS"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Illustration Credits
 
 The illustrations in this directory are sourced

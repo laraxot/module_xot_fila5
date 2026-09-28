@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "phpstan patterns"
 type: note
@@ -11,4 +8,3 @@ qmd: "phpstan patterns"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

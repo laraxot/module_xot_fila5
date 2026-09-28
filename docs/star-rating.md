@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "star rating"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'star_rating'
 module: Xot
 type: reference

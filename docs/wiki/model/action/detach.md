@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "detach"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Detach"
 type: reference
 tags: [wiki, no-frontmatter-fix]

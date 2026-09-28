@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-
-=======
 ---
 title: "xotbaanelprovider refactoring"
 type: note
@@ -12,4 +8,3 @@ qmd: "xotbaanelprovider refactoring"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

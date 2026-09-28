@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "notify"
 type: note
@@ -11,4 +8,3 @@ qmd: "notify"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

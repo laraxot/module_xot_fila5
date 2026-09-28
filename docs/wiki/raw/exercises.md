@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "exercises"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Exercises"
 type: reference
 tags: [wiki, no-frontmatter-fix]

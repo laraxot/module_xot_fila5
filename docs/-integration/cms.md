@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "cms"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # cms
 
 <!-- Contenuto migrato da _docs/cms.txt -->

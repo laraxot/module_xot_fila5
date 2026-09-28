@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "panel providers"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "panel providers"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: panel-providers
 canonical: ../../../Themes/docs/shared-components/panel-provider-patterns.md

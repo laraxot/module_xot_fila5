@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "method evolution"
 type: note
@@ -11,4 +8,3 @@ qmd: "method evolution"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

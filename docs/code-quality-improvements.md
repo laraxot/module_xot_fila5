@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "code quality improvements"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Code Quality Improvements - Xot Module
 
 ## Overview
@@ -76,8 +73,6 @@ This document summarizes the code quality improvements made to the Xot module, w
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "code quality improvements"
 type: note
 tags: [documentation]
@@ -86,5 +81,4 @@ updated: 2026-09-26
 qmd: "code quality improvements"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *Last Updated: November 17, 2025*

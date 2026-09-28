@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "ffmpeg"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # ffmpeg
 
 ## Integrazione FFmpeg in Laraxot/<nome progetto>

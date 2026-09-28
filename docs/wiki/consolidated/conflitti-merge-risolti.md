@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "conflitti merge risolti"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Conflitti Merge Risolti"
 type: reference
 tags: [wiki, no-frontmatter-fix]

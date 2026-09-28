@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "gits resolution strategy"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "gits resolution strategy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: gits-resolution-strategy
 canonical: ../../../Themes/docs/shared-components/git-conflicts-resolution-strategy.md

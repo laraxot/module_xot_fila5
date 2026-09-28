@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "lamp"
 type: note
@@ -11,4 +8,3 @@ qmd: "lamp"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "INDEX"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "INDEX"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: index
 canonical: ../../../../Themes/docs/shared-components/index.md

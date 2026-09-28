@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "byte identical files static scan"
 discussions: []
->>>>>>> laraxot/dev
 title: "File byte-identical tra moduli/temi (scan statico SHA256)"
 type: redundancy
 owner: Modules/Xot

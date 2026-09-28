@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "DataTables"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'Datatables'
 module: Xot
 type: reference

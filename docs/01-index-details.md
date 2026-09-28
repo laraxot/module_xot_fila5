@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "01 index details"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Xot Module Documentation Index
 
 ## Core Architecture
@@ -53,8 +50,6 @@ discussions: []
 - [Architectural Rules Directory](./architectural_rules/)
 
 ---
-<<<<<<< HEAD
-=======
 title: "01 index details"
 type: note
 tags: [documentation]
@@ -63,5 +58,4 @@ updated: 2026-09-26
 qmd: "01 index details"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *Last updated: 2025-12-18*

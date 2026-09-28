@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "business logic understanding"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # 🧠 Comprensione Business Logic dei Moduli TechPlanner
 
 ## Panoramica

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "testing progress session"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Testing Fixes Progress - Sessione 2025-01-22
 
 **Data**: 2025-01-22
@@ -136,8 +133,6 @@ Tutti i test corretti seguono questo principio:
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "testing progress session"
 type: note
 tags: [documentation]
@@ -146,6 +141,5 @@ updated: 2026-09-26
 qmd: "testing progress session"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Status**: In Progress
 **Prossimi Passi**: Continuare sistematicamente con pattern rimanenti (QueryException, TypeError, BadMethodCallException, BindingResolutionException)

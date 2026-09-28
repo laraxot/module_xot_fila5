@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "workspace file rule.DIVERGENZA"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: workspace-file-rule.md"
 module: Xot
 type: note

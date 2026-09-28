@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "trans string"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Trans String"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "progress summary"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Quality Improvement Progress - Xot Module
 
 ## Session Summary (2025-11-12)
@@ -171,8 +168,6 @@ vendor/bin/pint Modules/Xot/app
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "progress summary"
 type: note
 tags: [documentation]
@@ -181,7 +176,6 @@ updated: 2026-09-26
 qmd: "progress summary"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Next Session Goals:**
 1. Apply same process to Activity module
 2. Apply to 2-3 more modules (Chart, Geo, User)

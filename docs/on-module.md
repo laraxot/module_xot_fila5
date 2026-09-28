@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "on module"
 type: note
@@ -11,4 +8,3 @@ qmd: "on module"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

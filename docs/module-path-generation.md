@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "module path generation"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "module path generation"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: module-path-generation
 canonical: ../../../Themes/docs/shared-components/module-path-generation-philosophy.md

@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "readme"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "readme"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: Xot
 topic: readme
 canonical: ./README.md

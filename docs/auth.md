@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "auth"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 ~~~ php
 <?php
 
@@ -132,8 +129,6 @@ return [
 ### Versione Incoming
 
 ---
-<<<<<<< HEAD
-=======
 title: "auth"
 type: note
 tags: [documentation]
@@ -142,4 +137,3 @@ updated: 2026-09-26
 qmd: "auth"
 issues: []
 discussions: []
->>>>>>> laraxot/dev

@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "merges resolution"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "merges resolution"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: merges-resolution
 canonical: ../../../Themes/docs/shared-components/merge-conflicts-resolution-roadmap.md

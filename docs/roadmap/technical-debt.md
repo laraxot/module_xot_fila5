@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "technical debt"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Xot Module - Technical Debt
 
 ## 📋 Table of Contents
@@ -598,8 +595,6 @@ Low Impact / High Effort: Defer or Skip
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "technical debt"
 type: note
 tags: [documentation]
@@ -608,4 +603,3 @@ updated: 2026-09-26
 qmd: "technical debt"
 issues: []
 discussions: []
->>>>>>> laraxot/dev

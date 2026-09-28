@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "ottimizzazioni correzioni"
 type: note
@@ -11,4 +8,3 @@ qmd: "ottimizzazioni correzioni"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

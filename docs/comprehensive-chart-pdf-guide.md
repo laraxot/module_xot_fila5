@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "comprehensive chart pdf guide"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Comprehensive Chart and PDF Generation Guide for Laraxot
 
 ## Table of Contents

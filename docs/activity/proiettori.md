@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "proiettori"
 type: note
@@ -11,4 +8,3 @@ qmd: "proiettori"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

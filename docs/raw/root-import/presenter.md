@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "presenter"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 $acceptHeader=$request->header('Accept');
 
 if(in_array($acceptHeader,['application/json','application/xml'])){

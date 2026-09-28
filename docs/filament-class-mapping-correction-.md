@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament class mapping correction "
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Correzione Mapping Classi Filament - 2025-12-23
 
 **Data**: 2025-12-23
@@ -127,8 +124,6 @@ Se in futuro si volesse creare queste classi base:
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "filament class mapping correction "
 type: note
 tags: [documentation]
@@ -137,6 +132,5 @@ updated: 2026-09-26
 qmd: "filament class mapping correction "
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Stato**: ✅ Mapping corretto per riflettere codice esistente
 **Data Correzione**: 2025-12-23

@@ -1,13 +1,10 @@
 ---
-<<<<<<< HEAD
-=======
 type: note
 created: 2026-09-26
 updated: 2026-09-26
 qmd: "pest plugins rector phpstan"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Pest — plugin ufficiali, Rector e PHPStan"
 description: Indice plugin Pest 5 per Laraxot — installazione nwidart e link alle guide specialistiche.
 document_type: reference

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "test execution results"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Test Execution Results - Initial Run
 
 ## Summary

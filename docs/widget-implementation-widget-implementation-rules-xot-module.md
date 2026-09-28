@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "widget implementation widget implementation rules xot module"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Widget Implementation Rules - Xot Module
 
 ## 🎯 Regole Fondamentali per Widget

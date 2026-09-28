@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "icons"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Convenzioni per le Icone SVG
 
 ## Struttura Directory

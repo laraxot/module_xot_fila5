@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "rules testing no migrate fresh"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # CRITICAL ARCHITECTURE RULE: NO MIGRATE:FRESH
 
 ## Rule

@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "phpcheckstyle"
 type: note
@@ -11,4 +8,3 @@ qmd: "phpcheckstyle"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

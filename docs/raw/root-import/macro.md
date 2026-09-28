@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "macro"
 type: note
@@ -11,6 +9,5 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://www.larashout.com/laravel-macros-extending-laravels-core-classes
 

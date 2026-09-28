@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "inheritance"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Regole di Ereditarietà
 
 ## Principi Fondamentali

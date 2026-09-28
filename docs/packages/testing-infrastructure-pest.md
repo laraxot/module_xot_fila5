@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "testing infrastructure pest"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Infrastruttura di Testing con Pest - Laraxot PTVX
 
 L'architettura di testing è progettata per garantire isolamento e performance in un ambiente multi-database MySQL.
@@ -22,14 +19,9 @@ L'architettura di testing è progettata per garantire isolamento e performance i
 - **XotData Pattern**: Non istanziare mai i modelli direttamente (es. `new User()`). Usare `XotData::make()->getUserClass()` per supportare i contract pattern.
 
 ## 2. Configurazione Environment
-<<<<<<< HEAD
-- Il file `.env.testing` deve essere allineato a MySQL.
-- Prima di eseguire i test, assicurarsi di aver copiato la configurazione: `cp .env.testing .env`.
-=======
 - `.env.testing` viene caricato dal bootstrap Pest e deve usare MySQL/MariaDB e database `_test`.
 - Verificare con `./bashscripts/tools/sync-env-testing.sh --check`; passare credenziali dedicate tramite `FIXCITY_TEST_DB_*`.
 - Non copiare mai `.env.testing` su `.env` né riutilizzare le credenziali di sviluppo.
->>>>>>> laraxot/dev
 
 ## 3. Pest PHP (v4.4)
 - **Sintassi**: Usare la sintassi fluida di Pest (`it()`, `expect()`).

@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: "xotbaseresourcetable database columns verification.story"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "XotBaseResourceTable: verifica colonne vs database"
 type: story
 module: Xot

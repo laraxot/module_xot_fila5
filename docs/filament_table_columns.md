@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Regola Generale: Metodo getTableColumns per Filament Table (Xot)"
 module: "Xot"
 type: concept

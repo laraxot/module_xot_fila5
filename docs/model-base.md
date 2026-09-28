@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "model base"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "model base"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: model-base
 canonical: ../../../Themes/docs/shared-components/model-base-rules.md

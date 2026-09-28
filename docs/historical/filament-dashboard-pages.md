@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament dashboard pages"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Pagine Dashboard Filament - Documentazione Root
 
 ## Panoramica
@@ -277,8 +274,6 @@ class DashboardTest extends TestCase
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "filament dashboard pages"
 type: note
 tags: [documentation]
@@ -287,7 +282,6 @@ updated: 2026-09-26
 qmd: "filament dashboard pages"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Ultimo aggiornamento**: Giugno 2025
 **Stato**: Analisi completa completata, implementazione in corso
 **Moduli da implementare**: 13 moduli identificati

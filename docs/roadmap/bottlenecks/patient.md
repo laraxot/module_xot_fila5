@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "patient"
 type: note
@@ -11,4 +8,3 @@ qmd: "patient"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

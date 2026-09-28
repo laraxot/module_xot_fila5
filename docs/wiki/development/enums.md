@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "enums"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Enums"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "tableupdate modifier syntax error"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # `tableUpdate` and Modifier Methods (`->after()`, `->change()`)
 
 ## Context

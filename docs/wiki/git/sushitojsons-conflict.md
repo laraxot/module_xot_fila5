@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "sushitojsons conflict"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Sushitojsons Conflict"
 type: reference
 tags: [wiki, no-frontmatter-fix]

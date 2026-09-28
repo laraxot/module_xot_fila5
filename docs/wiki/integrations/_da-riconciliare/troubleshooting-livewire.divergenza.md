@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "troubleshooting livewire.divergenza"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: troubleshooting-livewire.md"
 module: Xot
 type: note

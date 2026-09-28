@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: "phpstan level 10 report"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Phpstan level 10 report"
 type: reference
 status: active

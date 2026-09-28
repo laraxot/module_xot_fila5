@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "migrations consolidated"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Migrations Consolidated"
 type: reference
 tags: [wiki, no-frontmatter-fix]

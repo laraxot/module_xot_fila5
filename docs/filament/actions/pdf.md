@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "pdf"
 type: note
@@ -11,4 +8,3 @@ qmd: "pdf"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

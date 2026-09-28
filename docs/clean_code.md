@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "clean code"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'Clean code — risorse esterne'
 module: Xot
 type: reference

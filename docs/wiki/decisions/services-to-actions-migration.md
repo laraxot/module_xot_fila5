@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "services to actions migration"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "services to actions migration"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: Xot
 concept: services-to-actions-migration
 last_updated: 2026-07-13

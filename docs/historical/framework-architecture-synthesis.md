@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "framework architecture synthesis"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Sintesi: Applicazione dei Principi Architetturali ai Moduli LaravelPizza
 
 ## Introduzione

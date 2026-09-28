@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "readme new"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Xot Module - Core Foundation
 
 **Last Update**: 2025-12-05
@@ -21,8 +18,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "readme new"
 type: note
 tags: [documentation]
@@ -31,7 +26,6 @@ updated: 2026-09-26
 qmd: "readme new"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 📋 Table of Contents
 
 - [Business Overview](#-business-overview)

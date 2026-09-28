@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament widgets domain folder naming"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filament widgets: cartella dominio + classe ruolo
 
 ## Religione

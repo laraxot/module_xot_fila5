@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "index"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "xot — integrations"
 module: xot
 type: integration

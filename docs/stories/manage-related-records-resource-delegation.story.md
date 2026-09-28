@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "manage related records resource delegation.story"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "BMAD — consolidare la delega completa form/table"
 type: story
 status: done

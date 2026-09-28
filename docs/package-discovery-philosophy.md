@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "package discovery philosophy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Package Discovery - Philosophy, Logic & Zen
 
 ## Executive Summary
@@ -556,8 +553,6 @@ In this codebase with 80+ packages and 17 modules, package discovery is not just
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "package discovery philosophy"
 type: note
 tags: [documentation]
@@ -566,7 +561,6 @@ updated: 2026-09-26
 qmd: "package discovery philosophy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Document Version**: 1.0
 **Last Updated**: 2026-01-12
 **Status**: Living document - update as understanding deepens

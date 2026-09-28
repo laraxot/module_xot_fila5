@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "env"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 ~~~ bash
 DEBUGBAR_ENABLED=true
 

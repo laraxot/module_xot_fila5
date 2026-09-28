@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "xotbase manage related records architecture mismatch.story"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # BMAD: Proposed architecture mismatch in XotBaseManageRelatedRecords.php
 
 ## Summary

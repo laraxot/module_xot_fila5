@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament consolidated"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filament - Guida Completa Consolidata
 
 **Ultimo aggiornamento**: [DATE]
@@ -61,13 +58,6 @@ class PatientResource extends XotBaseResource
     /**
      * @return array<string, \Filament\Forms\Components\Component>
      */
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
     public function getFormSchema(): array
 ---
 title: "filament consolidated"
@@ -79,7 +69,6 @@ qmd: "filament consolidated"
 issues: []
 discussions: []
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             TextInput::make('name')
@@ -110,30 +99,17 @@ declare(strict_types=1);
 
 namespace Modules\<nome progetto>\Filament\Pages;
 
-<<<<<<< HEAD
-use Modules\Xot\Filament\Pages\XotBasePage;
-
-class DashboardPage extends XotBasePage
-{
-    protected static ?string $navigationIcon = 'heroicon-o-home';
-    protected static string $view = '<nome progetto>::filament.pages.dashboard';
-=======
 use Modules\Xot\Filament\Pages\XotBaseDashboard;
 
 class Dashboard extends XotBaseDashboard
 {
     protected static ?string $navigationIcon = 'heroicon-o-home';
     protected string $view = '<nome progetto>::filament.pages.dashboard';
->>>>>>> laraxot/dev
 
     /**
      * @return array<class-string>
      */
-<<<<<<< HEAD
-    protected function getHeaderWidgets(): array
-=======
     public function getWidgets(): array
->>>>>>> laraxot/dev
     {
         return [
             \Modules\<nome progetto>\Filament\Widgets\StatsWidget::class,

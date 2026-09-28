@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "property exists replacement guide"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Guida Pratica: Sostituzione di property_exists() per Eloquent
 
 ## Filosofia

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "module path generation philosophy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Module Path Generation - Philosophy and Business Logic
 
 **Data Creazione**: 2026-01-02
@@ -103,8 +100,6 @@ $assetsPath = app(GetModulePathByGeneratorAction::class)->execute($this->name, '
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "module path generation philosophy"
 type: note
 tags: [documentation]
@@ -113,5 +108,4 @@ updated: 2026-09-26
 qmd: "module path generation philosophy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Filosofia**: Il sistema si adatta ai moduli, non viceversa.

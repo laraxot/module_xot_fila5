@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "MODEL ARCHITECTURE"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Model Architecture"
 type: reference
 tags: [wiki, no-frontmatter-fix]

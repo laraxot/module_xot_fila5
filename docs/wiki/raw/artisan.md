@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "artisan"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Artisan"
 type: reference
 tags: [wiki, no-frontmatter-fix]

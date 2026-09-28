@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "panel login fix"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filament Panel Login Fix
 
 This document details the fix applied to `XotBasePanelProvider.php` to resolve a critical login functionality issue affecting all Filament panels extending this base provider.

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "api urls"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Api Urls"
 type: reference
 tags: [wiki, no-frontmatter-fix]

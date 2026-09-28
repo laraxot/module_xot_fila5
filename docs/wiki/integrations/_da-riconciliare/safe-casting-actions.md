@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "safe casting actions"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Safe Casting Actions - DRY & KISS Implementation"
 module: xot
 type: integration

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "cart session"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'Cart session — risorse esterne'
 module: Xot
 type: reference

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "error curl download the latest cacertpem file from"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Error Curl Download The Latest Cacertpem File From"
 type: reference
 tags: [wiki, no-frontmatter-fix]

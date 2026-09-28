@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "performance"
 type: note
@@ -11,4 +8,3 @@ qmd: "performance"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "filter relations"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Filter Relations"
 type: reference
 tags: [wiki, no-frontmatter-fix]

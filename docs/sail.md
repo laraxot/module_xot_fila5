@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "sail"
 type: note
@@ -11,4 +8,3 @@ qmd: "sail"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

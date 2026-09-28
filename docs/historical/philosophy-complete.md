@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "philosophy complete"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Xot - Filosofia Completa: Logica, Religione, Politica, Zen
 
 **Data Creazione**: 2025-01-18
@@ -28,8 +25,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "philosophy complete"
 type: note
 tags: [documentation]
@@ -38,7 +33,6 @@ updated: 2026-09-26
 qmd: "philosophy complete"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 🧠 Logica (Logic)
 
 ### Principio Fondamentale

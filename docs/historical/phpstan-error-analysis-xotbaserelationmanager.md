@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan error analysis xotbaserelationmanager"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Analisi Errori PHPStan - XotBaseRelationManager
 
 **Data**: 2025-12-23
@@ -40,8 +37,6 @@ $schema->components($this->getTableColumns());  // Line 80 - ERRATO (non era que
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan error analysis xotbaserelationmanager"
 type: note
 tags: [documentation]
@@ -50,7 +45,6 @@ updated: 2026-09-26
 qmd: "phpstan error analysis xotbaserelationmanager"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ### Errore #2: Line 185 - canDeleteBulk() Type Mismatch
 
 **Messaggio PHPStan**:

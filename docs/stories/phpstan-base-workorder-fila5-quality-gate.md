@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "phpstan base workorder fila5 quality gate"
 type: note
 tags: [documentation]
@@ -8,7 +6,6 @@ updated: 2026-09-26
 qmd: "phpstan base workorder fila5 quality gate"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 id: phpstan-quality-gate-001
 slug: phpstan-base-workorder-fila5
 scope:

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "lazy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # _lazy
 
 <!-- Contenuto migrato da _docs/_lazy.txt -->
@@ -27,8 +24,6 @@ https://lazy-loading.firebaseapp.com/lazy_loading_lib.html
 
 
 ---
-<<<<<<< HEAD
-=======
 title: "lazy"
 type: note
 tags: [documentation]
@@ -37,7 +32,6 @@ updated: 2026-09-26
 qmd: "lazy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Merged from -lazy.md
 
 

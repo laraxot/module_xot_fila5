@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "strategy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Product Strategy: Xot Core
 
 ## 🌍 Market Context

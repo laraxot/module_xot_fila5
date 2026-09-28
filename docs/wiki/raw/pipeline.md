@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "pipeline"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Pipeline"
 type: reference
 tags: [wiki, no-frontmatter-fix]

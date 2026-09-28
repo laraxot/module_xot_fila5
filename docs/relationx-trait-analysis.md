@@ -1,13 +1,10 @@
 ---
-<<<<<<< HEAD
-=======
 type: note
 created: 2026-09-26
 updated: 2026-09-26
 qmd: "relationx trait analysis"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 id: relationx-trait-analysis
 slug: relationx-trait-analysis
 title: "RelationX — analisi del trait di inferenza dei pivot"

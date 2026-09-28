@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "database advanced relationships"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Database Advanced Relationships"
 type: reference
 tags: [wiki, no-frontmatter-fix]

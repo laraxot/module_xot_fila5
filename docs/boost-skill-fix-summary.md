@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "boost skill fix summary"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Boost Skill Fix Summary - Xot Module
 
 **Date**: 2026-03-02  

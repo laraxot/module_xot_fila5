@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "standard codice"
 type: note
@@ -11,4 +8,3 @@ qmd: "standard codice"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

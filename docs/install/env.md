@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "env"
 type: note
@@ -11,4 +8,3 @@ qmd: "env"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

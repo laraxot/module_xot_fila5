@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "certificate"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Certificate"
 type: reference
 tags: [wiki, no-frontmatter-fix]

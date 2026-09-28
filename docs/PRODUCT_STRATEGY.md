@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "PRODUCT STRATEGY"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Xot Module - Product Strategy
 
 **Module:** Xot  
@@ -21,8 +18,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "PRODUCT STRATEGY"
 type: note
 tags: [documentation]
@@ -31,7 +26,6 @@ updated: 2026-09-26
 qmd: "PRODUCT STRATEGY"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Executive Summary
 
 The Xot module provides the extension framework that powers platform extensibility, enabling rapid feature development, third-party integrations, and a thriving developer ecosystem.

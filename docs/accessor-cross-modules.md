@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "accessor cross modules"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "accessor cross modules"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: accessor-cross-modules
 canonical: ../../../Themes/docs/shared-components/accessor-audit-cross-modules.md

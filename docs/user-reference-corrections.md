@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "user reference corrections"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "user reference corrections"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: user-reference-corrections
 canonical: ../../../Themes/docs/shared-components/user-reference-corrections-sumy.md

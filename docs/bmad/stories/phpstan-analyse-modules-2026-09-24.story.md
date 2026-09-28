@@ -1,21 +1,14 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: "phpstan analyse modules 2026 09 24.story"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 id: "Xot/phpstan-analyse-modules-2026-09-24"
 title: "PHPStan analyse Modules — verifica corrente e remediation swarm"
 type: story
 module: Xot
 epic: "5"
-<<<<<<< HEAD
-status: in-progress
-=======
 status: done
->>>>>>> laraxot/dev
 created: 2026-09-24
 updated: 2026-09-24
 assignee: opencode-phpstan
@@ -50,17 +43,6 @@ le segnalazioni in ordine random, con swarm/subagent paralleli, BMAD e second br
 
 ## Acceptance criteria
 
-<<<<<<< HEAD
-- [ ] Command richiesto eseguito e stdout/stderr/esit code conservati.
-- [ ] Errori reali raggruppati per modulo e file univoci mescolati in ordine random.
-- [ ] File indipendenti affidati in parallelo, senza doppio writer.
-- [ ] Root cause corretta; nessuna modifica a `phpstan.neon`, baseline o ignore.
-- [ ] `php -l` e PHPStan mirato su ogni file PHP modificato.
-- [ ] PHPMD e PHPInsights sugli scope modificati.
-- [ ] PHPStan finale `analyse Modules` verde a tree fermo.
-- [ ] Pest eseguito, oppure skip ambientale documentato con evidenza.
-- [ ] Lock rilasciati, secondo brain aggiornato e `qmd update` tentato/segnalato indisponibile.
-=======
 - [x] Command richiesto eseguito; stdout/stderr/esito conservati sotto `build/`.
 - [x] Errori raggruppati per modulo e lista dei 720 path mescolata in ordine random.
 - [x] File indipendenti affidati in parallelo, con controllo di lock/diff.
@@ -70,7 +52,6 @@ le segnalazioni in ordine random, con swarm/subagent paralleli, BMAD e second br
 - [x] PHPStan finale `analyse Modules` verde dopo quiet window e cache fredda.
 - [x] Pest non eseguito: il perimetro richiesto era il gate PHPStan; nessun test richiesto.
 - [x] Lock creati da questo run rilasciati, second brain aggiornato; QMD non presente nel PATH.
->>>>>>> laraxot/dev
 
 ## Piano
 
@@ -143,8 +124,6 @@ nessun file PHP modificato dal presente swarm.
   remediation e run PHPStan 0, ma i lock peer restano da rilasciare: il suo
   risultato viene trattato come snapshot, non come sostituto del gate finale.
 
-<<<<<<< HEAD
-=======
 ## Review 21:16
 
 - Il monitor breve `sh_0d53d46e0001U0GqVhXv4MF7QI` e' scaduto alle
@@ -218,4 +197,3 @@ nessun file PHP modificato dal presente swarm.
   clear-result-cache` → exit 0. Gate freddo finale dopo il clear → exit 0,
   `totals.errors=0`, `totals.file_errors=0`; report rinnovati in
   `build/phpstan-modules-final.json`, `.stderr` e `.exit`.
->>>>>>> laraxot/dev

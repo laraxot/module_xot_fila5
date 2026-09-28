@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "search string database"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Search String Database"
 type: reference
 tags: [wiki, no-frontmatter-fix]

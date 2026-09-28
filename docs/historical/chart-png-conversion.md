@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "chart png conversion"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Chart PNG Conversion Guide
 
 ## 📋 Overview
@@ -20,8 +17,6 @@ Guida dettagliata per la conversione di chart SVG in PNG utilizzando Imagick con
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "chart png conversion"
 type: note
 tags: [documentation]
@@ -30,7 +25,6 @@ updated: 2026-09-26
 qmd: "chart png conversion"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 🖼️ Architettura Conversione
 
 ### 1. Servizio di Conversione

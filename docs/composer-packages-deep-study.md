@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "composer packages deep study"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Composer Packages Deep Study (2026-03-02)
 
 Source: `composer show --format=json` run from `laravel/` on 2026-03-02.

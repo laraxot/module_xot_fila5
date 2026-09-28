@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "documentation consolidation strategy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Strategia di Consolidamento Documentazione - Moduli Laraxot"
 module: xot
 type: product

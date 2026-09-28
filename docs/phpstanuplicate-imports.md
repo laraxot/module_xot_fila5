@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "phpstanuplicate imports"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "phpstanuplicate imports"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: phpstanuplicate-imports
 canonical: ../../../Themes/docs/shared-components/phpstan-duplicate-imports-fix.md

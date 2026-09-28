@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "mcp commands deprecation"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Deprecazione Comandi MCP e Migrazione Azioni Database
 
 ## Panoramica
@@ -153,8 +150,6 @@ Aggiornare la documentazione del progetto per riflettere i nuovi percorsi dei co
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "mcp commands deprecation"
 type: note
 tags: [documentation]
@@ -163,5 +158,4 @@ updated: 2026-09-26
 qmd: "mcp commands deprecation"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *Ultimo aggiornamento: Giugno 2025*

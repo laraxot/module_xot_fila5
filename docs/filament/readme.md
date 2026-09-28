@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "readme"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filament
 
 Questa cartella contiene la documentazione relativa all'implementazione di Filament nel progetto.

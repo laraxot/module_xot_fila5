@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "redundancy report"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Redundancy Report — Modulo Xot
 
 > Generato: 2026-05-21 | Analisi automatica deep-scan

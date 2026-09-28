@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "roadmap and issues"
 type: note
 tags: [documentation]
@@ -8,7 +6,6 @@ created: 2026-09-26
 qmd: "roadmap and issues"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: Xot
 topic: legacy-roadmap-and-issues
 canonical: ../../../../../Themes/docs/shared-components/legacy-roadmap-and-issues.md

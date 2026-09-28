@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "admin template"
 type: note
@@ -11,4 +8,3 @@ qmd: "admin template"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

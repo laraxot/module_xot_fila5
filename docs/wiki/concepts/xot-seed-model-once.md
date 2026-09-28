@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "xotSeedModelOnce — seed entity idempotente"
 type: concept
 module: Xot

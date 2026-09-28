@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "uuid.DIVERGENZA"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: uuid.md"
 module: Xot
 type: note

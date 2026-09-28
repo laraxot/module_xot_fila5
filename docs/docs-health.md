@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "docs health"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Docs Health - Xot
 
 ## Snapshot
@@ -42,8 +39,6 @@ discussions: []
 - Update this file when major cleanup is executed.
 
 ---
-<<<<<<< HEAD
-=======
 title: "docs health"
 type: note
 tags: [documentation]
@@ -52,5 +47,4 @@ updated: 2026-09-26
 qmd: "docs health"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 Generated during docs confidence hardening batch (2026-03-07).

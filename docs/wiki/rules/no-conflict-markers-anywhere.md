@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 created: 2026-09-26
 qmd: "no conflict markers anywhere"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Nessun marker di conflitto Git"
 type: rule
 module: Xot

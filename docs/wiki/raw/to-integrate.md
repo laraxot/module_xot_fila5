@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "to integrate"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "To Integrate"
 type: reference
 tags: [wiki, no-frontmatter-fix]

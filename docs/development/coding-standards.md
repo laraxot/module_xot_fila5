@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "coding standards"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Standard di Sviluppo
 
 ## 1. Principi Generali

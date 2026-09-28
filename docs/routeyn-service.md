@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "routeyn service"
 type: note
@@ -11,4 +8,3 @@ qmd: "routeyn service"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

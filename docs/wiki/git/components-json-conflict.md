@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "components json conflict"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Components Json Conflict"
 type: reference
 tags: [wiki, no-frontmatter-fix]

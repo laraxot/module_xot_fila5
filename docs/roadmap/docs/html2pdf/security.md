@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "security"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Configurazione della Sicurezza
 
 A partire dalla versione 5.3, `Html2Pdf` ha introdotto un `Security Service` per controllare l'accesso a risorse esterne (immagini, fogli di stile, etc.) e prevenire vulnerabilità.
@@ -25,8 +22,6 @@ A partire dalla versione 5.3, `Html2Pdf` ha introdotto un `Security Service` per
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "security"
 type: note
 tags: [documentation]
@@ -35,7 +30,6 @@ updated: 2026-09-26
 qmd: "security"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 🛡️ Security Service
 
 Il servizio di sicurezza permette di definire policy per validare gli URI delle risorse esterne.

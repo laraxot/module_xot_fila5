@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "code analyse"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # code_analyse
 
 <!-- Contenuto migrato da _docs/code_analyse.txt -->

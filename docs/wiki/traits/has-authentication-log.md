@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "has authentication log"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Has Authentication Log"
 type: reference
 tags: [wiki, no-frontmatter-fix]

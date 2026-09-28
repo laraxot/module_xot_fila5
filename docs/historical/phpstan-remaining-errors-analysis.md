@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan remaining errors analysis"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Remaining Errors Analysis
 
 **Data:** 2025-01-10
@@ -188,8 +185,6 @@ All module tests use **Pest** framework. PHPStan has challenges with Pest's magi
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan remaining errors analysis"
 type: note
 tags: [documentation]
@@ -198,6 +193,5 @@ updated: 2026-09-26
 qmd: "phpstan remaining errors analysis"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *Generated during PHPStan compliance implementation*
 *Task: "Analyze and fix all PHPStan errors in Modules/"*

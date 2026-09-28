@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "binary assets"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Asset binari
 
 Gli asset binari sono file normali del repository.

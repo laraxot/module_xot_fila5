@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "export xls collection fix"
 type: note
@@ -11,4 +8,3 @@ qmd: "export xls collection fix"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

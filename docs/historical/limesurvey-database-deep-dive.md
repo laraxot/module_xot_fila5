@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "limesurvey database deep dive"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Limesurvey Survey Data Analysis - Database Deep Dive
 
 ## Database Connections Overview

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "php code tools"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Php Code Tools"
 type: reference
 tags: [wiki, no-frontmatter-fix]

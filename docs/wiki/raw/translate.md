@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "translate"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Translate"
 type: reference
 tags: [wiki, no-frontmatter-fix]

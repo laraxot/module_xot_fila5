@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "no migrate fresh"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "No Migrate Fresh"
 type: reference
 tags: [wiki, no-frontmatter-fix]

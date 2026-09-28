@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "video player"
 type: note
@@ -11,4 +8,3 @@ qmd: "video player"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "mail"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Mail"
 type: reference
 tags: [wiki, no-frontmatter-fix]

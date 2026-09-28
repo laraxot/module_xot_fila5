@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: " process"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: " process"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: -process
 canonical: ../../../../Themes/docs/shared-components/-15.md

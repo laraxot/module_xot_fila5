@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: " certificate"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # _certificate
 
 <!-- Contenuto migrato da _docs/_certificate.txt -->

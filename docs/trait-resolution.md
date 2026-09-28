@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "trait resolution"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "trait resolution"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: trait-resolution
 canonical: ../../../Themes/docs/shared-components/trait-conflict-resolution.md

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "ide helper models wave"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # IDE Helper Models Wave - 2026-03-10
 
 ## Scopo

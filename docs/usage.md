@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "usage"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "usage"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: usage
 canonical: ../../../Themes/docs/shared-components/usage.md

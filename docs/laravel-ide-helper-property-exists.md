@@ -1,12 +1,9 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 created: 2026-09-26
 qmd: "laravel ide helper property exists"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: IDE Helper e property_exists — nota storica
 type: historical
 updated: 2026-08-31

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "logging best practices"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Logging Best Practices - Critical Performance Guidelines
 
 ## Overview

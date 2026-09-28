@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "repositories"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 
 //-- cosa vecchia ma spiega i criteria
 https://bosnadev.com/2015/03/07/using-repository-pattern-in-laravel-5/

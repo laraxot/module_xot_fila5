@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Level 10 Compliance - Xot Module
 
 > **Status**: ✅ Level 10 Achieved
@@ -444,8 +441,6 @@ function processUserData(array $data): array
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan"
 type: note
 tags: [documentation]
@@ -454,7 +449,6 @@ updated: 2026-09-26
 qmd: "phpstan"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Quality Standard**: PHPStan Level 10
 **Type Coverage**: 98%+
 **Performance**: Optimized

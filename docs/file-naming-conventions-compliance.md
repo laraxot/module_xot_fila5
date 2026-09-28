@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "file naming conventions compliance"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # File Naming Conventions Compliance - 2026-01-09
 
 **Data**: 2026-01-09  
@@ -19,8 +16,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "file naming conventions compliance"
 type: note
 tags: [documentation]
@@ -29,7 +24,6 @@ updated: 2026-09-26
 qmd: "file naming conventions compliance"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 📋 Convenzioni Applicate
 
 ### Regole

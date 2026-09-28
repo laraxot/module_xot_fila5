@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "performancelines"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "performancelines"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: performancelines
 canonical: ../../../Themes/docs/shared-components/performance-guidelines.md

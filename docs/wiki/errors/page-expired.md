@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "page expired"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Page Expired"
 type: reference
 tags: [wiki, no-frontmatter-fix]

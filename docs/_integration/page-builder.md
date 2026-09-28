@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "page builder"
 type: note
@@ -11,4 +8,3 @@ qmd: "page builder"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

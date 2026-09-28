@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "view models"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 
 https://qiita.com/nunulk/items/4c491634ad843c7a138e
 
@@ -24,8 +21,6 @@ https://dev.to/lloople/adding-view-models-to-a-laravel-project-hod
 
 
 ---
-<<<<<<< HEAD
-=======
 title: "view models"
 type: note
 tags: [documentation]
@@ -34,7 +29,6 @@ updated: 2026-09-26
 qmd: "view models"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 https://www.youtube.com/watch?v=xHs6jeoRRcc
 
 

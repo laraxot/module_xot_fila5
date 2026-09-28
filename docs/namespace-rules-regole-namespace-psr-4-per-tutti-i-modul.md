@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "namespace rules regole namespace psr 4 per tutti i modul"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Regole Namespace PSR-4 per Tutti i Moduli (Regola Globale)
 
 ## Regola Fondamentale
@@ -40,8 +37,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "namespace rules regole namespace psr 4 per tutti i modul"
 type: note
 tags: [documentation]
@@ -50,7 +45,6 @@ updated: 2026-09-26
 qmd: "namespace rules regole namespace psr 4 per tutti i modul"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Ultimo aggiornamento:** 2025-05-13
 
 **Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.

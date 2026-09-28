@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "nwidart"
 type: note
@@ -11,6 +9,5 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://dev.to/bdelespierre/very-very-simple-laravel-modules-4927
 

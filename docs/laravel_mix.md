@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: "laravel mix"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Laravel mix"
 type: reference
 status: active

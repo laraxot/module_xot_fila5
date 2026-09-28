@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "struttura percorsi"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Struttura Percorsi"
 type: reference
 tags: [wiki, no-frontmatter-fix]

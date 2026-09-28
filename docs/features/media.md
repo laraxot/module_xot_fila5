@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "media"
 type: note
@@ -11,4 +8,3 @@ qmd: "media"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

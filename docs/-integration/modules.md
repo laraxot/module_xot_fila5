@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "modules"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # modules
 
 <!-- Contenuto migrato da _docs/modules.txt -->

@@ -1,13 +1,10 @@
 ---
-<<<<<<< HEAD
-=======
 type: note
 tags: [documentation]
 updated: 2026-09-26
 qmd: "docs frontmatter riconciliazione residuo.story"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Xot docs/ frontmatter — riconciliazione ~1092 file con hunk multipli"
 status: backlog
 module: Xot

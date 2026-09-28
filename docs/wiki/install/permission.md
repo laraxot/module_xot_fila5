@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "permission"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Permission"
 type: reference
 tags: [wiki, no-frontmatter-fix]

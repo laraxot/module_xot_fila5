@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan action plan "
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Action Plan - 2025-11-18
 
 ## Executive Summary
@@ -257,8 +254,6 @@ class ChartDataValidator
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan action plan "
 type: note
 tags: [documentation]
@@ -267,7 +262,6 @@ updated: 2026-09-26
 qmd: "phpstan action plan "
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Next Steps
 
 ### Immediate (Today)

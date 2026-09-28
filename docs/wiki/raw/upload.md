@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "upload"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Upload"
 type: reference
 tags: [wiki, no-frontmatter-fix]

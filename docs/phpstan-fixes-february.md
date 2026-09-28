@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan fixes february"
 type: note
@@ -11,15 +9,12 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Fixes - 2026-02-26
 
 Documentazione completa dei fix PHPStan applicati durante l'analisi di tutti i moduli.
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan fixes february"
 type: note
 tags: [documentation]
@@ -28,7 +23,6 @@ updated: 2026-09-26
 qmd: "phpstan fixes february"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Riepilogo Esecuzione
 
 ### Comando Eseguito

@@ -1,12 +1,9 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 created: 2026-09-26
 qmd: "docs deduplication"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: docs deduplication — owner Xot
 type: reference
 updated: 2026-05-21

@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "reattori"
 type: note
@@ -11,4 +8,3 @@ qmd: "reattori"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

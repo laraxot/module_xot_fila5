@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: " TEMPLATE.story"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "{titolo breve, dice il problema non la soluzione}"
 type: story
 module: {Modulo}

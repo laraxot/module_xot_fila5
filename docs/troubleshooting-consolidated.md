@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "troubleshooting consolidated"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Troubleshooting - Documentazione Consolidata DRY + KISS
 
 > **🎯 Single Source of Truth**: Questo documento centralizza TUTTI i problemi comuni e le soluzioni del progetto
@@ -609,8 +606,6 @@ php artisan view:clear
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "troubleshooting consolidated"
 type: note
 tags: [documentation]
@@ -619,6 +614,5 @@ updated: 2026-09-26
 qmd: "troubleshooting consolidated"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *Modulo: Xot*
 *Categoria: Troubleshooting*

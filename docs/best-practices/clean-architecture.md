@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "clean architecture"
 type: note
@@ -11,5 +9,4 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://github.com/sslr/laravel-clean-architecture-example/tree/main/onion/Driver

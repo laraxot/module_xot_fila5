@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament 4 laraxot rules conflict"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filament 4 + Laraxot Rules - Xot Module
 
 ## 🎯 Regole Fondamentali
@@ -168,13 +165,6 @@ class MyPage extends XotBasePage
 ### 2. **Metodi Statici Errati**
 ```php
 // ❌ SBAGLIATO
-<<<<<<< HEAD
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 public function getFormSchema(): array
 ---
 title: "filament 4 laraxot rules conflict"
@@ -186,7 +176,6 @@ qmd: "filament 4 laraxot rules conflict"
 issues: []
 discussions: []
 public function getFormSchema(): array
->>>>>>> laraxot/dev
 
 // ✅ CORRETTO
 public function getFormSchema(): array

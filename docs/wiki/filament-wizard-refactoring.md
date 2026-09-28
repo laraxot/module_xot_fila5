@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "filament wizard refactoring"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Wizard widget Laraxot — Filament HasWizard + trait modulari Xot"
 type: concept
 tags: [filament, wizard, xot, haswizard-widget]

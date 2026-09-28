@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan journey"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # 🌟 Il Viaggio verso l'Illuminazione PHPStan
 
 ## La Via dei Nove Moduli Perfetti
@@ -298,13 +295,6 @@ Level 0  → 🏕️  Campo Base
 
 ```php
 // 1. Form Schema con Semantic Keys
-<<<<<<< HEAD
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 public function getFormSchema(): array
 ---
 title: "phpstan journey"
@@ -316,7 +306,6 @@ qmd: "phpstan journey"
 issues: []
 discussions: []
 public function getFormSchema(): array
->>>>>>> laraxot/dev
 {
     return [
         'field_name' => ComponentType::make('field_name')

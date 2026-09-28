@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Composer Root Skeleton <nome progetto> Comparison"
 type: concept
 status: deprecated

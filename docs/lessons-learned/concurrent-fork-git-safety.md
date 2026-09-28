@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "concurrent fork git safety"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "concurrent fork git safety"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 name: concurrent-fork-git-safety
 description: "Mai git add -A o git reset largo su un repo dove altre sessioni/fork lavorano in parallelo: usare sempre path espliciti"
 metadata:

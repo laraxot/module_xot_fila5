@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "milestones"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Xot Module - Milestones
 
 ## 📋 Table of Contents
@@ -416,8 +413,6 @@ M1 → M2 → M3 → M4 → M5 → M6 → M7 → M8 → M9 → M10
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "milestones"
 type: note
 tags: [documentation]
@@ -426,4 +421,3 @@ updated: 2026-09-26
 qmd: "milestones"
 issues: []
 discussions: []
->>>>>>> laraxot/dev

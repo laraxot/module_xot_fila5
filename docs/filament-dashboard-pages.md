@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament dashboard pages"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Pagine Dashboard Filament - Documentazione Root
 
 ## Panoramica
@@ -29,55 +26,11 @@ Questo documento definisce le regole e best practices per l'implementazione dell
 3. **Manutenibilità**: Standardizza la struttura dei moduli Filament
 4. **User Experience**: Migliora l'esperienza utente con dashboard dedicate
 
-<<<<<<< HEAD
-## Analisi Completa dei Moduli
-
-### ✅ Moduli con Dashboard Completa (21 moduli)
-I seguenti moduli hanno sia `AdminPanelProvider` che `Dashboard.php`:
-- Activity
-- Badge
-- Gdpr
-- Incentivi
-- IndennitaCondizioniLavoro
-- IndennitaResponsabilita
-- Job
-- Lang
-- Media
-- Notify
-- Pdnd
-- Performance
-- Progressioni
-- Ptv
-- Rating
-- Setting
-- Sigma
-- Tenant
-- UI
-- User
-
-### ❌ Moduli che Necessitano Dashboard (13 moduli)
-I seguenti moduli hanno `AdminPanelProvider` ma **mancano** del file `Dashboard.php`:
-
-- **CertFisc** - Certificazioni Fiscali
-- **ContoAnnuale** - Conto Annuale
-- **Europa** - Gestione Europa
-- **Inail** - Gestione INAIL
-- **Legge104** - Gestione Legge 104
-- **Legge109** - Gestione Legge 109
-- **Mensa** - Gestione Mensa
-- **MobilitaVolontaria** - Mobilità Volontaria
-- **Prenotazioni** - Sistema Prenotazioni
-- **PresenzeAssenze** - Gestione Presenze e Assenze
-- **Questionari** - Sistema Questionari
-- **Sindacati** - Gestione Sindacati
-- **Xot** - Modulo Core (può non necessitare dashboard)
-=======
 ## Stato dei moduli
 
 Gli elenchi di moduli e i conteggi conservati nelle vecchie revisioni erano snapshot
 e diventano rapidamente obsoleti. Non usarli come stato corrente: calcolare le
 dashboard mancanti sul checkout attuale con lo script di verifica qui sotto.
->>>>>>> laraxot/dev
 
 ## Struttura Standard
 
@@ -89,20 +42,11 @@ declare(strict_types=1);
 
 namespace Modules\{ModuleName}\Filament\Pages;
 
-<<<<<<< HEAD
-use Filament\Pages\Page;
-
-class Dashboard extends Page
-{
-    protected static ?string $navigationIcon = 'heroicon-o-home';
-    protected static string $view = '{modulename}::filament.pages.dashboard';
-=======
 use Modules\Xot\Filament\Pages\XotBaseDashboard;
 
 class Dashboard extends XotBaseDashboard
 {
     // Aggiungere solo configurazione specifica del modulo.
->>>>>>> laraxot/dev
 }
 ```
 
@@ -114,17 +58,10 @@ declare(strict_types=1);
 
 namespace Modules\{ModuleName}\Filament\Pages;
 
-<<<<<<< HEAD
-use Filament\Pages\Dashboard as BaseDashboard;
-use Modules\{ModuleName}\Filament\Widgets;
-
-class Dashboard extends BaseDashboard
-=======
 use Modules\Xot\Filament\Pages\XotBaseDashboard;
 use Modules\{ModuleName}\Filament\Widgets;
 
 class Dashboard extends XotBaseDashboard
->>>>>>> laraxot/dev
 {
     protected static ?string $navigationIcon = 'heroicon-o-home';
 
@@ -170,11 +107,7 @@ touch laravel/Modules/{ModuleName}/resources/views/filament/pages/dashboard.blad
 - [ ] File `app/Filament/Pages/Dashboard.php` esiste
 - [ ] Namespace corretto: `Modules\{ModuleName}\Filament\Pages`
 - [ ] `declare(strict_types=1);` presente
-<<<<<<< HEAD
-- [ ] Estende classe appropriata (Page, Dashboard, o XotBasePage)
-=======
 - [ ] Dashboard module: `XotBaseDashboard`; altre pagine standalone: `XotBasePage`; resource pages: `XotBase*Record`
->>>>>>> laraxot/dev
 - [ ] Icona di navigazione definita
 - [ ] Vista associata definita
 
@@ -183,11 +116,7 @@ touch laravel/Modules/{ModuleName}/resources/views/filament/pages/dashboard.blad
 - [ ] Segue convenzioni PSR-12
 - [ ] Documentazione PHPDoc completa
 - [ ] Traduzioni presenti nei file di lingua
-<<<<<<< HEAD
-- [ ] View utilizza `<x-filament::page>` wrapper
-=======
 - [ ] View segue il contratto del tema e la versione Filament del progetto
->>>>>>> laraxot/dev
 
 ## Script di Verifica e Creazione
 
@@ -199,18 +128,6 @@ comm -23 \
   <(find laravel/Modules -name "Dashboard.php" -path "*/app/Filament/Pages/*" | sed 's|.*/Modules/||' | sed 's|/.*||' | sort)
 ```
 
-<<<<<<< HEAD
-### Creazione Automatica
-```bash
-# Script per creare Dashboard mancanti
-for module in CertFisc ContoAnnuale Europa Inail Legge104 Legge109 Mensa MobilitaVolontaria Prenotazioni PresenzeAssenze Questionari Sindacati; do
-  mkdir -p "laravel/Modules/$module/app/Filament/Pages"
-  # Creare Dashboard.php per ogni modulo
-done
-```
-
-=======
->>>>>>> laraxot/dev
 ## Best Practices
 
 ### 1. **Naming Convention**
@@ -311,8 +228,6 @@ class DashboardTest extends TestCase
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "filament dashboard pages"
 type: note
 tags: [documentation]
@@ -321,7 +236,6 @@ updated: 2026-09-26
 qmd: "filament dashboard pages"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Ultimo aggiornamento**: Giugno 2025
 **Stato**: Analisi completa completata, implementazione in corso
 **Moduli da implementare**: 13 moduli identificati

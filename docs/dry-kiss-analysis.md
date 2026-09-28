@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "dry kiss analysis"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # 🐄✨ DRY & KISS Analysis - Modulo Xot
 
 **Data Analisi:** 2025-10-15
@@ -20,8 +17,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "dry kiss analysis"
 type: note
 tags: [documentation]
@@ -30,7 +25,6 @@ updated: 2026-09-26
 qmd: "dry kiss analysis"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 📊 Struttura Modulo
 
 | Categoria | Quantità | Note |

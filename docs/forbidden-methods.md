@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-# Metodi da NON implementare in classi che estendono XotBaseResource
-
-## Regola fondamentale
-
-Le classi che estendono `XotBaseResource` **NON DEVONO MAI** implementare i seguenti metodi:
-
-### Metodi di tabella
-- ❌ `getTableColumns()`
-=======
 ---
 title: "forbidden methods"
 type: note
@@ -37,7 +27,6 @@ i seguenti metodi:
 ### Metodi di tabella
 - ❌ `getTableColumns()` — **vietato come `static` sulla Resource**. Lo stesso nome è un
   override point valido su `XotBaseManageRelatedRecords`; vedi il box sopra.
->>>>>>> laraxot/dev
 - ❌ `getTableFilters()`
 - ❌ `getTableActions()`
 - ❌ `getTableBulkActions()`
@@ -66,13 +55,6 @@ class ProductResource extends XotBaseResource
     protected static ?string $model = Product::class;
 
     // UNICI metodi che dovrebbero essere implementati
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
     public function getFormSchema(): array
 ---
 title: "forbidden methods"
@@ -84,7 +66,6 @@ qmd: "forbidden methods"
 issues: []
 discussions: []
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             'name' => Forms\Components\TextInput::make('name')

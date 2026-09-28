@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "helpers architecture"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "helpers architecture"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: helpers-architecture
 canonical: ../../../Themes/docs/shared-components/helpers-architecture-analysis.md

@@ -7,13 +7,6 @@ namespace Modules\Xot\Tests;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Models\Cache;
 use PHPUnit\Framework\Assert;
-<<<<<<< HEAD
-use ReflectionClass;
-use ReflectionMethod;
-use ReflectionNamedType;
-use SplFileInfo;
-=======
->>>>>>> laraxot/dev
 
 use function Safe\posix_kill;
 use function Safe\preg_match;
@@ -36,11 +29,7 @@ final class XotForkedInvoke
             return 0;
         }
 
-<<<<<<< HEAD
-        $ref = new ReflectionClass($class);
-=======
         $ref = new \ReflectionClass($class);
->>>>>>> laraxot/dev
 
         if ($ref->isInterface()) {
             return 0;
@@ -69,11 +58,7 @@ final class XotForkedInvoke
             }
         }
 
-<<<<<<< HEAD
-        foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE) as $method) {
-=======
         foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC | \ReflectionMethod::IS_PROTECTED | \ReflectionMethod::IS_PRIVATE) as $method) {
->>>>>>> laraxot/dev
             if ($method->getDeclaringClass()->getName() !== $class) {
                 continue;
             }
@@ -144,11 +129,7 @@ final class XotForkedInvoke
                 if (! method_exists($enumClass, $sm)) {
                     continue;
                 }
-<<<<<<< HEAD
-                $method = new ReflectionMethod($enumClass, $sm);
-=======
                 $method = new \ReflectionMethod($enumClass, $sm);
->>>>>>> laraxot/dev
                 if (self::invokeWithTimeout(static fn () => $method->invoke(null), $timeoutSeconds)) {
                     $executed++;
                 }
@@ -163,11 +144,7 @@ final class XotForkedInvoke
     /**
      * @return list<mixed>
      */
-<<<<<<< HEAD
-    public static function defaultArgs(ReflectionMethod $method): array
-=======
     public static function defaultArgs(\ReflectionMethod $method): array
->>>>>>> laraxot/dev
     {
         $args = [];
         foreach ($method->getParameters() as $param) {
@@ -178,11 +155,7 @@ final class XotForkedInvoke
             }
             $type = $param->getType();
             $name = $param->getName();
-<<<<<<< HEAD
-            if ($type instanceof ReflectionNamedType) {
-=======
             if ($type instanceof \ReflectionNamedType) {
->>>>>>> laraxot/dev
                 $tn = $type->getName();
                 $args[] = match (true) {
                     $tn === 'string' => str_contains(strtolower($name), 'class')
@@ -193,11 +166,7 @@ final class XotForkedInvoke
                     $tn === 'int' => 1,
                     $tn === 'float' => 1.0,
                     is_a($tn, Model::class, true) => (static function () use ($tn): Model {
-<<<<<<< HEAD
-                        if ($tn === Model::class || (new ReflectionClass($tn))->isAbstract()) {
-=======
                         if ($tn === Model::class || (new \ReflectionClass($tn))->isAbstract()) {
->>>>>>> laraxot/dev
                             $m = new Cache;
                         } else {
                             $m = new $tn;
@@ -259,20 +228,12 @@ final class XotForkedInvoke
                 return false;
             }
             if ($res > 0) {
-<<<<<<< HEAD
-                // pcntl_waitpid() declares the by-ref $status as mixed in its PHPDoc stub
-                // (native int): validate it into a real int before decoding the exit status.
-                $exitStatus = filter_var($status, FILTER_VALIDATE_INT);
-
-                return $exitStatus !== false && pcntl_wifexited($exitStatus) && pcntl_wexitstatus($exitStatus) === 0;
-=======
                 $status = filter_var($status, FILTER_VALIDATE_INT);
                 if ($status === false) {
                     return false;
                 }
 
                 return pcntl_wifexited($status) && pcntl_wexitstatus($status) === 0;
->>>>>>> laraxot/dev
             }
             usleep(100_000);
             $waited++;
@@ -315,11 +276,7 @@ final class XotForkedInvoke
                 if (microtime(true) > $deadline) {
                     break 2;
                 }
-<<<<<<< HEAD
-                if (! $file instanceof SplFileInfo || ! $file->isFile() || ! str_ends_with($file->getFilename(), '.php')) {
-=======
                 if (! $file instanceof \SplFileInfo || ! $file->isFile() || ! str_ends_with($file->getFilename(), '.php')) {
->>>>>>> laraxot/dev
                     continue;
                 }
                 if (str_contains($file->getFilename(), '.php-cs-fixer') || str_contains($file->getFilename(), '.blade.')) {

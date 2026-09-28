@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "no table override divieto assoluto di implementare table"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # DIVIETO ASSOLUTO DI IMPLEMENTARE table()
 
 ## Regola Fondamentale Inviolabile

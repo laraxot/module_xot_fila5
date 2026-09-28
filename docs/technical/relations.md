@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "relations"
 type: note
@@ -11,4 +8,3 @@ qmd: "relations"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "tenant"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Analisi e Risoluzione Colli di Bottiglia - Modulo Tenant
 
 ## 1. Database Switching (Priorità: Alta)

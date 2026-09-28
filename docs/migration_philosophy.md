@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "migration philosophy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Laraxot Migration Philosophy - Single Source of Truth
 
 ## The Sacred Rule

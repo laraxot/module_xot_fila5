@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "user reference corrections summary"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # User Reference Corrections Summary - Gennaio 2025
 
 **Data**: 2025-01-10
@@ -20,8 +17,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "user reference corrections summary"
 type: note
 tags: [documentation]
@@ -30,7 +25,6 @@ updated: 2026-09-26
 qmd: "user reference corrections summary"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## ✅ Correzioni Completate
 
 ### 1. FilamentMemoryMonitorMiddleware

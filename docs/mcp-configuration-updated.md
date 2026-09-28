@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "mcp configuration updated"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # MCP Server Configuration - Xot Module (Updated)
 
 
@@ -20,8 +17,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "mcp configuration updated"
 type: note
 tags: [documentation]
@@ -30,7 +25,6 @@ updated: 2026-09-26
 qmd: "mcp configuration updated"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 📋 Overview
 
 The Xot module's MCP configuration enables AI assistants to interact with:

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "testcase setup critical rules"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # TestCase Setup - Critical Rules
 
 ## REGOLE FONDAMENTALI
@@ -149,17 +146,10 @@ abstract class TestCase extends BaseTestCase
 ### Workflow di Testing Corretto
 
 ```bash
-<<<<<<< HEAD
-# 1. Configura .env.testing (copia carbone di .env con _test)
-cd laravel
-cp .env .env.testing
-# Modifica: DB_DATABASE → DB_DATABASE_test
-=======
 # 1. Verifica il template test senza copiare i segreti di .env (dalla root)
 ./bashscripts/tools/sync-env-testing.sh --check
 cd laravel
 # Esporta FIXCITY_TEST_DB_USERNAME/PASSWORD e le corrispondenti variabili *_USER.
->>>>>>> laraxot/dev
 
 # 2. Esegui migration UNA VOLTA
 php artisan migrate --env=testing
@@ -167,12 +157,7 @@ php artisan migrate --env=testing
 # 3. Esegui test (non eseguono migrate!)
 php artisan test --env=testing
 
-<<<<<<< HEAD
-# 4. Per reset completo (quando necessario)
-php artisan migrate:fresh --env=testing
-=======
 # 4. migrate:fresh è vietato anche sull'ambiente test condiviso.
->>>>>>> laraxot/dev
 ```
 
 ## Pattern nei Test
@@ -302,8 +287,4 @@ Rimuovi le chiamate `artisan('migrate')` da setUp()
 4. **Niente stato statico** - I test devono essere indipendenti
 5. **Usa DatabaseTransactions** - Per rollback automatico
 
-<<<<<<< HEAD
 Queste regole devono essere ricordate e applicate da TUTTI gli agenti AI (iFlow, Windsurf, Cursor, Gemini, Antigravity, ecc.).
-=======
-Queste regole devono essere ricordate e applicate da TUTTI gli agenti AI (iFlow, Windsurf, Cursor, Gemini, Antigravity, ecc.).
->>>>>>> laraxot/dev

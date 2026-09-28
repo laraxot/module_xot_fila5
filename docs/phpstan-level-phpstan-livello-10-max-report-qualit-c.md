@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan level phpstan livello 10 max report qualit c"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Livello 10 (MAX) - Report Qualità Codice
 
 ## Data Analisi

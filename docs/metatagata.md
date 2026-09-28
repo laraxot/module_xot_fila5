@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "metatagata"
 type: note
@@ -11,4 +8,3 @@ qmd: "metatagata"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

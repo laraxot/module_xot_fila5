@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "form request"
 type: note
@@ -11,4 +8,3 @@ qmd: "form request"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

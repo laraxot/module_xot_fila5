@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "webhook error formatter"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Webhook Error Formatter"
 type: reference
 tags: [wiki, no-frontmatter-fix]

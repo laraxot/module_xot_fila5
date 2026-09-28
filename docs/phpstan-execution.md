@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan execution"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Esecuzione Corretta di PHPStan in Laraxot <nome progetto>
 
 ## Comando Base per PHPStan

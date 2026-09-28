@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "mcp integration"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Integrazione dei Server MCP con il Modulo Xot"
 module: xot
 type: integration

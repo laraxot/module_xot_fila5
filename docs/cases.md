@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "cases"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "cases"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: cases
 canonical: ../../../Themes/docs/shared-components/case-conflicts-Modules.md

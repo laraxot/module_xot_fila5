@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "xotbase page business logic"
 type: note
@@ -11,4 +8,3 @@ qmd: "xotbase page business logic"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "filament page creation"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Skill: Crea Filament Page (ListRecords/Create/Edit)"
 type: "skill"
 tags: [filament, xotbase, page, listrecords, skill]

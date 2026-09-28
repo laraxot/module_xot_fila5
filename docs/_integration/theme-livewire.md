@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "theme livewire"
 type: note
@@ -11,4 +8,3 @@ qmd: "theme livewire"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

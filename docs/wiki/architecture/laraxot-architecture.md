@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "laraxot architecture"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Laraxot Architecture"
 type: reference
 tags: [wiki, no-frontmatter-fix]

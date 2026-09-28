@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "gitignore standardization"
 type: note
@@ -11,4 +8,3 @@ qmd: "gitignore standardization"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

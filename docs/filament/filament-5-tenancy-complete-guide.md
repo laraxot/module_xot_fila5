@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament 5 tenancy complete guide"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filament 5.x Multi-Tenancy - Guida Completa
 
 **Data Creazione:** Gennaio 2026  
@@ -21,8 +18,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "filament 5 tenancy complete guide"
 type: note
 tags: [documentation]
@@ -31,7 +26,6 @@ updated: 2026-09-26
 qmd: "filament 5 tenancy complete guide"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 📋 Indice
 
 1. [Introduzione](#introduzione)

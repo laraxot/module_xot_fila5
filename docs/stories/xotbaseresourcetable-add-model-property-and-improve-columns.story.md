@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: "xotbaseresourcetable add model property and improve columns.story"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "XotBaseResourceTable: aggiungere proprietà $model e migliorare getTableColumns con schema.org"
 type: story
 module: Xot

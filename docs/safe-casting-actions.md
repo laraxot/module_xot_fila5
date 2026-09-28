@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "safe casting actions"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Safe Casting Actions - DRY & KISS Implementation
 
 ## Overview

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "mcp configuration techplanner"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # 🤖 Configurazione MCP per TechPlanner Fila4 Mono
 
 ## Panoramica

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "pest execution guide"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Pest Testing - Guida Esecuzione dalla Cartella Laravel
 
 **Data**: 9 Gennaio 2026  
@@ -20,8 +17,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "pest execution guide"
 type: note
 tags: [documentation]
@@ -30,7 +25,6 @@ updated: 2026-09-26
 qmd: "pest execution guide"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 📋 Prerequisiti
 
 ### Installazione Pest

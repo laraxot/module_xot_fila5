@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "media"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Media"
 type: reference
 tags: [wiki, no-frontmatter-fix]

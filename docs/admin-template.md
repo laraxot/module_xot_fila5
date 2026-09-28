@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "admin template"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'Admin template — risorse esterne'
 module: Xot
 type: reference

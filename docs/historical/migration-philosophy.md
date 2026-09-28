@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "migration philosophy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Laraxot Migration Architecture Philosophy
 
 ## Core Migration Principles
@@ -194,8 +191,6 @@ Each module should:
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "migration philosophy"
 type: note
 tags: [documentation]
@@ -204,5 +199,4 @@ updated: 2026-09-26
 qmd: "migration philosophy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Philosophy Summary**: In Laraxot, migrations are the definitive history of your database schema. Keep that history clean, linear, and unambiguous. One table, one creation story.

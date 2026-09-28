@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: " to study"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'To study — risorse esterne'
 module: Xot
 type: reference

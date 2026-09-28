@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "tutorial"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://fly.io/laravel-bytes/console-applications-with-laravel-zero/
 
 # Comandi Console in Moduli Laraxot
@@ -42,8 +39,6 @@ namespace Modules\Xot\Console\Commands;
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "tutorial"
 type: note
 tags: [documentation]
@@ -52,7 +47,6 @@ updated: 2026-09-26
 qmd: "tutorial"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ```
 
 ## Esempio di Comando Console

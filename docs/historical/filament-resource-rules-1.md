@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament resource rules 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Regole per le Risorse Filament in <nome progetto>
 
 ## Panoramica

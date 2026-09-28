@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "relationx"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # RelationX Trait
 
 ## Scopo Business

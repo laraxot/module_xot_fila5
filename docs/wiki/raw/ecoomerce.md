@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "ecoomerce"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Ecoomerce"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "complete architecture"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Laraxot: Complete Architecture Documentation
 
 ## Table of Contents
@@ -138,13 +135,6 @@ Filament Resource → XotBaseResource → FilamentResource
 
 ### Required Implementation
 ```php
-<<<<<<< HEAD
-<<<<<<< HEAD
-abstract public function getFormSchema(): array
-=======
-abstract public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 abstract public function getFormSchema(): array
 ---
 title: "complete architecture"
@@ -156,7 +146,6 @@ qmd: "complete architecture"
 issues: []
 discussions: []
 abstract public function getFormSchema(): array
->>>>>>> laraxot/dev
 ```
 
 ### Page Generation

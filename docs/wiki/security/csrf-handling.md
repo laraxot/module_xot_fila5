@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "csrf handling"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Csrf Handling"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "00 MASTER INDEX"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # 🌐 Laraxot Master Documentation Index
 
 **Status**: Active / Sanity Layer  
@@ -20,8 +17,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "00 MASTER INDEX"
 type: note
 tags: [documentation]
@@ -30,7 +25,6 @@ updated: 2026-09-26
 qmd: "00 MASTER INDEX"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 🏛 Core Architecture (The Religion)
 
 | Document | Description | Source of Truth |

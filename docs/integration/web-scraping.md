@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "web scraping"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # web_scraping
 
 <!-- Contenuto migrato da _docs/web_scraping.txt -->

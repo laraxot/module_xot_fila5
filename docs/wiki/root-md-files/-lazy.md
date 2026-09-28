@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: " lazy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Lazy"
 type: reference
 tags: [wiki, no-frontmatter-fix]

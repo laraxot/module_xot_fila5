@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "base classes additional fix 2"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "base classes additional fix 2"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: base-classes-additional-fix-2
 canonical: ../../../Themes/docs/shared-components/base-classes-additional-fix-.md

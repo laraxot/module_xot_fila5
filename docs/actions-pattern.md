@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "actions pattern"
 type: note
@@ -11,4 +8,3 @@ qmd: "actions pattern"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

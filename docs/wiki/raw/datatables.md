@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "datatables"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Datatables"
 type: reference
 tags: [wiki, no-frontmatter-fix]

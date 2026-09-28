@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "xotbase quick reference variant"
 type: note
@@ -11,4 +8,3 @@ qmd: "xotbase quick reference variant"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

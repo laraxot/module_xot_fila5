@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "composer packages"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Composer Packages"
 type: reference
 tags: [wiki, no-frontmatter-fix]

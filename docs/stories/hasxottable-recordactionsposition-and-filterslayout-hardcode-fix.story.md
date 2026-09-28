@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "hasxottable recordactionsposition and filterslayout hardcode fix.story"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "hasxottable recordactionsposition and filterslayout hardcode fix.story"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 name: hasxottable-recordactionsposition-and-filterslayout-hardcode-fix
 description: table() usava enum hardcoded invece degli hook getTableRecordActionsPosition()/getTableFiltersLayout() gia' definiti nel trait
 metadata:

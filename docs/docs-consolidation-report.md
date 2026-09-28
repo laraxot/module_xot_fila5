@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-
-=======
 ---
 title: "docs consolidation report"
 type: note
@@ -12,4 +8,3 @@ qmd: "docs consolidation report"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

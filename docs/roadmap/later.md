@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "later"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "later"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: later
 canonical: ../../../../Themes/docs/shared-components/03-later-Modules.md

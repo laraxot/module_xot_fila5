@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "search 1"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Search 1"
 type: reference
 tags: [wiki, no-frontmatter-fix]

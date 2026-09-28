@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "intelligent solution rule"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Regola Critica: Soluzione Intelligente e Professionale
 
 **Data**: 2025-01-22
@@ -20,8 +17,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "intelligent solution rule"
 type: note
 tags: [documentation]
@@ -30,7 +25,6 @@ updated: 2026-09-26
 qmd: "intelligent solution rule"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 🎯 La Regola Fondamentale
 
 **PRIMA DI OGNI AZIONE, SEGUIRE SEMPRE QUESTO PROCESSO:**

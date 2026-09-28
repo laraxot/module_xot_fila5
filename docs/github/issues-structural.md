@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "issues structural"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 ISSUE TEMPLATES (crea manually o via gh cli):
 # Issue 1 — HasXotForm trait + XotBaseResourceForm instance refactor
 Repo: laraxot/module_xot_fila5

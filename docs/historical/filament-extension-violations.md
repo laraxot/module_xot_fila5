@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament extension violations"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filament Extension Violations Report
 
 **Date**: 2025-12-18
@@ -120,8 +117,6 @@ According to the Filament Class Extension Rules:
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "filament extension violations"
 type: note
 tags: [documentation]
@@ -130,6 +125,5 @@ updated: 2026-09-26
 qmd: "filament extension violations"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Created**: 2025-12-18
 **Last Updated**: 2025-12-18

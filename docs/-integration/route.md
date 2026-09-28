@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "route"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # route
 
 <!-- Contenuto migrato da _docs/route.txt -->

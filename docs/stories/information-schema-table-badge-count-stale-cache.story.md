@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: "information schema table badge count stale cache.story"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "InformationSchemaTable: il conteggio dei badge di navigazione resta congelato per sempre, mai il design documentato"
 type: story
 module: Xot

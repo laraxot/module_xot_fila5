@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: "livewire page expired fix.session expired.story"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Livewire: risolvere errore 'this page is expired. Would you like to refresh the page?'"
 type: story
 module: Xot

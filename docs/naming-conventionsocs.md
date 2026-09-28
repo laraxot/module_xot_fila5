@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "naming conventionsocs"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "naming conventionsocs"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: naming-conventionsocs
 canonical: ../../../Themes/docs/shared-components/naming-conventions-docs.md

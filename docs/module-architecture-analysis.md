@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "module architecture analysis"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Module Architecture Analysis - Complete Breakdown
 
 ## 🏛️ Module Ecosystem Analysis
@@ -441,8 +438,6 @@ public function register(): void
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "module architecture analysis"
 type: note
 tags: [documentation]
@@ -451,7 +446,6 @@ updated: 2026-09-26
 qmd: "module architecture analysis"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Analysis Date**: 2025-11-17
 **Architecture Health**: Good with some technical debt
 **Recommendations**: Address file structure inconsistencies, complete documentation, optimize performance-critical modules

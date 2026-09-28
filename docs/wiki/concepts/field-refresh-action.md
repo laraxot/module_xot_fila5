@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "FieldRefreshAction — ricalcolo campo form dal record"
 type: concept
 module: Xot

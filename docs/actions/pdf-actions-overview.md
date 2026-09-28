@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "pdf actions overview"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PDF Actions - Panoramica Tecnica
 
 ## 📋 Overview
@@ -21,8 +18,6 @@ Sistema progettato con principi **DRY + KISS** per massima riutilizzabilità e m
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "pdf actions overview"
 type: note
 tags: [documentation]
@@ -31,7 +26,6 @@ updated: 2026-09-26
 qmd: "pdf actions overview"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 🎯 Actions Disponibili
 
 ### 1. GetPdfContentByRecordAction ⭐ PRINCIPALE

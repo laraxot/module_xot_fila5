@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "standards"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Standard di Sviluppo
 
 ## Best Practices Laravel

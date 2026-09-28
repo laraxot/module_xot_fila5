@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "install module"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
  public function test(){
 
         $vendor_name='laraxot/module_formx';

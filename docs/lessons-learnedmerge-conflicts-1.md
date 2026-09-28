@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "lessons learnedmerge conflicts 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Lezioni Apprese - Risoluzione Massiva Merge Conflicts (2025-11-04)
 
 ## 🎯 Missione Completata
@@ -336,8 +333,6 @@ Al processo sistematico di **comprensione → studio → dibattito → implement
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "lessons learnedmerge conflicts 1"
 type: note
 tags: [documentation]
@@ -346,7 +341,6 @@ updated: 2026-09-26
 qmd: "lessons learnedmerge conflicts 1"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Data:** 2025-11-04  
 **Autore:** AI Claude + Metodologia Filosofica 10-Step  
 **Status:** ✅ COMPLETATO CON SUCCESSO

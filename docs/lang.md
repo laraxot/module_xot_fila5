@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "lang"
 type: note
@@ -11,4 +8,3 @@ qmd: "lang"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

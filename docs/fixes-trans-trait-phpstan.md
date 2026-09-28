@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "fixes trans trait phpstan"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Fix PHPStan TransTrait - Tipizzazione Array Completa
 
 ## Data: 2025-01-27

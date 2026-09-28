@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "components json conflict"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Risoluzione Conflitto in _components.json
 
 ## Panoramica

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "dependencies"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Xot Module - Dependencies
 
 ## 📋 Table of Contents
@@ -407,8 +404,6 @@ Xot (Foundation)
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "dependencies"
 type: note
 tags: [documentation]
@@ -417,4 +412,3 @@ updated: 2026-09-26
 qmd: "dependencies"
 issues: []
 discussions: []
->>>>>>> laraxot/dev

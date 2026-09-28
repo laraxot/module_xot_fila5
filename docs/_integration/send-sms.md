@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "send sms"
 type: note
@@ -11,4 +8,3 @@ qmd: "send sms"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

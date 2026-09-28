@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "kinetic ux checklist"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # kinetic ux checklist (xot)
 
 ## scopo

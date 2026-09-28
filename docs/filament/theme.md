@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "theme"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://fly.io/laravel-bytes/filamentphp-adding-some-style/
 ### Versione HEAD
 

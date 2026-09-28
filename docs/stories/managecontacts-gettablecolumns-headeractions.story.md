@@ -1,13 +1,10 @@
 ---
-<<<<<<< HEAD
-=======
 type: note
 created: 2026-09-26
 updated: 2026-09-26
 qmd: "managecontacts gettablecolumns headeractions.story"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 id: story-gettablecolumns-gettableheaderactions
 title: "Story: getTableColumns() and getTableHeaderActions() — Composition vs. Configuration"
 description: "Documenta il design contract di getTableColumns() e getTableHeaderActions() in XotBaseManageRelatedRecords: composizione delle colonne, hook separato per le azioni, e la filosofia del Template Method Pattern."

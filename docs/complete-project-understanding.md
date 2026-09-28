@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "complete project understanding"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Quaeris Fila4 Mono - Filosofia Completa del Progetto
 
 ## Logica (Logic)

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan error resolution strategy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Strategia Risoluzione Errori PHPStan - 1565 Errori
 
 ## Status Iniziale
@@ -193,8 +190,6 @@ done
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan error resolution strategy"
 type: note
 tags: [documentation]
@@ -203,6 +198,5 @@ updated: 2026-09-26
 qmd: "phpstan error resolution strategy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Mantenuto da**: Claude Sonnet 4.5  
 **Ultimo aggiornamento**: 2025-12-12

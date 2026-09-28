@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "vite configuration"
 type: note
@@ -11,4 +8,3 @@ qmd: "vite configuration"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

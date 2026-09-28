@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "installation"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Guida all'Installazione Base <nome progetto>
 
 ## Prerequisiti

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "xotdata"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Xotdata"
 type: reference
 tags: [wiki, no-frontmatter-fix]

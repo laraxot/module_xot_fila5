@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "cashier"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Cashier"
 type: reference
 tags: [wiki, no-frontmatter-fix]

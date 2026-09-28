@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "ai init script analysis 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Analisi Funzionamento Script ai_init.sh
 
 ## Situazione Attuale

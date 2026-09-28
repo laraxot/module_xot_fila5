@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "duplicate methods"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Metodi duplicati — Xot
 
 Analisi sintetica dei metodi PHP con lo stesso nome all’interno di questo ambito.

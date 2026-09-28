@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "serviceprovider common errors"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # ServiceProvider Common Errors - Lessons Learned
 
 **Data**: 2025-01-10
@@ -212,8 +209,6 @@ Prima di creare un ServiceProvider:
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "serviceprovider common errors"
 type: note
 tags: [documentation]
@@ -222,7 +217,6 @@ updated: 2026-09-26
 qmd: "serviceprovider common errors"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Filosofia**: "La semplicità è la massima sofisticazione" - Struttura minima, funzionalità massima.
 
 **Principio DRY**: Non duplicare logica già gestita dal parent.

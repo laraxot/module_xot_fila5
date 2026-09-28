@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "svg icon standards variant"
 type: note
@@ -11,4 +8,3 @@ qmd: "svg icon standards variant"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

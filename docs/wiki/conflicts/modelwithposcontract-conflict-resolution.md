@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "modelwithposcontract conflict resolution"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Modelwithposcontract Conflict Resolution"
 type: reference
 tags: [wiki, no-frontmatter-fix]

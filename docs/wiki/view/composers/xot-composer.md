@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "xot composer"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Xot Composer"
 type: reference
 tags: [wiki, no-frontmatter-fix]

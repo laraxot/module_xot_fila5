@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "filament 4x compatibility"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "filament 4x compatibility"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: filament-4x-compatibility
 canonical: ../../../Themes/docs/shared-components/filament-4x-compatibility-conflict.md

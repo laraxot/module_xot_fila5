@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "xotbase trait inheritance zen"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Xotbase Trait Inheritance Zen"
 type: reference
 tags: [wiki, no-frontmatter-fix]

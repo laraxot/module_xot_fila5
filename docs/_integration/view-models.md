@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "view models"
 type: note
@@ -11,4 +8,3 @@ qmd: "view models"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "architectural principles"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Architectural Zen: Reuse over Invention
 
 ## 1. Vision
@@ -41,8 +38,6 @@ $value = SafeNullableStringCastAction::cast($data);
 ```
 
 ---
-<<<<<<< HEAD
-=======
 title: "architectural principles"
 type: note
 tags: [documentation]
@@ -51,6 +46,5 @@ updated: 2026-09-26
 qmd: "architectural principles"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *Created by Gemini CLI - 2026-03-11*
 *Mandatory reading for all agents.*

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "03 later"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Later (Module Xot)
 
 ## Longer-term ideas

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "readme"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://medium.com/swlh/laravel-the-hidden-pipeline-part-1-a4ae91fc55a4
 https://freek.dev/833-understanding-laravel-pipelines
 

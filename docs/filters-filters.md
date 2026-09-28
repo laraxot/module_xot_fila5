@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filters filters"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # _filters
 
 <!-- Contenuto migrato da _docs/_filters.txt -->
@@ -49,8 +46,6 @@ https://appdividend.com/2022/03/01/how-to-create-filters-in-laravel/  !
 
 
 ---
-<<<<<<< HEAD
-=======
 title: "filters filters"
 type: note
 tags: [documentation]
@@ -59,7 +54,6 @@ updated: 2026-09-26
 qmd: "filters filters"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Variant 2
 
 # _filters

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "elastic links"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'Elastic links — risorse esterne'
 module: Xot
 type: reference

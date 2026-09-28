@@ -1,13 +1,10 @@
 ---
-<<<<<<< HEAD
-=======
 type: note
 created: 2026-09-26
 updated: 2026-09-26
 qmd: "1 1 relationx hardening"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 id: STORY-160
 epic: 1
 story: 1

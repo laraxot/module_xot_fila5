@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "MODULE ANALYSIS"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Modulo Xot - Framework Base e Architettura
 
 ## Scopo Principale
@@ -377,8 +374,6 @@ class CreateYourTable extends XotBaseMigration
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "MODULE ANALYSIS"
 type: note
 tags: [documentation]
@@ -387,7 +382,6 @@ updated: 2026-09-26
 qmd: "MODULE ANALYSIS"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Ultimo Aggiornamento**: 2026-01-23  
 **Versione**: v4.0.0-core  
 **Stato**: Production Framework - Foundation of All Modules

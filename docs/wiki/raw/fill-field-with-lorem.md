@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "fill field with lorem"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Fill Field With Lorem"
 type: reference
 tags: [wiki, no-frontmatter-fix]

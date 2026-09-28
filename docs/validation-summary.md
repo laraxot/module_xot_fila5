@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "validation summary"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # ✅ BMAD COMPLETATO - STATEMENT DI VERIFICA
 
 ## 🎯 STATO ATTUALE

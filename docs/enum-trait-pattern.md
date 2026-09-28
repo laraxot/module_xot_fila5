@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "enum trait pattern"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # EnumTrait Pattern - Standard Architetturale per Enums
 
 ## Scopo

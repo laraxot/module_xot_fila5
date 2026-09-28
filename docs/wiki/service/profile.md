@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "profile"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Profile"
 type: reference
 tags: [wiki, no-frontmatter-fix]

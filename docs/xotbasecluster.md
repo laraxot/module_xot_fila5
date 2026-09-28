@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "xotbasecluster"
 type: note
@@ -11,4 +8,3 @@ qmd: "xotbasecluster"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

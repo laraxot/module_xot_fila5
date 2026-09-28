@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "current status"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Xot Module - Current Status
 
 ## 📋 Table of Contents
@@ -273,8 +270,6 @@ Number of Methods: 1,500+
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "current status"
 type: note
 tags: [documentation]
@@ -283,4 +278,3 @@ updated: 2026-09-26
 qmd: "current status"
 issues: []
 discussions: []
->>>>>>> laraxot/dev

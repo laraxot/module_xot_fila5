@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "git subtree operations"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Git Subtree Operations
 
 ## Perché

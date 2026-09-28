@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "phpstan xotbaserelationmanager finale"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "phpstan xotbaserelationmanager finale"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: phpstan-xotbaserelationmanager-finale
 canonical: ../../../Themes/docs/shared-components/phpstan-fix-xotbaserelationmanager-finale.md

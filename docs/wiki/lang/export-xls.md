@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "export xls"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Export Xls"
 type: reference
 tags: [wiki, no-frontmatter-fix]

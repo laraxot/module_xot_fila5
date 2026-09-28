@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "nwidart laravel modules complete guide"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # nWidart/laravel-modules - Guida Completa
 
 **Data Creazione:** Gennaio 2026  
@@ -22,8 +19,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "nwidart laravel modules complete guide"
 type: note
 tags: [documentation]
@@ -32,7 +27,6 @@ updated: 2026-09-26
 qmd: "nwidart laravel modules complete guide"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 📋 Indice
 
 1. [Introduzione](#introduzione)

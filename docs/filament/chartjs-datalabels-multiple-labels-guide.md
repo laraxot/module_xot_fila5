@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "chartjs datalabels multiple labels guide"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Multiple Labels con chartjs-plugin-datalabels (Xot Base)
 
 **Versione:** 1.0  
@@ -23,8 +20,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "chartjs datalabels multiple labels guide"
 type: note
 tags: [documentation]
@@ -33,7 +28,6 @@ updated: 2026-09-26
 qmd: "chartjs datalabels multiple labels guide"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Pattern Base con XotBaseChartWidget
 
 ```php

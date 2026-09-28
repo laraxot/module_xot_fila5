@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "content selection and highlighting"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Content Selection And Highlighting"
 type: reference
 tags: [wiki, no-frontmatter-fix]

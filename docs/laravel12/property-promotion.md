@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "property promotion"
 type: note
@@ -11,4 +8,3 @@ qmd: "property promotion"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "pivot"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Pivot"
 type: reference
 tags: [wiki, no-frontmatter-fix]

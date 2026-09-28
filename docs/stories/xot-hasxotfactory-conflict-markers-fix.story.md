@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: "xot hasxotfactory conflict markers fix.story"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "HasXotFactory — marker di conflitto git non risolti, PHP parse error"
 type: story
 module: Xot

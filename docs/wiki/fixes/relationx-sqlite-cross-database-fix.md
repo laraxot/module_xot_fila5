@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "relationx sqlite cross database fix"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Relationx Sqlite Cross Database Fix"
 type: reference
 tags: [wiki, no-frontmatter-fix]

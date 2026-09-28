@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "now"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "now"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: now
 canonical: ../../../../Themes/docs/shared-components/01-now-Modules.md

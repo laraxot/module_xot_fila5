@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament class extension violations"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Riepilogo Rimozione Violazioni XotBaseResource - [DATE]
 
 **Status**: ✅ Completato  

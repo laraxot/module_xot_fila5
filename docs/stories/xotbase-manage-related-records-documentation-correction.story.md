@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "xotbase manage related records documentation correction.story"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # BMAD: Documentazione corretta — analisi reale di XotBaseManageRelatedRecords
 
 ## Riepilogo

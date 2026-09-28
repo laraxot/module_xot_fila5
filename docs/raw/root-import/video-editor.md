@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "video editor"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 
 https://github.com/kudlav/videoeditor
 https://github.com/kudlav/videoeditor-doc

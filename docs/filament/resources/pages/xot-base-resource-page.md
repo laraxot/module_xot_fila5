@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "xot base resource page"
 type: note
@@ -11,4 +8,3 @@ qmd: "xot base resource page"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

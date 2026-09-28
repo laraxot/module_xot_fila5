@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "mcp setup"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "mcp setup"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: mcp-setup
 canonical: ../../../Themes/docs/shared-components/mcp-setup-guide.md

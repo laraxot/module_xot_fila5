@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament version"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filament Version Declaration — Xot
 
 **Current Version**: Filament v5 (Livewire v4 + Schemas)

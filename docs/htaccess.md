@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "htaccess"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://frostbutter.com/articles/htaccess-cache-control-for-a-faster-website/
 
 # Start Cache control

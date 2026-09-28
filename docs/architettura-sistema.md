@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "architettura sistema"
 type: note
@@ -11,4 +8,3 @@ qmd: "architettura sistema"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

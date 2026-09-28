@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "ide helper best practices"
 type: note
@@ -11,15 +9,12 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # IDE Helper Best Practices - <nome progetto>
 
 Documentazione completa sull'utilizzo di `barryvdh/laravel-ide-helper` nel progetto <nome progetto>.
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "ide helper best practices"
 type: note
 tags: [documentation]
@@ -28,7 +23,6 @@ updated: 2026-09-26
 qmd: "ide helper best practices"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Introduzione
 
 Laravel IDE Helper genera PHPDoc automatici per migliorare l'autocomplete e il type checking negli IDE (PHPStorm, VS Code, ecc.).

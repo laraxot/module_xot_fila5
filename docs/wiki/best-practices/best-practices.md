@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "best practices"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Best Practices"
 type: reference
 tags: [wiki, no-frontmatter-fix]
@@ -256,17 +253,9 @@ class MioModelloResource extends XotBaseResource
      *
      * @return array<int, \Filament\Forms\Components\Component>
      */
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
     public function getFormSchema(): array
 ---
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             Forms\Components\TextInput::make('nome')

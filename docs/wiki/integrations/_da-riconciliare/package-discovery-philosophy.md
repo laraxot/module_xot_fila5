@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "package discovery philosophy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Package Discovery - Philosophy, Logic & Zen"
 module: xot
 type: integration

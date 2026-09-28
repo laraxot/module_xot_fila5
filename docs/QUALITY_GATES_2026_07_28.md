@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 type: note
 tags: [documentation]
 created: 2026-09-26
@@ -8,7 +6,6 @@ updated: 2026-09-26
 qmd: "QUALITY GATES 2026 07 28"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: Quality Gates Analysis — Xot Module
 date: 2026-07-28
 status: completed-with-constraints

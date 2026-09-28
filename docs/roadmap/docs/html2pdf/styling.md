@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "styling"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Guida agli Stili, Tabelle e Immagini
 
 Questa guida illustra come applicare stili CSS, creare layout con tabelle e gestire le immagini nei PDF generati con Html2Pdf.
@@ -25,8 +22,6 @@ Questa guida illustra come applicare stili CSS, creare layout con tabelle e gest
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "styling"
 type: note
 tags: [documentation]
@@ -35,7 +30,6 @@ updated: 2026-09-26
 qmd: "styling"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 🎨 Stili e CSS
 
 Html2Pdf ha un supporto limitato per i CSS. La regola fondamentale è utilizzare **esclusivamente CSS inline** tramite l'attributo `style`. Tag `<style>` e fogli di stile esterni (`<link>`) non sono supportati.

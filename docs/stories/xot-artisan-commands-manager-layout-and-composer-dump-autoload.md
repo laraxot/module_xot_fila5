@@ -1,13 +1,10 @@
 ---
-<<<<<<< HEAD
-=======
 type: note
 created: 2026-09-26
 updated: 2026-09-26
 qmd: "xot artisan commands manager layout and composer dump autoload"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 id: story-xot-artisan-commands-manager-layout-and-composer-dump-autoload
 slug: story-xot-artisan-commands-manager-layout-and-composer-dump-autoload
 title: "STORY — ArtisanCommandsManager: pulsanti che escono dallo schermo, e pulsante Composer Dump Autoload"

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "scraping"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'Scraping'
 module: Xot
 type: reference

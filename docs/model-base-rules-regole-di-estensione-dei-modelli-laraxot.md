@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "model base rules regole di estensione dei modelli laraxot"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Regole di Estensione dei Modelli Laraxot
 
 ## Regola Fondamentale di Ereditarietà

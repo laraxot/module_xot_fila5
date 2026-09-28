@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "docs consolidation plan"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # 📋 Piano di Consolidamento Documentazione - Laraxot PTVX
 
 ## 🚨 **Violazioni Identificate**
@@ -161,8 +158,6 @@ rm -rf laravel/docs
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "docs consolidation plan"
 type: note
 tags: [documentation]
@@ -171,7 +166,6 @@ updated: 2026-09-26
 qmd: "docs consolidation plan"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Data Creazione**: 27 Gennaio 2025
 **Stato**: In Implementazione
 **Priorità**: CRITICA (Violazione regole progetto)

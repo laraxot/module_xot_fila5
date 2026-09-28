@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: " slug"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # _slug
 
 <!-- Contenuto migrato da _docs/_slug.txt -->

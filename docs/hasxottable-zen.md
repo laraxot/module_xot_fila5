@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "hasxottable zen"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # HasXotTable Zen
 
 ## Philosophy

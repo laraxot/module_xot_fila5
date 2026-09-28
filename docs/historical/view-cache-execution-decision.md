@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "view cache execution decision"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Decisione: Esecuzione php artisan view:cache
 
 **Data**: 2025-01-22
@@ -20,8 +17,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "view cache execution decision"
 type: note
 tags: [documentation]
@@ -30,7 +25,6 @@ updated: 2026-09-26
 qmd: "view cache execution decision"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 🧠 La Litigata Interna
 
 ### Contesto

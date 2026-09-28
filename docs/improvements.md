@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "improvements"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "improvements"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: improvements
 canonical: ../../../Themes/docs/shared-components/improvements-sumy.md

@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "module service"
 type: note
@@ -11,4 +8,3 @@ qmd: "module service"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

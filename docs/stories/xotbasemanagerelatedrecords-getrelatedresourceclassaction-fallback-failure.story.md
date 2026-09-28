@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: "xotbasemanagerelatedrecords getrelatedresourceclassaction fallback failure.story"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "XotBaseManageRelatedRecords: GetRelatedResourceClassAction fallback fallisce"
 type: story
 module: Xot

@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "styling"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "styling"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: styling
 canonical: ../../../Themes/docs/shared-components/styling-Modules.md

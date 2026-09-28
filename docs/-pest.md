@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: " pest"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # _pest
 
 <!-- Contenuto migrato da _docs/_pest.txt -->

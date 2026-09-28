@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "useful links"
 type: note
@@ -11,4 +8,3 @@ qmd: "useful links"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "model inheritance audit 1"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "model inheritance audit 1"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: model-inheritance-audit-1
 canonical: ../../../Themes/docs/shared-components/MODEL_INHERITANCE_AUDIT.md

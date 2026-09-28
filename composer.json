@@ -117,15 +117,7 @@
             "helpers/Helper.php"
         ]
     },
-<<<<<<< HEAD
-    "autoload-dev": {
-        "files": [
-            "tests/Support/helpers.php"
-        ]
-    },
-=======
     "autoload-dev": {},
->>>>>>> laraxot/dev
     "scripts": {
         "analyse": "vendor/bin/phpstan analyse",
         "test": "vendor/bin/pest",
@@ -155,8 +147,4 @@
     "require-dev_comment": {
         "spatie/laravel-error-solutions": "*"
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> laraxot/dev

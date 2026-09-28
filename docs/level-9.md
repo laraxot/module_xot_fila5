@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "level 9"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Rapporto PHPStan Livello 9 per il modulo Xot
 
 Data analisi: [DATE] 21:56:07

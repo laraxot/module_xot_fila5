@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "merge conflicts census"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Censimento File con Marker
 
 > **Ultimo aggiornamento**: Novembre 2025

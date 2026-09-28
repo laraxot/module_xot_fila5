@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "type hinting"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Type Hinting"
 type: reference
 tags: [wiki, no-frontmatter-fix]

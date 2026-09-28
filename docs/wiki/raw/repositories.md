@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "repositories"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Repositories"
 type: reference
 tags: [wiki, no-frontmatter-fix]

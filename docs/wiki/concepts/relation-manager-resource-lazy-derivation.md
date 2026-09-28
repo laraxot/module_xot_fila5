@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "XotBaseRelationManager — derivazione lazy della Resource"
 type: concept
 status: canonical

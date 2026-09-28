@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan workflow 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Workflow Analisi PHPStan
 
 > **Nota**: Per una panoramica completa sulla gestione della documentazione e delle regole, consultare [DOCUMENTATION_MANAGEMENT.md](DOCUMENTATION_MANAGEMENT.md)
@@ -194,8 +191,6 @@ class MyModel extends BaseModel
 * [phpstan_workflow.md](../phpstan_workflow.md)
 
 ---
-<<<<<<< HEAD
-=======
 title: "phpstan workflow 1"
 type: note
 tags: [documentation]
@@ -204,4 +199,3 @@ updated: 2026-09-26
 qmd: "phpstan workflow 1"
 issues: []
 discussions: []
->>>>>>> laraxot/dev

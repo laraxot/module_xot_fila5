@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "xotbaserouteserviceprovider conflict resolution"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "xotbaserouteserviceprovider conflict resolution"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: xotbaserouteserviceprovider_conflict_resolution
 canonical: ../../../Themes/docs/shared-components/xotbaserouteserviceprovider-conflict-resolution-1.md

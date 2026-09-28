@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "artisan service refactoring report"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Artisan Service Refactoring Report"
 type: reference
 tags: [wiki, no-frontmatter-fix]

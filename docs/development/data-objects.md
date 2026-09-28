@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "data objects"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Spatie Laravel Data Objects
 
 ## Introduzione
@@ -117,13 +114,6 @@ use Filament\Forms;
 
 class PerformanceResource extends XotBaseResource
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
     public function getFormSchema(): array
 ---
 title: "data objects"
@@ -135,7 +125,6 @@ qmd: "data objects"
 issues: []
 discussions: []
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             Forms\Components\TextInput::make('nome')

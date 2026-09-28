@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "chartjs datalabels xot integration.divergenza"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: chartjs-datalabels-xot-integration.md"
 module: Xot
 type: note

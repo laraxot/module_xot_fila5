@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "getallmodelsbymodulenameaction"
 type: note
@@ -11,4 +8,3 @@ qmd: "getallmodelsbymodulenameaction"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

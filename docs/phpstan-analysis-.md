@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan analysis "
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Analysis Report - 2025-11-18
 
 ## Executive Summary
@@ -180,8 +177,6 @@ uses unknown trait Spatie\Queable\QueableAction.
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan analysis "
 type: note
 tags: [documentation]
@@ -190,7 +185,6 @@ updated: 2026-09-26
 qmd: "phpstan analysis "
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Analysis Generated**: 2025-11-18
 **Next Review Date**: 2025-11-25
 **Target Completion**: 2025-12-02

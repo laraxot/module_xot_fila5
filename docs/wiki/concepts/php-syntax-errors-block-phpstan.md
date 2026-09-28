@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "php syntax errors block phpstan"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHP Syntax Errors Block PHPStan Analysis
 
 ## Problem

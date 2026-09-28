@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "forms"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Forms"
 type: reference
 tags: [wiki, no-frontmatter-fix]

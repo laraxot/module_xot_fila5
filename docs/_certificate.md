@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: " certificate"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'Certificate — risorse esterne'
 module: Xot
 type: reference

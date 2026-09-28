@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "database schema export"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Database Schema Export"
 type: reference
 tags: [wiki, no-frontmatter-fix]

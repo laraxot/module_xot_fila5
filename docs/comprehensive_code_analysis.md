@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "comprehensive code analysis"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Analisi Completa del Codice - Sistema Laraxot
 
 ## Panoramica
@@ -449,8 +446,6 @@ return [
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "comprehensive code analysis"
 type: note
 tags: [documentation]
@@ -459,7 +454,6 @@ updated: 2026-09-26
 qmd: "comprehensive code analysis"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Data Analisi**: 2025-01-06  
 **Analista**: AI Code Review System  
 **Priorità**: CRITICA - Richiede intervento immediato  

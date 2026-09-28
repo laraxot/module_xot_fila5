@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "chartjs datalabels xot integration"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Chart.js Datalabels Plugin Implementation in Xot Module
 
 ## Overview

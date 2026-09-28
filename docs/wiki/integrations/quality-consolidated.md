@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "quality consolidated"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "quality — Consolidated Documentation"
 module: xot
 type: integration

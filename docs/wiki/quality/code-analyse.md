@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "code analyse"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Code Analyse"
 type: reference
 tags: [wiki, no-frontmatter-fix]

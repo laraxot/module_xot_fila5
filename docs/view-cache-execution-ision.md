@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "view cache execution ision"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Decisione: Esecuzione php artisan view:cache
 
 **Metodologia**: Super Mucca - La Litigata Interna
@@ -19,8 +16,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "view cache execution ision"
 type: note
 tags: [documentation]
@@ -29,7 +24,6 @@ updated: 2026-09-26
 qmd: "view cache execution ision"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 🧠 La Litigata Interna
 
 ### Contesto

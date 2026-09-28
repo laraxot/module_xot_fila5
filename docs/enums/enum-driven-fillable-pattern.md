@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "enum driven fillable pattern"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Enum-Driven Fillable Pattern - Laraxot Architecture
 
 ## Philosophy

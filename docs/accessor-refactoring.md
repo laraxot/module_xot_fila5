@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "accessor refactoring"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "accessor refactoring"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: accessor-refactoring
 canonical: ../../../Themes/docs/shared-components/accessor-refactoring-complete-guide.md

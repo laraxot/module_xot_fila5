@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "hasxottable implementation audit 12 errors.story"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "HasXotTable — Error Audit & Implementation Fix (12 issues)"
 type: code-analysis
 status: discovery

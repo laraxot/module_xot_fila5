@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "translate"
 type: note
@@ -11,5 +9,4 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://www.oulub.com/Laravel/http-tests

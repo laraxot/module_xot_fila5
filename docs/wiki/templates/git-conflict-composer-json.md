@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "git conflict composer json"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Git Conflict Composer Json"
 type: reference
 tags: [wiki, no-frontmatter-fix]

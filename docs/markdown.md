@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "markdown"
 type: note
@@ -11,5 +9,4 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://laravel.io/forum/01-31-2014-markdown-reference

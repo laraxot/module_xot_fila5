@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "actions pattern"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Actions Pattern"
 type: reference
 tags: [wiki, no-frontmatter-fix]

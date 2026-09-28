@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "github workflows standard"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # GitHub Workflows Standard - base_laravelpizza
 
 **Ultimo aggiornamento**: 2025-01-10
@@ -20,8 +17,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "github workflows standard"
 type: note
 tags: [documentation]
@@ -30,7 +25,6 @@ updated: 2026-09-26
 qmd: "github workflows standard"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 📋 Standard Workflow Quality.yml
 
 Tutti i moduli e temi devono avere un workflow `quality.yml` standardizzato con:

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "generators"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 Model generator
 https://github.com/reliese/laravel
 

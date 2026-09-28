@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Task Observer — meta-skill auto-miglioramento"
 module: "xot"
 type: reference

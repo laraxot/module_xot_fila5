@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "tree"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Tree"
 type: reference
 tags: [wiki, no-frontmatter-fix]

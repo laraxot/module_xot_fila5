@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "git conflicts resolution massive"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Git Conflicts Resolution Massive"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "common issues"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Problemi Comuni e Soluzioni
 
 ## Errori HTTP

@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "factory seeder plan"
 type: note
 tags: [documentation]
@@ -8,7 +6,6 @@ updated: 2026-09-26
 qmd: "factory seeder plan"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 id: factory-seeder-plan
 slug: factory-seeder-plan
 scope: [project:base_workorder_fila5]

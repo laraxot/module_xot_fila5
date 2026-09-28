@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "ridondanze cross cutting codebase"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Ridondanze cross-cutting codebase e dove documentarle"
 type: concept
 tags: [dry, redundancy, xot, documentation]

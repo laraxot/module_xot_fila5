@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "module directory structure rule"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Module Directory Structure Rule
 
 > **Regola**: Le cartelle dei moduli devono seguire la struttura standard Laravel/Packt.
@@ -22,8 +19,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "module directory structure rule"
 type: note
 tags: [documentation]
@@ -32,7 +27,6 @@ updated: 2026-09-26
 qmd: "module directory structure rule"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## La Regola
 
 **Tutti i file di codice sorgente devono stare in `app/`, MAI nella root del modulo.**

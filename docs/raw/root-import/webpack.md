@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "webpack"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 //------------------------
 https://stackoverflow.com/questions/61047279/laravel-mix-multiple-entry-points-multiple-outputs
 https://codeutility.org/javascript-laravel-mix-multiple-entry-points-multiple-outputs-stack-overflow/

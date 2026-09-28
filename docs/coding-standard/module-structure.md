@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "module structure"
 type: note
@@ -11,4 +8,3 @@ qmd: "module structure"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

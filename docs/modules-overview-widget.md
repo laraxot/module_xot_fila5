@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-
-=======
 ---
 title: "modules overview widget"
 type: note
@@ -12,4 +8,3 @@ qmd: "modules overview widget"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "status"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Status"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "volt folio best practices"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Volt Folio Best Practices"
 type: reference
 tags: [wiki, no-frontmatter-fix]

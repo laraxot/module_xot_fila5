@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "opencode gsd config"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # OpenCode & GSD — Allineamento Schema Agenti
 
 **Rule type**: infrastructure / config alignment
@@ -60,8 +57,6 @@ Se un file `.opencode/agents/gsd-*.md` causa errori di validazione:
 
 ```yaml
 ---
-<<<<<<< HEAD
-=======
 title: "opencode gsd config"
 type: note
 tags: [documentation]
@@ -70,7 +65,6 @@ updated: 2026-09-26
 qmd: "opencode gsd config"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 name: gsd-debug-session-manager
 description: ...
 mode: subagent

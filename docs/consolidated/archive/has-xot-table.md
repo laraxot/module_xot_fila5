@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "has xot table"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # HasXotTable Trait
 
 Il trait `HasXotTable` fornisce funzionalità avanzate per la gestione delle tabelle in Filament, con supporto per traduzioni e una struttura ottimizzata.

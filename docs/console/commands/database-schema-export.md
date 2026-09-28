@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "database schema export"
 type: note
@@ -11,4 +8,3 @@ qmd: "database schema export"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

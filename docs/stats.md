@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "stats"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'Stats — risorse esterne'
 module: Xot
 type: reference

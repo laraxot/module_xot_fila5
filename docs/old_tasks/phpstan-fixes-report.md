@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan fixes report"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Fixes Report - Gennaio 2025
 
 ## 📊 Stato Finale - PERFEZIONE ASSOLUTA! 👑✨
@@ -386,8 +383,6 @@ Tempo totale:      ~4-5 ore  ⚡
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan fixes report"
 type: note
 tags: [documentation]
@@ -396,7 +391,6 @@ updated: 2026-09-26
 qmd: "phpstan fixes report"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Data Creazione**: 10 Gennaio 2025  
 **Ultimo Aggiornamento**: 10 Gennaio 2025 (VITTORIA FINALE)  
 **Stato**: ✅ PERFEZIONE RAGGIUNTA - 0 ERRORI  

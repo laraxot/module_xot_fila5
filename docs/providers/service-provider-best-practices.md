@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "service provider best practices"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Best Practices nei Service Provider
 
 ## Decisione Architetturale (2025-05-13)

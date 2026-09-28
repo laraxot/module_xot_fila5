@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "models"
 type: note
@@ -11,6 +9,5 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 multi key, fixing lazy loading
 https://github.com/topclaudy/compoships

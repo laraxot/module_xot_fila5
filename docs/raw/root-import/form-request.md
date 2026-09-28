@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "form request"
 type: note
@@ -11,5 +9,4 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://dev.to/psylogico/different-ways-to-use-laravel-form-requests-5bmb

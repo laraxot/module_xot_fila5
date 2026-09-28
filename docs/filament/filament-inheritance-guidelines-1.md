@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament inheritance guidelines 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Linee Guida per l'Ereditarietà da Classi Filament
 
 ## Problema di Compatibilità con Metodi Statici/Non Statici

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "icons"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Icons"
 type: reference
 tags: [wiki, no-frontmatter-fix]

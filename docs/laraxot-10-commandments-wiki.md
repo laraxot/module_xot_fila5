@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "laraxot 10 commandments wiki"
 type: note
@@ -11,15 +9,12 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Laraxot Architecture: The 10 Commandments of Xot (Quick Reference)
 
 This document provides a quick reference to the 10 inviolable architectural commandments enforced by the `Xot` module, which is the foundational core of the Laraxot framework. Adhering to these rules is paramount for maintaining code quality, consistency, and future compatibility.
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "laraxot 10 commandments wiki"
 type: note
 tags: [documentation]
@@ -28,7 +23,6 @@ updated: 2026-09-26
 qmd: "laraxot 10 commandments wiki"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## The 10 Commandments of Xot
 
 These rules are derived from `Modules/Xot/docs/filosofia-modulo-xot.md` and are essential for any developer working within the Laraxot ecosystem.

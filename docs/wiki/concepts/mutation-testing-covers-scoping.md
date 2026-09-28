@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Mutation testing — perché un test nuovo non alza il punteggio senza covers()"
 module: Xot
 type: concept

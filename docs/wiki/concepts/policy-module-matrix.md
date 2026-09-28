@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "policy module matrix"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Policy module matrix
 
 ## Scopo

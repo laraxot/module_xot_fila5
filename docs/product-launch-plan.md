@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "product launch plan"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Xot - Product Launch Plan
 
 > Piano di lancio. Modulo Core Framework.
@@ -41,8 +38,6 @@ Rilasciare **Xot v2.0** come core framework stabilizzato con PHPStan Level 10, t
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "product launch plan"
 type: note
 tags: [documentation]
@@ -51,7 +46,6 @@ updated: 2026-09-26
 qmd: "product launch plan"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Audience
 
 ### Audience Interna

@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "full name field"
 type: note
@@ -11,4 +8,3 @@ qmd: "full name field"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

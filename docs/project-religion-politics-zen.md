@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "project religion politics zen"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filosofia, Religione, Politica e Zen del Progetto Laravel Pizza
 
 ## 🧠 Logica del Progetto

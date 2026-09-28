@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "hasfactory signature compatibility"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Bugfix: HasFactory newFactory() Signature Compatibility
 
 **Data Fix**: 11 Novembre 2025

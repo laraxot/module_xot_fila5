@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan configurationes"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Configuration Fixes - Modulo Xot
 
 ## Panoramica
@@ -213,8 +210,6 @@ La configurazione PHPStan implementata mantiene un alto livello di qualità del 
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan configurationes"
 type: note
 tags: [documentation]
@@ -223,7 +218,6 @@ updated: 2026-09-26
 qmd: "phpstan configurationes"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **PHPStan Version**: 1.10+
 **Laravel Version**: 10+
 **Larastan Version**: 2.9+

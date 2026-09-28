@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "ai skills"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
  # Agent skills nei moduli
 
 ## Scopo

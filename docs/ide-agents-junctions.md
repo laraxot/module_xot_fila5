@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "ide agents junctions"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: Junction IDE e agenti — SSoT .agents
 type: guide
 created: 2026-07-28

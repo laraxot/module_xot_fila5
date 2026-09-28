@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "main dashboard"
 type: note
@@ -11,4 +8,3 @@ qmd: "main dashboard"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

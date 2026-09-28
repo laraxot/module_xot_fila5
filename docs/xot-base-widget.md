@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "xot base widget"
 type: note
@@ -11,4 +8,3 @@ qmd: "xot base widget"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

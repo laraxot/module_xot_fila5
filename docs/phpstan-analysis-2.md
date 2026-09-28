@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan analysis 2"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Analysis Report - 18 Agosto 2025
 
 ## 🚨 REGOLA CRITICA RISPETTATA 🚨
@@ -202,8 +199,6 @@ class MyModel extends BaseModel
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan analysis 2"
 type: note
 tags: [documentation]
@@ -212,7 +207,6 @@ updated: 2026-09-26
 qmd: "phpstan analysis 2"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Stato**: 🔄 Analisi Completata - Correzioni in Corso
 **phpstan.neon**: ✅ INTOCCATO
 **Approccio**: DRY + KISS + Type Safety

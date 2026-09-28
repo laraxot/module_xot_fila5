@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "quality analysis sumy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Riepilogo Analisi Qualità Codice Completa
 
 **Strumenti Utilizzati**: PHPStan (max), PHPMD, PHPInsights, Pint

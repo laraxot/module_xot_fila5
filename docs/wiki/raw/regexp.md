@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "regexp"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Regexp"
 type: reference
 tags: [wiki, no-frontmatter-fix]

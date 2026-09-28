@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: Quality roadmap — Xot
 type: concept
 tags: [xot, quality, perfection, phpstan, platform]

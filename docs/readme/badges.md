@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "badges"
 type: note
@@ -11,4 +8,3 @@ qmd: "badges"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

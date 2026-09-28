@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "search"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'Search — risorse esterne'
 module: Xot
 type: reference

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan max level findings"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan MAX Level Findings - Xot Module
 
 **Data**: 2025-10-10
@@ -177,8 +174,6 @@ Ridurre errori reali da ~74 a 0 in ~1.5 ore.
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan max level findings"
 type: note
 tags: [documentation]
@@ -187,5 +182,4 @@ updated: 2026-09-26
 qmd: "phpstan max level findings"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Prossimo Step**: Iniziare correzioni Fase 1

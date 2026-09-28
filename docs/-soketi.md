@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: " soketi"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # _soketi
 
 <!-- Contenuto migrato da _docs/_soketi.txt -->

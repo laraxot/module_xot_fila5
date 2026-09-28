@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament actions"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Azioni Filament
 
 ## Best Practices per le Azioni

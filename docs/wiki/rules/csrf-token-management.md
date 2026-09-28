@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "csrf token management"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Csrf Token Management"
 type: reference
 tags: [wiki, no-frontmatter-fix]

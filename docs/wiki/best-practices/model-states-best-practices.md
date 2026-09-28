@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "model states best practices"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Model States Best Practices"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "second brain update"
 type: note
 tags: [documentation]
@@ -8,7 +6,6 @@ updated: 2026-09-26
 qmd: "second brain update"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 id: second-brain-update
 slug: second-brain-update
 scope: [project:base_workorder_fila5]

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "maintenance rules"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Maintenance Rules
 
 **Rule:** Before modifying any file, always study, update, and improve the documentation (`docs` folders) inside the relevant module and theme.

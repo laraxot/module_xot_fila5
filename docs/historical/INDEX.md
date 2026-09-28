@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "INDEX"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # 📚 Index of Xot Module Documentation
 
 ## 🎯 Quick Start
@@ -65,8 +62,6 @@ discussions: []
 - [General Troubleshooting](troubleshooting.md)
 
 ---
-<<<<<<< HEAD
-=======
 title: "INDEX"
 type: note
 tags: [documentation]
@@ -75,5 +70,4 @@ updated: 2026-09-26
 qmd: "INDEX"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *Last update: January 2025*

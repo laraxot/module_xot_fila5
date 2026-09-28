@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "scrutinizer"
 type: note
@@ -11,4 +8,3 @@ qmd: "scrutinizer"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

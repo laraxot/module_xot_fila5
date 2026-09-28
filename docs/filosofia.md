@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "filosofia"
 type: note
@@ -11,4 +8,3 @@ qmd: "filosofia"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

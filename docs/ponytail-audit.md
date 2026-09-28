@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Ponytail-audit 2026-07-02: Xot module findings"
 module: "Xot"
 type: concept

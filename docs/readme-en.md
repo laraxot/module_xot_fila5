@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "readme en"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # ⚡ Xot — English presentation
 
 [![Core](https://img.shields.io/badge/Role-Platform%20Core-6A1B9A.svg)](#)
@@ -28,8 +25,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "readme en"
 type: note
 tags: [documentation]
@@ -38,7 +33,6 @@ updated: 2026-09-26
 qmd: "readme en"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Why it exists
 
 No FixCity without Xot: internal framework preventing duplication and architectural drift.

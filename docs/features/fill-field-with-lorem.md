@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "fill field with lorem"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 //------- IMMAGINI --------
 https://placeimg.com/640/480/arch
 https://picsum.photos/

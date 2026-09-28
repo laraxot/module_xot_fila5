@@ -1,12 +1,9 @@
 ---
-<<<<<<< HEAD
-=======
 type: note
 tags: [documentation]
 qmd: "laravel13 modular package compatibility matrix"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Laravel 13 Modular Package Compatibility Matrix"
 module: "Xot"
 created: "2026-04-28"

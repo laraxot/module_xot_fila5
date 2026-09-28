@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "translation system"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "translation system"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: translation-system
 canonical: ../../../../Themes/docs/shared-components/translation-system.md

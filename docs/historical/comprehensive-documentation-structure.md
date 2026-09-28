@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "comprehensive documentation structure"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Comprehensive Documentation Structure
 
 ## 🏗️ Documentation Architecture
@@ -359,8 +356,6 @@ find Modules/ -name "*.md" -exec markdownlint {} \;
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "comprehensive documentation structure"
 type: note
 tags: [documentation]
@@ -369,7 +364,6 @@ updated: 2026-09-26
 qmd: "comprehensive documentation structure"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Documentation Version**: 1.0
 **Last Updated**: 2025-11-17
 **Maintenance**: Xot Module Documentation Team

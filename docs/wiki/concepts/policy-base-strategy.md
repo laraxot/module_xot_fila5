@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "policy base strategy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Policy base strategy
 
 ## Obiettivo

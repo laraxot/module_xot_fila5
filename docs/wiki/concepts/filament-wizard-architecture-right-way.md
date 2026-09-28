@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "filament wizard architecture right way"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Filament Wizard Architecture - The Right Way"
 type: concept
 sources: ["https://github.com/filamentphp/filament/blob/5.x/packages/schemas/src/Components/Wizard.php"]

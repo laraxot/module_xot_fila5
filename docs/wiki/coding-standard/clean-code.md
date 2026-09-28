@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "clean code"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Clean Code"
 type: reference
 tags: [wiki, no-frontmatter-fix]

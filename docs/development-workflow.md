@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "development workflow"
 type: note
@@ -11,4 +8,3 @@ qmd: "development workflow"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

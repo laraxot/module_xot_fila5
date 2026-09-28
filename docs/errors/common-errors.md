@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "common errors"
 type: note
@@ -11,4 +8,3 @@ qmd: "common errors"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "min two positive ratings rule"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Regola business: almeno 2 valutazioni > 0 nelle pagine Compila
 
 ## Obiettivo

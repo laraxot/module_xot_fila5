@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "export xls action business logic"
 type: note
@@ -11,4 +8,3 @@ qmd: "export xls action business logic"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

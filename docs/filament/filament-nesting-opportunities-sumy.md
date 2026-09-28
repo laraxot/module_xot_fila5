@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament nesting opportunities sumy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filament 5.x Nested Resources - Riepilogo Opportunità
 
 **Data Analisi**: 2026-01-22  
@@ -228,8 +225,6 @@ php artisan make:filament-relation-manager SurveyPdfResource contacts email
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "filament nesting opportunities sumy"
 type: note
 tags: [documentation]
@@ -238,5 +233,4 @@ updated: 2026-09-26
 qmd: "filament nesting opportunities sumy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Prossima Revisione**: 2026-02-22

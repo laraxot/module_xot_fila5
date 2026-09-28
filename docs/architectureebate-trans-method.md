@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "architectureebate trans method"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "architectureebate trans method"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: architectureebate-trans-method
 canonical: ../../../Themes/docs/shared-components/architecture-debate-trans-method.md

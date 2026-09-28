@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "future enhancements"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Xot Module - Future Enhancements
 
 ## 📋 Table of Contents
@@ -543,8 +540,6 @@ To submit an enhancement proposal:
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "future enhancements"
 type: note
 tags: [documentation]
@@ -553,4 +548,3 @@ updated: 2026-09-26
 qmd: "future enhancements"
 issues: []
 discussions: []
->>>>>>> laraxot/dev

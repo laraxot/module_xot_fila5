@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "XotBaseManageRelatedRecords.php"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "XotBaseManageRelatedRecords.php — analisi dell'implementazione reale"
 type: code-analysis
 status: discussion

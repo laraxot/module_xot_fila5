@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan syntax errors fix"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Syntax Errors Fix - Xot Module
 
 **Data**: 2026-01-09  
@@ -21,8 +18,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan syntax errors fix"
 type: note
 tags: [documentation]
@@ -31,7 +26,6 @@ updated: 2026-09-26
 qmd: "phpstan syntax errors fix"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 📊 Errore Risolto
 
 ### `lang/pt_br/health.php`

@@ -1,12 +1,9 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 updated: 2026-09-26
 qmd: "03 data management"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Laraxot - Data Management"
 type: shard
 confidence: high

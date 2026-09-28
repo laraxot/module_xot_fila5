@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "sortable livewire"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Sortable Livewire"
 type: reference
 tags: [wiki, no-frontmatter-fix]

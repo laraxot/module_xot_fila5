@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "langserviceprovider labels"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # LangServiceProvider: Gestione automatica delle label nei Filament Forms
 
 ## Regola

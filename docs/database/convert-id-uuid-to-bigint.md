@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "convert id uuid to bigint"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # convertIdFromUuidToBigintIfNeeded - Metodo XotBaseMigration
 
 ## Scopo

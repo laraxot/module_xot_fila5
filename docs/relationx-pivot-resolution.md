@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 created: 2026-09-26
 qmd: "relationx pivot resolution"
->>>>>>> laraxot/dev
 title: "RelationX — risoluzione automatica dei pivot e relazioni cross-database"
 slug: relationx-pivot-resolution
 module: Xot

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "page builder"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'Page builder — risorse esterne'
 module: Xot
 type: reference

@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "base model"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "base model"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: Xot
 concept: BaseModel
 last_updated: 2026-04-15

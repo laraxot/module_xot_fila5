@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: "panel mixin extension pattern"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Panel Mixin Extension Pattern"
 module: "Xot"
 type: "Architecture Pattern"

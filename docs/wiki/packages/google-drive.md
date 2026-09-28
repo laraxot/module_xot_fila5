@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "google drive"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Google Drive"
 type: reference
 tags: [wiki, no-frontmatter-fix]

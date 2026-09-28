@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 type: note
 tags: [documentation]
 created: 2026-09-26
@@ -8,7 +6,6 @@ updated: 2026-09-26
 qmd: "related resource table vs parenttable.story"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 id: story-related-resource-table-vs-parenttable
 title: "relatedResourceTable vs parentTable — Analisi della proposta di sostituzione"
 descript_type: bmad

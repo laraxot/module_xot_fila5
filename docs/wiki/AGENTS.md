@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "AGENTS"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Agents"
 type: reference
 tags: [wiki, no-frontmatter-fix]

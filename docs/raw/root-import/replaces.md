@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "replaces"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 -------------------------
 relatedUrl\(\['related_name'[ ]?=>[ ]?'([^ ]*)',[ ]?'act'[ ]?=>[ ]?'([a-zA-Z_]*)'\]\)
 relatedUrl('$1','$2')

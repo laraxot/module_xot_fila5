@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: " continuous integration tools"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: " continuous integration tools"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: -continuous-integration-tools
 canonical: ../../../../Themes/docs/shared-components/-2.md

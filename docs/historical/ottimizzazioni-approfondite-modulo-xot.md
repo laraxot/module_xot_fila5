@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "ottimizzazioni approfondite modulo xot"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Ottimizzazioni Approfondite Modulo Xot - DRY + KISS
 
 ## Panoramica
@@ -249,8 +246,6 @@ grep -r "extends.*Resource" app/Filament/Resources/
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "ottimizzazioni approfondite modulo xot"
 type: note
 tags: [documentation]
@@ -259,7 +254,6 @@ updated: 2026-09-26
 qmd: "ottimizzazioni approfondite modulo xot"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Priorità:** ALTA (modulo core del sistema)
 **Impatto:** Tutti i moduli e sviluppatori
 **Stato:** In attesa implementazione

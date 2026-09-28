@@ -1,8 +1,5 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
->>>>>>> laraxot/dev
 title: "Migrazioni — solo updateTimestamps"
 type: concept
 module: Xot

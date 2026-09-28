@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "magic properties sumy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Magic Properties Cleanup Report - [DATE]
 
 ## Summary

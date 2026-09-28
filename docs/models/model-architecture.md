@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "model architecture"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Model Architecture - Guida Completa
 
 **Data**: 2025-10-16
@@ -31,8 +28,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "model architecture"
 type: note
 tags: [documentation]
@@ -41,7 +36,6 @@ updated: 2026-09-26
 qmd: "model architecture"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Panoramica
 
 L'architettura dei modelli in questa applicazione Laravel segue un **pattern a tre livelli** che garantisce:

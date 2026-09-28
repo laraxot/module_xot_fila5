@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "standards"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Standards"
 type: reference
 tags: [wiki, no-frontmatter-fix]

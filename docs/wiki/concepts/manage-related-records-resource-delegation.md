@@ -1,20 +1,13 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "manage related records resource delegation"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Memoria: delega completa, owner distinto"
 type: decision
 status: discussion
 implementation_status: not-started
 created: 2026-09-11
-<<<<<<< HEAD
-updated: 2026-09-11
-=======
 updated: 2026-09-26
->>>>>>> laraxot/dev
 tags: [bmad, second-brain, filament, dry, kiss]
 ---
 
@@ -57,8 +50,6 @@ esiste gia', e' implementata e testata in quel filone — non e' piu' una
 proposta aperta. I due filoni descrivono la stessa decisione; non
 riconciliati in un'unica issue per non chiudere tracking altrui senza
 conferma esplicita.
-<<<<<<< HEAD
-=======
 
 ## API Filament e hook compatibili
 
@@ -74,4 +65,3 @@ l'annotazione upstream venga attribuita ai hook del progetto.
 Per nuove personalizzazioni di questa classe si implementano i getter Xot già esposti; non si
 sovrascrive `table()` perché è final. Per una pagina Filament non basata su questo Xot base,
 si segue invece la raccomandazione del framework e si sovrascrive `table()`.
->>>>>>> laraxot/dev

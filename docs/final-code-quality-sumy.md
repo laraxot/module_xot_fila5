@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "final code quality sumy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Final Code Quality Summary - Laraxot Project
 
 ## Overview
@@ -172,8 +169,6 @@ if (property_exists($stateObject, 'name')) {
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "final code quality sumy"
 type: note
 tags: [documentation]
@@ -182,6 +177,5 @@ updated: 2026-09-26
 qmd: "final code quality sumy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *
 *Status: ✅ COMPLETE - All quality improvements implemented*

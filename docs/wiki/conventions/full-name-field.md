@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "full name field"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Full Name Field"
 type: reference
 tags: [wiki, no-frontmatter-fix]

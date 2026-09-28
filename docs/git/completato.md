@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "completato"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 Risoluzioni completate con successo.
 
 Integrazione documentazione completata:

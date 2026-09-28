@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "phpstan intervention module fix"
 type: note
 tags: [documentation]
@@ -8,7 +6,6 @@ updated: 2026-09-26
 qmd: "phpstan intervention module fix"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 id: phpstan-intervention-module-fix
 slug: phpstan-intervention-module
 scope:

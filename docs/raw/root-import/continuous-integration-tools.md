@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "continuous integration tools"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 //----------
 PHP Mess Detector
 

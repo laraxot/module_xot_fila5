@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "hasxtable visibility"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Fix Visibilità Metodi HasXotTable - [DATE]
 
 **Status**: ✅ Risolto  

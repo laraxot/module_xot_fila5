@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "docs consolidation"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "docs consolidation"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: docs-consolidation
 canonical: ../../../Themes/docs/shared-components/docs-consolidation-report-conflict.md

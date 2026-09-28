@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "duplicate methods report"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Report: Metodi con nome duplicato nei moduli e nei temi
 
 ## Introduzione

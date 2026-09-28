@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "lamp"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Lamp"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "form schema checker"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Form Schema Checker
 
 ## Perché

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "claude code laraxot rules path scoping"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Claude Code Laraxot Rules Path Scoping
 
 ## Decisione

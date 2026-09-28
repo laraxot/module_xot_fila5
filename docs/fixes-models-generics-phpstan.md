@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "fixes models generics phpstan"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Fix PHPStan Modelli - Generics e Tipizzazione Completa
 
 ## Data: 2025-01-27

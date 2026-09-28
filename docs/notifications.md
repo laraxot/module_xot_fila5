@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "notifications"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Notifiche
 
 ## Configurazione Base

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "architecture overview"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Architecture Overview"
 type: reference
 tags: [wiki, no-frontmatter-fix]

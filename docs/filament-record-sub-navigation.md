@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament record sub navigation"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Sub navigation delle pagine di record
 
 Regola valida per ogni risorsa che estende `XotBaseResource`.

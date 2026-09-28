@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "backend"
 type: note
@@ -11,6 +9,5 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 
 https://github.com/juliomotol/laravel-admin-panel/blob/main/src/Views/Component.php

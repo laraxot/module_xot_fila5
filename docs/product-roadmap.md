@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "product roadmap"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Xot - Product Roadmap
 
 > Documento vivente. Modulo.

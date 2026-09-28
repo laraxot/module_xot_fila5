@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "committed merge markers bootstrap break fix.story"
 type: note
 tags: [documentation]
@@ -8,7 +6,6 @@ updated: 2026-09-26
 qmd: "committed merge markers bootstrap break fix.story"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 id: committed-merge-markers-bootstrap-break-fix
 slug: committed-merge-markers-bootstrap-break-fix
 scope:

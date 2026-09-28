@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "error formatter contract"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Error Formatter Contract"
 type: reference
 tags: [wiki, no-frontmatter-fix]

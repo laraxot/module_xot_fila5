@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "xot service provider feature reimplementation"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Task: XotServiceProvider Feature Re-implementation
 
 **Modulo**: Xot  

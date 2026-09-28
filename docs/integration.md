@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "integration"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Integrazione Documentazione
 
 ## Documentazione Collegata
@@ -88,8 +85,6 @@ discussions: []
 ### Versione Incoming
 
 ---
-<<<<<<< HEAD
-=======
 title: "integration"
 type: note
 tags: [documentation]
@@ -98,4 +93,3 @@ updated: 2026-09-26
 qmd: "integration"
 issues: []
 discussions: []
->>>>>>> laraxot/dev

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "packages"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Pacchetti
 
 ## Configurazione Base

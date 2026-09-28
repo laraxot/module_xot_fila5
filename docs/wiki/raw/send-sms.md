@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "send sms"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Send Sms"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "payment gateway"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'payment_gateway'
 module: Xot
 type: reference

@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "migrations"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "migrations"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: migrations
 canonical: ../../../../Themes/docs/shared-components/migrations.md

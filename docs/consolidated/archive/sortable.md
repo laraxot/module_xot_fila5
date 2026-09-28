@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "sortable"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # sortable
 
 <!-- Contenuto migrato da _docs/sortable.txt -->

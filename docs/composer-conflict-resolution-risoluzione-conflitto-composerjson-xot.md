@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "composer conflict resolution risoluzione conflitto composerjson xot"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Risoluzione conflitto composer.json (Xot)
 
 ## Intent

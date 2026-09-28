@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "delete related models"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 con un trait 
 https://tighten.co/blog/laravel-tip-bootable-model-traits/
 

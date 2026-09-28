@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "translation system standardization"
 type: note
@@ -11,4 +8,3 @@ qmd: "translation system standardization"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

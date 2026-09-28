@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "trait collision resolution fix"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Trait Collision Resolution Summary
 
 ## Issue

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "scrutinizer"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Scrutinizer"
 type: reference
 tags: [wiki, no-frontmatter-fix]

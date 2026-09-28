@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "license the mit license mit"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 The MIT License (MIT)
 
 Copyright (c) :vendor_name <author@domain.com>

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "job"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Job"
 type: reference
 tags: [wiki, no-frontmatter-fix]

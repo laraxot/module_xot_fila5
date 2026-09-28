@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "documentation consolidation strategy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Strategia di Consolidamento Documentazione - Moduli Laraxot
 
 ## 🎯 Obiettivo
@@ -258,8 +255,6 @@ Common issues e soluzioni.
 - [External](https://example.com)
 
 ---
-<<<<<<< HEAD
-=======
 title: "documentation consolidation strategy"
 type: note
 tags: [documentation]
@@ -268,7 +263,6 @@ updated: 2026-09-26
 qmd: "documentation consolidation strategy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Ultimo aggiornamento:** [Data] - [Breve descrizione]
 ```
 

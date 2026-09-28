@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "philosophy master index"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Indice Filosofico Completo - Tutti i Moduli"
 module: xot
 type: integration

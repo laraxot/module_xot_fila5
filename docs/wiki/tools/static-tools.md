@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "static tools"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Static Tools"
 type: reference
 tags: [wiki, no-frontmatter-fix]

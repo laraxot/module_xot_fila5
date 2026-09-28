@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "blade errors"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # blade_errors
 
 <!-- Contenuto migrato da _docs/blade_errors.txt -->

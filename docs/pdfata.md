@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "pdfata"
 type: note
@@ -11,4 +8,3 @@ qmd: "pdfata"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

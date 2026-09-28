@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "implementing actions"
 type: note
@@ -11,4 +8,3 @@ qmd: "implementing actions"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

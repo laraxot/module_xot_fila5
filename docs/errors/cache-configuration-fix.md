@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "cache configuration fix"
 type: note
@@ -11,4 +8,3 @@ qmd: "cache configuration fix"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

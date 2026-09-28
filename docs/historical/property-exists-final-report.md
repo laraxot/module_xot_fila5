@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "property exists final report"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # REPORT FINALE: Eliminazione property_exists() da Eloquent Models
 
 ## Data: 2025-11-05
@@ -20,8 +17,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "property exists final report"
 type: note
 tags: [documentation]
@@ -30,7 +25,6 @@ updated: 2026-09-26
 qmd: "property exists final report"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Executive Summary
 
 Ho completato con successo l'eliminazione di `property_exists()` dai modelli Eloquent in tutti i Modules, sostituendolo con pattern corretti che rispettano l'architettura Laravel.

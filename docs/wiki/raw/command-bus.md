@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "command bus"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Command Bus"
 type: reference
 tags: [wiki, no-frontmatter-fix]

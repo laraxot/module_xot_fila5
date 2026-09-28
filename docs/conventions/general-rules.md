@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "general rules"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Regole Generali di Comportamento
 
 ## 1. Struttura del Codice

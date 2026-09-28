@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "pdf data"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Pdf Data"
 type: reference
 tags: [wiki, no-frontmatter-fix]

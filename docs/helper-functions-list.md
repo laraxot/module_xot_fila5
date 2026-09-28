@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "helper functions list"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "helper functions list"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: helper-functions-list
 canonical: ../../../Themes/docs/shared-components/helper-functions-complete-list.md

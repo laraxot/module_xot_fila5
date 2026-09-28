@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstanes riepilogo delle soluzioni ai problemi ph"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Riepilogo delle Soluzioni ai Problemi PHPStan Livello 9
 
 Questo documento riassume le soluzioni implementate per risolvere i problemi più comuni di PHPStan a livello 9 nel progetto <nome progetto>. Serve come guida di riferimento rapido per sviluppatori che affrontano errori simili.
@@ -356,8 +353,6 @@ Il progetto ha raggiunto un livello di type safety eccellente con il 99.1% degli
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstanes riepilogo delle soluzioni ai problemi ph"
 type: note
 tags: [documentation]
@@ -366,7 +361,6 @@ updated: 2026-09-26
 qmd: "phpstanes riepilogo delle soluzioni ai problemi ph"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Data Completamento**: 18 Agosto 2025
 **Tempo Impiegato**: ~2 ore
 **phpstan.neon**: ✅ INTOCCATO

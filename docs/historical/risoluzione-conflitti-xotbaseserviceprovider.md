@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "risoluzione conflitti xotbaseserviceprovider"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Risoluzione Conflitti in XotBaseServiceProvider
 
 ## File Coinvolto
@@ -171,8 +168,6 @@ Per maggiori dettagli sui vantaggi di questo approccio, consultare la documentaz
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "risoluzione conflitti xotbaseserviceprovider"
 type: note
 tags: [documentation]
@@ -181,5 +176,4 @@ updated: 2026-09-26
 qmd: "risoluzione conflitti xotbaseserviceprovider"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *Collegamento bidirezionale: vedi anche `/docs/providers/service_provider_best_practices.md`*

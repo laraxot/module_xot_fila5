@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan progress report"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Level 10 Enforcement - Progress Report
 
 **Session Date**: 2025-10-22
@@ -233,8 +230,6 @@ protected string $view = 'user::widgets.logout';
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan progress report"
 type: note
 tags: [documentation]
@@ -243,7 +238,6 @@ updated: 2026-09-26
 qmd: "phpstan progress report"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Last Updated**: 2025-10-22 (Session 1)
 
 **Next Session**: Continue with User module (21 errors)

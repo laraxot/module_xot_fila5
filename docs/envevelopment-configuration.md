@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "envevelopment configuration"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "envevelopment configuration"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: envevelopment-configuration
 canonical: ../../../Themes/docs/shared-components/env-development-configuration.md

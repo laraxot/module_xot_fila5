@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "git subtree operations"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Git Subtree Operations"
 type: reference
 tags: [wiki, no-frontmatter-fix]

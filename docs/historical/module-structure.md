@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "module structure"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Struttura dei Moduli in il progetto
 
 ## Panoramica
@@ -49,8 +46,6 @@ Questo documento definisce le linee guida ufficiali per la struttura dei moduli 
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "module structure"
 type: note
 tags: [documentation]
@@ -59,7 +54,6 @@ updated: 2026-09-26
 qmd: "module structure"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Gestione dati geografici statici: GeoJsonModel readonly (ispirato a Squire)
 
 Per tutti i dati geografici statici (regioni, province, comuni, cap) di dimensioni gestibili, NON creare tabelle/migration dedicate. Utilizzare invece un modello base readonly (`GeoJsonModel`) che legge i dati direttamente da file JSON (es: `Modules/Geo/resources/json/comuni.json`).

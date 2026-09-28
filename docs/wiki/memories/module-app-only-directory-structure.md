@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Memoria — struttura modulo: solo app/ per il PHP"
 type: memory
 module: Xot

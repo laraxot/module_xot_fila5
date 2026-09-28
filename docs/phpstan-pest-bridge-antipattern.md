@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Bridge Pest fatti a mano: l'antipattern che gonfia il gate PHPStan"
 module: Xot
 type: concept

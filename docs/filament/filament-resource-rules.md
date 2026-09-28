@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "filament resource rules"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "filament resource rules"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: Xot
 topic: filament-resource-rules
 canonical: ../filament-resource-rules.md

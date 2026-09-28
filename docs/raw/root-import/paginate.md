@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "paginate"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 meglio mantenere le querystring
 
 $posts->appends(request()->input())->links()

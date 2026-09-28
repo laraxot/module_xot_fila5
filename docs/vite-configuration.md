@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "vite configuration"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Vite Configuration For Theme Builds
 
 ## Purpose

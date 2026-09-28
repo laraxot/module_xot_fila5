@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: "xotbaseresourcetable model property and column audit.story"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "XotBaseResourceTable: property $model esplicita + audit colonne getTableColumns()"
 type: story
 module: Xot

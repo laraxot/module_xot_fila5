@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "payment"
 type: note
@@ -11,4 +8,3 @@ qmd: "payment"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

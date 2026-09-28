@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: "settings json repair and github reminder hook.story"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "settings.json invalido (disabilitava tutti gli hook) + nuovo hook GitHub-reminder"
 type: story
 module: Xot

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament installation and charts"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filament 5.x Installation and Chart Widget Guide
 
 ## Overview

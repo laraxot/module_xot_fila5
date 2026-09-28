@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "widgets initialization"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Inizializzazione dei Widget XotBaseWidget
 
 ## ⚠️ Problema delle Signature (Incompatibilità)

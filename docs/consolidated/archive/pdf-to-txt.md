@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "pdf to txt"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # pdf_to_txt
 
 <!-- Contenuto migrato da _docs/pdf_to_txt.txt -->

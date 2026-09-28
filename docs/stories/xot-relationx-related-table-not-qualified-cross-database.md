@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "xot relationx related table not qualified cross database"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "xot relationx related table not qualified cross database"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 scope: module:Xot
 github_id: module_xot_fila5#84
 ---

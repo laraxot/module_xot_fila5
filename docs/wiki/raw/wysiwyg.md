@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "wysiwyg"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Wysiwyg"
 type: reference
 tags: [wiki, no-frontmatter-fix]

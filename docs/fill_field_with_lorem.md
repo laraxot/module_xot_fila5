@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "fill field with lorem"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'Fill field with lorem — risorse esterne'
 module: Xot
 type: reference

@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "debug"
 type: note
@@ -11,4 +8,3 @@ qmd: "debug"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

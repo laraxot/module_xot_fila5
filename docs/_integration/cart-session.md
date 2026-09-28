@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "cart session"
 type: note
@@ -11,4 +8,3 @@ qmd: "cart session"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

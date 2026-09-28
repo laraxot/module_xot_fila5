@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "patterns"
 type: note
@@ -11,4 +8,3 @@ qmd: "patterns"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

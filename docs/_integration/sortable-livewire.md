@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "sortable livewire"
 type: note
@@ -11,4 +8,3 @@ qmd: "sortable livewire"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

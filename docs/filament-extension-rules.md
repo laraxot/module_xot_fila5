@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament extension rules"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filament Class Extension Rules - base_techplanner_fila5_mono
 
 Questa pagina esiste per compatibilità e storico del modulo.

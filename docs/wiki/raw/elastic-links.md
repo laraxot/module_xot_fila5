@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "elastic links"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Elastic Links"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "wizard widget rules"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Wizard Widget Rules — XotBaseWizardWidget
 
 **Status**: Active  
@@ -22,8 +19,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "wizard widget rules"
 type: note
 tags: [documentation]
@@ -32,7 +27,6 @@ updated: 2026-09-26
 qmd: "wizard widget rules"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## La Regola Fondamentale
 
 **OGNI widget il cui `getFormSchema()` contiene un `Wizard` DEVE estendere `XotBaseWizardWidget`, NON `XotBaseWidget`.**

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "custom casts"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 
 php artisan make:cast Address
 

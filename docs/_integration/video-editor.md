@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "video editor"
 type: note
@@ -11,4 +8,3 @@ qmd: "video editor"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

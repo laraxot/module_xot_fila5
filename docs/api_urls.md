@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "api urls"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'api_urls'
 module: Xot
 type: reference

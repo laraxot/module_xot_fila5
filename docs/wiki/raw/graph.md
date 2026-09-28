@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "graph"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Graph"
 type: reference
 tags: [wiki, no-frontmatter-fix]

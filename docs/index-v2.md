@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "index v2"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "index v2"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: index-v2
 canonical: ../../../Themes/docs/shared-components/00-index-v2.md

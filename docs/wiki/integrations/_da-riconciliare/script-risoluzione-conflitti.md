@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "script risoluzione conflitti"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "SUPER MUCCA - Script Risoluzione Conflitti Git"
 module: xot
 type: integration

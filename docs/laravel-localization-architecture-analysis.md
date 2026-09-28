@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "laravel localization architecture analysis"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Laravel Localization Architecture Analysis
 
 ## Critical Discovery: Laravel Localization + Folio Incompatibility

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "uuid 1"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Uuid 1"
 type: reference
 tags: [wiki, no-frontmatter-fix]

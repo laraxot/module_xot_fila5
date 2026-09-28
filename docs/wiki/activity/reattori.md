@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "reattori"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Reattori"
 type: reference
 tags: [wiki, no-frontmatter-fix]

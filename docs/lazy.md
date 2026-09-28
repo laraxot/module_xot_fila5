@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "lazy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'Lazy — risorse esterne'
 module: Xot
 type: reference

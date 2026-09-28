@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "debugbar architecture"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Debugbar Architecture
 
 ## Overview

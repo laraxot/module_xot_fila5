@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "super mucca session 1"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "super mucca session 1"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: super-mucca-session-1
 canonical: ../../../Themes/docs/shared-components/super-mucca-session-.md

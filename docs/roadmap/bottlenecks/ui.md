@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "ui"
 type: note
@@ -11,4 +8,3 @@ qmd: "ui"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

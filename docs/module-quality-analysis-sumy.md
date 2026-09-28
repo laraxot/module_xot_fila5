@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "module quality analysis sumy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Module Quality Analysis Summary
 
 **Date**: [DATE]

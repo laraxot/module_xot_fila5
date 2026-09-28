@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "optimization opportunities"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Xot Module - Code Optimization Opportunities (DRY + KISS)
 
 ## Overview
@@ -259,8 +256,6 @@ class ModuleTestCase extends XotBaseTestCase
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "optimization opportunities"
 type: note
 tags: [documentation]
@@ -269,7 +264,6 @@ updated: 2026-09-26
 qmd: "optimization opportunities"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 > **Note**: These optimizations align with the project's DRY + KISS philosophy and leverage the existing XotBase architecture effectively. Implementation should be done incrementally with thorough testing at each phase.
 # Opportunità di Ottimizzazione DRY + KISS
 

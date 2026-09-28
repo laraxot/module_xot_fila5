@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "testing fixes"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # 🧪 Fix Testing Issues - Laravel 12 Migration
 
 ## Panoramica

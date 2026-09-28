@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "widget view resolution"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Widget View Resolution - Risoluzione Automatica vs Manuale
 
 **Data**: 2025-01-27
@@ -20,8 +17,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "widget view resolution"
 type: note
 tags: [documentation]
@@ -30,7 +25,6 @@ updated: 2026-09-26
 qmd: "widget view resolution"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 🔍 Problema Identificato
 
 ### Sintomo

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "hack"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Hack"
 type: reference
 tags: [wiki, no-frontmatter-fix]

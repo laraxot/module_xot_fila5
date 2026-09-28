@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "super consolidated"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "super — Consolidated Documentation"
 module: xot
 type: integration

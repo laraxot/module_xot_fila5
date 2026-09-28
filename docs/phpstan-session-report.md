@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan session report"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Correction Session Report - November 2025
 
 ## Executive Summary
@@ -282,8 +279,6 @@ I moduli rimanenti (Xot, User) richiedono ancora ~2-3 ore di lavoro sistematico 
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan session report"
 type: note
 tags: [documentation]
@@ -292,7 +287,6 @@ updated: 2026-09-26
 qmd: "phpstan session report"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **DRY + KISS + SOLID + Robust + Laravel 12 + Filament 4 + PHP 8.3 + Laraxot**
 
 *Mantra*: "Un modulo alla volta, un errore alla volta, zero compromessi"

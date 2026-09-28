@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "phpstans"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "phpstans"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: phpstans
 canonical: ../../../Themes/docs/shared-components/phpstan-patterns-dec.md

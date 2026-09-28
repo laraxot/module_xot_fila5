@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "video entry conflict"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Video Entry Conflict"
 type: reference
 tags: [wiki, no-frontmatter-fix]

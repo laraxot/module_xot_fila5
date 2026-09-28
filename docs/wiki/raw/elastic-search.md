@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "elastic search"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Elastic Search"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "seo"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Seo"
 type: reference
 tags: [wiki, no-frontmatter-fix]

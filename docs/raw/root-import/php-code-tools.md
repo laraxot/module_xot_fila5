@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "php code tools"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://github.com/PHPCheckstyle/phpcheckstyle
 
 https://scrutinizer-ci.com/

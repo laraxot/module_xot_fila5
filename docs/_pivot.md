@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: " pivot"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'Pivot'
 module: Xot
 type: reference

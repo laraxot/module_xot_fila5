@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "ision making process super mucca"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Processo Decisionale "Super Mucca" - La Litigata Interna
 
 **Filosofia**: DRY + KISS + Documentazione Prima
@@ -19,8 +16,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "ision making process super mucca"
 type: note
 tags: [documentation]
@@ -29,7 +24,6 @@ updated: 2026-09-26
 qmd: "ision making process super mucca"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 🧠 Il Dibattito Interno (La Litigata)
 
 ### Contesto

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "installed packages analysis"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Installed Packages Analysis"
 type: reference
 tags: [wiki, no-frontmatter-fix]

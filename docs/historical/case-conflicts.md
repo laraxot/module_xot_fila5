@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "case conflicts"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Case-Insensitive File Conflicts
 
 Elenco dei duplicati case-insensitive nel modulo `Xot`:

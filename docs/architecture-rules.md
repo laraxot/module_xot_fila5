@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "architecture rules"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Architectural Rules & Guidelines — Xot Module
 
 The Xot module is the **foundational framework** for the entire Laraxot ecosystem. It provides core utilities, base classes, and architectural standards that all other modules must follow.
@@ -81,8 +78,6 @@ Xot/
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "architecture rules"
 type: note
 tags: [documentation]
@@ -91,5 +86,4 @@ updated: 2026-09-26
 qmd: "architecture rules"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *Last updated: June 2026*

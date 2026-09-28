@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "autonomous priority rule"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Autonomous Priority Rule
 
 **Date**: 2025-12-18

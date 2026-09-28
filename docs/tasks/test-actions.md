@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "test actions"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Task: Test Actions
 
 **Modulo**: Xot  

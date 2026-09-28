@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "trait method signature"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "trait method signature"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: trait-method-signature
 canonical: ../../../Themes/docs/shared-components/trait-method-signature-rules.md

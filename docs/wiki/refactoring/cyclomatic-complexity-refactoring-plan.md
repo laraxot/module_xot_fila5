@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "cyclomatic complexity refactoring plan"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Cyclomatic Complexity Refactoring Plan"
 type: reference
 tags: [wiki, no-frontmatter-fix]

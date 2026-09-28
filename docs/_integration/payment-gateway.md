@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "payment gateway"
 type: note
@@ -11,4 +8,3 @@ qmd: "payment gateway"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

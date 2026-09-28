@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "UNDERSCORE DOCS RULE"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Underscore Directories Rule - No _docs/
 
 ## Regola Fondamentale

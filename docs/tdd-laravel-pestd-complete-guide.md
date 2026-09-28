@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "tdd laravel pestd complete guide"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Test-Driven Development (TDD) in Laravel Modules with Pest
 
 > **CRITICAL RULE**: This document provides the complete TDD workflow for Laravel Modules using Pest PHP. Follow these patterns EXACTLY for 100% test coverage.
@@ -722,8 +719,6 @@ function mockSocialiteUser(array $attributes = []): SocialiteUser
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "tdd laravel pestd complete guide"
 type: note
 tags: [documentation]
@@ -732,7 +727,6 @@ updated: 2026-09-26
 qmd: "tdd laravel pestd complete guide"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Document Version**: 1.0  
 **Last Updated**: 2026-02-23  
 **Maintained By**: AI Agent - Laravel Modules TDD Specialist

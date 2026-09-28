@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "03 workstreams"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Workstreams - Xot
 
 ## WS1 Architecture

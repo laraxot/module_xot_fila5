@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "hasxotfactory"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # HasXotFactory Trait
 
 ## Panoramica
@@ -400,8 +397,6 @@ protected static function newFactory(): Factory
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "hasxotfactory"
 type: note
 tags: [documentation]
@@ -410,7 +405,6 @@ updated: 2026-09-26
 qmd: "hasxotfactory"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Autore**: Laraxot Core Team
 **Ultima modifica**: Giugno 2025
 **Stato**: ✅ Produzione

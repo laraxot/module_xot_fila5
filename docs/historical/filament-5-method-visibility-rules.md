@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament 5 method visibility rules"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filament 5 Method Visibility Rules
 
 **Created:** January 2026
@@ -21,8 +18,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "filament 5 method visibility rules"
 type: note
 tags: [documentation]
@@ -31,7 +26,6 @@ updated: 2026-09-26
 qmd: "filament 5 method visibility rules"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Overview
 
 In Filament 5.x (with Livewire 4.x), certain methods MUST be `public` because they are called from outside the class via Livewire's reactive system or Filament's internal components.

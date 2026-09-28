@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "error curl download the latest cacertpem file from"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 Download the latest cacert.pem file from
 https://curl.se/docs/caextract.html
 Download the latest cacert.pem file from

@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "inheritance"
 type: note
@@ -11,4 +8,3 @@ qmd: "inheritance"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

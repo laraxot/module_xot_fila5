@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "git conflicts report"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "git conflicts report"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: git-conflicts-report
 canonical: ../../../Themes/docs/shared-components/git-conflicts-report.md

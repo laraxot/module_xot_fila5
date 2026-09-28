@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "markdown"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Markdown"
 type: reference
 tags: [wiki, no-frontmatter-fix]

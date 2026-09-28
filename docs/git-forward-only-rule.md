@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "git forward only rule"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Git Forward-Only Rule
 
 ## 🔥 Regola Assoluta: Mai Tornare Indietro
@@ -197,8 +194,6 @@ Non è una best practice, è **l'unica pratica**.
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "git forward only rule"
 type: note
 tags: [documentation]
@@ -207,6 +202,5 @@ updated: 2026-09-26
 qmd: "git forward only rule"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Ultima revisione**: Novembre 2025
 **Status**: Regola Assoluta e Immutabile

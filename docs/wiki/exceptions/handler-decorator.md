@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "handler decorator"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Handler Decorator"
 type: reference
 tags: [wiki, no-frontmatter-fix]

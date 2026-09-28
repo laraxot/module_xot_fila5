@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan errors summary"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Level 10 Errors Summary - 2026-01-09
 
 **Data**: 2026-01-09  
@@ -20,8 +17,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan errors summary"
 type: note
 tags: [documentation]
@@ -30,7 +25,6 @@ updated: 2026-09-26
 qmd: "phpstan errors summary"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 📊 Riepilogo Completo Errori
 
 ### Totale Errori: 48

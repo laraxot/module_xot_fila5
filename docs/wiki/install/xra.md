@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "xra"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Xra"
 type: reference
 tags: [wiki, no-frontmatter-fix]

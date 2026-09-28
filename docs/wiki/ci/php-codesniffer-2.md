@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "php codesniffer 2"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Php Codesniffer 2"
 type: reference
 tags: [wiki, no-frontmatter-fix]

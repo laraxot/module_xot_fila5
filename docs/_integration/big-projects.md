@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "big projects"
 type: note
@@ -11,4 +8,3 @@ qmd: "big projects"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

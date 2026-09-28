@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "changelog 3"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Changelog 3"
 type: reference
 tags: [wiki, no-frontmatter-fix]

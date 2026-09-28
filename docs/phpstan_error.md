@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "phpstan error"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'Phpstan error'
 module: Xot
 type: reference

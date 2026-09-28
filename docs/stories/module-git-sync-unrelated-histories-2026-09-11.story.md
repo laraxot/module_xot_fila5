@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: "module git sync unrelated histories 2026 09 11.story"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Sync git dei moduli: 8 repo con storia locale/remota scollegata + 1 remote sparito + repo tema corrotto (recuperato)"
 type: story
 module: Xot

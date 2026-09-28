@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "debugging"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Debugging Guide
 
 ## Strumenti di Debug

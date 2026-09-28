@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "page builder"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Page Builder"
 type: reference
 tags: [wiki, no-frontmatter-fix]

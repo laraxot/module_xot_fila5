@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "ottimizzazioni modulo xot"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Ottimizzazioni Modulo Xot - DRY + KISS
 
 ## Panoramica
@@ -365,8 +362,6 @@ docs/
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "ottimizzazioni modulo xot"
 type: note
 tags: [documentation]
@@ -375,7 +370,6 @@ updated: 2026-09-26
 qmd: "ottimizzazioni modulo xot"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Ultimo aggiornamento:** 2025-01-06
 **Stato:** In implementazione
 **Responsabile:** Team Sviluppo Xot

@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "labels"
 type: note
@@ -11,4 +8,3 @@ qmd: "labels"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

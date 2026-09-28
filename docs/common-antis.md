@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "common antis"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "common antis"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: common-antis
 canonical: ../../../Themes/docs/shared-components/common-anti-patterns-conflict.md

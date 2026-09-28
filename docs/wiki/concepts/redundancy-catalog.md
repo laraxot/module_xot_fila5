@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "redundancy catalog"
 discussions: []
->>>>>>> laraxot/dev
 title: "catalogo ridondanza e documentazione correlata"
 module: Xot
 type: concept

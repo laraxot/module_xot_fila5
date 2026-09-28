@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "documentation prompts"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Documentation Prompts"
 type: reference
 tags: [wiki, no-frontmatter-fix]

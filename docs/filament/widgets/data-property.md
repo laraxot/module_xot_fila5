@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "data property"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Proprietà `$data` nei Widget Filament
 
 ## Problema Comune

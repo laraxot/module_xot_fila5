@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "PRODUCT LAUNCH PLAN"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Xot Module - Product Launch Plan
 
 **Module:** Xot  
@@ -21,8 +18,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "PRODUCT LAUNCH PLAN"
 type: note
 tags: [documentation]
@@ -31,7 +26,6 @@ updated: 2026-09-26
 qmd: "PRODUCT LAUNCH PLAN"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Launch Objectives
 
 1. **Product:** Deploy extension framework

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "helpers"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Helper Functions - Xot Module
 
 **Purpose**: Funzioni helper globali per utilità comuni nel framework Laraxot
@@ -20,8 +17,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "helpers"
 type: note
 tags: [documentation]
@@ -30,7 +25,6 @@ updated: 2026-09-26
 qmd: "helpers"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 🎯 Scopo
 
 Le funzioni helper forniscono utilità comuni utilizzate in tutto il framework Laraxot:

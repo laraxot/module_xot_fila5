@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "infolists for summary"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Infolists per Riepilogo — Regola Corretta
 
 **Status**: Active  
@@ -22,8 +19,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "infolists for summary"
 type: note
 tags: [documentation]
@@ -32,7 +27,6 @@ updated: 2026-09-26
 qmd: "infolists for summary"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Regola
 
 Nel passo di review/riepilogo di un wizard:

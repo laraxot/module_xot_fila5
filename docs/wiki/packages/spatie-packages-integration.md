@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "spatie packages integration"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Spatie Packages Integration"
 type: reference
 tags: [wiki, no-frontmatter-fix]

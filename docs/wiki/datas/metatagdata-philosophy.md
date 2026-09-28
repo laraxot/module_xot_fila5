@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "metatagdata philosophy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Metatagdata Philosophy"
 type: reference
 tags: [wiki, no-frontmatter-fix]

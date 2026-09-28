@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-
-=======
 ---
 title: "refactoring xotbasepanelprovider completato"
 type: note
@@ -12,4 +8,3 @@ qmd: "refactoring xotbasepanelprovider completato"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

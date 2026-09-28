@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "relation x"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Relation X"
 type: reference
 tags: [wiki, no-frontmatter-fix]

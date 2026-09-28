@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "install from zero"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 
 #Install from zero
 

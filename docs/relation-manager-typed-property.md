@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "relation manager typed property"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "relation manager typed property"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: relation-manager-typed-property
 canonical: ../../../Themes/docs/shared-components/relation-manager-typed-property-fix.md

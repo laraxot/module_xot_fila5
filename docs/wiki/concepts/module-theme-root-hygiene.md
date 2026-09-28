@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "module theme root hygiene"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: root hygiene modulo e tema
 type: concept
 module: Xot

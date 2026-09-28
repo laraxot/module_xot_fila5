@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "pest testing status"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Pest Testing - Stato Attuale e Roadmap
 
 **Data**: 9 Gennaio 2026  
@@ -20,8 +17,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "pest testing status"
 type: note
 tags: [documentation]
@@ -30,7 +25,6 @@ updated: 2026-09-26
 qmd: "pest testing status"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 📊 Stato Attuale
 
 ### Test Esistenti

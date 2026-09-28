@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "installazione iniziale"
 type: note
@@ -11,4 +8,3 @@ qmd: "installazione iniziale"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

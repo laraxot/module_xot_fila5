@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: " filters"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: " filters"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: -filters
 canonical: ../../../../Themes/docs/shared-components/-8.md

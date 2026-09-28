@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "themes structure"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Struttura dei Temi
 
 ## Struttura Standard

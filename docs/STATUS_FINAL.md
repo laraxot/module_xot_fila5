@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "STATUS FINAL"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # 🐝 PHPStan Fix - Final Status
 
 ## 📊 PRODUZIONE (Modules/Xot/app) - 0 ERRORI

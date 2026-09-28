@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "mcp servers"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # MCP (Model Context Protocol) - Guida Completa
 
 ## Indice
@@ -26,8 +23,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "mcp servers"
 type: note
 tags: [documentation]
@@ -36,7 +31,6 @@ updated: 2026-09-26
 qmd: "mcp servers"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Introduzione
 
 **Model Context Protocol (MCP)** è uno standard aperto che consente agli agenti AI di connettersi seamlessly con strumenti esterni, sorgenti dati e servizi.

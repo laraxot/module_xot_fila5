@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "code optimization"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "code optimization"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: code-optimization
 canonical: ../../../Themes/docs/shared-components/code-optimization-analysis.md

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament table session state"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Stato delle tabelle conservato fra una visita e l'altra
 
 ## Filtri, ordinamento, ricerche

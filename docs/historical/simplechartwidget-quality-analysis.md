@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "simplechartwidget quality analysis"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # SimpleChartWidget - Analisi Qualità del Codice e Best Practices
 
 ## Panoramica

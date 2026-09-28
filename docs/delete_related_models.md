@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "delete related models"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'delete_related_models'
 module: Xot
 type: reference

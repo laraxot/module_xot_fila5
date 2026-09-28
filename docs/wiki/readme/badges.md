@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "badges"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Badges"
 type: reference
 tags: [wiki, no-frontmatter-fix]

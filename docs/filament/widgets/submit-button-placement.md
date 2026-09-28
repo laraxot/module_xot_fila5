@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "submit button placement"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Submit Button Placement — La Filosofia del Protocollo
 
 **Status**: Active  
@@ -22,8 +19,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "submit button placement"
 type: note
 tags: [documentation]
@@ -32,7 +27,6 @@ updated: 2026-09-26
 qmd: "submit button placement"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Il Problema: Dove Mettere getWizardSubmitAction()?
 
 ### La Domanda Fondamentale

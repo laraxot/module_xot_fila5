@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "table patterns redundancy analysis"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Table Resources: Pattern Redundancy Analysis
 
 **Data:** 2026-05-26  

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "sortable"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Sortable"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament xotbasesection troubleshooting"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # XotBaseSection Troubleshooting
 
 ## BadMethodCallException: disableLiveUpdates does not exist

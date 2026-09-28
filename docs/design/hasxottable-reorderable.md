@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "hasxottable reorderable"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "hasxottable reorderable"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 name: hasxottable-reorderable
 description: "HasXotTable Reorderable Design - DRY/KISS pattern for Filament table reordering"
 metadata:

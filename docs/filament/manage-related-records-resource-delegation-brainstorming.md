@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "manage related records resource delegation brainstorming"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Brainstorming: configurazione completa dei record correlati"
 type: architecture
 status: discussion

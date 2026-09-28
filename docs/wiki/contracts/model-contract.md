@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "model contract"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Model Contract"
 type: reference
 tags: [wiki, no-frontmatter-fix]

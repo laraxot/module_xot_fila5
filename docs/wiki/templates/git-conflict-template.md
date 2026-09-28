@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "git conflict template"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Git Conflict Template"
 type: reference
 tags: [wiki, no-frontmatter-fix]

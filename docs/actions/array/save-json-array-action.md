@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "save json array action"
 type: note
@@ -11,4 +8,3 @@ qmd: "save json array action"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "enum standards"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "enum standards"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: enum_standards
 canonical: ../../../Themes/docs/shared-components/enum-standards-2.md

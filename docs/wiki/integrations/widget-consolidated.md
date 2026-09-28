@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "widget consolidated"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "widget — Consolidated Documentation"
 module: xot
 type: integration

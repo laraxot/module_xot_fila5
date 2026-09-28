@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "chart generation actions"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Chart Generation Actions - Spatie Queueable Guide
 
 ## 📋 Overview
@@ -20,8 +17,6 @@ Guida completa per creare Actions Spatie Queueable che generano chart SVG e PNG 
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "chart generation actions"
 type: note
 tags: [documentation]
@@ -30,7 +25,6 @@ updated: 2026-09-26
 qmd: "chart generation actions"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 🎯 Architettura Chart Generation
 
 ### 1. Struttura Base Actions

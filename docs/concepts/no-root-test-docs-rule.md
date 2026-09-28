@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "no root test docs rule"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # REGOLA CRITICA: Test Docs NEI MODULI/TEMI
 
 ## PROBLEMA

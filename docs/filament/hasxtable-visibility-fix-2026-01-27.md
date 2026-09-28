@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "hasxtable visibility fix 2026 01 27"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Fix Visibilità Metodi HasXotTable - 2026-01-27
 
 **Data**: 2026-01-27  

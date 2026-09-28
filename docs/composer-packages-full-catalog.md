@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "composer packages full catalog"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Composer Packages Full Catalog (2026-03-02)
 
 This document is generated from `composer show --format=json` and represents a full package-by-package study baseline.

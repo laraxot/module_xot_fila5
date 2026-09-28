@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "information schema table"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Information Schema Table"
 type: reference
 tags: [wiki, no-frontmatter-fix]

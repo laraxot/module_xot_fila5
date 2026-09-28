@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "user reference corrections sumy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # User Reference Corrections Summary - Gennaio 2025
 
 **Obiettivo**: Correggere tutti i riferimenti a `App\Models\User` che non esiste
@@ -19,8 +16,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "user reference corrections sumy"
 type: note
 tags: [documentation]
@@ -29,7 +24,6 @@ updated: 2026-09-26
 qmd: "user reference corrections sumy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## ✅ Correzioni Completate
 
 ### 1. FilamentMemoryMonitorMiddleware

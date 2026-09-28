@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "phpstan success report"
 type: note
@@ -11,4 +8,3 @@ qmd: "phpstan success report"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "normalization"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "normalization"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: normalization
 canonical: ../../../Themes/docs/shared-components/normalization-report-conflict.md

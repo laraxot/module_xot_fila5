@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "documentation prompts prompt di documentazione"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Documentation Prompts Prompt Di Documentazione"
 type: reference
 tags: [wiki, no-frontmatter-fix]

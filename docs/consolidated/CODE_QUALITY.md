@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "CODE QUALITY"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Code Quality Guidelines for Laravel Modules
 
 ## Overview

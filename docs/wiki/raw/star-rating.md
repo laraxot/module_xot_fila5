@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "star rating"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Star Rating"
 type: reference
 tags: [wiki, no-frontmatter-fix]

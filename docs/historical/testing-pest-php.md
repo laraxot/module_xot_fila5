@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "testing pest php"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Testing con Pest PHP
 
 ## Introduzione

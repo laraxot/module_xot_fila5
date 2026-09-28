@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "big projects"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Big Projects"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "overview"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Xot Module - Overview
 
 ## 📋 Table of Contents
@@ -176,8 +173,6 @@ This roadmap is organized into the following sections:
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "overview"
 type: note
 tags: [documentation]
@@ -186,4 +181,3 @@ updated: 2026-09-26
 qmd: "overview"
 issues: []
 discussions: []
->>>>>>> laraxot/dev

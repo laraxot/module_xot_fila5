@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "quality all modules"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Analisi Qualità Codice - Tutti i Moduli (PHPMD)
 
 **Obiettivo**: Analisi sistematica completa della qualità del codice di tutti i moduli

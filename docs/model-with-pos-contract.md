@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "model with pos contract"
 type: note
@@ -11,4 +8,3 @@ qmd: "model with pos contract"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

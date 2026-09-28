@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "component registration"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Component Registration"
 type: reference
 tags: [wiki, no-frontmatter-fix]

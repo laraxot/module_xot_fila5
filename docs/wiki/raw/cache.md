@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "cache"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Cache"
 type: reference
 tags: [wiki, no-frontmatter-fix]

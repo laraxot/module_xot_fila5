@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "access level parameter fix"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Fixing Access Level and Parameter Initialization Issues
 
 ## Issue 1: Access Level Mismatch in getTableHeaderActions()

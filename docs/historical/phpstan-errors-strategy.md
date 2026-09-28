@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan errors strategy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # 🎯 **Strategia Correzione 406 Errori PHPStan Level 10**
 
 **Data**: 11 Novembre 2025
@@ -37,8 +34,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan errors strategy"
 type: note
 tags: [documentation]
@@ -47,7 +42,6 @@ updated: 2026-09-26
 qmd: "phpstan errors strategy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 📋 **Categorizzazione Errori Rimanenti**
 
 ### **Categoria 1: Mixed Type Problems** (≈200 errori)

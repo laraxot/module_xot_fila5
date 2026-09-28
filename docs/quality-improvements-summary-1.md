@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "quality improvements summary 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Quality Improvements Summary - November 18, 2025
 
 ## Overview

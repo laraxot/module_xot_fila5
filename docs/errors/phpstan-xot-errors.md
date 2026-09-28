@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "phpstan xot errors"
 type: note
@@ -11,4 +8,3 @@ qmd: "phpstan xot errors"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

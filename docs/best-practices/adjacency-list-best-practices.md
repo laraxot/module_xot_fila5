@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "adjacency list best practices"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Adjacency List Best Practices
 
 > Questo documento sostituisce `nestedset-migration-best-practices.md` (legacy).

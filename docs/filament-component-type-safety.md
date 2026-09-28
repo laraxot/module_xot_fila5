@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "filament component type safety"
 type: note
@@ -11,4 +8,3 @@ qmd: "filament component type safety"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "user consolidated"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "user — Consolidated Documentation"
 module: xot
 type: integration

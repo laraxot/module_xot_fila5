@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan errors sumy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Level 10 Errors Summary - [DATE]
 
 **Livello PHPStan**: 10  
@@ -19,8 +16,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan errors sumy"
 type: note
 tags: [documentation]
@@ -29,7 +24,6 @@ updated: 2026-09-26
 qmd: "phpstan errors sumy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 📊 Riepilogo Completo Errori
 
 ### Totale Errori: 0

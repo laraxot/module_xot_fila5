@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "XotBaseModel"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # XotBaseModel Documentation
 
 ## Architecture Overview

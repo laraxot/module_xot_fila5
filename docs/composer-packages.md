@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "composer packages"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'composer_packages'
 module: Xot
 type: reference

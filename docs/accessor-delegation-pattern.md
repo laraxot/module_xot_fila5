@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "accessor delegation pattern"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "accessor delegation pattern"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: accessor-delegation-pattern
 canonical: ../../../Themes/docs/shared-components/accessor-delegation-pattern.md

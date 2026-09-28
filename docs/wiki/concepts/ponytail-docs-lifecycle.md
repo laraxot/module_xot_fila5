@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "ponytail docs lifecycle"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Ponytail Docs Lifecycle
 
 Xot is the shared base module, so its docs pattern should be the boring default for other modules.

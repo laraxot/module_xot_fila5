@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "mainashboard"
 type: note
@@ -11,4 +8,3 @@ qmd: "mainashboard"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

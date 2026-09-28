@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "mcpatabase tools"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # MCP (Management Control Panel) Tools for Database Analysis
 
 ## Overview

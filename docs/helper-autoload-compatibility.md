@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "helper autoload compatibility"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Helper Autoload Compatibility
 
 ## Problema

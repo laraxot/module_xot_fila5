@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "database php connection rule"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # REGOLA CRITICA: config/database.php
 
 ## NESSUNA connessione hardcoded per i moduli!

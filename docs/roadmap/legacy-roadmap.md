@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "legacy roadmap"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Roadmap Xot
 
 Roadmap operativo del module **Xot**, suddiviso in file tematici.

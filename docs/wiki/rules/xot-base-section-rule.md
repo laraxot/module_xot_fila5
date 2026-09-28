@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "xot base section rule"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Xot Base Section Rule"
 type: reference
 tags: [wiki, no-frontmatter-fix]

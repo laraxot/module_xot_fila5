@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "syntax errors mass fix.DIVERGENZA"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: syntax-errors-mass-fix.md"
 module: Xot
 type: note

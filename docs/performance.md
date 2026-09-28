@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: "performance"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Performance"
 type: reference
 status: active

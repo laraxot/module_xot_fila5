@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "queues jobs"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Code e Job
 
 ## Configurazione Base

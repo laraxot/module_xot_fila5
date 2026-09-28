@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "one migration per model"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Una migrazione per modello"
 type: concept
 module: Xot

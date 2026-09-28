@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "xotdata theme asset compatibility"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Xotdata Theme Asset Compatibility"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "search variant"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "search variant"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: search-2
 canonical: ../../../Themes/docs/shared-components/search-1.md

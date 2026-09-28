@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "eloquent properties best practices"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Eloquent Properties Best Practices"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "limesurveyatabase"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "limesurveyatabase"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: limesurveyatabase
 canonical: ../../../Themes/docs/shared-components/limesurvey-database-analysis.md

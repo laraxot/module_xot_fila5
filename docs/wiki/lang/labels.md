@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "labels"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Labels"
 type: reference
 tags: [wiki, no-frontmatter-fix]

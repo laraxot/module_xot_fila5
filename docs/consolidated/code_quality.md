@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Code Quality Guidelines for Laravel Modules"
 module: "Xot"
 type: concept

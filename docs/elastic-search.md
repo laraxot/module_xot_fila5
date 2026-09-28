@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: "elastic search"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Elastic search"
 type: reference
 status: active

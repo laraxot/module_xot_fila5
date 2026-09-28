@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "agent confidence discipline"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Disciplina agenti per massimizzare la confidenza"
 module: Xot
 type: concept

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan fix completo xotbaserelationmanager"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Correzione Completa PHPStan - XotBaseRelationManager ✅
 
 **Data**: 2025-12-23  
@@ -48,8 +45,6 @@ final public function form(Schema $schema): Schema
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan fix completo xotbaserelationmanager"
 type: note
 tags: [documentation]
@@ -58,7 +53,6 @@ updated: 2026-09-26
 qmd: "phpstan fix completo xotbaserelationmanager"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ### Errore #2: Line 185 - canDeleteBulk() Type Mismatch ✅
 
 **Messaggio PHPStan**:

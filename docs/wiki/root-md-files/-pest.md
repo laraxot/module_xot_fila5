@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: " pest"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Pest"
 type: reference
 tags: [wiki, no-frontmatter-fix]

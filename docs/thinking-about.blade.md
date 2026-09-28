@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "thinking about.blade"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'thinking_about.blade'
 module: Xot
 type: reference

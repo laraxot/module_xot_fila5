@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "EnvWidget — editor .env da pannello admin, nessun SSH/FTP richiesto"
 type: concept
 status: canonical

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "module overview"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Xot module overview
 
 ## Scopo ("perché esiste")

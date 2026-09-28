@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "bugfix hasxottableuplicate if"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "bugfix hasxottableuplicate if"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: bugfix-hasxottableuplicate-if
 canonical: ../../../Themes/docs/shared-components/bugfix-hasxottable-duplicate-if.md

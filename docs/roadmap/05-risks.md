@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "05 risks"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Risks - Xot
 
 ## Top Risks

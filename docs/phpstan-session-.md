@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan session "
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Sessione PHPStan - 2026-01-05
 
 ## Panoramica
@@ -195,8 +192,6 @@ Questa correzione è l'**unico errore** rilevato da PHPStan livello 10 su 1028 f
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan session "
 type: note
 tags: [documentation]
@@ -205,7 +200,6 @@ updated: 2026-09-26
 qmd: "phpstan session "
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Autore**: AI Assistant + Laraxot Team
 **Data**: 2026-01-05
 **Versione Modulo**: Xot (Laraxot Framework Base)

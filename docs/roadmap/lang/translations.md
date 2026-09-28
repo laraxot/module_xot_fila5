@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "translations"
 type: note
@@ -11,4 +8,3 @@ qmd: "translations"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

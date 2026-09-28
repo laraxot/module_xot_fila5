@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "changelog"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Changelog - Modulo Xot
 
 Tutte le modifiche significative al modulo Xot saranno documentate in questo file.
@@ -45,8 +42,6 @@ Tutte le modifiche significative al modulo Xot saranno documentate in questo fil
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "changelog"
 type: note
 tags: [documentation]
@@ -55,7 +50,6 @@ updated: 2026-09-26
 qmd: "changelog"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Convenzioni Changelog
 
 - Date in formato `[YYYY-MM-DD]`

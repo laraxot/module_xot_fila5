@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "base classes"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Base Classes - 100% Completato
 
 ## Descrizione

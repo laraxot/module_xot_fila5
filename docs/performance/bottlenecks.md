@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "bottlenecks"
 type: note
@@ -11,4 +8,3 @@ qmd: "bottlenecks"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

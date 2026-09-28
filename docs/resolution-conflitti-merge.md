@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "resolution conflitti merge"
 type: note
@@ -11,4 +8,3 @@ qmd: "resolution conflitti merge"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: " continuous integration tools"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'Continuous integration tools'
 module: Xot
 type: reference

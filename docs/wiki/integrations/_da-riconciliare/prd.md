@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "prd"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "PRD: Xot Core Framework"
 module: xot
 type: integration

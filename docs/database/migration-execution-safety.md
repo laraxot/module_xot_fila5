@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "migration execution safety"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Migration Execution Safety Rule
 
 ## Absolute rule

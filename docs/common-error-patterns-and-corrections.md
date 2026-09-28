@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "common error patterns and corrections"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Common Error Patterns and Corrections in Laraxot
 
 This document outlines the most common error patterns identified in the Laraxot codebase and their correction strategies, following DRY + KISS + SOLID + Robust principles.
@@ -241,8 +238,6 @@ if ($targetMonth === null) {
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "common error patterns and corrections"
 type: note
 tags: [documentation]
@@ -251,7 +246,6 @@ updated: 2026-09-26
 qmd: "common error patterns and corrections"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 10. High Complexity Methods - Pattern 10
 
 **Problem**: Methods with high cyclomatic complexity (>10) that are difficult to understand and maintain.

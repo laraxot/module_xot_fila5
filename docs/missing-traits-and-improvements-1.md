@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "missing traits and improvements 1"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "missing traits and improvements 1"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: missing-traits-and-improvements-1
 canonical: ../../../Themes/docs/shared-components/MISSING_TRAITS_AND_IMPROVEMENTS.md

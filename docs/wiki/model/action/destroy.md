@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "destroy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Destroy"
 type: reference
 tags: [wiki, no-frontmatter-fix]

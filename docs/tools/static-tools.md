@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "static tools"
 type: note
@@ -11,5 +9,4 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://www.exakat.io/en/php-7-static-analysis-tools/

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "database testing pattern"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Database Testing Pattern
 
 ## Overview

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: " filters"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'Filters'
 module: Xot
 type: reference

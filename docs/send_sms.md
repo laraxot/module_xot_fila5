@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "send sms"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'send_sms'
 module: Xot
 type: reference

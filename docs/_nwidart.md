@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: " nwidart"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'Nwidart — risorse esterne'
 module: Xot
 type: reference

@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "clean architecture"
 type: note
@@ -11,4 +8,3 @@ qmd: "clean architecture"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

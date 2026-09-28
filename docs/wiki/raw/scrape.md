@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "scrape"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Scrape"
 type: reference
 tags: [wiki, no-frontmatter-fix]

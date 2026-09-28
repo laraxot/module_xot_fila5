@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "xot architecture overview"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Xot Architecture
 
 Xot is the foundational layer of Laraxot. It provides base classes, conventions, and utilities that all 47 other modules extend.

@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: "custom casts"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Custom casts"
 type: reference
 status: active

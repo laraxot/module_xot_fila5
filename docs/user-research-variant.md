@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "user research variant"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "user research variant"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: user-research-1
 canonical: ../../../Themes/docs/shared-components/USER_RESEARCH-Modules.md

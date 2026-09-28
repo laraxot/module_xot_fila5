@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "00 overview"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Roadmap overview (Module Xot)
 
 ## Scope

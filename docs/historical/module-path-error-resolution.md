@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "module path error resolution"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Module Path Error Resolution - Activity Assets Issue
 
 **Data Creazione**: 2026-01-02
@@ -148,8 +145,6 @@ try {
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "module path error resolution"
 type: note
 tags: [documentation]
@@ -158,5 +153,4 @@ updated: 2026-09-26
 qmd: "module path error resolution"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Filosofia Applicata**: Graceful degradation, non-intrusive, robusto.

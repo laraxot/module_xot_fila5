@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "pipeline"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://www.codecheef.org/article/laravel-pipeline-interpretation-with-example
 
 

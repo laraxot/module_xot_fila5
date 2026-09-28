@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "riders"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Riders"
 type: reference
 tags: [wiki, no-frontmatter-fix]

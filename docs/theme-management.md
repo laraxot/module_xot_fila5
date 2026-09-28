@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "theme management"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 
 # Gestione del Tema
 

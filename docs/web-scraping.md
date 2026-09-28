@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "web scraping"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'web_scraping'
 module: Xot
 type: reference

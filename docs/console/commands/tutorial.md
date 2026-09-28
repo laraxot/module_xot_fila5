@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "tutorial"
 type: note
@@ -11,4 +8,3 @@ qmd: "tutorial"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

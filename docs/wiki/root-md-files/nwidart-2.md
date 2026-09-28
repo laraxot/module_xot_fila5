@@ -1,12 +1,8 @@
 ---
-<<<<<<< HEAD
-title: "Nwidart 2"
-=======
 qmd: "nwidart 2 1"
 issues: []
 discussions: []
 title: "Nwidart 2 1"
->>>>>>> laraxot/dev
 type: reference
 tags: [wiki, no-frontmatter-fix]
 created: 2026-08-24

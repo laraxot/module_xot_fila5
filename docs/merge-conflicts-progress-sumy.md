@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "merge conflicts progress sumy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Summary Progresso Risoluzione Merge Conflicts
 
 **Status**: ✅ In Progresso
@@ -19,8 +16,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "merge conflicts progress sumy"
 type: note
 tags: [documentation]
@@ -29,7 +24,6 @@ updated: 2026-09-26
 qmd: "merge conflicts progress sumy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## ✅ File Risolti (16)
 
 ### Modulo Xot

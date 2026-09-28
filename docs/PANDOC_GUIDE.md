@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 type: note
 tags: [documentation]
 created: 2026-09-26
@@ -8,7 +6,6 @@ updated: 2026-09-26
 qmd: "PANDOC GUIDE"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: Pandoc Documentation Generation Guide
 description: How to convert module documentation to multiple formats using Pandoc
 ---

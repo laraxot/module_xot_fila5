@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "phpinsights"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "phpinsights"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: phpinsights
 canonical: ../../../Themes/docs/shared-components/phpinsights-analysis.md

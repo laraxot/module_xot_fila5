@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "dto"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Dto"
 type: reference
 tags: [wiki, no-frontmatter-fix]

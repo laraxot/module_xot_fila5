@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "thinking about.blade"
 type: note
@@ -11,4 +8,3 @@ qmd: "thinking about.blade"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

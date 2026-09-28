@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "OmniRoute — AI gateway multi-provider"
 module: "xot"
 type: reference

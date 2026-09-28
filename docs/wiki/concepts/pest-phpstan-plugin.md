@@ -1,13 +1,10 @@
 ---
-<<<<<<< HEAD
-=======
 type: note
 created: 2026-09-26
 updated: 2026-09-26
 qmd: "pest phpstan plugin"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: pest phpstan plugin — type inference e regole Pest-aware
 description: Installazione pestphp/pest-plugin-phpstan con nwidart, extension-installer, verifica e cleanup phpstan.neon.
 document_type: concept

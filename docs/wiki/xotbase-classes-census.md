@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "XotBase Classes Census"
 type: census
 tags: [xotbase, architecture, filament]

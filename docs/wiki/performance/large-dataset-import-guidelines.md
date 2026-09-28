@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "large dataset import guidelines"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Large Dataset Import Guidelines"
 type: reference
 tags: [wiki, no-frontmatter-fix]

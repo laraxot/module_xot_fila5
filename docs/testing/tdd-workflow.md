@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "tdd workflow"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # TDD Workflow - Laraxot
 
 ## Ciclo RED-GREEN-REFACTOR

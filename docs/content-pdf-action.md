@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "content pdf action"
 type: note
@@ -11,4 +8,3 @@ qmd: "content pdf action"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

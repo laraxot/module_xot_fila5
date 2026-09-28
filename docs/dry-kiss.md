@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "dry kiss"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "dry kiss"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: dry-kiss
 canonical: ../../../Themes/docs/shared-components/dry-kiss-analysis-Modules.md

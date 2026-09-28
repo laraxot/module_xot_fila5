@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "destroy"
 type: note
@@ -11,4 +8,3 @@ qmd: "destroy"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

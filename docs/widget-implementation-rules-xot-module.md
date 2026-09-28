@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "widget implementation rules xot module"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Widget Implementation Rules - Xot Module
 
 ## 🎯 Regole Fondamentali per Widget
@@ -433,8 +430,6 @@ Queste regole garantiscono implementazione corretta dei widget seguendo l'archit
 
 
 ---
-<<<<<<< HEAD
-=======
 title: "widget implementation rules xot module"
 type: note
 tags: [documentation]
@@ -443,7 +438,6 @@ updated: 2026-09-26
 qmd: "widget implementation rules xot module"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Merged from widget-implementation-rules_2.md
 
 # Widget Implementation Rules - Xot Module

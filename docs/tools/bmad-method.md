@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "BMad Method — agile AI-driven development"
 module: "xot"
 type: reference

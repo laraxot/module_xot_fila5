@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "form schema checker"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Form Schema Checker"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 updated: 2026-09-26
 qmd: "PATTERNS"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Xot Module Patterns"
 type: guide
 tags: [xot, patterns, framework]

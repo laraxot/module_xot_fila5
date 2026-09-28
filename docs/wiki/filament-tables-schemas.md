@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament tables schemas"
 type: note
@@ -11,5 +9,4 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 Filament Table/Schemas architecture required by XotBaseResourceTable (discoverResources)

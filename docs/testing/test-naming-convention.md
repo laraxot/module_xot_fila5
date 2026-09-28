@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "test naming convention"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Convenzione Naming File Test - Xot Module
 
 **Modulo:** Xot (Core Framework)
@@ -95,8 +92,6 @@ Esempi:
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "test naming convention"
 type: note
 tags: [documentation]
@@ -105,5 +100,4 @@ updated: 2026-09-26
 qmd: "test naming convention"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Xot Module - Test Naming PascalCase** ✅

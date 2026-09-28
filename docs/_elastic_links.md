@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: " elastic links"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Elastic links"
 type: reference
 status: active

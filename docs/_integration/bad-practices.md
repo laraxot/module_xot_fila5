@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "bad practices"
 type: note
@@ -11,4 +8,3 @@ qmd: "bad practices"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

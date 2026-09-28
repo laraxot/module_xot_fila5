@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "traduzioni navigation"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Regola sulle Chiavi di Traduzione `.navigation`
 
 Questa regola è valida per tutti i moduli. Fare sempre riferimento alla documentazione in Lang/docs.

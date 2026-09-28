@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "installed packages analysis"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Analisi Pacchetti Installati - <nome progetto> Fila5 Mono
 
 Documentazione generata il 2026-02-26 basata su `composer show`.

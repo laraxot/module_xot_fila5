@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "code redundancy philosophy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "filosofia della ridondanza nel monorepo Laraxot"
 module: Xot
 type: concept

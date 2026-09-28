@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "model inheritance rules"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Regole di Ereditarietà dei Modelli - Laraxot PTVX
 
 ## Principio Fondamentale

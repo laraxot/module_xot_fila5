@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "model states"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Laravel Model States
 
 ## Panoramica

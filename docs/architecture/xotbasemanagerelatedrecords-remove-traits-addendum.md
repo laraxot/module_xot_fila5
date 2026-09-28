@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "xotbasemanagerelatedrecords remove traits addendum"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Rimozione dei trait dalla pagina: responsabilità da preservare"
 type: architecture
 status: discussion

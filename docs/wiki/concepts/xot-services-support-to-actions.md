@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "xot services support to actions"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Xot Services/Support → Actions migration
 
 Deleted dead `app/Services/` and `app/Support/` files that had zero callers or were already replaced by Actions/Adapters.

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "theme two implementation notes"
 type: note
@@ -11,14 +9,11 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # TechPlanner Theme Two - Implementazione Notes
 ## Homepage Redesign based on Target Site Analysis
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "theme two implementation notes"
 type: note
 tags: [documentation]
@@ -27,7 +22,6 @@ updated: 2026-09-26
 qmd: "theme two implementation notes"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 📊 Overview
 
 La homepage di TechPlanner è stata completamente ridisegnata ispirandosi al sito target di radioprotezione, mantenendo però la superiorità tecnica e funzionale.

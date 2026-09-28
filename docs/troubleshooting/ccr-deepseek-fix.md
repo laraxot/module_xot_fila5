@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "ccr deepseek fix"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # CCR DeepSeek 400 Error Fix: Missing reasoning_content
 
 ## Problem

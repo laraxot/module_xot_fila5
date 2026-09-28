@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan analysis analisi phpstan 17 dicembre"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Analisi PHPStan - 17 Dicembre 2025
 
 ## Riepilogo
@@ -145,8 +142,6 @@ Basandosi sui 16 errori corretti in GetCessatiRecordsPreview.php:
 
 
 ---
-<<<<<<< HEAD
-=======
 title: "phpstan analysis analisi phpstan 17 dicembre"
 type: note
 tags: [documentation]
@@ -155,7 +150,6 @@ updated: 2026-09-26
 qmd: "phpstan analysis analisi phpstan 17 dicembre"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Variant 7
 
 # Analisi PHPStan - 17 Dicembre 2025

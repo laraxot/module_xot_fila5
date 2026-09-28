@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "php codesniffer"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "php codesniffer"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: php-codesniffer
 canonical: ../../../../Themes/docs/shared-components/php-codesniffer-2.md

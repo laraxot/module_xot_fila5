@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "merge conflict resolution variant"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "merge conflict resolution variant"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: merge-conflict-resolution-2
 canonical: ../../../Themes/docs/shared-components/merge-conflict-resolution-.md

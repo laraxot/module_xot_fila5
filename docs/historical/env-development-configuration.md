@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "env development configuration"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Configurazione .env Development in Laraxot
 
 ## Panoramica

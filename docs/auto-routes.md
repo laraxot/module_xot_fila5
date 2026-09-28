@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: "auto routes"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Auto routes"
 type: reference
 status: active

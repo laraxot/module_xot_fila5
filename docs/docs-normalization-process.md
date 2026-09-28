@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "docs normalization process"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Processo di Normalizzazione Documentazione
 
 ## Scopo
@@ -221,8 +218,6 @@ Per processi futuri, considerare script di automazione:
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "docs normalization process"
 type: note
 tags: [documentation]
@@ -231,7 +226,6 @@ updated: 2026-09-26
 qmd: "docs normalization process"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Ultimo aggiornamento**: Gennaio 2025
 **Stato**: Processo attivo
 **Priorità**: Alta (conformità regole progetto)

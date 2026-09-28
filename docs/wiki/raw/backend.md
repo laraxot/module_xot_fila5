@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "backend"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Backend"
 type: reference
 tags: [wiki, no-frontmatter-fix]

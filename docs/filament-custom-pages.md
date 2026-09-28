@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament custom pages"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filament Custom Pages - Documentazione Modulo Xot
 
 ## Overview

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "rad"
 type: note
@@ -11,6 +9,5 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://kompo.io/?ref=madewithlaravel.com
 

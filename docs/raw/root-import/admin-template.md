@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "admin template"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://themeselection.com/laravel-admin-panel-template/
 
 

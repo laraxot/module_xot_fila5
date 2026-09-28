@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "data object fixes"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Correzioni agli oggetti Data nel framework Laraxot
 
 ## Problema di Inizializzazione XotData in AssetAction

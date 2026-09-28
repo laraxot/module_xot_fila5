@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "DIRECTORY STRUCTURE RULES"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Directory Structure Rules - No Duplications (DRY)
 
 ## Regola Fondamentale

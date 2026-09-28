@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "migrations"
 type: note
@@ -13,7 +11,6 @@ discussions: []
 
 > **Riferimento storico Laravel, non pattern eseguibile del progetto.** Gli esempi `Migration`, `Schema::create()` e `foreignId()` qui sotto non sono conformi alle regole correnti dei moduli. Le migration applicative estendono `XotBaseMigration` e usano `foreignIdFor()` per i riferimenti Eloquent. Canon: [XotBaseMigration](wiki/concepts/xotbase-migration-religion.md) e [foreignIdFor](wiki/concepts/migration-foreign-id-for.md).
 
->>>>>>> laraxot/dev
 # Migrazioni
 
 ## Configurazione Base

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan progress report"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Error Resolution - Progress Report
 
 ## Current Status
@@ -211,8 +208,6 @@ Given 1495 remaining errors and manual approach needed for quality:
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan progress report"
 type: note
 tags: [documentation]
@@ -221,7 +216,6 @@ updated: 2026-09-26
 qmd: "phpstan progress report"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Last Updated**: 2025-12-12 14:30 UTC
 **Maintained By**: Claude Sonnet 4.5
 **Status**: ✅ 4% Complete | 🚧 96% Remaining

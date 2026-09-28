@@ -13,16 +13,10 @@ use Illuminate\Testing\TestResponse;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Factory\GetFactoryAction;
 use Modules\Xot\Actions\File\FixPathAction;
-<<<<<<< HEAD
-use Webmozart\Assert\Assert;
-=======
->>>>>>> laraxot/dev
 
 use function Safe\define;
 use function Safe\preg_match;
 
-<<<<<<< HEAD
-=======
 use Webmozart\Assert\Assert;
 
 if (! function_exists('merge_translation_files')) {
@@ -88,7 +82,6 @@ if (! function_exists('merge_translation_files')) {
     }
 }
 
->>>>>>> laraxot/dev
 if (! function_exists('isRunningTestBench')) {
     function isRunningTestBench(): bool
     {

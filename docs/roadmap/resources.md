@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "resources"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Xot Module - Resources
 
 ## 📋 Table of Contents
@@ -329,8 +326,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "resources"
 type: note
 tags: [documentation]
@@ -339,4 +334,3 @@ updated: 2026-09-26
 qmd: "resources"
 issues: []
 discussions: []
->>>>>>> laraxot/dev

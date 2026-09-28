@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "level 4"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Rapporto PHPStan Livello 4 per il modulo Xot
 
 Data analisi: [DATE] 21:53:50

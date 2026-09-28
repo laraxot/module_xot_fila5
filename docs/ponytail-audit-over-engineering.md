@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "ponytail audit over engineering"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Ponytail audit — Xot (over-engineering)
 
 **Ultimo run:** 2026-07-01  

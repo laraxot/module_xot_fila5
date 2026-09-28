@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "nestedset migration best practices"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Nestedset Migration Best Practices"
 type: reference
 tags: [wiki, no-frontmatter-fix]

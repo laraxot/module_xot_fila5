@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "cms"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://www.magutti.com/
 
 https://laravelarticle.com/laravel-option-framework

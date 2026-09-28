@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "forbidden methods"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Metodi da NON implementare in classi che estendono XotBaseResource
 
 ## Regola fondamentale

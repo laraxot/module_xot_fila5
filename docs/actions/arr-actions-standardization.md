@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "arr actions standardization"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Standardizzazione Actions Array: `Modules\Xot\Actions\Arr`
 
 ## Panoramica

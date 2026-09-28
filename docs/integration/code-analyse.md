@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "code analyse"
 type: note
@@ -11,4 +8,3 @@ qmd: "code analyse"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

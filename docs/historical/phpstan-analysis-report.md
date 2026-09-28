@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "phpstan analysis report"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "phpstan analysis report"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 created_at: '2025-12-18'
 ---
 

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "configurazione"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Configurazione"
 type: reference
 tags: [wiki, no-frontmatter-fix]

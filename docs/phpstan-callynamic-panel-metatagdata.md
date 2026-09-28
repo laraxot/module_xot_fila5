@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "phpstan callynamic panel metatagdata"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "phpstan callynamic panel metatagdata"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: phpstan-callynamic-panel-metatagdata
 canonical: ../../../Themes/docs/shared-components/phpstan-call-dynamic-panel-metatagdata.md

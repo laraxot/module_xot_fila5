@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "laravel mix"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Laravel Mix"
 type: reference
 tags: [wiki, no-frontmatter-fix]

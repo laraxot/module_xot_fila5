@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "tenant"
 type: note
@@ -11,4 +8,3 @@ qmd: "tenant"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

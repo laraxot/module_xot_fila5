@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament table columns"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Regola Globale: Metodo getTableColumns per Filament Table
 
 ## Descrizione
@@ -42,8 +39,6 @@ Questa pagina raccoglie la regola e i collegamenti per l’adozione del metodo `
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "filament table columns"
 type: note
 tags: [documentation]
@@ -52,7 +47,6 @@ updated: 2026-09-26
 qmd: "filament table columns"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Ultimo aggiornamento:** 2025-05-13
 
 **Link bidirezionale:** Aggiornare anche le docs dei moduli coinvolti.

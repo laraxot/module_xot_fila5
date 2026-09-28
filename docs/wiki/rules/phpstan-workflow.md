@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan workflow"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # 🎯 PHPStan Workflow - Regola Critica
 
 **Data Creazione**: 11 Novembre 2025
@@ -283,8 +280,6 @@ echo "✅ Tutti i moduli modificati hanno 0 errori"
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan workflow"
 type: note
 tags: [documentation]
@@ -293,7 +288,6 @@ updated: 2026-09-26
 qmd: "phpstan workflow"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Ricorda sempre**:
 1. **Modulo per modulo PRIMA**
 2. **Tutti assieme SOLO DOPO**

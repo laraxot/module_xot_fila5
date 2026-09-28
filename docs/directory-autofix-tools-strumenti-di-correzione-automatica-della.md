@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "directory autofix tools strumenti di correzione automatica della"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Strumenti di Correzione Automatica della Struttura delle Directory
 
 ## Introduzione

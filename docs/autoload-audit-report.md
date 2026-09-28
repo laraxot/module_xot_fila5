@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "autoload audit report"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Autoload Configuration Audit Report
 
 ## Standard Configuration

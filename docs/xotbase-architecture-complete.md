@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "xotbase architecture complete"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Architettura XotBase - Sistema Completo Wrapper Filament
 
 ## Filosofia Fondamentale
@@ -686,8 +683,6 @@ test('no direct filament extensions in modules', function () {
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "xotbase architecture complete"
 type: note
 tags: [documentation]
@@ -696,7 +691,6 @@ updated: 2026-09-26
 qmd: "xotbase architecture complete"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Ultimo aggiornamento**: 27 Ottobre 2025
 **Importanza**: ⚠️⚠️⚠️ CRITICA
 **Non Derogabile**: Questa regola NON ha eccezioni

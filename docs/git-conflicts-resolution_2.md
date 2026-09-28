@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "git conflicts resolution 2"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "git conflicts resolution 2"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: git-conflicts-resolution_2
 canonical: ../../../Themes/docs/shared-components/git-conflicts-resolution-2-1.md

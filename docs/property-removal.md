@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "property removal"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "property removal"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: property-removal
 canonical: ../../../Themes/docs/shared-components/property-removal-philosophy.md

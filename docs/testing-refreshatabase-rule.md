@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "testing refreshatabase rule"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "testing refreshatabase rule"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: testing-refreshatabase-rule
 canonical: ../../../Themes/docs/shared-components/testing-refresh-database-rule.md

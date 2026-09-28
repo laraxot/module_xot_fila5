@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "translation standardization rules"
 type: note
@@ -11,4 +8,3 @@ qmd: "translation standardization rules"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

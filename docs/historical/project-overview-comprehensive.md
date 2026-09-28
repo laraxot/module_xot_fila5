@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "project overview comprehensive"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # 🏗️ TechPlanner Fila4 Mono - Panoramica Completa del Progetto
 
 ## 📋 Sommario

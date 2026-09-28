@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "no root docs rule"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "No Root Docs Rule"
 type: reference
 tags: [wiki, no-frontmatter-fix]

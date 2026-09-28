@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "bottlenecks"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Bottlenecks"
 type: reference
 tags: [wiki, no-frontmatter-fix]

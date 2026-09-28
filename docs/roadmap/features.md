@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "features"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Xot Module - Features
 
 ## 📋 Table of Contents
@@ -495,8 +492,6 @@ class ProcessUserJob extends XotBaseJob
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "features"
 type: note
 tags: [documentation]
@@ -505,4 +500,3 @@ updated: 2026-09-26
 qmd: "features"
 issues: []
 discussions: []
->>>>>>> laraxot/dev

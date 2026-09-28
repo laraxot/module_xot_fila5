@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "LICENSE"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 The MIT License (MIT)
 
 Copyright (c) coolsam <smaosa@savannabits.com>

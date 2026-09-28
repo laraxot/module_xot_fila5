@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "naming conventions"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Convenzioni di Naming - Modulo Xot
 
 ## 🎯 Principi Fondamentali
@@ -334,8 +331,6 @@ parameters:
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "naming conventions"
 type: note
 tags: [documentation]
@@ -344,6 +339,5 @@ updated: 2026-09-26
 qmd: "naming conventions"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Ultimo aggiornamento:** Gennaio 2025
 **Versione:** 2.0 - Consolidata DRY + KISS

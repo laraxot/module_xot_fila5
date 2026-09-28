@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "CODE QUALITY ANALYSIS"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Code Quality Analysis - Xot Module
 
 ## 📊 Overview
@@ -24,8 +21,6 @@ Il modulo Xot è il modulo foundation del progetto, contenente classi base, serv
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "CODE QUALITY ANALYSIS"
 type: note
 tags: [documentation]
@@ -34,7 +29,6 @@ updated: 2026-09-26
 qmd: "CODE QUALITY ANALYSIS"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## ✅ Static Analysis Compliance
 
 ### PHPStan Level 10: COMPLIANT

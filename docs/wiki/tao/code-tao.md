@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "code tao"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Code Tao"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -20,10 +20,7 @@ class ShowArtisanRouteListAction
     {
         $routeCollection = Route::getRoutes();
 
-<<<<<<< HEAD
-=======
         /** @var view-string $view */
->>>>>>> laraxot/dev
         $view = 'xot::acts.artisan.show_route_list';
         $view_params = [
             'view' => $view,

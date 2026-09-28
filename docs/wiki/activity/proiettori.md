@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "proiettori"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Proiettori"
 type: reference
 tags: [wiki, no-frontmatter-fix]

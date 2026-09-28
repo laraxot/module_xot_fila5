@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "architettura sistema"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Architettura Sistema"
 type: reference
 tags: [wiki, no-frontmatter-fix]

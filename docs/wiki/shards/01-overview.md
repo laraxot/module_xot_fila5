@@ -1,12 +1,9 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 updated: 2026-09-26
 qmd: "01 overview"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Laraxot - Overview"
 type: shard
 confidence: high

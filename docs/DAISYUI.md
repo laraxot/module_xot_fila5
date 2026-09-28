@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "DAISYUI"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Xot Module — daisyUI Reference
 
 ## Panoramica
@@ -30,8 +27,6 @@ Non usa né dipende direttamente da daisyUI.
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "DAISYUI"
 type: note
 tags: [documentation]
@@ -40,7 +35,6 @@ updated: 2026-09-26
 qmd: "DAISYUI"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Perché Xot non usa daisyUI
 
 Il modulo **Xot** è un modulo "kernel" — fornisce:

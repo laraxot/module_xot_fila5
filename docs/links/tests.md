@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "tests"
 type: note
@@ -11,4 +8,3 @@ qmd: "tests"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

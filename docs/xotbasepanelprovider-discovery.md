@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "xotbasepanelprovider discovery"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # XotBasePanelProvider — scoperta dei componenti del modulo
 
 `XotBasePanelProvider::panel()` scopre automaticamente resource, pagine, widget e

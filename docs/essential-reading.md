@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "essential reading"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # 📖 Letture Essenziali - Modulo Xot
 
 > **10 documenti fondamentali** da leggere per comprendere il modulo core Xot
@@ -174,8 +171,6 @@ Se hai risposto correttamente a tutte, sei pronto per contribuire! 🎉
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "essential reading"
 type: note
 tags: [documentation]
@@ -184,7 +179,6 @@ updated: 2026-09-26
 qmd: "essential reading"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Creato:** 2025-11-04
 **Scopo:** Ridurre cognitive load navigando 2,560+ docs
 **Aggiornato:** Dopo risoluzione massiva merge conflicts

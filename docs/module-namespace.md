@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "module namespace"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "module namespace"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: module-namespace
 canonical: ../../../Themes/docs/shared-components/module-namespace-rules.md

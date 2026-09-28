@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "property exists replacement"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "property exists replacement"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: property-exists-replacement
 canonical: ../../../Themes/docs/shared-components/property-exists-replacement-guide.md

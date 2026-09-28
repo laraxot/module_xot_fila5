@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpinsights analysis"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Analisi PHPInsights - Tutti i Moduli
 
 **Data**: 2025-12-23

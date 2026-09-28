@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "phpstan type errors analysis"
 type: note
@@ -11,4 +8,3 @@ qmd: "phpstan type errors analysis"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

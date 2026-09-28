@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "property exists elimination report"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Eliminazione property_exists() - Report Completo
 
 **Data Intervento**: 5 Novembre 2025
@@ -21,8 +18,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "property exists elimination report"
 type: note
 tags: [documentation]
@@ -31,7 +26,6 @@ updated: 2026-09-26
 qmd: "property exists elimination report"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 🙏 La Religione degli Attributi Magici
 
 ### Perché property_exists() è un PECCATO sui Model Eloquent

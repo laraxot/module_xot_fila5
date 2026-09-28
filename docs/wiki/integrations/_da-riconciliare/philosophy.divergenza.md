@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "philosophy.divergenza"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Divergenza da riconciliare: philosophy.md"
 module: Xot
 type: note

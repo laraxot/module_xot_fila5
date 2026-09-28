@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Convenzione namespace Actions\\Arr"
 module: "xot"
 type: reference

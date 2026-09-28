@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "test structure"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "test structure"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: test-structure
 canonical: ../../../Themes/docs/shared-components/test-structure-philosophy.md

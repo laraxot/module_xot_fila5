@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan zero errors status"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan zero — puntatore (non più inventario)
 
 Questo file **non** è più lo stato vivo. L'inventario «1891 errori / 17 moduli»

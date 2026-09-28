@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "prd"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Product Requirements Document (PRD) - Xot Module
 
 **Module**: Xot
@@ -22,8 +19,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "prd"
 type: note
 tags: [documentation]
@@ -32,7 +27,6 @@ updated: 2026-09-26
 qmd: "prd"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Document Control
 
 | Version | Date | Author | Changes |

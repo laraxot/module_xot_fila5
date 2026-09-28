@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "property exists removal"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "property exists removal"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: property-exists-removal
 canonical: ../../../Themes/docs/shared-components/property-exists-removal-report.md

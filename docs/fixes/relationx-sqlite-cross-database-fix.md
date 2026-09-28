@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "relationx sqlite cross database fix"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # RelationX SQLite Cross-Database Fix
 
 ## Problema Risolto
@@ -100,8 +97,6 @@ echo $tenants->count(); // ✅ Output: 1
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "relationx sqlite cross database fix"
 type: note
 tags: [documentation]
@@ -110,7 +105,6 @@ updated: 2026-09-26
 qmd: "relationx sqlite cross database fix"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *Fix implementato e verificato - Sistema multi-tenant completamente funzionante*
 # RelationX SQLite Cross-Database Fix
 

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "migration standards"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Standard per le Migrazioni in
 
 ## Introduzione

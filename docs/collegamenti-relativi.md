@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "collegamenti relativi"
 type: note
@@ -11,4 +8,3 @@ qmd: "collegamenti relativi"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

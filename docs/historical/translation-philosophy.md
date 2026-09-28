@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "translation philosophy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Laraxot Translation Philosophy
 
 ## Overview
@@ -168,8 +165,6 @@ When creating a new module:
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "translation philosophy"
 type: note
 tags: [documentation]
@@ -178,6 +173,5 @@ updated: 2026-09-26
 qmd: "translation philosophy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Maintained by**: Xot Module (Core Laraxot Engine)
 **Last Updated**: 2025-11-17

@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "issues"
 type: note
@@ -11,4 +8,3 @@ qmd: "issues"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

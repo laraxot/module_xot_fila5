@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "semantic release template"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Semantic Release Template"
 type: reference
 tags: [wiki, no-frontmatter-fix]

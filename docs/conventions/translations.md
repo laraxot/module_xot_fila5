@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "translations"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Convenzioni di Traduzione
 
 ## Struttura Base

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "has tenants"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Has Tenants"
 type: reference
 tags: [wiki, no-frontmatter-fix]

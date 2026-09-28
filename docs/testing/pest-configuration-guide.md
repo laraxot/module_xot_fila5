@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "pest configuration guide"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Pest PHP Configuration Guide - Laraxot Architecture
 
 ## Introduzione

@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "detach"
 type: note
@@ -11,4 +8,3 @@ qmd: "detach"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

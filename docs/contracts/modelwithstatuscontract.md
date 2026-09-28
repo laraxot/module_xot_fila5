@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "modelwithstatuscontract"
 type: note
@@ -11,4 +8,3 @@ qmd: "modelwithstatuscontract"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

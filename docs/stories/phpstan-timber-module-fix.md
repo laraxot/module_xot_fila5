@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "phpstan timber module fix"
 type: note
 tags: [documentation]
@@ -8,7 +6,6 @@ updated: 2026-09-26
 qmd: "phpstan timber module fix"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 id: phpstan-timber-module-fix
 slug: phpstan-timber-module
 scope:

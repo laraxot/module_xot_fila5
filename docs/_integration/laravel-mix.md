@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "laravel mix"
 type: note
@@ -11,4 +8,3 @@ qmd: "laravel mix"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

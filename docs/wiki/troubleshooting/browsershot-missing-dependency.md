@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "browsershot missing dependency"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Browsershot Missing Dependency
 
 ## Problem

@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "model casting"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "model casting"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: model-casting
 canonical: ../../../Themes/docs/shared-components/model-casting-rules.md

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "continuous integration tools continuousintegrationtools"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # _continuous_integration_tools
 
 <!-- Contenuto migrato da _docs/_continuous_integration_tools.txt -->
@@ -47,8 +44,6 @@ https://jakzal.github.io/toolbox/
 
 
 ---
-<<<<<<< HEAD
-=======
 title: "continuous integration tools continuousintegrationtools"
 type: note
 tags: [documentation]
@@ -57,7 +52,6 @@ updated: 2026-09-26
 qmd: "continuous integration tools continuousintegrationtools"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Variant 2
 
 # continuous_integration_tools

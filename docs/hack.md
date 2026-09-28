@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "hack"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 
 Think Like a Hacker (for Laravel)
 https://stephenreescarter.net/talks/hacking-laravel/

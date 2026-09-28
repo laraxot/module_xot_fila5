@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "security"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "security"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: security
 canonical: ../../../../Themes/docs/shared-components/security-Modules.md

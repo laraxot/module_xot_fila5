@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "UUID"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'Uuid'
 module: Xot
 type: reference

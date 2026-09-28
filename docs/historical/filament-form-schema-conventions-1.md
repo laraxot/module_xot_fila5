@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament form schema conventions 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Convenzioni per Form Schema in Filament
 
 ## Regola Fondamentale

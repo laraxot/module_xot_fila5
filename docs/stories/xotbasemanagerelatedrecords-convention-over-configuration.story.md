@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: "xotbasemanagerelatedrecords convention over configuration.story"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "XotBaseManageRelatedRecords: adottare la convention-over-configuration di XotBaseResource"
 type: story
 module: Xot

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "database testing rule"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # 🚨 DATABASE TESTING RULE - MySQL con Suffisso "_test"
 
 ## 📋 Regola Fondamentale
@@ -89,8 +86,6 @@ Prima di creare un nuovo test, verificare:
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "database testing rule"
 type: note
 tags: [documentation]
@@ -99,5 +94,4 @@ updated: 2026-09-26
 qmd: "database testing rule"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **FIRMATO**: Questa regola è FONDAMENTALE per la stabilità dei test del progetto.

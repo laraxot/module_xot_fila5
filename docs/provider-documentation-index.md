@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "provider documentation index"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Provider Documentation Index
 
 **Purpose**: Central index for all ServiceProvider documentation in Laraxot architecture
@@ -266,8 +263,6 @@ When reviewing provider code:
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "provider documentation index"
 type: note
 tags: [documentation]
@@ -276,7 +271,6 @@ updated: 2026-09-26
 qmd: "provider documentation index"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Last Updated**: 2025-12-16
 **Maintainer**: Laraxot Team
 **Status**: ✅ Active Index

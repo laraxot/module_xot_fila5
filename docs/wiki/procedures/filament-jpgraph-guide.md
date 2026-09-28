@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 type: note
 tags: [documentation]
 created: 2026-09-26
@@ -8,7 +6,6 @@ updated: 2026-09-26
 qmd: "filament jpgraph guide"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: JpGraph Guide for Filament
 description: Comprehensive guide to using JpGraph 4.4.2 PHP charting library with server-side chart generation and PDF embedding
 category: procedures

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "no property exists on models"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "No Property Exists On Models"
 type: reference
 tags: [wiki, no-frontmatter-fix]

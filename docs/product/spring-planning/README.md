@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "README"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Xot Module - Spring Planning Meeting
 
 ## Meeting Overview
@@ -384,8 +381,6 @@ This document captures the outcomes and decisions from the Xot module's Spring P
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "README"
 type: note
 tags: [documentation]
@@ -394,5 +389,4 @@ updated: 2026-09-26
 qmd: "README"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *This document will be updated and maintained throughout the quarter to track progress and outcomes.*

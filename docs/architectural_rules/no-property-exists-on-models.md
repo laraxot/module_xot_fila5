@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "no property exists on models"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Architectural Rule: Avoid `property_exists()` on Eloquent Models
 
 ## **CRITICAL LARAXOT PRINCIPLE**

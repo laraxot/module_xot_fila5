@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "license the mit license mit"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "License The Mit License Mit"
 type: reference
 tags: [wiki, no-frontmatter-fix]

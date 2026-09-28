@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "redundancy rules"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Regole Anti-Ridondanza per XotBase Classes
 
 ## Principio Fondamentale: DRY (Don't Repeat Yourself)

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "bootstrap cache stale fix"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Bootstrap cache stale entries fix
 
 ## Problem pattern

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "normalization report report normalizzazione documentazione"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Report Normalizzazione Documentazione - Gennaio 2025
 
 ## Azioni Completate
@@ -122,8 +119,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "normalization report report normalizzazione documentazione"
 type: note
 tags: [documentation]
@@ -132,7 +127,6 @@ updated: 2026-09-26
 qmd: "normalization report report normalizzazione documentazione"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Data**: Gennaio 2025
 **Stato**: In corso
 **Prossima Revisione**: Dopo normalizzazione batch successivo

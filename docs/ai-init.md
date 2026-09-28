@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "ai init"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "ai init"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: ai-init
 canonical: ../../../Themes/docs/shared-components/ai-init-issue-analysis.md

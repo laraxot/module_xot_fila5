@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "development guidelines"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Development Guidelines - Xot Module
 
 ## Panoramica

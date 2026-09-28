@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "UI UX Pro Max — design intelligence skill"
 module: "xot"
 type: reference

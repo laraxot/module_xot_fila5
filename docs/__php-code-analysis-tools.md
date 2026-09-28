@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: " php code analysis tools"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'Php code analysis tools — risorse esterne'
 module: Xot
 type: reference

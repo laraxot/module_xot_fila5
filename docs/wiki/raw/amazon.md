@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "amazon"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Amazon"
 type: reference
 tags: [wiki, no-frontmatter-fix]

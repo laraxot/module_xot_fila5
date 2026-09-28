@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "forbidden resource attributes removal"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Rimozione Proprietà Vietate da XotBaseResource - Analisi e Implementazione
 
 **Data**: 2026-01-09  
@@ -19,8 +16,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "forbidden resource attributes removal"
 type: note
 tags: [documentation]
@@ -29,7 +24,6 @@ updated: 2026-09-26
 qmd: "forbidden resource attributes removal"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 🎯 Obiettivo
 
 Rimuovere tutte le proprietà vietate dalle classi che estendono `XotBaseResource`:

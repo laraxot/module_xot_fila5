@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "migration guidelines"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Migration Guidelines for Project Modules
 
 ## Overview

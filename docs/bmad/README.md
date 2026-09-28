@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "README"
 type: note
@@ -11,16 +9,12 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # BMAD — Indice workflow Xot
 
 **Repo:** `git@github.com:laraxot/module_xot_fila5.git`
 
 ## Stories
-<<<<<<< HEAD
-=======
 - [STORY-512 — ambiente test e tracker](stories/STORY-512-test-environment-and-tracker.md)
->>>>>>> laraxot/dev
 - [01 — Rimuovere TransTrait](stories/01-refactor-table-trans.md)
 - [02 — HasXotForm: istanza + colonne](stories/02-refactor-hasxotform.md)
 - [03 — XotBaseResourceForm: use HasXotForm](stories/03-refactor-resource-form.md)

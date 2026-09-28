@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: " inodes"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # _inodes
 
 <!-- Contenuto migrato da _docs/_inodes.txt -->

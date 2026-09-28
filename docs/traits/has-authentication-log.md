@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "has authentication log"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Trait HasAuthenticationLogTrait
 
 ## Descrizione

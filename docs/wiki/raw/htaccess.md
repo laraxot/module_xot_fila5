@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "htaccess"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Htaccess"
 type: reference
 tags: [wiki, no-frontmatter-fix]

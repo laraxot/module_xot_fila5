@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "testing rules"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Testing Rules Summary
 
 ## Regole Fondamentali dei Test

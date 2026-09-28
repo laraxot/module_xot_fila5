@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "migration execution safety"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Migration Execution Safety"
 type: reference
 tags: [wiki, no-frontmatter-fix]

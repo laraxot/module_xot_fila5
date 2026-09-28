@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "modern tech stack guide"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Modern Tech Stack Guide"
 type: reference
 tags: [wiki, no-frontmatter-fix]

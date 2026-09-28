@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "getter philosophy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filosofia dei Metodi Getter in Xot
 
 ## Principi Fondamentali

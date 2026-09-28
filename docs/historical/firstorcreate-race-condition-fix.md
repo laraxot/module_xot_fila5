@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "firstorcreate race condition fix"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Fix Race Condition firstOrCreate con UUID - 2026-01-22
 
 **Status**: ✅ Completato  

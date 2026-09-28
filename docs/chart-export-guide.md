@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "chart export guide"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Chart Export Guide - PNG e SVG
 
 ## 📋 Panoramica
@@ -25,8 +22,6 @@ Questa guida completa spiega come esportare chart generati con Filament/Chart.js
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "chart export guide"
 type: note
 tags: [documentation]
@@ -35,7 +30,6 @@ updated: 2026-09-26
 qmd: "chart export guide"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 🎯 Approcci di Export
 
 ### 1. Client-Side Export (Browser)

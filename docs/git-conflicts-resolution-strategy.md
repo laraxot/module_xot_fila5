@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "git conflicts resolution strategy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Strategia Risoluzione Conflitti Git - Modulo Xot
 
 ## Contesto
@@ -270,8 +267,6 @@ I conflitti sono stati causati da:
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "git conflicts resolution strategy"
 type: note
 tags: [documentation]
@@ -280,5 +275,4 @@ updated: 2026-09-26
 qmd: "git conflicts resolution strategy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Nota:** Questa documentazione è VIVA. Aggiungo pattern, lezioni, esempi man mano che risolvo conflitti.

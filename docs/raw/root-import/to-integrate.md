@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "to integrate"
 type: note
@@ -11,6 +9,5 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://medium.com/@keljtanoski/modular-laravel-personal-boilerplate-project-starter-eedde8cb3d15
 

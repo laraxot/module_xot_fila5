@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "auto label action"
 type: note
@@ -11,4 +8,3 @@ qmd: "auto label action"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

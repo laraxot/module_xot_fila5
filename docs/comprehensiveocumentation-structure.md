@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "comprehensiveocumentation structure"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "comprehensiveocumentation structure"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: comprehensiveocumentation-structure
 canonical: ../../../Themes/docs/shared-components/comprehensive-documentation-structure.md

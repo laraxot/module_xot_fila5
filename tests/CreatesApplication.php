@@ -31,11 +31,7 @@ trait CreatesApplication
 
         $appEnv = $_ENV['APP_ENV'] ?? getenv('APP_ENV') ?: 'local';
         if ($appEnv === 'testing' && ! is_readable($testingEnvPath)) {
-<<<<<<< HEAD
-            throw new \RuntimeException('laravel/.env.testing mancante. Rigenerare da .env: ./bashscripts/tools/sync-env-testing.sh');
-=======
             throw new \RuntimeException('laravel/.env.testing mancante. Creare il template e normalizzarlo: ./bashscripts/tools/sync-env-testing.sh --write; fornire FIXCITY_TEST_DB_* dall’ambiente.');
->>>>>>> laraxot/dev
         }
 
         $app = $this->loadLaravelApplication($basePath.'/bootstrap/app.php');

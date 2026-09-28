@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "folio volt architecture"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Architettura Folio + Volt + Filament in il progetto
 
 ## Panoramica

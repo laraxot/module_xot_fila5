@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "INDEX"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Laraxot Documentation - Sharded Index"
 type: index
 confidence: high

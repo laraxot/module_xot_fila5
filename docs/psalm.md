@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "psalm"
 type: note
@@ -11,4 +8,3 @@ qmd: "psalm"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "soketi"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'Soketi — risorse esterne'
 module: Xot
 type: reference

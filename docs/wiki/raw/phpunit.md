@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "phpunit"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Phpunit"
 type: reference
 tags: [wiki, no-frontmatter-fix]

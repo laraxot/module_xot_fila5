@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "model with status contract"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Model With Status Contract"
 type: reference
 tags: [wiki, no-frontmatter-fix]

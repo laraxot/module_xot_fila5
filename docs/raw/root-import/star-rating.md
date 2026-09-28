@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "star rating"
 type: note
@@ -11,6 +9,5 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker
 

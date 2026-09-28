@@ -1,13 +1,10 @@
 ---
-<<<<<<< HEAD
-=======
 type: note
 created: 2026-09-26
 updated: 2026-09-26
 qmd: "table delegation column composition.story"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 id: story-table-delegation-column-composition
 title: "Story: table() delegation and getTableColumns() composition"
 description: "Documenta l'algoritmo di delega table() in XotBaseManageRelatedRecords: $resourceClass::table($table) configura tutto; getTableColumns() sovrascrive le colonne; ...parent::getTableColumns() estende."

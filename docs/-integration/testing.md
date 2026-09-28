@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "testing"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # testing
 
 <!-- Contenuto migrato da _docs/testing.txt -->

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "architecture"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Architecture"
 type: reference
 tags: [wiki, no-frontmatter-fix]
@@ -111,17 +108,9 @@ abstract class XotBaseResource extends Resource
 {
     use HasXotTable;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
     public function getFormSchema(): array
 ---
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return static::getFormSchemaImplementation();
     }

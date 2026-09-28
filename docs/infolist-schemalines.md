@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "infolist schemalines"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 
 # Linee Guida per l'Implementazione di getInfolistSchema
 

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "tasks index"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Indice task - Modulo Xot
 
 Lista dei task del modulo con link ai file .md separati. Ogni task è un file nella cartella `tasks/`.

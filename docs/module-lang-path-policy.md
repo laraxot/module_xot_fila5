@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "module lang path policy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Module Lang Path Policy
 
 ## Rule

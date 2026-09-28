@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "thinking about.blade"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Thinking About.Blade"
 type: reference
 tags: [wiki, no-frontmatter-fix]

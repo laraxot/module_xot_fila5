@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "15 catalog phpstan"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # BMAD Story 15 — Catalog: 12 errori PHPStan
 
 **Modulo:** `Catalog`

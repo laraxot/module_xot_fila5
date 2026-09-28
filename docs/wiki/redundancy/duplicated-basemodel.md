@@ -1,12 +1,9 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 updated: 2026-09-26
 qmd: "duplicated basemodel"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Massive Duplication of BaseModel.php (16 occurrences)"
 type: redundancy
 owner: Modules/Xot

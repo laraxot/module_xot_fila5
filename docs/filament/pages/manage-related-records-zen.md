@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "manage related records zen"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # ManageRelatedRecords Zen
 
 ## Philosophy

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "translation standards"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Translation Standards"
 type: reference
 tags: [wiki, no-frontmatter-fix]

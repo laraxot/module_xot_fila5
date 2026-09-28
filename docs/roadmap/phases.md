@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phases"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Fasi di sviluppo - Xot Module
 
 ## Fase 1: Framework Stabilization (Completed)

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament v4 upgrade notes"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Xot Module - Filament v4 Upgrade Notes
 
 This document outlines specific considerations and changes for the `Xot` module, particularly concerning its foundational `XotBaseSection` component, during the Filament v4 upgrade process. For a comprehensive overview of the Filament v4 upgrade, refer to the main project documentation: [`docs/filament_v4_upgrade.md`](../../../docs/filament_v4_upgrade.md).
@@ -51,8 +48,6 @@ This document outlines specific considerations and changes for the `Xot` module,
     ```
 
 ---
-<<<<<<< HEAD
-=======
 title: "filament v4 upgrade notes"
 type: note
 tags: [documentation]
@@ -61,7 +56,6 @@ updated: 2026-09-26
 qmd: "filament v4 upgrade notes"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **DRY (Don't Repeat Yourself) / KISS (Keep It Simple, Stupid) Principles:**
 
 *   **Centralized `XotBaseSection`:** This class is a prime example of DRY, consolidating architectural decisions and compatibility layers in one place for all custom sections.

@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ---
 title: "personal name fields"
 type: note
@@ -11,4 +8,3 @@ qmd: "personal name fields"
 issues: []
 discussions: []
 ---
->>>>>>> laraxot/dev

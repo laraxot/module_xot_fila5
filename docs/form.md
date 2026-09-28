@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "form"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 --- laravel form builder
 https://medium.com/@a1gard/laravel-form-builder-bootstrap-semantic-ui-materialize-f2300325c3fb
 

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "metatag panel action"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # ApplyMetatagToPanelAction
 
 ## Descrizione
