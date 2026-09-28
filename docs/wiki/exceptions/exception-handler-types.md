@@ -1,0 +1,15 @@
+---
+<<<<<<< HEAD
+=======
+qmd: "exception handler types"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
+title: "Exception Handler Types"
+type: reference
+tags: [wiki, no-frontmatter-fix]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
+

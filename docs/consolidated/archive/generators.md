@@ -1,0 +1,18 @@
+<<<<<<< HEAD
+=======
+---
+title: "generators"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "generators"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
+Model generator
+https://github.com/reliese/laravel
+
+--------

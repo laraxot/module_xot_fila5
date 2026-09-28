@@ -1,0 +1,18 @@
+---
+<<<<<<< HEAD
+=======
+title: "commons and corrections"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "commons and corrections"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
+module: theme
+topic: commons-and-corrections
+canonical: ../../../Themes/docs/shared-components/common-error-patterns-and-corrections.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/common-error-patterns-and-corrections.md

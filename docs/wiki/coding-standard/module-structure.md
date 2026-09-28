@@ -1,0 +1,15 @@
+---
+<<<<<<< HEAD
+=======
+qmd: "module structure"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
+title: "Module Structure"
+type: reference
+tags: [wiki, no-frontmatter-fix]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
+

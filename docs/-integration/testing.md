@@ -1,0 +1,31 @@
+<<<<<<< HEAD
+=======
+---
+title: "testing"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "testing"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
+# testing
+
+<!-- Contenuto migrato da _docs/testing.txt -->
+
+https://confidentlaravel.com/ !!!
+
+https://laravelshift.com/laravel-test-generator !!!!
+
+https://github.com/vigneshc91/laravel-test-generator
+
+https://github.com/jarektkaczyk/laravel-test-generator
+
+https://github.com/davispeixoto/Laravel-4-Test-Generator
+
+https://laravel-news.com/tips-to-speed-up-phpunit-tests
+
+https://circleci.com/blog/automatic-testing-for-laravel-projects/

@@ -1,0 +1,20 @@
+<<<<<<< HEAD
+=======
+---
+title: "pdf"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "pdf"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
+--------------------------------------
+https://wkhtmltopdf.org/
+
+wkhtmltopdf and wkhtmltoimage are open source (LGPLv3) command line tools to render HTML into PDF and various image formats using the Qt WebKit rendering engine. These run entirely "headless" and do not require a display or display service.
+
+-----------------------------------------

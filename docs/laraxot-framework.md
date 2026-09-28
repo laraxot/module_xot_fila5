@@ -1,0 +1,14 @@
+<<<<<<< HEAD
+
+=======
+---
+title: "laraxot framework"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "laraxot framework"
+issues: []
+discussions: []
+---
+>>>>>>> laraxot/dev

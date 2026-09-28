@@ -1,0 +1,15 @@
+---
+<<<<<<< HEAD
+=======
+qmd: "vite configuration"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
+title: "Vite Configuration"
+type: reference
+tags: [wiki, no-frontmatter-fix]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
+
