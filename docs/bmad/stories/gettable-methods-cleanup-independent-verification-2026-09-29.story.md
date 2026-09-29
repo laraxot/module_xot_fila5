@@ -90,6 +90,23 @@ eseguito alcun `git add -A`/commit su Ptv da questa sessione: un commit ampio av
 rischiato di cristallizzare lavoro altrui incompleto. Il commit dei 6 file rientra
 nella responsabilità della sessione che li ha scritti (story 5.254).
 
+## Blocco git — non risolto qui, documentato
+
+Il repo locale di `laravel/Modules/Xot` è divergente da `laraxot/dev` (1 commit locale
+contro **257 commit** solo sul remoto, con file cancellati/spostati che non esistono
+più nel working tree locale, es. `Datas/XotData.php`, `Helpers/Helper.php`). Un
+`git pull --rebase --autostash` si interrompe perché il checkout del rebase
+sovrascriverebbe file non tracciati localmente ma presenti sul remoto (nuove story e
+test BMAD di altre sessioni). Il push del solo commit di questa story è stato
+**rifiutato** (`non-fast-forward`), come previsto dal protocollo: **non forzato**.
+
+Il commit `07636d035` ("docs(bmad): independent verification of getTable* ...") resta
+**locale, non pushato**. Non è stato tentato nessun merge/rebase/reset per riconciliare
+i 257 commit di differenza: è fuori perimetro per questo task e il rischio di perdere
+lavoro di altre sessioni è alto. Segnalato per chi gestisce la sincronizzazione fleet
+(vedi `docs/chat/multi-agent-standing-coordination.md` in root, dove sono già loggati
+incidenti simili di divergenza oggi).
+
 ## Esito per l'utente
 
 0 fix applicati da questa sessione (nulla da fare: già fatto e verificato altrove),
