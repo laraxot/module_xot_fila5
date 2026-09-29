@@ -1,4 +1,7 @@
 ---
+qmd: "sentiment analyzer"
+issues: []
+discussions: []
 title: "Sentiment Analyzer"
 type: reference
 tags: [wiki, no-frontmatter-fix]

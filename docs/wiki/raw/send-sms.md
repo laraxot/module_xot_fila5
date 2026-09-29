@@ -1,4 +1,7 @@
 ---
+qmd: "send sms"
+issues: []
+discussions: []
 title: "Send Sms"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,16 +1,31 @@
+---
+title: "phpstan transtrait errors"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan transtrait errors"
+issues: []
+discussions: []
+---
+
 # PHPStan Errors - TransTrait.php
 
-<<<<<<< HEAD
-**Date**: [DATE]
-=======
 **Date**: 2025-12-16
->>>>>>> laraxot/dev
 **File**: `Modules/Xot/app/Filament/Traits/TransTrait.php`
 **PHPStan Level**: 10
 **Total Errors**: ~10 (across multiple contexts)
 
 ---
 
+title: "phpstan transtrait errors"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan transtrait errors"
+issues: []
+discussions: []
 ## Overview
 
 TransTrait provides translation functionality for Filament components. The trait is used by multiple base classes (Pages, Resources, Blocks, Clusters) but has a design issue: it calls `static::getModuleName()` which is not available in all using classes.
@@ -392,11 +407,7 @@ This fix may also resolve related errors in:
 
 ## Related Documentation
 
-<<<<<<< HEAD
-- [PHPStan Analysis Summary](phpstan-analysis-[date].md)
-=======
 - [PHPStan Analysis Summary](phpstan-analysis-2025-12-16.md)
->>>>>>> laraxot/dev
 - [XotBase Extension Rules](xotbase-extension-rules.md)
 - [Filament Integration](filament-integration.md)
 
@@ -404,8 +415,4 @@ This fix may also resolve related errors in:
 
 **Status**: 🟡 Documented - Awaiting Fix
 **Assigned To**: Module Owner
-<<<<<<< HEAD
-
-=======
 **Last Updated**: 2025-12-16
->>>>>>> laraxot/dev

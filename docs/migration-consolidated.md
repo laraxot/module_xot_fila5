@@ -1,3 +1,14 @@
+---
+title: "migration consolidated"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "migration consolidated"
+issues: []
+discussions: []
+---
+
 # Migrazioni - Documentazione Consolidata DRY + KISS
 
 > **🎯 Single Source of Truth**: Questo documento centralizza TUTTE le regole di migrazione del progetto
@@ -508,5 +519,13 @@ composer dump-autoload
 
 ---
 
+title: "migration consolidated"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "migration consolidated"
+issues: []
+discussions: []
 *Modulo: Xot*
 *Categoria: Migrazioni*

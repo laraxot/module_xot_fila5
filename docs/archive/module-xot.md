@@ -12,7 +12,6 @@
 - **Namespace**: `Modules\Xot`
 - **Repository**: https://github.com/laraxot/module_xot_fila3
 
->>>>>>> .merge_file_Bc6RCe
 
 ## Service Providers
 1. `Modules\Xot\Providers\XotServiceProvider`

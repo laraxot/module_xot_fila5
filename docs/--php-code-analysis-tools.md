@@ -1,3 +1,14 @@
+---
+title: " php code analysis tools"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: " php code analysis tools"
+issues: []
+discussions: []
+---
+
 # __php-code-analysis-tools
 
 <!-- Contenuto migrato da _docs/__php-code-analysis-tools.txt -->

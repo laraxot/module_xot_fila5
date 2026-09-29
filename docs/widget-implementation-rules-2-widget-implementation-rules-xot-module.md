@@ -1,3 +1,14 @@
+---
+title: "widget implementation rules 2 widget implementation rules xot module"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "widget implementation rules 2 widget implementation rules xot module"
+issues: []
+discussions: []
+---
+
 # Widget Implementation Rules - Xot Module
 
 ## 🎯 Regole Fondamentali per Widget

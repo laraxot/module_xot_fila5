@@ -1,4 +1,7 @@
 ---
+qmd: "property promotion"
+issues: []
+discussions: []
 title: "Property Promotion"
 type: reference
 tags: [wiki, no-frontmatter-fix]

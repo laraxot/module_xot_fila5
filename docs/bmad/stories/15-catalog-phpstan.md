@@ -1,16 +1,14 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 ---
-name: 15-catalog-phpstan
-description: "Modulo: Catalog"
-metadata:
-  type: bmad
+title: "15 catalog phpstan"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "15 catalog phpstan"
+issues: []
+discussions: []
 ---
 
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # BMAD Story 15 — Catalog: 12 errori PHPStan
 
 **Modulo:** `Catalog`

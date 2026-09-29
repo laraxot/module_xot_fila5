@@ -1,4 +1,7 @@
 ---
+qmd: "nwidart laravel modules complete guide"
+issues: []
+discussions: []
 title: "Nwidart Laravel Modules Complete Guide"
 type: reference
 tags: [wiki, no-frontmatter-fix]

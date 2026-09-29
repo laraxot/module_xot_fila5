@@ -1,3 +1,14 @@
+---
+title: "super mucca methodology"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "super mucca methodology"
+issues: []
+discussions: []
+---
+
 # 🐃 **Metodologia Super Mucca: AI-Native Edition**
 
 **Ultimo aggiornamento**: 31 Gennaio 2026  
@@ -34,6 +45,14 @@ L'AI deve usare strumenti di validazione per assicurarsi che i link tra i docume
 4. **Verifica**: esegui i test disponibili e registra gli errori in modo tracciabile.
 
 ---
+title: "super mucca methodology"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "super mucca methodology"
+issues: []
+discussions: []
 *Documentazione conforme agli standard Laraxot - L'eccellenza è un'abitudine.*
 # 🐄 Metodologia "Super Mucca"
 

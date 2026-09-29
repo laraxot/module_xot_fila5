@@ -1,3 +1,14 @@
+---
+title: "phpstan level phpstan livello 10 max report qualit c"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan level phpstan livello 10 max report qualit c"
+issues: []
+discussions: []
+---
+
 # PHPStan Livello 10 (MAX) - Report Qualità Codice
 
 ## Data Analisi

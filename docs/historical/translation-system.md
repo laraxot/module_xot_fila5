@@ -1,3 +1,14 @@
+---
+title: "translation system"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "translation system"
+issues: []
+discussions: []
+---
+
 # Sistema di Traduzione
 
 ## Regola Fondamentale: NO ->label()
@@ -220,16 +231,6 @@ php artisan view:clear
 
 ## Riferimenti
 
-- [Documentazione Laravel Translations](https://laravel.com/project_docs/localization)
-- [Filament Form Components](https://filamentphp.com/project_docs/forms)
-- [Best Practices Filament](../project_docs/filament-best-practices.md)
-- [Schema Conventions](../project_docs/schema-conventions.md)
-|||||||| parent of 4e84d6e (.):docs/translation_system.md
-- [Documentazione Laravel Translations](https://laravel.com/project_docs/localization)
-- [Filament Form Components](https://filamentphp.com/project_docs/forms)
-- [Best Practices Filament](../project_docs/filament-best-practices.md)
-- [Schema Conventions](../project_docs/schema-conventions.md) 
-=
 - [Documentazione Laravel Translations](https://laravel.com/docs/localization)
 - [Filament Form Components](https://filamentphp.com/docs/forms)
 - [Best Practices Filament](../docs/filament-best-practices.md)

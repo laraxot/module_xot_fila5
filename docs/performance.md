@@ -1,10 +1,8 @@
-<<<<<<< HEAD
-//-----------------------------------------------------------
-4 tips to improve Laravel performance
-https://medium.com/@mianhaseeb41/4-tips-to-improve-laravel-performance-caff9ff46e76
-//-------------------------------------------------------------
-=======
 ---
+tags: [documentation]
+qmd: "performance"
+issues: []
+discussions: []
 title: "Performance"
 type: reference
 status: active
@@ -21,4 +19,3 @@ note: "Convertito da _performance.txt (documento) da convert-docs-txt-to-md.py."
 4 tips to improve Laravel performance
 https://medium.com/@mianhaseeb41/4-tips-to-improve-laravel-performance-caff9ff46e76
 //-------------------------------------------------------------
->>>>>>> laraxot/dev

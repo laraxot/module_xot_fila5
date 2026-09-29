@@ -1,3 +1,14 @@
+---
+title: "quality tools philosophy"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "quality tools philosophy"
+issues: []
+discussions: []
+---
+
 # Filosofia degli Strumenti di Qualità - La Trinità del Codice Perfetto
 
 ## 🎯 Overview - I Tre Pilastri
@@ -22,6 +33,14 @@
 
 ---
 
+title: "quality tools philosophy"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "quality tools philosophy"
+issues: []
+discussions: []
 ## 📚 STRUMENTO 1: Laravel IDE Helper
 
 ### 🙏 La Religione dell'Illuminazione

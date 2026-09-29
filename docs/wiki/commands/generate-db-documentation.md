@@ -1,4 +1,7 @@
 ---
+qmd: "generate db documentation"
+issues: []
+discussions: []
 title: "Generate Db Documentation"
 type: reference
 tags: [wiki, no-frontmatter-fix]

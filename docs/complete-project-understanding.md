@@ -1,3 +1,14 @@
+---
+title: "complete project understanding"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "complete project understanding"
+issues: []
+discussions: []
+---
+
 # Quaeris Fila4 Mono - Filosofia Completa del Progetto
 
 ## Logica (Logic)

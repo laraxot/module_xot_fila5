@@ -1,4 +1,7 @@
 ---
+qmd: "workspace file rule"
+issues: []
+discussions: []
 title: "Workspace File Naming Rule"
 module: xot
 type: integration

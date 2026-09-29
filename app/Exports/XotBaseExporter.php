@@ -42,8 +42,9 @@ use OpenSpout\Common\Entity\Style\Style;
  * applica lo stesso binder, cosi' i due file hanno gli stessi tipi di cella.
  *
  * Eager load: `ratings_by_id` (HasRatingsTrait) legge `ratings` + `ratingMorphs`;
+ * `xls_export_value` risolve anche `ratings.children` (padre Select → txt figlio).
  * `modifyQuery()` li carica se il model li ha, altrimenti il job chunked farebbe
- * due query per riga. Stessa regola in `ExportXlsAction` (che la chiama).
+ * N query per riga. Stessa regola in `ExportXlsAction` (che la chiama).
  *
  * CSV intermedio: i job Filament usano League\Csv con escape `\` (default PHP):
  * un valore che finisce con `\` chiude il campo con `\"` e il reader lo legge
@@ -72,10 +73,12 @@ abstract class XotBaseExporter extends Exporter
     {
         $model = $query->getModel();
         $with = [];
-        foreach (['ratings', 'ratingMorphs'] as $relation) {
-            if (method_exists($model, $relation)) {
-                $with[] = $relation;
-            }
+        if (method_exists($model, 'ratings')) {
+            $with[] = 'ratings';
+            $with[] = 'ratings.children';
+        }
+        if (method_exists($model, 'ratingMorphs')) {
+            $with[] = 'ratingMorphs';
         }
 
         return $with === [] ? $query : $query->with($with);

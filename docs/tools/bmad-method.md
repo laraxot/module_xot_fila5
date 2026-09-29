@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "BMad Method — agile AI-driven development"
 module: "xot"
 type: reference

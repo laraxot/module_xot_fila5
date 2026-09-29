@@ -7,6 +7,8 @@ namespace Modules\Xot\Tests\Unit\Exports;
 use Filament\Actions\Exports\ExportColumn;
 use Filament\Actions\Exports\Jobs\CreateXlsxFile;
 use Filament\Actions\Exports\Models\Export;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Collection;
 use League\Csv\Reader;
 use League\Csv\Statement;
@@ -28,6 +30,30 @@ use ReflectionMethod;
 use function Safe\fopen;
 use function Safe\fwrite;
 use function Safe\rewind;
+
+/**
+ * Stub minimo per verificare gli eager-load di XotBaseExporter::modifyQuery.
+ *
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, ExporterEagerLoadModelStub> $ratings
+ */
+final class ExporterEagerLoadModelStub extends Model
+{
+    /**
+     * @return HasMany<ExporterEagerLoadModelStub, $this>
+     */
+    public function ratings(): HasMany
+    {
+        return $this->hasMany(self::class);
+    }
+
+    /**
+     * @return HasMany<ExporterEagerLoadModelStub, $this>
+     */
+    public function ratingMorphs(): HasMany
+    {
+        return $this->hasMany(self::class);
+    }
+}
 
 uses(TestCase::class);
 
@@ -64,6 +90,17 @@ function resolveExporterColumns(string $resourceClass, array $filters): array
 }
 
 describe('XotBaseExporter — colonne da getXlsFields del Resource', function (): void {
+    test('modifyQuery eager-load ratings, ratings.children e ratingMorphs quando esistono', function (): void {
+        $model = new ExporterEagerLoadModelStub;
+
+        $query = $model->newQuery();
+        $eager = XotBaseExporterStub::modifyQuery($query)->getEagerLoads();
+
+        Assert::assertArrayHasKey('ratings', $eager);
+        Assert::assertArrayHasKey('ratings.children', $eager);
+        Assert::assertArrayHasKey('ratingMorphs', $eager);
+    });
+
     test('senza ListRecords attivo getColumns e\' una lista vuota', function (): void {
         Assert::assertSame([], XotBaseExporterStub::getColumns());
     });

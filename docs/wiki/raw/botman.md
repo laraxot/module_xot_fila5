@@ -1,4 +1,7 @@
 ---
+qmd: "botman"
+issues: []
+discussions: []
 title: "Botman"
 type: reference
 tags: [wiki, no-frontmatter-fix]

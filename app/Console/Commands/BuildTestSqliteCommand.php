@@ -8,12 +8,14 @@ use Illuminate\Console\Command;
 use Illuminate\Contracts\Config\Repository;
 use Illuminate\Support\Facades\DB;
 use Modules\Xot\Tests\XotBaseTestCase;
-use Throwable;
 
 use function Safe\glob;
+use function Safe\mkdir;
 use function Safe\preg_replace;
 use function Safe\touch;
 use function Safe\unlink;
+
+use Throwable;
 
 /**
  * Costruisce lo schema del database SQLite usato dai test.
@@ -53,6 +55,11 @@ class BuildTestSqliteCommand extends Command
 
         if ($this->option('fresh') === true && file_exists($target)) {
             unlink($target);
+        }
+
+        $directory = dirname($target);
+        if (! is_dir($directory)) {
+            mkdir($directory, 0o775, true);
         }
 
         if (! file_exists($target)) {
@@ -180,6 +187,7 @@ class BuildTestSqliteCommand extends Command
             if (! is_string($file)) {
                 continue;
             }
+
             try {
                 $this->callSilent('migrate', [
                     '--force' => true,

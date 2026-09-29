@@ -1,4 +1,7 @@
 ---
+qmd: "xotbasemanagerelatedrecords filament demo philosophy"
+issues: []
+discussions: []
 title: "Filosofia Filament Demo: delegare l'intera configurazione form/table in XotBaseManageRelatedRecords"
 type: architecture
 category: bmad

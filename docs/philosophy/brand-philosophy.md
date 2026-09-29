@@ -1,3 +1,14 @@
+---
+title: "brand philosophy"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "brand philosophy"
+issues: []
+discussions: []
+---
+
 
 # Filosofia del Brand nel Sistema
 

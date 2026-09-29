@@ -1,4 +1,7 @@
 ---
+qmd: "jpgraph guide"
+issues: []
+discussions: []
 title: 'Jpgraph guide'
 module: Xot
 type: reference

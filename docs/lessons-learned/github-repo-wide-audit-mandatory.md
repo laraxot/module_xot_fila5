@@ -1,4 +1,12 @@
 ---
+title: "github repo wide audit mandatory"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "github repo wide audit mandatory"
+issues: []
+discussions: []
 name: github-repo-wide-audit-mandatory
 description: "Non basta linkare la propria issue: prima di chiudere un task su un modulo va fatto audit di TUTTE le issue/discussion aperte nella repo"
 metadata:

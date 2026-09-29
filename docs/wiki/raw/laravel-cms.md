@@ -1,4 +1,7 @@
 ---
+qmd: "laravel cms"
+issues: []
+discussions: []
 title: "Laravel Cms"
 type: reference
 tags: [wiki, no-frontmatter-fix]

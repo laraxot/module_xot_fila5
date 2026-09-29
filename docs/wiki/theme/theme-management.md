@@ -1,4 +1,7 @@
 ---
+qmd: "theme management"
+issues: []
+discussions: []
 title: "Theme Management"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,4 +1,10 @@
 ---
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+issues: []
+discussions: []
 id: "xot-phpstan-export-test-types"
 title: "PHPStan: CollectionExport WithMapping<mixed> + test types"
 status: done

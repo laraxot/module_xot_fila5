@@ -1,3 +1,14 @@
+---
+title: "migration standards"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "migration standards"
+issues: []
+discussions: []
+---
+
 # Standard per le Migrazioni in <nome progetto>
 
 ## Convenzioni di Nomenclatura
@@ -27,6 +38,14 @@ Indipendentemente dal tipo di operazione (CREATE, ADD, CHANGE, FIX), il nome del
 
 ---
 
+title: "migration standards"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "migration standards"
+issues: []
+discussions: []
 ## Principi Fondamentali
 
 1. **Estensione della classe base**: Tutte le migrazioni devono estendere `XotBaseMigration`

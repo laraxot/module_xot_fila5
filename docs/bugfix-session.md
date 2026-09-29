@@ -1,3 +1,14 @@
+---
+title: "bugfix session"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "bugfix session"
+issues: []
+discussions: []
+---
+
 # Bugfix Session - 4 Gennaio 2025
 
 ## 🎯 Obiettivo
@@ -24,6 +35,14 @@ Press Ctrl+C to stop the server
 
 ---
 
+title: "bugfix session"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "bugfix session"
+issues: []
+discussions: []
 ## 📊 Riepilogo Intervento
 
 ### File Fixati: 5
@@ -276,7 +295,4 @@ Eccezioni rare:
 - [git-conflicts-mal-risolti.md](./git-conflicts-mal-risolti.md)
 - [../../bashscripts/docs/file-locking-pattern.md](../../../bashscripts/docs/file-locking-pattern.md)
 - [../../User/docs/syntax-errors-to-fix.md](../../User/docs/syntax-errors-to-fix.md)
-<<<<<<< HEAD
-=======
 - [../../User/docs/syntax-errors-to-fix.md](../../user/docs/syntax-errors-to-fix.md)
->>>>>>> laraxot/dev

@@ -1,4 +1,7 @@
 ---
+qmd: "generate resource form schema"
+issues: []
+discussions: []
 title: "Generate Resource Form Schema"
 type: reference
 tags: [wiki, no-frontmatter-fix]

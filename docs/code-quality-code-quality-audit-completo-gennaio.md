@@ -1,3 +1,14 @@
+---
+title: "code quality code quality audit completo gennaio"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "code quality code quality audit completo gennaio"
+issues: []
+discussions: []
+---
+
 # Code Quality Audit Completo - Gennaio 2025
 
 **PHPStan Level**: 10

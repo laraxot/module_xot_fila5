@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "PHPStan Report - Livello 10"
 module: "Xot"
 type: concept

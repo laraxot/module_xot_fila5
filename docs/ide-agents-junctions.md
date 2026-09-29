@@ -1,4 +1,7 @@
 ---
+qmd: "ide agents junctions"
+issues: []
+discussions: []
 title: Junction IDE e agenti — SSoT .agents
 type: guide
 created: 2026-07-28

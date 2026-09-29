@@ -1,4 +1,7 @@
 ---
+qmd: "troubleshooting livewire"
+issues: []
+discussions: []
 title: "Troubleshooting: Livewire 404 Error"
 module: xot
 type: integration

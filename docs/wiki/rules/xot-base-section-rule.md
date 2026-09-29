@@ -1,4 +1,7 @@
 ---
+qmd: "xot base section rule"
+issues: []
+discussions: []
 title: "Xot Base Section Rule"
 type: reference
 tags: [wiki, no-frontmatter-fix]

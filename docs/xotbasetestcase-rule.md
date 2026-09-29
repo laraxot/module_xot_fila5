@@ -1,3 +1,14 @@
+---
+title: "xotbasetestcase rule"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xotbasetestcase rule"
+issues: []
+discussions: []
+---
+
 # XotBaseTestCase - Testing Architecture Rule
 
 ## Regola Fondamentale

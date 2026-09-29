@@ -1,4 +1,7 @@
 ---
+qmd: "nwidart to study"
+issues: []
+discussions: []
 title: 'Nwidart to study — risorse esterne'
 module: Xot
 type: reference
@@ -22,27 +25,6 @@ updated: 2026-08-24
 
 ## Appendice — contenuto migrato
 
----
-module: theme
-topic: nwidart_to_study
-canonical: ../../../Themes/docs/shared-components/nwidart-to-study.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/nwidart-to-study.md
-https://github.com/HichemTab-tech/LaravelFS
-
-
-## Contenuto originale (txt)
-<<<<<<< HEAD
-
->>>>>>> .merge_file_bMOZuq
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> .merge_file_bMOZuq
->>>>>>> 7f6cf6be (.)
->>>>>>> laraxot/dev
 ---
 module: theme
 topic: nwidart_to_study

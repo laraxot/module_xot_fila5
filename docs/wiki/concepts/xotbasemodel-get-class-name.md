@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "XotBaseModel::getClassName — basename da static, namespace dal chiamante"
 type: concept
 module: Xot

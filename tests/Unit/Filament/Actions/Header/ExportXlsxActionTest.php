@@ -36,6 +36,13 @@ describe('ExportXlsxAction — export nativo generico su getXlsFields', function
         Assert::assertSame(XotPrepareCsvExport::class, $action->getJob());
     });
 
+    test('icona custom xot-files.xlsx (SVG griglia, non heroicon generico)', function (): void {
+        $action = ExportXlsxAction::make('export_xlsx');
+
+        Assert::assertSame('xot-files.xlsx', $action->getIcon());
+        Assert::assertFileExists(module_path('Xot', 'resources/svg/files/xlsx.svg'));
+    });
+
     test('un modulo puo\' passare il proprio exporter', function (): void {
         $action = ExportXlsxAction::make('export_xlsx')->exporter(ExporterStub::class);
 

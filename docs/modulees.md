@@ -1,3 +1,14 @@
+---
+title: "modulees"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "modulees"
+issues: []
+discussions: []
+---
+
 # Correzioni nel Modulo Xot
 
 ## Nuovi Errori PHPStan (Livello 2)
@@ -87,11 +98,17 @@ protected function generateFormSchema(string $file, string $content, string $cla
 ```php
 declare(strict_types=1);
 
-<<<<<<< HEAD
 public function getFormSchema(): array
-=======
+---
+title: "modulees"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "modulees"
+issues: []
+discussions: []
 public function getFormSchema(): array
->>>>>>> laraxot/dev
 {
     return [
         'field_name' => [

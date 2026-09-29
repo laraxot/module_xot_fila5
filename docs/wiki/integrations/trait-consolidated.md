@@ -1,4 +1,7 @@
 ---
+qmd: "trait consolidated"
+issues: []
+discussions: []
 title: "trait — Consolidated Documentation"
 module: xot
 type: integration

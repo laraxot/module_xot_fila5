@@ -1,3 +1,14 @@
+---
+title: "cyclomatic complexity refactoring plan"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "cyclomatic complexity refactoring plan"
+issues: []
+discussions: []
+---
+
 # Cyclomatic Complexity Refactoring Plan - Module Xot
 
 **Created:** 2025-10-01
@@ -6,6 +17,14 @@
 
 ---
 
+title: "cyclomatic complexity refactoring plan"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "cyclomatic complexity refactoring plan"
+issues: []
+discussions: []
 ## 📋 Overview
 
 This document outlines the refactoring plan for methods with high cyclomatic complexity (>10) in the Xot module.

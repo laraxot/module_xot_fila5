@@ -1,3 +1,14 @@
+---
+title: "infolists for summary"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "infolists for summary"
+issues: []
+discussions: []
+---
+
 # Infolists per Riepilogo — Regola Corretta
 
 **Status**: Active  
@@ -8,6 +19,14 @@
 
 ---
 
+title: "infolists for summary"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "infolists for summary"
+issues: []
+discussions: []
 ## Regola
 
 Nel passo di review/riepilogo di un wizard:

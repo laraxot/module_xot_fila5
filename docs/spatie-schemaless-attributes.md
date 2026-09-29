@@ -1,3 +1,14 @@
+---
+title: "spatie schemaless attributes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "spatie schemaless attributes"
+issues: []
+discussions: []
+---
+
 # spatie/laravel-schemaless-attributes — Central Reference
 
 **Package**: [`spatie/laravel-schemaless-attributes`](https://github.com/spatie/laravel-schemaless-attributes)
@@ -5,6 +16,14 @@
 
 ---
 
+title: "spatie schemaless attributes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "spatie schemaless attributes"
+issues: []
+discussions: []
 ## Overview
 
 Store arbitrary JSON data in a single database column on Eloquent models. Use for **metadata, user preferences, external API responses**. Avoid for core business logic data.

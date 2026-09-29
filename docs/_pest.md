@@ -1,4 +1,7 @@
 ---
+qmd: " pest"
+issues: []
+discussions: []
 title: 'Pest — risorse esterne'
 module: Xot
 type: reference

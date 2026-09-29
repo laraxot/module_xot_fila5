@@ -1,3 +1,14 @@
+---
+title: "provider common mistakes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "provider common mistakes"
+issues: []
+discussions: []
+---
+
 # Provider Common Mistakes - Comprehensive Guide
 
 **Last Updated**: 2025-12-16
@@ -30,6 +41,14 @@ class AdminPanelProvider extends XotBasePanelProvider { }
 
 ---
 
+title: "provider common mistakes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "provider common mistakes"
+issues: []
+discussions: []
 ### 2. Adding Unnecessary Methods
 
 **❌ WRONG:**

@@ -1,3 +1,14 @@
+---
+title: "schemaless attributes complete"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "schemaless attributes complete"
+issues: []
+discussions: []
+---
+
 # Schemaless Attributes - Pattern Completi PTVX v3.0
 
 ## 🎯 **OVERVIEW**
@@ -23,6 +34,14 @@ Questa documentazione definisce i **pattern completi e standardizzati** per l'us
 
 ---
 
+title: "schemaless attributes complete"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "schemaless attributes complete"
+issues: []
+discussions: []
 ## 🎯 **PATTERN ARCHITETTURALI STANDARDIZZATI**
 
 ### 📋 **1. Migration Pattern XOT + Schemaless**

@@ -37,8 +37,9 @@ abstract class XotBaseRouteServiceProvider extends RouteServiceProvider
      */
     public function map(): void
     {
-        $this->mapApiRoutes();
-        $this->mapWebRoutes();
+        // Routes are handled by Folio + Volt for front office
+        // Filament handles back office routes
+        // No module route files needed
     }
 
     /**
@@ -46,17 +47,7 @@ abstract class XotBaseRouteServiceProvider extends RouteServiceProvider
      */
     protected function mapWebRoutes(): void
     {
-        if ($this->name === '') {
-            Notification::make()
-                ->title('Error')
-                ->danger()
-                ->persistent()
-                ->body('on [Name]ServiceProvider and RouteServiceProvider add $name variable')
-                ->send();
-
-            return;
-        }
-        Route::middleware('web')->namespace($this->moduleNamespace)->group($this->module_dir.'/../../routes/web.php');
+        // Disabled - using Folio + Volt
     }
 
     /**
@@ -64,12 +55,6 @@ abstract class XotBaseRouteServiceProvider extends RouteServiceProvider
      */
     protected function mapApiRoutes(): void
     {
-        if ($this->name === '') {
-            throw new \Exception('name is empty on ['.static::class.']');
-        }
-        Route::prefix('api')
-            ->middleware('api')
-            ->namespace($this->moduleNamespace)
-            ->group($this->module_dir.'/../../routes/api.php');
+        // Disabled - using Folio + Volt + Actions for API
     }
 }

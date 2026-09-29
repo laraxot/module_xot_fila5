@@ -1,3 +1,14 @@
+---
+title: "xotbaseresource violations fixes january"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xotbaseresource violations fixes january"
+issues: []
+discussions: []
+---
+
 # Correzioni Violazioni XotBaseResource - Gennaio 2026
 
 ## Problema Identificato
@@ -145,6 +156,14 @@ Tutte le modifiche sono state verificate con successo utilizzando:
 
 ---
 
+title: "xotbaseresource violations fixes january"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xotbaseresource violations fixes january"
+issues: []
+discussions: []
 **Data Intervento**: Gennaio 2026  
 **Conforme a**: DRY, KISS, Filosofia Laraxot  
 **PHPStan Level**: 10 ✅

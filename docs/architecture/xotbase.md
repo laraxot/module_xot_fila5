@@ -1,3 +1,14 @@
+---
+title: "xotbase"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xotbase"
+issues: []
+discussions: []
+---
+
 # XotBase Architecture & Extension Rules
 
 > **"Mai estendere Filament direttamente - Sempre tramite XotBase"**
@@ -29,11 +40,7 @@ Non utilizzare mai `->label()`, `->placeholder()`, o `->tooltip()` con stringhe 
 ### 2. Metodi Obbligatori
 Alcune classi `XotBase` impongono pattern specifici per garantire la conformità con PHPStan Level 10:
 - **XotBaseWidget**: Deve implementare `public function getFormSchema(): array`.
-<<<<<<< HEAD
 - **XotBaseResource**: Deve implementare `public function getFormSchema(): array` (centralizzato).
-=======
-- **XotBaseResource**: Deve implementare `public function getFormSchema(): array` (centralizzato).
->>>>>>> laraxot/dev
 
 ### 3. Namespace Standard
 Assicurati di usare i namespace corretti. Mai includere `App` nel percorso se sei all'interno di un modulo (es. `Modules\Xot\Filament\...` non `Modules\Xot\App\Filament\...`).
@@ -46,3 +53,11 @@ grep -r "extends Filament\\" Modules/[YourModule] | grep -v "XotBase"
 L'output deve essere vuoto.
 
 ---
+title: "xotbase"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xotbase"
+issues: []
+discussions: []

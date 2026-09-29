@@ -1,4 +1,7 @@
 ---
+qmd: "factory"
+issues: []
+discussions: []
 title: "Factory"
 type: reference
 tags: [wiki, no-frontmatter-fix]

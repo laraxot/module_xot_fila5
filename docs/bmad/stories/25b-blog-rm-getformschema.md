@@ -1,16 +1,14 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 ---
-name: 25b-blog-rm-getformschema
-description: "Modulo: Blog"
-metadata:
-  type: bmad
+title: "25b blog rm getformschema"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "25b blog rm getformschema"
+issues: []
+discussions: []
 ---
 
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # 25b-blog — Rimuovere getFormSchema da BannerResource, CategoryResource, TextWidgetResource
 
 **Modulo:** Blog

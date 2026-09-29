@@ -1,4 +1,7 @@
 ---
+qmd: "hack"
+issues: []
+discussions: []
 title: "Hack"
 type: reference
 tags: [wiki, no-frontmatter-fix]

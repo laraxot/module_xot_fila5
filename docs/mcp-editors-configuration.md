@@ -1,3 +1,14 @@
+---
+title: "mcp editors configuration"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "mcp editors configuration"
+issues: []
+discussions: []
+---
+
 # Configurazione Server MCP per Editor AI
 
 ## Panoramica

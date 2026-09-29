@@ -1,3 +1,14 @@
+---
+title: "about"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "about"
+issues: []
+discussions: []
+---
+
 This favicon was generated using the following graphics from Twitter Twemoji:
 
 - Graphics Title: 1f916.svg

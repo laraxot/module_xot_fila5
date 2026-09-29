@@ -1,3 +1,14 @@
+---
+title: "phpstan fix log jan"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan fix log jan"
+issues: []
+discussions: []
+---
+
 # Log Correzioni PHPStan - Gennaio 2026 (Trinità: Xot, User, UI)
 
 ## 🎯 Obiettivo
@@ -18,4 +29,12 @@ Raggiungere lo Zero Absoluto degli errori PHPStan Livello 10 nei moduli core.
 - Passare al modulo `UI`.
 
 ---
+title: "phpstan fix log jan"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan fix log jan"
+issues: []
+discussions: []
 **Zen Check**: DRY + KISS applicati. Logica centralizzata nei contratti.

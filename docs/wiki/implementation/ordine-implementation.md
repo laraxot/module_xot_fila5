@@ -1,4 +1,7 @@
 ---
+qmd: "ordine implementation"
+issues: []
+discussions: []
 title: "Ordine Implementation"
 type: reference
 tags: [wiki, no-frontmatter-fix]

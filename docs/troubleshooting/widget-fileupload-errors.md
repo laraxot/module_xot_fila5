@@ -1,3 +1,14 @@
+---
+title: "widget fileupload errors"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "widget fileupload errors"
+issues: []
+discussions: []
+---
+
 # Widget FileUpload Errors - Troubleshooting Guide
 
 ## Errore: "foreach() argument must be of type array|object, string given"
@@ -245,6 +256,14 @@ Questo pattern si applica anche a:
 
 ---
 
+title: "widget fileupload errors"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "widget fileupload errors"
+issues: []
+discussions: []
 **Tipo**: Troubleshooting Guide
 **Modulo**: Xot (Base)
 **Applicabilità**: Tutti i widget con FileUpload che caricano dati esistenti

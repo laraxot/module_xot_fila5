@@ -1,9 +1,7 @@
-<<<<<<< HEAD
-# web_scraping
-
-<!-- Contenuto migrato da _docs/web_scraping.txt -->
-=======
 ---
+qmd: "web scraping"
+issues: []
+discussions: []
 title: 'Web scraping'
 module: Xot
 type: reference
@@ -14,13 +12,8 @@ converted_from: web_scraping.txt
 created: 2026-08-24
 updated: 2026-08-24
 ---
->>>>>>> laraxot/dev
 
 Introduction to Web Scraping With Laravel
 https://zubairidrisaweda.medium.com/introduction-to-web-scraping-with-laravel-a217e1444f7c
 
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
 https://sergeyzhuk.me/2018/02/12/fast-webscraping-with-reactphp/

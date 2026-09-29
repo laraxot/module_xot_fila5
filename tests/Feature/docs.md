@@ -1,3 +1,14 @@
+---
+title: "docs"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "docs"
+issues: []
+discussions: []
+---
+
  * https://jasonmccreary.me/articles/start-testing-laravel/
  * https://www.5balloons.info/laravel-tdd-beginner-crud-example/
  * https://tighten.co/blog/tidying-up-your-phpunit-tests-with-data-providers/

@@ -57,5 +57,7 @@ class ArrayAction
         return $outputDiff;
     }
 
-    public function execute(): void {}
+    public function execute(): void
+    {
+    }
 }

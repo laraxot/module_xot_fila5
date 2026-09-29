@@ -1,16 +1,14 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 ---
-name: 25f-tests-getformschema
-description: "Modulo: multi (Activity, Cms, Job, Lang, Media, Notify, Tenant, User)"
-metadata:
-  type: bmad
+title: "25f tests getformschema"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "25f tests getformschema"
+issues: []
+discussions: []
 ---
 
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # 25f — Correggere test con static call getFormSchema() su Resource
 
 **Modulo:** multi (Activity, Cms, Job, Lang, Media, Notify, Tenant, User)

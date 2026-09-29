@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "_certificate"
 module: "Xot"
 type: concept

@@ -1,4 +1,7 @@
 ---
+tags: [documentation]
+issues: []
+discussions: []
 title: "Hasxtable Visibility Fix"
 type: concept
 status: deprecated

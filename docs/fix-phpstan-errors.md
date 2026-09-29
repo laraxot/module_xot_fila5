@@ -1,3 +1,14 @@
+---
+title: "fix phpstan errors"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "fix phpstan errors"
+issues: []
+discussions: []
+---
+
 # BMAD FIX - LEARNINGS (Second Brain Updated)
 
 ## ERRORI COMMESSI

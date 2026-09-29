@@ -1,16 +1,14 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 ---
-name: 11-compliance-phpstan
-description: "Modulo: Compliance"
-metadata:
-  type: bmad
+title: "11 compliance phpstan"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "11 compliance phpstan"
+issues: []
+discussions: []
 ---
 
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # BMAD Story 11 — Compliance: 18 errori PHPStan
 
 **Modulo:** `Compliance`

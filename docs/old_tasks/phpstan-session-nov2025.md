@@ -1,4 +1,7 @@
 ---
+tags: [documentation]
+issues: []
+discussions: []
 title: "Phpstan Session Nov"
 type: concept
 status: deprecated

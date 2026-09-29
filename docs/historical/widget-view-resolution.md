@@ -1,3 +1,14 @@
+---
+title: "widget view resolution"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "widget view resolution"
+issues: []
+discussions: []
+---
+
 # Widget View Resolution - Risoluzione Automatica vs Manuale
 
 **Data**: 2025-01-27
@@ -6,6 +17,14 @@
 
 ---
 
+title: "widget view resolution"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "widget view resolution"
+issues: []
+discussions: []
 ## 🔍 Problema Identificato
 
 ### Sintomo

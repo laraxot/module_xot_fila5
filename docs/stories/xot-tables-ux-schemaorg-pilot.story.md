@@ -1,4 +1,8 @@
 ---
+tags: [documentation]
+qmd: "xot tables ux schemaorg pilot.story"
+issues: []
+discussions: []
 title: "Pilota UI/UX getTableColumns() su 6 Table native di Xot (schema.org dove pertinente)"
 type: story
 module: Xot

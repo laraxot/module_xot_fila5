@@ -32,7 +32,6 @@ Configurare le preferenze di laragon come in foto
 
 <img class="block m-auto" src="https://laraxot.github.io/module_xot_fila3/assets/img/laragon-config.png" alt="laragon config" />
 
->>>>>>> .merge_file_rdMy7A
 
 Creare una cartella _bases dentro la cartella www, in questa cartella si andrà a clonare il progetto.
 

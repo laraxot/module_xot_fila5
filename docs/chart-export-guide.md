@@ -1,3 +1,14 @@
+---
+title: "chart export guide"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "chart export guide"
+issues: []
+discussions: []
+---
+
 # Chart Export Guide - PNG e SVG
 
 ## 📋 Panoramica
@@ -11,6 +22,14 @@ Questa guida completa spiega come esportare chart generati con Filament/Chart.js
 
 ---
 
+title: "chart export guide"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "chart export guide"
+issues: []
+discussions: []
 ## 🎯 Approcci di Export
 
 ### 1. Client-Side Export (Browser)

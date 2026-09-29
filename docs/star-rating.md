@@ -1,7 +1,7 @@
-<<<<<<< HEAD
-https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker
-=======
 ---
+qmd: "star rating"
+issues: []
+discussions: []
 title: 'star_rating'
 module: Xot
 type: reference
@@ -18,4 +18,3 @@ updated: 2026-08-24
 <!-- Contenuto migrato da _docs/star_rating.txt -->
 
 https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker
->>>>>>> laraxot/dev

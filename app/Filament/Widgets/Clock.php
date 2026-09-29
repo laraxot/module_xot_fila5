@@ -9,7 +9,8 @@ class Clock extends XotBaseWidget
     public string $start = '';
 
     /** @var view-string */
-    protected string $view = 'xot::filament.widgets.clock';
+    /** @var view-string */
+    protected string $view;
 
     public function begin(): void
     {

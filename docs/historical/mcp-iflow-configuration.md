@@ -1,3 +1,14 @@
+---
+title: "mcp iflow configuration"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "mcp iflow configuration"
+issues: []
+discussions: []
+---
+
 # Configurazione MCP per iFlow
 
 ## Panoramica

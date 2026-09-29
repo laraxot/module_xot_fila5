@@ -1,3 +1,14 @@
+---
+title: "phpstan config immutability"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan config immutability"
+issues: []
+discussions: []
+---
+
 # PHPStan Config Immutability (Global Project Rule)
 
 - File target: `phpstan.neon`

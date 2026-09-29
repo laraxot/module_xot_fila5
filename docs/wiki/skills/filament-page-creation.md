@@ -1,4 +1,7 @@
 ---
+qmd: "filament page creation"
+issues: []
+discussions: []
 title: "Skill: Crea Filament Page (ListRecords/Create/Edit)"
 type: "skill"
 tags: [filament, xotbase, page, listrecords, skill]

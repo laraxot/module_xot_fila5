@@ -1,3 +1,14 @@
+---
+title: "ai init script analysis analisi funzionamento script aiinitsh"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "ai init script analysis analisi funzionamento script aiinitsh"
+issues: []
+discussions: []
+---
+
 # Analisi Funzionamento Script ai_init.sh
 
 ## Situazione Attuale

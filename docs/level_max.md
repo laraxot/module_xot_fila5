@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Rapporto PHPStan Livello max per il modulo Xot"
 module: "Xot"
 type: concept

@@ -1,4 +1,7 @@
 ---
+qmd: "theme psr4 autoload without merge"
+issues: []
+discussions: []
 title: "No theme PSR-4 autoload nel root"
 type: concept
 tags: [composer, theme, autoload, nwidart, merge-plugin, root-skeleton]

@@ -1,3 +1,14 @@
+---
+title: "phpstan xot session"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan xot session"
+issues: []
+discussions: []
+---
+
 # phpstan xot session
 
 ## stato interventi

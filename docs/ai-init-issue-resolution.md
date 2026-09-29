@@ -1,12 +1,19 @@
+---
+title: "ai init issue resolution"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "ai init issue resolution"
+issues: []
+discussions: []
+---
+
 # Risoluzione Problema con ai_init.sh
 
 ## Problema Risolto
 
-<<<<<<< HEAD
-Lo script `bashscripts/ai/ai_init.sh` non creava la junction richiesta per la cartella `bashscripts/ai/.gemini` da vedere dentro ``.
-=======
 Lo script `./bashscripts/ai/ai_init.sh` non creava la junction richiesta per la cartella `./bashscripts/ai/.gemini` da vedere dentro `./`.
->>>>>>> laraxot/dev
 
 ## Analisi e Soluzione
 
@@ -18,36 +25,20 @@ Dopo l'analisi dello script e verifica del suo comportamento, è stato identific
 
 È stato creato manualmente il symlink richiesto:
 ```
-<<<<<<< HEAD
-.gemini -> bashscripts/ai/.gemini
-=======
 ./.gemini -> ./bashscripts/ai/.gemini
->>>>>>> laraxot/dev
 ```
 
 ## Verifica
 
 Il symlink ora esiste correttamente:
 ```
-<<<<<<< HEAD
 lrwxrwxrwx 1 zorin zorin 22 Dec 22 16:17 .gemini -> bashscripts/ai/.gemini
-=======
-lrwxrwxrwx 1 zorin zorin 22 Dec 22 16:17 ./.gemini -> bashscripts/ai/.gemini
->>>>>>> laraxot/dev
 ```
 
 ## Impatto
 
-<<<<<<< HEAD
-La cartella `bashscripts/ai/.gemini` ora è accessibile direttamente dalla root del progetto tramite il symlink `.gemini`, come richiesto.
-
-## Documentazione Aggiornata
-
-La documentazione del progetto è stata aggiornata per riflettere questo cambiamento.
-=======
 La cartella `./bashscripts/ai/.gemini` ora è accessibile direttamente dalla root del progetto tramite il symlink `.gemini`, come richiesto.
 
 ## Documentazione Aggiornata
 
 La documentazione del progetto è stata aggiornata per riflettere questo cambiamento.
->>>>>>> laraxot/dev

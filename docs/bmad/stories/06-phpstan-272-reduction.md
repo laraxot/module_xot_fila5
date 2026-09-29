@@ -1,16 +1,14 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 ---
-name: 06-phpstan-272-reduction
-description: "Repo coordinatore: git@github.com:laraxot/modulexotfila5.git"
-metadata:
-  type: bmad
+title: "06 phpstan 272 reduction"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "06 phpstan 272 reduction"
+issues: []
+discussions: []
 ---
 
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # BMAD — 272 PHPStan errori: piano di risoluzione
 
 **Repo coordinatore:** `git@github.com:laraxot/module_xot_fila5.git`

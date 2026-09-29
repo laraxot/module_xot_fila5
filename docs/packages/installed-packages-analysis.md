@@ -1,3 +1,14 @@
+---
+title: "installed packages analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "installed packages analysis"
+issues: []
+discussions: []
+---
+
 # Analisi Pacchetti Installati - <nome progetto> Fila5 Mono
 
 Documentazione generata il 2026-02-26 basata su `composer show`.

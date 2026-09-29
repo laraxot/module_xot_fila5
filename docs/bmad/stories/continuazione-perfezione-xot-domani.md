@@ -1,4 +1,10 @@
 ---
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "continuazione perfezione xot domani"
+issues: []
+discussions: []
 title: "Xot — Perfezione Esportazione e Architettura"
 type: module-fix
 scope: Xot

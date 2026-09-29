@@ -1,3 +1,14 @@
+---
+title: "changelog"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "changelog"
+issues: []
+discussions: []
+---
+
 # Changelog - Modulo Xot
 
 Tutte le modifiche significative al modulo Xot saranno documentate in questo file.
@@ -31,6 +42,14 @@ Tutte le modifiche significative al modulo Xot saranno documentate in questo fil
 
 ---
 
+title: "changelog"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "changelog"
+issues: []
+discussions: []
 ## Convenzioni Changelog
 
 - Date in formato `[YYYY-MM-DD]`

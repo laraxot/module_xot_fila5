@@ -1,3 +1,14 @@
+---
+title: "phpstan level 10 complete"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan level 10 complete"
+issues: []
+discussions: []
+---
+
 # PHPStan Level 10 - Completamento Totale ✅
 
 **Data**: 9 Gennaio 2026  
@@ -5,6 +16,14 @@
 
 ---
 
+title: "phpstan level 10 complete"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan level 10 complete"
+issues: []
+discussions: []
 ## 🎉 Risultato Finale
 
 ```

@@ -1,4 +1,14 @@
-<<<<<<< HEAD
+---
+title: "phpstan session"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan session"
+issues: []
+discussions: []
+---
+
 # PHPStan Correzioni - Sessione Novembre 2025
 
 ## 🎯 Obiettivo: 0 Errori PHPStan Livello 10
@@ -126,10 +136,21 @@ Se un metodo è garantito da interfaccia/contratto, NON serve:
 
 ---
 
+title: "phpstan session"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan session"
+issues: []
+discussions: []
 **Status**: In Progress
 **Target**: 0 errori PHPStan
 **Confidenza**: Massima (Supermucca Mode)
-=======
+
+
+---
+
 # Sessione PHPStan - 2026-01-05
 
 ## Panoramica
@@ -317,4 +338,3 @@ Questa correzione è l'**unico errore** rilevato da PHPStan livello 10 su 1028 f
 **Data**: 2026-01-05
 **Versione Modulo**: Xot (Laraxot Framework Base)
 **PHPStan**: v2.1+ (Level 10)
->>>>>>> laraxot/dev

@@ -1,22 +1,33 @@
-<<<<<<< HEAD
-# PHPStan Errori Modulo Xot - [DATE]
+---
+title: "phpstan errors"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan errors"
+issues: []
+discussions: []
+---
 
-## Analisi Completa
-
-**Data Analisi**: [DATE]
-=======
 # PHPStan Errori Modulo Xot - 2025-01-22
 
 ## Analisi Completa
 
 **Data Analisi**: 2025-01-22
->>>>>>> laraxot/dev
 **PHPStan Level**: 10
 **Modulo**: Xot (Base Framework)
 **Errori Trovati**: 7
 
 ---
 
+title: "phpstan errors"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan errors"
+issues: []
+discussions: []
 ## Errori Identificati
 
 ### 1. ParsePrintPageStringAction.php - Offset Access e Type Mismatch
@@ -165,11 +176,7 @@ Tutti gli errori seguono lo stesso pattern:
 
 ## Stato Correzioni
 
-<<<<<<< HEAD
-✅ **TUTTI GLI ERRORI CORRETTI** - [DATE]
-=======
 ✅ **TUTTI GLI ERRORI CORRETTI** - 2025-01-22
->>>>>>> laraxot/dev
 
 - ✅ ParsePrintPageStringAction.php - Aggiunti controlli esistenza array
 - ✅ NormalizeDriverNameAction.php - Aggiunto Assert::string() per type narrowing

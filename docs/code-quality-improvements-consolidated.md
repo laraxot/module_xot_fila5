@@ -1,3 +1,14 @@
+---
+title: "code quality improvements consolidated"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "code quality improvements consolidated"
+issues: []
+discussions: []
+---
+
 # Code Quality Improvements - Documento Consolidato
 
 **Data creazione**: 2025-01-22
@@ -6,6 +17,14 @@
 
 ---
 
+title: "code quality improvements consolidated"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "code quality improvements consolidated"
+issues: []
+discussions: []
 ## 📊 Analisi Stato Attuale
 
 ### File con Nomi Non Conformi
@@ -144,11 +163,9 @@ describe('Event Management', function () {
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Grid;
 
-<<<<<<< HEAD
 public function getFormSchema(): array
-=======
+---
 public function getFormSchema(): array
->>>>>>> laraxot/dev
 {
     return [
         'details' => Section::make('Details')

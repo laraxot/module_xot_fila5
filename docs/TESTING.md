@@ -1,4 +1,8 @@
 ---
+updated: 2026-09-26
+qmd: "TESTING"
+issues: []
+discussions: []
 title: "Xot Module Testing"
 type: guide
 tags: [xot, testing, pest]

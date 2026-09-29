@@ -1,3 +1,14 @@
+---
+title: "navigation label trait explained"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "navigation label trait explained"
+issues: []
+discussions: []
+---
+
 # NavigationLabelTrait - Sistema di Traduzione Automatica Navigation
 
 ## Overview
@@ -324,5 +335,13 @@ Ordinare risorse per frequenza uso:
 
 ---
 
+title: "navigation label trait explained"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "navigation label trait explained"
+issues: []
+discussions: []
 **Ultimo aggiornamento**: 27 Ottobre 2025
 **Maintainer**: Team PTVX

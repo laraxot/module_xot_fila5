@@ -47,16 +47,22 @@ class ExportXlsxAction extends XotBaseExportAction
             // (solo heading + "Esporta"): click e parte.
             ->modal(false)
             ->label('')
-            ->icon('heroicon-o-document-arrow-down')
+            ->iconButton()
+            ->color('success')
+            ->icon('xot-files.xlsx')
             ->tooltip(function (): string {
                 $livewire = $this->getLivewire();
                 if (! $livewire instanceof ListRecords) {
-                    return '';
+                    return (string) __('xot::export_xlsx.tooltip');
                 }
                 $key = app(GetTransKeyAction::class)->execute($livewire::class).'.actions.export_xlsx.tooltip';
                 $translated = __($key);
 
-                return \is_string($translated) && $translated !== $key ? $translated : '';
+                if (\is_string($translated) && $translated !== $key && $translated !== 'export_xlsx') {
+                    return $translated;
+                }
+
+                return (string) __('xot::export_xlsx.tooltip');
             });
     }
 }

@@ -1,3 +1,14 @@
+---
+title: "index"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "index"
+issues: []
+discussions: []
+---
+
 # Xot Module Wiki Index
 
 > **Module**: Xot
@@ -6,6 +17,14 @@
 
 ---
 
+title: "index"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "index"
+issues: []
+discussions: []
 ## Concepts
 
 _No concept pages created yet_

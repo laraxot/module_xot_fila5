@@ -1,3 +1,14 @@
+---
+title: "xot services support to actions"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xot services support to actions"
+issues: []
+discussions: []
+---
+
 # Xot Services/Support → Actions migration
 
 Deleted dead `app/Services/` and `app/Support/` files that had zero callers or were already replaced by Actions/Adapters.

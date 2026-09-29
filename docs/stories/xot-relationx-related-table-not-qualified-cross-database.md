@@ -1,4 +1,12 @@
 ---
+title: "xot relationx related table not qualified cross database"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xot relationx related table not qualified cross database"
+issues: []
+discussions: []
 scope: module:Xot
 github_id: module_xot_fila5#84
 ---

@@ -1,3 +1,14 @@
+---
+title: "magic properties summary "
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "magic properties summary "
+issues: []
+discussions: []
+---
+
 # Magic Properties Cleanup Report - 2025-11-17
 
 ## Summary
@@ -17,14 +28,6 @@ Fixed all instances of `property_exists()` usage in Eloquent models across the c
 - **FilamentOptimizationServiceProvider.php:67,76-79** - Fixed multiple `property_exists($query, 'time')` → `isset($query->time)`
 
 ### ✅ healthcare_app Module
-### ✅ ExternalProject Module
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-### ✅ Quaeris Module
-=======
->>>>>>> 7f6cf6be (.)
->>>>>>> laraxot/dev
 - **ViewQuestionChartVisualizationWidget.php:185** - Fixed `property_exists($this, 'livewire')` → `isset($this->livewire)`
 
 ### ✅ Chart Module
@@ -69,12 +72,4 @@ Files generally have good scores with minor style issues:
 
 **✅ COMPLETED**: All `property_exists()` usage in Eloquent models has been eliminated and replaced with proper magic property checks.
 
-<<<<<<< HEAD
 **Next Steps**: Continue monitoring code quality tools and update documentation as needed.
-=======
-<<<<<<< HEAD
-**Next Steps**: Continue monitoring code quality tools and update documentation as needed.
-=======
-**Next Steps**: Continue monitoring code quality tools and update documentation as needed.
->>>>>>> 7f6cf6be (.)
->>>>>>> laraxot/dev

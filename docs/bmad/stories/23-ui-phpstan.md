@@ -1,16 +1,14 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 ---
-name: 23-ui-phpstan
-description: "Modulo: UI"
-metadata:
-  type: bmad
+title: "23 ui phpstan"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "23 ui phpstan"
+issues: []
+discussions: []
 ---
 
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # BMAD Story 23 — UI: 6 errori PHPStan (test)
 
 **Modulo:** `UI`

@@ -1,3 +1,14 @@
+---
+title: "continuous integration tools continuousintegrationtools"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "continuous integration tools continuousintegrationtools"
+issues: []
+discussions: []
+---
+
 # _continuous_integration_tools
 
 <!-- Contenuto migrato da _docs/_continuous_integration_tools.txt -->
@@ -33,6 +44,14 @@ https://jakzal.github.io/toolbox/
 
 
 ---
+title: "continuous integration tools continuousintegrationtools"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "continuous integration tools continuousintegrationtools"
+issues: []
+discussions: []
 ## Variant 2
 
 # continuous_integration_tools

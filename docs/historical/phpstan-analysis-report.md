@@ -1,4 +1,12 @@
 ---
+title: "phpstan analysis report"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan analysis report"
+issues: []
+discussions: []
 created_at: '2025-12-18'
 ---
 

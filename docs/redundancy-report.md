@@ -1,3 +1,14 @@
+---
+title: "redundancy report"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "redundancy report"
+issues: []
+discussions: []
+---
+
 # Redundancy Report — Modulo Xot
 
 > Generato: 2026-05-21 | Analisi automatica deep-scan

@@ -1,4 +1,7 @@
 ---
+qmd: "vendor contract patterns"
+issues: []
+discussions: []
 title: "Vendor Contract Patterns"
 type: reference
 tags: [wiki, no-frontmatter-fix]

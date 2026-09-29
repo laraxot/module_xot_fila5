@@ -1,4 +1,8 @@
 ---
+tags: [documentation]
+qmd: "modules git synchronization.story"
+issues: []
+discussions: []
 title: "Sincronizzazione Git moduli separati"
 type: story
 module: Xot

@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Convenzione namespace Actions\\Arr"
 module: "xot"
 type: reference

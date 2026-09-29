@@ -1,3 +1,14 @@
+---
+title: "missing component resolution"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "missing component resolution"
+issues: []
+discussions: []
+---
+
 # View Caching Resolution - Missing Component Reference
 
 ## Issue

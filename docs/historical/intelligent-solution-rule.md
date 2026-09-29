@@ -1,3 +1,14 @@
+---
+title: "intelligent solution rule"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "intelligent solution rule"
+issues: []
+discussions: []
+---
+
 # Regola Critica: Soluzione Intelligente e Professionale
 
 **Data**: 2025-01-22
@@ -6,6 +17,14 @@
 
 ---
 
+title: "intelligent solution rule"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "intelligent solution rule"
+issues: []
+discussions: []
 ## 🎯 La Regola Fondamentale
 
 **PRIMA DI OGNI AZIONE, SEGUIRE SEMPRE QUESTO PROCESSO:**

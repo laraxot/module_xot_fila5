@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "artisan serve — Redis connection refused (WSL)"
 module: Xot
 type: troubleshooting

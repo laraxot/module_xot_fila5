@@ -1,4 +1,7 @@
 ---
+qmd: "semantic methods"
+issues: []
+discussions: []
 title: "Semantic Methods"
 type: reference
 tags: [wiki, no-frontmatter-fix]

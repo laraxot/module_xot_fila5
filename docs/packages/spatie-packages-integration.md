@@ -1,3 +1,14 @@
+---
+title: "spatie packages integration"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "spatie packages integration"
+issues: []
+discussions: []
+---
+
 # Integrazione Pacchetti Spatie - Laraxot PTVX
 
 L'architettura Laraxot si basa pesantemente sull'ecosistema Spatie. Di seguito le linee guida per l'uso dei pacchetti installati.

@@ -1,3 +1,14 @@
+---
+title: "auto routes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "auto routes"
+issues: []
+discussions: []
+---
+
 /it/tests
 va a prendere il modello "home" e vede se esiste la relazione "tests" se esiste usa quelle, altrimenti
 va a prendere il "singolar" di tests e va nel solito file xra.php

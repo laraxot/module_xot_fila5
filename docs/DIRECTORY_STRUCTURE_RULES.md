@@ -1,3 +1,14 @@
+---
+title: "DIRECTORY STRUCTURE RULES"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "DIRECTORY STRUCTURE RULES"
+issues: []
+discussions: []
+---
+
 # Directory Structure Rules - No Duplications (DRY)
 
 ## Regola Fondamentale

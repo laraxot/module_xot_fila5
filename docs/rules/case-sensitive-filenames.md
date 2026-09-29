@@ -1,3 +1,14 @@
+---
+title: "case sensitive filenames"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "case sensitive filenames"
+issues: []
+discussions: []
+---
+
 # 📋 **Regola: Nomi File Case-Sensitive**
 
 **Data**: 11 Novembre 2025
@@ -185,6 +196,14 @@ Aggiungere al workflow GitHub Actions:
 
 ---
 
+title: "case sensitive filenames"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "case sensitive filenames"
+issues: []
+discussions: []
 **Ultimo aggiornamento**: 11 Novembre 2025
 **Modulo**: Xot
 **Categoria**: Regole di Codice

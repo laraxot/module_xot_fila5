@@ -1,3 +1,14 @@
+---
+title: "trans string"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "trans string"
+issues: []
+discussions: []
+---
+
 # trans_string() - Helper Translation Type-Safe
 
 ## Scopo (Purpose)
@@ -221,6 +232,14 @@ assert($result === null || is_string($result));  // ✅ Never array
 
 ---
 
+title: "trans string"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "trans string"
+issues: []
+discussions: []
 **Data creazione**: 2025-12-12
 **Status**: ✅ Implementato e pronto all'uso
 **Priorità**: CRITICA - Risolve 374 errori PHPStan (24% del totale)

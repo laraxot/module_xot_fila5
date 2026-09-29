@@ -1,4 +1,10 @@
 ---
+type: note
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "rector"
+issues: []
+discussions: []
 title: pest rector — refactoring meccanico dei test
 description: Installazione, configurazione nwidart e uso di pestphp/pest-plugin-rector + rector/rector sui test dei moduli Laraxot.
 document_type: guide

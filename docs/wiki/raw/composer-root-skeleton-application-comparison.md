@@ -1,4 +1,7 @@
 ---
+qmd: "composer root skeleton application comparison"
+issues: []
+discussions: []
 title: "Confronto composer root Application vs Forecast"
 type: raw-note
 module: Xot

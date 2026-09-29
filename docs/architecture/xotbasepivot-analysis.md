@@ -1,3 +1,14 @@
+---
+title: "xotbasepivot analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xotbasepivot analysis"
+issues: []
+discussions: []
+---
+
 # XotBasePivot - Analisi Architettuale Completa
 
 ## 🎯 Executive Summary
@@ -14,6 +25,14 @@
 
 ---
 
+title: "xotbasepivot analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xotbasepivot analysis"
+issues: []
+discussions: []
 ## 📊 Analisi Situazione Attuale
 
 ### Stato Corrente: CODICE DUPLICATO

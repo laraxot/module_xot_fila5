@@ -1,12 +1,14 @@
-<<<<<<< HEAD
 ---
-module: theme
-topic: duplicate-methods
-canonical: ../../../Themes/docs/shared-components/duplicate-methods-analysis.md
+title: "duplicate methods"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "duplicate methods"
+issues: []
+discussions: []
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/duplicate-methods-analysis.md
-=======
 # Metodi duplicati — Xot
 
 Analisi sintetica dei metodi PHP con lo stesso nome all’interno di questo ambito.
@@ -49,4 +51,3 @@ Analisi sintetica dei metodi PHP con lo stesso nome all’interno di questo ambi
 - Per i metodi di tipo accessor/mutator, la duplicazione è spesso legata a pattern Eloquent ricorrenti.
 
 > Documento generato il 2026-06-15 da Claude Code.
->>>>>>> laraxot/dev

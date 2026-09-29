@@ -1,4 +1,7 @@
 ---
+qmd: "xot service provider feature reimplementation"
+issues: []
+discussions: []
 title: "Xot Service Provider Feature Reimplementation"
 type: reference
 tags: [wiki, no-frontmatter-fix]

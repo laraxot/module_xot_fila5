@@ -1,3 +1,14 @@
+---
+title: "module quality analysis summary"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "module quality analysis summary"
+issues: []
+discussions: []
+---
+
 # Module Quality Analysis Summary
 
 **Date**: 2025-12-18

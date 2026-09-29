@@ -189,7 +189,6 @@ create Folders :
  git submodule add https://github.com/laraxot/module_notify_fila3.git Notify
  git submodule add https://github.com/laraxot/module_ui_fila3.git UI
 
->>>>>>> .merge_file_qdw5qa
 ~~~
 
 

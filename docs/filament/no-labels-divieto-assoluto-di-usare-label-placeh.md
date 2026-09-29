@@ -1,3 +1,14 @@
+---
+title: "no labels divieto assoluto di usare label placeh"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "no labels divieto assoluto di usare label placeh"
+issues: []
+discussions: []
+---
+
 # DIVIETO ASSOLUTO DI USARE ->label(), ->placeholder() e ->helperText()
 
 ## Regola Fondamentale Inviolabile

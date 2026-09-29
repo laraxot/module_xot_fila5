@@ -1,4 +1,8 @@
 ---
+tags: [documentation]
+qmd: "get components action stale cache hides new classes.story"
+issues: []
+discussions: []
 title: "GetComponentsAction: la cache _components.json, committata in git, nasconde ogni comando/componente aggiunto dopo la sua generazione"
 type: story
 module: Xot

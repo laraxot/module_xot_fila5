@@ -1,3 +1,14 @@
+---
+title: "mcpatabase tools"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "mcpatabase tools"
+issues: []
+discussions: []
+---
+
 # MCP (Management Control Panel) Tools for Database Analysis
 
 ## Overview

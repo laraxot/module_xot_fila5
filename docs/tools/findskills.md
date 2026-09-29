@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "FindSkills — directory 94k+ skill AI open-source"
 module: "xot"
 type: reference
