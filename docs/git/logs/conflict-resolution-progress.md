@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Stato Avanzamento Risoluzione Conflitti Git"
 module: "Xot"
 type: concept

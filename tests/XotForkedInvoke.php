@@ -11,7 +11,10 @@ use ReflectionClass;
 use ReflectionMethod;
 use ReflectionNamedType;
 use SplFileInfo;
+<<<<<<< .merge_file_NIGjbO
 use Webmozart\Assert\Assert as WebmozartAssert;
+=======
+>>>>>>> .merge_file_SoXDid
 
 use function Safe\posix_kill;
 use function Safe\preg_match;
@@ -230,9 +233,13 @@ final class XotForkedInvoke
         while ($waited < ($timeoutSeconds + 1) * 10) {
             $res = pcntl_waitpid($pid, $status, WNOHANG);
             if ($res === -1 || $res > 0) {
+<<<<<<< .merge_file_NIGjbO
                 WebmozartAssert::integer($status);
 
                 return $res > 0 && pcntl_wifexited($status) && pcntl_wexitstatus($status) === 0;
+=======
+                return $res > 0 && is_int($status) && pcntl_wifexited($status) && pcntl_wexitstatus($status) === 0;
+>>>>>>> .merge_file_SoXDid
             }
             usleep(100_000);
             $waited++;

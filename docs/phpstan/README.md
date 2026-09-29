@@ -1,14 +1,3 @@
----
-title: "README"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "README"
-issues: []
-discussions: []
----
-
 # Analisi PHPStan per Moduli Laravel
 
 Questa documentazione spiega come utilizzare gli script forniti per analizzare i moduli Laravel con PHPStan.

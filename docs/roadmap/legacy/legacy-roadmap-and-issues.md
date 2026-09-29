@@ -1,14 +1,3 @@
----
-title: "legacy roadmap and issues"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "legacy roadmap and issues"
-issues: []
-discussions: []
----
-
 # Xot Module - Roadmap, Issues & Optimization
 
 **Modulo**: Xot (Core Framework Base)
@@ -18,14 +7,6 @@ discussions: []
 
 ---
 
-title: "legacy roadmap and issues"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "legacy roadmap and issues"
-issues: []
-discussions: []
 ## 📊 STATO ATTUALE
 
 ### Completezza Funzionale: 95%
@@ -223,7 +204,7 @@ catch (CannotRegisterIconSet $e) {
 ---
 
 ### 2. Helper Functions - No Caching
-**File**: `Helpers/Helper.php`
+**File**: `helpers/Helper.php`
 
 **Problema**: Chiamate ripetute senza caching
 

@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 return [
     'title' => 'نصب کننده لاراول',
     'next' => 'قدم بعدی',

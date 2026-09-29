@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 return [
     'password' => 'Le password devono essere di almeno 6 caratteri e devono coincidere.',
     'reset' => 'La password è stata reimpostata!',
