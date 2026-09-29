@@ -1,28 +1,11 @@
 ---
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "table setter deprecation handling.story"
-issues: []
-discussions: []
 id: story-table-setter-deprecation-handling
 title: "Handling Deprecated Table Setter Methods in XotBaseManageRelatedRecords"
 descript_type: bmad
 scope: module:Xot
-status: blocked
+status: ready-for-dev
 github: {issues: "https://github.com/laraxot/module_xot_fila5/issues/115", discussions: "https://github.com/laraxot/module_xot_fila5/discussions/117"}
 ---
-
-> 🔴 **Drift doc↔codice rilevato il 2026-09-26** ([STORY-492](../../../../../docs/stories/STORY-492-gettablecolumns-deprecation-guidance.md)):
-> la decisione qui sotto è quella giusta, ma **non è mai stata implementata** —
-> `grep -n "phpstan-ignore" app/Filament/Resources/Pages/XotBaseManageRelatedRecords.php`
-> non restituisce nulla. Status `blocked` (non `ready-for-dev`) perché **non si può nemmeno
-> misurare**: `phpstan analyse Modules` esce `1` per includes duplicati di
-> `extension-installer`, vedi
-> [`03-quality-gates-workflow.md`](../../../../../docs/wiki/memories/03-quality-gates-workflow.md).
-> Prima il neon, poi questo AC. Guida canonica del metodo:
-> [`filament-gettablecolumns-deprecation.md`](../../../../../docs/wiki/memories/filament-gettablecolumns-deprecation.md).
 
 # Handling Deprecated Table Setter Methods
 

@@ -1,14 +1,3 @@
----
-title: "prompts improvements"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "prompts improvements"
-issues: []
-discussions: []
----
-
 # Miglioramenti Prompt - Laraxot Framework
 
 **Data**: 2026-01-12  
@@ -16,14 +5,6 @@ discussions: []
 
 ---
 
-title: "prompts improvements"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "prompts improvements"
-issues: []
-discussions: []
 ## Panoramica
 
 Sono stati migliorati tutti i prompt principali in `bashscripts/tools/prompts/` seguendo le best practices del progetto e le regole stabilite in `prompt-rules.md`.

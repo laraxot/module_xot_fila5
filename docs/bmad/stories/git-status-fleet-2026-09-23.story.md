@@ -1,9 +1,4 @@
 ---
-type: note
-tags: [documentation]
-updated: 2026-09-26
-issues: []
-discussions: []
 id: "Xot/git-status-fleet-2026-09-23"
 title: "git status fleet 2026-09-23 — rebase stuck, corruzione oggetti, dirty"
 status: done
@@ -20,7 +15,7 @@ qmd: "git status fleet modules rebase gitattributes corruption Performance Ptv P
 
 # Story: git status + fix per ogni modulo (2026-09-23)
 
-Status: done — 18/18 push `laraxot HEAD:dev` OK (vedi Addendum 2)
+Status: in-progress
 
 ## Contesto
 

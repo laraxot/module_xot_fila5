@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
 return [
     'backend' => [
         'none' => 'ไม่มีประวัติล่าสุด',

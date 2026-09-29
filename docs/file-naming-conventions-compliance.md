@@ -1,14 +1,3 @@
----
-title: "file naming conventions compliance"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "file naming conventions compliance"
-issues: []
-discussions: []
----
-
 # File Naming Conventions Compliance - 2026-01-09
 
 **Data**: 2026-01-09  
@@ -16,14 +5,6 @@ discussions: []
 
 ---
 
-title: "file naming conventions compliance"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "file naming conventions compliance"
-issues: []
-discussions: []
 ## 📋 Convenzioni Applicate
 
 ### Regole

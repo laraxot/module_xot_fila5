@@ -1,7 +1,4 @@
 ---
-qmd: "image"
-issues: []
-discussions: []
 title: "Image"
 type: reference
 tags: [wiki, no-frontmatter-fix]

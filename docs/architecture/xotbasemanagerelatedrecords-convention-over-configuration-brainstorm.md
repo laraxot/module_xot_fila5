@@ -1,7 +1,4 @@
 ---
-qmd: "xotbasemanagerelatedrecords convention over configuration brainstorm"
-issues: []
-discussions: []
 title: "Convenzione e delega: due decisioni separate"
 type: architecture
 status: discussion

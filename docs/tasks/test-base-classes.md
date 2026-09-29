@@ -1,14 +1,3 @@
----
-title: "test base classes"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "test base classes"
-issues: []
-discussions: []
----
-
 # Task: Test Base Classes
 
 **Modulo**: Xot  

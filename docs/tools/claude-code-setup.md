@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Claude Code Setup Plugin — analisi e raccomandazione automazioni"
 module: "xot"
 type: reference

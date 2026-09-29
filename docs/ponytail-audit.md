@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Ponytail-audit 2026-07-02: Xot module findings"
 module: "Xot"
 type: concept

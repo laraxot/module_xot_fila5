@@ -1,7 +1,4 @@
 ---
-qmd: "xot cleanup docs"
-issues: []
-discussions: []
 title: "Xot Cleanup Docs"
 type: reference
 tags: [wiki, no-frontmatter-fix]

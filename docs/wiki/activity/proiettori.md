@@ -1,7 +1,4 @@
 ---
-qmd: "proiettori"
-issues: []
-discussions: []
 title: "Proiettori"
 type: reference
 tags: [wiki, no-frontmatter-fix]

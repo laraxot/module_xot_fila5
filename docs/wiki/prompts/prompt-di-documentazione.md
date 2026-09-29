@@ -1,7 +1,4 @@
 ---
-qmd: "prompt di documentazione"
-issues: []
-discussions: []
 title: "Prompt Di Documentazione"
 type: reference
 tags: [wiki, no-frontmatter-fix]

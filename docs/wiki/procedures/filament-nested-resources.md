@@ -1,11 +1,4 @@
 ---
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament nested resources"
-issues: []
-discussions: []
 title: Filament 5.x Nested Resources Complete Guide
 description: Hierarchical relationships between resources with automatic routing and breadcrumb generation in Filament 5
 category: procedures

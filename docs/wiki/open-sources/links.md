@@ -1,7 +1,4 @@
 ---
-qmd: "links"
-issues: []
-discussions: []
 title: "Links"
 type: reference
 tags: [wiki, no-frontmatter-fix]

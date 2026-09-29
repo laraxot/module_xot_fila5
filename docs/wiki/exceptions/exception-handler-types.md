@@ -1,7 +1,4 @@
 ---
-qmd: "exception handler types"
-issues: []
-discussions: []
 title: "Exception Handler Types"
 type: reference
 tags: [wiki, no-frontmatter-fix]

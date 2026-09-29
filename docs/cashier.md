@@ -1,14 +1,3 @@
----
-title: "cashier"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "cashier"
-issues: []
-discussions: []
----
-
 Create a Laravel Marketplace with Stripe using Cashier and this package
 https://hbakouane.medium.com/create-a-laravel-marketplace-with-stripe-using-cashier-and-this-package-9bbf56078215
 

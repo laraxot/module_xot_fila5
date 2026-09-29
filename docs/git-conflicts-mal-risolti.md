@@ -1,14 +1,3 @@
----
-title: "git conflicts mal risolti"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "git conflicts mal risolti"
-issues: []
-discussions: []
----
-
 # Conflitti Git Mal Risolti - Pattern e Fix
 
 ## 🎯 Filosofia del Problema
@@ -130,14 +119,6 @@ I conflitti Git mal risolti nascono quando:
 
 ---
 
-title: "git conflicts mal risolti"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "git conflicts mal risolti"
-issues: []
-discussions: []
 ## 📚 Pattern Rilevati
 
 ### Pattern 1: Merge "Accept Both Changes" su Import

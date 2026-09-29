@@ -1,14 +1,3 @@
----
-title: "improvements sumy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "improvements sumy"
-issues: []
-discussions: []
----
-
 # Riepilogo Miglioramenti e Analisi - [DATE]
 
 **Metodologia**: Super Mucca  
@@ -16,14 +5,6 @@ discussions: []
 
 ---
 
-title: "improvements sumy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "improvements sumy"
-issues: []
-discussions: []
 ## ✅ Lavori Completati
 
 ### 1. Studio Best Practices

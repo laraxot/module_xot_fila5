@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Static Analysis Tools"
 module: "Xot"
 type: concept

@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "HasRelationshipModelClass trait"
 type: concept
 tags: [xot, filament, phpstan, hasxottable, relation-manager]

@@ -1,14 +1,3 @@
----
-title: "README"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "README"
-issues: []
-discussions: []
----
-
 # Xot Module - Product Roadmap
 
 ## Overview
@@ -132,12 +121,4 @@ The Xot module serves as the core engine of the Laraxot framework, providing 50+
 
 ---
 
-title: "README"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "README"
-issues: []
-discussions: []
 *This roadmap will be reviewed and updated quarterly based on feedback and changing requirements.*

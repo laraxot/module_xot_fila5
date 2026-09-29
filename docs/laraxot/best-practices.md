@@ -1,14 +1,3 @@
----
-title: "best practices"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "best practices"
-issues: []
-discussions: []
----
-
 # Laraxot Best Practices
 
 ## Form Schema Best Practices
@@ -26,17 +15,11 @@ discussions: []
 
 ### Implementazione
 ```php
+<<<<<<< HEAD
 public function getFormSchema(): array
----
-title: "best practices"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "best practices"
-issues: []
-discussions: []
+=======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
 {
     return [
         // Campi modificabili dall'utente
@@ -97,9 +80,11 @@ class MyResource extends XotBaseResource
 {
     protected static ?string $model = MyModel::class;
 
+<<<<<<< HEAD
     public function getFormSchema(): array
----
+=======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             TextInput::make('name')->required(),

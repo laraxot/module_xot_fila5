@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "continuous_integration_tools"
 module: "Xot"
 type: concept

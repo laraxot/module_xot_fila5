@@ -1,7 +1,4 @@
 ---
-qmd: "module service"
-issues: []
-discussions: []
 title: "Module Service"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,14 +1,3 @@
----
-title: "module lang path policy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "module lang path policy"
-issues: []
-discussions: []
----
-
 # Module Lang Path Policy
 
 ## Rule

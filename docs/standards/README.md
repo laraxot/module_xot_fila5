@@ -1,14 +1,3 @@
----
-title: "README"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "README"
-issues: []
-discussions: []
----
-
 # Standard di Codice
 
 Questa cartella contiene gli standard di codice e le convenzioni utilizzate nel progetto.

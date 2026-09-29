@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "UI UX Pro Max — design intelligence skill"
 module: "xot"
 type: reference

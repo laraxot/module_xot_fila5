@@ -1,14 +1,3 @@
----
-title: "code quality audit code quality audit completo 22 gennaio"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "code quality audit code quality audit completo 22 gennaio"
-issues: []
-discussions: []
----
-
 # Code Quality Audit Completo - 22 Gennaio 2025
 
 **Data**: 2025-01-22

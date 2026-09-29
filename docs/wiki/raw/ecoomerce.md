@@ -1,7 +1,4 @@
 ---
-qmd: "ecoomerce"
-issues: []
-discussions: []
 title: "Ecoomerce"
 type: reference
 tags: [wiki, no-frontmatter-fix]

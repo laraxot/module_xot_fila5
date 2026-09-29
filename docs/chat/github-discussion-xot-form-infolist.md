@@ -1,14 +1,3 @@
----
-title: "github discussion xot form infolist"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "github discussion xot form infolist"
-issues: []
-discussions: []
----
-
 # Discussion: Unifying Form/Infolist base with traits HasXotForm / HasXotInfolist
 
 Repo: laraxot/module_xot_fila5

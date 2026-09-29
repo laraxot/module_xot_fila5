@@ -1,9 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 title: "Stato Avanzamento Risoluzione Conflitti Git"
 module: "Xot"
 type: concept

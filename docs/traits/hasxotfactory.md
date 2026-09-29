@@ -1,14 +1,3 @@
----
-title: "hasxotfactory"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "hasxotfactory"
-issues: []
-discussions: []
----
-
 # HasXotFactory Trait
 
 ## Panoramica
@@ -397,14 +386,6 @@ protected static function newFactory(): Factory
 
 ---
 
-title: "hasxotfactory"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "hasxotfactory"
-issues: []
-discussions: []
 **Autore**: Laraxot Core Team
 **Ultima modifica**: Giugno 2025
 **Stato**: ✅ Produzione

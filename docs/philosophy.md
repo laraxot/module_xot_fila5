@@ -1,14 +1,3 @@
----
-title: "philosophy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "philosophy"
-issues: []
-discussions: []
----
-
 # Xot Module: Philosophy, Purpose, and Design Principles
 
 **Date:** December 23, 2025
@@ -110,14 +99,6 @@ All Table classes extending XotBaseResourceTable:
 
 ---
 
-title: "philosophy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "philosophy"
-issues: []
-discussions: []
 ## 🤖 Integration with Model Context Protocol (MCP)
 
 The `Xot` module, being the architectural foundation, naturally serves as the central point for integrating and leveraging Model Context Protocol (MCP) servers. MCPs deeply align with `Xot`'s core philosophy of modularity, developer experience, and structured development.

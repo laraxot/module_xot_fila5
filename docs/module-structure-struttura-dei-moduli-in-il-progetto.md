@@ -1,14 +1,3 @@
----
-title: "module structure struttura dei moduli in il progetto"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "module structure struttura dei moduli in il progetto"
-issues: []
-discussions: []
----
-
 # Struttura dei Moduli in il progetto
 
 ## Panoramica

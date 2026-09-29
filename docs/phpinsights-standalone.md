@@ -1,14 +1,3 @@
----
-title: "phpinsights standalone"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpinsights standalone"
-issues: []
-discussions: []
----
-
 # PHPInsights — Installazione Standalone
 
 **Versione**: v2.12.0+ (isolata in `tools/phpinsights/`)
@@ -16,14 +5,6 @@ discussions: []
 
 ---
 
-title: "phpinsights standalone"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpinsights standalone"
-issues: []
-discussions: []
 ## Perché Standalone?
 
 PHPInsights ha molte dipendenze (PHP_CodeSniffer, `slevomat/coding-standard`, `friendsofphp/php-cs-fixer`, ecc.) che possono entrare in **conflitto** con le dipendenze del progetto principale.

@@ -1,14 +1,3 @@
----
-title: "theme vestito"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "theme vestito"
-issues: []
-discussions: []
----
-
 # Theme System: The "Vestito" (Clothing) Philosophy
 
 ## Core Concept: Theme as "Vestito"

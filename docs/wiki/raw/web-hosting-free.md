@@ -1,7 +1,4 @@
 ---
-qmd: "web hosting free"
-issues: []
-discussions: []
 title: "Web Hosting Free"
 type: reference
 tags: [wiki, no-frontmatter-fix]

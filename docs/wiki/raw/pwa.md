@@ -1,7 +1,4 @@
 ---
-qmd: "pwa"
-issues: []
-discussions: []
 title: "Pwa"
 type: reference
 tags: [wiki, no-frontmatter-fix]

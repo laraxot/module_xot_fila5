@@ -1,14 +1,3 @@
----
-title: "dry kiss analysis"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "dry kiss analysis"
-issues: []
-discussions: []
----
-
 # Analisi DRY e KISS - Architettura Modelli
 
 **Data**: 2025-10-15
@@ -375,14 +364,6 @@ Manutenibilità: +40%
 
 ---
 
-title: "dry kiss analysis"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "dry kiss analysis"
-issues: []
-discussions: []
 **Status**: 🟡 Analisi completata - In attesa di implementazione
 **Next**: Implementare Soluzione 1 e 2 (Priorità ALTA)
 # Analisi DRY e KISS - Architettura Modelli

@@ -1,10 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
-qmd: "source"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 title: "Source Title"
 type: source
 sources: ["raw/articles/source-filename.md"]

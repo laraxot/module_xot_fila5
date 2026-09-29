@@ -1,14 +1,3 @@
----
-title: "simplechartwidget quality"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "simplechartwidget quality"
-issues: []
-discussions: []
----
-
 # SimpleChartWidget - Analisi Qualità del Codice e Best Practices
 
 ## Panoramica

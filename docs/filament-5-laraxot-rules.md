@@ -1,14 +1,3 @@
----
-title: "filament 5 laraxot rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament 5 laraxot rules"
-issues: []
-discussions: []
----
-
 # Filament 5 + Laraxot Rules - Xot Module
 
 ## 🎯 Obiettivo
@@ -28,14 +17,6 @@ Per una guida completa e dettagliata su tutti i breaking changes e le procedure 
 
 ---
 
-title: "filament 5 laraxot rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament 5 laraxot rules"
-issues: []
-discussions: []
 ## ✅ Requisiti per Filament 5
 
 Per poter usare Filament 5 in un modulo Laraxot/PTVX sono obbligatori:

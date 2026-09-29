@@ -1,15 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
-title: "conflict resolution progress"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "conflict resolution progress"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 name: conflict-resolution-progress
 description: " Panoramica"
 metadata:

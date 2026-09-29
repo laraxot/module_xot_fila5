@@ -1,14 +1,3 @@
----
-title: "level 4"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "level 4"
-issues: []
-discussions: []
----
-
 # Rapporto PHPStan Livello 4 per il modulo Xot
 
 Data analisi: [DATE] 21:53:50

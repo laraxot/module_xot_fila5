@@ -1,7 +1,4 @@
 ---
-qmd: "pdf to txt"
-issues: []
-discussions: []
 title: "Pdf To Txt"
 type: reference
 tags: [wiki, no-frontmatter-fix]

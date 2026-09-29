@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "OmniRoute — AI gateway multi-provider"
 module: "xot"
 type: reference

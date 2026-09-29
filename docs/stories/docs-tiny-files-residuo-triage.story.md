@@ -1,10 +1,4 @@
 ---
-type: note
-tags: [documentation]
-updated: 2026-09-26
-qmd: "docs tiny files residuo triage.story"
-issues: []
-discussions: []
 title: "Xot docs/ tiny files — 470 rimanenti, cluster xotbase-extension-rules richiede triage manuale"
 status: backlog
 module: Xot

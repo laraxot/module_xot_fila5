@@ -1,7 +1,4 @@
 ---
-qmd: "cart session"
-issues: []
-discussions: []
 title: 'Cart session — risorse esterne'
 module: Xot
 type: reference

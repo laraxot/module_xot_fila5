@@ -1,7 +1,4 @@
 ---
-qmd: "todo"
-issues: []
-discussions: []
 title: "Todo"
 type: reference
 tags: [wiki, no-frontmatter-fix]

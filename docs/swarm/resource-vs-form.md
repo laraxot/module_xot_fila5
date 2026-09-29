@@ -1,14 +1,3 @@
----
-title: "resource vs form"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "resource vs form"
-issues: []
-discussions: []
----
-
 # SWARM V2 — Regola architetturale + Rimozione getFormSchema da Resource
 
 **Swarm ID:** `swarm-resource-vs-form`

@@ -1,14 +1,3 @@
----
-title: "ide helper models wave"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "ide helper models wave"
-issues: []
-discussions: []
----
-
 # IDE Helper Models Wave - 2026-03-10
 
 ## Scopo

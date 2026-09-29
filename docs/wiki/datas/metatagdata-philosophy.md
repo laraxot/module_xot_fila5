@@ -1,7 +1,4 @@
 ---
-qmd: "metatagdata philosophy"
-issues: []
-discussions: []
 title: "Metatagdata Philosophy"
 type: reference
 tags: [wiki, no-frontmatter-fix]

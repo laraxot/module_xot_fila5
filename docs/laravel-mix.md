@@ -1,8 +1,4 @@
 ---
-tags: [documentation]
-qmd: "laravel mix"
-issues: []
-discussions: []
 title: "Laravel mix"
 type: reference
 status: active

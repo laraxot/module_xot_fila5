@@ -1,14 +1,3 @@
----
-title: "github issue xot form infolist structural"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "github issue xot form infolist structural"
-issues: []
-discussions: []
----
-
 # Issue: Structural refactor XotBaseResourceForm / XotBaseResourceInfolist → HasXotForm / HasXotInfolist
 
 Repo: laraxot/module_xot_fila5

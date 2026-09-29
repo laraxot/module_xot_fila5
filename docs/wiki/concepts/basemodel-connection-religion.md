@@ -1,5 +1,4 @@
 ---
-discussions: []
 title: "BaseModel — protected $connection obbligatorio"
 type: concept
 module: Xot

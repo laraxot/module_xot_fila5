@@ -1,14 +1,3 @@
----
-title: "xot filament architecture"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "xot filament architecture"
-issues: []
-discussions: []
----
-
 # Architettura Filament-Xot
 
 ## Panoramica

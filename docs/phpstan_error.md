@@ -1,7 +1,4 @@
 ---
-qmd: "phpstan error"
-issues: []
-discussions: []
 title: 'Phpstan error'
 module: Xot
 type: reference

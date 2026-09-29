@@ -1,7 +1,4 @@
 ---
-qmd: "seo"
-issues: []
-discussions: []
 title: "Seo"
 type: reference
 tags: [wiki, no-frontmatter-fix]

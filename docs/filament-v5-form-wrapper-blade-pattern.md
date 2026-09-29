@@ -1,7 +1,4 @@
 ---
-qmd: "filament v5 form wrapper blade pattern"
-issues: []
-discussions: []
 title: "Filament v5 — wrapper form nelle Blade view custom"
 type: how-to
 tags: [filament, blade, form, view-cache]

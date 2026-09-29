@@ -1,7 +1,4 @@
 ---
-qmd: "widget fileupload errors"
-issues: []
-discussions: []
 title: "Widget Fileupload Errors"
 type: reference
 tags: [wiki, no-frontmatter-fix]

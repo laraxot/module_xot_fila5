@@ -1,7 +1,4 @@
 ---
-qmd: "debug"
-issues: []
-discussions: []
 title: "Debug"
 type: reference
 tags: [wiki, no-frontmatter-fix]

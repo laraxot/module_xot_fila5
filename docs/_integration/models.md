@@ -1,14 +1,3 @@
----
-title: "models"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "models"
-issues: []
-discussions: []
----
-
 # _models
 
 <!-- Contenuto migrato da _docs/_models.txt -->

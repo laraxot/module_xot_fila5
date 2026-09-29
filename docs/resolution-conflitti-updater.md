@@ -1,14 +1,3 @@
----
-title: "resolution conflitti updater"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "resolution conflitti updater"
-issues: []
-discussions: []
----
-
 # Risoluzione conflitti su Trait Updater
 
 ## File coinvolto
@@ -35,12 +24,4 @@ Il file presentava numerosi conflitti git non risolti, in particolare tra le bra
 
 ---
 
-title: "resolution conflitti updater"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "resolution conflitti updater"
-issues: []
-discussions: []
 *Collegamento bidirezionale creato: vedi anche `/project_docs/risoluzione_conflitti.md` nella root.*

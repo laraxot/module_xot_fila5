@@ -1,14 +1,3 @@
----
-title: "basemodel connection doctrine"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "basemodel connection doctrine"
-issues: []
-discussions: []
----
-
 # BaseModel Connection Doctrine
 
 ## Philosophy: Connection Management for Multi-Database Architecture

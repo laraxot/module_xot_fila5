@@ -1,14 +1,3 @@
----
-title: "chart generation base"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "chart generation base"
-issues: []
-discussions: []
----
-
 # Chart Generation Actions - Base Implementation
 
 ## Overview

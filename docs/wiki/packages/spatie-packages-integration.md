@@ -1,7 +1,4 @@
 ---
-qmd: "spatie packages integration"
-issues: []
-discussions: []
 title: "Spatie Packages Integration"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,32 +1,11 @@
----
-title: "forbidden methods"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "forbidden methods"
-issues: []
-discussions: []
----
-
 # Metodi da NON implementare in classi che estendono XotBaseResource
-
-> ⚠️ **Il divieto vale solo per le RESOURCE (metodi `static`).**
-> Lo stesso identico metodo `getTableColumns()` è invece **l'hook legittimo e
-> consigliato** sulle Page `XotBaseManageRelatedRecords` (dove `table()` è `final` e
-> non si può seguire il consiglio di Filament «override `table()`»).
-> Se non distingui i due casi, leggi
-> [`filament-gettablecolumns-deprecation.md`](../../../../docs/wiki/memories/filament-gettablecolumns-deprecation.md)
-> prima di applicare questa regola. [STORY-492](../../../../docs/stories/STORY-492-gettablecolumns-deprecation-guidance.md)
 
 ## Regola fondamentale
 
-Le classi che **estendono `XotBaseResource`** (le Resource) **NON DEVONO MAI** implementare
-i seguenti metodi:
+Le classi che estendono `XotBaseResource` **NON DEVONO MAI** implementare i seguenti metodi:
 
 ### Metodi di tabella
-- ❌ `getTableColumns()` — **vietato come `static` sulla Resource**. Lo stesso nome è un
-  override point valido su `XotBaseManageRelatedRecords`; vedi il box sopra.
+- ❌ `getTableColumns()`
 - ❌ `getTableFilters()`
 - ❌ `getTableActions()`
 - ❌ `getTableBulkActions()`
@@ -55,17 +34,11 @@ class ProductResource extends XotBaseResource
     protected static ?string $model = Product::class;
 
     // UNICI metodi che dovrebbero essere implementati
+<<<<<<< HEAD
     public function getFormSchema(): array
----
-title: "forbidden methods"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "forbidden methods"
-issues: []
-discussions: []
+=======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             'name' => Forms\Components\TextInput::make('name')

@@ -1,7 +1,4 @@
 ---
-qmd: "tutorial"
-issues: []
-discussions: []
 title: "Tutorial"
 type: reference
 tags: [wiki, no-frontmatter-fix]

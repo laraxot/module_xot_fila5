@@ -1,14 +1,3 @@
----
-title: "code quality improvements"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "code quality improvements"
-issues: []
-discussions: []
----
-
 # Code Quality Improvements - Xot Module
 
 ## Overview
@@ -73,12 +62,4 @@ This document summarizes the code quality improvements made to the Xot module, w
 
 ---
 
-title: "code quality improvements"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "code quality improvements"
-issues: []
-discussions: []
 *Last Updated: November 17, 2025*

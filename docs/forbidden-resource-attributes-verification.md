@@ -1,14 +1,3 @@
----
-title: "forbidden resource attributes verification"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "forbidden resource attributes verification"
-issues: []
-discussions: []
----
-
 # Verifica Proprietà Vietate in XotBaseResource - Report Completo
 
 **Data**: 2026-01-09  
@@ -16,14 +5,6 @@ discussions: []
 
 ---
 
-title: "forbidden resource attributes verification"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "forbidden resource attributes verification"
-issues: []
-discussions: []
 ## 🎯 Obiettivo
 
 Verificare che tutte le classi che estendono `XotBaseResource` non abbiano proprietà vietate:

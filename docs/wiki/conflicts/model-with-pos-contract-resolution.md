@@ -1,7 +1,4 @@
 ---
-qmd: "model with pos contract resolution"
-issues: []
-discussions: []
 title: "Model With Pos Contract Resolution"
 type: reference
 tags: [wiki, no-frontmatter-fix]

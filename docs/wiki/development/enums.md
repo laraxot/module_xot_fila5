@@ -1,7 +1,4 @@
 ---
-qmd: "enums"
-issues: []
-discussions: []
 title: "Enums"
 type: reference
 tags: [wiki, no-frontmatter-fix]

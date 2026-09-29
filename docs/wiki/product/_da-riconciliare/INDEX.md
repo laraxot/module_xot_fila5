@@ -1,7 +1,4 @@
 ---
-qmd: "INDEX"
-issues: []
-discussions: []
 title: "xot — product"
 module: xot
 type: product

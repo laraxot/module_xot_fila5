@@ -1,14 +1,3 @@
----
-title: "best practices"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "best practices"
-issues: []
-discussions: []
----
-
 # 🔧 **Best Practices Modulo Xot**
 
 ## 📋 **Panoramica**
@@ -253,17 +242,11 @@ class MioModelloResource extends XotBaseResource
      *
      * @return array<int, \Filament\Forms\Components\Component>
      */
+<<<<<<< HEAD
     public function getFormSchema(): array
----
-title: "best practices"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "best practices"
-issues: []
-discussions: []
+=======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             Forms\Components\TextInput::make('nome')

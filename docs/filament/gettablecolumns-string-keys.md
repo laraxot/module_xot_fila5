@@ -1,14 +1,3 @@
----
-title: "gettablecolumns string keys"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "gettablecolumns string keys"
-issues: []
-discussions: []
----
-
 # Regola Critica: getTableColumns e getTableFilters — chiavi stringhe obbligatorie
 
 ## Regola Fondamentale
@@ -87,12 +76,4 @@ Questa regola si applica a:
 
 ---
 
-title: "gettablecolumns string keys"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "gettablecolumns string keys"
-issues: []
-discussions: []
 *

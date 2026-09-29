@@ -1,7 +1,4 @@
 ---
-tags: [documentation]
-issues: []
-discussions: []
 title: "Phpstan Corrections"
 type: concept
 status: deprecated

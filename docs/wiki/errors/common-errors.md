@@ -1,7 +1,4 @@
 ---
-qmd: "common errors"
-issues: []
-discussions: []
 title: "Common Errors"
 type: reference
 tags: [wiki, no-frontmatter-fix]

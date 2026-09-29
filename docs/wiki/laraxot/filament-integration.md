@@ -1,7 +1,4 @@
 ---
-qmd: "filament integration"
-issues: []
-discussions: []
 title: "Filament Integration"
 type: reference
 tags: [wiki, no-frontmatter-fix]
@@ -20,9 +17,11 @@ updated: 2026-08-24
 
 ### Form Schema
 ```php
+<<<<<<< HEAD
 public function getFormSchema(): array
----
+=======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
 {
     return [
         // Campi base

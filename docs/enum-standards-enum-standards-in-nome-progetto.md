@@ -1,14 +1,3 @@
----
-title: "enum standards enum standards in nome progetto"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "enum standards enum standards in nome progetto"
-issues: []
-discussions: []
----
-
 # Enum Standards in <nome progetto>
 
 This document defines the standards and best practices for working with Enums in the <nome progetto> project.
@@ -191,14 +180,6 @@ class_alias(AppointmentTypeEnum::class, 'Modules\\<nome progetto>\\Enums\\Appoin
 
 
 ---
-title: "enum standards enum standards in nome progetto"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "enum standards enum standards in nome progetto"
-issues: []
-discussions: []
 ## Variant 2
 
 # Enum Standards in <nome progetto>

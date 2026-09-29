@@ -10,8 +10,7 @@ namespace Modules\Xot\Filament\Widgets;
 class TestWidget extends XotBaseWidget
 {
     /** @var view-string */
-    /** @var view-string */
-    protected string $view;
+    protected string $view = 'xot::filament.widgets.test';
 
     protected int|string|array $columnSpan = 'full';
 

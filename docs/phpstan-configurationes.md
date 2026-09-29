@@ -1,14 +1,3 @@
----
-title: "phpstan configurationes"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan configurationes"
-issues: []
-discussions: []
----
-
 # PHPStan Configuration Fixes - Modulo Xot
 
 ## Panoramica
@@ -210,14 +199,6 @@ La configurazione PHPStan implementata mantiene un alto livello di qualità del 
 
 ---
 
-title: "phpstan configurationes"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan configurationes"
-issues: []
-discussions: []
 **PHPStan Version**: 1.10+
 **Laravel Version**: 10+
 **Larastan Version**: 2.9+

@@ -1,14 +1,3 @@
----
-title: "mcp configuration ptvx"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "mcp configuration ptvx"
-issues: []
-discussions: []
----
-
 # Configurazione MCP per base_ptvx_fila4_mono
 
 **Data Creazione**: 2026-01-12  
@@ -17,14 +6,6 @@ discussions: []
 
 ---
 
-title: "mcp configuration ptvx"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "mcp configuration ptvx"
-issues: []
-discussions: []
 ## 🎯 Scopo del Documento
 
 Questo documento descrive la configurazione MCP ottimizzata per il progetto **base_ptvx_fila4_mono**, risultato di analisi approfondita delle necessità del progetto seguendo la metodologia Super Mucca.

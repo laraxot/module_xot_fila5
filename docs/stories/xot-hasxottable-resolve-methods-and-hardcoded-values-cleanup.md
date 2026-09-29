@@ -1,10 +1,4 @@
 ---
-type: note
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "xot hasxottable resolve methods and hardcoded values cleanup"
-issues: []
-discussions: []
 id: story-xot-hasxottable-resolve-methods-and-hardcoded-values-cleanup
 slug: story-xot-hasxottable-resolve-methods-and-hardcoded-values-cleanup
 title: "STORY — HasXotTable: via i metodi resolve*, valori hardcoded diventano getter overridabili"

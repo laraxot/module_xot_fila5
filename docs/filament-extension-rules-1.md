@@ -1,14 +1,3 @@
----
-title: "filament extension rules 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament extension rules 1"
-issues: []
-discussions: []
----
-
 # Filament Class Extension Rules
 
 This document is intentionally kept short to avoid duplication.

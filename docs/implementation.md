@@ -1,14 +1,3 @@
----
-title: "implementation"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "implementation"
-issues: []
-discussions: []
----
-
 # Implementazione Xot
 
 ## Struttura del Codice
@@ -313,11 +302,3 @@ class XotPageTest extends TestCase
 ### Versione Incoming
 
 ---
-title: "implementation"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "implementation"
-issues: []
-discussions: []

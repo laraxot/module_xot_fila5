@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Correzioni PHPStan - Modulo Xot"
 module: "Xot"
 type: concept

@@ -1,7 +1,4 @@
 ---
-qmd: "best practices"
-issues: []
-discussions: []
 title: "Best Practices"
 type: reference
 tags: [wiki, no-frontmatter-fix]
@@ -26,9 +23,11 @@ updated: 2026-08-24
 
 ### Implementazione
 ```php
+<<<<<<< HEAD
 public function getFormSchema(): array
----
+=======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
 {
     return [
         // Campi modificabili dall'utente
@@ -89,9 +88,11 @@ class MyResource extends XotBaseResource
 {
     protected static ?string $model = MyModel::class;
 
+<<<<<<< HEAD
     public function getFormSchema(): array
----
+=======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             TextInput::make('name')->required(),

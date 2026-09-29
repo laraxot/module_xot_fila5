@@ -1,6 +1,4 @@
 ---
-qmd: "redundancy catalog"
-discussions: []
 title: "catalogo ridondanza e documentazione correlata"
 module: Xot
 type: concept

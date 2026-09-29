@@ -1,8 +1,4 @@
 ---
-type: note
-tags: [documentation]
-issues: []
-discussions: []
 id: "xot-quality-gates-prompt-exec"
 title: "Esegui e migliora 03-quality-gates.md"
 status: review

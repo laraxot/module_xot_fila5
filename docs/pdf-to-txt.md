@@ -1,8 +1,4 @@
 ---
-tags: [documentation]
-qmd: "pdf to txt"
-issues: []
-discussions: []
 title: "Pdf to txt"
 type: reference
 status: active

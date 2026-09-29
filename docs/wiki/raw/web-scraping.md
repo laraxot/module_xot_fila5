@@ -1,7 +1,4 @@
 ---
-qmd: "web scraping"
-issues: []
-discussions: []
 title: "Web Scraping"
 type: reference
 tags: [wiki, no-frontmatter-fix]

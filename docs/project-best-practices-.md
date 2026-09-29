@@ -1,14 +1,3 @@
----
-title: "project best practices "
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "project best practices "
-issues: []
-discussions: []
----
-
 # Best Practices Progetto Laraxot PTVX - 2025
 
 > **Documento Master** - Regole fondamentali aggiornate dopo risoluzione massiva merge conflicts
@@ -124,19 +113,15 @@ architecture-overview.md
 MY_DOCUMENT.md              # UPPERCASE
 my_document.md              # underscore
 analysis.md      # date in name (use CHANGELOG.md)
----
-title: "project best practices "
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "project best practices "
-issues: []
-discussions: []
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
 analysis-2025-11-04.md      # date in name (use CHANGELOG.md)
----
+=======
 analysis.md      # date in name (use CHANGELOG.md)
----
+=======
+>>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
 ```
 
 ### 8. DRY Principle
@@ -291,9 +276,11 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 
 class MyResource extends XotBaseResource
 {
+<<<<<<< HEAD
     public function getFormSchema(): array
----
+=======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             TextInput::make('name'),  // No ->label()!

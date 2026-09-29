@@ -1,14 +1,3 @@
----
-title: "project conventions"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "project conventions"
-issues: []
-discussions: []
----
-
 # Project Conventions and Standards
 
 ## File Naming Standards
@@ -247,14 +236,6 @@ find Modules -name "*.md" ! -name "README.md" -exec bash -c '
 
 ---
 
-title: "project conventions"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "project conventions"
-issues: []
-discussions: []
 **Last Updated**: 2025-10-11
 **Status**: ✅ ACTIVE STANDARD
 **Compliance**: MANDATORY for all modules and themes

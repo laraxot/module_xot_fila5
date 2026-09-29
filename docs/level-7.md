@@ -1,14 +1,3 @@
----
-title: "level 7"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "level 7"
-issues: []
-discussions: []
----
-
 # Rapporto PHPStan Livello 7 per il modulo Xot
 
 Data analisi: [DATE] 21:55:11

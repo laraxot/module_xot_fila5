@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "_search"
 module: "Xot"
 type: concept

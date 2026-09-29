@@ -1,14 +1,3 @@
----
-title: "phpstan level 10 enforcement"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan level 10 enforcement"
-issues: []
-discussions: []
----
-
 # PHPStan Level 10 Enforcement - Quality Initiative
 
 **Date**: 2025-10-22
@@ -283,12 +272,4 @@ Check if Notification API changed in Filament v4:
 
 ---
 
-title: "phpstan level 10 enforcement"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan level 10 enforcement"
-issues: []
-discussions: []
 *This document will be updated as fixes progress. Each module section will contain detailed notes on specific fixes and patterns discovered.*

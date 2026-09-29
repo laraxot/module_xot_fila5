@@ -1,14 +1,3 @@
----
-title: "docs normalization process"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "docs normalization process"
-issues: []
-discussions: []
----
-
 # Processo di Normalizzazione Documentazione
 
 ## Scopo
@@ -218,14 +207,6 @@ Per processi futuri, considerare script di automazione:
 
 ---
 
-title: "docs normalization process"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "docs normalization process"
-issues: []
-discussions: []
 **Ultimo aggiornamento**: Gennaio 2025
 **Stato**: Processo attivo
 **Priorità**: Alta (conformità regole progetto)

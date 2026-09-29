@@ -1,14 +1,3 @@
----
-title: "package discovery philosophy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "package discovery philosophy"
-issues: []
-discussions: []
----
-
 # Package Discovery - Philosophy, Logic & Zen
 
 ## Executive Summary
@@ -553,14 +542,6 @@ In this codebase with 80+ packages and 17 modules, package discovery is not just
 
 ---
 
-title: "package discovery philosophy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "package discovery philosophy"
-issues: []
-discussions: []
 **Document Version**: 1.0
 **Last Updated**: 2026-01-12
 **Status**: Living document - update as understanding deepens

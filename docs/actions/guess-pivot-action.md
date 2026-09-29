@@ -1,14 +1,3 @@
----
-title: "guess pivot action"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "guess pivot action"
-issues: []
-discussions: []
----
-
 # GuessPivotAction Location Correction
 
 ## What was wrong

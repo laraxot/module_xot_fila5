@@ -1,7 +1,4 @@
 ---
-qmd: "page expired"
-issues: []
-discussions: []
 title: "Page Expired"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,7 +1,4 @@
 ---
-qmd: "QUICK START"
-issues: []
-discussions: []
 title: "Xot Module Quick Start"
 type: guide
 tags: [xot, framework]

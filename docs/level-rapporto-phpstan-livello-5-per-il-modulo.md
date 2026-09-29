@@ -1,14 +1,3 @@
----
-title: "level rapporto phpstan livello 5 per il modulo"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "level rapporto phpstan livello 5 per il modulo"
-issues: []
-discussions: []
----
-
 # Rapporto PHPStan Livello 5 per il modulo Xot
 
 Data analisi: [DATE] 21:54:17

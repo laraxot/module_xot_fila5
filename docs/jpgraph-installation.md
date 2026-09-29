@@ -1,14 +1,3 @@
----
-title: "jpgraph installation"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "jpgraph installation"
-issues: []
-discussions: []
----
-
 # Installazione di JpGraph
 
 L’installazione di JpGraph e l’uso dei namespace sono gestiti dal **modulo Chart**. In questo progetto non si usa il pacchetto `jpgraph/jpgraph`; si usa **amenadiel/jpgraph** con namespace **Amenadiel\JpGraph\***.

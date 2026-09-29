@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
 return [
     'accepted' => ':attribute deve essere accettato.',
     'active_url' => ':attribute non è un URL valido.',

@@ -1,8 +1,4 @@
 ---
-tags: [documentation]
-qmd: " elastic links"
-issues: []
-discussions: []
 title: "Elastic links"
 type: reference
 status: active

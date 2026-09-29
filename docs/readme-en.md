@@ -1,14 +1,3 @@
----
-title: "readme en"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "readme en"
-issues: []
-discussions: []
----
-
 # ⚡ Xot — English presentation
 
 [![Core](https://img.shields.io/badge/Role-Platform%20Core-6A1B9A.svg)](#)
@@ -25,14 +14,6 @@ discussions: []
 
 ---
 
-title: "readme en"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "readme en"
-issues: []
-discussions: []
 ## Why it exists
 
 No FixCity without Xot: internal framework preventing duplication and architectural drift.

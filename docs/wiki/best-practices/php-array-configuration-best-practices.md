@@ -1,7 +1,4 @@
 ---
-qmd: "php array configuration best practices"
-issues: []
-discussions: []
 title: "Php Array Configuration Best Practices"
 type: reference
 tags: [wiki, no-frontmatter-fix]

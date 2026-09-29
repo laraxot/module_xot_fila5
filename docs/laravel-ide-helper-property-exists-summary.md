@@ -1,9 +1,4 @@
 ---
-tags: [documentation]
-created: 2026-09-26
-qmd: "laravel ide helper property exists summary"
-issues: []
-discussions: []
 title: IDE Helper e property_exists — summary storico
 type: historical
 updated: 2026-08-31

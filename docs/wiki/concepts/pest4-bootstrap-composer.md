@@ -1,10 +1,4 @@
 ---
-type: note
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "pest4 bootstrap composer"
-issues: []
-discussions: []
 title: pest4 bootstrap composer autoload
 description: Bootstrap Pest 4 Laraxot senza require_once — Composer autoload files + Helpers.php nativo.
 document_type: concept

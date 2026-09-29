@@ -1,14 +1,3 @@
----
-title: "translation philosophy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "translation philosophy"
-issues: []
-discussions: []
----
-
 # Laraxot Translation Philosophy
 
 ## Overview
@@ -165,13 +154,5 @@ When creating a new module:
 
 ---
 
-title: "translation philosophy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "translation philosophy"
-issues: []
-discussions: []
 **Maintained by**: Xot Module (Core Laraxot Engine)
 **Last Updated**: 2025-11-17

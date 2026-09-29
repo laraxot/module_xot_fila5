@@ -1,14 +1,3 @@
----
-title: "testing setup"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "testing setup"
-issues: []
-discussions: []
----
-
 # Pest Testing Setup for Laraxot Modular Architecture
 
 This document describes how to configure and run tests using Pest PHP in the Laraxot modular Laravel 12 architecture.

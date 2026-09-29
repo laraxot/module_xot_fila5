@@ -1,14 +1,3 @@
----
-title: "file structure philosophy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "file structure philosophy"
-issues: []
-discussions: []
----
-
 # Laraxot File Structure Philosophy
 
 ## Core Principle: Single Source of Truth for Database Files
@@ -214,12 +203,4 @@ find Modules -name "*.php" | grep -E "(factories|seeders)" | sort
 
 ---
 
-title: "file structure philosophy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "file structure philosophy"
-issues: []
-discussions: []
 **Philosophy Summary**: In Laraxot, consistency and predictability are more valuable than flexibility. Choose one file structure pattern and apply it consistently across all modules. Eliminate ambiguity to ensure reliable, predictable behavior.

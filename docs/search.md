@@ -1,7 +1,4 @@
 ---
-qmd: "search"
-issues: []
-discussions: []
 title: 'Search — risorse esterne'
 module: Xot
 type: reference

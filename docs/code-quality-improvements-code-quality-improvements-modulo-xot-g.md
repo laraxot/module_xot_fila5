@@ -1,14 +1,3 @@
----
-title: "code quality improvements code quality improvements modulo xot g"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "code quality improvements code quality improvements modulo xot g"
-issues: []
-discussions: []
----
-
 # Code Quality Improvements - Modulo Xot (Gennaio 2025)
 
 ## Riepilogo Analisi

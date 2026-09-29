@@ -1,9 +1,4 @@
 ---
-tags: [documentation]
-created: 2026-09-26
-qmd: "strategy"
-issues: []
-discussions: []
 title: "strategy — puntatore"
 type: reference
 updated: 2026-05-21

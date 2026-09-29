@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Quality Report — Xot"
 type: report
 tags: [quality, phpstan, pest, coverage]

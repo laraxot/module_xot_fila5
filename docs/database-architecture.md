@@ -1,14 +1,3 @@
----
-title: "database architecture"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "database architecture"
-issues: []
-discussions: []
----
-
 # Database Architecture in Laraxot
 
 ## Modular Connection Isolation (Mandatory Rule)

@@ -1,7 +1,4 @@
 ---
-qmd: "upload"
-issues: []
-discussions: []
 title: "Upload"
 type: reference
 tags: [wiki, no-frontmatter-fix]

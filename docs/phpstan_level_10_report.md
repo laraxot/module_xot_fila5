@@ -1,8 +1,4 @@
 ---
-tags: [documentation]
-qmd: "phpstan level 10 report"
-issues: []
-discussions: []
 title: "Phpstan level 10 report"
 type: reference
 status: active

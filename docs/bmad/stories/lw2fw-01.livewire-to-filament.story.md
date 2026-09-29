@@ -67,3 +67,43 @@ via `XotBaseWidget`/`XotBaseSchemaWidget`.)
 - Guardia: `Xot/tests/Unit/NoLivewireDirectoriesInModulesTest.php`.
 - Aperto: `config/user-filament.php:115-116` (chiave `livewire` con path Http/Livewire) era lockato da `opencode-lw2fw` (task lw2fw-final): non toccato, da fare a lock rilasciato. AC "Riferimenti in test/config" resta aperta.
 - Osservazione: alle 09:54:14 un'operazione git di un peer ha ripristinato nel working tree le dir Livewire (mtime preservati); rimosse di nuovo, stabili dopo 45s.
+
+## Lotto A (2026-09-29, claude-lotto-a)
+
+Moduli Lang, Job, UI: test allineati alle classi Http\Livewire ritirate.
+
+- Lang: rimossi import e casi su Change/Switcher da LangCoverageGapsTest, LangFinalGapsTest, LangHundredPercentCoverageTest (gemello: `LanguageSwitcherWidget`, gia' coperto da LanguageSwitcherWidgetTest e dai casi getLanguageUrl). LanguageSwitcherWidgetTest:60 resta (asserisce che le classi HTTP non esistano).
+- Job: da JobExecuteCoverage50Test tolti Broad e Schedule\Status. Broad: nessun punto di montaggio vivo, ritirato senza gemello. Schedule\Status: creato `Filament/Widgets/ScheduleStatusWidget` (XotBaseWidget, whitelist di comandi) + vista `job::filament.widgets.schedule-status` + test `tests/Unit/Filament/ScheduleStatusWidgetTest.php` (verde); `JobMonitor` lo usa come header widget e `job-monitor.blade.php` non monta piu' `<livewire:job.status>`. JobStatusWidget e ScheduleCrudWidget sono di altra sessione.
+- UI: da UiGapCloser100Test tolti DarkModeSwitcher (gemello DarkModeSwitcherWidget, gia' testato) e Toast (vista `ui::livewire.toast` e' un div vuoto: nessun widget creato).
+
+Residui vivi (fuori lotto, non toccati): `<livewire:toast />` in UI e User `components/layouts/main.blade.php`; `<livewire:lang.change>` in UI `headernav/simple.blade.php` (sostituire con LanguageSwitcherWidget); `<livewire:job.status|schedule.status|schedule.crud>` in Job `admin/home.blade.php`, `admin/acts/*`, `admin/home/acts/task.blade.php`.
+
+Anomalie osservate: (1) un processo di merge concorrente ha piu' volte ripristinato nel working tree Lang/Change.php, Lang/Switcher.php, Job/Broad.php (indice: deleted) e ha lasciato marker `<<<<<<< .merge_file_*` vuoti nei test (risolti a mano in JobExecuteCoverage50Test); (2) `Xot/app/Providers/XotBaseServiceProvider.php:43` contiene un marker di conflitto (ParseError) e blocca ogni test UI. Pest eseguito (host 172.30.162.189, non .15): ScheduleStatusWidgetTest verde; i fallimenti residui in Job/Lang non riguardano Livewire (getFormSchemaOld non statico, Mockery Expectation, contenuti traduzioni).
+
+
+## Correzione 2026-09-29 (sessione Ptv, claude-ptv-agent) — "routes vuoto -> irraggiungibile" era falso
+
+La nota "`Modules/Performance/routes/web.php` è vuoto: le viste legacy che montano
+`@livewire('edit-firma')` sono irraggiungibili -> ritiro `Ptv/EditFirma` sicuro" (sopra,
+sezione Notes) usava una premessa sbagliata: `routes/web.php` vuoto non implica che le
+view che montano il componente non vengano mai renderizzate — queste `inner_page.blade.php`
+sono partial incluse da altre view (non bindate 1:1 a una entry di `routes/web.php` di
+quel modulo), quindi **reali e raggiungibili**. Verifica: grep fleet-wide ha trovato
+**15 chiamanti reali** a `edit-firma`/`nav.stabi-repar-anno` in 4 moduli (Ptv,
+IndennitaCondizioniLavoro x4, IndennitaResponsabilita x4, Performance x6), tutti
+convertiti in questa sessione a `@livewire(\Modules\Ptv\Filament\Widgets\EditFirmaWidget::class, [...])`
+/ `StabiReparAnnoWidget::class`. Il ritiro di `Ptv/EditFirma` e `Ptv/Nav/StabiReparAnno`
+non è stato "senza gemello" per assenza di punto di montaggio: **entrambi hanno gemelli
+Filament nuovi**, creati appositamente perché il punto di montaggio era vivo. Story
+completa: `laravel/Modules/Ptv/docs/stories/12.1.retire-ptv-http-livewire.story.md`
+(include anche la scoperta e riparazione di una corruzione byte-level su 8 di questi
+15 caller, prodotta da un processo concorrente non identificato).
+
+Correzione collegata anche in `docs/bmad/livewire-to-filament-conversion.md`
+(sezione "Correzione 2026-09-29"), che correggeva inoltre l'affermazione
+"`RegisterLivewireComponentsAction` non è mai chiamato da nessun provider": è invece
+chiamato incondizionatamente da `XotBaseServiceProvider::boot()` per ogni modulo.
+
+AC aggiornato: "Classi FO senza punto di montaggio vivo sono ritirate" -> per Ptv questo
+AC non si applica (il punto di montaggio era vivo), la riga corretta è "classi con
+gemello widget creato in questa sessione sono rimosse" (vale per `EditFirma`/`Nav\StabiReparAnno`).

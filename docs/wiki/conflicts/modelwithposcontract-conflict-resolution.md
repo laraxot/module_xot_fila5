@@ -1,7 +1,4 @@
 ---
-qmd: "modelwithposcontract conflict resolution"
-issues: []
-discussions: []
 title: "Modelwithposcontract Conflict Resolution"
 type: reference
 tags: [wiki, no-frontmatter-fix]

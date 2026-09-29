@@ -1,7 +1,4 @@
 ---
-qmd: "full name field"
-issues: []
-discussions: []
 title: "Full Name Field"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,9 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 title: "Linee Guida per PHPStan Livello 10 - Regole Comuni"
 module: "Xot"
 type: concept

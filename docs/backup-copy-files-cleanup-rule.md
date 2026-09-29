@@ -1,14 +1,3 @@
----
-title: "backup copy files cleanup rule"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "backup copy files cleanup rule"
-issues: []
-discussions: []
----
-
 # Backup and Copy Files Cleanup Rule
 
 > **Rule**: Backup and copy files MUST NOT exist in the repository.
@@ -19,14 +8,6 @@ discussions: []
 
 ---
 
-title: "backup copy files cleanup rule"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "backup copy files cleanup rule"
-issues: []
-discussions: []
 ## The Rule
 
 **All backup and copy files MUST be:**

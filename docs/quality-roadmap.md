@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: Quality roadmap — Xot
 type: concept
 tags: [xot, quality, perfection, phpstan, platform]

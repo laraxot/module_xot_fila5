@@ -1,7 +1,4 @@
 ---
-qmd: "dto"
-issues: []
-discussions: []
 title: "Dto"
 type: reference
 tags: [wiki, no-frontmatter-fix]

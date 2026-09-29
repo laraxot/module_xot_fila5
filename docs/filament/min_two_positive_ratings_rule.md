@@ -1,14 +1,3 @@
----
-title: "min two positive ratings rule"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "min two positive ratings rule"
-issues: []
-discussions: []
----
-
 # Regola business: almeno 2 valutazioni > 0 nelle pagine Compila
 
 ## Obiettivo

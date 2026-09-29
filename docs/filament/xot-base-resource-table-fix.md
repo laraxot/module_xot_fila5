@@ -1,14 +1,3 @@
----
-title: "xot base resource table fix"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "xot base resource table fix"
-issues: []
-discussions: []
----
-
 # XotBaseResourceTable: Static Method Context Bug Fix
 
 **Data:** 2026-05-26  

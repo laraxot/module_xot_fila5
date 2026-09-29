@@ -1,14 +1,3 @@
----
-title: "conflict resolution report report risoluzione conflitti git fixci"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "conflict resolution report report risoluzione conflitti git fixci"
-issues: []
-discussions: []
----
-
 # Report Risoluzione Conflitti Git - FixCity Project
 # Report Risoluzione Conflitti Git - Develop Branch
 
@@ -281,14 +270,6 @@ Tutti i conflitti Git sono stati risolti automaticamente prendendo le "incoming 
 
 ---
 
-title: "conflict resolution report report risoluzione conflitti git fixci"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "conflict resolution report report risoluzione conflitti git fixci"
-issues: []
-discussions: []
 ### Manutenibilità
 - **Codice pulito** senza conflitti
 - **Documentazione aggiornata** e coerente

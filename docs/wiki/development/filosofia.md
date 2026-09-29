@@ -1,7 +1,4 @@
 ---
-qmd: "filosofia"
-issues: []
-discussions: []
 title: "Filosofia"
 type: reference
 tags: [wiki, no-frontmatter-fix]

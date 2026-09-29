@@ -1,10 +1,4 @@
 ---
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "livewire widget advantages"
-issues: []
-discussions: []
 title: "Perché solo Filament widget e non anche Livewire component: vantaggi e urgenza"
 type: advantages
 module: Xot

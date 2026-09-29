@@ -1,14 +1,3 @@
----
-title: "trait conflict resolution"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "trait conflict resolution"
-issues: []
-discussions: []
----
-
 # Risoluzione Conflitto Trait: NavigationLabelTrait e XotBasePage
 
 ## Problema
@@ -99,13 +88,5 @@ Dopo la modifica, verifica con:
 
 ---
 
-title: "trait conflict resolution"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "trait conflict resolution"
-issues: []
-discussions: []
 *Risolto: 2025-01-10*
 *Architecture Version: XotBase 2.1*

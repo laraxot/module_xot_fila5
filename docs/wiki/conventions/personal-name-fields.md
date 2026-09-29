@@ -1,7 +1,4 @@
 ---
-qmd: "personal name fields"
-issues: []
-discussions: []
 title: "Personal Name Fields"
 type: reference
 tags: [wiki, no-frontmatter-fix]

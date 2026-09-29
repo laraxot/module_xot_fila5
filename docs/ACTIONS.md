@@ -1,7 +1,4 @@
 ---
-qmd: "ACTIONS"
-issues: []
-discussions: []
 title: "Xot Module — QueueableActions Pattern"
 type: guide
 tags: [actions, utilities, architecture]

@@ -1,11 +1,4 @@
 ---
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "template method final table form.story"
-issues: []
-discussions: []
 id: story-template-method-final-table-form
 title: "Template Method Pattern — form() e table() devono essere final"
 descript_type: bmad

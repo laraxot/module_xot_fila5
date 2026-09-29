@@ -1,14 +1,3 @@
----
-title: "namespace organization 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "namespace organization 1"
-issues: []
-discussions: []
----
-
 # Organizzazione dei Namespace Filament nel Modulo Xot
 
 ## Problema Identificato: Duplicazione di Classi Base

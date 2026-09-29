@@ -1,14 +1,3 @@
----
-title: "25 arch rule resource vs form"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "25 arch rule resource vs form"
-issues: []
-discussions: []
----
-
 # BMAD Story 25 — Regola architetturale: XotBaseResource vs XotBaseResourceForm
 
 **Repo:** `git@github.com:laraxot/module_xot_fila5.git`

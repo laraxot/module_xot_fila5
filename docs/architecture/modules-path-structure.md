@@ -1,14 +1,3 @@
----
-title: "modules path structure"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "modules path structure"
-issues: []
-discussions: []
----
-
 # Regola struttura path per i moduli Laravel
 
 Tutti i file di risorsa (Resource), enum e pages dei moduli Laravel devono essere posizionati in `Modules/<NomeModulo>/app/` e **mai** direttamente nella root del modulo o in sottocartelle come `Filament/Resources/` o `Enums/` fuori da `app/`.
@@ -44,14 +33,6 @@ Consulta anche la documentazione specifica dei moduli per dettagli e casi partic
 
 ---
 
-title: "modules path structure"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "modules path structure"
-issues: []
-discussions: []
 # Gestione degli "State" nei moduli Laravel
 
 **Regola:** Per ogni campo di stato (es. `state` di User) usare sempre una State Class Spatie ([spatie/laravel-model-states](https://github.com/spatie/laravel-model-states)), **mai** un enum PHP.

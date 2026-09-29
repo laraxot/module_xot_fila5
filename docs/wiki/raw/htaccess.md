@@ -1,7 +1,4 @@
 ---
-qmd: "htaccess"
-issues: []
-discussions: []
 title: "Htaccess"
 type: reference
 tags: [wiki, no-frontmatter-fix]

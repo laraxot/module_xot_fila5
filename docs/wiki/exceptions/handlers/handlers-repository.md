@@ -1,7 +1,4 @@
 ---
-qmd: "handlers repository"
-issues: []
-discussions: []
 title: "Handlers Repository"
 type: reference
 tags: [wiki, no-frontmatter-fix]

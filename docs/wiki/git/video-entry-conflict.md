@@ -1,7 +1,4 @@
 ---
-qmd: "video entry conflict"
-issues: []
-discussions: []
 title: "Video Entry Conflict"
 type: reference
 tags: [wiki, no-frontmatter-fix]

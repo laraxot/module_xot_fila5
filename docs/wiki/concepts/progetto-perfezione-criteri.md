@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: Criteri di perfezione del progetto
 type: concept
 tags: [quality, perfection, phpstan, pest, bmad, laraxot]

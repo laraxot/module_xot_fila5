@@ -1,14 +1,3 @@
----
-title: "graph"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "graph"
-issues: []
-discussions: []
----
-
 ---------------------------------------------------
 a pagamento
 https://www.fusioncharts.com/

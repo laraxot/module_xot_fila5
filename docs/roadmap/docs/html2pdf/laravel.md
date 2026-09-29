@@ -1,14 +1,3 @@
----
-title: "laravel"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "laravel"
-issues: []
-discussions: []
----
-
 # Integrazione con Laravel e Best Practices
 
 Questa guida si concentra su come integrare e utilizzare `Html2Pdf` in un'applicazione Laravel, seguendo le best practice specifiche del progetto Laraxot.
@@ -22,14 +11,6 @@ Questa guida si concentra su come integrare e utilizzare `Html2Pdf` in un'applic
 
 ---
 
-title: "laravel"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "laravel"
-issues: []
-discussions: []
 ## 🔗 Integrazione con Laravel
 
 ### Service Provider

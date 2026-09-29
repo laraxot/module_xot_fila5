@@ -1,7 +1,4 @@
 ---
-qmd: "module filament panel triad"
-issues: []
-discussions: []
 title: trinità panel filament per modulo
 type: concept
 module: Xot

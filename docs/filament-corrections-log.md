@@ -1,14 +1,3 @@
----
-title: "filament corrections log"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament corrections log"
-issues: []
-discussions: []
----
-
 # Log delle Correzioni Filament
 
 ## Data: 2024-12-19

@@ -1,7 +1,4 @@
 ---
-qmd: "xotbasemanagerelatedrecords remove traits addendum"
-issues: []
-discussions: []
 title: "Rimozione dei trait dalla pagina: responsabilità da preservare"
 type: architecture
 status: discussion

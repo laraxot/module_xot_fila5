@@ -1,14 +1,3 @@
----
-title: "auth"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "auth"
-issues: []
-discussions: []
----
-
 ~~~ php
 <?php
 
@@ -129,11 +118,3 @@ return [
 ### Versione Incoming
 
 ---
-title: "auth"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "auth"
-issues: []
-discussions: []

@@ -1,14 +1,3 @@
----
-title: "09 intervention phpstan"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "09 intervention phpstan"
-issues: []
-discussions: []
----
-
 # BMAD Story 09 — Intervention: 21 errori PHPStan
 
 **Modulo:** `Intervention`

@@ -1,10 +1,4 @@
 ---
-type: note
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "one migration per model audit"
-issues: []
-discussions: []
 id: xot-one-migration-per-model-audit
 slug: one-migration-per-model-audit
 title: "Audit N modelli = N migrazioni"

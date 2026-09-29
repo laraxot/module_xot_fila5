@@ -1,9 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 title: "Skill: Troubleshooting Nested Resources in Filament 5.x"
 module: "Xot"
 type: concept

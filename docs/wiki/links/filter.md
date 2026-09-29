@@ -1,11 +1,4 @@
 ---
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filter"
-issues: []
-discussions: []
 title: Filter
 description:
 extends: _layouts.documentation

@@ -1,7 +1,4 @@
 ---
-qmd: "ARCHITECTURE"
-issues: []
-discussions: []
 title: "Xot Module Architecture"
 type: architecture
 tags: [module, architecture, framework]

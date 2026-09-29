@@ -1,14 +1,3 @@
----
-title: "solutions"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "solutions"
-issues: []
-discussions: []
----
-
 # Soluzioni Tecniche - Modulo Xot
 
 ## Problemi Identificati e Soluzioni
@@ -269,11 +258,3 @@ class CacheTest extends TestCase {
 5. Mantenere compatibilità con le versioni precedenti
 
 ---
-title: "solutions"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "solutions"
-issues: []
-discussions: []

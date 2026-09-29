@@ -1,14 +1,3 @@
----
-title: "pest setup guide"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "pest setup guide"
-issues: []
-discussions: []
----
-
 # Pest Testing Setup Guide
 
 ## Overview

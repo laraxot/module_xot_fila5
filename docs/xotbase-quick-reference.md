@@ -1,14 +1,3 @@
----
-title: "xotbase quick reference"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "xotbase quick reference"
-issues: []
-discussions: []
----
-
 # 🚀 XotBase Quick Reference
 
 ## ⚡ Immediate Action Required
@@ -68,13 +57,5 @@ namespace Modules\YourModule\App\Filament\Resources; // ❌ Wrong (contains App)
 
 ---
 
-title: "xotbase quick reference"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "xotbase quick reference"
-issues: []
-discussions: []
 *Keep this file visible during development!*
 

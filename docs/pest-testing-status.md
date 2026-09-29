@@ -1,14 +1,3 @@
----
-title: "pest testing status"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "pest testing status"
-issues: []
-discussions: []
----
-
 # Pest Testing - Stato Attuale e Roadmap
 
 **Data**: 9 Gennaio 2026  
@@ -17,14 +6,6 @@ discussions: []
 
 ---
 
-title: "pest testing status"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "pest testing status"
-issues: []
-discussions: []
 ## 📊 Stato Attuale
 
 ### Test Esistenti

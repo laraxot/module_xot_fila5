@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Ponytail — minimal code generation skill"
 module: "xot"
 type: reference

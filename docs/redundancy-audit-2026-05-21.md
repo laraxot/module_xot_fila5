@@ -1,7 +1,4 @@
 ---
-tags: [documentation]
-issues: []
-discussions: []
 title: "Redundancy Audit"
 type: concept
 status: deprecated

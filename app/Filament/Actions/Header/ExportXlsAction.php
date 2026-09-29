@@ -68,7 +68,7 @@ class ExportXlsAction extends XotBaseAction
                     self::notifyNoColumns();
                     $action->halt();
 
-                    return;
+                    return null;
                 }
 
                 return app(ExportXlsByCollection::class)->execute($query->get(), $filename, $transKey, $fields);

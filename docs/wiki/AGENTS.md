@@ -1,7 +1,4 @@
 ---
-qmd: "AGENTS"
-issues: []
-discussions: []
 title: "Agents"
 type: reference
 tags: [wiki, no-frontmatter-fix]

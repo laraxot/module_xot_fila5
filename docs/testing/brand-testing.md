@@ -1,14 +1,3 @@
----
-title: "brand testing"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "brand testing"
-issues: []
-discussions: []
----
-
 # Testing del Brand
 
 ## Principi di Testing

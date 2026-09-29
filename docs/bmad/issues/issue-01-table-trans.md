@@ -1,14 +1,3 @@
----
-title: "issue 01 table trans"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "issue 01 table trans"
-issues: []
-discussions: []
----
-
 # Issue GH #01 — Rimuovere TransTrait ridondante da XotBaseResourceTable
 
 **Repo:** `git@github.com:laraxot/module_xot_fila5.git`

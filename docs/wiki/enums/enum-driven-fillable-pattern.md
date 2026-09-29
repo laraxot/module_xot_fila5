@@ -1,7 +1,4 @@
 ---
-qmd: "enum driven fillable pattern"
-issues: []
-discussions: []
 title: "Enum Driven Fillable Pattern"
 type: reference
 tags: [wiki, no-frontmatter-fix]

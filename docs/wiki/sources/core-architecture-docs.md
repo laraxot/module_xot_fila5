@@ -1,8 +1,4 @@
 ---
-tags: [documentation]
-qmd: "core architecture docs"
-issues: []
-discussions: []
 title: "Xot Core Architecture Docs"
 module: "Xot"
 type: source

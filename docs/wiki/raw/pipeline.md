@@ -1,7 +1,4 @@
 ---
-qmd: "pipeline"
-issues: []
-discussions: []
 title: "Pipeline"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Token efficiency — disciplina locale Xot"
 type: concept
 module: Xot

@@ -1,7 +1,4 @@
 ---
-qmd: "lamp"
-issues: []
-discussions: []
 title: "Lamp"
 type: reference
 tags: [wiki, no-frontmatter-fix]

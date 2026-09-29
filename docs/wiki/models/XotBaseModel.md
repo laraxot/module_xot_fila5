@@ -1,10 +1,4 @@
 ---
-type: note
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "XotBaseModel"
-issues: []
-discussions: []
 title: "Rimando a xotbasemodel.md"
 description: "Documento unificato: il contenuto canonico vive in xotbasemodel.md."
 status: merged

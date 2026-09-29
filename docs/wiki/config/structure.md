@@ -1,7 +1,4 @@
 ---
-qmd: "structure"
-issues: []
-discussions: []
 title: "Structure"
 type: reference
 tags: [wiki, no-frontmatter-fix]

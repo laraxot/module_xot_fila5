@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "corpi metodo duplicati — Xot"
 type: analysis
 module: Xot

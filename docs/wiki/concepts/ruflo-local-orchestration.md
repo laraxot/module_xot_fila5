@@ -1,8 +1,4 @@
 ---
-created: 2026-09-26
-qmd: "ruflo local orchestration"
-issues: []
-discussions: []
 title: "Ruflo Local Orchestration for Xot"
 type: concept
 confidence: high

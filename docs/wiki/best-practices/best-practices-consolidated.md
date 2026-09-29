@@ -1,7 +1,4 @@
 ---
-qmd: "best practices consolidated"
-issues: []
-discussions: []
 title: "Best Practices Consolidated"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,14 +1,3 @@
----
-title: "test service providers"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "test service providers"
-issues: []
-discussions: []
----
-
 # Task: Test Service Providers
 
 **Modulo**: Xot  

@@ -1,14 +1,3 @@
----
-title: "FILAMENT ACTIONS STRING KEYS"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "FILAMENT ACTIONS STRING KEYS"
-issues: []
-discussions: []
----
-
 # Filament Actions - String Keys Requirement
 
 ## Critical Type Rule

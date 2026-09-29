@@ -1,14 +1,3 @@
----
-title: "phpstan level10 complete audit"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan level10 complete audit"
-issues: []
-discussions: []
----
-
 # PHPStan Livello 10 - Audit Completo Progetto
 
 ## Data Audit

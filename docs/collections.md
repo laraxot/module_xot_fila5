@@ -1,14 +1,3 @@
----
-title: "collections"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "collections"
-issues: []
-discussions: []
----
-
 ---------------------
 title: Using Collections package outside of Laravel   
 note: bel tutorial

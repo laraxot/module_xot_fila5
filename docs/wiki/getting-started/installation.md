@@ -1,7 +1,4 @@
 ---
-qmd: "installation"
-issues: []
-discussions: []
 title: "Installation"
 type: reference
 tags: [wiki, no-frontmatter-fix]

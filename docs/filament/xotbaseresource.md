@@ -1,14 +1,3 @@
----
-title: "xotbaseresource"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "xotbaseresource"
-issues: []
-discussions: []
----
-
 # XotBaseResource — pattern Filament
 
 ## Panoramica
@@ -44,17 +33,11 @@ class CoeffResource extends XotBaseResource
   /**
    * @return array<string, \Filament\Schemas\Components\Component>
    */
+<<<<<<< HEAD
     public function getFormSchema(): array
----
-title: "xotbaseresource"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "xotbaseresource"
-issues: []
-discussions: []
+=======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [ /* ... */ ];
     }
@@ -94,9 +77,11 @@ class ExampleResource extends XotBaseResource
     /**
      * @return array<string, \Filament\Schemas\Components\Component>
      */
+<<<<<<< HEAD
     public function getFormSchema(): array
----
+=======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             // campi con chiavi stringa

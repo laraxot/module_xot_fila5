@@ -1,7 +1,4 @@
 ---
-qmd: "phpunit"
-issues: []
-discussions: []
 title: "Phpunit"
 type: reference
 tags: [wiki, no-frontmatter-fix]

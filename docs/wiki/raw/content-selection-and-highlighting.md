@@ -1,7 +1,4 @@
 ---
-qmd: "content selection and highlighting"
-issues: []
-discussions: []
 title: "Content Selection And Highlighting"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Testing"
 module: "Xot"
 type: concept

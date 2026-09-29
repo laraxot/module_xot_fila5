@@ -1,14 +1,3 @@
----
-title: "xot service provider feature reimplementation"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "xot service provider feature reimplementation"
-issues: []
-discussions: []
----
-
 # Task: XotServiceProvider Feature Re-implementation
 
 **Modulo**: Xot  

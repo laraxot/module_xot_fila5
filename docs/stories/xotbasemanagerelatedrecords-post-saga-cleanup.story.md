@@ -1,8 +1,4 @@
 ---
-tags: [documentation]
-qmd: "xotbasemanagerelatedrecords post saga cleanup.story"
-issues: []
-discussions: []
 title: "XotBaseManageRelatedRecords: pulizia post-saga (classe duplicata, tooling, stash trovati)"
 type: story
 module: Xot

@@ -1,14 +1,3 @@
----
-title: "script risoluzione conflitti conflict"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "script risoluzione conflitti conflict"
-issues: []
-discussions: []
----
-
 # Script di Risoluzione Conflitti Git - FixCity Project
 
 ## Panoramica
