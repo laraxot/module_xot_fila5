@@ -173,13 +173,19 @@ final class BinaryAssetsNotCrStrippedTest extends TestCase
     }
 
     /**
-     * Root del repository git (directory che contiene `.git`).
+     * Root del monorepo (directory che contiene sia `.git` che `laravel/`).
+     *
+     * Ogni `Modules/<Mod>` ha un `.git` proprio, disconnesso dalla root
+     * (repo nested per modulo). Il primo `.git` risalendo da `__DIR__` e'
+     * quindi quello di `Modules/Xot`, non quello del monorepo: senza il
+     * controllo su `laravel/` i pathspec `laravel/**\/*.ext` usati piu' sotto
+     * non troverebbero mai nulla (scansione vacua silenziosa).
      */
     private function repoRoot(): string
     {
         $dir = __DIR__;
         for ($i = 0; $i < 8; $i++) {
-            if (is_dir($dir.'/.git')) {
+            if (is_dir($dir.'/.git') && is_dir($dir.'/laravel')) {
                 return $dir;
             }
 
