@@ -19,6 +19,10 @@ uses(TestCase::class)->group('no-xot-db');
  *    dove <nome> viene dal remote git del modulo (`.git/config`);
  * 4. README.md e CHANGELOG.md presenti, al massimo 6 file .md in totale;
  * 5. `.github/skills` assente e ignorato: `/.github/skills/` nel .gitignore del modulo.
+ * 6. `docs/graphify` assente e ignorato: `docs/graphify` nel .gitignore del modulo.
+ * 7. `resources/lang` assente e ignorato: i moduli traducono da `lang/`
+ *    (`modules.paths.generator.lang`). Solo moduli: i temi caricano da `resources/lang`
+ *    (`XotBaseThemeServiceProvider`), li' la regola romperebbe le traduzioni.
  *
  * Il dataset e' per modulo: il messaggio d'errore nomina modulo e violazione.
  *
@@ -190,5 +194,37 @@ it('root modulo con /.github/skills/ nel .gitignore', function (string $moduleDi
 
     expect(in_array('/.github/skills/', $lines, true))->toBeTrue(
         $module.': manca la riga /.github/skills/ nel .gitignore del modulo',
+    );
+})->with('module_roots');
+
+it('modulo senza docs/graphify e con docs/graphify nel .gitignore', function (string $moduleDir): void {
+    $module = basename($moduleDir);
+    $gitignore = $moduleDir.'/.gitignore';
+    /** @var list<string> $lines */
+    $lines = is_file($gitignore) ? file($gitignore, FILE_IGNORE_NEW_LINES) : [];
+    $lines = array_map('trim', $lines);
+    $spellings = ['docs/graphify', 'docs/graphify/', '/docs/graphify', '/docs/graphify/'];
+
+    expect(is_dir($moduleDir.'/docs/graphify'))->toBeFalse(
+        $module.': docs/graphify esiste ancora, va cancellata',
+    );
+    expect(array_intersect($spellings, $lines))->not->toBeEmpty(
+        $module.': manca la riga docs/graphify nel .gitignore del modulo',
+    );
+})->with('module_roots');
+
+it('modulo senza resources/lang e con resources/lang nel .gitignore', function (string $moduleDir): void {
+    $module = basename($moduleDir);
+    $gitignore = $moduleDir.'/.gitignore';
+    /** @var list<string> $lines */
+    $lines = is_file($gitignore) ? file($gitignore, FILE_IGNORE_NEW_LINES) : [];
+    $lines = array_map('trim', $lines);
+    $spellings = ['resources/lang', 'resources/lang/', '/resources/lang', '/resources/lang/'];
+
+    expect(is_dir($moduleDir.'/resources/lang'))->toBeFalse(
+        $module.': resources/lang esiste ancora, le traduzioni del modulo stanno in lang/',
+    );
+    expect(array_intersect($spellings, $lines))->not->toBeEmpty(
+        $module.': manca la riga resources/lang nel .gitignore del modulo',
     );
 })->with('module_roots');
