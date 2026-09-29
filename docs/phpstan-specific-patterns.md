@@ -1,14 +1,3 @@
----
-title: "phpstan specific patterns"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan specific patterns"
-issues: []
-discussions: []
----
-
 # Pattern Specifici PHPStan Level 10
 
 Questo documento raccoglie pattern specifici per risolvere errori PHPStan a livello 10, complementare alla guida generale.

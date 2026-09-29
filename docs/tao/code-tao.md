@@ -1,14 +1,3 @@
----
-title: "code tao"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "code tao"
-issues: []
-discussions: []
----
-
 
 # Il Tao del Codice
 

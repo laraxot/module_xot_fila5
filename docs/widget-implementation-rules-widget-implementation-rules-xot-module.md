@@ -1,14 +1,3 @@
----
-title: "widget implementation rules widget implementation rules xot module"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "widget implementation rules widget implementation rules xot module"
-issues: []
-discussions: []
----
-
 # Widget Implementation Rules - Xot Module
 
 ## 🎯 Regole Fondamentali per Widget
@@ -430,14 +419,6 @@ Queste regole garantiscono implementazione corretta dei widget seguendo l'archit
 
 
 ---
-title: "widget implementation rules widget implementation rules xot module"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "widget implementation rules widget implementation rules xot module"
-issues: []
-discussions: []
 ## Variant 2
 
 # Widget Implementation Rules - Xot Module

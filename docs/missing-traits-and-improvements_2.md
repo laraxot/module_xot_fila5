@@ -1,14 +1,3 @@
----
-title: "missing traits and improvements 2"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "missing traits and improvements 2"
-issues: []
-discussions: []
----
-
 # Trait Mancanti e Miglioramenti Architetturali
 
 ## Panoramica
@@ -625,14 +614,6 @@ class AlertWidget extends BaseTableWidget
 
 ---
 
-title: "missing traits and improvements 2"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "missing traits and improvements 2"
-issues: []
-discussions: []
 **Data Creazione**: 2025-01-06  
 **Priorità**: CRITICA  
 **Effort Stimato**: 20-30 ore  

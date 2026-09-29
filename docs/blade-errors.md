@@ -1,7 +1,4 @@
 ---
-qmd: "blade errors"
-issues: []
-discussions: []
 title: 'blade_errors'
 module: Xot
 type: reference

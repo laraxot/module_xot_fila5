@@ -1,9 +1,4 @@
 ---
-tags: [documentation]
-updated: 2026-09-26
-qmd: "02 architecture"
-issues: []
-discussions: []
 title: "Laraxot - Core Architecture"
 type: shard
 confidence: high

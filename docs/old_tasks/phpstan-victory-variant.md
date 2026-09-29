@@ -1,7 +1,4 @@
 ---
-tags: [documentation]
-issues: []
-discussions: []
 title: "Phpstan Victory"
 type: concept
 status: deprecated

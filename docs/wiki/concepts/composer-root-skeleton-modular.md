@@ -1,5 +1,4 @@
 ---
-qmd: "composer root skeleton modular"
 title: "Composer root skeleton modulare"
 type: concept
 tags: [composer, xot, merge-plugin, nwidart, laravel-modules, skeleton]

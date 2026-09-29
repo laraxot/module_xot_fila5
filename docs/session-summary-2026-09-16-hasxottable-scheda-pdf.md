@@ -1,10 +1,4 @@
 ---
-type: note
-tags: [documentation]
-updated: 2026-09-26
-qmd: "session summary 2026 09 16 hasxottable scheda pdf"
-issues: []
-discussions: []
 title: "Session summary 2026-09-15/16 — HasXotTable discovery pattern, componenti riutilizzabili, scheda PDF export"
 status: reference
 created: 2026-09-16

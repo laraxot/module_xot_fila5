@@ -1,14 +1,3 @@
----
-title: "eloquent properties best practices"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "eloquent properties best practices"
-issues: []
-discussions: []
----
-
 # Best Practices per Proprietà Modelli Eloquent - Modulo Xot
 
 ## ✅ STATO: property_exists() ELIMINATO (Data: 2025-01-05)

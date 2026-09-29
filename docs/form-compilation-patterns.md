@@ -1,14 +1,3 @@
----
-title: "form compilation patterns"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "form compilation patterns"
-issues: []
-discussions: []
----
-
 # Form Compilation Patterns - Laraxot Standards
 
 **Project**: PTVX Fila5 Mono  
@@ -18,14 +7,6 @@ discussions: []
 
 ---
 
-title: "form compilation patterns"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "form compilation patterns"
-issues: []
-discussions: []
 ## 📋 **Core Principles**
 
 ### 1. XotBase Page Pattern

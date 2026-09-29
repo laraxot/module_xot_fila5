@@ -1,14 +1,3 @@
----
-title: "normalization report 3"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "normalization report 3"
-issues: []
-discussions: []
----
-
 # Report Normalizzazione Documentazione - Gennaio 2025
 
 ## Azioni Completate
@@ -119,14 +108,6 @@ discussions: []
 
 ---
 
-title: "normalization report 3"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "normalization report 3"
-issues: []
-discussions: []
 **Data**: Gennaio 2025  
 **Stato**: In corso  
 **Prossima Revisione**: Dopo normalizzazione batch successivo

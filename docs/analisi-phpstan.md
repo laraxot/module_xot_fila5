@@ -1,14 +1,3 @@
----
-title: "analisi phpstan"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "analisi phpstan"
-issues: []
-discussions: []
----
-
 # Analisi PHPStan - Modulo Xot
 
 ## Panoramica

@@ -1,7 +1,4 @@
 ---
-qmd: "migration base rules"
-issues: []
-discussions: []
 title: "Migration Base Rules"
 type: reference
 tags: [wiki, no-frontmatter-fix]

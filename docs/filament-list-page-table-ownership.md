@@ -1,11 +1,4 @@
 ---
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament list page table ownership"
-issues: []
-discussions: []
 title: "Filament list page e ResourceTable: confine di ownership"
 description: "Regola canonica Laraxot per evitare getTableColumns morto nelle pagine XotBaseListRecords."
 module: Xot

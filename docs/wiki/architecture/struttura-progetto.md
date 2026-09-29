@@ -1,7 +1,4 @@
 ---
-qmd: "struttura progetto"
-issues: []
-discussions: []
 title: "Struttura Progetto"
 type: reference
 tags: [wiki, no-frontmatter-fix]

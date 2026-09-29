@@ -1,14 +1,3 @@
----
-title: "property exists replacement guide"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "property exists replacement guide"
-issues: []
-discussions: []
----
-
 # Guida Pratica: Sostituzione di property_exists() per Eloquent
 
 ## Filosofia

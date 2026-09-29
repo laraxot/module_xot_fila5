@@ -1,14 +1,3 @@
----
-title: "mcp for architecture"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "mcp for architecture"
-issues: []
-discussions: []
----
-
 # MCP for Architecture - Xot Module
 
 ## Overview
@@ -41,14 +30,6 @@ cat Modules/*/composer.json | jq '.require | keys'
 
 ---
 
-title: "mcp for architecture"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "mcp for architecture"
-issues: []
-discussions: []
 ### 2. Git MCP - Architecture Evolution Tracking
 
 **Uso principale**: Tracciare evoluzione architetturale

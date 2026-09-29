@@ -1,7 +1,4 @@
 ---
-qmd: "video editor"
-issues: []
-discussions: []
 title: "Video Editor"
 type: reference
 tags: [wiki, no-frontmatter-fix]

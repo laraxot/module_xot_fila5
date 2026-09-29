@@ -1,14 +1,3 @@
----
-title: "filament class mapping correction"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament class mapping correction"
-issues: []
-discussions: []
----
-
 # Correzione Mapping Classi Filament - 2025-12-23
 
 **Data**: 2025-12-23
@@ -125,13 +114,5 @@ Se in futuro si volesse creare queste classi base:
 
 ---
 
-title: "filament class mapping correction"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament class mapping correction"
-issues: []
-discussions: []
 **Stato**: ✅ Mapping corretto per riflettere codice esistente
 **Data Correzione**: 2025-12-23

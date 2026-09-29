@@ -1,7 +1,4 @@
 ---
-qmd: "has tenants"
-issues: []
-discussions: []
 title: "Has Tenants"
 type: reference
 tags: [wiki, no-frontmatter-fix]

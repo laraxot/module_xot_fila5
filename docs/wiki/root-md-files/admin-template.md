@@ -1,7 +1,4 @@
 ---
-qmd: "admin template"
-issues: []
-discussions: []
 title: "Admin Template"
 type: reference
 tags: [wiki, no-frontmatter-fix]

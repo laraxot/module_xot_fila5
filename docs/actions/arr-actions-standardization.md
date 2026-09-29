@@ -1,14 +1,3 @@
----
-title: "arr actions standardization"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "arr actions standardization"
-issues: []
-discussions: []
----
-
 # Standardizzazione Actions Array: `Modules\Xot\Actions\Arr`
 
 ## Panoramica

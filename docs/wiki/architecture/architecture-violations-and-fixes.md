@@ -1,7 +1,4 @@
 ---
-qmd: "architecture violations and fixes"
-issues: []
-discussions: []
 title: "Architecture Violations And Fixes"
 type: reference
 tags: [wiki, no-frontmatter-fix]

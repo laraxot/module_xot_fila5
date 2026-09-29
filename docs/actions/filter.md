@@ -1,14 +1,3 @@
----
-title: "filter"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filter"
-issues: []
-discussions: []
----
-
 # Correzione e miglioramento: GetYearFilter.php (2025-04-16)
 
 ## Contesto
@@ -32,14 +21,6 @@ Il file `GetYearFilter.php` presentava marker di conflitto (``) e duplicazioni d
 ---
 
 
-title: "filter"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filter"
-issues: []
-discussions: []
 ## Collegamenti tra versioni di filter.md
 * [filter.md](../../../xot/docs/actions/filter.md)
 * [filter.md](../../../xot/docs/links/filter.md)

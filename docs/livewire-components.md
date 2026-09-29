@@ -1,7 +1,4 @@
 ---
-qmd: "livewire components"
-issues: []
-discussions: []
 title: 'livewire_components'
 module: Xot
 type: reference

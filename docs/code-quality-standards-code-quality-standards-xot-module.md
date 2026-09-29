@@ -1,14 +1,3 @@
----
-title: "code quality standards code quality standards xot module"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "code quality standards code quality standards xot module"
-issues: []
-discussions: []
----
-
 # Code Quality Standards - Xot Module
 
 ## 🎯 Purpose

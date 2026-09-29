@@ -1,7 +1,4 @@
 ---
-qmd: "namespace rules"
-issues: []
-discussions: []
 title: "Namespace Rules"
 type: reference
 tags: [wiki, no-frontmatter-fix]

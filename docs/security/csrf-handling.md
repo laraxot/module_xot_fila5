@@ -1,14 +1,3 @@
----
-title: "csrf handling"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "csrf handling"
-issues: []
-discussions: []
----
-
 # CSRF Token Handling in Xot
 
 ## Table of Contents

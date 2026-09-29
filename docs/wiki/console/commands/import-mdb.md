@@ -1,7 +1,4 @@
 ---
-qmd: "import mdb"
-issues: []
-discussions: []
 title: "Import Mdb"
 type: reference
 tags: [wiki, no-frontmatter-fix]

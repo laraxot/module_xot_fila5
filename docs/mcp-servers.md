@@ -1,14 +1,3 @@
----
-title: "mcp servers"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "mcp servers"
-issues: []
-discussions: []
----
-
 # MCP (Model Context Protocol) - Guida Completa
 
 ## Indice
@@ -23,14 +12,6 @@ discussions: []
 
 ---
 
-title: "mcp servers"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "mcp servers"
-issues: []
-discussions: []
 ## Introduzione
 
 **Model Context Protocol (MCP)** è uno standard aperto che consente agli agenti AI di connettersi seamlessly con strumenti esterni, sorgenti dati e servizi.

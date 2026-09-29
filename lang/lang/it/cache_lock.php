@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 return [
     'navigation' => [
-        'name' => 'cache lock',
+        'name' => 'Blocco cache',
         'plural' => 'cache locks',
         'group' => [
             'name' => 'Admin',

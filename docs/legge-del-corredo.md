@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "La legge del corredo: dove vive ogni pezzo, e perché"
 type: concept
 module: Xot

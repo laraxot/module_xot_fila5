@@ -1,14 +1,3 @@
----
-title: "convert id uuid to bigint"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "convert id uuid to bigint"
-issues: []
-discussions: []
----
-
 # convertIdFromUuidToBigintIfNeeded - Metodo XotBaseMigration
 
 ## Scopo

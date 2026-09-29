@@ -1,14 +1,3 @@
----
-title: "bugfix session"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "bugfix session"
-issues: []
-discussions: []
----
-
 # Bugfix Session - 4 Gennaio 2025
 
 ## 🎯 Obiettivo
@@ -35,14 +24,6 @@ Press Ctrl+C to stop the server
 
 ---
 
-title: "bugfix session"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "bugfix session"
-issues: []
-discussions: []
 ## 📊 Riepilogo Intervento
 
 ### File Fixati: 5

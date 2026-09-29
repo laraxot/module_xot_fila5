@@ -1,14 +1,3 @@
----
-title: "analisi metodi duplicati"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "analisi metodi duplicati"
-issues: []
-discussions: []
----
-
 # Analisi Metodi Duplicati - Modulo Xot
 
 ## 🐄✨ Riferimenti Principali
@@ -260,17 +249,11 @@ class MyResource extends XotBaseResource
 class MyResource extends XotBaseResource
 {
     // ✅ CORRETTO: Implementa solo getFormSchema()
+<<<<<<< HEAD
     public function getFormSchema(): array
----
-title: "analisi metodi duplicati"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "analisi metodi duplicati"
-issues: []
-discussions: []
+=======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             'name' => Forms\Components\TextInput::make('name'),

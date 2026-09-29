@@ -1,7 +1,4 @@
 ---
-qmd: "final status"
-issues: []
-discussions: []
 title: "Final Status"
 type: reference
 tags: [wiki, no-frontmatter-fix]

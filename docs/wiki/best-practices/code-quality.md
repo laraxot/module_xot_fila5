@@ -1,7 +1,4 @@
 ---
-qmd: "code quality"
-issues: []
-discussions: []
 title: "Code Quality"
 type: reference
 tags: [wiki, no-frontmatter-fix]

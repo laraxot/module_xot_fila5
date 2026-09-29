@@ -1,14 +1,3 @@
----
-title: "phpstan analysis"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan analysis"
-issues: []
-discussions: []
----
-
 ## stato analisi phpstan
 
 - **data**: 2025-11-12  

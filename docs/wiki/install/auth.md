@@ -1,7 +1,4 @@
 ---
-qmd: "auth"
-issues: []
-discussions: []
 title: "Auth"
 type: reference
 tags: [wiki, no-frontmatter-fix]

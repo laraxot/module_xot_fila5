@@ -1,7 +1,4 @@
 ---
-qmd: "download the latest cacertpem file from"
-issues: []
-discussions: []
 title: "Download The Latest Cacertpem File From"
 type: reference
 tags: [wiki, no-frontmatter-fix]

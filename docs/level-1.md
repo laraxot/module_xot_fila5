@@ -1,14 +1,3 @@
----
-title: "level 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "level 1"
-issues: []
-discussions: []
----
-
 # PHPStan Report - Livello 10
 
 ## Errori rilevati

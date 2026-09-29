@@ -1,7 +1,4 @@
 ---
-qmd: " soketi"
-issues: []
-discussions: []
 title: "Soketi"
 type: reference
 tags: [wiki, no-frontmatter-fix]

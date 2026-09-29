@@ -1,7 +1,4 @@
 ---
-qmd: "fill field with lorem"
-issues: []
-discussions: []
 title: "Fill Field With Lorem"
 type: reference
 tags: [wiki, no-frontmatter-fix]

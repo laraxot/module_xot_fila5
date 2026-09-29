@@ -1,14 +1,3 @@
----
-title: "coolmodules double registration fix"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "coolmodules double registration fix"
-issues: []
-discussions: []
----
-
 # CoolModules Double Registration Fix
 
 ## 🚨 Problema Identificato
@@ -144,14 +133,6 @@ class CoolModulesServiceProvider extends PackageServiceProvider
 
 ---
 
-title: "coolmodules double registration fix"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "coolmodules double registration fix"
-issues: []
-discussions: []
 **Risolto**: Gennaio 2025
 **Tipo**: Bug Fix - Duplicate Registration
 **Impatto**: UI/UX Improvement

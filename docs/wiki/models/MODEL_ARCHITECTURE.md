@@ -1,7 +1,4 @@
 ---
-qmd: "MODEL ARCHITECTURE"
-issues: []
-discussions: []
 title: "Model Architecture"
 type: reference
 tags: [wiki, no-frontmatter-fix]

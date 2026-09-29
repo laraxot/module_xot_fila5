@@ -1,14 +1,3 @@
----
-title: "gits resolution 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "gits resolution 1"
-issues: []
-discussions: []
----
-
 # Risoluzione Conflitti Git - 6 Gennaio 2025
 
 ## Data: [DATE]
@@ -207,14 +196,6 @@ php artisan lang:check
 
 ---
 
-title: "gits resolution 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "gits resolution 1"
-issues: []
-discussions: []
 **Ultimo aggiornamento**: [DATE]
 **Autore**: Sistema di correzione automatica
 **Stato**: ✅ Completato

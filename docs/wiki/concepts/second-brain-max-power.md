@@ -1,7 +1,4 @@
 ---
-qmd: "second brain max power"
-issues: []
-discussions: []
 title: second brain max power — nota Xot
 type: concept
 module: Xot

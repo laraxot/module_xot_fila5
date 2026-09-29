@@ -1,14 +1,3 @@
----
-title: "phpstan progress"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan progress"
-issues: []
-discussions: []
----
-
 # PHPStan Fixes Progress Report - March 18, 2025
 
 ## Progress Summary

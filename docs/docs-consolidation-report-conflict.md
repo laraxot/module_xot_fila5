@@ -1,14 +1,3 @@
----
-title: "docs consolidation report conflict"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "docs consolidation report conflict"
-issues: []
-discussions: []
----
-
 # Report Consolidamento Documentazione - 27 Gennaio 2025
 
 ## Panoramica
@@ -243,14 +232,6 @@ Le prossime fasi si concentreranno sul completamento del consolidamento e sul mi
 
 ---
 
-title: "docs consolidation report conflict"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "docs consolidation report conflict"
-issues: []
-discussions: []
 **Data Report**: 27 Gennaio 2025
 **Stato**: Consolidamento in corso
 **Prossimo Update**: Completamento consolidamento root docs

@@ -1,14 +1,3 @@
----
-title: "quality analysis summary"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "quality analysis summary"
-issues: []
-discussions: []
----
-
 # Riepilogo Analisi Qualità Codice Completa
 
 **Data**: 2025-12-23

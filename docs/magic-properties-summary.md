@@ -1,14 +1,3 @@
----
-title: "magic properties summary"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "magic properties summary"
-issues: []
-discussions: []
----
-
 # Magic Properties Cleanup Report - 2025-11-17
 
 ## Summary

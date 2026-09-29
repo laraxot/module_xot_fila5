@@ -1,7 +1,4 @@
 ---
-qmd: "module dashboard page mandatory"
-issues: []
-discussions: []
 title: "Ogni modulo con panel Filament richiede app/Filament/Pages/Dashboard.php"
 type: concept
 module: Xot

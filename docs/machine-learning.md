@@ -1,7 +1,4 @@
 ---
-qmd: "machine learning"
-issues: []
-discussions: []
 title: 'machine_learning'
 module: Xot
 type: reference

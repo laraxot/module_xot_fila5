@@ -1,7 +1,4 @@
 ---
-qmd: "performance guidelines"
-issues: []
-discussions: []
 title: "Performance Guidelines"
 type: reference
 tags: [wiki, no-frontmatter-fix]

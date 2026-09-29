@@ -1,14 +1,3 @@
----
-title: "testcase sqlite to mysql fix"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "testcase sqlite to mysql fix"
-issues: []
-discussions: []
----
-
 # TestCase SQLite to MySQL Fix - Xot Module
 
 ## Problema Identificato
@@ -93,14 +82,6 @@ SELECT UNHEX('48656c6c6f'); -- ✅ Funziona in MySQL
 
 ---
 
-title: "testcase sqlite to mysql fix"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "testcase sqlite to mysql fix"
-issues: []
-discussions: []
 ## Soluzione
 
 ### Pattern Corretto

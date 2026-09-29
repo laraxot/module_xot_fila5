@@ -1,7 +1,4 @@
 ---
-qmd: "status"
-issues: []
-discussions: []
 title: "Status"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,7 +1,4 @@
 ---
-qmd: "patterns"
-issues: []
-discussions: []
 title: "Patterns"
 type: reference
 tags: [wiki, no-frontmatter-fix]

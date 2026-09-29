@@ -1,14 +1,3 @@
----
-title: "xot base wizard widget"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "xot base wizard widget"
-issues: []
-discussions: []
----
-
 # XotBaseWizardWidget
 
 Classe astratta: `Modules\Xot\Filament\Widgets\XotBaseWizardWidget`  

@@ -1,14 +1,3 @@
----
-title: "action usage patterns"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "action usage patterns"
-issues: []
-discussions: []
----
-
 # Action Usage Patterns - Regole Fondamentali
 
 ## 🎯 **REGOLA CRITICA: Pattern di Uso delle Action**
@@ -109,14 +98,6 @@ Aggiungere regole PHPStan per identificare automaticamente questi pattern.
 
 ---
 
-title: "action usage patterns"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "action usage patterns"
-issues: []
-discussions: []
 **PRIORITÀ**: CRITICA - Da seguire SEMPRE senza eccezioni
 **AGGIORNATO**: 2025-01-30
 **AUTORE**: Sistema di Qualità Laraxot

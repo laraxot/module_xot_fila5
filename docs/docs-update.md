@@ -1,14 +1,3 @@
----
-title: "docs update"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "docs update"
-issues: []
-discussions: []
----
-
 # Aggiornamento Documentazione - 2 Dicembre 2025
 
 ## 🎯 Obiettivo
@@ -22,14 +11,6 @@ Aggiornamento massivo documentazione progetto con:
 
 ---
 
-title: "docs update"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "docs update"
-issues: []
-discussions: []
 ## 📊 Stato Iniziale
 
 - **File .md totali**: 6787

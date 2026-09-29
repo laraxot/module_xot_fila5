@@ -1,14 +1,3 @@
----
-title: "git conflicts resolution massive"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "git conflicts resolution massive"
-issues: []
-discussions: []
----
-
 # Risoluzione Massiva Conflitti Git - 323 File
 
 ## Data

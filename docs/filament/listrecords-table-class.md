@@ -1,14 +1,3 @@
----
-title: "listrecords table class"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "listrecords table class"
-issues: []
-discussions: []
----
-
 # List Records — tabella via `*Table` class
 
 ## Regola (story 5.45 + 5.49)

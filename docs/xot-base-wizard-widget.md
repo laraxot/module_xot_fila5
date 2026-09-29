@@ -1,14 +1,3 @@
----
-title: "xot base wizard widget"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "xot base wizard widget"
-issues: []
-discussions: []
----
-
 # XotBaseWizardWidget
 
 The `XotBaseWizardWidget` provides a standardized base for creating multi-step form widgets in Filament.

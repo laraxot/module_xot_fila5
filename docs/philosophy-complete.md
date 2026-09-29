@@ -1,14 +1,3 @@
----
-title: "philosophy complete"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "philosophy complete"
-issues: []
-discussions: []
----
-
 # Xot - Filosofia Completa: Logica, Religione, Politica, Zen
 
 **Data Creazione**: 2025-01-18
@@ -25,14 +14,6 @@ discussions: []
 
 ---
 
-title: "philosophy complete"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "philosophy complete"
-issues: []
-discussions: []
 ## 🧠 Logica (Logic)
 
 ### Principio Fondamentale

@@ -1,14 +1,3 @@
----
-title: "forms and validation"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "forms and validation"
-issues: []
-discussions: []
----
-
 # Form e Validazione nel Progetto il progetto
 
 ## Filament Widgets vs Form Blade Tradizionali

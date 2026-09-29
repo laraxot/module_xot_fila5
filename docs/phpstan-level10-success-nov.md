@@ -1,14 +1,3 @@
----
-title: "phpstan level10 success nov"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan level10 success nov"
-issues: []
-discussions: []
----
-
 # PHPStan Level 10 - Successo Totale (Novembre 2025)
 
 ## 🎯 Obiettivo Raggiunto

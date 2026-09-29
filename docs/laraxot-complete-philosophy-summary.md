@@ -1,14 +1,3 @@
----
-title: "laraxot complete philosophy summary"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "laraxot complete philosophy summary"
-issues: []
-discussions: []
----
-
 # Laraxot Complete Philosophy Summary
 
 ## 🎯 Core Principles
@@ -214,12 +203,4 @@ class Permission extends BaseModel  // ❌ Should extend SpatiePermission
 
 ---
 
-title: "laraxot complete philosophy summary"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "laraxot complete philosophy summary"
-issues: []
-discussions: []
 **Philosophy Summary**: Laraxot values simplicity, consistency, and predictability above all else. Follow these principles to build maintainable, scalable applications with minimal technical debt.

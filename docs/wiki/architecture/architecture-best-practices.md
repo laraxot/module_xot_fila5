@@ -1,7 +1,4 @@
 ---
-qmd: "architecture best practices"
-issues: []
-discussions: []
 title: "Architecture Best Practices"
 type: reference
 tags: [wiki, no-frontmatter-fix]

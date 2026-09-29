@@ -1,14 +1,3 @@
----
-title: "architecture violations andes"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "architecture violations andes"
-issues: []
-discussions: []
----
-
 # Violazioni Architetturali e Correzioni - Pattern XotData
 
 ## 🚨 **Violazioni Architetturali Critiche**
@@ -791,12 +780,4 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 
 ---
 
-title: "architecture violations andes"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "architecture violations andes"
-issues: []
-discussions: []
 **Stato**: ✅ Pattern Documentato e Implementato

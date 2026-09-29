@@ -1,14 +1,3 @@
----
-title: "brand migration"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "brand migration"
-issues: []
-discussions: []
----
-
 
 # Migrazione al Nuovo Sistema Brand
 

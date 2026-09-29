@@ -1,14 +1,3 @@
----
-title: "ottimizzazioni approfondite modulo xot"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "ottimizzazioni approfondite modulo xot"
-issues: []
-discussions: []
----
-
 # Ottimizzazioni Approfondite Modulo Xot - DRY + KISS
 
 ## Panoramica
@@ -246,14 +235,6 @@ grep -r "extends.*Resource" app/Filament/Resources/
 
 ---
 
-title: "ottimizzazioni approfondite modulo xot"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "ottimizzazioni approfondite modulo xot"
-issues: []
-discussions: []
 **Priorità:** ALTA (modulo core del sistema)
 **Impatto:** Tutti i moduli e sviluppatori
 **Stato:** In attesa implementazione

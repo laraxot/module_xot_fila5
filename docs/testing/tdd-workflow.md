@@ -1,14 +1,3 @@
----
-title: "tdd workflow"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "tdd workflow"
-issues: []
-discussions: []
----
-
 # TDD Workflow - Laraxot
 
 ## Ciclo RED-GREEN-REFACTOR

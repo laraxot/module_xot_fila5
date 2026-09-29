@@ -1,14 +1,3 @@
----
-title: "override pattern philosophy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "override pattern philosophy"
-issues: []
-discussions: []
----
-
 # Override Pattern — La Filosofia degli Hook Inutili
 
 **Status**: Applied — anti-pattern rimosso da XotBaseWizardWidget e CreateTicketWizardWidget  
@@ -19,14 +8,6 @@ discussions: []
 
 ---
 
-title: "override pattern philosophy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "override pattern philosophy"
-issues: []
-discussions: []
 ## Il Problema: Override per Nulla
 
 ### L'Esempio "Merda"

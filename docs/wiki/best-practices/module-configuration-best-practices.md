@@ -1,7 +1,4 @@
 ---
-qmd: "module configuration best practices"
-issues: []
-discussions: []
 title: "Module Configuration Best Practices"
 type: reference
 tags: [wiki, no-frontmatter-fix]

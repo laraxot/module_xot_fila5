@@ -1,7 +1,4 @@
 ---
-qmd: "clean architecture"
-issues: []
-discussions: []
 title: "Clean Architecture"
 type: reference
 tags: [wiki, no-frontmatter-fix]

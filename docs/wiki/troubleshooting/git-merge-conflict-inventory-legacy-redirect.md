@@ -1,7 +1,4 @@
 ---
-tags: [documentation]
-issues: []
-discussions: []
 title: "Git Merge Conflict Inventory"
 type: concept
 status: deprecated

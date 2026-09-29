@@ -1,7 +1,4 @@
 ---
-qmd: "xot base manage related records pattern"
-issues: []
-discussions: []
 title: "Xot Base Manage Related Records Pattern"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,14 +1,3 @@
----
-title: "quality analysis all modules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "quality analysis all modules"
-issues: []
-discussions: []
----
-
 # Analisi Qualità Codice - Tutti i Moduli (PHPMD)
 
 **Data**: 2025-12-23

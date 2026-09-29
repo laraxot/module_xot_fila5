@@ -1,14 +1,3 @@
----
-title: "changelog"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "changelog"
-issues: []
-discussions: []
----
-
 # Changelog - Modulo Xot
 
 ## [2025-06-04] - Sessione Fix Critica
@@ -69,14 +58,6 @@ All notable changes to `:package_name` will be documented in this file.
 
 ---
 
-title: "changelog"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "changelog"
-issues: []
-discussions: []
 ## [1.1.0] - 2025-10-29
 
 Tutte le modifiche significative al modulo Xot sono documentate in questo file.

@@ -1,7 +1,4 @@
 ---
-qmd: "testing"
-issues: []
-discussions: []
 title: 'Testing — risorse esterne'
 module: Xot
 type: reference

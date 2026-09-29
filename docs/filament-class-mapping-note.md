@@ -1,14 +1,3 @@
----
-title: "filament class mapping note"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament class mapping note"
-issues: []
-discussions: []
----
-
 # Nota: Forms Components Base Classes
 
 **Data**: 2025-12-23

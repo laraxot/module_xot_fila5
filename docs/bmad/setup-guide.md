@@ -1,11 +1,4 @@
 ---
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "setup guide"
-issues: []
-discussions: []
 title: "Xot — BMAD Setup Guide"
 description: "Setup e configurazione BMAD per il modulo Xot"
 module: "Xot"
@@ -30,21 +23,21 @@ In questo modulo, BMAD serve a:
 
 ## Struttura Directory (Canonical)
 
-- **`_bmad/`**: moduli/agent/skills + configurazione
-- **`_bmad-output/`**: artefatti generati (contesto, prd, architettura, ui spec, ecc.)
 - **`docs/bmad/`**: questa documentazione
+- **`_bmad-output/`**: artefatti generati (repo root: `_bmad-output/implementation-artifacts/`)
+- **`_bmad/`**: framework BMAD esterno (non incluso nel repo; installato via BMAD CLI)
 
 ## Configurazione Lingua e Output
 
-- **`_bmad/config.yaml`**: lingua output documenti + cartella output
-- **`_bmad/config.user.yaml`**: preferenze utente (lingua comunicazione, nome)
+- **`_bmad/config.yaml`**: lingua output documenti + cartella output (esterno al repo)
+- **`_bmad/config.user.yaml`**: preferenze utente (lingua comunicazione, nome) (esterno al repo)
 
 ## Verifica Minima ("Funziona")
 
 La verifica pratica è: gli artefatti vanno dove devono andare, e le skill risultano invocabili.
 
-- **skills disponibili**: cartella `_bmad/` presente e popolata
-- **output**: la cartella `_bmad-output/` contiene almeno `project-context.md`
+- **skills disponibili**: BMAD CLI installato e configurato (`_bmad/` esterno al repo)
+- **output**: la cartella `_bmad-output/` (repo root) contiene `implementation-artifacts/`
 - **lingua**: le config utente/progetto non si resettano dopo update
 
 ## Check Post-Update (Anti-Regressione)
@@ -64,7 +57,6 @@ Dopo un update, ricontrollare che non si sia "spaccata" la coerenza tra moduli:
 ## Vedi Anche
 
 - [quick-reference](quick-reference.md)
-- [Project Context](../../_bmad-output/project-context.md)
 
 ---
 

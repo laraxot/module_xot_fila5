@@ -1,10 +1,4 @@
 ---
-type: note
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "story relationx pivot resolution hardening"
-issues: []
-discussions: []
 id: story-relationx-pivot-resolution-hardening
 slug: story-relationx-pivot-resolution-hardening
 title: "RelationX — rimuovere il parametro morto, chiudere il gap cross-database e rendere esplicito il contratto dei pivot"

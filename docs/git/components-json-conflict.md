@@ -1,14 +1,3 @@
----
-title: "components json conflict"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "components json conflict"
-issues: []
-discussions: []
----
-
 # Risoluzione Conflitto in _components.json
 
 ## Panoramica

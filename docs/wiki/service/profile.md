@@ -1,7 +1,4 @@
 ---
-qmd: "profile"
-issues: []
-discussions: []
 title: "Profile"
 type: reference
 tags: [wiki, no-frontmatter-fix]

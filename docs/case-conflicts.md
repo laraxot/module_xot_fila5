@@ -1,14 +1,3 @@
----
-title: "case conflicts"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "case conflicts"
-issues: []
-discussions: []
----
-
 # Case-Insensitive File Conflicts
 
 Elenco dei duplicati case-insensitive nel modulo `Xot`:

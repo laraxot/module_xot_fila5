@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: IDE Helper Models Governance
 type: reference
 tags: [ide-helper, phpstan, data-sacred, models]

@@ -1,7 +1,4 @@
 ---
-qmd: "forms"
-issues: []
-discussions: []
 title: "Forms"
 type: reference
 tags: [wiki, no-frontmatter-fix]

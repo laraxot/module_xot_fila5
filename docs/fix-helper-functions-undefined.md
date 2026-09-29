@@ -1,14 +1,3 @@
----
-title: "fix helper functions undefined"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "fix helper functions undefined"
-issues: []
-discussions: []
----
-
 # Fix: Helper Functions Undefined - Analisi e Risoluzione
 
 ## 🐛 Problema Originale
@@ -449,14 +438,6 @@ Docs: aggiornata documentazione Xot e Tenant
 
 ---
 
-title: "fix helper functions undefined"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "fix helper functions undefined"
-issues: []
-discussions: []
 ## 🔄 Fix Aggiuntivo: getModuleModels() durante package:discover
 
 **Data**: Gennaio 2025

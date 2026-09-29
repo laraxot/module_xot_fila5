@@ -1,14 +1,3 @@
----
-title: "filament tables schemas architecture"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament tables schemas architecture"
-issues: []
-discussions: []
----
-
 # Filament Tables & Schemas — Obbligo Architetturale
 
 ## Perché esistono `/Tables` e `/Schemas`

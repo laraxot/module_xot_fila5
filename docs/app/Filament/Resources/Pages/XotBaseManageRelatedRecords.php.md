@@ -1,7 +1,4 @@
 ---
-qmd: "XotBaseManageRelatedRecords.php"
-issues: []
-discussions: []
 title: "XotBaseManageRelatedRecords.php — analisi dell'implementazione reale"
 type: code-analysis
 status: discussion

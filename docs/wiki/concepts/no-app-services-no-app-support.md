@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Xot senza app/Services e app/Support — Actions only"
 type: concept
 module: Xot

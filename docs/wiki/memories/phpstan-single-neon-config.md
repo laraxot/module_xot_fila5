@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Memoria — PHPStan solo laravel/phpstan.neon"
 type: memory
 module: Xot

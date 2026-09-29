@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 return [
     'navigation' => [
-        'name' => 'cache lock',
+        'name' => 'Blocco cache',
         'plural' => 'cache locks',
         'group' => [
             'name' => 'Admin',
         ],
-        'label' => 'cache lock.navigation',
-        'icon' => 'cache lock.navigation',
+        'label' => 'Lock Cache',
+        'icon' => 'heroicon-o-shield-exclamation',
         'sort' => 95,
     ],
     'pages' => [

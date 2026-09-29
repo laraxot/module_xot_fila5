@@ -1,14 +1,3 @@
----
-title: "phpstan larastan vendor mismatch.story"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan larastan vendor mismatch.story"
-issues: []
-discussions: []
----
-
 # BMAD Story — Larastan Version Mismatch in Modules/Xot/vendor
 
 ## Understand

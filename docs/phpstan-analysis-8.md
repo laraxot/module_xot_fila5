@@ -1,14 +1,3 @@
----
-title: "phpstan analysis 8"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan analysis 8"
-issues: []
-discussions: []
----
-
 # PHPStan Analysis - 27 Gennaio 2025
 
 **Data Analisi**: 2025-01-27  
@@ -18,14 +7,6 @@ discussions: []
 
 ---
 
-title: "phpstan analysis 8"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan analysis 8"
-issues: []
-discussions: []
 ## 📊 Stato Attuale
 
 ### Errori Totali: 594

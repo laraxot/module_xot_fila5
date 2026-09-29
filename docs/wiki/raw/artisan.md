@@ -1,7 +1,4 @@
 ---
-qmd: "artisan"
-issues: []
-discussions: []
 title: "Artisan"
 type: reference
 tags: [wiki, no-frontmatter-fix]

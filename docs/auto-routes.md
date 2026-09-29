@@ -1,8 +1,4 @@
 ---
-tags: [documentation]
-qmd: "auto routes"
-issues: []
-discussions: []
 title: "Auto routes"
 type: reference
 status: active

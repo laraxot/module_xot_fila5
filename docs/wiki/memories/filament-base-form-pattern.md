@@ -1,7 +1,4 @@
 ---
-updated: 2026-09-26
-issues: []
-discussions: []
 title: "Pattern BaseForm per Filament Resources"
 type: memory
 tags: [filament, form, base-class, inheritance, modular]
@@ -46,9 +43,11 @@ Modules/IndennitaResponsabilita/app/Filament/Resources/MessageResource/Schemas/
 // Modules/Ptv/.../Schemas/BaseMessageForm.php
 abstract class BaseMessageForm extends XotBaseResourceForm
 {
+<<<<<<< HEAD
     public function getFormSchema(): array
----
+=======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             'type' => Select::make('type')

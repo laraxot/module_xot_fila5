@@ -1,7 +1,4 @@
 ---
-qmd: "information schema table"
-issues: []
-discussions: []
 title: "Information Schema Table"
 type: reference
 tags: [wiki, no-frontmatter-fix]

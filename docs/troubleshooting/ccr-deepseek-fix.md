@@ -1,14 +1,3 @@
----
-title: "ccr deepseek fix"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "ccr deepseek fix"
-issues: []
-discussions: []
----
-
 # CCR DeepSeek 400 Error Fix: Missing reasoning_content
 
 ## Problem

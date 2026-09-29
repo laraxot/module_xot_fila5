@@ -1,7 +1,4 @@
 ---
-qmd: "data objects"
-issues: []
-discussions: []
 title: "Data Objects"
 type: reference
 tags: [wiki, no-frontmatter-fix]
@@ -114,9 +111,11 @@ use Filament\Forms;
 
 class PerformanceResource extends XotBaseResource
 {
+<<<<<<< HEAD
     public function getFormSchema(): array
----
+=======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             Forms\Components\TextInput::make('nome')

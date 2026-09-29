@@ -1,14 +1,3 @@
----
-title: "quality tools"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "quality tools"
-issues: []
-discussions: []
----
-
 # Quality Tools: PHPMD, PHP-CS-Fixer, Laravel Pint, Psalm, PHPQA, actionlint, CodeRabbit
 
 This guide standardizes how we study, run, and maintain code quality tools across modules and themes without breaking the site. Always use dry-run/report modes first and integrate changes incrementally.

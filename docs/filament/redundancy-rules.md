@@ -1,14 +1,3 @@
----
-title: "redundancy rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "redundancy rules"
-issues: []
-discussions: []
----
-
 # Regole Anti-Ridondanza per XotBase Classes
 
 ## Principio Fondamentale: DRY (Don't Repeat Yourself)

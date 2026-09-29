@@ -1,7 +1,4 @@
 ---
-qmd: "dry kiss analysis"
-issues: []
-discussions: []
 title: "Dry Kiss Analysis"
 type: reference
 tags: [wiki, no-frontmatter-fix]

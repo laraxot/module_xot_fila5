@@ -1,7 +1,4 @@
 ---
-qmd: "coding standards"
-issues: []
-discussions: []
 title: "Coding Standards"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,14 +1,3 @@
----
-title: "git conflicts resolution"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "git conflicts resolution"
-issues: []
-discussions: []
----
-
 # Risoluzione Conflitti Git - 6 Gennaio 2025
 
 ## Data: 2025-01-06
@@ -303,14 +292,6 @@ php artisan lang:check
 
 ---
 
-title: "git conflicts resolution"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "git conflicts resolution"
-issues: []
-discussions: []
 **Ultimo aggiornamento**: 2025-01-06
 **Autore**: Sistema di correzione automatica
 **Stato**: ✅ Completato

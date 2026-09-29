@@ -1,7 +1,4 @@
 ---
-qmd: "struttura percorsi"
-issues: []
-discussions: []
 title: "Struttura Percorsi"
 type: reference
 tags: [wiki, no-frontmatter-fix]

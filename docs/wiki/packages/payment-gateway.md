@@ -1,7 +1,4 @@
 ---
-qmd: "payment gateway"
-issues: []
-discussions: []
 title: "Payment Gateway"
 type: reference
 tags: [wiki, no-frontmatter-fix]

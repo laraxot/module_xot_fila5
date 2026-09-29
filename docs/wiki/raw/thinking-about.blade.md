@@ -1,7 +1,4 @@
 ---
-qmd: "thinking about.blade"
-issues: []
-discussions: []
 title: "Thinking About.Blade"
 type: reference
 tags: [wiki, no-frontmatter-fix]

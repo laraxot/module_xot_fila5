@@ -1,7 +1,4 @@
 ---
-qmd: "001 core framework improvements"
-issues: []
-discussions: []
 title: "001 Core Framework Improvements"
 type: reference
 tags: [wiki, no-frontmatter-fix]

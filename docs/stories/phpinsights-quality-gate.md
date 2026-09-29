@@ -1,11 +1,4 @@
 ---
-title: "phpinsights quality gate"
-type: note
-tags: [documentation]
-updated: 2026-09-26
-qmd: "phpinsights quality gate"
-issues: []
-discussions: []
 id: phpinsights-quality-gate
 slug: phpinsights-base-workorder-fila5
 scope: [project:base_workorder_fila5, modules:All 52]

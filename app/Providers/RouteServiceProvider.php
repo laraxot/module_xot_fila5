@@ -16,7 +16,7 @@ use Modules\Xot\Http\Middleware\SetDefaultTenantForUrlsMiddleware;
 
 // --- bases -----
 
-class RouteServiceProvider extends XotBaseRouteServiceProvider
+class RouteServiceProvider extends ServiceProvider
 {
     public string $name = 'Xot';
 
@@ -44,6 +44,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
         $router = app(Router::class);
 
         // $this->registerLang(); // ✅ Temporaneamente disabilitato per debug
+        $this->registerRoutePattern($router);
         $this->registerMyMiddleware($router);
     }
 
@@ -52,9 +53,8 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
      */
     public function map(): void
     {
-        // Routes are handled by Folio + Volt for front office
-        // Filament handles back office routes
-        // No module route files needed
+        $this->mapApiRoutes();
+        $this->mapWebRoutes();
     }
 
     public function registerMyMiddleware(Router $router): void
@@ -120,6 +120,27 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
         $models_collect = collect(array_keys($models));
         $models_collect->implode('|');
         $models_collect->map(fn (int|string $item) => Str::plural(is_string($item) ? $item : ((string) $item)))->implode('|');
+    }
+
+    /**
+     * Define the "web" routes for the application.
+     * These routes all receive session state, CSRF protection, etc.
+     */
+    protected function mapWebRoutes(): void
+    {
+        Route::middleware('web')->namespace($this->moduleNamespace)->group(base_path('Modules/Xot/routes/web.php'));
+    }
+
+    /**
+     * Define the "api" routes for the application.
+     * These routes are typically stateless.
+     */
+    protected function mapApiRoutes(): void
+    {
+        Route::prefix('api')
+            ->middleware('api')
+            ->namespace($this->moduleNamespace)
+            ->group(base_path('Modules/Xot/routes/api.php'));
     }
 
     // end registerRoutePattern

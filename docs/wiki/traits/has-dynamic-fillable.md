@@ -1,7 +1,4 @@
 ---
-qmd: "has dynamic fillable"
-issues: []
-discussions: []
 title: "Has Dynamic Fillable"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,14 +1,3 @@
----
-title: "xotbase"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "xotbase"
-issues: []
-discussions: []
----
-
 # XotBase Architecture & Extension Rules
 
 > **"Mai estendere Filament direttamente - Sempre tramite XotBase"**
@@ -53,11 +42,3 @@ grep -r "extends Filament\\" Modules/[YourModule] | grep -v "XotBase"
 L'output deve essere vuoto.
 
 ---
-title: "xotbase"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "xotbase"
-issues: []
-discussions: []

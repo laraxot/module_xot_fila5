@@ -1,12 +1,4 @@
 ---
-title: "git push resolution 2026 07 28"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "git push resolution 2026 07 28"
-issues: []
-discussions: []
 name: xot_git_push_resolution
 description: Risoluzione completa del push del modulo Xot a provtv/dev (2026-07-28)
 metadata:

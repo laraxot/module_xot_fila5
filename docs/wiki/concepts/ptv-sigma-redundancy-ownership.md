@@ -1,7 +1,4 @@
 ---
-qmd: "ptv sigma redundancy ownership"
-issues: []
-discussions: []
 title: policy ownership ridondanza Xot
 module: Xot
 type: concept

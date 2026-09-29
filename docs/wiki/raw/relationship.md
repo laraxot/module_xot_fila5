@@ -1,7 +1,4 @@
 ---
-qmd: "relationship"
-issues: []
-discussions: []
 title: "Relationship"
 type: reference
 tags: [wiki, no-frontmatter-fix]

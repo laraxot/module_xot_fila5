@@ -1,7 +1,4 @@
 ---
-qmd: "aggregati"
-issues: []
-discussions: []
 title: "Aggregati"
 type: reference
 tags: [wiki, no-frontmatter-fix]

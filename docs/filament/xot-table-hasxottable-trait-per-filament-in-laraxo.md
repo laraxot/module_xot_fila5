@@ -1,14 +1,3 @@
----
-title: "xot table hasxottable trait per filament in laraxo"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "xot table hasxottable trait per filament in laraxo"
-issues: []
-discussions: []
----
-
 # HasXotTable Trait per Filament in Laraxot PTVX
 
 ## Panoramica

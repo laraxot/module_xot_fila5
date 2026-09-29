@@ -1,14 +1,3 @@
----
-title: "policy base strategy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "policy base strategy"
-issues: []
-discussions: []
----
-
 # Policy base strategy
 
 ## Obiettivo

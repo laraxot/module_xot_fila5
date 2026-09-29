@@ -1,8 +1,4 @@
 ---
-tags: [documentation]
-qmd: "phpstan fix xot.story"
-issues: []
-discussions: []
 title: "PHPStan fix Xot — Safe function imports in AssetActionsTest"
 type: story
 module: Xot

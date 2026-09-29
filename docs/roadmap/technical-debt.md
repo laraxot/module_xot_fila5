@@ -1,14 +1,3 @@
----
-title: "technical debt"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "technical debt"
-issues: []
-discussions: []
----
-
 # Xot Module - Technical Debt
 
 ## 📋 Table of Contents
@@ -595,11 +584,3 @@ Low Impact / High Effort: Defer or Skip
 
 ---
 
-title: "technical debt"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "technical debt"
-issues: []
-discussions: []

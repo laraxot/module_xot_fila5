@@ -1,14 +1,3 @@
----
-title: "opencode gsd config"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "opencode gsd config"
-issues: []
-discussions: []
----
-
 # OpenCode & GSD — Allineamento Schema Agenti
 
 **Rule type**: infrastructure / config alignment
@@ -57,14 +46,6 @@ Se un file `.opencode/agents/gsd-*.md` causa errori di validazione:
 
 ```yaml
 ---
-title: "opencode gsd config"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "opencode gsd config"
-issues: []
-discussions: []
 name: gsd-debug-session-manager
 description: ...
 mode: subagent

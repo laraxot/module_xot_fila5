@@ -1,7 +1,4 @@
 ---
-qmd: "collegamenti relativi"
-issues: []
-discussions: []
 title: "Collegamenti Relativi"
 type: reference
 tags: [wiki, no-frontmatter-fix]

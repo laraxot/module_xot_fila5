@@ -115,7 +115,7 @@ return [
             'tooltip' => 'cancel',
         ],
     ],
-    'title' => 'artisan commands manager',
+    'title' => 'Gestore comandi Artisan',
     'label' => 'Artisan Commands Manager',
     'plural_label' => 'Artisan Commands Manager (Plurale)',
     'fields' => [

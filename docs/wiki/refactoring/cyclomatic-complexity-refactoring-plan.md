@@ -1,7 +1,4 @@
 ---
-qmd: "cyclomatic complexity refactoring plan"
-issues: []
-discussions: []
 title: "Cyclomatic Complexity Refactoring Plan"
 type: reference
 tags: [wiki, no-frontmatter-fix]

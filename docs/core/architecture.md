@@ -1,14 +1,3 @@
----
-title: "architecture"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "architecture"
-issues: []
-discussions: []
----
-
 # Architettura Modulo Xot
 
 ## 🏗️ Panoramica Architetturale
@@ -278,13 +267,5 @@ return [
 
 ---
 
-title: "architecture"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "architecture"
-issues: []
-discussions: []
 **Ultimo aggiornamento:** Gennaio 2025
 **Versione:** 2.0 - Consolidata DRY + KISS

@@ -1,14 +1,3 @@
----
-title: "serviceprovider common errors"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "serviceprovider common errors"
-issues: []
-discussions: []
----
-
 # ServiceProvider Common Errors - Lessons Learned
 
 **Data**: 2025-01-10
@@ -209,14 +198,6 @@ Prima di creare un ServiceProvider:
 
 ---
 
-title: "serviceprovider common errors"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "serviceprovider common errors"
-issues: []
-discussions: []
 **Filosofia**: "La semplicità è la massima sofisticazione" - Struttura minima, funzionalità massima.
 
 **Principio DRY**: Non duplicare logica già gestita dal parent.

@@ -1,14 +1,3 @@
----
-title: "htaccess"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "htaccess"
-issues: []
-discussions: []
----
-
 # htaccess
 
 <!-- Contenuto migrato da _docs/htaccess.txt -->

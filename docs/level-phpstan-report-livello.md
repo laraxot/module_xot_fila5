@@ -1,14 +1,3 @@
----
-title: "level phpstan report livello"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "level phpstan report livello"
-issues: []
-discussions: []
----
-
 # PHPStan Report - Livello 10
 
 ## Errori rilevati

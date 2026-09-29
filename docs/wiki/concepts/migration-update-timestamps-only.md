@@ -1,5 +1,4 @@
 ---
-tags: [documentation]
 title: "Migrazioni — solo updateTimestamps"
 type: concept
 module: Xot

@@ -1,7 +1,4 @@
 ---
-qmd: "video player"
-issues: []
-discussions: []
 title: "Video Player"
 type: reference
 tags: [wiki, no-frontmatter-fix]

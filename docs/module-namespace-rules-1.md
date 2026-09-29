@@ -1,14 +1,3 @@
----
-title: "module namespace rules 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "module namespace rules 1"
-issues: []
-discussions: []
----
-
 # Regola generale: Label e traduzioni in Filament
 
 ## Regola

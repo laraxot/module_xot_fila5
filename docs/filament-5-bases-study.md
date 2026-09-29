@@ -1,14 +1,3 @@
----
-title: "filament 5 bases study"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament 5 bases study"
-issues: []
-discussions: []
----
-
 # Filament 5 Bases Study (2026-03-02)
 
 ## Scope

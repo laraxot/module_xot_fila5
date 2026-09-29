@@ -1,7 +1,4 @@
 ---
-qmd: "bad practices"
-issues: []
-discussions: []
 title: "Bad Practices"
 type: reference
 tags: [wiki, no-frontmatter-fix]

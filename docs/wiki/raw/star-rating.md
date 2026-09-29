@@ -1,7 +1,4 @@
 ---
-qmd: "star rating"
-issues: []
-discussions: []
 title: "Star Rating"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,14 +1,3 @@
----
-title: "service provider best practices 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "service provider best practices 1"
-issues: []
-discussions: []
----
-
 # Service Provider: Best Practices in Laraxot
 
 Questo documento definisce le linee guida ufficiali e le best practices per l'implementazione dei Service Provider all'interno del framework Laraxot.

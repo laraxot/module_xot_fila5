@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "_nwidart"
 module: "Xot"
 type: concept

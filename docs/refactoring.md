@@ -1,14 +1,3 @@
----
-title: "refactoring"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "refactoring"
-issues: []
-discussions: []
----
-
 # Refactoring del Modulo Xot
 
 ## Trait Rimossi

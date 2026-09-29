@@ -1,7 +1,4 @@
 ---
-qmd: "current progress"
-issues: []
-discussions: []
 title: "Current Progress"
 type: reference
 tags: [wiki, no-frontmatter-fix]

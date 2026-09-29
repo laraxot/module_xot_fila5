@@ -1,7 +1,4 @@
 ---
-qmd: "scrape"
-issues: []
-discussions: []
 title: "Scrape"
 type: reference
 tags: [wiki, no-frontmatter-fix]

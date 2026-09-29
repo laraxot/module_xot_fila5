@@ -1,7 +1,4 @@
 ---
-qmd: "rad"
-issues: []
-discussions: []
 title: "Rad"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,14 +1,3 @@
----
-title: "cleanup action plan"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "cleanup action plan"
-issues: []
-discussions: []
----
-
 # Documentation Cleanup & Reorganization - Action Plan
 
 **Date**: 2025-10-17
@@ -165,12 +154,4 @@ done
 
 ---
 
-title: "cleanup action plan"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "cleanup action plan"
-issues: []
-discussions: []
 **Next Step**: Begin Phase 2 - Module Code Analysis (starting with Xot)

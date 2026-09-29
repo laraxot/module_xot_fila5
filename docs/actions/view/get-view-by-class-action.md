@@ -1,14 +1,3 @@
----
-title: "get view by class action"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "get view by class action"
-issues: []
-discussions: []
----
-
 # GetViewByClassAction
 
 `GetViewByClassAction` is a Spatie Queueable Action that converts a PHP class name into a Filament view path.

@@ -1,7 +1,4 @@
 ---
-qmd: "trans string"
-issues: []
-discussions: []
 title: "Trans String"
 type: reference
 tags: [wiki, no-frontmatter-fix]

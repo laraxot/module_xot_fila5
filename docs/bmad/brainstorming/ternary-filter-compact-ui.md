@@ -1,9 +1,4 @@
 ---
-tags: [documentation]
-created: 2026-09-26
-qmd: "ternary filter compact ui"
-issues: []
-discussions: []
 title: "Brainstorming — TernaryFilter select vs controlli compatti"
 type: brainstorming
 module: Xot

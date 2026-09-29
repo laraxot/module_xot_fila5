@@ -1,14 +1,3 @@
----
-title: "phpstan xotbasewidget view string fix roadmap"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan xotbasewidget view string fix roadmap"
-issues: []
-discussions: []
----
-
 # PHPStan Fix Roadmap - XotBaseWidget View-String Error
 
 **Data**: 2025-01-22
@@ -19,14 +8,6 @@ discussions: []
 
 ---
 
-title: "phpstan xotbasewidget view string fix roadmap"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan xotbasewidget view string fix roadmap"
-issues: []
-discussions: []
 ## 📋 Errore Identificato
 
 ### Errore PHPStan

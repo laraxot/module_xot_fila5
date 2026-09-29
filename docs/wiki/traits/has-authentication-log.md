@@ -1,7 +1,4 @@
 ---
-qmd: "has authentication log"
-issues: []
-discussions: []
 title: "Has Authentication Log"
 type: reference
 tags: [wiki, no-frontmatter-fix]

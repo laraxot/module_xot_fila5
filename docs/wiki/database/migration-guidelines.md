@@ -1,7 +1,4 @@
 ---
-qmd: "migration guidelines"
-issues: []
-discussions: []
 title: "Migration Guidelines"
 type: reference
 tags: [wiki, no-frontmatter-fix]

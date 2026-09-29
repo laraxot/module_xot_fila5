@@ -1,14 +1,3 @@
----
-title: "phpstan collection types"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan collection types"
-issues: []
-discussions: []
----
-
 # Gestione Tipi Collection in PHPStan - Modulo Xot
 
 ## Overview
@@ -229,13 +218,5 @@ public function getThemeColors(): array
 
 ---
 
-title: "phpstan collection types"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan collection types"
-issues: []
-discussions: []
 **Ultimo aggiornamento**: Gennaio 2025
 **Errori risolti**: ExportXls*, Collection chain inference, Model property access, Array type mismatches

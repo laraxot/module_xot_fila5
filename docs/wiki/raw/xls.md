@@ -1,7 +1,4 @@
 ---
-qmd: "xls"
-issues: []
-discussions: []
 title: "Xls"
 type: reference
 tags: [wiki, no-frontmatter-fix]

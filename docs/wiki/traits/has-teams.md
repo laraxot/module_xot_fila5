@@ -1,7 +1,4 @@
 ---
-qmd: "has teams"
-issues: []
-discussions: []
 title: "Has Teams"
 type: reference
 tags: [wiki, no-frontmatter-fix]

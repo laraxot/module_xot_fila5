@@ -1,7 +1,4 @@
 ---
-qmd: " performance"
-issues: []
-discussions: []
 title: '_performance'
 module: Xot
 type: reference

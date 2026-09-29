@@ -1,11 +1,4 @@
 ---
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "quick reference"
-issues: []
-discussions: []
 title: "Xot — BMAD Quick Reference"
 description: "Comandi rapidi BMAD per il modulo Xot"
 module: "Xot"
@@ -58,14 +51,13 @@ bmad-quick-spec "Specifica tecnica XotBaseResource"
 
 ## Cartelle Chiave
 
-- `_bmad/` — moduli, agenti, skill, config
-- `_bmad-output/` — artefatti generati
-- `docs/bmad/` — questa documentazione
+- `docs/bmad/` — questa documentazione BMAD
+- `_bmad-output/` — artefatti generati (repo root)
+- `_bmad/` — framework BMAD esterno (non incluso nel repo; installato via BMAD CLI)
 
 ## Vedi Anche
 
 - [setup-guide](setup-guide.md)
-- [merge proposals](MERGE_PROPOSAL_AI_VS_AIASSISTANT.md)
 
 ---
 

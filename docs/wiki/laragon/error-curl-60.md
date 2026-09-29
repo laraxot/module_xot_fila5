@@ -1,7 +1,4 @@
 ---
-qmd: "error curl 60"
-issues: []
-discussions: []
 title: "Error Curl 60"
 type: reference
 tags: [wiki, no-frontmatter-fix]

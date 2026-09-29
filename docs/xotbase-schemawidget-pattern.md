@@ -1,5 +1,4 @@
 ---
-discussions: []
 title: "XotBaseSchemaWidget — pattern Filament 5 (codice reale)"
 type: concept
 module: Xot

@@ -1,7 +1,4 @@
 ---
-qmd: "volt folio best practices"
-issues: []
-discussions: []
 title: "Volt Folio Best Practices"
 type: reference
 tags: [wiki, no-frontmatter-fix]

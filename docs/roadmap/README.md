@@ -1,14 +1,3 @@
----
-title: "README"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "README"
-issues: []
-discussions: []
----
-
 # Xot Module Roadmap
 
 > "Il motore che muove l'universo healthcare_app."
@@ -307,14 +296,6 @@ This module is open-source software licensed under the [MIT license](https://ope
 ---
 
 
-title: "README"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "README"
-issues: []
-discussions: []
 ---
 
 **Note**: This roadmap is a living document and will be updated as the project evolves. For the most up-to-date information, please refer to the individual roadmap sections linked above.

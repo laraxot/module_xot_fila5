@@ -1,14 +1,3 @@
----
-title: "comprehensive code analysis tools"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "comprehensive code analysis tools"
-issues: []
-discussions: []
----
-
 # 🔍 COMPREHENSIVE CODE ANALYSIS TOOLS GUIDE
 
 **Data Creazione**: 2025-01-27
@@ -18,14 +7,6 @@ discussions: []
 
 ---
 
-title: "comprehensive code analysis tools"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "comprehensive code analysis tools"
-issues: []
-discussions: []
 ## 🎯 OVERVIEW
 
 Guida completa per l'utilizzo di tutti gli strumenti di analisi del codice disponibili nel progetto FixCity. Questi strumenti garantiscono la massima qualità del codice, sicurezza e manutenibilità.

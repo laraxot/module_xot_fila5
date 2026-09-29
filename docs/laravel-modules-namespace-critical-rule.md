@@ -1,14 +1,3 @@
----
-title: "laravel modules namespace critical rule"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "laravel modules namespace critical rule"
-issues: []
-discussions: []
----
-
 # ⚠️ REGOLA CRITICA - Namespace Laravel Modules OBBLIGATORIA
 
 **Data**: 2025-01-22
@@ -17,14 +6,6 @@ discussions: []
 
 ---
 
-title: "laravel modules namespace critical rule"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "laravel modules namespace critical rule"
-issues: []
-discussions: []
 ## 🎯 La Regola Fondamentale
 
 **NEI NAMESPACE DEI MODULI LARAVEL, NON INCLUDERE MAI `app` O `App`, ANCHE SE I FILE SONO FISICAMENTE NELLA DIRECTORY `app/`.**

@@ -1,14 +1,3 @@
----
-title: "pdf actions overview"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "pdf actions overview"
-issues: []
-discussions: []
----
-
 # PDF Actions - Panoramica Tecnica
 
 ## 📋 Overview
@@ -18,14 +7,6 @@ Sistema progettato con principi **DRY + KISS** per massima riutilizzabilità e m
 
 ---
 
-title: "pdf actions overview"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "pdf actions overview"
-issues: []
-discussions: []
 ## 🎯 Actions Disponibili
 
 ### 1. GetPdfContentByRecordAction ⭐ PRINCIPALE

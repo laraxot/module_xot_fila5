@@ -1,14 +1,3 @@
----
-title: "git conflicts inventory"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "git conflicts inventory"
-issues: []
-discussions: []
----
-
 # Inventario Conflitti Git - Xot Module
 
 ## File con conflitti di merge non risolti

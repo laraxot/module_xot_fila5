@@ -1,7 +1,4 @@
 ---
-qmd: "no property exists on models"
-issues: []
-discussions: []
 title: "No Property Exists On Models"
 type: reference
 tags: [wiki, no-frontmatter-fix]

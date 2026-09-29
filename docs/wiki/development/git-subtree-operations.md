@@ -1,7 +1,4 @@
 ---
-qmd: "git subtree operations"
-issues: []
-discussions: []
 title: "Git Subtree Operations"
 type: reference
 tags: [wiki, no-frontmatter-fix]

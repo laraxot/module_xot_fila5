@@ -1,14 +1,3 @@
----
-title: "laravel 13 modular composer upgrade"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "laravel 13 modular composer upgrade"
-issues: []
-discussions: []
----
-
 # Laravel 13 modular Composer upgrade
 
 ## Purpose

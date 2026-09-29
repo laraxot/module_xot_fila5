@@ -1,7 +1,4 @@
 ---
-qmd: " tips"
-issues: []
-discussions: []
 title: 'Tips'
 module: Xot
 type: reference
