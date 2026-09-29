@@ -21,13 +21,15 @@ use function Safe\glob;
 function modulesWithoutManifest(): array
 {
     $modulesRoot = dirname(__DIR__, 3);
-    $dirs = glob($modulesRoot.'/*', GLOB_ONLYDIR);
-    return array_values(array_filter(
-        array_map(static fn (string $dir): string => basename($dir), $dirs),
-        static function (string $name) use ($modulesRoot): bool {
-            return ! is_file($modulesRoot.'/'.$name.'/module.json');
-        },
-    ));
+    $withoutManifest = [];
+
+    foreach (glob($modulesRoot.'/*', GLOB_ONLYDIR) as $dir) {
+        if (is_string($dir) && ! is_file($dir.'/module.json')) {
+            $withoutManifest[] = basename($dir);
+        }
+    }
+
+    return $withoutManifest;
 }
 
 it('Modules contiene solo moduli con module.json', function (): void {
