@@ -110,7 +110,13 @@ Esito reale (2026-09-29, ~11:30, load average ~53 per altre 6 sessioni Pest):
   `git status` nel repo del modulo e verificare che la cartella non sia tornata.
 - Repo annidati: ogni `Modules/<Mod>` ha un `.git` proprio; commit e verifica dal
   contesto del modulo, non dalla root. Controllare `.git/rebase-merge` prima di editare.
-- Il `.gitignore` non copre i file gia' tracciati: serve `git rm -r --cached`.
+- Il `.gitignore` non copre i file gia' tracciati: serve `git rm -r --cached`, ma **solo
+  sul path appena aggiunto al `.gitignore`**, nel repo del modulo, uno alla volta. Mai
+  `git rm -r --cached .` sull'intero repo e mai su `laravel/config/local/` (config per
+  tenant, versionata apposta). Conseguenza della ricetta applicata a tutto: il commit root
+  `8b3b7cbea3` (2026-09-29) ha untracciato ~1261 file ignorati, fra cui i 90 della config
+  per tenant, e un pull li avrebbe cancellati dai checkout. Story
+  `laravel/Modules/Tenant/docs/bmad/stories/tenant-config-untracked-by-gitignore.story.md`.
 - `bashscripts/tools/audit-module-root-hygiene.sh` contiene marker di conflitto
   (soglia 5 vs 6) e non e' allineato a queste regole: da riconciliare, non duplicare.
 - `bashscripts/ai/wiki/memories/workspace-naming.md` descriveva `_<nome>.code-workspace`:

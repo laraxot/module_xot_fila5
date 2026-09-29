@@ -3,6 +3,9 @@
 declare(strict_types=1);
 
 use Modules\Xot\Tests\TestCase;
+use Webmozart\Assert\Assert;
+
+use function Safe\glob;
 
 uses(TestCase::class)->group('no-xot-db');
 
@@ -23,7 +26,9 @@ it('non esiste alcuna cartella Modules/*/app/Http/Livewire', function (): void {
 
     $found = [];
     foreach ($patterns as $pattern) {
-        $found = array_merge($found, glob($pattern, GLOB_ONLYDIR) ?: []);
+        $matches = glob($pattern, GLOB_ONLYDIR);
+        Assert::allString($matches);
+        $found = array_merge($found, $matches);
     }
 
     expect($found)->toBe([], 'Cartelle Livewire residue: '.implode(', ', $found));

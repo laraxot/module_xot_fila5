@@ -9,6 +9,10 @@ use PHPUnit\Framework\Assert;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Process\Process;
 
+use function Safe\fclose;
+use function Safe\fopen;
+use function Safe\fread;
+
 /**
  * I binari del repository non devono mai essere alterati dai filtri di git.
  *
@@ -290,12 +294,14 @@ final class BinaryAssetsNotCrStrippedTest extends TestCase
         return $contents;
     }
 
+    /**
+     * @param  int<1, max>  $length
+     */
     private function readHead(string $path, int $length): string
     {
         $handle = fopen($path, 'rb');
-        Assert::assertNotFalse($handle, 'impossibile aprire '.$path);
 
-        $head = (string) fread($handle, $length);
+        $head = fread($handle, $length);
         fclose($handle);
 
         return $head;
