@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Correzioni PHPStan - 6 Gennaio 2025"
 module: "Xot"
 type: concept

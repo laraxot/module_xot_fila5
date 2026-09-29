@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Piano di Risoluzione Conflitti Git"
 module: "Xot"
 type: concept

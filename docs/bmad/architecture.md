@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_z8d13y
 <<<<<<< .merge_file_t0hOOQ
 ---
 title: "Xot — architettura BMAD"
@@ -114,6 +115,8 @@ Ogni risorsa concreta segue il pattern: `Resource.php` + `Pages/` + `Schemas/For
 
 I link relativi puntano a file esistenti in questo modulo. Vedasi `README.md` per lo story index e `discussions/01-traits-composition.md` per il contesto architetturale.
 =======
+=======
+>>>>>>> .merge_file_SsvJtK
 # Architettura del modulo Xot
 
 ## Overview
@@ -147,4 +150,7 @@ Interfacce per l'iniezione di dipendenze.
 - Filament Widget invece di Livewire
 - Array una chiave per riga
 - Schema-driven Forms (XotBaseSchemaWidget)
+<<<<<<< .merge_file_z8d13y
 >>>>>>> .merge_file_MNfWYP
+=======
+>>>>>>> .merge_file_SsvJtK

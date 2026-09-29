@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 return [
     'accepted' => ':attribute moet geaccepteerd worden.',
     'active_url' => ':attribute is geen geldige URL.',

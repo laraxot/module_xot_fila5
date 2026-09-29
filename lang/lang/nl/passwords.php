@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 return [
     'password' => 'Wachtwoorden moeten uit ten minste zes karakters bestaan en overeen komen met de herhaling.',
     'reset' => 'Uw wachtwoord is gereset!',

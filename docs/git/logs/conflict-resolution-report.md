@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Risoluzione Conflitti Git - Report di Intervento"
 module: "Xot"
 type: concept

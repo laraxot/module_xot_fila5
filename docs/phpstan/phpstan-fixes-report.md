@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "PHPStan Fixes Report - Gennaio 2025"
 module: "Xot"
 type: concept

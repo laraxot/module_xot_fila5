@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Linee Guida per PHPStan Livello 10 - Regole Comuni"
 module: "Xot"
 type: concept

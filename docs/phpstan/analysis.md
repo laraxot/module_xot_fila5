@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Analisi PHPStan del modulo Xot"
 module: "Xot"
 type: concept
