@@ -1,4 +1,8 @@
 ---
+tags: [documentation]
+qmd: "custom casts"
+issues: []
+discussions: []
 title: "Custom casts"
 type: reference
 status: active

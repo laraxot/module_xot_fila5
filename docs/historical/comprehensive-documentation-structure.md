@@ -1,3 +1,14 @@
+---
+title: "comprehensive documentation structure"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "comprehensive documentation structure"
+issues: []
+discussions: []
+---
+
 # Comprehensive Documentation Structure
 
 ## 🏗️ Documentation Architecture
@@ -345,6 +356,14 @@ find Modules/ -name "*.md" -exec markdownlint {} \;
 
 ---
 
+title: "comprehensive documentation structure"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "comprehensive documentation structure"
+issues: []
+discussions: []
 **Documentation Version**: 1.0
 **Last Updated**: 2025-11-17
 **Maintenance**: Xot Module Documentation Team

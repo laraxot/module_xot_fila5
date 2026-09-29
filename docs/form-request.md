@@ -1,7 +1,7 @@
-<<<<<<< HEAD
-https://dev.to/psylogico/different-ways-to-use-laravel-form-requests-5bmb
-=======
 ---
+qmd: "form request"
+issues: []
+discussions: []
 title: 'Form request — risorse esterne'
 module: Xot
 type: reference
@@ -21,4 +21,3 @@ updated: 2026-08-24
 ## Riferimenti
 
 - <https://dev.to/psylogico/different-ways-to-use-laravel-form-requests-5bmb>
->>>>>>> laraxot/dev

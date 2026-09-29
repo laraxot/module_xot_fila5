@@ -1,4 +1,8 @@
 ---
+created: 2026-09-26
+qmd: "xotdata metatagdata not simple dto"
+issues: []
+discussions: []
 title: "XotData e MetatagData — non DTO semplici"
 type: reference
 module: Xot

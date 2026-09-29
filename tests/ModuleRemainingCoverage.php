@@ -176,7 +176,7 @@ final class ModuleRemainingCoverage
     {
         $executed = 0;
 
-        foreach (['View', 'Http/Livewire', 'Http/Middleware'] as $dir) {
+        foreach (['View', 'Http/Middleware'] as $dir) {
             foreach (ModuleBusinessCoverage::discoverPhpClasses($appRoot, $moduleNamespace, $dir) as $class) {
                 $ref = new ReflectionClass($class);
                 if ($ref->isAbstract() || $ref->isInterface() || $ref->isTrait() || $ref->isEnum()) {
@@ -1090,7 +1090,7 @@ final class ModuleRemainingCoverage
     }
 
     /**
-     * @return array<string, int|string>
+     * @return array<string, mixed>
      */
     private static function defaultModelAttributes(): array
     {

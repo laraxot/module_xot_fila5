@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Xot — scopo, confini e come servirlo meglio"
 type: concept
 module: Xot

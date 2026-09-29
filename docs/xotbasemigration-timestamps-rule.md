@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "XotBaseMigration Timestamps Rule - Single Authority Pattern"
 type: rule
 tags: [xotbasemigration, timestamps, dry-kiss, idempotency, migrations]

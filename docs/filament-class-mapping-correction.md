@@ -1,11 +1,18 @@
-<<<<<<< HEAD
-# Correzione Mapping Classi Filament - [DATE]
+---
+title: "filament class mapping correction"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament class mapping correction"
+issues: []
+discussions: []
+---
 
-=======
 # Correzione Mapping Classi Filament - 2025-12-23
 
 **Data**: 2025-12-23
->>>>>>> laraxot/dev
+
 **Obiettivo**: Correggere mapping classi inesistenti nel file `filament_class.txt`
 
 ## ⚠️ Problema Identificato
@@ -118,9 +125,13 @@ Se in futuro si volesse creare queste classi base:
 
 ---
 
+title: "filament class mapping correction"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament class mapping correction"
+issues: []
+discussions: []
 **Stato**: ✅ Mapping corretto per riflettere codice esistente
-<<<<<<< HEAD
-**Data Correzione**: [DATE]
-=======
 **Data Correzione**: 2025-12-23
->>>>>>> laraxot/dev

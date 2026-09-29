@@ -1,4 +1,8 @@
 ---
+tags: [documentation]
+qmd: "sync modules cli bmad.story"
+issues: []
+discussions: []
 title: "Comando .claude/commands/sync-modules — sincronizzare path da gitmodules.ini con org param"
 type: story
 module: Xot

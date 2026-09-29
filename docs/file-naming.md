@@ -1,3 +1,14 @@
+---
+title: "file naming"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "file naming"
+issues: []
+discussions: []
+---
+
 # Regole di Naming per File
 
 ## 🎯 Regola Fondamentale: NO Duplicati Case-Insensitive

@@ -1,3 +1,14 @@
+---
+title: "bashscripts location policy"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "bashscripts location policy"
+issues: []
+discussions: []
+---
+
 # Policy Posizione Script Bash (VINCOLANTE)
 
 ## 🚫 Regola Assoluta
@@ -150,6 +161,14 @@ git commit -m "refactor: move script to bashscripts/fix/ (location policy compli
 
 ---
 
+title: "bashscripts location policy"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "bashscripts location policy"
+issues: []
+discussions: []
 **Ultimo aggiornamento**: Gennaio 2025
 **Motivazione**: Enforcement della separazione tra codice applicativo e script operativi
 **Filosofia**: "Separazione delle responsabilità, organizzazione scalabile, deploy pulito"

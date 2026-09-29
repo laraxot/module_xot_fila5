@@ -1,7 +1,7 @@
-<<<<<<< HEAD
-https://statamic.com/
-=======
 ---
+qmd: "laravel cms"
+issues: []
+discussions: []
 title: 'Laravel cms — risorse esterne'
 module: Xot
 type: reference
@@ -21,4 +21,3 @@ updated: 2026-08-24
 ## Riferimenti
 
 - <https://statamic.com/>
->>>>>>> laraxot/dev

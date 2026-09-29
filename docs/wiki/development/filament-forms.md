@@ -1,4 +1,7 @@
 ---
+qmd: "filament forms"
+issues: []
+discussions: []
 title: "Filament Forms"
 type: reference
 tags: [wiki, no-frontmatter-fix]
@@ -23,11 +26,9 @@ class PerformanceResource extends XotBaseResource
 {
     protected static ?string $model = Performance::class;
 
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
+---
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             Forms\Components\Card::make()
@@ -244,11 +245,9 @@ Forms\Components\Grid::make()
 ### Eventi Form
 
 ```php
-<<<<<<< HEAD
 public function getFormSchema(): array
-=======
+---
 public function getFormSchema(): array
->>>>>>> laraxot/dev
 {
     return [
         Forms\Components\TextInput::make('codice')

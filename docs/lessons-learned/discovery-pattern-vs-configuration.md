@@ -1,4 +1,12 @@
 ---
+title: "discovery pattern vs configuration"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "discovery pattern vs configuration"
+issues: []
+discussions: []
 name: discovery-pattern-vs-configuration
 description: "Quando un dato è schema-derivabile usa un getter con introspection, mai setter+property"
 metadata:

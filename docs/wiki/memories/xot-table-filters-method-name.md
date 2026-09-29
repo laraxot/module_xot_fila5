@@ -1,4 +1,7 @@
 ---
+updated: 2026-09-26
+issues: []
+discussions: []
 title: "XotTable filters method naming"
 type: memory
 tags: [filament, table, filters, hasxottable, naming]

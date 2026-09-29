@@ -1,3 +1,14 @@
+---
+title: "filament inheritance guidelines"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament inheritance guidelines"
+issues: []
+discussions: []
+---
+
 # Linee Guida per l'Ereditarietà da Classi Filament
 
 ## Problema di Compatibilità con Metodi Statici/Non Statici

@@ -1,9 +1,28 @@
+---
+title: "extension rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "extension rules"
+issues: []
+discussions: []
+---
+
 # Filament Class Extension Rules
 
 **Principio Fondamentale**: Mai estendere classi Filament direttamente - sempre usare classi XotBase
 
 ---
 
+title: "extension rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "extension rules"
+issues: []
+discussions: []
 ## 🚨 Regola Assoluta
 
 **NON estendere MAI classi Filament direttamente**
@@ -288,11 +307,9 @@ class UserResource extends XotBaseResource
     /**
      * @return array<int|string, \Filament\Schemas\Components\Component>
      */
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
+---
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             TextInput::make('name')->required(),

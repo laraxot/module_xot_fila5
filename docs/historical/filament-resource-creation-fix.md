@@ -1,3 +1,14 @@
+---
+title: "filament resource creation fix"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament resource creation fix"
+issues: []
+discussions: []
+---
+
 # Filament Resource Creation Fix - Risoluzione Errori di Compatibilità
 
 ## Problema

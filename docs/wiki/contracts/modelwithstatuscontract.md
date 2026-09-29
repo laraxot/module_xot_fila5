@@ -1,4 +1,7 @@
 ---
+qmd: "modelwithstatuscontract"
+issues: []
+discussions: []
 title: "Modelwithstatuscontract"
 type: reference
 tags: [wiki, no-frontmatter-fix]

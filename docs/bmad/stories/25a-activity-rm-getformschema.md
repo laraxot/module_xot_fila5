@@ -1,16 +1,14 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 ---
-name: 25a-activity-rm-getformschema
-description: "Modulo: Activity"
-metadata:
-  type: bmad
+title: "25a activity rm getformschema"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "25a activity rm getformschema"
+issues: []
+discussions: []
 ---
 
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # 25a-activity — Rimuovere getFormSchema da SnapshotResource e StoredEventResource
 
 **Modulo:** Activity

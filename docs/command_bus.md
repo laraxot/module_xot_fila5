@@ -1,4 +1,8 @@
 ---
+tags: [documentation]
+qmd: "command bus"
+issues: []
+discussions: []
 title: "Command bus"
 type: reference
 status: active

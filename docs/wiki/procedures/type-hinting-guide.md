@@ -1,4 +1,11 @@
 ---
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "type hinting guide"
+issues: []
+discussions: []
 title: PHP Type Hinting Complete Guide
 description: Comprehensive guide to PHP type hinting, scalar types, compound types, and return types with examples
 category: procedures

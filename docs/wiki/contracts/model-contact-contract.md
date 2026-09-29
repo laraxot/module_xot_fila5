@@ -1,4 +1,7 @@
 ---
+qmd: "model contact contract"
+issues: []
+discussions: []
 title: "Model Contact Contract"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,4 +1,7 @@
 ---
+qmd: " Continuous Integration Tools"
+issues: []
+discussions: []
 title: '_continuous_integration_tools'
 module: Xot
 type: reference

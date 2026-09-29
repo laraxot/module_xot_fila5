@@ -1,4 +1,10 @@
 ---
+type: note
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "test database mysql only"
+issues: []
+discussions: []
 title: test database mysql only
 description: Perché i test Laraxot usano MySQL repliche *_test e non SQLite come motore sostitutivo.
 document_type: concept

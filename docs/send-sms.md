@@ -1,7 +1,7 @@
-<<<<<<< HEAD
-https://www.twilio.com/blog/create-database-queue-send-sms-php-laravel-queues-twilio-sms
-=======
 ---
+qmd: "send sms"
+issues: []
+discussions: []
 title: 'send_sms'
 module: Xot
 type: reference
@@ -18,4 +18,3 @@ updated: 2026-08-24
 <!-- Contenuto migrato da _docs/send_sms.txt -->
 
 https://www.twilio.com/blog/create-database-queue-send-sms-php-laravel-queues-twilio-sms
->>>>>>> laraxot/dev

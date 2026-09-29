@@ -1,3 +1,14 @@
+---
+title: "RelationX"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "RelationX"
+issues: []
+discussions: []
+---
+
 # RelationX Trait
 
 ## Scopo Business

@@ -1,3 +1,14 @@
+---
+title: "generate db documentation"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "generate db documentation"
+issues: []
+discussions: []
+---
+
 # GenerateDbDocumentationCommand
 
 ## Descrizione

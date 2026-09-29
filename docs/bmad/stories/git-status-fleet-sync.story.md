@@ -1,4 +1,9 @@
 ---
+type: note
+tags: [documentation]
+updated: 2026-09-26
+issues: []
+discussions: []
 id: "Xot/git-status-fleet-sync"
 title: "git status fleet: sync moduli, marker Notify, commit root"
 status: done

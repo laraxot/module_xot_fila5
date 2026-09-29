@@ -1,3 +1,14 @@
+---
+title: "phpstan critical rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan critical rules"
+issues: []
+discussions: []
+---
+
 # PHPStan Critical Rules - INTOCCABILE
 
 ## 🚨 REGOLA ASSOLUTA 🚨
@@ -174,6 +185,14 @@ La configurazione PHPStan è **SACRA** e **INTOCCABILE**. Tutti gli errori PHPSt
 
 ---
 
+title: "phpstan critical rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan critical rules"
+issues: []
+discussions: []
 **Priorità**: 🚨 CRITICA
 **Applicabilità**: Universale
 **Violazioni**: 🚫 VIETATE ASSOLUTAMENTE

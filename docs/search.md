@@ -1,7 +1,7 @@
-<<<<<<< HEAD
-https://www.linkedin.com/pulse/searchable-trait-search-multiple-columns-laravel-ech-chebaby/?trk=read_related_article-card_title
-=======
 ---
+qmd: "search"
+issues: []
+discussions: []
 title: 'Search — risorse esterne'
 module: Xot
 type: reference
@@ -21,4 +21,4 @@ updated: 2026-08-24
 ## Riferimenti
 
 - <https://freek.dev/1182-searching-models-using-a-where-like-query-in-laravel#adding-support-for-relations>
->>>>>>> laraxot/dev
+- <https://www.linkedin.com/pulse/searchable-trait-search-multiple-columns-laravel-ech-chebaby/?trk=read_related_article-card_title>

@@ -1,3 +1,14 @@
+---
+title: "phpstan code quality guide"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan code quality guide"
+issues: []
+discussions: []
+---
+
 # PHPStan Code Quality Guide - Laraxot
 
 **Ultimo aggiornamento**: [DATE]
@@ -14,6 +25,14 @@
 
 ---
 
+title: "phpstan code quality guide"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan code quality guide"
+issues: []
+discussions: []
 ## 📑 Indice
 
 1. [Regole Assolute](#-regole-assolute)
@@ -1647,11 +1666,9 @@ class UserResource extends XotBaseResource
     /**
      * @return array<int|string, \Filament\Schemas\Components\Component>
      */
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
+---
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             TextInput::make('name')->required(),
@@ -1674,14 +1691,14 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Pages;
 
-use Modules\Xot\Filament\Pages\XotBasePage;
+use Modules\Xot\Filament\Pages\XotBaseDashboard;
 
-class DashboardPage extends XotBasePage
+class Dashboard extends XotBaseDashboard
 {
     // $navigationIcon NON necessario
     // $title NON necessario
     // $navigationLabel NON necessario
-    // Gestiti automaticamente da XotBasePage
+    // Gestiti dalla base XotBaseDashboard
 }
 ```
 

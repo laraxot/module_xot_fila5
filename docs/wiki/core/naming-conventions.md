@@ -1,4 +1,7 @@
 ---
+qmd: "naming conventions"
+issues: []
+discussions: []
 title: "Naming Conventions"
 type: reference
 tags: [wiki, no-frontmatter-fix]

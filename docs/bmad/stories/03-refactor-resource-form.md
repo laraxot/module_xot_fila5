@@ -1,16 +1,14 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 ---
-name: 03-refactor-resource-form
-description: "Repo: git@github.com:laraxot/modulexotfila5.git"
-metadata:
-  type: bmad
+title: "03 refactor resource form"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "03 refactor resource form"
+issues: []
+discussions: []
 ---
 
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # BMAD Story 03 — XotBaseResourceForm: `use HasXotForm`
 
 **Repo:** `git@github.com:laraxot/module_xot_fila5.git`

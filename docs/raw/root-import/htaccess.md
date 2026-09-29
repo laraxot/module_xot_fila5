@@ -1,3 +1,14 @@
+---
+title: "htaccess"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "htaccess"
+issues: []
+discussions: []
+---
+
 https://frostbutter.com/articles/htaccess-cache-control-for-a-faster-website/
 
 # Start Cache control

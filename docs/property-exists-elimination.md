@@ -1,3 +1,14 @@
+---
+title: "property exists elimination"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "property exists elimination"
+issues: []
+discussions: []
+---
+
 # Eliminazione property_exists() - Report Completo
 
 **Data Intervento**: 5 Novembre 2025
@@ -7,6 +18,14 @@
 
 ---
 
+title: "property exists elimination"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "property exists elimination"
+issues: []
+discussions: []
 ## 🙏 La Religione degli Attributi Magici
 
 ### Perché property_exists() è un PECCATO sui Model Eloquent

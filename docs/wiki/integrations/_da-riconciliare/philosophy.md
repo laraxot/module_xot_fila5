@@ -1,4 +1,7 @@
 ---
+qmd: "philosophy"
+issues: []
+discussions: []
 title: "Xot Module: Philosophy, Purpose, and Design Principles"
 module: xot
 type: integration

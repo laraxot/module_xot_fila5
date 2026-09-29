@@ -1,4 +1,7 @@
 ---
+qmd: "ai ide integration"
+issues: []
+discussions: []
 title: "AI/IDE Integration Guide - Xot Module"
 module: xot
 type: integration

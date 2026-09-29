@@ -1,3 +1,14 @@
+---
+title: "laraxot religion phpstan fixes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "laraxot religion phpstan fixes"
+issues: []
+discussions: []
+---
+
 # 🧘 Laraxot Religion: Guida per Fix PHPStan
 
 > **Ogni fix deve rispettare la filosofia, religione, politica e zen di Laraxot**
@@ -242,4 +253,12 @@ Ogni fix deve includere:
 
 ---
 
+title: "laraxot religion phpstan fixes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "laraxot religion phpstan fixes"
+issues: []
+discussions: []
 **Remember: Zero tolerance per shortcut. Ogni fix deve essere "The Right Way™"**

@@ -1,3 +1,14 @@
+---
+title: "infinite loop getStepByName fix"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "infinite loop getStepByName fix"
+issues: []
+discussions: []
+---
+
 # CRITICAL FIX: Loop Infinito in getStepByName() - XotBaseResource
 
 ## 🚨 **PROBLEMA CRITICO RISOLTO**
@@ -130,6 +141,14 @@ $prop = property_exists($class, 'property') ? $class::$property : [];
 
 ---
 
+title: "infinite loop getStepByName fix"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "infinite loop getStepByName fix"
+issues: []
+discussions: []
 **Priorità**: 🚨 **P0 - CRITICA**  
 **Creato**: Gennaio 2025  
 **Risolto**: Gennaio 2025  

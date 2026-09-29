@@ -1,4 +1,7 @@
 ---
+qmd: "git conflict template"
+issues: []
+discussions: []
 title: "Git Conflict Template"
 type: reference
 tags: [wiki, no-frontmatter-fix]

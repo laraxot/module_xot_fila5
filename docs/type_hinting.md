@@ -1,4 +1,8 @@
 ---
+tags: [documentation]
+qmd: "type hinting"
+issues: []
+discussions: []
 title: "Type hinting"
 type: reference
 status: active

@@ -1,3 +1,14 @@
+---
+title: "code quality guidelines for laravel modu"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "code quality guidelines for laravel modu"
+issues: []
+discussions: []
+---
+
 # Code Quality Guidelines for Laravel Modules
 
 ## Overview

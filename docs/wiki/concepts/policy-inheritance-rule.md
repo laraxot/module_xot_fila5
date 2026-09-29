@@ -1,3 +1,14 @@
+---
+title: "policy inheritance rule"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "policy inheritance rule"
+issues: []
+discussions: []
+---
+
 # Policy Inheritance Rule
 
 ## ⚖️ Decision: Base Policy Hierarchy

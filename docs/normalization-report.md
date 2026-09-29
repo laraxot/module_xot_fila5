@@ -1,10 +1,15 @@
-<<<<<<< HEAD
-# Report Normalizzazione Documentazione
+---
+title: "normalization report"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "normalization report"
+issues: []
+discussions: []
+---
 
-## Data: Gennaio 2025
-=======
 # Report Normalizzazione Documentazione - Gennaio 2025
->>>>>>> laraxot/dev
 
 ## Azioni Completate
 
@@ -111,19 +116,20 @@
 - [Processo Normalizzazione](../Xot/docs/docs-normalization-process.md)
 - [Regole Naming File](../Xot/docs/file-naming-rules.md)
 - [Filosofia DRY + KISS](../../docs/philosophy-guide.md)
-<<<<<<< HEAD
-=======
 - [Processo Normalizzazione](../xot/docs/docs-normalization-process.md)
 - [Regole Naming File](../xot/docs/file-naming-rules.md)
 - [Filosofia DRY + KISS](../../../docs/philosophy-guide.md)
->>>>>>> laraxot/dev
 
 ---
 
+title: "normalization report"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "normalization report"
+issues: []
+discussions: []
 **Data**: Gennaio 2025
 **Stato**: In corso
-<<<<<<< HEAD
 **Prossima Revisione**: Dopo normalizzazione batch successivo
-=======
-**Prossima Revisione**: Dopo normalizzazione batch successivo
->>>>>>> laraxot/dev

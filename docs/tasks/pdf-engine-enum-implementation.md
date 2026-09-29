@@ -1,3 +1,14 @@
+---
+title: "pdf engine enum implementation"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "pdf engine enum implementation"
+issues: []
+discussions: []
+---
+
 # Task: PdfEngineEnum Implementation
 
 **Modulo**: Xot  

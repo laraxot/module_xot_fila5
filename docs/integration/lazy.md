@@ -1,3 +1,14 @@
+---
+title: "lazy"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "lazy"
+issues: []
+discussions: []
+---
+
 # _lazy
 
 <!-- Contenuto migrato da _docs/_lazy.txt -->
@@ -13,6 +24,14 @@ https://lazy-loading.firebaseapp.com/lazy_loading_lib.html
 
 
 ---
+title: "lazy"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "lazy"
+issues: []
+discussions: []
 ## Merged from -lazy.md
 
 

@@ -1,3 +1,14 @@
+---
+title: "filament class extension rules violations summary"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament class extension rules violations summary"
+issues: []
+discussions: []
+---
+
 # Riepilogo Rimozione Violazioni XotBaseResource - 2026-01-21
 
 **Status**: ✅ Completato  

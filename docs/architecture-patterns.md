@@ -1,4 +1,8 @@
 ---
+created: 2026-09-26
+qmd: "architecture patterns"
+issues: []
+discussions: []
 title: Architecture Patterns — Xot Module
 type: architecture
 module: Xot

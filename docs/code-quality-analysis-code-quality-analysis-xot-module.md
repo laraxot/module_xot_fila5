@@ -1,3 +1,14 @@
+---
+title: "code quality analysis code quality analysis xot module"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "code quality analysis code quality analysis xot module"
+issues: []
+discussions: []
+---
+
 # Code Quality Analysis - Xot Module
 
 ## 📊 Overview
@@ -10,6 +21,14 @@ Il modulo Xot è il modulo foundation del progetto, contenente classi base, serv
 
 ---
 
+title: "code quality analysis code quality analysis xot module"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "code quality analysis code quality analysis xot module"
+issues: []
+discussions: []
 ## ✅ Static Analysis Compliance
 
 ### PHPStan Level 10: COMPLIANT

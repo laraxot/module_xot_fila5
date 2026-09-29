@@ -1,3 +1,14 @@
+---
+title: "phpstanesbbf49"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstanesbbf49"
+issues: []
+discussions: []
+---
+
 # Correzioni PHPStan - Modulo Xot
 
 Questo documento traccia gli errori PHPStan identificati nel modulo Xot e le relative soluzioni implementate.

@@ -1,3 +1,14 @@
+---
+title: "prompt rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "prompt rules"
+issues: []
+discussions: []
+---
+
 # Regole per i Prompt
 
 ## Regola Universale

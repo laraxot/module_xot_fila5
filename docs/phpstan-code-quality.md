@@ -1,3 +1,14 @@
+---
+title: "phpstan code quality"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan code quality"
+issues: []
+discussions: []
+---
+
 # PHPStan Code Quality Guide - Laraxot
 
 **Ultimo aggiornamento**: [DATE]  
@@ -7,6 +18,14 @@
 
 ---
 
+title: "phpstan code quality"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan code quality"
+issues: []
+discussions: []
 ## 📑 Indice
 
 1. [Regole Assolute](#-regole-assolute)

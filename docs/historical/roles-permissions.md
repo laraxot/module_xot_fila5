@@ -1,3 +1,14 @@
+---
+title: "roles permissions"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "roles permissions"
+issues: []
+discussions: []
+---
+
 # Regole generali su roles, permissions e guard_name
 
 ## Regola generale

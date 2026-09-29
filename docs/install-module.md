@@ -1,6 +1,8 @@
-<<<<<<< HEAD
-=======
 ---
+tags: [documentation]
+qmd: "install module"
+issues: []
+discussions: []
 title: "Install module"
 type: reference
 status: active
@@ -11,7 +13,6 @@ note: "Convertito da install_module.txt (documento) da convert-docs-txt-to-md.py
 
 # Install module
 
->>>>>>> laraxot/dev
  public function test(){
 
         $vendor_name='laraxot/module_formx';
@@ -44,8 +45,4 @@ note: "Convertito da install_module.txt (documento) da convert-docs-txt-to-md.py
         $new_dir=$module_json->name;
 
         rename(base_path('Modules/'.$old_dir),base_path('Modules/'.$new_dir));
-<<<<<<< HEAD
     }
-=======
-    }
->>>>>>> laraxot/dev

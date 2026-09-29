@@ -1,4 +1,7 @@
 ---
+qmd: "architettura sistema"
+issues: []
+discussions: []
 title: "Architettura Sistema"
 type: reference
 tags: [wiki, no-frontmatter-fix]

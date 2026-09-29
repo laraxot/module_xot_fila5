@@ -1,3 +1,14 @@
+---
+title: "spatie permission team model laravel"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "spatie permission team model laravel"
+issues: []
+discussions: []
+---
+
 # Spatie Permission team model on Laravel 13
 
 ## Why Xot cares

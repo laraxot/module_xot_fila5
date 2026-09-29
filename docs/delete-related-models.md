@@ -1,10 +1,7 @@
-<<<<<<< HEAD
-con un trait 
-https://tighten.co/blog/laravel-tip-bootable-model-traits/
-
-https://andy-carter.com/blog/using-laravel-s-eloquent-traits
-=======
 ---
+qmd: "delete related models"
+issues: []
+discussions: []
 title: 'delete_related_models'
 module: Xot
 type: reference
@@ -24,4 +21,3 @@ con un trait
 https://tighten.co/blog/laravel-tip-bootable-model-traits/
 
 https://andy-carter.com/blog/using-laravel-s-eloquent-traits
->>>>>>> laraxot/dev

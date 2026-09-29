@@ -1,3 +1,14 @@
+---
+title: "graphify out gitignore all modules.story"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "graphify out gitignore all modules.story"
+issues: []
+discussions: []
+---
+
 # Story: graphify-out/ ignorato in tutti i .gitignore dei moduli
 
 ## Contesto

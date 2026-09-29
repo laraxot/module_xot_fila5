@@ -1,21 +1,20 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 ---
-name: readme
-description: "Repo: git@github.com:laraxot/modulexotfila5.git"
-metadata:
-  type: bmad
+title: "README"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "README"
+issues: []
+discussions: []
 ---
 
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # BMAD — Indice workflow Xot
 
 **Repo:** `git@github.com:laraxot/module_xot_fila5.git`
 
 ## Stories
+- [STORY-512 — ambiente test e tracker](stories/STORY-512-test-environment-and-tracker.md)
 - [01 — Rimuovere TransTrait](stories/01-refactor-table-trans.md)
 - [02 — HasXotForm: istanza + colonne](stories/02-refactor-hasxotform.md)
 - [03 — XotBaseResourceForm: use HasXotForm](stories/03-refactor-resource-form.md)

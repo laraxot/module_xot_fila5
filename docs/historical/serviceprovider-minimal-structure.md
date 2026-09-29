@@ -1,3 +1,14 @@
+---
+title: "serviceprovider minimal structure"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "serviceprovider minimal structure"
+issues: []
+discussions: []
+---
+
 # ServiceProvider Minimal Structure - Laraxot
 
 **Ultimo aggiornamento**: 2025-01-10
@@ -292,4 +303,12 @@ Prima di creare un ServiceProvider:
 
 ---
 
+title: "serviceprovider minimal structure"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "serviceprovider minimal structure"
+issues: []
+discussions: []
 **Filosofia**: "La semplicità è la massima sofisticazione" - Struttura minima, funzionalità massima.

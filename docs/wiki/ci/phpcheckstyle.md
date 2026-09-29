@@ -1,4 +1,7 @@
 ---
+qmd: "phpcheckstyle"
+issues: []
+discussions: []
 title: "Phpcheckstyle"
 type: reference
 tags: [wiki, no-frontmatter-fix]

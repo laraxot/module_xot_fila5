@@ -1,12 +1,14 @@
-<<<<<<< HEAD
 ---
-module: theme
-topic: translation-structure
-canonical: ../../../Themes/docs/shared-components/TRANSLATION_STRUCTURE.md
+title: "translation structure"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "translation structure"
+issues: []
+discussions: []
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/TRANSLATION_STRUCTURE.md
-=======
 # Translation Directory Structure
 
 ## Rule: No `lang/lang/` Redundancy
@@ -35,4 +37,3 @@ Modules/ModuleName/lang/lang/{locale}/file.php  ← WRONG
 ### Reference
 
 See `project_docs/TRANSLATION_DIRECTORY_RULES.md` for full details.
->>>>>>> laraxot/dev

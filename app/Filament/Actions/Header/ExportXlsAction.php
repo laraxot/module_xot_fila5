@@ -28,17 +28,23 @@ class ExportXlsAction extends XotBaseAction
         parent::setUp();
         $this->translateLabel()
             ->label('')
+            ->iconButton()
+            ->color('success')
             ->tooltip(function (): string {
                 $livewire = $this->getLivewire();
                 if (! $livewire instanceof ListRecords) {
-                    return '';
+                    return (string) __('xot::export_xls.tooltip');
                 }
                 $key = app(GetTransKeyAction::class)->execute($livewire::class).'.actions.export_xls.tooltip';
                 $translated = __($key);
 
-                return \is_string($translated) && $translated !== $key ? $translated : '';
+                if (\is_string($translated) && $translated !== $key && $translated !== 'export_xls') {
+                    return $translated;
+                }
+
+                return (string) __('xot::export_xls.tooltip');
             })
-            ->icon('heroicon-o-arrow-down-tray')
+            ->icon('xot-files.xls')
             ->action(static function (ListRecords $livewire, ExportXlsAction $action) {
                 // Stesso nome file del canale nativo (XotBaseExportAction::fileName).
                 $filename = app(GetExportFileNameAction::class)->execute($livewire).'.xlsx';
@@ -62,7 +68,7 @@ class ExportXlsAction extends XotBaseAction
                     self::notifyNoColumns();
                     $action->halt();
 
-                    return null;
+                    return;
                 }
 
                 return app(ExportXlsByCollection::class)->execute($query->get(), $filename, $transKey, $fields);

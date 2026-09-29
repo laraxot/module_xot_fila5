@@ -1,3 +1,14 @@
+---
+title: "tdd pest study"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "tdd pest study"
+issues: []
+discussions: []
+---
+
 # Studio TDD, Pest e Laravel Modules
 
 ## Riferimenti Studiate

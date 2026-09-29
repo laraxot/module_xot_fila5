@@ -1,4 +1,7 @@
 ---
+qmd: "xdebug"
+issues: []
+discussions: []
 title: "Xdebug"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,3 +1,14 @@
+---
+title: "bugfix hasxottable duplicate if"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "bugfix hasxottable duplicate if"
+issues: []
+discussions: []
+---
+
 # Bug Fix: Duplicazione If Statement in HasXotTable.php
 
 > **Versione**: 1.0

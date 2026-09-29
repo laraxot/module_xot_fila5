@@ -1,4 +1,7 @@
 ---
+qmd: "mcp integration"
+issues: []
+discussions: []
 title: "Integrazione dei Server MCP con il Modulo Xot"
 module: xot
 type: integration

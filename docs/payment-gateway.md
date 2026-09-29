@@ -1,10 +1,7 @@
-<<<<<<< HEAD
-How To Integrate Paypal Payment Gateway In Laravel 8
-https://techsolutionstuff.com/post/how-to-integrate-paypal-payment-gateway-in-laravel-8
-
-----------------------------------------------------------------------------------------------
-=======
 ---
+qmd: "payment gateway"
+issues: []
+discussions: []
 title: 'payment_gateway'
 module: Xot
 type: reference
@@ -24,4 +21,3 @@ How To Integrate Paypal Payment Gateway In Laravel 8
 https://techsolutionstuff.com/post/how-to-integrate-paypal-payment-gateway-in-laravel-8
 
 ----------------------------------------------------------------------------------------------
->>>>>>> laraxot/dev

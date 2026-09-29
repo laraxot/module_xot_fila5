@@ -1,3 +1,14 @@
+---
+title: "filament4 upgrade fixes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament4 upgrade fixes"
+issues: []
+discussions: []
+---
+
 # Risoluzione Errori Upgrade Filament 4 - Laraxot PTVX
 
 ## Problema Iniziale: ProviderRepository array_merge()

@@ -1,3 +1,14 @@
+---
+title: "roadmap"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "roadmap"
+issues: []
+discussions: []
+---
+
 # 🏗️ XOT MODULE - ROADMAP 2025
 
 **Modulo**: Xot (Core Framework)
@@ -8,6 +19,14 @@
 
 ---
 
+title: "roadmap"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "roadmap"
+issues: []
+discussions: []
 ## 🎯 MODULE OVERVIEW
 
 Il modulo **Xot** è il cuore architetturale del sistema FixCity, fornendo le funzionalità base, i contratti, le azioni e i servizi condivisi tra tutti i moduli. È il fondamento su cui si costruisce l'intera piattaforma.

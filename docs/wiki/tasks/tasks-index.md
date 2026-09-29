@@ -1,4 +1,7 @@
 ---
+qmd: "tasks index"
+issues: []
+discussions: []
 title: "Tasks Index"
 type: reference
 tags: [wiki, no-frontmatter-fix]

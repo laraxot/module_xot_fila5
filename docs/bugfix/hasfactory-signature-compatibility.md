@@ -1,3 +1,14 @@
+---
+title: "hasfactory signature compatibility"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "hasfactory signature compatibility"
+issues: []
+discussions: []
+---
+
 # Bugfix: HasFactory newFactory() Signature Compatibility
 
 **Data Fix**: 11 Novembre 2025

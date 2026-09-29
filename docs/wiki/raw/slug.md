@@ -1,4 +1,7 @@
 ---
+qmd: "slug"
+issues: []
+discussions: []
 title: "Slug"
 type: reference
 tags: [wiki, no-frontmatter-fix]

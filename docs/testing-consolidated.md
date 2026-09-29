@@ -1,3 +1,14 @@
+---
+title: "testing consolidated"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "testing consolidated"
+issues: []
+discussions: []
+---
+
 # Testing - Documentazione Consolidata DRY + KISS
 
 > **🎯 Single Source of Truth**: Questo documento centralizza TUTTE le regole di testing del progetto
@@ -665,5 +676,13 @@ php artisan test --stop-on-failure
 
 ---
 
+title: "testing consolidated"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "testing consolidated"
+issues: []
+discussions: []
 *Modulo: Xot*
 *Categoria: Testing*

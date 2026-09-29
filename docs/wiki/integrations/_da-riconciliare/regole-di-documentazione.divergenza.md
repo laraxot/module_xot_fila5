@@ -1,4 +1,7 @@
 ---
+qmd: "regole di documentazione.divergenza"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: regole-di-documentazione.md"
 module: Xot
 type: note

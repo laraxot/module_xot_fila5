@@ -1,3 +1,14 @@
+---
+title: "01 index details"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "01 index details"
+issues: []
+discussions: []
+---
+
 # Xot Module Documentation Index
 
 ## Core Architecture
@@ -39,4 +50,12 @@
 - [Architectural Rules Directory](./architectural_rules/)
 
 ---
+title: "01 index details"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "01 index details"
+issues: []
+discussions: []
 *Last updated: 2025-12-18*

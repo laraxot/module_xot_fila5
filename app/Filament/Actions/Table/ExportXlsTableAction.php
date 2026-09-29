@@ -25,7 +25,7 @@ class ExportXlsTableAction extends XotBaseAction
         $this->translateLabel()
             ->tooltip(__('xot::actions.export_xls'))
             // ->icon('fas-file-excel')
-            ->icon('heroicon-o-arrow-down-tray')
+            ->icon('xot-files.xls')
             ->action(static function (RelationManager $livewire) {
                 $livewireClass = $livewire::class;
                 $filterParts = array_map(

@@ -1,3 +1,14 @@
+---
+title: "model casting rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "model casting rules"
+issues: []
+discussions: []
+---
+
 # Regole per Model Casting in Laraxot - CRITICO
 
 ## ERRORE ARCHITETTURALE GRAVE: Proprietà $casts Deprecata

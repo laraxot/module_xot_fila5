@@ -1,4 +1,7 @@
 ---
+qmd: "php84 upgrade extension checklist"
+issues: []
+discussions: []
 title: "PHP 8.4 upgrade extension checklist"
 module: "Xot"
 type: concept

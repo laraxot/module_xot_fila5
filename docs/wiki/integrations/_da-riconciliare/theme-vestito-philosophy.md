@@ -1,4 +1,7 @@
 ---
+qmd: "theme vestito philosophy"
+issues: []
+discussions: []
 title: "Theme System: The 'Vestito' (Clothing) Philosophy"
 module: xot
 type: integration

@@ -1,4 +1,7 @@
 ---
+qmd: "video player"
+issues: []
+discussions: []
 title: 'video_player'
 module: Xot
 type: reference

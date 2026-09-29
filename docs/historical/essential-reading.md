@@ -1,3 +1,14 @@
+---
+title: "essential reading"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "essential reading"
+issues: []
+discussions: []
+---
+
 # 📖 Letture Essenziali - Modulo Xot
 
 > **10 documenti fondamentali** da leggere per comprendere il modulo core Xot
@@ -160,6 +171,14 @@ Se hai risposto correttamente a tutte, sei pronto per contribuire! 🎉
 
 ---
 
+title: "essential reading"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "essential reading"
+issues: []
+discussions: []
 **Creato:** 2025-11-04
 **Scopo:** Ridurre cognitive load navigando 2,560+ docs
 **Aggiornato:** Dopo risoluzione massiva merge conflicts

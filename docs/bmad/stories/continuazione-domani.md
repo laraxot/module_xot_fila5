@@ -1,54 +1,43 @@
 ---
-title: "Continuazione BMAD — Domani (XotBaseExporter/CollectionExport)"
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "continuazione domani"
+issues: []
+discussions: []
+title: "Continuazione BMAD — Domani (export lazy + trigger map)"
 type: module-fix
 scope: Xot
 epic: "5"
-bmad_version: v3.30.1
-updated_at: '2026-09-22'
-status: in-progress
+updated_at: "2026-09-23"
+status: ready-for-dev
 related:
-  - export-eager-load-contract.story.md
-  - ../../../Ptv/docs/bmad/stories/5.151-export-scheda-xls-parity.story.md
-  - ../../../Ptv/docs/bmad/stories/5.157-export-xls1-crash-cross-module-ratings.story.md
+  - ./5.247-tomorrow-pack-export-lazy-and-trigger-map.story.md
+  - ./5.163-lazy-export-labelled-headings.story.md
+  - ./5.175-trigger-map-export-ratings-xls.story.md
+  - ./5.176-export-xls-formula-injection-sanitize.story.md
+  - ./5.177-export-xls-headings-supersede-5-161.story.md
+  - ./5.178-export-lazy-labels-dedup.story.md
+  - ../../../Rating/docs/bmad/stories/5.244-continuazione-domani-post-prompt-04-pack.story.md
 ---
 
 # Xot — Continuazione Domani
 
-## Stato verificato ora (sessione 2026-09-22)
+**SSoT pack:** [`5.247-tomorrow-pack-export-lazy-and-trigger-map.story.md`](./5.247-tomorrow-pack-export-lazy-and-trigger-map.story.md)
+**Pack cross-modulo:** Rating [`5.244`](../../../Rating/docs/bmad/stories/5.244-continuazione-domani-post-prompt-04-pack.story.md)
 
-- `CollectionExport::castCell()` pubblico, condiviso da `CollectionExport::map()`
-  e `XotBaseExporter::resolveColumns()`'s `state()` — unica cella per entrambi
-  i canali di export (custom `export_xls` e nativo `export_xls1`).
-- `XotBaseExportAction` (`app/Filament/Actions/XotBaseExportAction.php`,
-  unica definizione — il duplicato orfano in `app/Filament/Actions/Header/`
-  e' stato rimosso) serializza `resource` + `tableFilters` + `livewireClass`
-  negli `options`, cosi' `XotBaseExporter::getCachedColumns()` (nel job) usa
-  lo stesso `GetTransKeyAction` input del canale custom.
-- PHPStan max isolato (tmpDir dedicato) su tutti i file toccati inclusa
-  `XotBaseExporterTest.php`: **0 errori**. `git status`: pulito, pushato.
-- Pest non eseguito: DB 10.100.200.53 down (verificato 2x oggi,
-  `nc -z -w3 10.100.200.53 3306`). Stesso bug noto `QG_DB_DOWN`.
+## Stato (2026-09-23)
 
-## Priorita' domani
+- `RatingData::getXlsFields` produce campi `path => label` (canon post-consolidamento)
+- `CollectionExport` gestisce il formato misto; residuo: `ExportXlsLazyAction` (5.163)
 
-1. **`export-eager-load-contract`** (ready) — `XotBaseExporter`/`ExportXlsAction`
-   hanno `ratings`/`ratingMorphs` hardcoded (accoppiamento a Rating). Proposta:
-   `getXlsEagerLoad()` sul Resource, letto da entrambi i canali. E' il fix
-   "pulito" per il crash cross-modulo documentato in
-   `Ptv/5.157-export-xls1-crash-cross-module-ratings` (todo, alta priorita':
-   `SchedaExporter::modifyQuery()` fa `with(['ratings','ratingMorphs'])` senza
-   guardia, esplode su model Performance/Progressioni che non hanno quelle
-   relation). Valutare insieme, non in isolamento — stessa causa radice.
-2. Pest: riprovare l'intera suite Xot (in particolare
-   `tests/Unit/Exports/XotBaseExporterTest.php`) appena il DB e' raggiungibile.
+## Domani (ordine)
 
-## Second brain
+1. **P0** `5.163` — lazy export rispetta `path => title` (o unifica `5.178`)
+2. **P1** `5.175` — riga TRIGGER_MAP export ratings
+3. **P2** `5.176` — sanitize formula injection; **P2** `5.177` — igiene supersede 5.161
 
-`qmd query` su "XotBaseExporter getXlsEagerLoad ratings hardcoded" prima di
-riprendere; `qmd update` dopo ogni chiusura.
+## Non rifare
 
-## Hygiene minore
-
-`.git-rewrite/` (64M, gitignored, residuo di un `git filter-branch`
-interrotto — duplicati stantii di `CollectionExport.php`/`ExportXlsByCollection.php`,
-non autoloaded, confermato innocuo) — da `rm -rf` quando capita, non urgente.
+Export headings collection (done), wiring action generic (5.166 done).
+`continuazione-perfezione-xot-domani.md` è del 2026-09-22, status done — storico.

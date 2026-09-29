@@ -1,4 +1,7 @@
 ---
+qmd: "getter philosophy"
+issues: []
+discussions: []
 title: "Getter Philosophy"
 type: reference
 tags: [wiki, no-frontmatter-fix]

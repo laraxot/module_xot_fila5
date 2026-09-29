@@ -1,3 +1,14 @@
+---
+title: "naming user fields"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "naming user fields"
+issues: []
+discussions: []
+---
+
 # Convenzione Naming Campi Utente: `first_name` e `last_name`
 
 ## Regola Fondamentale

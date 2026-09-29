@@ -1,3 +1,14 @@
+---
+title: "phpstan fixes patterns"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan fixes patterns"
+issues: []
+discussions: []
+---
+
 # PHPStan Fix Patterns — Xot Module
 
 ## Pattern 1: nullCoalesce.offset su array non-nullabile
@@ -23,6 +34,14 @@ $urls = $urlsRaw !== [] ? array_values(array_unique($urlsRaw)) : [];
 
 ---
 
+title: "phpstan fixes patterns"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan fixes patterns"
+issues: []
+discussions: []
 ## Pattern 2: argument.type per view-string
 
 **Sintomo:** `argument.type` — `view()` di Laravel accetta `view-string|null`, non `string` pura.

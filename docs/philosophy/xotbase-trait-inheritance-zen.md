@@ -1,3 +1,14 @@
+---
+title: "xotbase trait inheritance zen"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xotbase trait inheritance zen"
+issues: []
+discussions: []
+---
+
 # Lo Zen dell'Ereditarietà XotBase: Filosofia Anti-Ridondanza
 
 ## La Storia
@@ -206,6 +217,14 @@ class DeviceVerificationsRelationManager extends RelationManager
 
 ---
 
+title: "xotbase trait inheritance zen"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xotbase trait inheritance zen"
+issues: []
+discussions: []
 **Data analisi:** 2026-01-07
 **Statistiche:** 88% conformità, 8% ridondanza, 4% violazione grave
 **Principio:** DRY + KISS + Template Method Pattern

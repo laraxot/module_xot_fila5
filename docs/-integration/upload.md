@@ -1,3 +1,14 @@
+---
+title: "upload"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "upload"
+issues: []
+discussions: []
+---
+
 # upload
 
 <!-- Contenuto migrato da _docs/upload.txt -->

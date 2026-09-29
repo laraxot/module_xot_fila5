@@ -1,4 +1,7 @@
 ---
+qmd: "installed packages analysis"
+issues: []
+discussions: []
 title: "Installed Packages Analysis"
 type: reference
 tags: [wiki, no-frontmatter-fix]

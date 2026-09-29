@@ -1,4 +1,7 @@
 ---
+qmd: "payment gateway"
+issues: []
+discussions: []
 title: 'payment_gateway'
 module: Xot
 type: reference

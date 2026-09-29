@@ -1,3 +1,14 @@
+---
+title: "xot docs consolidation.story"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xot docs consolidation.story"
+issues: []
+discussions: []
+---
+
 # Story: Xot module docs consolidation + phpstan
 Status: backlog
 Module: Modules/Xot (independent .git)

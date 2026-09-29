@@ -1,3 +1,14 @@
+---
+title: "monitoring pulse pennant"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "monitoring pulse pennant"
+issues: []
+discussions: []
+---
+
 # Monitoring e Feature Management - Laravel 12
 
 L'integrazione di Laravel Pulse e Pennant fornisce strumenti avanzati per il controllo in tempo reale e il rilascio graduale delle funzionalità.

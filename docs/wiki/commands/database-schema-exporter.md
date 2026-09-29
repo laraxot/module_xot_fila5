@@ -1,4 +1,7 @@
 ---
+qmd: "database schema exporter"
+issues: []
+discussions: []
 title: "Database Schema Exporter"
 type: reference
 tags: [wiki, no-frontmatter-fix]

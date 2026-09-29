@@ -1,4 +1,12 @@
 ---
+title: "services to actions migration"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "services to actions migration"
+issues: []
+discussions: []
 module: Xot
 concept: services-to-actions-migration
 last_updated: 2026-07-13

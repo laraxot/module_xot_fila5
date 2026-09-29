@@ -1,3 +1,14 @@
+---
+title: "filament composite contacts column analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament composite contacts column analysis"
+issues: []
+discussions: []
+---
+
 # Analisi e Implementazione Colonna Composita "Contatti" - TechPlanner
 
 ## Richiesta Utente
@@ -235,6 +246,14 @@ Questa implementazione stabilisce un precedente per:
 
 ---
 
+title: "filament composite contacts column analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament composite contacts column analysis"
+issues: []
+discussions: []
 **Stato**: Analisi completata, pronto per implementazione
 **Ultimo aggiornamento**: agosto 2025
 **Autore**: Cascade AI Assistant

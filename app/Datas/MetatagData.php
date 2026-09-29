@@ -171,7 +171,7 @@ class MetatagData extends Data implements Wireable
 
             return asset($path);
         } catch (\Throwable $e) {
-            return asset($this->logo_header);
+            return $this->fallbackPublicAssetUrl($this->logo_header);
         }
     }
 
@@ -192,8 +192,32 @@ class MetatagData extends Data implements Wireable
 
             return asset($path);
         } catch (\Throwable $e) {
-            return asset($this->logo_header_dark);
+            return $this->fallbackPublicAssetUrl($this->logo_header_dark);
         }
+    }
+
+    /**
+     * Never turn `module::img/x.png` into an HTTP path: browsers 404 on it.
+     * If AssetAction already copied the file, reuse the public relative path.
+     */
+    private function fallbackPublicAssetUrl(string $logoHeader): string
+    {
+        if (! str_contains($logoHeader, '::')) {
+            return asset($logoHeader);
+        }
+
+        $parts = explode('::', $logoHeader, 2);
+        if (! isset($parts[0], $parts[1]) || $parts[0] === '' || $parts[1] === '') {
+            return '';
+        }
+
+        $relative = 'assets/'.$parts[0].'/'.$parts[1];
+
+        if (File::exists(public_path($relative))) {
+            return asset($relative);
+        }
+
+        return '';
     }
 
     /**

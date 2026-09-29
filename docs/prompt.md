@@ -1,4 +1,12 @@
 ---
+title: "prompt"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "prompt"
+issues: []
+discussions: []
 module: theme
 topic: prompt
 canonical: ../../../Themes/docs/shared-components/prompt-rules.md

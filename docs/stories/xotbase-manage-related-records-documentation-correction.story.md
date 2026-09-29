@@ -1,3 +1,14 @@
+---
+title: "xotbase manage related records documentation correction.story"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xotbase manage related records documentation correction.story"
+issues: []
+discussions: []
+---
+
 # BMAD: Documentazione corretta — analisi reale di XotBaseManageRelatedRecords
 
 ## Riepilogo

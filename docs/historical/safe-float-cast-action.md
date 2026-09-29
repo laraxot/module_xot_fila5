@@ -1,3 +1,14 @@
+---
+title: "safe float cast action"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "safe float cast action"
+issues: []
+discussions: []
+---
+
 # SafeFloatCastAction
 
 ## Descrizione
@@ -186,4 +197,12 @@ class SafeFloatCastActionTest extends TestCase
 
 ---
 
+title: "safe float cast action"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "safe float cast action"
+issues: []
+discussions: []
 *Ultimo aggiornamento: 2025-01-06*

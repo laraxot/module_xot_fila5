@@ -1,4 +1,7 @@
 ---
+qmd: " nwidart"
+issues: []
+discussions: []
 title: 'Nwidart — risorse esterne'
 module: Xot
 type: reference

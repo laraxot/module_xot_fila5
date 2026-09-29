@@ -1,4 +1,12 @@
 ---
+title: "bmad on demand routing"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "bmad on demand routing"
+issues: []
+discussions: []
 name: bmad-on-demand-routing
 description: BMAD skills/rules/commands on-demand routing using LLM Wiki
 metadata:

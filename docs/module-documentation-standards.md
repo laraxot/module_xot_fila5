@@ -1,3 +1,14 @@
+---
+title: "module documentation standards"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "module documentation standards"
+issues: []
+discussions: []
+---
+
 # Standard di Documentazione dei Moduli
 
 ## Regola: Nessun Riferimento al Progetto Specifico

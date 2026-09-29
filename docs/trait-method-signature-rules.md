@@ -1,3 +1,14 @@
+---
+title: "trait method signature rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "trait method signature rules"
+issues: []
+discussions: []
+---
+
 # Trait Method Signature Rules
 
 ## 🚨 Critical Rule: Static vs Non-Static Methods
@@ -134,6 +145,14 @@ If you encounter this error:
 
 ---
 
+title: "trait method signature rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "trait method signature rules"
+issues: []
+discussions: []
 *Last Updated: 2025-08-27*
 *Trait Standards Version: 2.0*
 

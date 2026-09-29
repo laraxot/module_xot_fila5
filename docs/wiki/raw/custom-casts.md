@@ -1,4 +1,7 @@
 ---
+qmd: "custom casts"
+issues: []
+discussions: []
 title: "Custom Casts"
 type: reference
 tags: [wiki, no-frontmatter-fix]

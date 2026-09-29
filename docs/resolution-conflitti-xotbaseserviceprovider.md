@@ -1,3 +1,14 @@
+---
+title: "resolution conflitti xotbaseserviceprovider"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "resolution conflitti xotbaseserviceprovider"
+issues: []
+discussions: []
+---
+
 # Risoluzione Conflitti in XotBaseServiceProvider
 
 ## File Coinvolto
@@ -157,4 +168,12 @@ Per maggiori dettagli sui vantaggi di questo approccio, consultare la documentaz
 
 ---
 
+title: "resolution conflitti xotbaseserviceprovider"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "resolution conflitti xotbaseserviceprovider"
+issues: []
+discussions: []
 *Collegamento bidirezionale: vedi anche `/project_docs/providers/service_provider_best_practices.md`*

@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "GetResourceClassNameByModelClassAction — fallback panel-aware di XotBaseResource"
 module: "Xot"
 type: concept

@@ -1,3 +1,14 @@
+---
+title: "testcase setup critical rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "testcase setup critical rules"
+issues: []
+discussions: []
+---
+
 # TestCase Setup - Critical Rules
 
 ## REGOLE FONDAMENTALI
@@ -135,10 +146,10 @@ abstract class TestCase extends BaseTestCase
 ### Workflow di Testing Corretto
 
 ```bash
-# 1. Configura .env.testing (copia carbone di .env con _test)
+# 1. Verifica il template test senza copiare i segreti di .env (dalla root)
+./bashscripts/tools/sync-env-testing.sh --check
 cd laravel
-cp .env .env.testing
-# Modifica: DB_DATABASE → DB_DATABASE_test
+# Esporta FIXCITY_TEST_DB_USERNAME/PASSWORD e le corrispondenti variabili *_USER.
 
 # 2. Esegui migration UNA VOLTA
 php artisan migrate --env=testing
@@ -146,8 +157,7 @@ php artisan migrate --env=testing
 # 3. Esegui test (non eseguono migrate!)
 php artisan test --env=testing
 
-# 4. Per reset completo (quando necessario)
-php artisan migrate:fresh --env=testing
+# 4. migrate:fresh è vietato anche sull'ambiente test condiviso.
 ```
 
 ## Pattern nei Test

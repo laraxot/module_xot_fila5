@@ -1,9 +1,7 @@
-<<<<<<< HEAD
-# _process
-
-<!-- Contenuto migrato da _docs/_process.txt -->
-=======
 ---
+qmd: "process"
+issues: []
+discussions: []
 title: 'Process'
 module: Xot
 type: reference
@@ -14,13 +12,8 @@ converted_from: _process.txt
 created: 2026-08-24
 updated: 2026-08-24
 ---
->>>>>>> laraxot/dev
 
 https://laravel-news.com/working-with-os-process-in-php
 https://github.com/JustSteveKing/os-process/blob/main/src/Concerns/HandlesGitCommands.php
 
-<<<<<<< HEAD
 ------------------------------------
-=======
-------------------------------------
->>>>>>> laraxot/dev

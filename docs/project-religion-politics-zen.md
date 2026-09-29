@@ -1,3 +1,14 @@
+---
+title: "project religion politics zen"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "project religion politics zen"
+issues: []
+discussions: []
+---
+
 # Filosofia, Religione, Politica e Zen del Progetto Laravel Pizza
 
 ## 🧠 Logica del Progetto

@@ -1,3 +1,14 @@
+---
+title: "merge conflicts progress summary"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "merge conflicts progress summary"
+issues: []
+discussions: []
+---
+
 # Summary Progresso Risoluzione Merge Conflicts
 
 **Data**: 2025-01-22
@@ -6,6 +17,14 @@
 
 ---
 
+title: "merge conflicts progress summary"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "merge conflicts progress summary"
+issues: []
+discussions: []
 ## ✅ File Risolti (16)
 
 ### Modulo Xot

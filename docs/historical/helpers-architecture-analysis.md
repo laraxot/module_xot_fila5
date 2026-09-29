@@ -1,3 +1,14 @@
+---
+title: "helpers architecture analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "helpers architecture analysis"
+issues: []
+discussions: []
+---
+
 # Architettura Helper Functions - Analisi e Fix
 
 ## 🔍 Problema Identificato
@@ -269,6 +280,14 @@ if (inAdmin()) {
 
 ---
 
+title: "helpers architecture analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "helpers architecture analysis"
+issues: []
+discussions: []
 **Data Analisi**: 2 Dicembre 2025
 **Status**: Analisi completa - Ready per implementation
 **Priority**: CRITICA - Blocca composer autoload

@@ -1,3 +1,14 @@
+---
+title: "phpstan patterns dec"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan patterns dec"
+issues: []
+discussions: []
+---
+
 # PHPStan Patterns - Dicembre 2025
 
 ## 🎯 Nuovi Pattern Scoperti

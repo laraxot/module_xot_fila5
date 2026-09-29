@@ -1,4 +1,7 @@
 ---
+qmd: "star rating"
+issues: []
+discussions: []
 title: 'star_rating'
 module: Xot
 type: reference

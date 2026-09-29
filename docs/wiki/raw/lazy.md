@@ -1,4 +1,7 @@
 ---
+qmd: "lazy"
+issues: []
+discussions: []
 title: "Lazy"
 type: reference
 tags: [wiki, no-frontmatter-fix]

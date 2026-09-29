@@ -1,4 +1,7 @@
 ---
+qmd: " search"
+issues: []
+discussions: []
 title: "Search"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,3 +1,14 @@
+---
+title: "filament best practices uppercase best practices per filament resources in"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament best practices uppercase best practices per filament resources in"
+issues: []
+discussions: []
+---
+
 # Best Practices per Filament Resources in Laraxot
 
 Questo documento definisce le linee guida ufficiali e le best practices per l'implementazione delle risorse Filament all'interno del framework Laraxot.
@@ -38,11 +49,17 @@ class UserResource extends Resource
 Tutte le risorse Filament devono implementare il metodo `getFormSchema()` che restituisce un array di componenti:
 
 ```php
-<<<<<<< HEAD
 public function getFormSchema(): array
-=======
+---
+title: "filament best practices uppercase best practices per filament resources in"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament best practices uppercase best practices per filament resources in"
+issues: []
+discussions: []
 public function getFormSchema(): array
->>>>>>> laraxot/dev
 {
     return [
         TextInput::make('nome')->required(),
@@ -128,11 +145,9 @@ class SocioResource extends XotBaseResource
     protected static ?int $navigationSort = 1;
 
     // Form Schema - CORRETTO ✅
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
+---
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             TextInput::make('cognome')
@@ -312,11 +327,9 @@ return [
 Utilizzare componenti come `Section`, `Tabs` e `Fieldset` per organizzare logicamente i campi:
 
 ```php
-<<<<<<< HEAD
 public function getFormSchema(): array
-=======
+---
 public function getFormSchema(): array
->>>>>>> laraxot/dev
 {
     return [
         Forms\Components\Tabs::make('Tabs')
@@ -563,11 +576,9 @@ class SocioResource extends XotBaseResource
 {
     protected static ?string $model = Socio::class;
 
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
+---
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             TextInput::make('nome')->required(),

@@ -1,4 +1,8 @@
 ---
+updated: 2026-09-26
+qmd: "composer root skeleton application comparison expanded"
+issues: []
+discussions: []
 title: "Confronto composer root Application vs Forecast"
 type: raw-note
 module: Xot

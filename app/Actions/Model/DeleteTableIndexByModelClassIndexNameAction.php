@@ -15,12 +15,13 @@ class DeleteTableIndexByModelClassIndexNameAction
     public function execute(string $modelClass, string $indexName): void
     {
         Assert::isInstanceOf($model = app($modelClass), EloquentModel::class);
+        Assert::stringNotEmpty($indexName);
         $table = $model->getTable();
         Assert::stringNotEmpty($table);
         $formManager = app(GetSchemaManagerByModelClassAction::class)->execute($modelClass);
         $doctrineTable = $formManager->introspectTableByUnquotedName($table);
         // $doctrineTable=$formManager->listTableDetails($table);
-        $doctrineTable->dropIndex($indexName);
+        $doctrineTable->edit()->dropIndexByUnquotedName($indexName);
 
         // ALTER TABLE `roles` DROP INDEX `roles_name_guard_name_unique`;
         // dddx(['res'=>$res,'doctrineTable'=>$doctrineTable,'indexName'=>$indexName]);

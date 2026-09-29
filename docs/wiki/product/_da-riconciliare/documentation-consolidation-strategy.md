@@ -1,4 +1,7 @@
 ---
+qmd: "documentation consolidation strategy"
+issues: []
+discussions: []
 title: "Strategia di Consolidamento Documentazione - Moduli Laraxot"
 module: xot
 type: product

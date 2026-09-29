@@ -1,4 +1,10 @@
 ---
+type: note
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xotbaseresourcetable getTableColumns string keys and orphaned ux recovery"
+issues: []
+discussions: []
 id: xotbaseresourcetable-gettablecolumns-string-keys-and-orphaned-ux-recovery
 title: "XotBaseResourceTable: getTableColumns() a chiavi stringa + metodo di recupero UX da codice orfano"
 document_type: architecture

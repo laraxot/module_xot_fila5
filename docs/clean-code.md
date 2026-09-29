@@ -1,7 +1,7 @@
-<<<<<<< HEAD
-https://github.com/jupeter/clean-code-php#use-meaningful-and-pronounceable-variable-names
-=======
 ---
+qmd: "clean code"
+issues: []
+discussions: []
 title: 'Clean code — risorse esterne'
 module: Xot
 type: reference
@@ -21,4 +21,3 @@ updated: 2026-08-24
 ## Riferimenti
 
 - <https://github.com/jupeter/clean-code-php#use-meaningful-and-pronounceable-variable-names>
->>>>>>> laraxot/dev

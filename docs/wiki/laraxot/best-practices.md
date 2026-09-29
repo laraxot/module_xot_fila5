@@ -1,4 +1,7 @@
 ---
+qmd: "best practices"
+issues: []
+discussions: []
 title: "Best Practices"
 type: reference
 tags: [wiki, no-frontmatter-fix]
@@ -23,11 +26,9 @@ updated: 2026-08-24
 
 ### Implementazione
 ```php
-<<<<<<< HEAD
 public function getFormSchema(): array
-=======
+---
 public function getFormSchema(): array
->>>>>>> laraxot/dev
 {
     return [
         // Campi modificabili dall'utente
@@ -77,11 +78,7 @@ return [
 ## XotBaseResource
 
 ### Regole di Estensione
-<<<<<<< HEAD
 1. Implementare `public function getFormSchema(): array`
-=======
-1. Implementare `public function getFormSchema(): array`
->>>>>>> laraxot/dev
 2. NON implementare il metodo `form(Form $form): Form`
 3. NON definire `protected static ?string $navigationIcon`
 4. La navigazione è gestita interamente da XotBaseResource
@@ -92,11 +89,9 @@ class MyResource extends XotBaseResource
 {
     protected static ?string $model = MyModel::class;
 
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
+---
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             TextInput::make('name')->required(),

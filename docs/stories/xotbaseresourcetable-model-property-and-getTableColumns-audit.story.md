@@ -1,4 +1,8 @@
 ---
+tags: [documentation]
+qmd: "xotbaseresourcetable model property and getTableColumns audit.story"
+issues: []
+discussions: []
 title: "XotBaseResourceTable: aggiungere \$model esplicito ad ogni sottoclasse + audit getTableColumns() (campi esistenti, UI/UX, schema.org)"
 type: story
 module: Xot

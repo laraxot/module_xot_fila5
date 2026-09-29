@@ -1,4 +1,7 @@
 ---
+tags: [documentation]
+issues: []
+discussions: []
 title: "Composer Root Skeleton Fixcity Comparison"
 type: concept
 status: deprecated

@@ -1,4 +1,7 @@
 ---
+qmd: "theme livewire"
+issues: []
+discussions: []
 title: "Theme Livewire"
 type: reference
 tags: [wiki, no-frontmatter-fix]

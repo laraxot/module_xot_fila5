@@ -1,3 +1,14 @@
+---
+title: "00 master index"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "00 master index"
+issues: []
+discussions: []
+---
+
 # 🌐 Laraxot Master Documentation Index
 
 **Status**: Active / Sanity Layer  
@@ -6,6 +17,14 @@
 
 ---
 
+title: "00 master index"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "00 master index"
+issues: []
+discussions: []
 ## 🏛 Core Architecture (The Religion)
 
 | Document | Description | Source of Truth |

@@ -1,4 +1,7 @@
 ---
+qmd: "prd"
+issues: []
+discussions: []
 title: "PRD: Xot Core Framework"
 module: xot
 type: integration

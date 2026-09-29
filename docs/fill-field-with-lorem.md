@@ -1,14 +1,13 @@
-
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-
 ---
-
-## Appendice — contenuto migrato da `fill-field-with-lorem.txt`
-
-> Il file `.txt` gemello conteneva materiale che questo documento non riportava.
-> È stato accodato qui invariato: va riletto e integrato nelle sezioni sopra.
+title: "fill field with lorem"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "fill field with lorem"
+issues: []
+discussions: []
+---
 
 //------- IMMAGINI --------
 https://placeimg.com/640/480/arch
@@ -93,6 +92,4 @@ http://enneagon.org/phrases
 
 //----- profilo ---
 https://www.fakenamegenerator.com/gen-male-fr-fr.php
-=======
->>>>>>> 7f6cf6be (.)
->>>>>>> laraxot/dev
+

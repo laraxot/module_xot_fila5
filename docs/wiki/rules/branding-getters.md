@@ -1,4 +1,7 @@
 ---
+qmd: "branding getters"
+issues: []
+discussions: []
 title: "Branding Getters"
 type: reference
 tags: [wiki, no-frontmatter-fix]

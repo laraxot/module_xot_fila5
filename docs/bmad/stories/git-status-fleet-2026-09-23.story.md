@@ -1,7 +1,12 @@
 ---
+type: note
+tags: [documentation]
+updated: 2026-09-26
+issues: []
+discussions: []
 id: "Xot/git-status-fleet-2026-09-23"
 title: "git status fleet 2026-09-23 — rebase stuck, corruzione oggetti, dirty"
-status: in-progress
+status: done
 scope: fleet
 module: Xot
 created: 2026-09-23
@@ -15,7 +20,7 @@ qmd: "git status fleet modules rebase gitattributes corruption Performance Ptv P
 
 # Story: git status + fix per ogni modulo (2026-09-23)
 
-Status: in-progress
+Status: done — 18/18 push `laraxot HEAD:dev` OK (vedi Addendum 2)
 
 ## Contesto
 
@@ -97,3 +102,18 @@ per ogni modulo, ordine random, swarm + BMAD + second brain.
 Errore agente: aveva trattato `--allow-unrelated-histories` come vietato.
 Utente: e' permesso. Rilancio swarm: per ogni modulo con remote `laraxot`,
 eseguire playbook `fix.md` riga 5; risolvere conflitti a mano; push `laraxot HEAD:dev`.
+
+## Addendum 2 — esito merge unrelated (autorizzato)
+
+Correzione agente: `--allow-unrelated-histories` eseguito su 18 moduli.
+
+| Batch | Moduli | Push laraxot |
+|---|---|---|
+| A | Job Media Notify Pdnd + **Incentivi** (LFS migrate export poi push) | 5/5 |
+| B | Performance Progressioni Rating Sigma Tenant | 5/5 (3 via cherry-pick per oggetti mancanti) |
+| C | Activity ICL IR Lang UI | 5/5 (ICL: lfs migrate export) |
+| D | Ptv User Xot | 3/3 |
+
+Memoria canon: `bashscripts/ai/wiki/memories/git-status-fleet-allow-unrelated-histories-permitted.md`
+
+**Chiusura:** 18/18 push `laraxot HEAD:dev` OK.

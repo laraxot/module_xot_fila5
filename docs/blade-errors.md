@@ -1,8 +1,7 @@
-<<<<<<< HEAD
-Simplify Validation Messaging with Blade Directives
-https://stagerightlabs.com/blog/simplify-validation-messaging-with-blade-directives
-=======
 ---
+qmd: "blade errors"
+issues: []
+discussions: []
 title: 'blade_errors'
 module: Xot
 type: reference
@@ -20,4 +19,3 @@ updated: 2026-08-24
 
 Simplify Validation Messaging with Blade Directives
 https://stagerightlabs.com/blog/simplify-validation-messaging-with-blade-directives
->>>>>>> laraxot/dev

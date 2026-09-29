@@ -1,3 +1,14 @@
+---
+title: "certificate"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "certificate"
+issues: []
+discussions: []
+---
+
 https://www.studysection.com/Tests/StartTest/laravel-5.x-advanced
 
 https://github.com/TBlindaruk/laravel-certification-preparing

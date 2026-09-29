@@ -9,7 +9,7 @@ use Filament\Schemas\Components\StateCasts\BooleanStateCast;
 use Filament\Tables\Filters\TernaryFilter as FilamentTernaryFilter;
 
 /**
- * Ternary 
+ * Ternary
  */
 abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
 {

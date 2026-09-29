@@ -1,3 +1,14 @@
+---
+title: "bashscripts organization"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "bashscripts organization"
+issues: []
+discussions: []
+---
+
 # Organizzazione Cartella BashScripts
 
 ## Regola Fondamentale
@@ -227,6 +238,14 @@ Per mantenere questa organizzazione:
 
 ---
 
+title: "bashscripts organization"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "bashscripts organization"
+issues: []
+discussions: []
 *Ultimo aggiornamento: 2025-01-29*
 *Responsabile: Sistema di Automazione Laraxot*
 # Organizzazione Cartella BashScripts

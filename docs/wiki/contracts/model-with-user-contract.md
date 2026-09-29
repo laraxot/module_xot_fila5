@@ -1,4 +1,7 @@
 ---
+qmd: "model with user contract"
+issues: []
+discussions: []
 title: "Model With User Contract"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,7 +1,7 @@
-<<<<<<< HEAD
-http://127.0.0.1:9200/_cat/health?v=true
-=======
 ---
+qmd: "elastic links"
+issues: []
+discussions: []
 title: 'Elastic links — risorse esterne'
 module: Xot
 type: reference
@@ -21,4 +21,3 @@ updated: 2026-08-24
 ## Riferimenti
 
 - <http://127.0.0.1:9200/_cat/health?v=true>
->>>>>>> laraxot/dev

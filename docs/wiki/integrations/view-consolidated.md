@@ -1,4 +1,7 @@
 ---
+qmd: "view consolidated"
+issues: []
+discussions: []
 title: "view — Consolidated Documentation"
 module: xot
 type: integration

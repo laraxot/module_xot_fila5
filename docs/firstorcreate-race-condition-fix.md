@@ -1,3 +1,14 @@
+---
+title: "firstorcreate race condition fix"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "firstorcreate race condition fix"
+issues: []
+discussions: []
+---
+
 # Fix Race Condition firstOrCreate con UUID - 2026-01-22
 
 **Status**: ✅ Completato  

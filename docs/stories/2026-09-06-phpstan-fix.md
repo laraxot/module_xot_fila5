@@ -1,3 +1,14 @@
+---
+title: "2026 09 06 phpstan fix"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "2026 09 06 phpstan fix"
+issues: []
+discussions: []
+---
+
 # BMAD Story — PHPStan Fix Xot Module
 
 ## Understand

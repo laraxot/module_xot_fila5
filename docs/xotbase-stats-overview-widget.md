@@ -1,3 +1,14 @@
+---
+title: "xotbase stats overview widget"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xotbase stats overview widget"
+issues: []
+discussions: []
+---
+
 # XotBaseStatsOverviewWidget
 
 ## Panoramica

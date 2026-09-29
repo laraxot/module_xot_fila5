@@ -1,3 +1,14 @@
+---
+title: "model inheritance audit audit ereditariet modelli tutti i modu"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "model inheritance audit audit ereditariet modelli tutti i modu"
+issues: []
+discussions: []
+---
+
 # Audit Ereditarietà Modelli - Tutti i Moduli
 
 ## Data Audit
@@ -31,6 +42,14 @@ Verificare che tutti i modelli nei moduli estendano le classi base corrette (`Ba
 
 ---
 
+title: "model inheritance audit audit ereditariet modelli tutti i modu"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "model inheritance audit audit ereditariet modelli tutti i modu"
+issues: []
+discussions: []
 ### ⚠️ Moduli con Problemi
 
 #### Cms

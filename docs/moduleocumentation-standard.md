@@ -1,3 +1,14 @@
+---
+title: "moduleocumentation standard"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "moduleocumentation standard"
+issues: []
+discussions: []
+---
+
 # Module Documentation Standard
 
 This document defines the standard structure and format for module documentation in the Laraxot architecture.
@@ -152,4 +163,12 @@ public function createUser(array $data): User
 ---
 
 
+title: "moduleocumentation standard"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "moduleocumentation standard"
+issues: []
+discussions: []
 **Standard Version**: 1.0

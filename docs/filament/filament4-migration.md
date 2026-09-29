@@ -1,3 +1,14 @@
+---
+title: "filament4 migration"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament4 migration"
+issues: []
+discussions: []
+---
+
 # Filament 5.x Migration Guide
 
 **Data**: 2026-01-30
