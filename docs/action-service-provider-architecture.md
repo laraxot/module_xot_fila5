@@ -1,14 +1,3 @@
----
-title: "action service provider architecture"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "action service provider architecture"
-issues: []
-discussions: []
----
-
 # Action Pattern and Service Provider Architecture: The Sacred Systems
 
 ## Action Pattern: The Sacred Business Logic Container

@@ -1,9 +1,4 @@
 ---
-tags: [documentation]
-updated: 2026-09-26
-qmd: "xotbase pattern abuse"
-issues: []
-discussions: []
 title: "XotBase* Pattern Abuse – Copy Instead of Extend"
 type: redundancy
 owner: Modules/Xot

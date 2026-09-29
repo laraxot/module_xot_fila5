@@ -1,7 +1,4 @@
 ---
-qmd: "best practices guide"
-issues: []
-discussions: []
 title: "Best Practices Guide"
 type: reference
 tags: [wiki, no-frontmatter-fix]

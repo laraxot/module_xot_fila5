@@ -1,7 +1,4 @@
 ---
-qmd: "wysiwyg"
-issues: []
-discussions: []
 title: "Wysiwyg"
 type: reference
 tags: [wiki, no-frontmatter-fix]

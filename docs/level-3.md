@@ -1,14 +1,3 @@
----
-title: "level 3"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "level 3"
-issues: []
-discussions: []
----
-
 # Rapporto PHPStan Livello 3 per il modulo Xot
 
 Data analisi: [DATE] 21:53:24

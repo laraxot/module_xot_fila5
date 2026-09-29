@@ -1,7 +1,4 @@
 ---
-qmd: " performance"
-issues: []
-discussions: []
 title: "Performance"
 type: reference
 tags: [wiki, no-frontmatter-fix]

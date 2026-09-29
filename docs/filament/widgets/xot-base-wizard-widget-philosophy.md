@@ -1,14 +1,3 @@
----
-title: "xot base wizard widget philosophy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "xot base wizard widget philosophy"
-issues: []
-discussions: []
----
-
 # XotBaseWizardWidget — Filosofia Completa
 
 **Status**: Active  
@@ -19,14 +8,6 @@ discussions: []
 
 ---
 
-title: "xot base wizard widget philosophy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "xot base wizard widget philosophy"
-issues: []
-discussions: []
 ## La Filosofia Completa (Zen Laraxot)
 
 ### Perche XotBaseWizardWidget Esiste

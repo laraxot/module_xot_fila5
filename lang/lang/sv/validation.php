@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
 return [
     'accepted' => ':attribute måste accepteras.',
     'active_url' => ':attribute är inte en giltig webbadress.',

@@ -1,12 +1,4 @@
 ---
-title: "actionsoverservices"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "actionsoverservices"
-issues: []
-discussions: []
 module: Xot
 concept: Actions Over Services
 last_updated: 2026-04-15

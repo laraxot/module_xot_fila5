@@ -1,7 +1,4 @@
 ---
-tags: [documentation]
-issues: []
-discussions: []
 title: "Q4 Roadmap"
 type: concept
 status: deprecated

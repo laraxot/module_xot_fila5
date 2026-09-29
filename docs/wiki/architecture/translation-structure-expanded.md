@@ -1,7 +1,4 @@
 ---
-qmd: "translation structure expanded"
-issues: []
-discussions: []
 title: "Translation Structure Expanded"
 type: reference
 tags: [wiki, no-frontmatter-fix]

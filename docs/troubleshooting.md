@@ -1,14 +1,3 @@
----
-title: "troubleshooting"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "troubleshooting"
-issues: []
-discussions: []
----
-
 # 🚨 **Troubleshooting Modulo Xot**
 
 ## 📋 **Panoramica**
@@ -691,12 +680,4 @@ dd(DB::getQueryLog());
 
 ---
 
-title: "troubleshooting"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "troubleshooting"
-issues: []
-discussions: []
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*

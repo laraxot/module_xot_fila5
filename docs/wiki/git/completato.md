@@ -1,7 +1,4 @@
 ---
-qmd: "completato"
-issues: []
-discussions: []
 title: "Completato"
 type: reference
 tags: [wiki, no-frontmatter-fix]

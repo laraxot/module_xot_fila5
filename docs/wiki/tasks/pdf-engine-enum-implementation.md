@@ -1,7 +1,4 @@
 ---
-qmd: "pdf engine enum implementation"
-issues: []
-discussions: []
 title: "Pdf Engine Enum Implementation"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,14 +1,3 @@
----
-title: "phpstan fixes january"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan fixes january"
-issues: []
-discussions: []
----
-
 
 
 
@@ -217,14 +206,6 @@ public function getModels(): array
 
 ---
 
-title: "phpstan fixes january"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan fixes january"
-issues: []
-discussions: []
 **🔄 Ultimo aggiornamento**: 27 Gennaio 2025  
 **📦 Versione**: 1.0  
 **🐛 PHPStan Level**: 9 ✅  

@@ -1,14 +1,3 @@
----
-title: "resources"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "resources"
-issues: []
-discussions: []
----
-
 # Xot Module - Resources
 
 ## 📋 Table of Contents
@@ -326,11 +315,3 @@ discussions: []
 
 ---
 
-title: "resources"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "resources"
-issues: []
-discussions: []

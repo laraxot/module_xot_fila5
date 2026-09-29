@@ -1,7 +1,4 @@
 ---
-qmd: "route"
-issues: []
-discussions: []
 title: "Route"
 type: reference
 tags: [wiki, no-frontmatter-fix]

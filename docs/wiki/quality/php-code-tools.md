@@ -1,7 +1,4 @@
 ---
-qmd: "php code tools"
-issues: []
-discussions: []
 title: "Php Code Tools"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,7 +1,4 @@
 ---
-qmd: "git conflict subtree error resolution"
-issues: []
-discussions: []
 title: "Git Conflict Subtree Error Resolution"
 type: reference
 tags: [wiki, no-frontmatter-fix]

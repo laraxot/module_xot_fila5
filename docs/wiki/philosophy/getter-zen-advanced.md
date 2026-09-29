@@ -1,7 +1,4 @@
 ---
-qmd: "getter zen advanced"
-issues: []
-discussions: []
 title: "Getter Zen Advanced"
 type: reference
 tags: [wiki, no-frontmatter-fix]

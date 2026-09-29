@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Laraxot Architectural Memories - February 2026"
 module: "Xot"
 type: concept

@@ -1,14 +1,3 @@
----
-title: "bottlenecks detailed"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "bottlenecks detailed"
-issues: []
-discussions: []
----
-
 # Analisi Dettagliata dei Colli di Bottiglia - Modulo Xot
 
 ## Panoramica
@@ -303,11 +292,3 @@ trait HasXotOptimizations
 ```
 
 ---
-title: "bottlenecks detailed"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "bottlenecks detailed"
-issues: []
-discussions: []

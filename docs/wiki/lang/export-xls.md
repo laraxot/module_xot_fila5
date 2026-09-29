@@ -1,7 +1,4 @@
 ---
-qmd: "export xls"
-issues: []
-discussions: []
 title: "Export Xls"
 type: reference
 tags: [wiki, no-frontmatter-fix]

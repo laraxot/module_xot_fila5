@@ -1,14 +1,3 @@
----
-title: "maintenance rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "maintenance rules"
-issues: []
-discussions: []
----
-
 # Maintenance Rules
 
 **Rule:** Before modifying any file, always study, update, and improve the documentation (`docs` folders) inside the relevant module and theme.

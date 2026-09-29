@@ -1,14 +1,3 @@
----
-title: "widget implementation rules conflict"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "widget implementation rules conflict"
-issues: []
-discussions: []
----
-
 # Widget Implementation Rules - Xot Module
 
 ## 🎯 Regole Fondamentali per Widget

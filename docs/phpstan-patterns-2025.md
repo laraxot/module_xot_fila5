@@ -1,7 +1,4 @@
 ---
-tags: [documentation]
-issues: []
-discussions: []
 title: "Phpstan Patterns"
 type: concept
 status: deprecated

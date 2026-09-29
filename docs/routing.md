@@ -1,14 +1,3 @@
----
-title: "routing"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "routing"
-issues: []
-discussions: []
----
-
 # Routing nel Progetto il progetto
 
 ## Indice

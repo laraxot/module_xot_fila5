@@ -1,7 +1,4 @@
 ---
-qmd: "github actions modules"
-issues: []
-discussions: []
 title: "Github Actions Modules"
 type: reference
 tags: [wiki, no-frontmatter-fix]

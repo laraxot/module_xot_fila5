@@ -1,14 +1,3 @@
----
-title: "eloquent magic properties rule"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "eloquent magic properties rule"
-issues: []
-discussions: []
----
-
 # Eloquent Magic Properties - Regola Assoluta
 
 ## 🔥 REGOLA FONDAMENTALE
@@ -316,14 +305,6 @@ Quando scrivi codice con Eloquent:
 
 ---
 
-title: "eloquent magic properties rule"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "eloquent magic properties rule"
-issues: []
-discussions: []
 ## Summary
 
 **3 Regole d'Oro**:

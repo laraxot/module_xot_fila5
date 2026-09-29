@@ -1,14 +1,3 @@
----
-title: "filament record sub navigation"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament record sub navigation"
-issues: []
-discussions: []
----
-
 # Sub navigation delle pagine di record
 
 Regola valida per ogni risorsa che estende `XotBaseResource`.

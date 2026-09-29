@@ -1,14 +1,3 @@
----
-title: "phpstan fixes summary riassunto delle correzioni per phpstan l"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan fixes summary riassunto delle correzioni per phpstan l"
-issues: []
-discussions: []
----
-
 # Riassunto delle Correzioni per PHPStan Livello 9
 
 Questo documento riassume i problemi comuni riscontrati con PHPStan livello 9 e le relative soluzioni, basato su un'analisi dettagliata del codice.

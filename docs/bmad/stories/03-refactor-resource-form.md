@@ -1,14 +1,3 @@
----
-title: "03 refactor resource form"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "03 refactor resource form"
-issues: []
-discussions: []
----
-
 # BMAD Story 03 — XotBaseResourceForm: `use HasXotForm`
 
 **Repo:** `git@github.com:laraxot/module_xot_fila5.git`

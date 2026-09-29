@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Claude-Mem — memoria persistente cross-sessione per agenti AI"
 module: "xot"
 type: reference

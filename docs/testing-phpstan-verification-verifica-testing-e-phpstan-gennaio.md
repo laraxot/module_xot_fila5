@@ -1,14 +1,3 @@
----
-title: "testing phpstan verification verifica testing e phpstan gennaio"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "testing phpstan verification verifica testing e phpstan gennaio"
-issues: []
-discussions: []
----
-
 # Verifica Testing e PHPStan - Gennaio 2025
 
 **Data verifica**: 18 Gennaio 2025
@@ -170,14 +159,6 @@ vendor/bin/phpstan analyse Modules/Activity/ --configuration=Modules/Activity/ph
 
 ---
 
-title: "testing phpstan verification verifica testing e phpstan gennaio"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "testing phpstan verification verifica testing e phpstan gennaio"
-issues: []
-discussions: []
 **Verifica completata con successo**: Tutti i conflitti Git risolti, errori PHPStan critici fixati, e test suite verificata per funzionalità corretta.
 
 *Documento di verifica - Framework Laraxot PTVX*

@@ -1,7 +1,4 @@
 ---
-qmd: "app"
-issues: []
-discussions: []
 title: "App"
 type: reference
 tags: [wiki, no-frontmatter-fix]

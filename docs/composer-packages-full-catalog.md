@@ -1,14 +1,3 @@
----
-title: "composer packages full catalog"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "composer packages full catalog"
-issues: []
-discussions: []
----
-
 # Composer Packages Full Catalog (2026-03-02)
 
 This document is generated from `composer show --format=json` and represents a full package-by-package study baseline.

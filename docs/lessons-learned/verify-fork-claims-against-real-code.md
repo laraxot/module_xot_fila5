@@ -1,12 +1,4 @@
 ---
-title: "verify fork claims against real code"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "verify fork claims against real code"
-issues: []
-discussions: []
 name: verify-fork-claims-against-real-code
 description: "Il report finale di una fork è un log di cosa ha fatto, non lo stato attuale del file: verifica sul codice prima di riportarlo all'utente"
 metadata:

@@ -1,14 +1,3 @@
----
-title: "phpstan level 10"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan level 10"
-issues: []
-discussions: []
----
-
 # PHPStan Livello 10 (MAX) - Report Qualità Codice
 
 ## Data Analisi

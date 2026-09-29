@@ -1,7 +1,4 @@
 ---
-qmd: "process"
-issues: []
-discussions: []
 title: 'Process'
 module: Xot
 type: reference

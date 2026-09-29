@@ -1,14 +1,3 @@
----
-title: "model contact contract"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "model contact contract"
-issues: []
-discussions: []
----
-
 # ModelContactContract
 
 ## Descrizione

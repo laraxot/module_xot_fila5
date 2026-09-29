@@ -1,14 +1,3 @@
----
-title: "user reference pattern"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "user reference pattern"
-issues: []
-discussions: []
----
-
 # Pattern per Riferimenti User - Laraxot
 
 **Data**: 2025-01-10
@@ -17,14 +6,6 @@ discussions: []
 
 ---
 
-title: "user reference pattern"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "user reference pattern"
-issues: []
-discussions: []
 ## 🚨 Problema
 
 PHPStan segnala errori quando trova riferimenti a `App\Models\User` che **non esiste** nel sistema Laraxot.

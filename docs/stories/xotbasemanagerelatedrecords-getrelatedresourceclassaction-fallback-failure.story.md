@@ -1,8 +1,4 @@
 ---
-tags: [documentation]
-qmd: "xotbasemanagerelatedrecords getrelatedresourceclassaction fallback failure.story"
-issues: []
-discussions: []
 title: "XotBaseManageRelatedRecords: GetRelatedResourceClassAction fallback fallisce"
 type: story
 module: Xot

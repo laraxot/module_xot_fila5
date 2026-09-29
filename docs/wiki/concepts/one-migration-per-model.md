@@ -1,7 +1,4 @@
 ---
-qmd: "one migration per model"
-issues: []
-discussions: []
 title: "Una migrazione per modello"
 type: concept
 module: Xot

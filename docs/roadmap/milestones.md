@@ -1,14 +1,3 @@
----
-title: "milestones"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "milestones"
-issues: []
-discussions: []
----
-
 # Xot Module - Milestones
 
 ## 📋 Table of Contents
@@ -413,11 +402,3 @@ M1 → M2 → M3 → M4 → M5 → M6 → M7 → M8 → M9 → M10
 
 ---
 
-title: "milestones"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "milestones"
-issues: []
-discussions: []

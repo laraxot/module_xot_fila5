@@ -1,7 +1,4 @@
 ---
-qmd: "amazon"
-issues: []
-discussions: []
 title: "Amazon"
 type: reference
 tags: [wiki, no-frontmatter-fix]

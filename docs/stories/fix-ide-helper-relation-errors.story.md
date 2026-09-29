@@ -1,9 +1,4 @@
 ---
-title: "fix ide helper relation errors.story"
-tags: [documentation]
-created: 2026-09-26
-issues: []
-discussions: []
 status: done
 scope: module:Xot,module:Performance,module:Sigma
 type: bugfix

@@ -1,14 +1,3 @@
----
-title: "php syntax errors block phpstan"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "php syntax errors block phpstan"
-issues: []
-discussions: []
----
-
 # PHP Syntax Errors Block PHPStan Analysis
 
 ## Problem

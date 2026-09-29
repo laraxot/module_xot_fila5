@@ -1,14 +1,3 @@
----
-title: "browsershot missing dependency"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "browsershot missing dependency"
-issues: []
-discussions: []
----
-
 # Browsershot Missing Dependency
 
 ## Problem

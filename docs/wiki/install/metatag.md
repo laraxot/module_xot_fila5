@@ -1,7 +1,4 @@
 ---
-qmd: "metatag"
-issues: []
-discussions: []
 title: "Metatag"
 type: reference
 tags: [wiki, no-frontmatter-fix]

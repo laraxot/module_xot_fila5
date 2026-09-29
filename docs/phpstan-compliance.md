@@ -1,14 +1,3 @@
----
-title: "phpstan compliance"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan compliance"
-issues: []
-discussions: []
----
-
 # PHPStan Compliance - Xot Module
 
 ## 📚 Documentazione Correlata
@@ -20,14 +9,6 @@ discussions: []
 
 ---
 
-title: "phpstan compliance"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan compliance"
-issues: []
-discussions: []
 **Status:** 🔄 In Correzione
 **Data Inizio:** 10 Ottobre 2025
 **Target:** PHPStan Level 10 - 0 Errori

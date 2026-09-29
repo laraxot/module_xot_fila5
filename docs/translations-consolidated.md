@@ -1,14 +1,3 @@
----
-title: "translations consolidated"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "translations consolidated"
-issues: []
-discussions: []
----
-
 # Translations - Documentazione Consolidata DRY + KISS
 
 > **🎯 Single Source of Truth**: Questo documento centralizza TUTTA la documentazione traduzioni del progetto
@@ -486,14 +475,6 @@ rm Modules/Lang/project_docs/translation_notify_conversion.md
 
 ---
 
-title: "translations consolidated"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "translations consolidated"
-issues: []
-discussions: []
 **🎯 Obiettivo**: Da 107+ file duplicati a 1 file centralizzato
 **📈 Beneficio**: 99% riduzione duplicazioni, manutenzione semplificata
 **🔗 Vedi anche**: [filament-best-practices.md](filament-best-practices.md) | [conventions.md](conventions.md)

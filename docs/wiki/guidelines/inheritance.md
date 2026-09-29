@@ -1,7 +1,4 @@
 ---
-qmd: "inheritance"
-issues: []
-discussions: []
 title: "Inheritance"
 type: reference
 tags: [wiki, no-frontmatter-fix]

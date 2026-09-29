@@ -1,14 +1,3 @@
----
-title: "phpstan fix roadmap"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan fix roadmap"
-issues: []
-discussions: []
----
-
 # PHPStan Error Resolution Roadmap - Xot Module
 
 ## Executive Summary

@@ -1,14 +1,3 @@
----
-title: "wcag accessibility guidelines"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "wcag accessibility guidelines"
-issues: []
-discussions: []
----
-
 # WCAG Accessibility Guidelines
 
 ## Overview

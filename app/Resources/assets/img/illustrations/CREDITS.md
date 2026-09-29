@@ -1,14 +1,3 @@
----
-title: "CREDITS"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "CREDITS"
-issues: []
-discussions: []
----
-
 # Illustration Credits
 
 The illustrations in this directory are sourced

@@ -1,7 +1,4 @@
 ---
-qmd: " inodes"
-issues: []
-discussions: []
 title: 'Inodes'
 module: Xot
 type: reference

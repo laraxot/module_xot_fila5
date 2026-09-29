@@ -1,28 +1,9 @@
----
-title: "01 standard patterns"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "01 standard patterns"
-issues: []
-discussions: []
----
-
 # Action Execution and Dependency Injection Rules in Laraxot
 
 This document details mandatory rules and best practices for executing Spatie Queueable Actions and managing dependency injection within business logic classes, especially Actions. Adherence to these guidelines is crucial for maintaining architectural consistency, testability, queueability, and aligning with the Laraxot philosophy.
 
 ---
 
-title: "01 standard patterns"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "01 standard patterns"
-issues: []
-discussions: []
 ## Core Principles
 
 1.  **Consistent Action Interface**: Actions should expose a single, consistent entry point for their primary business logic.

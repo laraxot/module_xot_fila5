@@ -1,14 +1,3 @@
----
-title: "blade component registration"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "blade component registration"
-issues: []
-discussions: []
----
-
 # Registrazione Componenti Blade
 
 ## Regola Fondamentale

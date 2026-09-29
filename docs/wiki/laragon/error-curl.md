@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Error Curl"
 module: "Xot"
 type: concept

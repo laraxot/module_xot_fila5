@@ -1,14 +1,3 @@
----
-title: "environment configuration issues"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "environment configuration issues"
-issues: []
-discussions: []
----
-
 # Problemi di Configurazione Variabili d'Ambiente - Modulo Xot
 
 ## Problema: env() non funziona durante il bootstrap

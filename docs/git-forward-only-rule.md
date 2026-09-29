@@ -1,14 +1,3 @@
----
-title: "git forward only rule"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "git forward only rule"
-issues: []
-discussions: []
----
-
 # Git Forward-Only Rule
 
 ## 🔥 Regola Assoluta: Mai Tornare Indietro
@@ -194,13 +183,5 @@ Non è una best practice, è **l'unica pratica**.
 
 ---
 
-title: "git forward only rule"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "git forward only rule"
-issues: []
-discussions: []
 **Ultima revisione**: Novembre 2025
 **Status**: Regola Assoluta e Immutabile

@@ -1,9 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 title: "Errori PHPStan - Modulo Xot"
 module: "Xot"
 type: concept

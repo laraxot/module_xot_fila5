@@ -1,7 +1,4 @@
 ---
-qmd: "nwidart to study"
-issues: []
-discussions: []
 title: 'Nwidart to study — risorse esterne'
 module: Xot
 type: reference

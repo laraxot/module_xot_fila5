@@ -1,14 +1,3 @@
----
-title: "phpstan batch nov"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan batch nov"
-issues: []
-discussions: []
----
-
 # PHPStan Batch Fixes - Novembre 2025
 
 ## Sessione Correzione Modulo per Modulo

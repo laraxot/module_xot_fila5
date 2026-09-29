@@ -1,18 +1,3 @@
----
-title: "phpstan analysis report 2025 11 18"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan analysis report 2025 11 18"
-issues: []
-discussions: []
-name: phpstan-analysis-report-2025-11-18
-description: " Executive Summary"
-metadata:
-  type: documentation
----
-
 # PHPStan Analysis Report - 2025-11-18
 
 ## Executive Summary

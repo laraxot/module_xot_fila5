@@ -1,7 +1,4 @@
 ---
-qmd: "service provider best practices"
-issues: []
-discussions: []
 title: "Service Provider Best Practices"
 type: reference
 tags: [wiki, no-frontmatter-fix]

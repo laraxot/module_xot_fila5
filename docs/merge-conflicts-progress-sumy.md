@@ -1,14 +1,3 @@
----
-title: "merge conflicts progress sumy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "merge conflicts progress sumy"
-issues: []
-discussions: []
----
-
 # Summary Progresso Risoluzione Merge Conflicts
 
 **Status**: ✅ In Progresso
@@ -16,14 +5,6 @@ discussions: []
 
 ---
 
-title: "merge conflicts progress sumy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "merge conflicts progress sumy"
-issues: []
-discussions: []
 ## ✅ File Risolti (16)
 
 ### Modulo Xot

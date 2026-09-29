@@ -1,14 +1,3 @@
----
-title: "phpstan relationship best practices"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan relationship best practices"
-issues: []
-discussions: []
----
-
 # PHPStan Best Practices per Relazioni Eloquent
 
 ## Regola Fondamentale
@@ -318,14 +307,6 @@ L'uso di `self` nelle annotazioni PHPDoc delle relazioni Eloquent è la best pra
 
 ---
 
-title: "phpstan relationship best practices"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan relationship best practices"
-issues: []
-discussions: []
 **Applicabile a**: Tutti i moduli Laraxot  
 **PHPStan Version**: 1.10+  
 **Laravel Version**: 10+  

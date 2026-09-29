@@ -1,8 +1,4 @@
 ---
-updated: 2026-09-26
-qmd: "composer root skeleton comparison dup"
-issues: []
-discussions: []
 title: "Confronto composer root FixCity vs Predict"
 type: raw-note
 module: Xot

@@ -1,14 +1,3 @@
----
-title: "xot base wizard widget architecture"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "xot base wizard widget architecture"
-issues: []
-discussions: []
----
-
 # XotBaseWizardWidget — Architettura, bellezza e bug del primo step sempre visibile
 
 > **⚠️ Aggiornamento 2026-05-22** — contesto HasWizard + `getWizardComponent()` aggiornato in [`filament-wizard-refactoring.md`](../filament-wizard-refactoring.md). **`normalizeWizardFormState()` non esiste più sulla base**: il submit dominio usa **`$this->form->getState()`**; eventuale trait **`DelegatesFilamentWizardSchemaMethods`** solo dove serve Blade.
@@ -355,12 +344,4 @@ Vantaggi:
 
 ---
 
-title: "xot base wizard widget architecture"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "xot base wizard widget architecture"
-issues: []
-discussions: []
 *Creato: 2026-05-14 — Claude Opus 4.7, analisi `XotBaseWizardWidget`.*

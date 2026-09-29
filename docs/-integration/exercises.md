@@ -1,14 +1,3 @@
----
-title: "exercises"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "exercises"
-issues: []
-discussions: []
----
-
 # exercises
 
 <!-- Contenuto migrato da _docs/exercises.txt -->

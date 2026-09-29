@@ -1,14 +1,3 @@
----
-title: "xotbasesection architecture"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "xotbasesection architecture"
-issues: []
-discussions: []
----
-
 # XotBaseSection Architecture Guide
 
 ## Overview

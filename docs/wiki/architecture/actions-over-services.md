@@ -1,7 +1,4 @@
 ---
-qmd: "actions over services"
-issues: []
-discussions: []
 title: "Actions Over Services"
 type: reference
 tags: [wiki, no-frontmatter-fix]

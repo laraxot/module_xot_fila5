@@ -1,14 +1,3 @@
----
-title: "xot philosophy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "xot philosophy"
-issues: []
-discussions: []
----
-
 # Xot Philosophy
 
 The credo of Laraxot and the non-negotiables that bind all 47 modules.

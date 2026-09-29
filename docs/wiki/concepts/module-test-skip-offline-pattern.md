@@ -1,7 +1,4 @@
 ---
-tags: [documentation]
-issues: []
-discussions: []
 title: "Pattern skip offline — test modulo senza schema dominio"
 module: Xot
 type: concept

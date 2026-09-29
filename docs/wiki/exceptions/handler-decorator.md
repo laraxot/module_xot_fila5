@@ -1,7 +1,4 @@
 ---
-qmd: "handler decorator"
-issues: []
-discussions: []
 title: "Handler Decorator"
 type: reference
 tags: [wiki, no-frontmatter-fix]

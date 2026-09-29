@@ -1,14 +1,3 @@
----
-title: "phpstan execution"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan execution"
-issues: []
-discussions: []
----
-
 # Esecuzione Corretta di PHPStan in Laraxot <nome progetto>
 
 ## Comando Base per PHPStan

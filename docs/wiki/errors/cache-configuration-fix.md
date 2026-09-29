@@ -1,7 +1,4 @@
 ---
-qmd: "cache configuration fix"
-issues: []
-discussions: []
 title: "Cache Configuration Fix"
 type: reference
 tags: [wiki, no-frontmatter-fix]

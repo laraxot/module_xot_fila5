@@ -1,14 +1,3 @@
----
-title: "bad practices"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "bad practices"
-issues: []
-discussions: []
----
-
 # bad_practices
 
 <!-- Contenuto migrato da _docs/bad_practices.txt -->

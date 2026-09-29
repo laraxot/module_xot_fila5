@@ -1,7 +1,4 @@
 ---
-qmd: "manage related records resource delegation.story"
-issues: []
-discussions: []
 title: "BMAD — consolidare la delega completa form/table"
 type: story
 status: done

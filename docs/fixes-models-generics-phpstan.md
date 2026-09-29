@@ -1,14 +1,3 @@
----
-title: "fixes models generics phpstan"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "fixes models generics phpstan"
-issues: []
-discussions: []
----
-
 # Fix PHPStan Modelli - Generics e Tipizzazione Completa
 
 ## Data: 2025-01-27

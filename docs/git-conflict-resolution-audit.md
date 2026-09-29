@@ -1,12 +1,4 @@
 ---
-title: "git conflict resolution audit"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "git conflict resolution audit"
-issues: []
-discussions: []
 created_at: '2026-07-31'
 ---
 

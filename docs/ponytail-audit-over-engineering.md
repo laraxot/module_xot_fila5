@@ -1,14 +1,3 @@
----
-title: "ponytail audit over engineering"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "ponytail audit over engineering"
-issues: []
-discussions: []
----
-
 # Ponytail audit — Xot (over-engineering)
 
 **Ultimo run:** 2026-07-01  

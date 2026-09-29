@@ -1,14 +1,3 @@
----
-title: "README"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "README"
-issues: []
-discussions: []
----
-
 # Xot Module - Product Requirements Document (PRD)
 
 ## Document Information
@@ -271,12 +260,4 @@ To create the most robust, scalable, and developer-friendly foundational framewo
 
 ---
 
-title: "README"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "README"
-issues: []
-discussions: []
 *This PRD will be reviewed and updated quarterly based on feedback and changing requirements.*

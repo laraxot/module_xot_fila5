@@ -1,7 +1,4 @@
 ---
-qmd: "form schema checker"
-issues: []
-discussions: []
 title: "Form Schema Checker"
 type: reference
 tags: [wiki, no-frontmatter-fix]

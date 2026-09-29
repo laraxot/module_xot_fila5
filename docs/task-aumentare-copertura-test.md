@@ -1,14 +1,3 @@
----
-title: "task aumentare copertura test"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "task aumentare copertura test"
-issues: []
-discussions: []
----
-
 # Task: Aumentare Copertura Test - Xot
 
 **Modulo**: Xot
@@ -17,14 +6,6 @@ discussions: []
 
 ---
 
-title: "task aumentare copertura test"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "task aumentare copertura test"
-issues: []
-discussions: []
 ## Descrizione
 
 Il modulo Xot ha solo 6 file di test per 496 file PHP in app/. La copertura test e' criticamente bassa per un modulo fondazionale da cui dipendono tutti gli altri.

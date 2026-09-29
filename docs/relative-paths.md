@@ -1,14 +1,3 @@
----
-title: "relative paths"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "relative paths"
-issues: []
-discussions: []
----
-
 # Regole per i Percorsi Relativi nella Documentazione
 
 > **Collegamenti correlati**

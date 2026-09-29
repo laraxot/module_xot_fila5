@@ -1,7 +1,4 @@
 ---
-qmd: "nwidart"
-issues: []
-discussions: []
 title: "Nwidart"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,14 +1,3 @@
----
-title: "pest execution guide"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "pest execution guide"
-issues: []
-discussions: []
----
-
 # Pest Testing - Guida Esecuzione dalla Cartella Laravel
 
 **Data**: 9 Gennaio 2026  
@@ -17,14 +6,6 @@ discussions: []
 
 ---
 
-title: "pest execution guide"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "pest execution guide"
-issues: []
-discussions: []
 ## 📋 Prerequisiti
 
 ### Installazione Pest

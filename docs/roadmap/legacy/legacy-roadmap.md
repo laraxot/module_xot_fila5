@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-=======
----
-title: "legacy roadmap"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "legacy roadmap"
-issues: []
-discussions: []
----
-
->>>>>>> laraxot/dev
 # Xot Module - Complete Roadmap 2026
 
 **Generated**: 2026-01-02
@@ -21,17 +7,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
-title: "legacy roadmap"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "legacy roadmap"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## 🎯 **MODULE IDENTITY**
 
 ### **Domain**: Framework Foundation

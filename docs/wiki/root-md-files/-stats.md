@@ -1,7 +1,4 @@
 ---
-qmd: " stats"
-issues: []
-discussions: []
 title: "Stats"
 type: reference
 tags: [wiki, no-frontmatter-fix]

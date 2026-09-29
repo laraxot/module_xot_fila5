@@ -1,14 +1,3 @@
----
-title: "refactoring xotbasepanelprovider completato conflict"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "refactoring xotbasepanelprovider completato conflict"
-issues: []
-discussions: []
----
-
 # ✅ REFACTORING XotBasePanelProvider COMPLETATO
 
 ## OBIETTIVI RAGGIUNTI
@@ -144,14 +133,6 @@ protected function shouldDiscoverClusters(): bool
 
 ---
 
-title: "refactoring xotbasepanelprovider completato conflict"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "refactoring xotbasepanelprovider completato conflict"
-issues: []
-discussions: []
 **REFACTORING COMPLETATO CON SUCCESSO** ✅
 
 *Data: 2025-09-18*

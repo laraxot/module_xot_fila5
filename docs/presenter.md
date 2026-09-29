@@ -1,14 +1,3 @@
----
-title: "presenter"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "presenter"
-issues: []
-discussions: []
----
-
 $acceptHeader=$request->header('Accept');
 
 if(in_array($acceptHeader,['application/json','application/xml'])){

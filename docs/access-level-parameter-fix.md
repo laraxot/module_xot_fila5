@@ -1,14 +1,3 @@
----
-title: "access level parameter fix"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "access level parameter fix"
-issues: []
-discussions: []
----
-
 # Fixing Access Level and Parameter Initialization Issues
 
 ## Issue 1: Access Level Mismatch in getTableHeaderActions()

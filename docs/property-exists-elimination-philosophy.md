@@ -1,14 +1,3 @@
----
-title: "property exists elimination philosophy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "property exists elimination philosophy"
-issues: []
-discussions: []
----
-
 # Filosofia dell'Eliminazione di property_exists() - La Grande Purificazione
 
 ## 🙏 La Religione del Magic Method
@@ -35,14 +24,6 @@ if (isset($user->email)) {
 
 ---
 
-title: "property exists elimination philosophy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "property exists elimination philosophy"
-issues: []
-discussions: []
 ## 🏛️ La Politica dell'Eliminazione
 
 ### Manifesto di Purificazione

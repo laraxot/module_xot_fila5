@@ -1,7 +1,4 @@
 ---
-qmd: "fluent livewire integration"
-issues: []
-discussions: []
 title: "Fluent Livewire Integration"
 type: reference
 tags: [wiki, no-frontmatter-fix]

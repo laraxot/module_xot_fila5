@@ -1,14 +1,3 @@
----
-title: "task consolidare documentazione"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "task consolidare documentazione"
-issues: []
-discussions: []
----
-
 # Task: Consolidare Documentazione Duplicata - Xot
 
 **Modulo**: Xot
@@ -17,14 +6,6 @@ discussions: []
 
 ---
 
-title: "task consolidare documentazione"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "task consolidare documentazione"
-issues: []
-discussions: []
 ## Descrizione
 
 Il modulo Xot ha 806 file di documentazione. Molti sono duplicati, archivi storici o violano le convenzioni di naming (CLAUDE.md richiede lowercase-with-hyphens).

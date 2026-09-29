@@ -1,13 +1,2 @@
----
-title: "star rating"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "star rating"
-issues: []
-discussions: []
----
-
 https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker
 

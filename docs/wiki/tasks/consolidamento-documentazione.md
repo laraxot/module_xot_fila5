@@ -1,7 +1,4 @@
 ---
-qmd: "consolidamento documentazione"
-issues: []
-discussions: []
 title: "Consolidamento Documentazione"
 type: reference
 tags: [wiki, no-frontmatter-fix]

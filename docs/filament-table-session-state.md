@@ -1,14 +1,3 @@
----
-title: "filament table session state"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament table session state"
-issues: []
-discussions: []
----
-
 # Stato delle tabelle conservato fra una visita e l'altra
 
 ## Filtri, ordinamento, ricerche

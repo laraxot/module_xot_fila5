@@ -1,7 +1,4 @@
 ---
-qmd: "hasxotfactory restoration"
-issues: []
-discussions: []
 title: "Hasxotfactory Restoration"
 type: reference
 tags: [wiki, no-frontmatter-fix]

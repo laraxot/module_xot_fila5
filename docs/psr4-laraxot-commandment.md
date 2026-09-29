@@ -1,14 +1,3 @@
----
-title: "psr4 laraxot commandment"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "psr4 laraxot commandment"
-issues: []
-discussions: []
----
-
 # 🚨 COMANDAMENTO PSR-4 LARAXOT - STRUTTURA SACRA
 
 ## 📖 REGOLA FONDAMENTALE
@@ -183,12 +172,4 @@ composer dump-autoload
 
 ---
 
-title: "psr4 laraxot commandment"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "psr4 laraxot commandment"
-issues: []
-discussions: []
 *Questa regola è FONDAMENTALE per il funzionamento del sistema. Violarla = sistema rotto.*

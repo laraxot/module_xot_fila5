@@ -1,7 +1,4 @@
 ---
-qmd: "module providers dual registration mandatory"
-issues: []
-discussions: []
 title: "Ogni modulo: minimo 2 provider, in composer.json E module.json"
 type: concept
 module: Xot

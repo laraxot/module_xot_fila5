@@ -1,14 +1,3 @@
----
-title: "model inheritance rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "model inheritance rules"
-issues: []
-discussions: []
----
-
 # Regole di Ereditarietà dei Modelli - Laraxot PTVX
 
 ## Principio Fondamentale

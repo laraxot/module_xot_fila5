@@ -1,7 +1,4 @@
 ---
-qmd: "media convert resource conflict"
-issues: []
-discussions: []
 title: "Media Convert Resource Conflict"
 type: reference
 tags: [wiki, no-frontmatter-fix]
@@ -81,9 +78,11 @@ class MediaConvertResource extends XotBaseResource
      * Restituisce lo schema del form per la risorsa MediaConvert.
      * @return array<int, \Filament\Forms\Components\Component>
      */
+<<<<<<< HEAD
     public function getFormSchema(): array
----
+=======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             Radio::make('format')

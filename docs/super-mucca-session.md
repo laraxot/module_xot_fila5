@@ -1,14 +1,3 @@
----
-title: "super mucca session"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "super mucca session"
-issues: []
-discussions: []
----
-
 # Sessione Super Mucca - 2025-01-22
 
 **Data**: 2025-01-22
@@ -18,14 +7,6 @@ discussions: []
 
 ---
 
-title: "super mucca session"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "super mucca session"
-issues: []
-discussions: []
 ## 🎯 Obiettivo della Sessione
 
 Seguire il processo completo Super Mucca:

@@ -1,7 +1,4 @@
 ---
-tags: [documentation]
-issues: []
-discussions: []
 title: "Phpstan Modules Fix"
 type: concept
 status: deprecated

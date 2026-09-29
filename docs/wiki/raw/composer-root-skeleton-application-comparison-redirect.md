@@ -1,7 +1,4 @@
 ---
-tags: [documentation]
-issues: []
-discussions: []
 title: "Composer Root Skeleton Application Comparison Dup"
 type: concept
 status: deprecated

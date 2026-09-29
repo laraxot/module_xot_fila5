@@ -1,8 +1,4 @@
 ---
-tags: [documentation]
-qmd: "login page expired investigation 2026 09 11.story"
-issues: []
-discussions: []
 title: "\"This page is expired\" al login — root cause riprodotta + fix applicato"
 type: story
 module: Xot

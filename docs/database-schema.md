@@ -1,8 +1,4 @@
 ---
-updated: 2026-09-26
-qmd: "database schema"
-issues: []
-discussions: []
 title: "Xot Module Database Schema"
 type: reference
 tags: [xot, database, schema]

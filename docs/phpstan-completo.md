@@ -1,14 +1,3 @@
----
-title: "phpstan completo"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan completo"
-issues: []
-discussions: []
----
-
 # PHPStan Level 10 - Roadmap Completa per tutti i Moduli
 
 ## Stato Attuale

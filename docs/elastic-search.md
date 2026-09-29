@@ -1,8 +1,4 @@
 ---
-tags: [documentation]
-qmd: "elastic search"
-issues: []
-discussions: []
 title: "Elastic search"
 type: reference
 status: active

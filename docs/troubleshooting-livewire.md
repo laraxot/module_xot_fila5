@@ -1,14 +1,3 @@
----
-title: "troubleshooting livewire"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "troubleshooting livewire"
-issues: []
-discussions: []
----
-
 # Troubleshooting: Livewire 404 Error
 
 **Errore**: `404 Not Found` su `/livewire/update`
@@ -183,14 +172,6 @@ php artisan tinker --execute="echo route('livewire.update');"
 
 ---
 
-title: "troubleshooting livewire"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "troubleshooting livewire"
-issues: []
-discussions: []
 **Ultimo aggiornamento**: 11 Novembre 2025
 **Modulo**: Xot
 **Categoria**: Troubleshooting

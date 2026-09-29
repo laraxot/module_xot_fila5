@@ -1,9 +1,4 @@
 ---
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-issues: []
-discussions: []
 title: "Story — contratto getXlsEagerLoad su Resource"
 type: story
 module: Xot

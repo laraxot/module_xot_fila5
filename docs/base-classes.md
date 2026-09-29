@@ -1,14 +1,3 @@
----
-title: "base classes"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "base classes"
-issues: []
-discussions: []
----
-
 # Classi Base del Modulo Xot
 
 ### Versione HEAD
@@ -24,17 +13,11 @@ namespace Modules\Xot\Filament\Resources;
 
 class XotBaseResource
 {
+<<<<<<< HEAD
     public function getFormSchema(): array;
----
-title: "base classes"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "base classes"
-issues: []
-discussions: []
+=======
     public function getFormSchema(): array;
+>>>>>>> laraxot/dev
     public static function getListTableColumns(): array;
 }
 ```

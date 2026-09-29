@@ -1,7 +1,4 @@
 ---
-qmd: "no migrate fresh"
-issues: []
-discussions: []
 title: "No Migrate Fresh"
 type: reference
 tags: [wiki, no-frontmatter-fix]

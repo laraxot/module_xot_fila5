@@ -1,14 +1,3 @@
----
-title: "DAISYUI"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "DAISYUI"
-issues: []
-discussions: []
----
-
 # Xot Module — daisyUI Reference
 
 ## Panoramica
@@ -27,14 +16,6 @@ Non usa né dipende direttamente da daisyUI.
 
 ---
 
-title: "DAISYUI"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "DAISYUI"
-issues: []
-discussions: []
 ## Perché Xot non usa daisyUI
 
 Il modulo **Xot** è un modulo "kernel" — fornisce:

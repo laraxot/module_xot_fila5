@@ -1,14 +1,3 @@
----
-title: "conflict resolution serviceprovider 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "conflict resolution serviceprovider 1"
-issues: []
-discussions: []
----
-
 # Risoluzione Conflitto: XotBaseServiceProvider
 
 ## Contesto

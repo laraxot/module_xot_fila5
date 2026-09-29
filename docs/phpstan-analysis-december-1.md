@@ -1,14 +1,3 @@
----
-title: "phpstan analysis december 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan analysis december 1"
-issues: []
-discussions: []
----
-
 # Analisi PHPStan - 17 Dicembre 2025
 
 ## Riepilogo

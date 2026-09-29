@@ -1,8 +1,4 @@
 ---
-tags: [documentation]
-qmd: "sortable livewire"
-issues: []
-discussions: []
 title: "Sortable livewire"
 type: reference
 status: active

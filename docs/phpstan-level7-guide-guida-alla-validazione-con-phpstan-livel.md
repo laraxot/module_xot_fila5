@@ -1,14 +1,3 @@
----
-title: "phpstan level7 guide guida alla validazione con phpstan livel"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan level7 guide guida alla validazione con phpstan livel"
-issues: []
-discussions: []
----
-
 # Guida alla Validazione con PHPStan Livello 7
 
 ## Introduzione

@@ -1,14 +1,3 @@
----
-title: "filament nesting opportunities summary"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament nesting opportunities summary"
-issues: []
-discussions: []
----
-
 # Filament 5.x Nested Resources - Riepilogo Opportunità
 
 **Data Analisi**: 2026-01-22  
@@ -225,13 +214,5 @@ php artisan make:filament-relation-manager SurveyPdfResource contacts email
 
 ---
 
-title: "filament nesting opportunities summary"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament nesting opportunities summary"
-issues: []
-discussions: []
 **Ultimo Aggiornamento**: 2026-01-22  
 **Prossima Revisione**: 2026-02-22

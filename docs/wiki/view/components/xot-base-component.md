@@ -1,7 +1,4 @@
 ---
-qmd: "xot base component"
-issues: []
-discussions: []
 title: "Xot Base Component"
 type: reference
 tags: [wiki, no-frontmatter-fix]

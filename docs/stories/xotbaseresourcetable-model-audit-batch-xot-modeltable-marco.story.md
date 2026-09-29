@@ -1,8 +1,4 @@
 ---
-tags: [documentation]
-qmd: "xotbaseresourcetable model audit batch xot modeltable marco.story"
-issues: []
-discussions: []
 title: "XotBaseResourceTable: $model esplicito + audit colonne — batch 6 file core Xot"
 type: story
 module: Xot

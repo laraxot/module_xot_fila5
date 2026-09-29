@@ -1,7 +1,4 @@
 ---
-qmd: "scope"
-issues: []
-discussions: []
 title: "Scope"
 type: reference
 tags: [wiki, no-frontmatter-fix]

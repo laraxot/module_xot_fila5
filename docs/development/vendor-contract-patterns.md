@@ -1,14 +1,3 @@
----
-title: "vendor contract patterns"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "vendor contract patterns"
-issues: []
-discussions: []
----
-
 # Vendor Contract Patterns - Critical Rule
 
 ## Date Created
@@ -142,13 +131,5 @@ interface PassportHasApiTokensContract
 
 ---
 
-title: "vendor contract patterns"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "vendor contract patterns"
-issues: []
-discussions: []
 **Maintained by**: Claude Sonnet 4.5
 **Last updated**: 2025-12-12

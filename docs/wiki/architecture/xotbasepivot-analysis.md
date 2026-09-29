@@ -1,7 +1,4 @@
 ---
-qmd: "xotbasepivot analysis"
-issues: []
-discussions: []
 title: "Xotbasepivot Analysis"
 type: reference
 tags: [wiki, no-frontmatter-fix]

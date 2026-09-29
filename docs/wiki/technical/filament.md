@@ -1,7 +1,4 @@
 ---
-qmd: "filament"
-issues: []
-discussions: []
 title: "Filament"
 type: reference
 tags: [wiki, no-frontmatter-fix]

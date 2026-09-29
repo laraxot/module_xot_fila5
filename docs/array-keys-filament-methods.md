@@ -1,14 +1,3 @@
----
-title: "array keys filament methods"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "array keys filament methods"
-issues: []
-discussions: []
----
-
 # Array Keys in Filament Methods - Regole Obbligatorie
 
 **Data**: 2025-01-18
@@ -73,17 +62,11 @@ public function getTableBulkActions(): array
  *
  * @return array<string, \Filament\Forms\Components\Component>
  */
+<<<<<<< HEAD
 public function getFormSchema(): array
----
-title: "array keys filament methods"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "array keys filament methods"
-issues: []
-discussions: []
+=======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
 {
     return [
         'name' => TextInput::make('name')->required(),
@@ -120,9 +103,11 @@ public function getTableActions(): array
 /**
  * @return array<mixed, Component>
  */
+<<<<<<< HEAD
 public function getFormSchema(): array
----
+=======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
 {
     // ...
 }
@@ -169,9 +154,11 @@ public function getTableBulkActions(): array
 
 ```php
 // ✅ CORRETTO
+<<<<<<< HEAD
 public function getFormSchema(): array
----
+=======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
 {
     return [
         'template_slug' => Select::make('template_slug')

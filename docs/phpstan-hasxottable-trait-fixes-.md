@@ -1,14 +1,3 @@
----
-title: "phpstan hasxottable trait fixes "
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan hasxottable trait fixes "
-issues: []
-discussions: []
----
-
 # PHPStan HasXotTable Trait Type Safety Fixes - February 2026
 
 ## Data

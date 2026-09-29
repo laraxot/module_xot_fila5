@@ -1,14 +1,3 @@
----
-title: "optimization recommendations raccomandazioni di ottimizzazione modu"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "optimization recommendations raccomandazioni di ottimizzazione modu"
-issues: []
-discussions: []
----
-
 # Raccomandazioni di Ottimizzazione - Modulo Xot
 
 ## 🎯 Stato Attuale e Problemi Critici

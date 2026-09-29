@@ -1,14 +1,3 @@
----
-title: "xot base testcase rule"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "xot base testcase rule"
-issues: []
-discussions: []
----
-
 # XotBaseTestCase: La Nostra Religione del Testing (Laraxot Zen)
 
 ## 🧘‍♂️ La Visione e la Filosofia

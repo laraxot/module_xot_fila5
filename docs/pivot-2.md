@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "_pivot"
 module: "Xot"
 type: concept

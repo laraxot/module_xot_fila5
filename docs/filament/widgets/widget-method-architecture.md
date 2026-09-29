@@ -1,14 +1,3 @@
----
-title: "widget method architecture"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "widget method architecture"
-issues: []
-discussions: []
----
-
 # Architettura Widget — La Filosofia dei Metodi Privati
 
 **Status**: Active  
@@ -19,14 +8,6 @@ discussions: []
 
 ---
 
-title: "widget method architecture"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "widget method architecture"
-issues: []
-discussions: []
 ## Il Problema: Separazione Artificiale
 
 ### L'Esempio "Merda"

@@ -1,7 +1,4 @@
 ---
-qmd: "semantic release template"
-issues: []
-discussions: []
 title: "Semantic Release Template"
 type: reference
 tags: [wiki, no-frontmatter-fix]

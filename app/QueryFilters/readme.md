@@ -1,14 +1,3 @@
----
-title: "readme"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "readme"
-issues: []
-discussions: []
----
-
 https://medium.com/swlh/laravel-the-hidden-pipeline-part-1-a4ae91fc55a4
 https://freek.dev/833-understanding-laravel-pipelines
 

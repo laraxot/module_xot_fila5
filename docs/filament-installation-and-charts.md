@@ -1,14 +1,3 @@
----
-title: "filament installation and charts"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament installation and charts"
-issues: []
-discussions: []
----
-
 # Filament 5.x Installation and Chart Widget Guide
 
 ## Overview

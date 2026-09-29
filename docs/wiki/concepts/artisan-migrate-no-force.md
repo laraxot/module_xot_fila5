@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: Xot Artisan migrate — dati sacri
 type: concept
 tags: [xot, artisan, migrate, data-sacred]

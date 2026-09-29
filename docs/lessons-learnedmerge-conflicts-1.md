@@ -1,14 +1,3 @@
----
-title: "lessons learnedmerge conflicts 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "lessons learnedmerge conflicts 1"
-issues: []
-discussions: []
----
-
 # Lezioni Apprese - Risoluzione Massiva Merge Conflicts (2025-11-04)
 
 ## 🎯 Missione Completata
@@ -333,14 +322,6 @@ Al processo sistematico di **comprensione → studio → dibattito → implement
 
 ---
 
-title: "lessons learnedmerge conflicts 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "lessons learnedmerge conflicts 1"
-issues: []
-discussions: []
 **Data:** 2025-11-04  
 **Autore:** AI Claude + Metodologia Filosofica 10-Step  
 **Status:** ✅ COMPLETATO CON SUCCESSO

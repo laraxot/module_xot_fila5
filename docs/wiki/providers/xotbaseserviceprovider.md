@@ -1,7 +1,4 @@
 ---
-qmd: "xotbaseserviceprovider"
-issues: []
-discussions: []
 title: "Xotbaseserviceprovider"
 type: reference
 tags: [wiki, no-frontmatter-fix]

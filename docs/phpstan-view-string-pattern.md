@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "PHPStan view-string — pattern Filament"
 module: "xot"
 type: reference

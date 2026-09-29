@@ -1,14 +1,3 @@
----
-title: "recursive relationships contract"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "recursive relationships contract"
-issues: []
-discussions: []
----
-
 # HasRecursiveRelationshipsContract - Documentazione Completa
 
 ## 📋 Panoramica
@@ -403,12 +392,4 @@ class MyModel extends BaseModel implements HasRecursiveRelationshipsContract
 
 ---
 
-title: "recursive relationships contract"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "recursive relationships contract"
-issues: []
-discussions: []
 **Filosofia**: In Laraxot, rispettiamo i vendor packages ma creiamo wrapper type-safe per garantire qualità del codice e manutenibilità.

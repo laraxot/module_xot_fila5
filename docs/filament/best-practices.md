@@ -1,14 +1,3 @@
----
-title: "best practices"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "best practices"
-issues: []
-discussions: []
----
-
 # Best Practices Filament - Modulo Xot
 
 ## 🎯 Principi Fondamentali
@@ -69,17 +58,11 @@ abstract class XotBaseRelationManager extends RelationManager
 // ✅ CORRETTO - Implementare solo i metodi necessari
 class UserResource extends XotBaseResource
 {
+<<<<<<< HEAD
     public function getFormSchema(): array
----
-title: "best practices"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "best practices"
-issues: []
-discussions: []
+=======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             // Schema del form
@@ -160,9 +143,11 @@ class UserResource extends XotBaseResource
 
 ### **2. Schema Form Standardizzato**
 ```php
+<<<<<<< HEAD
 public function getFormSchema(): array
----
+=======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
 {
     return [
         Forms\Components\TextInput::make('name')

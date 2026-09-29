@@ -1,14 +1,3 @@
----
-title: "table patterns redundancy analysis"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "table patterns redundancy analysis"
-issues: []
-discussions: []
----
-
 # Table Resources: Pattern Redundancy Analysis
 
 **Data:** 2026-05-26  

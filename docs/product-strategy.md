@@ -1,14 +1,3 @@
----
-title: "product strategy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "product strategy"
-issues: []
-discussions: []
----
-
 # Xot - Product Strategy
 
 > Strategia prodotto. Modulo Core Framework.
@@ -46,14 +35,6 @@ Costruire applicazioni Laravel modulari richiede una foundation coerente. Senza 
 
 ---
 
-title: "product strategy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "product strategy"
-issues: []
-discussions: []
 ## Analisi di Mercato
 
 ### Market Landscape

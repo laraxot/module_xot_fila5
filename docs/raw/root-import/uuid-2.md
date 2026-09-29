@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "_uuid"
 module: "Xot"
 type: concept

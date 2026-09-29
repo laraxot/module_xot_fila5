@@ -1,14 +1,3 @@
----
-title: "git conflicts resolution report"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "git conflicts resolution report"
-issues: []
-discussions: []
----
-
 # Report Risoluzione Conflitti Git - PTVX
 
 ## Riepilogo

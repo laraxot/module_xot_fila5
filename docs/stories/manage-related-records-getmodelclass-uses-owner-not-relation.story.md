@@ -1,10 +1,4 @@
 ---
-type: note
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "manage related records getmodelclass uses owner not relation.story"
-issues: []
-discussions: []
 id: story-xot-manage-related-records-getmodelclass-uses-owner-not-relation
 slug: manage-related-records-getmodelclass-uses-owner-not-relation
 title: "STORY — XotBaseManageRelatedRecords: getModelClass() risolveva il model della Resource proprietaria invece del model della relazione mostrata"

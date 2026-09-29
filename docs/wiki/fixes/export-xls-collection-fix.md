@@ -1,7 +1,4 @@
 ---
-qmd: "export xls collection fix"
-issues: []
-discussions: []
 title: "Export Xls Collection Fix"
 type: reference
 tags: [wiki, no-frontmatter-fix]

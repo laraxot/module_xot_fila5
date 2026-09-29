@@ -1,7 +1,4 @@
 ---
-qmd: "overview"
-issues: []
-discussions: []
 title: "Overview"
 type: reference
 tags: [wiki, no-frontmatter-fix]

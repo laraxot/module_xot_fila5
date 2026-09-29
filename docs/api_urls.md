@@ -1,7 +1,4 @@
 ---
-qmd: "api urls"
-issues: []
-discussions: []
 title: 'api_urls'
 module: Xot
 type: reference

@@ -1,14 +1,3 @@
----
-title: "best practices guide"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "best practices guide"
-issues: []
-discussions: []
----
-
 # Task: Best Practices Guide
 
 **Modulo**: Xot  

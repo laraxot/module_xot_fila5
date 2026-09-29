@@ -1,14 +1,3 @@
----
-title: "quality analysis sumy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "quality analysis sumy"
-issues: []
-discussions: []
----
-
 # Riepilogo Analisi Qualità Codice Completa
 
 **Strumenti Utilizzati**: PHPStan (max), PHPMD, PHPInsights, Pint

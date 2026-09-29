@@ -1,7 +1,4 @@
 ---
-qmd: "static analysis tools"
-issues: []
-discussions: []
 title: 'Static analysis tools — risorse esterne'
 module: Xot
 type: reference

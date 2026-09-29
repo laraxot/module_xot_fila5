@@ -1,14 +1,3 @@
----
-title: "maindashboard redirect"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "maindashboard redirect"
-issues: []
-discussions: []
----
-
 # Fix Redirect Loop - MainDashboard
 
 ## Problema Risolto

@@ -1,7 +1,4 @@
 ---
-qmd: "install module"
-issues: []
-discussions: []
 title: "Install Module"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,14 +1,3 @@
----
-title: "XOTBASE ARCHITECTURE PHILOSOPHY"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "XOTBASE ARCHITECTURE PHILOSOPHY"
-issues: []
-discussions: []
----
-
 # 🧘 XotBase Architecture - Philosophy & Zen
 
 **Path**: `Modules/Xot/docs/XOTBASE_ARCHITECTURE_PHILOSOPHY.md`  
@@ -17,14 +6,6 @@ discussions: []
 
 ---
 
-title: "XOTBASE ARCHITECTURE PHILOSOPHY"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "XOTBASE ARCHITECTURE PHILOSOPHY"
-issues: []
-discussions: []
 ## 🎯 THE WHY - Filosofia Profonda
 
 > **"XotBase non è una classe. È un contratto architetturale."**

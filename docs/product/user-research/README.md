@@ -1,14 +1,3 @@
----
-title: "README"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "README"
-issues: []
-discussions: []
----
-
 # Xot Module - User Research
 
 ## Research Overview
@@ -270,12 +259,4 @@ The research will inform ongoing product development, marketing strategy, and bu
 
 ---
 
-title: "README"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "README"
-issues: []
-discussions: []
 *This research document will be updated quarterly based on new findings and changing market conditions.*

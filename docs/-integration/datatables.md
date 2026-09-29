@@ -1,7 +1,4 @@
 ---
-qmd: "datatables"
-issues: []
-discussions: []
 title: 'Datatables'
 module: Xot
 type: reference

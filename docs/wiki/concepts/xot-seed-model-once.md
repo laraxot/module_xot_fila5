@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "xotSeedModelOnce — seed entity idempotente"
 type: concept
 module: Xot

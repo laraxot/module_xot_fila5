@@ -1,14 +1,3 @@
----
-title: "errori gravi xotbasepanelprovider conflict"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "errori gravi xotbasepanelprovider conflict"
-issues: []
-discussions: []
----
-
 # 🚨 ERRORI GRAVI COMMESSI IN XotBasePanelProvider.php
 
 ## ANALISI DEGLI ERRORI COMMESSI
@@ -152,13 +141,5 @@ try {
 
 ---
 
-title: "errori gravi xotbasepanelprovider conflict"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "errori gravi xotbasepanelprovider conflict"
-issues: []
-discussions: []
 **NOTA**: Questo documento serve come reminder per non ripetere mai più questi errori.
 Ogni modifica futura deve rispettare DRY, KISS, SOLID e ROBUST.

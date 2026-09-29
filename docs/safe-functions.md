@@ -1,14 +1,3 @@
----
-title: "safe functions"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "safe functions"
-issues: []
-discussions: []
----
-
 # Funzioni Safe nel Modulo Xot
 
 ## Panoramica

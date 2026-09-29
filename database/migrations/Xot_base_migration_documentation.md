@@ -1,14 +1,3 @@
----
-title: "Xot base migration documentation"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "Xot base migration documentation"
-issues: []
-discussions: []
----
-
 // Documentation: foreignIdFor Pattern
 
 ## Why Use foreignIdFor()

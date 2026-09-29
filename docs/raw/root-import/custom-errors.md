@@ -1,14 +1,3 @@
----
-title: "custom errors"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "custom errors"
-issues: []
-discussions: []
----
-
 https://tutsforweb.com/how-to-create-custom-404-page-laravel/
 
 

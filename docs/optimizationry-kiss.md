@@ -1,12 +1,4 @@
 ---
-title: "optimizationry kiss"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "optimizationry kiss"
-issues: []
-discussions: []
 module: theme
 topic: optimizationry-kiss
 canonical: ../../../Themes/docs/shared-components/optimization-analysis-dry-kiss-Modules.md

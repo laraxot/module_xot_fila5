@@ -1,9 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 title: "Analisi PHPStan - Modulo Xot"
 module: "Xot"
 type: concept

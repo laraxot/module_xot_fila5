@@ -1,14 +1,3 @@
----
-title: "phpstan max level findings"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan max level findings"
-issues: []
-discussions: []
----
-
 # PHPStan MAX Level Findings - Xot Module
 
 **Data**: 2025-10-10
@@ -174,12 +163,4 @@ Ridurre errori reali da ~74 a 0 in ~1.5 ore.
 
 ---
 
-title: "phpstan max level findings"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan max level findings"
-issues: []
-discussions: []
 **Prossimo Step**: Iniziare correzioni Fase 1

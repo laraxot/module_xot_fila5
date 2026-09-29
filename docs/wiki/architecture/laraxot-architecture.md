@@ -1,7 +1,4 @@
 ---
-qmd: "laraxot architecture"
-issues: []
-discussions: []
 title: "Laraxot Architecture"
 type: reference
 tags: [wiki, no-frontmatter-fix]

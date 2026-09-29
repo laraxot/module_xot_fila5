@@ -1,14 +1,3 @@
----
-title: "phpstan session complete"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan session complete"
-issues: []
-discussions: []
----
-
 # PHPStan Level 10 - Sessione Completata
 
 **Data**: 9 Gennaio 2026  
@@ -16,14 +5,6 @@ discussions: []
 
 ---
 
-title: "phpstan session complete"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan session complete"
-issues: []
-discussions: []
 ## 📊 Riepilogo Finale
 
 ### Errori

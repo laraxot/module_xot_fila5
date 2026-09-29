@@ -1,14 +1,3 @@
----
-title: "panel provider patterns"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "panel provider patterns"
-issues: []
-discussions: []
----
-
 # Panel Provider Patterns - XotBasePanelProvider e XotBaseMainPanelProvider
 
 ## Pattern Obbligatorio: Assegnazione Valore di Ritorno Actions
@@ -123,12 +112,4 @@ Prima di considerare completo un Panel Provider, verificare:
 
 ---
 
-title: "panel provider patterns"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "panel provider patterns"
-issues: []
-discussions: []
 *Ultimo aggiornamento: Dicembre 2024*

@@ -1,7 +1,4 @@
 ---
-qmd: "laravel mix"
-issues: []
-discussions: []
 title: "Laravel Mix"
 type: reference
 tags: [wiki, no-frontmatter-fix]

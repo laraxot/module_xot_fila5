@@ -1,8 +1,4 @@
 ---
-tags: [documentation]
-qmd: "custom errors"
-issues: []
-discussions: []
 title: "Custom errors"
 type: reference
 status: active

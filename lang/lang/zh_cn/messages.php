@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
 return [
     'title' => 'Laravel安装程序',
     'next' => '下一步',

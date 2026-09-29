@@ -1,7 +1,4 @@
 ---
-qmd: "missing component resolution"
-issues: []
-discussions: []
 title: "Missing Component Resolution"
 type: reference
 tags: [wiki, no-frontmatter-fix]

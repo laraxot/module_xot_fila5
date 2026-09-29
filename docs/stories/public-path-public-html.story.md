@@ -1,9 +1,4 @@
 ---
-title: "public path public html.story"
-tags: [documentation]
-created: 2026-09-26
-issues: []
-discussions: []
 status: done
 scope: module:Xot
 type: documentation

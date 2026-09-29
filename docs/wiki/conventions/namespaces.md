@@ -1,7 +1,4 @@
 ---
-qmd: "namespaces"
-issues: []
-discussions: []
 title: "Namespaces"
 type: reference
 tags: [wiki, no-frontmatter-fix]

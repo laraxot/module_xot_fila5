@@ -1,8 +1,4 @@
 ---
-tags: [documentation]
-qmd: "settings json repair and github reminder hook.story"
-issues: []
-discussions: []
 title: "settings.json invalido (disabilitava tutti gli hook) + nuovo hook GitHub-reminder"
 type: story
 module: Xot

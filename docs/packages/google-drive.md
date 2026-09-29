@@ -1,14 +1,3 @@
----
-title: "google drive"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "google drive"
-issues: []
-discussions: []
----
-
 
 passo passo + screenshot di dove prendere le varie key
 https://gist.github.com/mehranhadidi/38e38b80e3d533650ed2b94a0f95f7f1

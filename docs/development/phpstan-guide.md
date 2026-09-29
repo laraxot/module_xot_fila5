@@ -1,14 +1,3 @@
----
-title: "phpstan guide"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan guide"
-issues: []
-discussions: []
----
-
 # Guida PHPStan - Modulo Xot
 
 ## 🎯 Principi Fondamentali
@@ -169,13 +158,5 @@ use Modules\User\Models\User; // Namespace corretto
 
 ---
 
-title: "phpstan guide"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan guide"
-issues: []
-discussions: []
 **Ultimo aggiornamento:** Gennaio 2025
 **Versione:** 2.0 - Consolidata DRY + KISS

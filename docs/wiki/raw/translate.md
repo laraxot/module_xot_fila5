@@ -1,7 +1,4 @@
 ---
-qmd: "translate"
-issues: []
-discussions: []
 title: "Translate"
 type: reference
 tags: [wiki, no-frontmatter-fix]

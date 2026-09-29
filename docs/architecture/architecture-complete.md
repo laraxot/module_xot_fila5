@@ -1,14 +1,3 @@
----
-title: "architecture complete"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "architecture complete"
-issues: []
-discussions: []
----
-
 # Xot Module - Complete Architecture Guide (2025)
 
 > **Last Updated:** 2025-11-19
@@ -26,14 +15,6 @@ discussions: []
 
 ---
 
-title: "architecture complete"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "architecture complete"
-issues: []
-discussions: []
 ## Module Overview
 
 ### Primary Purpose
@@ -161,9 +142,11 @@ All Filament resources extend this base class:
 
 **Required Methods:**
 ```php
+<<<<<<< HEAD
 abstract public function getFormSchema(): array;
----
+=======
 abstract public function getFormSchema(): array;
+>>>>>>> laraxot/dev
 abstract public static function getTableColumns(): array;
 // Optional: getInfolistSchema(), getRelations(), getPages()
 ```
@@ -600,9 +583,11 @@ class MyResource extends XotBaseResource
 {
     protected static ?string $model = MyModel::class;
 
+<<<<<<< HEAD
     public function getFormSchema(): array
----
+=======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             TextInput::make('field1')->required(),
@@ -679,9 +664,11 @@ class ArticleResource extends XotBaseResource
 {
     protected static ?string $model = Article::class;
 
+<<<<<<< HEAD
     public function getFormSchema(): array
----
+=======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             TextInput::make('title')

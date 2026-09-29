@@ -1,14 +1,3 @@
----
-title: "route"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "route"
-issues: []
-discussions: []
----
-
 # route
 
 <!-- Contenuto migrato da _docs/route.txt -->

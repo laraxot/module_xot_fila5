@@ -1,7 +1,4 @@
 ---
-qmd: "laravel cms"
-issues: []
-discussions: []
 title: 'Laravel cms — risorse esterne'
 module: Xot
 type: reference

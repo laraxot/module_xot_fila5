@@ -1,14 +1,3 @@
----
-title: "speed up"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "speed up"
-issues: []
-discussions: []
----
-
 https://laravelarticle.com/speed-up-laravel-website
 
 

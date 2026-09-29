@@ -1,7 +1,4 @@
 ---
-qmd: "xotbasewizardwidget vs filament haswizard"
-issues: []
-discussions: []
 title: "XotBaseWizardWidget vs Filament HasWizard - Architecture Analysis"
 type: concept
 sources:

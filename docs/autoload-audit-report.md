@@ -1,14 +1,3 @@
----
-title: "autoload audit report"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "autoload audit report"
-issues: []
-discussions: []
----
-
 # Autoload Configuration Audit Report
 
 ## Standard Configuration

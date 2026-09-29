@@ -1,7 +1,4 @@
 ---
-qmd: "architecture overview"
-issues: []
-discussions: []
 title: "Architecture Overview"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,14 +1,3 @@
----
-title: "third party model quick reference"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "third party model quick reference"
-issues: []
-discussions: []
----
-
 # Third-Party Model Integration - Quick Reference
 
 ## 🚨 CRITICAL RULES
@@ -164,12 +153,4 @@ class Feature extends PackageFeature
 
 ---
 
-title: "third party model quick reference"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "third party model quick reference"
-issues: []
-discussions: []
 **Remember**: Respect package architecture, extend directly, enhance with Laraxot features.

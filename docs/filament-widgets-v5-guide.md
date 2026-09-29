@@ -1,14 +1,3 @@
----
-title: "filament widgets v5 guide"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament widgets v5 guide"
-issues: []
-discussions: []
----
-
 # Filament Widgets - Guida Completa v5.x
 
 **Data**: 2026-03-23  
@@ -16,14 +5,6 @@ discussions: []
 
 ---
 
-title: "filament widgets v5 guide"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament widgets v5 guide"
-issues: []
-discussions: []
 ## 📋 Overview
 
 Filament permette di costruire dashboard dinamiche composte da "widgets". Ogni widget è un elemento che visualizza dati in modo specifico:

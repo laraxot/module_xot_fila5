@@ -1,14 +1,3 @@
----
-title: "bmad workflow guide"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "bmad workflow guide"
-issues: []
-discussions: []
----
-
 # BMAD Workflow Guide for Laraxot
 
 ## Overview
@@ -21,14 +10,6 @@ This guide provides step-by-step instructions for using **BMAD (Business Model A
 
 ---
 
-title: "bmad workflow guide"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "bmad workflow guide"
-issues: []
-discussions: []
 ## 🎯 When to Use BMAD
 
 ### ✅ Use BMAD For:

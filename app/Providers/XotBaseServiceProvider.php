@@ -13,10 +13,7 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\Blade\RegisterBladeComponentsAction;
 use Modules\Xot\Actions\File\GetComponentsAction;
-<<<<<<< HEAD
-=======
 use Modules\Xot\Actions\Livewire\RegisterLivewireComponentsAction;
->>>>>>> laraxot/dev
 use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
 use Nwidart\Modules\Traits\PathNamespace;
 use Webmozart\Assert\Assert;
@@ -44,10 +41,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         $this->registerConfig();
         $this->registerViews();
         $this->loadMigrationsFrom($this->module_dir.'/../../database/migrations');
-<<<<<<< HEAD
-=======
         $this->registerLivewireComponents();
->>>>>>> laraxot/dev
         $this->registerBladeComponents();
         $this->registerCommands();
         $this->registerPublicAssets();
@@ -96,7 +90,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
             throw new \Exception('name is empty on ['.static::class.']');
         }
 
-        $viewPath = base_path('Modules/'.$this->name.'/resources/views');
+        $viewPath = module_path($this->name, 'resources/views');
 
         if (! is_dir($viewPath)) {
             return;
@@ -125,9 +119,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 
     public function registerBladeComponents(): void
     {
-        $componentViewPath = base_path(
-            'Modules/'.$this->name.'/resources/views/components',
-        );
+        $componentViewPath = app(GetModulePathByGeneratorAction::class)->execute($this->name, 'component-view');
 
         if (is_dir($componentViewPath)) {
             try {
@@ -137,20 +129,14 @@ abstract class XotBaseServiceProvider extends ServiceProvider
             }
         }
 
-        $componentClassPath = base_path(
-            'Modules/'.$this->name.'/app/View/Components',
-        );
+        $componentClassPath = app(GetModulePathByGeneratorAction::class)->execute($this->name, 'component-class');
 
         $namespace = $this->module_ns.'\View\Components';
         Blade::componentNamespace($namespace, $this->nameLower);
 
-        if (is_dir($componentClassPath)) {
-            app(RegisterBladeComponentsAction::class)->execute($componentClassPath, $this->module_ns);
-        }
+        app(RegisterBladeComponentsAction::class)->execute($componentClassPath, $this->module_ns);
     }
 
-<<<<<<< HEAD
-=======
     public function registerLivewireComponents(): void
     {
         $prefix = '';
@@ -158,7 +144,6 @@ abstract class XotBaseServiceProvider extends ServiceProvider
             ->execute($this->module_dir.'/../Http/Livewire', Str::before($this->module_ns, '\Providers'), $prefix);
     }
 
->>>>>>> laraxot/dev
     public function registerCommands(): void
     {
         $prefix = '';
@@ -224,7 +209,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
             throw new \Exception('name is empty on ['.static::class.']');
         }
 
-        $sourcePath = base_path('Modules/'.$this->name.'/public');
+        $sourcePath = module_path($this->name, 'public');
 
         if (! File::isDirectory($sourcePath)) {
             return;

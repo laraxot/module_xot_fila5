@@ -1,14 +1,3 @@
----
-title: "query"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "query"
-issues: []
-discussions: []
----
-
 # query
 
 <!-- Contenuto migrato da _docs/query.txt -->

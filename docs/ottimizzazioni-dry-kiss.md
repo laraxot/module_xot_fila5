@@ -1,14 +1,3 @@
----
-title: "ottimizzazioni dry kiss"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "ottimizzazioni dry kiss"
-issues: []
-discussions: []
----
-
 # Ottimizzazioni DRY + KISS - Modulo Xot
 
 ## Analisi Problematiche Identificate
@@ -214,12 +203,4 @@ DOPO:
 `#DRY` `#KISS` `#refactoring` `#documentation` `#xot-module` `#consolidation`
 
 ---
-title: "ottimizzazioni dry kiss"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "ottimizzazioni dry kiss"
-issues: []
-discussions: []
 *Ultimo aggiornamento: Gennaio 2025 - Ottimizzazione DRY + KISS*

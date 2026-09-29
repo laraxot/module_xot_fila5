@@ -1,14 +1,3 @@
----
-title: "model base rules 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "model base rules 1"
-issues: []
-discussions: []
----
-
 # Regole di Estensione dei Modelli Laraxot
 
 ## Regola Fondamentale di Ereditarietà

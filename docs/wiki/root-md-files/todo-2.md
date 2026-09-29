@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "_todo"
 module: "Xot"
 type: concept

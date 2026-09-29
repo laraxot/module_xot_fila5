@@ -1,11 +1,4 @@
 ---
-title: "pest v5 upgrade.story"
-type: note
-tags: [documentation]
-updated: 2026-09-26
-qmd: "pest v5 upgrade.story"
-issues: []
-discussions: []
 id: pest-v5-upgrade
 slug: pest-v5-upgrade-xot
 scope: [project:base_workorder_fila5, modules:Xot, modules:All]

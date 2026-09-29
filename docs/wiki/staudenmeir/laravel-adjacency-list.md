@@ -1,7 +1,4 @@
 ---
-qmd: "laravel adjacency list"
-issues: []
-discussions: []
 title: "Laravel Adjacency List"
 type: reference
 tags: [wiki, no-frontmatter-fix]

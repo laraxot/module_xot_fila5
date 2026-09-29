@@ -1,8 +1,4 @@
 ---
-tags: [documentation]
-qmd: "panel mixin extension pattern"
-issues: []
-discussions: []
 title: "Panel Mixin Extension Pattern"
 module: "Xot"
 type: "Architecture Pattern"

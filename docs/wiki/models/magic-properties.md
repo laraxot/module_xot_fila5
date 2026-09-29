@@ -1,7 +1,4 @@
 ---
-qmd: "magic properties"
-issues: []
-discussions: []
 title: "Magic Properties"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,14 +1,3 @@
----
-title: "FIX SUMMARY"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "FIX SUMMARY"
-issues: []
-discussions: []
----
-
 # PHPStan Fix Summary
 
 ## ✅ Production Code Fixed (0 errors)

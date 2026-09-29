@@ -1,7 +1,4 @@
 ---
-qmd: "case sensitive filenames"
-issues: []
-discussions: []
 title: "Case Sensitive Filenames"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Modulo — config/config.php obbligatorio"
 type: concept
 module: Xot

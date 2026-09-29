@@ -1,14 +1,3 @@
----
-title: "filament no label rule"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament no label rule"
-issues: []
-discussions: []
----
-
 # REGOLA CRITICA: MAI ->label() nei Componenti Filament
 
 ## Principio Fondamentale

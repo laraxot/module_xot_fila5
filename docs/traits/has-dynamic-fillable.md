@@ -1,14 +1,3 @@
----
-title: "has dynamic fillable"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "has dynamic fillable"
-issues: []
-discussions: []
----
-
 # HasDynamicFillable
 
 `Modules\Xot\Models\Traits\HasDynamicFillable`

@@ -1,14 +1,3 @@
----
-title: "phpstan fix meetup service provider"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan fix meetup service provider"
-issues: []
-discussions: []
----
-
 # PHPStan Fix - MeetupServiceProvider - 2025-12-16
 
 **Data**: 2025-12-16  
@@ -17,14 +6,6 @@ discussions: []
 
 ---
 
-title: "phpstan fix meetup service provider"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan fix meetup service provider"
-issues: []
-discussions: []
 ## 🎯 Problema Risolto
 
 ### File Corretto

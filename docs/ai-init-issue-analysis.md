@@ -1,14 +1,3 @@
----
-title: "ai init issue analysis"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "ai init issue analysis"
-issues: []
-discussions: []
----
-
 # Aggiornamento Documentazione - Problema con ai_init.sh
 
 ## Problema Identificato

@@ -1,7 +1,4 @@
 ---
-qmd: "paginate"
-issues: []
-discussions: []
 title: "Paginate"
 type: reference
 tags: [wiki, no-frontmatter-fix]

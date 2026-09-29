@@ -1,7 +1,4 @@
 ---
-qmd: "uuid"
-issues: []
-discussions: []
 title: "Uuid"
 type: reference
 tags: [wiki, no-frontmatter-fix]

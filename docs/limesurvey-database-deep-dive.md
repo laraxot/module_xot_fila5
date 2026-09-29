@@ -1,14 +1,3 @@
----
-title: "limesurvey database deep dive"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "limesurvey database deep dive"
-issues: []
-discussions: []
----
-
 # Limesurvey Survey Data Analysis - Database Deep Dive
 
 ## Database Connections Overview

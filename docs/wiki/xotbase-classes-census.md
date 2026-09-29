@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "XotBase Classes Census"
 type: census
 tags: [xotbase, architecture, filament]

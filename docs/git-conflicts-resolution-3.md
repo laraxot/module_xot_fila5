@@ -1,14 +1,3 @@
----
-title: "git conflicts resolution 3"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "git conflicts resolution 3"
-issues: []
-discussions: []
----
-
 # Risoluzione Conflitti Git - 6 Gennaio 2025
 
 ## Data: 2025-01-06

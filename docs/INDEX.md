@@ -1,8 +1,4 @@
 ---
-tags: [documentation]
-qmd: "INDEX"
-issues: []
-discussions: []
 title: "Xot Module Documentation Index"
 module: "Xot"
 type: index

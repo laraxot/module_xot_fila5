@@ -1,9 +1,4 @@
 ---
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-issues: []
-discussions: []
 title: "Rimuovere l'artefatto .git-rewrite/t/ (leftover filter-branch)"
 type: story
 module: Xot

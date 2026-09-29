@@ -1,14 +1,3 @@
----
-title: "xotbaage getmodel"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "xotbaage getmodel"
-issues: []
-discussions: []
----
-
 # XotBasePage getModel() Fix - Risoluzione Errore Static/Non-Static
 
 ## Problema

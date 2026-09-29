@@ -1,14 +1,3 @@
----
-title: "filament integration"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament integration"
-issues: []
-discussions: []
----
-
 # Filament Integration and XotBaseResource: The Sacred Admin Pattern
 
 ## Core Philosophy
@@ -56,17 +45,11 @@ abstract class XotBaseResource extends FilamentResource
 Each resource must implement the abstract method:
 
 ```php
+<<<<<<< HEAD
 abstract public function getFormSchema(): array
----
-title: "filament integration"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament integration"
-issues: []
-discussions: []
+=======
 abstract public function getFormSchema(): array
+>>>>>>> laraxot/dev
 ```
 
 This enforces consistent form schema definition across all resources.
@@ -92,9 +75,11 @@ public static function getPages(): array
 Resources define forms through `getFormSchema()`:
 
 ```php
+<<<<<<< HEAD
 public function getFormSchema(): array
----
+=======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
 {
     return [
         'name' => TextInput::make('name')->required(),
@@ -195,9 +180,11 @@ Laraxot uses automatic translation management through `LangServiceProvider`:
 Consistent form setup with standardized columns:
 
 ```php
+<<<<<<< HEAD
 public function getFormSchemaColumns(): int
----
+=======
 public function getFormSchemaColumns(): int
+>>>>>>> laraxot/dev
 {
     return 1; // Standard single column layout
 }
@@ -372,9 +359,11 @@ public static function getModel(): string
 ### 3. Form Schema Method
 Always implement `getFormSchema()` for consistency:
 ```php
+<<<<<<< HEAD
 public function getFormSchema(): array
----
+=======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
 {
     // Return array of form components
 }

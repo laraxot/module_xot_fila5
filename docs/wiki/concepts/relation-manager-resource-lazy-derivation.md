@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "XotBaseRelationManager — derivazione lazy della Resource"
 type: concept
 status: canonical

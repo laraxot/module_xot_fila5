@@ -1,14 +1,3 @@
----
-title: "adjacency list best practices"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "adjacency list best practices"
-issues: []
-discussions: []
----
-
 # Adjacency List Best Practices
 
 > Questo documento sostituisce `nestedset-migration-best-practices.md` (legacy).

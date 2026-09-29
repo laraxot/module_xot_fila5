@@ -1,14 +1,3 @@
----
-title: "sprint planning meeting"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "sprint planning meeting"
-issues: []
-discussions: []
----
-
 # Xot - Sprint Planning Meeting
 
 > Documento operativo per sprint planning. Modulo Core Framework.
@@ -46,14 +35,6 @@ discussions: []
 
 ---
 
-title: "sprint planning meeting"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "sprint planning meeting"
-issues: []
-discussions: []
 ## Input Richiesti
 
 ### Documenti di Riferimento

@@ -1,12 +1,4 @@
 ---
-title: "phpstan analysis error categorization"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan analysis error categorization"
-issues: []
-discussions: []
 created_at: '2025-08-18'
 ---
 

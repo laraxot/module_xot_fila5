@@ -1,14 +1,3 @@
----
-title: "phpstan documentation complete phpstan documentation completion summa"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan documentation complete phpstan documentation completion summa"
-issues: []
-discussions: []
----
-
 # PHPStan Documentation - Completion Summary
 
 **Date**: 2025-12-16
@@ -17,14 +6,6 @@ discussions: []
 
 ---
 
-title: "phpstan documentation complete phpstan documentation completion summa"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan documentation complete phpstan documentation completion summa"
-issues: []
-discussions: []
 ## Documentation Created
 
 ### 1. Module-Specific Error Documentation

@@ -1,14 +1,3 @@
----
-title: "filament 4 migration guide"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament 4 migration guide"
-issues: []
-discussions: []
----
-
 # Guida alla Migrazione Filament 4
 
 ## Cambiamenti Principali da Filament 3 a Filament 4

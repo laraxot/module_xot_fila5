@@ -1,14 +1,3 @@
----
-title: "mcp servers"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "mcp servers"
-issues: []
-discussions: []
----
-
 # MCP Servers - Module Context
 
 **Module**: Xot (Base Framework)  
@@ -88,12 +77,4 @@ Use MCP to validate module compliance:
 
 ---
 
-title: "mcp servers"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "mcp servers"
-issues: []
-discussions: []
 *This document follows DRY+KISS principles. Server list and configuration are in the master doc.*

@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "OmniRoute 3.8.49: cinque bug di path che rendono doctor inaffidabile"
 type: reference
 module: Xot

@@ -1,7 +1,4 @@
 ---
-qmd: " to study"
-issues: []
-discussions: []
 title: "To Study"
 type: reference
 tags: [wiki, no-frontmatter-fix]

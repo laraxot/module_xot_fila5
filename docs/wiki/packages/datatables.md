@@ -1,7 +1,4 @@
 ---
-qmd: "datatables"
-issues: []
-discussions: []
 title: "Datatables"
 type: reference
 tags: [wiki, no-frontmatter-fix]

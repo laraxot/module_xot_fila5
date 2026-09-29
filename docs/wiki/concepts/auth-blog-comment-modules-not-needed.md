@@ -1,7 +1,4 @@
 ---
-qmd: "auth blog comment modules not needed"
-issues: []
-discussions: []
 title: "Decisione: moduli Auth, Blog, Comment non necessari in base_workorder_fila5"
 type: concept
 module: Xot

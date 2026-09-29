@@ -1,14 +1,3 @@
----
-title: "cache path"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "cache path"
-issues: []
-discussions: []
----
-
 # Errore Cache Path Mancante
 
 ## Descrizione dell'Errore

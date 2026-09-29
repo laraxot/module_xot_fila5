@@ -1,14 +1,3 @@
----
-title: "features"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "features"
-issues: []
-discussions: []
----
-
 # Xot Module - Features
 
 ## 📋 Table of Contents
@@ -492,11 +481,3 @@ class ProcessUserJob extends XotBaseJob
 
 ---
 
-title: "features"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "features"
-issues: []
-discussions: []

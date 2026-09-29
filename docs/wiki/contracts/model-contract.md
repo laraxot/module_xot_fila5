@@ -1,7 +1,4 @@
 ---
-qmd: "model contract"
-issues: []
-discussions: []
 title: "Model Contract"
 type: reference
 tags: [wiki, no-frontmatter-fix]

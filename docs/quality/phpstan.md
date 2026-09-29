@@ -1,14 +1,3 @@
----
-title: "phpstan"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan"
-issues: []
-discussions: []
----
-
 # PHPStan Level 10 Compliance - Xot Module
 
 > **Status**: ✅ Level 10 Achieved
@@ -108,17 +97,11 @@ abstract class XotBaseResource extends Resource
      *
      * @return array<int, Component>
      */
+<<<<<<< HEAD
     abstract public function getFormSchema(): array;
----
-title: "phpstan"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan"
-issues: []
-discussions: []
+=======
     abstract public function getFormSchema(): array;
+>>>>>>> laraxot/dev
 
     /**
      * Get pages with proper typing.

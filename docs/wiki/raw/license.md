@@ -1,7 +1,4 @@
 ---
-qmd: "license"
-issues: []
-discussions: []
 title: "License"
 type: reference
 tags: [wiki, no-frontmatter-fix]

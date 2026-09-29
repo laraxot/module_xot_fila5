@@ -1,7 +1,4 @@
 ---
-qmd: "command bus"
-issues: []
-discussions: []
 title: "Command Bus"
 type: reference
 tags: [wiki, no-frontmatter-fix]

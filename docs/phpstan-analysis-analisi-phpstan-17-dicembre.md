@@ -1,14 +1,3 @@
----
-title: "phpstan analysis analisi phpstan 17 dicembre"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan analysis analisi phpstan 17 dicembre"
-issues: []
-discussions: []
----
-
 # Analisi PHPStan - 17 Dicembre 2025
 
 ## Riepilogo
@@ -142,14 +131,6 @@ Basandosi sui 16 errori corretti in GetCessatiRecordsPreview.php:
 
 
 ---
-title: "phpstan analysis analisi phpstan 17 dicembre"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan analysis analisi phpstan 17 dicembre"
-issues: []
-discussions: []
 ## Variant 7
 
 # Analisi PHPStan - 17 Dicembre 2025

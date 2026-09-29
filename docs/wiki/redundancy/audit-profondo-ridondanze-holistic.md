@@ -1,6 +1,4 @@
 ---
-qmd: "audit profondo ridondanze holistic"
-discussions: []
 title: "audit olistico ridondanze — codice, nomi file, Markdown"
 type: redundancy
 owner: Modules/Xot

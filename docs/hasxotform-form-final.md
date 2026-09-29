@@ -1,14 +1,3 @@
----
-title: "hasxotform form final"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "hasxotform form final"
-issues: []
-discussions: []
----
-
 # HasXotForm: form() DEVE essere final
 
 ## Regola critica

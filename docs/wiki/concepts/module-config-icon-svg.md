@@ -1,7 +1,4 @@
 ---
-qmd: "module config icon svg"
-issues: []
-discussions: []
 title: "config/config.php — icona modulo (SVG custom)"
 type: concept
 module: Xot

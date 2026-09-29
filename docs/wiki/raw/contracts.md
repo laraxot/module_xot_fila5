@@ -1,7 +1,4 @@
 ---
-qmd: "contracts"
-issues: []
-discussions: []
 title: "Contracts"
 type: reference
 tags: [wiki, no-frontmatter-fix]

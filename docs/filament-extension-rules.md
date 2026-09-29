@@ -1,14 +1,3 @@
----
-title: "filament extension rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament extension rules"
-issues: []
-discussions: []
----
-
 # Filament Class Extension Rules - base_techplanner_fila5_mono
 
 Questa pagina esiste per compatibilità e storico del modulo.

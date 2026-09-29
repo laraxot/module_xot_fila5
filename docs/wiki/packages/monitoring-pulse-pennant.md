@@ -1,7 +1,4 @@
 ---
-qmd: "monitoring pulse pennant"
-issues: []
-discussions: []
 title: "Monitoring Pulse Pennant"
 type: reference
 tags: [wiki, no-frontmatter-fix]

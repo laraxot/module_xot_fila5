@@ -1,7 +1,4 @@
 ---
-tags: [documentation]
-issues: []
-discussions: []
 title: "Lessons Learned Aug"
 type: concept
 status: deprecated

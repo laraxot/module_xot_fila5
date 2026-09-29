@@ -1,14 +1,3 @@
----
-title: "testing pest php"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "testing pest php"
-issues: []
-discussions: []
----
-
 # Testing con Pest PHP
 
 ## Introduzione

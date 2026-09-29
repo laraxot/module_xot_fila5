@@ -1,21 +1,3 @@
-<<<<<<< HEAD
-=======
----
-title: "phpstan fixes gennaio phpstan fixes gennaio 2025 modulo xot"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan fixes gennaio phpstan fixes gennaio 2025 modulo xot"
-issues: []
-discussions: []
-name: phpstan-fixes-gennaio-phpstan-fixes-gennaio-2025-modulo-xot
-description: " Riassunto delle Correzioni"
-metadata:
-  type: documentation
----
-
->>>>>>> laraxot/dev
 # PHPStan Fixes Gennaio 2025 - Modulo Xot
 
 ## Riassunto delle Correzioni
@@ -189,10 +171,7 @@ public function getAllColors(): array
 
 *Ultimo aggiornamento: Gennaio 2025*
 
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
 ---
 ## Variant 2
 

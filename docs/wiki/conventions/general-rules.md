@@ -1,7 +1,4 @@
 ---
-qmd: "general rules"
-issues: []
-discussions: []
 title: "General Rules"
 type: reference
 tags: [wiki, no-frontmatter-fix]

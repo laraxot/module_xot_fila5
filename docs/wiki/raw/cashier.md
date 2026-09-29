@@ -1,7 +1,4 @@
 ---
-qmd: "cashier"
-issues: []
-discussions: []
 title: "Cashier"
 type: reference
 tags: [wiki, no-frontmatter-fix]

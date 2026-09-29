@@ -1,14 +1,3 @@
----
-title: "database php connection rule"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "database php connection rule"
-issues: []
-discussions: []
----
-
 # REGOLA CRITICA: config/database.php
 
 ## NESSUNA connessione hardcoded per i moduli!

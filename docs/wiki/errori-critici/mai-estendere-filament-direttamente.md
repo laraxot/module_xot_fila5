@@ -1,7 +1,4 @@
 ---
-qmd: "mai estendere filament direttamente"
-issues: []
-discussions: []
 title: "Mai Estendere Filament Direttamente"
 type: reference
 tags: [wiki, no-frontmatter-fix]

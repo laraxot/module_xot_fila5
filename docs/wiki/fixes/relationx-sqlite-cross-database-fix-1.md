@@ -1,7 +1,4 @@
 ---
-qmd: "relationx sqlite cross database fix 1"
-issues: []
-discussions: []
 title: "Relationx Sqlite Cross Database Fix 1"
 type: reference
 tags: [wiki, no-frontmatter-fix]

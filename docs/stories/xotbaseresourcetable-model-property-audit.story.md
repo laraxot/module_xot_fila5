@@ -1,10 +1,4 @@
 ---
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "xotbaseresourcetable model property audit.story"
-issues: []
-discussions: []
 id: story-xotbaseresourcetable-model-property-audit
 title: "XotBaseResourceTable — Aggiunta $model e Audit getTableColumns()"
 type: refactoring

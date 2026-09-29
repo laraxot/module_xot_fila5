@@ -1,7 +1,4 @@
 ---
-qmd: "laravel 12 filament 5 migration"
-issues: []
-discussions: []
 title: "Laravel 12 Filament 5 Migration"
 type: reference
 tags: [wiki, no-frontmatter-fix]

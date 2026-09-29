@@ -1,14 +1,3 @@
----
-title: "future enhancements"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "future enhancements"
-issues: []
-discussions: []
----
-
 # Xot Module - Future Enhancements
 
 ## 📋 Table of Contents
@@ -540,11 +529,3 @@ To submit an enhancement proposal:
 
 ---
 
-title: "future enhancements"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "future enhancements"
-issues: []
-discussions: []

@@ -1,7 +1,4 @@
 ---
-qmd: "filament resource guidelines"
-issues: []
-discussions: []
 title: "Filament Resource Guidelines"
 type: reference
 tags: [wiki, no-frontmatter-fix]

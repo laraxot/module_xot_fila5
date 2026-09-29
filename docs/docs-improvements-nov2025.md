@@ -1,7 +1,4 @@
 ---
-tags: [documentation]
-issues: []
-discussions: []
 title: "Docs Improvements Nov"
 type: concept
 status: deprecated

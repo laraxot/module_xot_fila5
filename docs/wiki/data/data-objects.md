@@ -1,7 +1,4 @@
 ---
-qmd: "data objects"
-issues: []
-discussions: []
 title: "Data Objects"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,14 +1,3 @@
----
-title: "relation managers"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "relation managers"
-issues: []
-discussions: []
----
-
 # XotBaseRelationManager per Laraxot PTVX
 
 ## Panoramica

@@ -1,14 +1,3 @@
----
-title: "architecture debate trans method"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "architecture debate trans method"
-issues: []
-discussions: []
----
-
 # architecture debate: the trans method
 
 ## context

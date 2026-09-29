@@ -1,14 +1,3 @@
----
-title: "phpinsights report "
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpinsights report "
-issues: []
-discussions: []
----
-
 # PHP Insights Analysis Report - Xot Module
 
 **Module:** Xot (Core Module)
@@ -211,13 +200,5 @@ protected array $fillable;
 
 ---
 
-title: "phpinsights report "
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpinsights report "
-issues: []
-discussions: []
 **Next Review:** After Phase 1 completion
 **

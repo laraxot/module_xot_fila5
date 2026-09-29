@@ -1,7 +1,4 @@
 ---
-qmd: "convert id uuid to bigint"
-issues: []
-discussions: []
 title: "Convert Id Uuid To Bigint"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,14 +1,3 @@
----
-title: "git conflicts resolution strategy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "git conflicts resolution strategy"
-issues: []
-discussions: []
----
-
 # Strategia Risoluzione Conflitti Git - Modulo Xot
 
 ## Contesto
@@ -267,12 +256,4 @@ I conflitti sono stati causati da:
 
 ---
 
-title: "git conflicts resolution strategy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "git conflicts resolution strategy"
-issues: []
-discussions: []
 **Nota:** Questa documentazione è VIVA. Aggiungo pattern, lezioni, esempi man mano che risolvo conflitti.

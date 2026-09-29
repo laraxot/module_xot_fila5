@@ -1,14 +1,3 @@
----
-title: "xotbasepanelprovider discovery"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "xotbasepanelprovider discovery"
-issues: []
-discussions: []
----
-
 # XotBasePanelProvider — scoperta dei componenti del modulo
 
 `XotBasePanelProvider::panel()` scopre automaticamente resource, pagine, widget e

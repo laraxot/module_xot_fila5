@@ -1,14 +1,3 @@
----
-title: "phpstan january summary"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan january summary"
-issues: []
-discussions: []
----
-
 # PHPStan Level 10 - Riepilogo Gennaio 2026
 
 **Data**: 2026-01-02

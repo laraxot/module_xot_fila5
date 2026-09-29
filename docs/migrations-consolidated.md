@@ -1,14 +1,3 @@
----
-title: "migrations consolidated"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "migrations consolidated"
-issues: []
-discussions: []
----
-
 # Migrations - Documentazione Consolidata DRY + KISS
 
 > **🎯 Single Source of Truth**: Questo documento centralizza TUTTA la documentazione migrazioni del progetto
@@ -505,14 +494,6 @@ rm Modules/<nome progetto>/project_docs/database/migrations.md
 
 ---
 
-title: "migrations consolidated"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "migrations consolidated"
-issues: []
-discussions: []
 **🎯 Obiettivo**: Da 26+ file duplicati a 1 file centralizzato
 **📈 Beneficio**: 96% riduzione duplicazioni, manutenzione semplificata
 **🔗 Vedi anche**: [database-guidelines.md](database-guidelines.md) | [best-practices.md](best-practices.md)

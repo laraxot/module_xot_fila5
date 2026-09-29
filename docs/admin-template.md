@@ -1,7 +1,4 @@
 ---
-qmd: "admin template"
-issues: []
-discussions: []
 title: 'Admin template — risorse esterne'
 module: Xot
 type: reference

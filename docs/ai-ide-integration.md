@@ -1,14 +1,3 @@
----
-title: "ai ide integration"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "ai ide integration"
-issues: []
-discussions: []
----
-
 # AI/IDE Integration Guide - Xot Module
 
 ## Overview
@@ -517,14 +506,6 @@ grep -r "XotBase" .cursor/rules/ .windsurf/rules/ CLAUDE.md
 
 ---
 
-title: "ai ide integration"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "ai ide integration"
-issues: []
-discussions: []
 **Version**: 1.0
 **Last Updated**: December 23, 2025
 **Module**: Xot (Core Engine)

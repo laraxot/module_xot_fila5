@@ -1,14 +1,3 @@
----
-title: "module quality analysis sumy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "module quality analysis sumy"
-issues: []
-discussions: []
----
-
 # Module Quality Analysis Summary
 
 **Date**: [DATE]

@@ -1,7 +1,4 @@
 ---
-qmd: "badges"
-issues: []
-discussions: []
 title: "Badges"
 type: reference
 tags: [wiki, no-frontmatter-fix]

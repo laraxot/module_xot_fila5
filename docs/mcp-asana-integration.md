@@ -1,14 +1,3 @@
----
-title: "mcp asana integration"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "mcp asana integration"
-issues: []
-discussions: []
----
-
 # Xot Module - Asana MCP Integration Guide
 
 **Versione**: 1.0.0
@@ -16,14 +5,6 @@ discussions: []
 
 ---
 
-title: "mcp asana integration"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "mcp asana integration"
-issues: []
-discussions: []
 ## 📋 Panoramica
 
 L'integrazione di Asana MCP nel modulo Xot permette di:

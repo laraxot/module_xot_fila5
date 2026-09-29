@@ -1,7 +1,4 @@
 ---
-qmd: "type hinting"
-issues: []
-discussions: []
 title: "Type Hinting"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,7 +1,4 @@
 ---
-qmd: "cart session"
-issues: []
-discussions: []
 title: "Cart Session"
 type: reference
 tags: [wiki, no-frontmatter-fix]

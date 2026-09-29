@@ -1,14 +1,3 @@
----
-title: "phpstan"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan"
-issues: []
-discussions: []
----
-
 # PHPStan Analysis and Legacy Cleanup (2026-05-13)
 
 ## Overview
@@ -40,14 +29,6 @@ Removing these directories and applying targeted fixes has resulted in **0 error
 
 
 ---
-title: "phpstan"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan"
-issues: []
-discussions: []
 **See also:**
 - [ERRORE CRITICO: Mai Estendere Classi Filament Direttamente](../errori-critici/mai-estendere-filament-direttamente.md)
 - [Directory Structure Rules](../../docs/wiki/rules/directory-structure.md)

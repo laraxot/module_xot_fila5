@@ -1,10 +1,4 @@
 ---
-type: note
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "typecoverage param typing"
-issues: []
-discussions: []
 title: typeCoverage — chiudere paramTypeCoverage senza aprire altri errori
 description: Regola d'ordine per tipizzare le closure Filament/Collection; quando mixed è il tipo giusto; trappole static e return type.
 document_type: concept

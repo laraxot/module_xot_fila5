@@ -1,14 +1,3 @@
----
-title: "readme consolidation plan"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "readme consolidation plan"
-issues: []
-discussions: []
----
-
 # Piano Consolidamento File readme.md Duplicati
 
 **Data**: 2026-01-09  
@@ -17,14 +6,6 @@ discussions: []
 
 ---
 
-title: "readme consolidation plan"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "readme consolidation plan"
-issues: []
-discussions: []
 ## 📋 File Duplicati Identificati
 
 ### Modulo Xot

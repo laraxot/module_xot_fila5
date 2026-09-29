@@ -1,7 +1,4 @@
 ---
-qmd: "base classes"
-issues: []
-discussions: []
 title: "Base Classes"
 type: reference
 tags: [wiki, no-frontmatter-fix]
@@ -108,9 +105,11 @@ class {ModelName}Resource extends XotBaseResource
     /**
      * @return array<int, \Filament\Forms\Components\Component>
      */
+<<<<<<< HEAD
     public function getFormSchema(): array
----
+=======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             Forms\Components\TextInput::make('name')

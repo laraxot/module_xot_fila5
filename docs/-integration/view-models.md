@@ -1,14 +1,3 @@
----
-title: "view models"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "view models"
-issues: []
-discussions: []
----
-
 # view_models
 
 <!-- Contenuto migrato da _docs/view_models.txt -->
@@ -22,14 +11,6 @@ https://spatie.be/project_docs/laravel-blade-x/v2/advanced-usage/transforming-da
 https://dev.to/lloople/adding-view-models-to-a-laravel-project-hod
 
 ---
-title: "view models"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "view models"
-issues: []
-discussions: []
 https://www.youtube.com/watch?v=xHs6jeoRRcc
 
 http://niceprogrammer.com/laravel-view-model/

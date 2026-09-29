@@ -1,14 +1,3 @@
----
-title: "enum driven fillable pattern"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "enum driven fillable pattern"
-issues: []
-discussions: []
----
-
 # Enum-Driven Fillable Pattern - Laraxot Architecture
 
 ## Philosophy

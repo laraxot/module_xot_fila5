@@ -1,14 +1,3 @@
----
-title: "panel login fix"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "panel login fix"
-issues: []
-discussions: []
----
-
 # Filament Panel Login Fix
 
 This document details the fix applied to `XotBasePanelProvider.php` to resolve a critical login functionality issue affecting all Filament panels extending this base provider.

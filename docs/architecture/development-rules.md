@@ -1,14 +1,3 @@
----
-title: "development rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "development rules"
-issues: []
-discussions: []
----
-
 # Regole Generali di Sviluppo del Progetto
 
 ## Collegamenti
@@ -435,12 +424,4 @@ TextInput::make('name')
 
 ---
 
-title: "development rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "development rules"
-issues: []
-discussions: []
 **Nota**: Queste regole sono fondamentali per mantenere la qualità e la consistenza del progetto. Devono essere sempre seguite e aggiornate quando necessario.

@@ -1,14 +1,3 @@
----
-title: "laraxot philosophy summary "
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "laraxot philosophy summary "
-issues: []
-discussions: []
----
-
 # Riassunto Filosofia Laraxot - Gennaio 2026
 
 **Data**: 8 Gennaio 2026
@@ -197,14 +186,6 @@ Questo documento rappresenta la sintesi delle conoscenze acquisite attraverso:
 
 ---
 
-title: "laraxot philosophy summary "
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "laraxot philosophy summary "
-issues: []
-discussions: []
 **Ultimo Aggiornamento**: 8 Gennaio 2026
 **Stato**: Documento Vivo - Aggiornare con nuove scoperte
 **Principio**: La documentazione è la memoria viva del sistema

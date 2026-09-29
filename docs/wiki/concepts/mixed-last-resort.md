@@ -1,10 +1,4 @@
 ---
-type: note
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "mixed last resort"
-issues: []
-discussions: []
 title: mixed type last resort
 description: Policy Laraxot su mixed — vietato salvo ultima spiaggia documentata (ADR-011).
 document_type: concept

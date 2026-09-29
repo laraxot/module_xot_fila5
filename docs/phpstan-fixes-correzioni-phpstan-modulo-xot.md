@@ -1,14 +1,3 @@
----
-title: "phpstan fixes correzioni phpstan modulo xot"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan fixes correzioni phpstan modulo xot"
-issues: []
-discussions: []
----
-
 # Correzioni PHPStan - Modulo Xot
 
 Questo documento traccia gli errori PHPStan identificati nel modulo Xot e le relative soluzioni implementate.
@@ -197,14 +186,6 @@ Il `HandlerDecorator` necessita refactoring per:
 
 
 ---
-title: "phpstan fixes correzioni phpstan modulo xot"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan fixes correzioni phpstan modulo xot"
-issues: []
-discussions: []
 ## Merged from phpstan-fixes_2.md
 
 # Correzioni PHPStan - Modulo Xot

@@ -1,14 +1,3 @@
----
-title: "phpstan zero errors status"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan zero errors status"
-issues: []
-discussions: []
----
-
 # PHPStan zero — puntatore (non più inventario)
 
 Questo file **non** è più lo stato vivo. L'inventario «1891 errori / 17 moduli»

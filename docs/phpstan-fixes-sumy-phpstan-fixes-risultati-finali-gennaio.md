@@ -1,14 +1,3 @@
----
-title: "phpstan fixes sumy phpstan fixes risultati finali gennaio"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan fixes sumy phpstan fixes risultati finali gennaio"
-issues: []
-discussions: []
----
-
 # PHPStan Fixes - Risultati Finali (Gennaio 2025)
 
 ## 📊 Statistiche Finali

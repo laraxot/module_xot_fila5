@@ -1,14 +1,3 @@
----
-title: "issues structural"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "issues structural"
-issues: []
-discussions: []
----
-
 ISSUE TEMPLATES (crea manually o via gh cli):
 # Issue 1 — HasXotForm trait + XotBaseResourceForm instance refactor
 Repo: laraxot/module_xot_fila5

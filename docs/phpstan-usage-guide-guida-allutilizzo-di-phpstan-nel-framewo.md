@@ -1,14 +1,3 @@
----
-title: "phpstan usage guide guida allutilizzo di phpstan nel framewo"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan usage guide guida allutilizzo di phpstan nel framewo"
-issues: []
-discussions: []
----
-
 # Guida all'Utilizzo di PHPStan nel Framework Laraxot <nome progetto>
 
 ## Introduzione

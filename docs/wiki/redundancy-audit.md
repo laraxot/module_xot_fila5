@@ -1,7 +1,4 @@
 ---
-qmd: "redundancy audit"
-issues: []
-discussions: []
 title: "audit ridondanza monorepo 2026-05-26"
 module: Xot
 type: audit

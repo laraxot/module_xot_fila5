@@ -1,14 +1,3 @@
----
-title: "roadmap miglioramenti"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "roadmap miglioramenti"
-issues: []
-discussions: []
----
-
 # Xot — cosa migliorerei se questo modulo fosse mio per un mese
 
 > I numeri misurati (PHPStan/PHPMD/PHPInsights/casi test) sono in
@@ -81,13 +70,5 @@ strumento che misura quanto codice/doc vecchio si può buttare via in
 sicurezza — e sistemare l'Architecture di Xot per primo, non per ultimo.
 
 ---
-title: "roadmap miglioramenti"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "roadmap miglioramenti"
-issues: []
-discussions: []
 *Analisi generata il 2026-09-01, dati verificati sul codice (grep/find), non
 sulla documentazione esistente — coerente con lo standing order del progetto.*

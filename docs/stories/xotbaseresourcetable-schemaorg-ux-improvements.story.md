@@ -1,8 +1,4 @@
 ---
-tags: [documentation]
-qmd: "xotbaseresourcetable schemaorg ux improvements.story"
-issues: []
-discussions: []
 title: "XotBaseResourceTable: miglioramenti UI/UX con standard schema.org"
 type: story
 module: Xot

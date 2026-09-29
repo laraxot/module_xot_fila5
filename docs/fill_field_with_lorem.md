@@ -1,7 +1,4 @@
 ---
-qmd: "fill field with lorem"
-issues: []
-discussions: []
 title: 'Fill field with lorem — risorse esterne'
 module: Xot
 type: reference

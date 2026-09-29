@@ -1,14 +1,3 @@
----
-title: "phpstan error resolution strategy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan error resolution strategy"
-issues: []
-discussions: []
----
-
 # Strategia Risoluzione Errori PHPStan - 1565 Errori
 
 ## Status Iniziale
@@ -190,13 +179,5 @@ done
 
 ---
 
-title: "phpstan error resolution strategy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan error resolution strategy"
-issues: []
-discussions: []
 **Mantenuto da**: Claude Sonnet 4.5
 **Ultimo aggiornamento**: 2025-12-12

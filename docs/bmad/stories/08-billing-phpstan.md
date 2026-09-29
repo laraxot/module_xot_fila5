@@ -1,14 +1,3 @@
----
-title: "08 billing phpstan"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "08 billing phpstan"
-issues: []
-discussions: []
----
-
 # BMAD Story 08 — Billing: 12 errori PHPStan
 
 **Repo:** `git@github.com:laraxot/module_xot_fila5.git`

@@ -1,14 +1,3 @@
----
-title: "enum standards 2"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "enum standards 2"
-issues: []
-discussions: []
----
-
 # Enum Standards in <nome progetto>
 
 This document defines the standards and best practices for working with Enums in the <nome progetto> project.

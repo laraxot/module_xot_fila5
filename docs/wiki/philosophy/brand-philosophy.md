@@ -1,7 +1,4 @@
 ---
-qmd: "brand philosophy"
-issues: []
-discussions: []
 title: "Brand Philosophy"
 type: reference
 tags: [wiki, no-frontmatter-fix]

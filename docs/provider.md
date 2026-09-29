@@ -1,14 +1,3 @@
----
-title: "provider"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "provider"
-issues: []
-discussions: []
----
-
 # Service Provider in il progetto
 
 Il service provider è responsabile della registrazione e configurazione del tema. Ogni tema deve avere il proprio service provider.

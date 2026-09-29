@@ -1,14 +1,3 @@
----
-title: "phpstan level10 xotes"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan level10 xotes"
-issues: []
-discussions: []
----
-
 # PHPStan Level 10 Fixes - Xot Module
 
 ## 📋 Riepilogo Intervento

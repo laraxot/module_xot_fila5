@@ -1,8 +1,4 @@
 ---
-tags: [documentation]
-qmd: "performance"
-issues: []
-discussions: []
 title: "Performance"
 type: reference
 status: active

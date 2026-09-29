@@ -1,14 +1,3 @@
----
-title: "filament v5 setup guide"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament v5 setup guide"
-issues: []
-discussions: []
----
-
 # 🎨 FILAMENT V5 SETUP GUIDE - Base Predict Fila5
 
 **Version**: 5.x  
@@ -18,14 +7,6 @@ discussions: []
 
 ---
 
-title: "filament v5 setup guide"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament v5 setup guide"
-issues: []
-discussions: []
 ## 📋 REQUISITI FILAMENT V5
 
 | Requisito | Versione Richiesta | Stato Attuale |

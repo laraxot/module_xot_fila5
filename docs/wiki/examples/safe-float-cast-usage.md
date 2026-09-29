@@ -1,7 +1,4 @@
 ---
-qmd: "safe float cast usage"
-issues: []
-discussions: []
 title: "Safe Float Cast Usage"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,14 +1,3 @@
----
-title: "filament class mapping verification"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament class mapping verification"
-issues: []
-discussions: []
----
-
 # Verifica Mapping Classi Filament → XotBase
 
 **Data**: 2025-12-23

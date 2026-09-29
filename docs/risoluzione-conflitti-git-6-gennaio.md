@@ -1,14 +1,3 @@
----
-title: "risoluzione conflitti git 6 gennaio"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "risoluzione conflitti git 6 gennaio"
-issues: []
-discussions: []
----
-
 # Risoluzione Conflitti Git - 6 Gennaio 2025
 
 ## Data: 2025-01-06
@@ -108,14 +97,6 @@ $res=Locality::query()
 
 
 ---
-title: "risoluzione conflitti git 6 gennaio"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "risoluzione conflitti git 6 gennaio"
-issues: []
-discussions: []
 ## Variant
 
 # Risoluzione Conflitti Git - 6 Gennaio 2025

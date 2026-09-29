@@ -1,14 +1,3 @@
----
-title: "readme"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "readme"
-issues: []
-discussions: []
----
-
 # Convenzioni
 
 Questa cartella contiene le convenzioni di nomenclatura e le regole di stile utilizzate nel progetto.

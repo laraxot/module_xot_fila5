@@ -174,6 +174,24 @@ abstract class XotBaseTestCase extends BaseTestCase
 
     protected function tearDown(): void
     {
+        try {
+            if ($this->app instanceof Application) {
+                /** @var DatabaseManager $db */
+                $db = $this->app->make('db');
+
+                /** @var array<string, mixed> $connections */
+                $connections = (array) config('database.connections', []);
+                foreach (array_keys($connections) as $name) {
+                    $db->disconnect((string) $name);
+                }
+
+                $db->disconnect();
+                $db->purge();
+            }
+        } catch (\Throwable) {
+            // Ignore teardown disconnection issues to avoid masking test failures.
+        }
+
         parent::tearDown();
     }
 
@@ -245,11 +263,6 @@ abstract class XotBaseTestCase extends BaseTestCase
             return database_path($configured);
         }
 
-        $connectionDatabase = config('database.connections.sqlite.database');
-        if (is_string($connectionDatabase) && $connectionDatabase !== '' && file_exists($connectionDatabase)) {
-            return $connectionDatabase;
-        }
-
         try {
             /** @var list<string> $found */
             $found = \Safe\glob(database_path('*.sqlite'));
@@ -280,11 +293,6 @@ abstract class XotBaseTestCase extends BaseTestCase
         }
 
         $database = self::sharedSqlitePath();
-        $forceSharedSqliteValue = config('database.testing.force_shared_sqlite');
-        if ($forceSharedSqliteValue === null) {
-            $forceSharedSqliteValue = getenv('FIXCITY_TEST_SQLITE') ?: false;
-        }
-        $forceSharedSqlite = filter_var($forceSharedSqliteValue, FILTER_VALIDATE_BOOLEAN);
 
         // La connessione opzionale 'user' (driver mysql) senza database configurato
         // (DB_DATABASE_USER vuoto) ripiega su sqlite condiviso: stesso fallback di
@@ -307,23 +315,13 @@ abstract class XotBaseTestCase extends BaseTestCase
         $sqliteConnections = [];
 
         foreach (array_keys($connections) as $connection) {
-            $driver = config("database.connections.{$connection}.driver");
-            if (! $forceSharedSqlite && $driver !== 'sqlite') {
+            if (config("database.connections.{$connection}.driver") !== 'sqlite') {
                 continue;
             }
 
             $sqliteConnections[] = $connection;
-            if ($forceSharedSqlite) {
-                $this->app['config']->set("database.connections.{$connection}.driver", 'sqlite');
-                $this->app['config']->set("database.connections.{$connection}.prefix", '');
-                $this->app['config']->set("database.connections.{$connection}.foreign_key_constraints", true);
-            }
             $this->app['config']->set("database.connections.{$connection}.database", $database);
             $this->app['config']->set("database.connections.{$connection}.busy_timeout", 10000);
-        }
-
-        if ($forceSharedSqlite && isset($connections['sqlite'])) {
-            $this->app['config']->set('database.default', 'sqlite');
         }
 
         foreach ($sqliteConnections as $connection) {

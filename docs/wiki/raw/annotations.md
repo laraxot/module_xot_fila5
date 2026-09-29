@@ -1,7 +1,4 @@
 ---
-qmd: "annotations"
-issues: []
-discussions: []
 title: "Annotations"
 type: reference
 tags: [wiki, no-frontmatter-fix]

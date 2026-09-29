@@ -1,14 +1,3 @@
----
-title: "forbidden properties removal complete"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "forbidden properties removal complete"
-issues: []
-discussions: []
----
-
 # Rimozione Completa Proprietà Vietate da XotBaseResource - Analisi e Implementazione
 
 **Data**: 2026-01-09  
@@ -16,14 +5,6 @@ discussions: []
 
 ---
 
-title: "forbidden properties removal complete"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "forbidden properties removal complete"
-issues: []
-discussions: []
 ## 🎯 Obiettivo
 
 Rimuovere **completamente** (anche quelle commentate) tutte le proprietà vietate dalle classi che estendono `XotBaseResource`:

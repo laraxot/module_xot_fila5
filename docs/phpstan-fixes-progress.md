@@ -1,14 +1,3 @@
----
-title: "phpstan fixes progress"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan fixes progress"
-issues: []
-discussions: []
----
-
 # PHPStan Fixes Progress - Modulo Xot
 
 ## Sessione di Correzione - Ottobre 2025
@@ -213,14 +202,6 @@ foreach ($data as $item) { }
 
 ---
 
-title: "phpstan fixes progress"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan fixes progress"
-issues: []
-discussions: []
 **Ultimo aggiornamento**: Ottobre 2025
 **Status**: 🔄 In Progress (65.3% completato)
 **Prossimo target**: ModuleServiceIntegrationTest.php → 0 errori

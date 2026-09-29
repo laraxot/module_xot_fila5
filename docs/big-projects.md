@@ -1,7 +1,4 @@
 ---
-qmd: "big projects"
-issues: []
-discussions: []
 title: 'big_projects'
 module: Xot
 type: reference

@@ -1,7 +1,4 @@
 ---
-tags: [documentation]
-issues: []
-discussions: []
 title: "Git Conflicts Resolution Jan 1"
 type: concept
 status: deprecated

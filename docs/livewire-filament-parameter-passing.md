@@ -1,14 +1,3 @@
----
-title: "livewire filament parameter passing"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "livewire filament parameter passing"
-issues: []
-discussions: []
----
-
 # Livewire Component and Filament Widget Parameter Passing Guide
 
 ## Overview

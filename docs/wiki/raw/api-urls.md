@@ -1,7 +1,4 @@
 ---
-qmd: "api urls"
-issues: []
-discussions: []
 title: "Api Urls"
 type: reference
 tags: [wiki, no-frontmatter-fix]

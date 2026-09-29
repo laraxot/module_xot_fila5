@@ -1,14 +1,3 @@
----
-title: "filament array keys rule"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament array keys rule"
-issues: []
-discussions: []
----
-
 # Filament Array Keys Rule - Array con Chiavi String
 
 **Data**: 2025-01-10
@@ -17,14 +6,6 @@ discussions: []
 
 ---
 
-title: "filament array keys rule"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament array keys rule"
-issues: []
-discussions: []
 ## 🚨 Regola Assoluta
 
 **Tutti i metodi Filament che restituiscono array DEVONO usare chiavi string quando possibile. Filament v4 accetta anche chiavi int, ma preferire sempre string.**
@@ -55,9 +36,11 @@ public function getTableActions(): array
 }
 
 // ❌ SBAGLIATO - Array numerico
+<<<<<<< HEAD
 public function getFormSchema(): array
----
+=======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
 {
     return [
         TextInput::make('name'),  // Chiave: 0
@@ -84,9 +67,11 @@ public function getTableActions(): array
 
 // ✅ CORRETTO - Array associativo con chiavi string
 /** @return array<string, Component> */
+<<<<<<< HEAD
 public function getFormSchema(): array
----
+=======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
 {
     return [
         'name_field' => TextInput::make('name'),
@@ -143,9 +128,11 @@ class UserResource extends XotBaseResource
     /**
      * @return array<string, \Filament\Forms\Components\Component>
      */
+<<<<<<< HEAD
     public function getFormSchema(): array
----
+=======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             'name_field' => TextInput::make('name'),

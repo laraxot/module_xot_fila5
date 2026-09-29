@@ -1,7 +1,4 @@
 ---
-qmd: "search string database"
-issues: []
-discussions: []
 title: "Search String Database"
 type: reference
 tags: [wiki, no-frontmatter-fix]

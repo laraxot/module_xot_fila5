@@ -1,7 +1,4 @@
 ---
-qmd: "translation rules"
-issues: []
-discussions: []
 title: "Translation Rules"
 type: reference
 tags: [wiki, no-frontmatter-fix]

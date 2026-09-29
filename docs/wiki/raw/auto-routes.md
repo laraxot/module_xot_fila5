@@ -1,7 +1,4 @@
 ---
-qmd: "auto routes"
-issues: []
-discussions: []
 title: "Auto Routes"
 type: reference
 tags: [wiki, no-frontmatter-fix]

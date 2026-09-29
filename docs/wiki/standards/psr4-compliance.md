@@ -1,7 +1,4 @@
 ---
-qmd: "psr4 compliance"
-issues: []
-discussions: []
 title: "Psr4 Compliance"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,14 +1,3 @@
----
-title: "webpack"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "webpack"
-issues: []
-discussions: []
----
-
 //------------------------
 https://stackoverflow.com/questions/61047279/laravel-mix-multiple-entry-points-multiple-outputs
 https://codeutility.org/javascript-laravel-mix-multiple-entry-points-multiple-outputs-stack-overflow/

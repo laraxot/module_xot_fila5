@@ -1,7 +1,4 @@
 ---
-qmd: "sonarqube"
-issues: []
-discussions: []
 title: "Sonarqube"
 type: reference
 tags: [wiki, no-frontmatter-fix]

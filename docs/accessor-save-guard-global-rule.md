@@ -1,14 +1,3 @@
----
-title: "accessor save guard global rule"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "accessor save guard global rule"
-issues: []
-discussions: []
----
-
 # Regola Globale: Guard su getKey() Prima di save() negli Accessor
 
 ## Analisi Business Logic
@@ -314,14 +303,6 @@ test('accessor salva se model ha PK', function () {
 
 ---
 
-title: "accessor save guard global rule"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "accessor save guard global rule"
-issues: []
-discussions: []
 **Creato**: 2025-01-29
 **Tipo**: Regola Architettutale Globale
 **Applicazione**: Tutti i moduli

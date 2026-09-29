@@ -1,7 +1,4 @@
 ---
-qmd: "testing"
-issues: []
-discussions: []
 title: "Testing"
 type: reference
 tags: [wiki, no-frontmatter-fix]

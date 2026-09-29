@@ -1,7 +1,4 @@
 ---
-qmd: "xotbasemodel"
-issues: []
-discussions: []
 title: "Xotbasemodel"
 type: reference
 tags: [wiki, no-frontmatter-fix]

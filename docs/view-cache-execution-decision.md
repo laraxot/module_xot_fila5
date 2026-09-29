@@ -1,14 +1,3 @@
----
-title: "view cache execution decision"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "view cache execution decision"
-issues: []
-discussions: []
----
-
 # Decisione: Esecuzione php artisan view:cache
 
 **Data**: 2025-01-22
@@ -17,14 +6,6 @@ discussions: []
 
 ---
 
-title: "view cache execution decision"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "view cache execution decision"
-issues: []
-discussions: []
 ## 🧠 La Litigata Interna
 
 ### Contesto

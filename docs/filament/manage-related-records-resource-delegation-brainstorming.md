@@ -1,7 +1,4 @@
 ---
-qmd: "manage related records resource delegation brainstorming"
-issues: []
-discussions: []
 title: "Brainstorming: configurazione completa dei record correlati"
 type: architecture
 status: discussion

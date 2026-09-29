@@ -1,7 +1,4 @@
 ---
-qmd: "pest"
-issues: []
-discussions: []
 title: "Pest"
 type: reference
 tags: [wiki, no-frontmatter-fix]

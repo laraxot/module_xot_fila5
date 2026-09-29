@@ -1,14 +1,3 @@
----
-title: "06 phpstan 272 reduction"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "06 phpstan 272 reduction"
-issues: []
-discussions: []
----
-
 # BMAD — 272 PHPStan errori: piano di risoluzione
 
 **Repo coordinatore:** `git@github.com:laraxot/module_xot_fila5.git`

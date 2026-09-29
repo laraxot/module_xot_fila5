@@ -1,14 +1,3 @@
----
-title: "ci quality pipeline"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "ci quality pipeline"
-issues: []
-discussions: []
----
-
 # CI Quality Pipeline (Staged, Safe-By-Default)
 
 This pipeline defines a staged adoption of linters/scanners across the monorepo. All jobs run in report/dry-run mode initially. Enforce gates only after manual review.

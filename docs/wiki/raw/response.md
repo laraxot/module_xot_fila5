@@ -1,7 +1,4 @@
 ---
-qmd: "response"
-issues: []
-discussions: []
 title: "Response"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,14 +1,3 @@
----
-title: "file naming case sensitivity"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "file naming case sensitivity"
-issues: []
-discussions: []
----
-
 # File Naming and Case Sensitivity - Project-Wide Rules
 
 ## 🔴 Problema Critico
@@ -347,14 +336,6 @@ Questa non è solo una regola tecnica, è una **filosofia di sviluppo**:
 
 ---
 
-title: "file naming case sensitivity"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "file naming case sensitivity"
-issues: []
-discussions: []
 **Ultimo aggiornamento**: 2025-11-04
 **Status**: ✅ Cleanup completato, enforcement attivo
 **Revisione**: Trimestrale (ogni 3 mesi)

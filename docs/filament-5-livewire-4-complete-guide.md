@@ -1,14 +1,3 @@
----
-title: "filament 5 livewire 4 complete guide"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament 5 livewire 4 complete guide"
-issues: []
-discussions: []
----
-
 # Guida Completa: Upgrade Filament 5 + Livewire 4 - Modulo Xot
 
 
@@ -18,14 +7,6 @@ Questa guida documenta l'upgrade da Filament 4.x + Livewire 3.x a Filament 5.x +
 
 ---
 
-title: "filament 5 livewire 4 complete guide"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament 5 livewire 4 complete guide"
-issues: []
-discussions: []
 ## 🎯 Informazioni Chiave
 
 ### Requisiti per Filament 5

@@ -1,14 +1,3 @@
----
-title: "xotbaserouteserviceprovider conflict resolution risoluzione conflitto xotbaserouteservic"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "xotbaserouteserviceprovider conflict resolution risoluzione conflitto xotbaserouteservic"
-issues: []
-discussions: []
----
-
 # Risoluzione conflitto XotBaseRouteServiceProvider.php
 
 ## Problema

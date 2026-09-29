@@ -1,7 +1,4 @@
 ---
-qmd: "development rules"
-issues: []
-discussions: []
 title: "Development Rules"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,7 +1,4 @@
 ---
-qmd: "factory modular pattern"
-issues: []
-discussions: []
 title: "Factory Modular Pattern"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,7 +1,4 @@
 ---
-qmd: "mariadb runtime policy"
-issues: []
-discussions: []
 title: "MariaDB runtime policy"
 module: Xot
 type: concept

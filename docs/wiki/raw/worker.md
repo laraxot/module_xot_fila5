@@ -1,7 +1,4 @@
 ---
-qmd: "worker"
-issues: []
-discussions: []
 title: "Worker"
 type: reference
 tags: [wiki, no-frontmatter-fix]

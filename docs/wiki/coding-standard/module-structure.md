@@ -1,7 +1,4 @@
 ---
-qmd: "module structure"
-issues: []
-discussions: []
 title: "Module Structure"
 type: reference
 tags: [wiki, no-frontmatter-fix]

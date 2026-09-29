@@ -1,7 +1,4 @@
 ---
-qmd: "xotbase infolist widget schema"
-issues: []
-discussions: []
 title: "XotBaseInfolistWidget — schema read-only Filament 5"
 type: concept
 module: Xot

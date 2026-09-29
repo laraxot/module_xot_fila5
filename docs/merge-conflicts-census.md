@@ -1,14 +1,3 @@
----
-title: "merge conflicts census"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "merge conflicts census"
-issues: []
-discussions: []
----
-
 # Censimento File con Marker
 
 > **Ultimo aggiornamento**: Novembre 2025

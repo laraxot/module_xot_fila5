@@ -1,7 +1,4 @@
 ---
-qmd: "content selection and highlighting"
-issues: []
-discussions: []
 title: 'Content selection and highlighting'
 module: Xot
 type: reference

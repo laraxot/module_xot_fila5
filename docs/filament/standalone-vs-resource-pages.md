@@ -1,14 +1,3 @@
----
-title: "standalone vs resource pages"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "standalone vs resource pages"
-issues: []
-discussions: []
----
-
 # Standalone Pages vs Resource Pages in Filament 4
 
 ## Business Logic
@@ -42,21 +31,17 @@ Method ::route does not exist
 
 **Quando Usare**:
 ```php
-// Dashboard del modulo: usa la base dashboard dedicata
+// Dashboard globale
 namespace Modules\MyModule\Filament\Pages;
 
-use Modules\Xot\Filament\Pages\XotBaseDashboard;
+use Modules\Xot\Filament\Pages\XotBasePage;
 
-class Dashboard extends XotBaseDashboard
+class Dashboard extends XotBasePage
 {
     protected static ?string $navigationIcon = 'heroicon-o-home';
     protected static ?string $navigationLabel = 'Dashboard';
 }
 ```
-
-`Dashboard` è un tipo dedicato di pagina standalone e deve estendere
-`Modules\Xot\Filament\Pages\XotBaseDashboard`, non `XotBasePage`. Usare
-`XotBasePage` per le altre pagine standalone non-dashboard.
 
 ### 2. XotBasePage Resource
 
@@ -172,12 +157,12 @@ Sto creando una nuova Page
 
 namespace Modules\MyModule\Filament\Pages;
 
-use Modules\Xot\Filament\Pages\XotBaseDashboard;  // ✅ Dashboard
+use Modules\Xot\Filament\Pages\XotBasePage;  // ✅ Standalone
 
-class Dashboard extends XotBaseDashboard
+class Dashboard extends XotBasePage
 {
     protected static ?string $navigationIcon = 'heroicon-o-home';
-    protected string $view = 'mymodule::filament.pages.dashboard';
+    protected static string $view = 'mymodule::filament.pages.dashboard';
 
     // Accessibile da menu, NON usata in getPages() di Resource
 }
@@ -285,9 +270,9 @@ class Dashboard extends XotBasePage
 // ✅ CORRETTO
 namespace Modules\MyModule\Filament\Pages;
 
-use Modules\Xot\Filament\Pages\XotBaseDashboard;  // ✅ Dashboard dedicato
+use Modules\Xot\Filament\Pages\XotBasePage;  // ✅ Standalone!
 
-class Dashboard extends XotBaseDashboard
+class Dashboard extends XotBasePage
 {
     protected static ?string $navigationIcon = 'heroicon-o-home';
 }
@@ -411,14 +396,6 @@ test('ListLogActivities has route method', function () {
 
 ---
 
-title: "standalone vs resource pages"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "standalone vs resource pages"
-issues: []
-discussions: []
 **Ultimo aggiornamento**: 27 Ottobre 2025
 **Importanza**: CRITICA
 **Categoria**: Architettura Filament 4

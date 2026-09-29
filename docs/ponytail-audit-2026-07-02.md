@@ -1,7 +1,4 @@
 ---
-tags: [documentation]
-issues: []
-discussions: []
 title: "Ponytail Audit"
 type: concept
 status: deprecated

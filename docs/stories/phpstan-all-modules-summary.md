@@ -1,11 +1,4 @@
 ---
-title: "phpstan all modules summary"
-type: note
-tags: [documentation]
-updated: 2026-09-26
-qmd: "phpstan all modules summary"
-issues: []
-discussions: []
 id: phpstan-all-modules-summary
 slug: phpstan-all-modules-summary
 scope:

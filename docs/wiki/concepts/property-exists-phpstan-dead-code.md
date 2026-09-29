@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "property_exists() fa credere a PHPStan che il codice dopo sia irraggiungibile"
 type: concept
 module: Xot

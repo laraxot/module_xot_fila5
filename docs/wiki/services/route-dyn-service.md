@@ -1,7 +1,4 @@
 ---
-qmd: "route dyn service"
-issues: []
-discussions: []
 title: "Route Dyn Service"
 type: reference
 tags: [wiki, no-frontmatter-fix]

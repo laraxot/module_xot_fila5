@@ -1,14 +1,3 @@
----
-title: "logo determination"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "logo determination"
-issues: []
-discussions: []
----
-
 # Determinazione del Logo Basata sul Dominio
 
 ## Introduzione

@@ -1,7 +1,4 @@
 ---
-qmd: "clean code"
-issues: []
-discussions: []
 title: "Clean Code"
 type: reference
 tags: [wiki, no-frontmatter-fix]

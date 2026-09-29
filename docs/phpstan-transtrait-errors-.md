@@ -1,14 +1,3 @@
----
-title: "phpstan transtrait errors "
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan transtrait errors "
-issues: []
-discussions: []
----
-
 # PHPStan Errors - TransTrait.php
 
 **Date**: 2025-12-16
@@ -18,14 +7,6 @@ discussions: []
 
 ---
 
-title: "phpstan transtrait errors "
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan transtrait errors "
-issues: []
-discussions: []
 ## Overview
 
 TransTrait provides translation functionality for Filament components. The trait is used by multiple base classes (Pages, Resources, Blocks, Clusters) but has a design issue: it calls `static::getModuleName()` which is not available in all using classes.

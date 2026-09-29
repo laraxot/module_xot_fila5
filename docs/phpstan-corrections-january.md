@@ -1,14 +1,3 @@
----
-title: "phpstan corrections january"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan corrections january"
-issues: []
-discussions: []
----
-
 # PHPStan Corrections - Gennaio 2025
 
 **Data**: 2025-01-10
@@ -17,14 +6,6 @@ discussions: []
 
 ---
 
-title: "phpstan corrections january"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan corrections january"
-issues: []
-discussions: []
 ## 📊 Analisi Errori
 
 ### Categorizzazione Errori

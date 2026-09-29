@@ -1,7 +1,4 @@
 ---
-qmd: "large dataset import guidelines"
-issues: []
-discussions: []
 title: "Large Dataset Import Guidelines"
 type: reference
 tags: [wiki, no-frontmatter-fix]

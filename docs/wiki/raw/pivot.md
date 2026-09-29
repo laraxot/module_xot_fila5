@@ -1,7 +1,4 @@
 ---
-qmd: "pivot"
-issues: []
-discussions: []
 title: "Pivot"
 type: reference
 tags: [wiki, no-frontmatter-fix]

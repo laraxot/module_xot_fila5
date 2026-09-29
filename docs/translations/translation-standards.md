@@ -1,14 +1,3 @@
----
-title: "translation standards"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "translation standards"
-issues: []
-discussions: []
----
-
 - **Documentazione**: [Progressioni Translation System](../../laravel/Modules/Progressioni/docs/translation-system.md)
 
 #### File Completati
@@ -144,14 +133,6 @@ return [
 
 *Ultimo aggiornamento: Giugno 2025*
 ---
-title: "translation standards"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "translation standards"
-issues: []
-discussions: []
 module: theme
 topic: translation-standards
 canonical: ../../../../Themes/docs/shared-components/translation-standards-Modules.md

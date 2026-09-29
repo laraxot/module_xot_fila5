@@ -1,14 +1,3 @@
----
-title: "sprint planning"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "sprint planning"
-issues: []
-discussions: []
----
-
 # Xot Module - Sprint Planning
 
 **Module:** Xot  
@@ -17,14 +6,6 @@ discussions: []
 
 ---
 
-title: "sprint planning"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "sprint planning"
-issues: []
-discussions: []
 ## Sprint Goal
 
 Implement core extension framework with API, hooks, and event bus.

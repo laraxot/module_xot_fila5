@@ -176,11 +176,7 @@ final class ModuleRemainingCoverage
     {
         $executed = 0;
 
-<<<<<<< HEAD
-        foreach (['View', 'Http/Middleware'] as $dir) {
-=======
         foreach (['View', 'Http/Livewire', 'Http/Middleware'] as $dir) {
->>>>>>> laraxot/dev
             foreach (ModuleBusinessCoverage::discoverPhpClasses($appRoot, $moduleNamespace, $dir) as $class) {
                 $ref = new ReflectionClass($class);
                 if ($ref->isAbstract() || $ref->isInterface() || $ref->isTrait() || $ref->isEnum()) {
@@ -1094,7 +1090,7 @@ final class ModuleRemainingCoverage
     }
 
     /**
-     * @return array<string, mixed>
+     * @return array<string, int|string>
      */
     private static function defaultModelAttributes(): array
     {

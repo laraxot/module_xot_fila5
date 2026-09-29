@@ -1,14 +1,3 @@
----
-title: "realata vs mock testing strategy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "realata vs mock testing strategy"
-issues: []
-discussions: []
----
-
 # Real Data vs Mock Testing Strategy - Xot Module
 
 ## 🎯 Strategic Testing Approaches
@@ -394,14 +383,6 @@ test('legacy feature with mocks', function () {
 
 ---
 
-title: "realata vs mock testing strategy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "realata vs mock testing strategy"
-issues: []
-discussions: []
 **Strategic Analysis Date**: Gennaio 2025
 **Review Cycle**: Quarterly assessment
 **Decision Authority**: Technical Architecture Committee

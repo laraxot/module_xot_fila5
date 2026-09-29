@@ -1,7 +1,4 @@
 ---
-qmd: "on module"
-issues: []
-discussions: []
 title: "On Module"
 type: reference
 tags: [wiki, no-frontmatter-fix]

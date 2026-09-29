@@ -1,7 +1,4 @@
 ---
-qmd: "phpinsights report"
-issues: []
-discussions: []
 title: "Phpinsights Report"
 type: reference
 tags: [wiki, no-frontmatter-fix]

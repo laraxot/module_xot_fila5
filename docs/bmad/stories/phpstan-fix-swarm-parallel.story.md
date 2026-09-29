@@ -1,8 +1,4 @@
 ---
-tags: [documentation]
-qmd: "phpstan fix swarm parallel.story"
-issues: []
-discussions: []
 title: "PHPStan — fix swarm in parallelo su errori repo-wide"
 type: story
 module: Xot

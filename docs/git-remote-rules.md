@@ -1,14 +1,3 @@
----
-title: "git remote rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "git remote rules"
-issues: []
-discussions: []
----
-
 # Git Remote Architecture & Root Cleanliness Rules
 
 ## 🚨 CRITICAL MANDATE: Root Remote Isolation
@@ -28,14 +17,6 @@ discussions: []
 
 ---
 
-title: "git remote rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "git remote rules"
-issues: []
-discussions: []
 ## 🔍 Causa Radice e Prevenzione
 
 1. **Origine dell'Errore**:

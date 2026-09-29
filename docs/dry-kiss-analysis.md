@@ -1,14 +1,3 @@
----
-title: "dry kiss analysis"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "dry kiss analysis"
-issues: []
-discussions: []
----
-
 # 🐄✨ DRY & KISS Analysis - Modulo Xot
 
 **Data Analisi:** 2025-10-15
@@ -17,14 +6,6 @@ discussions: []
 
 ---
 
-title: "dry kiss analysis"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "dry kiss analysis"
-issues: []
-discussions: []
 ## 📊 Struttura Modulo
 
 | Categoria | Quantità | Note |

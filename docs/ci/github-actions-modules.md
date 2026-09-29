@@ -1,14 +1,3 @@
----
-title: "github actions modules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "github actions modules"
-issues: []
-discussions: []
----
-
 # GitHub Actions per moduli e temi (CI)
 
 ## Scopo

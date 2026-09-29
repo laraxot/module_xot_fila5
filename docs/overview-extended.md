@@ -1,14 +1,3 @@
----
-title: "overview extended"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "overview extended"
-issues: []
-discussions: []
----
-
 # 🏗️ **Xot Module** - Il Cuore del Framework Laraxot
 
 [![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)

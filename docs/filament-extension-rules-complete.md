@@ -1,14 +1,3 @@
----
-title: "filament extension rules complete"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament extension rules complete"
-issues: []
-discussions: []
----
-
 # Filament Class Extension Rules - Regole Complete
 
 **Principio Fondamentale**: Mai estendere classi Filament direttamente - sempre usare classi XotBase
@@ -17,14 +6,6 @@ discussions: []
 
 ---
 
-title: "filament extension rules complete"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament extension rules complete"
-issues: []
-discussions: []
 ## 🚨 Regola Assoluta
 
 **NON estendere MAI classi Filament direttamente**
@@ -308,9 +289,11 @@ Per `getFormSchema()` nei **resource e pagine**, usare array indicizzati:
 /**
  * @return array<int, Component>
  */
+<<<<<<< HEAD
 public function getFormSchema(): array
----
+=======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
 {
     return [
         TextInput::make('email')->email()->required(),
@@ -494,9 +477,11 @@ class UserResource extends XotBaseResource
     /**
      * @return array<int, Component>
      */
+<<<<<<< HEAD
     public function getFormSchema(): array
----
+=======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             TextInput::make('name')->required(),
@@ -519,14 +504,14 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Pages;
 
-use Modules\Xot\Filament\Pages\XotBaseDashboard;
+use Modules\Xot\Filament\Pages\XotBasePage;
 
-class Dashboard extends XotBaseDashboard
+class DashboardPage extends XotBasePage
 {
     // $navigationIcon NON necessario
     // $title NON necessario
     // $navigationLabel NON necessario
-    // Gestiti dalla base XotBaseDashboard
+    // Gestiti automaticamente da XotBasePage
 }
 ```
 

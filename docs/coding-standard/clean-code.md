@@ -1,14 +1,3 @@
----
-title: "clean code"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "clean code"
-issues: []
-discussions: []
----
-
 # Clean Code: Linee Guida per il Progetto
 
 Questo documento definisce le linee guida di Clean Code adottate nel progetto, basate sui principi di Robert C. Martin. Queste regole sono adattate specificamente per la struttura modulare Laravel utilizzata nel progetto.

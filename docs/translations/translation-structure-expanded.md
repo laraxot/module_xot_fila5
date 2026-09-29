@@ -1,14 +1,3 @@
----
-title: "translation structure expanded"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "translation structure expanded"
-issues: []
-discussions: []
----
-
 - [Geo Module Translations](/Modules/Geo/project_docs/translation-structure-expanded.md)
 - [User Module Translations](/Modules/User/project_docs/translation-guidelines.md)
 
@@ -36,14 +25,6 @@ discussions: []
 
 ---
 
-title: "translation structure expanded"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "translation structure expanded"
-issues: []
-discussions: []
 **Stato**: Documentazione completata, implementazione in corso
 **Priorità**: Media (file già corretto linguisticamente)
 **Responsabile**: Sistema automatico DRY/KISS

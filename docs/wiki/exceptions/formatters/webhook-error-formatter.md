@@ -1,7 +1,4 @@
 ---
-qmd: "webhook error formatter"
-issues: []
-discussions: []
 title: "Webhook Error Formatter"
 type: reference
 tags: [wiki, no-frontmatter-fix]

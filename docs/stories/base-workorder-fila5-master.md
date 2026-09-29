@@ -1,11 +1,4 @@
 ---
-title: "base workorder fila5 master"
-type: note
-tags: [documentation]
-updated: 2026-09-26
-qmd: "base workorder fila5 master"
-issues: []
-discussions: []
 id: base-workorder-fila5-master-story
 slug: base-workorder-fila5-master
 scope: [project:base_workorder_fila5]

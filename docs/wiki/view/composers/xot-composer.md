@@ -1,7 +1,4 @@
 ---
-qmd: "xot composer"
-issues: []
-discussions: []
 title: "Xot Composer"
 type: reference
 tags: [wiki, no-frontmatter-fix]

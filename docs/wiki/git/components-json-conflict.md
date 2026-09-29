@@ -1,7 +1,4 @@
 ---
-qmd: "components json conflict"
-issues: []
-discussions: []
 title: "Components Json Conflict"
 type: reference
 tags: [wiki, no-frontmatter-fix]

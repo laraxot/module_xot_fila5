@@ -1,9 +1,4 @@
 ---
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-issues: []
-discussions: []
 title: "Story — ExportXlsLazyAction: label degradate a path tecnico"
 type: story
 module: Xot

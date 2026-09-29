@@ -1,14 +1,3 @@
----
-title: "conflict resolution report"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "conflict resolution report"
-issues: []
-discussions: []
----
-
 
 # Report Risoluzione Conflitti Git - Develop Branch
 
@@ -104,14 +93,6 @@ Tutti i conflitti Git sono stati risolti automaticamente prendendo le "incoming 
 
 ---
 
-title: "conflict resolution report"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "conflict resolution report"
-issues: []
-discussions: []
 **Script Creato**: 2025-01-27
 **Autore**: Super Mucca AI Assistant
 **Potenze**: 🚀 SUPERPOWERS ACTIVATED

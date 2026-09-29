@@ -1,14 +1,3 @@
----
-title: "single table inheritance"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "single table inheritance"
-issues: []
-discussions: []
----
-
 # Single Table Inheritance (STI)
 
 ## Principi Fondamentali

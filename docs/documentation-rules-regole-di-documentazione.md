@@ -1,14 +1,3 @@
----
-title: "documentation rules regole di documentazione"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "documentation rules regole di documentazione"
-issues: []
-discussions: []
----
-
 # Regole di Documentazione
 
 ## Panoramica

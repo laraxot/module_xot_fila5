@@ -1,7 +1,4 @@
 ---
-qmd: "tools"
-issues: []
-discussions: []
 title: "Tools"
 type: reference
 tags: [wiki, no-frontmatter-fix]

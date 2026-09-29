@@ -1,14 +1,3 @@
----
-title: "filament record anchor"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament record anchor"
-issues: []
-discussions: []
----
-
 # Tornare all'elenco sulla riga giusta
 
 ## Il problema

@@ -1,7 +1,4 @@
 ---
-qmd: "theme livewire"
-issues: []
-discussions: []
 title: 'theme_livewire'
 module: Xot
 type: reference

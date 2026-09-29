@@ -1,28 +1,9 @@
----
-title: "phpstan fixes february"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan fixes february"
-issues: []
-discussions: []
----
-
 # PHPStan Fixes - 2026-02-26
 
 Documentazione completa dei fix PHPStan applicati durante l'analisi di tutti i moduli.
 
 ---
 
-title: "phpstan fixes february"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan fixes february"
-issues: []
-discussions: []
 ## Riepilogo Esecuzione
 
 ### Comando Eseguito

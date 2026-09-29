@@ -1,7 +1,4 @@
 ---
-qmd: " models"
-issues: []
-discussions: []
 title: "Models"
 type: reference
 tags: [wiki, no-frontmatter-fix]

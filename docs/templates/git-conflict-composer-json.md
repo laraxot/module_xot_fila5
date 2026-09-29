@@ -1,14 +1,3 @@
----
-title: "git conflict composer json"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "git conflict composer json"
-issues: []
-discussions: []
----
-
 # Template Gestione Conflitti Git - composer.json
 
 ## File: bashscripts/composer.json

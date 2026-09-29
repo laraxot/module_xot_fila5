@@ -1,7 +1,4 @@
 ---
-qmd: "filter relations"
-issues: []
-discussions: []
 title: "Filter Relations"
 type: reference
 tags: [wiki, no-frontmatter-fix]

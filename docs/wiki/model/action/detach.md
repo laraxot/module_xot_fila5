@@ -1,7 +1,4 @@
 ---
-qmd: "detach"
-issues: []
-discussions: []
 title: "Detach"
 type: reference
 tags: [wiki, no-frontmatter-fix]

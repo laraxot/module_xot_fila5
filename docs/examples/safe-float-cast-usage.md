@@ -1,14 +1,3 @@
----
-title: "safe float cast usage"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "safe float cast usage"
-issues: []
-discussions: []
----
-
 # Esempi Pratici di Utilizzo di SafeFloatCastAction
 
 ## Panoramica
@@ -455,11 +444,3 @@ class Product extends BaseModel
 
 ---
 
-title: "safe float cast usage"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "safe float cast usage"
-issues: []
-discussions: []

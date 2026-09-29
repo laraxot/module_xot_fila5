@@ -1,7 +1,4 @@
 ---
-qmd: "soketi"
-issues: []
-discussions: []
 title: 'Soketi — risorse esterne'
 module: Xot
 type: reference

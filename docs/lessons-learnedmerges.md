@@ -1,12 +1,4 @@
 ---
-title: "lessons learnedmerges"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "lessons learnedmerges"
-issues: []
-discussions: []
 module: theme
 topic: lessons-learnedmerges
 canonical: ../../../Themes/docs/shared-components/lessons-learnedmerge-conflicts.md

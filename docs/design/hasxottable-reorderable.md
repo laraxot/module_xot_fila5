@@ -1,12 +1,4 @@
 ---
-title: "hasxottable reorderable"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "hasxottable reorderable"
-issues: []
-discussions: []
 name: hasxottable-reorderable
 description: "HasXotTable Reorderable Design - DRY/KISS pattern for Filament table reordering"
 metadata:
