@@ -110,6 +110,25 @@ it('ha dei moduli da controllare', function (): void {
     expect(moduleRootHygieneModules())->not->toBe([]);
 });
 
+/*
+ * Regola 8. Il dataset sopra salta le cartelle senza `.git`, quindi da solo non vede una
+ * cartella spuria. Ogni cartella in Modules/ e' un modulo per nwidart, per il merge dei
+ * composer.json, per PHPStan (`paths: Modules/`) e per ogni `for m in Modules/*`: una
+ * `Modules/test/` creata da un test che chiamava UpdateModuleDocumentation con `'test'`
+ * finiva trattata come modulo (2026-09-29).
+ */
+it('in Modules ci sono solo moduli: ogni cartella ha module.json', function (): void {
+    $modulesDir = dirname(__DIR__, 3);
+    /** @var list<string> $dirs */
+    $dirs = glob($modulesDir.'/*', GLOB_ONLYDIR);
+    $strays = array_values(array_filter(
+        array_map('basename', $dirs),
+        static fn (string $name): bool => ! is_file($modulesDir.'/'.$name.'/module.json'),
+    ));
+
+    expect($strays)->toBe([], 'cartelle in Modules che non sono moduli: '.implode(', ', $strays));
+});
+
 it('root modulo senza cartelle con maiuscole', function (string $moduleDir): void {
     /** @var list<string> $dirs */
     $dirs = glob($moduleDir.'/*', GLOB_ONLYDIR);
