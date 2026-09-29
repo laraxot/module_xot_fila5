@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "critical resource model alignment"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "critical resource model alignment"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # CRITICAL: Filament Resource-Model Alignment Rules
 
 ## 🚨 ERRORE CRITICO IDENTIFICATO E RISOLTO

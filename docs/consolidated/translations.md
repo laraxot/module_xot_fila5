@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "translations"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "translations"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 ### Versione HEAD
 
 # Traduzioni
@@ -188,6 +202,17 @@ return [
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "translations"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "translations"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## Utilizzo
 
 ### In Filament Resources

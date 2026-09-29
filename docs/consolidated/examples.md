@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "examples"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "examples"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # 💡 **Esempi Modulo Xot**
 
 ## 📋 **Panoramica**
@@ -1117,4 +1131,15 @@ class ExampleRelationshipsTest extends XotBaseTestCase
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "examples"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "examples"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "semantic methods"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "semantic methods"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Filosofia dei Metodi Semantici
 
 ## Principio Fondamentale

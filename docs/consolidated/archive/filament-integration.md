@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "filament integration"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament integration"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Filament Integration in Laraxot
 
 ## Resource Implementation
@@ -72,3 +86,14 @@ public function getFormSchema(): array
 ### Versione Incoming
 
 ---
+<<<<<<< HEAD
+=======
+title: "filament integration"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament integration"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev

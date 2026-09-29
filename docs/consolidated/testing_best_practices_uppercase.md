@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Testing Best Practices - Laraxot Framework"
 module: "Xot"
 type: concept

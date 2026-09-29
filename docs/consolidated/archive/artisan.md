@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "artisan"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "artisan"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # artisan
 
 <!-- Contenuto migrato da _docs/artisan.txt -->

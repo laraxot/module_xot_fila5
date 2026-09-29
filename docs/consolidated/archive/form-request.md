@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "form request"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "form request"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # form_request
 
 <!-- Contenuto migrato da _docs/form_request.txt -->

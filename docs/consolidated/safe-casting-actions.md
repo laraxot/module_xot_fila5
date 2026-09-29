@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "safe casting actions"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "safe casting actions"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Safe Casting Actions - DRY & KISS Implementation
 
 ## Overview

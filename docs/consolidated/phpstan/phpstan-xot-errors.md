@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "phpstan xot errors"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan xot errors"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Errori PHPStan nel Modulo Xot
 
 ## Introduzione

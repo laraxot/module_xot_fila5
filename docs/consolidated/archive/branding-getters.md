@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "branding getters"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "branding getters"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Regole per Getter di Branding in Xot
 
 ## Regola Fondamentale
@@ -28,4 +42,15 @@ I metodi getter devono riflettere il "cosa" rappresenta il dato, non il "dove" v
 - Documentare la motivazione nelle pull request e nei file docs.
 
 ---
+<<<<<<< HEAD
+=======
+title: "branding getters"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "branding getters"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 **Ultima modifica:** 2025-05-06

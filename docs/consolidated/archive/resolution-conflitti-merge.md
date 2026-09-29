@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "resolution conflitti merge"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "resolution conflitti merge"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Risoluzione dei Conflitti di Merge nel Modulo Xot
 
 ## Problema

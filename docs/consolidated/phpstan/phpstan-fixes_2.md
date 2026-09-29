@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Correzioni PHPStan - Modulo Xot"
 module: "Xot"
 type: concept

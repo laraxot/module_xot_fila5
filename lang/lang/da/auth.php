@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 return [
     'failed' => 'Disse legitimationsoplysninger passer ikke vores optegnelser.',
     'general_error' => 'Du har ikke adgang til at udføre denne handling.',

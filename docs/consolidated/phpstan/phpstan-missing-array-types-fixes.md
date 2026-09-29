@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "phpstan missing array types fixes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan missing array types fixes"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # PHPStan Missing Array Types Fixes - Modulo Xot
 
 ## 🚨 REGOLA CRITICA RISPETTATA 🚨
@@ -258,6 +272,17 @@ Le correzioni implementate risolvono sistematicamente tutti gli errori `missingT
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "phpstan missing array types fixes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan missing array types fixes"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 **Data Implementazione**: Gennaio 2025
 **Errori Risolti**: 4 file critici completati
 **Errori Rimanenti**: ~40 file da completare

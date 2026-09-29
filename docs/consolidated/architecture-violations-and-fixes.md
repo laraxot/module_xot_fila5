@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "architecture violations and fixes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "architecture violations and fixes"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Violazioni Architetturali e Correzioni - Pattern XotData
 
 ## 🚨 **Violazioni Architetturali Critiche**
@@ -342,6 +356,17 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "architecture violations and fixes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "architecture violations and fixes"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 **Ultimo Aggiornamento**: Gennaio 2025
 **Stato**: ✅ Pattern Documentato e Implementato
 # Violazioni Architetturali e Correzioni - Pattern XotData

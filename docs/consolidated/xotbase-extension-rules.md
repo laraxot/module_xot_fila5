@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "xotbase extension rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xotbase extension rules"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # XotBase Extension Rules - Comprehensive Guide
 
 ## 🚨 Critical Architectural Rule
@@ -195,6 +209,17 @@ Always run `php artisan optimize:clear && ./vendor/bin/phpstan analyse` after ma
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "xotbase extension rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xotbase extension rules"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 *Last Updated: 2025-08-27*
 *Architecture Version: XotBase 2.0*
 # Regole di Estensione XotBase - Guida di Riferimento

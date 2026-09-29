@@ -26,6 +26,7 @@ Configurare le preferenze di laragon come in foto
 
 <img class="block m-auto" src="https://laraxot.github.io/module_xot_fila5/assets/img/laragon-config.png" alt="laragon config" />
 
+<<<<<<< HEAD
 <img class="block m-auto" src="https://laraxot.github.io/module_xot_fila3/assets/img/php-extentions.png" alt="php extentions" />
 
 Configurare le preferenze di laragon come in foto
@@ -33,6 +34,8 @@ Configurare le preferenze di laragon come in foto
 <img class="block m-auto" src="https://laraxot.github.io/module_xot_fila3/assets/img/laragon-config.png" alt="laragon config" />
 
 
+=======
+>>>>>>> laraxot/dev
 Creare una cartella _bases dentro la cartella www, in questa cartella si andrà a clonare il progetto.
 
 ### Clonare la base in locale nella cartella del server, scaricando i submodules, e senza la storia delle modifiche
@@ -136,7 +139,10 @@ se il branch di un modulo vuole essere pubblicato, eseguire nel modulo
 ```bash
 ../../../bascripts/git_init.sh nome_branch
 ```
+<<<<<<< HEAD
 ### Versione HEAD
+=======
+>>>>>>> laraxot/dev
 
 ## Collegamenti tra versioni di installation.md
 * [installation.md](../../../xot/project_docs/filament/installation.md)
@@ -146,7 +152,10 @@ se il branch di un modulo vuole essere pubblicato, eseguire nel modulo
 * [installation.md](../../../lang/project_docs/installation.md)
 * [installation.md](../../../cms/project_docs/installation.md)
 * [installation.md](../../../../themes/one/project_docs/installation.md)
+<<<<<<< HEAD
 
 ### Versione Incoming
 
 ---
+=======
+>>>>>>> laraxot/dev

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "collections"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "collections"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # collections
 
 <!-- Contenuto migrato da _docs/collections.txt -->

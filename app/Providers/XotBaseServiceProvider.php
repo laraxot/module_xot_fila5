@@ -13,6 +13,10 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\Blade\RegisterBladeComponentsAction;
 use Modules\Xot\Actions\File\GetComponentsAction;
+<<<<<<< HEAD
+=======
+use Modules\Xot\Actions\Livewire\RegisterLivewireComponentsAction;
+>>>>>>> laraxot/dev
 use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
 use Nwidart\Modules\Traits\PathNamespace;
 use Webmozart\Assert\Assert;
@@ -40,6 +44,10 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         $this->registerConfig();
         $this->registerViews();
         $this->loadMigrationsFrom($this->module_dir.'/../../database/migrations');
+<<<<<<< HEAD
+=======
+        $this->registerLivewireComponents();
+>>>>>>> laraxot/dev
         $this->registerBladeComponents();
         $this->registerCommands();
         $this->registerPublicAssets();
@@ -141,6 +149,16 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         }
     }
 
+<<<<<<< HEAD
+=======
+    public function registerLivewireComponents(): void
+    {
+        $prefix = '';
+        app(RegisterLivewireComponentsAction::class)
+            ->execute($this->module_dir.'/../Http/Livewire', Str::before($this->module_ns, '\Providers'), $prefix);
+    }
+
+>>>>>>> laraxot/dev
     public function registerCommands(): void
     {
         $prefix = '';

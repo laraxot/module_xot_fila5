@@ -1,4 +1,14 @@
 ---
+<<<<<<< HEAD
+=======
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "reattori"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: Reattori
 description: Reattori
 extends: _layouts.documentation

@@ -1,3 +1,21 @@
+<<<<<<< HEAD
+=======
+---
+title: "phpstan fixes 2025 01 06"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan fixes 2025 01 06"
+issues: []
+discussions: []
+name: phpstan-fixes-2025-01-06
+description: " Errori Risolti"
+metadata:
+  type: documentation
+---
+
+>>>>>>> laraxot/dev
 # Correzioni PHPStan - 6 Gennaio 2025
 
 ## Errori Risolti

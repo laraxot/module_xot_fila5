@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "phpstan solutions"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan solutions"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Soluzioni per Errori PHPStan di Livello 9
 
 Questo documento contiene soluzioni comuni per risolvere i vari tipi di errori rilevati da PHPStan a livello 9, con esempi pratici e best practices.
