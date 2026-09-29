@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "pdf stream download action"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "pdf stream download action"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # StreamDownloadPdfAction Documentation
 
 ## Overview

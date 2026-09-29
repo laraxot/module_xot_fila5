@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "ui"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "ui"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Analisi e Risoluzione Colli di Bottiglia - Modulo UI
 
 ## 1. Performance Re-render (Priorità: Alta)

@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "PHPStan Level 10 + DRY/KISS Complete Analysis - 2025-10-17"
 module: "Xot"
 type: concept

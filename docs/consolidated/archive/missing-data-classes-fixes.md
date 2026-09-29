@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "missing data classes fixes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "missing data classes fixes"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Correzione Classi Data Mancanti in Laraxot
 
 ## Analisi del Problema

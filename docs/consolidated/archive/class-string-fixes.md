@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "class string fixes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "class string fixes"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Class-String Return Type Fixes for Xot Module
 
 ## Method Return Type Issues

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "model states best practices"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "model states best practices"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Best Practices per Model States e Transizioni Custom
 
 ## Parametri aggiuntivi nelle transizioni custom

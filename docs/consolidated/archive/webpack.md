@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "webpack"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "webpack"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # webpack
 
 <!-- Contenuto migrato da _docs/webpack.txt -->

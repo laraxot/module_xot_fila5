@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "fix implementation plan"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "fix implementation plan"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # PHPStan Level 10 Fix Implementation Plan
 
 ## Overview

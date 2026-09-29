@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "xotbase quick reference"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xotbase quick reference"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # 🚀 XotBase Quick Reference
 
 ## ⚡ Immediate Action Required
@@ -57,4 +71,15 @@ namespace Modules\YourModule\App\Filament\Resources; // ❌ Wrong (contains App)
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "xotbase quick reference"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xotbase quick reference"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 *Keep this file visible during development!*

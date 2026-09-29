@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "brand way"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "brand way"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # La Via del Brand
 
 ## L'Essenza del Brand

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "sentiment analyzer"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "sentiment analyzer"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # sentiment-analyzer
 
 <!-- Contenuto migrato da _docs/sentiment-analyzer.txt -->

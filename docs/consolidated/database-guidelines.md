@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "database guidelines"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "database guidelines"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Linee Guida per i Database in Laraxot
 
 Questo documento definisce le best practices per la gestione dei database nel framework Laraxot, inclusa la documentazione, la creazione di modelli e le migrazioni.

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "phpstan configuration fixes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan configuration fixes"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # PHPStan Configuration Fixes - Modulo Xot
 
 ## Panoramica
@@ -199,6 +213,17 @@ La configurazione PHPStan implementata mantiene un alto livello di qualità del 
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "phpstan configuration fixes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan configuration fixes"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 **Ultimo Aggiornamento**: Gennaio 2025
 **PHPStan Version**: 1.10+
 **Laravel Version**: 10+

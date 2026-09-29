@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "property promotion"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "property promotion"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Da Proprietà a Metodi in Laravel 12
 
 ## Evoluzione del Pattern nei Modelli Eloquent

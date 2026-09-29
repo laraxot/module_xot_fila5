@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "mcp server recommended"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "mcp server recommended"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # MCP Server Consigliati per il Modulo Xot
 
 ## Scopo del Modulo

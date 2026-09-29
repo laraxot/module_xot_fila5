@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "themes structure"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "themes structure"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Struttura dei Temi
 
 ## Struttura Standard

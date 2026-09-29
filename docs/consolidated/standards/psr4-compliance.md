@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "psr4 compliance"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "psr4 compliance"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Conformità PSR-4 nel Progetto
 
 ## Introduzione

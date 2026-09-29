@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "phpstan livello10 linee guida"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan livello10 linee guida"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Linee Guida PHPStan Livello 10
 
 ## Introduzione

@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 return [
     'password' => 'La contraseña debe tener al menos seis caracteres y coincidir con la de su confirmación.',
     'reset' => 'Su contraseña se ha reiniciado!',

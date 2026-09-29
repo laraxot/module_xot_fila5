@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "dental"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "dental"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Analisi e Risoluzione Colli di Bottiglia - Modulo Dental
 
 ## 1. Odontogramma Performance (Priorità: Alta)

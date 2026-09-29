@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "pdf data"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "pdf data"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # PdfData
 
 La classe PdfData è un Data Object che gestisce la configurazione e i dati per la generazione di PDF nel modulo Xot.

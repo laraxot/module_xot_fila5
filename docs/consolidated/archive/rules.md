@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "rules"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 ## Regole di naming per le azioni
 
 - Le azioni che operano su una chiave specifica devono utilizzare la forma `By<Key>` (es. `UpdateRestiPondByValutatoreIdAction`).

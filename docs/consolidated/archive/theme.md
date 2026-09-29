@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "theme"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "theme"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 https://fly.io/laravel-bytes/filamentphp-adding-some-style/
 ### Versione HEAD
 
@@ -8,3 +22,14 @@ https://fly.io/laravel-bytes/filamentphp-adding-some-style/
 ### Versione Incoming
 
 ---
+<<<<<<< HEAD
+=======
+title: "theme"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "theme"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev

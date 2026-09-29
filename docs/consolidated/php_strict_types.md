@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "PHP Strict Types in Laravel Modules"
 module: "Xot"
 type: concept

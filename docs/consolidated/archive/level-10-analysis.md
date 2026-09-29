@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "level 10 analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "level 10 analysis"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # PHPStan Level 10 Analysis - 2025-03-11
 
 ## Overview

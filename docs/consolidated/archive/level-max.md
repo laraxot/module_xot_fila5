@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "level max"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "level max"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Rapporto PHPStan Livello max per il modulo Xot
 
 Data analisi: 2025-04-15 21:56:24

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "getter philosophy"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "getter philosophy"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Filosofia dei Metodi Getter in Xot
 
 ## Principi Fondamentali

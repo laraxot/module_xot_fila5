@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "model base rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "model base rules"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Regole di Estensione dei Modelli Laraxot
 
 ## Regola Fondamentale di Ereditarietà

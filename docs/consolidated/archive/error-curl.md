@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "error curl"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "error curl"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 Download the latest cacert.pem file from
 https://curl.se/project_docs/caextract.html
 

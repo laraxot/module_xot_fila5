@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "prompt docs improvements"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "prompt docs improvements"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Miglioramenti al Prompt docs.txt
 
 > **Collegamenti correlati**

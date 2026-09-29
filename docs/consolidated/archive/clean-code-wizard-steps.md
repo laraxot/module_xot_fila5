@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "clean code wizard steps"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "clean code wizard steps"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Clean Code: Wizard Steps come Funzioni dedicate
 
 ## Regola

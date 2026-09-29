@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "legacy roadmap and issues"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "legacy roadmap and issues"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Xot Module - Roadmap, Issues & Optimization
 
 **Modulo**: Xot (Core Framework Base)
@@ -7,6 +21,17 @@
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "legacy roadmap and issues"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "legacy roadmap and issues"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## 📊 STATO ATTUALE
 
 ### Completezza Funzionale: 95%
@@ -204,7 +229,11 @@ catch (CannotRegisterIconSet $e) {
 ---
 
 ### 2. Helper Functions - No Caching
+<<<<<<< HEAD
 **File**: `helpers/Helper.php`
+=======
+**File**: `Helpers/Helper.php`
+>>>>>>> laraxot/dev
 
 **Problema**: Chiamate ripetute senza caching
 

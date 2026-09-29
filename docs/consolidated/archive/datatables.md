@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "datatables"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "datatables"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # datatables
 
 <!-- Contenuto migrato da _docs/datatables.txt -->

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "directory case sensitivity"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "directory case sensitivity"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Case Sensitivity e Struttura Corretta delle Directory nei Moduli Laravel
 
 ## Problemi Identificati

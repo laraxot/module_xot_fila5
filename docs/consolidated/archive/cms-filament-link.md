@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "cms filament link"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "cms filament link"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Collegamento Bidirezionale: Regole Filament e Namespace (Cms)
 
 Le regole generali per Filament, namespace e traduzioni sono definite in:
@@ -8,6 +22,17 @@ Le convenzioni specifiche per Filament e frontend sono dettagliate in:
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "cms filament link"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "cms filament link"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## Regole preview custom Filament
 - Per anteprima custom in Filament usare sempre `ViewEntry`, **mai** `CustomEntry` (che non esiste in Filament 3.x).
 - La documentazione aggiornata è in [Cms/project_docs/convenzioni-namespace-filament.md](../laravel/Modules/Cms/project_docs/convenzioni-namespace-filament.md)
