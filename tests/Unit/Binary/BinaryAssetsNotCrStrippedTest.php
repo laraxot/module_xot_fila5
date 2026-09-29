@@ -32,7 +32,6 @@ use function Safe\fread;
 #[Group('binary')]
 final class BinaryAssetsNotCrStrippedTest extends TestCase
 {
-<<<<<<< .merge_file_Mgqljv
     private static function pngSignature(): string
     {
         return "\x89PNG\r\n\x1a\n";
@@ -70,38 +69,6 @@ final class BinaryAssetsNotCrStrippedTest extends TestCase
             'sqlite',
         ];
     }
-=======
-    private const PNG_SIGNATURE = "\x89PNG\r\n\x1a\n";
-
-    private const PNG_LEAD = "\x89PNG";
-
-    /**
-     * Estensioni che `laravel/.gitattributes` dichiara binarie: nessun filtro deve toccarle.
-     *
-     * @var list<string>
-     */
-    private const BINARY_EXTENSIONS = [
-        'png',
-        'jpg',
-        'jpeg',
-        'gif',
-        'webp',
-        'ico',
-        'svg',
-        'psd',
-        'pdf',
-        'zip',
-        'woff',
-        'woff2',
-        'ttf',
-        'eot',
-        'otf',
-        'mp4',
-        'phar',
-        'db',
-        'sqlite',
-    ];
->>>>>>> .merge_file_V6Fsdi
 
     public function test_png_signature_on_disk(): void
     {
@@ -124,20 +91,12 @@ final class BinaryAssetsNotCrStrippedTest extends TestCase
             $checked++;
 
             // Solo i file che dichiarano di essere PNG: gli 8 byte devono includere il CR.
-<<<<<<< .merge_file_Mgqljv
             if (! str_starts_with($head, self::pngLead())) {
-=======
-            if (! str_starts_with($head, self::PNG_LEAD)) {
->>>>>>> .merge_file_V6Fsdi
                 continue;
             }
 
             Assert::assertSame(
-<<<<<<< .merge_file_Mgqljv
                 self::pngSignature(),
-=======
-                self::PNG_SIGNATURE,
->>>>>>> .merge_file_V6Fsdi
                 $head,
                 $file.': firma PNG senza CR (89504e470a1a0a) — il file non e decodificabile dai browser'
             );
@@ -208,20 +167,12 @@ final class BinaryAssetsNotCrStrippedTest extends TestCase
 
         foreach ($contents as $sha => $content) {
             $path = $shaToPath[$sha] ?? '?';
-<<<<<<< .merge_file_Mgqljv
             if (! str_starts_with($content, self::pngLead())) {
-=======
-            if (! str_starts_with($content, self::PNG_LEAD)) {
->>>>>>> .merge_file_V6Fsdi
                 continue;
             }
 
             Assert::assertSame(
-<<<<<<< .merge_file_Mgqljv
                 self::pngSignature(),
-=======
-                self::PNG_SIGNATURE,
->>>>>>> .merge_file_V6Fsdi
                 substr($content, 0, 8),
                 $path.': il blob committato ha la firma PNG senza CR — clone e deploy servono un PNG rotto'
             );
@@ -259,11 +210,7 @@ final class BinaryAssetsNotCrStrippedTest extends TestCase
     private function trackedBinaryFiles(string $repo): array
     {
         $args = ['git', 'ls-files', '-z', '--'];
-<<<<<<< .merge_file_Mgqljv
         foreach (self::binaryExtensions() as $extension) {
-=======
-        foreach (self::BINARY_EXTENSIONS as $extension) {
->>>>>>> .merge_file_V6Fsdi
             $args[] = 'laravel/**/*.'.$extension;
         }
 
@@ -373,3 +320,4 @@ final class BinaryAssetsNotCrStrippedTest extends TestCase
         return $head;
     }
 }
+
