@@ -9,12 +9,7 @@ namespace Modules\Xot\Filament\Widgets;
  */
 class TestWidget extends XotBaseWidget
 {
-<<<<<<< .merge_file_TcxFpX
     protected string $view = 'xot::filament.widgets.base';
-=======
-    /** @var view-string */
-    protected string $view = 'xot::filament.widgets.test';
->>>>>>> .merge_file_RoNrTv
 
     protected int|string|array $columnSpan = 'full';
 
@@ -26,3 +21,4 @@ class TestWidget extends XotBaseWidget
         return true;
     }
 }
+
