@@ -1,7 +1,8 @@
 ---
 title: "Campagna prompt: esegui su tutti i moduli e temi, poi migliora i 78 prompt"
 type: story
-status: in-progress
+status: superseded
+superseded_by: ./5.258-prompts-execute-improve.story.md
 owner_module: Xot
 created: 2026-09-30
 agent: claude-code (PID 124849)
@@ -12,6 +13,8 @@ related:
 ---
 
 # Campagna prompt: esegui su tutti i moduli e temi, poi migliora
+
+> **SUPERSEDED** da [5.258](./5.258-prompts-execute-improve.story.md): stessa richiesta utente ricevuta da due sessioni. Questa sessione (base-trade-fila5-43) lavora dentro 5.258 come gruppi G12 (temi) e G13 (matrice sola lettura su tutti i moduli).
 
 ## Richiesta utente
 
