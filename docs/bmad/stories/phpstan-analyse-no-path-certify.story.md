@@ -1,4 +1,11 @@
 ---
+<<<<<<< HEAD
+=======
+tags: [documentation]
+created: 2026-09-26
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "PHPStan analyse (certify no-path) — fix swarm parallelo"
 type: story
 module: Xot

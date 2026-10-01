@@ -10,7 +10,11 @@ return [
             'name' => 'Sistema',
             'description' => 'Gestione delle funzionalità aggiuntive del sistema',
         ],
+<<<<<<< HEAD
         'label' => 'extra',
+=======
+        'label' => 'Extra',
+>>>>>>> laraxot/dev
         'sort' => '13',
         'icon' => 'xot-extra',
     ],

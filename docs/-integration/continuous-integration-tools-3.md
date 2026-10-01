@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "continuous integration tools 3"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "continuous integration tools 3"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # _continuous_integration_tools
 
 <!-- Contenuto migrato da _docs/_continuous_integration_tools.txt -->

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "pivot 2"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "pivot 2"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # _pivot
 
 <!-- Contenuto migrato da _docs/_pivot.txt -->

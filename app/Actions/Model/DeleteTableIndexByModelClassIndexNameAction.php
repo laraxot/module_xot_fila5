@@ -17,10 +17,20 @@ class DeleteTableIndexByModelClassIndexNameAction
         Assert::isInstanceOf($model = app($modelClass), EloquentModel::class);
         $table = $model->getTable();
         Assert::stringNotEmpty($table);
+<<<<<<< HEAD
         $formManager = app(GetSchemaManagerByModelClassAction::class)->execute($modelClass);
         $doctrineTable = $formManager->introspectTableByUnquotedName($table);
         // $doctrineTable=$formManager->listTableDetails($table);
         $doctrineTable->dropIndex($indexName);
+=======
+        Assert::stringNotEmpty($indexName);
+        $formManager = app(GetSchemaManagerByModelClassAction::class)->execute($modelClass);
+        $doctrineTable = $formManager->introspectTableByUnquotedName($table);
+        // $doctrineTable=$formManager->listTableDetails($table);
+        // DBAL 4.5: Table::dropIndex() e' deprecato, si passa da edit()/TableEditor.
+        // Come prima, la modifica resta sul Table introspezionato: nessun ALTER TABLE.
+        $doctrineTable->edit()->dropIndexByUnquotedName($indexName)->create();
+>>>>>>> laraxot/dev
 
         // ALTER TABLE `roles` DROP INDEX `roles_name_guard_name_unique`;
         // dddx(['res'=>$res,'doctrineTable'=>$doctrineTable,'indexName'=>$indexName]);

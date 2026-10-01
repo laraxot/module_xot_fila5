@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "PHPStan Modules Fix 2026-05-05"
 type: troubleshooting
 sources: ["phpstan-full.txt"]
@@ -60,3 +61,20 @@ Esecuzione di `php vendor/bin/phpstan analyse Modules --level=5` ha rilevato **2
 - [phpstan-cluster-map-and-false-friends](concepts/phpstan-cluster-map-and-false-friends.md)
 - [safe-functions-rule](../../../../docs/wiki/concepts/safe-functions-rule.md)
 - [phpstan-level10](concepts/phpstan-level10.md)
+=======
+title: "Phpstan Modules Fix"
+type: concept
+status: deprecated
+module: "Xot"
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "deprecated phpstan-modules-fix"
+related:
+  - "./phpstan-modules-fix.md"
+---
+# Phpstan Modules Fix
+
+> Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
+
+Vedi il file canonico: [phpstan-modules-fix.md](./phpstan-modules-fix.md)
+>>>>>>> laraxot/dev

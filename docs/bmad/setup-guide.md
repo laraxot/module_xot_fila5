@@ -23,6 +23,7 @@ In questo modulo, BMAD serve a:
 
 ## Struttura Directory (Canonical)
 
+<<<<<<< HEAD
 - **`_bmad/`**: moduli/agent/skills + configurazione
 - **`_bmad-output/`**: artefatti generati (contesto, prd, architettura, ui spec, ecc.)
 - **`docs/bmad/`**: questa documentazione
@@ -31,13 +32,28 @@ In questo modulo, BMAD serve a:
 
 - **`_bmad/config.yaml`**: lingua output documenti + cartella output
 - **`_bmad/config.user.yaml`**: preferenze utente (lingua comunicazione, nome)
+=======
+- **`docs/bmad/`**: questa documentazione
+- **`_bmad-output/`**: artefatti generati (repo root: `_bmad-output/implementation-artifacts/`)
+- **`_bmad/`**: framework BMAD esterno (non incluso nel repo; installato via BMAD CLI)
+
+## Configurazione Lingua e Output
+
+- **`_bmad/config.yaml`**: lingua output documenti + cartella output (esterno al repo)
+- **`_bmad/config.user.yaml`**: preferenze utente (lingua comunicazione, nome) (esterno al repo)
+>>>>>>> laraxot/dev
 
 ## Verifica Minima ("Funziona")
 
 La verifica pratica è: gli artefatti vanno dove devono andare, e le skill risultano invocabili.
 
+<<<<<<< HEAD
 - **skills disponibili**: cartella `_bmad/` presente e popolata
 - **output**: la cartella `_bmad-output/` contiene almeno `project-context.md`
+=======
+- **skills disponibili**: BMAD CLI installato e configurato (`_bmad/` esterno al repo)
+- **output**: la cartella `_bmad-output/` (repo root) contiene `implementation-artifacts/`
+>>>>>>> laraxot/dev
 - **lingua**: le config utente/progetto non si resettano dopo update
 
 ## Check Post-Update (Anti-Regressione)
@@ -57,7 +73,10 @@ Dopo un update, ricontrollare che non si sia "spaccata" la coerenza tra moduli:
 ## Vedi Anche
 
 - [quick-reference](quick-reference.md)
+<<<<<<< HEAD
 - [Project Context](../../_bmad-output/project-context.md)
+=======
+>>>>>>> laraxot/dev
 
 ---
 
