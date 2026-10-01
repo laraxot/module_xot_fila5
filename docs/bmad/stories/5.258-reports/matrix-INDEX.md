@@ -46,9 +46,33 @@ Un modulo salta il gruppo che lo ha già in carico con correzioni.
   BLOCKED-ENV e si continua con i controlli statici.
 - Ogni comando pesante passa da `bashscripts/tools/heavy-slot.sh <comando>` (massimo 4
   contemporanei sulla macchina, `HEAVY_SLOTS=4`).
+- Sintassi verificata dalla sessione coordinatrice (2026-10-01), da `laravel/`, con
+  `S=../bashscripts/tools/heavy-slot.sh`:
+
+  ```bash
+  $S ./vendor/bin/phpstan analyse Modules/<Mod> --no-progress --memory-limit=-1
+  HEAVY_SLOTS=1 HEAVY_SLOT_DIR=/tmp/heavy-slots-pest $S ./vendor/bin/pest \
+    --test-directory=Modules/<Mod>/tests Modules/<Mod>/tests --no-coverage
+  ./tools/phpmd.sh Modules/<Mod>
+  $S ./tools/phpinsights.sh Modules/<Mod> --format=console --summary
+  ```
+
+- Pest: un solo processo alla volta su tutta la macchina, perché il file sqlite di test è
+  condiviso. Senza `--test-directory` Pest non carica il `Pest.php` del modulo e fallisce con
+  "A facade root has not been set".
 
 ## Formato di ogni report
 
 Una riga per prompt eseguito: prompt, controllo, comando, esito (PASS, FAIL, N-A,
 BLOCKED-ENV), evidenza breve, difetto del prompt emerso. In fondo, la sezione "Difetti dei
 prompt" raggruppa i problemi per prompt, perché i gruppi la leggono durante il miglioramento.
+
+## Ripresa dopo il limite d'uso (2026-10-01 11:00)
+
+- Report completi: AI, Gdpr, Media, Trade, UI. Restano: Xot, User, Tenant, Notify, Job,
+  Activity, Lang, Cms, Seo.
+- Tetto concordato tra le sessioni: al massimo 2 subagent contemporanei per sessione.
+- PHPStan non si rilancia per modulo: i risultati completi di `analyse Modules` sono in
+  `/tmp/5259/phpstan-all.json` (config del progetto, 6.949 errori) e
+  `/tmp/5259/phpstan-larastan.json` (stessa config + larastan, 2.573 errori). Per modulo si
+  riportano entrambi i conteggi. Si eseguono solo Pest (slot dedicato), phpmd e phpinsights.
