@@ -1,12 +1,3 @@
-<<<<<<< HEAD
----
-module: theme
-topic: legacy-roadmap-ands
-canonical: ../../../../../Themes/docs/shared-components/legacy-roadmap-and-issues.md
----
-
-See canonical documentation: ../../../../../Themes/docs/shared-components/legacy-roadmap-and-issues.md
-=======
 # Xot Module - Roadmap, Issues & Optimization
 
 **Modulo**: Xot (Core Framework Base)
@@ -343,4 +334,3 @@ function xot_config(string $key): mixed
 **Priorità**: 🔴 CRITICA (Core Framework)
 **Timeline**: 2 Ottobre 2025 (domani)
 **Effort**: ~2 ore → 100% CLEAN
->>>>>>> laraxot/dev

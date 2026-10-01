@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-
-=======
->>>>>>> laraxot/dev
 return [
     'failed' => 'Las credenciales no se han encontrado.',
     'general_error' => 'No tiene suficientes permisos..',

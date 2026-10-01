@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpmd analysis summary"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Riepilogo Analisi PHPMD - Tutti i Moduli
 
 **Data**: 2025-12-23
