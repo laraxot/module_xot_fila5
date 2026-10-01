@@ -11,7 +11,6 @@ use ReflectionClass;
 use ReflectionMethod;
 use ReflectionNamedType;
 use SplFileInfo;
-use Webmozart\Assert\Assert as WebmozartAssert;
 
 use function Safe\posix_kill;
 use function Safe\preg_match;
