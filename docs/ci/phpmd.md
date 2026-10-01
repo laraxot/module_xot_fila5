@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 ---
 title: "phpmd"
 type: note
@@ -9,4 +11,5 @@ issues: []
 discussions: []
 ---
 
+>>>>>>> laraxot/dev
 [phpmd](https://phpmd.org/)

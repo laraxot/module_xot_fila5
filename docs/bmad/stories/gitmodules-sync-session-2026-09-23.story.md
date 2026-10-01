@@ -1,8 +1,11 @@
 ---
+<<<<<<< HEAD
+=======
 tags: [documentation]
 qmd: "gitmodules sync session 2026 09 23.story"
 issues: []
 discussions: []
+>>>>>>> laraxot/dev
 title: "Sync manuale sottomoduli da gitmodules.ini — sessione 2026-09-23"
 type: story
 module: Xot

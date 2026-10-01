@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 ---
 title: "coverage 100 execution notes"
 type: note
@@ -9,6 +11,7 @@ issues: []
 discussions: []
 ---
 
+>>>>>>> laraxot/dev
 # Coverage 100 - Execution Notes
 
 Updated: 2026-03-04

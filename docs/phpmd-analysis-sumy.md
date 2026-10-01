@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 ---
 title: "phpmd analysis sumy"
 type: note
@@ -9,6 +11,7 @@ issues: []
 discussions: []
 ---
 
+>>>>>>> laraxot/dev
 # Riepilogo Analisi PHPMD - Tutti i Moduli
 
 **Strumento**: PHPMD (PHP Mess Detector)

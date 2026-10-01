@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+
+=======
+>>>>>>> laraxot/dev
 return [
     'failed' => 'Αυτά τα διαπιστευτήρια δεν ταιριάζουν με τα αρχεία μας.',
     'general_error' => 'Δεν έχετε πρόσβαση σε αυτό.',

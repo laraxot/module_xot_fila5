@@ -5,7 +5,11 @@ declare(strict_types=1);
 return [
     'actions' => [
         'copy_from_last_year' => [
+<<<<<<< HEAD
+            'label' => 'copy_from_last_year',
+=======
             'label' => "Copia dall'anno precedente",
+>>>>>>> laraxot/dev
         ],
     ],
     'label' => 'Copy From Last Year Button',

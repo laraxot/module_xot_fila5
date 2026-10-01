@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 ---
 title: "xotbaseresource violations fixes january 2026"
 type: note
@@ -9,6 +11,7 @@ issues: []
 discussions: []
 ---
 
+>>>>>>> laraxot/dev
 # Correzioni Violazioni XotBaseResource - Gennaio 2026
 
 ## Problema Identificato
@@ -156,6 +159,8 @@ Tutte le modifiche sono state verificate con successo utilizzando:
 
 ---
 
+<<<<<<< HEAD
+=======
 title: "xotbaseresource violations fixes january 2026"
 type: note
 tags: [documentation]
@@ -164,6 +169,7 @@ updated: 2026-09-26
 qmd: "xotbaseresource violations fixes january 2026"
 issues: []
 discussions: []
+>>>>>>> laraxot/dev
 **Data Intervento**: Gennaio 2026  
 **Conforme a**: DRY, KISS, Filosofia Laraxot  
 **PHPStan Level**: 10 ✅

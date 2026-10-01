@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 ---
 title: "php strict types 1"
 type: note
@@ -9,6 +11,7 @@ issues: []
 discussions: []
 ---
 
+>>>>>>> laraxot/dev
 # PHP Strict Types in Laravel Modules
 
 ## Overview

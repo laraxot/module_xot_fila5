@@ -9,8 +9,13 @@ return [
         'group' => [
             'name' => 'Admin',
         ],
+<<<<<<< HEAD
+        'label' => 'session.navigation',
+        'icon' => 'session.navigation',
+=======
         'label' => 'Sessione',
         'icon' => 'heroicon-o-user',
+>>>>>>> laraxot/dev
         'sort' => 21,
     ],
     'pages' => [

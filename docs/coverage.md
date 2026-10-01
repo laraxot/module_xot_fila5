@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 ---
 title: "coverage"
 type: note
@@ -9,6 +11,7 @@ issues: []
 discussions: []
 ---
 
+>>>>>>> laraxot/dev
 # Xot Module Test Coverage
 
 ## Overview

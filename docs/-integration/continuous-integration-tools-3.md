@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 ---
 title: "continuous integration tools 3"
 type: note
@@ -9,6 +11,7 @@ issues: []
 discussions: []
 ---
 
+>>>>>>> laraxot/dev
 # _continuous_integration_tools
 
 <!-- Contenuto migrato da _docs/_continuous_integration_tools.txt -->
