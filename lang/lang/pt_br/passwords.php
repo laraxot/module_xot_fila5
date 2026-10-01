@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-
-=======
->>>>>>> laraxot/dev
 return [
     'password' => 'A senha deverá conter pelo menos seis carateres e ser igual à confirmação.',
     'reset' => 'Sua senha foi redefinida!',

@@ -5,11 +5,7 @@ declare(strict_types=1);
 return [
     'fields' => [
         'pdf' => [
-<<<<<<< HEAD
-            'label' => 'pdf',
-=======
             'label' => 'PDF',
->>>>>>> laraxot/dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
