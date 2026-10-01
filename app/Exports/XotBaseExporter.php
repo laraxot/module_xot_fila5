@@ -41,10 +41,10 @@ use OpenSpout\Common\Entity\Style\Style;
  * (PhpSpreadsheet, `DefaultValueBinder`) lo scrive come numero: `makeXlsxRow()`
  * applica lo stesso binder, cosi' i due file hanno gli stessi tipi di cella.
  *
-     * Eager load: `ratings_by_id` (HasRatingsTrait) legge `ratings` + `ratingMorphs`;
-     * `xls_export_value` risolve anche `ratings.children` (padre Select → txt figlio).
-     * `modifyQuery()` li carica se il model li ha, altrimenti il job chunked farebbe
-     * N query per riga. Stessa regola in `ExportXlsAction` (che la chiama).
+ * Eager load: `ratings_by_id` (HasRatingsTrait) legge `ratings` + `ratingMorphs`;
+ * `xls_export_value` risolve anche `ratings.children` (padre Select → txt figlio).
+ * `modifyQuery()` li carica se il model li ha, altrimenti il job chunked farebbe
+ * N query per riga. Stessa regola in `ExportXlsAction` (che la chiama).
  *
  * CSV intermedio: i job Filament usano League\Csv con escape `\` (default PHP):
  * un valore che finisce con `\` chiude il campo con `\"` e il reader lo legge
