@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 declare(strict_types=1);
 /**
  * Xot Seeder Helper Functions.
@@ -10,6 +14,11 @@ declare(strict_types=1);
  * The functions ensure that models are only seeded once
  */
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Cache;

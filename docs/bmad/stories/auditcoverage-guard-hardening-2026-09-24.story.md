@@ -1,4 +1,12 @@
 ---
+<<<<<<< HEAD
+=======
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Story — guardia AuditCoverage: upstream, harness Xot, canon contraddittorio (2026-09-24)"
 type: story
 module: Xot

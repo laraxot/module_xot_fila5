@@ -1,7 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 return [
     'failed' => 'Estas credenciais não correspondem com nossos registros.',
     'general_error' => 'Você não tem acesso para fazer isso.',

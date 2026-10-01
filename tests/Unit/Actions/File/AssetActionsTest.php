@@ -15,7 +15,15 @@ use ReflectionMethod;
 use function Safe\chmod;
 use function Safe\file_get_contents;
 use function Safe\file_put_contents;
+<<<<<<< HEAD
 use function Safe\mkdir;
+=======
+use function Safe\fileinode;
+use function Safe\filemtime;
+use function Safe\glob;
+use function Safe\mkdir;
+use function Safe\touch;
+>>>>>>> laraxot/dev
 use function Safe\unlink;
 
 uses(TestCase::class);
@@ -128,6 +136,69 @@ it('skips force-copy when destination exists but is not writable', function (): 
     }
 });
 
+<<<<<<< HEAD
+=======
+/*
+ * Outside production every request force-copies the asset (story 5.180). A plain copy()
+ * truncates the public file before writing it: a browser fetching the logo in that
+ * window gets an empty PNG (measured 2026-09-29: 11787 truncated reads out of 20000
+ * with 4 concurrent writers, 0 with temp file + rename).
+ */
+it('does not rewrite an up-to-date destination on force-copy', function (): void {
+    $from = sys_get_temp_dir().'/xot_asset_from_'.uniqid('', true).'.bin';
+    $to = sys_get_temp_dir().'/xot_asset_to_'.uniqid('', true).'.bin';
+    file_put_contents($from, 'same-bytes');
+    file_put_contents($to, 'same-bytes');
+    $publishedAt = time() - 100;
+    touch($from, $publishedAt - 100);
+    touch($to, $publishedAt);
+    clearstatcache();
+
+    try {
+        $action = app(AssetAction::class);
+        $method = new ReflectionMethod(AssetAction::class, 'copyAsset');
+        $method->invoke($action, $from, $to, 'assets/demo/logo.png', true);
+
+        clearstatcache();
+        Assert::assertSame($publishedAt, filemtime($to), 'an identical destination must not be rewritten');
+    } finally {
+        foreach ([$from, $to] as $file) {
+            if (is_file($file)) {
+                unlink($file);
+            }
+        }
+    }
+});
+
+it('replaces a stale destination atomically, never truncating it in place', function (): void {
+    $from = sys_get_temp_dir().'/xot_asset_from_'.uniqid('', true).'.bin';
+    $to = sys_get_temp_dir().'/xot_asset_to_'.uniqid('', true).'.bin';
+    file_put_contents($from, 'new-logo-bytes');
+    file_put_contents($to, 'old');
+    touch($to, time() - 200);
+    touch($from, time() - 100);
+    clearstatcache();
+    $inodeBefore = fileinode($to);
+
+    try {
+        $action = app(AssetAction::class);
+        $method = new ReflectionMethod(AssetAction::class, 'copyAsset');
+        $method->invoke($action, $from, $to, 'assets/demo/logo.png', true);
+
+        clearstatcache();
+        Assert::assertSame('new-logo-bytes', file_get_contents($to));
+        Assert::assertNotSame($inodeBefore, fileinode($to), 'the destination must be swapped by rename(), not rewritten in place');
+        Assert::assertSame([], glob($to.'.*.tmp'), 'no temporary file may be left behind');
+    } finally {
+        foreach ([$from, $to] as $file) {
+            if (is_file($file)) {
+                unlink($file);
+            }
+        }
+    }
+});
+
+>>>>>>> laraxot/dev
 it('calculates asset path correctly in AssetPathAction', function (): void {
     Module::partialMock()
         ->shouldReceive('getModulePath')

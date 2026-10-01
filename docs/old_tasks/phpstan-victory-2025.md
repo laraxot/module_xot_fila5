@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🏆 PHPStan Perfection Achievement - Gennaio 2025
 
 ## 🎊 RISULTATO FINALE: 0 ERRORI
@@ -271,3 +272,21 @@ cd laravel
 **Achievement**: 👑 PHPStan Perfection (19,337→0)
 **Stato**: ✅ PERFEZIONE ASSOLUTA
 **Hall of Fame**: 🥇 LEGENDARY MASTER
+=======
+---
+title: "Phpstan Victory"
+type: concept
+status: deprecated
+module: "Xot"
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "deprecated phpstan-victory"
+related:
+  - "./phpstan-victory.md"
+---
+# Phpstan Victory
+
+> Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
+
+Vedi il file canonico: [phpstan-victory.md](./phpstan-victory.md)
+>>>>>>> laraxot/dev

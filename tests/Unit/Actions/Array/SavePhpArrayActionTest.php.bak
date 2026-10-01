@@ -8,6 +8,9 @@ use Modules\Xot\Actions\Array\SavePhpArrayAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
 use function Safe\glob;
 use function Safe\mkdir;
@@ -45,6 +48,7 @@ describe('Save Php Array Action', function () use (&$arrayTestTempDir): void {
     test('saves array to php', function () use (&$arrayTestTempDir): void {
         Assert::assertIsString($arrayTestTempDir);
         $path = $arrayTestTempDir.'/d.php';
+<<<<<<< HEAD
 =======
 
 use function Safe\glob;
@@ -85,11 +89,16 @@ describe('Save Php Array Action', function (): void {
         $path = $this->tempDir.'/d.php';
 >>>>>>> 64619e34 (.)
 =======
+=======
+>>>>>>> laraxot/dev
 describe('Save Php Array Action', function () use (&$arrayTestTempDir): void {
     test('saves array to php', function () use (&$arrayTestTempDir): void {
         Assert::assertIsString($arrayTestTempDir);
         $path = $arrayTestTempDir.'/d.php';
+<<<<<<< HEAD
 >>>>>>> 61938ca4 (delete .claude-audit/)
+=======
+>>>>>>> laraxot/dev
         $data = ['a' => 1];
         $result = app(SavePhpArrayAction::class)->execute($data, $path);
         Assert::assertTrue($result);

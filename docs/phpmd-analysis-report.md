@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "phpmd analysis report"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpmd analysis report"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # PHPMD Analysis Report & Refactoring Plan - Xot Module
 
 **Date:** 2026-01-05

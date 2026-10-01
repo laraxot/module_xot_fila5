@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "laraxot architectural memories 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "laraxot architectural memories 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Laraxot Architectural Memories - February 2026
 
 Critical architectural discoveries and best practices compiled during the Footer Refinement and Theme Integration phase.

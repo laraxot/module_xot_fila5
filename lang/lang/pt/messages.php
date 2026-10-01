@@ -1,7 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 return [
     'title' => 'Instalador Laravel',
     'next' => 'Próximo Passo',
