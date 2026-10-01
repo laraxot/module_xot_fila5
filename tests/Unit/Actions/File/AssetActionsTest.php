@@ -15,11 +15,15 @@ use ReflectionMethod;
 use function Safe\chmod;
 use function Safe\file_get_contents;
 use function Safe\file_put_contents;
+<<<<<<< HEAD
+use function Safe\mkdir;
+=======
 use function Safe\fileinode;
 use function Safe\filemtime;
 use function Safe\glob;
 use function Safe\mkdir;
 use function Safe\touch;
+>>>>>>> laraxot/dev
 use function Safe\unlink;
 
 uses(TestCase::class);
@@ -132,6 +136,8 @@ it('skips force-copy when destination exists but is not writable', function (): 
     }
 });
 
+<<<<<<< HEAD
+=======
 /*
  * Outside production every request force-copies the asset (story 5.180). A plain copy()
  * truncates the public file before writing it: a browser fetching the logo in that
@@ -192,6 +198,7 @@ it('replaces a stale destination atomically, never truncating it in place', func
     }
 });
 
+>>>>>>> laraxot/dev
 it('calculates asset path correctly in AssetPathAction', function (): void {
     Module::partialMock()
         ->shouldReceive('getModulePath')

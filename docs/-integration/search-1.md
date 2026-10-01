@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 ---
 title: "search 1"
 type: note
@@ -9,6 +11,7 @@ issues: []
 discussions: []
 ---
 
+>>>>>>> laraxot/dev
 # _search
 
 <!-- Contenuto migrato da _docs/_search.txt -->

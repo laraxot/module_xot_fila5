@@ -9,11 +9,16 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Modules\Xot\Datas\XotData;
 use Spatie\QueueableAction\QueueableAction as QueueableActionTrait;
+<<<<<<< HEAD
+use Webmozart\Assert\Assert;
+
+=======
 use Throwable;
 use Webmozart\Assert\Assert;
 
 use function Safe\getmypid;
 
+>>>>>>> laraxot/dev
 class AssetAction
 {
     use QueueableActionTrait;
@@ -134,9 +139,12 @@ class AssetAction
      * written by another user, copy fails and MetatagData must not fall back
      * to asset('module::img/x.png') (404). If the dest already exists and is
      * readable, serve it instead. Story Xot/5.180.
+<<<<<<< HEAD
+=======
      *
      * Forced does not mean blind: an up-to-date dest is left alone, and a stale
      * one is swapped atomically. See copyAtomically().
+>>>>>>> laraxot/dev
      */
     private function copyAsset(string $from, string $to, string $path, bool $force = false): void
     {
@@ -150,6 +158,13 @@ class AssetAction
             return;
         }
 
+<<<<<<< HEAD
+        $this->ensureDirectoryExists(\dirname($to));
+
+        try {
+            $copied = File::copy($from, $to);
+        } catch (\Throwable $e) {
+=======
         if ($destinationExists && $this->isUpToDate($from, $to)) {
             return;
         }
@@ -159,6 +174,7 @@ class AssetAction
         try {
             $copied = $this->copyAtomically($from, $to);
         } catch (Throwable $e) {
+>>>>>>> laraxot/dev
             $this->handleCopyFailure($e, $path, $from, $to);
 
             return;
@@ -177,6 +193,12 @@ class AssetAction
     }
 
     /**
+<<<<<<< HEAD
+     * If the public dest is already readable, keep serving it.
+     * Otherwise rethrow so the caller can fail loudly.
+     */
+    private function handleCopyFailure(\Throwable $e, string $path, string $from, string $to): void
+=======
      * Same size and a dest not older than the source: nothing to refresh.
      */
     private function isUpToDate(string $source, string $destination): bool
@@ -212,6 +234,7 @@ class AssetAction
      * Otherwise rethrow so the caller can fail loudly.
      */
     private function handleCopyFailure(Throwable $e, string $path, string $from, string $to): void
+>>>>>>> laraxot/dev
     {
         if (File::exists($to) && File::isReadable($to)) {
             return;

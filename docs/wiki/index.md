@@ -139,8 +139,11 @@ in fondo al file sopra — `form()`/`table()` delegano per intero alla
 Resource correlata (mai bridge per singolo hook come nella quarta), unici
 override point per-pagina `getTableColumns()`/`getTableHeaderActions()`.
 Non implementata. Story: `Modules/Xot/docs/stories/xotbasemanagerelatedrecords-convention-over-configuration.story.md`.
+<<<<<<< HEAD
+=======
 # Punto di ingresso Xot
 
 - [README del modulo](../../README.md)
 - [Memoria: contratto README moduli](memories/module-readme-normalization-20260928.md)
 - [Story BMAD: normalizzazione README](../bmad/stories/module-readmes-normalization-20260928.story.md)
+>>>>>>> laraxot/dev

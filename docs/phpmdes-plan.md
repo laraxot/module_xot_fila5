@@ -1,4 +1,6 @@
 ---
+<<<<<<< HEAD
+=======
 title: "phpmdes plan"
 type: note
 tags: [documentation]
@@ -7,6 +9,7 @@ updated: 2026-09-26
 qmd: "phpmdes plan"
 issues: []
 discussions: []
+>>>>>>> laraxot/dev
 module: theme
 topic: phpmdes-plan
 canonical: ../../../Themes/docs/shared-components/phpmd-fixes-plan.md
