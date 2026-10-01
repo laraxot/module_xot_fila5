@@ -118,7 +118,7 @@ describe('ModuleService', function () {
         $reflection = new ReflectionClass(xotModuleServiceTestInstance());
         $methods = $reflection->getMethods();
 
-        $publicMethods = array_filter($methods, fn ($method) => $method->isPublic());
+        $publicMethods = array_filter($methods, fn (ReflectionMethod $method): bool => $method->isPublic());
 
         Assert::assertGreaterThan(0, count($publicMethods));
     });
