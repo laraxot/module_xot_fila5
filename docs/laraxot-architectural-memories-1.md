@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "laraxot architectural memories 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Laraxot Architectural Memories - February 2026
 
 Critical architectural discoveries and best practices compiled during the Footer Refinement and Theme Integration phase.

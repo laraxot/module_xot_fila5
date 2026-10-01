@@ -601,6 +601,7 @@ trait HasXotTable
      */
     protected function getDefaultTableSortColumn(): ?string
     {
+
         try {
             $modelClass = $this->getModelClass();
             /** @var Model $model */

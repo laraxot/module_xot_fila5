@@ -15,11 +15,7 @@ qmd: "git status fleet modules rebase gitattributes corruption Performance Ptv P
 
 # Story: git status + fix per ogni modulo (2026-09-23)
 
-<<<<<<< HEAD
-Status: done — 18/18 push `laraxot HEAD:dev` OK (vedi Addendum 2)
-=======
 Status: in-progress
->>>>>>> laraxot/dev
 
 ## Contesto
 

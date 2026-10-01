@@ -4,15 +4,6 @@ declare(strict_types=1);
 
 return [
     'navigation' => [
-<<<<<<< HEAD
-        'name' => 'cache',
-        'plural' => 'cache',
-        'group' => [
-            'name' => 'Admin',
-        ],
-        'label' => 'cache.navigation',
-        'icon' => 'cache.navigation',
-=======
         'name' => 'Cache',
         'plural' => 'Cache',
         'group' => [
@@ -20,7 +11,6 @@ return [
         ],
         'label' => 'Cache',
         'icon' => 'heroicon-o-circle-stack',
->>>>>>> laraxot/dev
         'sort' => 90,
     ],
     'pages' => [
