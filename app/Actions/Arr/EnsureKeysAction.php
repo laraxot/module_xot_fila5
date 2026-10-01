@@ -13,13 +13,15 @@ class EnsureKeysAction
 
     /**
      * @param  array<int|string, mixed>  $data
+     * @param  array<int|string, mixed>  $keys
+     * @return array<int|string, mixed>
      */
     public function execute(array $data, array $keys): array
     {
         return Arr::map(
             $data,
             fn (array $item) => array_replace(
-                array_fill_keys($keys, null),
+                array_fill_keys(array_map('strval', $keys), null),
                 $item,
             ),
         );
