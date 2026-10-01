@@ -10,11 +10,7 @@ return [
             'name' => 'Sistema',
             'description' => 'Gestione dei lock di cache',
         ],
-<<<<<<< HEAD
-        'label' => 'cache-lock',
-=======
         'label' => 'Cache-Sperre',
->>>>>>> laraxot/dev
         'sort' => '20',
         'icon' => 'xot-lock',
     ],
