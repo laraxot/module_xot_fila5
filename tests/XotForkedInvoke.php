@@ -224,14 +224,19 @@ final class XotForkedInvoke
         }
 
         // parent
-        $status = null;
+        $status = 0;
         $waited = 0;
         while ($waited < ($timeoutSeconds + 1) * 10) {
             $res = pcntl_waitpid($pid, $status, WNOHANG);
-            if ($res === -1 || $res > 0) {
-                WebmozartAssert::integer($status);
+            if ($res === -1) {
+                return false;
+            }
+            if ($res > 0) {
+                // pcntl_waitpid() declares the by-ref $status as mixed in its PHPDoc stub
+                // (native int): validate it into a real int before decoding the exit status.
+                $exitStatus = filter_var($status, FILTER_VALIDATE_INT);
 
-                return $res > 0 && pcntl_wifexited($status) && pcntl_wexitstatus($status) === 0;
+                return $exitStatus !== false && pcntl_wifexited($exitStatus) && pcntl_wexitstatus($exitStatus) === 0;
             }
             usleep(100_000);
             $waited++;
