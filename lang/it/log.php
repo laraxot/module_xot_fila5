@@ -7,22 +7,13 @@ return [
     'pages' => 'Pagine',
     'widgets' => 'Widgets',
     'navigation' => [
-<<<<<<< HEAD
-        'name' => 'log',
-=======
         'name' => 'Registro',
->>>>>>> laraxot/dev
         'plural' => 'logs',
         'group' => [
             'name' => 'Admin',
         ],
-<<<<<<< HEAD
-        'label' => 'log.navigation',
-        'icon' => 'log.navigation',
-=======
         'label' => 'Log',
         'icon' => 'heroicon-o-clipboard-document-list',
->>>>>>> laraxot/dev
         'sort' => 61,
     ],
     'fields' => [
@@ -151,9 +142,5 @@ return [
     ],
     'label' => 'Log',
     'plural_label' => 'Log (Plurale)',
-<<<<<<< HEAD
-    'title' => 'log',
-=======
     'title' => 'Registro',
->>>>>>> laraxot/dev
 ];

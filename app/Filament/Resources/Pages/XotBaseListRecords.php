@@ -74,11 +74,7 @@ abstract class XotBaseListRecords extends FilamentListRecords
         ];
     }
 
-<<<<<<< HEAD
-    public function getTableColumns(): array
-=======
     final public function getTableColumns(): array
->>>>>>> laraxot/dev
     {
         return [];
     }

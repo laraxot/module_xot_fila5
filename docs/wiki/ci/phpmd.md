@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "phpmd"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Phpmd"
 type: reference
 tags: [wiki, no-frontmatter-fix]
