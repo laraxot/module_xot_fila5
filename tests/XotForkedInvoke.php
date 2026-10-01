@@ -11,7 +11,10 @@ use ReflectionClass;
 use ReflectionMethod;
 use ReflectionNamedType;
 use SplFileInfo;
+<<<<<<< HEAD
+=======
 use Webmozart\Assert\Assert as WebmozartAssert;
+>>>>>>> laraxot/dev
 
 use function Safe\posix_kill;
 use function Safe\preg_match;
@@ -225,6 +228,21 @@ final class XotForkedInvoke
         }
 
         // parent
+<<<<<<< HEAD
+        $status = 0;
+        $waited = 0;
+        while ($waited < ($timeoutSeconds + 1) * 10) {
+            $res = pcntl_waitpid($pid, $status, WNOHANG);
+            if ($res === -1) {
+                return false;
+            }
+            if ($res > 0) {
+                // pcntl_waitpid() declares the by-ref $status as mixed in its PHPDoc stub
+                // (native int): validate it into a real int before decoding the exit status.
+                $exitStatus = filter_var($status, FILTER_VALIDATE_INT);
+
+                return $exitStatus !== false && pcntl_wifexited($exitStatus) && pcntl_wexitstatus($exitStatus) === 0;
+=======
         $status = null;
         $waited = 0;
         while ($waited < ($timeoutSeconds + 1) * 10) {
@@ -233,6 +251,7 @@ final class XotForkedInvoke
                 WebmozartAssert::integer($status);
 
                 return $res > 0 && pcntl_wifexited($status) && pcntl_wexitstatus($status) === 0;
+>>>>>>> laraxot/dev
             }
             usleep(100_000);
             $waited++;

@@ -41,7 +41,11 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         $this->registerConfig();
         $this->registerViews();
         $this->loadMigrationsFrom($this->module_dir.'/../../database/migrations');
+<<<<<<< HEAD
+        $this->registerLivewireComponents();
+=======
         //$this->registerLivewireComponents();  //usiamo filament widget
+>>>>>>> laraxot/dev
         $this->registerBladeComponents();
         $this->registerCommands();
         $this->registerPublicAssets();

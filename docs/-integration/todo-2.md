@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 ---
 title: "todo 2"
 type: note
@@ -9,6 +11,7 @@ issues: []
 discussions: []
 ---
 
+>>>>>>> laraxot/dev
 # _todo
 
 <!-- Contenuto migrato da _docs/_todo.txt -->

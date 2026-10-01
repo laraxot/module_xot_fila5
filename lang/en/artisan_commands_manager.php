@@ -64,7 +64,11 @@ return [
             'label' => 'migrate',
         ],
     ],
+<<<<<<< HEAD
+    'title' => 'artisan commands manager',
+=======
     'title' => 'Artisan commands manager',
+>>>>>>> laraxot/dev
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'fields' => [

@@ -170,6 +170,8 @@ docs/coverage-*.md
 .windsurf~*
 graphify-out/
 tests/coverage-xot.xml
+<<<<<<< HEAD
+=======
 
 # Laraxot -- forbidden module root folders (root hygiene directive 2026-09-29)
 /bashscripts/
@@ -198,3 +200,4 @@ docs/chat
 
 # Laraxot — app/Application forbidden (belongs to laravel/app/, not module app/)
 app/Application
+>>>>>>> laraxot/dev

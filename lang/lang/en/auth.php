@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+
+=======
+>>>>>>> laraxot/dev
 return [
     'failed' => 'These credentials do not match our records!',
     'general_error' => 'You do not have access to do that.',

@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 ---
 title: "pivot 1"
 type: note
@@ -9,6 +11,7 @@ issues: []
 discussions: []
 ---
 
+>>>>>>> laraxot/dev
 # _pivot
 
 <!-- Contenuto migrato da _docs/_pivot.txt -->

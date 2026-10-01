@@ -1,4 +1,6 @@
 ---
+<<<<<<< HEAD
+=======
 title: "phpmd quality gate"
 type: note
 tags: [documentation]
@@ -6,6 +8,7 @@ updated: 2026-09-26
 qmd: "phpmd quality gate"
 issues: []
 discussions: []
+>>>>>>> laraxot/dev
 id: phpmd-quality-gate
 slug: phpmd-base-workorder-fila5
 scope: [project:base_workorder_fila5, modules:All 52]
