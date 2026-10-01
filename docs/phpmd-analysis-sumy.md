@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "phpmd analysis sumy"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpmd analysis sumy"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Riepilogo Analisi PHPMD - Tutti i Moduli
 
 **Strumento**: PHPMD (PHP Mess Detector)

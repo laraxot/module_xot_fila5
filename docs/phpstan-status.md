@@ -2,6 +2,7 @@
 
 Stato vivo del gate. Non copiare numeri da report storici: rimisura.
 
+<<<<<<< HEAD
 ## Misura 2026-09-24 (sera) — analyse Modules zero (restaurant_fila5)
 
 `cd laravel && ./vendor/bin/phpstan analyse Modules --memory-limit=-1` →
@@ -81,6 +82,8 @@ rm -rf /tmp/phpstan && mkdir -p /tmp/phpstan
 php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules --memory-limit=2G
 ```
 
+=======
+>>>>>>> laraxot/dev
 ## Misura 2026-09-23 (story 5.224 — comando utente)
 
 ```bash
@@ -134,6 +137,10 @@ Per dichiarare «siamo a zero» serve il comando senza argomenti.
 - [phpstan-modules-fix.md](./wiki/troubleshooting/phpstan-modules-fix.md) — ricette
 - [phpstan-best-practices.md](./wiki/phpstan-best-practices.md) — pattern Pest
 - [18.59](./stories/18.59.phpstan-repo-wide-zero-2026-09-21.story.md) — drift 23→0 del 2026-09-21
+<<<<<<< HEAD
 - [phpstan-journey.md](../../../../bashscripts/ai/wiki/second-brain/phpstan-journey.md) — second brain
 - [CloudStorage coverage](../../CloudStorage/docs/coverage.md) — incidente require-dev Symplify
 - [contract-suffix memory](../../../../bashscripts/ai/wiki/memories/contract-suffix-no-interfaces-folder.md) — religione `*Contract`
+=======
+- [phpstan-journey.md](../../../../docs/wiki/second-brain/phpstan-journey.md) — second brain
+>>>>>>> laraxot/dev

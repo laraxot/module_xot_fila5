@@ -8,6 +8,9 @@ use Modules\Xot\Actions\Array\SaveArrayAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
 use function Safe\glob;
 use function Safe\mkdir;
@@ -45,6 +48,7 @@ describe('Save Array Action', function () use (&$arrayTestTempDir): void {
     test('saves array in json format', function () use (&$arrayTestTempDir): void {
         Assert::assertIsString($arrayTestTempDir);
         $path = $arrayTestTempDir.'/data.json';
+<<<<<<< HEAD
 =======
 
 use function Safe\glob;
@@ -85,11 +89,16 @@ describe('Save Array Action', function (): void {
         $path = $this->tempDir.'/data.json';
 >>>>>>> 64619e34 (.)
 =======
+=======
+>>>>>>> laraxot/dev
 describe('Save Array Action', function () use (&$arrayTestTempDir): void {
     test('saves array in json format', function () use (&$arrayTestTempDir): void {
         Assert::assertIsString($arrayTestTempDir);
         $path = $arrayTestTempDir.'/data.json';
+<<<<<<< HEAD
 >>>>>>> 61938ca4 (delete .claude-audit/)
+=======
+>>>>>>> laraxot/dev
 
         $result = app(SaveArrayAction::class)->execute(['a' => 1], $path, 'json');
 
@@ -98,6 +107,9 @@ describe('Save Array Action', function () use (&$arrayTestTempDir): void {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     test('saves array in php format by default', function () use (&$arrayTestTempDir): void {
         Assert::assertIsString($arrayTestTempDir);
         $path = $arrayTestTempDir.'/data.php';
@@ -113,6 +125,7 @@ describe('Save Array Action', function () use (&$arrayTestTempDir): void {
 
         try {
             app(SaveArrayAction::class)->execute([], $arrayTestTempDir.'/invalid.txt', 'xml');
+<<<<<<< HEAD
 =======
     test('saves array in php format by default', function (): void {
         $path = $this->tempDir.'/data.php';
@@ -121,6 +134,8 @@ describe('Save Array Action', function () use (&$arrayTestTempDir): void {
         Assert::assertIsString($arrayTestTempDir);
         $path = $arrayTestTempDir.'/data.php';
 >>>>>>> 61938ca4 (delete .claude-audit/)
+=======
+>>>>>>> laraxot/dev
 
         $result = app(SaveArrayAction::class)->execute(['b' => 2], $path);
         Assert::assertTrue($result);
@@ -133,11 +148,15 @@ describe('Save Array Action', function () use (&$arrayTestTempDir): void {
 
         try {
 <<<<<<< HEAD
+<<<<<<< HEAD
             app(SaveArrayAction::class)->execute([], $this->tempDir.'/invalid.txt', 'xml');
 >>>>>>> 64619e34 (.)
 =======
             app(SaveArrayAction::class)->execute([], $arrayTestTempDir.'/invalid.txt', 'xml');
 >>>>>>> 61938ca4 (delete .claude-audit/)
+=======
+            app(SaveArrayAction::class)->execute([], $this->tempDir.'/invalid.txt', 'xml');
+>>>>>>> laraxot/dev
             Assert::fail('Expected exception not thrown');
         } catch (\InvalidArgumentException) {
             // Expected

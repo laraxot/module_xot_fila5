@@ -51,14 +51,23 @@ bmad-quick-spec "Specifica tecnica XotBaseResource"
 
 ## Cartelle Chiave
 
+<<<<<<< HEAD
 - `_bmad/` — moduli, agenti, skill, config
 - `_bmad-output/` — artefatti generati
 - `docs/bmad/` — questa documentazione
+=======
+- `docs/bmad/` — questa documentazione BMAD
+- `_bmad-output/` — artefatti generati (repo root)
+- `_bmad/` — framework BMAD esterno (non incluso nel repo; installato via BMAD CLI)
+>>>>>>> laraxot/dev
 
 ## Vedi Anche
 
 - [setup-guide](setup-guide.md)
+<<<<<<< HEAD
 - [merge proposals](MERGE_PROPOSAL_AI_VS_AIASSISTANT.md)
+=======
+>>>>>>> laraxot/dev
 
 ---
 

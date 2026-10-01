@@ -4,13 +4,22 @@ declare(strict_types=1);
 
 return [
     'navigation' => [
+<<<<<<< HEAD
         'name' => 'cache lock',
+=======
+        'name' => 'Blocco cache',
+>>>>>>> laraxot/dev
         'plural' => 'cache locks',
         'group' => [
             'name' => 'Admin',
         ],
+<<<<<<< HEAD
         'label' => 'cache lock.navigation',
         'icon' => 'cache lock.navigation',
+=======
+        'label' => 'Lock Cache',
+        'icon' => 'heroicon-o-shield-exclamation',
+>>>>>>> laraxot/dev
         'sort' => 95,
     ],
     'pages' => [

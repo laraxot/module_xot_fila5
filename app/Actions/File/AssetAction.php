@@ -9,8 +9,16 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Modules\Xot\Datas\XotData;
 use Spatie\QueueableAction\QueueableAction as QueueableActionTrait;
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
 
+=======
+use Throwable;
+use Webmozart\Assert\Assert;
+
+use function Safe\getmypid;
+
+>>>>>>> laraxot/dev
 class AssetAction
 {
     use QueueableActionTrait;
@@ -131,6 +139,12 @@ class AssetAction
      * written by another user, copy fails and MetatagData must not fall back
      * to asset('module::img/x.png') (404). If the dest already exists and is
      * readable, serve it instead. Story Xot/5.180.
+<<<<<<< HEAD
+=======
+     *
+     * Forced does not mean blind: an up-to-date dest is left alone, and a stale
+     * one is swapped atomically. See copyAtomically().
+>>>>>>> laraxot/dev
      */
     private function copyAsset(string $from, string $to, string $path, bool $force = false): void
     {
@@ -144,11 +158,23 @@ class AssetAction
             return;
         }
 
+<<<<<<< HEAD
         $this->ensureDirectoryExists(\dirname($to));
 
         try {
             $copied = File::copy($from, $to);
         } catch (\Throwable $e) {
+=======
+        if ($destinationExists && $this->isUpToDate($from, $to)) {
+            return;
+        }
+
+        $this->ensureDirectoryExists(\dirname($to));
+
+        try {
+            $copied = $this->copyAtomically($from, $to);
+        } catch (Throwable $e) {
+>>>>>>> laraxot/dev
             $this->handleCopyFailure($e, $path, $from, $to);
 
             return;
@@ -167,10 +193,48 @@ class AssetAction
     }
 
     /**
+<<<<<<< HEAD
      * If the public dest is already readable, keep serving it.
      * Otherwise rethrow so the caller can fail loudly.
      */
     private function handleCopyFailure(\Throwable $e, string $path, string $from, string $to): void
+=======
+     * Same size and a dest not older than the source: nothing to refresh.
+     */
+    private function isUpToDate(string $source, string $destination): bool
+    {
+        return File::size($source) === File::size($destination)
+            && File::lastModified($destination) >= File::lastModified($source);
+    }
+
+    /**
+     * Copy to a temp file in the dest directory, then rename() over the dest.
+     *
+     * copy() truncates the dest before writing it. The dest is a public file that
+     * the web server may be streaming to a browser while another request refreshes
+     * it: the browser gets an empty or partial image (the panel logo vanished,
+     * 2026-09-29). rename() is atomic on the same filesystem: readers see the old
+     * file or the new one, never a truncated one.
+     */
+    private function copyAtomically(string $source, string $destination): bool
+    {
+        $temporary = $destination.'.'.getmypid().'.tmp';
+
+        try {
+            return File::copy($source, $temporary) && File::move($temporary, $destination);
+        } finally {
+            if (File::exists($temporary)) {
+                File::delete($temporary);
+            }
+        }
+    }
+
+    /**
+     * If the public dest is already readable, keep serving it.
+     * Otherwise rethrow so the caller can fail loudly.
+     */
+    private function handleCopyFailure(Throwable $e, string $path, string $from, string $to): void
+>>>>>>> laraxot/dev
     {
         if (File::exists($to) && File::isReadable($to)) {
             return;

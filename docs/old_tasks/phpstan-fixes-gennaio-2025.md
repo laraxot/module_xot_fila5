@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PHPStan Fixes Gennaio 2025 - Modulo Xot
 
 ## Riassunto delle Correzioni
@@ -169,3 +170,21 @@ public function getAllColors(): array
 - [Exception Handler Types](exceptions/exception-handler-types.md)
 - [PHPStan Level 10 Guide](phpstan_livello10_linee_guida.md)
 
+=======
+---
+title: "Phpstan Fixes"
+type: concept
+status: deprecated
+module: "Xot"
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "deprecated phpstan-fixes"
+related:
+  - "./phpstan-fixes.md"
+---
+# Phpstan Fixes
+
+> Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
+
+Vedi il file canonico: [phpstan-fixes.md](./phpstan-fixes.md)
+>>>>>>> laraxot/dev

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "error curl 60"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "error curl 60"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 Download the latest cacert.pem file from
 https://curl.se/docs/caextract.html
 
