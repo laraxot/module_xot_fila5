@@ -30,7 +30,11 @@ return [
             'name' => 'General',
             'description' => 'General Settings',
         ],
+<<<<<<< HEAD
         'label' => 'Pdf Engine Enum',
+=======
+        'label' => 'Motore PDF',
+>>>>>>> laraxot/dev
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],

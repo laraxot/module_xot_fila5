@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "phpmd analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpmd analysis"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Analisi PHPMD - Tutti i Moduli
 
 **Data**: 2025-12-23

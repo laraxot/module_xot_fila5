@@ -8,6 +8,9 @@ use Modules\Xot\Actions\Array\SaveJsonArrayAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
 use function Safe\file_get_contents;
 use function Safe\glob;
@@ -26,6 +29,7 @@ beforeEach(function () use (&$arrayTestTempDir): void {
     mkdir($arrayTestTempDir, 0755, true);
 });
 
+<<<<<<< HEAD
 afterEach(function () use (&$arrayTestTempDir): void {
     if (! is_string($arrayTestTempDir) || ! is_dir($arrayTestTempDir)) {
         return;
@@ -49,6 +53,8 @@ beforeEach(function () use (&$arrayTestTempDir): void {
 });
 
 <<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 afterEach(function (): void {
     $tempDir = $this->tempDir;
     if (isset($tempDir) && is_string($tempDir) && is_dir($tempDir)) {
@@ -58,12 +64,15 @@ afterEach(function (): void {
             }
         }
         rmdir($tempDir);
+<<<<<<< HEAD
 >>>>>>> 64619e34 (.)
 =======
 afterEach(function () use (&$arrayTestTempDir): void {
     if (! is_string($arrayTestTempDir) || ! is_dir($arrayTestTempDir)) {
         return;
 >>>>>>> 61938ca4 (delete .claude-audit/)
+=======
+>>>>>>> laraxot/dev
     }
 
     foreach (glob($arrayTestTempDir.'/*') ?: [] as $file) {
@@ -78,12 +87,16 @@ afterEach(function () use (&$arrayTestTempDir): void {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 61938ca4 (delete .claude-audit/)
+=======
+>>>>>>> laraxot/dev
 describe('Save Json Array Action', function () use (&$arrayTestTempDir): void {
     test('saves array to json', function () use (&$arrayTestTempDir): void {
         Assert::assertIsString($arrayTestTempDir);
         $path = $arrayTestTempDir.'/d.json';
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 describe('Save Json Array Action', function (): void {
@@ -92,6 +105,8 @@ describe('Save Json Array Action', function (): void {
 >>>>>>> 64619e34 (.)
 =======
 >>>>>>> 61938ca4 (delete .claude-audit/)
+=======
+>>>>>>> laraxot/dev
         $result = app(SaveJsonArrayAction::class)->execute(['k' => 'v'], $path);
         Assert::assertTrue($result);
         Assert::assertSame(['k' => 'v'], json_decode(file_get_contents($path), true));

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Correzioni PHPStan - Modulo Xot
 
 Questo documento traccia gli errori PHPStan identificati nel modulo Xot e le relative soluzioni implementate.
@@ -183,3 +184,21 @@ Il `HandlerDecorator` necessita refactoring per:
 1. **Static Analysis**: Continuare uso PHPStan per quality assurance
 2. **Type Declarations**: Migliorare dichiarazioni di tipo dove possibile
 3. **Documentation**: Documentare pattern complessi per maintainability
+=======
+---
+title: "Phpstan Fixes"
+type: concept
+status: deprecated
+module: "Xot"
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "deprecated phpstan-fixes"
+related:
+  - "./phpstan-fixes.md"
+---
+# Phpstan Fixes
+
+> Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
+
+Vedi il file canonico: [phpstan-fixes.md](./phpstan-fixes.md)
+>>>>>>> laraxot/dev

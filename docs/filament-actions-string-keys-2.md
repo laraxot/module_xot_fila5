@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "filament actions string keys 2"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament actions string keys 2"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Filament Actions - String Keys Requirement
 
 ## Critical Type Rule

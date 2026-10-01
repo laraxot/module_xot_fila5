@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "phpmd conventions"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpmd conventions"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # 🔧 PHPMD Convenzioni Laraxot
 
 **Scope**: Tutti i moduli FixCity (Laraxot PTVX)  
@@ -6,6 +20,17 @@
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "phpmd conventions"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpmd conventions"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## 📦 Installazione
 
 ```bash

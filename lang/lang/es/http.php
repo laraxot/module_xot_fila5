@@ -1,7 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 return [
     404 => [
         'title' => 'La Página que intento acceder no ha sido encontrada.',
