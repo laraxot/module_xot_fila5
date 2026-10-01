@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "reference links dto generics collections"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://martinjoo.dev/how-to-use-data-transfer-objects-and-actions-in-laravel
 
 

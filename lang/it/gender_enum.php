@@ -30,11 +30,7 @@ return [
             'name' => 'General',
             'description' => 'General Settings',
         ],
-<<<<<<< HEAD
-        'label' => 'Gender Enum',
-=======
         'label' => 'Genere',
->>>>>>> laraxot/dev
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],

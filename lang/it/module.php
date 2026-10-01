@@ -9,13 +9,8 @@ return [
         'group' => [
             'name' => 'Admin',
         ],
-<<<<<<< HEAD
-        'label' => 'module.navigation',
-        'icon' => 'module.navigation',
-=======
         'label' => 'Moduli',
         'icon' => 'heroicon-o-cube',
->>>>>>> laraxot/dev
         'sort' => 65,
     ],
     'fields' => [

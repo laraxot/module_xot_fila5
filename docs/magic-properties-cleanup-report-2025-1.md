@@ -1,11 +1,3 @@
-<<<<<<< HEAD
----
-name: magic-properties-cleanup-report-2025-1
-description: "Report 2025-11-17: sostituzione di property_exists() con isset() sulle proprietà magiche dei modelli Eloquent"
-metadata:
-  type: documentation
----
-=======
 # Magic Properties Cleanup Report - 2025-11-17
 
 ## Summary
@@ -74,7 +66,6 @@ Files generally have good scores with minor style issues:
 
 ---
 ## Variant 2
->>>>>>> laraxot/dev
 
 # Magic Properties Cleanup Report - 2025-11-17
 

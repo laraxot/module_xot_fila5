@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-
-=======
->>>>>>> laraxot/dev
 return [
     'previous' => '&laquo; ก่อนหน้า',
     'next' => 'ถัดไป &raquo;',

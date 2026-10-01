@@ -4,22 +4,13 @@ declare(strict_types=1);
 
 return [
     'navigation' => [
-<<<<<<< HEAD
-        'name' => 'extra',
-=======
         'name' => 'Extra',
->>>>>>> laraxot/dev
         'plural' => 'estras',
         'group' => [
             'name' => 'Admin',
         ],
-<<<<<<< HEAD
-        'label' => 'extra.navigation',
-        'icon' => 'extra.navigation',
-=======
         'label' => 'Extra',
         'icon' => 'heroicon-o-plus',
->>>>>>> laraxot/dev
         'sort' => 38,
     ],
     'pages' => [

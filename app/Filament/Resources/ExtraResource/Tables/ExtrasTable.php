@@ -4,11 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources\ExtraResource\Tables;
 
-<<<<<<< HEAD
-=======
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
->>>>>>> laraxot/dev
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
@@ -40,8 +37,6 @@ class ExtrasTable extends XotBaseResourceTable
             'created_at' => TextColumn::make('created_at')->dateTime()->placeholder('—')->sortable()->toggleable(isToggledHiddenByDefault: true),
         ];
     }
-<<<<<<< HEAD
-=======
 
     public function getTableFilters(): array
     {
@@ -61,5 +56,4 @@ class ExtrasTable extends XotBaseResourceTable
             'delete' => DeleteBulkAction::make(),
         ];
     }
->>>>>>> laraxot/dev
 }

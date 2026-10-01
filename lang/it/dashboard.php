@@ -7,13 +7,8 @@ return [
     'pages' => 'Pagine',
     'widgets' => 'Widgets',
     'navigation' => [
-<<<<<<< HEAD
-        'name' => 'dashboard',
-        'plural' => 'dashboard',
-=======
         'name' => 'Dashboard',
         'plural' => 'Dashboard',
->>>>>>> laraxot/dev
         'group' => [
             'name' => '',
         ],

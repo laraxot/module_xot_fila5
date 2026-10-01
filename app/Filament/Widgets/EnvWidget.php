@@ -22,12 +22,7 @@ class EnvWidget extends XotBaseSchemaWidget
     public array $only = [];
 
     /** @var view-string */
-<<<<<<< HEAD
-    /** @var view-string */
-    protected string $view;
-=======
     protected string $view = 'xot::filament.widgets.env';
->>>>>>> laraxot/dev
 
     /**
      * Raggruppamento visivo dei campi per Section, stile Laravel — un

@@ -58,11 +58,7 @@ return [
         7 => 'Sunday',
     ],
     'navigation' => [
-<<<<<<< HEAD
-        'label' => 'Missing Navigation Label',
-=======
         'label' => 'Day of Week',
->>>>>>> laraxot/dev
         'plural_label' => 'Missing Navigation Plural Label',
         'group' => 'Missing Group',
         'icon' => 'heroicon-o-puzzle-piece',
