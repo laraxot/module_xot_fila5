@@ -7,7 +7,11 @@ module: Xot
 status: active
 tags: [xot, foundation, laraxot, filament, architecture]
 created: 2026-09-14
+<<<<<<< HEAD
+updated: 2026-09-14
+=======
 updated: 2026-09-28
+>>>>>>> laraxot/dev
 qmd: "xot laraxot foundation base classes xotbase filament architecture module documentation"
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/120"
@@ -60,6 +64,8 @@ Maintain `declare(strict_types=1);` in PHP, adhere to project PHPStan config, an
 ---
 
 **Modulo** `xot` · **Laraxot ecosystem** · **Project-agnostic**
+<<<<<<< HEAD
+=======
 ---
 
 ## Scheda tecnica verificata (2026-09-28)
@@ -86,3 +92,4 @@ php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules/Xot
 La responsabilità del modulo, le decisioni architetturali e le opportunità sono
 documentate negli artefatti BMAD sotto [`docs/bmad/`](docs/bmad/). I numeri vanno
 rigenerati quando il modulo cambia; non copiarli in badge non verificati.
+>>>>>>> laraxot/dev

@@ -10,7 +10,11 @@ return [
             'name' => 'Sistema',
             'description' => 'Monitoraggio e diagnostica del sistema',
         ],
+<<<<<<< HEAD
+        'label' => 'health',
+=======
         'label' => 'Zustand',
+>>>>>>> laraxot/dev
         'sort' => '14',
         'icon' => 'xot-health',
     ],
@@ -177,7 +181,11 @@ return [
             'security_breach' => 'Rilevata potenziale violazione sicurezza',
         ],
     ],
+<<<<<<< HEAD
+    'title' => 'health',
+=======
     'title' => 'Zustand',
+>>>>>>> laraxot/dev
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 ];

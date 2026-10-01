@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+
+=======
+>>>>>>> laraxot/dev
 return [
     'failed' => 'Le credenziali non corrispondono a quelle registrate!',
     'general_error' => 'Non hai diritti sufficienti per questa operazione.',

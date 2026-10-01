@@ -115,7 +115,11 @@ return [
             'tooltip' => 'cancel',
         ],
     ],
+<<<<<<< HEAD
+    'title' => 'artisan commands manager',
+=======
     'title' => 'Gestore comandi Artisan',
+>>>>>>> laraxot/dev
     'label' => 'Artisan Commands Manager',
     'plural_label' => 'Artisan Commands Manager (Plurale)',
     'fields' => [

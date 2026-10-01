@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 ---
 title: "error curl 60"
 type: note
@@ -9,6 +11,7 @@ issues: []
 discussions: []
 ---
 
+>>>>>>> laraxot/dev
 Download the latest cacert.pem file from
 https://curl.se/docs/caextract.html
 
