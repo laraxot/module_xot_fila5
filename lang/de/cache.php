@@ -10,11 +10,7 @@ return [
             'name' => 'Sistema',
             'description' => 'Gestione della cache del sistema',
         ],
-<<<<<<< HEAD
-        'label' => 'cache',
-=======
         'label' => 'Cache',
->>>>>>> laraxot/dev
         'sort' => '29',
         'icon' => 'xot-cache',
     ],

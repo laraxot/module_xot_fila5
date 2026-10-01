@@ -7,22 +7,13 @@ return [
     'pages' => 'Pagine',
     'widgets' => 'Widgets',
     'navigation' => [
-<<<<<<< HEAD
-        'name' => 'metatag',
-=======
         'name' => 'Metatag',
->>>>>>> laraxot/dev
         'plural' => 'metatags',
         'group' => [
             'name' => 'Admin',
         ],
-<<<<<<< HEAD
-        'label' => 'metatag.navigation',
-        'icon' => 'metatag.navigation',
-=======
         'label' => 'Meta Tag',
         'icon' => 'heroicon-o-document-text',
->>>>>>> laraxot/dev
         'sort' => 95,
     ],
     'fields' => [
@@ -344,9 +335,5 @@ return [
     ],
     'label' => 'Metatag',
     'plural_label' => 'Metatag (Plurale)',
-<<<<<<< HEAD
-    'title' => 'metatag',
-=======
     'title' => 'Metatag',
->>>>>>> laraxot/dev
 ];

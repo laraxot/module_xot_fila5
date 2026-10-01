@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 created: 2026-09-26
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Story — phpstan analyse Modules, fix fleet (2026-09-24)"
 type: story
 module: Xot

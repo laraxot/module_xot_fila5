@@ -10,11 +10,7 @@ return [
             'name' => 'Sistema',
             'description' => 'Gestione dei moduli e delle estensioni',
         ],
-<<<<<<< HEAD
-        'label' => 'module',
-=======
         'label' => 'Modul',
->>>>>>> laraxot/dev
         'sort' => '17',
         'icon' => 'xot-module',
     ],

@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "phpmd criticales"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "phpmd criticales"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: phpmd-criticales
 canonical: ../../../Themes/docs/shared-components/phpmd-critical-fixes.md

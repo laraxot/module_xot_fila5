@@ -9,13 +9,8 @@ return [
         'group' => [
             'name' => 'Admin',
         ],
-<<<<<<< HEAD
-        'label' => 'env.navigation',
-        'icon' => 'env.navigation',
-=======
         'label' => 'Ambiente',
         'icon' => 'heroicon-o-home',
->>>>>>> laraxot/dev
         'sort' => 94,
     ],
     'pages' => [
@@ -155,11 +150,7 @@ return [
             'tooltip' => 'save',
         ],
     ],
-<<<<<<< HEAD
-    'title' => 'env',
-=======
     'title' => 'Ambiente',
->>>>>>> laraxot/dev
     'sections' => [
         'General' => [
             'label' => 'Generale',
