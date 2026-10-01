@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: "phpstan analyse modules 2026 09 24.story"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 id: "Xot/phpstan-analyse-modules-2026-09-24"
 title: "PHPStan analyse Modules — verifica corrente e remediation swarm"
 type: story

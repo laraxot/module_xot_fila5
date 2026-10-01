@@ -4,30 +4,13 @@ type: concept
 module: Xot
 tags: [phpstan, trait, scope, cross-module, false-positive, second-brain]
 created: 2026-07-06
-<<<<<<< HEAD
-updated: 2026-09-24
-=======
 updated: 2026-07-06
->>>>>>> laraxot/dev
 related:
   - ./phpstan-fixes-log.md
 ---
 
 # PHPStan — falsi positivi da scope parziale
 
-<<<<<<< HEAD
-## Stato dell'esempio Geo (2026-09-24)
-
-Il caso GeoTrait/TechPlanner qui sotto è **storico**: il modulo TechPlanner e
-il suo uso di `GeoTrait` non esistono nel tree attuale. Un audit di tutto il
-repository non ha trovato consumer PHP del trait; il trait e i probe dedicati
-sono stati rimossi. Gli scope geografici attivi sono implementati da
-`GeographicalScopes`; `Address` e `HasAddress` forniscono i comportamenti
-indirizzo ancora usati. L'esempio resta utile come lezione sullo scope di
-analisi, non come istruzione per conservare codice senza chiamanti.
-
-=======
->>>>>>> laraxot/dev
 ## Problema
 
 Eseguire `phpstan analyse Modules/{UnSoloModulo}` (o più moduli ma non tutti

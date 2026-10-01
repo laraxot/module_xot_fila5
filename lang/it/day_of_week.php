@@ -65,11 +65,7 @@ return [
             'name' => 'General',
             'description' => 'General Settings',
         ],
-<<<<<<< HEAD
-        'label' => 'Day Of Week',
-=======
         'label' => 'Giorno della Settimana',
->>>>>>> laraxot/dev
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],

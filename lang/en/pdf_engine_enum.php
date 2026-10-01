@@ -23,11 +23,7 @@ return [
         'spatie' => 'Spatie',
     ],
     'navigation' => [
-<<<<<<< HEAD
-        'label' => 'Missing Navigation Label',
-=======
         'label' => 'PDF Engine',
->>>>>>> laraxot/dev
         'plural_label' => 'Missing Navigation Plural Label',
         'group' => 'Missing Group',
         'icon' => 'heroicon-o-puzzle-piece',

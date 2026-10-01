@@ -31,11 +31,7 @@ return [
         ],
     ],
     'navigation' => [
-<<<<<<< HEAD
-        'label' => 'Export Xls',
-=======
         'label' => 'Esporta Excel',
->>>>>>> laraxot/dev
         'name' => 'Export Xls',
         'plural' => 'Export Xls',
         'group' => [
