@@ -99,6 +99,48 @@ Esito reale (2026-09-29, ~11:30, load average ~53 per altre 6 sessioni Pest):
   `[OK] No errors`.
 - Nessun file cancellato: non c'era niente da cancellare.
 
+## Regola 6: `docs/graphify` (richiesta utente 2026-09-29)
+
+Richiesta: "la cartella docs/graphify deve essere messa dentro i .gitignore nelle root dei
+moduli e poi cancellate le cartelle".
+
+Stato misurato (~12:12): riga `docs/graphify` gia' presente nel `.gitignore` dei 18 moduli
+(modifica in blocco di un'altra sessione alle 12:10:21, verificata con `git check-ignore`);
+cartella gia' assente dal disco ovunque; ancora tracciata in 5 moduli (IndennitaResponsabilita 1,
+Job 5, Lang 5, Rating 2, UI 652 file). Fatto: `git rm -r --cached -- docs/graphify` limitato a quel
+path nei repo di IndennitaResponsabilita, Job, Lang, UI (Rating era gia' a 0). Nessun commit.
+Esito: 18 moduli + 3 temi con cartella assente, indice vuoto, path ignorato.
+
+## Regola 7: `resources/lang` solo nei moduli (richiesta utente 2026-09-29)
+
+Richiesta: "la cartella resources/lang va messa nei .gitignore delle root dei moduli, poi
+cancella anche la cartella".
+
+Verificato prima di cancellare: i moduli traducono da `lang/` (config
+`modules.paths.generator.lang = lang`; a runtime il namespace `user` punta a `Modules/User/lang`,
+`__('user::user.fields.email.label')` = "Email"). `resources/lang` aveva 0 file e 0 tracciati in
+tutti i 18 moduli; riga gia' nei `.gitignore` (altra sessione, 12:20:59). **I temi no**:
+`XotBaseThemeServiceProvider` carica le traduzioni da `resources/lang`, quindi la regola non va
+estesa a `Themes/*`.
+
+## Regola 8: in `Modules/` solo moduli (richiesta utente 2026-09-29)
+
+Richiesta: "laravel/Modules/test/ non deve esistere, capisci da solo il perche'".
+
+Perche': ogni cartella in `Modules/` e' trattata come modulo da nwidart, dal merge dei
+`composer.json`, da PHPStan (`paths: Modules/`) e da ogni script `for m in Modules/*`. La causa:
+`IndennitaResponsabilita\Actions\UpdateModuleDocumentation` faceva `mkdir` ricorsivo su qualunque
+nome, e gli sweep di copertura la chiamavano con `'test'` (file `Modules/test/docs/changelog.md`,
+gia' committato nel repo root il 2026-09-02, `107f5184fc`). Fix di un'altra sessione (12:28):
+`resolveModulePath()` accetta solo nome alfanumerico con `module.json`; test
+`UpdateModuleDocumentationValidationTest` 4 passed (6 assertions).
+
+Guardia aggiunta: caso `in Modules ci sono solo moduli: ogni cartella ha module.json` in
+`ModuleRootHygieneTest` (il dataset esistente salta le cartelle senza `.git` e da solo non le
+vede). Verde sullo stato attuale; rosso con una cartella di prova `Modules/zzprobe`
+("cartelle in Modules che non sono moduli: zzprobe"). Casi 6-8: `Tests: 37 passed`,
+PHPStan `[OK] No errors`, PHPMD 0.
+
 ## Verifica finale
 
 `vendor/bin/pest Modules/Xot/tests/Unit/ModuleRootHygieneTest.php` verde (mai su

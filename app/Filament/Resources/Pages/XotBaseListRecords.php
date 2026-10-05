@@ -62,6 +62,11 @@ abstract class XotBaseListRecords extends FilamentListRecords
         return $model;
     }
 
+    public static function getModuleName(): string
+    {
+        return Str::of(static::class)->between('Modules\\', '\Filament\\')->toString();
+    }
+
     /**
      * Get the header actions.
      *
