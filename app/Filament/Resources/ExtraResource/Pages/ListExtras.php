@@ -13,5 +13,4 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 class ListExtras extends XotBaseListRecords
 {
     protected static string $resource = ExtraResource::class;
-
 }
