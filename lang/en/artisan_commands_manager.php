@@ -64,11 +64,7 @@ return [
             'label' => 'migrate',
         ],
     ],
-<<<<<<< .merge_file_qWM5Hm
-    'title' => 'Artisan commands manager',
-=======
     'title' => 'Artisan Commands Manager',
->>>>>>> .merge_file_Kwa3Zu
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'fields' => [
