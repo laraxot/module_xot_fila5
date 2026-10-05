@@ -13,6 +13,7 @@ class EnsureKeysAction
 
     /**
      * @param  array<int|string, mixed>  $data
+<<<<<<< .merge_file_lhAu5L
      */
     public function execute(array $data, array $keys): array
     {
@@ -20,6 +21,22 @@ class EnsureKeysAction
             $data,
             fn (array $item) => array_replace(
                 array_fill_keys($keys, null),
+=======
+     * @param  array<int|string, string|int>  $keys
+     * @return array<int|string, mixed>
+     */
+    public function execute(array $data, array $keys): array
+    {
+        $stringKeys = [];
+        foreach ($keys as $key) {
+            $stringKeys[] = (string) $key;
+        }
+
+        return Arr::map(
+            $data,
+            fn (array $item) => array_replace(
+                array_fill_keys($stringKeys, null),
+>>>>>>> .merge_file_OUU5HA
                 $item,
             ),
         );
