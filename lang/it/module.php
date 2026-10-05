@@ -9,8 +9,8 @@ return [
         'group' => [
             'name' => 'Admin',
         ],
-        'label' => 'module.navigation',
-        'icon' => 'module.navigation',
+        'label' => 'Moduli',
+        'icon' => 'heroicon-o-cube',
         'sort' => 65,
     ],
     'fields' => [

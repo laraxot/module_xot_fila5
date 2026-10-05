@@ -32,36 +32,43 @@ use function Safe\fread;
 #[Group('binary')]
 final class BinaryAssetsNotCrStrippedTest extends TestCase
 {
-    private const PNG_SIGNATURE = "\x89PNG\r\n\x1a\n";
+    private static function pngSignature(): string
+    {
+        return "\x89PNG\r\n\x1a\n";
+    }
 
-    private const PNG_LEAD = "\x89PNG";
+    private static function pngLead(): string
+    {
+        return "\x89PNG";
+    }
 
     /**
-     * Estensioni che `laravel/.gitattributes` dichiara binarie: nessun filtro deve toccarle.
-     *
-     * @var list<string>
+     * @return list<string>
      */
-    private const BINARY_EXTENSIONS = [
-        'png',
-        'jpg',
-        'jpeg',
-        'gif',
-        'webp',
-        'ico',
-        'svg',
-        'psd',
-        'pdf',
-        'zip',
-        'woff',
-        'woff2',
-        'ttf',
-        'eot',
-        'otf',
-        'mp4',
-        'phar',
-        'db',
-        'sqlite',
-    ];
+    private static function binaryExtensions(): array
+    {
+        return [
+            'png',
+            'jpg',
+            'jpeg',
+            'gif',
+            'webp',
+            'ico',
+            'svg',
+            'psd',
+            'pdf',
+            'zip',
+            'woff',
+            'woff2',
+            'ttf',
+            'eot',
+            'otf',
+            'mp4',
+            'phar',
+            'db',
+            'sqlite',
+        ];
+    }
 
     public function test_png_signature_on_disk(): void
     {
@@ -84,12 +91,12 @@ final class BinaryAssetsNotCrStrippedTest extends TestCase
             $checked++;
 
             // Solo i file che dichiarano di essere PNG: gli 8 byte devono includere il CR.
-            if (! str_starts_with($head, self::PNG_LEAD)) {
+            if (! str_starts_with($head, self::pngLead())) {
                 continue;
             }
 
             Assert::assertSame(
-                self::PNG_SIGNATURE,
+                self::pngSignature(),
                 $head,
                 $file.': firma PNG senza CR (89504e470a1a0a) — il file non e decodificabile dai browser'
             );
@@ -160,12 +167,12 @@ final class BinaryAssetsNotCrStrippedTest extends TestCase
 
         foreach ($contents as $sha => $content) {
             $path = $shaToPath[$sha] ?? '?';
-            if (! str_starts_with($content, self::PNG_LEAD)) {
+            if (! str_starts_with($content, self::pngLead())) {
                 continue;
             }
 
             Assert::assertSame(
-                self::PNG_SIGNATURE,
+                self::pngSignature(),
                 substr($content, 0, 8),
                 $path.': il blob committato ha la firma PNG senza CR — clone e deploy servono un PNG rotto'
             );
@@ -203,7 +210,7 @@ final class BinaryAssetsNotCrStrippedTest extends TestCase
     private function trackedBinaryFiles(string $repo): array
     {
         $args = ['git', 'ls-files', '-z', '--'];
-        foreach (self::BINARY_EXTENSIONS as $extension) {
+        foreach (self::binaryExtensions() as $extension) {
             $args[] = 'laravel/**/*.'.$extension;
         }
 
@@ -313,3 +320,4 @@ final class BinaryAssetsNotCrStrippedTest extends TestCase
         return $head;
     }
 }
+
