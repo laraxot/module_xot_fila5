@@ -65,7 +65,7 @@ return [
             'name' => 'General',
             'description' => 'General Settings',
         ],
-        'label' => 'Day Of Week',
+        'label' => 'Giorno della Settimana',
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],

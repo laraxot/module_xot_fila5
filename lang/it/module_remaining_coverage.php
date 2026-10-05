@@ -42,7 +42,7 @@ return [
         'CheckCriterioEsclusioneBulkAction' => ['label' => 'CheckCriterioEsclusioneBulkAction', 'icon' => 'CheckCriterioEsclusioneBulkAction', 'tooltip' => 'CheckCriterioEsclusioneBulkAction'],
         'send_schede' => ['label' => 'send_schede', 'icon' => 'send_schede', 'tooltip' => 'send_schede'],
         'zip_scheda' => ['label' => 'zip_scheda', 'icon' => 'zip_scheda', 'tooltip' => 'zip_scheda'],
-        'copy_from_last_year_' => ['label' => 'copy_from_last_year_', 'icon' => 'copy_from_last_year_', 'tooltip' => 'copy_from_last_year_'],
+        'copy_from_last_year_' => ['label' => "Copia dall'anno precedente", 'icon' => 'copy_from_last_year_', 'tooltip' => "Copia dall'anno precedente"],
         'import_valutatori_' => ['label' => 'import_valutatori_', 'icon' => 'import_valutatori_', 'tooltip' => 'import_valutatori_'],
         'merge_double_row_cateco_year' => ['label' => 'merge_double_row_cateco_year', 'icon' => 'merge_double_row_cateco_year', 'tooltip' => 'merge_double_row_cateco_year'],
         'populate_year' => ['label' => 'populate_year', 'icon' => 'populate_year', 'tooltip' => 'populate_year'],

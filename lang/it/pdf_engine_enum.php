@@ -30,7 +30,7 @@ return [
             'name' => 'General',
             'description' => 'General Settings',
         ],
-        'label' => 'Pdf Engine Enum',
+        'label' => 'Motore PDF',
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
