@@ -1,0 +1,6 @@
+stories:
+  "Xot/docs-100-fleet-merge-20261005":
+    status: wip
+    epic: "Docs-100 fleet merge: limite ricorsivo, merge+sintesi, niente solo-spostamenti"
+    story: "Epic docs/bmad/stories/docs-100-fleet-merge-20261005.story.md. 7 agenti
+      x 2 aree, lock/story-per-modulo/no-commit/docs-only. Swarm da lanciare."

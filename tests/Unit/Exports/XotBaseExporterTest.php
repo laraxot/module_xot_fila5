@@ -7,8 +7,6 @@ namespace Modules\Xot\Tests\Unit\Exports;
 use Filament\Actions\Exports\ExportColumn;
 use Filament\Actions\Exports\Jobs\CreateXlsxFile;
 use Filament\Actions\Exports\Models\Export;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Collection;
 use League\Csv\Reader;
 use League\Csv\Statement;
@@ -18,7 +16,6 @@ use Modules\Xot\Exports\Jobs\XotCreateXlsxFile;
 use Modules\Xot\Exports\Jobs\XotExportCsv;
 use Modules\Xot\Exports\Jobs\XotPrepareCsvExport;
 use Modules\Xot\Exports\XotBaseExporter;
-use Modules\Xot\Filament\Actions\XotBaseExportAction;
 use Modules\Xot\Tests\TestCase;
 use OpenSpout\Common\Entity\Cell\EmptyCell;
 use OpenSpout\Common\Entity\Cell\FormulaCell;
@@ -31,49 +28,7 @@ use function Safe\fopen;
 use function Safe\fwrite;
 use function Safe\rewind;
 
-/**
- * Stub minimo per verificare gli eager-load di XotBaseExporter::modifyQuery.
- *
- * @property-read \Illuminate\Database\Eloquent\Collection<int, ExporterEagerLoadModelStub> $ratings
- */
-final class ExporterEagerLoadModelStub extends Model
-{
-    /**
-     * @return HasMany<ExporterEagerLoadModelStub, $this>
-     */
-    public function ratings(): HasMany
-    {
-        return $this->hasMany(self::class);
-    }
-
-    /**
-     * @return HasMany<ExporterEagerLoadModelStub, $this>
-     */
-    public function ratingMorphs(): HasMany
-    {
-        return $this->hasMany(self::class);
-    }
-}
-
 uses(TestCase::class);
-
-/**
- * Exporter concreto di test: `getColumns()` non trova mai un ListRecords attivo
- * nel contesto del test, quindi si verifica `resolveColumns()` via reflection.
- */
-class XotBaseExporterStub extends XotBaseExporter
-{
-    #[\Override]
-    public static function getCompletedNotificationBody(Export $export): string
-    {
-        return 'done';
-    }
-}
-
-/**
- * Action concreta di test: `setUp()` di XotBaseExportAction fissa il job.
- */
-class ExportActionStub extends XotBaseExportAction {}
 
 /**
  * @param  array<string, mixed>  $filters

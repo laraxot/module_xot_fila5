@@ -1,6 +1,0 @@
-# Include in laravel/phpstan.neon (owner) — XOT-5.43/5.44 Pest 4 method.internalClass
-services:
-    -
-        class: Modules\Xot\PHPStan\PestInternalClassAccessIgnoreExtension
-        tags:
-            - phpstan.ignoreErrorExtension
