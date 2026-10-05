@@ -64,7 +64,7 @@ return [
             'label' => 'migrate',
         ],
     ],
-    'title' => 'Artisan commands manager',
+    'title' => 'Artisan Commands Manager',
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'fields' => [

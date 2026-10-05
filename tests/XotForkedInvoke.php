@@ -6,12 +6,11 @@ namespace Modules\Xot\Tests;
 
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Models\Cache;
-use PHPUnit\Framework\Assert;
 use ReflectionClass;
 use ReflectionMethod;
 use ReflectionNamedType;
 use SplFileInfo;
-use Webmozart\Assert\Assert as WebmozartAssert;
+use Webmozart\Assert\Assert;
 
 use function Safe\posix_kill;
 use function Safe\preg_match;
@@ -229,10 +228,15 @@ final class XotForkedInvoke
         $waited = 0;
         while ($waited < ($timeoutSeconds + 1) * 10) {
             $res = pcntl_waitpid($pid, $status, WNOHANG);
-            if ($res === -1 || $res > 0) {
-                WebmozartAssert::integer($status);
+            if ($res === -1) {
+                return false;
+            }
+            if ($res > 0) {
+                // pcntl_waitpid() declares the by-ref $status as mixed in its PHPDoc stub
+                // (native int): validate it into a real int before decoding the exit status.
+                $exitStatus = filter_var($status, FILTER_VALIDATE_INT);
 
-                return $res > 0 && pcntl_wifexited($status) && pcntl_wexitstatus($status) === 0;
+                return $exitStatus !== false && pcntl_wifexited($exitStatus) && pcntl_wexitstatus($exitStatus) === 0;
             }
             usleep(100_000);
             $waited++;
@@ -290,7 +294,7 @@ final class XotForkedInvoke
             }
         }
 
-        Assert::assertGreaterThanOrEqual(0, $executed);
+        Assert::greaterThanEq($executed, 0);
 
         return $executed;
     }
