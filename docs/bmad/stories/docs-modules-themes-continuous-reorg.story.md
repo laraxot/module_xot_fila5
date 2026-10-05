@@ -28,9 +28,9 @@ passata aggiunge misura, azioni e backlog qui, non in nuovi file.
 Regole verificate sul filesystem (non sulla wiki): story in
 `docs/bmad/stories/`, nomi kebab-case, ogni modulo ha `docs/purpose.md`,
 frontmatter sui `.md`, mai cancellare ne' rinumerare story.
-Nota: `bashscripts/docs/modular-bmad-story-policy.md` citato dalle regole NON
-esiste sul filesystem (verificato 2026-09-29): la policy vive nei bridge
-`bashscripts/ai/.agents/rules/`. Da correggere il puntatore.
+La policy BMAD e' applicata dal bridge
+`bashscripts/ai/.agents/rules/00-ON_DEMAND_PATTERN.md`; il vecchio puntatore
+alla policy citato da alcune regole non esiste e non va usato.
 
 ## Misura di partenza (2026-09-29, script fuori repo)
 
@@ -100,6 +100,55 @@ Motivo della scelta dei bersagli: i moduli peggiori (Xot, Notify, User,
 Activity, UI) hanno centinaia di file e riferimenti incrociati; nessuna
 correzione sicura e reversibile in una sola passata. Sono a backlog.
 
+## Passata 2026-10-02: tetto massimo 100
+
+### Perche' il limite serve
+
+La cartella `docs/` e' il corpus operativo, non un deposito illimitato di
+dump, report generati, duplicati e storia grezza. Oltre il limite la ricerca
+BMAD/QMD perde segnale, gli indici diventano ambigui e gli agenti scelgono
+fonti obsolete. Il contenuto storico non viene perso: viene separato dal
+corpus operativo in `.docs-archive/2026-10-02/docs/`, mantenendo lo stesso
+percorso relativo per rendere ogni recupero reversibile.
+
+### Criterio applicato
+
+Per ogni `Modules/*/docs` e `Themes/*/docs` sono rimasti al massimo 100 file
+`.md`, usando questo ordine: BMAD attivo e non concluso; README/purpose e
+indici; wiki/concepts/rules/architecture riusabili; poi i documenti restanti
+in ordine alfabetico fino al tetto. In Xot, dove anche le sole storie BMAD
+superano il budget, sono state mantenute le storie con stato attivo,
+backlog, review, ready, draft, proposed o blocked; le storie senza stato o
+con stato concluso sono nell'archivio. Trade e Four erano gia' sotto il
+tetto.
+
+### Risultato verificato
+
+| Area | Prima | Operativi | Archivio reversibile |
+|---|---:|---:|---:|
+| AI | 251 | 100 | 151 |
+| Activity | 841 | 100 | 741 |
+| Cms | 990 | 100 | 890 |
+| Gdpr | 344 | 100 | 244 |
+| Job | 471 | 100 | 371 |
+| Lang | 710 | 100 | 610 |
+| Media | 474 | 100 | 374 |
+| Notify | 2084 | 100 | 1984 |
+| Seo | 194 | 100 | 94 |
+| Tenant | 526 | 100 | 426 |
+| Trade | 5 | 5 | 0 |
+| UI | 991 | 100 | 891 |
+| User | 3357 | 100 | 3257 |
+| Xot | 7762 | 100 | 7662 |
+| Themes/Four | 2 | 2 | 0 |
+
+La verifica ripetibile e' `find docs -type f -name '*.md' | wc -l`, eseguita
+per ogni root. Nessun file e' stato cancellato; sono stati usati spostamenti
+reversibili e i tre file gia' modificati in `.claude-flow/` non sono stati
+toccati. I link verso il corpus storico vanno migrati solo quando una pagina
+archiviata torna operativa: l'albero archivio conserva il percorso originale
+come mappa di recupero.
+
 ## Backlog per modulo (ordine di gravita')
 
 1. Xot: 1334 tiny scaffold (vedi memoria `tiny-scaffold-docs-pattern`: cercare
@@ -113,8 +162,8 @@ correzione sicura e reversibile in una sola passata. Sono a backlog.
    (con riferimenti in `docs/epics.md` e sprint-status da riallineare prima).
 7. Lang, Tenant, Media, Job, Sigma: batch di rinomina (uppercase, underscore).
 8. Temi One/Zero: migrare `docs/stories` (3 e 4 file), frontmatter Zero.
-9. Ripulire i puntatori a `bashscripts/docs/modular-bmad-story-policy.md`
-   (file inesistente) e la cartella `laravel/Modules/docs`.
+9. Ripulire i puntatori residui alla vecchia policy BMAD (file inesistente) e
+   la cartella `laravel/Modules/docs`.
 
 ## Riga da registrare in docs/sprint-status.yaml
 
