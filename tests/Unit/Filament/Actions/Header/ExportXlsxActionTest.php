@@ -62,5 +62,3 @@ describe('ExportXlsxAction — export nativo generico su getXlsFields', function
         Assert::assertStringNotContainsString('xot::export', $body);
     });
 });
-
-class ExporterStub extends XotBaseExporter {}
