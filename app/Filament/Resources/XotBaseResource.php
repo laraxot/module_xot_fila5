@@ -280,7 +280,9 @@ abstract class XotBaseResource extends FilamentResource
             $count = app(CountAction::class)->execute(static::getModel());
 
             return number_format($count, 0).'';
-        } catch (\Exception $e) {
+        } catch (\Throwable $e) {
+            report($e);
+
             return '--';
         }
     }

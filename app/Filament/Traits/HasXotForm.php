@@ -19,7 +19,7 @@ trait HasXotForm
 
     public function getFormColumns(): int
     {
-        return 2;
+        return 1;
     }
 
     final public function form(Schema $schema): Schema
