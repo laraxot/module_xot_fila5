@@ -64,7 +64,11 @@ return [
             'label' => 'migrate',
         ],
     ],
+<<<<<<< .merge_file_vsMj0w
     'title' => 'Artisan-Befehle-Verwaltung',
+=======
+    'title' => 'Artisan-Befehlsverwaltung',
+>>>>>>> .merge_file_GYSopJ
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'fields' => [
