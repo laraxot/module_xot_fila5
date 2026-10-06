@@ -80,6 +80,13 @@ il duplicato"):
   **conservati** i metodi statici `getNotifyThemeTableColumns()` /
   `getNotifyThemeTableFilters()` (nome non `getTable*`, quindi fuori dalla regola
   meccanica, e condivisi con altro codice per docblock).
+<<<<<<< HEAD
+=======
+  **Aggiornamento 2026-10-06**: i due helper statici sono stati poi rimossi dal sync
+  di Notify; l'ultimo chiamante (`Quaeris/.../ManageNotifyThemes`) ora eredita i filtri
+  da `NotifyThemesTable` — vedi
+  [story Quaeris](../../../../Quaeris/docs/stories/manage-notify-themes-table-filters-phpstan.story.md).
+>>>>>>> laraxot/dev
 - `Notify/.../NotificationResource/Pages/ListNotifications.php` — rimosso solo il
   wrapper `getTableFilters()`; **conservati** `notificationTableColumns()` /
   `notificationTableFilters()` perché chiamati direttamente da

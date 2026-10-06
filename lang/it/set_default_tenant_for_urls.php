@@ -453,7 +453,11 @@ return [
         'values' => [
             'label' => 'values',
             'placeholder' => 'values',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'values',
+>>>>>>> laraxot/dev
             'description' => 'values',
             'tooltip' => '',
         ],
