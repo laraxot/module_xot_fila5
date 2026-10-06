@@ -19,15 +19,15 @@ class GetTreeOptionsByModelClassAction
     public array $options = [];
 
     /**
-     * @param  class-string<HasRecursiveRelationshipsContract>  $class
+     * @param  class-string<HasRecursiveRelationshipsContract<Model>>  $class
      * @return array<int|string, string>
      */
     public function execute(string $class, Model|callable|null $_where = null): array
     {
-        /** @var HasRecursiveRelationshipsContract $model */
+        /** @var HasRecursiveRelationshipsContract<Model> $model */
         $model = new $class;
 
-        /** @var TreeCollection<int, Model&HasRecursiveRelationshipsContract> $collection */
+        /** @var TreeCollection<int, Model&HasRecursiveRelationshipsContract<Model>> $collection */
         $collection = $model->newQuery()->get();
         $rows = $collection->toTree();
 
@@ -43,10 +43,13 @@ class GetTreeOptionsByModelClassAction
         return $this->options;
     }
 
+    /**
+     * @param HasRecursiveRelationshipsContract<Model> $model
+     */
     public function parse(HasRecursiveRelationshipsContract $model): void
     {
         foreach ($model->children as $child) {
-            /** @var HasRecursiveRelationshipsContract $child */
+            /** @var HasRecursiveRelationshipsContract<Model> $child */
             $key = $child->getKey();
             $this->options[SafeStringCastAction::cast($key)] =
                 Str::repeat('---', $child->depth).'   '.$child->getLabel();
