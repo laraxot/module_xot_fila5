@@ -48,7 +48,7 @@ use Spatie\ModelStatus\Status;
  *
  * @phpstan-require-extends Model
  *
- * @mixin \Eloquent
+ * @mixin \Illuminate\Database\Eloquent\Model
  */
 interface ModelWithStatusContract
 {
