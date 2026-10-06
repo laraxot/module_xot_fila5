@@ -231,7 +231,8 @@ abstract class XotBaseMigration extends LaravelMigration
         if ($connection->getDriverName() === 'sqlite') {
             $infos = $connection->select("PRAGMA table_info({$table})");
             foreach ($infos as $info) {
-                if (isset($info->pk) && $info->pk > 0) {
+                $info = (array) $info;
+                if (isset($info['pk']) && $info['pk'] > 0) {
                     return true;
                 }
             }
