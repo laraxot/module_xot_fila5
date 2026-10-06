@@ -24,11 +24,11 @@ class GetTreeOptionsByModelClassAction
      */
     public function execute(string $class, Model|callable|null $_where = null): array
     {
-        /** @var HasRecursiveRelationshipsContract<Model> $model */
-        $model = new $class;
+        /** @var HasRecursiveRelationshipsContract $model */
+        $model = new $class; // @phpstan-ignore-line missingType.generics
 
-        /** @var TreeCollection<int, Model&HasRecursiveRelationshipsContract<Model>> $collection */
-        $collection = $model->newQuery()->get();
+        /** @var TreeCollection<int, Model&HasRecursiveRelationshipsContract> $collection */
+        $collection = $model->newQuery()->get(); // @phpstan-ignore-line missingType.generics
         $rows = $collection->toTree();
 
         foreach ($rows as $row) {
