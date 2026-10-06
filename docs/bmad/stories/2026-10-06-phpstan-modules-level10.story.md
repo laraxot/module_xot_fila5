@@ -31,6 +31,10 @@ sintattici, non il criterio funzionale del lavoro.
   rilasciato dal proprietario.
 - Worktree contiene modifiche preesistenti: ogni intervento mantiene entrambe
   le intenzioni funzionali, con lock per file e verifica mirata.
+- La regola `committed-conflict-markers.md` richiede di verificare la storia
+  pulita e ricostruire i conflitti annidati, non rimuovere marker in massa.
+- Swarm gerarchico: `swarm-1791288373084-rtzmdd`; task indipendenti avviati
+  in parallelo per IndennitaCondizioniLavoro, User, Rating e docs temi.
 
 ## Criteri di accettazione
 
@@ -49,6 +53,7 @@ sintattici, non il criterio funzionale del lavoro.
 | IndennitaCondizioniLavoro | indennita-marker | marker sintattici, story modulo | in_progress |
 | User | user-marker | marker sintattici, story modulo | in_progress |
 | Rating | rating-marker | escluso il file con lock attivo | in_progress |
+| Incentivi | incentivi-marker | marker in sorgenti modificati | in_progress |
 
 ## Diario
 
