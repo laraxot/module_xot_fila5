@@ -24,9 +24,9 @@ class ExportPdfAction extends XotBaseAction
     {
         parent::setUp();
         $this
-            ->label('')
-            ->iconButton()
-            ->color('danger')
+            ->hiddenLabel(true)
+            //->iconButton()
+            //->color('danger')
             ->icon('xot-files.pdf')
             ->tooltip(function (): string {
                 $livewire = $this->getLivewire();
