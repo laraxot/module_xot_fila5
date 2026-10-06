@@ -48,71 +48,73 @@ interface HasRecursiveRelationshipsContract
 {
     /**
      * Execute a query with a maximum depth constraint for the recursive query.
+     *
+     * @return AdjacencyBuilder<Model>
      */
-    public static function withMaxDepth(int $maxDepth, callable $query): mixed;
+    public static function withMaxDepth(int $maxDepth, callable $query): AdjacencyBuilder;
 
     /**
      * Get the name of the parent key column.
      *
      * @return string
      */
-    public function getParentKeyName();
+    public function getParentKeyName(): string;
 
     /**
      * Get the qualified parent key column.
      *
      * @return string
      */
-    public function getQualifiedParentKeyName();
+    public function getQualifiedParentKeyName(): string;
 
     /**
      * Get the name of the local key column.
      *
      * @return string
      */
-    public function getLocalKeyName();
+    public function getLocalKeyName(): string;
 
     /**
      * Get the qualified local key column.
      *
      * @return string
      */
-    public function getQualifiedLocalKeyName();
+    public function getQualifiedLocalKeyName(): string;
 
     /**
      * Get the name of the depth column.
      *
      * @return string
      */
-    public function getDepthName();
+    public function getDepthName(): string;
 
     /**
      * Get the name of the path column.
      *
      * @return string
      */
-    public function getPathName();
+    public function getPathName(): string;
 
     /**
      * Get the path separator.
      *
      * @return string
      */
-    public function getPathSeparator();
+    public function getPathSeparator(): string;
 
     /**
      * Get the additional custom paths.
      *
      * @return array<string>
      */
-    public function getCustomPaths();
+    public function getCustomPaths(): array;
 
     /**
      * Get the name of the common table expression.
      *
      * @return string
      */
-    public function getExpressionName();
+    public function getExpressionName(): string;
 
     /** @return Ancestors<Model, Model> */
     public function ancestors();
@@ -158,21 +160,21 @@ interface HasRecursiveRelationshipsContract
      *
      * @return string
      */
-    public function getFirstPathSegment();
+    public function getFirstPathSegment(): string;
 
     /**
      * Determine whether the model's path is nested.
      *
      * @return bool
      */
-    public function hasNestedPath();
+    public function hasNestedPath(): bool;
 
     /**
      * Determine if an attribute is an integer.
      *
      * @return bool
      */
-    public function isIntegerAttribute(string $attribute);
+    public function isIntegerAttribute(string $attribute): bool;
 
     /**
      * @return AdjacencyBuilder<Model>
