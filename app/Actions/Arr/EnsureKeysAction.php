@@ -29,7 +29,9 @@ class EnsureKeysAction
         $result = [];
         foreach ($data as $k => $item) {
             if (is_array($item)) {
-                $result[$k] = array_replace($template, $item);
+                /** @var array<string, mixed> $merged */
+                $merged = array_replace($template, $item);
+                $result[$k] = $merged;
             }
         }
 
