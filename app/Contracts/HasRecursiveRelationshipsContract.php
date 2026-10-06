@@ -20,24 +20,26 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\Relations\Siblings;
 /**
  * Modules\Xot\Contracts\HasRecursiveRelationshipsContract.
  *
+ * @template TModel of Model
+ *
  * @property int $id
  * @property string $name
  * @property int $depth
- * @property Collection<int, Model> $children
+ * @property Collection<int, TModel> $children
  * @property int|null $children_count
- * @property Collection<int, Model> $ancestors The model's recursive parents.
+ * @property Collection<int, TModel> $ancestors The model's recursive parents.
  * @property int|null $ancestors_count
- * @property Collection<int, Model> $ancestorsAndSelf The model's recursive parents and itself.
+ * @property Collection<int, TModel> $ancestorsAndSelf The model's recursive parents and itself.
  * @property int|null $ancestors_and_self_count
- * @property Collection<int, Model> $bloodline The model's ancestors, descendants and itself.
+ * @property Collection<int, TModel> $bloodline The model's ancestors, descendants and itself.
  * @property int|null $bloodline_count
- * @property Collection<int, Model> $childrenAndSelf The model's direct children and itself.
+ * @property Collection<int, TModel> $childrenAndSelf The model's direct children and itself.
  * @property int|null $children_and_self_count
- * @property Collection<int, Model> $descendants The model's recursive children.
+ * @property Collection<int, TModel> $descendants The model's recursive children.
  * @property int|null $descendants_count
- * @property Collection<int, Model> $descendantsAndSelf The model's recursive children and itself.
+ * @property Collection<int, TModel> $descendantsAndSelf The model's recursive children and itself.
  * @property int|null $descendants_and_self_count
- * @property Collection<int, Model> $parentAndSelf The model's direct parent and itself.
+ * @property Collection<int, TModel> $parentAndSelf The model's direct parent and itself.
  * @property int|null $parent_and_self_count
  *
  * @phpstan-require-extends Model
@@ -61,101 +63,101 @@ interface HasRecursiveRelationshipsContract
      *
      * @return string
      */
-    public function getParentKeyName(): string;
+    public function getParentKeyName();
 
     /**
      * Get the qualified parent key column.
      *
      * @return string
      */
-    public function getQualifiedParentKeyName(): string;
+    public function getQualifiedParentKeyName();
 
     /**
      * Get the name of the local key column.
      *
      * @return string
      */
-    public function getLocalKeyName(): string;
+    public function getLocalKeyName();
 
     /**
      * Get the qualified local key column.
      *
      * @return string
      */
-    public function getQualifiedLocalKeyName(): string;
+    public function getQualifiedLocalKeyName();
 
     /**
      * Get the name of the depth column.
      *
      * @return string
      */
-    public function getDepthName(): string;
+    public function getDepthName();
 
     /**
      * Get the name of the path column.
      *
      * @return string
      */
-    public function getPathName(): string;
+    public function getPathName();
 
     /**
      * Get the path separator.
      *
      * @return string
      */
-    public function getPathSeparator(): string;
+    public function getPathSeparator();
 
     /**
      * Get the additional custom paths.
      *
      * @return array<string>
      */
-    public function getCustomPaths(): array;
+    public function getCustomPaths();
 
     /**
      * Get the name of the common table expression.
      *
      * @return string
      */
-    public function getExpressionName(): string;
+    public function getExpressionName();
 
-    /** @return Ancestors<Model, Model> */
+/** @return Ancestors<TModel, TModel> */
     public function ancestors();
 
-    /** @return Ancestors<Model, Model> */
+    /** @return Ancestors<TModel, TModel> */
     public function ancestorsAndSelf();
 
-    /** @return Bloodline<Model, Model> */
+    /** @return Bloodline<TModel, TModel> */
     public function bloodline();
 
-    /** @return HasMany<Model, Model> */
+    /** @return HasMany<TModel, TModel> */
     public function children();
 
-    /** @return Descendants<Model, Model> */
+    /** @return Descendants<TModel, TModel> */
     public function childrenAndSelf();
 
-    /** @return Descendants<Model, Model> */
+    /** @return Descendants<TModel, TModel> */
     public function descendants();
 
-    /** @return Descendants<Model, Model> */
+    /** @return Descendants<TModel, TModel> */
     public function descendantsAndSelf();
 
-    /** @return BelongsTo<Model, Model> */
+    /** @return BelongsTo<TModel, TModel> */
     public function parent();
 
-    /** @return Ancestors<Model, Model> */
+    /** @return Ancestors<TModel, TModel> */
     public function parentAndSelf();
 
-    /** @return RootAncestor<Model, Model> */
+    /** @return RootAncestor<TModel, TModel> */
     public function rootAncestor();
 
-    /** @return RootAncestorOrSelf<Model, Model> */
+    /** @return RootAncestorOrSelf<TModel, TModel> */
     public function rootAncestorOrSelf();
 
-    /** @return Siblings<Model, Model> */
+    /** @return Siblings<TModel, TModel> */
     public function siblings();
 
-    /** @return Siblings<Model, Model> */
+    /** @return Siblings<TModel, TModel> */
     public function siblingsAndSelf();
 
     /**
@@ -163,30 +165,30 @@ interface HasRecursiveRelationshipsContract
      *
      * @return string
      */
-    public function getFirstPathSegment(): string;
+    public function getFirstPathSegment();
 
     /**
      * Determine whether the model's path is nested.
      *
      * @return bool
      */
-    public function hasNestedPath(): bool;
+    public function hasNestedPath();
 
     /**
      * Determine if an attribute is an integer.
      *
      * @return bool
      */
-    public function isIntegerAttribute(string $attribute): bool;
+    public function isIntegerAttribute(string $attribute);
 
     /**
-     * @return AdjacencyBuilder<Model>
+     * @return AdjacencyBuilder<TModel>
      */
     public function newEloquentBuilder(Builder $query);
 
     /**
-     * @param  list<Model>  $models
-     * @return Collection<int, Model>
+     * @param  list<TModel>  $models
+     * @return Collection<int, TModel>
      */
     public function newCollection(array $models = []);
 
