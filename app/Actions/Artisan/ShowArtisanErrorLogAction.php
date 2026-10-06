@@ -39,7 +39,7 @@ class ShowArtisanErrorLogAction
         preg_match_all($pattern, $content, $matches);
 
         /** @var list<string> $urlList */
-        $urlList = $matches[1] ?? [];
+        $urlList = $matches[1];
         $urls = array_values(array_unique($urlList));
         $view_params = [
             'view' => $view,
