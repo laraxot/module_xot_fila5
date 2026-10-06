@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Arr;
 
-use Illuminate\Support\Arr;
 use Spatie\QueueableAction\QueueableAction;
 
 class EnsureKeysAction
@@ -23,12 +22,13 @@ class EnsureKeysAction
             $stringKeys[] = (string) $key;
         }
 
-        return Arr::map(
-            $data,
-            fn (array $item) => array_replace(
-                array_fill_keys($stringKeys, null),
-                $item,
-            ),
-        );
+        $defaults = array_fill_keys($stringKeys, null);
+
+        $result = [];
+        foreach ($data as $index => $item) {
+            $result[$index] = array_replace($defaults, $item);
+        }
+
+        return $result;
     }
 }
