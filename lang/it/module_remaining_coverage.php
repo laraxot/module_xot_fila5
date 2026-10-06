@@ -14,7 +14,11 @@ return [
         'last_name' => ['label' => 'last_name', 'placeholder' => 'last_name', 'helper_text' => 'last_name', 'description' => 'last_name'],
         'photo_profile' => ['label' => 'photo_profile', 'placeholder' => 'photo_profile', 'helper_text' => 'photo_profile', 'description' => 'photo_profile'],
         'recordId' => ['label' => 'recordId', 'placeholder' => 'recordId', 'helper_text' => 'recordId', 'description' => 'recordId'],
+<<<<<<< HEAD
         'values' => ['label' => 'values', 'placeholder' => 'values', 'helper_text' => '', 'description' => 'values'],
+=======
+        'values' => ['label' => 'values', 'placeholder' => 'values', 'helper_text' => 'values', 'description' => 'values'],
+>>>>>>> laraxot/dev
         'preset' => ['label' => 'preset', 'placeholder' => 'preset', 'helper_text' => 'preset', 'description' => 'preset'],
         'fromBreakpoint' => ['label' => 'fromBreakpoint', 'placeholder' => 'fromBreakpoint', 'helper_text' => 'fromBreakpoint', 'description' => 'fromBreakpoint'],
         'isAsymmetric' => ['label' => 'isAsymmetric', 'placeholder' => 'isAsymmetric', 'helper_text' => 'isAsymmetric', 'description' => 'isAsymmetric'],

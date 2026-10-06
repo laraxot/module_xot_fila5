@@ -27,7 +27,13 @@ class ExportXlsAction extends XotBaseAction
     {
         parent::setUp();
         $this->translateLabel()
+<<<<<<< HEAD
             ->hiddenLabel(true)
+=======
+            ->label('')
+            ->iconButton()
+            ->color('success')
+>>>>>>> laraxot/dev
             ->tooltip(function (): string {
                 $livewire = $this->getLivewire();
                 if (! $livewire instanceof ListRecords) {
