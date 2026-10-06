@@ -4,7 +4,7 @@ type: story
 module: Xot
 epic: quality
 story_id: "2026-10-06-phpstan-modules-level10"
-status: in_progress
+status: done
 track: quality/phpstan
 related:
   - ../../../../Rating/docs/bmad/stories/conflict-marker-resolution-phpstan-bootstrap-2026-10-06.story.md
@@ -105,6 +105,10 @@ sintattici, non il criterio funzionale del lavoro.
   - Tenant: SushiToJson.php getRows return.type + undefined variable $schema
   Swarm parallelo lanciato su 4 subagent + 1 subagent docs organization.
 - 2026-10-06: Tenant completato. SushiToJson.php sostituito return $schema con return $this->getSushiRows(). PHPStan [OK] su Tenant.
+- 2026-10-06: Progressioni completato. Scheda.php: sostituito count() su collection con query first()/skip(1)->exists().
+- 2026-10-06: Rating completato. RatingFilamentSchemaTest.php: spostata funzione helper prima di uses(), aggiunti @var per tipizzare $colonne e $tabella.
+- 2026-10-06: Sigma completato. ImportActionTest.php PHPStan [OK].
+- 2026-10-06: PHPStan Modules -> [OK] No errors (22 -> 0).
 - Lezione: collegare codice che era escluso dall'analisi (ignore, trait mai usato) non e' neutro:
   fa emergere errori nascosti e bug latenti. Dopo il collegamento serve una verifica di
   comportamento, non solo PHPStan.
@@ -114,7 +118,7 @@ sintattici, non il criterio funzionale del lavoro.
 - [x] PHPStan Modules completa senza bootstrap failure.
 - [x] Tutte le segnalazioni prodotte sono corrette per causa, senza ignore o
   baseline aggiunti.
-- [ ] Ogni file modificato supera `php -l`; test Pest pertinenti verdi (o skip
+- [x] Ogni file modificato supera `php -l`; test Pest pertinenti verdi (o skip
   documentato solo se host produzione).
 - [x] Story dei moduli interessati registra interventi, verifica ed esito.
 - [x] Second brain aggiornato con pattern/lezioni verificati e reindicizzato.
