@@ -22,13 +22,9 @@ class EnsureKeysAction
      */
     public function execute(array $data, array $keys): array
     {
-        $defaults = [];
-        foreach ($keys as $key) {
-            $defaults[(string) $key] = null;
-        }
-
-        // ponytail: use array_map instead of Arr::map for better type inference
-        $template = array_fill_keys($stringKeys, null);
+        // Convert keys to strings and create template
+        /** @var array<string, mixed> $template */
+        $template = array_fill_keys(array_map('strval', $keys), null);
 
         $result = [];
         foreach ($data as $k => $item) {

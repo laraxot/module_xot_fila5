@@ -21,7 +21,7 @@ class ShowArtisanErrorLogAction
 
     public function execute(): Renderable
     {
-        /** @var view-string $view */
+        /** @var string $view */
         $view = 'xot::acts.artisan.error-show';
         $files = File::files(storage_path('logs'));
         $log = request('log', '');
@@ -37,7 +37,8 @@ class ShowArtisanErrorLogAction
         $matches = [];
         preg_match_all($pattern, $content, $matches);
 
-        $urls = array_values(array_unique($matches[1]));
+        /** @var array<string, mixed> $urls */
+        $urls = array_values(array_unique($matches[1] ?? []));
         $view_params = [
             'view' => $view,
             'lang' => app()->getLocale(),
