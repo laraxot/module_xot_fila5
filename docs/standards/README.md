@@ -1,3 +1,9 @@
+---
+title: "Xot - README.md"
+module: Xot
+bmad: true
+status: active
+---
 # Standard di Codice
 
 Questa cartella contiene gli standard di codice e le convenzioni utilizzate nel progetto.

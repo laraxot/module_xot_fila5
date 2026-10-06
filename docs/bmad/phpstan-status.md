@@ -1,3 +1,9 @@
+---
+title: "Xot - phpstan-status.md"
+module: Xot
+bmad: true
+status: active
+---
 # PHPStan Status — Xot
 
 Stato vivo del gate. Non copiare numeri da report storici: rimisura.

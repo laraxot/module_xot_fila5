@@ -1,3 +1,9 @@
+---
+title: "Xot - docs-100-fleet-merge-20261005.story.md"
+module: Xot
+bmad: true
+status: active
+---
 # Epic — Docs ≤100 .md ricorsivi via merge (fleet-wide, 2026-10-05)
 
 > Status: in-progress. Owner: sessione corrente. Metodo: BMAD + second brain + ponytail.

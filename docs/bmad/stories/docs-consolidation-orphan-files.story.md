@@ -1,3 +1,9 @@
+---
+title: "Xot - docs-consolidation-orphan-files.story.md"
+module: Xot
+bmad: true
+status: active
+---
 # Docs consolidation — orphan files + structure normalization — 2026-10-06
 
 ## Epic

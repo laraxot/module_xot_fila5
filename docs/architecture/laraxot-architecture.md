@@ -1,3 +1,9 @@
+---
+title: "Xot - laraxot-architecture.md"
+module: Xot
+bmad: true
+status: active
+---
 # Laraxot Architecture: Philosophy, Religion, Politics, and Zen
 
 ## Core Philosophy (Filosofia)

@@ -1,3 +1,9 @@
+---
+title: "Xot - architecture.md"
+module: Xot
+bmad: true
+status: active
+---
 # 🏗️ **Architettura Modulo Xot**
 
 ## 📋 **Panoramica Architetturale**

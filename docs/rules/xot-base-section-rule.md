@@ -1,3 +1,9 @@
+---
+title: "Xot - xot-base-section-rule.md"
+module: Xot
+bmad: true
+status: active
+---
 # Regola XotBaseSection - Politica, Filosofia, Religione, Zen
 
 ## Scopo (Purpose)

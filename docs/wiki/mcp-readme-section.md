@@ -1,3 +1,9 @@
+---
+title: "Xot - mcp-readme-section.md"
+module: Xot
+bmad: true
+status: active
+---
 # MCP (Model Context Protocol) Integration
 
 ## Cosa è MCP?

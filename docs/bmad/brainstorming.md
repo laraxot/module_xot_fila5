@@ -1,3 +1,9 @@
+---
+title: "Xot - brainstorming.md"
+module: Xot
+bmad: true
+status: active
+---
 <<<<<<< .merge_file_1Dz7nj
 <<<<<<< .merge_file_clcYBo
 ---

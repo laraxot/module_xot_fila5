@@ -1,3 +1,9 @@
+---
+title: "Xot - architecture-violations-and-fixes.md"
+module: Xot
+bmad: true
+status: active
+---
 # Violazioni Architetturali e Correzioni - Pattern XotData
 
 ## 🚨 **Violazioni Architetturali Critiche**

@@ -1,3 +1,9 @@
+---
+title: "Xot - development-rules.md"
+module: Xot
+bmad: true
+status: active
+---
 # Regole Generali di Sviluppo del Progetto
 
 ## Collegamenti
