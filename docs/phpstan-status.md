@@ -2,6 +2,24 @@
 
 Stato vivo del gate. Non copiare numeri da report storici: rimisura.
 
+## Misura 2026-10-06 — EnsureKeysAction + file scratch rimossi
+
+`analyse Modules/Xot` dopo il sync delle sub-repository (`64a28f945`): **4** errori, ora **0**.
+
+- `app/Actions/Arr/ScratchNarrowingTest.php` e `ScratchNarrowingTest2.php` (3 errori):
+  classi di prova sul narrowing di `Assert`, mai referenziate, arrivate col sync dentro
+  `app/`. **Cancellate**, non corrette: è codice morto, stessa logica di
+  [phpstan-no-probes-rule](../../../../bashscripts/ai/wiki/rules/phpstan-no-probes-rule.md)
+  ("rimuovere codice morto non referenziato").
+- `app/Actions/Arr/EnsureKeysAction.php` (`return.type`): `Arr::map()` di Laravel non ha
+  tipo di ritorno generico, quindi il risultato era `array` nudo. Sostituito con un
+  `foreach` che costruisce l'array tipizzato; stesso comportamento (chiavi preservate,
+  default `null`, i valori della riga vincono), niente `@var` né cast.
+
+Fuori da Xot: `analyse Modules/Tenant` riporta ancora errori su `SushiToJson`,
+`TestSushiModel` e relativi test, inclusi i chiamanti di `EnsureKeysAction` che passano
+`array`/`mixed` non tipizzati. Non toccati in questa misura.
+
 ## Misura 2026-09-24 (sera) — GeoTrait generics + re-zero
 
 `analyse Modules` dopo fix `@template TModel` / `@use GeoTrait<Address>`:
