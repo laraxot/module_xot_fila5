@@ -1,3 +1,9 @@
+---
+title: "Xot - readme-consolidation-plan.md"
+module: Xot
+bmad: true
+status: active
+---
 # Piano Consolidamento File readme.md Duplicati
 
 **Data**: 2026-01-09  

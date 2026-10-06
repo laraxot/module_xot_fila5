@@ -1,3 +1,9 @@
+---
+title: "Xot - array-keys-rule.md"
+module: Xot
+bmad: true
+status: active
+---
 # Array Keys Rule for Filament Schemas
 
 ## Regola

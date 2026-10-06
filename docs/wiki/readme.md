@@ -1,3 +1,9 @@
+---
+title: "Xot - readme.md"
+module: Xot
+bmad: true
+status: active
+---
 # LLM Wiki (module)
 
 Questa cartella contiene la wiki curata del modulo **Xot** per uso LLM.

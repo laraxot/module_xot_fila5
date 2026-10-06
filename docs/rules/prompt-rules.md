@@ -1,3 +1,9 @@
+---
+title: "Xot - prompt-rules.md"
+module: Xot
+bmad: true
+status: active
+---
 # Regole per i Prompt
 
 ## Regola Universale

@@ -1,3 +1,9 @@
+---
+title: "Xot - xotbase-navigationicon-rule.story.md"
+module: Xot
+bmad: true
+status: active
+---
 # BMAD Story — XotBaseResource: rimuovere $navigationIcon (traduzioni gestiscono)
 
 ## Epic

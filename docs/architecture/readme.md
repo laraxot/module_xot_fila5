@@ -1,3 +1,9 @@
+---
+title: "Xot - readme.md"
+module: Xot
+bmad: true
+status: active
+---
 # Architettura Xot
 
 ## Classi Base

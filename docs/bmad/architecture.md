@@ -1,3 +1,9 @@
+---
+title: "Xot - architecture.md"
+module: Xot
+bmad: true
+status: active
+---
 <<<<<<< .merge_file_z8d13y
 <<<<<<< .merge_file_t0hOOQ
 ---

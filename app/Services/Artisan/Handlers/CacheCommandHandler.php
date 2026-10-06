@@ -14,7 +14,7 @@ use Webmozart\Assert\Assert;
 class CacheCommandHandler implements CommandHandlerInterface
 {
     /** @var array<string, string> */
-    private const array CACHE_COMMANDS = [
+    private const CACHE_COMMANDS = [
         'clear' => 'clearAll',
         'clearcache' => 'clearCache',
         'configcache' => 'cacheConfig',

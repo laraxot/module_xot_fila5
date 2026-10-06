@@ -1,3 +1,9 @@
+---
+title: "Xot - namespace-rules.md"
+module: Xot
+bmad: true
+status: active
+---
 # Regole di Namespace
 
 ## Struttura dei Namespace

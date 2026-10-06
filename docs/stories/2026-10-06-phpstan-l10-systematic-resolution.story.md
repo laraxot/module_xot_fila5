@@ -1,3 +1,9 @@
+---
+title: "Xot - 2026-10-06-phpstan-l10-systematic-resolution.story.md"
+module: Xot
+bmad: true
+status: active
+---
 # BMAD Story: PHPStan Level 10 Systematic Resolution
 
 **Date**: 2026-10-06  

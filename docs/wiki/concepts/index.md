@@ -1,3 +1,9 @@
+---
+title: "Xot - index.md"
+module: Xot
+bmad: true
+status: active
+---
 # Xot Module - concepts Index
 
 ## Purpose

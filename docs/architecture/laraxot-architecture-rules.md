@@ -1,3 +1,9 @@
+---
+title: "Xot - laraxot-architecture-rules.md"
+module: Xot
+bmad: true
+status: active
+---
 # Laraxot Architecture Rules - Xot Module
 
 ## 🎯 Regole Fondamentali Laraxot

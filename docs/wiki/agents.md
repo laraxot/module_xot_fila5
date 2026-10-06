@@ -1,3 +1,9 @@
+---
+title: "Xot - agents.md"
+module: Xot
+bmad: true
+status: active
+---
 # Xot {{TYPE^}} LLM Wiki Agent Instructions
 
 > **Module/Theme:** Xot

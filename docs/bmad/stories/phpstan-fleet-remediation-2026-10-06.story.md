@@ -1,3 +1,9 @@
+---
+title: "Xot - phpstan-fleet-remediation-2026-10-06.story.md"
+module: Xot
+bmad: true
+status: active
+---
 # PHPStan fleet remediation — 2026-10-06
 
 ## Epic

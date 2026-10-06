@@ -1,3 +1,9 @@
+---
+title: "Xot - fix-navigationicon-violations.story.md"
+module: Xot
+bmad: true
+status: active
+---
 # BMAD Story — Fix navigationIcon dichiarazioni vietate in Resource che estendono XotBaseResource
 
 ## Epic

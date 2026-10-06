@@ -1,3 +1,9 @@
+---
+title: "Xot - legacy-readme-new.md"
+module: Xot
+bmad: true
+status: active
+---
 # Xot Module - Core Foundation
 
 **Last Update**: 2025-12-05

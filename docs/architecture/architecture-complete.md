@@ -1,3 +1,9 @@
+---
+title: "Xot - architecture-complete.md"
+module: Xot
+bmad: true
+status: active
+---
 # Xot Module - Complete Architecture Guide (2025)
 
 > **Last Updated:** 2025-11-19

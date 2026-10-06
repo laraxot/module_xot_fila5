@@ -1,3 +1,9 @@
+---
+title: "Xot - legacy-readme-en.md"
+module: Xot
+bmad: true
+status: active
+---
 # ⚡ Xot — English presentation
 
 [![Core](https://img.shields.io/badge/Role-Platform%20Core-6A1B9A.svg)](#)
