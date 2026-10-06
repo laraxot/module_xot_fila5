@@ -49,9 +49,12 @@ interface HasRecursiveRelationshipsContract
     /**
      * Execute a query with a maximum depth constraint for the recursive query.
      *
-     * @return AdjacencyBuilder<Model>
+     * Il ritorno e' `mixed` perche' il trait vendor `HasAdjacencyList` lo dichiara cosi':
+     * un tipo piu' stretto qui rende fatale il caricamento di ogni classe che usa il trait.
+     *
+     * @return mixed
      */
-    public static function withMaxDepth(int $maxDepth, callable $query): AdjacencyBuilder;
+    public static function withMaxDepth(int $maxDepth, callable $query): mixed;
 
     /**
      * Get the name of the parent key column.

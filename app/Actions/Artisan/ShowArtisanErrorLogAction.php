@@ -21,7 +21,6 @@ class ShowArtisanErrorLogAction
 
     public function execute(): Renderable
     {
-        /** @var string $view */
         $view = 'xot::acts.artisan.error-show';
         $files = File::files(storage_path('logs'));
         $log = request('log', '');
@@ -29,22 +28,19 @@ class ShowArtisanErrorLogAction
             $log = '';
         }
         $content = '';
-        if ($log !== '' && File::exists(storage_path('logs/'.$log))) {
-            $content = File::get(storage_path('logs/'.$log));
+        // basename(): `log` arriva dalla query string, niente path traversal fuori da storage/logs.
+        $logPath = storage_path('logs/'.basename($log));
+        if ($log !== '' && File::isFile($logPath)) {
+            $content = File::get($logPath);
         }
 
         $pattern = '/url":"([^"]*)"/';
         $matches = [];
         preg_match_all($pattern, $content, $matches);
 
-<<<<<<< .merge_file_2WoJuh
-        /** @var array<string, mixed> $urls */
-        $urls = array_values(array_unique($matches[1] ?? []));
-=======
         /** @var list<string> $urlList */
         $urlList = $matches[1] ?? [];
         $urls = array_values(array_unique($urlList));
->>>>>>> .merge_file_DRUlZL
         $view_params = [
             'view' => $view,
             'lang' => app()->getLocale(),
@@ -53,7 +49,7 @@ class ShowArtisanErrorLogAction
             'urls' => $urls,
         ];
 
-        $result = view($view, $view_params);
+        $result = view('xot::acts.artisan.error-show', $view_params);
         Assert::isInstanceOf($result, View::class);
 
         return $result;

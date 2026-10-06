@@ -29,13 +29,9 @@ class EnsureKeysAction
         $result = [];
         foreach ($data as $k => $item) {
             if (is_array($item)) {
-<<<<<<< .merge_file_YPiZag
-                $result[$k] = array_replace($template, $item);
-=======
                 /** @var array<string, mixed> $merged */
                 $merged = array_replace($template, $item);
                 $result[$k] = $merged;
->>>>>>> .merge_file_OZKuEE
             }
         }
 
