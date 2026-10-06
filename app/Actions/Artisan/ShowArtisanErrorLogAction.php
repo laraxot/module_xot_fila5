@@ -37,8 +37,9 @@ class ShowArtisanErrorLogAction
         $matches = [];
         preg_match_all($pattern, $content, $matches);
 
-        /** @var array<string, mixed> $urls */
-        $urls = array_values(array_unique($matches[1] ?? []));
+        /** @var list<string> $urlList */
+        $urlList = $matches[1] ?? [];
+        $urls = array_values(array_unique($urlList));
         $view_params = [
             'view' => $view,
             'lang' => app()->getLocale(),
