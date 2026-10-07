@@ -48,19 +48,7 @@ trait RelationX
         $table = $pivot->getTable();
         $pivotFields = $pivot->getFillable();
 
-        $pivotDbName = $pivot->getConnection()->getDatabaseName();
-        $dbName = $this->getConnection()->getDatabaseName();
-        $relatedDbName = $related_model->getConnection()->getDatabaseName();
-        // if ($pivotDbName !== $dbName) {
-        if ($pivotDbName !== $dbName || $relatedDbName !== $dbName) {
-            $pivotDriver = $pivot->getConnection()->getDriverName();
-            // Only add database prefix for non-SQLite drivers
-            // SQLite doesn't support database.table syntax
-            if ($pivotDriver !== 'sqlite') {
-                $table = $pivotDbName.'.'.$table;
-            }
-        }
-        // }
+        $table = $this->qualifyPivotTable($pivot, $related_model, $table);
 
         return $this->belongsToMany(
             related: $related,
@@ -95,16 +83,12 @@ trait RelationX
         ?string $relation = null,
         bool $inverse = false,
     ): MorphToMany {
-        $pivot = $this->guessMorphPivot($related);
-        $table = $pivot->getTable();
-        $pivotFields = $pivot->getFillable();
+        Assert::subclassOf($related, Model::class);
+        Assert::isInstanceOf($related_model = app($related), Model::class);
 
-        $pivotDbName = $pivot->getConnection()->getDatabaseName();
-        $dbName = $this->getConnection()->getDatabaseName();
-        // $relatedDbName = $related_model->getConnection()->getDatabaseName();
-        if ($table === null) {
-            $table = $pivot->getTable();
-        }
+        $pivot = $this->guessMorphPivot($related);
+        $table = $this->qualifyPivotTable($pivot, $related_model, $pivot->getTable());
+        $pivotFields = $pivot->getFillable();
 
         return $this->morphToMany(
             related: $related,
@@ -120,6 +104,29 @@ trait RelationX
             ->using($pivot::class)
             ->withPivot($pivotFields)
             ->withTimestamps();
+    }
+
+    /**
+     * Prefissa la tabella pivot col nome del database quando pivot, model e related
+     * stanno su database diversi (relazioni cross-database tra moduli).
+     *
+     * SQLite non supporta la sintassi `database.table`: li' la tabella resta invariata.
+     */
+    private function qualifyPivotTable(Model $pivot, Model $related, string $table): string
+    {
+        $pivotDbName = $pivot->getConnection()->getDatabaseName();
+        $dbName = $this->getConnection()->getDatabaseName();
+        $relatedDbName = $related->getConnection()->getDatabaseName();
+
+        if ($pivotDbName === $dbName && $relatedDbName === $dbName) {
+            return $table;
+        }
+
+        if ($pivot->getConnection()->getDriverName() === 'sqlite') {
+            return $table;
+        }
+
+        return $pivotDbName.'.'.$table;
     }
 
     public function guessMorphPivot(string $related, ?string $_class = null): MorphPivot

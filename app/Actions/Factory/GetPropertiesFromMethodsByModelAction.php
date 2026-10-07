@@ -149,11 +149,8 @@ class GetPropertiesFromMethodsByModelAction
             // Otteniamo la classe relazionata
             $relatedClass = get_class($relationObj->getRelated());
 
-            // Chiamiamo GetFakerAction con parametri corretti
-            $fakerAction = app(GetFakerAction::class);
-            // Assert::isCallable rimosso - metodo verificato a compile time
-
-            $type = 'factory('.$relatedClass.'::class)';
+            // La colonna FK viene valorizzata con la factory del model correlato.
+            $data[$foreignKeyName] = 'factory('.$relatedClass.'::class)';
         } catch (\Exception $e) {
             // In caso di errore, ignoriamo la relazione
             return;

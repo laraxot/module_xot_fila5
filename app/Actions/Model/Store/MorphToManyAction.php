@@ -31,7 +31,7 @@ class MorphToManyAction
         // dddx(['row' => $row, 'relation' => $relation, 't1' => Arr::isAssoc($data)]);
 
         if (! Arr::isAssoc($data)) {
-            $relationDTO->rows->sync($data);
+            $rows->sync($data);
 
             return;
         }

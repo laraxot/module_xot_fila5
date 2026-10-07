@@ -10,6 +10,7 @@ use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Contracts\HasRecursiveRelationshipsContract;
 use Spatie\QueueableAction\QueueableAction;
 use Staudenmeir\LaravelAdjacencyList\Eloquent\Collection as TreeCollection;
+use Webmozart\Assert\Assert;
 
 class GetTreeOptionsByModelClassAction
 {
@@ -24,11 +25,10 @@ class GetTreeOptionsByModelClassAction
      */
     public function execute(string $class, Model|callable|null $_where = null): array
     {
-        /** @var HasRecursiveRelationshipsContract $model */
-        $model = new $class; // @phpstan-ignore-line missingType.generics
+        $model = new $class;
 
-        /** @var TreeCollection<int, Model&HasRecursiveRelationshipsContract> $collection */
-        $collection = $model->newQuery()->get(); // @phpstan-ignore-line missingType.generics
+        $collection = $model->newQuery()->get();
+        Assert::isInstanceOf($collection, TreeCollection::class);
         $rows = $collection->toTree();
 
         foreach ($rows as $row) {

@@ -139,6 +139,7 @@ describe('Xot execute coverage floor 50', function (): void {
         Assert::assertSame('it', $data->primary_lang);
 
         $meta = MetatagData::make();
+        Assert::assertSame($meta, MetatagData::make());
     });
 
     test('FileAction percorre helper filesystem namespace e component scan', function (): void {

@@ -8,6 +8,33 @@ status: active
 
 Stato vivo del gate. Non copiare numeri da report storici: rimisura.
 
+## Misura 2026-10-06 (sera) — swarm Xot/app: scopo prima dell'errore
+
+`analyse Modules/Xot/app`: 147 segnalazioni del file errori -> **21**, tutte
+`classConstant.nativeTypeNotSupported`: `laravel/composer.json` dichiara `"php": "^8.2"`,
+PHPStan assume 8.2 e rifiuta le costanti di classe con tipo nativo (PHP 8.3), mentre il
+runtime e' 8.4 e il `HEAD` le ha gia' tipizzate. Si esce solo con `require.php: ^8.3`
+(decisione dell'utente). Senza tipi si ritorna a `typeCoverage.constantTypeCoverage`.
+
+Orfane che erano logica tolta, non rumore: `RelationX::morphToManyX()` (prefisso
+`database.tabella` del pivot cross-database, tolto il 2026-09-03 per un `variable.unused`),
+`RouteService::urlAct()` (nome route letto dopo l'uso), `extractBelongsToRelations()`
+(non popolava `$data`), `--type` di `xot:analyze-components` (mai applicato).
+Gli errori `HasXotTable` "in context of class@anonymous" erano result-cache stale.
+Dettaglio e lezioni: [dev-story](../stories/2026-10-06-phpstan-cleanup-xot-app.dev.md).
+
+## Misura 2026-10-06 (notte) — swarm Xot/rest: test, helpers, stub Pest
+
+`analyse Modules`: 87 segnalazioni del file errori -> **0** in `Modules/Xot/{tests,helpers}`.
+12 erano result-cache stale (`iterableValue` su classi anonime con PHPDoc presente);
+20 erano test segnaposto con la variabile non letta (asserzione persa: ora asseriscono il
+comportamento del titolo); 53 erano parametri inutilizzati degli stub Pest
+(`helpers/Helper.php`, `tests/PestStubs.php`: firme invariate, ora passano nome e argomenti a
+`xotPestStubFailure()`); 2 di fixture (`SendMailByRecordActionTest`: classe anonima annidata
+senza PHPDoc risolto -> classe nominata). Pest non eseguito (`.env.testing` = MySQL).
+Da decidere: `tests/PestStubs.php` e' orfano ma e' lui a risolvere `Pest\Laravel\*` per PHPStan.
+Dettaglio e lezioni: [dev-story](../stories/2026-10-06-phpstan-cleanup-xot-rest.dev.md).
+
 ## Misura 2026-10-06 — EnsureKeysAction + file scratch rimossi
 
 `analyse Modules/Xot` dopo il sync delle sub-repository (`64a28f945`): **4** errori, ora **0**.

@@ -58,7 +58,7 @@ abstract class XotBaseExporter extends Exporter
     /**
      * Escape del CSV intermedio (writer e reader devono coincidere).
      */
-    public const CSV_ESCAPE = '';
+    public const string CSV_ESCAPE = '';
 
     /**
      * Relation caricate se esistono sul model: `ratings_by_id` le legge entrambe.

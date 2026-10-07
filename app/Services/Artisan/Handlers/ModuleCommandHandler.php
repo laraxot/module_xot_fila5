@@ -13,29 +13,22 @@ use Webmozart\Assert\Assert;
  */
 class ModuleCommandHandler implements CommandHandlerInterface
 {
-    /** @var array<string, string> */
-    private const MODULE_COMMANDS = [
-        'module-list' => 'listModules',
-        'module-disable' => 'disableModule',
-        'module-enable' => 'enableModule',
-    ];
+    /** @var list<string> */
+    private const array MODULE_COMMANDS = ['module-list', 'module-disable', 'module-enable'];
 
     public function handle(string $moduleName = ''): string
     {
-        $command = $this->getCurrentCommand();
-
-        if (isset(self::MODULE_COMMANDS[$command])) {
-            $method = self::MODULE_COMMANDS[$command];
-
-            return $this->$method($moduleName);
-        }
-
-        return '';
+        return match ($this->getCurrentCommand()) {
+            'module-list' => $this->listModules(),
+            'module-disable' => $this->disableModule($moduleName),
+            'module-enable' => $this->enableModule($moduleName),
+            default => '',
+        };
     }
 
     public function supports(string $command): bool
     {
-        return isset(self::MODULE_COMMANDS[$command]);
+        return in_array($command, self::MODULE_COMMANDS, true);
     }
 
     private function getCurrentCommand(): string
@@ -46,7 +39,7 @@ class ModuleCommandHandler implements CommandHandlerInterface
         return $command;
     }
 
-    private function listModules(string $moduleName): string
+    private function listModules(): string
     {
         return ArtisanService::exe('module:list');
     }

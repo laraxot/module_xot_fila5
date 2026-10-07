@@ -34,7 +34,6 @@ class MorphManyAction
         $related = $relationDTO->related;
         $keyName = $related->getKeyName();
         $models = [];
-        $ids = [];
         foreach ($relationDTO->data as $data) {
             Assert::isArray($data);
             if (\in_array($keyName, array_keys($data), false)) {
@@ -46,7 +45,6 @@ class MorphManyAction
                 /** @var array<string, mixed> $safeData */
                 $safeData = $data;
                 $res = app(UpdateAction::class)->execute($related, $safeData, []);
-                $ids[] = $res->getKey();
                 $models[] = $res;
             } else {
                 dddx(['model' => $model, 'relationDTO' => $relationDTO]);

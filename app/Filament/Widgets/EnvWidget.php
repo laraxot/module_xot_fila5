@@ -32,7 +32,7 @@ class EnvWidget extends XotBaseSchemaWidget
      *
      * @var array<string, list<string>>
      */
-    private const GROUPS = [
+    private const array GROUPS = [
         'General' => ['app_url', 'debugbar_enabled', 'google_maps_api_key', 'telegram_bot_token'],
         'SMS' => ['sms_driver', 'netfun_token'],
         'Mail' => ['mail_mailer', 'mail_host', 'mail_port', 'mail_encryption', 'mail_username', 'mail_password', 'mail_from_address', 'mail_from_name'],

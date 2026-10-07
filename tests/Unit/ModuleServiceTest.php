@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+use Illuminate\Support\Str;
 use Modules\Xot\Services\ModuleService;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -38,8 +39,10 @@ describe('ModuleService', function () {
     });
 
     it('returns array from getModels method', function () {
+        // modulo non registrato: l'array e' vuoto
         $result = xotModuleServiceTestInstance()->getModels();
 
+        Assert::assertSame([], $result);
     });
 
     it('getModels returns correct array structure', function () {
@@ -58,8 +61,10 @@ describe('ModuleService', function () {
     });
 
     it('handles reflection exceptions gracefully', function () {
+        // nessun modello da riflettere (modulo non registrato): nessuna eccezione, elenco vuoto
         $result = xotModuleServiceTestInstance()->getModels();
 
+        Assert::assertSame([], $result);
     });
 
     it('processes model names correctly', function () {
@@ -130,6 +135,11 @@ describe('ModuleService', function () {
     it('processes file extensions correctly', function () {
         $result = xotModuleServiceTestInstance()->getModels();
 
+        // solo i file `.php` diventano classi, con il basename convertito in snake_case come chiave
+        foreach ($result as $key => $class) {
+            Assert::assertStringStartsWith('Modules\\', $class);
+            Assert::assertSame(Str::snake(class_basename($class)), $key);
+        }
     });
 
     it('validates string utilities usage', function () {
@@ -141,7 +151,9 @@ describe('ModuleService', function () {
     });
 
     it('has proper error handling', function () {
+        // modulo non registrato: nessuna eccezione, elenco vuoto
         $result = xotModuleServiceTestInstance()->getModels();
 
+        Assert::assertSame([], $result);
     });
 });

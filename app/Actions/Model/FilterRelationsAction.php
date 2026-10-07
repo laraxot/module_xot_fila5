@@ -18,7 +18,7 @@ class FilterRelationsAction
     {
         $filtered = [];
 
-        foreach ($relations as $name => $relation) {
+        foreach ($relations as $relation) {
             Assert::isInstanceOf($relation, Relation::class);
             $related = $relation->getRelated();
             Assert::isInstanceOf($related, Model::class);

@@ -41,7 +41,7 @@ class BuildTestSqliteCommand extends Command
      *
      * @var list<string>
      */
-    private const MODULE_CONNECTIONS = [
+    private const array MODULE_CONNECTIONS = [
         'activity', 'generale', 'incentivi', 'indennita_condizioni_lavoro',
         'indennita_responsabilita', 'job', 'lang', 'media', 'notify', 'performance',
         'progressione', 'ptv', 'rating', 'tenant', 'u_i', 'user', 'xot',

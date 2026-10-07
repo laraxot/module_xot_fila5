@@ -14,7 +14,7 @@ use Webmozart\Assert\Assert;
 class RouteCommandHandler implements CommandHandlerInterface
 {
     /** @var array<string, string> */
-    private const ROUTE_COMMANDS = [
+    private const array ROUTE_COMMANDS = [
         'routelist' => 'listRoutes',
         'routelist1' => 'showRouteList',
         'routecache' => 'cacheRoutes',
