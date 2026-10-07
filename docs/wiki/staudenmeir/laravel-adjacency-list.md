@@ -1,0 +1,12 @@
+---
+qmd: "laravel adjacency list"
+issues: []
+discussions: []
+title: "Laravel Adjacency List"
+type: reference
+tags: [wiki, no-frontmatter-fix]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
+

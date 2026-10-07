@@ -1,0 +1,219 @@
+---
+title: "database configuration critical rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "database configuration critical rules"
+issues: []
+discussions: []
+---
+
+# Database Configuration - Critical Rules
+
+## REGOLE FONDAMENTALI
+
+### 1. MAI Forzare le Connessioni in CreatesApplication
+
+⚠️ **Vedi anche [TestCase Setup Rules](./testcase-setup-critical-rules.md)**
+
+### 2. MAI Eseguire migrate in TestCase setUp()
+
+Vedi [TestCase Setup Rules](./testcase-setup-critical-rules.md) per dettagli completi.
+
+### 3. MAI Inventare Variabili Environment
+
+**❌ SBAGLIATO - NESSUNO MAI FARE QUESTO:**
+
+```php
+// Modules/Xot/tests/CreatesApplication.php
+$defaultConfig = $app['config']->get('database.connections.mysql');
+$moduleConnections = ['user', 'notify', 'geo', 'media', 'job', ...];
+foreach ($moduleConnections as $connection) {
+    $app['config']->set("database.connections.{$connection}", $defaultConfig);
+}
+```
+
+**Perché è SBAGLIATO:**
+1. Distrugge il sistema di configurazione dinamica gestito da TenantServiceProvider
+2. Non rispetta le variabili environment definite in `.env.testing`
+3. È ridondante - TenantServiceProvider lo fa già automaticamente
+4. Viola l'architettura Laraxot
+5. Crea technical debt e problemi di manutenzione
+
+**✅ CORRETTO - Lasciare che TenantServiceProvider gestisca tutto:**
+
+```php
+// Modules/Xot/tests/CreatesApplication.php
+// Bootstrap kernel
+$app->make(Kernel::class)->bootstrap();
+$app->boot();
+
+// CRITICAL: DO NOT force database connections!
+// TenantServiceProvider automatically configures module connections
+// by reading DB_DATABASE from .env.testing
+
+return $app;
+```
+
+### 2. Isolare il template di test
+
+Non clonare `.env` né riutilizzare le sue credenziali. Il file `.env.testing` tracciato è un
+template senza segreti, da verificare con `bash bashscripts/tools/sync-env-testing.sh --check`.
+I target MySQL/MariaDB devono terminare in `_test`; l’account dedicato viene fornito
+esternamente tramite `FIXCITY_TEST_DB_*`. Segui la policy canonica in
+[`testing-database-strategy.md`](testing-database-strategy.md). Non eseguire migrazioni finché
+un DBA autorizzato non ha predisposto database e privilegi isolati.
+
+### 3. MAI Aggiungere Connessioni Hardcode in config/database.php
+
+**❌ SBAGLIATO - NESSUNO MAI FARE QUESTO:**
+
+```php
+// config/database.php - WRONG!
+'connections' => [
+    'notify' => [
+        'driver' => 'mysql',
+        'database' => env('NOTIFY_DB_DATABASE', '<nome progetto>_notify_test'),
+        // ...
+    ],
+    'geo' => [
+        'driver' => 'mysql',
+        'database' => env('GEO_DB_DATABASE', '<nome progetto>_geo_test'),
+        // ...
+    ],
+    // ... ecc per tutti i moduli
+],
+```
+
+**Perché è SBAGLIATO:**
+1. Violazione del principio di configurazione dinamica
+2. Duplicazione inutile - TenantServiceProvider crea già queste connessioni
+3. Hardcoding rende difficile la manutenzione
+4. Non rispetta l'architettura Laraxot
+5. Crea conflitti con il sistema dinamico
+
+**✅ CORRETTO - Lasciare solo le connessioni standard:**
+
+```php
+// config/database.php - CORRECT!
+'connections' => [
+    'sqlite' => [/* ... */],
+    'mysql' => [/* ... */],
+    'mariadb' => [/* ... */],
+    'pgsql' => [/* ... */],
+    'sqlsrv' => [/* ... */],
+],
+// Module connections are automatically created by TenantServiceProvider
+```
+
+## Come Funziona il Sistema Laraxot
+
+### TenantServiceProvider
+
+Il `TenantServiceProvider` gestisce le connessioni database in modo dinamico:
+
+1. **Legge le variabili environment**: `DB_DATABASE`, `DB_HOST`, ecc.
+2. **Crea connessioni per ogni modulo**: `user`, `notify`, `geo`, `media`, ecc.
+3. **Usa il database configurato**: Tutte le connessioni puntano allo stesso database
+4. **Automatico e centralizzato**: Non serve configurazione manuale
+
+### Flusso di Configurazione
+
+```
+.env.testing
+    ↓
+DB_DATABASE=<nome progetto>_data_test
+    ↓
+TenantServiceProvider::registerDB()
+    ↓
+Crea automaticamente:
+  - database.connections.user → <nome progetto>_data_test
+  - database.connections.notify → <nome progetto>_data_test
+  - database.connections.geo → <nome progetto>_data_test
+  - ... ecc per tutti i moduli
+```
+
+## Testing Workflow
+
+Read [`testing-database-strategy.md`](testing-database-strategy.md), then run
+`bash bashscripts/tools/sync-env-testing.sh --check` from the repository root. The tracked
+template contains no reusable credentials; inject dedicated `FIXCITY_TEST_DB_*` values from
+a secure environment. Never copy `.env` over `.env.testing` (or vice versa). Run migrations
+only against DBA-provisioned `_test` databases after confirming the configured targets.
+
+## Pattern nei Test
+
+```php
+// ✅ CORRETTO
+it('renders page', function () {
+    get('/en/auth/register')
+        ->assertStatus(200);
+});
+
+// ✅ CORRETTO
+it('creates user', function () {
+    $user = User::factory()->create();
+    expect($user->email)->not->toBeEmpty();
+});
+
+// ❌ SBAGLIATO - Non forzare connessioni!
+it('test with wrong config', function () {
+    config(['database.connections.notify' => config('database.connections.mysql')]);
+    // ...
+});
+```
+
+## Checklist Anti-Errori
+
+Prima di scrivere codice di configurazione database:
+
+- [ ] Ho forzato le connessioni con `config()`? → **STOP! Rimuovi il codice.**
+- [ ] Ho inventato variabili environment tipo `NOTIFY_DB_DATABASE`? → **STOP! Usa solo variabili del .env.**
+- [ ] Ho aggiunto connessioni hardcode in `config/database.php`? → **STOP! Rimuovile.**
+- [ ] `.env.testing` contains only `_test` targets and no reusable secrets? → **OK!**
+
+## Troubleshooting
+
+### Problema: Test non trovano le tabelle
+
+**Cause possibili:**
+1. `.env.testing` non configurato correttamente
+2. Migration non eseguite
+3. Forzatura delle connessioni in CreatesApplication
+
+**Soluzione:**
+1. Verifica il template con `bash bashscripts/tools/sync-env-testing.sh --check`
+2. Esegui `php artisan migrate --env=testing`
+3. Rimuovi forzatura delle connessioni in CreatesApplication
+
+### Problema: Connessione "module_name" non configurata
+
+**Causa errata (da NON fare):**
+Aggiungere la connessione in `config/database.php`
+
+**Causa reale e soluzione:**
+TenantServiceProvider non è stato caricato. Assicurati che il ServiceProvider sia registrato correttamente.
+
+### Problema: Migrations usano database di produzione
+
+**Soluzione:**
+1. Verifica `APP_ENV=testing` in `.env.testing`
+2. Verifica che `DB_DATABASE` abbia `_test` suffix
+3. Esegui test con `--env=testing` flag
+
+## Documentazione Correlata
+
+- [Database Testing Configuration](../gdpr/docs/database-testing-configuration.md)
+- [TenantServiceProvider](../Tenant/app/Providers/TenantServiceProvider.php)
+- [Environment Development vs Testing](./environment-development-vs-testing-rules.md)
+
+## Regole d'Oro
+
+1. **Copia Carbone**: `.env.testing` = `.env` + `"_test"` sui database
+2. **Niente Invenzioni**: Non creare variabili environment che non esistono in `.env`
+3. **Niente Forzatura**: Non forzare connessioni con `config()`
+4. **Niente Hardcoding**: Non aggiungere connessioni statiche in `config/database.php`
+5. **Fiducia**: Lascia che TenantServiceProvider gestisca tutto automaticamente
+
+Queste regole devono essere ricordate e applicate da TUTTI gli agenti AI (iFlow, Windsurf, Cursor, Gemini, Antigravity, ecc.).
