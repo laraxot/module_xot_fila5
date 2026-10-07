@@ -396,7 +396,7 @@ PHP);
             'buildCSP' => [],
             'buildPermissionsPolicy' => [],
             'logSecurityEvents' => [$ok, response('l', 200)],
-            'isSuspiciousRequest' => [$bad, response('s', 403)],
+            'isSuspiciousRequest' => [$bad],
             'validateInputs' => [$deep],
             'validateStringInput' => ['q', "1' OR 1=1 --"],
             'validateArrayInput' => ['nested', ['x' => 'y']],

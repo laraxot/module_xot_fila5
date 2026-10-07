@@ -36,8 +36,6 @@ class MorphToManyAction
     {
         Assert::isInstanceOf($relation = $relationDTO->rows, MorphToMany::class);
         $data = $relationDTO->data;
-        $name = $relationDTO->name;
-        $model = $row;
 
         if (\in_array('to', array_keys($data), false) || \in_array('from', array_keys($data), false)) {
             if (! isset($data['to'])) {

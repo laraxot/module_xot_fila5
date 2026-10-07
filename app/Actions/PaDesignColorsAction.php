@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions;
 
 use Filament\Support\Colors\Color;
+use Modules\Xot\Support\PaDesignColors;
 use Spatie\QueueableAction\QueueableAction;
 
 /**
@@ -19,9 +20,9 @@ final class PaDesignColorsAction
 {
     use QueueableAction;
 
-    public const PRIMARY_HEX = '#007A52';
+    public const string PRIMARY_HEX = PaDesignColors::PRIMARY_HEX;
 
-    public const INSTITUTIONAL_BLUE_HEX = '#0066CC';
+    public const string INSTITUTIONAL_BLUE_HEX = PaDesignColors::INSTITUTIONAL_BLUE_HEX;
 
     /**
      * @return array{primary: string, institutional_blue: string, danger: string, gray: string, info: string, success: string, warning: string}

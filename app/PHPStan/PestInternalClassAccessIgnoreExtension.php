@@ -21,7 +21,7 @@ use PHPStan\Analyser\Scope;
 final class PestInternalClassAccessIgnoreExtension implements IgnoreErrorExtension
 {
     /** @var list<string> */
-    private const SUPPRESSED_IDENTIFIERS = [
+    private const array SUPPRESSED_IDENTIFIERS = [
         'property.internalClass',
         'method.internalClass',
         'method.internalTrait',

@@ -39,4 +39,7 @@ test('save array action saves as json', function () {
 
 test('save array action throws exception for unsupported format', function () {
     $action = app(SaveArrayAction::class);
+
+    expect(fn (): bool => $action->execute(['foo' => 'bar'], sys_get_temp_dir().'/never_written.xml', 'xml'))
+        ->toThrow(\InvalidArgumentException::class, 'Formato non supportato: xml');
 });

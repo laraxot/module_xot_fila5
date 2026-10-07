@@ -126,15 +126,6 @@ abstract class XotBaseState implements StateContract
      */
     public function processStateAction(array $arguments, array $data): void
     {
-        $message = Arr::get($data, 'message');
-        $stateClass = static::class;
-        /*
-         *
-         * $appointmentId = $arguments['appointment'];
-         * $appointment = Appointment::firstWhere('id',$appointmentId);
-         *
-         * $appointment?->state->transitionTo($stateClass,$message);
-         */
         // Fallback safe-mode when model-states package is not available.
         // Transition by generic arguments is intentionally a no-op.
     }

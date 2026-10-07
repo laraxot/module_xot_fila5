@@ -33,7 +33,7 @@ describe('Xot filament support hundred', function (): void {
                 try {
                     $inst = $ref->newInstanceWithoutConstructor();
                 } catch (\Throwable) {
-                    $inst = null;
+                    // istanza non creabile senza costruttore: $inst resta null, si invocano solo i metodi statici
                 }
             }
             foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE) as $method) {
