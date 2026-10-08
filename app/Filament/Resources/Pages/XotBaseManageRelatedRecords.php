@@ -19,7 +19,6 @@ use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Filament\GetRelatedResourceClassAction;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
-use Modules\Xot\Filament\Traits\TransTrait;
 use Webmozart\Assert\Assert;
 
 /**
@@ -131,7 +130,6 @@ use Webmozart\Assert\Assert;
 abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
 {
     use NavigationLabelTrait;
-    use TransTrait;
 
     /**
      * Stato conservato sulla pagina per gli schemi Xot con statePath('data').
