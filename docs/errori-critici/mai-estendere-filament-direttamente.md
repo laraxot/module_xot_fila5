@@ -1,3 +1,14 @@
+---
+title: "mai estendere filament direttamente"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "mai estendere filament direttamente"
+issues: []
+discussions: []
+---
+
 # ERRORE CRITICO: Mai Estendere Classi Filament Direttamente
 
 ## ⚠️ REGOLA FONDAMENTALE LARAXOT
@@ -419,6 +430,14 @@ return [
 
 ---
 
+title: "mai estendere filament direttamente"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "mai estendere filament direttamente"
+issues: []
+discussions: []
 **Ultimo aggiornamento**: 27 Ottobre 2025
 **Severità**: CRITICA
 **Categoria**: Violazione Architettura Fondamentale

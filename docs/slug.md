@@ -1,4 +1,7 @@
 ---
+qmd: "slug"
+issues: []
+discussions: []
 title: 'Slug — risorse esterne'
 module: Xot
 type: reference

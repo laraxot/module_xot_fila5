@@ -1,4 +1,7 @@
 ---
+qmd: "view models"
+issues: []
+discussions: []
 title: 'view_models'
 module: Xot
 type: reference

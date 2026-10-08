@@ -1,3 +1,14 @@
+---
+title: "filament best practices 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament best practices 1"
+issues: []
+discussions: []
+---
+
 # Best Practices per Risorse Filament in Laraxot
 
 Questo documento riassume le migliori pratiche per la creazione e gestione delle risorse Filament all'interno dell'ecosistema Laraxot. Seguire queste linee guida garantirà compatibilità e coerenza in tutto il progetto.
@@ -419,11 +430,17 @@ class ReportResource extends XotBaseResource
      *
      * @return array<int, \Filament\Forms\Components\Component>
      */
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
+---
+title: "filament best practices 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament best practices 1"
+issues: []
+discussions: []
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             // ✅ NO ->label(): Tutte le label gestite da LangServiceProvider

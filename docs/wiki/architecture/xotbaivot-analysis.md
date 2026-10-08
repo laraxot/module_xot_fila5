@@ -1,4 +1,7 @@
 ---
+qmd: "xotbaivot analysis"
+issues: []
+discussions: []
 title: "Xotbaivot Analysis"
 type: reference
 tags: [wiki, no-frontmatter-fix]

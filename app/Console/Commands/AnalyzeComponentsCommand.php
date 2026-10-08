@@ -30,7 +30,7 @@ class AnalyzeComponentsCommand extends Command
     public function handle(GetComponentsAction $getComponentsAction): int
     {
         $module = $this->option('module');
-        $type = $this->option('type');
+        $_type = $this->option('type');
         $prefixOption = $this->option('prefix');
         $forceOption = $this->option('force');
 

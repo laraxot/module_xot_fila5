@@ -1,3 +1,14 @@
+---
+title: "pdf content generation technical"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "pdf content generation technical"
+issues: []
+discussions: []
+---
+
 # GetPdfContentByRecordAction - Documentazione Tecnica
 
 ## 📋 Overview
@@ -7,6 +18,14 @@
 
 ---
 
+title: "pdf content generation technical"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "pdf content generation technical"
+issues: []
+discussions: []
 ## 🎯 Business Logic
 
 ### Scopo

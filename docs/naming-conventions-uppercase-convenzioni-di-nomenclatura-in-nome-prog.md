@@ -1,3 +1,14 @@
+---
+title: "naming conventions uppercase convenzioni di nomenclatura in nome prog"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "naming conventions uppercase convenzioni di nomenclatura in nome prog"
+issues: []
+discussions: []
+---
+
 # Convenzioni di Nomenclatura in <nome progetto>
 
 Questo documento definisce le convenzioni ufficiali di nomenclatura da utilizzare in tutto il progetto <nome progetto>.

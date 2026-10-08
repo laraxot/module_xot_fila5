@@ -170,7 +170,7 @@ class MetatagData extends Data implements Wireable
             /** @var string $path */
             $path = app(AssetAction::class)->execute($this->logo_header);
 
-            return asset($path);
+            return $this->normalizeBrandLogoUrl($path);
         } catch (\Throwable $e) {
             return $this->fallbackPublicAssetUrl($this->logo_header);
         }
@@ -191,7 +191,7 @@ class MetatagData extends Data implements Wireable
             /** @var string $path */
             $path = app(AssetAction::class)->execute($this->logo_header_dark);
 
-            return asset($path);
+            return $this->normalizeBrandLogoUrl($path);
         } catch (\Throwable $e) {
             return $this->fallbackPublicAssetUrl($this->logo_header_dark);
         }
@@ -219,6 +219,17 @@ class MetatagData extends Data implements Wireable
         }
 
         return '';
+    }
+
+    private function normalizeBrandLogoUrl(string $path): string
+    {
+        if (Str::startsWith($path, ['http://', 'https://'])) {
+            return Str::startsWith($path, url('/'))
+                ? '/'.ltrim(Str::after($path, url('/')), '/')
+                : $path;
+        }
+
+        return '/'.ltrim($path, '/');
     }
 
     /**

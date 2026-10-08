@@ -1,3 +1,14 @@
+---
+title: "no migrate fresh"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "no migrate fresh"
+issues: []
+discussions: []
+---
+
 # REGOLA ASSOLUTA: MAI migrate:fresh nei test
 
 ## Status: CRITICAL
@@ -107,6 +118,14 @@ Se necessario configurare il database una sola volta per tutto il test suite:
 - [XotBaseTestCase](../XotBaseTestCase.md)
 
 ---
+title: "no migrate fresh"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "no migrate fresh"
+issues: []
+discussions: []
 **Data creazione**: 2025-03-04  
 **Ultima modifica**: 2025-03-04  
 **Autore**: System

@@ -1,3 +1,14 @@
+---
+title: "composer module dependency management"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "composer module dependency management"
+issues: []
+discussions: []
+---
+
 # Composer and Module Dependency Management in Laraxot
 
 This document outlines the best practices and mandatory rules for managing Composer dependencies within the modular Laraxot framework.
@@ -6,6 +17,14 @@ This document outlines the best practices and mandatory rules for managing Compo
 
 ---
 
+title: "composer module dependency management"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "composer module dependency management"
+issues: []
+discussions: []
 ## Core Principles
 
 1.  **Modular Dependency Encapsulation**: Each module is treated as a self-contained unit, responsible for its own specific dependencies.

@@ -1,3 +1,14 @@
+---
+title: "contracts and interfaces"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "contracts and interfaces"
+issues: []
+discussions: []
+---
+
 # Xot Contracts and Interfaces Documentation
 
 **Last Updated**: 2025-01-23
@@ -533,4 +544,12 @@ class AppointmentService
 
 ---
 
+title: "contracts and interfaces"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "contracts and interfaces"
+issues: []
+discussions: []
 *This documentation provides comprehensive guidance for implementing and using contracts within the Xot ecosystem, ensuring type safety and consistency across all modules.*

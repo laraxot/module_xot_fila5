@@ -1,3 +1,14 @@
+---
+title: "phpstan fixes summary 4"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan fixes summary 4"
+issues: []
+discussions: []
+---
+
 # Riepilogo delle Soluzioni ai Problemi PHPStan Livello 9
 
 Questo documento riassume le soluzioni implementate per risolvere i problemi più comuni di PHPStan a livello 9 nel progetto <nome progetto>. Serve come guida di riferimento rapido per sviluppatori che affrontano errori simili.
@@ -342,6 +353,14 @@ Il progetto ha raggiunto un livello di type safety eccellente con il 99.1% degli
 
 ---
 
+title: "phpstan fixes summary 4"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan fixes summary 4"
+issues: []
+discussions: []
 **Data Completamento**: 18 Agosto 2025
 **Tempo Impiegato**: ~2 ore
 **phpstan.neon**: ✅ INTOCCATO

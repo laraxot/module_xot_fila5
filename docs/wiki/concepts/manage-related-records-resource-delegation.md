@@ -1,10 +1,13 @@
 ---
+qmd: "manage related records resource delegation"
+issues: []
+discussions: []
 title: "Memoria: delega completa, owner distinto"
 type: decision
 status: discussion
 implementation_status: not-started
 created: 2026-09-11
-updated: 2026-09-11
+updated: 2026-09-26
 tags: [bmad, second-brain, filament, dry, kiss]
 ---
 
@@ -47,3 +50,18 @@ esiste gia', e' implementata e testata in quel filone — non e' piu' una
 proposta aperta. I due filoni descrivono la stessa decisione; non
 riconciliati in un'unica issue per non chiudere tracking altrui senza
 conferma esplicita.
+
+## API Filament e hook compatibili
+
+Per una pagina Filament ordinaria la raccomandazione è configurare la tabella sovrascrivendo
+`table(Table $table): Table`. In `XotBaseManageRelatedRecords` `table()` è `final` per conservare
+la delega e la composizione comune; `getTableColumns()`, `getTableHeaderActions()`,
+`getTableActions()`, `getTableBulkActions()` e `getTableFilters()` sono hook Xot intenzionali
+usati per comporre la tabella. Questi hook Xot non sono deprecati. PHPStan risolve i nomi
+condivisi con getter del trait Filament, la cui metadata riporta il suggerimento `table()`;
+`@not-deprecated` nelle dichiarazioni Xot rende esplicita la distinzione e impedisce che
+l'annotazione upstream venga attribuita ai hook del progetto.
+
+Per nuove personalizzazioni di questa classe si implementano i getter Xot già esposti; non si
+sovrascrive `table()` perché è final. Per una pagina Filament non basata su questo Xot base,
+si segue invece la raccomandazione del framework e si sovrascrive `table()`.

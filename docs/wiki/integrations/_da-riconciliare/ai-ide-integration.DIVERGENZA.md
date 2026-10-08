@@ -1,4 +1,7 @@
 ---
+qmd: "ai ide integration.DIVERGENZA"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: ai-ide-integration.md"
 module: Xot
 type: note

@@ -1,3 +1,14 @@
+---
+title: "xot table 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xot table 1"
+issues: []
+discussions: []
+---
+
 # HasXotTable Trait per Filament in Laraxot PTVX
 
 ## Panoramica

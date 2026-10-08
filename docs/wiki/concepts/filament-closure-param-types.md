@@ -1,4 +1,7 @@
 ---
+tags: [documentation]
+issues: []
+discussions: []
 title: "Tipi dei parametri nelle closure Filament"
 module: Xot
 type: concept

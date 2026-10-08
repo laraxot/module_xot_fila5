@@ -1,3 +1,14 @@
+---
+title: "dry kiss model refactoring 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "dry kiss model refactoring 1"
+issues: []
+discussions: []
+---
+
 # DRY/KISS Model Refactoring Analysis - 2025-10-15
 
 ## Executive Summary
@@ -13,6 +24,14 @@ Analisi completa dell'architettura dei modelli Eloquent nel monorepo Laravel con
 
 ---
 
+title: "dry kiss model refactoring 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "dry kiss model refactoring 1"
+issues: []
+discussions: []
 ## Problemi Identificati e Risolti
 
 ### 1. ❌ Quaeris\Models\BaseModel estendeva Model invece di XotBaseModel

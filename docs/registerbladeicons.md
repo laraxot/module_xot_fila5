@@ -1,3 +1,14 @@
+---
+title: "registerbladeicons"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "registerbladeicons"
+issues: []
+discussions: []
+---
+
 # Documentazione del Metodo registerBladeIcons
 
 ## Panoramica

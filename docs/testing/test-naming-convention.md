@@ -1,3 +1,14 @@
+---
+title: "test naming convention"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "test naming convention"
+issues: []
+discussions: []
+---
+
 # Convenzione Naming File Test - Xot Module
 
 **Modulo:** Xot (Core Framework)
@@ -81,4 +92,12 @@ Esempi:
 
 ---
 
+title: "test naming convention"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "test naming convention"
+issues: []
+discussions: []
 **Xot Module - Test Naming PascalCase** ✅

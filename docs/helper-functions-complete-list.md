@@ -1,3 +1,14 @@
+---
+title: "helper functions complete list"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "helper functions complete list"
+issues: []
+discussions: []
+---
+
 # Helper Functions Complete List - Xot Module
 
 ## 📋 Overview
@@ -10,6 +21,14 @@
 
 ---
 
+title: "helper functions complete list"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "helper functions complete list"
+issues: []
+discussions: []
 ## 🎯 Lista Completa Helper Functions
 
 ### 1. `isRunningTestBench(): bool`

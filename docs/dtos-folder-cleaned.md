@@ -1,4 +1,8 @@
 ---
+updated: 2026-09-26
+qmd: "dtos folder cleaned"
+issues: []
+discussions: []
 title: app/DTOs ripulita — FieldDTO/FieldFilterDTO già convertite, note spostate in docs
 type: decision
 tags: [datas, dto, archive, cleanup]

@@ -1,3 +1,14 @@
+---
+title: "composer conflict resolution risoluzione conflitto composerjson xot"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "composer conflict resolution risoluzione conflitto composerjson xot"
+issues: []
+discussions: []
+---
+
 # Risoluzione conflitto composer.json (Xot)
 
 ## Intent

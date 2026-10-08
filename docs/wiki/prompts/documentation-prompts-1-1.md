@@ -1,4 +1,7 @@
 ---
+qmd: "documentation prompts 1 1"
+issues: []
+discussions: []
 title: "Documentation Prompts 1 1"
 type: reference
 tags: [wiki, no-frontmatter-fix]

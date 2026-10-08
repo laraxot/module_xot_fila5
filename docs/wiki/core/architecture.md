@@ -1,4 +1,7 @@
 ---
+qmd: "architecture"
+issues: []
+discussions: []
 title: "Architecture"
 type: reference
 tags: [wiki, no-frontmatter-fix]

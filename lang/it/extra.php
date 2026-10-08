@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 return [
     'navigation' => [
-        'name' => 'extra',
+        'name' => 'Extra',
         'plural' => 'estras',
         'group' => [
             'name' => 'Admin',
         ],
-        'label' => 'extra.navigation',
-        'icon' => 'extra.navigation',
+        'label' => 'Extra',
+        'icon' => 'heroicon-o-plus',
         'sort' => 38,
     ],
     'pages' => [

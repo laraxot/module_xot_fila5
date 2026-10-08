@@ -1,4 +1,7 @@
 ---
+tags: [documentation]
+issues: []
+discussions: []
 title: "Qa Verification"
 type: concept
 status: deprecated

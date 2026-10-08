@@ -1,3 +1,14 @@
+---
+title: "project best practices 2"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "project best practices 2"
+issues: []
+discussions: []
+---
+
 # Best Practices Progetto Laraxot PTVX - 2025
 
 > **Documento Master** - Regole fondamentali aggiornate dopo risoluzione massiva merge conflicts
@@ -266,11 +277,17 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 
 class MyResource extends XotBaseResource
 {
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
+---
+title: "project best practices 2"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "project best practices 2"
+issues: []
+discussions: []
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             TextInput::make('name'),  // No ->label()!

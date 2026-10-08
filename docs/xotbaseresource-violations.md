@@ -1,3 +1,14 @@
+---
+title: "xotbaseresource violations"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xotbaseresource violations"
+issues: []
+discussions: []
+---
+
 # VIOLAZIONI CRITICHE XotBaseResource - Regole Globali Laraxot PTVX
 
 ## 🚨 ERRORI GRAVISSIMI DA EVITARE SEMPRE
@@ -128,11 +139,17 @@ class {ModelName}Resource extends XotBaseResource
     protected static ?string $model = {ModelName}::class;
 
     // UNICO metodo necessario nella Resource principale
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
+---
+title: "xotbaseresource violations"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xotbaseresource violations"
+issues: []
+discussions: []
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             Section::make()  // NO ->label() - gestito automaticamente

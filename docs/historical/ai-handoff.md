@@ -1,3 +1,14 @@
+---
+title: "ai handoff"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "ai handoff"
+issues: []
+discussions: []
+---
+
 # ai handoff
 
 ## regole non negoziabili

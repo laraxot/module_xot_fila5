@@ -1,3 +1,14 @@
+---
+title: "syntax errors mass fix"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "syntax errors mass fix"
+issues: []
+discussions: []
+---
+
 # Mass Fix Errori Sintassi PHP
 
 > **Versione**: 1.0

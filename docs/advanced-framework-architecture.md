@@ -1,3 +1,14 @@
+---
+title: "advanced framework architecture"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "advanced framework architecture"
+issues: []
+discussions: []
+---
+
 # Architettura Avanzata del Framework Xot basata sui Principi Filament
 
 ## Introduzione

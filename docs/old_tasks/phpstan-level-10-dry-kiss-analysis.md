@@ -1,3 +1,14 @@
+---
+title: "phpstan level 10 dry kiss analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan level 10 dry kiss analysis"
+issues: []
+discussions: []
+---
+
 # PHPStan Level 10 + DRY/KISS Complete Analysis - 2025-10-17
 
 ## Executive Summary
@@ -15,6 +26,14 @@ Analisi completa dell'applicazione con PHPStan al **livello massimo 10** combina
 
 ---
 
+title: "phpstan level 10 dry kiss analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan level 10 dry kiss analysis"
+issues: []
+discussions: []
 ## Part 1: PHPStan Level 10 Analysis
 
 ### Cosa è PHPStan Level 10?

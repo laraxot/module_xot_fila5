@@ -1,4 +1,7 @@
 ---
+qmd: "readme new.DIVERGENZA"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: readme-new.md"
 module: Xot
 type: note

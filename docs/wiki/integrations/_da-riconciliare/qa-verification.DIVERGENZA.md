@@ -1,4 +1,7 @@
 ---
+qmd: "qa verification.DIVERGENZA"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: qa-verification.md"
 module: Xot
 type: note

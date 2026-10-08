@@ -1,3 +1,14 @@
+---
+title: "why xotbaseresourceform superior"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "why xotbaseresourceform superior"
+issues: []
+discussions: []
+---
+
 # Why XotBaseResourceForm Pattern is Superior to Filament Demo Pure-Static Classes
 
 **Date:** 2026-05-05
@@ -34,11 +45,17 @@ class DepartmentForm {
 ```php
 // TicketForm.php (Our Pattern)
 class TicketForm extends XotBaseResourceForm {
-<<<<<<< HEAD
     public function getFormSchema(): array {
-=======
+---
+title: "why xotbaseresourceform superior"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "why xotbaseresourceform superior"
+issues: []
+discussions: []
     public function getFormSchema(): array {
->>>>>>> laraxot/dev
         return [
             TextInput::make('name'), // ✅ No label - LangServiceProvider owns it
             // Wizard integration built-in

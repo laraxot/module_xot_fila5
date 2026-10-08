@@ -1,3 +1,14 @@
+---
+title: "base model pattern"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "base model pattern"
+issues: []
+discussions: []
+---
+
 # Module System and BaseModel Pattern: The Sacred Architecture
 
 ## Module System Architecture

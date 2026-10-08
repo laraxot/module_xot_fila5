@@ -1,4 +1,7 @@
 ---
+qmd: "to study"
+issues: []
+discussions: []
 title: 'To study — risorse esterne'
 module: Xot
 type: reference

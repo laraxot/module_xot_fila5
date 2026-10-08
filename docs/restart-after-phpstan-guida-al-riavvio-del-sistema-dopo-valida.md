@@ -1,3 +1,14 @@
+---
+title: "restart after phpstan guida al riavvio del sistema dopo valida"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "restart after phpstan guida al riavvio del sistema dopo valida"
+issues: []
+discussions: []
+---
+
 # Guida al Riavvio del Sistema Dopo Validazione PHPStan
 
 ## Introduzione

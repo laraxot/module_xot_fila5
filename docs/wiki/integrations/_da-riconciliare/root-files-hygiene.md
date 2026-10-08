@@ -1,4 +1,7 @@
 ---
+qmd: "root files hygiene"
+issues: []
+discussions: []
 title: "Root files hygiene"
 module: xot
 type: integration

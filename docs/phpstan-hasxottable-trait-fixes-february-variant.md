@@ -1,4 +1,7 @@
 ---
+tags: [documentation]
+issues: []
+discussions: []
 title: "Phpstan Hasxottable Trait Fixes"
 type: concept
 status: deprecated

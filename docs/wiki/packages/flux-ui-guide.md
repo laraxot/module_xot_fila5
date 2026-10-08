@@ -1,4 +1,7 @@
 ---
+qmd: "flux ui guide"
+issues: []
+discussions: []
 title: "Flux Ui Guide"
 type: reference
 tags: [wiki, no-frontmatter-fix]

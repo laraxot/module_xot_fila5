@@ -1,3 +1,14 @@
+---
+title: "duplicate files cleanup"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "duplicate files cleanup"
+issues: []
+discussions: []
+---
+
 # Pulizia File Duplicati Case-Insensitive
 
 ## 📋 File Duplicati Identificati

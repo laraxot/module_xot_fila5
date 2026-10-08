@@ -1,4 +1,7 @@
 ---
+qmd: "module admin panel provider mandatory"
+issues: []
+discussions: []
 title: "Ogni modulo con UI Filament richiede app/Providers/Filament/AdminPanelProvider.php"
 type: concept
 module: Xot

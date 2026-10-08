@@ -1,4 +1,7 @@
 ---
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "relationx trait"
 title: "RelationX: derivazione automatica dei pivot"
 description: >-
   Analisi del trait Modules\Xot\Models\Traits\RelationX: come deriva la classe

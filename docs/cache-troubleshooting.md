@@ -1,3 +1,14 @@
+---
+title: "cache troubleshooting"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "cache troubleshooting"
+issues: []
+discussions: []
+---
+
 # Cache troubleshooting (module Xot)
 
 Symptom: "SQLSTATE[42S02]: Base table or view not found: 1146 Table 'fixcity_data.cache' doesn't exist"

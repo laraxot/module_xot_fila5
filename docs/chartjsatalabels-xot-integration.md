@@ -1,3 +1,14 @@
+---
+title: "chartjsatalabels xot integration"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "chartjsatalabels xot integration"
+issues: []
+discussions: []
+---
+
 # Chart.js Datalabels Plugin Implementation in Xot Module
 
 ## Overview

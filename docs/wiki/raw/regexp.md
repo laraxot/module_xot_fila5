@@ -1,4 +1,7 @@
 ---
+qmd: "regexp"
+issues: []
+discussions: []
 title: "Regexp"
 type: reference
 tags: [wiki, no-frontmatter-fix]

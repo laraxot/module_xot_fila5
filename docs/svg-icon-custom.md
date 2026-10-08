@@ -1,3 +1,14 @@
+---
+title: "svg icon custom"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "svg icon custom"
+issues: []
+discussions: []
+---
+
 # SVG Icon Custom — Regola
 
 ## Pattern
@@ -53,6 +64,14 @@ la stringa della chiave e l'icona si rompe. Hardcodare `xot-files.{ext}`.
 
 ---
 
+title: "svg icon custom"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "svg icon custom"
+issues: []
+discussions: []
 **Regola documentata**: 23 set 2026 — story BMAD `5.221` + `5.222`
 
 ## Pattern di design (story 5.223)

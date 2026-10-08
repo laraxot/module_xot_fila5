@@ -1,3 +1,14 @@
+---
+title: "filament class extension rules violations sumy"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament class extension rules violations sumy"
+issues: []
+discussions: []
+---
+
 # Riepilogo Rimozione Violazioni XotBaseResource - [DATE]
 
 **Status**: ✅ Completato  

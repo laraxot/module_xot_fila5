@@ -1,3 +1,14 @@
+---
+title: "critical architecture rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "critical architecture rules"
+issues: []
+discussions: []
+---
+
 # Regole Critiche di Architettura Laraxot
 
 **ULTIMO AGGIORNAMENTO**: 2025-01-XX

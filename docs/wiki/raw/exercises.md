@@ -1,4 +1,7 @@
 ---
+qmd: "exercises"
+issues: []
+discussions: []
 title: "Exercises"
 type: reference
 tags: [wiki, no-frontmatter-fix]

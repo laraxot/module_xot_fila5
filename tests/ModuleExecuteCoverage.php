@@ -9,7 +9,6 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use Mockery;
 use Modules\Xot\Actions\File\FileAction;
-use Modules\Xot\Actions\RouteDynAction;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Actions\XotBaseAction;
@@ -54,7 +53,6 @@ final class ModuleExecuteCoverage
         self::testAllEnums($appRoot, $moduleNamespace);
         self::testInvokePublicMethodsOnModels($appRoot, $moduleNamespace);
         self::testActionsStaticMethods($appRoot, $moduleNamespace);
-        self::testRouteDynActionStatics();
         self::testFileActionStatics();
         self::testXotBaseMigrationHelpers();
         self::testAllMiddleware($appRoot, $moduleNamespace);
@@ -323,41 +321,6 @@ final class ModuleExecuteCoverage
         }
 
         Assert::assertGreaterThanOrEqual(0, $executed);
-    }
-
-    public static function testRouteDynActionStatics(): void
-    {
-        $executed = 0;
-        $routeDef = ['name' => 'Posts/{id}', 'prefix' => 'posts', 'param_name' => 'id_posts'];
-
-        foreach ([
-            fn () => RouteDynAction::getGroupOpts($routeDef, 'Api'),
-            fn () => RouteDynAction::getPrefix($routeDef, 'Api'),
-            fn () => RouteDynAction::getAs($routeDef, 'Api'),
-            fn () => RouteDynAction::getNamespace($routeDef, 'Api'),
-            fn () => RouteDynAction::getAct($routeDef, 'Api'),
-            fn () => RouteDynAction::getParamName($routeDef, 'Api'),
-            fn () => RouteDynAction::getParamsName($routeDef, 'Api'),
-            fn () => RouteDynAction::getResourceOpts($routeDef, 'Api'),
-            fn () => RouteDynAction::getController($routeDef, 'Api'),
-            fn () => RouteDynAction::getUri($routeDef, 'Api'),
-            fn () => RouteDynAction::getMethod($routeDef, 'Api'),
-            fn () => RouteDynAction::getUses($routeDef, 'Api'),
-            fn () => RouteDynAction::getCallback($routeDef, 'Api', 'V1'),
-            fn () => RouteDynAction::prefixedResourceNames('posts.'),
-            fn () => RouteDynAction::getAct(['name' => 'index'], 'Api'),
-            fn () => RouteDynAction::getMethod(['method' => ['get', 'post']], 'Api'),
-            fn () => RouteDynAction::getResourceOpts(['name' => 'items', 'only' => ['index']], 'Api'),
-        ] as $callback) {
-            try {
-                $callback();
-                $executed++;
-            } catch (\Throwable) {
-                $executed++;
-            }
-        }
-
-        Assert::assertGreaterThan(0, $executed);
     }
 
     public static function testFileActionStatics(): void

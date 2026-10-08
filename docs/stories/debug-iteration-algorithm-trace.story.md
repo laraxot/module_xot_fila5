@@ -1,4 +1,10 @@
 ---
+type: note
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "debug iteration algorithm trace.story"
+issues: []
+discussions: []
 id: story-debug-iteration-algorithm-trace
 title: "Story: Debug iterativo e tracciamento dell'algoritmo table()"
 description: "Documenta il processo di debug iterativo usato per analizzare l'algoritmo di table() in XotBaseManageRelatedRecords, inclusi i commenti //dddx($table->getColumns()); e //dd($columns);."

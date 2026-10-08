@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Task Observer — meta-skill auto-miglioramento"
 module: "xot"
 type: reference

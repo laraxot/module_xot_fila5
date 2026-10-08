@@ -1,3 +1,14 @@
+---
+title: "view cache execution ision"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "view cache execution ision"
+issues: []
+discussions: []
+---
+
 # Decisione: Esecuzione php artisan view:cache
 
 **Metodologia**: Super Mucca - La Litigata Interna
@@ -5,6 +16,14 @@
 
 ---
 
+title: "view cache execution ision"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "view cache execution ision"
+issues: []
+discussions: []
 ## 🧠 La Litigata Interna
 
 ### Contesto

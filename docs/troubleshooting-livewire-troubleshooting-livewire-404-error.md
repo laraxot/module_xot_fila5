@@ -1,3 +1,14 @@
+---
+title: "troubleshooting livewire troubleshooting livewire 404 error"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "troubleshooting livewire troubleshooting livewire 404 error"
+issues: []
+discussions: []
+---
+
 # Troubleshooting: Livewire 404 Error
 
 **Data**: 11 Novembre 2025
@@ -173,6 +184,14 @@ php artisan tinker --execute="echo route('livewire.update');"
 
 ---
 
+title: "troubleshooting livewire troubleshooting livewire 404 error"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "troubleshooting livewire troubleshooting livewire 404 error"
+issues: []
+discussions: []
 **Ultimo aggiornamento**: 11 Novembre 2025
 **Modulo**: Xot
 **Categoria**: Troubleshooting

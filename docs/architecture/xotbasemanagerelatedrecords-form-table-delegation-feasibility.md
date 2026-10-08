@@ -1,4 +1,7 @@
 ---
+qmd: "xotbasemanagerelatedrecords form table delegation feasibility"
+issues: []
+discussions: []
 title: "Delega completa form/table: fattibilità e contratto"
 type: architecture
 status: discussion

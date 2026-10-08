@@ -1,3 +1,14 @@
+---
+title: "filament 5 nesting migration"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament 5 nesting migration"
+issues: []
+discussions: []
+---
+
 # Migrazione a Filament 5.x Native Nesting
 
 **Data Analisi**: 2026-01-22  
@@ -370,4 +381,12 @@ Filament 5.x gestisce automaticamente i breadcrumbs per nested resources. Non se
 
 ---
 
+title: "filament 5 nesting migration"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament 5 nesting migration"
+issues: []
+discussions: []
 **Prossima Revisione**: 2026-02-22

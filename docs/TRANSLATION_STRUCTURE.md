@@ -1,3 +1,14 @@
+---
+title: "TRANSLATION STRUCTURE"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "TRANSLATION STRUCTURE"
+issues: []
+discussions: []
+---
+
 # Translation Directory Structure
 
 ## Rule: No `lang/lang/` Redundancy

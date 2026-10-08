@@ -1,3 +1,14 @@
+---
+title: "PRD"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "PRD"
+issues: []
+discussions: []
+---
+
 # Product Requirements Document (PRD) - Xot Module
 
 **Module**: Xot
@@ -8,6 +19,14 @@
 
 ---
 
+title: "PRD"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "PRD"
+issues: []
+discussions: []
 ## Document Control
 
 | Version | Date | Author | Changes |

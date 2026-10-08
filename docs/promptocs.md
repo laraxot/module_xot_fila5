@@ -1,3 +1,14 @@
+---
+title: "promptocs"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "promptocs"
+issues: []
+discussions: []
+---
+
 # Analisi e Miglioramenti del Prompt docs.txt
 
 > **Collegamenti correlati**

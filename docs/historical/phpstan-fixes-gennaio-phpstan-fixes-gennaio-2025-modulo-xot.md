@@ -1,3 +1,14 @@
+---
+title: "phpstan fixes gennaio phpstan fixes gennaio 2025 modulo xot"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan fixes gennaio phpstan fixes gennaio 2025 modulo xot"
+issues: []
+discussions: []
+---
+
 # PHPStan Fixes Gennaio 2025 - Modulo Xot
 
 ## Riassunto delle Correzioni

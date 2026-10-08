@@ -5,18 +5,14 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Unit;
 
 use Illuminate\Console\Command;
-use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Process;
-use Illuminate\Support\Facades\Request;
 use Mockery;
-use Modules\Xot\Actions\ArtisanAction;
 use Modules\Xot\Console\Commands\BuildTestSqliteCommand;
 use Modules\Xot\Console\Commands\ExecuteSqlFileCommand;
 use Modules\Xot\Console\Commands\GenerateFilamentResources;
 use Modules\Xot\Console\Commands\SearchTextInDbCommand;
 use Modules\Xot\Helpers\ResourceFormSchemaGenerator;
-use Modules\Xot\Services\RouteService;
 use Modules\Xot\States\Transitions\XotBaseTransition;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -32,44 +28,7 @@ afterEach(function (): void {
 });
 
 describe('Xot artisan commands helpers coverage', function (): void {
-    test('ArtisanAction act branches con Artisan fake', function (): void {
-        Http::fake();
-        Process::fake();
-        Artisan::shouldReceive('call')->zeroOrMoreTimes()->andReturn(0);
-        Artisan::shouldReceive('output')->zeroOrMoreTimes()->andReturn('ok');
-
-        Request::replace(['module' => 'Xot']);
-        foreach (['routelist', 'queue:flush', 'optimize', 'routelist1', 'clear', 'migrate', 'unknown-act'] as $act) {
-            try {
-                $out = ArtisanAction::act($act);
-                Assert::assertNotEmpty($out);
-            } catch (\Throwable $e) {
-                Assert::assertNotEmpty($e->getMessage());
-            }
-        }
-
-        $ref = new ReflectionClass(ArtisanAction::class);
-        foreach ($ref->getMethods() as $method) {
-            if ($method->getDeclaringClass()->getName() !== ArtisanAction::class || str_starts_with($method->getName(), '__')) {
-                continue;
-            }
-            try {
-                $method->setAccessible(true);
-                $args = [];
-                foreach ($method->getParameters() as $param) {
-                    $args[] = $param->isDefaultValueAvailable()
-                        ? $param->getDefaultValue()
-                        : ($param->getType() instanceof \ReflectionNamedType && $param->getType()->getName() === 'string' ? 'Xot' : null);
-                }
-                if ($method->isStatic()) {
-                    $method->invoke(null, ...$args);
-                }
-            } catch (\Throwable) {
-            }
-        }
-    });
-
-    test('console commands helpers RouteService ResourceFormSchema Transition', function (): void {
+    test('console commands helpers ResourceFormSchema Transition', function (): void {
         Http::fake();
         Process::fake();
         $n = 0;
@@ -78,7 +37,6 @@ describe('Xot artisan commands helpers coverage', function (): void {
             ExecuteSqlFileCommand::class,
             GenerateFilamentResources::class,
             SearchTextInDbCommand::class,
-            RouteService::class,
             ResourceFormSchemaGenerator::class,
             XotBaseTransition::class,
         ] as $class) {

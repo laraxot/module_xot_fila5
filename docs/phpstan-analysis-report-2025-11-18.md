@@ -1,28 +1,18 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 ---
+title: "phpstan analysis report 2025 11 18"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan analysis report 2025 11 18"
+issues: []
+discussions: []
 name: phpstan-analysis-report-2025-11-18
 description: " Executive Summary"
 metadata:
   type: documentation
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # PHPStan Analysis Report - 2025-11-18
 
 ## Executive Summary
@@ -1075,13 +1065,7 @@ class MyModel extends BaseModel
 **phpstan.neon**: ✅ INTOCCATO
 **Approccio**: DRY + KISS + Type Safety
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 ---
 ## Variant 3
 

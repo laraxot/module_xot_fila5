@@ -1,3 +1,14 @@
+---
+title: "conflict resolution"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "conflict resolution"
+issues: []
+discussions: []
+---
+
 # Report Conflitti Git - Modulo Xot
 
 ## Data
@@ -30,4 +41,12 @@
 3. Affrontare debt PHPStan (tipi mixed) in widget e colonne custom
 
 ---
+title: "conflict resolution"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "conflict resolution"
+issues: []
+discussions: []
 Ultimo aggiornamento: 2025-01-06

@@ -1,4 +1,7 @@
 ---
+qmd: "safe casting actions"
+issues: []
+discussions: []
 title: "Safe Casting Actions - DRY & KISS Implementation"
 module: xot
 type: integration

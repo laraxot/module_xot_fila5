@@ -1,3 +1,14 @@
+---
+title: "factory"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "factory"
+issues: []
+discussions: []
+---
+
 # factory
 
 <!-- Contenuto migrato da _docs/factory.txt -->

@@ -1,3 +1,14 @@
+---
+title: "forbidden resource attributes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "forbidden resource attributes"
+issues: []
+discussions: []
+---
+
 # Forbidden Attributes in XotBaseResource Classes
 
 ## Date: 2026-01-09

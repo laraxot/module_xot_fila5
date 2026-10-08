@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Rapporto PHPStan Livello 5 per il modulo Xot"
 module: "Xot"
 type: concept

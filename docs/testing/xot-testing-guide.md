@@ -1,3 +1,14 @@
+---
+title: "xot testing guide"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xot testing guide"
+issues: []
+discussions: []
+---
+
 # Testing Xot
 
 Testing guide for Xot module and all modules that extend it.

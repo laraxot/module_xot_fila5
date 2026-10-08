@@ -1,3 +1,14 @@
+---
+title: "no domain logic in xot"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "no domain logic in xot"
+issues: []
+discussions: []
+---
+
 # Xot must not contain domain-specific logic
 
 **Date**: 2026-07-24

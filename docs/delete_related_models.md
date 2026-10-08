@@ -1,4 +1,7 @@
 ---
+qmd: "delete related models"
+issues: []
+discussions: []
 title: 'delete_related_models'
 module: Xot
 type: reference

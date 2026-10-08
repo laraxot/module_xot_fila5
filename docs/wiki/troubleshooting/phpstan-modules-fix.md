@@ -1,4 +1,7 @@
 ---
+created: 2026-09-26
+issues: []
+discussions: []
 title: "PHPStan Modules — stato e fix"
 type: troubleshooting
 sources: ["phpstan analyse Modules"]

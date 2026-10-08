@@ -1,4 +1,11 @@
 ---
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "relationx analysis"
+issues: []
+discussions: []
 id: RelationX Trait Analysis
 title: "RelationX Trait: Cross-Database Relationship Handling"
 description: "Detailed analysis of Modules/Xot/app/Models/Traits/Relationx.php cross-database relationship handling"

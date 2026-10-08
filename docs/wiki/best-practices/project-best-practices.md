@@ -1,4 +1,7 @@
 ---
+qmd: "project best practices"
+issues: []
+discussions: []
 title: "Project Best Practices"
 type: reference
 tags: [wiki, no-frontmatter-fix]
@@ -274,11 +277,9 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 
 class MyResource extends XotBaseResource
 {
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
+---
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             TextInput::make('name'),  // No ->label()!

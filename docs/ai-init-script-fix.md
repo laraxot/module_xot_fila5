@@ -1,3 +1,14 @@
+---
+title: "ai init script fix"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "ai init script fix"
+issues: []
+discussions: []
+---
+
 # Aggiornamento Importante: ai_init.sh Script
 
 ## Problema Risolto

@@ -1,3 +1,14 @@
+---
+title: "contracts"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "contracts"
+issues: []
+discussions: []
+---
+
 # contracts
 
 <!-- Contenuto migrato da _docs/contracts.txt -->

@@ -1,3 +1,14 @@
+---
+title: "analisi ottimizzazioni"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "analisi ottimizzazioni"
+issues: []
+discussions: []
+---
+
 # 🔧 analisi e ottimizzazioni - modulo xot (core)
 
 ## 🎯 panoramica analisi
@@ -398,6 +409,14 @@ php artisan test --testsuite=Xot
 
 ---
 
+title: "analisi ottimizzazioni"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "analisi ottimizzazioni"
+issues: []
+discussions: []
 **priorità**: **CRITICA - INTERVENIRE IMMEDIATAMENTE**
 **effort stimato**: 5 giorni developer
 **roi atteso**: 300% primo trimestre

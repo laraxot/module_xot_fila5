@@ -1,4 +1,7 @@
 ---
+qmd: "xotbase resource form pattern"
+issues: []
+discussions: []
 title: "XotBaseResourceForm Pattern"
 type: concept
 sources: ["../../../../docs/wiki/concepts/filament-v5-architecture.md"]
@@ -60,11 +63,9 @@ class XotBaseResourceForm
             ->columns(static::getFormSchemaColumns());
     }
 
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
+---
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [];
     }
@@ -89,11 +90,9 @@ class XotBaseResourceForm
 // Modules/Fixcity/app/Filament/Resources/TicketResource/Schemas/TicketForm.php
 class TicketForm extends XotBaseResourceForm
 {
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
+---
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         $steps = static::getSteps();
         $wizard = Wizard::make($steps)->skippable()->persistStepInQueryString();

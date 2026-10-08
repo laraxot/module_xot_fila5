@@ -1,3 +1,14 @@
+---
+title: "environmentevelopment vs testing"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "environmentevelopment vs testing"
+issues: []
+discussions: []
+---
+
 # Regole Environment Development vs Testing in Laraxot
 
 ## Panoramica

@@ -1,4 +1,7 @@
 ---
+qmd: "INDEX"
+issues: []
+discussions: []
 title: "Laraxot Documentation - Sharded Index"
 type: index
 confidence: high

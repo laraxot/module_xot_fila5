@@ -1,4 +1,11 @@
 ---
+title: "hasxottable filterslayout overridable hook.story"
+type: note
+tags: [documentation]
+updated: 2026-09-26
+qmd: "hasxottable filterslayout overridable hook.story"
+issues: []
+discussions: []
 id: hasxottable-filterslayout-overridable-hook
 slug: hasxottable-filterslayout-overridable-hook
 scope: [module:Xot, project:base_workorder_fila5]

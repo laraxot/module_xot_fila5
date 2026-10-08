@@ -1,3 +1,14 @@
+---
+title: "decision making process super mucca"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "decision making process super mucca"
+issues: []
+discussions: []
+---
+
 # Processo Decisionale "Super Mucca" - La Litigata Interna
 
 **Data**: 2025-01-22
@@ -6,6 +17,14 @@
 
 ---
 
+title: "decision making process super mucca"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "decision making process super mucca"
+issues: []
+discussions: []
 ## 🧠 Il Dibattito Interno (La Litigata)
 
 ### Contesto

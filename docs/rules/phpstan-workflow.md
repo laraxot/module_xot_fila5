@@ -1,3 +1,14 @@
+---
+title: "phpstan workflow"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan workflow"
+issues: []
+discussions: []
+---
+
 # 🎯 PHPStan Workflow - Regola Critica
 
 **Data Creazione**: 11 Novembre 2025
@@ -269,6 +280,14 @@ echo "✅ Tutti i moduli modificati hanno 0 errori"
 
 ---
 
+title: "phpstan workflow"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan workflow"
+issues: []
+discussions: []
 **Ricorda sempre**:
 1. **Modulo per modulo PRIMA**
 2. **Tutti assieme SOLO DOPO**

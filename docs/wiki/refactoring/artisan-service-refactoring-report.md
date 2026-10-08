@@ -1,4 +1,7 @@
 ---
+qmd: "artisan service refactoring report"
+issues: []
+discussions: []
 title: "Artisan Service Refactoring Report"
 type: reference
 tags: [wiki, no-frontmatter-fix]

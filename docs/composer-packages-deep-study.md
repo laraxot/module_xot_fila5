@@ -1,3 +1,14 @@
+---
+title: "composer packages deep study"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "composer packages deep study"
+issues: []
+discussions: []
+---
+
 # Composer Packages Deep Study (2026-03-02)
 
 Source: `composer show --format=json` run from `laravel/` on 2026-03-02.

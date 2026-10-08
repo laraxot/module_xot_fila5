@@ -1,3 +1,14 @@
+---
+title: "filament array typing rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament array typing rules"
+issues: []
+discussions: []
+---
+
 # Regole Fondamentali per i Metodi Filament - Aggiornamento
 
 ## Tipizzazione Corretta degli Array - Distinzione per Contesto
@@ -59,11 +70,17 @@ Per `getFormSchema()` nei **resource e pagine** (dove non viene usato `statePath
 
 ```php
 // ✅ CORRETTO per resource/pagine
-<<<<<<< HEAD
 public function getFormSchema(): array
-=======
+---
+title: "filament array typing rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament array typing rules"
+issues: []
+discussions: []
 public function getFormSchema(): array
->>>>>>> laraxot/dev
 {
     return [
         TextInput::make('email')->email()->required(),

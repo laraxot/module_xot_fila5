@@ -1,4 +1,8 @@
 ---
+created: 2026-09-26
+qmd: "INDEX"
+issues: []
+discussions: []
 title: "Rules Index"
 type: "index"
 tags: [rules, filament, xotbase]

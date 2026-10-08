@@ -1,3 +1,14 @@
+---
+title: "phpstan all modules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan all modules"
+issues: []
+discussions: []
+---
+
 # Analisi PHPStan - Tutti i Moduli
 
 **Obiettivo**: Analisi sistematica completa di tutti i moduli con PHPStan

@@ -227,6 +227,18 @@ abstract class XotBaseMigration extends LaravelMigration
         // return $this->getTableDetails()->hasPrimaryKey();
         $connection = $this->getConn()->getConnection();
         $table = $this->getTable();
+        
+        if ($connection->getDriverName() === 'sqlite') {
+            $infos = $connection->select("PRAGMA table_info({$table})");
+            foreach ($infos as $info) {
+                $info = (array) $info;
+                if (isset($info['pk']) && $info['pk'] > 0) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
         $database = $connection->getDatabaseName();
 
         $query = "SELECT COUNT(*) as count

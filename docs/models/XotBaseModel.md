@@ -1,3 +1,14 @@
+---
+title: "XotBaseModel"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "XotBaseModel"
+issues: []
+discussions: []
+---
+
 # XotBaseModel Documentation
 
 ## Architecture Overview

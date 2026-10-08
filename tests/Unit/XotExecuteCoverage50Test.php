@@ -17,14 +17,12 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\LazyCollection;
 use Mockery;
-use Modules\Xot\Actions\ArtisanAction;
 use Modules\Xot\Actions\Export\ExportXlsStreamByLazyCollection;
 use Modules\Xot\Actions\Factory\GetPropertiesFromMethodsByModelAction;
 use Modules\Xot\Actions\Filament\GenerateTableColumnsByFileAction;
 use Modules\Xot\Actions\Filament\GetModulesNavigationItems;
 use Modules\Xot\Actions\File\FileAction;
 use Modules\Xot\Actions\Route\IsAdminRouteAction;
-use Modules\Xot\Actions\RouteDynAction;
 use Modules\Xot\Console\Commands\AddStrictTypesDeclarationCommand;
 use Modules\Xot\Console\Commands\CheckAccessorTwinsCommand;
 use Modules\Xot\Console\Commands\OptimizeFilamentMemoryCommand;
@@ -134,11 +132,14 @@ describe('Xot execute coverage floor 50', function (): void {
         ModuleExecuteCoverage::runFloor50($appRoot, $ns);
     });
 
-    test('FileAction static helpers e XotData factory', function (): void {
+    test('XotData e MetatagData factory restituiscono un singleton configurato', function (): void {
         $data = XotData::make();
         Assert::assertSame('it', $data->primary_lang);
+        Assert::assertSame($data, XotData::make());
 
         $meta = MetatagData::make();
+        Assert::assertSame($meta, MetatagData::make());
+        Assert::assertSame($meta->title, $meta->getBrandName());
     });
 
     test('FileAction percorre helper filesystem namespace e component scan', function (): void {
@@ -263,28 +264,6 @@ describe('Xot execute coverage floor 50', function (): void {
         Assert::assertStringStartsWith('Pagina - ', $meta->title);
         Assert::assertSame($meta, $meta->concatDescription('Extra'));
         Assert::assertStringStartsWith('Extra ', (string) $meta->description);
-    });
-
-    test('RouteDynAction calcola prefix namespace e resource opts', function (): void {
-        $routeDef = ['name' => 'Articles/{id}', 'prefix' => 'articles'];
-        Assert::assertSame('articles', RouteDynAction::getPrefix($routeDef, 'Api'));
-        Assert::assertSame('Articles/id', RouteDynAction::getNamespace($routeDef, 'Api'));
-        Assert::assertSame('articles.id.', RouteDynAction::getAs($routeDef, 'Api'));
-        Assert::assertSame('ArticlesIdController', RouteDynAction::getController($routeDef, 'Api'));
-        Assert::assertArrayHasKey('index', RouteDynAction::prefixedResourceNames('articles.'));
-        Assert::assertNotEmpty(RouteDynAction::getGroupOpts($routeDef, 'Api'));
-
-        $simple = ['name' => 'posts', 'param_name' => ''];
-        Assert::assertSame('posts', RouteDynAction::getPrefix($simple, null));
-        Assert::assertSame('Posts', RouteDynAction::getNamespace($simple, null));
-        Assert::assertSame(['get', 'post'], RouteDynAction::getMethod($simple, null));
-        Assert::assertSame('PostsController@posts', RouteDynAction::getUses($simple, null));
-        $callback = RouteDynAction::getCallback($simple, null, null);
-        Assert::assertArrayHasKey('as', $callback);
-        Assert::assertArrayHasKey('uses', $callback);
-        Assert::assertNotEmpty(RouteDynAction::getResourceOpts($simple, null));
-        Assert::assertSame('index-act', RouteDynAction::getAct(['act' => 'index-act'], null));
-        Assert::assertSame(['get'], RouteDynAction::getMethod(['method' => 'get'], null));
     });
 
     test('SecurityMiddleware applica header e rate limit su richiesta GET', function (): void {
@@ -433,7 +412,7 @@ describe('Xot execute coverage floor 50', function (): void {
         }
     });
 
-    test('RouteService inAdmin e helper statici', function (): void {
+    test('IsAdminRouteAction rispetta il parametro in_admin', function (): void {
         Assert::assertTrue(app(IsAdminRouteAction::class)->execute(['in_admin' => '1']));
         Assert::assertFalse(app(IsAdminRouteAction::class)->execute(['in_admin' => '0']));
     });
@@ -725,7 +704,7 @@ describe('Xot execute coverage floor 50', function (): void {
         Assert::assertSame('Xot', XotBasePage::getModuleName());
     });
 
-    test('CheckAccessorTwins SearchText middleware navigation e ArtisanAction', function (): void {
+    test('CheckAccessorTwins SearchText middleware e navigation', function (): void {
         $twins = app(CheckAccessorTwinsCommand::class);
         $twins->setLaravel(app());
         try {
@@ -766,15 +745,6 @@ describe('Xot execute coverage floor 50', function (): void {
 
         try {
             Assert::assertNotEmpty(app(GetModulesNavigationItems::class)->execute());
-        } catch (\Throwable) {
-        }
-
-        try {
-            ArtisanAction::act('route-list');
-        } catch (\Throwable) {
-        }
-        try {
-            ArtisanAction::act('migrate');
         } catch (\Throwable) {
         }
 

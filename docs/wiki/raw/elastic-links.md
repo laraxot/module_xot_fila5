@@ -1,4 +1,7 @@
 ---
+qmd: "elastic links"
+issues: []
+discussions: []
 title: "Elastic Links"
 type: reference
 tags: [wiki, no-frontmatter-fix]

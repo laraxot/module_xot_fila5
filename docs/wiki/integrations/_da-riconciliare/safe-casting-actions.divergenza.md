@@ -1,4 +1,7 @@
 ---
+qmd: "safe casting actions.divergenza"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: safe-casting-actions.md"
 module: Xot
 type: note

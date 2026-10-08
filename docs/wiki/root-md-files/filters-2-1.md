@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "_filters"
 module: "Xot"
 type: concept

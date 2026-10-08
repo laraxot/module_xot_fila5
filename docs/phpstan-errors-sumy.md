@@ -1,3 +1,14 @@
+---
+title: "phpstan errors sumy"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan errors sumy"
+issues: []
+discussions: []
+---
+
 # PHPStan Level 10 Errors Summary - [DATE]
 
 **Livello PHPStan**: 10  
@@ -5,6 +16,14 @@
 
 ---
 
+title: "phpstan errors sumy"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan errors sumy"
+issues: []
+discussions: []
 ## 📊 Riepilogo Completo Errori
 
 ### Totale Errori: 0

@@ -1,3 +1,14 @@
+---
+title: "philosophy master index"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "philosophy master index"
+issues: []
+discussions: []
+---
+
 # Indice Filosofico Completo - Tutti i Moduli
 
 **Data Creazione**: 2025-12-23
@@ -9,6 +20,14 @@ Questo documento fornisce un indice completo di tutta la documentazione filosofi
 
 ---
 
+title: "philosophy master index"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "philosophy master index"
+issues: []
+discussions: []
 ## 🏗️ Moduli Core
 
 ### Xot - Il Motore Fondamentale

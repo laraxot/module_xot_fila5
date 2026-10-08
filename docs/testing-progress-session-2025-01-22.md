@@ -1,4 +1,7 @@
 ---
+tags: [documentation]
+issues: []
+discussions: []
 title: "Testing Progress Session"
 type: concept
 status: deprecated

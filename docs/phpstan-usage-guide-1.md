@@ -1,3 +1,14 @@
+---
+title: "phpstan usage guide 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan usage guide 1"
+issues: []
+discussions: []
+---
+
 # Guida all'Utilizzo di PHPStan nel Framework Laraxot <nome progetto>
 
 ## Introduzione

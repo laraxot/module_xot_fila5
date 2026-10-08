@@ -1,3 +1,14 @@
+---
+title: "xot base classes xot base classes in laravel modules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xot base classes xot base classes in laravel modules"
+issues: []
+discussions: []
+---
+
 # Xot Base Classes in Laravel Modules
 
 ## Overview

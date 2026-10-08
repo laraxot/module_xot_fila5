@@ -1,4 +1,7 @@
 ---
+qmd: "clean architecture"
+issues: []
+discussions: []
 title: 'clean_architecture'
 module: Xot
 type: reference

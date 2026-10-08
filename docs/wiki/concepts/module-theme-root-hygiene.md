@@ -1,4 +1,7 @@
 ---
+qmd: "module theme root hygiene"
+issues: []
+discussions: []
 title: root hygiene modulo e tema
 type: concept
 module: Xot

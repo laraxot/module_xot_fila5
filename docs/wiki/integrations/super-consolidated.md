@@ -1,4 +1,7 @@
 ---
+qmd: "super consolidated"
+issues: []
+discussions: []
 title: "super — Consolidated Documentation"
 module: xot
 type: integration

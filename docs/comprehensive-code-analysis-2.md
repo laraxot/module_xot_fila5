@@ -1,3 +1,14 @@
+---
+title: "comprehensive code analysis 2"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "comprehensive code analysis 2"
+issues: []
+discussions: []
+---
+
 # Analisi Completa del Codice - Sistema Laraxot
 
 ## Panoramica
@@ -176,11 +187,17 @@ try {
 
 ```php
 // ContactResource.php
-<<<<<<< HEAD
 public function getFormSchema(): array
-=======
+---
+title: "comprehensive code analysis 2"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "comprehensive code analysis 2"
+issues: []
+discussions: []
 public function getFormSchema(): array
->>>>>>> laraxot/dev
 {
     return [
         TextInput::make('first_name'),
@@ -189,11 +206,9 @@ public function getFormSchema(): array
 }
 
 // CustomerResource.php - PATTERN SIMILE
-<<<<<<< HEAD
 public function getFormSchema(): array
-=======
+---
 public function getFormSchema(): array
->>>>>>> laraxot/dev
 {
     return [
         TextInput::make('name')->required(),
@@ -289,11 +304,9 @@ protected function casts(): array
 ```php
 class ContactResource extends XotBaseResource
 {
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
+---
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             TextInput::make('first_name'),

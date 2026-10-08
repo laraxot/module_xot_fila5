@@ -1,3 +1,14 @@
+---
+title: "phpstan wave"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan wave"
+issues: []
+discussions: []
+---
+
 <?php
 
 declare(strict_types=1);

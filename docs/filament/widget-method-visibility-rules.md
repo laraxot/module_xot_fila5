@@ -1,3 +1,14 @@
+---
+title: "widget method visibility rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "widget method visibility rules"
+issues: []
+discussions: []
+---
+
 # Regole Visibilità Metodi Widget - HasXotTable
 
 **Status**: Critico

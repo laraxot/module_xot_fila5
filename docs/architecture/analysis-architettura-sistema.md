@@ -1,3 +1,14 @@
+---
+title: "analysis architettura sistema"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "analysis architettura sistema"
+issues: []
+discussions: []
+---
+
 # Analisi dell'Architettura del Sistema il progetto
 
 ## Panoramica Architetturale

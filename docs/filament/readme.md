@@ -1,3 +1,14 @@
+---
+title: "readme"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "readme"
+issues: []
+discussions: []
+---
+
 # Filament
 
 Questa cartella contiene la documentazione relativa all'implementazione di Filament nel progetto.

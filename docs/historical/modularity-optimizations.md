@@ -1,3 +1,14 @@
+---
+title: "modularity optimizations"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "modularity optimizations"
+issues: []
+discussions: []
+---
+
 # Modulo Xot - Ottimizzazioni per Modularità
 
 ## Problemi Identificati
@@ -307,4 +318,12 @@ Dopo l'ottimizzazione completa, i comandi devono restituire **0 occorrenze**.
 
 ---
 
+title: "modularity optimizations"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "modularity optimizations"
+issues: []
+discussions: []
 **Queste ottimizzazioni sono CRITICHE per mantenere l'architettura modulare del sistema. Ogni violazione deve essere corretta immediatamente.**

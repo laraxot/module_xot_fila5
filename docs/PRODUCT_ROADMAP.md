@@ -1,3 +1,14 @@
+---
+title: "PRODUCT ROADMAP"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "PRODUCT ROADMAP"
+issues: []
+discussions: []
+---
+
 # Xot Module - Product Roadmap
 
 **Module:** Xot  
@@ -8,6 +19,14 @@
 
 ---
 
+title: "PRODUCT ROADMAP"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "PRODUCT ROADMAP"
+issues: []
+discussions: []
 ## Vision Statement
 
 To provide a **flexible extension framework** that enables rapid development, customization, and integration of new features while maintaining platform stability and code quality.

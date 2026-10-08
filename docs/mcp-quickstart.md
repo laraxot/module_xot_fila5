@@ -1,3 +1,14 @@
+---
+title: "mcp quickstart"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "mcp quickstart"
+issues: []
+discussions: []
+---
+
 # MCP Quick Start Guide
 
 ## Setup Rapido per il Nostro Progetto
@@ -86,6 +97,14 @@ cd init
 
 ---
 
+title: "mcp quickstart"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "mcp quickstart"
+issues: []
+discussions: []
 ## Server MCP Configurati
 
 ### filesystem

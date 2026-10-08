@@ -1,3 +1,14 @@
+---
+title: "analysis summary"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "analysis summary"
+issues: []
+discussions: []
+---
+
 # Riepilogo Analisi Qualità Codice - 2025-01-22
 
 ## 🎯 Obiettivo

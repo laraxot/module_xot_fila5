@@ -1,3 +1,14 @@
+---
+title: "phpstan call dynamic panel metatagdata"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan call dynamic panel metatagdata"
+issues: []
+discussions: []
+---
+
 # Correzione chiamate dinamiche ApplyMetatagToPanelAction → MetatagData
 
 ## Contesto
@@ -40,6 +51,14 @@ Questo pattern consente:
 - Compliance con gli standard di qualità PHPStan livello 10
 
 ---
+title: "phpstan call dynamic panel metatagdata"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan call dynamic panel metatagdata"
+issues: []
+discussions: []
 **Ultima modifica:** 2025-04-16
 **Collegamento indice:** [../../../../docs/index.md](../../../../docs/index.md)
 

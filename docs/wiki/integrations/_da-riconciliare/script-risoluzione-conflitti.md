@@ -1,4 +1,7 @@
 ---
+qmd: "script risoluzione conflitti"
+issues: []
+discussions: []
 title: "SUPER MUCCA - Script Risoluzione Conflitti Git"
 module: xot
 type: integration

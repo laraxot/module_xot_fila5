@@ -1,4 +1,10 @@
 ---
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "module adminpanelprovider mandatory"
+issues: []
+discussions: []
 title: "Redirect — vedi module-admin-panel-provider-mandatory.md"
 type: concept
 module: Xot

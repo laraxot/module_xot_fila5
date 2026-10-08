@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "fill_field_with_lorem"
 module: "Xot"
 type: concept

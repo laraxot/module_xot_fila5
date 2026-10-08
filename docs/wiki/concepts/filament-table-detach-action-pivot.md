@@ -1,4 +1,5 @@
 ---
+discussions: []
 title: "Filament table detach action pivot"
 type: concept
 status: approved

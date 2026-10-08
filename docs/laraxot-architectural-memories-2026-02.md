@@ -1,4 +1,7 @@
 ---
+tags: [documentation]
+issues: []
+discussions: []
 title: "Laraxot Architectural Memories 02"
 type: concept
 status: deprecated

@@ -1,4 +1,7 @@
 ---
+qmd: "xotdata theme asset compatibility"
+issues: []
+discussions: []
 title: "Xotdata Theme Asset Compatibility"
 type: reference
 tags: [wiki, no-frontmatter-fix]

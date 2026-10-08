@@ -1,3 +1,14 @@
+---
+title: "laravel 11 casts pattern"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "laravel 11 casts pattern"
+issues: []
+discussions: []
+---
+
 # Laravel 11+ Casts Pattern - CRITICAL UPDATE
 
 ## ⚠️ DEPRECATED: `protected $casts` Property
@@ -158,6 +169,14 @@ Before committing any model:
 
 ---
 
+title: "laravel 11 casts pattern"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "laravel 11 casts pattern"
+issues: []
+discussions: []
 **CRITICAL**: Always use `protected function casts(): array` in new code and migrate old code when touching files.
 
 **Last Updated**: 2026-01-13  

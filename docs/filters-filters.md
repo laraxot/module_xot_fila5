@@ -1,3 +1,14 @@
+---
+title: "filters filters"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filters filters"
+issues: []
+discussions: []
+---
+
 # _filters
 
 <!-- Contenuto migrato da _docs/_filters.txt -->
@@ -35,6 +46,14 @@ https://appdividend.com/2022/03/01/how-to-create-filters-in-laravel/  !
 
 
 ---
+title: "filters filters"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filters filters"
+issues: []
+discussions: []
 ## Variant 2
 
 # _filters

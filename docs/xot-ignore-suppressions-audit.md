@@ -1,4 +1,8 @@
 ---
+tags: [documentation]
+updated: 2026-09-26
+issues: []
+discussions: []
 title: "Audit @phpstan-ignore Xot"
 type: report
 created: 2026-09-01
