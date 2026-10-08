@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "phpstan common exceptions"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "phpstan common exceptions"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: phpstan_common_exceptions
 canonical: ../../../../../Themes/docs/shared-components/phpstan-common-exceptions-1.md

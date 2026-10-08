@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "troubleshooting"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Troubleshooting"
 type: reference
 tags: [wiki, no-frontmatter-fix]

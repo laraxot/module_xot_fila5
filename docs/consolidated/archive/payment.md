@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "payment"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Payment Integration
 
 ## Cashier

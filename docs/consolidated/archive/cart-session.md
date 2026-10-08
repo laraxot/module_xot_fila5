@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "cart session"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # cart_session
 
 <!-- Contenuto migrato da _docs/cart_session.txt -->

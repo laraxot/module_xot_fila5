@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "module namespace rules"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Regola generale: Label e traduzioni in Filament
 
 ## Regola

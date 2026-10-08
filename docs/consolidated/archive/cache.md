@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "cache"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # cache
 
 <!-- Contenuto migrato da _docs/cache.txt -->

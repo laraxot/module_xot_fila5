@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "actions over services"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Migrazione da Services ad Actions
 
 ## Architettura Precedente: Services

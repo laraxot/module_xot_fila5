@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "17 media phpstan"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # BMAD Story 17 — Media: 10 errori PHPStan (test)
 
 **Modulo:** `Media`

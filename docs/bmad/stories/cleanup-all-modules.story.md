@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 type: note
 tags: [documentation]
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 id: "xot-cleanup-all-modules"
 epic: 5
 title: "Fleet: git status + marker HEAD + quality per ogni modulo"

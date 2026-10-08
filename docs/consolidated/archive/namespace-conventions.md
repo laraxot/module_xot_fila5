@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "namespace conventions"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Convenzioni dei Namespace nel Modulo Xot
 
 ## Panoramica

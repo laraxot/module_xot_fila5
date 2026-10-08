@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "09 intervention phpstan"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # BMAD Story 09 — Intervention: 21 errori PHPStan
 
 **Modulo:** `Intervention`

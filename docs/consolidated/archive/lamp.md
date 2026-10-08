@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "lamp"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 ext-sqlite3
 ext-zip
 ext-intl

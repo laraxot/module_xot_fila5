@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "export xlsx grid icon ux.story"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Story: export-xlsx-grid-icon-ux
 **Status**: ready-for-dev
 **Modulo**: Xot

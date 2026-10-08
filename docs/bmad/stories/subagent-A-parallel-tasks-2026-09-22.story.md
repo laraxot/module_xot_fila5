@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "subagent A parallel tasks 2026 09 22.story"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Subagent-A Task: Resolve High-Complexity Module Conflicts
 
 ## Random Order: Xot → IndennitaResponsabilita → Media

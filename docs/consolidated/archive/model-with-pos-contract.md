@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "model with pos contract"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # ModelWithPosContract
 
 Il `ModelWithPosContract` è un'interfaccia che definisce il contratto per i modelli che necessitano di gestire una posizione ordinale.

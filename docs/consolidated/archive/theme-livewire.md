@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "theme livewire"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # theme_livewire
 
 <!-- Contenuto migrato da _docs/theme_livewire.txt -->

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "xot base translation update"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Xot Base Translation Update"
 type: reference
 tags: [wiki, no-frontmatter-fix]

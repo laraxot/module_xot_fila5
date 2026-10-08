@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "fileupload components"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # FileUpload Components in XotBaseResource
 
 ## Overview

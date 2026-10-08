@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "directory structure guide"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Directory Structure Guide"
 type: reference
 tags: [wiki, no-frontmatter-fix]

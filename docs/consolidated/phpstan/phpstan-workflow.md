@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan workflow"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Workflow Analisi PHPStan
 
 > **Nota**: Per una panoramica completa sulla gestione della documentazione e delle regole, consultare [DOCUMENTATION_MANAGEMENT.md](DOCUMENTATION_MANAGEMENT.md)
@@ -214,8 +211,6 @@ Il progetto utilizza un'architettura modulare con Laravel Modules:
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan workflow"
 type: note
 tags: [documentation]
@@ -224,7 +219,6 @@ updated: 2026-09-26
 qmd: "phpstan workflow"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
    - Mantenere coerenza tra le diverse documentazioni
    - Mantenere coerenza tra le diverse documentazioni
    - Mantenere coerenza tra le diverse documentazioni

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "code quality 2"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Code Quality 2"
 type: reference
 tags: [wiki, no-frontmatter-fix]

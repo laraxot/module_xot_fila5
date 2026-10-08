@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "brand way"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # La Via del Brand
 
 ## L'Essenza del Brand

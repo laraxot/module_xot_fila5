@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "xot base classes"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Xot Base Classes"
 type: reference
 tags: [wiki, no-frontmatter-fix]

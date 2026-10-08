@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "conflicts analysis"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Analisi Conflitti - composer.json
 
 ## Obiettivi Funzionali

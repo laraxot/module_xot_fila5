@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "thinking about.blade"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # thinking_about.blade
 
 <!-- Contenuto migrato da _docs/thinking_about.blade.txt -->

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "25b blog rm getformschema"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # 25b-blog — Rimuovere getFormSchema da BannerResource, CategoryResource, TextWidgetResource
 
 **Modulo:** Blog

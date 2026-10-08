@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "blade component registration"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Registrazione Componenti Blade
 
 ## Regola Fondamentale

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "translations best practices"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Traduzioni: Best Practices in Laraxot
 
 Questo documento definisce le linee guida ufficiali e le best practices per la gestione delle traduzioni all'interno del framework Laraxot.

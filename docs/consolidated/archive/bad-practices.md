@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "bad practices"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # bad_practices
 
 <!-- Contenuto migrato da _docs/bad_practices.txt -->

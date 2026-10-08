@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "performance"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Modulo Performance
 
 ## Descrizione

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "view composer loop infinite fix"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # XotComposer - Loop Infinito Fix
 
 ## 🚨 Problema Critico Risolto
@@ -237,8 +234,6 @@ grep -r "auth()->user()" Modules/*/View/Composers/
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "view composer loop infinite fix"
 type: note
 tags: [documentation]
@@ -247,7 +242,6 @@ updated: 2026-09-26
 qmd: "view composer loop infinite fix"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Risolto**: Dicembre 2024
 **Priorità**: P0 (Critical) - Bloccava sistema completo
 **Impatto**: Sistema completamente non funzionale

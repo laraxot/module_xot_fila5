@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "INDEX"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Index"
 type: reference
 tags: [wiki, no-frontmatter-fix]

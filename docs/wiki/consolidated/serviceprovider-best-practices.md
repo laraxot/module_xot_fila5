@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "serviceprovider best practices"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Serviceprovider Best Practices"
 type: reference
 tags: [wiki, no-frontmatter-fix]

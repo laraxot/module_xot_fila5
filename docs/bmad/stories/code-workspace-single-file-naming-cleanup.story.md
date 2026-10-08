@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "code workspace single file naming cleanup.story"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Story: Xot — un solo `.code-workspace`, nome dal remote git
 
 ## Status

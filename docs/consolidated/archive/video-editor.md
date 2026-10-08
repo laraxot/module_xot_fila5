@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "video editor"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # video_editor
 
 <!-- Contenuto migrato da _docs/video_editor.txt -->

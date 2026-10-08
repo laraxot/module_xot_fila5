@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "trait method signature rules"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Trait Method Signature Rules"
 type: reference
 tags: [wiki, no-frontmatter-fix]

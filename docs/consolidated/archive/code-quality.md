@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "code quality"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Laraxot Code Quality Standards
 
 ## Overview
@@ -295,8 +292,6 @@ unset($translations['existing_key']); // MAI!
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "code quality"
 type: note
 tags: [documentation]
@@ -305,5 +300,4 @@ updated: 2026-09-26
 qmd: "code quality"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *"Nel codice Laraxot, ogni riga è un verso della sinfonia dell'architettura perfetta."*

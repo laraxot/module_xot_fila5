@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "errors"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Errori PHPStan - Modulo Xot
 
 ## Analisi Completa

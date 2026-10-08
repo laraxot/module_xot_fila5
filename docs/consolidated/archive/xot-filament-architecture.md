@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "xot filament architecture"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Architettura Filament-Xot
 
 ## Panoramica

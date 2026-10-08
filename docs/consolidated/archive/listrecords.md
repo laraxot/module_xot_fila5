@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "listrecords"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # List Records in Filament
 
 > **AGGIORNAMENTO 2025-05-28:**

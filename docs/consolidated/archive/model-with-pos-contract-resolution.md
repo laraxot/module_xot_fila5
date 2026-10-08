@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "model with pos contract resolution"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Risoluzione Conflitto in ModelWithPosContract
 
 ## Panoramica

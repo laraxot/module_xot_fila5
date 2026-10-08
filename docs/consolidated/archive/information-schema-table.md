@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "information schema table"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # InformationSchemaTable
 
 ## Descrizione

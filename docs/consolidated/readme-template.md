@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "readme template"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Modulo [Nome Modulo]
 
 ## Panoramica

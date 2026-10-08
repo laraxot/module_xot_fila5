@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "module service"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # ModuleService
 
 La classe `ModuleService` fornisce funzionalità per la gestione dei moduli nell'applicazione.

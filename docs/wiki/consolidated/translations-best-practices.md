@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "translations best practices"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Translations Best Practices"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "safe functions"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Safe Functions"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "module structure 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Struttura dei Moduli in il progetto
 
 ## Panoramica

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "xot base page"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # XotBasePage
 
 ## Panoramica

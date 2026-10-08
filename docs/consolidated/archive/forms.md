@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "forms"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Forms and Input Handling
 
 ## Basic Forms
@@ -47,8 +44,6 @@ ${cat /mnt/f/var/www/quaeris/laravel/Modules/Xot/_docs/custom_errors.txt}
 ### Versione Incoming
 
 ---
-<<<<<<< HEAD
-=======
 title: "forms"
 type: note
 tags: [documentation]
@@ -57,4 +52,3 @@ updated: 2026-09-26
 qmd: "forms"
 issues: []
 discussions: []
->>>>>>> laraxot/dev

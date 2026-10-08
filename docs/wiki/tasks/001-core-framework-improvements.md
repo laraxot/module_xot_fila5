@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "001 core framework improvements"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "001 Core Framework Improvements"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Convenzioni di Nomenclatura in <nome progetto>"
 module: "Xot"
 type: concept

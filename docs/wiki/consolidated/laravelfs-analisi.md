@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "laravelfs analisi"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Laravelfs Analisi"
 type: reference
 tags: [wiki, no-frontmatter-fix]

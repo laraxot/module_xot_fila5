@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "moduli laraxot"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Moduli Laraxot per il progetto
 
 ## Panoramica

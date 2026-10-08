@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 type: note
 tags: [documentation]
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 id: Xot/xot-base-exporter
 title: "XotBaseExporter: bridge getXlsFields() → ExportAction nativa Filament 5"
 epic: "5"

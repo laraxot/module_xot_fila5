@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "single table inheritance"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Single Table Inheritance (STI)
 
 ## Principi Fondamentali

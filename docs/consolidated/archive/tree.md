@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "tree"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # tree
 
 <!-- Contenuto migrato da _docs/tree.txt -->

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "payment gateway"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # payment_gateway
 
 <!-- Contenuto migrato da _docs/payment_gateway.txt -->

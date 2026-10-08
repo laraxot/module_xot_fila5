@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "auto routes"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # auto_routes
 
 <!-- Contenuto migrato da _docs/auto_routes.txt -->

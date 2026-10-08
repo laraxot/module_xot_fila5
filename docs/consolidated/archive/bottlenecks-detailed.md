@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "bottlenecks detailed"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Analisi Dettagliata dei Colli di Bottiglia - Modulo Xot
 
 ## Panoramica
@@ -306,8 +303,6 @@ trait HasXotOptimizations
 ```
 
 ---
-<<<<<<< HEAD
-=======
 title: "bottlenecks detailed"
 type: note
 tags: [documentation]
@@ -316,4 +311,3 @@ updated: 2026-09-26
 qmd: "bottlenecks detailed"
 issues: []
 discussions: []
->>>>>>> laraxot/dev

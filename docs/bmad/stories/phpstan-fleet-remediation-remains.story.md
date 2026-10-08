@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan fleet remediation remains.story"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Story: phpstan-fleet-remediation-remains
 **Status**: ready-for-dev
 **Modulo**: Xot (coordinatore fleet-wide)

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "themes"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Themes"
 type: reference
 tags: [wiki, no-frontmatter-fix]

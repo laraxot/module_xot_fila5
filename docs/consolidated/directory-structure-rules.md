@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "directory structure rules"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Regole Struttura Directory
 
 ## Struttura Base del Progetto

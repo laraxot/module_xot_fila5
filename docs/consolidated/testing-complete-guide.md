@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "testing complete guide"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Testing Complete Guide - Consolidated
 
 ## Overview

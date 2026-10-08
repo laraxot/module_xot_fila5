@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "xot base resource page"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # XotBaseResourcePage
 
 La classe astratta `XotBaseResourcePage` fornisce una base comune per tutte le pagine di risorse Filament nel modulo Xot.

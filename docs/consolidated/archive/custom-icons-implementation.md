@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "custom icons implementation"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Implementazione delle Icone Personalizzate
 
 ## Introduzione

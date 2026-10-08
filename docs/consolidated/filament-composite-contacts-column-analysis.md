@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament composite contacts column analysis"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Analisi e Implementazione Colonna Composita "Contatti" - TechPlanner
 
 ## Richiesta Utente
@@ -249,8 +246,6 @@ Questa implementazione stabilisce un precedente per:
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "filament composite contacts column analysis"
 type: note
 tags: [documentation]
@@ -259,7 +254,6 @@ updated: 2026-09-26
 qmd: "filament composite contacts column analysis"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Stato**: Analisi completata, pronto per implementazione
 **Ultimo aggiornamento**: agosto 2025
 **Autore**: Cascade AI Assistant

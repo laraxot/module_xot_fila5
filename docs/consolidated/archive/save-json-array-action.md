@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "save json array action"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # SaveJsonArrayAction
 
 L'azione `SaveJsonArrayAction` è responsabile del salvataggio di array in formato JSON su file.

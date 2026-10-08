@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "search string database"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # SearchStringInDatabaseCommand
 
 ## Descrizione

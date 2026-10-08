@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "clean code wizard steps"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Clean Code: Wizard Steps come Funzioni dedicate
 
 ## Regola

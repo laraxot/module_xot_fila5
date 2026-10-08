@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "getter zen"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # La Filosofia Zen dei Getter Semantici
 
 ## Il Principio Fondamentale

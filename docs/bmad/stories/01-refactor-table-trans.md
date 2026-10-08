@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "01 refactor table trans"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # BMAD Story 01 — Rimuovere TransTrait ridondante
 
 **Repo:** `git@github.com:laraxot/module_xot_fila5.git`

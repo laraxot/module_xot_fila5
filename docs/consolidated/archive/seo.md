@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "seo"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # seo
 
 <!-- Contenuto migrato da _docs/seo.txt -->

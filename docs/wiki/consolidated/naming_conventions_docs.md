@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Convenzioni di Naming nella Documentazione"
 module: "Xot"
 type: concept

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "24 geo phpstan"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # BMAD Story 24 — Geo: 5 errori PHPStan
 
 **Modulo:** `Geo`

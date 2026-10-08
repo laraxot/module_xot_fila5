@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "generate models from schema"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Comando GenerateModelsFromSchema
 
 ## Panoramica
