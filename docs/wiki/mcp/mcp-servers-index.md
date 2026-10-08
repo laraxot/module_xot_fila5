@@ -1,4 +1,7 @@
 ---
+qmd: "mcp servers index"
+issues: []
+discussions: []
 title: "Mcp Servers Index"
 type: reference
 tags: [wiki, no-frontmatter-fix]

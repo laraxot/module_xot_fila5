@@ -1,4 +1,7 @@
 ---
+qmd: "eloquent properties best practices"
+issues: []
+discussions: []
 title: "Eloquent Properties Best Practices"
 type: reference
 tags: [wiki, no-frontmatter-fix]

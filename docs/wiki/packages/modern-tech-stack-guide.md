@@ -1,4 +1,7 @@
 ---
+qmd: "modern tech stack guide"
+issues: []
+discussions: []
 title: "Modern Tech Stack Guide"
 type: reference
 tags: [wiki, no-frontmatter-fix]

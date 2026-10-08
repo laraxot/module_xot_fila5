@@ -1,4 +1,7 @@
 ---
+qmd: "query"
+issues: []
+discussions: []
 title: "Query"
 type: reference
 tags: [wiki, no-frontmatter-fix]

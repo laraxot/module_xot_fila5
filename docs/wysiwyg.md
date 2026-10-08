@@ -1,3 +1,14 @@
+---
+title: "wysiwyg"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "wysiwyg"
+issues: []
+discussions: []
+---
+
 -------------------------------
 editor tiptap con livewire
 https://oliver.mx/tiptap-laravel

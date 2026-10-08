@@ -1,3 +1,14 @@
+---
+title: "filament xotbasesection troubleshooting"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament xotbasesection troubleshooting"
+issues: []
+discussions: []
+---
+
 # XotBaseSection Troubleshooting
 
 ## BadMethodCallException: disableLiveUpdates does not exist

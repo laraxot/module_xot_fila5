@@ -1,3 +1,14 @@
+---
+title: "laravel 12 best practices"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "laravel 12 best practices"
+issues: []
+discussions: []
+---
+
 # Laravel 12 Best Practices - Laraxot PTVX
 
 Aggiornamento delle pratiche consigliate basate sulle nuove funzionalità di Laravel 12.

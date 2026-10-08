@@ -1,4 +1,9 @@
 ---
+type: note
+tags: [documentation]
+qmd: "ANALYSIS CAPITALIZED FOLDERS METADATA"
+issues: []
+discussions: []
 title: Capitalized Folders Analysis & Data Objects Deep Dive
 created: 2026-06-30
 updated: 2026-06-30

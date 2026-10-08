@@ -1,3 +1,14 @@
+---
+title: "factory modular pattern"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "factory modular pattern"
+issues: []
+discussions: []
+---
+
 # Pattern Factory Modulare - Laraxot PTVX
 
 Questa guida definisce come gestire le Factory in un'architettura modulare, specialmente quando i modelli estendono classi del vendor (es. Laravel Passport).

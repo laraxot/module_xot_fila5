@@ -1,4 +1,7 @@
 ---
+qmd: "mcp integration.divergenza"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: mcp-integration.md"
 module: Xot
 type: note

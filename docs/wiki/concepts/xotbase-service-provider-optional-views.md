@@ -1,4 +1,5 @@
 ---
+discussions: []
 title: "XotBaseServiceProvider — views opzionali"
 type: concept
 module: Xot

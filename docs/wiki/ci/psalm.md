@@ -1,4 +1,7 @@
 ---
+qmd: "psalm"
+issues: []
+discussions: []
 title: "Psalm"
 type: reference
 tags: [wiki, no-frontmatter-fix]

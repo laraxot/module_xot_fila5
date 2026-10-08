@@ -58,7 +58,7 @@ return [
         7 => 'Sunday',
     ],
     'navigation' => [
-        'label' => 'Missing Navigation Label',
+        'label' => 'Day of Week',
         'plural_label' => 'Missing Navigation Plural Label',
         'group' => 'Missing Group',
         'icon' => 'heroicon-o-puzzle-piece',

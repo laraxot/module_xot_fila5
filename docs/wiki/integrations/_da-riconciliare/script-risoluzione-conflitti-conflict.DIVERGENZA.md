@@ -1,4 +1,7 @@
 ---
+qmd: "script risoluzione conflitti conflict.DIVERGENZA"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: script-risoluzione-conflitti-conflict.md"
 module: Xot
 type: note

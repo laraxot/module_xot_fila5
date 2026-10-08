@@ -1,3 +1,14 @@
+---
+title: "trait collision resolution fix"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "trait collision resolution fix"
+issues: []
+discussions: []
+---
+
 # Trait Collision Resolution Summary
 
 ## Issue

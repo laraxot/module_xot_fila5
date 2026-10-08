@@ -1,4 +1,7 @@
 ---
+qmd: "issues"
+issues: []
+discussions: []
 title: "Issues"
 type: reference
 tags: [wiki, no-frontmatter-fix]

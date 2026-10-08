@@ -1,4 +1,7 @@
 ---
+qmd: "install"
+issues: []
+discussions: []
 title: 'LAMP / PHP 8.4 — installazione host (Debian/Ubuntu + SURY)'
 module: Xot
 type: reference

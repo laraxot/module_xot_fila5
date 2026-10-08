@@ -1,3 +1,14 @@
+---
+title: "phpstan analysis early dec"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan analysis early dec"
+issues: []
+discussions: []
+---
+
 # PHPStan Analysis Report - All Modules
 
 **Date**: 2025-12-16
@@ -7,6 +18,14 @@
 
 ---
 
+title: "phpstan analysis early dec"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan analysis early dec"
+issues: []
+discussions: []
 ## Executive Summary
 
 PHPStan level 10 analysis revealed **169 errors** across the module codebase. Errors are concentrated in specific files and follow identifiable patterns, making them addressable through systematic fixes.

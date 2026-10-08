@@ -1,4 +1,7 @@
 ---
+qmd: "speed up"
+issues: []
+discussions: []
 title: "Speed Up"
 type: reference
 tags: [wiki, no-frontmatter-fix]

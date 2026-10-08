@@ -1,4 +1,7 @@
 ---
+qmd: "static tools"
+issues: []
+discussions: []
 title: "Static Tools"
 type: reference
 tags: [wiki, no-frontmatter-fix]

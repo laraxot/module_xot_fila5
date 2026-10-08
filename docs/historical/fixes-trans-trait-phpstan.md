@@ -1,3 +1,14 @@
+---
+title: "fixes trans trait phpstan"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "fixes trans trait phpstan"
+issues: []
+discussions: []
+---
+
 # Fix PHPStan TransTrait - Tipizzazione Array Completa
 
 ## Data: 2025-01-27

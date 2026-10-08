@@ -1,4 +1,7 @@
 ---
+qmd: "translation standards"
+issues: []
+discussions: []
 title: "Translation Standards"
 type: reference
 tags: [wiki, no-frontmatter-fix]

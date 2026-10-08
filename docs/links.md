@@ -1,3 +1,14 @@
+---
+title: "links"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "links"
+issues: []
+discussions: []
+---
+
 # Links
 
 ## Documentazione Generale
@@ -162,6 +173,14 @@
 
 ---
 
+title: "links"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "links"
+issues: []
+discussions: []
 **Data Creazione**: 27 Gennaio 2025
 **Stato**: Consolidato da docs/ root
 **Priorità**: MEDIA (Raccolta link)

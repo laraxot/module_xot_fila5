@@ -1,4 +1,7 @@
 ---
+qmd: "php code analysis tools"
+issues: []
+discussions: []
 title: 'Php code analysis tools — risorse esterne'
 module: Xot
 type: reference

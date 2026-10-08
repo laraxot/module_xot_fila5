@@ -1,3 +1,14 @@
+---
+title: "service provider best practices"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "service provider best practices"
+issues: []
+discussions: []
+---
+
 # Best Practices nei Service Provider
 
 ## Decisione Architetturale (2025-05-13)

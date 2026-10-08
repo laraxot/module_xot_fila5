@@ -1,4 +1,9 @@
 ---
+title: "module model artifact parity"
+tags: [documentation]
+created: 2026-09-26
+issues: []
+discussions: []
 type: concept
 module: Xot
 updated: 2026-06-30

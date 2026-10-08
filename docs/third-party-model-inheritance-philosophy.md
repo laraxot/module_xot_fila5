@@ -1,3 +1,14 @@
+---
+title: "third party model inheritance philosophy"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "third party model inheritance philosophy"
+issues: []
+discussions: []
+---
+
 # Laraxot Third-Party Model Inheritance Philosophy
 
 ## Core Principle: Respect Package Architecture
@@ -274,4 +285,12 @@ Each third-party model should document:
 
 ---
 
+title: "third party model inheritance philosophy"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "third party model inheritance philosophy"
+issues: []
+discussions: []
 **Philosophy Summary**: In Laraxot, we respect and leverage third-party package architecture. We extend package models directly and enhance them with Laraxot-specific functionality, rather than fighting package design or creating unnecessary complexity.

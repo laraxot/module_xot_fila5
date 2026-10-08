@@ -1,4 +1,7 @@
 ---
+qmd: "xotbase trait inheritance zen"
+issues: []
+discussions: []
 title: "Xotbase Trait Inheritance Zen"
 type: reference
 tags: [wiki, no-frontmatter-fix]

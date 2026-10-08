@@ -1,3 +1,14 @@
+---
+title: "chart generation actions"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "chart generation actions"
+issues: []
+discussions: []
+---
+
 # Chart Generation Actions - Spatie Queueable Guide
 
 ## 📋 Overview
@@ -6,6 +17,14 @@ Guida completa per creare Actions Spatie Queueable che generano chart SVG e PNG 
 
 ---
 
+title: "chart generation actions"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "chart generation actions"
+issues: []
+discussions: []
 ## 🎯 Architettura Chart Generation
 
 ### 1. Struttura Base Actions

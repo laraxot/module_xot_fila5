@@ -1,4 +1,7 @@
 ---
+qmd: "translations best practices"
+issues: []
+discussions: []
 title: "Translations Best Practices"
 type: reference
 tags: [wiki, no-frontmatter-fix]

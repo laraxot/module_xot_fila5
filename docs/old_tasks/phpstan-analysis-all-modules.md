@@ -1,3 +1,14 @@
+---
+title: "phpstan analysis all modules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan analysis all modules"
+issues: []
+discussions: []
+---
+
 # Analisi PHPStan - Tutti i Moduli
 
 **Data**: 2025-12-23  

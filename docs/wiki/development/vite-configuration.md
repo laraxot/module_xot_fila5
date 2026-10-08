@@ -1,4 +1,7 @@
 ---
+qmd: "vite configuration"
+issues: []
+discussions: []
 title: "Vite Configuration"
 type: reference
 tags: [wiki, no-frontmatter-fix]

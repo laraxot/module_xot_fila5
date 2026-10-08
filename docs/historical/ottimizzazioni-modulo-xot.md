@@ -1,3 +1,14 @@
+---
+title: "ottimizzazioni modulo xot"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "ottimizzazioni modulo xot"
+issues: []
+discussions: []
+---
+
 # Ottimizzazioni Modulo Xot - DRY + KISS
 
 ## Panoramica
@@ -351,6 +362,14 @@ docs/
 
 ---
 
+title: "ottimizzazioni modulo xot"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "ottimizzazioni modulo xot"
+issues: []
+discussions: []
 **Ultimo aggiornamento:** 2025-01-06
 **Stato:** In implementazione
 **Responsabile:** Team Sviluppo Xot

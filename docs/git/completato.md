@@ -1,3 +1,14 @@
+---
+title: "completato"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "completato"
+issues: []
+discussions: []
+---
+
 Risoluzioni completate con successo.
 
 Integrazione documentazione completata:

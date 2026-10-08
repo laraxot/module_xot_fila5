@@ -1,4 +1,7 @@
 ---
+qmd: "cache"
+issues: []
+discussions: []
 title: "Cache"
 type: reference
 tags: [wiki, no-frontmatter-fix]

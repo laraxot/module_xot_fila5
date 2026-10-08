@@ -1,4 +1,9 @@
 ---
+tags: [documentation]
+created: 2026-09-26
+qmd: "unit test case pattern"
+issues: []
+discussions: []
 title: UnitTestCase Pattern — test puri senza MySQL
 module: Xot
 type: concept

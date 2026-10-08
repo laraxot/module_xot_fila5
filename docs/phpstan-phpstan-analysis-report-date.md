@@ -1,3 +1,14 @@
+---
+title: "phpstan phpstan analysis report date"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan phpstan analysis report date"
+issues: []
+discussions: []
+---
+
 # PHPStan Analysis Report - [DATE]
 
 ## Summary

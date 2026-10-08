@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "PHPStan Session - Gennaio 2026 - Riepilogo Completo"
 module: "Xot"
 type: concept

@@ -1,3 +1,14 @@
+---
+title: "base classes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "base classes"
+issues: []
+discussions: []
+---
+
 # Template Classi Base - Modulo Xot
 
 ## 🎯 Panoramica
@@ -97,11 +108,17 @@ class {ModelName}Resource extends XotBaseResource
     /**
      * @return array<int, \Filament\Forms\Components\Component>
      */
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
+---
+title: "base classes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "base classes"
+issues: []
+discussions: []
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             Forms\Components\TextInput::make('name')

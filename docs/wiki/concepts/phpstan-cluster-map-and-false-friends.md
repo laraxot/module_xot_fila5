@@ -1,3 +1,14 @@
+---
+title: "phpstan cluster map and false friends"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan cluster map and false friends"
+issues: []
+discussions: []
+---
+
 # PHPStan Cluster Map And False Friends
 
 ## Contesto

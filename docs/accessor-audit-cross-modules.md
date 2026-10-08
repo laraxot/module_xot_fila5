@@ -1,3 +1,14 @@
+---
+title: "accessor audit cross modules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "accessor audit cross modules"
+issues: []
+discussions: []
+---
+
 # Audit Cross-Modules: Accessor con save() senza Guard
 
 ## Obiettivo Audit
@@ -178,6 +189,14 @@ Ogni modulo deve avere:
 
 ---
 
+title: "accessor audit cross modules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "accessor audit cross modules"
+issues: []
+discussions: []
 **Creato**: 2025-01-29
 **Status**: 📊 Audit Framework Pronto
 **Prossimo**: Audit IndennitaCondizioniLavoro

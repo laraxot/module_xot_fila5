@@ -1,4 +1,7 @@
 ---
+qmd: "git conflicts resolution massive"
+issues: []
+discussions: []
 title: "Git Conflicts Resolution Massive"
 type: reference
 tags: [wiki, no-frontmatter-fix]

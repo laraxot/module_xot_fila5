@@ -1,4 +1,12 @@
 ---
+title: "phpstan progress report tests only merged"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan progress report tests only merged"
+issues: []
+discussions: []
 created_at: '2025-10-13'
 ---
 

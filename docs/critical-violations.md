@@ -1,3 +1,14 @@
+---
+title: "critical violations"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "critical violations"
+issues: []
+discussions: []
+---
+
 # Analisi Violazioni Critiche XotBaseResource
 
 ## 🚨 Violazioni Identificate
@@ -146,4 +157,12 @@ class NotificationLogResource extends XotBaseResource
 
 ---
 
+title: "critical violations"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "critical violations"
+issues: []
+discussions: []
 **Questo documento serve come promemoria permanente dell'importanza di seguire l'architettura stabilita e consultare sempre la documentazione prima di implementare soluzioni.**

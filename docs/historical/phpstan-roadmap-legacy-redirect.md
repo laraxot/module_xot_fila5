@@ -1,4 +1,7 @@
 ---
+tags: [documentation]
+issues: []
+discussions: []
 title: "Phpstan Roadmap"
 type: concept
 status: deprecated

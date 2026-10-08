@@ -23,7 +23,7 @@ return [
         'no' => 'No',
     ],
     'navigation' => [
-        'label' => 'Missing Navigation Label',
+        'label' => 'Yes/No',
         'plural_label' => 'Missing Navigation Plural Label',
         'group' => 'Missing Group',
         'icon' => 'heroicon-o-puzzle-piece',

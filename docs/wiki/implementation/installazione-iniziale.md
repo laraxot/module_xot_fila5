@@ -1,4 +1,7 @@
 ---
+qmd: "installazione iniziale"
+issues: []
+discussions: []
 title: "Installazione Iniziale"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,4 +1,7 @@
 ---
+tags: [documentation]
+issues: []
+discussions: []
 title: "Brainstorm Testcase Hierarchy Xotbase"
 type: concept
 status: deprecated

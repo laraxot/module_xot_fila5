@@ -1,4 +1,7 @@
 ---
+qmd: "has recursive relationships contract update"
+issues: []
+discussions: []
 title: "Has Recursive Relationships Contract Update"
 type: reference
 tags: [wiki, no-frontmatter-fix]

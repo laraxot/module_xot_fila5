@@ -1,3 +1,14 @@
+---
+title: "mcp commands deprecation"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "mcp commands deprecation"
+issues: []
+discussions: []
+---
+
 # Deprecazione Comandi MCP e Migrazione Azioni Database
 
 ## Panoramica
@@ -139,4 +150,12 @@ Aggiornare la documentazione del progetto per riflettere i nuovi percorsi dei co
 
 ---
 
+title: "mcp commands deprecation"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "mcp commands deprecation"
+issues: []
+discussions: []
 *Ultimo aggiornamento: Giugno 2025*

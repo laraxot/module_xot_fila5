@@ -1,4 +1,7 @@
 ---
+qmd: "model input contract"
+issues: []
+discussions: []
 title: "Model Input Contract"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,3 +1,14 @@
+---
+title: "no property exists on models"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "no property exists on models"
+issues: []
+discussions: []
+---
+
 # Architectural Rule: Avoid `property_exists()` on Eloquent Models
 
 ## **CRITICAL LARAXOT PRINCIPLE**

@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Report Conflitti Git - Modulo Xot"
 module: "Xot"
 type: concept

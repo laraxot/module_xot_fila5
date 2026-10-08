@@ -1,3 +1,14 @@
+---
+title: "SCRIPT RISOLUZIONE CONFLITTI"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "SCRIPT RISOLUZIONE CONFLITTI"
+issues: []
+discussions: []
+---
+
 # 🐄 SUPER MUCCA - Script Risoluzione Conflitti Git
 
 ## SCRIPT CREATI
@@ -186,6 +197,14 @@ mv file.php.backup file.php
 
 ---
 
+title: "SCRIPT RISOLUZIONE CONFLITTI"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "SCRIPT RISOLUZIONE CONFLITTI"
+issues: []
+discussions: []
 ## 🎉 SUCCESSO!
 
 **Tutti i conflitti sono stati risolti con successo!**

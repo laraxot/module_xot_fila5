@@ -1,4 +1,7 @@
 ---
+qmd: "clean code"
+issues: []
+discussions: []
 title: 'Clean code — risorse esterne'
 module: Xot
 type: reference

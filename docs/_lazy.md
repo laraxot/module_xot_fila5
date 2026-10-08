@@ -1,4 +1,7 @@
 ---
+qmd: " lazy"
+issues: []
+discussions: []
 title: 'Lazy — risorse esterne'
 module: Xot
 type: reference

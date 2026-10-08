@@ -1,4 +1,7 @@
 ---
+qmd: "readme"
+issues: []
+discussions: []
 title: "Xot Module - Updated Documentation (Clean)"
 type: documentation
 tags: [module, documentation, framework, template]

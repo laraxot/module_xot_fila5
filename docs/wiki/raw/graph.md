@@ -1,4 +1,7 @@
 ---
+qmd: "graph"
+issues: []
+discussions: []
 title: "Graph"
 type: reference
 tags: [wiki, no-frontmatter-fix]

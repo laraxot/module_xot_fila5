@@ -1,4 +1,7 @@
 ---
+qmd: "license the mit license mit"
+issues: []
+discussions: []
 title: "License The Mit License Mit"
 type: reference
 tags: [wiki, no-frontmatter-fix]

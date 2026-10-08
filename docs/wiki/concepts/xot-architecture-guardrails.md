@@ -1,4 +1,8 @@
 ---
+tags: [documentation]
+qmd: "xot architecture guardrails"
+issues: []
+discussions: []
 title: "Xot Architecture Guardrails"
 module: "Xot"
 type: concept

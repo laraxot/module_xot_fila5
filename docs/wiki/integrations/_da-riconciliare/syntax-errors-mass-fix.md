@@ -1,4 +1,7 @@
 ---
+qmd: "syntax errors mass fix"
+issues: []
+discussions: []
 title: "Mass Fix Errori Sintassi PHP"
 module: xot
 type: integration

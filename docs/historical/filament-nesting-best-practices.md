@@ -1,3 +1,14 @@
+---
+title: "filament nesting best practices"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament nesting best practices"
+issues: []
+discussions: []
+---
+
 # Filament Nesting - Best Practices per Laraxot
 
 ## 📋 Introduzione
@@ -6,6 +17,14 @@ Questo documento fornisce best practices per implementare Filament Nesting in pr
 
 ---
 
+title: "filament nesting best practices"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament nesting best practices"
+issues: []
+discussions: []
 ## 🎯 Quando Usare Filament Nesting
 
 ### ✅ Usare Nesting Quando:

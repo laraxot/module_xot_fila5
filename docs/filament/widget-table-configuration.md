@@ -1,3 +1,14 @@
+---
+title: "widget table configuration"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "widget table configuration"
+issues: []
+discussions: []
+---
+
 # Configurazione Tabelle Widget - Pattern e Regole
 
 **Data Creazione**: 2025-01-27  

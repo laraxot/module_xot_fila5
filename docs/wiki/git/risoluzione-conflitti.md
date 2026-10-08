@@ -1,4 +1,7 @@
 ---
+qmd: "risoluzione conflitti"
+issues: []
+discussions: []
 title: "Risoluzione Conflitti"
 type: reference
 tags: [wiki, no-frontmatter-fix]

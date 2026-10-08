@@ -1,3 +1,14 @@
+---
+title: "architecture"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "architecture"
+issues: []
+discussions: []
+---
+
 # 🏗️ **Architettura Modulo Xot**
 
 ## 📋 **Panoramica Architetturale**
@@ -97,11 +108,17 @@ abstract class XotBaseResource extends Resource
 {
     use HasXotTable;
 
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
+---
+title: "architecture"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "architecture"
+issues: []
+discussions: []
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return static::getFormSchemaImplementation();
     }

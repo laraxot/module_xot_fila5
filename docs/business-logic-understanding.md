@@ -1,3 +1,14 @@
+---
+title: "business logic understanding"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "business logic understanding"
+issues: []
+discussions: []
+---
+
 # 🧠 Comprensione Business Logic dei Moduli TechPlanner
 
 ## Panoramica

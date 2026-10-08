@@ -1,3 +1,14 @@
+---
+title: "security"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "security"
+issues: []
+discussions: []
+---
+
 # Configurazione della Sicurezza
 
 A partire dalla versione 5.3, `Html2Pdf` ha introdotto un `Security Service` per controllare l'accesso a risorse esterne (immagini, fogli di stile, etc.) e prevenire vulnerabilità.
@@ -11,6 +22,14 @@ A partire dalla versione 5.3, `Html2Pdf` ha introdotto un `Security Service` per
 
 ---
 
+title: "security"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "security"
+issues: []
+discussions: []
 ## 🛡️ Security Service
 
 Il servizio di sicurezza permette di definire policy per validare gli URI delle risorse esterne.

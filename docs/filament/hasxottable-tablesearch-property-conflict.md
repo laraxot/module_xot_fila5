@@ -1,4 +1,7 @@
 ---
+qmd: "hasxottable tablesearch property conflict"
+issues: []
+discussions: []
 title: "HasXotTable — conflitto proprietà $tableSearch (fatal bootstrap-wide)"
 type: bugfix
 module: Xot

@@ -1,4 +1,7 @@
 ---
+tags: [documentation]
+issues: []
+discussions: []
 title: "Phpstan Level10 Success Nov"
 type: concept
 status: deprecated

@@ -1,3 +1,14 @@
+---
+title: "filosofia modulo xot"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filosofia modulo xot"
+issues: []
+discussions: []
+---
+
 # Analisi Approfondita del Modulo Xot
 
 > **Generato**: 2025-12-24
@@ -5,6 +16,14 @@
 
 ---
 
+title: "filosofia modulo xot"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filosofia modulo xot"
+issues: []
+discussions: []
 ## 1. LOGICA - Come Funziona il Modulo
 
 ### Architettura Interna
@@ -22,11 +41,9 @@ Il modulo **Xot** è il **cuore pulsante** del framework Laraxot. Funziona come:
 Le classi XotBase definiscono lo scheletro degli algoritmi:
 ```php
 // XotBaseResource definisce il template
-<<<<<<< HEAD
 abstract public function getFormSchema(): array;
-=======
+---
 abstract public function getFormSchema(): array;
->>>>>>> laraxot/dev
 
 final public static function form(Schema $schema): Schema {
     return $schema->components(static::getFormSchema());
@@ -330,11 +347,9 @@ L'eleganza di Xot sta nella **semplicità dell'interfaccia** vs **complessità n
 ```php
 // Developer scrive (semplice):
 class UserResource extends XotBaseResource {
-<<<<<<< HEAD
     public function getFormSchema(): array {
-=======
+---
     public function getFormSchema(): array {
->>>>>>> laraxot/dev
         return [TextInput::make('name')];
     }
 }

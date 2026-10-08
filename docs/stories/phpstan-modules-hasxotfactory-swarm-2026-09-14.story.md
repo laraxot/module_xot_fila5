@@ -1,4 +1,7 @@
 ---
+qmd: "phpstan modules hasxotfactory swarm 2026 09 14.story"
+issues: []
+discussions: []
 title: "PHPStan Modules HasXotFactory swarm"
 type: story
 status: in-progress

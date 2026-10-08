@@ -1,4 +1,7 @@
 ---
+qmd: "theme two implementation notes"
+issues: []
+discussions: []
 title: "PlanningModule Theme Two - Implementazione Notes"
 module: xot
 type: integration

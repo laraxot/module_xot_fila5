@@ -1,3 +1,14 @@
+---
+title: "large dataset import guidelines"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "large dataset import guidelines"
+issues: []
+discussions: []
+---
+
 # Large Dataset Import Optimization Guidelines
 
 ## Overview

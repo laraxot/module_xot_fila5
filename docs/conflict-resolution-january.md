@@ -1,3 +1,14 @@
+---
+title: "conflict resolution january"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "conflict resolution january"
+issues: []
+discussions: []
+---
+
 # Conflict Resolution January 2026
 
 ## Logo SVG

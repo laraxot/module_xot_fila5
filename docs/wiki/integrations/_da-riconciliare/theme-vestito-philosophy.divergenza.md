@@ -1,4 +1,7 @@
 ---
+qmd: "theme vestito philosophy.divergenza"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: theme-vestito-philosophy.md"
 module: Xot
 type: note

@@ -1,4 +1,8 @@
 ---
+tags: [documentation]
+qmd: "video editor"
+issues: []
+discussions: []
 title: "Video editor"
 type: reference
 status: active

@@ -1,3 +1,14 @@
+---
+title: "migration unicity commandment"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "migration unicity commandment"
+issues: []
+discussions: []
+---
+
 # 🚨 COMANDAMENTO ASSOLUTO - UNICITÀ MIGRATION
 
 ## 📖 REGOLA SACRA
@@ -97,4 +108,12 @@ Nella religione Laraxot, violare questo comandamento porta a:
 
 ---
 
+title: "migration unicity commandment"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "migration unicity commandment"
+issues: []
+discussions: []
 *Ricorda: La chiarezza dello schema è sacra. Non profanarla mai.*

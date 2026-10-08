@@ -1,3 +1,14 @@
+---
+title: "module architecture"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "module architecture"
+issues: []
+discussions: []
+---
+
 # Module Architecture Analysis - Complete Breakdown
 
 ## 🏛️ Module Ecosystem Analysis
@@ -427,6 +438,14 @@ public function register(): void
 
 ---
 
+title: "module architecture"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "module architecture"
+issues: []
+discussions: []
 **Analysis Date**: [DATE]
 **Architecture Health**: Good with some technical debt
 **Recommendations**: Address file structure inconsistencies, complete documentation, optimize performance-critical modules

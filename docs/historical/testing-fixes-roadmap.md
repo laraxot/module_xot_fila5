@@ -1,3 +1,14 @@
+---
+title: "testing fixes roadmap"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "testing fixes roadmap"
+issues: []
+discussions: []
+---
+
 # Testing Fixes Roadmap - Correzione Test Falliti
 
 **Data**: 2025-01-22
@@ -132,5 +143,13 @@ $currentTeam = $user->currentTeam;
 
 ---
 
+title: "testing fixes roadmap"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "testing fixes roadmap"
+issues: []
+discussions: []
 **Ultimo aggiornamento**: 2025-01-22
 **Prossimo step**: Correggere ArtisanServiceTest.php

@@ -1,0 +1,11 @@
+stories:
+  "Xot/docs-100-fleet-merge-20261005":
+    status: wip
+    epic: "Docs-100 fleet merge: limite ricorsivo, merge+sintesi, niente solo-spostamenti"
+    story: "Epic docs/bmad/stories/docs-100-fleet-merge-20261005.story.md. 7 agenti
+      x 2 aree, lock/story-per-modulo/no-commit/docs-only. Swarm da lanciare."
+  "quality/phpstan-modules-level10-20261006":
+    status: wip
+    epic: "Quality — PHPStan Level 10 su tutti i moduli"
+    story: "bmad/stories/2026-10-06-phpstan-modules-level10.story.md"
+    notes: "Swarm parallelo; sblocco bootstrap da marker committati, poi fix per causa e verifica funzionale."

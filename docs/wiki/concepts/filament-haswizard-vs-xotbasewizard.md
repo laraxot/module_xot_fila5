@@ -1,3 +1,14 @@
+---
+title: "filament haswizard vs xotbasewizard"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament haswizard vs xotbasewizard"
+issues: []
+discussions: []
+---
+
 # Filament HasWizard Concern vs XotBaseWizardWidget
 
 ## Date

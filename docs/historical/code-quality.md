@@ -1,3 +1,14 @@
+---
+title: "code quality"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "code quality"
+issues: []
+discussions: []
+---
+
 # Laraxot Code Quality Standards
 
 ## Overview
@@ -127,11 +138,17 @@ return [
 
 ```php
 // ✅ CORRECT
-<<<<<<< HEAD
 public function getFormSchema(): array
-=======
+---
+title: "code quality"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "code quality"
+issues: []
+discussions: []
 public function getFormSchema(): array
->>>>>>> laraxot/dev
 {
     return [
         'name' => TextInput::make('name'),
@@ -140,11 +157,9 @@ public function getFormSchema(): array
 }
 
 // ❌ WRONG
-<<<<<<< HEAD
 public function getFormSchema(): array
-=======
+---
 public function getFormSchema(): array
->>>>>>> laraxot/dev
 {
     return [
         TextInput::make('name')->label('Nome'),

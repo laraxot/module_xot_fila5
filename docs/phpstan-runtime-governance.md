@@ -1,3 +1,14 @@
+---
+title: "phpstan runtime governance"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan runtime governance"
+issues: []
+discussions: []
+---
+
 # PHPStan Runtime Governance
 
 ## Regola locale

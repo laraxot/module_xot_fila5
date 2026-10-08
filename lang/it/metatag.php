@@ -7,13 +7,13 @@ return [
     'pages' => 'Pagine',
     'widgets' => 'Widgets',
     'navigation' => [
-        'name' => 'metatag',
+        'name' => 'Metatag',
         'plural' => 'metatags',
         'group' => [
             'name' => 'Admin',
         ],
-        'label' => 'metatag.navigation',
-        'icon' => 'metatag.navigation',
+        'label' => 'Meta Tag',
+        'icon' => 'heroicon-o-document-text',
         'sort' => 95,
     ],
     'fields' => [
@@ -335,5 +335,5 @@ return [
     ],
     'label' => 'Metatag',
     'plural_label' => 'Metatag (Plurale)',
-    'title' => 'metatag',
+    'title' => 'Metatag',
 ];

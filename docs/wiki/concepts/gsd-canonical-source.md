@@ -1,3 +1,14 @@
+---
+title: "gsd canonical source"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "gsd canonical source"
+issues: []
+discussions: []
+---
+
 # GSD Canonical Source
 
 ## Regola

@@ -1,3 +1,14 @@
+---
+title: "xotbasewizard view calculation"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xotbasewizard view calculation"
+issues: []
+discussions: []
+---
+
 # XotBaseWizardWidget View Calculation
 
 ## Overview

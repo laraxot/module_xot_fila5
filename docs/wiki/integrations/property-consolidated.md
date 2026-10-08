@@ -1,4 +1,7 @@
 ---
+qmd: "property consolidated"
+issues: []
+discussions: []
 title: "property — Consolidated Documentation"
 module: xot
 type: integration

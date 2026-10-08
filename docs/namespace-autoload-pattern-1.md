@@ -1,3 +1,14 @@
+---
+title: "namespace autoload pattern 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "namespace autoload pattern 1"
+issues: []
+discussions: []
+---
+
 # Pattern di Autoload nei Moduli Laravel
 
 ## Il Pattern Corretto

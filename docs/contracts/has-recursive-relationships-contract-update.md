@@ -1,3 +1,14 @@
+---
+title: "has recursive relationships contract update"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "has recursive relationships contract update"
+issues: []
+discussions: []
+---
+
 # HasRecursiveRelationshipsContract - Aggiornamento 2025-01-18
 
 ## 📋 Riepilogo Modifiche
@@ -221,6 +232,14 @@ public function getLocalKeyName(): string
 
 ---
 
+title: "has recursive relationships contract update"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "has recursive relationships contract update"
+issues: []
+discussions: []
 **Data**: 2025-01-18
 **Autore**: AI Assistant
 **Status**: ✅ Completato e verificato

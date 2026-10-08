@@ -1,3 +1,14 @@
+---
+title: "directory autofix tools strumenti di correzione automatica della"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "directory autofix tools strumenti di correzione automatica della"
+issues: []
+discussions: []
+---
+
 # Strumenti di Correzione Automatica della Struttura delle Directory
 
 ## Introduzione

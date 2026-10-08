@@ -1,4 +1,7 @@
 ---
+qmd: "optimization recommendations"
+issues: []
+discussions: []
 title: "Raccomandazioni di Ottimizzazione - Modulo Xot"
 module: xot
 type: integration

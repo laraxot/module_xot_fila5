@@ -1,4 +1,7 @@
 ---
+qmd: "machine learning"
+issues: []
+discussions: []
 title: "Machine Learning"
 type: reference
 tags: [wiki, no-frontmatter-fix]

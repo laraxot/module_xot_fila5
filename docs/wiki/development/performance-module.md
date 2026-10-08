@@ -1,4 +1,7 @@
 ---
+qmd: "performance module"
+issues: []
+discussions: []
 title: "Performance Module"
 type: reference
 tags: [wiki, no-frontmatter-fix]

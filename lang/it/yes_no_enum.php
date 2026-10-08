@@ -30,7 +30,7 @@ return [
             'name' => 'General',
             'description' => 'General Settings',
         ],
-        'label' => 'Yes No Enum',
+        'label' => 'Sì/No',
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],

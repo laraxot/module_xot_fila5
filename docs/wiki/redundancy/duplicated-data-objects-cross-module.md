@@ -1,4 +1,8 @@
 ---
+tags: [documentation]
+updated: 2026-09-26
+qmd: "duplicated data objects cross module"
+discussions: []
 title: "Data/DTO omonimi tra moduli"
 type: redundancy
 owner: Modules/Xot

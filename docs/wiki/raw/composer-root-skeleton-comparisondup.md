@@ -1,4 +1,7 @@
 ---
+tags: [documentation]
+issues: []
+discussions: []
 title: "Composer Root Skeleton <nome progetto> Comparison Dup"
 type: concept
 status: deprecated

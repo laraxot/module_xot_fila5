@@ -1,4 +1,7 @@
 ---
+qmd: "pivot"
+issues: []
+discussions: []
 title: 'Pivot'
 module: Xot
 type: reference

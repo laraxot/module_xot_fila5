@@ -1,3 +1,14 @@
+---
+title: "INDEX"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "INDEX"
+issues: []
+discussions: []
+---
+
 - [XotBaseWidget](../Xot/docs/filament/widgets/xotbasewidget.md) - Classe base per tutti i widget
 
 ## Best Practices
@@ -35,6 +46,14 @@ class DashboardStatsWidget extends XotBaseWidget
 
 ---
 
+title: "INDEX"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "INDEX"
+issues: []
+discussions: []
 ## Panoramica
 
 Questo indice organizza tutta la documentazione sui wizard widget Laraxot per ricerca rapida e prevenzione duplicati.

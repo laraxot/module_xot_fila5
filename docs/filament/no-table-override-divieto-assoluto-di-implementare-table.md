@@ -1,3 +1,14 @@
+---
+title: "no table override divieto assoluto di implementare table"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "no table override divieto assoluto di implementare table"
+issues: []
+discussions: []
+---
+
 # DIVIETO ASSOLUTO DI IMPLEMENTARE table()
 
 ## Regola Fondamentale Inviolabile

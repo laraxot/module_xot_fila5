@@ -1,3 +1,14 @@
+---
+title: "infolist schemalines"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "infolist schemalines"
+issues: []
+discussions: []
+---
+
 
 # Linee Guida per l'Implementazione di getInfolistSchema
 

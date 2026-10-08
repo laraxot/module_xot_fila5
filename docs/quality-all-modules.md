@@ -1,3 +1,14 @@
+---
+title: "quality all modules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "quality all modules"
+issues: []
+discussions: []
+---
+
 # Analisi Qualità Codice - Tutti i Moduli (PHPMD)
 
 **Obiettivo**: Analisi sistematica completa della qualità del codice di tutti i moduli

@@ -1,3 +1,14 @@
+---
+title: "theme assets workflow"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "theme assets workflow"
+issues: []
+discussions: []
+---
+
 # 🎨 Theme Assets Workflow - CSS/JS Frontend
 
 **⚠️ REGOLA CRITICA**: Per modifiche CSS/JS del frontend, lavorare SEMPRE nella cartella del tema, NON nella root Laravel.
@@ -96,4 +107,12 @@ export default defineConfig({
 
 ---
 
+title: "theme assets workflow"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "theme assets workflow"
+issues: []
+discussions: []
 **⚠️ RICORDA**: Il workflow dei temi è DIVERSO dal normale workflow Laravel. Sempre theme → build → copy → public!

@@ -1,4 +1,7 @@
 ---
+qmd: "chartjs datalabels xot integration"
+issues: []
+discussions: []
 title: "Chart.js Datalabels Plugin Implementation in Xot Module"
 module: xot
 type: integration

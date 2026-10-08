@@ -1,4 +1,7 @@
 ---
+qmd: "changelog"
+issues: []
+discussions: []
 title: "Changelog"
 type: reference
 tags: [wiki, no-frontmatter-fix]

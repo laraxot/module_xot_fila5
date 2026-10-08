@@ -103,6 +103,8 @@ class PerformanceMonitoringMiddleware
      */
     private function recordRequest(string $method, string $path, float $responseTime, int $statusCode): void
     {
+        Assert::string($method);
+        Assert::string($path);
         Cache::increment('total_requests');
         Cache::increment('requests_per_minute');
         // Aggiorna tempi di risposta

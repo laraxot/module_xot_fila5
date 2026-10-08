@@ -1,3 +1,14 @@
+---
+title: "phpstan errors strategy"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan errors strategy"
+issues: []
+discussions: []
+---
+
 # 🎯 **Strategia Correzione 406 Errori PHPStan Level 10**
 
 **Data**: 11 Novembre 2025  
@@ -23,6 +34,14 @@
 
 ---
 
+title: "phpstan errors strategy"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan errors strategy"
+issues: []
+discussions: []
 ## 📋 **Categorizzazione Errori Rimanenti**
 
 ### **Categoria 1: Mixed Type Problems** (≈200 errori)

@@ -1,3 +1,14 @@
+---
+title: "phpstan analysis 9"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan analysis 9"
+issues: []
+discussions: []
+---
+
 # PHPStan Analysis Report - 18 Agosto 2025
 
 ## 🚨 REGOLA CRITICA RISPETTATA 🚨
@@ -188,6 +199,14 @@ class MyModel extends BaseModel
 
 ---
 
+title: "phpstan analysis 9"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan analysis 9"
+issues: []
+discussions: []
 **Stato**: 🔄 Analisi Completata - Correzioni in Corso
 **phpstan.neon**: ✅ INTOCCATO
 **Approccio**: DRY + KISS + Type Safety

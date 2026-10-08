@@ -1,4 +1,7 @@
 ---
+tags: [documentation]
+issues: []
+discussions: []
 title: "Mutation testing — perché un test nuovo non alza il punteggio senza covers()"
 module: Xot
 type: concept

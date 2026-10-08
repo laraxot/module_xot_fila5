@@ -1,4 +1,11 @@
 ---
+title: "phpstan xot module fix"
+type: note
+tags: [documentation]
+updated: 2026-09-26
+qmd: "phpstan xot module fix"
+issues: []
+discussions: []
 id: phpstan-xot-module-fix
 slug: phpstan-xot-module
 scope:

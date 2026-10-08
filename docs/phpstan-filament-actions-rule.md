@@ -1,3 +1,14 @@
+---
+title: "phpstan filament actions rule"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan filament actions rule"
+issues: []
+discussions: []
+---
+
 # PHPStan Level 10 - Filament Actions String Keys Rule
 
 ## Critical Requirement

@@ -1,3 +1,14 @@
+---
+title: "error curl download the latest cacertpem file from"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "error curl download the latest cacertpem file from"
+issues: []
+discussions: []
+---
+
 Download the latest cacert.pem file from
 https://curl.se/docs/caextract.html
 

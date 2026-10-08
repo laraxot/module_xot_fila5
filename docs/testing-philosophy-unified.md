@@ -1,3 +1,14 @@
+---
+title: "testing philosophy unified"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "testing philosophy unified"
+issues: []
+discussions: []
+---
+
 # Laraxot Testing Philosophy: The Unified Approach
 
 ## The Contradiction We Discovered (2026-01-09)
@@ -160,45 +171,14 @@ abstract class TestCase extends BaseTestCase
 }
 ```
 
-### For .env.testing Configuration
+### For `.env.testing` Configuration
 
-**Two valid approaches:**
-
-#### Approach 1: MySQL Testing (Current User Choice)
-```ini
-# Production parity - same dialect as production
-DB_CONNECTION=mysql
-DB_DATABASE=<nome progetto>_test
-DB_USERNAME=marco
-DB_PASSWORD=marco
-
-USER_DB_CONNECTION=mysql
-USER_DB_DATABASE=<nome progetto>_user_test
-
-JOB_DB_CONNECTION=mysql
-JOB_DB_DATABASE=<nome progetto>_job_test
-```
-
-**Pros**: Real MySQL behavior, catches dialect-specific bugs
-**Cons**: Slower, requires MySQL running
-
-#### Approach 2: SQLite Testing (Fast Alternative)
-```ini
-# Fast testing - in-memory database
-DB_CONNECTION=sqlite
-DB_DATABASE=:memory:
-
-USER_DB_CONNECTION=sqlite
-USER_DB_DATABASE=:memory:
-
-JOB_DB_CONNECTION=sqlite
-JOB_DB_DATABASE=:memory:
-```
-
-**Pros**: Fast, no external dependencies
-**Cons**: Different dialect from production
-
-**CRITICAL**: CHOOSE ONE and apply consistently. Don't mix!
+Use the fail-closed policy in [`testing-database-strategy.md`](testing-database-strategy.md).
+The tracked `.env.testing` is a secret-free template: MySQL/MariaDB only, every database
+name ends in `_test`, and credentials are injected through dedicated `FIXCITY_TEST_DB_*`
+environment variables. Do not copy either environment file or use SQLite for application tests.
+The test DB account and grants must be provisioned by an authorized DBA; migrations run only
+after verifying the target database names.
 
 ## Migration Strategy
 
@@ -245,6 +225,14 @@ JOB_DB_DATABASE=:memory:
 
 ---
 
+title: "testing philosophy unified"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "testing philosophy unified"
+issues: []
+discussions: []
 **Version**: 1.0
 **Date**: 2026-01-09
 **Date**: [DATE]

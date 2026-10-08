@@ -1,3 +1,14 @@
+---
+title: "manage related records patterns"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "manage related records patterns"
+issues: []
+discussions: []
+---
+
 # Sexy UI Patterns for ManageRelatedRecords
 
 ## Advanced Column Presentation

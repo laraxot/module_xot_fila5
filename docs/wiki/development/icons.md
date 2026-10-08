@@ -1,4 +1,7 @@
 ---
+qmd: "icons"
+issues: []
+discussions: []
 title: "Icons"
 type: reference
 tags: [wiki, no-frontmatter-fix]

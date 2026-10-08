@@ -1,4 +1,7 @@
 ---
+tags: [documentation]
+issues: []
+discussions: []
 title: "Phpstan Comprehensive Fixes"
 type: concept
 status: deprecated

@@ -1,4 +1,7 @@
 ---
+tags: [documentation]
+issues: []
+discussions: []
 title: "Gli alias di root non sono classi: come si importano le facade"
 module: Xot
 type: rule

@@ -1,4 +1,7 @@
 ---
+tags: [documentation]
+issues: []
+discussions: []
 title: "Quality Tools Status Nov"
 type: concept
 status: deprecated

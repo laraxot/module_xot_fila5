@@ -1,3 +1,14 @@
+---
+title: "phpstan analysis phpstan analysis 27 gennaio"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan analysis phpstan analysis 27 gennaio"
+issues: []
+discussions: []
+---
+
 # PHPStan Analysis - 27 Gennaio 2025
 
 **Data Analisi**: 2025-01-27  
@@ -7,6 +18,14 @@
 
 ---
 
+title: "phpstan analysis phpstan analysis 27 gennaio"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan analysis phpstan analysis 27 gennaio"
+issues: []
+discussions: []
 ## 📊 Stato Attuale
 
 ### Errori Totali: 594

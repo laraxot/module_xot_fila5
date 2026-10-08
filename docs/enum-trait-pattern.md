@@ -1,3 +1,14 @@
+---
+title: "enum trait pattern"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "enum trait pattern"
+issues: []
+discussions: []
+---
+
 # EnumTrait Pattern - Standard Architetturale per Enums
 
 ## Scopo

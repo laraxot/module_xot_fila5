@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Refactor: Panel Mixin Extension Pattern"
 module: "Xot"
 type: "refactor"

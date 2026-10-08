@@ -1,3 +1,14 @@
+---
+title: "code quality audit 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "code quality audit 1"
+issues: []
+discussions: []
+---
+
 # Code Quality Audit Completo - 22 Gennaio 2025
 
 **Data**: 2025-01-22

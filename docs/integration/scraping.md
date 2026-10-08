@@ -1,3 +1,14 @@
+---
+title: "scraping"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "scraping"
+issues: []
+discussions: []
+---
+
 # _scraping
 
 <!-- Contenuto migrato da _docs/_scraping.txt -->
@@ -10,6 +21,14 @@ https://github.com/oscarotero/Embed  !!!
 
 
 ---
+title: "scraping"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "scraping"
+issues: []
+discussions: []
 ## Merged from -scraping.md
 
 

@@ -1,4 +1,11 @@
 ---
+title: "hasxotfactory regression prevention.story"
+type: note
+tags: [documentation]
+updated: 2026-09-26
+qmd: "hasxotfactory regression prevention.story"
+issues: []
+discussions: []
 id: hasxotfactory-regression-prevention
 slug: hasxotfactory-regression-prevention
 scope:

@@ -1,4 +1,7 @@
 ---
+qmd: "xotbase resourceform zen pattern"
+issues: []
+discussions: []
 title: "XotBaseResourceForm Zen Pattern"
 type: concept
 sources: []
@@ -55,11 +58,9 @@ class ActivityForm extends XotBaseResourceForm
     /**
      * @return array<int|string, \Filament\Schemas\Components\Component>
      */
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
+---
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             TextInput::make('name')->required(),
