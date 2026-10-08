@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "hasxtable visibility fix 2026 01 27"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "hasxtable visibility fix 2026 01 27"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Fix Visibilità Metodi HasXotTable - 2026-01-27
 
 **Data**: 2026-01-27  

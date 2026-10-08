@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "filter"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filter"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Correzione e miglioramento: GetYearFilter.php (2025-04-16)
 
 ## Contesto
@@ -20,6 +34,17 @@ Il file `GetYearFilter.php` presentava marker di conflitto (``) e duplicazioni d
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "filter"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filter"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 *Ultimo aggiornamento: 2025-04-16*
 
 ## Collegamenti tra versioni di filter.md

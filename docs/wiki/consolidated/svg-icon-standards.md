@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "svg icon standards"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Svg Icon Standards"
 type: reference
 tags: [wiki, no-frontmatter-fix]

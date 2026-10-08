@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "nwidart 2"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "nwidart 2"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # _nwidart
 
 <!-- Contenuto migrato da _docs/_nwidart.txt -->

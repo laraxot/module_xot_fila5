@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "xot base resource"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Xot Base Resource"
 type: reference
 tags: [wiki, no-frontmatter-fix]

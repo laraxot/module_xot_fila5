@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "modularity optimizations"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Modularity Optimizations"
 type: reference
 tags: [wiki, no-frontmatter-fix]

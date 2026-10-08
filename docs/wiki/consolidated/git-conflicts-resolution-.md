@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "git conflicts resolution "
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Git Conflicts Resolution"
 type: reference
 tags: [wiki, no-frontmatter-fix]

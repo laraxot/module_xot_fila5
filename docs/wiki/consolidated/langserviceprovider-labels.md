@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "langserviceprovider labels"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Langserviceprovider Labels"
 type: reference
 tags: [wiki, no-frontmatter-fix]

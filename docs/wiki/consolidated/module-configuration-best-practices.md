@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "module configuration best practices"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Module Configuration Best Practices"
 type: reference
 tags: [wiki, no-frontmatter-fix]

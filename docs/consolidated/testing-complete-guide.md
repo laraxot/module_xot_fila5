@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "testing complete guide"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "testing complete guide"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Testing Complete Guide - Consolidated
 
 ## Overview

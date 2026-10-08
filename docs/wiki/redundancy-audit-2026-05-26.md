@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "redundancy audit 2026 05 26"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "audit ridondanza monorepo 2026-05-26"
 module: Xot
 type: audit

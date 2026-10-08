@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "migration guidelines"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Migration Guidelines"
 type: reference
 tags: [wiki, no-frontmatter-fix]

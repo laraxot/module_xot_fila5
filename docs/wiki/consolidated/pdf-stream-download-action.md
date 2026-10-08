@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "pdf stream download action"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Pdf Stream Download Action"
 type: reference
 tags: [wiki, no-frontmatter-fix]

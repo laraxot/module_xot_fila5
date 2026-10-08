@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "property type fixes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "property type fixes"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Property Type Fixes for Xot Module
 
 ## Missing Property Types

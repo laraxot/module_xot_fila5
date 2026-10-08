@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "uppercase root dirs cleanup.story"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "uppercase root dirs cleanup.story"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Story: Xot — cartelle maiuscole residue in root (Datas, View, Tests)
 
 ## Status

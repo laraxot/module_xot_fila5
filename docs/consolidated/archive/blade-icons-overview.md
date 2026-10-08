@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "blade icons overview"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "blade icons overview"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Panoramica delle Blade Icons in Xot
 
 ## Introduzione

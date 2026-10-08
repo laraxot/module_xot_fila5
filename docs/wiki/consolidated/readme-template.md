@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "readme template"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Readme Template"
 type: reference
 tags: [wiki, no-frontmatter-fix]

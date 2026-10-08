@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "stack"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "stack"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Stack Tecnologico Standard
 
 Questo documento definisce lo stack tecnologico standard utilizzato in tutti i moduli.

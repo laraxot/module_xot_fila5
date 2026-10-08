@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "module analysis complete"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Module Analysis Complete"
 type: reference
 tags: [wiki, no-frontmatter-fix]

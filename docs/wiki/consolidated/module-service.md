@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "module service"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Module Service"
 type: reference
 tags: [wiki, no-frontmatter-fix]

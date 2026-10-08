@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "lessons learned "
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Lessons Learned"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Best Practices per Filament Resources in Laraxot"
 module: "Xot"
 type: concept

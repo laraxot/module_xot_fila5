@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "naming conventions"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Naming Conventions"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "data objects"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "data objects"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Data Objects
 
 ## Principi Fondamentali

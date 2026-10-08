@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "cache"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "cache"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # cache
 
 <!-- Contenuto migrato da _docs/cache.txt -->

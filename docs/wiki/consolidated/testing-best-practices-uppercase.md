@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "testing best practices uppercase"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Testing Best Practices Uppercase"
 type: reference
 tags: [wiki, no-frontmatter-fix]

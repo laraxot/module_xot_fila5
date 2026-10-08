@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "generate db documentation"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Generate Db Documentation"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "filament components methods"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Filament Components Methods"
 type: reference
 tags: [wiki, no-frontmatter-fix]

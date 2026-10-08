@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "filament table columns"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament table columns"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Regola Generale: Metodo getTableColumns per Filament Table (Xot)
 
 ## Regola
@@ -43,6 +57,17 @@ public function getTableColumns(): array
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "filament table columns"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament table columns"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 **Ultimo aggiornamento:** 2025-05-13
 
 **Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.

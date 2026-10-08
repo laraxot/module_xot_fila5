@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "code standards"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Code Standards"
 type: reference
 tags: [wiki, no-frontmatter-fix]

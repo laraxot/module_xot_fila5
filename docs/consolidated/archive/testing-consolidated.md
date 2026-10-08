@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "testing consolidated"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "testing consolidated"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Testing - Documentazione Consolidata DRY + KISS
 
 > **🎯 Single Source of Truth**: Questo documento centralizza TUTTE le regole di testing del progetto
@@ -665,6 +679,17 @@ php artisan test --stop-on-failure
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "testing consolidated"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "testing consolidated"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 *Ultimo aggiornamento: 2025-08-04*
 *Modulo: Xot*
 *Categoria: Testing*

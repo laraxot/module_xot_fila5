@@ -1,4 +1,12 @@
 ---
+<<<<<<< HEAD
+=======
+tags: [documentation]
+created: 2026-09-26
+qmd: "ternary filter compact ui"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Brainstorming — TernaryFilter select vs controlli compatti"
 type: brainstorming
 module: Xot

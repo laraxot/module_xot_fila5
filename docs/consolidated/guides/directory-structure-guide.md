@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "directory structure guide"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "directory structure guide"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Guida alla Struttura Corretta delle Directory nei Moduli Laraxot <nome progetto>
 
 ## Panoramica

@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "php strict types"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Php Strict Types"
 type: reference
 tags: [wiki, no-frontmatter-fix]

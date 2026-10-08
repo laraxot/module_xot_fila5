@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "naming conventions docs"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "naming conventions docs"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Convenzioni di Naming nella Documentazione
 
 ## Regola: Nome del Progetto nei Moduli

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "coolmodules double registration fix"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "coolmodules double registration fix"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # CoolModules Double Registration Fix
 
 ## 🚨 Problema Identificato
@@ -133,6 +147,17 @@ class CoolModulesServiceProvider extends PackageServiceProvider
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "coolmodules double registration fix"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "coolmodules double registration fix"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 **Risolto**: Gennaio 2025
 **Tipo**: Bug Fix - Duplicate Registration
 **Impatto**: UI/UX Improvement

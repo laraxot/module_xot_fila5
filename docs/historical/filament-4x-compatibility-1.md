@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "filament 4x compatibility 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament 4x compatibility 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Compatibilità Filament 4.x - Modulo Xot
 
 **Data**: 2025-01-27

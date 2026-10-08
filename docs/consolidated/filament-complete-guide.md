@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "filament complete guide"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament complete guide"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Filament Complete Guide - Consolidated
 
 ## Overview

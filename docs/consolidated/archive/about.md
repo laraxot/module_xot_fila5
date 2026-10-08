@@ -1,4 +1,14 @@
 ---
+<<<<<<< HEAD
+=======
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "about"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: Modulo Xot
 description: Modulo Xot
 extends: _layouts.documentation

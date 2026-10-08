@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Linee Guida per la Documentazione in Laraxot"
 module: "Xot"
 type: how-to

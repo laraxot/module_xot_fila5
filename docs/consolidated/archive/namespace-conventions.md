@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "namespace conventions"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "namespace conventions"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Convenzioni dei Namespace nel Modulo Xot
 
 ## Panoramica

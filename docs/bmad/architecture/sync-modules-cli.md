@@ -1,4 +1,11 @@
 ---
+<<<<<<< HEAD
+=======
+tags: [documentation]
+qmd: "sync modules cli"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Comando .claude/commands/sync-modules — architettura"
 type: architecture
 module: Xot

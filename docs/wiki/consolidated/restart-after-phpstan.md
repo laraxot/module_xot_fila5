@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "restart after phpstan"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Restart After Phpstan"
 type: reference
 tags: [wiki, no-frontmatter-fix]

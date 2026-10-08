@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "service provider best practices"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Service Provider Best Practices"
 type: reference
 tags: [wiki, no-frontmatter-fix]

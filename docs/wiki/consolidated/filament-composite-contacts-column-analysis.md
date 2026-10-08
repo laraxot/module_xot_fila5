@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "filament composite contacts column analysis"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Filament Composite Contacts Column Analysis"
 type: reference
 tags: [wiki, no-frontmatter-fix]

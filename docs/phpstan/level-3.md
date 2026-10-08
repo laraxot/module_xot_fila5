@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Rapporto PHPStan Livello 3 per il modulo Xot"
 module: "Xot"
 type: concept
@@ -6,6 +7,17 @@ tags: [level, 3]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "level 3"
+=======
+issues: []
+discussions: []
+title: "Rapporto PHPStan Livello 3 per il modulo Xot"
+module: "Xot"
+type: concept
+tags: [level, 3, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "level 3 1"
+>>>>>>> laraxot/dev
 related:
   - "./eloquent-magic-properties-rule.md"
 ---
@@ -65,6 +77,7 @@ aurmich/dev
 aurmich/dev
 
 ## Collegamenti tra versioni di level_3.md
+<<<<<<< HEAD
 * [level_3.md](laravel/modules/chart/project_docs/phpstan/level_3.md)
 * [level_3.md](laravel/modules/reporting/project_docs/phpstan/level_3.md)
 * [level_3.md](laravel/modules/gdpr/project_docs/phpstan/level_3.md)
@@ -136,6 +149,8 @@ aurmich/dev
 aurmich/dev
 
 ## Collegamenti tra versioni di level_3.md
+=======
+>>>>>>> laraxot/dev
 * [level_3.md](laravel/modules/chart/docs/phpstan/level_3.md)
 * [level_3.md](laravel/modules/reporting/docs/phpstan/level_3.md)
 * [level_3.md](laravel/modules/gdpr/docs/phpstan/level_3.md)

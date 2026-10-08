@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "architecture"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Architecture"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "final method override fix"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Final Method Override Fix"
 type: reference
 tags: [wiki, no-frontmatter-fix]

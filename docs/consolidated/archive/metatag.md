@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "metatag"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "metatag"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 ~~~ php
 <?php
 declare(strict_types=1);
@@ -42,3 +56,14 @@ return [
 ### Versione Incoming
 
 ---
+<<<<<<< HEAD
+=======
+title: "metatag"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "metatag"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev

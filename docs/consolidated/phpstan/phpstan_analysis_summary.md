@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "phpstan analysis summary"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan analysis summary"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # PHPStan Analysis Summary - Comprehensive Error Report
 
 ## Overview

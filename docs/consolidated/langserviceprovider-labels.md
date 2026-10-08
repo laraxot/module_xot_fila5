@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "langserviceprovider labels"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "langserviceprovider labels"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # LangServiceProvider: Gestione automatica delle label nei Filament Forms
 
 ## Regola

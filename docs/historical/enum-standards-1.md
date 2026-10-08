@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "enum standards 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "enum standards 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Enum Standards in <nome progetto>
 
 This document defines the standards and best practices for working with Enums in the <nome progetto> project.

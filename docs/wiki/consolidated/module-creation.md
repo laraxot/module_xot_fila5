@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "module creation"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Module Creation"
 type: reference
 tags: [wiki, no-frontmatter-fix]

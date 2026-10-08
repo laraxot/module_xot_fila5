@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "optimization recommendations"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Optimization Recommendations"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "phpstan error"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan error"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # phpstan_error
 
 <!-- Contenuto migrato da _docs/phpstan_error.txt -->

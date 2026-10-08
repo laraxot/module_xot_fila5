@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "02 refactor hasxotform"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "02 refactor hasxotform"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # BMAD Story 02 — HasXotForm: istanza + colonne dinamiche
 
 **Repo:** `git@github.com:laraxot/module_xot_fila5.git`

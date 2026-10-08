@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "level 8"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "level 8"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Rapporto PHPStan Livello 8 per il modulo Xot
 
 Data analisi: 2025-04-15 21:55:39

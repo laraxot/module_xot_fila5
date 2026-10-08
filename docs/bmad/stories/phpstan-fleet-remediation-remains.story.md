@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "phpstan fleet remediation remains.story"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan fleet remediation remains.story"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Story: phpstan-fleet-remediation-remains
 **Status**: ready-for-dev
 **Modulo**: Xot (coordinatore fleet-wide)

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "links"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "links"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Collegamenti Documentazione Modulo Xot
 
 ## Documentazione Generica

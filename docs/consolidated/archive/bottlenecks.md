@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "bottlenecks"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "bottlenecks"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Colli di Bottiglia e Soluzioni - Modulo Xot
 
 ## Panoramica

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "issue 03 resource form"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "issue 03 resource form"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Issue GH #03 — XotBaseResourceForm: `use HasXotForm`
 
 **Repo:** `git@github.com:laraxot/module_xot_fila5.git`

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "issue 04 infolist"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "issue 04 infolist"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Issue GH #04 — XotBaseResourceInfolist: istanza + HasXotInfolist
 
 **Repo:** `git@github.com:laraxot/module_xot_fila5.git`

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "return type fixes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "return type fixes"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # XotBaseResource Return Type Fixes
 
 ## getRelations() Return Type Issue

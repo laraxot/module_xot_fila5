@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "phpstan pattern soluzioni 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan pattern soluzioni 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Pattern e Soluzioni per PHPStan Livello 10 - Modulo Xot
 
 Questo documento raccoglie i pattern comuni di errori PHPStan di livello 10 nel modulo Xot e le soluzioni standard implementate.
@@ -293,3 +307,14 @@ Questi pattern rappresentano le soluzioni standard da adottare in tutto il modul
 * [phpstan_pattern_soluzioni.md](../phpstan_pattern_soluzioni.md)
 
 ---
+<<<<<<< HEAD
+=======
+title: "phpstan pattern soluzioni 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan pattern soluzioni 1"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
