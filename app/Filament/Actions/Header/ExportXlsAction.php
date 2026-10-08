@@ -27,9 +27,7 @@ class ExportXlsAction extends XotBaseAction
     {
         parent::setUp();
         $this->translateLabel()
-            ->label('')
-            ->iconButton()
-            ->color('success')
+            ->hiddenLabel(true)
             ->tooltip(function (): string {
                 $livewire = $this->getLivewire();
                 if (! $livewire instanceof ListRecords) {
@@ -68,7 +66,7 @@ class ExportXlsAction extends XotBaseAction
                     self::notifyNoColumns();
                     $action->halt();
 
-                    return;
+                    return null;
                 }
 
                 return app(ExportXlsByCollection::class)->execute($query->get(), $filename, $transKey, $fields);

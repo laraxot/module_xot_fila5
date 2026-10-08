@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 return [
     'navigation' => [
-        'name' => 'cache',
-        'plural' => 'cache',
+        'name' => 'Cache',
+        'plural' => 'Cache',
         'group' => [
             'name' => 'Admin',
         ],
-        'label' => 'cache.navigation',
-        'icon' => 'cache.navigation',
+        'label' => 'Cache',
+        'icon' => 'heroicon-o-circle-stack',
         'sort' => 90,
     ],
     'pages' => [

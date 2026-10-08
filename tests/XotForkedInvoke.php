@@ -6,7 +6,11 @@ namespace Modules\Xot\Tests;
 
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Models\Cache;
-use PHPUnit\Framework\Assert;
+use ReflectionClass;
+use ReflectionMethod;
+use ReflectionNamedType;
+use SplFileInfo;
+use Webmozart\Assert\Assert;
 
 use function Safe\posix_kill;
 use function Safe\preg_match;
@@ -29,7 +33,7 @@ final class XotForkedInvoke
             return 0;
         }
 
-        $ref = new \ReflectionClass($class);
+        $ref = new ReflectionClass($class);
 
         if ($ref->isInterface()) {
             return 0;
@@ -58,7 +62,7 @@ final class XotForkedInvoke
             }
         }
 
-        foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC | \ReflectionMethod::IS_PROTECTED | \ReflectionMethod::IS_PRIVATE) as $method) {
+        foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE) as $method) {
             if ($method->getDeclaringClass()->getName() !== $class) {
                 continue;
             }
@@ -129,7 +133,7 @@ final class XotForkedInvoke
                 if (! method_exists($enumClass, $sm)) {
                     continue;
                 }
-                $method = new \ReflectionMethod($enumClass, $sm);
+                $method = new ReflectionMethod($enumClass, $sm);
                 if (self::invokeWithTimeout(static fn () => $method->invoke(null), $timeoutSeconds)) {
                     $executed++;
                 }
@@ -144,7 +148,7 @@ final class XotForkedInvoke
     /**
      * @return list<mixed>
      */
-    public static function defaultArgs(\ReflectionMethod $method): array
+    public static function defaultArgs(ReflectionMethod $method): array
     {
         $args = [];
         foreach ($method->getParameters() as $param) {
@@ -155,7 +159,7 @@ final class XotForkedInvoke
             }
             $type = $param->getType();
             $name = $param->getName();
-            if ($type instanceof \ReflectionNamedType) {
+            if ($type instanceof ReflectionNamedType) {
                 $tn = $type->getName();
                 $args[] = match (true) {
                     $tn === 'string' => str_contains(strtolower($name), 'class')
@@ -166,7 +170,7 @@ final class XotForkedInvoke
                     $tn === 'int' => 1,
                     $tn === 'float' => 1.0,
                     is_a($tn, Model::class, true) => (static function () use ($tn): Model {
-                        if ($tn === Model::class || (new \ReflectionClass($tn))->isAbstract()) {
+                        if ($tn === Model::class || (new ReflectionClass($tn))->isAbstract()) {
                             $m = new Cache;
                         } else {
                             $m = new $tn;
@@ -220,7 +224,7 @@ final class XotForkedInvoke
         }
 
         // parent
-        $status = 0;
+        $status = null;
         $waited = 0;
         while ($waited < ($timeoutSeconds + 1) * 10) {
             $res = pcntl_waitpid($pid, $status, WNOHANG);
@@ -228,12 +232,11 @@ final class XotForkedInvoke
                 return false;
             }
             if ($res > 0) {
-                $status = filter_var($status, FILTER_VALIDATE_INT);
-                if ($status === false) {
-                    return false;
-                }
+                // pcntl_waitpid() declares the by-ref $status as mixed in its PHPDoc stub
+                // (native int): validate it into a real int before decoding the exit status.
+                $exitStatus = filter_var($status, FILTER_VALIDATE_INT);
 
-                return pcntl_wifexited($status) && pcntl_wexitstatus($status) === 0;
+                return $exitStatus !== false && pcntl_wifexited($exitStatus) && pcntl_wexitstatus($exitStatus) === 0;
             }
             usleep(100_000);
             $waited++;
@@ -276,7 +279,7 @@ final class XotForkedInvoke
                 if (microtime(true) > $deadline) {
                     break 2;
                 }
-                if (! $file instanceof \SplFileInfo || ! $file->isFile() || ! str_ends_with($file->getFilename(), '.php')) {
+                if (! $file instanceof SplFileInfo || ! $file->isFile() || ! str_ends_with($file->getFilename(), '.php')) {
                     continue;
                 }
                 if (str_contains($file->getFilename(), '.php-cs-fixer') || str_contains($file->getFilename(), '.blade.')) {
@@ -291,7 +294,7 @@ final class XotForkedInvoke
             }
         }
 
-        Assert::assertGreaterThanOrEqual(0, $executed);
+        Assert::greaterThanEq($executed, 0);
 
         return $executed;
     }

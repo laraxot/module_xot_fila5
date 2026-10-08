@@ -32,11 +32,6 @@ final class RegisterRuntimePsr4NamespacesAction
 
     public function execute(ClassLoader $loader): void
     {
-        // NativePHP builds an authoritative optimized classmap. Runtime-owned
-        // themes are intentionally outside the root Composer package boundary,
-        // so the loader must retain PSR-4 fallback for the namespaces below.
-        $loader->setClassMapAuthoritative(false);
-
         foreach (self::namespaces() as $prefix => $paths) {
             $pathList = is_array($paths) ? $paths : [$paths];
 

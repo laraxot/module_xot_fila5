@@ -20,7 +20,6 @@ class ShowArtisanRouteListAction
     {
         $routeCollection = Route::getRoutes();
 
-        /** @var view-string $view */
         $view = 'xot::acts.artisan.show_route_list';
         $view_params = [
             'view' => $view,
@@ -28,7 +27,7 @@ class ShowArtisanRouteListAction
             'lang' => app()->getLocale(),
         ];
 
-        $result = view($view, $view_params);
+        $result = view('xot::acts.artisan.show_route_list', $view_params);
         Assert::isInstanceOf($result, View::class);
 
         return $result->render();

@@ -8,6 +8,7 @@ use Filament\Support\Colors\Color;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Str;
 use Livewire\Wireable;
 use Modules\Tenant\Actions\Config\GetTenantConfigArrayAction;
 use Modules\Tenant\Actions\Translations\TranslateTenantKeyAction;
@@ -169,7 +170,7 @@ class MetatagData extends Data implements Wireable
             /** @var string $path */
             $path = app(AssetAction::class)->execute($this->logo_header);
 
-            return asset($path);
+            return $this->normalizeBrandLogoUrl($path);
         } catch (\Throwable $e) {
             return $this->fallbackPublicAssetUrl($this->logo_header);
         }
@@ -190,7 +191,7 @@ class MetatagData extends Data implements Wireable
             /** @var string $path */
             $path = app(AssetAction::class)->execute($this->logo_header_dark);
 
-            return asset($path);
+            return $this->normalizeBrandLogoUrl($path);
         } catch (\Throwable $e) {
             return $this->fallbackPublicAssetUrl($this->logo_header_dark);
         }
@@ -218,6 +219,17 @@ class MetatagData extends Data implements Wireable
         }
 
         return '';
+    }
+
+    private function normalizeBrandLogoUrl(string $path): string
+    {
+        if (Str::startsWith($path, ['http://', 'https://'])) {
+            return Str::startsWith($path, url('/'))
+                ? '/'.ltrim(Str::after($path, url('/')), '/')
+                : $path;
+        }
+
+        return '/'.ltrim($path, '/');
     }
 
     /**
