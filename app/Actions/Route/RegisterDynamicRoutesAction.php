@@ -99,6 +99,7 @@ class RegisterDynamicRoutesAction
      */
     private function getAs(array $v, ?string $_namespace): string
     {
+        Assert::nullOrString($_namespace);
         if (isset($v['as'])) {
             Assert::string($as = $v['as']);
 
@@ -121,6 +122,7 @@ class RegisterDynamicRoutesAction
      */
     private function getNamespace(array $v, ?string $namespace): ?string
     {
+        Assert::nullOrString($namespace);
         if (isset($v['namespace'])) {
             Assert::string($namespace = $v['namespace']);
 
@@ -141,6 +143,7 @@ class RegisterDynamicRoutesAction
      */
     private function getAct(array $v, ?string $_namespace): string
     {
+        Assert::nullOrString($_namespace);
         if (isset($v['act'])) {
             Assert::string($act = $v['act']);
 
@@ -167,6 +170,7 @@ class RegisterDynamicRoutesAction
      */
     private function getParamName(array $v, ?string $_namespace): string
     {
+        Assert::nullOrString($_namespace);
         if (isset($v['param_name'])) {
             Assert::string($paramName = $v['param_name']);
 
@@ -225,6 +229,7 @@ class RegisterDynamicRoutesAction
      */
     private function getController(array $v, ?string $_namespace): string
     {
+        Assert::nullOrString($_namespace);
         if (isset($v['controller'])) {
             Assert::string($controller = $v['controller']);
 
@@ -244,6 +249,7 @@ class RegisterDynamicRoutesAction
      */
     private function getUri(array $v, ?string $_namespace): string
     {
+        Assert::nullOrString($_namespace);
         Assert::string($name = $v['name']);
 
         return $name;

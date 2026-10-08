@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Support;
 
 use Filament\Support\Colors\Color;
+use Modules\Xot\Enums\PaDesignColorEnum;
 
 /**
  * Palette Design Comuni / PA per Filament (FO widget + pannelli admin).
@@ -13,24 +14,18 @@ use Filament\Support\Colors\Color;
  */
 final class PaDesignColors
 {
-    /** Verde PA — azioni primarie, CTA istituzionali */
-    public const string PRIMARY_HEX = '#007A52';
-
-    /** Blu istituzionale — info, link header */
-    public const string INSTITUTIONAL_BLUE_HEX = '#0066CC';
-
     /**
      * Colori Filament per tutti i panel che usano MetatagData / ApplyMetatagToPanelAction.
      *
-     * @return array<string, array<int, string>|string>
+     * @return array<string, array<int, string>>
      */
     public static function filamentPalette(): array
     {
         return [
             'danger' => Color::Red,
             'gray' => Color::Zinc,
-            'info' => Color::hex(self::INSTITUTIONAL_BLUE_HEX),
-            'primary' => Color::hex(self::PRIMARY_HEX),
+            'info' => Color::hex(PaDesignColorEnum::InstitutionalBlue->value),
+            'primary' => Color::hex(PaDesignColorEnum::Primary->value),
             'success' => Color::Green,
             'warning' => Color::Orange,
         ];

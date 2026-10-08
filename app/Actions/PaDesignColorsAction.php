@@ -4,7 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions;
 
-use Filament\Support\Colors\Color;
+use Modules\Xot\Enums\PaDesignColorEnum;
+use Modules\Xot\Support\PaDesignColors;
 use Spatie\QueueableAction\QueueableAction;
 
 /**
@@ -19,18 +20,14 @@ final class PaDesignColorsAction
 {
     use QueueableAction;
 
-    public const string PRIMARY_HEX = '#007A52';
-
-    public const string INSTITUTIONAL_BLUE_HEX = '#0066CC';
-
     /**
      * @return array{primary: string, institutional_blue: string, danger: string, gray: string, info: string, success: string, warning: string}
      */
     public function execute(): array
     {
         return [
-            'primary' => self::PRIMARY_HEX,
-            'institutional_blue' => self::INSTITUTIONAL_BLUE_HEX,
+            'primary' => PaDesignColorEnum::Primary->value,
+            'institutional_blue' => PaDesignColorEnum::InstitutionalBlue->value,
             'danger' => 'red',
             'gray' => 'zinc',
             'info' => 'blue',
@@ -46,13 +43,6 @@ final class PaDesignColorsAction
      */
     public function filamentPalette(): array
     {
-        return [
-            'danger' => Color::Red,
-            'gray' => Color::Zinc,
-            'info' => Color::hex(self::INSTITUTIONAL_BLUE_HEX),
-            'primary' => Color::hex(self::PRIMARY_HEX),
-            'success' => Color::Green,
-            'warning' => Color::Orange,
-        ];
+        return PaDesignColors::filamentPalette();
     }
 }

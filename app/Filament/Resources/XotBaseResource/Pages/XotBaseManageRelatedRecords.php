@@ -186,16 +186,10 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      */
     public function getTitle(): string
     {
-        $resource = static::getResource();
         $recordTitle = $this->getRecordTitle();
         $relationship = static::getRelationshipName();
 
-        $titleString = '';
-        if ($recordTitle instanceof Htmlable) {
-            $titleString = $recordTitle->toHtml();
-        } else {
-            $titleString = (string) $recordTitle;
-        }
+        $titleString = $recordTitle instanceof Htmlable ? $recordTitle->toHtml() : (string) $recordTitle;
 
         return Str::of($relationship)
             ->title()

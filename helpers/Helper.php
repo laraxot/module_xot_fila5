@@ -244,7 +244,7 @@ if (! function_exists('actingAs')) {
      */
     function actingAs(Authenticatable|int|string|null $user = null, ?string $driver = null): TestResponse
     {
-        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+        throw new RuntimeException('Stub: This function is meant for static analysis only: '.(is_string($user) ? $user : '').($driver ?? ''));
     }
 }
 
@@ -255,7 +255,7 @@ if (! function_exists('get')) {
      */
     function get(string $uri = '', array $options = []): TestResponse
     {
-        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+        throw new RuntimeException('Stub: This function is meant for static analysis only: '.$uri.count($options));
     }
 }
 
@@ -267,7 +267,7 @@ if (! function_exists('post')) {
      */
     function post(string $uri, array $data = [], array $options = []): TestResponse
     {
-        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+        throw new RuntimeException('Stub: This function is meant for static analysis only: '.$uri.count($data).count($options));
     }
 }
 
@@ -278,7 +278,7 @@ if (! function_exists('put')) {
      */
     function put(string $uri, array $data = []): TestResponse
     {
-        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+        throw new RuntimeException('Stub: This function is meant for static analysis only: '.$uri.count($data));
     }
 }
 
@@ -289,7 +289,7 @@ if (! function_exists('patch')) {
      */
     function patch(string $uri, array $data = []): TestResponse
     {
-        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+        throw new RuntimeException('Stub: This function is meant for static analysis only: '.$uri.count($data));
     }
 }
 
@@ -299,7 +299,7 @@ if (! function_exists('delete')) {
      */
     function delete(string $uri): TestResponse
     {
-        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+        throw new RuntimeException('Stub: This function is meant for static analysis only: '.$uri);
     }
 }
 
@@ -309,7 +309,7 @@ if (! function_exists('head')) {
      */
     function head(string $uri): TestResponse
     {
-        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+        throw new RuntimeException('Stub: This function is meant for static analysis only: '.$uri);
     }
 }
 
@@ -319,7 +319,7 @@ if (! function_exists('options')) {
      */
     function options(string $uri): TestResponse
     {
-        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+        throw new RuntimeException('Stub: This function is meant for static analysis only: '.$uri);
     }
 }
 
@@ -329,7 +329,7 @@ if (! function_exists('followingRedirects')) {
      */
     function followingRedirects(int $number = 5): TestResponse
     {
-        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+        throw new RuntimeException('Stub: This function is meant for static analysis only: '.$number);
     }
 }
 

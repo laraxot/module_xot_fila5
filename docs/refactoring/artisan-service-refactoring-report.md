@@ -11,6 +11,8 @@ discussions: []
 
 # ArtisanService Refactoring Report
 
+> **Superseded (2026-10-08).** `ArtisanService`, `Services/Artisan/**` (CommandRegistry e handler Strategy descritti sotto) e `Actions/ArtisanAction` sono stati eliminati: il registry non era mai collegato a `act()` e non aveva chiamanti. Implementazione attuale: `Actions/Artisan/HandleArtisanActRequestAction` con `Enums/ArtisanActEnum`. Vedi [story](../stories/2026-10-08-services-to-actions-xot-artisan.story.md). Il resto del documento resta come cronologia.
+
 **Date:** 2025-10-01
 **Module:** Xot
 **Status:** ✅ Completed Successfully

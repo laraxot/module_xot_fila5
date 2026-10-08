@@ -3,13 +3,20 @@ title: "services"
 type: note
 tags: [documentation]
 created: 2026-09-26
-updated: 2026-09-26
+updated: 2026-10-08
 qmd: "services"
 issues: []
 discussions: []
 ---
 
 # Servizi del Modulo Xot
+
+> Nota 2026-10-08: i Services piccoli di Xot (`ConfigService`, `HtmlService`, `UrlService`, `XotService`,
+> `ModuleService`, `ThemeService`, `ProfileTest`, `Trend/*`, `Translators/*`) sono stati rimossi: i casi d'uso vivono gia'
+> nelle Actions (`Html\HtmlToPdfAction`, `Url\IsValidUrlAction`, `Xot\GetTenantClassAction`,
+> `Model\GetAllModelsByModuleNameAction`, `Theme\{Get,Set,Is,GetPath}ThemeAction`). `LangService` e `ConfigService::get/set/merge`
+> descritti sotto non esistono nel codice ne' nello storico git del modulo (`ConfigService` era un singleton vuoto): gli esempi sono storici.
+> Mappa completa e motivazioni: [stories/2026-10-08-services-to-actions-xot-small.story.md](stories/2026-10-08-services-to-actions-xot-small.story.md).
 
 ## LangService
 

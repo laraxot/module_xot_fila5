@@ -135,6 +135,10 @@ Aggiornata il 2026-10-07 dopo la risoluzione dei marker di merge nei docs (versi
 - [Quick reference](bmad/quick-reference.md)
 - [Setup guide](bmad/setup-guide.md)
 - Story: cartella [bmad/stories/](bmad/stories/).
+- Story PHPStan sui test senza asserzioni (2026-10-08): [stories/2026-10-08-phpstan-xot-tests-without-assertions.story.md](stories/2026-10-08-phpstan-xot-tests-without-assertions.story.md).
+- Story Services ArtisanService verso Actions e act verso enum (2026-10-08): [stories/2026-10-08-services-to-actions-xot-artisan.story.md](stories/2026-10-08-services-to-actions-xot-artisan.story.md).
+- Story Services piccoli verso Actions e const verso enum (2026-10-08): [stories/2026-10-08-services-to-actions-xot-small.story.md](stories/2026-10-08-services-to-actions-xot-small.story.md).
+- Story Services RouteService e RouteDynService verso Actions (2026-10-08): [stories/2026-10-08-services-to-actions-xot-route.story.md](stories/2026-10-08-services-to-actions-xot-route.story.md).
 
 ## Dependency Intelligence
 

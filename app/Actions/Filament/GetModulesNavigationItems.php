@@ -37,13 +37,7 @@ class GetModulesNavigationItems
         $navs = [];
 
         $modules = app(GetTenantModulesAction::class)->execute();
-        // Pre-load user roles to avoid N+1 queries
-        /** @var Authenticatable|null $user */
-        $user = Auth::user();
-
-        /** @var array<int, string> $userRoles */
-        $userRoles = [];
-        // Se serve re-introdurre un preload ruoli, farlo solo se il metodo è disponibile e tipizzato nel modello.
+        // Pre-load user roles to avoid N+1 queries (unused — kept for future role-based filtering)
 
         foreach ($modules as $module) {
             Assert::string($module, 'Il nome del modulo deve essere una stringa');
