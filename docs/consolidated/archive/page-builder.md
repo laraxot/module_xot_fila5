@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "page builder"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "page builder"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # page_builder
 
 <!-- Contenuto migrato da _docs/page_builder.txt -->

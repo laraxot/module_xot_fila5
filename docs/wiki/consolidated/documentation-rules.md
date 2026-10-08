@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "documentation rules"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Documentation Rules"
 type: reference
 tags: [wiki, no-frontmatter-fix]

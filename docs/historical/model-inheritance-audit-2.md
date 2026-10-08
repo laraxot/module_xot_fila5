@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "model inheritance audit 2"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "model inheritance audit 2"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Audit Ereditarietà Modelli - Tutti i Moduli
 
 ## Data Audit
@@ -31,6 +45,17 @@ Verificare che tutti i modelli nei moduli estendano le classi base corrette (`Ba
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "model inheritance audit 2"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "model inheritance audit 2"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ### ⚠️ Moduli con Problemi
 
 #### Cms

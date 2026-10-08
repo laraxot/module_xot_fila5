@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "bashscripts organization"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Bashscripts Organization"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "tenant"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "tenant"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Analisi e Risoluzione Colli di Bottiglia - Modulo Tenant
 
 ## 1. Database Switching (Priorità: Alta)

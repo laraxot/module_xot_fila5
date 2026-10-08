@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "07 hr table filters"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "07 hr table filters"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # BMAD Story 07 — HR: compatibilità getTableFilters()
 
 **Repo:** `git@github.com:laraxot/module_xot_fila5.git`

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "xot base classes 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xot base classes 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Xot Base Classes in Laravel Modules
 
 ## Overview

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "xot base component"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xot base component"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # XotBaseComponent
 
 XotBaseComponent è la classe base astratta per tutti i componenti view nel modulo Xot. Fornisce funzionalità comuni e struttura di base per i componenti personalizzati.

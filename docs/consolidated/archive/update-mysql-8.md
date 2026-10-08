@@ -1,4 +1,14 @@
 ---
+<<<<<<< HEAD
+=======
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "update mysql 8"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: Aggiornare Mysql a 8.0
 description: Aggiornare Mysql a 8.0
 extends: _layouts.documentation

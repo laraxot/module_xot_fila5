@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "no table override"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "no table override"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # DIVIETO ASSOLUTO DI IMPLEMENTARE table()
 
 ## Regola Fondamentale Inviolabile

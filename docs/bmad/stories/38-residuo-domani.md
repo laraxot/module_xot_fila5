@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "38 residuo domani"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "38 residuo domani"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # BMAD Story 38 — Residuo PHPStan (continuazione domani)
 **Status:** TODO — sub-agent assegnato (swarm 36-40)
 **Regola:** XotBaseResource NON ha getFormSchema(); solo Schema Form; no GatedXotBasePage; no @phpstan-ignore

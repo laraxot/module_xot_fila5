@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "performance 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "performance 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # _performance
 
 <!-- Contenuto migrato da _docs/_performance.txt -->

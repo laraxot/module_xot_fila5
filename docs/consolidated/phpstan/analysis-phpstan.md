@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "analysis phpstan"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "analysis phpstan"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Analisi PHPStan - Modulo Xot
 
 ## Panoramica

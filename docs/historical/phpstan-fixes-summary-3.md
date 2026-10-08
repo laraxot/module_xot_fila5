@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "phpstan fixes summary 3"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan fixes summary 3"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # PHPStan Fixes - Risultati Finali (Gennaio 2025)
 
 ## 📊 Statistiche Finali

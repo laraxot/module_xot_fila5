@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "ffmpeg"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "ffmpeg"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # ffmpeg
 
 <!-- Contenuto migrato da _docs/ffmpeg.txt -->

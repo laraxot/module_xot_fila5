@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "testing psr4 compliance"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Testing Psr4 Compliance"
 type: reference
 tags: [wiki, no-frontmatter-fix]

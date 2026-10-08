@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "componenti personalizzati"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "componenti personalizzati"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Componenti Filament Personalizzati in Laraxot
 
 Questo documento descrive i componenti personalizzati di Filament disponibili nel framework Laraxot e come utilizzarli correttamente.

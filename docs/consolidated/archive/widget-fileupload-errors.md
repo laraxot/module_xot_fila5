@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "widget fileupload errors"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "widget fileupload errors"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Widget FileUpload Errors - Troubleshooting Guide
 
 ## Errore: "foreach() argument must be of type array|object, string given"
@@ -245,6 +259,17 @@ Questo pattern si applica anche a:
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "widget fileupload errors"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "widget fileupload errors"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 **Tipo**: Troubleshooting Guide
 **Modulo**: Xot (Base)
 **Applicabilità**: Tutti i widget con FileUpload che caricano dati esistenti

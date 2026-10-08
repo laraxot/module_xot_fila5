@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "critical violations analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "critical violations analysis"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Analisi Violazioni Critiche XotBaseResource
 
 ## 🚨 Violazioni Identificate
@@ -146,4 +160,15 @@ class NotificationLogResource extends XotBaseResource
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "critical violations analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "critical violations analysis"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 **Questo documento serve come promemoria permanente dell'importanza di seguire l'architettura stabilita e consultare sempre la documentazione prima di implementare soluzioni.**

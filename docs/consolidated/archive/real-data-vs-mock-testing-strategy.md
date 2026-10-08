@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "real data vs mock testing strategy"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "real data vs mock testing strategy"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Real Data vs Mock Testing Strategy - Xot Module
 
 ## 🎯 Strategic Testing Approaches
@@ -383,6 +397,17 @@ test('legacy feature with mocks', function () {
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "real data vs mock testing strategy"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "real data vs mock testing strategy"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 **Strategic Analysis Date**: Gennaio 2025
 **Review Cycle**: Quarterly assessment
 **Decision Authority**: Technical Architecture Committee

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "01 traits composition"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "01 traits composition"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # GitHub Discussion — Architettura: composizione trait vs ereditarietà statica
 
 **Repo:** `git@github.com:laraxot/module_xot_fila5.git`

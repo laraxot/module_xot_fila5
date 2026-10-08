@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "documentation rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "documentation rules"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Documentazione
 
 Questo documento serve come indice centrale per tutta la documentazione del progetto.

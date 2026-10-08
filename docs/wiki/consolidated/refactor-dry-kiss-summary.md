@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "refactor dry kiss summary"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Refactor Dry Kiss Summary"
 type: reference
 tags: [wiki, no-frontmatter-fix]

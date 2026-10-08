@@ -1,4 +1,12 @@
 ---
+<<<<<<< HEAD
+=======
+type: note
+tags: [documentation]
+updated: 2026-09-26
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 id: "Xot/git-status-fleet-2026-09-23"
 title: "git status fleet 2026-09-23 — rebase stuck, corruzione oggetti, dirty"
 status: done

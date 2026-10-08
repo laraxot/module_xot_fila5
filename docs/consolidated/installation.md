@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "installation"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "installation"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Installazione
 
 ## Requisiti di Sistema

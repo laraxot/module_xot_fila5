@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "level10 guidelines"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "level10 guidelines"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Linee Guida per PHPStan Livello 10 - Regole Comuni
 
 Questo documento contiene le linee guida generali e le regole comuni per risolvere gli errori PHPStan di livello 10 in tutti i moduli del progetto.

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "prompts"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "prompts"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Struttura dei Prompt
 
 I prompt sono file di testo che contengono istruzioni per l'AI. Devono seguire queste regole:

@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "xotbase quick reference"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Xotbase Quick Reference"
 type: reference
 tags: [wiki, no-frontmatter-fix]

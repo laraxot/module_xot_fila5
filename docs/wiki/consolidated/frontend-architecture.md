@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "frontend architecture"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Frontend Architecture"
 type: reference
 tags: [wiki, no-frontmatter-fix]

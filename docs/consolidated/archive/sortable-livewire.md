@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "sortable livewire"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "sortable livewire"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # sortable_livewire
 
 <!-- Contenuto migrato da _docs/sortable_livewire.txt -->

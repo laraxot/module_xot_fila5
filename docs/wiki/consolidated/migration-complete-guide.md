@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "migration complete guide"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Migration Complete Guide"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "blocks"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "blocks"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Blocchi UI in il progetto
 
 I blocchi UI sono componenti riutilizzabili per la costruzione delle pagine. Ogni blocco è un componente Blade che può essere utilizzato in qualsiasi vista del tema.

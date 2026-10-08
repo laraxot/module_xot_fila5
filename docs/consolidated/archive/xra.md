@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "xra"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xra"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 ~~~ php
 <?php
 
@@ -28,3 +42,14 @@ return [
 ### Versione Incoming
 
 ---
+<<<<<<< HEAD
+=======
+title: "xra"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xra"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev

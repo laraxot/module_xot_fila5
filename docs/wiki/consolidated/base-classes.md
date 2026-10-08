@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "base classes"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Base Classes"
 type: reference
 tags: [wiki, no-frontmatter-fix]

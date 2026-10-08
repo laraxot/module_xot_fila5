@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "auto label action"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "auto label action"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Correzione e miglioramento: AutoLabelAction.php (2025-04-16)
 
 ## Contesto
@@ -20,4 +34,15 @@ Il file `AutoLabelAction.php` presentava marker di conflitto (``) e duplicazioni
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "auto label action"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "auto label action"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 *Ultimo aggiornamento: 2025-04-16*

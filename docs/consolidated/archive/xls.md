@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "xls"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xls"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # xls
 
 <!-- Contenuto migrato da _docs/xls.txt -->

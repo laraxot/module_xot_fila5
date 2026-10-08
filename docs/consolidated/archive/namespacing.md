@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "namespacing"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "namespacing"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Convenzioni Namespace in il progetto
 
 ## Struttura Namespace Standard

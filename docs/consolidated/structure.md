@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "structure"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "structure"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 ### Versione HEAD
 
 # Analisi della Discrepanza tra Namespace e Struttura Directory nei Moduli Laraxot
@@ -240,6 +254,17 @@ laravel/Themes/[Nome]/
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "structure"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "structure"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 b6f667c (.)
 
 # Struttura del Modulo Xot

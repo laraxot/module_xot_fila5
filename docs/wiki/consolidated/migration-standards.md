@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "migration standards"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Migration Standards"
 type: reference
 tags: [wiki, no-frontmatter-fix]
