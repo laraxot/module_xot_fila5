@@ -1,4 +1,7 @@
 ---
+qmd: "laraxot rules"
+issues: []
+discussions: []
 title: "Laraxot Rules"
 type: reference
 tags: [wiki, no-frontmatter-fix]

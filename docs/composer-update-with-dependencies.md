@@ -1,3 +1,14 @@
+---
+title: "composer update with dependencies"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "composer update with dependencies"
+issues: []
+discussions: []
+---
+
 # Composer update -W (with-dependencies)
 
 ## Perché

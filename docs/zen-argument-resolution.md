@@ -1,3 +1,14 @@
+---
+title: "zen argument resolution"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "zen argument resolution"
+issues: []
+discussions: []
+---
+
 # Risoluzione della Disputa Zen: Priorità e Approccio Laraxot
 
 ## 🥊 La Disputa Interiore
@@ -24,4 +35,12 @@
 
 ---
 
+title: "zen argument resolution"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "zen argument resolution"
+issues: []
+discussions: []
 **"Capire la logica... è fondamentale. Ho scelto la via della Trinità perché è l'unica che garantisce un sistema SOLID e Robust."**

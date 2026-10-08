@@ -1,3 +1,14 @@
+---
+title: "migration update rules regole generali per aggiornamento colonn"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "migration update rules regole generali per aggiornamento colonn"
+issues: []
+discussions: []
+---
+
 # Regole generali per aggiornamento colonne e gestione errori schema
 
 ## Collegamento bidirezionale

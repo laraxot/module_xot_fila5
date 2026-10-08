@@ -1,4 +1,7 @@
 ---
+qmd: "filament wizard refactoring"
+issues: []
+discussions: []
 title: "Wizard widget Laraxot — Filament HasWizard + trait modulari Xot"
 type: concept
 tags: [filament, wizard, xot, haswizard-widget]

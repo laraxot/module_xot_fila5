@@ -1,3 +1,14 @@
+---
+title: "phpstan errors xotbaserelationmanager"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan errors xotbaserelationmanager"
+issues: []
+discussions: []
+---
+
 # PHPStan Errors - XotBaseRelationManager
 
 **Data**: 2025-12-23
@@ -32,6 +43,14 @@ $schema->components($this->getTableColumns());
 
 ---
 
+title: "phpstan errors xotbaserelationmanager"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan errors xotbaserelationmanager"
+issues: []
+discussions: []
 ### Errore #2: Line 185 - canDeleteBulk() Type Mismatch
 
 **Messaggio PHPStan**:

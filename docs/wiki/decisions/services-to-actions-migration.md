@@ -1,7 +1,15 @@
 ---
+title: "services to actions migration"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-10-08
+qmd: "services to actions migration"
+issues: []
+discussions: []
 module: Xot
 concept: services-to-actions-migration
-last_updated: 2026-07-13
+last_updated: 2026-10-08
 ---
 
 # Migrazione app/Services -> Spatie QueueableAction (sessione 2026-06-30)
@@ -48,6 +56,8 @@ equivalente per tutti i chiamanti reali trovati).
 
 ## Lasciati intatti (da pianificare separatamente)
 
+Aggiornamento 2026-10-08: `ModuleService`, `Translators/*` e `Trend/Adapters/*` sono stati chiusi, vedi in fondo "Completamento Xot-small".
+
 | Service | Chiamanti trovati | Motivo per cui NON e' stato forzato |
 |---|---|---|
 | `ArtisanService` (308 righe) + `Artisan/CommandRegistry`, `Artisan/Contracts/CommandHandlerInterface`, `Artisan/Handlers/*` (8 handler) | Solo interno a Xot (8 Handlers + test), nessun chiamante esterno trovato, ma accoppiamento interno alto (pattern Handler/Registry gia' in atto) | Esplicitamente segnalato come rischioso nel task; 308 righe, troppo per una sessione "quality over quantity" |
@@ -93,3 +103,34 @@ questa sessione: i file toccati sono stati verificati solo con `php -l`
 (nessun errore di sintassi). **Va rieseguita la quality gate completa su
 `Modules/Xot`, `Modules/Notify`, `Modules/Cms` non appena lo spazio disco
 torna disponibile**, prima di considerare questo lavoro mergeable.
+
+## Completamento Xot-small (2026-10-08)
+
+Dopo il merge da `laraxot/dev` i Services "archiviati in .bak" erano tornati nel working tree (stessa classe di rischio
+dell'epic `epic-code-standards-services-mixed-const`). Verificato con `rg` su FQCN, nome breve, stringhe, config e classmap:
+nessun chiamante di produzione. Eliminati di nuovo: `ConfigService`, `HtmlService`, `UrlService`, `XotService`,
+`ModuleService`, `ThemeService`, `ProfileTest`, `Trend/Adapters/*`, `Translators/*` e i file `.no`/`.test` accanto.
+
+- `ModuleService::getModels()` e' coperto da `GetAllModelsByModuleNameAction` (corpo identico) e dal test
+  `tests/Feature/ModuleServiceIntegrationTest.php`; `tests/Unit/ModuleServiceTest.php` verificava solo la struttura del
+  Service e non aveva comportamento unico: eliminato, non riscritto.
+- `Trend/Adapters/*`: tre copie senza chiamanti; il driver lo sceglie `Flowframe\Trend\Trend` (mysql/mariadb, sqlite, pgsql).
+- `Translators/*`: sei stub vuoti, nessun riferimento all'FQCN.
+- Hex del design PA: enum `Enums\PaDesignColorEnum`, usato da `Support\PaDesignColors` e da `PaDesignColorsAction`.
+
+Dettagli e verifica: [stories/2026-10-08-services-to-actions-xot-small.story.md](../../stories/2026-10-08-services-to-actions-xot-small.story.md).
+
+## Completamento Xot-artisan (2026-10-08)
+
+La riga `ArtisanService` della tabella "Lasciati intatti" e' superata: `ArtisanService`, `Services/Artisan/**` e la copia piatta `Actions/ArtisanAction.php` sono stati eliminati (recuperabili da HEAD). Resta una sola implementazione: `Actions/Artisan/` (`HandleArtisanActRequestAction` + 6 Action per caso d'uso) con gli act ammessi in `Enums/ArtisanActEnum`. Handler Strategy e `CommandRegistry` eliminati perche' duplicavano la mappa act -> comando senza chiamanti. Ripristinato in `RunArtisanCommandAction` il guard `STDIN` perso nella prima migrazione. Dettagli e prove: [story](../../stories/2026-10-08-services-to-actions-xot-artisan.story.md).
+
+## Completamento Xot-route (2026-10-08)
+
+`RouteService` e `RouteDynService` sono eliminati (zero chiamanti di produzione, recuperabili da `bea6f0b3^` del repo Xot; la versione di `urlAct`
+corretta il 2026-10-08 vive ora in `BuildActionUrlAction`). La tabella "Completamento `RouteService` (2026-07-13)" resta valida;
+cambiano due punti: `GetCurrentRouteHandlerAction` e' nuova e le quattro `GetCurrentRoute*Action` la chiamano (la frase
+"nessuna Action chiama un'altra Action" non vale piu'), e `BuildActionUrlAction` e' stata riallineata al Service
+(`row` opzionale, solo l'ultimo segmento del nome della route). `RouteDynService::dynamic_route` e i suoi passi interni sono
+`RegisterDynamicRoutesAction` + `GetRouteMethodAction`; la terza copia `Actions/RouteDynAction.php` (metodi statici) e' stata eliminata.
+
+Dettagli, sonde di parita' e decisioni: [stories/2026-10-08-services-to-actions-xot-route.story.md](../../stories/2026-10-08-services-to-actions-xot-route.story.md).

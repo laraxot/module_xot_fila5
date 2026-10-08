@@ -6,11 +6,11 @@ namespace Modules\Xot\Tests;
 
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Models\Cache;
-use PHPUnit\Framework\Assert;
 use ReflectionClass;
 use ReflectionMethod;
 use ReflectionNamedType;
 use SplFileInfo;
+use Webmozart\Assert\Assert;
 
 use function Safe\posix_kill;
 use function Safe\preg_match;
@@ -224,7 +224,7 @@ final class XotForkedInvoke
         }
 
         // parent
-        $status = 0;
+        $status = null;
         $waited = 0;
         while ($waited < ($timeoutSeconds + 1) * 10) {
             $res = pcntl_waitpid($pid, $status, WNOHANG);
@@ -294,7 +294,7 @@ final class XotForkedInvoke
             }
         }
 
-        Assert::assertGreaterThanOrEqual(0, $executed);
+        Assert::greaterThanEq($executed, 0);
 
         return $executed;
     }

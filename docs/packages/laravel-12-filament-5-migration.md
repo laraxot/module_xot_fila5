@@ -1,3 +1,14 @@
+---
+title: "laravel 12 filament 5 migration"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "laravel 12 filament 5 migration"
+issues: []
+discussions: []
+---
+
 # Migrazione a Laravel 12 e Filament 5
 
 Linee guida critiche per l'aggiornamento e la manutenzione dei moduli.

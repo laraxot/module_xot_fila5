@@ -1,3 +1,14 @@
+---
+title: "view composer loop infinite fix"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "view composer loop infinite fix"
+issues: []
+discussions: []
+---
+
 # XotComposer - Loop Infinito Fix
 
 ## 🚨 Problema Critico Risolto
@@ -222,6 +233,14 @@ grep -r "auth()->user()" Modules/*/View/Composers/
 
 ---
 
+title: "view composer loop infinite fix"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "view composer loop infinite fix"
+issues: []
+discussions: []
 **Risolto**: Dicembre 2024  
 **Priorità**: P0 (Critical) - Bloccava sistema completo  
 **Impatto**: Sistema completamente non funzionale  

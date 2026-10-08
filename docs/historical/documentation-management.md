@@ -1,3 +1,14 @@
+---
+title: "documentation management"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "documentation management"
+issues: []
+discussions: []
+---
+
 # Gestione della Documentazione e delle Regole
 
 ## Struttura della Documentazione

@@ -1,3 +1,14 @@
+---
+title: "performance guidelines conflict"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "performance guidelines conflict"
+issues: []
+discussions: []
+---
+
 # Performance Guidelines - Xot Module
 
 ## 🎯 Purpose

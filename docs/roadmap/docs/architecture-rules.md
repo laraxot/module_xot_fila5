@@ -1,3 +1,14 @@
+---
+title: "architecture rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "architecture rules"
+issues: []
+discussions: []
+---
+
 # Architectural Rules & Guidelines
 
 This module adheres to the **Laraxot Architecture** and **Super Cow Methodology**.

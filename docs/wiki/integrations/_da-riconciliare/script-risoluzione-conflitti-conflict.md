@@ -1,4 +1,7 @@
 ---
+qmd: "script risoluzione conflitti conflict"
+issues: []
+discussions: []
 title: "Script di Risoluzione Conflitti Git - Application Project"
 module: xot
 type: integration

@@ -1,3 +1,14 @@
+---
+title: "state machine"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "state machine"
+issues: []
+discussions: []
+---
+
 # Regole Generali sulle State Machine
 
 ## Transizioni

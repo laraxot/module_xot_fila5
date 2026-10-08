@@ -1,4 +1,17 @@
+---
+title: "artisan service refactoring report"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "artisan service refactoring report"
+issues: []
+discussions: []
+---
+
 # ArtisanService Refactoring Report
+
+> **Superseded (2026-10-08).** `ArtisanService`, `Services/Artisan/**` (CommandRegistry e handler Strategy descritti sotto) e `Actions/ArtisanAction` sono stati eliminati: il registry non era mai collegato a `act()` e non aveva chiamanti. Implementazione attuale: `Actions/Artisan/HandleArtisanActRequestAction` con `Enums/ArtisanActEnum`. Vedi [story](../stories/2026-10-08-services-to-actions-xot-artisan.story.md). Il resto del documento resta come cronologia.
 
 **Date:** 2025-10-01
 **Module:** Xot
@@ -6,6 +19,14 @@
 
 ---
 
+title: "artisan service refactoring report"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "artisan service refactoring report"
+issues: []
+discussions: []
 ## 📊 Summary
 
 Successfully refactored `ArtisanService::act()` method from **cyclomatic complexity 22** to **complexity 3**, achieving a **86% reduction** in complexity.

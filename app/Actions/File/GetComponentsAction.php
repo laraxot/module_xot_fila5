@@ -85,7 +85,6 @@ class GetComponentsAction
             $comp_ns = $namespace.'\\'.$class_name;
 
             if ($relative_path !== '') {
-                $comp_name = '';
                 $piece = collect(explode('\\', $relative_path))
                     ->map(fn (string $item) => Str::slug(Str::snake($item)))
                     ->implode('.');

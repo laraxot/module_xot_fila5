@@ -1,4 +1,7 @@
 ---
+qmd: "ai agent prompts junction"
+issues: []
+discussions: []
 title: AI Agent Prompts Junction
 type: concept
 created: 2026-07-13

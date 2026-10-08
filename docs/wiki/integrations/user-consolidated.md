@@ -1,4 +1,7 @@
 ---
+qmd: "user consolidated"
+issues: []
+discussions: []
 title: "user — Consolidated Documentation"
 module: xot
 type: integration

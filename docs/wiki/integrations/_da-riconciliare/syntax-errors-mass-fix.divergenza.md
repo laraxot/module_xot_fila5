@@ -1,4 +1,7 @@
 ---
+qmd: "syntax errors mass fix.divergenza"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: syntax-errors-mass-fix.md"
 module: Xot
 type: note

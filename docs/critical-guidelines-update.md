@@ -1,3 +1,14 @@
+---
+title: "critical guidelines update"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "critical guidelines update"
+issues: []
+discussions: []
+---
+
 # Aggiornamento Linee Guida Critiche - Agosto 2025
 
 ## 1. VIOLAZIONE GRAVE: Cartella Docs Root
@@ -162,6 +173,14 @@ find  --include="*.php" | grep -v "static" | grep -v "::"
 
 ---
 
+title: "critical guidelines update"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "critical guidelines update"
+issues: []
+discussions: []
 **DATA EFFETTIVA**: 2025-08-20
 **PRIORITÀ**: CRITICA
 **RESPONSABILE**: Tutto il team sviluppo

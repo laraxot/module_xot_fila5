@@ -1,4 +1,8 @@
 ---
+tags: [documentation]
+qmd: "phpstan baseline initial"
+issues: []
+discussions: []
 title: "Phpstan baseline initial"
 type: reference
 status: active

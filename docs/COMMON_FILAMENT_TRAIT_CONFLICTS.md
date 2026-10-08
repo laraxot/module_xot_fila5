@@ -1,3 +1,14 @@
+---
+title: "COMMON FILAMENT TRAIT CONFLICTS"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "COMMON FILAMENT TRAIT CONFLICTS"
+issues: []
+discussions: []
+---
+
 # Common Filament Trait Conflicts - Xot Module
 
 ## 📋 Panoramica
@@ -68,6 +79,14 @@ class MyChartWidget extends ChartWidget
 
 ---
 
+title: "COMMON FILAMENT TRAIT CONFLICTS"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "COMMON FILAMENT TRAIT CONFLICTS"
+issues: []
+discussions: []
 ### 2. HasFiltersForm (Dashboard)
 
 **Location**: `Filament\Pages\Dashboard\Concerns\HasFiltersForm`

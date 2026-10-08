@@ -1,3 +1,14 @@
+---
+title: "phpstan fixes conflict"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan fixes conflict"
+issues: []
+discussions: []
+---
+
 # Correzioni PHPStan - 6 Gennaio 2025
 
 ## Errori Risolti

@@ -1,3 +1,14 @@
+---
+title: "migration standards standard per le migrazioni in nome proge"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "migration standards standard per le migrazioni in nome proge"
+issues: []
+discussions: []
+---
+
 # Standard per le Migrazioni in <nome progetto>
 
 ## Introduzione

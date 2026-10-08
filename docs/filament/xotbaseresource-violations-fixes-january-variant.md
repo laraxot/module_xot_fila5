@@ -1,4 +1,7 @@
 ---
+tags: [documentation]
+issues: []
+discussions: []
 title: "Xotbaseresource Violations Fixes"
 type: concept
 status: deprecated

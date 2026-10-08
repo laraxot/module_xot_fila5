@@ -1,4 +1,7 @@
 ---
+qmd: "blade errors"
+issues: []
+discussions: []
 title: "Blade Errors"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,3 +1,14 @@
+---
+title: "merge resolution"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "merge resolution"
+issues: []
+discussions: []
+---
+
 # Log Risoluzione Conflitti Git (Merge Conflict Resolution Log)
 
 Questo documento traccia la cronologia delle risoluzioni dei conflitti massivi incontrati durante lo sviluppo del progetto healthcare_app.
@@ -20,6 +31,14 @@ Questo documento traccia la cronologia delle risoluzioni dei conflitti massivi i
 
 ---
 
+title: "merge resolution"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "merge resolution"
+issues: []
+discussions: []
 ## 📅 06 Gennaio 2025 - Risoluzione Servizi Geo e Tema Two
 
 **Status**: ✅ COMPLETATO

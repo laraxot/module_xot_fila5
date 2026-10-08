@@ -1,3 +1,14 @@
+---
+title: "module path error resolution"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "module path error resolution"
+issues: []
+discussions: []
+---
+
 # Module Path Error Resolution - Activity Assets Issue
 
 **Data Creazione**: 2026-01-02
@@ -134,4 +145,12 @@ try {
 
 ---
 
+title: "module path error resolution"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "module path error resolution"
+issues: []
+discussions: []
 **Filosofia Applicata**: Graceful degradation, non-intrusive, robusto.

@@ -1,4 +1,7 @@
 ---
+qmd: "adjacency list best practices"
+issues: []
+discussions: []
 title: "Adjacency List Best Practices"
 type: reference
 tags: [wiki, no-frontmatter-fix]

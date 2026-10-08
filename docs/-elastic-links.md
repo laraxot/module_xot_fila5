@@ -1,4 +1,7 @@
 ---
+qmd: " elastic links"
+issues: []
+discussions: []
 title: 'Elastic links — risorse esterne'
 module: Xot
 type: reference

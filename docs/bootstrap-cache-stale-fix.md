@@ -1,3 +1,14 @@
+---
+title: "bootstrap cache stale fix"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "bootstrap cache stale fix"
+issues: []
+discussions: []
+---
+
 # Bootstrap cache stale entries fix
 
 ## Problem pattern

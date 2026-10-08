@@ -1,3 +1,14 @@
+---
+title: "code quality improvement guide"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "code quality improvement guide"
+issues: []
+discussions: []
+---
+
 # Code Quality Improvement Guide
 
 ## Overview

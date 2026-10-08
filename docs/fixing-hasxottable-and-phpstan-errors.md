@@ -1,3 +1,14 @@
+---
+title: "fixing hasxottable and phpstan errors"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "fixing hasxottable and phpstan errors"
+issues: []
+discussions: []
+---
+
 # Fixing HasXotTable Trait Errors
 
 ## Problem

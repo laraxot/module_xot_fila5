@@ -1,3 +1,14 @@
+---
+title: "ision making process super mucca"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "ision making process super mucca"
+issues: []
+discussions: []
+---
+
 # Processo Decisionale "Super Mucca" - La Litigata Interna
 
 **Filosofia**: DRY + KISS + Documentazione Prima
@@ -5,6 +16,14 @@
 
 ---
 
+title: "ision making process super mucca"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "ision making process super mucca"
+issues: []
+discussions: []
 ## 🧠 Il Dibattito Interno (La Litigata)
 
 ### Contesto

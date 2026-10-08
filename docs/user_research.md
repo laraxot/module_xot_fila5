@@ -1,3 +1,14 @@
+---
+title: "user research"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "user research"
+issues: []
+discussions: []
+---
+
 # Xot Module - User Research
 
 **Module:** Xot  
@@ -7,6 +18,14 @@
 
 ---
 
+title: "user research"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "user research"
+issues: []
+discussions: []
 ## Research Goals
 
 1. Understand developer needs

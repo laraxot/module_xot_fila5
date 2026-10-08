@@ -1,3 +1,14 @@
+---
+title: "UNDERSCORE DOCS RULE"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "UNDERSCORE DOCS RULE"
+issues: []
+discussions: []
+---
+
 # Underscore Directories Rule - No _docs/
 
 ## Regola Fondamentale

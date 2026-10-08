@@ -1,3 +1,14 @@
+---
+title: "service provider architecture"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "service provider architecture"
+issues: []
+discussions: []
+---
+
 # Architettura Service Provider in Laraxot/PTVX
 
 ## Panoramica Business Logic
@@ -546,6 +557,14 @@ Il sistema `nwidart/laravel-modules` scansiona e registra automaticamente i modu
 
 ---
 
+title: "service provider architecture"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "service provider architecture"
+issues: []
+discussions: []
 **Ultimo aggiornamento**: 27 Ottobre 2025
 **Versione Laravel**: 12.35.1
 **Filosofia**: DRY + KISS per registrazione automatica risorse modulari

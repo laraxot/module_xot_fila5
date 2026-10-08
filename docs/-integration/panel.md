@@ -1,3 +1,14 @@
+---
+title: "panel"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "panel"
+issues: []
+discussions: []
+---
+
 # panel
 
 <!-- Contenuto migrato da _docs/panel.txt -->

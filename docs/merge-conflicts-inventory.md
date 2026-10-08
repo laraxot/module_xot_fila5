@@ -1,3 +1,14 @@
+---
+title: "merge conflicts inventory"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "merge conflicts inventory"
+issues: []
+discussions: []
+---
+
 # Merge Conflicts Inventory
 
 **Date**: 2025-11-12
@@ -193,4 +204,12 @@ This document catalogs all files containing merge conflict markers found through
 5. Finalize with non-critical files
 
 ---
+title: "merge conflicts inventory"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "merge conflicts inventory"
+issues: []
+discussions: []
 *This inventory will be updated as conflicts are resolved.*

@@ -1,3 +1,14 @@
+---
+title: "no label placeholder religion"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "no label placeholder religion"
+issues: []
+discussions: []
+---
+
 # NO Label/Placeholder — La Religione dell'Auto-Label
 
 **Status**: Active  
@@ -8,6 +19,14 @@
 
 ---
 
+title: "no label placeholder religion"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "no label placeholder religion"
+issues: []
+discussions: []
 ## LA REGOLA AUREA (Da Ricordare SEMPRE)
 
 **NON userai MAI `->label()` o `->placeholder()` su componenti Filament.**

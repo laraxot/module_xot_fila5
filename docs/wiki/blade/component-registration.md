@@ -1,4 +1,7 @@
 ---
+qmd: "component registration"
+issues: []
+discussions: []
 title: "Component Registration"
 type: reference
 tags: [wiki, no-frontmatter-fix]

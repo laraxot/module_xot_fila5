@@ -1,3 +1,14 @@
+---
+title: "task type safety filament traits"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "task type safety filament traits"
+issues: []
+discussions: []
+---
+
 # Task: Migliorare Type Safety nei Filament Traits - Xot
 
 **Modulo**: Xot
@@ -6,6 +17,14 @@
 
 ---
 
+title: "task type safety filament traits"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "task type safety filament traits"
+issues: []
+discussions: []
 ## Descrizione
 
 I traits Filament del modulo Xot (in particolare `HasXotTable`) hanno 16 suppressioni PHPStan che indicano problemi di type safety con tipi `mixed`. Questo impatta tutti i moduli che utilizzano queste funzionalita'.

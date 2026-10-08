@@ -1,3 +1,14 @@
+---
+title: "mcp readme section"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "mcp readme section"
+issues: []
+discussions: []
+---
+
 # MCP (Model Context Protocol) Integration
 
 ## Cosa è MCP?

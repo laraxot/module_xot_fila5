@@ -30,7 +30,7 @@ use Pest\PendingCalls\UsesCall;
  */
 function actingAs(Authenticatable|int|string|null $user = null, ?string $driver = null): TestResponse
 {
-    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+    throw new \RuntimeException('Stub: This function is meant for static analysis only: '.(is_string($user) ? $user : '').($driver ?? ''));
 }
 
 /**
@@ -42,7 +42,7 @@ function actingAs(Authenticatable|int|string|null $user = null, ?string $driver 
  */
 function get(string|array $uri = '', array $options = []): TestResponse
 {
-    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+    throw new \RuntimeException('Stub: This function is meant for static analysis only: '.(is_string($uri) ? $uri : '').count($options));
 }
 
 /**
@@ -55,7 +55,7 @@ function get(string|array $uri = '', array $options = []): TestResponse
  */
 function post(string|array $uri, array $data = [], array $options = []): TestResponse
 {
-    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+    throw new \RuntimeException('Stub: This function is meant for static analysis only: '.(is_string($uri) ? $uri : '').count($data).count($options));
 }
 
 /**
@@ -67,7 +67,7 @@ function post(string|array $uri, array $data = [], array $options = []): TestRes
  */
 function put(string|array $uri, array $data = []): TestResponse
 {
-    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+    throw new \RuntimeException('Stub: This function is meant for static analysis only: '.(is_string($uri) ? $uri : '').count($data));
 }
 
 /**
@@ -79,7 +79,7 @@ function put(string|array $uri, array $data = []): TestResponse
  */
 function patch(string|array $uri, array $data = []): TestResponse
 {
-    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+    throw new \RuntimeException('Stub: This function is meant for static analysis only: '.(is_string($uri) ? $uri : '').count($data));
 }
 
 /**
@@ -90,7 +90,7 @@ function patch(string|array $uri, array $data = []): TestResponse
  */
 function delete(string|array $uri): TestResponse
 {
-    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+    throw new \RuntimeException('Stub: This function is meant for static analysis only: '.(is_string($uri) ? $uri : ''));
 }
 
 /**
@@ -101,7 +101,7 @@ function delete(string|array $uri): TestResponse
  */
 function head(string|array $uri): TestResponse
 {
-    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+    throw new \RuntimeException('Stub: This function is meant for static analysis only: '.(is_string($uri) ? $uri : ''));
 }
 
 /**
@@ -112,7 +112,7 @@ function head(string|array $uri): TestResponse
  */
 function options(string|array $uri): TestResponse
 {
-    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+    throw new \RuntimeException('Stub: This function is meant for static analysis only: '.(is_string($uri) ? $uri : ''));
 }
 
 /**
@@ -124,7 +124,7 @@ function options(string|array $uri): TestResponse
  */
 function getJson(string|array $uri, array $headers = []): TestResponse
 {
-    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+    throw new \RuntimeException('Stub: This function is meant for static analysis only: '.(is_string($uri) ? $uri : '').count($headers));
 }
 
 /**
@@ -137,7 +137,7 @@ function getJson(string|array $uri, array $headers = []): TestResponse
  */
 function postJson(string|array $uri, array $data = [], array $headers = []): TestResponse
 {
-    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+    throw new \RuntimeException('Stub: This function is meant for static analysis only: '.(is_string($uri) ? $uri : '').count($data).count($headers));
 }
 
 /**
@@ -150,7 +150,7 @@ function postJson(string|array $uri, array $data = [], array $headers = []): Tes
  */
 function putJson(string|array $uri, array $data = [], array $headers = []): TestResponse
 {
-    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+    throw new \RuntimeException('Stub: This function is meant for static analysis only: '.(is_string($uri) ? $uri : '').count($data).count($headers));
 }
 
 /**
@@ -163,7 +163,7 @@ function putJson(string|array $uri, array $data = [], array $headers = []): Test
  */
 function patchJson(string|array $uri, array $data = [], array $headers = []): TestResponse
 {
-    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+    throw new \RuntimeException('Stub: This function is meant for static analysis only: '.(is_string($uri) ? $uri : '').count($data).count($headers));
 }
 
 /**
@@ -176,7 +176,7 @@ function patchJson(string|array $uri, array $data = [], array $headers = []): Te
  */
 function deleteJson(string|array $uri, array $data = [], array $headers = []): TestResponse
 {
-    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+    throw new \RuntimeException('Stub: This function is meant for static analysis only: '.(is_string($uri) ? $uri : '').count($data).count($headers));
 }
 
 /**
@@ -186,7 +186,7 @@ function deleteJson(string|array $uri, array $data = [], array $headers = []): T
  */
 function followingRedirects(int $number = 5): TestResponse
 {
-    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+    throw new \RuntimeException('Stub: This function is meant for static analysis only: '.$number);
 }
 
 /**
@@ -194,7 +194,7 @@ function followingRedirects(int $number = 5): TestResponse
  */
 function test(string $description, ?\Closure $closure = null): TestCall
 {
-    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+    throw new \RuntimeException('Stub: This function is meant for static analysis only: '.$description.($closure instanceof \Closure ? 'closure' : ''));
 }
 
 /**
@@ -202,7 +202,7 @@ function test(string $description, ?\Closure $closure = null): TestCall
  */
 function it(string $description, ?\Closure $closure = null): TestCall
 {
-    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+    throw new \RuntimeException('Stub: This function is meant for static analysis only: '.$description.($closure instanceof \Closure ? 'closure' : ''));
 }
 
 /**
@@ -210,7 +210,7 @@ function it(string $description, ?\Closure $closure = null): TestCall
  */
 function describe(string $description, \Closure $closure): DescribeCall
 {
-    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+    throw new \RuntimeException('Stub: This function is meant for static analysis only: '.$description.spl_object_id($closure));
 }
 
 /**
@@ -218,7 +218,7 @@ function describe(string $description, \Closure $closure): DescribeCall
  */
 function beforeEach(\Closure $closure): BeforeEachCall
 {
-    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+    throw new \RuntimeException('Stub: This function is meant for static analysis only: '.spl_object_id($closure));
 }
 
 /**
@@ -226,7 +226,7 @@ function beforeEach(\Closure $closure): BeforeEachCall
  */
 function afterEach(\Closure $closure): AfterEachCall
 {
-    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+    throw new \RuntimeException('Stub: This function is meant for static analysis only: '.spl_object_id($closure));
 }
 
 /**
@@ -236,5 +236,5 @@ function afterEach(\Closure $closure): AfterEachCall
  */
 function uses(string ...$classes): UsesCall
 {
-    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+    throw new \RuntimeException('Stub: This function is meant for static analysis only: '.implode(',', $classes));
 }

@@ -1,4 +1,7 @@
 ---
+qmd: "ccr deepseek fix"
+issues: []
+discussions: []
 title: "Ccr Deepseek Fix"
 type: reference
 tags: [wiki, no-frontmatter-fix]

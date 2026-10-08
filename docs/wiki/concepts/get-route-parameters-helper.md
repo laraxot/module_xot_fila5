@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: helper getRouteParameters
 type: concept
 tags: [xot, helpers, routes, phpstan, progressioni]

@@ -1,4 +1,7 @@
 ---
+qmd: "hasxottable final state.story"
+issues: []
+discussions: []
 title: "HasXotTable — Final BMAD Story (Implementation + Documentation)"
 type: code-analysis
 status: superseded

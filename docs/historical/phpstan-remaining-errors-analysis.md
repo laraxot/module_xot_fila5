@@ -1,3 +1,14 @@
+---
+title: "phpstan remaining errors analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan remaining errors analysis"
+issues: []
+discussions: []
+---
+
 # PHPStan Remaining Errors Analysis
 
 **Data:** 2025-01-10
@@ -174,5 +185,13 @@ All module tests use **Pest** framework. PHPStan has challenges with Pest's magi
 
 ---
 
+title: "phpstan remaining errors analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan remaining errors analysis"
+issues: []
+discussions: []
 *Generated during PHPStan compliance implementation*
 *Task: "Analyze and fix all PHPStan errors in Modules/"*

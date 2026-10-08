@@ -1,4 +1,11 @@
 ---
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "mail handling"
+issues: []
+discussions: []
 title: Mail Configuration Handlers Guide
 description: Complete guide to configuring mail drivers in Laravel with examples for multiple mail services
 category: procedures

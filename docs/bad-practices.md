@@ -1,4 +1,7 @@
 ---
+qmd: "bad practices"
+issues: []
+discussions: []
 title: 'bad_practices'
 module: Xot
 type: reference

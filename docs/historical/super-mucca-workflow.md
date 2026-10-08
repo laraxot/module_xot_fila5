@@ -1,3 +1,14 @@
+---
+title: "super mucca workflow"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "super mucca workflow"
+issues: []
+discussions: []
+---
+
 # Super Mucca Workflow - Metodologia Completa
 
 **Poteri**: Massima Confidenza + Zero Compromessi + Correzione Completa
@@ -6,6 +17,14 @@
 
 ---
 
+title: "super mucca workflow"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "super mucca workflow"
+issues: []
+discussions: []
 ## 🐮 Principi Super Mucca
 
 ### 1. Massima Confidenza

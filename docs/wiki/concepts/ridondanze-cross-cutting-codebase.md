@@ -1,4 +1,7 @@
 ---
+qmd: "ridondanze cross cutting codebase"
+issues: []
+discussions: []
 title: "Ridondanze cross-cutting codebase e dove documentarle"
 type: concept
 tags: [dry, redundancy, xot, documentation]

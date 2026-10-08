@@ -1,3 +1,14 @@
+---
+title: "translation structure expanded"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "translation structure expanded"
+issues: []
+discussions: []
+---
+
 # Struttura Traduzioni Espansa - Modulo Xot
 
 ## Scopo
@@ -196,6 +207,14 @@ Il file attuale contiene principalmente etichette generali per l'interfaccia amm
 
 ---
 
+title: "translation structure expanded"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "translation structure expanded"
+issues: []
+discussions: []
 **Stato**: Documentazione completata, implementazione in corso
 **Priorità**: Media (file già corretto linguisticamente)
 **Responsabile**: Sistema automatico DRY/KISS

@@ -1,4 +1,7 @@
 ---
+qmd: "readme new"
+issues: []
+discussions: []
 title: "Xot Module - Core Foundation"
 module: xot
 type: integration

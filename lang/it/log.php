@@ -7,13 +7,13 @@ return [
     'pages' => 'Pagine',
     'widgets' => 'Widgets',
     'navigation' => [
-        'name' => 'log',
+        'name' => 'Registro',
         'plural' => 'logs',
         'group' => [
             'name' => 'Admin',
         ],
-        'label' => 'log.navigation',
-        'icon' => 'log.navigation',
+        'label' => 'Log',
+        'icon' => 'heroicon-o-clipboard-document-list',
         'sort' => 61,
     ],
     'fields' => [
@@ -142,5 +142,5 @@ return [
     ],
     'label' => 'Log',
     'plural_label' => 'Log (Plurale)',
-    'title' => 'log',
+    'title' => 'Registro',
 ];

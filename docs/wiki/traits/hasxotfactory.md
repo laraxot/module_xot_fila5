@@ -1,4 +1,7 @@
 ---
+qmd: "hasxotfactory"
+issues: []
+discussions: []
 title: "Hasxotfactory"
 type: reference
 tags: [wiki, no-frontmatter-fix]

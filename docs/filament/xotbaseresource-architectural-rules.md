@@ -1,3 +1,14 @@
+---
+title: "xotbaseresource architectural rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xotbaseresource architectural rules"
+issues: []
+discussions: []
+---
+
 # Regole Architetturali per XotBaseResource
 
 ## Dibattito Interno: Navigation Properties e Metodi in XotBaseResource
@@ -97,11 +108,17 @@ final class TeamUserResource extends XotBaseResource
     // protected static \UnitEnum|string|null $navigationGroup = 'Teams';
 
     // ✅ SOLO getFormSchema() e metodi table* se necessario
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
+---
+title: "xotbaseresource architectural rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xotbaseresource architectural rules"
+issues: []
+discussions: []
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             // Schema del form

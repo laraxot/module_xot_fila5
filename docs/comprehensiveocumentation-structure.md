@@ -1,4 +1,12 @@
 ---
+title: "comprehensiveocumentation structure"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "comprehensiveocumentation structure"
+issues: []
+discussions: []
 module: theme
 topic: comprehensiveocumentation-structure
 canonical: ../../../Themes/docs/shared-components/comprehensive-documentation-structure.md

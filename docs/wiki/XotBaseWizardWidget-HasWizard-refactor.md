@@ -1,4 +1,7 @@
 ---
+qmd: "XotBaseWizardWidget HasWizard refactor"
+issues: []
+discussions: []
 title: "Stub storico — alias wizard Xot (non HasWizard su widget)"
 type: concept
 tags: [filament, wizard, stub-canonical]

@@ -1,4 +1,5 @@
 ---
+discussions: []
 title: "Xot Tests autoload e PHPStan"
 type: concept
 module: Xot

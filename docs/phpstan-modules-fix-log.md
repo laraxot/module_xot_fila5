@@ -1,4 +1,12 @@
 ---
+title: "phpstan modules fix log"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan modules fix log"
+issues: []
+discussions: []
 description: Log e pattern dei fix PHPStan su Modules (run 2026-07-07).
 ---
 

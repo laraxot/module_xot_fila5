@@ -1,4 +1,7 @@
 ---
+qmd: "tests"
+issues: []
+discussions: []
 title: "Tests"
 type: reference
 tags: [wiki, no-frontmatter-fix]

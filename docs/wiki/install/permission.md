@@ -1,4 +1,7 @@
 ---
+qmd: "permission"
+issues: []
+discussions: []
 title: "Permission"
 type: reference
 tags: [wiki, no-frontmatter-fix]

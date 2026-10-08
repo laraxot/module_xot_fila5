@@ -1,4 +1,7 @@
 ---
+qmd: "relation x"
+issues: []
+discussions: []
 title: "Relation X"
 type: reference
 tags: [wiki, no-frontmatter-fix]

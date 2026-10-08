@@ -1,3 +1,14 @@
+---
+title: "xotbase extension rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xotbase extension rules"
+issues: []
+discussions: []
+---
+
 # Regole di Estensione XotBase - Guida di Riferimento
 
 ## 🚨 REGOLA CRITICA FONDAMENTALE
@@ -188,6 +199,14 @@ jobs:
 
 ---
 
+title: "xotbase extension rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xotbase extension rules"
+issues: []
+discussions: []
 *Documento aggiornato: 2025-07-30*
 *Priorità: CRITICA*
 *Stato: OBBLIGATORIO per tutti i moduli*

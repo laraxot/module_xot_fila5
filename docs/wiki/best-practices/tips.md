@@ -1,4 +1,7 @@
 ---
+qmd: "tips"
+issues: []
+discussions: []
 title: "Tips"
 type: reference
 tags: [wiki, no-frontmatter-fix]

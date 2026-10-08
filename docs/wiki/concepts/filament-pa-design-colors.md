@@ -1,3 +1,14 @@
+---
+title: "filament pa design colors"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament pa design colors"
+issues: []
+discussions: []
+---
+
 # Filament — palette PA Design Comuni
 
 ## Scopo

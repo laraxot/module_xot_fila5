@@ -1,3 +1,14 @@
+---
+title: "safe float cast action"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "safe float cast action"
+issues: []
+discussions: []
+---
+
 # SafeFloatCastAction
 
 ## Descrizione
@@ -211,4 +222,12 @@ assert($action->executeWithRange(-10.0, 0.0, 100.0) === 0.0);
 
 ---
 
+title: "safe float cast action"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "safe float cast action"
+issues: []
+discussions: []
 *Ultimo aggiornamento: 31 luglio 2025*

@@ -1,3 +1,14 @@
+---
+title: "xot base manage related records evolution"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xot base manage related records evolution"
+issues: []
+discussions: []
+---
+
 # Evolution of XotBaseManageRelatedRecords
 
 ## Current State Analysis

@@ -1,3 +1,14 @@
+---
+title: "general rules 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "general rules 1"
+issues: []
+discussions: []
+---
+
 # Regole Generali del Progetto <nome progetto>
 
 Questo documento contiene le regole generali che devono essere seguite in tutto il progetto <nome progetto> per garantire coerenza e qualità del codice.

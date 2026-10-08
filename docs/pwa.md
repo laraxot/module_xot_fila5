@@ -1,3 +1,14 @@
+---
+title: "pwa"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "pwa"
+issues: []
+discussions: []
+---
+
 https://www.freecodecamp.org/news/build-a-pwa-from-scratch-with-html-css-and-javascript/
 https://devcoffee-pwa.netlify.app/
 

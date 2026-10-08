@@ -1,3 +1,14 @@
+---
+title: "xotbase manage related records"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xotbase manage related records"
+issues: []
+discussions: []
+---
+
 # XotBaseManageRelatedRecords — Reference
 
 `Modules\Xot\Filament\Resources\Pages\XotBaseManageRelatedRecords`

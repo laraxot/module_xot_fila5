@@ -1,3 +1,14 @@
+---
+title: "index 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "index 1"
+issues: []
+discussions: []
+---
+
 # 📚 Xot Module - Documentation Index
 
 **Path**: `laravel/Modules/Xot/docs/`  
@@ -74,4 +85,12 @@ docs/
 
 ---
 
+title: "index 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "index 1"
+issues: []
+discussions: []
 **Ultimo Aggiornamento**: 2026-03-24

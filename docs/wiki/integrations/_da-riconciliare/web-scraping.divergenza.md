@@ -1,4 +1,7 @@
 ---
+qmd: "web scraping.divergenza"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: web-scraping.md"
 module: Xot
 type: note

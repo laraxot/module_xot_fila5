@@ -1,3 +1,14 @@
+---
+title: "filament class mapping update"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament class mapping update"
+issues: []
+discussions: []
+---
+
 # Aggiornamento Mapping Classi Filament - 2025-12-23
 
 **Data**: 2025-12-23
@@ -159,4 +170,12 @@ Il mapping deve riflettere la **realtà del codice**, non aspirazioni future. Se
 
 ---
 
+title: "filament class mapping update"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament class mapping update"
+issues: []
+discussions: []
 **Conclusione**: Le classi `XotBaseGroup`, `XotBaseRadio`, e `XotBaseSelect` **non esistono** nel codebase e devono essere **rimosse dal mapping** per mantenere coerenza con la realtà del codice.

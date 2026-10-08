@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: tests AuditCoverage forbidden
 type: concept
 module: Xot

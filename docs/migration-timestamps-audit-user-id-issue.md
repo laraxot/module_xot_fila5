@@ -1,3 +1,14 @@
+---
+title: "migration timestamps audit user id issue"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "migration timestamps audit user id issue"
+issues: []
+discussions: []
+---
+
 # Nota Architetturale: Rimozione `user_id` da `XotBaseMigration::timestamps()` (2026-03-06)
 
 ## Situazione Rilevata

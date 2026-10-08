@@ -1,3 +1,14 @@
+---
+title: "phpstan error analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan error analysis"
+issues: []
+discussions: []
+---
+
 # Analisi Errori PHPStan - Modulo Xot
 
 **Data**: 2025-12-23  

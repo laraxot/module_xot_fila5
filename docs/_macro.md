@@ -1,4 +1,7 @@
 ---
+qmd: " macro"
+issues: []
+discussions: []
 title: 'Macro — risorse esterne'
 module: Xot
 type: reference

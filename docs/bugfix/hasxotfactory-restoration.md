@@ -1,3 +1,14 @@
+---
+title: "hasxotfactory restoration"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "hasxotfactory restoration"
+issues: []
+discussions: []
+---
+
 # Bugfix: Ripristino HasXotFactory Trait
 
 ## Data
@@ -389,6 +400,14 @@ Aggiungere al pipeline CI:
 
 ---
 
+title: "hasxotfactory restoration"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "hasxotfactory restoration"
+issues: []
+discussions: []
 **Stato**: ✅ **RISOLTO**
 **Priorità**: 🔴 **CRITICA**
 **Tempo di Risoluzione**: ~2 ore

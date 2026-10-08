@@ -1,4 +1,12 @@
 ---
+title: "dry and grep before pseudocode"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "dry and grep before pseudocode"
+issues: []
+discussions: []
 name: dry-and-grep-before-pseudocode
 description: "Prima di scrivere un metodo helper, grep nel codebase: se esiste già va estratto come riutilizzabile, non replicato"
 metadata:

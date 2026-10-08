@@ -1,3 +1,14 @@
+---
+title: "FILAMENT 4 LARAXOT RULES"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "FILAMENT 4 LARAXOT RULES"
+issues: []
+discussions: []
+---
+
 # Filament 4 + Laraxot Rules - Xot Module
 
 ## 🎯 Regole Fondamentali
@@ -148,11 +159,17 @@ class MyPage extends XotBasePage
 ### 2. **Metodi Statici Errati**
 ```php
 // ❌ SBAGLIATO
-<<<<<<< HEAD
 public function getFormSchema(): array
-=======
+---
+title: "FILAMENT 4 LARAXOT RULES"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "FILAMENT 4 LARAXOT RULES"
+issues: []
+discussions: []
 public function getFormSchema(): array
->>>>>>> laraxot/dev
 
 // ✅ CORRETTO
 public function getFormSchema(): array

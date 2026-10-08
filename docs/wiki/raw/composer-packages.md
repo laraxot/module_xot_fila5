@@ -1,4 +1,7 @@
 ---
+qmd: "composer packages"
+issues: []
+discussions: []
 title: "Composer Packages"
 type: reference
 tags: [wiki, no-frontmatter-fix]

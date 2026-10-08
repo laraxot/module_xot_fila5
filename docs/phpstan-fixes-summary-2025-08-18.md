@@ -1,22 +1,18 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
 ---
+title: "phpstan fixes summary 2025 08 18"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan fixes summary 2025 08 18"
+issues: []
+discussions: []
 name: phpstan-fixes-summary-2025-08-18
 description: " 🚨 REGOLA CRITICA RISPETTATA 🚨"
 metadata:
   type: documentation
 ---
 
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # PHPStan Fixes Summary - 18 Agosto 2025
 
 ## 🚨 REGOLA CRITICA RISPETTATA 🚨

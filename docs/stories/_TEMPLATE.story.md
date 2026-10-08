@@ -1,4 +1,8 @@
 ---
+tags: [documentation]
+qmd: " TEMPLATE.story"
+issues: []
+discussions: []
 title: "{titolo breve, dice il problema non la soluzione}"
 type: story
 module: {Modulo}

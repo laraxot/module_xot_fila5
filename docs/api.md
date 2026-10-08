@@ -1,4 +1,8 @@
 ---
+updated: 2026-09-26
+qmd: "api"
+issues: []
+discussions: []
 title: "Xot Module API"
 type: reference
 tags: [xot, api, framework]

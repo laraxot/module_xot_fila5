@@ -1,3 +1,14 @@
+---
+title: "README"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "README"
+issues: []
+discussions: []
+---
+
 # Sviluppo
 
 Questa cartella contiene la documentazione relativa agli strumenti e alle pratiche di sviluppo.

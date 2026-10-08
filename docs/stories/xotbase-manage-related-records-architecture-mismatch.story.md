@@ -1,3 +1,14 @@
+---
+title: "xotbase manage related records architecture mismatch.story"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xotbase manage related records architecture mismatch.story"
+issues: []
+discussions: []
+---
+
 # BMAD: Proposed architecture mismatch in XotBaseManageRelatedRecords.php
 
 ## Summary

@@ -1,4 +1,7 @@
 ---
+qmd: "panel"
+issues: []
+discussions: []
 title: "Panel"
 type: reference
 tags: [wiki, no-frontmatter-fix]

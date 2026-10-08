@@ -1,3 +1,14 @@
+---
+title: "ai prompt fundamental rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "ai prompt fundamental rules"
+issues: []
+discussions: []
+---
+
 # Regole Fondamentali per Prompt AI - Quaeris Fila5 Mono
 
 ## 🚨 REGOLA ASSOLUTA: Database Testing
@@ -12,7 +23,7 @@ Tutti i prompt per generazione di codice, test, o modifiche devono includere que
 Create/Update code for Quaeris Fila5 Mono with these CRITICAL rules:
 1. NEVER use SQLite for testing - ALWAYS MySQL with "_test" suffixed databases
 2. NEVER use RefreshDatabase trait - ALWAYS use DatabaseTransactions
-3. ALWAYS copy .env.testing to .env before running tests: cp .env.testing .env
+3. NEVER copy `.env.testing` to `.env`; normalize with `./bashscripts/tools/sync-env-testing.sh --check` and export dedicated `FIXCITY_TEST_DB_*` credentials.
 4. Handle race conditions with first() + try/catch pattern for unique constraints
 5. Follow PHPStan Level 10 compliance - explicit return types, no mixed types
 6. Use XotBase patterns for all components (XotBaseResource, BaseModel, etc.)
@@ -26,7 +37,7 @@ Create/Update code for Quaeris Fila5 Mono with these CRITICAL rules:
 Create test for ProfileService in Quaeris Fila5 Mono with these rules:
 - Use DatabaseTransactions trait, NEVER RefreshDatabase
 - Test concurrent profile creation with first() + try/catch pattern
-- Use MySQL testing configuration (.env.testing with "_test" databases)
+- Use `.env.testing` with `_test` databases and external `FIXCITY_TEST_DB_*` credentials; never copy it over `.env`
 - Handle race conditions for unique user_id constraints
 - Follow PHPStan Level 10 with explicit return types
 ```
@@ -174,6 +185,14 @@ LimeSurvey specific rules:
 
 ---
 
+title: "ai prompt fundamental rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "ai prompt fundamental rules"
+issues: []
+discussions: []
 **Ultimo aggiornamento**: 2026-01-22  
 **MySQL Testing**: ✅ OBBLIGATORIO  
 **Race Conditions**: ✅ Pattern first() + try/catch  

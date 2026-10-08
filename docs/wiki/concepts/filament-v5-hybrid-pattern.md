@@ -1,3 +1,14 @@
+---
+title: "filament v5 hybrid pattern"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament v5 hybrid pattern"
+issues: []
+discussions: []
+---
+
 # Filament v5 Hybrid Pattern (XotBase + configure())
 
 **Status**: 🟡 Draft (Pending Story 8-91 Implementation)  
@@ -28,11 +39,17 @@ class DepartmentForm
 // Extends XotBase, returns array
 class TicketForm extends XotBaseResourceForm
 {
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
+---
+title: "filament v5 hybrid pattern"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament v5 hybrid pattern"
+issues: []
+discussions: []
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [...]; // Array of components
     }
@@ -97,11 +114,9 @@ class ArticleForm extends XotBaseResourceForm
      * 
      * @return array<int, Component>
      */
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
+---
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         // Delegate to configure() to avoid duplication
         $schema = app(Schema::class);
@@ -175,11 +190,9 @@ class ArticleForm extends XotBaseResourceForm
     }
     
     // LEGACY: Array style (backward compatibility)
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
+---
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         $schema = app(Schema::class);
         return static::configure($schema)->getComponents();
@@ -217,11 +230,9 @@ abstract class XotBaseResourceForm
      * LEGACY: Array method with default implementation.
      * Can be overridden, but default delegates to configure().
      */
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
+---
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         $schema = app(Schema::class);
         return static::configure($schema)->getComponents();
@@ -279,11 +290,9 @@ abstract class XotBaseResourceInfolist
     /**
      * LEGACY: Array method with default implementation.
      */
-<<<<<<< HEAD
     public function getInfolistSchema(): array
-=======
+---
     public function getInfolistSchema(): array
->>>>>>> laraxot/dev
     {
         $schema = app(Schema::class);
         return static::configure($schema)->getComponents();

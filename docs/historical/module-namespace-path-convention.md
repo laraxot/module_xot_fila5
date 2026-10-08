@@ -1,3 +1,14 @@
+---
+title: "module namespace path convention"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "module namespace path convention"
+issues: []
+discussions: []
+---
+
 # convenzioni per namespace e percorsi dei moduli
 
 ## struttura corretta del percorso

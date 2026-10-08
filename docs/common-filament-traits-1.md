@@ -1,3 +1,14 @@
+---
+title: "common filament traits 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "common filament traits 1"
+issues: []
+discussions: []
+---
+
 # Common Filament Trait Conflicts - Xot Module
 
 ## 📋 Panoramica
@@ -68,6 +79,14 @@ class MyChartWidget extends ChartWidget
 
 ---
 
+title: "common filament traits 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "common filament traits 1"
+issues: []
+discussions: []
 ### 2. HasFiltersForm (Dashboard)
 
 **Location**: `Filament\Pages\Dashboard\Concerns\HasFiltersForm`

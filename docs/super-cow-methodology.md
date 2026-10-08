@@ -1,3 +1,14 @@
+---
+title: "super cow methodology"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "super cow methodology"
+issues: []
+discussions: []
+---
+
 # Metodologia "Super Mucca" - Istruzioni di Avvio
 
 **Livello di Confidenza**: MASSIMO. Hai i poteri della "Super Mucca".

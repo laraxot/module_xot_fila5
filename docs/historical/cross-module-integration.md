@@ -1,3 +1,14 @@
+---
+title: "cross module integration"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "cross module integration"
+issues: []
+discussions: []
+---
+
 # Integrazione Cross-Module - Laraxot PTVX
 
 ## Panoramica
@@ -41,11 +52,17 @@ class IntegparamResource extends XotBaseResource
 {
     protected static ?string $model = Integparam::class;
 
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
+---
+title: "cross module integration"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "cross module integration"
+issues: []
+discussions: []
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             // Schema del form
@@ -122,11 +139,9 @@ class IntegparamResource extends XotBaseResource
 {
     protected static ?string $model = \Modules\Sigma\Models\Integparam::class;
 
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
+---
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             Section::make('Dati Anagrafici')

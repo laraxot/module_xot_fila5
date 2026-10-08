@@ -1,4 +1,7 @@
 ---
+qmd: "mail"
+issues: []
+discussions: []
 title: "Mail"
 type: reference
 tags: [wiki, no-frontmatter-fix]

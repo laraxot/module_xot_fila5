@@ -1,3 +1,14 @@
+---
+title: "docs improvements nov"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "docs improvements nov"
+issues: []
+discussions: []
+---
+
 # Miglioramenti Documentazione - Novembre 2025
 
 ## 🎯 Obiettivo

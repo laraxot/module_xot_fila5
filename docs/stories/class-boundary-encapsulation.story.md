@@ -1,4 +1,10 @@
 ---
+type: note
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "class boundary encapsulation.story"
+issues: []
+discussions: []
 id: story-class-boundary-encapsulation
 title: "Story: Class Boundary and Encapsulation in XotBaseManageRelatedRecords"
 description: "Documenta il significato della chiusura della classe '}' nel contesto dello studio di XotBaseManageRelatedRecords e ManageContacts."

@@ -1,3 +1,14 @@
+---
+title: "index"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "index"
+issues: []
+discussions: []
+---
+
 # 📚 Index of Xot Module Documentation
 
 ## 🎯 Quick Start
@@ -51,4 +62,12 @@
 - [General Troubleshooting](troubleshooting.md)
 
 ---
+title: "index"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "index"
+issues: []
+discussions: []
 *Last update: January 2025*

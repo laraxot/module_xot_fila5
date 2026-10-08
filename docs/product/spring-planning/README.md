@@ -1,3 +1,14 @@
+---
+title: "README"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "README"
+issues: []
+discussions: []
+---
+
 # Xot Module - Spring Planning Meeting
 
 ## Meeting Overview
@@ -370,4 +381,12 @@ This document captures the outcomes and decisions from the Xot module's Spring P
 
 ---
 
+title: "README"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "README"
+issues: []
+discussions: []
 *This document will be updated and maintained throughout the quarter to track progress and outcomes.*

@@ -1,3 +1,14 @@
+---
+title: "logo resolution"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "logo resolution"
+issues: []
+discussions: []
+---
+
 # Risoluzione dei Loghi
 
 Questo documento descrive il meccanismo di risoluzione dei loghi in un'applicazione Laravel 12.x modulare (PHP 8.2+).
@@ -118,5 +129,13 @@ Per la versione dark:
 
 ---
 
+title: "logo resolution"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "logo resolution"
+issues: []
+discussions: []
 ### Nota Importante
 Questo documento è parte della documentazione generale del modulo Xot e descrive un meccanismo riutilizzabile in diversi progetti. La documentazione nei moduli è generica e riutilizzabile, mentre le informazioni specifiche del progetto si trovano nella documentazione nella root del progetto.

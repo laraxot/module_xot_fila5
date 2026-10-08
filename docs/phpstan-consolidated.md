@@ -1,3 +1,14 @@
+---
+title: "phpstan consolidated"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan consolidated"
+issues: []
+discussions: []
+---
+
 # PHPStan - Guida Completa Consolidata
 
 **Ultimo aggiornamento**: [DATE]
@@ -262,4 +273,12 @@ $variabile = $oggetto->proprietaNonStandard;
 
 ---
 
+title: "phpstan consolidated"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan consolidated"
+issues: []
+discussions: []
 *Guida consolidata che elimina duplicazioni e semplifica la manutenzione della documentazione PHPStan.*

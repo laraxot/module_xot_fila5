@@ -1,3 +1,14 @@
+---
+title: "filament class extension resolution"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament class extension resolution"
+issues: []
+discussions: []
+---
+
 # Risoluzione Conflitti Git - Filament Class Extension Rules
 
 ## Data Risoluzione

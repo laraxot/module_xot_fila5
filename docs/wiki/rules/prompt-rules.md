@@ -1,4 +1,7 @@
 ---
+qmd: "prompt rules"
+issues: []
+discussions: []
 title: "Prompt Rules"
 type: reference
 tags: [wiki, no-frontmatter-fix]

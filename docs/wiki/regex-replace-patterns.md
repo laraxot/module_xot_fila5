@@ -1,3 +1,14 @@
+---
+title: "regex replace patterns"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "regex replace patterns"
+issues: []
+discussions: []
+---
+
 -------------------------
 relatedUrl\(\['related_name'[ ]?=>[ ]?'([^ ]*)',[ ]?'act'[ ]?=>[ ]?'([a-zA-Z_]*)'\]\)
 relatedUrl('$1','$2')

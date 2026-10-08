@@ -1,3 +1,14 @@
+---
+title: "normalization report"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "normalization report"
+issues: []
+discussions: []
+---
+
 # Report Normalizzazione Documentazione
 
 ## Data: Gennaio 2025
@@ -110,6 +121,14 @@
 
 ---
 
+title: "normalization report"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "normalization report"
+issues: []
+discussions: []
 **Data**: Gennaio 2025
 **Stato**: In corso
 **Prossima Revisione**: Dopo normalizzazione batch successivo

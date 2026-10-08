@@ -1,3 +1,14 @@
+---
+title: "codebase analysis findings"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "codebase analysis findings"
+issues: []
+discussions: []
+---
+
 # Analisi Completa del Codice - Regole Filament e property_exists
 
 ## Riepilogo Trovato

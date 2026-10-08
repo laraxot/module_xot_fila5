@@ -1,4 +1,7 @@
 ---
+qmd: "ptvx local php84 apache handler"
+issues: []
+discussions: []
 title: "ptvx.local — errore PHP 8.3 vs dipendenze 8.4"
 module: Xot
 type: troubleshooting

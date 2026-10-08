@@ -1,3 +1,14 @@
+---
+title: "chaos monkey operability rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "chaos monkey operability rules"
+issues: []
+discussions: []
+---
+
 # Chaos Monkey Operability Rules (Xot)
 
 ## Scopo

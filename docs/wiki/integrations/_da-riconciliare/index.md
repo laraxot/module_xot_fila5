@@ -1,4 +1,7 @@
 ---
+qmd: "index"
+issues: []
+discussions: []
 title: "xot — integrations"
 module: xot
 type: integration

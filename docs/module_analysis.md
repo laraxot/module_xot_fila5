@@ -1,3 +1,14 @@
+---
+title: "module analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "module analysis"
+issues: []
+discussions: []
+---
+
 # Modulo Xot - Framework Base e Architettura
 
 ## Scopo Principale
@@ -363,6 +374,14 @@ class CreateYourTable extends XotBaseMigration
 
 ---
 
+title: "module analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "module analysis"
+issues: []
+discussions: []
 **Ultimo Aggiornamento**: 2026-01-23  
 **Versione**: v4.0.0-core  
 **Stato**: Production Framework - Foundation of All Modules

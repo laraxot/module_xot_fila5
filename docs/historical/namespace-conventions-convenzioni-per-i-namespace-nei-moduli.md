@@ -1,3 +1,14 @@
+---
+title: "namespace conventions convenzioni per i namespace nei moduli"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "namespace conventions convenzioni per i namespace nei moduli"
+issues: []
+discussions: []
+---
+
 # Convenzioni per i Namespace nei Moduli
 
 ## Struttura Base
@@ -26,6 +37,14 @@ namespace Modules\Xot\Console\Commands;
 
 ---
 
+title: "namespace conventions convenzioni per i namespace nei moduli"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "namespace conventions convenzioni per i namespace nei moduli"
+issues: []
+discussions: []
 namespace Modules\Broker\app\Models;
 namespace Modules\User\app\Services;
 namespace Modules\Tenant\app\Repositories;

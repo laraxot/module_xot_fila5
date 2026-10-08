@@ -1,3 +1,14 @@
+---
+title: "DRY KISS REFACTORING"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "DRY KISS REFACTORING"
+issues: []
+discussions: []
+---
+
 # DRY & KISS Refactoring - Modelli Base
 
 ## Data: 15 Ottobre 2025
@@ -30,6 +41,14 @@ abstract class BasePivot extends XotBasePivot {
 
 ---
 
+title: "DRY KISS REFACTORING"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "DRY KISS REFACTORING"
+issues: []
+discussions: []
 ### 2. BaseMorphPivot NON estende XotBaseMorphPivot
 
 **Moduli**: Cms, Geo

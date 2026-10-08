@@ -9,8 +9,8 @@ return [
         'group' => [
             'name' => 'Admin',
         ],
-        'label' => 'env.navigation',
-        'icon' => 'env.navigation',
+        'label' => 'Ambiente',
+        'icon' => 'heroicon-o-home',
         'sort' => 94,
     ],
     'pages' => [
@@ -150,7 +150,7 @@ return [
             'tooltip' => 'save',
         ],
     ],
-    'title' => 'env',
+    'title' => 'Ambiente',
     'sections' => [
         'General' => [
             'label' => 'Generale',

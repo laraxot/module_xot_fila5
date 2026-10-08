@@ -1,3 +1,14 @@
+---
+title: "laraxot architecture rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "laraxot architecture rules"
+issues: []
+discussions: []
+---
+
 # Laraxot Architecture Rules - Xot Module
 
 ## 🎯 Regole Fondamentali Laraxot

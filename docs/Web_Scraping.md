@@ -1,4 +1,7 @@
 ---
+qmd: "Web Scraping"
+issues: []
+discussions: []
 title: 'web_scraping'
 module: Xot
 type: reference

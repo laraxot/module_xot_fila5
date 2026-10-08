@@ -1,4 +1,8 @@
 ---
+tags: [documentation]
+qmd: "docs index audit.story"
+issues: []
+discussions: []
 title: "Docs index audit — Xot"
 type: story
 module: Xot

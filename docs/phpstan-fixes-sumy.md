@@ -1,3 +1,14 @@
+---
+title: "phpstan fixes sumy"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan fixes sumy"
+issues: []
+discussions: []
+---
+
 # PHPStan Fixes Summary - 18 Agosto 2025
 
 ## 🚨 REGOLA CRITICA RISPETTATA 🚨
@@ -199,6 +210,14 @@ Il progetto ha raggiunto un livello di type safety eccellente con il 99.1% degli
 
 ---
 
+title: "phpstan fixes sumy"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan fixes sumy"
+issues: []
+discussions: []
 **Data Completamento**: 18 Agosto 2025
 **Tempo Impiegato**: ~2 ore
 **phpstan.neon**: ✅ INTOCCATO

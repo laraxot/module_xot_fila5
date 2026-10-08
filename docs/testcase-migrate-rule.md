@@ -1,3 +1,14 @@
+---
+title: "testcase migrate rule"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "testcase migrate rule"
+issues: []
+discussions: []
+---
+
 # TestCase Migration Rule - VERSIONE CORRETTA
 
 ## REGOLA FONDAMENTALE: No Migration nel TestCase
@@ -131,10 +142,10 @@ abstract class TestCase extends BaseTestCase
 ## Workflow Corretto
 
 ```bash
-# 1. Configura .env.testing (copia carbone di .env con _test)
+# 1. Verifica il template test senza copiare i segreti di .env (dalla root)
+./bashscripts/tools/sync-env-testing.sh --check
 cd laravel
-cp .env .env.testing
-# Modifica: DB_DATABASE → DB_DATABASE_test
+# Esporta FIXCITY_TEST_DB_USERNAME/PASSWORD e le corrispondenti variabili *_USER.
 
 # 2. Esegui migrazioni UNA SOLA VOLTA
 php artisan migrate --env=testing
@@ -142,9 +153,7 @@ php artisan migrate --env=testing
 # 3. Lancia i test (non eseguono migrate!)
 php artisan test
 
-# 4. Se serve reset completo (raramente necessario)
-php artisan migrate:fresh --env=testing
-php artisan migrate --env=testing
+# 4. migrate:fresh è vietato anche sull'ambiente test condiviso.
 ```
 
 ## Punti Chiave

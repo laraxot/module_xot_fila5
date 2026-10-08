@@ -1,3 +1,14 @@
+---
+title: "config"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "config"
+issues: []
+discussions: []
+---
+
 # Configurazione in il progetto
 
 La configurazione del tema è gestita attraverso file di configurazione che definiscono le impostazioni del tema.
