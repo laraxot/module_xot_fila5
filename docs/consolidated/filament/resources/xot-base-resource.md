@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "xot base resource"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xot base resource"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # XotBaseResource: Regole fondamentali
 
 ## Principio di progettazione

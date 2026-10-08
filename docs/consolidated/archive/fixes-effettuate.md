@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "fixes effettuate"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "fixes effettuate"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Correzioni Effettuate per Errori PHPStan
 
 Questo documento riassume le correzioni applicate per risolvere gli errori PHPStan di livello 9 nel codice.

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "namespace rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "namespace rules"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Regole per i Namespace nei Moduli Laraxot
 
 Questo documento definisce le regole ufficiali per l'utilizzo dei namespace all'interno dei moduli Laraxot.

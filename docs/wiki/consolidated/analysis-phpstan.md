@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "analysis phpstan"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Analysis Phpstan"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "search string database"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "search string database"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # SearchStringInDatabaseCommand
 
 ## Descrizione

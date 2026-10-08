@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "phpstan roadmap 2026 02 03"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan roadmap 2026 02 03"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # PHPStan Level 10 Roadmap - Xot Module
 
 **Data**: 2026-02-03

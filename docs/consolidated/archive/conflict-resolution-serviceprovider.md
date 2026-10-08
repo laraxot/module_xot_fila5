@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "conflict resolution serviceprovider"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "conflict resolution serviceprovider"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Risoluzione Conflitto: XotBaseServiceProvider
 
 ## Contesto

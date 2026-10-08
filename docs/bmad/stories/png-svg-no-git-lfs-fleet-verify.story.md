@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "png svg no git lfs fleet verify.story"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "png svg no git lfs fleet verify.story"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Story: png-svg-no-git-lfs-fleet-verify
 **Status**: ready-for-dev
 **Modulo**: Xot (coordinatore)

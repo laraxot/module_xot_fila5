@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "csrf token management"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "csrf token management"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Gestione Token CSRF nei Widget XotBase
 
 ## Descrizione

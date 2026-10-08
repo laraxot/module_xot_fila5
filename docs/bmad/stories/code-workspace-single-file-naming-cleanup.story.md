@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "code workspace single file naming cleanup.story"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "code workspace single file naming cleanup.story"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Story: Xot — un solo `.code-workspace`, nome dal remote git
 
 ## Status

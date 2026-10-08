@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "custom icons implementation"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "custom icons implementation"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Implementazione delle Icone Personalizzate
 
 ## Introduzione

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "phpmd critical fixes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpmd critical fixes"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Correzioni Critiche PHPMD - Analisi e Piano
 
 **Data**: 2025-12-23

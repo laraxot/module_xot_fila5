@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "code quality audit 01"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "code quality audit 01"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Code Quality Audit Completo - Gennaio 2025
 
 **Data**: 2025-01-22

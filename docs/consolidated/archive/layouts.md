@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "layouts"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "layouts"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Layout in il progetto
 
 I layout sono i template base che definiscono la struttura delle pagine. Ogni tema può definire i propri layout.

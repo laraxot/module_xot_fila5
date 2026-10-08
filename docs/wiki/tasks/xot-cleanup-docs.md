@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "xot cleanup docs"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Xot Cleanup Docs"
 type: reference
 tags: [wiki, no-frontmatter-fix]

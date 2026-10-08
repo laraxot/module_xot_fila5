@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "database schema exporter"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Database Schema Exporter"
 type: reference
 tags: [wiki, no-frontmatter-fix]

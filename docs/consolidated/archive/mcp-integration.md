@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "mcp integration"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "mcp integration"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Integrazione dei Server MCP con il Modulo Xot
 
 ## Panoramica

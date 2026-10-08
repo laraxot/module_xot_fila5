@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "links"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "links"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 https://github.com/pterodactyl/panel/tree/develop
 
 https://github.com/serversideup/financial-freedom
@@ -36,3 +50,14 @@ https://github.com/jigar-dhulla/exchange-rate
 ### Versione Incoming
 
 ---
+<<<<<<< HEAD
+=======
+title: "links"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "links"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "resolution conflitti xotserviceprovider"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "resolution conflitti xotserviceprovider"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Risoluzione conflitti su XotServiceProvider
 
 ## File coinvolto
@@ -31,4 +45,15 @@ Il file presentava molteplici conflitti git non risolti tra branch `HEAD`, `orig
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "resolution conflitti xotserviceprovider"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "resolution conflitti xotserviceprovider"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 *Collegamento bidirezionale creato: vedi anche `/project_docs/risoluzione_conflitti.md` nella root.*

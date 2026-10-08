@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "data objects"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Data Objects"
 type: reference
 tags: [wiki, no-frontmatter-fix]

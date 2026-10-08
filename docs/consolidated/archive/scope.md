@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "scope"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "scope"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # scope
 
 <!-- Contenuto migrato da _docs/scope.txt -->

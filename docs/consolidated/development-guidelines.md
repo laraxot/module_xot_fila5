@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "development guidelines"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "development guidelines"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Development Guidelines - Xot Module
 
 ## Panoramica

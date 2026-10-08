@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "directory structure rules"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Directory Structure Rules"
 type: reference
 tags: [wiki, no-frontmatter-fix]

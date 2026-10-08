@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "docs structure correction summary"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Docs Structure Correction Summary"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "patient"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "patient"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Analisi e Risoluzione Colli di Bottiglia - Modulo Patient
 
 ## 1. Timeline Cartella Clinica (Priorità: Alta)

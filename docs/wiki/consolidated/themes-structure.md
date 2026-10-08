@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "themes structure"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Themes Structure"
 type: reference
 tags: [wiki, no-frontmatter-fix]

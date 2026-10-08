@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "export xls by collection"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "export xls by collection"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # ExportXlsByCollection
 
 Questa action è responsabile dell'esportazione di collezioni di dati in formato Excel (XLSX). Supporta sia l'utilizzo di Maatwebsite/Excel che PhpSpreadsheet direttamente.

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "install from zero"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "install from zero"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 #Install from zero
 
 ~~~ bash

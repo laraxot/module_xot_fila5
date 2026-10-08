@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "filament block labels"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament block labels"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Filament Block Label Guidelines
 
 > Questo documento è un collegamento alla documentazione principale sulle convenzioni per le etichette nei Filament Blocks.

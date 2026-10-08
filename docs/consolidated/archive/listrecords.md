@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "listrecords"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "listrecords"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # List Records in Filament
 
 > **AGGIORNAMENTO 2025-05-28:**

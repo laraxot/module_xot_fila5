@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "links"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Links"
 type: reference
 tags: [wiki, no-frontmatter-fix]

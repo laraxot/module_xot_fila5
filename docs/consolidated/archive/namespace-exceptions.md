@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "namespace exceptions"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "namespace exceptions"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Exception Namespace Structure
 
 ## Directory Structure

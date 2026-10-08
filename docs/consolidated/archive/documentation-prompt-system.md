@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "documentation prompt system"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "documentation prompt system"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Sistema di Prompt per la Documentazione
 
 ## Panoramica

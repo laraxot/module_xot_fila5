@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "phpstan fixes 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan fixes 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Correzioni PHPStan Livello 7 - Modulo Xot
 
 Questo documento traccia gli errori PHPStan di livello 7 identificati nel modulo Xot e le relative soluzioni implementate.

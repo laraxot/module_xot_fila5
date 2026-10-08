@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "translation complete guide"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "translation complete guide"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Translation Complete Guide - Consolidated
 
 ## Overview

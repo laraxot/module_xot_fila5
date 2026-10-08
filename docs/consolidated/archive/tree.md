@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "tree"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "tree"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # tree
 
 <!-- Contenuto migrato da _docs/tree.txt -->

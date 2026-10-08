@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "xotbasethemeserviceprovider"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Xotbasethemeserviceprovider"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,4 +1,13 @@
 ---
+<<<<<<< HEAD
+=======
+type: note
+tags: [documentation]
+updated: 2026-09-26
+qmd: "export pdf html and toolbar ux.story"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 id: "Xot/export-pdf-html-and-toolbar-ux"
 title: "Export PDF — HTML in view + toolbar icon UX (puntatore)"
 status: done

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "issue 02 hasxotform"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "issue 02 hasxotform"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Issue GH #02 — HasXotForm: istanza + colonne dinamiche
 
 **Repo:** `git@github.com:laraxot/module_xot_fila5.git`

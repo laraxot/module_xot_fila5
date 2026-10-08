@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "xotbase stats overview widget"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Xotbase Stats Overview Widget"
 type: reference
 tags: [wiki, no-frontmatter-fix]

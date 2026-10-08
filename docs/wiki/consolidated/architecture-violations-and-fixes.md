@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "architecture violations and fixes"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Architecture Violations And Fixes"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "modern tech stack optimization 2"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "modern tech stack optimization 2"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Modern Tech Stack Optimization Guide
 ## Filament 4 + Laravel 12 + PHP 8.3 Best Practices
 
