@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "view composer loop infinite fix"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "View Composer Loop Infinite Fix"
 type: reference
 tags: [wiki, no-frontmatter-fix]

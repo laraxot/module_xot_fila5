@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "filters"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filters"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # filters
 
 <!-- Contenuto migrato da _docs/filters.txt -->

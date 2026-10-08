@@ -1,4 +1,14 @@
 ---
+<<<<<<< HEAD
+=======
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "store"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: Store Action
 description: Store Model with Queuable Action
 extends: _layouts.documentation

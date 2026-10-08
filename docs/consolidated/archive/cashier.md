@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "cashier"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "cashier"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # cashier
 
 <!-- Contenuto migrato da _docs/cashier.txt -->

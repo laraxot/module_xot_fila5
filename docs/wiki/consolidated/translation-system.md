@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "translation system"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Translation System"
 type: reference
 tags: [wiki, no-frontmatter-fix]

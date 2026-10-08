@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "translation system 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "translation system 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Sistema di Traduzione
 
 ## Regola Fondamentale: NO ->label()
@@ -229,7 +243,11 @@ php artisan view:clear
 - [Filament Form Components](https://filamentphp.com/project_docs/forms)
 - [Best Practices Filament](../project_docs/filament-best-practices.md)
 - [Schema Conventions](../project_docs/schema-conventions.md) 
+<<<<<<< HEAD
 ========
+=======
+---
+>>>>>>> laraxot/dev
 - [Documentazione Laravel Translations](https://laravel.com/project_docs/localization)
 - [Filament Form Components](https://filamentphp.com/project_docs/forms)
 - [Best Practices Filament](../project_docs/filament-best-practices.md)

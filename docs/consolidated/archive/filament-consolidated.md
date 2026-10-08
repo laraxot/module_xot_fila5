@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "filament consolidated"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament consolidated"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Filament - Guida Completa Consolidata
 
 **Ultimo aggiornamento**: 2025-01-06
@@ -312,4 +326,15 @@ namespace Modules\<nome progetto>\Filament\Resources;
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "filament consolidated"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament consolidated"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 *Guida consolidata che elimina duplicazioni e semplifica la manutenzione della documentazione Filament.*

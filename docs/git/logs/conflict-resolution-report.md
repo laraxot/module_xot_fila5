@@ -1,7 +1,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ---
+=======
+---
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Risoluzione Conflitti Git - Report di Intervento"
 module: "Xot"
 type: concept
@@ -12,6 +18,9 @@ qmd: "conflict resolution report"
 related:
   - "./eloquent-magic-properties-rule.md"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev

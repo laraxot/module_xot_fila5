@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "CODE QUALITY"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "CODE QUALITY"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Code Quality Guidelines for Laravel Modules
 
 ## Overview

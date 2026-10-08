@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "phpstan analysis december 18"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan analysis december 18"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # PHPStan Analysis Report - 2025-12-18
 
 ## Summary

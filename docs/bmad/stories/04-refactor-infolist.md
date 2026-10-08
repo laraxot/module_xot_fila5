@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "04 refactor infolist"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "04 refactor infolist"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # BMAD Story 04 — XotBaseResourceInfolist: istanza + HasXotInfolist
 
 **Repo:** `git@github.com:laraxot/module_xot_fila5.git`

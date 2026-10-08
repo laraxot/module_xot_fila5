@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+tags: [documentation]
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Git Conflicts Resolution"
 type: concept
 status: deprecated

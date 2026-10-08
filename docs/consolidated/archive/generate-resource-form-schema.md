@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "generate resource form schema"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "generate resource form schema"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # GenerateResourceFormSchemaCommand
 
 ## Descrizione

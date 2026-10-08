@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "naming conventions uppercase"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "naming conventions uppercase"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Convenzioni di Nomenclatura in Laravel Modules
 
 Questo documento definisce le convenzioni ufficiali di nomenclatura da utilizzare in tutto il progetto Laravel Modules.

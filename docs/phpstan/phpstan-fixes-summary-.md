@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "PHPStan Fixes Summary - 18 Agosto 2025"
 module: "Xot"
 type: concept

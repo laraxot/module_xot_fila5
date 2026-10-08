@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "architecture best practices"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Architecture Best Practices"
 type: reference
 tags: [wiki, no-frontmatter-fix]

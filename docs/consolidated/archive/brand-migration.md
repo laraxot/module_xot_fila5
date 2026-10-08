@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "brand migration"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "brand migration"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Migrazione al Nuovo Sistema Brand
 
 ## Panoramica

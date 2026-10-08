@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "development rules"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Development Rules"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "risoluzione conflitti updater"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "risoluzione conflitti updater"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Risoluzione conflitti su Trait Updater
 
 ## File coinvolto
@@ -24,4 +38,15 @@ Il file presentava numerosi conflitti git non risolti, in particolare tra le bra
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "risoluzione conflitti updater"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "risoluzione conflitti updater"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 *Collegamento bidirezionale creato: vedi anche `/project_docs/risoluzione_conflitti.md` nella root.*

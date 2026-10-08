@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "best practices consolidated"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Best Practices Consolidated"
 type: reference
 tags: [wiki, no-frontmatter-fix]

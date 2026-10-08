@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "critical resource model alignment"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Critical Resource Model Alignment"
 type: reference
 tags: [wiki, no-frontmatter-fix]

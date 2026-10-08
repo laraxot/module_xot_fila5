@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "translation system"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "translation system"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Sistema Traduzioni - Documentazione Consolidata DRY + KISS
 
 > **🎯 Single Source of Truth**: Questo documento centralizza TUTTE le regole di traduzione del progetto
@@ -458,6 +472,17 @@ Eseguire regolarmente questi controlli:
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "translation system"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "translation system"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 *Ultimo aggiornamento: 2025-08-04*
 *Modulo: Xot*
 *Categoria: Traduzioni*

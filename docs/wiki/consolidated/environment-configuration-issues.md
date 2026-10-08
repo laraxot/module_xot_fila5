@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "environment configuration issues"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Environment Configuration Issues"
 type: reference
 tags: [wiki, no-frontmatter-fix]

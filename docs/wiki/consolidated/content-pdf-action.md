@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "content pdf action"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Content Pdf Action"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "database"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "database"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 ~~~ php
 <?php
 
@@ -92,3 +106,14 @@ return $def1;
 ### Versione Incoming
 
 ---
+<<<<<<< HEAD
+=======
+title: "database"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "database"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "assets"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "assets"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Assets in il progetto
 
 Gli assets sono le risorse statiche (CSS, JavaScript, immagini, font) utilizzate dal tema. Ogni tema può definire i propri assets.

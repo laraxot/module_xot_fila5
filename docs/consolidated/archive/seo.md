@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "seo"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "seo"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # seo
 
 <!-- Contenuto migrato da _docs/seo.txt -->

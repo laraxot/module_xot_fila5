@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "phpstan modules fix 2026 05 05"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "PHPStan Modules Fix 2026-05-05"
 type: troubleshooting
 sources: ["phpstan-full.txt"]

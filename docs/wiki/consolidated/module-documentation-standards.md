@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "module documentation standards"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Module Documentation Standards"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "code quality improvements 01"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "code quality improvements 01"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Code Quality Improvements - Modulo Xot (Gennaio 2025)
 
 ## Riepilogo Analisi

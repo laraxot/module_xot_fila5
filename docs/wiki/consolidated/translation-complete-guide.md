@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "translation complete guide"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Translation Complete Guide"
 type: reference
 tags: [wiki, no-frontmatter-fix]

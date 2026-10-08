@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "namespace conventions"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Namespace Conventions"
 type: reference
 tags: [wiki, no-frontmatter-fix]

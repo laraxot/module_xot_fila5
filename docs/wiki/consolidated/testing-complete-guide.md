@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "testing complete guide"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Testing Complete Guide"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "tasks index"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Tasks Index"
 type: reference
 tags: [wiki, no-frontmatter-fix]

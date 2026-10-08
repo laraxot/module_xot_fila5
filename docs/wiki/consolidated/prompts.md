@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "prompts"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Prompts"
 type: reference
 tags: [wiki, no-frontmatter-fix]

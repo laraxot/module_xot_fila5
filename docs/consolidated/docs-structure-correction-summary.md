@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "docs structure correction summary"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "docs structure correction summary"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Correzione Struttura Cartelle Docs - Riepilogo Completo
 
 ## Contesto e Problema Identificato
@@ -205,6 +219,17 @@ find laravel/Themes -name "docs" -type d
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "docs structure correction summary"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "docs structure correction summary"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 **Questa correzione è CRITICA per mantenere l'architettura modulare del sistema. La regola deve essere applicata SEMPRE.**
 
 **Ultimo aggiornamento**: 2025-08-29

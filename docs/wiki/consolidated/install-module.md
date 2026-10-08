@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "install module"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Install Module"
 type: reference
 tags: [wiki, no-frontmatter-fix]

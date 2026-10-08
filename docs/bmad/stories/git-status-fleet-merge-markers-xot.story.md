@@ -1,4 +1,12 @@
 ---
+<<<<<<< HEAD
+=======
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Story — git status fleet: bonifica marker merge Xot"
 type: story
 module: Xot

@@ -1,4 +1,11 @@
 ---
+<<<<<<< HEAD
+=======
+type: note
+tags: [documentation]
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 id: Xot/collection-export-intestazioni-esplicite
 title: "CollectionExport: campi con intestazione esplicita (chiave stringa = percorso, valore = intestazione)"
 epic: "5"

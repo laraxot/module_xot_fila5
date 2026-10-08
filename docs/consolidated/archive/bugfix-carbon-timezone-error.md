@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "bugfix carbon timezone error"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "bugfix carbon timezone error"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Bugfix: Carbon Timezone Error in XotServiceProvider
 
 ## Problema Identificato

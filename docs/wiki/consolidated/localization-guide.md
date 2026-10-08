@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "localization guide"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Localization Guide"
 type: reference
 tags: [wiki, no-frontmatter-fix]

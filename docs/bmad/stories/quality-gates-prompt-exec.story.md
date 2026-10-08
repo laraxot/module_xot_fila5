@@ -1,4 +1,11 @@
 ---
+<<<<<<< HEAD
+=======
+type: note
+tags: [documentation]
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 id: "xot-quality-gates-prompt-exec"
 title: "Esegui e migliora 03-quality-gates.md"
 status: review

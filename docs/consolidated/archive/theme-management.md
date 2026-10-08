@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "theme management"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "theme management"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Gestione del Tema
 
 ## Principi Fondamentali

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "no root docs rule"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "no root docs rule"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # REGOLA CRITICA: Cartelle docs root VIETATE
 
 ## CARTELLE CHE NON DEVONO MAI ESISTERE:

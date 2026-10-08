@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "model states"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Model States"
 type: reference
 tags: [wiki, no-frontmatter-fix]

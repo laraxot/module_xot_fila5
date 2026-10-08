@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "lang link"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "lang link"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Collegamento alle Traduzioni del Modulo Xot
 
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/project_docs/).

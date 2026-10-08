@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "panel provider"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Panel Provider"
 type: reference
 tags: [wiki, no-frontmatter-fix]

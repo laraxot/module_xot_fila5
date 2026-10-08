@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "xot composer"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xot composer"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # XotComposer
 
 Il `XotComposer` è un view composer che gestisce la composizione delle viste per il modulo Xot. Si occupa di iniettare dati comuni in tutte le viste che lo utilizzano.

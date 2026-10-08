@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "filament resource rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament resource rules"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Regole per le Risorse Filament in <nome progetto>
 
 ## Panoramica

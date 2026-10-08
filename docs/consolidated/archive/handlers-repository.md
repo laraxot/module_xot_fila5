@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "handlers repository"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "handlers repository"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # HandlersRepository
 
 ## Descrizione

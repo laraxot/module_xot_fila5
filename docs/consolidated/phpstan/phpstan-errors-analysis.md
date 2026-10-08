@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "phpstan errors analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan errors analysis"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Analisi degli Errori PHPStan (Livello 9)
 
 ## Panoramica degli Errori

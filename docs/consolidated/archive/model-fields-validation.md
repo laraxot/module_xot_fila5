@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "model fields validation"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "model fields validation"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Model Fields Validation - Critical Memory
 
 ## ERRORE CRITICO IDENTIFICATO

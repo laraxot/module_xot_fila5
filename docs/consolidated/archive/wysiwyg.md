@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "wysiwyg"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "wysiwyg"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # wysiwyg
 
 <!-- Contenuto migrato da _docs/wysiwyg.txt -->

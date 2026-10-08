@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "documentation conventions"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "documentation conventions"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Convenzioni per la documentazione in Laraxot PTVX
 
 ## Convenzioni di naming

@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "naming conventions uppercase"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Naming Conventions Uppercase"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "pdf engine enum implementation"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Pdf Engine Enum Implementation"
 type: reference
 tags: [wiki, no-frontmatter-fix]

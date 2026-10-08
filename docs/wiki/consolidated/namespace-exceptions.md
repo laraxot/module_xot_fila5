@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "namespace exceptions"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Namespace Exceptions"
 type: reference
 tags: [wiki, no-frontmatter-fix]

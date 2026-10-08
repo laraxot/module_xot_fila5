@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "conflict resolution report 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "conflict resolution report 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Report Risoluzione Conflitti Git - FixCity Project
 # Report Risoluzione Conflitti Git - Develop Branch
 
@@ -270,6 +284,17 @@ Tutti i conflitti Git sono stati risolti automaticamente prendendo le "incoming 
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "conflict resolution report 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "conflict resolution report 1"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ### Manutenibilità
 - **Codice pulito** senza conflitti
 - **Documentazione aggiornata** e coerente

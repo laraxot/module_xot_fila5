@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "phpstan fixes summary 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan fixes summary 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Riassunto delle Correzioni per PHPStan Livello 9
 
 Questo documento riassume i problemi comuni riscontrati con PHPStan livello 9 e le relative soluzioni, basato su un'analisi dettagliata del codice.

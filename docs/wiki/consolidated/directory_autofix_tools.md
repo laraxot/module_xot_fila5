@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Strumenti di Correzione Automatica della Struttura delle Directory"
 module: "Xot"
 type: concept

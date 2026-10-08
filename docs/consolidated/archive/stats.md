@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "stats"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "stats"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # _stats
 
 <!-- Contenuto migrato da _docs/_stats.txt -->
