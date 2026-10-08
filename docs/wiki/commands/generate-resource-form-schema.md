@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "generate resource form schema"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Generate Resource Form Schema"
 type: reference
 tags: [wiki, no-frontmatter-fix]

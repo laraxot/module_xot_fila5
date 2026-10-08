@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filosofia"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filosofia di Sviluppo il progetto
 
 ## Principi Fondamentali

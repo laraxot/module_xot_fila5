@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "return type fixes"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # XotBaseResource Return Type Fixes
 
 ## getRelations() Return Type Issue

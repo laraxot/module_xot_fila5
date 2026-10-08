@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "33 residuo phpstan"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # BMAD Story 33 — Residuo PHPStan (swarm sub-agent)
 **Status:** IN PROGRESS — sub-agent attivo (swarm-phpstan-301)
 **Regola:** XotBaseResource NON ha getFormSchema(); solo Schema Form; no GatedXotBasePage

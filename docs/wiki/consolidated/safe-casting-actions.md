@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "safe casting actions"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Safe Casting Actions"
 type: reference
 tags: [wiki, no-frontmatter-fix]

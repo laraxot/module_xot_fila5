@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "path resolution fixes"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Path Resolution Fixes per Filament
 
 ## Path Type Issues

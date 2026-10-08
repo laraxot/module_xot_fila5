@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "uppercase root dirs cleanup.story"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Story: Xot — cartelle maiuscole residue in root (Datas, View, Tests)
 
 ## Status

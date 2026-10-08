@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "migration complete guide"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Migration Complete Guide - Consolidated
 
 ## Overview

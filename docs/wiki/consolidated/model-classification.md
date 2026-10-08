@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "model classification"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Model Classification"
 type: reference
 tags: [wiki, no-frontmatter-fix]

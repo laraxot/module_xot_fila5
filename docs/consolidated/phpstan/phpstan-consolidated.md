@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan consolidated"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan - Guida Completa Consolidata
 
 **Ultimo aggiornamento**: 2025-01-06
@@ -276,8 +273,6 @@ $variabile = $oggetto->proprietaNonStandard;
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan consolidated"
 type: note
 tags: [documentation]
@@ -286,5 +281,4 @@ updated: 2026-09-26
 qmd: "phpstan consolidated"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *Guida consolidata che elimina duplicazioni e semplifica la manutenzione della documentazione PHPStan.*

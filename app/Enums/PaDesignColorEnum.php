@@ -4,11 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Enums;
 
+use Modules\Xot\Support\PaDesignColors;
+
 /**
  * Colori di marca del design system PA (valore backed = hex).
  *
  * Fonte unica dei due hex: la palette Filament e' costruita in
- * {@see \Modules\Xot\Support\PaDesignColors}, che resta il punto di riferimento
+ * {@see PaDesignColors}, che resta il punto di riferimento
  * documentato (allineato a laravel/Themes/Sixteen/tailwind.config.js).
  */
 enum PaDesignColorEnum: string

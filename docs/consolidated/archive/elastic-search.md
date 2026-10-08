@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "elastic search"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # elastic_search
 
 <!-- Contenuto migrato da _docs/elastic_search.txt -->

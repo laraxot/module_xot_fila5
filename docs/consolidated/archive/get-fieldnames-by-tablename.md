@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "get fieldnames by tablename"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # GetFieldnamesByTablenameAction
 
 ## Descrizione

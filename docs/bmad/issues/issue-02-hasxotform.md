@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "issue 02 hasxotform"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Issue GH #02 — HasXotForm: istanza + colonne dinamiche
 
 **Repo:** `git@github.com:laraxot/module_xot_fila5.git`

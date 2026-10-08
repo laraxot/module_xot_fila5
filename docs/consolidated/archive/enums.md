@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "enums"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Enums Naming Convention
 
 ## Naming Rules

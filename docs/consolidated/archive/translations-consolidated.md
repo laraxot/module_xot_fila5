@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "translations consolidated"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Translations - Documentazione Consolidata DRY + KISS
 
 > **🎯 Single Source of Truth**: Questo documento centralizza TUTTA la documentazione traduzioni del progetto
@@ -446,8 +443,6 @@ rm Modules/Lang/project_docs/translation_notify_conversion.md
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "translations consolidated"
 type: note
 tags: [documentation]
@@ -456,7 +451,6 @@ updated: 2026-09-26
 qmd: "translations consolidated"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **🎯 Obiettivo**: Da 107+ file duplicati a 1 file centralizzato
 **📈 Beneficio**: 99% riduzione duplicazioni, manutenzione semplificata
 **🔗 Vedi anche**: [filament-best-practices.md](filament-best-practices.md) | [conventions.md](conventions.md)

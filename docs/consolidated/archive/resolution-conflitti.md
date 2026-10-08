@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "resolution conflitti"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Risoluzione Conflitti
 
 ## Best Practices

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "01 traits composition"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # GitHub Discussion — Architettura: composizione trait vs ereditarietà statica
 
 **Repo:** `git@github.com:laraxot/module_xot_fila5.git`

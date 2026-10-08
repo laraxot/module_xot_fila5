@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "index"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Documentazione Modulo Xot
 
 ## Introduzione

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "actions pattern"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Pattern Corretto per Actions in Laraxot
 
 ## Principio Fondamentale

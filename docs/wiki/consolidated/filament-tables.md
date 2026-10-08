@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "filament tables"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Filament Tables"
 type: reference
 tags: [wiki, no-frontmatter-fix]

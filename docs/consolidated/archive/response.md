@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "response"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # response
 
 <!-- Contenuto migrato da _docs/response.txt -->

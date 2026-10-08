@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "get view by class action"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # GetViewByClassAction
 
 ## Panoramica

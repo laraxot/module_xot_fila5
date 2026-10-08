@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "full name field"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Convenzione per il Campo Nome Completo
 
 ## Regola Fondamentale

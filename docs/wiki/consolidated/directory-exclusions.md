@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "directory exclusions"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Directory Exclusions"
 type: reference
 tags: [wiki, no-frontmatter-fix]

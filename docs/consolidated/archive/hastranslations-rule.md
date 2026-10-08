@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "hastranslations rule"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # 🚨 REGOLA FONDAMENTALE: HasTranslations
 
 ## Regola Critica

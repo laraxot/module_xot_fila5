@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "lang"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Analisi e Risoluzione Colli di Bottiglia - Modulo Lang
 
 ## 1. Cache Traduzioni (Priorità: Alta)

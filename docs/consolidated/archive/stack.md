@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "stack"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Stack Tecnologico Standard
 
 Questo documento definisce lo stack tecnologico standard utilizzato in tutti i moduli.

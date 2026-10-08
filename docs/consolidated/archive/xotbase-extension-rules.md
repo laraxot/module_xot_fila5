@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "xotbase extension rules"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Regole di Estensione XotBase - Guida di Riferimento
 
 ## 🚨 REGOLA CRITICA FONDAMENTALE
@@ -206,8 +203,6 @@ jobs:
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "xotbase extension rules"
 type: note
 tags: [documentation]
@@ -216,7 +211,6 @@ updated: 2026-09-26
 qmd: "xotbase extension rules"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *Documento aggiornato: 2025-07-30*
 *Priorità: CRITICA*
 *Stato: OBBLIGATORIO per tutti i moduli*

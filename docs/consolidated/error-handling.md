@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "error handling"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Gestione Errori (Best Practice Xot)
 
 ## Errori Comuni e Soluzioni Aggiornati

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "optimization"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Ottimizzazione Performance
 
 ## Stato

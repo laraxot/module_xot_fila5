@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "permission"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 ~~~ php
 <?php
 
@@ -188,8 +185,6 @@ return [
 ### Versione Incoming
 
 ---
-<<<<<<< HEAD
-=======
 title: "permission"
 type: note
 tags: [documentation]
@@ -198,4 +193,3 @@ updated: 2026-09-26
 qmd: "permission"
 issues: []
 discussions: []
->>>>>>> laraxot/dev

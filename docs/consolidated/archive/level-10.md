@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "level 10"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Report - Livello 10
 
 ## Errori rilevati

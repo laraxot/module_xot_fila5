@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "04 refactor infolist"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # BMAD Story 04 — XotBaseResourceInfolist: istanza + HasXotInfolist
 
 **Repo:** `git@github.com:laraxot/module_xot_fila5.git`

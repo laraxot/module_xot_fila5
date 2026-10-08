@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 type: note
 tags: [documentation]
 created: 2026-09-26
@@ -8,7 +6,6 @@ updated: 2026-09-26
 qmd: "custom relation"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: Custom Relation
 description: Custom Relation
 extends: _layouts.documentation

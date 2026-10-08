@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "notify"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Analisi e Risoluzione Colli di Bottiglia - Modulo Notify
 
 ## 1. Queue Processing (Priorità: Alta)

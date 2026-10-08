@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "README"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Analisi PHPStan per Moduli Laravel
 
 Questa documentazione spiega come utilizzare gli script forniti per analizzare i moduli Laravel con PHPStan.

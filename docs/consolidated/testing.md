@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "testing"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Testing Guidelines - Modulo Xot
 
 ## Framework di Testing: Pest
@@ -703,8 +700,6 @@ test('no memory leaks in repeated operations', function (): void {
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "testing"
 type: note
 tags: [documentation]
@@ -713,7 +708,6 @@ updated: 2026-09-26
 qmd: "testing"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Ultimo aggiornamento**: Dicembre 2024
 **Framework**: Pest v2.x
 **Coverage Target**: 90%+ per core framework

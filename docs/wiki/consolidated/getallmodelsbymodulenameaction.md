@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "getallmodelsbymodulenameaction"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Getallmodelsbymodulenameaction"
 type: reference
 tags: [wiki, no-frontmatter-fix]

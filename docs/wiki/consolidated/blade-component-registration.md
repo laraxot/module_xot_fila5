@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "blade component registration"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Blade Component Registration"
 type: reference
 tags: [wiki, no-frontmatter-fix]

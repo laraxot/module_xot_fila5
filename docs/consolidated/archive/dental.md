@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "dental"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Analisi e Risoluzione Colli di Bottiglia - Modulo Dental
 
 ## 1. Odontogramma Performance (Priorità: Alta)

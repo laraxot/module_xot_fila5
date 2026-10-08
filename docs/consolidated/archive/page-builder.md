@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "page builder"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # page_builder
 
 <!-- Contenuto migrato da _docs/page_builder.txt -->

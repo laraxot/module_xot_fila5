@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "mixed type solutions"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Gestione del tipo `mixed` in PHP e Soluzioni per PHPStan
 
 ## Cos'è il tipo `mixed`?

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "getter zen advanced"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # La Filosofia Zen Avanzata dei Getter Semantici
 
 ## Il Tao del Codice Pulito

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpmd analysis report"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPMD Analysis Report & Refactoring Plan - Xot Module
 
 **Date:** 2026-01-05

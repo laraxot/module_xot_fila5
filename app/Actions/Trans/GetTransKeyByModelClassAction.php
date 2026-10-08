@@ -22,10 +22,9 @@ class GetTransKeyByModelClassAction
         $model_name = class_basename($model_class);
         $model_name = Str::of($model_name)->snake()->toString();
 
-        $view=$module_low.'::'.$model_name.$suffix;
-        //str_plural ?
-        
-        
+        $view = $module_low.'::'.$model_name.$suffix;
+        // str_plural ?
+
         return $view;
     }
 }

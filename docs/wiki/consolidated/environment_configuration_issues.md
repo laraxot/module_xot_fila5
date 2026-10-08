@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Problemi di Configurazione Variabili d'Ambiente - Modulo Xot"
 module: "Xot"
 type: concept

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "blade icons overview"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Panoramica delle Blade Icons in Xot
 
 ## Introduzione

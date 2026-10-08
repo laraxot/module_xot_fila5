@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "roadmap"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Roadmap"
 type: reference
 tags: [wiki, no-frontmatter-fix]

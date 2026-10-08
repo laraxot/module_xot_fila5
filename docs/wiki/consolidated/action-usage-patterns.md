@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "action usage patterns"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Action Usage Patterns"
 type: reference
 tags: [wiki, no-frontmatter-fix]

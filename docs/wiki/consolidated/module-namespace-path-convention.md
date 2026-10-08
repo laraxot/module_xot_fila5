@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "module namespace path convention"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Module Namespace Path Convention"
 type: reference
 tags: [wiki, no-frontmatter-fix]

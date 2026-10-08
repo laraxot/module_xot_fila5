@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "method evolution"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Evoluzione dei metodi in XotBaseResource
 
 ## Metodi deprecati vs attuali

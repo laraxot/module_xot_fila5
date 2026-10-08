@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "test placement guidelines"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "test placement guidelines"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 description: Regole di posizionamento dei test per il core Xot
 ---
 

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "serviceprovider best practices"
 type: note
@@ -11,5 +9,4 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 

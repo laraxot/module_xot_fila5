@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 type: note
 tags: [documentation]
 created: 2026-09-26
@@ -8,7 +6,6 @@ updated: 2026-09-26
 qmd: "vendor"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: Ripristinare cartella vendor
 description: Ripristinare cartella vendor
 extends: _layouts.documentation

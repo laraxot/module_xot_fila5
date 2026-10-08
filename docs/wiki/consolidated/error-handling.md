@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "error handling"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Error Handling"
 type: reference
 tags: [wiki, no-frontmatter-fix]

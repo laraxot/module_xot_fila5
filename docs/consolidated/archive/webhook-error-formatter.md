@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "webhook error formatter"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # WebhookErrorFormatter
 
 ## Descrizione

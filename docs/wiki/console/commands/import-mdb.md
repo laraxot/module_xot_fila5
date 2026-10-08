@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "import mdb"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Import Mdb"
 type: reference
 tags: [wiki, no-frontmatter-fix]

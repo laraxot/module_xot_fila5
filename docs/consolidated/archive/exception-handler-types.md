@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "exception handler types"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # ExceptionHandler Types - Tipizzazione e Best Practices
 
 ## Overview

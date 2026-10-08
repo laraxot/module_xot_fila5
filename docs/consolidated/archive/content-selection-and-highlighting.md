@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "content selection and highlighting"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # content_selection_and_highlighting
 
 <!-- Contenuto migrato da _docs/content_selection_and_highlighting.txt -->

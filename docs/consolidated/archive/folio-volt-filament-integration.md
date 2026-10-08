@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "folio volt filament integration"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Integrazione Folio, Volt e Filament
 
 > **NOTA**: Questo documento è stato unificato con la documentazione sull'architettura Folio + Volt + Filament. Consulta il documento aggiornato nel link sottostante.

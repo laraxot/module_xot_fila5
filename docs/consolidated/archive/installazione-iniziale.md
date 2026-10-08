@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "installazione iniziale"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Installazione Iniziale il progetto
 
 ## Prerequisiti

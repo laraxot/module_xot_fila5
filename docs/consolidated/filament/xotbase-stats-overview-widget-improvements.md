@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "xotbase stats overview widget improvements"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # XotBaseStatsOverviewWidget - Miglioramenti Implementati
 
 ## Panoramica
@@ -320,8 +317,6 @@ La classe è ora uno strumento potente e flessibile per creare dashboard statist
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "xotbase stats overview widget improvements"
 type: note
 tags: [documentation]
@@ -330,7 +325,6 @@ updated: 2026-09-26
 qmd: "xotbase stats overview widget improvements"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Ultimo aggiornamento**: Dicembre 2024
 **Versione**: 2.0
 **Stato**: ✅ Completato e Testato

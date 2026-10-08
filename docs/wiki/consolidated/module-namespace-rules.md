@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "module namespace rules"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Module Namespace Rules"
 type: reference
 tags: [wiki, no-frontmatter-fix]

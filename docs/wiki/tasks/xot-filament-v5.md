@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "xot filament v5"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Xot Filament V5"
 type: reference
 tags: [wiki, no-frontmatter-fix]

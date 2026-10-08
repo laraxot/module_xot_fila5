@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "job"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # job
 
 <!-- Contenuto migrato da _docs/job.txt -->

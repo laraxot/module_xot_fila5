@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "19 customer phpstan"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # BMAD Story 19 — Customer: 8 errori PHPStan
 
 **Modulo:** `Customer`

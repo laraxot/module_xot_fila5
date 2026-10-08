@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "05 viewrecord infolist override"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # BMAD Story 05 — ViewRecord non ridefinisce getInfolistSchema
 
 **Repo:** `git@github.com:laraxot/module_xot_fila5.git`
