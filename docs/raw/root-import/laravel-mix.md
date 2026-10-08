@@ -1,3 +1,14 @@
+---
+title: "laravel mix"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "laravel mix"
+issues: []
+discussions: []
+---
+
 //-------------------------------------------------------------------------------------
 Use Laravel Mix without Laravel (using npm)
 https://dev.to/nickfrosty/use-laravel-mix-without-laravel-using-npm-m09

@@ -1,3 +1,14 @@
+---
+title: "post edit quality verification"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "post edit quality verification"
+issues: []
+discussions: []
+---
+
 # Regola Post-Edit: Verifica Qualità Obbligatoria
 
 ## Regola Fondamentale
@@ -280,6 +291,14 @@ quality-check:
 
 ---
 
+title: "post edit quality verification"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "post edit quality verification"
+issues: []
+discussions: []
 **Creato**: 2025-01-29
 **Tipo**: Regola Quality Gate Obbligatoria
 **Applicazione**: Ogni modifica file

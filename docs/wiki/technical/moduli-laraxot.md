@@ -1,4 +1,7 @@
 ---
+qmd: "moduli laraxot"
+issues: []
+discussions: []
 title: "Moduli Laraxot"
 type: reference
 tags: [wiki, no-frontmatter-fix]

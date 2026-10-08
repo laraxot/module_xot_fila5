@@ -1,3 +1,14 @@
+---
+title: "cast actions"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "cast actions"
+issues: []
+discussions: []
+---
+
 # Azioni di Cast Sicure - Sostituzione di property_exists
 
 ## Panoramica

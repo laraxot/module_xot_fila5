@@ -1,3 +1,14 @@
+---
+title: "merge conflict resolution risoluzione merge conflicts massivi"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "merge conflict resolution risoluzione merge conflicts massivi"
+issues: []
+discussions: []
+---
+
 # Risoluzione Merge Conflicts Massivi - 2025-11-04
 
 ## 🔥 Problema Iniziale

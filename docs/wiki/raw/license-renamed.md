@@ -1,4 +1,7 @@
 ---
+qmd: "license renamed"
+issues: []
+discussions: []
 title: "License Renamed"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,3 +1,14 @@
+---
+title: "property exists removal report"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "property exists removal report"
+issues: []
+discussions: []
+---
+
 # Report Rimozione property_exists() - Modulo Xot
 
 **Data**: 2025-01-05
@@ -273,4 +284,12 @@ La rimozione di `property_exists()` dal modulo Xot rappresenta un importante pas
 
 ---
 
+title: "property exists removal report"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "property exists removal report"
+issues: []
+discussions: []
 *Report generato automaticamente - Cascade AI - 2025-01-05*

@@ -1,3 +1,14 @@
+---
+title: "general"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "general"
+issues: []
+discussions: []
+---
+
 # Regole Generali del Progetto
 
 Questo documento contiene le regole generali che devono essere seguite in tutto il progetto  per garantire coerenza e qualità del codice.

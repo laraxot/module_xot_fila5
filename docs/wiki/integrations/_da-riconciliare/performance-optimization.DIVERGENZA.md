@@ -1,4 +1,7 @@
 ---
+qmd: "performance optimization.DIVERGENZA"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: performance-optimization.md"
 module: Xot
 type: note

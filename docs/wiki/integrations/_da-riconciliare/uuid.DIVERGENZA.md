@@ -1,4 +1,7 @@
 ---
+qmd: "uuid.DIVERGENZA"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: uuid.md"
 module: Xot
 type: note

@@ -1,4 +1,7 @@
 ---
+qmd: "laravel 12 best practices"
+issues: []
+discussions: []
 title: "Laravel 12 Best Practices"
 type: reference
 tags: [wiki, no-frontmatter-fix]

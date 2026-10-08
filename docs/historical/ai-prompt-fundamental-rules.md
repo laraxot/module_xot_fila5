@@ -1,3 +1,14 @@
+---
+title: "ai prompt fundamental rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "ai prompt fundamental rules"
+issues: []
+discussions: []
+---
+
 # Regole Fondamentali per Prompt AI - Quaeris Fila5 Mono
 
 ## 🚨 REGOLA ASSOLUTA: Database Testing
@@ -174,6 +185,14 @@ LimeSurvey specific rules:
 
 ---
 
+title: "ai prompt fundamental rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "ai prompt fundamental rules"
+issues: []
+discussions: []
 **Ultimo aggiornamento**: 2026-01-22  
 **MySQL Testing**: ✅ OBBLIGATORIO  
 **Race Conditions**: ✅ Pattern first() + try/catch  

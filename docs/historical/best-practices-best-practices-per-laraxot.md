@@ -1,3 +1,14 @@
+---
+title: "best practices best practices per laraxot"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "best practices best practices per laraxot"
+issues: []
+discussions: []
+---
+
 # Best Practices per Laraxot
 
 ## Riferimenti al modello User

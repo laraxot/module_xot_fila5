@@ -1,4 +1,7 @@
 ---
+qmd: "send sms"
+issues: []
+discussions: []
 title: 'send_sms'
 module: Xot
 type: reference

@@ -1,4 +1,7 @@
 ---
+qmd: "root files hygiene.divergenza"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: root-files-hygiene.md"
 module: Xot
 type: note

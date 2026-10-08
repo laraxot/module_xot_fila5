@@ -1,3 +1,14 @@
+---
+title: "phpstan analysis conflict"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan analysis conflict"
+issues: []
+discussions: []
+---
+
 # PHPStan Analysis Report - 18 Agosto 2025
 
 ## 🚨 REGOLA CRITICA RISPETTATA 🚨
@@ -194,6 +205,14 @@ class MyModel extends BaseModel
 
 ---
 
+title: "phpstan analysis conflict"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan analysis conflict"
+issues: []
+discussions: []
 **Stato**: 🔄 Analisi Completata - Correzioni in Corso
 **phpstan.neon**: ✅ INTOCCATO
 **Approccio**: DRY + KISS + Type Safety

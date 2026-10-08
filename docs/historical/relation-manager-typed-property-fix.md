@@ -1,3 +1,14 @@
+---
+title: "relation manager typed property fix"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "relation manager typed property fix"
+issues: []
+discussions: []
+---
+
 # XotBaseRelationManager Typed Property Fix
 
 ## Problema

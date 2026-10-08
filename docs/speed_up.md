@@ -1,4 +1,7 @@
 ---
+qmd: "speed up"
+issues: []
+discussions: []
 title: 'speed_up'
 module: Xot
 type: reference

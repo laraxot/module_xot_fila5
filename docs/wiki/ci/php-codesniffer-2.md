@@ -1,4 +1,7 @@
 ---
+qmd: "php codesniffer 2"
+issues: []
+discussions: []
 title: "Php Codesniffer 2"
 type: reference
 tags: [wiki, no-frontmatter-fix]

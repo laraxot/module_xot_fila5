@@ -1,4 +1,8 @@
 ---
+tags: [documentation]
+qmd: "github coordination updates.story"
+issues: []
+discussions: []
 title: "Aggiornamento GitHub issue e discussions"
 type: story
 module: Xot

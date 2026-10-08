@@ -1,3 +1,14 @@
+---
+title: "view record resource infolist only.story"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "view record resource infolist only.story"
+issues: []
+discussions: []
+---
+
 # BMAD Story — ViewRecord delega l'infolist alla Resource
 
 ## Understand

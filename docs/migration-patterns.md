@@ -1,3 +1,16 @@
+---
+title: "migration patterns"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "migration patterns"
+issues: []
+discussions: []
+---
+
+> **Regola corrente:** migration di modulo solo con `XotBaseMigration`; riferimenti a model con `foreignIdFor(Model::class, 'column')`. User cross-connection: `XotData::make()->getUserClass()` senza `constrained()`. Vedi [regola canonica foreignIdFor](wiki/concepts/migration-foreign-id-for.md).
+
 # Migration Patterns & Best Practices
 
 **Project**: PTVX Fila5 Mono  
@@ -7,6 +20,14 @@
 
 ---
 
+title: "migration patterns"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "migration patterns"
+issues: []
+discussions: []
 ## 📋 Migration Standards
 
 ### 1. XotBaseMigration Pattern
@@ -180,7 +201,8 @@ $table->json('metadata')->nullable();               // JSON (use schemalessAttri
 
 // Special types
 $table->uuid('uuid')->nullable();                   // UUID
-$table->foreignId('user_id')->nullable();           // Foreign key
+$userClass = \Modules\Xot\Datas\XotData::make()->getUserClass();
+$table->foreignIdFor($userClass, 'user_id')->nullable()->index(); // User cross-connection
 ```
 
 ### Indexes & Constraints
@@ -191,7 +213,7 @@ $table->string('slug')->nullable()->index();          // Simple index
 $table->unsignedInteger('order_column')->nullable()->index(); // Integer index
 
 // Foreign keys
-$table->foreignId('user_id')->constrained()->onDelete('cascade');
+$table->foreignIdFor(Category::class, 'category_id')->constrained()->cascadeOnDelete(); // stessa connessione
 ```
 
 ---

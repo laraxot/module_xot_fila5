@@ -1,3 +1,14 @@
+---
+title: "prompt di documentazione"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "prompt di documentazione"
+issues: []
+discussions: []
+---
+
 # Prompt di Documentazione
 
 ## Panoramica

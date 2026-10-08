@@ -1,4 +1,7 @@
 ---
+qmd: "composer packages"
+issues: []
+discussions: []
 title: 'composer_packages'
 module: Xot
 type: reference

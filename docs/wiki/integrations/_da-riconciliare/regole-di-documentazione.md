@@ -1,4 +1,7 @@
 ---
+qmd: "regole di documentazione"
+issues: []
+discussions: []
 title: "Regole di Documentazione"
 module: xot
 type: integration

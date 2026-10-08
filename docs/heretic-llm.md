@@ -1,3 +1,14 @@
+---
+title: "heretic llm"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "heretic llm"
+issues: []
+discussions: []
+---
+
 # heretic llm e laraxot
 
 ## cos'è heretic (sintesi)

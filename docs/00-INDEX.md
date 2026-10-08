@@ -1,3 +1,14 @@
+---
+title: "00 INDEX"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "00 INDEX"
+issues: []
+discussions: []
+---
+
 ## 🏛️ Architettura Core
 - 📐 [Architecture Complete Guide](./architecture-complete.md) - Deep dive nel sistema modulare.
 - 🧬 [Base Classes (XotBase)](./xot-base-classes.md) - Regole per estendere Resource, Page e Widget.
@@ -32,6 +43,14 @@
 - Tutti i moduli del sistema dipendono da **Xot**.
 
 ---
+title: "00 INDEX"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "00 INDEX"
+issues: []
+discussions: []
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
 
 # Xot Module Documentation Index
@@ -106,6 +125,20 @@
 **Laravel Version**: 12.x  
 **PHP Version**: 8.2+  
 **Last Updated**: 2026-03-02
+
+## Documentazione BMAD del modulo
+
+Aggiornata il 2026-10-07 dopo la risoluzione dei marker di merge nei docs (versioni composte, non scelte a un lato).
+
+- [Brainstorming](bmad/brainstorming.md): decisioni, questioni aperte, opzioni scartate.
+- [Architecture](bmad/architecture.md)
+- [Quick reference](bmad/quick-reference.md)
+- [Setup guide](bmad/setup-guide.md)
+- Story: cartella [bmad/stories/](bmad/stories/).
+- Story PHPStan sui test senza asserzioni (2026-10-08): [stories/2026-10-08-phpstan-xot-tests-without-assertions.story.md](stories/2026-10-08-phpstan-xot-tests-without-assertions.story.md).
+- Story Services ArtisanService verso Actions e act verso enum (2026-10-08): [stories/2026-10-08-services-to-actions-xot-artisan.story.md](stories/2026-10-08-services-to-actions-xot-artisan.story.md).
+- Story Services piccoli verso Actions e const verso enum (2026-10-08): [stories/2026-10-08-services-to-actions-xot-small.story.md](stories/2026-10-08-services-to-actions-xot-small.story.md).
+- Story Services RouteService e RouteDynService verso Actions (2026-10-08): [stories/2026-10-08-services-to-actions-xot-route.story.md](stories/2026-10-08-services-to-actions-xot-route.story.md).
 
 ## Dependency Intelligence
 

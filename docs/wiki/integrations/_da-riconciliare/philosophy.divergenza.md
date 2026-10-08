@@ -1,4 +1,7 @@
 ---
+qmd: "philosophy.divergenza"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: philosophy.md"
 module: Xot
 type: note

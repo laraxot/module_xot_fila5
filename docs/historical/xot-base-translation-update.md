@@ -1,3 +1,14 @@
+---
+title: "xot base translation update"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xot base translation update"
+issues: []
+discussions: []
+---
+
 # Aggiornamento File di Traduzione xot_base.php
 
 ## Data Aggiornamento

@@ -1,3 +1,14 @@
+---
+title: "sortable"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "sortable"
+issues: []
+discussions: []
+---
+
 
 la base
 https://jqueryui.com/draggable/#sortable

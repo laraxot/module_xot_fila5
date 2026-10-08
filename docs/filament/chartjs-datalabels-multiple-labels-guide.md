@@ -1,3 +1,14 @@
+---
+title: "chartjs datalabels multiple labels guide"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "chartjs datalabels multiple labels guide"
+issues: []
+discussions: []
+---
+
 # Multiple Labels con chartjs-plugin-datalabels (Xot Base)
 
 **Versione:** 1.0  
@@ -9,6 +20,14 @@
 
 ---
 
+title: "chartjs datalabels multiple labels guide"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "chartjs datalabels multiple labels guide"
+issues: []
+discussions: []
 ## Pattern Base con XotBaseChartWidget
 
 ```php

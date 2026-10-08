@@ -1,4 +1,7 @@
 ---
+qmd: "to integrate"
+issues: []
+discussions: []
 title: 'To integrate — risorse esterne'
 module: Xot
 type: reference

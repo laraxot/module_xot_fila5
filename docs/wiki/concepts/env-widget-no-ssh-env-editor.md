@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "EnvWidget — editor .env da pannello admin, nessun SSH/FTP richiesto"
 type: concept
 status: canonical

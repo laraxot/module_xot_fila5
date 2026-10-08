@@ -1,3 +1,14 @@
+---
+title: "INDEX"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "INDEX"
+issues: []
+discussions: []
+---
+
 # SWARM — PHPStan 272: parallel task distribution
 
 **Swarm ID:** `swarm-phpstan-272`

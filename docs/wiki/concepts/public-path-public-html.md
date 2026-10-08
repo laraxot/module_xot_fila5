@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "public_path = public_html (Xot)"
 type: concept
 tags: [public_path, public_html, AssetAction]

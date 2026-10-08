@@ -1,3 +1,14 @@
+---
+title: "ponytail docs lifecycle"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "ponytail docs lifecycle"
+issues: []
+discussions: []
+---
+
 # Ponytail Docs Lifecycle
 
 Xot is the shared base module, so its docs pattern should be the boring default for other modules.

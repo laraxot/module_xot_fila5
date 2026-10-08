@@ -1,3 +1,14 @@
+---
+title: "architectural principles"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "architectural principles"
+issues: []
+discussions: []
+---
+
 # Architectural Zen: Reuse over Invention
 
 ## 1. Vision
@@ -27,5 +38,13 @@ $value = SafeNullableStringCastAction::cast($data);
 ```
 
 ---
+title: "architectural principles"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "architectural principles"
+issues: []
+discussions: []
 *Created by Gemini CLI - 2026-03-11*
 *Mandatory reading for all agents.*

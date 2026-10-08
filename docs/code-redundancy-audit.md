@@ -1,4 +1,7 @@
 ---
+qmd: "code redundancy audit"
+issues: []
+discussions: []
 title: "Code redundancy audit — Xot"
 type: source
 status: draft

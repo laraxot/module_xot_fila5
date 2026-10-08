@@ -1,3 +1,14 @@
+---
+title: "wizard widget rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "wizard widget rules"
+issues: []
+discussions: []
+---
+
 # Wizard Widget Rules — XotBaseWizardWidget
 
 **Status**: Active  
@@ -8,6 +19,14 @@
 
 ---
 
+title: "wizard widget rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "wizard widget rules"
+issues: []
+discussions: []
 ## La Regola Fondamentale
 
 **OGNI widget il cui `getFormSchema()` contiene un `Wizard` DEVE estendere `XotBaseWizardWidget`, NON `XotBaseWidget`.**

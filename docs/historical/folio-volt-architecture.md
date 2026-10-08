@@ -1,3 +1,14 @@
+---
+title: "folio volt architecture"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "folio volt architecture"
+issues: []
+discussions: []
+---
+
 # Architettura Folio + Volt + Filament in il progetto
 
 ## Panoramica

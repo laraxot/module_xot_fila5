@@ -1,4 +1,7 @@
 ---
+qmd: "package discovery philosophy"
+issues: []
+discussions: []
 title: "Package Discovery - Philosophy, Logic & Zen"
 module: xot
 type: integration

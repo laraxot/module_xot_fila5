@@ -1,3 +1,14 @@
+---
+title: "submit button placement"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "submit button placement"
+issues: []
+discussions: []
+---
+
 # Submit Button Placement — La Filosofia del Protocollo
 
 **Status**: Active  
@@ -8,6 +19,14 @@
 
 ---
 
+title: "submit button placement"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "submit button placement"
+issues: []
+discussions: []
 ## Il Problema: Dove Mettere getWizardSubmitAction()?
 
 ### La Domanda Fondamentale

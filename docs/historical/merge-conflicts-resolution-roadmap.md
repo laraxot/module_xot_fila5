@@ -1,3 +1,14 @@
+---
+title: "merge conflicts resolution roadmap"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "merge conflicts resolution roadmap"
+issues: []
+discussions: []
+---
+
 # Roadmap Risoluzione Merge Conflicts - PHPStan Bloccanti
 
 **Data**: 2025-01-22
@@ -6,6 +17,14 @@
 
 ---
 
+title: "merge conflicts resolution roadmap"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "merge conflicts resolution roadmap"
+issues: []
+discussions: []
 ## 🎯 Obiettivo
 
 Risolvere tutti i merge conflicts nei file PHP critici che bloccano l'esecuzione di PHPStan livello 10, seguendo rigorosamente le regole del progetto:
@@ -163,11 +182,9 @@ class ResourceName extends XotBaseResource
     /**
      * @return array<string, Component>
      */
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
+---
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             // Form components

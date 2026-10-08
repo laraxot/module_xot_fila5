@@ -1,3 +1,14 @@
+---
+title: "testing psr4 compliance"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "testing psr4 compliance"
+issues: []
+discussions: []
+---
+
 # PSR-4 Compliance per Test - Modulo Xot
 
 ## Problema Identificato
@@ -111,5 +122,13 @@ composer dump-autoload
 
 ---
 
+title: "testing psr4 compliance"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "testing psr4 compliance"
+issues: []
+discussions: []
 *Ultimo aggiornamento: 2025-01-06*
 *Conformità: PSR-4, PHPStan livello 9+, Laraxot standards*

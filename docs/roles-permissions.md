@@ -1,3 +1,14 @@
+---
+title: "roles permissions"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "roles permissions"
+issues: []
+discussions: []
+---
+
 # Regole generali su roles, permissions e guard_name
 
 ## Regola generale
@@ -24,6 +35,14 @@ class BaseUser extends Authenticatable
 UPDATE roles SET guard_name = 'web' WHERE guard_name = '' OR guard_name IS NULL;
 UPDATE permissions SET guard_name = 'web' WHERE guard_name = '' OR guard_name IS NULL;
 ```
+
+## Estensione User: `hasPermissionToOrCreate`
+
+Il contratto `UserContract` dichiara il metodo di auto-creazione del permesso. L'implementazione canonica e la semantica di guard/team sono documentate in User:
+
+- [Contratto `UserContract`](../app/Contracts/UserContract.php)
+- [Trait `HasSpatiePermission`](../../User/app/Models/Traits/HasSpatiePermission.php)
+- [SSoT permessi User](../../User/docs/permissions.md)
 
 ## Collegamento documentazione specifica
 Vedi anche: ../../User/docs/roles-permissions.md

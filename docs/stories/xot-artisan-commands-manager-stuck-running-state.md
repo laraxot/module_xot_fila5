@@ -1,4 +1,10 @@
 ---
+type: note
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xot artisan commands manager stuck running state"
+issues: []
+discussions: []
 id: story-xot-artisan-commands-manager-stuck-running-state
 slug: story-xot-artisan-commands-manager-stuck-running-state
 title: "STORY — ArtisanCommandsManager/PassportDashboard: la UI resta bloccata su 'in esecuzione' anche quando il comando è andato a buon fine"

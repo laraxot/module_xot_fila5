@@ -1,3 +1,14 @@
+---
+title: "reference links dto generics collections"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "reference links dto generics collections"
+issues: []
+discussions: []
+---
+
 https://martinjoo.dev/how-to-use-data-transfer-objects-and-actions-in-laravel
 
 

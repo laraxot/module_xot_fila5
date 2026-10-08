@@ -1,4 +1,10 @@
 ---
+type: note
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "pest official plugins"
+issues: []
+discussions: []
 title: pest plugin ufficiali — installazione e uso con nwidart
 description: Panorama completo dei plugin Pest 5 ufficiali, dove dichiararli, comandi verificati e migrazione da PestStubs manuali.
 document_type: concept

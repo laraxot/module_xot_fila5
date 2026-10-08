@@ -1,3 +1,14 @@
+---
+title: "common anti patterns common anti patterns xot module"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "common anti patterns common anti patterns xot module"
+issues: []
+discussions: []
+---
+
 # Common Anti-Patterns - Xot Module
 
 ## 🚨 Anti-Patterns to Avoid
@@ -328,11 +339,17 @@ public function canAccess($user): bool
 // ❌ ANTI-PATTERN
 class MyWidget extends XotBaseWidget
 {
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
+---
+title: "common anti patterns common anti patterns xot module"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "common anti patterns common anti patterns xot module"
+issues: []
+discussions: []
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         // Filament methods should not be static
     }

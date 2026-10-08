@@ -1,3 +1,14 @@
+---
+title: "module structure"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "module structure"
+issues: []
+discussions: []
+---
+
 # Struttura dei Moduli in il progetto
 
 ## Panoramica
@@ -35,6 +46,14 @@ Questo documento definisce le linee guida ufficiali per la struttura dei moduli 
 
 ---
 
+title: "module structure"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "module structure"
+issues: []
+discussions: []
 ## Gestione dati geografici statici: GeoJsonModel readonly (ispirato a Squire)
 
 Per tutti i dati geografici statici (regioni, province, comuni, cap) di dimensioni gestibili, NON creare tabelle/migration dedicate. Utilizzare invece un modello base readonly (`GeoJsonModel`) che legge i dati direttamente da file JSON (es: `Modules/Geo/resources/json/comuni.json`).

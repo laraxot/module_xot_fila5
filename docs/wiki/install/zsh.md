@@ -1,4 +1,7 @@
 ---
+qmd: "zsh"
+issues: []
+discussions: []
 title: "Zsh"
 type: reference
 tags: [wiki, no-frontmatter-fix]

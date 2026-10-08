@@ -1,4 +1,7 @@
 ---
+qmd: "pdf"
+issues: []
+discussions: []
 title: "Pdf"
 type: reference
 tags: [wiki, no-frontmatter-fix]

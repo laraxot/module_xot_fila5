@@ -1,3 +1,14 @@
+---
+title: "readme new"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "readme new"
+issues: []
+discussions: []
+---
+
 # Xot Module - Core Foundation
 
 **Last Update**: 2025-12-05
@@ -7,6 +18,14 @@
 
 ---
 
+title: "readme new"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "readme new"
+issues: []
+discussions: []
 ## 📋 Table of Contents
 
 - [Business Overview](#-business-overview)

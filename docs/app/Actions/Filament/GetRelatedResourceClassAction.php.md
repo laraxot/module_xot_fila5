@@ -1,4 +1,7 @@
 ---
+qmd: "GetRelatedResourceClassAction.php"
+issues: []
+discussions: []
 title: "Proposta nuova Action — GetRelatedResourceClassAction (non applicata)"
 type: code-proposal
 status: proposta — nessun codice di produzione creato

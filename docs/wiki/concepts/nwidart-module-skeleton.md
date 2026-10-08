@@ -1,4 +1,7 @@
 ---
+qmd: "nwidart module skeleton"
+issues: []
+discussions: []
 title: Skeleton nwidart modulo
 type: concept
 module: Xot

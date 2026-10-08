@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "public_path → public_html (non laravel/public)"
 type: rule
 tags: [laravel, public_path, public_html, document-root, laraxot]

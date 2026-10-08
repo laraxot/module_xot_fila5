@@ -1,9 +1,28 @@
+---
+title: "docs organization guide"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "docs organization guide"
+issues: []
+discussions: []
+---
+
 # Documentation Organization Guide
 
 > **Guida completa per organizzare e mantenere la documentazione dei moduli**
 
 ---
 
+title: "docs organization guide"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "docs organization guide"
+issues: []
+discussions: []
 ## 🎯 Obiettivi
 
 1. **Struttura consistente** tra tutti i moduli

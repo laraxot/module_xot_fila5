@@ -1,4 +1,7 @@
 ---
+qmd: "custom errors"
+issues: []
+discussions: []
 title: "Custom Errors"
 type: reference
 tags: [wiki, no-frontmatter-fix]

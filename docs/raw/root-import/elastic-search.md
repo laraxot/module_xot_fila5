@@ -1,3 +1,14 @@
+---
+title: "elastic search"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "elastic search"
+issues: []
+discussions: []
+---
+
 https://github.com/matchish/laravel-scout-elasticsearch
 
 https://www.algolia.com/blog/engineering/scout-extended-the-full-power-of-algolia-in-laravel

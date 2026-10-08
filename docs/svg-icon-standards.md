@@ -1,3 +1,14 @@
+---
+title: "svg icon standards"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "svg icon standards"
+issues: []
+discussions: []
+---
+
 # SVG Icon Standards for Laraxot Modules
 
 ## 🎯 Design Principles
@@ -215,6 +226,14 @@ Before committing any SVG icon, verify:
 
 ---
 
+title: "svg icon standards"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "svg icon standards"
+issues: []
+discussions: []
 *Last Updated: 2025-08-27*
 *SVG Standards Version: 2.0*
 *Based on Heroicons Outline Style*

@@ -1,3 +1,14 @@
+---
+title: "filament extension violations filament extension violations report"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament extension violations filament extension violations report"
+issues: []
+discussions: []
+---
+
 # Filament Extension Violations Report
 
 **Date**: 2025-12-18  
@@ -106,5 +117,13 @@ According to the Filament Class Extension Rules:
 
 ---
 
+title: "filament extension violations filament extension violations report"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament extension violations filament extension violations report"
+issues: []
+discussions: []
 **Created**: 2025-12-18  
 **Last Updated**: 2025-12-18

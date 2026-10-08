@@ -1,3 +1,14 @@
+---
+title: "limesurvey database commands"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "limesurvey database commands"
+issues: []
+discussions: []
+---
+
 # Database Analysis Commands and Tools for quaeris_survey
 
 ## Essential Database Queries

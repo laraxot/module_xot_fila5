@@ -1,4 +1,11 @@
 ---
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "error analysis helpers capitalization"
+issues: []
+discussions: []
 title: Critical Error Analysis - helpers/ vs Helpers/ Capitalization
 date: 2026-06-30
 severity: CRITICAL

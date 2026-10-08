@@ -1,4 +1,7 @@
 ---
+qmd: "destroy"
+issues: []
+discussions: []
 title: "Destroy"
 type: reference
 tags: [wiki, no-frontmatter-fix]

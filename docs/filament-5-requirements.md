@@ -1,3 +1,14 @@
+---
+title: "filament 5 requirements"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament 5 requirements"
+issues: []
+discussions: []
+---
+
 # Filament 5.x Requirements & Configuration
 
 **Data Analisi**: 2026-01-30
@@ -69,4 +80,12 @@ Chart.register(ChartDataLabels);  // ❌ NON funziona
 
 ---
 
+title: "filament 5 requirements"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament 5 requirements"
+issues: []
+discussions: []
 **Ultimo Aggiornamento**: 2026-01-30

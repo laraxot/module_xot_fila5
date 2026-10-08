@@ -1,4 +1,7 @@
 ---
+qmd: "thinking about.blade"
+issues: []
+discussions: []
 title: 'thinking_about.blade'
 module: Xot
 type: reference

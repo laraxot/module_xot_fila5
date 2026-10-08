@@ -1,3 +1,14 @@
+---
+title: "filament table columns"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament table columns"
+issues: []
+discussions: []
+---
+
 # Regola Globale: Metodo getTableColumns per Filament Table
 
 ## Descrizione
@@ -28,6 +39,14 @@ Questa pagina raccoglie la regola e i collegamenti per l’adozione del metodo `
 
 ---
 
+title: "filament table columns"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament table columns"
+issues: []
+discussions: []
 **Ultimo aggiornamento:** 2025-05-13
 
 **Link bidirezionale:** Aggiornare anche le docs dei moduli coinvolti.

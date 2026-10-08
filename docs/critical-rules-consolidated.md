@@ -1,3 +1,14 @@
+---
+title: "critical rules consolidated"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "critical rules consolidated"
+issues: []
+discussions: []
+---
+
 # 🎯 CRITICAL RULES CONSOLIDATED - Laraxot Architecture
 
 ## 🚨 REGOLE ASSOLUTE DA RISPETTARE
@@ -11,8 +22,8 @@
     'driver' => 'mysql',
     'host' => env('DB_HOST', '127.0.0.1'),
     'database' => env('DB_DATABASE_GDPR', 'laravel_gdpr'),
-    'username' => env('DB_USERNAME_GDPR', 'marco'),
-    'password' => env('DB_PASSWORD_GDPR', 'marco'),
+    'username' => env('DB_USERNAME_GDPR'),
+    'password' => env('DB_PASSWORD_GDPR'),
     // ... altre configurazioni
 ],
 ```
@@ -30,13 +41,13 @@
 return [
     'default' => env('DB_CONNECTION', 'mysql'),
     'connections' => [
-        'sqlite' => [...], // SOLO per sviluppo
+        'sqlite' => [...], // driver disponibile; test applicativi seguono la policy Xot
         'mysql' => [       // SOLO connessione base
             'driver' => 'mysql',
             'host' => env('DB_HOST', '127.0.0.1'),
             'database' => env('DB_DATABASE', '<nome progetto>_data'),
-            'username' => env('DB_USERNAME', 'marco'),
-            'password' => env('DB_PASSWORD', 'marco'),
+            'username' => env('DB_USERNAME'),
+            'password' => env('DB_PASSWORD'),
             // ... configurazione base
         ],
         // ❌ MAI definire connessioni modulari qui
@@ -160,12 +171,9 @@ php artisan optimize:clear
 
 ### 1. Configurazione ambiente:
 ```bash
-# .env o .env.testing
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_DATABASE=<nome progetto>_data
-DB_USERNAME=marco
-DB_PASSWORD=marco
+# .env.testing è un template tracciato, non va derivato copiando .env.
+# Usare database _test e credenziali dedicate esportate via FIXCITY_TEST_DB_*.
+./bashscripts/tools/sync-env-testing.sh --check
 ```
 
 ### 2. TenantServiceProvider gestisce automaticamente:
@@ -208,6 +216,14 @@ CRITICAL DATABASE ERROR IDENTIFIED: Il file `/var/www/_bases/base_<nome progetto
 
 ---
 
+title: "critical rules consolidated"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "critical rules consolidated"
+issues: []
+discussions: []
 **Versione**: 1.0  
 **Data**: [DATE]  
 **Importanza**: Fondamentale per l'architettura Laraxot

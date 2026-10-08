@@ -1,3 +1,14 @@
+---
+title: "development workflow detailed"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "development workflow detailed"
+issues: []
+discussions: []
+---
+
 # Laraxot Development Workflow - Detailed Guide
 
 ## 🚀 Development Lifecycle
@@ -174,11 +185,17 @@ namespace Modules\NewModule\Filament\Resources;
 
 class ProductResource extends XotBaseResource
 {
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
+---
+title: "development workflow detailed"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "development workflow detailed"
+issues: []
+discussions: []
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             Forms\Components\TextInput::make('name'),
@@ -189,11 +206,9 @@ class ProductResource extends XotBaseResource
         ];
     }
 
-<<<<<<< HEAD
     public function getInfolistSchema(): array
-=======
+---
     public function getInfolistSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             Infolists\Components\TextEntry::make('name'),

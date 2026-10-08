@@ -1,3 +1,14 @@
+---
+title: "phpstan analysis 3"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan analysis 3"
+issues: []
+discussions: []
+---
+
 # PHPStan Analysis Report - 2025-11-18
 
 ## Executive Summary
@@ -157,6 +168,14 @@ uses unknown trait Spatie\Queable\QueableAction.
 
 ---
 
+title: "phpstan analysis 3"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan analysis 3"
+issues: []
+discussions: []
 **Analysis Generated**: 2025-11-18
 **Next Review Date**: 2025-11-25
 **Target Completion**: 2025-12-02

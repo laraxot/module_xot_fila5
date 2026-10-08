@@ -1,4 +1,7 @@
 ---
+qmd: " filters"
+issues: []
+discussions: []
 title: 'Filters'
 module: Xot
 type: reference

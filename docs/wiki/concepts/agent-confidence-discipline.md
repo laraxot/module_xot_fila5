@@ -1,4 +1,7 @@
 ---
+qmd: "agent confidence discipline"
+issues: []
+discussions: []
 title: "Disciplina agenti per massimizzare la confidenza"
 module: Xot
 type: concept

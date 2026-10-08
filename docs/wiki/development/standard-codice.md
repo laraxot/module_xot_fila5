@@ -1,4 +1,7 @@
 ---
+qmd: "standard codice"
+issues: []
+discussions: []
 title: "Standard Codice"
 type: reference
 tags: [wiki, no-frontmatter-fix]

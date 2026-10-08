@@ -1,4 +1,7 @@
 ---
+qmd: "php codesniffer phpcodesnifferhttpsgithubcomsquizlabsphp"
+issues: []
+discussions: []
 title: "Php Codesniffer Phpcodesnifferhttpsgithubcomsquizlabsphp"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,3 +1,14 @@
+---
+title: "usage"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "usage"
+issues: []
+discussions: []
+---
+
 # Utilizzo Base e Layout
 
 Questa sezione descrive l'utilizzo di base della libreria, come istanziare la classe `Html2Pdf` e come gestire il layout delle pagine con i tag speciali.
@@ -11,6 +22,14 @@ Questa sezione descrive l'utilizzo di base della libreria, come istanziare la cl
 
 ---
 
+title: "usage"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "usage"
+issues: []
+discussions: []
 ## 🔧 Utilizzo Base
 
 ### Istanza Html2Pdf

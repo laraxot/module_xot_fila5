@@ -1,3 +1,14 @@
+---
+title: "phpstan fix plan 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan fix plan 1"
+issues: []
+discussions: []
+---
+
 # Xot Module - PHPStan Fix Plan
 
 ## Current Status

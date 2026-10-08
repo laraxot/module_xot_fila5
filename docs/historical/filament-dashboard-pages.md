@@ -1,3 +1,14 @@
+---
+title: "filament dashboard pages"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament dashboard pages"
+issues: []
+discussions: []
+---
+
 # Pagine Dashboard Filament - Documentazione Root
 
 ## Panoramica
@@ -263,6 +274,14 @@ class DashboardTest extends TestCase
 
 ---
 
+title: "filament dashboard pages"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament dashboard pages"
+issues: []
+discussions: []
 **Ultimo aggiornamento**: Giugno 2025
 **Stato**: Analisi completa completata, implementazione in corso
 **Moduli da implementare**: 13 moduli identificati

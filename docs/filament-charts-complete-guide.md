@@ -1,3 +1,14 @@
+---
+title: "filament charts complete guide"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament charts complete guide"
+issues: []
+discussions: []
+---
+
 # Filament Charts - Guida Completa per PTVX
 
 ## 📋 Panoramica
@@ -12,6 +23,14 @@
 
 ---
 
+title: "filament charts complete guide"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament charts complete guide"
+issues: []
+discussions: []
 ## 🚀 Creazione Chart Widget
 
 ### Comando Artisan

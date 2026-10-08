@@ -1,4 +1,7 @@
 ---
+qmd: "brand way"
+issues: []
+discussions: []
 title: "Brand Way"
 type: reference
 tags: [wiki, no-frontmatter-fix]

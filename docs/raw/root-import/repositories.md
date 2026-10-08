@@ -1,3 +1,14 @@
+---
+title: "repositories"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "repositories"
+issues: []
+discussions: []
+---
+
 
 //-- cosa vecchia ma spiega i criteria
 https://bosnadev.com/2015/03/07/using-repository-pattern-in-laravel-5/

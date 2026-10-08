@@ -1,4 +1,7 @@
 ---
+tags: [documentation]
+issues: []
+discussions: []
 title: "Refactor Panelmixin"
 type: concept
 status: deprecated

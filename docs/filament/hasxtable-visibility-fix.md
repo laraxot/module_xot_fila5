@@ -1,3 +1,14 @@
+---
+title: "hasxtable visibility fix"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "hasxtable visibility fix"
+issues: []
+discussions: []
+---
+
 # Fix Visibilità Metodi HasXotTable - 2026-01-27
 
 **Status**: ✅ Risolto  

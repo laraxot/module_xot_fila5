@@ -1,4 +1,12 @@
 ---
+title: "logging best practices audit"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "logging best practices audit"
+issues: []
+discussions: []
 created_at: '2026-03-02'
 ---
 

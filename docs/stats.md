@@ -1,4 +1,7 @@
 ---
+qmd: "stats"
+issues: []
+discussions: []
 title: 'Stats — risorse esterne'
 module: Xot
 type: reference

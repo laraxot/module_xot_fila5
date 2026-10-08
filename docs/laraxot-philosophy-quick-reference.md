@@ -1,3 +1,14 @@
+---
+title: "laraxot philosophy quick reference"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "laraxot philosophy quick reference"
+issues: []
+discussions: []
+---
+
 # Laraxot Philosophy - Quick Reference
 
 ## 🚨 CRITICAL RULES
@@ -109,4 +120,12 @@ composer dump-autoload
 
 ---
 
+title: "laraxot philosophy quick reference"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "laraxot philosophy quick reference"
+issues: []
+discussions: []
 **Remember**: In Laraxot, consistency enables maintainability. Follow these patterns for reliable, scalable applications.

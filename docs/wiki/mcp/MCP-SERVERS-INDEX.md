@@ -1,4 +1,10 @@
 ---
+type: note
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "MCP SERVERS INDEX"
+issues: []
+discussions: []
 title: "Rimando a mcp-servers-index.md"
 description: "Documento unificato: il contenuto canonico vive in mcp-servers-index.md."
 status: merged

@@ -1,3 +1,14 @@
+---
+title: "laraxot philosophy complete"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "laraxot philosophy complete"
+issues: []
+discussions: []
+---
+
 # Laraxot Philosophy - Complete Analysis
 
 ## 🏛️ Architectural Religion
@@ -213,22 +224,26 @@ class YourResource extends XotBaseResource
     // Model auto-resolved as Modules\YourModule\Models\YourResource
     // Pages auto-discovered following pattern
 
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
+---
+title: "laraxot philosophy complete"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "laraxot philosophy complete"
+issues: []
+discussions: []
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             // Form components - NO hardcoded labels
         ];
     }
 
-<<<<<<< HEAD
     public function getInfolistSchema(): array
-=======
+---
     public function getInfolistSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             // Infolist components

@@ -23,7 +23,7 @@ return [
         'spatie' => 'Spatie',
     ],
     'navigation' => [
-        'label' => 'Missing Navigation Label',
+        'label' => 'PDF Engine',
         'plural_label' => 'Missing Navigation Plural Label',
         'group' => 'Missing Group',
         'icon' => 'heroicon-o-puzzle-piece',

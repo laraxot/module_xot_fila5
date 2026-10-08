@@ -1,4 +1,7 @@
 ---
+qmd: "error formatter contract"
+issues: []
+discussions: []
 title: "Error Formatter Contract"
 type: reference
 tags: [wiki, no-frontmatter-fix]

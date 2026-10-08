@@ -1,4 +1,7 @@
 ---
+qmd: "composer root skeleton fixcity comparison"
+issues: []
+discussions: []
 title: "Confronto composer root FixCity vs Predict"
 type: raw-note
 module: Xot

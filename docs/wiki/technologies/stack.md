@@ -1,4 +1,7 @@
 ---
+qmd: "stack"
+issues: []
+discussions: []
 title: "Stack"
 type: reference
 tags: [wiki, no-frontmatter-fix]

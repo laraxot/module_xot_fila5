@@ -1,3 +1,14 @@
+---
+title: "struttura percorsi"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "struttura percorsi"
+issues: []
+discussions: []
+---
+
 # Struttura dei percorsi nel progetto <nome progetto>
 
 ## Regola fondamentale

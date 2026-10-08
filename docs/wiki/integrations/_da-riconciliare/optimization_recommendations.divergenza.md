@@ -1,4 +1,7 @@
 ---
+qmd: "optimization recommendations.divergenza"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: optimization_recommendations.md"
 module: Xot
 type: note

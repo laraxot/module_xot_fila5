@@ -1,3 +1,14 @@
+---
+title: "xot engine complete guide"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xot engine complete guide"
+issues: []
+discussions: []
+---
+
 # 🚀 XOT - IL MOTORE FONDAMENTALE DI LARAXOT
 
 ## 📋 INDICE
@@ -9,6 +20,14 @@
 
 ---
 
+title: "xot engine complete guide"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xot engine complete guide"
+issues: []
+discussions: []
 ## 🧠 FILOSOFIA XOT (The Engine Philosophy)
 
 ### **Principio Fondamentale: Xot è il Motore, non il Veicolo**
@@ -232,11 +251,9 @@ abstract class XotBaseResource extends Resource
     /**
      * Get form schema con validation automatica
      */
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
+---
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             // Schema base automatico

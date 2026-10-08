@@ -1,4 +1,7 @@
 ---
+qmd: "install from zero"
+issues: []
+discussions: []
 title: "Install From Zero"
 type: reference
 tags: [wiki, no-frontmatter-fix]

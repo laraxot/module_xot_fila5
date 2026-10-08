@@ -1,3 +1,14 @@
+---
+title: "conflict resolution serviceprovider risoluzione conflitto xotbaseserviceprov"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "conflict resolution serviceprovider risoluzione conflitto xotbaseserviceprov"
+issues: []
+discussions: []
+---
+
 # Risoluzione Conflitto: XotBaseServiceProvider
 
 ## Contesto

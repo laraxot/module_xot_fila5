@@ -1,4 +1,7 @@
 ---
+qmd: "git conflict package json"
+issues: []
+discussions: []
 title: "Git Conflict Package Json"
 type: reference
 tags: [wiki, no-frontmatter-fix]

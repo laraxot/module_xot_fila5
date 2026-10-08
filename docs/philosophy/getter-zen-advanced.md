@@ -1,3 +1,14 @@
+---
+title: "getter zen advanced"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "getter zen advanced"
+issues: []
+discussions: []
+---
+
 
 # La Filosofia Zen Avanzata dei Getter Semantici
 

@@ -1,4 +1,7 @@
 ---
+qmd: "elastic search"
+issues: []
+discussions: []
 title: "Elastic Search"
 type: reference
 tags: [wiki, no-frontmatter-fix]

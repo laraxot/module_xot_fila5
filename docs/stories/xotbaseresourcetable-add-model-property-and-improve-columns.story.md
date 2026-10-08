@@ -1,4 +1,8 @@
 ---
+tags: [documentation]
+qmd: "xotbaseresourcetable add model property and improve columns.story"
+issues: []
+discussions: []
 title: "XotBaseResourceTable: aggiungere proprietà $model e migliorare getTableColumns con schema.org"
 type: story
 module: Xot

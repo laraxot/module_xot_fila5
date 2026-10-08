@@ -1,3 +1,14 @@
+---
+title: "CHANGELOG"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "CHANGELOG"
+issues: []
+discussions: []
+---
+
 # Changelog - Modulo Xot
 
 Tutte le modifiche significative al modulo Xot sono documentate in questo file.
@@ -61,6 +72,14 @@ All notable changes to `:package_name` will be documented in this file.
 
 ---
 
+title: "CHANGELOG"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "CHANGELOG"
+issues: []
+discussions: []
 ## [1.1.0] - 2025-10-29
 
 ### Fixed

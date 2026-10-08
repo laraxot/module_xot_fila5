@@ -1,4 +1,7 @@
 ---
+qmd: " certificate"
+issues: []
+discussions: []
 title: 'Certificate — risorse esterne'
 module: Xot
 type: reference

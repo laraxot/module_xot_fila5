@@ -1,3 +1,14 @@
+---
+title: "psr4 namespaces"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "psr4 namespaces"
+issues: []
+discussions: []
+---
+
 # Regola PSR-4 Namespace per Moduli Laravel
 
 ## Quando

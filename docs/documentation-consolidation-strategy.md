@@ -1,3 +1,14 @@
+---
+title: "documentation consolidation strategy"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "documentation consolidation strategy"
+issues: []
+discussions: []
+---
+
 # Strategia di Consolidamento Documentazione - Moduli Laraxot
 
 ## 🎯 Obiettivo
@@ -244,6 +255,14 @@ Common issues e soluzioni.
 - [External](https://example.com)
 
 ---
+title: "documentation consolidation strategy"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "documentation consolidation strategy"
+issues: []
+discussions: []
 **Ultimo aggiornamento:** [Data] - [Breve descrizione]
 ```
 

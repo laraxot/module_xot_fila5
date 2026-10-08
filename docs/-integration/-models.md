@@ -1,4 +1,12 @@
 ---
+title: " models"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: " models"
+issues: []
+discussions: []
 module: theme
 topic: -models
 canonical: ../../../../Themes/docs/shared-components/-11.md

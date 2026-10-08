@@ -1,4 +1,7 @@
 ---
+qmd: "configurazione"
+issues: []
+discussions: []
 title: "Configurazione"
 type: reference
 tags: [wiki, no-frontmatter-fix]

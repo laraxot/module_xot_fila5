@@ -1,4 +1,7 @@
 ---
+qmd: "content selection and highlighting"
+issues: []
+discussions: []
 title: 'content_selection_and_highlighting'
 module: Xot
 type: reference

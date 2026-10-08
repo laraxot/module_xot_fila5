@@ -1,4 +1,7 @@
 ---
+qmd: "presenter"
+issues: []
+discussions: []
 title: "Presenter"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,3 +1,14 @@
+---
+title: "filament widget regole 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament widget regole 1"
+issues: []
+discussions: []
+---
+
 # Regole Widget Filament (XotBase)
 
 ## Path delle view dei Widget Filament
@@ -30,4 +41,12 @@
 
 ---
 
+title: "filament widget regole 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament widget regole 1"
+issues: []
+discussions: []
 Vedi anche: [find-dentist-functionality.md](../../<nome progetto>/docs/find-dentist-functionality.md)

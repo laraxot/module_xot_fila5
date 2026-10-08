@@ -1,4 +1,9 @@
 ---
+type: note
+tags: [documentation]
+qmd: "docs frontmatter batch enrichment pattern.story"
+issues: []
+discussions: []
 title: "Xot docs/ frontmatter batch enrichment"
 epic: "5"
 slug: docs-frontmatter-batch-enrichment-pattern

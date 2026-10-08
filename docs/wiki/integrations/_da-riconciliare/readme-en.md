@@ -1,4 +1,7 @@
 ---
+qmd: "readme en"
+issues: []
+discussions: []
 title: "Xot — English presentation"
 module: xot
 type: integration

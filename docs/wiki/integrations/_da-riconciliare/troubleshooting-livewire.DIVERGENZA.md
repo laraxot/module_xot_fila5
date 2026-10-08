@@ -1,4 +1,7 @@
 ---
+qmd: "troubleshooting livewire.DIVERGENZA"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: troubleshooting-livewire.md"
 module: Xot
 type: note

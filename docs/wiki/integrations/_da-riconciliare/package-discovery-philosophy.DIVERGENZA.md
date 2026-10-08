@@ -1,4 +1,7 @@
 ---
+qmd: "package discovery philosophy.DIVERGENZA"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: package-discovery-philosophy.md"
 module: Xot
 type: note

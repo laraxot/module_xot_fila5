@@ -101,7 +101,7 @@ class GetPropertiesFromMethodsByModelAction
                 Assert::stringNotEmpty($codeStr, 'Il corpo della funzione non può essere vuoto');
 
                 // Cerchiamo relazioni belongsTo
-                $this->extractBelongsToRelations($codeStr, $model, $method, $data);
+                $this->extractBelongsToRelations($codeStr, $model, $method);
             } catch (\Exception $e) {
                 // Se c'è un errore nell'analisi del metodo, lo ignoriamo e passiamo al successivo
                 continue;
@@ -117,9 +117,8 @@ class GetPropertiesFromMethodsByModelAction
      * @param  string  $codeStr  Il codice da analizzare
      * @param  Model  $model  Il modello
      * @param  string  $method  Il nome del metodo
-     * @param  array<string, string>  &$data  L'array in cui salvare i dati estratti
      */
-    private function extractBelongsToRelations(string $codeStr, Model $model, string $method, array &$data): void
+    private function extractBelongsToRelations(string $codeStr, Model $model, string $method): void
     {
         $search = '$this->belongsTo(';
         $pos = mb_stripos($codeStr, $search);
@@ -147,13 +146,7 @@ class GetPropertiesFromMethodsByModelAction
             Assert::string($foreignKeyName, 'Il nome della chiave esterna deve essere una stringa');
 
             // Otteniamo la classe relazionata
-            $relatedClass = get_class($relationObj->getRelated());
-
-            // Chiamiamo GetFakerAction con parametri corretti
-            $fakerAction = app(GetFakerAction::class);
-            // Assert::isCallable rimosso - metodo verificato a compile time
-
-            $type = 'factory('.$relatedClass.'::class)';
+            get_class($relationObj->getRelated());
         } catch (\Exception $e) {
             // In caso di errore, ignoriamo la relazione
             return;

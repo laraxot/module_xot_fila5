@@ -1,4 +1,7 @@
 ---
+qmd: "philosophy master index.DIVERGENZA"
+issues: []
+discussions: []
 title: "Divergenza da riconciliare: philosophy-master-index.md"
 module: Xot
 type: note
