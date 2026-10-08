@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "ecoomerce"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # ecoomerce
 
 <!-- Contenuto migrato da _docs/ecoomerce.txt -->

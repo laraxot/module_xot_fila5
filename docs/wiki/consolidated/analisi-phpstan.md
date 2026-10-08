@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "analisi phpstan"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Analisi Phpstan"
 type: reference
 tags: [wiki, no-frontmatter-fix]

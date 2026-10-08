@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "webpack"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # webpack
 
 <!-- Contenuto migrato da _docs/webpack.txt -->

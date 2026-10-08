@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "phpstan error patterns"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "phpstan error patterns"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: phpstan_error_patterns
 canonical: ../../../../../Themes/docs/shared-components/phpstan-error-patterns-1.md

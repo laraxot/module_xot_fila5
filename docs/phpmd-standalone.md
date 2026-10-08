@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpmd standalone"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPMD — Installazione Standalone
 
 **Versione**: v2.15.0+ (in `tools/phpmd.phar`)
@@ -19,8 +16,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpmd standalone"
 type: note
 tags: [documentation]
@@ -29,7 +24,6 @@ updated: 2026-09-26
 qmd: "phpmd standalone"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Perché Standalone?
 
 PHPMD (PHP Mess Detector) può avere dipendenze che confliggono con il core di Laravel o altri pacchetti. L'uso della versione `.phar` garantisce un ambiente di esecuzione pulito e privo di effetti collaterali sulle dipendenze del progetto.

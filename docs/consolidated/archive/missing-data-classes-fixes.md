@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "missing data classes fixes"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Correzione Classi Data Mancanti in Laraxot
 
 ## Analisi del Problema

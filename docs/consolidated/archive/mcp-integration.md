@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "mcp integration"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Integrazione dei Server MCP con il Modulo Xot
 
 ## Panoramica

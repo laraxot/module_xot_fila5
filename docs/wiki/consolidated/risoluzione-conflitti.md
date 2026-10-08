@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "risoluzione conflitti"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Risoluzione Conflitti"
 type: reference
 tags: [wiki, no-frontmatter-fix]

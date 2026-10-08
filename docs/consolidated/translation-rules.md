@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "translation rules"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Regole per i file di traduzione in Laraxot PTVX
 
 ## Struttura dei file di traduzione

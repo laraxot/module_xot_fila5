@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "namespaces"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Convenzioni dei Namespace
 
 ## Struttura Base dei Namespace

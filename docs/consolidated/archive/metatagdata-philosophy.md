@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "metatagdata philosophy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filosofia dei Getter Semantici in MetatagData
 
 ## Premessa
@@ -60,8 +57,6 @@ Nel contesto di Xot, la classe `MetatagData` rappresenta la fonte autorevole di 
 - [logo_resolution.md](../logo_resolution.md)
 
 ---
-<<<<<<< HEAD
-=======
 title: "metatagdata philosophy"
 type: note
 tags: [documentation]
@@ -70,5 +65,4 @@ updated: 2026-09-26
 qmd: "metatagdata philosophy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Ultima modifica:** 2025-05-06

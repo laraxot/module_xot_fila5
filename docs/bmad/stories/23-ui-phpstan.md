@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "23 ui phpstan"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # BMAD Story 23 — UI: 6 errori PHPStan (test)
 
 **Modulo:** `UI`

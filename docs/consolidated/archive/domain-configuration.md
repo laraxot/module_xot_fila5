@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "domain configuration"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Gestione Domini e Configurazioni
 
 ## Prerequisiti

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "contracts"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Contratti del Modulo Xot
 
 ## Descrizione

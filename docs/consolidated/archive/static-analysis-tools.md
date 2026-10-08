@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "static analysis tools"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # static-analysis-tools
 
 <!-- Contenuto migrato da _docs/static-analysis-tools.txt -->

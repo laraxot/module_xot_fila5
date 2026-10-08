@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "XOTBASE EXTENSION RULES"
 module: "Xot"
 type: rule

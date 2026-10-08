@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "translation complete guide"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Translation Complete Guide - Consolidated
 
 ## Overview

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "ui"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Analisi e Risoluzione Colli di Bottiglia - Modulo UI
 
 ## 1. Performance Re-render (Priorità: Alta)

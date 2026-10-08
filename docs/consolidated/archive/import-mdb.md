@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "import mdb"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Comandi di Importazione MDB
 
 ## Panoramica

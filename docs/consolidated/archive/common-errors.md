@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "common errors"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Errori Comuni e Soluzioni
 
 ## Introduzione
@@ -30,8 +27,6 @@ La documentazione di questi errori ha lo scopo di fornire una guida rapida per l
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "common errors"
 type: note
 tags: [documentation]
@@ -40,7 +35,6 @@ updated: 2026-09-26
 qmd: "common errors"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Errore: Colonna non trovata nella tabella
 
 ### Descrizione

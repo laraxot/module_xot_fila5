@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 type: note
 tags: [documentation]
 created: 2026-09-26
@@ -8,7 +6,6 @@ updated: 2026-09-26
 qmd: "package"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: Package utilizzati
 description: Package utilizzati
 extends: _layouts.documentation

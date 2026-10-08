@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "uuid"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # uuid
 
 <!-- Contenuto migrato da _docs/uuid.txt -->

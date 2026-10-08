@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "README"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Documentation Hub
 
 ## Overview
@@ -201,8 +198,6 @@ For questions about PHPStan configuration or error resolution:
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "README"
 type: note
 tags: [documentation]
@@ -211,5 +206,4 @@ updated: 2026-09-26
 qmd: "README"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *This documentation is maintained as part of our commitment to code quality and type safety across all modules.*

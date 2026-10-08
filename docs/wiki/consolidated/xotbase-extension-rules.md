@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "xotbase extension rules"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Xotbase Extension Rules"
 type: reference
 tags: [wiki, no-frontmatter-fix]

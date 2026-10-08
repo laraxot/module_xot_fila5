@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "index"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # 📚 **Indice Documentazione Modulo Xot**
 
 ## 🎯 **Quick Start**
@@ -223,8 +220,6 @@ php artisan test --filter=ExampleTest
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "index"
 type: note
 tags: [documentation]
@@ -233,5 +228,4 @@ updated: 2026-09-26
 qmd: "index"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*

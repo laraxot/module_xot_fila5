@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "filament v5 migration"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Filament V5 Migration"
 type: reference
 tags: [wiki, no-frontmatter-fix]

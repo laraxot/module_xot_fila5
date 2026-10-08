@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "structure"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Struttura dei Moduli Laravel (nwidart/laravel-modules)
 
 ## Struttura dei percorsi e namespace

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "debug"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Debug
 
 ## Pacchetti Utilizzati

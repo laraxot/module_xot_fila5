@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "theme testing"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Testing del Tema
 
 ## Principi di Testing

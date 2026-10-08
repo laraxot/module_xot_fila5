@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "patient"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Analisi e Risoluzione Colli di Bottiglia - Modulo Patient
 
 ## 1. Timeline Cartella Clinica (Priorità: Alta)

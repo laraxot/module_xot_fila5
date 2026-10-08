@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "translation structure expanded"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Struttura Traduzioni Espansa - Modulo Xot
 
 ## Scopo
@@ -204,8 +201,6 @@ Il file attuale contiene principalmente etichette generali per l'interfaccia amm
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "translation structure expanded"
 type: note
 tags: [documentation]
@@ -214,7 +209,6 @@ updated: 2026-09-26
 qmd: "translation structure expanded"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Stato**: Documentazione completata, implementazione in corso
 **Priorità**: Media (file già corretto linguisticamente)
 **Responsabile**: Sistema automatico DRY/KISS

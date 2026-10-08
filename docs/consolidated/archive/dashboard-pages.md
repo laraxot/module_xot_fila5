@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "dashboard pages"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Pagine Dashboard Filament - Best Practices
 
 ## Panoramica
@@ -215,8 +212,6 @@ Il modulo Xot è il modulo core e potrebbe non necessitare di una dashboard trad
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "dashboard pages"
 type: note
 tags: [documentation]
@@ -225,5 +220,4 @@ updated: 2026-09-26
 qmd: "dashboard pages"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Ultimo aggiornamento**: Giugno 2025

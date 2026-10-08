@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "psr4 namespaces"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Regola PSR-4 Namespace per Moduli Laravel
 
 ## Quando

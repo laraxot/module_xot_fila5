@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "handlers repository"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # HandlersRepository
 
 ## Descrizione

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament xotbase resource corrections"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Correzioni Implementate - Regola Critica XotBaseResource
 
 ## 🚨 Regola Critica Violata
@@ -207,8 +204,6 @@ class ExampleResource extends XotBaseResource
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "filament xotbase resource corrections"
 type: note
 tags: [documentation]
@@ -217,7 +212,6 @@ updated: 2026-09-26
 qmd: "filament xotbase resource corrections"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *Ultimo aggiornamento: 2025-08-04*
 *Modulo: Xot*
 *Categoria: Filament*

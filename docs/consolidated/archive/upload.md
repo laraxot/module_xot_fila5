@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "upload"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # upload
 
 <!-- Contenuto migrato da _docs/upload.txt -->

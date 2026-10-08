@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "prompt docs improvements"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Miglioramenti al Prompt docs.txt
 
 > **Collegamenti correlati**

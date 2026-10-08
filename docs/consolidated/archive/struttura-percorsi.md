@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "struttura percorsi"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Struttura dei percorsi nel progetto <nome progetto>
 
 ## Regola fondamentale

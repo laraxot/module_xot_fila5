@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan critical rules"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Critical Rules - INTOCCABILE
 
 ## 🚨 REGOLA ASSOLUTA 🚨
@@ -188,8 +185,6 @@ La configurazione PHPStan è **SACRA** e **INTOCCABILE**. Tutti gli errori PHPSt
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan critical rules"
 type: note
 tags: [documentation]
@@ -198,7 +193,6 @@ updated: 2026-09-26
 qmd: "phpstan critical rules"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Priorità**: 🚨 CRITICA
 **Applicabilità**: Universale
 **Violazioni**: 🚫 VIETATE ASSOLUTAMENTE

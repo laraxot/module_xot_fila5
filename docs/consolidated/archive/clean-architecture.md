@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "clean architecture"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # clean_architecture
 
 <!-- Contenuto migrato da _docs/clean_architecture.txt -->

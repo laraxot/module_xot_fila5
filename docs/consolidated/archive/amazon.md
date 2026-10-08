@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "amazon"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # amazon
 
 <!-- Contenuto migrato da _docs/amazon.txt -->

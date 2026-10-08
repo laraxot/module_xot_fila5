@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Ottimizzazione Form Filament
 
 ## Stato

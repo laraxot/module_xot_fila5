@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "namespace autoload pattern"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Pattern di Autoload nei Moduli Laravel
 
 ## Il Pattern Corretto

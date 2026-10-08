@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "11 compliance phpstan"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # BMAD Story 11 — Compliance: 18 errori PHPStan
 
 **Modulo:** `Compliance`

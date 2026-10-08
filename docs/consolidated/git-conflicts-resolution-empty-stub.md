@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "git conflicts resolution empty stub"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "git conflicts resolution empty stub"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 created_at: '2025-01-06'
 ---
 

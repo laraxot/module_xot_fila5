@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "issue 03 resource form"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Issue GH #03 — XotBaseResourceForm: `use HasXotForm`
 
 **Repo:** `git@github.com:laraxot/module_xot_fila5.git`

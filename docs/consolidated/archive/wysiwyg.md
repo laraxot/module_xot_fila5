@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "wysiwyg"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # wysiwyg
 
 <!-- Contenuto migrato da _docs/wysiwyg.txt -->

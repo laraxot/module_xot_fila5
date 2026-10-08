@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "implementing actions"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Implementare Actions
 
 ## Perché usare le Actions?

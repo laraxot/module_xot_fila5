@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "testing strategy"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Testing Strategy"
 type: reference
 tags: [wiki, no-frontmatter-fix]

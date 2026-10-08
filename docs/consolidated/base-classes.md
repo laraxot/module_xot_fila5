@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "base classes"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Classi Base del Modulo Xot
 
 ### Versione HEAD
@@ -128,8 +125,6 @@ class XotBaseEditRecord
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "base classes"
 type: note
 tags: [documentation]
@@ -138,7 +133,6 @@ updated: 2026-09-26
 qmd: "base classes"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## XotBaseResource
 
 Classe base per tutte le risorse Filament dell'applicazione.

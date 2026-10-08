@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "final method override fix"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Correzione Errori Override Metodi Final
 
 ## Problema Identificato (2025-01-06)

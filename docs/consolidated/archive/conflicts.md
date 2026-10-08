@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "conflicts"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Risoluzione Conflitti - Xot
 
 ## File modificati

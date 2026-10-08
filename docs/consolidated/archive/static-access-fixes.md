@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "static access fixes"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # XotBaseRelationManager Static Access Fixes
 
 ## Static Access to Instance Property Issue

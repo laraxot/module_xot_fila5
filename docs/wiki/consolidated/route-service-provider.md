@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "route service provider"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Route Service Provider"
 type: reference
 tags: [wiki, no-frontmatter-fix]

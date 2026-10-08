@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "psr4 namespaces"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Psr4 Namespaces"
 type: reference
 tags: [wiki, no-frontmatter-fix]

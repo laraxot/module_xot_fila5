@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "coolmodules double registration fix"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Coolmodules Double Registration Fix"
 type: reference
 tags: [wiki, no-frontmatter-fix]

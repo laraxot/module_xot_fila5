@@ -1,13 +1,10 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
 qmd: "livewire widget ux"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "UX — chrome vs FO"
 type: ux-design
 module: Xot

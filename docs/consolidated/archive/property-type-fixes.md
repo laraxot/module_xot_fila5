@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "property type fixes"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Property Type Fixes for Xot Module
 
 ## Missing Property Types

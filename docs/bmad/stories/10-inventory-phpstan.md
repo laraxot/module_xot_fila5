@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "10 inventory phpstan"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # BMAD Story 10 — Inventory: 20 errori PHPStan
 
 **Modulo:** `Inventory`

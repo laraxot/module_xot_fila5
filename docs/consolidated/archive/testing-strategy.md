@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "testing strategy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Testing Strategy: MySQL-Based Testing Without RefreshDatabase
 
 ## Overview

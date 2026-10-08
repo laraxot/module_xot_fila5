@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 type: note
 tags: [documentation]
 created: 2026-09-26
@@ -8,7 +6,6 @@ updated: 2026-09-26
 qmd: "orbit sushi to json"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: SushiToJsons/Orbit
 description: Salvataggio su File invece che in tabella
 ---

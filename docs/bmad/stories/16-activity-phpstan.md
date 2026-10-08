@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "16 activity phpstan"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # BMAD Story 16 — Activity: 11 errori PHPStan (test)
 
 **Modulo:** `Activity`

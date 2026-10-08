@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament best practices"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filament Best Practices (Moduli Riutilizzabili)
 
 ## Descrizione

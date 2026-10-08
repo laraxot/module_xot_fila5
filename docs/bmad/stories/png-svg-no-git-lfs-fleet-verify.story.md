@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "png svg no git lfs fleet verify.story"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Story: png-svg-no-git-lfs-fleet-verify
 **Status**: ready-for-dev
 **Modulo**: Xot (coordinatore)

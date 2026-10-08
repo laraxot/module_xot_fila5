@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "bottlenecks"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Colli di Bottiglia e Soluzioni - Modulo Xot
 
 ## Panoramica

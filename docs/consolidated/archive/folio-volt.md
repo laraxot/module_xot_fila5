@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "folio volt"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Ottimizzazione Re-render Folio + Volt
 
 ## Stato

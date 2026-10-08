@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "roles permissions"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Roles Permissions"
 type: reference
 tags: [wiki, no-frontmatter-fix]

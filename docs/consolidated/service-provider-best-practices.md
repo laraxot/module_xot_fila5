@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "service provider best practices"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Service Provider: Best Practices in Laraxot
 
 Questo documento definisce le linee guida ufficiali e le best practices per l'implementazione dei Service Provider all'interno del framework Laraxot.

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "resource"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # XotBaseResource
 
 ## Overview
@@ -627,8 +624,6 @@ public function getTableBulkActions(): array
 // ... existing code ...
 
 ---
-<<<<<<< HEAD
-=======
 title: "resource"
 type: note
 tags: [documentation]
@@ -637,4 +632,3 @@ updated: 2026-09-26
 qmd: "resource"
 issues: []
 discussions: []
->>>>>>> laraxot/dev

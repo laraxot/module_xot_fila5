@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "struttura progetto"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Struttura del Progetto il progetto
 
 ## Panoramica

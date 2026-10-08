@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "database guidelines"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Database Guidelines"
 type: reference
 tags: [wiki, no-frontmatter-fix]

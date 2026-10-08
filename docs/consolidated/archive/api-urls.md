@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "api urls"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # api_urls
 
 <!-- Contenuto migrato da _docs/api_urls.txt -->

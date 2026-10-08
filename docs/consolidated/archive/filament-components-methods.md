@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament components methods"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Metodi dei Componenti Filament
 
 ## Tabs e Tab Components

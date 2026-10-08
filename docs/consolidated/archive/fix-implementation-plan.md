@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "fix implementation plan"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Level 10 Fix Implementation Plan
 
 ## Overview

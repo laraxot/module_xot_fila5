@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "relations"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Relazioni Personalizzate
 
 ## Documentazione Dettagliata

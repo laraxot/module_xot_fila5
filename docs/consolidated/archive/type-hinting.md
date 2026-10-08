@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "type hinting"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # type_hinting
 
 <!-- Contenuto migrato da _docs/type_hinting.txt -->

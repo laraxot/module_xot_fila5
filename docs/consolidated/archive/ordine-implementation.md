@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "ordine implementation"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Ordine di Implementazione il progetto
 
 ## Sequenza di Installazione e Configurazione

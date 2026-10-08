@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "naming conventions docs"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Convenzioni di Naming nella Documentazione
 
 ## Regola: Nome del Progetto nei Moduli

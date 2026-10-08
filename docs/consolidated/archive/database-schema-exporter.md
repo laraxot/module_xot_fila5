@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "database schema exporter"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # DatabaseSchemaExporter Command Documentation
 
 ## Overview

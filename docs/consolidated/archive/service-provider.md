@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "service provider"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # XotBaseServiceProvider: Architettura, Ruolo e Best Practice
 
 ## Ruolo della Classe
@@ -99,8 +96,6 @@ class CustomModuleServiceProvider extends XotBaseServiceProvider
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "service provider"
 type: note
 tags: [documentation]
@@ -109,7 +104,6 @@ updated: 2026-09-26
 qmd: "service provider"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Ultimo aggiornamento:** 2025-05-13
 
 **Nota:** Aggiornare SEMPRE questa documentazione in caso di modifiche architetturali o override nei moduli.

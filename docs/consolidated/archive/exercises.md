@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "exercises"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # exercises
 
 <!-- Contenuto migrato da _docs/exercises.txt -->

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "installation"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Installation"
 type: reference
 tags: [wiki, no-frontmatter-fix]

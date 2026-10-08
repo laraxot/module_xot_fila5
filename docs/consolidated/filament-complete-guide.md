@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament complete guide"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filament Complete Guide - Consolidated
 
 ## Overview

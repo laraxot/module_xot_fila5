@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "relative paths rules"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Regole per i Percorsi Relativi nella Documentazione
 
 > **Collegamenti correlati**

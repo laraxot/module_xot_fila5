@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "translation structure expanded"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Translation Structure Expanded"
 type: reference
 tags: [wiki, no-frontmatter-fix]

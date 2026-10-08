@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "25f tests getformschema"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # 25f — Correggere test con static call getFormSchema() su Resource
 
 **Modulo:** multi (Activity, Cms, Job, Lang, Media, Notify, Tenant, User)

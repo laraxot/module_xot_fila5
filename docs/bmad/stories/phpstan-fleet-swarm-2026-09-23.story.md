@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 type: note
 tags: [documentation]
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 id: "Xot/phpstan-fleet-swarm-2026-09-23"
 title: "PHPStan Modules fleet zero — swarm random parallelo"
 status: done

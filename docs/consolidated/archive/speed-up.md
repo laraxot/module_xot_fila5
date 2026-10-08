@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "speed up"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # speed_up
 
 <!-- Contenuto migrato da _docs/speed_up.txt -->

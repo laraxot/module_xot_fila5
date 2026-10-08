@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "model classification"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Xot Module - Model Classification
 
 ## Business-Relevant Models (Require Factories/Seeders)

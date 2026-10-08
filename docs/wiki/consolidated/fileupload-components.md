@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "fileupload components"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Fileupload Components"
 type: reference
 tags: [wiki, no-frontmatter-fix]

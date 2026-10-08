@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament no label rule"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # REGOLA CRITICA: MAI ->label() nei Componenti Filament
 
 ## Principio Fondamentale

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "model fields validation"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Model Fields Validation - Critical Memory
 
 ## ERRORE CRITICO IDENTIFICATO

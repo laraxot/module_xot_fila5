@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "module xot"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Module Xot"
 type: reference
 tags: [wiki, no-frontmatter-fix]

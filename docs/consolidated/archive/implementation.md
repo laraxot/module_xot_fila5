@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "implementation"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Implementazione Xot
 
 ## Struttura del Codice
@@ -316,8 +313,6 @@ class XotPageTest extends TestCase
 ### Versione Incoming
 
 ---
-<<<<<<< HEAD
-=======
 title: "implementation"
 type: note
 tags: [documentation]
@@ -326,4 +321,3 @@ updated: 2026-09-26
 qmd: "implementation"
 issues: []
 discussions: []
->>>>>>> laraxot/dev

@@ -4,9 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Enums;
 
+use Modules\Xot\Actions\Artisan\HandleArtisanActRequestAction;
+
 /**
  * Valori ammessi del parametro legacy `act` che
- * {@see \Modules\Xot\Actions\Artisan\HandleArtisanActRequestAction} traduce in comandi artisan.
+ * {@see HandleArtisanActRequestAction} traduce in comandi artisan.
  *
  * I valori backed sono ESATTAMENTE le stringhe accettate oggi: sono l'API di chi invoca `act`.
  */

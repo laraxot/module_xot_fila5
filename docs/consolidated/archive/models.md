@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "models"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Model Architecture
 
 ## Base Models
@@ -57,8 +54,6 @@ ${cat /mnt/f/var/www/quaeris/laravel/Modules/Xot/_docs/scope.txt}
 ### Versione Incoming
 
 ---
-<<<<<<< HEAD
-=======
 title: "models"
 type: note
 tags: [documentation]
@@ -67,7 +62,6 @@ updated: 2026-09-26
 qmd: "models"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 # _models
 
 <!-- Contenuto migrato da _docs/_models.txt -->

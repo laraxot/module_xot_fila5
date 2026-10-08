@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "blade icons overview"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Blade Icons Overview"
 type: reference
 tags: [wiki, no-frontmatter-fix]

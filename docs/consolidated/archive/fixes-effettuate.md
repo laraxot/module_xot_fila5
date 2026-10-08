@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "fixes effettuate"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Correzioni Effettuate per Errori PHPStan
 
 Questo documento riassume le correzioni applicate per risolvere gli errori PHPStan di livello 9 nel codice.

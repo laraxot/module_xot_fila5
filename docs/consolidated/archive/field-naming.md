@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "field naming"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Convenzioni Naming Campi Database
 
 ## Regole Fondamentali

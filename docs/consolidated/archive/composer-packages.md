@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "composer packages"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # composer_packages
 
 <!-- Contenuto migrato da _docs/composer_packages.txt -->

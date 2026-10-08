@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "machine learning"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # machine_learning
 
 <!-- Contenuto migrato da _docs/machine_learning.txt -->

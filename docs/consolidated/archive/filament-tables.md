@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament tables"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Gestione delle Tabelle in Filament
 
 Questo documento definisce le linee guida per l'implementazione delle tabelle Filament nel progetto <nome progetto>, utilizzando il trait `HasXotTable`.
@@ -215,8 +212,6 @@ Il trait include meccanismi di gestione degli errori, ad esempio:
 * [filament-tables.md](../filament-tables.md)
 
 ---
-<<<<<<< HEAD
-=======
 title: "filament tables"
 type: note
 tags: [documentation]
@@ -225,4 +220,3 @@ updated: 2026-09-26
 qmd: "filament tables"
 issues: []
 discussions: []
->>>>>>> laraxot/dev

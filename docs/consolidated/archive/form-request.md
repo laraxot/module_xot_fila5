@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "form request"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # form_request
 
 <!-- Contenuto migrato da _docs/form_request.txt -->

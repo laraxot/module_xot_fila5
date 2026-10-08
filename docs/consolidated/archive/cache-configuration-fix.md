@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "cache configuration fix"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Risoluzione Errore Configurazione Cache
 
 ## Problema

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "safe float cast action"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Safe Float Cast Action"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "architettura sistema"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Architettura del Sistema il progetto
 
 ## Panoramica dell'Architettura

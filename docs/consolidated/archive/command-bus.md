@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "command bus"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # command_bus
 
 <!-- Contenuto migrato da _docs/command_bus.txt -->

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "development"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Sviluppo
 
 ## Pacchetti Utilizzati
@@ -100,8 +97,6 @@ Ignition::editor('vscode');
 ### Versione Incoming
 
 ---
-<<<<<<< HEAD
-=======
 title: "development"
 type: note
 tags: [documentation]
@@ -110,4 +105,3 @@ updated: 2026-09-26
 qmd: "development"
 issues: []
 discussions: []
->>>>>>> laraxot/dev

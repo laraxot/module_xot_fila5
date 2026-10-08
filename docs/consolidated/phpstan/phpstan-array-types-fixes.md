@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan array types fixes"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Array Types Fixes - Patterns & Solutions
 
 **Status**: 🎉 **COMPLETATO** - TUTTI GLI ERRORI RISOLTI! (832 → 0)
@@ -137,8 +134,6 @@ public function processData(array $data): void
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan array types fixes"
 type: note
 tags: [documentation]
@@ -147,7 +142,6 @@ updated: 2026-09-26
 qmd: "phpstan array types fixes"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **🎯 OBIETTIVO RAGGIUNTO**: 832 → 0 errori PHPStan (-832, -100%)
 **🏆 STATUS**: PERFETTO - PHPStan Level 9 CLEAN
 **📊 QUALITÀ CODICE**: Maximum Type Safety Achieved

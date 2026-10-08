@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "actions standardization"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Actions Standardization"
 type: reference
 tags: [wiki, no-frontmatter-fix]

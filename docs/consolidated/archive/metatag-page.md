@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "metatag page"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # MetatagPage
 
 La classe `MetatagPage` è una pagina Filament che gestisce la configurazione dei metatag del sito.

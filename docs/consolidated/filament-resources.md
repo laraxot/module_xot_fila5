@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament resources"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Filament Resources
 
 ## XotBaseResource
@@ -116,8 +113,6 @@ return [
 - Mantenute le validazioni e la struttura del form
 
 ---
-<<<<<<< HEAD
-=======
 title: "filament resources"
 type: note
 tags: [documentation]
@@ -126,4 +121,3 @@ updated: 2026-09-26
 qmd: "filament resources"
 issues: []
 discussions: []
->>>>>>> laraxot/dev

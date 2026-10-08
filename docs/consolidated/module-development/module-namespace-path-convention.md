@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "module namespace path convention"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # convenzioni per namespace e percorsi dei moduli
 
 ## struttura corretta del percorso

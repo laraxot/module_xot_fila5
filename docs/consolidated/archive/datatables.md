@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "datatables"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # datatables
 
 <!-- Contenuto migrato da _docs/datatables.txt -->

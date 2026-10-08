@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "property promotion"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Da Proprietà a Metodi in Laravel 12
 
 ## Evoluzione del Pattern nei Modelli Eloquent

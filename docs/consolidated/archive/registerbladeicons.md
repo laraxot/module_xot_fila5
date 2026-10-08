@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "registerbladeicons"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Documentazione del Metodo registerBladeIcons
 
 ## Panoramica

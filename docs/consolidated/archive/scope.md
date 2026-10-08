@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "scope"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # scope
 
 <!-- Contenuto migrato da _docs/scope.txt -->

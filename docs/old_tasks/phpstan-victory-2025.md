@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan victory 2025"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # 🏆 PHPStan Perfection Achievement - Gennaio 2025
 
 ## 🎊 RISULTATO FINALE: 0 ERRORI
@@ -279,8 +276,6 @@ cd laravel
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan victory 2025"
 type: note
 tags: [documentation]
@@ -289,7 +284,6 @@ updated: 2026-09-26
 qmd: "phpstan victory 2025"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **🎊 CONGRATULAZIONI! OBIETTIVO RAGGIUNTO! 🎊**
 
 **Data**: 10 Gennaio 2025

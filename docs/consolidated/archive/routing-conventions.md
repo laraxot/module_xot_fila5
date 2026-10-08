@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "routing conventions"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Convenzioni di Routing
 
 ## Struttura Base

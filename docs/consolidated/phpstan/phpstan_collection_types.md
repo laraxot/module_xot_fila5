@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "phpstan collection types"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "phpstan collection types"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: phpstan_collection_types
 canonical: ../../../../../Themes/docs/shared-components/phpstan-collection-types-1.md

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "cms link"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Collegamenti al Modulo Cms
 
 Questo documento fornisce collegamenti bidirezionali tra il modulo Xot e il modulo Cms.

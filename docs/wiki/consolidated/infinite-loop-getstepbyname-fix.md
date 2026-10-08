@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "infinite loop getstepbyname fix"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Infinite Loop Getstepbyname Fix"
 type: reference
 tags: [wiki, no-frontmatter-fix]

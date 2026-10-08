@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "filament xotbase resource corrections"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Filament Xotbase Resource Corrections"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -49,7 +49,7 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\Relations\Siblings;
  * fatale il caricamento della classe. `TypedHasRecursiveRelationships` li restringe
  * comunque ai tipi nativi (covarianza), e PHPStan legge il `@return`.
  *
- * @mixin \Illuminate\Database\Eloquent\Model
+ * @mixin Model
  */
 interface HasRecursiveRelationshipsContract
 {
@@ -58,8 +58,6 @@ interface HasRecursiveRelationshipsContract
      *
      * Il ritorno e' `mixed` perche' il trait vendor `HasAdjacencyList` lo dichiara cosi':
      * un tipo piu' stretto qui rende fatale il caricamento di ogni classe che usa il trait.
-     *
-     * @return mixed
      */
     public static function withMaxDepth(int $maxDepth, callable $query): mixed;
 

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "naming user fields"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Naming User Fields"
 type: reference
 tags: [wiki, no-frontmatter-fix]

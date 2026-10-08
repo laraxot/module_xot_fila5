@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "summary of all fixes"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Riepilogo Fix PHPStan per Filament/Laraxot
 
 ## Contesto Architetturale

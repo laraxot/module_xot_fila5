@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "filament resource rules"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Filament Resource Rules"
 type: reference
 tags: [wiki, no-frontmatter-fix]

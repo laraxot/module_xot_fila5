@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "single table inheritance"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Single Table Inheritance"
 type: reference
 tags: [wiki, no-frontmatter-fix]

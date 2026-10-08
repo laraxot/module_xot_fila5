@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "testing best practices"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Testing Best Practices"
 type: reference
 tags: [wiki, no-frontmatter-fix]

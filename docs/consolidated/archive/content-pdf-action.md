@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "content pdf action"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # ContentPdfAction Documentation
 
 ## Overview

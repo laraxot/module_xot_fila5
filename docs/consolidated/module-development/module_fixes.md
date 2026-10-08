@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "module fixes"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "module fixes"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: module_fixes
 canonical: ../../../../../Themes/docs/shared-components/module-fixes-1.md

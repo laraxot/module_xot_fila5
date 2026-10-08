@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "safe float cast action"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # SafeFloatCastAction
 
 ## Descrizione
@@ -225,8 +222,6 @@ assert($action->executeWithRange(-10.0, 0.0, 100.0) === 0.0);
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "safe float cast action"
 type: note
 tags: [documentation]
@@ -235,5 +230,4 @@ updated: 2026-09-26
 qmd: "safe float cast action"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *Ultimo aggiornamento: 31 luglio 2025*

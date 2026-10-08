@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament corrections log"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Log delle Correzioni Filament
 
 ## Data: 2024-12-19

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "personal name fields"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Convenzioni per i Campi dei Nomi Personali
 
 ## Regola Fondamentale

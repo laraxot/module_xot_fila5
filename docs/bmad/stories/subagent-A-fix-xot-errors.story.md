@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "subagent A fix xot errors.story"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Subagent-A Task: Fix Xot Module (9 PHPStan Errors)
 
 ## Critical Issues Found

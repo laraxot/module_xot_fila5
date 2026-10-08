@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "star rating"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # star_rating
 
 <!-- Contenuto migrato da _docs/star_rating.txt -->

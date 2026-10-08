@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "migration base rules"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # MIGRATION BASE RULES
 
 ## Regola universale
@@ -40,8 +37,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "migration base rules"
 type: note
 tags: [documentation]
@@ -50,7 +45,6 @@ updated: 2026-09-26
 qmd: "migration base rules"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Backlink
 - [Regole update migrazioni Performance](../../Performance/project_docs/migration_update_rules.md) ← questa doc è sempre aggiornata
 - [Ripresa lavoro migrazioni in root](../../../project_docs/MODULE_NAMESPACE_RULES.md)

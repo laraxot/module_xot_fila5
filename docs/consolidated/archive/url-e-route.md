@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "url e route"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Regole per URL e Route in il progetto
 
 ## Introduzione

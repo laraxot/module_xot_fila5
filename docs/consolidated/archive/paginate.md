@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "paginate"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # paginate
 
 <!-- Contenuto migrato da _docs/paginate.txt -->

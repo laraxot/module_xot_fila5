@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "naming user fields"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Convenzione Naming Campi Utente: `first_name` e `last_name`
 
 ## Regola Fondamentale

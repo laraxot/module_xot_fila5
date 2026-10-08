@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "namespacing"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Convenzioni Namespace in il progetto
 
 ## Struttura Namespace Standard

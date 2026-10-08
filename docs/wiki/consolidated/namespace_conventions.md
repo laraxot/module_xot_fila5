@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "namespace conventions"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "namespace conventions"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: namespace_conventions
 canonical: ../../../../Themes/docs/shared-components/namespace-conventions-2.md

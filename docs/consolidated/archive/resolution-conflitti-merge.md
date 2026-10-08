@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "resolution conflitti merge"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Risoluzione dei Conflitti di Merge nel Modulo Xot
 
 ## Problema

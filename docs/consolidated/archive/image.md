@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "image"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # image
 
 <!-- Contenuto migrato da _docs/image.txt -->

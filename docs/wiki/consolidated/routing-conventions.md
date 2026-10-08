@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "routing conventions"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Routing Conventions"
 type: reference
 tags: [wiki, no-frontmatter-fix]

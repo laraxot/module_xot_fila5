@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "prompt rules"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Prompt Rules"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "README"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Xot Module Documentation - Consolidated
 
 This directory contains consolidated and organized documentation for the Xot module, which serves as the core foundation of the Laravel modular monolith application.

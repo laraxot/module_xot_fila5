@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "lang link"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Lang Link"
 type: reference
 tags: [wiki, no-frontmatter-fix]

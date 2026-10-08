@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "flags"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # flags
 
 <!-- Contenuto migrato da _docs/flags.txt -->

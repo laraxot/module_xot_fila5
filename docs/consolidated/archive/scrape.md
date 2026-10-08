@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "scrape"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # scrape
 
 <!-- Contenuto migrato da _docs/scrape.txt -->

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "xot service provider feature reimplementation"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Xot Service Provider Feature Reimplementation"
 type: reference
 tags: [wiki, no-frontmatter-fix]

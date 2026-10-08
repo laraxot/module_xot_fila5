@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "architectural rule resource vs form"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # BMAD Story 25 — Regola architetturale: XotBaseResource vs XotBaseResourceForm
 
 **Repo:** `git@github.com:laraxot/module_xot_fila5.git`

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "roadmap"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 ### Versione HEAD
 
 # Roadmap Modulo Xot
@@ -460,8 +457,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "roadmap"
 type: note
 tags: [documentation]
@@ -470,7 +465,6 @@ updated: 2026-09-26
 qmd: "roadmap"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ### Versione Incoming
 
 # Xot Module Roadmap

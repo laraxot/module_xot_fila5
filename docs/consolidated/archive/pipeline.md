@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "pipeline"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # pipeline
 
 <!-- Contenuto migrato da _docs/pipeline.txt -->

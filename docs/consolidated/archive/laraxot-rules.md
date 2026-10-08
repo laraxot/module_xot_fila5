@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "laraxot rules"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # LARAXOT FRAMEWORK RULES
 
 ## CLASS EXTENSION

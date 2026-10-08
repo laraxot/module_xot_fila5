@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "routing"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Routing nel Progetto il progetto
 
 ## Indice

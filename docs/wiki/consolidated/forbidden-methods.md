@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "forbidden methods"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Forbidden Methods"
 type: reference
 tags: [wiki, no-frontmatter-fix]

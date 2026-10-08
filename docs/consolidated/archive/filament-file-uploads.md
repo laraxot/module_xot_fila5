@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament file uploads"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Gestione dei File Upload in Filament
 
 ## Panoramica

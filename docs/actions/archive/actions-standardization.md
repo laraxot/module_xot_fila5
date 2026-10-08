@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "actions standardization"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Standardizzazione Actions - Rimozione Duplicazioni
 
 ## Problema Identificato (2025-01-06)

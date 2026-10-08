@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "psr4 compliance"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Conformità PSR-4 nel Progetto
 
 ## Introduzione

@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Bugfix: Carbon Timezone Error in XotServiceProvider"
 module: "Xot"
 type: concept

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "google drive"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # google_drive
 
 <!-- Contenuto migrato da _docs/google_drive.txt -->

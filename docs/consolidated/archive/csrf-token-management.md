@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "csrf token management"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Gestione Token CSRF nei Widget XotBase
 
 ## Descrizione

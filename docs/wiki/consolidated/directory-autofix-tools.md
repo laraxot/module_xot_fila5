@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "directory autofix tools"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Directory Autofix Tools"
 type: reference
 tags: [wiki, no-frontmatter-fix]
