@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "refactoring"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Refactoring del Modulo Xot
 
 ## Trait Rimossi

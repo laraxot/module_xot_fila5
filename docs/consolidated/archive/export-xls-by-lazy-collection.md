@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "export xls by lazy collection"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # ExportXlsByLazyCollection
 
 ## Descrizione

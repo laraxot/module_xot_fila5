@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "markdown"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # markdown
 
 <!-- Contenuto migrato da _docs/markdown.txt -->

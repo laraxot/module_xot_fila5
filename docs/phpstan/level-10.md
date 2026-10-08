@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "PHPStan Report - Livello 10"
 module: "Xot"
 type: concept

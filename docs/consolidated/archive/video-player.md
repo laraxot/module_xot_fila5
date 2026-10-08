@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "video player"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # video_player
 
 <!-- Contenuto migrato da _docs/video_player.txt -->

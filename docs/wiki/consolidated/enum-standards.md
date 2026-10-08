@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "enum standards"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Enum Standards"
 type: reference
 tags: [wiki, no-frontmatter-fix]

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "migration base rules"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Migration Base Rules"
 type: reference
 tags: [wiki, no-frontmatter-fix]

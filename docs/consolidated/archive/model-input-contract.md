@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "model input contract"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # ModelInputContract
 
 ## Descrizione

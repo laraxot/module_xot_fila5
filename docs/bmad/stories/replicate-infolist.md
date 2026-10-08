@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "replicate infolist"
 type: note
@@ -11,5 +9,4 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 BMAD story: XotBaseResourceInfolist replica istanza non statica e schema come XotBaseResourceForm

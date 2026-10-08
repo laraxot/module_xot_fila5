@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpunit"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # phpunit
 
 <!-- Contenuto migrato da _docs/phpunit.txt -->

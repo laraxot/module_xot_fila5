@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "cashier"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # cashier
 
 <!-- Contenuto migrato da _docs/cashier.txt -->

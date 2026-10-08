@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filament extension pattern"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # pattern di estensione filament
 
 ## regola fondamentale

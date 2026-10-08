@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "20 bom phpstan"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # BMAD Story 20 — Bom: 7 errori PHPStan
 
 **Modulo:** `Bom`

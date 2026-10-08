@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "namespace rules"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Namespace Rules"
 type: reference
 tags: [wiki, no-frontmatter-fix]

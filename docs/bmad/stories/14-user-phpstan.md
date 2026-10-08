@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "14 user phpstan"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # BMAD Story 14 — User: 12 errori PHPStan (test)
 
 **Modulo:** `User`

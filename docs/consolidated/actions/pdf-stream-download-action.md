@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "pdf stream download action"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # StreamDownloadPdfAction Documentation
 
 ## Overview

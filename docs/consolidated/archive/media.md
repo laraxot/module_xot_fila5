@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "media"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Analisi e Risoluzione Colli di Bottiglia - Modulo Media
 
 ## 1. Upload Performance (Priorità: Alta)

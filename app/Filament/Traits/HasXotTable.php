@@ -728,7 +728,4 @@ trait HasXotTable
 
         return $table;
     }
-
-
-
 }

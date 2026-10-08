@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "artisan service todo"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Artisan Service Todo"
 type: reference
 tags: [wiki, no-frontmatter-fix]

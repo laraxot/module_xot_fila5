@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "htaccess"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # htaccess
 
 <!-- Contenuto migrato da _docs/htaccess.txt -->

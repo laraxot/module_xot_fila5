@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "form"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # form
 
 <!-- Contenuto migrato da _docs/form.txt -->

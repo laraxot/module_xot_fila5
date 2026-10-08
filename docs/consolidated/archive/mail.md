@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "mail"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # mail
 
 <!-- Contenuto migrato da _docs/mail.txt -->

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "data queableactions"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Data Queableactions"
 type: reference
 tags: [wiki, no-frontmatter-fix]

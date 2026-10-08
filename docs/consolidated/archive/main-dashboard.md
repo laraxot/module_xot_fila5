@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "main dashboard"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # MainDashboard
 
 La classe `MainDashboard` è una pagina Filament che estende la dashboard predefinita per fornire funzionalità di reindirizzamento basate sui ruoli dell'utente.

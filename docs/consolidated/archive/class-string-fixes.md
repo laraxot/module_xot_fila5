@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "class string fixes"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Class-String Return Type Fixes for Xot Module
 
 ## Method Return Type Issues

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "solutions"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Soluzioni Tecniche - Modulo Xot
 
 ## Problemi Identificati e Soluzioni
@@ -272,8 +269,6 @@ class CacheTest extends TestCase {
 5. Mantenere compatibilità con le versioni precedenti
 
 ---
-<<<<<<< HEAD
-=======
 title: "solutions"
 type: note
 tags: [documentation]
@@ -282,4 +277,3 @@ updated: 2026-09-26
 qmd: "solutions"
 issues: []
 discussions: []
->>>>>>> laraxot/dev

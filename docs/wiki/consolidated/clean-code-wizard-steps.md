@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "clean code wizard steps"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Clean Code Wizard Steps"
 type: reference
 tags: [wiki, no-frontmatter-fix]

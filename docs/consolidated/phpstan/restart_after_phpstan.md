@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Guida al Riavvio del Sistema Dopo Validazione PHPStan"
 module: "Xot"
 type: concept

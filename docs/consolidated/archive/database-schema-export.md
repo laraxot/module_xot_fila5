@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "database schema export"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Comando DatabaseSchemaExport
 
 ## Panoramica

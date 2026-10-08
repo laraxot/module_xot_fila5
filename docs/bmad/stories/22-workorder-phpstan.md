@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "22 workorder phpstan"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # BMAD Story 22 — WorkOrder: 6 errori PHPStan
 
 **Modulo:** `WorkOrder`

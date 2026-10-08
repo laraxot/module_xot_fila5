@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "12 notify phpstan"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # BMAD Story 12 — Notify: 14 errori PHPStan (test)
 
 **Modulo:** `Notify`

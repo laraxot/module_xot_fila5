@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "07 hr table filters"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # BMAD Story 07 — HR: compatibilità getTableFilters()
 
 **Repo:** `git@github.com:laraxot/module_xot_fila5.git`

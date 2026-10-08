@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "module structure"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Module Structure in Laraxot
 
 ## Directory Structure
@@ -123,8 +120,6 @@ Route::middleware('api')->prefix('api')->group(function () {
 ### Versione Incoming
 
 ---
-<<<<<<< HEAD
-=======
 title: "module structure"
 type: note
 tags: [documentation]
@@ -133,4 +128,3 @@ updated: 2026-09-26
 qmd: "module structure"
 issues: []
 discussions: []
->>>>>>> laraxot/dev

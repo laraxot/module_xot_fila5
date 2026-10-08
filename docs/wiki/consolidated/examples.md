@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "examples"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Examples"
 type: reference
 tags: [wiki, no-frontmatter-fix]

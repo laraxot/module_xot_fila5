@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "state machine"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "State Machine"
 type: reference
 tags: [wiki, no-frontmatter-fix]

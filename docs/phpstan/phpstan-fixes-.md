@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Correzioni PHPStan - 6 Gennaio 2025"
 module: "Xot"
 type: concept

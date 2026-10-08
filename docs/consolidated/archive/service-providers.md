@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "service providers"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Service Providers
 
 ## Struttura Base

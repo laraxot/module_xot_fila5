@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "best practices"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Laraxot Best Practices
 
 ## Form Schema Best Practices
@@ -127,8 +124,6 @@ class MyResource extends XotBaseResource
 ### Versione Incoming
 
 ---
-<<<<<<< HEAD
-=======
 title: "best practices"
 type: note
 tags: [documentation]
@@ -137,4 +132,3 @@ updated: 2026-09-26
 qmd: "best practices"
 issues: []
 discussions: []
->>>>>>> laraxot/dev

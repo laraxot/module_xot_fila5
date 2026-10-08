@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "big projects"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # big_projects
 
 <!-- Contenuto migrato da _docs/big_projects.txt -->

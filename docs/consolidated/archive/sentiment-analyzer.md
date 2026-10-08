@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "sentiment analyzer"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # sentiment-analyzer
 
 <!-- Contenuto migrato da _docs/sentiment-analyzer.txt -->

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "modelwithposcontract conflict resolution"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Risoluzione del Conflitto in ModelWithPosContract.php
 
 ## Problema

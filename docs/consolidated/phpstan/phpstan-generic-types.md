@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan generic types"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Risoluzione degli Errori PHPStan Relativi ai Tipi Generici nelle Relazioni Eloquent
 
 Questo documento fornisce linee guida per risolvere gli errori PHPStan di livello 9 relativi ai tipi generici nelle relazioni Eloquent nei modelli Laravel.

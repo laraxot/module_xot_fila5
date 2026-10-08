@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "cleanup all modules 2026 09 22.story"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "cleanup all modules 2026 09 22.story"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 id: "xot-cleanup-all-modules-dated-pointer"
 status: superseded
 ---

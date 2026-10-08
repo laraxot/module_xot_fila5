@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "cast actions"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Cast Actions"
 type: reference
 tags: [wiki, no-frontmatter-fix]

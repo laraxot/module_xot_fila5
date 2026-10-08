@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "phpstan level7 guide"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "phpstan level7 guide"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: phpstan_level7_guide
 canonical: ../../../../../Themes/docs/shared-components/phpstan-level7-guide-2.md

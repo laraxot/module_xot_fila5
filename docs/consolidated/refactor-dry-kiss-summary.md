@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "refactor dry kiss summary"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Refactor Radicale DRY + KISS - Riepilogo Completo
 
 > **🎯 Obiettivo Raggiunto**: Eliminazione massiva duplicazioni documentali
@@ -221,8 +218,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "refactor dry kiss summary"
 type: note
 tags: [documentation]
@@ -231,7 +226,6 @@ updated: 2026-09-26
 qmd: "refactor dry kiss summary"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **🎯 Risultato Finale**: Da caos documentale a struttura enterprise
 **📈 ROI**: 99.8% riduzione complessità, 100% aumento efficienza
 **🏆 Standard**: Implementazione completa principi DRY + KISS

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "cleanup xot 2026 09 22.story"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Story: Cleanup Xot Module (High Priority)
 
 ## BMAD Method Applied

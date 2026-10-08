@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "module documentation standards"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Standard di Documentazione dei Moduli
 
 ## Regola: Nessun Riferimento al Progetto Specifico

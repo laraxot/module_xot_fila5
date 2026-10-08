@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "lazy"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # _lazy
 
 <!-- Contenuto migrato da _docs/_lazy.txt -->

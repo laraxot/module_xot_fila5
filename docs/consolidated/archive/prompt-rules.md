@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "prompt rules"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Regole per i Prompt
 
 ## Regola Universale

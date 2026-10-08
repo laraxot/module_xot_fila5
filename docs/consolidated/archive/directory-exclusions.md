@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "directory exclusions"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Eccezioni alla Regola della Directory app in Laraxot <nome progetto>
 
 ## Panoramica

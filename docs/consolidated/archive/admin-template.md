@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "admin template"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # admin_template
 
 <!-- Contenuto migrato da _docs/admin_template.txt -->

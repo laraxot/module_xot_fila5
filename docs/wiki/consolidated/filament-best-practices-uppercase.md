@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "filament best practices uppercase"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Filament Best Practices Uppercase"
 type: reference
 tags: [wiki, no-frontmatter-fix]

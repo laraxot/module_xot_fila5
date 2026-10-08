@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "dashboard pages"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Dashboard Pages"
 type: reference
 tags: [wiki, no-frontmatter-fix]

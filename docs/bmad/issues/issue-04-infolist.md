@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "issue 04 infolist"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Issue GH #04 — XotBaseResourceInfolist: istanza + HasXotInfolist
 
 **Repo:** `git@github.com:laraxot/module_xot_fila5.git`

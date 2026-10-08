@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "scrutinizer"
 type: note
@@ -11,5 +9,4 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://scrutinizer-ci.com/

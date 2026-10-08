@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Case Sensitivity e Struttura Corretta delle Directory nei Moduli Laravel"
 module: "Xot"
 type: concept

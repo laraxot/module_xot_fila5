@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "brand testing"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Testing del Brand
 
 ## Principi di Testing

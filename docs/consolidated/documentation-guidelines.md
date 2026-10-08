@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "documentation guidelines"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Linee Guida per la Documentazione in Laraxot
 
 Questo documento definisce le best practices per la creazione e la manutenzione della documentazione all'interno del framework Laraxot.
@@ -55,8 +52,6 @@ Per i documenti che utilizzeranno un generatore di siti statici come Jigsaw, ini
 
 ```markdown
 ---
-<<<<<<< HEAD
-=======
 type: note
 tags: [documentation]
 created: 2026-09-26
@@ -64,7 +59,6 @@ updated: 2026-09-26
 qmd: "documentation guidelines"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: Titolo del Documento
 description: Breve descrizione del contenuto
 category: Categoria (es. Modelli, API, Config)

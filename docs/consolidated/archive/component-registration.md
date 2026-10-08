@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "component registration"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Registrazione Automatica dei Componenti Blade
 
 ## Architettura di XotBaseServiceProvider

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "graphify out gitignore all modules.story"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Story: graphify-out/ ignorato in tutti i .gitignore dei moduli
 
 ## Contesto

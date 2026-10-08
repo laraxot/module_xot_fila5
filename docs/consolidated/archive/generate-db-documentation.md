@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "generate db documentation"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # GenerateDbDocumentationCommand
 
 ## Descrizione

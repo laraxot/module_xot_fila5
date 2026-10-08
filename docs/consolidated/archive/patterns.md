@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "patterns"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 ../../Lang/project_docs/en/architecture/patterns.md
 ## Collegamenti tra versioni di patterns.md
 * [patterns.md](../../../Xot/project_docs/en/patterns.md)

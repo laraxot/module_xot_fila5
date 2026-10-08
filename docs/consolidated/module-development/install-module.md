@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "install module"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # install_module
 
 <!-- Contenuto migrato da _docs/install_module.txt -->

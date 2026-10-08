@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "directory case sensitivity"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Case Sensitivity e Struttura Corretta delle Directory nei Moduli Laravel
 
 ## Problemi Identificati

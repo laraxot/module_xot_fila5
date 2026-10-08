@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "18 aiassistant phpstan"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # BMAD Story 18 — AiAssistant: 10 errori PHPStan
 
 **Modulo:** `AiAssistant`

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "configuration"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Configurazione del Sistema
 
 ## Struttura delle Configurazioni

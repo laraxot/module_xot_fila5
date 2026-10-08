@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "forms and validation"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Form e Validazione nel Progetto il progetto
 
 ## Filament Widgets vs Form Blade Tradizionali

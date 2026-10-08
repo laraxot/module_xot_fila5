@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "safe functions"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Funzioni Safe nel Modulo Xot
 
 ## Panoramica

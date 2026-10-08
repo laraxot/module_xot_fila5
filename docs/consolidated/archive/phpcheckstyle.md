@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpcheckstyle"
 type: note
@@ -11,5 +9,4 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://github.com/PHPCheckstyle/phpcheckstyle

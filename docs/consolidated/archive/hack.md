@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "hack"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # hack
 
 <!-- Contenuto migrato da _docs/hack.txt -->

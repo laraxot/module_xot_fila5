@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "model casting rules"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Model Casting Rules"
 type: reference
 tags: [wiki, no-frontmatter-fix]

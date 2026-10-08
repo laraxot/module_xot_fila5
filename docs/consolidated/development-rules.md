@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "development rules"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Regole Generali di Sviluppo del Progetto
 
 ## Collegamenti
@@ -438,8 +435,6 @@ TextInput::make('name')
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "development rules"
 type: note
 tags: [documentation]
@@ -448,5 +443,4 @@ updated: 2026-09-26
 qmd: "development rules"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Nota**: Queste regole sono fondamentali per mantenere la qualità e la consistenza del progetto. Devono essere sempre seguite e aggiornate quando necessario.

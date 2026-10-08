@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "stubs"
 type: note
@@ -11,14 +9,11 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # stubs
 
 <!-- Contenuto migrato da _docs/stubs.txt -->
 
 ---
-<<<<<<< HEAD
-=======
 title: "stubs"
 type: note
 tags: [documentation]
@@ -27,7 +22,6 @@ updated: 2026-09-26
 qmd: "stubs"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 https://thatladydev.medium.com/create-custom-files-in-laravel-using-artisan-commands-c6e4cb9d18df
 
 https://laravel-news.com/laravel-populated-factory

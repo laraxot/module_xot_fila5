@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "filters"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # filters
 
 <!-- Contenuto migrato da _docs/filters.txt -->
