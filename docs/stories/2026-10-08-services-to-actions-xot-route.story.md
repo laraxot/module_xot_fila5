@@ -51,7 +51,7 @@ registrate con le tre implementazioni danno tabelle di route identiche (nome, ur
 
 ## Modifiche
 
-Mappa Service -> Action (le Action marcate "esistente" erano in HEAD):
+Mappa Service -> Action (le Action marcate "esistente" erano gia' nel repo prima di questa sessione):
 
 | Service | Action |
 |---|---|
@@ -67,7 +67,7 @@ Mappa Service -> Action (le Action marcate "esistente" erano in HEAD):
 File codice (`laravel/Modules/Xot/`):
 - modificati: `app/Actions/Route/BuildActionUrlAction.php`, `GetCurrentRouteActionNameAction.php`, `GetCurrentRouteControllerNameAction.php`, `GetCurrentRouteModuleNameAction.php`, `GetCurrentRouteViewAction.php`
 - nuovo: `app/Actions/Route/GetCurrentRouteHandlerAction.php`
-- eliminati (working tree; recuperabili da HEAD salvo dove indicato): `app/Services/RouteService.php` (HEAD ha la versione precedente al fix di `urlAct` di oggi, che ora vive in `BuildActionUrlAction`), `app/Services/RouteDynService.php`, `app/Actions/RouteDynAction.php`
+- eliminati (il repo Xot e' stato committato nel frattempo dal proprietario: `bea6f0b3` contiene queste cancellazioni, si recuperano da `bea6f0b3^`): `app/Services/RouteService.php` (la versione committata e' precedente al fix di `urlAct` di oggi, che ora vive in `BuildActionUrlAction`), `app/Services/RouteDynService.php`, `app/Actions/RouteDynAction.php`
 
 Test:
 - `tests/Unit/Services/RouteServiceTest.php` (non tracciato, creato oggi) -> `tests/Unit/Actions/Route/BuildActionUrlActionTest.php`: le 4 asserzioni originali identiche (URL dalla route corrente, solo ultimo segmento, ancora `#...`, `row` posizionale) piu' 3 nuove (nome senza punti, route senza nome, chiavi `null` di `RouteParamsData` e `query`).

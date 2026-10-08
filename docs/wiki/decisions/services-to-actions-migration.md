@@ -126,7 +126,7 @@ La riga `ArtisanService` della tabella "Lasciati intatti" e' superata: `ArtisanS
 
 ## Completamento Xot-route (2026-10-08)
 
-`RouteService` e `RouteDynService` sono eliminati (zero chiamanti di produzione, recuperabili da HEAD; la versione di `urlAct`
+`RouteService` e `RouteDynService` sono eliminati (zero chiamanti di produzione, recuperabili da `bea6f0b3^` del repo Xot; la versione di `urlAct`
 corretta il 2026-10-08 vive ora in `BuildActionUrlAction`). La tabella "Completamento `RouteService` (2026-07-13)" resta valida;
 cambiano due punti: `GetCurrentRouteHandlerAction` e' nuova e le quattro `GetCurrentRoute*Action` la chiamano (la frase
 "nessuna Action chiama un'altra Action" non vale piu'), e `BuildActionUrlAction` e' stata riallineata al Service

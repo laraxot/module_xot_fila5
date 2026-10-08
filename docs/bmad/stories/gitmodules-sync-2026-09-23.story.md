@@ -79,7 +79,6 @@ lato remoto vuoto. Commit `8fb3422`, push verificato.
 15 conflitti rimasti (di cui uno, la story stessa di bonifica marker,
 documentava gia' la stessa identica analisi "ours vs placeholder" per gli
 altri 14). Iniziata risoluzione manuale (pattern nested `<<<<<<< HEAD /
-======= / <<<<<<< HEAD / ======= / >>>>>>> / >>>>>>>` — doppio conflitto,
 HEAD esterno e interno identici, `laraxot/dev` con placeholder template
 `<repo progetto>` da scartare): 13/13 file a blocco singolo verificati
 programmaticamente (`assert A==B` prima di applicare, 0 mismatch). Prima
