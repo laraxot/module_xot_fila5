@@ -200,3 +200,4 @@ yarn.lock
 *:Zone.Identifier
 test-results/
 xot.code-workspace
+.merge_*
