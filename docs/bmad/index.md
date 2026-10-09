@@ -1,48 +1,29 @@
-<<<<<<< .merge_file_1Jh0sp
-<<<<<<< .merge_file_LPrM8Z
-=======
-=======
->>>>>>> .merge_file_aQtJkj
 ---
-title: "Xot - index.md"
+title: "Xot - indice BMAD"
 module: Xot
 bmad: true
 status: active
 ---
-<<<<<<< .merge_file_1Jh0sp
->>>>>>> .merge_file_cDd6zv
-=======
->>>>>>> .merge_file_aQtJkj
+
 # Xot Module — Documentation Index
 
-## Core Purpose
+## Scopo
 
-- **[purpose.md](purpose.md)** — Module scope: architectural foundation and base classes
+Xot fornisce fondazioni Laraxot, classi base, contratti e regole condivise.
 
-## Architecture & Design
+## Architettura e regole
 
-- **[architecture.md](architecture.md)** — Technical framework patterns
-- **[framework/](framework/)** — Framework-specific documentation
+- [purpose.md](purpose.md) — responsabilità del modulo
+- [architecture.md](architecture.md) — architettura tecnica
+- [wiki/rules/](../wiki/rules/) — regole e convenzioni
+- [wiki/patterns/](../wiki/patterns/) — pattern riusabili, quando presenti
 
-## Base Classes & Contracts
+## BMAD e conoscenza
 
-- `XotBaseModel` — Eloquent model foundation
-- `XotBaseResource` — Filament resource foundation
-- `XotBasePage` — Filament page foundation
-- `XotBaseTable` — Filament table foundation
-- Contracts for type safety across modules
+- [stories/](stories/) — story BMAD del modulo
+- [brainstorming.md](brainstorming.md) — esplorazione opportunità
+- [wiki/](../wiki/) — knowledge base
+- [raw/](../raw/) — note grezze, se presenti
 
-## Patterns & Best Practices
-
-- **[wiki/patterns/](wiki/patterns/)** — Reusable patterns
-- **[wiki/rules/](wiki/rules/)** — Rules and conventions
-
-## Active Work
-
-- **[bmad/](bmad/)** — BMAD methodology directory
-- **[bmad/stories/](bmad/stories/)** — Completed work
-
-## Knowledge Base
-
-- **[wiki/](wiki/)** — Long-term knowledge base
-- **[raw/](raw/)** — Raw documentation and notes
+Questo è l'indice canonico BMAD del modulo Xot. I file con prefisso `legacy-`
+presenti in `docs/stories/` sono riferimenti storici e non SSoT.

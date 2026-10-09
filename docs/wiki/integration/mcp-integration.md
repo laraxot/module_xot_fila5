@@ -1,12 +1,9 @@
-<<<<<<< .merge_file_fWZCpJ
-=======
 ---
 title: "Xot - mcp-integration.md"
 module: Xot
 bmad: true
 status: active
 ---
->>>>>>> .merge_file_VSe3I5
 # MCP (Model Context Protocol) Integration
 
 ## Cosa è MCP?

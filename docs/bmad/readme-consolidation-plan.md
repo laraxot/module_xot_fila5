@@ -1,18 +1,9 @@
-<<<<<<< .merge_file_q6uLZQ
-<<<<<<< .merge_file_4hLssl
-=======
-=======
->>>>>>> .merge_file_87ziqU
 ---
 title: "Xot - readme-consolidation-plan.md"
 module: Xot
 bmad: true
 status: active
 ---
-<<<<<<< .merge_file_q6uLZQ
->>>>>>> .merge_file_8XX100
-=======
->>>>>>> .merge_file_87ziqU
 # Piano Consolidamento File readme.md Duplicati
 
 **Data**: 2026-01-09  
