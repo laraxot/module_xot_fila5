@@ -42,24 +42,14 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\Relations\Siblings;
  *
  * @phpstan-require-extends Model
  *
-<<<<<<< .merge_file_xfWicd
-<<<<<<< .merge_file_l0FKAW
- * @mixin \Illuminate\Database\Eloquent\Model
-=======
-=======
->>>>>>> .merge_file_AymI7Q
  * Tipi di ritorno solo nel `@return`, non nativi, sui metodi che il trait vendor
  * `Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships` dichiara senza
- * tipo (`getParentKeyName()`, `getPathName()`, `hasNestedPath()`, ...): i modelli Cms
- * (`BaseTreeModel`, `Menu`) usano quel trait direttamente e un tipo nativo qui rende
- * fatale il caricamento della classe. `TypedHasRecursiveRelationships` li restringe
- * comunque ai tipi nativi (covarianza), e PHPStan legge il `@return`.
+ * tipo (`getParentKeyName()`, `getPathName()`, `hasNestedPath()`, ...): i modelli che usano
+ * quel trait direttamente non possono implementare un contratto con tipi nativi senza
+ * fatal runtime. `TypedHasRecursiveRelationships` li restringe comunque ai tipi nativi
+ * quando serve, e PHPStan legge il `@return`.
  *
- * @mixin Model
-<<<<<<< .merge_file_xfWicd
->>>>>>> .merge_file_kYIh5F
-=======
->>>>>>> .merge_file_AymI7Q
+ * @mixin \Illuminate\Database\Eloquent\Model
  */
 interface HasRecursiveRelationshipsContract
 {
@@ -68,14 +58,8 @@ interface HasRecursiveRelationshipsContract
      *
      * Il ritorno e' `mixed` perche' il trait vendor `HasAdjacencyList` lo dichiara cosi':
      * un tipo piu' stretto qui rende fatale il caricamento di ogni classe che usa il trait.
-<<<<<<< .merge_file_xfWicd
-<<<<<<< .merge_file_l0FKAW
      *
      * @return mixed
-=======
->>>>>>> .merge_file_kYIh5F
-=======
->>>>>>> .merge_file_AymI7Q
      */
     public static function withMaxDepth(int $maxDepth, callable $query): mixed;
 
@@ -84,63 +68,63 @@ interface HasRecursiveRelationshipsContract
      *
      * @return string
      */
-    public function getParentKeyName(): string;
+    public function getParentKeyName();
 
     /**
      * Get the qualified parent key column.
      *
      * @return string
      */
-    public function getQualifiedParentKeyName(): string;
+    public function getQualifiedParentKeyName();
 
     /**
      * Get the name of the local key column.
      *
      * @return string
      */
-    public function getLocalKeyName(): string;
+    public function getLocalKeyName();
 
     /**
      * Get the qualified local key column.
      *
      * @return string
      */
-    public function getQualifiedLocalKeyName(): string;
+    public function getQualifiedLocalKeyName();
 
     /**
      * Get the name of the depth column.
      *
      * @return string
      */
-    public function getDepthName(): string;
+    public function getDepthName();
 
     /**
      * Get the name of the path column.
      *
      * @return string
      */
-    public function getPathName(): string;
+    public function getPathName();
 
     /**
      * Get the path separator.
      *
      * @return string
      */
-    public function getPathSeparator(): string;
+    public function getPathSeparator();
 
     /**
      * Get the additional custom paths.
      *
      * @return array<string>
      */
-    public function getCustomPaths(): array;
+    public function getCustomPaths();
 
     /**
      * Get the name of the common table expression.
      *
      * @return string
      */
-    public function getExpressionName(): string;
+    public function getExpressionName();
 
     /** @return Ancestors<Model, Model> */
     public function ancestors();
@@ -186,21 +170,23 @@ interface HasRecursiveRelationshipsContract
      *
      * @return string
      */
-    public function getFirstPathSegment(): string;
+    public function getFirstPathSegment();
 
     /**
      * Determine whether the model's path is nested.
      *
      * @return bool
      */
-    public function hasNestedPath(): bool;
+    public function hasNestedPath();
 
     /**
      * Determine if an attribute is an integer.
      *
+     * @param string $attribute
+     *
      * @return bool
      */
-    public function isIntegerAttribute(string $attribute): bool;
+    public function isIntegerAttribute($attribute);
 
     /**
      * @return AdjacencyBuilder<Model>

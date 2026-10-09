@@ -8,13 +8,6 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
 use Modules\Tenant\Models\BaseModelJson;
-<<<<<<< .merge_file_QCEghM
-<<<<<<< .merge_file_Nzhc7S
-use Modules\Tenant\Models\Traits\SushiToJson;
-=======
->>>>>>> .merge_file_EALfS6
-=======
->>>>>>> .merge_file_yKOY3a
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Database\Factories\InformationSchemaTableFactory;
 
@@ -50,14 +43,6 @@ use Modules\Xot\Database\Factories\InformationSchemaTableFactory;
  */
 class InformationSchemaTable extends BaseModelJson
 {
-<<<<<<< .merge_file_QCEghM
-<<<<<<< .merge_file_Nzhc7S
-
-
-=======
->>>>>>> .merge_file_EALfS6
-=======
->>>>>>> .merge_file_yKOY3a
     /**
      * @var list<string>
      */

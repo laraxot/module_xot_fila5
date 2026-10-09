@@ -26,18 +26,6 @@ class DeleteTableIndexByModelClassIndexNameAction
         $table = $model->getTable();
         Assert::stringNotEmpty($table);
         Assert::stringNotEmpty($indexName);
-<<<<<<< .merge_file_QOF8ym
-<<<<<<< .merge_file_VjJecc
-        $formManager = app(GetSchemaManagerByModelClassAction::class)->execute($modelClass);
-        $doctrineTable = $formManager->introspectTableByUnquotedName($table);
-        // $doctrineTable=$formManager->listTableDetails($table);
-        // DBAL 4.5: Table::dropIndex() e' deprecato, si passa da edit()/TableEditor.
-        // Come prima, la modifica resta sul Table introspezionato: nessun ALTER TABLE.
-        $doctrineTable->edit()->dropIndexByUnquotedName($indexName)->create();
-=======
->>>>>>> .merge_file_HwmXyS
-=======
->>>>>>> .merge_file_iu157y
 
         Schema::connection($model->getConnectionName())->table(
             $table,

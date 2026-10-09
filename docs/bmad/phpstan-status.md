@@ -1,27 +1,13 @@
-<<<<<<< .merge_file_PkylbW
-<<<<<<< .merge_file_PEPJ9k
-=======
-=======
->>>>>>> .merge_file_7cEq6y
 ---
 title: "Xot - phpstan-status.md"
 module: Xot
 bmad: true
 status: active
 ---
-<<<<<<< .merge_file_PkylbW
->>>>>>> .merge_file_SHNnol
-=======
->>>>>>> .merge_file_7cEq6y
 # PHPStan Status — Xot
 
 Stato vivo del gate. Non copiare numeri da report storici: rimisura.
 
-<<<<<<< .merge_file_PkylbW
-<<<<<<< .merge_file_PEPJ9k
-=======
-=======
->>>>>>> .merge_file_7cEq6y
 ## Misura 2026-10-06 (sera) — swarm Xot/app: scopo prima dell'errore
 
 `analyse Modules/Xot/app`: 147 segnalazioni del file errori -> **21**, tutte
@@ -49,10 +35,6 @@ senza PHPDoc risolto -> classe nominata). Pest non eseguito (`.env.testing` = My
 Da decidere: `tests/PestStubs.php` e' orfano ma e' lui a risolvere `Pest\Laravel\*` per PHPStan.
 Dettaglio e lezioni: [dev-story](../stories/2026-10-06-phpstan-cleanup-xot-rest.dev.md).
 
-<<<<<<< .merge_file_PkylbW
->>>>>>> .merge_file_SHNnol
-=======
->>>>>>> .merge_file_7cEq6y
 ## Misura 2026-10-06 — EnsureKeysAction + file scratch rimossi
 
 `analyse Modules/Xot` dopo il sync delle sub-repository (`64a28f945`): **4** errori, ora **0**.
@@ -171,14 +153,7 @@ Per dichiarare «siamo a zero» serve il comando senza argomenti.
 - [phpstan-modules-fix.md](./wiki/troubleshooting/phpstan-modules-fix.md) — ricette
 - [phpstan-best-practices.md](./wiki/phpstan-best-practices.md) — pattern Pest
 - [18.59](./stories/18.59.phpstan-repo-wide-zero-2026-09-21.story.md) — drift 23→0 del 2026-09-21
-<<<<<<< .merge_file_PkylbW
-<<<<<<< .merge_file_PEPJ9k
-=======
 - [2026-10-08 regressioni Xot/app](../stories/2026-10-08-phpstan-xot-app-regressions.story.md) — `$models` di MorphMany, `urlAct` (row e beforeLast), assert finti
->>>>>>> .merge_file_SHNnol
-=======
-- [2026-10-08 regressioni Xot/app](../stories/2026-10-08-phpstan-xot-app-regressions.story.md) — `$models` di MorphMany, `urlAct` (row e beforeLast), assert finti
->>>>>>> .merge_file_7cEq6y
 - [phpstan-journey.md](../../../../bashscripts/ai/wiki/second-brain/phpstan-journey.md) — second brain
 - [CloudStorage coverage](../../CloudStorage/docs/coverage.md) — incidente require-dev Symplify
 - [contract-suffix memory](../../../../bashscripts/ai/wiki/memories/contract-suffix-no-interfaces-folder.md) — religione `*Contract`
