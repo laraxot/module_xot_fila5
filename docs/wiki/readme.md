@@ -1,3 +1,12 @@
+<<<<<<< .merge_file_oIC8GZ
+=======
+---
+title: "Xot - readme.md"
+module: Xot
+bmad: true
+status: active
+---
+>>>>>>> .merge_file_IDZtqD
 # LLM Wiki (module)
 
 Questa cartella contiene la wiki curata del modulo **Xot** per uso LLM.

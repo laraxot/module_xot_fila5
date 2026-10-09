@@ -16,11 +16,15 @@ use Spatie\Permission\Exceptions\PermissionDoesNotExist;
  *
  * @phpstan-require-extends Model
  *
+<<<<<<< .merge_file_lt3euT
 <<<<<<< .merge_file_8wgIFx
  * @mixin \Illuminate\Database\Eloquent\Model
 =======
  * @mixin Model
 >>>>>>> .merge_file_7BlUID
+=======
+ * @mixin Model
+>>>>>>> .merge_file_rHZxUG
  */
 interface ModelProfileContract extends ModelContract
 {

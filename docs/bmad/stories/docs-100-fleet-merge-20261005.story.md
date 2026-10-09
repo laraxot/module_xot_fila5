@@ -1,12 +1,18 @@
+<<<<<<< .merge_file_QdqlH2
 <<<<<<< .merge_file_HXUoQD
 =======
+=======
+>>>>>>> .merge_file_LdM8md
 ---
 title: "Xot - docs-100-fleet-merge-20261005.story.md"
 module: Xot
 bmad: true
 status: active
 ---
+<<<<<<< .merge_file_QdqlH2
 >>>>>>> .merge_file_SGDode
+=======
+>>>>>>> .merge_file_LdM8md
 # Epic — Docs ≤100 .md ricorsivi via merge (fleet-wide, 2026-10-05)
 
 > Status: in-progress. Owner: sessione corrente. Metodo: BMAD + second brain + ponytail.

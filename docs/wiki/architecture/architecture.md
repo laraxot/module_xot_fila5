@@ -1,4 +1,7 @@
 ---
+qmd: "architecture"
+issues: []
+discussions: []
 title: "Architecture"
 type: reference
 tags: [wiki, no-frontmatter-fix]
@@ -105,8 +108,8 @@ abstract class XotBaseResource extends Resource
 {
     use HasXotTable;
 
-<<<<<<< HEAD
     public function getFormSchema(): array
+<<<<<<< .merge_file_5dayrX
 =======
 <<<<<<< HEAD
     public function getFormSchema(): array
@@ -114,6 +117,10 @@ abstract class XotBaseResource extends Resource
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+---
+    public function getFormSchema(): array
+>>>>>>> .merge_file_BDNjkv
     {
         return static::getFormSchemaImplementation();
     }
