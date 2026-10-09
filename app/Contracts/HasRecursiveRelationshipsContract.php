@@ -42,7 +42,18 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\Relations\Siblings;
  *
  * @phpstan-require-extends Model
  *
+<<<<<<< .merge_file_l0FKAW
  * @mixin \Illuminate\Database\Eloquent\Model
+=======
+ * Tipi di ritorno solo nel `@return`, non nativi, sui metodi che il trait vendor
+ * `Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships` dichiara senza
+ * tipo (`getParentKeyName()`, `getPathName()`, `hasNestedPath()`, ...): i modelli Cms
+ * (`BaseTreeModel`, `Menu`) usano quel trait direttamente e un tipo nativo qui rende
+ * fatale il caricamento della classe. `TypedHasRecursiveRelationships` li restringe
+ * comunque ai tipi nativi (covarianza), e PHPStan legge il `@return`.
+ *
+ * @mixin Model
+>>>>>>> .merge_file_kYIh5F
  */
 interface HasRecursiveRelationshipsContract
 {
@@ -51,8 +62,11 @@ interface HasRecursiveRelationshipsContract
      *
      * Il ritorno e' `mixed` perche' il trait vendor `HasAdjacencyList` lo dichiara cosi':
      * un tipo piu' stretto qui rende fatale il caricamento di ogni classe che usa il trait.
+<<<<<<< .merge_file_l0FKAW
      *
      * @return mixed
+=======
+>>>>>>> .merge_file_kYIh5F
      */
     public static function withMaxDepth(int $maxDepth, callable $query): mixed;
 

@@ -1,3 +1,12 @@
+<<<<<<< .merge_file_TVQYF1
+=======
+---
+title: "Xot - readme-en.md"
+module: Xot
+bmad: true
+status: active
+---
+>>>>>>> .merge_file_uA673e
 # ⚡ Xot — English presentation
 
 [![Core](https://img.shields.io/badge/Role-Platform%20Core-6A1B9A.svg)](#)

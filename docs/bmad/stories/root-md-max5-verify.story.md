@@ -1,4 +1,8 @@
 ---
+tags: [documentation]
+qmd: "root md max5 verify.story"
+issues: []
+discussions: []
 title: "Verifica e correzione max 5 .md in root modulo ($MODULO)"
 type: story
 module: $MODULO

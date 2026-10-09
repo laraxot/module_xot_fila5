@@ -128,3 +128,22 @@ sintattici, non il criterio funzionale del lavoro.
 - 2026-10-06: risolto cluster Tenant SushiToJson.php: aggiunto return type array<array<string,mixed>> a getRows() e risolta variabile $schema
 - 2026-10-06: organizzate docs moduli e temi secondo BMAD.
 - 2026-10-06: completati Progressioni, Rating e Sigma; PHPStan globale finale verde.
+<<<<<<< .merge_file_WoaPAI
+=======
+
+## Seguito in base_quaeris_fila5
+
+- 2026-10-06: il contratto tipizzato e' arrivato con il pull di Xot in un progetto dove altri
+  moduli lo implementano ancora col trait vendor: stesso fatal (`Child process error`, primo
+  sintomo `Cms\Models\Menu::getParentKeyName()`), e a runtime non si caricava `LimeQuestion`.
+  Il verde di questa story valeva per i moduli del progetto in cui e' stata chiusa, non per
+  tutti i consumatori di Xot. Passate al wrapper `TypedHasRecursiveRelationships`:
+  `Cms\Models\Menu`, `Cms\Models\BaseTreeModel`, `Limesurvey\Models\BaseTreeModel`.
+  Verifica: `class_exists()` ok sulle tre classi e su `LimeQuestion` (i suoi override
+  `getParentKeyName/getLocalKeyName/getCustomPaths` sono gia' tipizzati e compatibili);
+  PHPStan `Modules` torna ad analizzare, 18 segnalazioni residue in Geo/Media/Tenant/Xot,
+  nessuna sulle classi toccate. Pest non eseguito: il DB di test SQLite configurato non esiste.
+- Lezione: cambiare la firma di un contratto Xot richiede di censire chi lo implementa in ogni
+  progetto che monta il modulo (`grep -rl HasRecursiveRelationshipsContract Modules`), non solo
+  in quello corrente.
+>>>>>>> .merge_file_7kYwRp

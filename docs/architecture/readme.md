@@ -1,3 +1,12 @@
+<<<<<<< .merge_file_iNMbhp
+=======
+---
+title: "Xot - readme.md"
+module: Xot
+bmad: true
+status: active
+---
+>>>>>>> .merge_file_M0S1ug
 # Architettura Xot
 
 ## Classi Base

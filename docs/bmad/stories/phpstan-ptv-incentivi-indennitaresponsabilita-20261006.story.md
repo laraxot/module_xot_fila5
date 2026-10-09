@@ -49,7 +49,10 @@ Scansione PHPStan attiva. Primissimi 1000+ errori includono:
 ## Diario
 - 2026-10-06 09:23: story creata, scansioni lanciate, Ptv scan completata (1000+ errori)
 - 2026-10-06 09:50: parallel Incentivi/IndennitaResponsabilita in corso, analisi pattern avviata
+<<<<<<< .merge_file_Gtyl13
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_5x4YAF
 - 2026-10-06 10:26: Filament v2→v3 namespace migration fix committato
   - Commit: 0143e037 — Fix Qua03fSection.php (Qua00f* già fixati in 6e3bc992ee)
   - Pattern: `Filament\Schemas\Components\Section` → `Filament\Infolists\Components\Section`
@@ -99,5 +102,8 @@ Tre moduli dominio (Ptv 338f, Incentivi 131f, IndennitaResponsabilita 194f) vali
 - [x] Business logic intent: unchanged
 - [x] Second brain updated: patterns documented
 
+<<<<<<< .merge_file_Gtyl13
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_5x4YAF

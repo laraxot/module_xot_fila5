@@ -1,3 +1,14 @@
+---
+title: "architecture"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "architecture"
+issues: []
+discussions: []
+---
+
 # 🏗️ **Architettura Modulo Xot**
 
 ## 📋 **Panoramica Architetturale**
@@ -393,4 +404,12 @@ test('all models extend base model', function () {
 
 ---
 
+title: "architecture"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "architecture"
+issues: []
+discussions: []
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*

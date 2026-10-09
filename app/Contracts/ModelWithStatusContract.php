@@ -48,7 +48,11 @@ use Spatie\ModelStatus\Status;
  *
  * @phpstan-require-extends Model
  *
+<<<<<<< .merge_file_UgKkFa
  * @mixin \Illuminate\Database\Eloquent\Model
+=======
+ * @mixin Model
+>>>>>>> .merge_file_2frySo
  */
 interface ModelWithStatusContract
 {

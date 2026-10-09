@@ -39,7 +39,11 @@ class ShowArtisanErrorLogAction
         preg_match_all($pattern, $content, $matches);
 
         /** @var list<string> $urlList */
+<<<<<<< .merge_file_jN03B2
         $urlList = $matches[1] ?? [];
+=======
+        $urlList = $matches[1];
+>>>>>>> .merge_file_vSOzQL
         $urls = array_values(array_unique($urlList));
         $view_params = [
             'view' => $view,

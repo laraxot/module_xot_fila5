@@ -227,7 +227,11 @@ abstract class XotBaseMigration extends LaravelMigration
         // return $this->getTableDetails()->hasPrimaryKey();
         $connection = $this->getConn()->getConnection();
         $table = $this->getTable();
+<<<<<<< .merge_file_0BJbGM
         
+=======
+
+>>>>>>> .merge_file_PTXsse
         if ($connection->getDriverName() === 'sqlite') {
             $infos = $connection->select("PRAGMA table_info({$table})");
             foreach ($infos as $info) {
@@ -236,6 +240,10 @@ abstract class XotBaseMigration extends LaravelMigration
                     return true;
                 }
             }
+<<<<<<< .merge_file_0BJbGM
+=======
+
+>>>>>>> .merge_file_PTXsse
             return false;
         }
 

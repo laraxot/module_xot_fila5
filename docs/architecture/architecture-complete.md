@@ -1,3 +1,14 @@
+---
+title: "architecture complete"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "architecture complete"
+issues: []
+discussions: []
+---
+
 # Xot Module - Complete Architecture Guide (2025)
 
 > **Last Updated:** 2025-11-19
@@ -15,6 +26,14 @@
 
 ---
 
+title: "architecture complete"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "architecture complete"
+issues: []
+discussions: []
 ## Module Overview
 
 ### Primary Purpose
@@ -142,8 +161,8 @@ All Filament resources extend this base class:
 
 **Required Methods:**
 ```php
-<<<<<<< HEAD
 abstract public function getFormSchema(): array;
+<<<<<<< .merge_file_1bRKR4
 =======
 <<<<<<< HEAD
 abstract public function getFormSchema(): array;
@@ -151,6 +170,10 @@ abstract public function getFormSchema(): array;
 abstract public function getFormSchema(): array;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+---
+abstract public function getFormSchema(): array;
+>>>>>>> .merge_file_Ex8TBd
 abstract public static function getTableColumns(): array;
 // Optional: getInfolistSchema(), getRelations(), getPages()
 ```
@@ -587,8 +610,8 @@ class MyResource extends XotBaseResource
 {
     protected static ?string $model = MyModel::class;
 
-<<<<<<< HEAD
     public function getFormSchema(): array
+<<<<<<< .merge_file_1bRKR4
 =======
 <<<<<<< HEAD
     public function getFormSchema(): array
@@ -596,6 +619,10 @@ class MyResource extends XotBaseResource
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+---
+    public function getFormSchema(): array
+>>>>>>> .merge_file_Ex8TBd
     {
         return [
             TextInput::make('field1')->required(),
@@ -672,8 +699,8 @@ class ArticleResource extends XotBaseResource
 {
     protected static ?string $model = Article::class;
 
-<<<<<<< HEAD
     public function getFormSchema(): array
+<<<<<<< .merge_file_1bRKR4
 =======
 <<<<<<< HEAD
     public function getFormSchema(): array
@@ -681,6 +708,10 @@ class ArticleResource extends XotBaseResource
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+---
+    public function getFormSchema(): array
+>>>>>>> .merge_file_Ex8TBd
     {
         return [
             TextInput::make('title')

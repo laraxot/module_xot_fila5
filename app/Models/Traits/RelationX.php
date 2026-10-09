@@ -99,9 +99,6 @@ trait RelationX
         $table = $pivot->getTable();
         $pivotFields = $pivot->getFillable();
 
-        $pivotDbName = $pivot->getConnection()->getDatabaseName();
-        $dbName = $this->getConnection()->getDatabaseName();
-        // $relatedDbName = $related_model->getConnection()->getDatabaseName();
         if ($table === null) {
             $table = $pivot->getTable();
         }

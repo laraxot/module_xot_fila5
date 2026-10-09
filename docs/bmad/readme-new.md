@@ -1,3 +1,12 @@
+<<<<<<< .merge_file_OL1Crr
+=======
+---
+title: "Xot - readme-new.md"
+module: Xot
+bmad: true
+status: active
+---
+>>>>>>> .merge_file_W30NR1
 # Xot Module - Core Foundation
 
 **Last Update**: 2025-12-05
