@@ -17,10 +17,14 @@ use Illuminate\Support\Carbon;
  *
  * @phpstan-require-extends Model
  *
+<<<<<<< .merge_file_7strl6
 <<<<<<< .merge_file_UX65zt
  * @mixin \Illuminate\Database\Eloquent\Model
 =======
  * @mixin Model
 >>>>>>> .merge_file_O9qU3Y
+=======
+ * @mixin Model
+>>>>>>> .merge_file_JYLmKi
  */
 interface UpdaterContract {}

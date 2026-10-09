@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_vhDseB
 <<<<<<< .merge_file_oMnhGn
 <<<<<<< .merge_file_z8d13y
 <<<<<<< .merge_file_t0hOOQ
 =======
 >>>>>>> .merge_file_6Bqo04
+=======
+>>>>>>> .merge_file_v89rjP
 ---
 title: "Xot — architettura BMAD"
 type: architecture
@@ -14,6 +17,7 @@ related:
   - architecture/module-boundary.md
   - architecture/composite-filter-column-span.md
   - architecture/sync-modules-cli.md
+<<<<<<< .merge_file_vhDseB
 <<<<<<< .merge_file_oMnhGn
   - app/Providers/XotBaseServiceProvider.php
   - app/Filament/Resources/XotBaseResource.php
@@ -23,6 +27,11 @@ related:
   - ../../app/Filament/Resources/XotBaseResource.php
   - ../../app/Models/XotBaseModel.php
 >>>>>>> .merge_file_6Bqo04
+=======
+  - ../../app/Providers/XotBaseServiceProvider.php
+  - ../../app/Filament/Resources/XotBaseResource.php
+  - ../../app/Models/XotBaseModel.php
+>>>>>>> .merge_file_v89rjP
 ---
 
 # Xot — architettura
@@ -123,6 +132,7 @@ Ogni risorsa concreta segue il pattern: `Resource.php` + `Pages/` + `Schemas/For
 ## Verifica link
 
 I link relativi puntano a file esistenti in questo modulo. Vedasi `README.md` per lo story index e `discussions/01-traits-composition.md` per il contesto architetturale.
+<<<<<<< .merge_file_vhDseB
 <<<<<<< .merge_file_oMnhGn
 =======
 =======
@@ -165,6 +175,8 @@ Interfacce per l'iniezione di dipendenze.
 =======
 >>>>>>> .merge_file_SsvJtK
 =======
+=======
+>>>>>>> .merge_file_v89rjP
 
 ## Pattern utilizzati
 
@@ -173,4 +185,7 @@ Interfacce per l'iniezione di dipendenze.
 - Array PHP con una chiave per riga.
 - Form schema-driven tramite `XotBaseSchemaWidget` (`app/Filament/Widgets/XotBaseSchemaWidget.php`).
 - Contratti per l'iniezione di dipendenze in `app/Contracts/` (es. `DataContract`, `ExtraContract`).
+<<<<<<< .merge_file_vhDseB
 >>>>>>> .merge_file_6Bqo04
+=======
+>>>>>>> .merge_file_v89rjP

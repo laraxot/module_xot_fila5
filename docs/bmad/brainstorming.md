@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_VqzgEn
 <<<<<<< .merge_file_9cefpN
 <<<<<<< .merge_file_1Dz7nj
 <<<<<<< .merge_file_clcYBo
 =======
 >>>>>>> .merge_file_MnsaYt
+=======
+>>>>>>> .merge_file_okbJEl
 ---
 title: "Xot — brainstorming BMAD"
 type: brainstorming
@@ -53,6 +56,7 @@ Le risposte devono diventare story BMAD con acceptance criteria misurabili, rife
 - [Architecture](architecture.md)
 - [Stories](stories/) — indice completo in [README.md](README.md)
 - [Epics](epics/module-roadmap.md)
+<<<<<<< .merge_file_VqzgEn
 <<<<<<< .merge_file_9cefpN
 =======
 =======
@@ -85,3 +89,5 @@ Le risposte devono diventare story BMAD con acceptance criteria misurabili, rife
 >>>>>>> .merge_file_gPHhQw
 =======
 >>>>>>> .merge_file_MnsaYt
+=======
+>>>>>>> .merge_file_okbJEl

@@ -1,12 +1,18 @@
+<<<<<<< .merge_file_GRN2xS
 <<<<<<< .merge_file_OM8Mae
 =======
+=======
+>>>>>>> .merge_file_GAQiGw
 ---
 title: "Xot - phpstan-l10-job-media-notify-20261006.story.md"
 module: Xot
 bmad: true
 status: active
 ---
+<<<<<<< .merge_file_GRN2xS
 >>>>>>> .merge_file_0f10hR
+=======
+>>>>>>> .merge_file_GAQiGw
 # BMAD Story: PHPStan L10 Job, Media, Notify
 
 **Epic**: 8.26  

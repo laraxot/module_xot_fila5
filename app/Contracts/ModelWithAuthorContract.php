@@ -44,10 +44,14 @@ use Illuminate\Support\Carbon;
  *
  * @phpstan-require-extends Model
  *
+<<<<<<< .merge_file_pslEWF
 <<<<<<< .merge_file_KWSRaV
  * @mixin \Illuminate\Database\Eloquent\Model
 =======
  * @mixin Model
 >>>>>>> .merge_file_0lYkjz
+=======
+ * @mixin Model
+>>>>>>> .merge_file_WDcprO
  */
 interface ModelWithAuthorContract {}

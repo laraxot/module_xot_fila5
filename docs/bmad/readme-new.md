@@ -1,12 +1,18 @@
+<<<<<<< .merge_file_Ox2WDC
 <<<<<<< .merge_file_OL1Crr
 =======
+=======
+>>>>>>> .merge_file_5G2MeR
 ---
 title: "Xot - readme-new.md"
 module: Xot
 bmad: true
 status: active
 ---
+<<<<<<< .merge_file_Ox2WDC
 >>>>>>> .merge_file_W30NR1
+=======
+>>>>>>> .merge_file_5G2MeR
 # Xot Module - Core Foundation
 
 **Last Update**: 2025-12-05

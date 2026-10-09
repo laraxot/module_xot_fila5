@@ -161,19 +161,25 @@ All Filament resources extend this base class:
 
 **Required Methods:**
 ```php
+<<<<<<< .merge_file_kyuMYk
 abstract public function getFormSchema(): array;
 <<<<<<< .merge_file_1bRKR4
 =======
 <<<<<<< HEAD
-abstract public function getFormSchema(): array;
 =======
+>>>>>>> .merge_file_Nb5wMn
 abstract public function getFormSchema(): array;
+---
+abstract public function getFormSchema(): array;
+<<<<<<< .merge_file_kyuMYk
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======
 ---
 abstract public function getFormSchema(): array;
 >>>>>>> .merge_file_Ex8TBd
+=======
+>>>>>>> .merge_file_Nb5wMn
 abstract public static function getTableColumns(): array;
 // Optional: getInfolistSchema(), getRelations(), getPages()
 ```
@@ -610,19 +616,25 @@ class MyResource extends XotBaseResource
 {
     protected static ?string $model = MyModel::class;
 
+<<<<<<< .merge_file_kyuMYk
     public function getFormSchema(): array
 <<<<<<< .merge_file_1bRKR4
 =======
 <<<<<<< HEAD
-    public function getFormSchema(): array
 =======
+>>>>>>> .merge_file_Nb5wMn
     public function getFormSchema(): array
+---
+    public function getFormSchema(): array
+<<<<<<< .merge_file_kyuMYk
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======
 ---
     public function getFormSchema(): array
 >>>>>>> .merge_file_Ex8TBd
+=======
+>>>>>>> .merge_file_Nb5wMn
     {
         return [
             TextInput::make('field1')->required(),
@@ -699,19 +711,25 @@ class ArticleResource extends XotBaseResource
 {
     protected static ?string $model = Article::class;
 
+<<<<<<< .merge_file_kyuMYk
     public function getFormSchema(): array
 <<<<<<< .merge_file_1bRKR4
 =======
 <<<<<<< HEAD
-    public function getFormSchema(): array
 =======
+>>>>>>> .merge_file_Nb5wMn
     public function getFormSchema(): array
+---
+    public function getFormSchema(): array
+<<<<<<< .merge_file_kyuMYk
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======
 ---
     public function getFormSchema(): array
 >>>>>>> .merge_file_Ex8TBd
+=======
+>>>>>>> .merge_file_Nb5wMn
     {
         return [
             TextInput::make('title')

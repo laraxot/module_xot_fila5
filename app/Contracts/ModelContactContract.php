@@ -49,11 +49,15 @@ use Illuminate\Support\Carbon;
  *
  * @phpstan-require-extends Model
  *
+<<<<<<< .merge_file_LU1eTo
 <<<<<<< .merge_file_R6tY2M
  * @mixin \Illuminate\Database\Eloquent\Model
 =======
  * @mixin Model
 >>>>>>> .merge_file_i4Qu9M
+=======
+ * @mixin Model
+>>>>>>> .merge_file_SKGeJh
  */
 interface ModelContactContract
 {
