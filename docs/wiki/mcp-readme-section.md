@@ -1,12 +1,9 @@
-<<<<<<< .merge_file_2IKvtD
-=======
 ---
 title: "Xot - mcp-readme-section.md"
 module: Xot
 bmad: true
 status: active
 ---
->>>>>>> .merge_file_EjuOQF
 # MCP (Model Context Protocol) Integration
 
 ## Cosa è MCP?
