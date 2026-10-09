@@ -13,10 +13,74 @@ use Illuminate\Testing\TestResponse;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Factory\GetFactoryAction;
 use Modules\Xot\Actions\File\FixPathAction;
-use Webmozart\Assert\Assert;
 
 use function Safe\define;
 use function Safe\preg_match;
+
+use Webmozart\Assert\Assert;
+
+if (! function_exists('merge_translation_files')) {
+    /**
+     * Merge split PHP translation files while preserving nested translation keys.
+     *
+     * @return array<string, mixed>
+     */
+    function merge_translation_files(string $first, string ...$rest): array
+    {
+        /** @var array<string, mixed> $result */
+        $result = load_translation_array($first);
+
+        /**
+         * @param  array<string, mixed>  $base
+         * @param  array<string, mixed>  $overlay
+         * @return array<string, mixed>
+         */
+        $merge = static function (array $base, array $overlay) use (&$merge): array {
+            foreach ($overlay as $key => $value) {
+                if (is_string($key) && is_array($value) && is_array($base[$key] ?? null)) {
+                    /** @var array<string, mixed> $nestedBase */
+                    $nestedBase = $base[$key];
+                    /** @var array<string, mixed> $nestedOverlay */
+                    $nestedOverlay = $value;
+                    $base[$key] = $merge($nestedBase, $nestedOverlay);
+                } elseif (is_string($key)) {
+                    $base[$key] = $value;
+                }
+            }
+
+            return $base;
+        };
+
+        foreach ($rest as $file) {
+            /** @var array<string, mixed> $merged */
+            $merged = $merge($result, load_translation_array($file));
+            $result = $merged;
+        }
+
+        return $result;
+    }
+
+    /**
+     * @return array<string, mixed>
+     */
+    function load_translation_array(string $file): array
+    {
+        $content = require $file;
+
+        if (! is_array($content)) {
+            return [];
+        }
+
+        $result = [];
+        foreach ($content as $key => $value) {
+            if (is_string($key)) {
+                $result[$key] = $value;
+            }
+        }
+
+        return $result;
+    }
+}
 
 if (! function_exists('isRunningTestBench')) {
     function isRunningTestBench(): bool
@@ -180,7 +244,7 @@ if (! function_exists('actingAs')) {
      */
     function actingAs(Authenticatable|int|string|null $user = null, ?string $driver = null): TestResponse
     {
-        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+        throw new RuntimeException('Stub: This function is meant for static analysis only: '.(is_string($user) ? $user : '').($driver ?? ''));
     }
 }
 
@@ -191,7 +255,7 @@ if (! function_exists('get')) {
      */
     function get(string $uri = '', array $options = []): TestResponse
     {
-        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+        throw new RuntimeException('Stub: This function is meant for static analysis only: '.$uri.count($options));
     }
 }
 
@@ -203,7 +267,7 @@ if (! function_exists('post')) {
      */
     function post(string $uri, array $data = [], array $options = []): TestResponse
     {
-        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+        throw new RuntimeException('Stub: This function is meant for static analysis only: '.$uri.count($data).count($options));
     }
 }
 
@@ -214,7 +278,7 @@ if (! function_exists('put')) {
      */
     function put(string $uri, array $data = []): TestResponse
     {
-        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+        throw new RuntimeException('Stub: This function is meant for static analysis only: '.$uri.count($data));
     }
 }
 
@@ -225,7 +289,7 @@ if (! function_exists('patch')) {
      */
     function patch(string $uri, array $data = []): TestResponse
     {
-        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+        throw new RuntimeException('Stub: This function is meant for static analysis only: '.$uri.count($data));
     }
 }
 
@@ -235,7 +299,7 @@ if (! function_exists('delete')) {
      */
     function delete(string $uri): TestResponse
     {
-        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+        throw new RuntimeException('Stub: This function is meant for static analysis only: '.$uri);
     }
 }
 
@@ -245,7 +309,7 @@ if (! function_exists('head')) {
      */
     function head(string $uri): TestResponse
     {
-        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+        throw new RuntimeException('Stub: This function is meant for static analysis only: '.$uri);
     }
 }
 
@@ -255,7 +319,7 @@ if (! function_exists('options')) {
      */
     function options(string $uri): TestResponse
     {
-        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+        throw new RuntimeException('Stub: This function is meant for static analysis only: '.$uri);
     }
 }
 
@@ -265,7 +329,7 @@ if (! function_exists('followingRedirects')) {
      */
     function followingRedirects(int $number = 5): TestResponse
     {
-        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+        throw new RuntimeException('Stub: This function is meant for static analysis only: '.$number);
     }
 }
 

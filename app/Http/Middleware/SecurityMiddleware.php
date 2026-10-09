@@ -294,6 +294,7 @@ class SecurityMiddleware
      */
     private function isSuspiciousRequest(Request $request, Response $response): bool
     {
+        Assert::isInstanceOf($response, Response::class);
         // Pattern sospetti negli URL
         $suspiciousPatterns = [
             '/\.\.\//',           // Directory traversal

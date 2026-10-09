@@ -25,8 +25,13 @@ class ExportPdfAction extends XotBaseAction
         parent::setUp();
         $this
             ->hiddenLabel(true)
+<<<<<<< .merge_file_hup3Ng
             //->iconButton()
             //->color('danger')
+=======
+            // ->iconButton()
+            // ->color('danger')
+>>>>>>> .merge_file_QdyJp3
             ->icon('xot-files.pdf')
             ->tooltip(function (): string {
                 $livewire = $this->getLivewire();
