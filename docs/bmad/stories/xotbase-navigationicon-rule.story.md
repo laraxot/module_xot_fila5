@@ -1,3 +1,12 @@
+<<<<<<< .merge_file_HgiVZN
+=======
+---
+title: "Xot - xotbase-navigationicon-rule.story.md"
+module: Xot
+bmad: true
+status: active
+---
+>>>>>>> .merge_file_6rsHrM
 # BMAD Story — XotBaseResource: rimuovere $navigationIcon (traduzioni gestiscono)
 
 ## Epic

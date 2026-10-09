@@ -62,7 +62,7 @@ class OptimizeFilamentMemoryCommand extends Command
         }
 
         // Applica le ottimizzazioni
-        $this->applyOptimizations($issues, $verbose);
+        $this->applyOptimizations();
 
         $this->info('✅ Ottimizzazione completata!');
         $this->newLine();
@@ -314,11 +314,12 @@ class OptimizeFilamentMemoryCommand extends Command
     }
 
     /**
-     * Applica le ottimizzazioni.
+     * Applica le ottimizzazioni globali (cache, tabelle, autoloader).
      *
-     * @param  array<string, array<int, string>>  $issues
+     * Non dipende dai problemi rilevati dall'analisi: i problemi di codice (eager loading, paginazione...)
+     * non sono correggibili automaticamente, qui si ottimizza solo l'ambiente.
      */
-    private function applyOptimizations(array $issues, bool $verbose = false): void
+    private function applyOptimizations(): void
     {
         $this->info('🔧 Applicazione ottimizzazioni...');
 

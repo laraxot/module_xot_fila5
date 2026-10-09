@@ -1,3 +1,12 @@
+<<<<<<< .merge_file_4hLssl
+=======
+---
+title: "Xot - readme-consolidation-plan.md"
+module: Xot
+bmad: true
+status: active
+---
+>>>>>>> .merge_file_8XX100
 # Piano Consolidamento File readme.md Duplicati
 
 **Data**: 2026-01-09  

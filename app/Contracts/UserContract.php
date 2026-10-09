@@ -50,7 +50,11 @@ use Spatie\Permission\Traits\HasRoles;
  *
  * @phpstan-require-extends Model
  *
+<<<<<<< .merge_file_EGoiNn
  * @mixin \Illuminate\Database\Eloquent\Model
+=======
+ * @mixin Model
+>>>>>>> .merge_file_UVMxuv
  */
 interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, MustVerifyEmail, OAuthenticatable
 {

@@ -42,6 +42,10 @@ use Illuminate\Support\Carbon;
  *
  * @phpstan-require-extends Model
  *
+<<<<<<< .merge_file_SCdJ6C
  * @mixin \Illuminate\Database\Eloquent\Model
+=======
+ * @mixin Model
+>>>>>>> .merge_file_Sf9fGx
  */
 interface ModelWithUserContract {}

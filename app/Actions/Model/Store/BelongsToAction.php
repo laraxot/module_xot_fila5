@@ -16,7 +16,7 @@ class BelongsToAction
 
     public function execute(Model $_model, RelationDTO $relationDTO): void
     {
-        Assert::isInstanceOf($rows = $relationDTO->rows, BelongsTo::class);
+        Assert::isInstanceOf($relationDTO->rows, BelongsTo::class);
 
         $related = $relationDTO->rows->create($relationDTO->data);
 

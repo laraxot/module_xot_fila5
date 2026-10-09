@@ -94,11 +94,24 @@ class RegisterDynamicRoutesAction
         return $prefix;
     }
 
+    private function stripPattern(string $input, string $pattern): string
+    {
+        $replaced = preg_replace($pattern, '', $input);
+
+        return is_string($replaced) ? $replaced : $input;
+    }
+
+    private function stripCurlyBraces(string $value): string
+    {
+        return str_replace(['{', '}'], '', $value);
+    }
+
     /**
      * @param  array<string, mixed>  $v
      */
     private function getAs(array $v, ?string $_namespace): string
     {
+        Assert::nullOrString($_namespace);
         if (isset($v['as'])) {
             Assert::string($as = $v['as']);
 
@@ -108,10 +121,8 @@ class RegisterDynamicRoutesAction
         Assert::string($name = $v['name']);
         $as = mb_strtolower($name);
         $as = str_replace('/', '.', $as);
-
-        $replaced = preg_replace('/{.*}./', '', $as);
-        $as = is_string($replaced) ? $replaced : $as;
-        $as = str_replace(['{', '}'], '', $as);
+        $as = $this->stripPattern($as, '/{.*}./');
+        $as = $this->stripCurlyBraces($as);
 
         return $as.'.';
     }
@@ -121,6 +132,7 @@ class RegisterDynamicRoutesAction
      */
     private function getNamespace(array $v, ?string $namespace): ?string
     {
+        Assert::nullOrString($namespace);
         if (isset($v['namespace'])) {
             Assert::string($namespace = $v['namespace']);
 
@@ -128,7 +140,7 @@ class RegisterDynamicRoutesAction
         }
 
         Assert::string($namespace = $v['name']);
-        $namespace = str_replace(['{', '}'], '', $namespace);
+        $namespace = $this->stripCurlyBraces($namespace);
         if ($namespace === '') {
             return null;
         }
@@ -141,6 +153,7 @@ class RegisterDynamicRoutesAction
      */
     private function getAct(array $v, ?string $_namespace): string
     {
+        Assert::nullOrString($_namespace);
         if (isset($v['act'])) {
             Assert::string($act = $v['act']);
 
@@ -151,13 +164,11 @@ class RegisterDynamicRoutesAction
         Assert::nullOrString($v['act']);
 
         $act = (string) ($v['act'] ?? '');
-
-        $replaced = preg_replace('/{.*}\//', '', $act);
-        $act = is_string($replaced) ? $replaced : $act;
+        $act = $this->stripPattern($act, '/{.*}\//');
         $act = str_replace('/', '_', $act);
 
         $camelCase = Str::camel($act);
-        $act = str_replace(['{', '}'], '', $camelCase);
+        $act = $this->stripCurlyBraces($camelCase);
 
         return Str::camel($act);
     }
@@ -167,6 +178,7 @@ class RegisterDynamicRoutesAction
      */
     private function getParamName(array $v, ?string $_namespace): string
     {
+        Assert::nullOrString($_namespace);
         if (isset($v['param_name'])) {
             Assert::string($paramName = $v['param_name']);
 
@@ -175,7 +187,7 @@ class RegisterDynamicRoutesAction
 
         Assert::string($name = $v['name']);
         $paramName = 'id_'.$name;
-        $paramName = str_replace(['{', '}'], '', $paramName);
+        $paramName = $this->stripCurlyBraces($paramName);
 
         return mb_strtolower($paramName);
     }
@@ -225,6 +237,7 @@ class RegisterDynamicRoutesAction
      */
     private function getController(array $v, ?string $_namespace): string
     {
+        Assert::nullOrString($_namespace);
         if (isset($v['controller'])) {
             Assert::string($controller = $v['controller']);
 
@@ -232,7 +245,8 @@ class RegisterDynamicRoutesAction
         }
 
         Assert::string($v['controller'] = $v['name']);
-        $v['controller'] = str_replace(['/', '{', '}'], ['_', '', ''], $v['controller']);
+        $v['controller'] = str_replace('/', '_', $v['controller']);
+        $v['controller'] = $this->stripCurlyBraces($v['controller']);
         $v['controller'] = Str::studly($v['controller']);
         $v['controller'] .= 'Controller';
 
@@ -244,6 +258,7 @@ class RegisterDynamicRoutesAction
      */
     private function getUri(array $v, ?string $_namespace): string
     {
+        Assert::nullOrString($_namespace);
         Assert::string($name = $v['name']);
 
         return $name;
