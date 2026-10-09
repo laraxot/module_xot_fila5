@@ -91,15 +91,8 @@ public static function getTableColumns(): array
 ### Form
 ```php
 public function getFormSchema(): array
-<<<<<<< .merge_file_l6KYtW
-=======
-<<<<<<< HEAD
 public function getFormSchema(): array
-=======
 public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
 ---
 title: "array keys rule"
 type: note
@@ -110,7 +103,6 @@ qmd: "array keys rule"
 issues: []
 discussions: []
 public function getFormSchema(): array
->>>>>>> .merge_file_RwTjgE
 {
     return [
         'title' => TextInput::make('title')->required()->maxLength(255),
@@ -123,18 +115,10 @@ public function getFormSchema(): array
 ### Infolist
 ```php
 public function getInfolistSchema(): array
-<<<<<<< .merge_file_l6KYtW
-=======
-<<<<<<< HEAD
 public function getInfolistSchema(): array
-=======
 public function getInfolistSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
 ---
 public function getInfolistSchema(): array
->>>>>>> .merge_file_RwTjgE
 {
     return [
         'title' => TextEntry::make('title'),

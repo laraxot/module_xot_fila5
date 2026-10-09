@@ -58,13 +58,7 @@ class MyResource extends XotBaseResource
 {
     protected static ?string $model = MyModel::class;
     
-<<<<<<< .merge_file_a5BdJw
     public function getFormSchema(): array
-<<<<<<< .merge_file_yuedBX
-=======
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_zYV2R5
     public function getFormSchema(): array
 ---
 title: "laraxot architecture rules"
@@ -76,10 +70,6 @@ qmd: "laraxot architecture rules"
 issues: []
 discussions: []
     public function getFormSchema(): array
-<<<<<<< .merge_file_a5BdJw
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
 ---
 title: "laraxot architecture rules"
 type: note
@@ -90,9 +80,6 @@ qmd: "laraxot architecture rules"
 issues: []
 discussions: []
     public function getFormSchema(): array
->>>>>>> .merge_file_7NmMTl
-=======
->>>>>>> .merge_file_zYV2R5
     {
         return [
             // Form components
@@ -307,25 +294,12 @@ class QuestionChartResource extends XotBaseResource
 {
     protected static ?string $model = QuestionChart::class;
 
-<<<<<<< .merge_file_a5BdJw
     public function getFormSchema(): array
-<<<<<<< .merge_file_yuedBX
-=======
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_zYV2R5
     public function getFormSchema(): array
 ---
     public function getFormSchema(): array
-<<<<<<< .merge_file_a5BdJw
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
 ---
     public function getFormSchema(): array
->>>>>>> .merge_file_7NmMTl
-=======
->>>>>>> .merge_file_zYV2R5
     {
         return [
             // Form components

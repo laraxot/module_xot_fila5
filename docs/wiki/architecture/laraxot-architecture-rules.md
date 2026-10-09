@@ -59,18 +59,10 @@ class MyResource extends XotBaseResource
     protected static ?string $model = MyModel::class;
     
     public function getFormSchema(): array
-<<<<<<< .merge_file_vYxNle
-=======
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
 ---
     public function getFormSchema(): array
->>>>>>> .merge_file_xdbRMH
     {
         return [
             // Form components
@@ -286,18 +278,10 @@ class QuestionChartResource extends XotBaseResource
     protected static ?string $model = QuestionChart::class;
 
     public function getFormSchema(): array
-<<<<<<< .merge_file_vYxNle
-=======
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
 ---
     public function getFormSchema(): array
->>>>>>> .merge_file_xdbRMH
     {
         return [
             // Form components
