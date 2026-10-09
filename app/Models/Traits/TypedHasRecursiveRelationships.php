@@ -288,7 +288,7 @@ trait TypedHasRecursiveRelationships
         return $result;
     }
 
-    public function isIntegerAttribute(string $attribute): bool
+    public function isIntegerAttribute($attribute): bool
     {
         /** @var bool $result */
         $result = $this->vendorIsIntegerAttribute($attribute);

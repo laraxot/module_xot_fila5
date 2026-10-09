@@ -28,15 +28,7 @@ use Spatie\Permission\Exceptions\PermissionDoesNotExist;
  *
  * @phpstan-require-extends Model
  *
-<<<<<<< .merge_file_cRWBJA
-<<<<<<< .merge_file_wBlyiX
  * @mixin \Illuminate\Database\Eloquent\Model
-=======
- * @mixin Model
->>>>>>> .merge_file_COYE6g
-=======
- * @mixin Model
->>>>>>> .merge_file_KvPgdJ
  */
 interface ProfileContract extends HasMedia
 {
