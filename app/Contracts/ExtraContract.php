@@ -45,10 +45,14 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  *
  * @phpstan-require-extends Model
  *
+<<<<<<< .merge_file_iSEiph
 <<<<<<< .merge_file_7yF5pM
  * @mixin \Illuminate\Database\Eloquent\Model
 =======
  * @mixin Model
 >>>>>>> .merge_file_vXJX75
+=======
+ * @mixin Model
+>>>>>>> .merge_file_aMbZL6
  */
 interface ExtraContract {}

@@ -1,12 +1,18 @@
+<<<<<<< .merge_file_1Jh0sp
 <<<<<<< .merge_file_LPrM8Z
 =======
+=======
+>>>>>>> .merge_file_aQtJkj
 ---
 title: "Xot - index.md"
 module: Xot
 bmad: true
 status: active
 ---
+<<<<<<< .merge_file_1Jh0sp
 >>>>>>> .merge_file_cDd6zv
+=======
+>>>>>>> .merge_file_aQtJkj
 # Xot Module — Documentation Index
 
 ## Core Purpose
