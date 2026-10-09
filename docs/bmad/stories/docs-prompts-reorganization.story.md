@@ -4,7 +4,7 @@ title: Riorganizzazione massiva docs moduli, temi e prompt
 type: story
 module: Xot
 epic: documentation/second-brain
-status: in-progress
+status: review
 created: 2026-10-09
 updated: 2026-10-09
 tags: [bmad, docs, prompts, second-brain, swarm]
@@ -58,15 +58,24 @@ pagina breve o lo si sposta in `_archive/` con lock sul file interessato.
       preflight BMAD/lock/second brain/Pest coerente.
 - [ ] Marker merge nelle docs e prompt risolti solo dopo confronto del contenuto.
 - [x] Link relativi principali verificati e QMD aggiornato.
-- [ ] Report di esito per ogni gruppo e gate `git diff --check`.
+- [x] Report di esito per i gruppi lavorati e gate `git diff --check`.
 
 ## Gate della tranche 1
 
 - `git diff --check`: verde.
-- `qmd update`: eseguito, ma l'installazione locale indicizza ancora
-  `base_fixcity_fila5`; non è una prova di indicizzazione PTVX.
+- `qmd setup/update`: eseguito sull'indice `trade-fila5`; 16.933 documenti
+  risultano indicizzati. L'embedding completo resta asincrono e parziale.
 - `graphify update .`: eseguito sul repository PTVX.
 - Test/PHPStan: non eseguiti; la tranche modifica solo documentazione.
+
+## Verifica aggiuntiva
+
+- PHPStan globale `php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules`:
+  0 errori.
+- `audit-prompts.sh`: 83 prompt, 0 bloccanti; restano solo avvisi di ruolo e
+  8 prompt voluminosi già noti.
+- Marker risolti nelle tranche Performance e IndennitaResponsabilita; nessun
+  lock residuo.
 
 ## Vincoli
 
