@@ -70,6 +70,33 @@ imposta `APP_ENV=testing`, garantisce il suffisso `_test` e rifiuta credenziali 
 Non legge né copia `.env`, non mostra valori, non modifica `phpunit.xml` e non altera le
 credenziali del database.
 
+## Creazione dei database di test
+
+I database `*_test` non vengono creati dalle migrazioni: se mancano, ogni test che usa MySQL/MariaDB fallisce con
+`Unknown database '..._test'` (8/10/2026: 64 test Pulse rossi, nessun difetto nel codice). Per crearli, vuoti e solo se
+mancano:
+
+```bash
+./bashscripts/tools/create-test-databases.sh --check   # sola lettura, exit 1 se ne manca uno
+./bashscripts/tools/create-test-databases.sh           # CREATE DATABASE IF NOT EXISTS, utf8mb4_unicode_ci
+bash bashscripts/tests/test-create-test-databases.sh   # prova di comportamento, nessun database toccato
+```
+
+Lo script legge solo `laravel/.env.testing`, rifiuta ogni nome che non finisca in `_test`, non esegue `DROP` e non stampa
+credenziali. La collation e' `utf8mb4_unicode_ci` perche' i test di confronto testo (`UpdatePulseSurveySnapshotsActionTest`) la
+assumono; i database reali hanno default diversi e non vanno copiati.
+
+Le tabelle di schema usate dai test Quaeris sono TEMPORANEE (`PulseSurveyFixture`, `DashboardPulseWidgetsTest`): nessun DDL permanente.
+
+### Stato verificato l'8 ottobre 2026
+
+- `laravel/.env.sqlite` non esiste; sotto `APP_ENV=testing` viene caricato `.env.testing`, e a runtime tutte le connessioni dei test
+  puntano a `quaeris_data_test`, `quaeris_user_test`, `quaeris_survey_test` (eccezione: `liveuser_general` punta a `forge13`).
+- **Divergenza dalla regola sopra:** `.env.testing` e' tracciato in git e contiene password letterali (non il template senza
+  credenziali descritto in "File di ambiente"). L'account e' lo stesso dell'ambiente reale e ha privilegi anche sui database
+  senza suffisso `_test`. Finche' non si usa un account dedicato, un errore di configurazione puo' colpire dati veri.
+  La correzione (nuovo account limitato ai `*_test`, rotazione della credenziale esposta) spetta all'amministratore DB.
+
 ## Esecuzione
 
 Prima dei test, verificare in sola lettura i database risolti (senza stampare username o
@@ -89,5 +116,6 @@ suffisso `_test`.
 - [ ] `sync-env-testing.sh --check` passa senza stampare valori sensibili.
 - [ ] Ogni `DB_DATABASE*` configurata termina in `_test`.
 - [ ] `FIXCITY_TEST_DB_*` è dedicato e limitato ai database test.
+- [ ] `create-test-databases.sh --check` esce con 0.
 - [ ] Il file non contiene credenziali operative né chiavi copiate da `.env`.
 - [ ] Pest e smoke UI raggiungono le assertion su MariaDB test.
