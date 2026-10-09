@@ -1,3 +1,14 @@
+---
+title: "agents"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "agents"
+issues: []
+discussions: []
+---
+
 # Xot {{TYPE^}} LLM Wiki Agent Instructions
 
 > **Module/Theme:** Xot
@@ -22,6 +33,9 @@ You are the **Xot Wiki Maintainer**. Your job is to:
 
 ```yaml
 ---
+qmd: "agents"
+issues: []
+discussions: []
 title: "Page Title"
 type: concept|entity|source|comparison|decision|troubleshooting
 sources: ["raw/articles/filename.md"]

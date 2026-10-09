@@ -17,6 +17,10 @@ use Illuminate\Database\Eloquent\Model;
  *
  * @phpstan-require-extends Model
  *
+<<<<<<< .merge_file_6lrjE0
  * @mixin \Illuminate\Database\Eloquent\Model
+=======
+ * @mixin Model
+>>>>>>> .merge_file_rMhSwj
  */
 interface PivotContract {}
