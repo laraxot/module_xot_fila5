@@ -26,6 +26,7 @@ class DeleteTableIndexByModelClassIndexNameAction
         $table = $model->getTable();
         Assert::stringNotEmpty($table);
         Assert::stringNotEmpty($indexName);
+<<<<<<< .merge_file_QOF8ym
 <<<<<<< .merge_file_VjJecc
         $formManager = app(GetSchemaManagerByModelClassAction::class)->execute($modelClass);
         $doctrineTable = $formManager->introspectTableByUnquotedName($table);
@@ -35,6 +36,8 @@ class DeleteTableIndexByModelClassIndexNameAction
         $doctrineTable->edit()->dropIndexByUnquotedName($indexName)->create();
 =======
 >>>>>>> .merge_file_HwmXyS
+=======
+>>>>>>> .merge_file_iu157y
 
         Schema::connection($model->getConnectionName())->table(
             $table,

@@ -164,6 +164,7 @@ vendor/
 /.windsurf
 /.windsurf/
 .windsurf~*
+<<<<<<< .merge_file_f7Aw3s
 <<<<<<< .merge_file_rjKwiU
 graphify-out/
 tests/coverage-xot.xml
@@ -197,9 +198,14 @@ docs/chat
 app/Application
 /.docs-archive/
 =======
+=======
+>>>>>>> .merge_file_RfOVJ7
 yarn-error.log*
 yarn.lock
 *:Zone.Identifier
 test-results/
 xot.code-workspace
+<<<<<<< .merge_file_f7Aw3s
 >>>>>>> .merge_file_L1hRW0
+=======
+>>>>>>> .merge_file_RfOVJ7

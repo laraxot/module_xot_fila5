@@ -1,12 +1,18 @@
+<<<<<<< .merge_file_hxFIcK
 <<<<<<< .merge_file_7OH256
 =======
+=======
+>>>>>>> .merge_file_pLDTXi
 ---
 title: "Xot - phpstan-fleet-remediation-2026-10-06.story.md"
 module: Xot
 bmad: true
 status: active
 ---
+<<<<<<< .merge_file_hxFIcK
 >>>>>>> .merge_file_mV4g6x
+=======
+>>>>>>> .merge_file_pLDTXi
 # PHPStan fleet remediation — 2026-10-06
 
 ## Epic
@@ -88,10 +94,13 @@ Quando subagent docs torna:
 ## Stato finale
 ✅ **DONE** — Fleet PHPStan clean (0 errori). Docs organizing in-progress. Learning loop captured.
 
+<<<<<<< .merge_file_hxFIcK
 <<<<<<< .merge_file_7OH256
 <<<<<<< HEAD
 =======
 >>>>>>> .merge_file_mV4g6x
+=======
+>>>>>>> .merge_file_pLDTXi
 
 ---
 
@@ -173,8 +182,11 @@ cd laravel && ./vendor/bin/phpstan analyse Modules --no-progress --memory-limit=
 
 **Task status**: ✅ **DONE** — Fleet è clean, docs consolidated, learning loop captured, handoff stories created.
 
+<<<<<<< .merge_file_hxFIcK
 <<<<<<< .merge_file_7OH256
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_mV4g6x
+=======
+>>>>>>> .merge_file_pLDTXi
