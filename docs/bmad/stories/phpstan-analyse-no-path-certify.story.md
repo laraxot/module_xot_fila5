@@ -15,8 +15,8 @@ qmd: "phpstan analyse certify no path type-coverage swarm bmad AuditCoverage"
 related:
   - ./phpstan-modules-2026-09-24.story.md
   - ../phpstan-status.md
-  - ../../../../../docs/wiki/memories/merge-remote-repo-2-reinjects-conflict-markers.md
-  - ../../../../../docs/wiki/memories/phpstan-modules-swarm-session.md
+  - ../../../../../../docs/wiki/memories/merge-remote-repo-2-reinjects-conflict-markers.md
+  - ../../../../../../docs/wiki/memories/phpstan-modules-swarm-session.md
 ---
 # phpstan-analyse-no-path-certify
 

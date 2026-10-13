@@ -12,7 +12,7 @@ evidence:
   - "laravel/Modules/Xot/docs/bmad/stories/module-readmes-normalization-20260928.story.md"
 related:
   - "../../README.md"
-  - "../../../../bashscripts/ai/wiki/concepts/second-brain-canonical-operating-model.md"
+  - "../../../../../../bashscripts/ai/wiki/concepts/second-brain-canonical-operating-model.md"
 ---
 
 # README moduli: contratto di ingresso

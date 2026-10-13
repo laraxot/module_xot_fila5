@@ -36,7 +36,7 @@ discussions:
 
 ## [2026-06-30] parità modello — 1 migrazione + 1 seeder
 
-- Hub: [module-model-migration-seeder-parity.md](../../../../docs/wiki/concepts/module-model-migration-seeder-parity.md)
+- Hub: [module-model-migration-seeder-parity.md](../../../../../docs/wiki/concepts/module-model-migration-seeder-parity.md)
 - Seeder parity: User 37/37, Job 15/15, Predict 16/16, Lang OK
 - Backlog: consolidamento migrazioni duplicate (GAP migration)
 
@@ -66,7 +66,7 @@ discussions:
 ## [2026-06-30] ponytail audit remediation — repo-wide
 
 - Delete dead: `RouteDynService`, `ContextCompressor`, UI NullMap stack, Geo probe test dupes.
-- Predict: seeder ad-hoc → `*.php.bak` (no cartella `Legacy/`); wiki [seeder-canonical-orchestrator.md](../../laravel/Modules/Predict/docs/wiki/concepts/seeder-canonical-orchestrator.md) + regola [no-legacy-folders-code.md](../../docs/wiki/concepts/no-legacy-folders-code.md).
+- Predict: seeder ad-hoc → `*.php.bak` (no cartella `Legacy/`); wiki [seeder-canonical-orchestrator.md](../../laravel/Modules/Predict/docs/wiki/concepts/seeder-canonical-orchestrator.md) + regola [no-legacy-folders-code.md](../../../../../docs/wiki/concepts/no-legacy-folders-code.md).
 - Prompts: 49 file → `archive/ponytail-2026-06-30/`; canonici `start.txt` + `rules.txt`.
 - User `UserContract` = alias Xot; Helper senza wrapper string legacy.
 
@@ -94,7 +94,7 @@ discussions:
 
 - **Fatal risolto:** `HasTeams::teams()` → `membershipTeams()`; `HasSpatiePermission` trait puro (Spatie `teams()` canonico).
 - **Contratto:** `UserContract::teams()` Spatie + `membershipTeams()` Laraxot.
-- **Wiki:** [trait-alias-conflict-resolution.md](../../User/docs/wiki/concepts/trait-alias-conflict-resolution.md)
+- **Wiki:** [trait-alias-conflict-resolution.md](../../../User/docs/wiki/concepts/trait-alias-conflict-resolution.md)
 - **Verifica:** `cd laravel && ./vendor/bin/phpstan analyse Modules` → `[OK] No errors`.
 
 ## [2026-06-30] prompts | start.txt v14 — gate --markdown, ponytail-sync, path IDE
@@ -162,12 +162,12 @@ discussions:
 ## [2026-06-30] prompts | ripulitura fratelli + guard
 
 - Risolti conflitti in `trans.txt` (riscrittura), `phpstan.txt` (32), `docs.txt` (34), `filament_class.txt` (38), `webmozarts_assert_rules.txt` (17).
-- Nuovo `bashscripts/tools/guard-prompt-conflicts.sh`; hub [prompts-sibling-hygiene.md](../../../../../../docs/wiki/concepts/prompts-sibling-hygiene.md).
+- Nuovo `bashscripts/tools/guard-prompt-conflicts.sh`; hub [prompts-sibling-hygiene.md](../../../../../docs/wiki/concepts/prompts-sibling-hygiene.md).
 - `start.txt` v7: integra guard prompt in §1.3.
 
 ## [2026-06-30] prompts | start.txt v6 — second brain + guard policy
 
-- `start.txt` v6: hub [llm-wiki.md](../../../../../../docs/wiki/index/llm-wiki.md), [sacred-artifacts-never-delete.md](../../../../../../docs/wiki/concepts/sacred-artifacts-never-delete.md), [quality-gate-canonical-commands.md](../../../../../../docs/wiki/concepts/quality-gate-canonical-commands.md).
+- `start.txt` v6: hub [llm-wiki.md](../../../../../../docs/wiki/index/llm-wiki.md), [sacred-artifacts-never-delete.md](../../../../../docs/wiki/concepts/sacred-artifacts-never-delete.md), [quality-gate-canonical-commands.md](../../../../../docs/wiki/concepts/quality-gate-canonical-commands.md).
 - Gate §1.5 `guard-model-policy-delete.sh`; §1.4 `laravel-model-policies-sacred.mdc`; fallback `grep` se `rg` assente.
 - Prompt fratelli con `- PHPStan: exit 124 timeout documentato; `find` cartelle root PHP mirato (esclude legacy `Config/`).
 - `prompts/README.md`: `start.txt` come primo step Quick Start.
@@ -189,7 +189,7 @@ discussions:
 ## [2026-06-30] composer | verifica allineamento FixCity + wiki hub progetto
 
 - Verificato: `laravel/composer.json` Predict gia' skeleton (piu' stretto di FixCity: no responsecache/phpmd/seeders nel root).
-- Nuova pagina progetto: [`docs/wiki/concepts/composer-root-minimal-nwidart.md`](../../../../../../docs/wiki/concepts/composer-root-minimal-nwidart.md).
+- Nuova pagina progetto: [`docs/wiki/concepts/composer-root-minimal-nwidart.md`](../../../../../docs/wiki/concepts/composer-root-minimal-nwidart.md).
 - Nuova pagina Xot: [`composer-merge-plugin-modules-only.md`](concepts/composer-merge-plugin-modules-only.md).
 - Raw confronto aggiornato: [`composer-root-skeleton-fixcity-comparison-2026-06-30.md`](../raw/notes/composer-root-skeleton-fixcity-comparison-2026-06-30.md).
 
@@ -290,7 +290,7 @@ discussions:
 ## [2026-05-26] docs | codice nominale pivot / ThemeComposer / ProfileFactory scan
 
 - **Verifica sorgenti + script**: scaffold `Dashboard`/`RouteServiceProvider` per modulo (**atteso** moduli Laravel); divergenza reale famiglia **`BasePivot`** vs **`XotBasePivot`**; **`ProfileFactory`** basename ripetuto con hash diverso (User/Gdpr/Fixcity); **Cms ThemeComposer** duplicato nel path `resources/views/` fuori da PSR-4.
-- **Deliverable**: [`redundancy/audit-profondo-ridondanze-holistic.md`](redundancy/audit-profondo-ridondanze-holistic.md) §5; modulo Cms **[`docs/redundancy-report.md`](../../../../Cms/docs/redundancy-report.md)** §5; [`concepts/redundancy-catalog.md`](concepts/redundancy-catalog.md) (riga Cms).
+- **Deliverable**: [`redundancy/audit-profondo-ridondanze-holistic.md`](redundancy/audit-profondo-ridondanze-holistic.md) §5; modulo Cms **[`docs/redundancy-report.md`](../../../Cms/docs/redundancy-report.md)** §5; [`concepts/redundancy-catalog.md`](concepts/redundancy-catalog.md) (riga Cms).
 
 ## [2026-05-25] docs | audit profondo ridondanze — second brain ripulito da merge-marker
 
@@ -301,7 +301,7 @@ discussions:
 
 - **Motivo progetto**: il submit deve usare **`$this->form->getState()`** così come lo espone Filament/schema, senza helper PHP che appiattiscono wrapper (`wizard`) nel widget base.
 - **Codice**: `XotBaseWizardWidget` contiene solo costruzione `Wizard` + policy `?step=` + vista tema; **nessun** `normalizeWizardFormState()` / `getWizardSchemaWrapperKey()` sulla classe.
-- **Fixcity**: `CreateTicketWizardWidget::submit()` legge `getState()` e fa merge opzionale `owner_id` se auth; vedi [`CreateTicketWizardWidget.php`](../../Fixcity/app/Filament/Widgets/CreateTicketWizardWidget.php).
+- **Fixcity**: `CreateTicketWizardWidget::submit()` legge `getState()` e fa merge opzionale `owner_id` se auth; vedi [`CreateTicketWizardWidget.php`](../../../Fixcity/app/Filament/Widgets/CreateTicketWizardWidget.php).
 
 ## [2026-05-24] refactor | wizard — normalizzazione stato dentro `XotBaseWizardWidget` (niente trait file) — **superata**
 
