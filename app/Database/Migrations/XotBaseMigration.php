@@ -236,7 +236,6 @@ abstract class XotBaseMigration extends LaravelMigration
                     return true;
                 }
             }
-
             return false;
         }
 

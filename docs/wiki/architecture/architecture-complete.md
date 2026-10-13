@@ -154,6 +154,8 @@ All Filament resources extend this base class:
 **Required Methods:**
 ```php
 abstract public function getFormSchema(): array;
+abstract public function getFormSchema(): array;
+abstract public function getFormSchema(): array;
 ---
 abstract public function getFormSchema(): array;
 abstract public static function getTableColumns(): array;
@@ -594,6 +596,8 @@ class MyResource extends XotBaseResource
     protected static ?string $model = MyModel::class;
 
     public function getFormSchema(): array
+    public function getFormSchema(): array
+    public function getFormSchema(): array
 ---
     public function getFormSchema(): array
     {
@@ -672,6 +676,8 @@ class ArticleResource extends XotBaseResource
 {
     protected static ?string $model = Article::class;
 
+    public function getFormSchema(): array
+    public function getFormSchema(): array
     public function getFormSchema(): array
 ---
     public function getFormSchema(): array
