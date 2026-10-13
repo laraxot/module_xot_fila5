@@ -8,7 +8,7 @@ qmd: "marker di merge spazzatura worktree git grep HEAD parse error service prov
 related:
   - ../../bmad/stories/5.248-phpstan-modules-gate-blocked-merge-wip.story.md
   - ./bmad-module-documentation-baseline-20260928.md
-  - ./INDEX.md
+  - ./index.md
 issues: []
 discussions: []
 ---

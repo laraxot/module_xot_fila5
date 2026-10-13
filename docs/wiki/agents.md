@@ -149,6 +149,6 @@ Related:
 
 ## Related Documentation
 
-- [Project Wiki Integration](../../docs/wiki/README.md)
+- [Project Wiki Integration](readme.md)
 - [Project Wiki Agent Instructions](../../docs/wiki/AGENTS.md)
 - [Module Documentation](../README.md)

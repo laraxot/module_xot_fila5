@@ -35,7 +35,7 @@ qmd search "Xot memories" --limit 5
 - [merge-marker-spazzatura-worktree](./merge-marker-spazzatura-worktree.md) — i marker di merge possono essere spazzatura del worktree, non contenuto di HEAD.
 
 ## See Also
-- [Root Trigger Map](../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
+- [Root Trigger Map](../../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
 - [Root Wiki](../../../docs/wiki/)
 
 ---

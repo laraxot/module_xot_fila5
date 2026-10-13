@@ -33,7 +33,7 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 * [README.md](docs/moduli/installati/README.md)
 * [README.md](docs/moduli/comandi/README.md)
 * [README.md](docs/phpstan/README.md)
-* [README.md](docs/README.md)
+* [README.md](../README.md)
 * [README.md](docs/module-links/README.md)
 * [README.md](docs/troubleshooting/git-conflicts/README.md)
 * [README.md](docs/tecnico/laraxot/README.md)
