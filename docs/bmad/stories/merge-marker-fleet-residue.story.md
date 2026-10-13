@@ -14,7 +14,7 @@ track: quality/fleet
 qmd: "merge marker conflitto residui fleet bonifica gitmodules HEAD checkout marker committati"
 related:
   - ../../../docs/bmad/stories/git-status-fleet-sync.story.md
-  - ../../../../../bashscripts/docs/prompts/03-quality-gates.md
+  - ../../../../../../bashscripts/docs/prompts/03-quality-gates.md
 ---
 
 # merge-marker-fleet-residue

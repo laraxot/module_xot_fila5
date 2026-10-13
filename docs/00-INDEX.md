@@ -18,3 +18,6 @@ qmd: "Xot foundation module documentation index"
 
 Le directory storiche restano consultabili ma non diventano automaticamente
 fonte canonica.
+
+## Story isolamento test (2026-10-13)
+- [DCP-45 isolamento del DB nei test con pest-scratch-db.sh](stories/2026-10-13-dcp-45-isolamento-db-test-pest-scratch.story.md)

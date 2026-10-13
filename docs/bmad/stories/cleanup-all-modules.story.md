@@ -17,7 +17,7 @@ related:
   - ./uppercase-root-dirs-cleanup.story.md
   - ./graphify-out-gitignore-all-modules.story.md
   - ../../../../Job/docs/bmad/stories/12.3.root-hygiene-conflict-markers.story.md
-  - ../../../../../docs/wiki/memories/job-git-clean-can-hide-committed-conflict-markers.md
+  - ../../../../../../docs/wiki/memories/job-git-clean-can-hide-committed-conflict-markers.md
 ---
 
 # Fleet: `git status` + marker in HEAD + quality tools

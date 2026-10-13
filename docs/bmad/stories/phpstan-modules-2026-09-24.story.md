@@ -15,7 +15,7 @@ qmd: "phpstan analyse Modules fix fleet swarm parallelo random RatingData AuditC
 related:
   - ./phpstan-analyse-modules-2026-09-24.story.md
   - ../../../../Rating/docs/wiki/rules/no-trait-name-static-calls.md
-  - ../../../../../docs/wiki/memories/phpstan-merge-conflict-lock-coordination.md
+  - ../../../../../../docs/wiki/memories/phpstan-merge-conflict-lock-coordination.md
   - ../concepts/tests-audit-coverage-forbidden.md
 ---
 # phpstan-modules-2026-09-24
