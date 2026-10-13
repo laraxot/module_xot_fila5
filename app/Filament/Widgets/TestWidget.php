@@ -21,3 +21,4 @@ class TestWidget extends XotBaseWidget
         return true;
     }
 }
+

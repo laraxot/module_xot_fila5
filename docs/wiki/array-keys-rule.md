@@ -91,6 +91,8 @@ public static function getTableColumns(): array
 ### Form
 ```php
 public function getFormSchema(): array
+public function getFormSchema(): array
+public function getFormSchema(): array
 ---
 title: "array keys rule"
 type: note
@@ -112,6 +114,8 @@ public function getFormSchema(): array
 
 ### Infolist
 ```php
+public function getInfolistSchema(): array
+public function getInfolistSchema(): array
 public function getInfolistSchema(): array
 ---
 public function getInfolistSchema(): array
