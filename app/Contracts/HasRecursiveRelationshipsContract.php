@@ -44,12 +44,12 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\Relations\Siblings;
  *
  * Tipi di ritorno solo nel `@return`, non nativi, sui metodi che il trait vendor
  * `Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships` dichiara senza
- * tipo (`getParentKeyName()`, `getPathName()`, `hasNestedPath()`, ...): i modelli Cms
- * (`BaseTreeModel`, `Menu`) usano quel trait direttamente e un tipo nativo qui rende
- * fatale il caricamento della classe. `TypedHasRecursiveRelationships` li restringe
- * comunque ai tipi nativi (covarianza), e PHPStan legge il `@return`.
+ * tipo (`getParentKeyName()`, `getPathName()`, `hasNestedPath()`, ...): i modelli che usano
+ * quel trait direttamente non possono implementare un contratto con tipi nativi senza
+ * fatal runtime. `TypedHasRecursiveRelationships` li restringe comunque ai tipi nativi
+ * quando serve, e PHPStan legge il `@return`.
  *
- * @mixin Model
+ * @mixin \Illuminate\Database\Eloquent\Model
  */
 interface HasRecursiveRelationshipsContract
 {
@@ -58,6 +58,8 @@ interface HasRecursiveRelationshipsContract
      *
      * Il ritorno e' `mixed` perche' il trait vendor `HasAdjacencyList` lo dichiara cosi':
      * un tipo piu' stretto qui rende fatale il caricamento di ogni classe che usa il trait.
+     *
+     * @return mixed
      */
     public static function withMaxDepth(int $maxDepth, callable $query): mixed;
 
@@ -180,9 +182,11 @@ interface HasRecursiveRelationshipsContract
     /**
      * Determine if an attribute is an integer.
      *
+     * @param string $attribute
+     *
      * @return bool
      */
-    public function isIntegerAttribute(string $attribute);
+    public function isIntegerAttribute($attribute);
 
     /**
      * @return AdjacencyBuilder<Model>
