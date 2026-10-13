@@ -28,7 +28,7 @@ related:
 
 - [no-domain-actions-in-xot](./concepts/no-domain-actions-in-xot.md) — niente `Actions/AI|Geo|…`
 - Raw: [no-domain-logic-in-xot.md](../no-domain-logic-in-xot.md)
-- AI owner: [ollama-actions-ownership](../../AI/docs/wiki/concepts/ollama-actions-ownership.md)
+- AI owner: [ollama-actions-ownership](../../../AI/docs/wiki/concepts/ollama-actions-ownership.md)
 
 Indice operativo del wiki Xot (core framework).
 
@@ -52,8 +52,8 @@ Indice operativo del wiki Xot (core framework).
 - [pest-global-class-imports.md](./rules/pest-global-class-imports.md) — nei test senza namespace rimuovere `use ReflectionClass;` e altre import globali inutili
 - [second-brain-local-discipline.md](./concepts/second-brain-local-discipline.md)
 - [hackernoon-ai-coding-tips-fixcity-map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md) (root)
-- [forbidden-folders-rule](../../../../docs/wiki/concepts/forbidden-folders.md): Vincoli strutturali strict.
-- [llm-wiki-standard](../../../../docs/project/karpathy-llm-wiki-adoption.md): Mapping repository e ciclo di vita conoscenza.
+- [forbidden-folders-rule](../../../../../docs/wiki/concepts/forbidden-folders.md): Vincoli strutturali strict.
+- [llm-wiki-standard](../../../../../docs/project/karpathy-llm-wiki-adoption.md): Mapping repository e ciclo di vita conoscenza.
 - [laraxot-core](../../../../docs/wiki/concepts/laraxot-core.md): Core XotBase classes rules.
 - [xotbase-check](../../../../docs/wiki/concepts/xotbase-check.md): Verify XotBase usage.
 
@@ -73,7 +73,7 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 | [platform-completion-roadmap](./overviews/platform-completion-roadmap.md) | Overview | Hub completamento progetto Fixcity | 2026-06-13 |
 | [phpstan-best-practices](./phpstan-best-practices.md) | Guideline | Pattern test PHPStan L10 | 2026-06-13 |
 | [ridondanze-cross-cutting-codebase](./concepts/ridondanze-cross-cutting-codebase.md) | Concept | DRY codebase + doc duplicazioni cross-moduli | 2026-05-21 |
-| [policy-inheritance-boundary](../User/docs/wiki/concepts/policy-inheritance-boundary.md) | Decision | Cross-module | 2026-04-27 |
+| [policy-inheritance-boundary](../../../User/docs/wiki/concepts/policy-inheritance-boundary.md) | Decision | Cross-module | 2026-04-27 |
 | [redundancy-catalog](./concepts/redundancy-catalog.md) | Concept | Indice ridondanza e link report trasversale | 2026-05-21 |
 | [unit-test-case-pattern](./concepts/unit-test-case-pattern.md) | Concept | Test patterns | 2026-04-21 |
 | [phpstan-cluster-map-and-false-friends](./concepts/phpstan-cluster-map-and-false-friends.md) | Concept | PHPStan cluster | 2026-04-23 |
@@ -104,8 +104,8 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 
 ## False Friends
 
-- `dehydrated(false)` sembra mantenere il campo nei dati ma blocca il salvataggio (vedi [coordinate-picker-filament5-save-pattern](../../Geo/docs/wiki/concepts/coordinate-picker-filament5-save-pattern.md))
-- `live()` in Filament non rende il campo sempre live - serve `$applyStateBindingModifiers()` (vedi [coordinate-picker-state-binding-rule](../../Geo/docs/wiki/concepts/coordinate-picker-state-binding-rule.md))
+- `dehydrated(false)` sembra mantenere il campo nei dati ma blocca il salvataggio (vedi [coordinate-picker-filament5-save-pattern](../../../Geo/docs/wiki/concepts/coordinate-picker-filament5-save-pattern.md))
+- `live()` in Filament non rende il campo sempre live - serve `$applyStateBindingModifiers()` (vedi [coordinate-picker-state-binding-rule](../../../Geo/docs/wiki/concepts/coordinate-picker-state-binding-rule.md))
 
 ## Troubleshooting
 
@@ -125,7 +125,7 @@ Aggiornato: 2026-07-27
 | `AdminPanelProvider` + doppia registrazione | [module-admin-panel-provider-mandatory.md](./concepts/module-admin-panel-provider-mandatory.md) |
 | `Dashboard.php` | [module-dashboard-page-mandatory.md](./concepts/module-dashboard-page-mandatory.md) |
 | Hub runtime cross-modulo | [runtime-config-religion-hub](../../../../Themes/docs/shared-components/runtime-config-religion-hub.md) |
-| Tenant `modules_statuses` | [tenant-module-status-registry](../../Tenant/docs/tenant-module-status-registry.md) |
+| Tenant `modules_statuses` | [tenant-module-status-registry](../../../Tenant/docs/tenant-module-status-registry.md) |
 
 ## Decisioni in discussione — 2026-09-11
 

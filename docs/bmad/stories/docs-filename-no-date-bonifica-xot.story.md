@@ -11,7 +11,7 @@ status: backlog
 track: docs-hygiene
 qmd: "docs filename no date timestamp bonifica xot git-rewrite artifact"
 related:
-  - ../../../../../docs/sprint-status.yaml
+  - ../../../../../../docs/sprint-status.yaml
 ---
 
 # Xot — .md senza data/timestamp nel nome (batch trovato 2026-09-22)

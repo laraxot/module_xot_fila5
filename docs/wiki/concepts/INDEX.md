@@ -34,7 +34,7 @@ qmd search "Xot concepts" --limit 5
 
 ## See Also
 
-- [Root Trigger Map](../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
+- [Root Trigger Map](../../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
 - Hub temi: [runtime-config-religion-hub](../../../../Themes/docs/shared-components/runtime-config-religion-hub.md)
 - Audit: `bash bashscripts/tools/audit-module-config-php.sh`
 

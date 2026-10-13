@@ -15,7 +15,7 @@ issues:
 discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/493"
 related:
-  - ../../../../docs/wiki/memories/filament-gettablecolumns-deprecation.md
+  - ../../../../../../docs/wiki/memories/filament-gettablecolumns-deprecation.md
   - ../../laravel/Modules/Xot/docs/forbidden-methods.md
   - ../../laravel/Modules/Xot/docs/no-table-override.md
   - ../../laravel/Modules/Xot/docs/stories/table-setter-deprecation-handling.story.md

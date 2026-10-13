@@ -18,13 +18,13 @@ related:
   - ./5.176-export-xls-formula-injection-sanitize.story.md
   - ./5.177-export-xls-headings-supersede-5-161.story.md
   - ./5.178-export-lazy-labels-dedup.story.md
-  - ../../../Rating/docs/bmad/stories/5.244-continuazione-domani-post-prompt-04-pack.story.md
+  - ../../../../Rating/docs/bmad/stories/5.244-continuazione-domani-post-prompt-04-pack.story.md
 ---
 
 # Xot — Continuazione Domani
 
 **SSoT pack:** [`5.247-tomorrow-pack-export-lazy-and-trigger-map.story.md`](./5.247-tomorrow-pack-export-lazy-and-trigger-map.story.md)
-**Pack cross-modulo:** Rating [`5.244`](../../../Rating/docs/bmad/stories/5.244-continuazione-domani-post-prompt-04-pack.story.md)
+**Pack cross-modulo:** Rating [`5.244`](../../../../Rating/docs/bmad/stories/5.244-continuazione-domani-post-prompt-04-pack.story.md)
 
 ## Stato (2026-09-23)
 

@@ -45,7 +45,7 @@ No FixCity without Xot: internal framework preventing duplication and architectu
 
 Want to build **platform**, not just features? Start here.
 
-Frontoffice stack: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filament v5** — see [STORY-133](../../../docs/stories/STORY-133-frontend-stack-religion-tailwind-alpine-lit.md).
+Frontoffice stack: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filament v5** — see [STORY-133](../../../../../docs/stories/STORY-133-frontend-stack-religion-tailwind-alpine-lit.md).
 
 ---
 
