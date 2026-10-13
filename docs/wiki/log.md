@@ -15,18 +15,6 @@ discussions:
 
 # Activity Log — Xot
 
-## [2026-09-24] sync | parallel safe SKIP DIRTY + phpstan ancora verde
-
-- `sync_subtrees_safe.sh --only Xot` → **DIRTY SKIP** (204 file non committati); nessun FF/merge forzato.
-- Post-sync globale: `phpstan analyse Modules` → `[OK] No errors` EXIT 0.
-- Contesto: campagna parallelo random su tutti i `path=` di `gitmodules.ini`; `merge_remote_repo_2` ancora attivo.
-
-## [2026-09-24] phpstan | Modules zero dopo sync churn
-
-- `cd laravel && ./vendor/bin/phpstan analyse Modules --memory-limit=-1` → **`[OK] No errors` EXIT 0** (verifica testuale, non JSON).
-- Restore critico: `helpers/Helper.php`, `XotBaseViewRecord::getInfolistSchema()` default `[]`, 29 file `app/` parse-broken da `fe544a49`; `GetComponentsAction` continua su classi non caricabili; `ExecuteComposerDumpAutoloadAction` `use Event` Facade.
-- Causa dominante della sera: `merge_remote_repo_2.sh` reinietta marker/duplicati mentre si analizza.
-
 ## [2026-09-21] phpstan | zero certificato + wiki hygiene
 
 - `phpstan analyse` (senza path CLI) e `analyse Modules` entrambi 0, `totals.file_errors: 0`.
@@ -472,3 +460,6 @@ Create [issue #112](https://github.com/laraxot/module_xot_fila5/issues/112) e [d
 ## [2026-09-25] phpstan | XotForkedInvoke is_int alreadyNarrowedType fix
 - `tests/XotForkedInvoke.php`: removed redundant `is_int($status)` check inside `if ($res > 0)` block since `$status` is already typed as `int` from `pcntl_waitpid()`.
 - Cleared `function.alreadyNarrowedType` error.
+# Log wiki Xot
+
+- 2026-09-28 — aggiunto il contratto verificabile per i README root dei 18 moduli e la relativa story BMAD.
