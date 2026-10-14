@@ -10,6 +10,7 @@ issues: []
 discussions: []
 related:
   - "./tabella-appartiene-alla-resource-non-alla-pagina.md"
+status: draft
 ---
 
 # I placeholder nelle traduzioni nascono dal codice, non da una svista

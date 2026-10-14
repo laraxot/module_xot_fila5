@@ -11,6 +11,7 @@ discussions: []
 related:
   - "./merge-marker-spazzatura-worktree.md"
   - "./xot-table-filters-method-name.md"
+status: draft
 ---
 
 # La tabella appartiene alla Resource, non alla pagina List

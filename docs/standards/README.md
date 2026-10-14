@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "README"
 issues: []
 discussions: []
+status: stale
 ---
+
+> Nota 2026-10-14 (docs-audit): Il blocco 'Collegamenti tra versioni di README.md' (62 link non risolti) punta a percorsi di altri progetti (docs/moduli, patient, dental, isee) e la sezione STI cita il modulo Patient, che non esiste in questo progetto (Modules/ contiene 19 moduli, nessuno e Patient). L'elenco dei file e stato corretto il 2026-10-14. Contenuto non riscritto, verificare prima di usarlo.
 
 # Standard di Codice
 
@@ -15,9 +18,10 @@ Questa cartella contiene gli standard di codice e le convenzioni utilizzate nel 
 
 ## File Contenuti
 
-- `coding-standards.md` - Standard di codice generali
-- `phpstan-rules.md` - Regole PHPStan specifiche
-- `testing-standards.md` - Standard per i test
+- [coding-standards.md](coding-standards.md) - Standard di codice generali
+- [namespace-rules.md](namespace-rules.md) - Regole sui namespace
+- [naming-conventions.md](naming-conventions.md) - Convenzioni di nome
+- `phpstan-rules.md` e `testing-standards.md` erano elencati qui ma non esistono (verificato 2026-10-14 con `ls`); lo stato PHPStan vive in [../bmad/phpstan-status.md](../bmad/phpstan-status.md); `../phpstan/` contiene solo report per livello (evidence).
 
 ## Note
 

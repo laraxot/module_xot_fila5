@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "stato qualita progetto 2026 08 31"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Stato di qualita' del progetto — misurazione 2026-08-31
@@ -18,15 +19,6 @@ Ogni numero in questa pagina e' riproducibile con il comando indicato. Dove non 
 un comando, il dato non e' stato verificato e non compare.
 
 ---
-
-title: "stato qualita progetto 2026 08 31"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "stato qualita progetto 2026 08 31"
-issues: []
-discussions: []
 ## Quadro dimensionale
 
 | Metrica | Valore | Comando |
