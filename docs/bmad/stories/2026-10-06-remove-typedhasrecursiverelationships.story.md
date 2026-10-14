@@ -8,6 +8,9 @@ status: done
 track: quality/refactor
 related:
   - 2026-10-06-phpstan-modules-level10.story.md
+updated: 2026-10-09
+tags: [docs, xot, bmad]
+qmd: "remove typedhasrecursiverelationships wrapper xot"
 ---
 
 # Remove TypedHasRecursiveRelationships wrapper

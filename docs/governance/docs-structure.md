@@ -1,3 +1,14 @@
+---
+title: "Struttura canonica della documentazione"
+type: note
+updated: 2026-10-09
+tags: [docs, xot, governance]
+qmd: "struttura canonica della documentazione xot"
+status: stale
+---
+
+> Nota 2026-10-14 (docs-audit): Afferma che README.md e l'unico ingresso attivo, mentre il contratto del 2026-10-13 (bmad-output/docs-architecture/module-theme-docs-contract.md) richiede README.md e 00-INDEX.md; colloca le story in docs/bmad/ mentre in Xot vivono in docs/stories/ (22 file) e docs/bmad/stories/. Contenuto non riscritto, verificare prima di usarlo.
+
 # Struttura canonica della documentazione
 
 Questo documento è il riferimento per la riorganizzazione delle docs di moduli,

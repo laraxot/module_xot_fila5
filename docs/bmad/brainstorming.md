@@ -11,6 +11,7 @@ related:
   - discussions/01-traits-composition.md
   - architecture.md
   - README.md
+status: draft
 ---
 
 # Xot — brainstorming

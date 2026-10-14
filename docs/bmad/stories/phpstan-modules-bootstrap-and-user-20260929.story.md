@@ -6,6 +6,10 @@ epic: quality-gates
 references:
   - ./fleet-blocking-merge-conflict-markers-20260929.story.md
   - ../../../../../../bashscripts/ai/wiki/memories/phpstan-bootstrap-merge-file-markers.md
+type: story
+updated: 2026-10-07
+tags: [docs, xot, bmad]
+qmd: "obiettivo xot"
 ---
 
 # Obiettivo
