@@ -3,6 +3,10 @@ title: "Xot - readme-en.md"
 module: Xot
 bmad: true
 status: active
+type: note
+updated: 2026-10-13
+tags: [docs, xot, bmad]
+qmd: "xot   english presentation xot"
 ---
 # ⚡ Xot — English presentation
 

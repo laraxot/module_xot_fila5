@@ -10,6 +10,7 @@ updated: 2026-07-14
 qmd: "filters 2"
 related:
   - "./eloquent-magic-properties-rule.md"
+status: draft
 ---
 # _filters
 

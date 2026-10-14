@@ -13,6 +13,8 @@ evidence:
 related:
   - "../../README.md"
   - "../../../../../../bashscripts/ai/wiki/concepts/second-brain-canonical-operating-model.md"
+tags: [docs, xot, wiki]
+qmd: "readme moduli: contratto di ingresso xot"
 ---
 
 # README moduli: contratto di ingresso

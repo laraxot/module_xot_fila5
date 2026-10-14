@@ -10,6 +10,7 @@ issues: []
 discussions: []
 related:
   - "./tabella-appartiene-alla-resource-non-alla-pagina.md"
+status: draft
 ---
 
 # Doppi header actions in ogni List page Xot

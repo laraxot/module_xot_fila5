@@ -7,6 +7,9 @@ created: 2026-10-06
 track: quality/phpstan
 related:
   - ../../../../Xot/docs/bmad/stories/2026-10-06-phpstan-modules-level10.story.md
+updated: 2026-10-07
+tags: [docs, xot, bmad]
+qmd: "phpstan l10 xot artisan actions xot"
 ---
 
 # PHPStan L10 Xot Artisan actions

@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "readme"
 issues: []
 discussions: []
+status: stale
 ---
+
+> Nota 2026-10-14 (docs-audit): Copia minuscola di standards/README.md: stesso blocco di 60 link non risolti verso percorsi di altri progetti; nessuna affermazione verificata. Contenuto non riscritto, verificare prima di usarlo.
 
 # Standard di Codice
 

@@ -3,10 +3,29 @@ title: "Xot - phpstan-status.md"
 module: Xot
 bmad: true
 status: active
+type: note
+updated: 2026-10-13
+tags: [docs, xot, bmad]
+qmd: "phpstan status   xot xot"
 ---
 # PHPStan Status — Xot
 
 Stato vivo del gate. Non copiare numeri da report storici: rimisura.
+
+## Misura verificata 2026-10-14 — comando canonico dell'utente
+
+Il comando di consegna è quello eseguito dalla radice Laravel, senza path
+alternativi né baseline:
+
+```bash
+cd laravel
+./vendor/bin/phpstan analyse Modules
+```
+
+Esecuzione verificata dopo la rigenerazione dell'autoload e con la cache
+PHPStan disponibile: **`[OK] No errors`** su 8.823 file. Le segnalazioni
+storiche riportate sotto non descrivono più lo stato corrente: prima di
+riaprire una storia bisogna ripetere questo comando nel checkout interessato.
 
 ## Misura 2026-10-06 (sera) — swarm Xot/app: scopo prima dell'errore
 

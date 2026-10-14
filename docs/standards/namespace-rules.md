@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "namespace rules"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Regole di Namespace

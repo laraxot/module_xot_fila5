@@ -10,6 +10,7 @@ issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/33"
 discussions:
   - "https://github.com/laraxot/module_xot_fila5/discussions/34"
+status: draft
 ---
 
 # Xot Module - memories Index

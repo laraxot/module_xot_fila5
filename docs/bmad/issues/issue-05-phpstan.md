@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "issue 05 phpstan 272"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Issue GH #05 — PHPStan 272 errors: piano di risoluzione modulo-per-modulo

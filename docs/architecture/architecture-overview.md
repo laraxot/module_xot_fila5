@@ -7,4 +7,5 @@ updated: 2026-09-26
 qmd: "architecture overview"
 issues: []
 discussions: []
+status: draft
 ---
