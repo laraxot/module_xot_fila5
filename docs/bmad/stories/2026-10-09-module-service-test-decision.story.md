@@ -7,6 +7,7 @@ created: 2026-10-09
 updated: 2026-10-09
 module: Xot
 tags: [bmad, xot, module-service, test-cleanup]
+qmd: "[story] adeguamento test dopo rimozione moduleservice xot"
 ---
 
 # [STORY] Adeguamento test dopo rimozione ModuleService

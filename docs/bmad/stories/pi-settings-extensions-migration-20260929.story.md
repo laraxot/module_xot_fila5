@@ -6,6 +6,8 @@ epic: "PROJECT-TOOLING"
 module: Xot
 created: 2026-09-29
 updated: 2026-09-29
+tags: [docs, xot, bmad]
+qmd: "pi   ripristino settings e migrazione hooks xot"
 ---
 
 # Pi — ripristino settings e migrazione hooks

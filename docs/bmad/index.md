@@ -3,6 +3,10 @@ title: "Xot - indice BMAD"
 module: Xot
 bmad: true
 status: active
+type: index
+updated: 2026-10-09
+tags: [docs, xot, bmad]
+qmd: "xot module   documentation index xot"
 ---
 
 # Xot Module — Documentation Index
@@ -16,7 +20,7 @@ Xot fornisce fondazioni Laraxot, classi base, contratti e regole condivise.
 - [purpose.md](purpose.md) — responsabilità del modulo
 - [architecture.md](architecture.md) — architettura tecnica
 - [wiki/rules/](../wiki/rules/) — regole e convenzioni
-- [wiki/patterns/](../wiki/patterns/) — pattern riusabili, quando presenti
+- [wiki/patterns/](../wiki/patterns/) _(target mancante, verificato 2026-10-14)_ — pattern riusabili, quando presenti
 
 ## BMAD e conoscenza
 
