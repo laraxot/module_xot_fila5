@@ -12,6 +12,7 @@ final class XotResPageStub extends ResourceXotBasePage
     protected string $view = 'xot::filament.pages.stub';
 
     public static ?string $model = CacheModel::class;
+<<<<<<< HEAD
 
     public function getView(): string
     {
@@ -27,4 +28,6 @@ final class XotResPageStub extends ResourceXotBasePage
     {
         return 'Test Page';
     }
+=======
+>>>>>>> laraxot/dev
 }
