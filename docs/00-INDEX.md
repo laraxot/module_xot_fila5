@@ -57,7 +57,10 @@ il 2026-10-14: 254 file `.md` in `docs/`, 71 voci nella radice, nessun `index.md
 - Marker di merge: 24 file `.md` hanno righe `<<<<<<< ` o `>>>>>>> ` fuori dai blocchi di codice (misura 2026-10-14): 9 in `stories/` (es. `7.1-bmad-docs-audit-report.story.md`, `8.1-phpstan-l10-error-categorization.story.md`, `legacy-readme-new.md`) e 15 in `bmad/stories/`. Sono story: la policy vieta di riscriverle, quindi non sono state toccate; il testo di quei file non e' affidabile finche' i marker non vengono risolti.
 
 ## Story recenti
+<<<<<<< HEAD
 - [Stub XotBaseExporter (xlsxCell + eager-load)](stories/xotbaseexporter-scopo.md)
+=======
+>>>>>>> laraxot/dev
 - [Docs Xot: studio del codice e ingressi (2026-10-14)](stories/docs-xot-studio-e-ingressi.story.md)
 - [DCP-45 isolamento del DB nei test con pest-scratch-db.sh](stories/dcp-45-isolamento-db-test-pest-scratch.story.md) (open)
 - [PHPStan cleanup Xot app (2026-10-06)](stories/phpstan-cleanup-xot-app.story.md), [Xot rest](stories/phpstan-cleanup-xot-rest.story.md)

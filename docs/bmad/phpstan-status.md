@@ -3,9 +3,14 @@ title: "Xot - phpstan-status.md"
 module: Xot
 bmad: true
 status: active
+<<<<<<< HEAD
 source_of_truth: true
 type: note
 updated: 2026-10-15
+=======
+type: note
+updated: 2026-10-13
+>>>>>>> laraxot/dev
 tags: [docs, xot, bmad]
 qmd: "phpstan status   xot xot"
 ---
@@ -13,6 +18,7 @@ qmd: "phpstan status   xot xot"
 
 Stato vivo del gate. Non copiare numeri da report storici: rimisura.
 
+<<<<<<< HEAD
 ## Principi (standing order)
 
 - Scopo prima dell'errore; fix alla causa; git forward-only.
@@ -23,6 +29,8 @@ Stato vivo del gate. Non copiare numeri da report storici: rimisura.
   Prima di un `.md` nuovo: `python3 -I bashscripts/tools/docs/md-filenames.py name <percorso>`.
 
 
+=======
+>>>>>>> laraxot/dev
 ## Misura verificata 2026-10-14 — comando canonico dell'utente
 
 Il comando di consegna è quello eseguito dalla radice Laravel, senza path
