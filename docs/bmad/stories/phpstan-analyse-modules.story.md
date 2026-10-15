@@ -17,7 +17,7 @@ related:
   - ./5.227-phpstan-modules-verify-coordinated.story.md
   - ./phpstan-fleet-swarm-2026-09-23.story.md
   - ../../../../../../docs/wiki/skills/phpstan-solve-errors-no-ignores.md
-  - ../../../../../../docs/wiki/memories/phpstan-fleet-fix-2026-09-23.md
+  - ../../../../../../docs/wiki/memories/phpstan-fleet-fix.md
 references:
   sprint_status: "Xot/phpstan-analyse-modules-2026-09-24"
 ---

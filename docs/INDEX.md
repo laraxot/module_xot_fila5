@@ -23,7 +23,7 @@ marcati `superseded` o `stale`, non cancellati (regola BMAD).
 
 ## Storie correlate
 
-- [2026-10-15-phpstan-max-final-cleanup.story.md](./stories/2026-10-15-phpstan-max-final-cleanup.story.md)
+- [2026-10-15-phpstan-max-final-cleanup.story.md](./stories/phpstan-max-final-cleanup.story.md)
 
 ## Non toccare
 

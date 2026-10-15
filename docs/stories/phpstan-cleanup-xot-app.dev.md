@@ -7,13 +7,13 @@ updated: 2026-10-06
 module: Xot
 tags: [phpstan, cleanup, xot, swarm, lessons-learned]
 related:
-  - ./2026-10-06-phpstan-cleanup-xot-app.story.md
+  - ./phpstan-cleanup-xot-app.story.md
   - ../bmad/phpstan-status.md
 ---
 
 # [DEV] PHPStan cleanup Xot/app
 
-Story: [2026-10-06-phpstan-cleanup-xot-app.story.md](./2026-10-06-phpstan-cleanup-xot-app.story.md)
+Story: [2026-10-06-phpstan-cleanup-xot-app.story.md](./phpstan-cleanup-xot-app.story.md)
 
 ## Technical Plan
 
