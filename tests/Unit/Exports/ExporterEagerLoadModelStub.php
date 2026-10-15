@@ -9,6 +9,9 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 
+/**
+ * Stub per XotBaseExporter::modifyQuery (eager-load ratings / ratingMorphs).
+ */
 final class ExporterEagerLoadModelStub extends Model
 {
     protected $table = 'test_models';
