@@ -14,12 +14,4 @@ final class XotCovManageRelated extends XotBaseManageRelatedRecords
     protected static string $resource = XotBaseResource::class;
 
     protected static string $relationship = 'sessions';
-<<<<<<< HEAD
-
-    public static function getNavigationGroup(): string
-    {
-        return 'Test';
-    }
-=======
->>>>>>> laraxot/dev
 }
