@@ -54,11 +54,11 @@ il 2026-10-14: 254 file `.md` in `docs/`, 71 voci nella radice, nessun `index.md
 - `QA-VERIFICATION.md`, `REFACTOR-panelmixin.md`, `BRAINSTORM-TestCase-Hierarchy-XotBase.md` dicono «vedi il file canonico» e puntano a una versione minuscola che non esiste: il solo contenuto e' lo stub.
 - `wiki/index.md` cita `stories/xotbasemanagerelatedrecords-convention-over-configuration.story.md`, che non esiste in `stories/`; `wiki/log.md` ha frammenti di frontmatter ripetuti dopo la riga 40 (residui di merge, non rimossi).
 
-- Marker di merge: 24 file `.md` hanno righe `<<<<<<< ` o `>>>>>>> ` fuori dai blocchi di codice (misura 2026-10-14): 9 in `stories/` (es. `7.1-bmad-docs-audit-report.story.md`, `8.1-phpstan-l10-error-categorization-207.story.md`, `legacy-readme-new.md`) e 15 in `bmad/stories/`. Sono story: la policy vieta di riscriverle, quindi non sono state toccate; il testo di quei file non e' affidabile finche' i marker non vengono risolti.
+- Marker di merge: 24 file `.md` hanno righe `<<<<<<< ` o `>>>>>>> ` fuori dai blocchi di codice (misura 2026-10-14): 9 in `stories/` (es. `7.1-bmad-docs-audit-report.story.md`, `8.1-phpstan-l10-error-categorization.story.md`, `legacy-readme-new.md`) e 15 in `bmad/stories/`. Sono story: la policy vieta di riscriverle, quindi non sono state toccate; il testo di quei file non e' affidabile finche' i marker non vengono risolti.
 
 ## Story recenti
-- [Docs Xot: studio del codice e ingressi (2026-10-14)](stories/2026-10-14-docs-xot-studio-e-ingressi.story.md)
-- [DCP-45 isolamento del DB nei test con pest-scratch-db.sh](stories/2026-10-13-dcp-45-isolamento-db-test-pest-scratch.story.md) (open)
-- [PHPStan cleanup Xot app (2026-10-06)](stories/2026-10-06-phpstan-cleanup-xot-app.story.md), [Xot rest](stories/2026-10-06-phpstan-cleanup-xot-rest.story.md)
-- [Regressioni PHPStan su app (2026-10-08)](stories/2026-10-08-phpstan-xot-app-regressions.story.md), [test senza assert (2026-10-08)](stories/2026-10-08-phpstan-xot-tests-without-assertions.story.md)
-- [Da Services ad Actions: artisan](stories/2026-10-08-services-to-actions-xot-artisan.story.md), [route](stories/2026-10-08-services-to-actions-xot-route.story.md), [small](stories/2026-10-08-services-to-actions-xot-small.story.md)
+- [Docs Xot: studio del codice e ingressi (2026-10-14)](stories/docs-xot-studio-e-ingressi.story.md)
+- [DCP-45 isolamento del DB nei test con pest-scratch-db.sh](stories/dcp-45-isolamento-db-test-pest-scratch.story.md) (open)
+- [PHPStan cleanup Xot app (2026-10-06)](stories/phpstan-cleanup-xot-app.story.md), [Xot rest](stories/phpstan-cleanup-xot-rest.story.md)
+- [Regressioni PHPStan su app (2026-10-08)](stories/phpstan-xot-app-regressions.story.md), [test senza assert (2026-10-08)](stories/phpstan-xot-tests-without-assertions.story.md)
+- [Da Services ad Actions: artisan](stories/services-to-actions-xot-artisan.story.md), [route](stories/services-to-actions-xot-route.story.md), [small](stories/services-to-actions-xot-small.story.md)

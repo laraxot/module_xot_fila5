@@ -12,7 +12,7 @@ story_id: "auditcoverage-guard-hardening-2026-09-24"
 status: done
 qmd: "audit-coverage guard upstream REMOTE HARNESS claude-audit bridge superseded shallow repo"
 related:
-  - ../../../../Rating/docs/bmad/stories/auditcoverage-reinjection-2026-09-24.story.md
+  - ../../../../Rating/docs/bmad/stories/auditcoverage-reinjection.story.md
   - ../../wiki/concepts/tests-audit-coverage-forbidden.md
   - ../../../../../../bashscripts/ai/wiki/rules/tests-auditcoverage-forbidden.md
 ---

@@ -15,7 +15,7 @@ qmd: "decision log   xot xot"
 - **Choose**: `00-INDEX.md` e' l'unico indice del modulo e dichiara cartelle canoniche, evidence e legacy; `wiki/index.md` e `bmad/index.md` restano indici di sezione; i documenti che contraddicono il codice (`wiki/architecture.md`, `wiki/Architecture.md`, `standards/README.md`, `standards/readme.md`, `governance/docs-structure.md`) sono marcati `status: stale` con il motivo; i link non risolti delle pagine di primo livello sono annotati `target mancante`.
 - **Over**: Creare un `index.md` alla radice (vietato dal contratto), riscrivere i documenti smentiti o inventare bersagli per i link.
 - **Because**: 738 riferimenti non risolti in 254 file `.md`; i bersagli non esistono e nessuna fonte dice dove siano andati. 24 story hanno marker di merge: la policy vieta di riscriverle.
-- **Verifica**: `phpstan analyse Modules/Xot` exit 0; conteggi del codice da `find`; `docs-organizer.py --busy-minutes 0 links --by-name` (dry-run). Story: [2026-10-14-docs-xot-studio-e-ingressi](stories/2026-10-14-docs-xot-studio-e-ingressi.story.md).
+- **Verifica**: `phpstan analyse Modules/Xot` exit 0; conteggi del codice da `find`; `docs-organizer.py --busy-minutes 0 links --by-name` (dry-run). Story: [2026-10-14-docs-xot-studio-e-ingressi](stories/docs-xot-studio-e-ingressi.story.md).
 
 ### 2026-10-08: Riallineamento dell'intero modulo all'ultimo commit buono `cadb1578e`
 - **Choose**: Confronto a tre vie dell'intero modulo (app, config, routes, resources, lang, database, tests) con `cadb1578e` (06/10 18:00, commit irraggiungibile: la linea buona di Xot e' stata sostituita dal re-import senza genitori `2dc9faf42` del 07/10 13:11). Tra il 06/10 18:00 e il re-import non ci sono altri commit su Xot.

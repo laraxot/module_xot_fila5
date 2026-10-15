@@ -62,4 +62,4 @@ Nessuna costante di insieme di valori nel perimetro (solo file di test/helper): 
 Issue: TODO (gh non installato su questa macchina)
 Discussion: TODO
 
-Vedi [dev](./2026-10-06-phpstan-cleanup-xot-rest.dev.md).
+Vedi [dev](./phpstan-cleanup-xot-rest.dev.md).
