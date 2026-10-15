@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 /**
  * @see https://github.com/TheDoctor0/laravel-factory-generator. 24 days ago
  * @see https://github.com/mpociot/laravel-test-factory-helper  on 2 Mar 2020.
@@ -15,12 +14,11 @@ namespace Modules\Xot\Actions\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\Str;
+use Spatie\QueueableAction\QueueableAction;
+use Webmozart\Assert\Assert;
 
 use function Safe\file;
 use function Safe\preg_replace;
-
-use Spatie\QueueableAction\QueueableAction;
-use Webmozart\Assert\Assert;
 
 /**
  * Classe per estrarre proprietà dai metodi di relazione di un modello.
@@ -34,8 +32,7 @@ class GetPropertiesFromMethodsByModelAction
     /**
      * Estrae le proprietà dai metodi di relazione del modello.
      *
-     * @param Model $model Il modello da analizzare
-     *
+     * @param  Model  $model  Il modello da analizzare
      * @return array<string, string> Dati estratti dalle relazioni
      */
     public function execute(Model $model): array
@@ -54,7 +51,7 @@ class GetPropertiesFromMethodsByModelAction
                 $reflection = new \ReflectionMethod($model, $method);
                 $filename = $reflection->getFileName();
 
-                if (false === $filename) {
+                if ($filename === false) {
                     continue; // Saltiamo i metodi senza file (es. metodi interni)
                 }
 
@@ -92,10 +89,10 @@ class GetPropertiesFromMethodsByModelAction
 
                 // Estrazione del corpo della funzione
                 $begin = mb_strpos($codeStr, 'function(');
-                $begin = false !== $begin ? $begin : 0;
+                $begin = $begin !== false ? $begin : 0;
 
                 $end = mb_strrpos($codeStr, '}');
-                $end = false !== $end ? $end : mb_strlen($codeStr);
+                $end = $end !== false ? $end : mb_strlen($codeStr);
 
                 $length = $end - $begin + 1;
                 Assert::greaterThan($length, 0, 'La lunghezza del corpo della funzione deve essere positiva');
@@ -104,7 +101,7 @@ class GetPropertiesFromMethodsByModelAction
                 Assert::stringNotEmpty($codeStr, 'Il corpo della funzione non può essere vuoto');
 
                 // Cerchiamo relazioni belongsTo
-                $this->extractBelongsToRelations($codeStr, $model, $method, $data);
+                $this->extractBelongsToRelations($codeStr, $model, $method);
             } catch (\Exception $e) {
                 // Se c'è un errore nell'analisi del metodo, lo ignoriamo e passiamo al successivo
                 continue;
@@ -117,17 +114,16 @@ class GetPropertiesFromMethodsByModelAction
     /**
      * Estrae le relazioni belongsTo dal codice.
      *
-     * @param string                $codeStr Il codice da analizzare
-     * @param Model                 $model   Il modello
-     * @param string                $method  Il nome del metodo
-     * @param array<string, string> &$data   L'array in cui salvare i dati estratti
+     * @param  string  $codeStr  Il codice da analizzare
+     * @param  Model  $model  Il modello
+     * @param  string  $method  Il nome del metodo
      */
-    private function extractBelongsToRelations(string $codeStr, Model $model, string $method, array &$data): void
+    private function extractBelongsToRelations(string $codeStr, Model $model, string $method): void
     {
         $search = '$this->belongsTo(';
         $pos = mb_stripos($codeStr, $search);
 
-        if (false === $pos) {
+        if ($pos === false) {
             return; // Il metodo non contiene una relazione belongsTo
         }
 
@@ -150,13 +146,7 @@ class GetPropertiesFromMethodsByModelAction
             Assert::string($foreignKeyName, 'Il nome della chiave esterna deve essere una stringa');
 
             // Otteniamo la classe relazionata
-            $relatedClass = get_class($relationObj->getRelated());
-
-            // Chiamiamo GetFakerAction con parametri corretti
-            $fakerAction = app(GetFakerAction::class);
-            // Assert::isCallable rimosso - metodo verificato a compile time
-
-            $type = 'factory('.$relatedClass.'::class)';
+            get_class($relationObj->getRelated());
         } catch (\Exception $e) {
             // In caso di errore, ignoriamo la relazione
             return;

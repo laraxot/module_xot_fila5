@@ -34,6 +34,7 @@ return [
         'logout' => [
             'tooltip' => 'logout',
         ],
+        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
     ],
     'label' => 'Health',
     'plural_label' => 'Health (Plurale)',

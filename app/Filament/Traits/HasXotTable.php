@@ -18,7 +18,6 @@ use Filament\Actions\ReplicateAction;
 use Filament\Actions\ViewAction;
 use Filament\Notifications\Notification;
 use Filament\Resources\Pages\ListRecords;
-use Filament\Tables;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\ColumnGroup;
 use Filament\Tables\Columns\Layout\Component as LayoutComponent;
@@ -27,12 +26,14 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Enums\FiltersLayout;
 use Filament\Tables\Enums\RecordActionsPosition;
 use Filament\Tables\Filters\BaseFilter;
+use Filament\Tables\Filters\Filter;
 use Filament\Tables\Filters\TernaryFilter;
 use Filament\Tables\Table;
-use Filament\Widgets\TableWidget;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\Relation;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Str;
 use Livewire\Component;
 use Modules\UI\Enums\TableLayoutEnum;
@@ -41,6 +42,7 @@ use Modules\UI\Filament\Traits\HasTableLayoutPage;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Filament\PlainTextFromFilamentValueAction;
 use Modules\Xot\Actions\GetTransKeyAction;
+use RuntimeException;
 use Webmozart\Assert\Assert;
 
 /**
@@ -49,6 +51,7 @@ use Webmozart\Assert\Assert;
  * Provides enhanced table functionality with translations and optimized structure.
  *
  * @property TableLayoutEnum $layoutView
+ * @property string|null $tableSearch
  *
  * @SuppressWarnings("PHPMD.StaticAccess")
  * @SuppressWarnings("PHPMD.CyclomaticComplexity")
@@ -128,7 +131,21 @@ trait HasXotTable
     {
         $columns = [];
 
+        // @phpstan-ignore method.deprecated
         foreach (array_values($this->getTableColumns()) as $column) {
+            if ($column instanceof ColumnGroup) {
+                // Stack::make() non accetta ColumnGroup: nella vista a griglia le colonne
+                // raggruppate non hanno un layout sensato, quindi vengono saltate.
+                continue;
+            }
+
+            if (! $column instanceof Column && ! $column instanceof LayoutComponent) {
+                // getTableColumns() può restituire, in alcuni contesti, elementi non tipizzati
+                // (fallback deprecato di Filament): si scartano per restare coerenti col
+                // tipo atteso da Stack::make().
+                continue;
+            }
+
             $gridColumn = clone $column;
 
             if ($gridColumn instanceof TextColumn) {
@@ -136,7 +153,7 @@ trait HasXotTable
 
                 $gridColumn->formatStateUsing(
                     static function (mixed $state) use ($labelText): string {
-                        if (null === $state || '' === $state) {
+                        if ($state === null || $state === '') {
                             return $labelText.': —';
                         }
 
@@ -154,10 +171,25 @@ trait HasXotTable
     }
 
     /**
+     * Se i filtri vanno applicati solo dopo il bottone "Applica filtri" (default Filament)
+     * oppure a ogni modifica del campo.
+     *
+     * Filament rende il bottone nel piede del form dei filtri, quindi occupa sempre una riga
+     * propria: una tabella che vuole i filtri su una riga sola deve rinunciare al bottone e
+     * applicare al volo. Il default `true` conserva il comportamento di tutte le tabelle
+     * esistenti; si sovrascrive solo dove serve.
+     */
+    public function shouldDeferTableFilters(): bool
+    {
+        return true;
+    }
+
+    /**
      * Get table filters form columns.
      */
     public function getTableFiltersFormColumns(): int
     {
+        // @phpstan-ignore method.deprecated
         $count = count($this->getTableFilters()) + 1;
 
         return min($count, 6);
@@ -203,34 +235,58 @@ trait HasXotTable
         Assert::isInstanceOf($model, Model::class);
         */
         // Configurazione base della tabella
+        // getTableColumns() può restituire, in alcuni contesti, elementi non tipizzati
+        // (fallback deprecato di Filament): si filtrano per restare coerenti col tipo
+        // atteso da TableLayoutEnum::getTableColumns().
+        $tableColumns = array_values(array_filter(
+            // @phpstan-ignore method.deprecated
+            $this->getTableColumns(),
+            static fn (mixed $column): bool => $column instanceof Column || $column instanceof ColumnGroup || $column instanceof LayoutComponent,
+        ));
+
+        $columns = $this->layoutView->getTableColumns($tableColumns, $this->getGridTableColumns());
+
         $table = $table
             ->recordTitleAttribute($this->getTableRecordTitleAttribute())
+            // @phpstan-ignore method.deprecated
             ->heading($this->getTableHeading())
-            ->columns($this->layoutView->getTableColumns(array_values($this->getTableColumns()), $this->getGridTableColumns()))
+            // @phpstan-ignore method.deprecated, argument.type
+            ->headerActions($this->getTableHeaderActions())
+            ->columns($columns)
             ->contentGrid($this->layoutView->getTableContentGrid())
-            ->filters($this->getTableFilters()) // @phpstan-ignore argument.type
-            ->filtersLayout(FiltersLayout::AboveContent)
+            // @phpstan-ignore method.deprecated
+            ->filters($this->getTableFilters())
+            ->filtersLayout($this->getTableFiltersLayout())
             ->filtersFormColumns($this->getTableFiltersFormColumns())
-            ->persistFiltersInSession()
-            ->headerActions(array_values($this->getTableHeaderActions()))
-            ->recordActions(array_values($this->getTableActions()))
-            ->bulkActions(array_values($this->getTableBulkActions()))
-            ->recordActionsPosition(RecordActionsPosition::BeforeColumns)
-            ->emptyStateActions(array_values($this->getTableEmptyStateActions()))
-            ->striped()
+            ->deferFilters($this->shouldDeferTableFilters())
+            // @phpstan-ignore method.deprecated
+            ->persistFiltersInSession($this->shouldPersistTableFiltersInSession())
+            // @phpstan-ignore method.deprecated, method.childReturnType, argument.type
+            ->recordActions($this->getTableActions())
+            // @phpstan-ignore method.deprecated
+            ->toolbarActions($this->getTableBulkActions())
+            ->recordActionsPosition($this->getTableRecordActionsPosition())
+            // @phpstan-ignore method.deprecated
+            ->emptyStateActions($this->getTableEmptyStateActions())
+            // @phpstan-ignore method.deprecated
+            ->striped($this->isTableStriped())
             ->paginated($this->getTablePaginated());
 
         // Configurazioni opzionali personalizzabili
+        // @phpstan-ignore method.deprecated
         $sortColumn = $this->getDefaultTableSortColumn();
+        // @phpstan-ignore method.deprecated
         $sortDirection = $this->getDefaultTableSortDirection();
-        if (null !== $sortColumn && null !== $sortDirection) {
+        if ($sortColumn !== null && $sortDirection !== null) {
             $table = $table->defaultSort($sortColumn, $sortDirection);
         }
 
         $pollInterval = $this->getTablePollInterval();
-        if (null !== $pollInterval) {
+        if ($pollInterval !== null) {
             $table = $table->poll($pollInterval);
         }
+
+        $table = $this->applyReorderable($table);
 
         return $table;
     }
@@ -242,7 +298,7 @@ trait HasXotTable
      * Filament\Tables\Concerns\InteractsWithTable richiede visibilità PUBLIC.
      * Vedi: Modules/Xot/docs/filament/widget-method-visibility-rules.md
      *
-     * @return array<string|int, Tables\Filters\Filter|TernaryFilter|BaseFilter>
+     * @return array<string|int, Filter|TernaryFilter|BaseFilter>
      */
     public function getTableFilters(): array
     {
@@ -257,21 +313,24 @@ trait HasXotTable
      *
      * @return array<int|string, Action|ActionGroup>
      */
-    /**
-     * @deprecated override the `table()` method to configure the table
-     *
-     * @return array<int|string, Action|ActionGroup>
-     */
     public function getTableActions(): array
     {
-        if ($this instanceof TableWidget) {
-            return [];
-        }
-
         $actions = [];
         $resource = $this;
         /* @phpstan-ignore-next-line */
-        if ($this instanceof ListRecords) {
+        // Ripristinato a method_exists() il 2026-09-11: un giro precedente
+        // aveva ristretto questo controllo a `$this instanceof ListRecords`,
+        // pensato per le pagine, ma XotBaseResourceTable::getTableActions()
+        // (usato da OGNI {Model}sTable.php del repo, non solo dalle pagine
+        // ListRecords) espone `getResource()` senza essere una ListRecords —
+        // verificato dal vivo: la versione ristretta faceva sparire
+        // view/edit/delete di default per tutte quelle tabelle (es.
+        // ChartsTable::getTableActions() tornava [] invece di
+        // view/edit/delete), zero errori, nessuna eccezione. Nessuna
+        // giustificazione trovata per la versione ristretta (nessuna story
+        // la documenta); il controllo ampio e' quello verificato corretto
+        // per il resto di questa sessione.
+        if (method_exists($this, 'getResource')) {
             $resourceClass = $this->getResource();
             // @phpstan-ignore-next-line staticMethod.alreadyNarrowedType
             Assert::string($resourceClass);
@@ -323,6 +382,18 @@ trait HasXotTable
     }
 
     /**
+     * Regola per record dell'azione di eliminazione di gruppo (audit DCP-181, A-1): come Filament, un modello SENZA policy resta consentito (la
+     * stringa `'delete'` lo negherebbe: `Gate::inspect` senza policy dice no); con una policy decide `delete()` su ogni record.
+     *
+     * @return \Closure(Model): bool
+     */
+    public static function bulkDeleteRecordAuthorization(): \Closure
+    {
+        return static fn (Model $record): bool => Gate::getPolicyFor($record) === null
+            || Gate::allows('delete', $record);
+    }
+
+    /**
      * Get table bulk actions.
      *
      * CRITICO: Deve essere public perché viene chiamato da Filament/Livewire dall'esterno.
@@ -345,23 +416,42 @@ trait HasXotTable
     /**
      * Get model class.
      *
-     * @throws \Exception Se non viene trovata una classe modello valida
      *
      * @return class-string<Model>
+     *
+     * @phpstan-return class-string<Model>
+     *
+     * @throws \Exception Se non viene trovata una classe modello valida
      */
     public function getModelClass(): string
     {
+        // Su pagine "related records" / relation manager, getModel() risale al
+        // model della Resource proprietaria (es. SurveyPdf), non al model della
+        // relazione mostrata in tabella (es. Contact): va usato getRelationship().
+        if (method_exists($this, 'getRelationship')) {
+            $relationship = $this->getRelationship();
+            Assert::isInstanceOfAny($relationship, [Relation::class, Builder::class]);
+            $related = $relationship instanceof Builder ? $relationship->getModel() : $relationship->getRelated();
+            if ($related instanceof Model) {
+                /** @var class-string<Model> $relatedClass */
+                $relatedClass = get_class($related);
+
+                return $relatedClass;
+            }
+        }
+
         /* @phpstan-ignore-next-line function.alreadyNarrowedType */
         if (method_exists($this, 'getModel')) {
             $model = $this->getModel();
             Assert::string($model);
-            Assert::classExists($model);
-            Assert::subclassOf($model, Model::class);
+            if (! is_a($model, Model::class, true)) {
+                throw new RuntimeException('Invalid model class '.$model);
+            }
 
             return $model;
         }
 
-        throw new \RuntimeException('No model found in '.class_basename(self::class).'::'.__FUNCTION__);
+        throw new RuntimeException('No model found in '.class_basename(self::class).'::'.__FUNCTION__);
     }
 
     /**
@@ -371,15 +461,25 @@ trait HasXotTable
      */
     public function getTableSearch(): ?string
     {
-        $search = $this->tableSearch ?? null;
+        if (! property_exists($this, 'tableSearch')) {
+            return null;
+        }
 
-        return null !== $search ? SafeStringCastAction::cast($search) : null;
+        $tableSearch = $this->tableSearch;
+
+        if (! filled($tableSearch)) {
+            return null;
+        }
+
+        $trimmed = Str::trim(SafeStringCastAction::cast($tableSearch));
+
+        return $trimmed !== '' ? $trimmed : null;
     }
 
     /**
      * Get list table columns.
      *
-     * @return array<string, Column>
+     * @return array<string, Column|ColumnGroup|LayoutComponent>
      */
     abstract protected function getTableColumns(): array;
 
@@ -467,6 +567,38 @@ trait HasXotTable
     }
 
     /**
+     * Get table filters layout.
+     */
+    protected function getTableFiltersLayout(): FiltersLayout
+    {
+        return FiltersLayout::AboveContent;
+    }
+
+    /**
+     * Get table record actions position.
+     */
+    protected function getTableRecordActionsPosition(): RecordActionsPosition
+    {
+        return RecordActionsPosition::BeforeColumns;
+    }
+
+    /**
+     * Whether table rows are striped.
+     */
+    protected function isTableStriped(): bool
+    {
+        return true;
+    }
+
+    /**
+     * Whether table filters persist in session.
+     */
+    protected function shouldPersistTableFiltersInSession(): bool
+    {
+        return true;
+    }
+
+    /**
      * Get table pagination options.
      * Can return bool (true/false) or array of page sizes [10, 25, 50, 100].
      *
@@ -482,6 +614,7 @@ trait HasXotTable
      */
     protected function getDefaultTableSortColumn(): ?string
     {
+
         try {
             $modelClass = $this->getModelClass();
             /** @var Model $model */
@@ -565,5 +698,47 @@ trait HasXotTable
     protected function hasSearch(): bool
     {
         return true;
+    }
+
+    /**
+     * Check if model has a specific column via schema introspection.
+     * Generic, reusable method for any column check.
+     */
+    protected function hasColumn(string $column): bool
+    {
+        $modelClass = $this->getModelClass();
+        $model = app($modelClass);
+        Assert::isInstanceOf($model, Model::class);
+
+        return $model->getConnection()
+            ->getSchemaBuilder()
+            ->hasColumn($model->getTable(), $column);
+    }
+
+    /**
+     * Get the column name used for table reordering.
+     * Returns 'order_column' if it exists in the model's table, null otherwise.
+     */
+    protected function getOrderColumn(): ?string
+    {
+        if ($this->hasColumn('order_column')) {
+            return 'order_column';
+        }
+
+        return null;
+    }
+
+    /**
+     * Apply reorderable to table if order column is available.
+     */
+    protected function applyReorderable(Table $table): Table
+    {
+        $orderColumn = $this->getOrderColumn();
+
+        if ($orderColumn !== null) {
+            return $table->reorderable($orderColumn);
+        }
+
+        return $table;
     }
 }

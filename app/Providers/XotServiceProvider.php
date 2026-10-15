@@ -4,10 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Providers;
 
+use Composer\Autoload\ClassLoader;
+use Filament\Actions\DeleteBulkAction;
+use Filament\Actions\Exports\Jobs\CreateXlsxFile;
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\Field;
-use Filament\Forms\Components\Placeholder;
 use Filament\Forms\Components\TimePicker;
 use Filament\Infolists\Components\Entry;
 use Filament\Support\Components\Component;
@@ -22,14 +24,15 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\View;
 use Modules\Xot\Actions\Composer\RegisterRuntimePsr4NamespacesAction;
+use Modules\Xot\Actions\PaDesignColorsAction;
 use Modules\Xot\Console\Commands\GenerateFilamentResources;
 use Modules\Xot\Datas\XotData;
-use Modules\Xot\Support\PaDesignColors;
+use Modules\Xot\Exports\Jobs\XotCreateXlsxFile;
+use Modules\Xot\Filament\Traits\HasXotTable;
 use Modules\Xot\View\Composers\XotComposer;
+use Webmozart\Assert\Assert;
 
 use function Safe\realpath;
-
-use Webmozart\Assert\Assert;
 
 /**
  * Class XotServiceProvider.
@@ -53,6 +56,7 @@ class XotServiceProvider extends XotBaseServiceProvider
         $this->registerTimezone();
         $this->registerFilamentMacros();
         $this->registerPaFilamentColors();
+        $this->registerBulkDeleteAuthorization();
         $this->registerXotLivewireComponents();
         $this->registerProviders();
     }
@@ -67,6 +71,18 @@ class XotServiceProvider extends XotBaseServiceProvider
         // $this->registerExceptionHandlersRepository();
         // $this->extendExceptionHandler();
         $this->registerCommands();
+        $this->registerExportJobs();
+    }
+
+    /**
+     * `CanExportRecords` risolve il job xlsx con `app(CreateXlsxFile::class, [...])`:
+     * il binding lo sostituisce con `XotCreateXlsxFile`, che per gli exporter
+     * `XotBaseExporter` legge il CSV intermedio con lo stesso escape con cui
+     * `XotExportCsv` lo scrive (story Ptv/5.165); per gli altri delega al vendor.
+     */
+    private function registerExportJobs(): void
+    {
+        $this->app->bind(CreateXlsxFile::class, XotCreateXlsxFile::class);
     }
 
     public function registerProviders(): void
@@ -84,11 +100,11 @@ class XotServiceProvider extends XotBaseServiceProvider
 
         $loader = require $autoloadPath;
 
-        if (! $loader instanceof \Composer\Autoload\ClassLoader) {
+        if (! $loader instanceof ClassLoader) {
             return;
         }
 
-        (new RegisterRuntimePsr4NamespacesAction())->execute($loader);
+        (new RegisterRuntimePsr4NamespacesAction)->execute($loader);
     }
 
     public function registerTimezone(): void
@@ -116,11 +132,22 @@ class XotServiceProvider extends XotBaseServiceProvider
     }
 
     /**
+     * Eliminazione di gruppo: Filament autorizza una volta sola con `deleteAny()`, che 35 policy del progetto non definiscono (audit DCP-181, A-1).
+     * Un solo punto per tutti i siti, presenti e futuri: ogni record passa da `delete()` se il modello ha una policy.
+     */
+    public function registerBulkDeleteAuthorization(): void
+    {
+        DeleteBulkAction::configureUsing(
+            fn (DeleteBulkAction $action): DeleteBulkAction => $action->authorizeIndividualRecords(HasXotTable::bulkDeleteRecordAuthorization()),
+        );
+    }
+
+    /**
      * Palette PA su widget FO (login, wizard) senza panel attivo — allineata ai panel admin.
      */
     public function registerPaFilamentColors(): void
     {
-        FilamentColor::register(PaDesignColors::filamentPalette());
+        FilamentColor::register(app(PaDesignColorsAction::class)->filamentPalette());
     }
 
     public function registerFilamentMacros(): void
@@ -176,12 +203,12 @@ class XotServiceProvider extends XotBaseServiceProvider
     {
         $files = File::files($path);
         foreach ($files as $file) {
-            if ('php' !== $file->getExtension()) {
+            if ($file->getExtension() !== 'php') {
                 continue;
             }
 
             $realPath = $file->getRealPath();
-            if (false === $realPath) {
+            if ($realPath === false) {
                 continue;
             }
 
@@ -204,7 +231,9 @@ class XotServiceProvider extends XotBaseServiceProvider
 
     protected function translatableComponents(): void
     {
-        $components = [Field::class, BaseFilter::class, Placeholder::class, Column::class, Entry::class];
+        // Placeholder è deprecato in favore di TextEntry (state()): Entry::class copre già
+        // TextEntry e le altre entry infolist, quindi non serve registrarlo separatamente.
+        $components = [Field::class, BaseFilter::class, Column::class, Entry::class];
         foreach ($components as $component) {
             $component::configureUsing(function (Component $translatable): void {
                 if (method_exists($translatable, 'translateLabel')) {

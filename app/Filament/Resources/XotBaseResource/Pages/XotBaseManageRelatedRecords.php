@@ -77,7 +77,6 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      *
      * @return array<string, TextColumn>
      */
-    #[\Override]
     public function getTableColumns(): array
     {
         return [
@@ -128,7 +127,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
                     // Prova il guessing degli URL nested di Filament (funziona con nesting multi-livello in richieste normali).
                     $url = $resource::getUrl('view', ['record' => $record], shouldGuessMissingParameters: true);
                     // Fallback per contesti senza dati di request (es. test Livewire).
-                    if ('' === $url) {
+                    if ($url === '') {
                         $url = $resource::getUrl('view', ['record' => $record], shouldGuessMissingParameters: false);
                     }
 
@@ -141,7 +140,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
                     // Prova il guessing degli URL nested di Filament (funziona con nesting multi-livello in richieste normali).
                     $url = $resource::getUrl('edit', ['record' => $record], shouldGuessMissingParameters: true);
                     // Fallback per contesti senza dati di request (es. test Livewire).
-                    if ('' === $url) {
+                    if ($url === '') {
                         $url = $resource::getUrl('edit', ['record' => $record], shouldGuessMissingParameters: false);
                     }
 
@@ -187,16 +186,10 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      */
     public function getTitle(): string
     {
-        $resource = static::getResource();
         $recordTitle = $this->getRecordTitle();
         $relationship = static::getRelationshipName();
 
-        $titleString = '';
-        if ($recordTitle instanceof Htmlable) {
-            $titleString = $recordTitle->toHtml();
-        } else {
-            $titleString = (string) $recordTitle;
-        }
+        $titleString = $recordTitle instanceof Htmlable ? $recordTitle->toHtml() : (string) $recordTitle;
 
         return Str::of($relationship)
             ->title()

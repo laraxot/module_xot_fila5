@@ -1,3 +1,17 @@
+---
+title: "readme"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "readme"
+issues: []
+discussions: []
+status: stale
+---
+
+> Nota 2026-10-14 (docs-audit): Copia minuscola di standards/README.md: stesso blocco di 60 link non risolti verso percorsi di altri progetti; nessuna affermazione verificata. Contenuto non riscritto, verificare prima di usarlo.
+
 # Standard di Codice
 
 Questa cartella contiene gli standard di codice e le convenzioni utilizzate nel progetto.
@@ -22,7 +36,7 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 * [README.md](docs/moduli/installati/README.md)
 * [README.md](docs/moduli/comandi/README.md)
 * [README.md](docs/phpstan/README.md)
-* [README.md](docs/README.md)
+* [README.md](../README.md)
 * [README.md](docs/module-links/README.md)
 * [README.md](docs/troubleshooting/git-conflicts/README.md)
 * [README.md](docs/tecnico/laraxot/README.md)
@@ -125,4 +139,3 @@ class Doctor extends User
 
 ## Moduli che applicano questa regola
 // Aggiungere qui altri moduli se necessario
-
