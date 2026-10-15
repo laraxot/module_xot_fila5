@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Fixtures\Stubs;
+namespace Tests\Modules\Xot\Fixtures\Stubs;
 
 use Modules\Xot\Filament\Resources\Pages\XotBasePage as ResourceXotBasePage;
 use Modules\Xot\Models\Cache as CacheModel;
