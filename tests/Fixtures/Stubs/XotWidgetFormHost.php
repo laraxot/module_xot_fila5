@@ -11,9 +11,12 @@ final class XotWidgetFormHost extends XotBaseWidget
 {
     protected string $view = 'xot::filament.widgets.base';
 
+<<<<<<< HEAD
     /**
      * @return array<int, mixed>
      */
+=======
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
     {
         return [];
@@ -23,6 +26,7 @@ final class XotWidgetFormHost extends XotBaseWidget
     {
         return CacheModel::class;
     }
+<<<<<<< HEAD
 
     /**
      * @return array<string, mixed>
@@ -31,4 +35,6 @@ final class XotWidgetFormHost extends XotBaseWidget
     {
         return [];
     }
+=======
+>>>>>>> laraxot/dev
 }

@@ -10,6 +10,7 @@ use Modules\Xot\Models\Cache;
 final class XotFilamentResourceContract extends XotBaseResource
 {
     protected static ?string $model = Cache::class;
+<<<<<<< HEAD
 
     public static function getModel(): string
     {
@@ -31,4 +32,6 @@ final class XotFilamentResourceContract extends XotBaseResource
     {
         return [];
     }
+=======
+>>>>>>> laraxot/dev
 }
