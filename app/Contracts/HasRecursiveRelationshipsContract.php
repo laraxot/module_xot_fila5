@@ -20,34 +20,46 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\Relations\Siblings;
 /**
  * Modules\Xot\Contracts\HasRecursiveRelationshipsContract.
  *
- * @property int                    $id
- * @property string                 $name
- * @property int                    $depth
+ * @property int $id
+ * @property string $name
+ * @property int $depth
  * @property Collection<int, Model> $children
- * @property int|null               $children_count
- * @property Collection<int, Model> $ancestors                  The model's recursive parents.
- * @property int|null               $ancestors_count
- * @property Collection<int, Model> $ancestorsAndSelf           The model's recursive parents and itself.
- * @property int|null               $ancestors_and_self_count
- * @property Collection<int, Model> $bloodline                  The model's ancestors, descendants and itself.
- * @property int|null               $bloodline_count
- * @property Collection<int, Model> $childrenAndSelf            The model's direct children and itself.
- * @property int|null               $children_and_self_count
- * @property Collection<int, Model> $descendants                The model's recursive children.
- * @property int|null               $descendants_count
- * @property Collection<int, Model> $descendantsAndSelf         The model's recursive children and itself.
- * @property int|null               $descendants_and_self_count
- * @property Collection<int, Model> $parentAndSelf              The model's direct parent and itself.
- * @property int|null               $parent_and_self_count
+ * @property int|null $children_count
+ * @property Collection<int, Model> $ancestors The model's recursive parents.
+ * @property int|null $ancestors_count
+ * @property Collection<int, Model> $ancestorsAndSelf The model's recursive parents and itself.
+ * @property int|null $ancestors_and_self_count
+ * @property Collection<int, Model> $bloodline The model's ancestors, descendants and itself.
+ * @property int|null $bloodline_count
+ * @property Collection<int, Model> $childrenAndSelf The model's direct children and itself.
+ * @property int|null $children_and_self_count
+ * @property Collection<int, Model> $descendants The model's recursive children.
+ * @property int|null $descendants_count
+ * @property Collection<int, Model> $descendantsAndSelf The model's recursive children and itself.
+ * @property int|null $descendants_and_self_count
+ * @property Collection<int, Model> $parentAndSelf The model's direct parent and itself.
+ * @property int|null $parent_and_self_count
  *
  * @phpstan-require-extends Model
  *
- * @mixin \Eloquent
+ * Tipi di ritorno solo nel `@return`, non nativi, sui metodi che il trait vendor
+ * `Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships` dichiara senza
+ * tipo (`getParentKeyName()`, `getPathName()`, `hasNestedPath()`, ...): i modelli che usano
+ * quel trait direttamente non possono implementare un contratto con tipi nativi senza
+ * fatal runtime. `TypedHasRecursiveRelationships` li restringe comunque ai tipi nativi
+ * quando serve, e PHPStan legge il `@return`.
+ *
+ * @mixin \Illuminate\Database\Eloquent\Model
  */
 interface HasRecursiveRelationshipsContract
 {
     /**
      * Execute a query with a maximum depth constraint for the recursive query.
+     *
+     * Il ritorno e' `mixed` perche' il trait vendor `HasAdjacencyList` lo dichiara cosi':
+     * un tipo piu' stretto qui rende fatale il caricamento di ogni classe che usa il trait.
+     *
+     * @return mixed
      */
     public static function withMaxDepth(int $maxDepth, callable $query): mixed;
 
@@ -170,20 +182,19 @@ interface HasRecursiveRelationshipsContract
     /**
      * Determine if an attribute is an integer.
      *
+     * @param string $attribute
+     *
      * @return bool
      */
-    public function isIntegerAttribute(string $attribute);
+    public function isIntegerAttribute($attribute);
 
     /**
-     * @param Builder $query
-     *
      * @return AdjacencyBuilder<Model>
      */
-    public function newEloquentBuilder($query);
+    public function newEloquentBuilder(Builder $query);
 
     /**
-     * @param list<Model> $models
-     *
+     * @param  list<Model>  $models
      * @return Collection<int, Model>
      */
     public function newCollection(array $models = []);

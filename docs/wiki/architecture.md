@@ -1,8 +1,19 @@
 ---
+title: "architecture"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "architecture"
+issues: []
+discussions: []
 module: Xot
 concept: Architecture
 last_updated: 2026-04-15
+status: stale
 ---
+
+> Nota 2026-10-14 (docs-audit): Verificato il 2026-10-14 contro il codice di Xot: getFormSchemaImplementation() non esiste in app/ (0 occorrenze); BaseModel/XotBaseModel non usano HasXotTable ne HasExtra (usano HasXotFactory, RelationX, Updater); composer.json ha 23 requisiti su 37 con vincolo *, contro la regola 'mai *' qui scritta; in tests/ non c'e nessun test arch() (0 occorrenze). Contenuto non riscritto, verificare prima di usarlo.
 
 # Xot Module Architecture
 

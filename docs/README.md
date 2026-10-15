@@ -1,223 +1,86 @@
-# 🏗️ **Xot Module** - Il Cuore del Framework Laraxot
-
-[![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
-[![Filament 4.x](https://img.shields.io/badge/Filament-4.x-blue.svg)](https://filamentphp.com/)
-[![PHP 8.3](https://img.shields.io/badge/PHP-8.3-blueviolet.svg)](https://www.php.net/)
-[![PHPStan Level 10](https://img.shields.io/badge/PHPStan-Level%2010-brightgreen.svg)](https://phpstan.org/)
-[![Modular Architecture](https://img.shields.io/badge/Architecture-Modular%20Monolith-yellow.svg)](https://martinfowler.com/articles/modular-monolith.html)
-
-> **🚀 Modulo Xot**: Framework base e cuore architetturale di Laraxot - fornisce classi base, traits, convenzioni e infrastruttura core per tutti i moduli dell'ecosistema.
-
-## 📋 **Panoramica**
-
-Il modulo **Xot** è il **framework base** di Laraxot PTVX, un ecosistema modulare basato su **Laravel 12** e **Filament 4**, progettato per applicazioni enterprise. Fornisce gli strumenti fondamentali e i pattern architetturali per garantire coerenza, estensibilità e manutenibilità in tutto il progetto.
-
-### Principi Fondamentali
-- **Modularità**: Ogni funzionalità è organizzata in moduli indipendenti e autoconsistenti.
-- **Coerenza**: Adozione di una struttura uniforme, convenzioni di naming e best practice standardizzate.
-- **Estensibilità**: Progettato per facilitare l'aggiunta di nuovi moduli e l'espansione delle funzionalità esistenti.
-- **Manutenibilità**: Codice pulito, ben documentato e supportato da strumenti di analisi statica.
-
-### 🏗️ **Module Directory Structure Standard**
-To ensure consistent autoloading and architectural integrity, all modules must follow this structure:
-- **app/**: Contains all PHP code (Actions, Models, etc.). Mapped to `Modules\{Module}\` in `composer.json`.
-- **database/**: strictly lowercase.
-- **Forbidden**: Capitalized directories at the root level (e.g., `Actions/`, `Database/`) are forbidden.
-
-## 📚 **Quick Navigation**
-
-- **[Architecture Patterns](./architecture-patterns.md)** — Complete design patterns, class hierarchies, traits ecosystem
-- **[Documentation Index](./INDEX.md)** — Full table of contents and component reference
-- **[XOTBASE_ARCHITECTURE_PHILOSOPHY.md](./XOTBASE_ARCHITECTURE_PHILOSOPHY.md)** — Core design philosophy
-
 ---
+title: "Xot - documentazione del modulo"
+type: readme
+status: active
+updated: 2026-10-14
+module: Xot
+tags: [docs, xot, readme]
+qmd: "xot modulo base XotBase classi base provider contratti quick start limiti pest sqlite comandi"
+---
+# Xot: documentazione
 
-## ⚡ **Architettura Core**
+Ingresso unico alla documentazione del modulo. L'indice operativo (cartelle
+canoniche, evidence, legacy) e [00-INDEX.md](00-INDEX.md); questo file dice che
+cosa e' il modulo e come si verifica. Fatti controllati sul codice il 2026-10-14.
 
-### 🏗️ **Base Classes Pattern**
-Tutti i componenti principali dei moduli devono estendere le classi base fornite da Xot per ereditare funzionalità comuni e garantire coerenza.
+## Identita e ownership
 
-```php
-// Esempio di una Resource Filament
-use Modules\Xot\Filament\Resources\XotBaseResource;
+- Percorso `laravel/Modules/Xot`, repo git separato (package
+  `laraxot/module_xot_fila5`, alias `xot`, `priority` 2 in `module.json`).
+- Provider in `module.json`: `Modules\Xot\Providers\XotServiceProvider` e
+  `Modules\Xot\Providers\Filament\AdminPanelProvider` (pannello `xot::admin`,
+  path `xot/admin`, default di `XotBasePanelProvider`).
+- Ruolo: classi base `XotBase*`, contratti e utilita condivise dagli altri
+  moduli. Non e' la sede della logica di dominio (vedi Limiti).
+- Ownership della documentazione: questa cartella. Le story del lavoro corrente
+  stanno in [stories/](stories/), le decisioni in [decision-log.md](decision-log.md).
 
-class UserResource extends XotBaseResource
-{
-    protected static ?string $model = User::class;
+## Cosa contiene il codice (conteggi del 2026-10-14)
 
-    // Il metodo table() e form() NON devono essere sovrascritti
-    // se non per aggiungere logica specifica, ma la base
-    // è già fornita da XotBaseResource.
-}
-```
+- `app/`: 595 file PHP. Per cartella: Actions 240, Filament 152, Models 45,
+  Datas 24, Contracts 23, Console 19, Providers 12, Http 10, Exports 10.
+- 85 file `XotBase*` (Resource e Pages, Widget, Field, Column, Filter, Policy,
+  Migration, Command, Exporter, provider di pannello, rotte ed eventi).
+- Pagine del pannello in `app/Filament/Pages`: ArtisanCommandsManager,
+  Dashboard, EnvPage, HealthPage, MainDashboard, MetatagPage. Risorse: Cache,
+  CacheLock, Extra, Log, Module, Session.
+- Config in `config/`: `config.php`, `xot.php`, `mcp.php`; il provider base le
+  registra come `xot.config`, `xot.xot`, `xot.mcp` (`XotBaseServiceProvider::registerConfig`).
+- `database/migrations/`: 9 migration (cache, cache_locks, sessions, extra,
+  health check, 3 tabelle Pulse).
+- `tests/`: 199 file `*Test.php` (Pest), base in `tests/XotBaseTestCase.php` e
+  `tests/TestCase.php`. Lingue in `lang/`: `it` 192 file, `en` 107.
 
-### 🔧 **Traits Ecosystem**
-Xot fornisce un ricco ecosistema di Trait per aggiungere funzionalità comuni ai modelli e ad altre classi.
-- **HasXotTable**: Aggiunge funzionalità avanzate alle tabelle Filament.
-- **HasUuid**: Gestisce automaticamente UUID come chiavi primarie.
-- **HasMedia**: Integra Spatie Media Library con convenzioni standard.
-- **HasStates**: Fornisce una gestione degli stati per i modelli.
-- **TransTrait**: Semplifica le traduzioni dinamiche.
+## Quick start (eseguito il 2026-10-14)
 
-### 📦 **Service Provider Pattern**
-I Service Provider di ogni modulo estendono `XotBaseServiceProvider`, che automatizza la registrazione di:
-- Migrations, Views, Translations, e Config
-- Routes (web.php, api.php)
-- Filament Resources, Pages, e Widgets
-- Comandi Artisan e Policies
-
-## 🎯 **Funzionalità Principali**
-
-### ⚡ **Actions Framework**
-Un pattern standardizzato per incapsulare la business logic in classi riutilizzabili e testabili.
-```php
-use Modules\Xot\Actions\XotBaseAction;
-
-class CreateUserAction extends XotBaseAction
-{
-    public function execute(array $data): User
-    {
-        $user = User::create($data);
-        $this->logActivity('user.created', $user); // Logging automatico
-        event(new UserCreated($user)); // Dispatching eventi
-        return $user;
-    }
-}
-```
-
-### 🏷️ **Enums System**
-Le Enum di Xot implementano `XotBaseEnum`, che fornisce traduzioni automatiche e altri helper.
-```php
-use Modules\Xot\Enums\XotBaseEnum;
-
-enum UserStatus: string implements XotBaseEnum
-{
-    case ACTIVE = 'active';
-    case INACTIVE = 'inactive';
-
-    public function getLabel(): string
-    {
-        // Traduzione gestita centralmente
-        return __('xot::enums.user_status.'.$this->value);
-    }
-}
-```
-
-### 🛠️ **Sviluppo e Qualità**
-
-### Analisi Statica (PHPStan)
-Per garantire la stabilità di tutto l'ecosistema, l'analisi deve essere eseguita con memoria illimitata per evitare crash dei parallel workers:
 ```bash
-php -d memory_limit=-1 ./vendor/bin/phpstan analyse Modules/
+cd laravel
+./vendor/bin/phpstan analyse Modules/Xot --no-progress   # exit 0, nessun errore
+php artisan list --raw | grep '^xot:'                     # 8 comandi registrati
 ```
 
-### Convenzioni
-- **Namespace**: I namespace dei moduli **NON** devono includere il segmento `app`.
-- **Tipizzazione Forte**: Utilizzo di `declare(strict_types=1);` e type hints rigorosi in tutto il codice.
-- **File di Traduzione**: Seguire la struttura espansa `['label' => '...', 'tooltip' => '...']`.
+Il modulo non ha `vendor/` ne' `phpstan.neon` propri: PHPStan gira da `laravel/`
+con la config unica. Per i test vedi la prima voce dei Limiti.
 
-### Strumenti di Qualità
-- **PHPStan**: Livello 10. La configurazione è in `phpstan.neon`.
-- **Pest**: Utilizzato per i test della business logic nei moduli core.
-- **Laravel Pint**: Formattazione del codice secondo lo standard PSR-12 e le convenzioni Laraxot.
+## Limiti verificati
 
-Esegui i controlli di qualità dalla root del progetto Laravel:
-```bash
-./vendor/bin/phpstan analyse Modules/Xot --level=max
-./vendor/bin/pest Modules/Xot/tests
-./vendor/bin/pint
-```
+- I test Xot non partono da `bashscripts/tools/pest-scratch-db.sh`: su
+  `Modules/Xot/tests/Unit/Docs` 10 test su 10 falliscono prima di eseguire
+  asserzioni (`SQLiteDatabaseDoesNotExistException` in `tests/XotBaseTestCase.php`
+  `setUp`). Tre ricette provate (MariaDB scratch, sqlite con path, sqlite con nome)
+  danno lo stesso esito. Contesto in [DCP-45](stories/dcp-45-isolamento-db-test-pest-scratch.story.md).
+- `php artisan list` mostra 10 dei 18 comandi con `$signature` in
+  `app/Console/Commands/*.php`; non compaiono `xot:build-test-sqlite`,
+  `xot:analyze-components`, `xot:add-strict-types`, `xot:check-accessor-twins`,
+  `xot:import-mdb-to-mysql`, `database:backup`, `db:search-text`,
+  `filament:optimize-memory`. `XotServiceProvider::registerCommands()` registra solo
+  `GenerateFilamentResources`; perche' ne compaiano altri 9 non e' verificato.
+- `routes/web.php` e `routes/api.php` contengono solo commenti. `routes/seo.php`
+  e `routes/web_seo.php` non sono caricati da nessun provider e nominano
+  controller inesistenti (`SitemapXmlController`, `RssFeedController`,
+  `SiteMapController`): in `app/Http/Controllers` c'e solo `XotBaseController`.
+- `config/xot.php` contiene percorsi assoluti di un altro progetto
+  (`/var/www/html/exa/base_orisbroker_fila5`, modulo `broker`); nessun file di
+  `app/`, `helpers/` o degli altri moduli legge `xot.xot.paths`.
+- La voce di `wiki/log.md` del 2026-07-24 dice che le Actions di dominio sono
+  state tolte da Xot, ma restano `app/Actions/AI/Ollama` (2 file),
+  `app/Actions/ContextCompressorAction.php` (esiste anche in `Modules/AI`) e
+  `app/Actions/Geo/GetDistanceExpressionAction.php`. Quando siano tornate non e'
+  verificato (l'ultimo commit di `ContextCompressorAction.php` nel repo di Xot e'
+  del 2026-10-09); il riallineamento del 2026-10-08 e' in `decision-log.md`.
+- Link: 738 riferimenti relativi non risolti in `docs/` (misura 2026-10-14 con
+  `docs-organizer.py --busy-minutes 0`); cause e file in [00-INDEX.md](00-INDEX.md).
 
-### 🏆 PHPStan Level 10 Compliance (Dicembre 2025)
-
-**Status**: ✅ **0 Errori** (16 → 0)
-**Approccio**: Fix, Don't Ignore
-**Baseline**: Nessuno
-
-Il modulo Xot ha raggiunto la piena conformità PHPStan Level 10 senza compromessi:
-- Zero baseline entries
-- Nessuna modifica a phpstan.neon
-- Solo correzioni reali del codice
-- Type safety al 100%
-
-**Documentazione dettagliata**:
-- [PHPStan Patterns Dec 2025](./phpstan-patterns-dec-2025.md)
-- [PHPStan Level 10 Success](../../../docs/phpstan-level-10-success.md)
-
-## 🗺️ **Roadmap**
-1.  **Consolidamento Documentazione**: Unificare e semplificare la documentazione di tutti i moduli (obiettivo: 500 → 120 file).
-2.  **Automazione Script di Merge**: Creare script per la gestione automatica dei conflitti comuni e la validazione pre-commit.
-3.  **Aumento Test Coverage**: Portare la copertura dei test per i moduli core sopra il 90%.
-4.  **Dashboard Health Check**: Introdurre una dashboard per monitorare lo stato di salute e la compliance di tutti i moduli.
-
-## 🔗 **Link Utili**
-- [CHANGELOG](./CHANGELOG.md)
-- [Guida alla Risoluzione dei Conflitti Git](../../../bashscripts/docs/git-conflict-resolution-guide.md)
-- [Convenzioni sui Namespace](./namespace_conventions.md)
-- [Linee Guida per il Testing](./testing.md)
----
-title: "Xot Module Documentation"
-type: documentation
-tags: [module, documentation]
-created: 2026-06-05
-updated: 2026-06-05
----
-
-# Modulo Xot - Documentazione
-
-## Overview
-
-Il modulo **Xot** è il nucleo fondativo dell'intero progetto [PROJECT_NAME] platform. Fornisce classi base, trait, servizi e configurazioni condivise da tutti gli altri moduli.
-
-## Architettura
-
-### Classi Base Principali
-
-| Classe | Scopo | Estende |
-|--------|-------|---------|
-| `XotBaseModel` | Modello base per tutti i moduli | `Illuminate\Database\Eloquent\Model` |
-| `XotBaseMigration` | Migrazioni anonime standardizzate | `Illuminate\Database\Migrations\Migration` |
-| `XotBaseResource` | Risorse Filament base | `Filament\Resources\Resource` |
-| `XotBaseServiceProvider` | ServiceProvider modulare | `Illuminate\Support\ServiceProvider` |
-| `XotBaseWidget` | Widget Filament base | `Filament\Widgets\Widget` |
-| `XotBaseWizardWidget` | Widget con form wizard multi-step (Filament `Wizard` / `Step`) | `XotBaseWidget` |
-
-### Trait Fondamentali
-
-- `HasXotTable`: Gestione tabelle Filament centralizzata
-- `InteractsWithForms`: Gestione form nei widget
-- `RelationX`: Relazioni many-to-many estese
-
-## Collegamenti
-- [Installazione stack LAMP / PHP 8.4 (Debian, repo Sury)](./lamp/install.txt)
-- [Vite Configuration](./vite-configuration.md)
-- [Theme Assets Workflow](./theme-assets-workflow.md)
-- [BMAD Method (progetto)](../../../docs/bmad/setup-guide.md) — processo AI/agile e artefatti `_bmad-output/`
-
-- [Documentazione Root](../../../docs/XOT_MODULE.md)
-- [Regole Architettura](./architecture/)
-- [PHPStan Configuration](./phpstan/)
-
-## Regole Critiche
-
-1. **MAI estendere direttamente classi Laravel/Filament** - Usare sempre wrapper Xot
-2. **Configurazione PHPStan solo in `laravel/phpstan.neon`**
-3. **Tutte le migrazioni devono usare classi anonime**
-
-## Backlinks
-
-- [User Module](../User/docs/)
-- [UI Module](../UI/docs/)
-- [Tenant Module](../Tenant/docs/)
-
-## LLM Wiki Workflow
-
-- Canonical wiki layer: [../../../../docs/wiki/README.md](../../../../docs/wiki/README.md)
-- Governance page: [../../../../docs/wiki/concepts/llm-wiki-governance.md](../../../../docs/wiki/concepts/llm-wiki-governance.md)
-
-
-## Standard Rules & Workflow
-
-- [[BMAD Method](../../../../docs/wiki/concepts/bmad-method.md)]
-- [[Context Engineering](../../../../docs/wiki/concepts/context-engineering.md)]
-- [[LLM Wiki Governance](../../../../docs/wiki/concepts/llm-wiki-governance.md)]
+Il contratto dei docs e in
+[module-theme-docs-contract.md](../../../../bmad-output/docs-architecture/module-theme-docs-contract.md);
+l'indice generale del repo e [docs/README.md](../../../../docs/README.md).

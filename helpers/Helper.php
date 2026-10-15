@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Filament\Facades\Filament;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
@@ -20,6 +19,69 @@ use function Safe\preg_match;
 
 use Webmozart\Assert\Assert;
 
+if (! function_exists('merge_translation_files')) {
+    /**
+     * Merge split PHP translation files while preserving nested translation keys.
+     *
+     * @return array<string, mixed>
+     */
+    function merge_translation_files(string $first, string ...$rest): array
+    {
+        /** @var array<string, mixed> $result */
+        $result = load_translation_array($first);
+
+        /**
+         * @param  array<string, mixed>  $base
+         * @param  array<string, mixed>  $overlay
+         * @return array<string, mixed>
+         */
+        $merge = static function (array $base, array $overlay) use (&$merge): array {
+            foreach ($overlay as $key => $value) {
+                if (is_string($key) && is_array($value) && is_array($base[$key] ?? null)) {
+                    /** @var array<string, mixed> $nestedBase */
+                    $nestedBase = $base[$key];
+                    /** @var array<string, mixed> $nestedOverlay */
+                    $nestedOverlay = $value;
+                    $base[$key] = $merge($nestedBase, $nestedOverlay);
+                } elseif (is_string($key)) {
+                    $base[$key] = $value;
+                }
+            }
+
+            return $base;
+        };
+
+        foreach ($rest as $file) {
+            /** @var array<string, mixed> $merged */
+            $merged = $merge($result, load_translation_array($file));
+            $result = $merged;
+        }
+
+        return $result;
+    }
+
+    /**
+     * @return array<string, mixed>
+     */
+    function load_translation_array(string $file): array
+    {
+        $content = require $file;
+
+        if (! is_array($content)) {
+            return [];
+        }
+
+        $result = [];
+        foreach ($content as $key => $value) {
+            if (is_string($key)) {
+                $result[$key] = $value;
+            }
+        }
+
+        return $result;
+    }
+}
+
 if (! function_exists('isRunningTestBench')) {
     function isRunningTestBench(): bool
     {
@@ -31,6 +93,7 @@ if (! function_exists('isRunningTestBench')) {
 }
 
 if (! function_exists('dddx')) {
+    /** @param mixed $params Qualunque valore da dumpare (debug helper) */
     function dddx(mixed $params): void
     {
         $tmp = debug_backtrace();
@@ -71,25 +134,24 @@ if (! function_exists('inAdmin')) {
             return (bool) $params['in_admin'];
         }
 
-        if ('admin' === Request::segment(2)) {
+        if (Request::segment(2) === 'admin') {
             return true;
         }
 
         $segments = Request::segments();
 
-        return (is_countable($segments) ? count($segments) : 0) > 0 && 'livewire' === $segments[0] && true === session('in_admin');
+        return (is_countable($segments) ? count($segments) : 0) > 0 && $segments[0] === 'livewire' && session('in_admin') === true;
     }
 }
 
 if (! function_exists('params2ContainerItem')) {
     /**
-     * @param array<string, mixed>|null $params
-     *
+     * @param  array<string, mixed>|null  $params
      * @return array{0: array<string, mixed>, 1: array<string, mixed>}
      */
     function params2ContainerItem(?array $params = null): array
     {
-        if (null === $params) {
+        if ($params === null) {
             $params = [];
             $route_current = Route::current();
             if ($route_current instanceof Illuminate\Routing\Route) {
@@ -133,7 +195,7 @@ if (! function_exists('authId')) {
         try {
             $id = Filament::auth()->id() ?? auth()->guard()->id();
 
-            return null === $id ? null : (string) $id;
+            return $id === null ? null : (string) $id;
         } catch (Throwable $e) {
             return null;
         }
@@ -150,7 +212,7 @@ if (! function_exists('trans_string')) {
                 continue;
             }
 
-            $safeReplace[$k] = (is_scalar($v) || null === $v) ? $v : SafeStringCastAction::cast($v);
+            $safeReplace[$k] = (is_scalar($v) || $v === null) ? $v : SafeStringCastAction::cast($v);
         }
 
         $result = __($key, $safeReplace, $locale);
@@ -182,51 +244,52 @@ if (! function_exists('actingAs')) {
      */
     function actingAs(Authenticatable|int|string|null $user = null, ?string $driver = null): TestResponse
     {
-        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+        throw new RuntimeException('Stub: This function is meant for static analysis only: '.(is_string($user) ? $user : '').($driver ?? ''));
     }
 }
 
 if (! function_exists('get')) {
     /**
-     * @param array<string, mixed> $options
-     *
+     * @param  array<string, mixed>  $options
      * @return TestResponse<Response>
      */
     function get(string $uri = '', array $options = []): TestResponse
     {
-        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+        throw new RuntimeException('Stub: This function is meant for static analysis only: '.$uri.count($options));
     }
 }
 
 if (! function_exists('post')) {
     /**
-     * @param array<string, mixed> $options
-     *
+     * @param  array<string, mixed>  $data
+     * @param  array<string, mixed>  $options
      * @return TestResponse<Response>
      */
-    function post(string $uri, mixed $data = [], array $options = []): TestResponse
+    function post(string $uri, array $data = [], array $options = []): TestResponse
     {
-        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+        throw new RuntimeException('Stub: This function is meant for static analysis only: '.$uri.count($data).count($options));
     }
 }
 
 if (! function_exists('put')) {
     /**
+     * @param  array<string, mixed>  $data
      * @return TestResponse<Response>
      */
-    function put(string $uri, mixed $data = []): TestResponse
+    function put(string $uri, array $data = []): TestResponse
     {
-        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+        throw new RuntimeException('Stub: This function is meant for static analysis only: '.$uri.count($data));
     }
 }
 
 if (! function_exists('patch')) {
     /**
+     * @param  array<string, mixed>  $data
      * @return TestResponse<Response>
      */
-    function patch(string $uri, mixed $data = []): TestResponse
+    function patch(string $uri, array $data = []): TestResponse
     {
-        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+        throw new RuntimeException('Stub: This function is meant for static analysis only: '.$uri.count($data));
     }
 }
 
@@ -236,7 +299,7 @@ if (! function_exists('delete')) {
      */
     function delete(string $uri): TestResponse
     {
-        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+        throw new RuntimeException('Stub: This function is meant for static analysis only: '.$uri);
     }
 }
 
@@ -246,7 +309,7 @@ if (! function_exists('head')) {
      */
     function head(string $uri): TestResponse
     {
-        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+        throw new RuntimeException('Stub: This function is meant for static analysis only: '.$uri);
     }
 }
 
@@ -256,7 +319,7 @@ if (! function_exists('options')) {
      */
     function options(string $uri): TestResponse
     {
-        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+        throw new RuntimeException('Stub: This function is meant for static analysis only: '.$uri);
     }
 }
 
@@ -266,23 +329,7 @@ if (! function_exists('followingRedirects')) {
      */
     function followingRedirects(int $number = 5): TestResponse
     {
-        throw new RuntimeException('Stub: This function is meant for static analysis only.');
-    }
-}
-
-if (! function_exists('test')) {
-    /** @param  string  $title  @param  \Closure  $callback  @return void */
-    function test(string $title, Closure $callback): void
-    {
-        throw new RuntimeException('Stub: This function is meant for static analysis only.');
-    }
-}
-
-if (! function_exists('describe')) {
-    /** @param  string  $title  @param  \Closure  $callback  @return void */
-    function describe(string $title, Closure $callback): void
-    {
-        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+        throw new RuntimeException('Stub: This function is meant for static analysis only: '.$number);
     }
 }
 
@@ -290,11 +337,11 @@ if (! function_exists('xotSeedModelOnce')) {
     /**
      * Idempotent entity seeder — PHPStan-safe factory chain via GetFactoryAction.
      *
-     * @param class-string<Model> $modelClass
+     * @param  class-string<Model>  $modelClass
      */
     function xotSeedModelOnce(string $modelClass): void
     {
-        (new GetFactoryAction())
+        (new GetFactoryAction)
             ->execute($modelClass)
             ->createOne();
     }

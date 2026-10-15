@@ -1,3 +1,15 @@
+---
+title: "architecture"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "architecture"
+issues: []
+discussions: []
+status: draft
+---
+
 # 🏗️ **Architettura Modulo Xot**
 
 ## 📋 **Panoramica Architetturale**
@@ -97,7 +109,7 @@ abstract class XotBaseResource extends Resource
 {
     use HasXotTable;
 
-    public static function getFormSchema(): array
+    public function getFormSchema(): array
     {
         return static::getFormSchemaImplementation();
     }
@@ -392,5 +404,4 @@ test('all models extend base model', function () {
 - [**Troubleshooting**](../project_docs/troubleshooting.md) - Risoluzione problemi
 
 ---
-
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*

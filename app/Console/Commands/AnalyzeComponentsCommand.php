@@ -30,7 +30,7 @@ class AnalyzeComponentsCommand extends Command
     public function handle(GetComponentsAction $getComponentsAction): int
     {
         $module = $this->option('module');
-        $type = $this->option('type');
+        $_type = $this->option('type');
         $prefixOption = $this->option('prefix');
         $forceOption = $this->option('force');
 
@@ -40,8 +40,8 @@ class AnalyzeComponentsCommand extends Command
 
         // Type-safe module handling
         $moduleStr = is_string($module) ? $module : '';
-        $path = '' !== $moduleStr ? base_path("laravel/Modules/{$moduleStr}") : base_path('laravel/Modules');
-        $namespace = '' !== $moduleStr ? "Modules\\{$moduleStr}" : 'Modules';
+        $path = $moduleStr !== '' ? base_path("laravel/Modules/{$moduleStr}") : base_path('laravel/Modules');
+        $namespace = $moduleStr !== '' ? "Modules\\{$moduleStr}" : 'Modules';
 
         $components = $getComponentsAction->execute($path, $namespace, $prefix, $force);
 
