@@ -12,7 +12,7 @@ track: docs-hygiene
 qmd: "docs modules themes continuous reorg misura stories bmad purpose readme"
 related:
   - ./docs-filename-no-date-bonifica-xot.story.md
-  - ./git-conflicts-docs-markers-2026-09-24.story.md
+  - ./git-conflicts-docs-markers.story.md
   - ../../../../../../docs/sprint-status.yaml
 ---
 

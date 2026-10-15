@@ -10,7 +10,7 @@ related:
   - "./5.254-list-page-table-hooks.story.md"
   - "./5.255-doppi-header-actions-list-page.story.md"
   - "../filament-list-page-table-ownership.md"
-  - "../../../../User/docs/bmad/stories/user-filament-boundary-i18n-20260929.story.md"
+  - "../../../../User/docs/bmad/stories/user-filament-boundary-i18n.story.md"
   - "../../../../../docs/wiki/audits/getTable-methods-audit-2026-09-29.md"
 qmd: "verifica indipendente   hook `gettable*` nelle list page xot"
 ---
@@ -53,7 +53,7 @@ toccare" non ho applicato nessun fix: ho invece fatto da secondo paio d'occhi.
 - Rilancio dello scan grep-based su tutto `Modules`+`Themes` dopo il fix: **0
   violazioni**.
 
-## Perché la story `User/user-filament-boundary-i18n-20260929.story.md` diceva "0
+## Perché la story `User/user-filament-boundary-i18n.story.md` diceva "0
 ## violazioni su 154 pagine" quando le 6 di Ptv esistevano ancora
 
 Quella story userà quasi certamente un glob che richiede che il nome file **inizi**
@@ -69,7 +69,7 @@ Già esistente e sufficiente: `laravel/Modules/Xot/docs/filament-list-page-table
 (dal 2026-09-10), rafforzata dalla story 5.254 con la catena di chiamate Filament
 verificata riga per riga nel vendor e dalle memorie
 `Xot/docs/wiki/memories/tabella-appartiene-alla-resource-non-alla-pagina.md` e
-`header-actions-doppi-filament-5.md`. Non duplicata.
+`header-actions-doppi-filament.md`. Non duplicata.
 
 ## Verifica gate
 

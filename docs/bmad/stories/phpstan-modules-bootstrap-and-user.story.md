@@ -4,7 +4,7 @@ title: PHPStan Modules — bootstrap e residui User
 status: review
 epic: quality-gates
 references:
-  - ./fleet-blocking-merge-conflict-markers-20260929.story.md
+  - ./fleet-blocking-merge-conflict-markers.story.md
   - ../../../../../../bashscripts/ai/wiki/memories/phpstan-bootstrap-merge-file-markers.md
 type: story
 updated: 2026-10-07

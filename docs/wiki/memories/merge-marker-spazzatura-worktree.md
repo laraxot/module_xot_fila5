@@ -7,7 +7,7 @@ updated: 2026-09-28
 qmd: "marker di merge spazzatura worktree git grep HEAD parse error service provider blocca phpstan pest artisan"
 related:
   - ../../bmad/stories/5.248-phpstan-modules-gate-blocked-merge-wip.story.md
-  - ./bmad-module-documentation-baseline-20260928.md
+  - ./bmad-module-documentation-baseline.md
   - ./index.md
 issues: []
 discussions: []

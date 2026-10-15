@@ -16,7 +16,7 @@ related:
   - ./5.163-lazy-export-labelled-headings.story.md
   - ./5.175-trigger-map-export-ratings-xls.story.md
   - ./5.176-export-xls-formula-injection-sanitize.story.md
-  - ./5.177-export-xls-headings-supersede-5-161.story.md
+  - ./5.177-export-xls-headings-supersede.story.md
   - ./5.178-export-lazy-labels-dedup.story.md
   - ../../../../Rating/docs/bmad/stories/5.244-continuazione-domani-post-prompt-04-pack.story.md
 ---

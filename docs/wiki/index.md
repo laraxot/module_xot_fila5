@@ -143,5 +143,5 @@ Non implementata. Story: `Modules/Xot/docs/stories/xotbasemanagerelatedrecords-c
 # Punto di ingresso Xot
 
 - [README del modulo](../../README.md)
-- [Memoria: contratto README moduli](memories/module-readme-normalization-20260928.md)
-- [Story BMAD: normalizzazione README](../bmad/stories/module-readmes-normalization-20260928.story.md)
+- [Memoria: contratto README moduli](memories/module-readme-normalization.md)
+- [Story BMAD: normalizzazione README](../bmad/stories/module-readmes-normalization.story.md)
