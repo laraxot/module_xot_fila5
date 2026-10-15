@@ -58,7 +58,7 @@ con la config unica. Per i test vedi la prima voce dei Limiti.
   `Modules/Xot/tests/Unit/Docs` 10 test su 10 falliscono prima di eseguire
   asserzioni (`SQLiteDatabaseDoesNotExistException` in `tests/XotBaseTestCase.php`
   `setUp`). Tre ricette provate (MariaDB scratch, sqlite con path, sqlite con nome)
-  danno lo stesso esito. Contesto in [DCP-45](stories/2026-10-13-dcp-45-isolamento-db-test-pest-scratch.story.md).
+  danno lo stesso esito. Contesto in [DCP-45](stories/dcp-45-isolamento-db-test-pest-scratch.story.md).
 - `php artisan list` mostra 10 dei 18 comandi con `$signature` in
   `app/Console/Commands/*.php`; non compaiono `xot:build-test-sqlite`,
   `xot:analyze-components`, `xot:add-strict-types`, `xot:check-accessor-twins`,

@@ -40,7 +40,7 @@ Orfane che erano logica tolta, non rumore: `RelationX::morphToManyX()` (prefisso
 `RouteService::urlAct()` (nome route letto dopo l'uso), `extractBelongsToRelations()`
 (non popolava `$data`), `--type` di `xot:analyze-components` (mai applicato).
 Gli errori `HasXotTable` "in context of class@anonymous" erano result-cache stale.
-Dettaglio e lezioni: [dev-story](../stories/2026-10-06-phpstan-cleanup-xot-app.dev.md).
+Dettaglio e lezioni: [dev-story](../stories/phpstan-cleanup-xot-app.dev.md).
 
 ## Misura 2026-10-06 (notte) — swarm Xot/rest: test, helpers, stub Pest
 
@@ -52,7 +52,7 @@ comportamento del titolo); 53 erano parametri inutilizzati degli stub Pest
 `xotPestStubFailure()`); 2 di fixture (`SendMailByRecordActionTest`: classe anonima annidata
 senza PHPDoc risolto -> classe nominata). Pest non eseguito (`.env.testing` = MySQL).
 Da decidere: `tests/PestStubs.php` e' orfano ma e' lui a risolvere `Pest\Laravel\*` per PHPStan.
-Dettaglio e lezioni: [dev-story](../stories/2026-10-06-phpstan-cleanup-xot-rest.dev.md).
+Dettaglio e lezioni: [dev-story](../stories/phpstan-cleanup-xot-rest.dev.md).
 
 ## Misura 2026-10-06 — EnsureKeysAction + file scratch rimossi
 
@@ -172,7 +172,7 @@ Per dichiarare «siamo a zero» serve il comando senza argomenti.
 - [phpstan-modules-fix.md](./wiki/troubleshooting/phpstan-modules-fix.md) — ricette
 - [phpstan-best-practices.md](./wiki/phpstan-best-practices.md) — pattern Pest
 - [18.59](./stories/18.59.phpstan-repo-wide-zero-2026-09-21.story.md) — drift 23→0 del 2026-09-21
-- [2026-10-08 regressioni Xot/app](../stories/2026-10-08-phpstan-xot-app-regressions.story.md) — `$models` di MorphMany, `urlAct` (row e beforeLast), assert finti
+- [2026-10-08 regressioni Xot/app](../stories/phpstan-xot-app-regressions.story.md) — `$models` di MorphMany, `urlAct` (row e beforeLast), assert finti
 - [phpstan-journey.md](../../../../../bashscripts/ai/wiki/second-brain/phpstan-journey.md) — second brain
 - [CloudStorage coverage](../../CloudStorage/docs/coverage.md) — incidente require-dev Symplify
 - [contract-suffix memory](../../../../../bashscripts/ai/wiki/memories/contract-suffix-no-interfaces-folder.md) — religione `*Contract`

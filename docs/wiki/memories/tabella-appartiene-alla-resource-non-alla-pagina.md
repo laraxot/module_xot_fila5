@@ -110,5 +110,5 @@ fallirebbe. Estenderla è un compito separato.
 `getHeaderActions()` (protected, trait `InteractsWithHeaderActions` in
 `vendor/filament/filament/src/Pages/Concerns/`) è il **page header**, distinto dal **table
 header** di `getTableHeaderActions()`. Non è un `getTable*` e resta sulla pagina. Ma i due
-sono due barre diverse: vedi `header-actions-doppi-filament-5.md` per il difetto di doppio
+sono due barre diverse: vedi `header-actions-doppi-filament.md` per il difetto di doppio
 pulsante che ne deriva.
