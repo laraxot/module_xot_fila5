@@ -12,7 +12,7 @@ qmd: "decision log   xot xot"
 ## Decisions
 
 ### 2026-10-14: Un solo indice del docs; i documenti smentiti si marcano `stale`, non si riscrivono
-- **Choose**: `00-INDEX.md` e' l'unico indice del modulo e dichiara cartelle canoniche, evidence e legacy; `wiki/index.md` e `bmad/index.md` restano indici di sezione; i documenti che contraddicono il codice (`wiki/architecture.md`, `wiki/Architecture.md`, `standards/README.md`, `standards/readme.md`, `governance/docs-structure.md`) sono marcati `status: stale` con il motivo; i link non risolti delle pagine di primo livello sono annotati `target mancante`.
+- **Choose**: `00-index.md` e' l'unico indice del modulo e dichiara cartelle canoniche, evidence e legacy; `wiki/index.md` e `bmad/index.md` restano indici di sezione; i documenti che contraddicono il codice (`wiki/architecture.md`, `wiki/Architecture.md`, `standards/README.md`, `standards/readme.md`, `governance/docs-structure.md`) sono marcati `status: stale` con il motivo; i link non risolti delle pagine di primo livello sono annotati `target mancante`.
 - **Over**: Creare un `index.md` alla radice (vietato dal contratto), riscrivere i documenti smentiti o inventare bersagli per i link.
 - **Because**: 738 riferimenti non risolti in 254 file `.md`; i bersagli non esistono e nessuna fonte dice dove siano andati. 24 story hanno marker di merge: la policy vieta di riscriverle.
 - **Verifica**: `phpstan analyse Modules/Xot` exit 0; conteggi del codice da `find`; `docs-organizer.py --busy-minutes 0 links --by-name` (dry-run). Story: [2026-10-14-docs-xot-studio-e-ingressi](stories/docs-xot-studio-e-ingressi.story.md).

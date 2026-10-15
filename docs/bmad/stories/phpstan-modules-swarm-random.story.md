@@ -115,7 +115,7 @@ swarm parallelo per singolo modulo in ordine random, come da pilastro 8.
     bootstrap Artisan. Ripristinati la classe e i campi necessari alla
     liquidazione a fasi. Story cluster 3 riaperta in review; php -l/PHPStan
     saranno verificati appena il Composer concorrente avra' finito.
-  - Theme docs: aggiornato Theme Three senza spostare documenti. `INDEX.md` e'
+  - Theme docs: aggiornato Theme Three senza spostare documenti. `index.md` e'
     diventato `index.md`, che ora raggiunge tutti i 52 altri Markdown; README e
     inventario della reorg allineati. Story `theme-three-docs-index-refresh-20261006`
     chiusa dopo 0 link rotti.
