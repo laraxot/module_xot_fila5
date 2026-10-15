@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Fixtures\Stubs;
+namespace Tests\Modules\Xot\Fixtures\Stubs;
 
 use Illuminate\Database\Eloquent\Relations\MorphPivot;
 use Illuminate\Database\Eloquent\Relations\Pivot;
@@ -33,9 +33,6 @@ final class XotCovRelationHost extends CacheModel
         return new XotCovMorphPivot;
     }
 
-    /**
-     * @param  array<string, mixed>  $attributes
-     */
     public function forceFill(array $attributes = []): static
     {
         return $this;

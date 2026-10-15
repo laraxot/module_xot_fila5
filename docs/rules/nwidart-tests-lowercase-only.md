@@ -6,17 +6,17 @@
 
 ## Rule
 
-Tests directory must be **lowercase**: `tests/` (not `Tests/`)
+Test directory must be **lowercase**: `laravel/tests/Modules/<M>/` (not `Tests/`). Tests are central, never inside `laravel/Modules/<M>/`.
 
 ```
-✓ CORRECT:   Modules/Xot/tests/
-✗ WRONG:     Modules/Xot/Tests/
+✓ CORRECT:   laravel/tests/Modules/Xot/
+✗ WRONG:     laravel/tests/Modules/Xot/Tests/ and laravel/Modules/Xot/tests/
 ```
 
 ## Why
 
 1. **PSR-4 Namespace Mapping**: Namespace must match directory structure
-   - Directory: `tests/` → Namespace: `tests\`
+   - Directory: `laravel/tests/Modules/Xot/` → Namespace: `Tests\Modules\Xot\`
    - Directory: `Tests/` → Namespace: `Tests\` (WRONG for Laraxot)
 
 2. **Case-Sensitive Git**: Git tracks case, filesystem may not
