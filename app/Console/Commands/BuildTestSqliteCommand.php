@@ -7,7 +7,11 @@ namespace Modules\Xot\Console\Commands;
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Config\Repository;
 use Illuminate\Support\Facades\DB;
+<<<<<<< HEAD
 use Modules\Xot\Actions\Testing\ResolveSharedSqlitePathAction;
+=======
+use Modules\Xot\Tests\XotBaseTestCase;
+>>>>>>> laraxot/dev
 use Throwable;
 
 use function Safe\glob;
@@ -49,7 +53,11 @@ class BuildTestSqliteCommand extends Command
 
     public function handle(Repository $config): int
     {
+<<<<<<< HEAD
         $target = $this->stringOption('path') ?? (new ResolveSharedSqlitePathAction())->execute();
+=======
+        $target = $this->stringOption('path') ?? XotBaseTestCase::sharedSqlitePath();
+>>>>>>> laraxot/dev
 
         if ($this->option('fresh') === true && file_exists($target)) {
             unlink($target);
