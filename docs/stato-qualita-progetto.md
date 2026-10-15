@@ -151,7 +151,7 @@ trasforma cinque documenti in cinque garanzie.
 ## 5. La documentazione e' cresciuta senza potatura
 
 `Modules/Xot/docs/` contiene 2688 file. Tra questi convivono
-`00-index.md`, `00-INDEX.md`, `00-index-v2.md`, `00-master-index.md`,
+`00-index.md`, `00-index.md`, `00-index-v2.md`, `00-master-index.md`,
 `00-MASTER-INDEX.md`, e cinque roadmap PHPStan distinte
 (`phpstan-roadmap.md`, `phpstan-roadmap-completo.md`, `phpstan-fix-roadmap.md`,
 `phpstan-errors-resolution-roadmap.md`,
