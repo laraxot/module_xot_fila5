@@ -6,6 +6,8 @@ return [
     'actions' => [
         'copy_from_last_year' => [
             'label' => "Copia dall'anno precedente",
+            'icon' => 'copy_from_last_year',
+            'tooltip' => "Copia dall'anno precedente",
         ],
     ],
     'label' => 'Copy From Last Year Button',

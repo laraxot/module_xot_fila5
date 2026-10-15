@@ -23,4 +23,12 @@ final class XotWidgetFormHost extends XotBaseWidget
     {
         return CacheModel::class;
     }
+
+    /**
+     * @return array<string, mixed>
+     */
+    public function getFormFill(): array
+    {
+        return [];
+    }
 }
