@@ -50,7 +50,7 @@ gia' incluso in quel conteggio o e' nuovo (creato dopo).
 - `docs/git-push-resolution-2026-07-28.md`
 - `docs/REFACTOR-panelmixin-2026-07-07.md`
 - `docs/lessons-learned.md`
-- `docs/ponytail-audit-2026-07-02.md`
+- `docs/ponytail-audit-user-module-findings.md`
 - `docs/QA-VERIFICATION-2026-06-30.md`
 - `docs/brainstorm-testcase-hierarchy-xotbase-2026-06-10.md`
 - `docs/phpstan-progress-report-2025-10-13.md`
