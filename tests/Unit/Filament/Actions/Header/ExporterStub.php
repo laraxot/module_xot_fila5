@@ -6,4 +6,4 @@ namespace Modules\Xot\Tests\Unit\Filament\Actions\Header;
 
 use Modules\Xot\Exports\XotBaseExporter;
 
-class ExporterStub extends XotBaseExporter {}
+final class ExporterStub extends XotBaseExporter {}

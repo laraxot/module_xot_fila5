@@ -8,19 +8,36 @@ use Illuminate\Database\Eloquent\Relations\MorphPivot;
 use Illuminate\Database\Eloquent\Relations\Pivot;
 use Modules\Xot\Models\Cache as CacheModel;
 
-// RelationX arriva già da XotBaseModel via CacheModel: ridichiararla qui fa collidere
-// il generic $this del metodo ereditato con quello della classe che lo ridichiara.
+/**
+ * Non ridichiarare belongsToManyX/morphToManyX: ereditati da XotBaseModel.
+ * Espone guessPivot* e forceFill/$exists per i coverage test.
+ */
 final class XotCovRelationHost extends CacheModel
 {
     public $timestamps = false;
+
+    public $exists = false;
 
     public function guessPivot(string $related, ?string $class = null): Pivot
     {
         return new XotCovPivot;
     }
 
+    public function guessPivotFullClass(string $pivot_name, string $related, ?string $class = null): string
+    {
+        return XotCovPivot::class;
+    }
+
     public function guessMorphPivot(string $related, ?string $_class = null): MorphPivot
     {
         return new XotCovMorphPivot;
+    }
+
+    /**
+     * @param  array<string, mixed>  $attributes
+     */
+    public function forceFill(array $attributes = []): static
+    {
+        return $this;
     }
 }
