@@ -57,7 +57,9 @@
         "thecodingmachine/safe": "*",
         "tightenco/parental": "*"
     },
-    "require_comment": {},
+    "require_comment": {
+       
+    },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^3.2",
         "fakerphp/faker": "^1.24",

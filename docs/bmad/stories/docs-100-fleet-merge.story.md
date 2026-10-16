@@ -40,7 +40,7 @@ Escluse (al limite, conformi): IndennitaCondizioniLavoro 100, Job 100, UI 100.
 2. Lock `bashscripts/lock/lock.sh` sui file prima di edit/rm; `unlock.sh` a fine.
 3. Merge per unione dei fatti + sintesi; mai perdere fatti di story `in-progress`/`review`
    (se in dubbio: conserva, linka, segnala nel report invece di fondere).
-4. Kebab-case minuscolo (`README.md`, `CHANGELOG.md`, `index.md` esclusi).
+4. Kebab-case minuscolo (`README.md`, `CHANGELOG.md`, `INDEX.md` esclusi).
 5. BMAD resta in `docs/bmad/` del modulo; story di questo lavoro in
    `docs/bmad/stories/docs-100-merge-20261005.story.md` del modulo.
 6. Dopo ogni fusione: `rg` dei path eliminati dentro `docs/` del modulo, ripara i link interni.

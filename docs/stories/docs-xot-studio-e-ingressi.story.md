@@ -21,7 +21,7 @@ correggere gli ingressi con soli fatti verificati e marcare cio' che e' falso. N
 
 ## Analisi
 
-- Il canonico e' `00-index.md` (non esiste `index.md` in radice e non va creato). `README.md` era un elenco di link con qmd rotto.
+- Il canonico e' `00-INDEX.md` (non esiste `index.md` in radice e non va creato). `README.md` era un elenco di link con qmd rotto.
 - Codice: 595 file PHP in `app/` (Actions 240, Filament 152, Models 45, Datas 24, Contracts 23, Console 19), 85 classi `XotBase*`, 9 migration,
   199 file `*Test.php`, `lang/it` 192 file e `lang/en` 107.
 - Scoperte che i docs non dicevano:
@@ -52,7 +52,7 @@ correggere gli ingressi con soli fatti verificati e marcare cio' che e' falso. N
 | File | Modifica |
 |---|---|
 | `README.md` | identita' e ownership, conteggi del codice, quick start (PHPStan, comandi `xot:`), limiti verificati; front matter corretto |
-| `00-index.md` | canoniche, evidence, legacy con conteggi; problemi noti con cause dei link; marker di merge; story recenti |
+| `00-INDEX.md` | canoniche, evidence, legacy con conteggi; problemi noti con cause dei link; marker di merge; story recenti |
 | `wiki/log.md` | voce 2026-10-14 |
 | `decision-log.md` | voce 2026-10-14; YAML valido |
 | `investigation/investigation.md` | YAML valido |
@@ -77,7 +77,7 @@ Pest non verificato come verde: vedi Aperto 1.
 
 ## Decisioni
 
-- `wiki/index.md` e `bmad/index.md` restano indici di sezione; l'unico indice del modulo e' `00-index.md`.
+- `wiki/index.md` e `bmad/index.md` restano indici di sezione; l'unico indice del modulo e' `00-INDEX.md`.
 - Documenti smentiti: `stale` con motivo, non riscritti. Link senza bersaglio: annotati, non inventati.
 
 ## Aperto
