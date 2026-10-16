@@ -15,6 +15,8 @@ status: draft
 ## Purpose
 Index for Xot module concepts.
 
+- [Stewardship sostenibilità](../../project-sustainability-platform-stewardship.md) — Xot non ospita fundraising; solo piattaforma (BMAD)
+
 ## On-Demand Loading
 
 ```bash

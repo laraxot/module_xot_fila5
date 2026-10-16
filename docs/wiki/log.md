@@ -17,7 +17,7 @@ discussions:
 
 ## [2026-10-14] docs | studio del codice, ingressi e link
 
-- Confronto di README, indice e wiki di primo livello con il codice: `README.md` e `00-index.md` riscritti con conteggi e percorsi verificati; story [2026-10-14-docs-xot-studio-e-ingressi](../stories/docs-xot-studio-e-ingressi.story.md).
+- Confronto di README, indice e wiki di primo livello con il codice: `README.md` e `00-INDEX.md` riscritti con conteggi e percorsi verificati; story [2026-10-14-docs-xot-studio-e-ingressi](../stories/docs-xot-studio-e-ingressi.story.md).
 - `phpstan analyse Modules/Xot`: exit 0, nessun errore (2026-10-14). Pest su `tests/Unit/Docs` non parte: 10 falliti, 0 asserzioni, `SQLiteDatabaseDoesNotExistException` (dettagli nel README, sezione Limiti).
 - Marcati `stale` con motivo: `wiki/architecture.md`, `wiki/Architecture.md`, `standards/README.md`, `standards/readme.md`, `governance/docs-structure.md`.
 - Annotati come `target mancante` i link non risolti di `wiki/index.md` (50), di questo log (45, in 32 righe), `wiki/concepts/index.md` (20), `wiki/concepts/INDEX.md` (8), `bmad/index.md` (1), `bmad/readme.md` (11). Questa voce e' la prima prova che la voce del 2026-07-24 qui sotto (Actions di dominio spostate) non coincide piu' con `app/Actions`: restano `AI/Ollama`, `ContextCompressorAction.php`, `Geo/GetDistanceExpressionAction.php`.
