@@ -10,7 +10,7 @@ qmd: "xot modulo base XotBase classi base provider contratti quick start limiti 
 # Xot: documentazione
 
 Ingresso unico alla documentazione del modulo. L'indice operativo (cartelle
-canoniche, evidence, legacy) e [00-INDEX.md](00-index.md); questo file dice che
+canoniche, evidence, legacy) e [00-INDEX.md](00-INDEX.md); questo file dice che
 cosa e' il modulo e come si verifica. Fatti controllati sul codice il 2026-10-14.
 
 ## Identita e ownership
@@ -79,19 +79,8 @@ con la config unica. Per i test vedi la prima voce dei Limiti.
   verificato (l'ultimo commit di `ContextCompressorAction.php` nel repo di Xot e'
   del 2026-10-09); il riallineamento del 2026-10-08 e' in `decision-log.md`.
 - Link: 738 riferimenti relativi non risolti in `docs/` (misura 2026-10-14 con
-  `docs-organizer.py --busy-minutes 0`); cause e file in [00-INDEX.md](00-index.md).
+  `docs-organizer.py --busy-minutes 0`); cause e file in [00-INDEX.md](00-INDEX.md).
 
 Il contratto dei docs e in
 [module-theme-docs-contract.md](../../../../bmad-output/docs-architecture/module-theme-docs-contract.md);
 l'indice generale del repo e [docs/README.md](../../../../docs/README.md).
-
-## Standing order (qualita' + docs)
-
-- **PHPStan a zero** sul codice del modulo: non ignorare errori, non abbassare il livello, non modificare `phpstan.neon` del progetto. Qualita' + docs + BMAD sono standing order, non opzionali.
-- **Cartella test**: solo `tests/` (minuscolo). `Tests/` e' vietato (case-collision su macOS/Windows e confusione PSR-4).
-- **Nomi `.md`**: kebab-case minuscolo, niente date/timestamp nel nome, unica eccezione `README.md`. Se esistono `readme.md` e `README.md`, resta solo `README.md`.
-- **Docs**: solo dentro `docs/` gia' esistente; consolida invece di moltiplicare file; link relativi; focus su scopo/perche'/business logic (DRY + KISS).
-- **Git**: forward-only (patch in avanti); no reset/revert/checkout come scorciatoia.
-- **BMAD + second brain**: indici e decisioni vivono in `docs/` del modulo; aggiornali quando cambia il perche', non solo il come.
-
-Vedi anche: [00-index.md](./00-index.md) · [index.md](./index.md)
