@@ -28,7 +28,7 @@ dei file e un README che citava una pagina `customization.md` inesistente.
 
 ## Intervento
 
-- Rinominato `index.md` in `index.md`, coerente con la convenzione minuscola e
+- Rinominato `INDEX.md` in `index.md`, coerente con la convenzione minuscola e
   con il target definito nel piano Themes.
 - Aggiunte all'indice le pagine di prodotto, architettura, governance, Filament,
   qualita', BMAD, prompt e wiki.
