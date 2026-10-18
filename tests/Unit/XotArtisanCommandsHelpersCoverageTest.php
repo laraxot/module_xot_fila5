@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Unit;
+namespace Modules\[A-Za-z]*\tests\Unit;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Http;

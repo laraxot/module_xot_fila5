@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Unit\Exports;
+namespace Modules\[A-Za-z]*\tests\Unit\Exports;
 
 use Modules\Xot\Filament\Actions\XotBaseExportAction;
 

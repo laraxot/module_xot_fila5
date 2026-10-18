@@ -10,7 +10,7 @@ declare(strict_types=1);
  * name/slug, timestamp di BaseModel, factory tipizzata via HasXotFactory.
  */
 
-namespace Tests\Unit\Modules\Xot\Models;
+namespace Modules\Xot\Tests\Unit\Models;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
