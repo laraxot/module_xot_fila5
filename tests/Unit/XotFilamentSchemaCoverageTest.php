@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Unit;
+namespace Modules\[A-Za-z]*\tests\Unit;
 
 use Modules\Xot\Tests\FilamentSchemaCoverage;
 use Modules\Xot\Tests\TestCase;
