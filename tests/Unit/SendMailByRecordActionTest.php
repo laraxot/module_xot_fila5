@@ -2,37 +2,28 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Unit;
-
+use Illuminate\Mail\Mailable;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\Mail\SendMailByRecordAction;
-use Modules\Xot\Tests\TestCase;
-use PHPUnit\Framework\Assert;
-
-uses(TestCase::class);
 
 it('throws if record has no email', function (): void {
-    $record = new class extends Model
-    {
-        public function option(string $key): null
+    $record = new class extends Model {
+        // no email attribute
+        public function option(string $key): null|string
         {
             return null;
         }
 
-        public function myLogs(): object
+        public function myLogs()
         {
-            return new class
-            {
-                /** @param array<string, mixed> $data */
-                public function create(array $data): void {}
+            return new class {
+                public function create(array $data): void
+                {
+                }
             };
         }
     };
 
-    try {
-        app(SendMailByRecordAction::class)->execute($record, \stdClass::class);
-        Assert::fail('Expected exception was not thrown.');
-    } catch (\InvalidArgumentException $e) {
-        Assert::assertInstanceOf(\InvalidArgumentException::class, $e);
-    }
+    expect(fn() => app(SendMailByRecordAction::class)->execute($record, Mailable::class))
+        ->toThrow(InvalidArgumentException::class);
 });
