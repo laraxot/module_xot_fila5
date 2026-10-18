@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Unit\Exports;
+namespace Modules\[A-Za-z]*\tests\Unit\Exports;
 
 use Filament\Actions\Exports\ExportColumn;
 use Filament\Actions\Exports\Jobs\CreateXlsxFile;

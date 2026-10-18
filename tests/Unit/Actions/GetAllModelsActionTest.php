@@ -10,7 +10,7 @@ declare(strict_types=1);
  * non vuoto senza guardie ridondanti su tipi gia' array.
  */
 
-namespace Tests\Unit\Modules\Xot\Actions;
+namespace Modules\Xot\Tests\Unit\Actions;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;

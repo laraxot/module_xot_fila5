@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Unit\Exports;
+namespace Modules\[A-Za-z]*\tests\Unit\Exports;
 
 /**
  * Resource fake: espone il contratto `getXlsFields()` con formato misto

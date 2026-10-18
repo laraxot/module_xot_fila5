@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Unit\Support;
+namespace Modules\[A-Za-z]*\tests\Unit\Support;
 
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
