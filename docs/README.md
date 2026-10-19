@@ -24,6 +24,7 @@ cosa e' il modulo e come si verifica. Fatti controllati sul codice il 2026-10-14
   moduli. Non e' la sede della logica di dominio (vedi Limiti).
 - Ownership della documentazione: questa cartella. Le story del lavoro corrente
   stanno in [stories/](stories/), le decisioni in [decision-log.md](decision-log.md).
+- Regola test: [module-test-ownership.md](rules/module-test-ownership.md).
 
 ## Cosa contiene il codice (conteggi del 2026-10-14)
 
