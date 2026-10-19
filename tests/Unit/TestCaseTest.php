@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\[A-Za-z]*\tests\Unit;
+namespace Modules\Xot\Tests\Unit;
 
 use Modules\Xot\Providers\XotServiceProvider;
 use Modules\Xot\Tests\TestCase;

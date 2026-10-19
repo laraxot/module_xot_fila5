@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\[A-Za-z]*\tests\Unit\Exports;
+namespace Modules\Xot\Tests\Unit\Exports;
 
 use Modules\Xot\Actions\Export\GetExportFileNameAction;
 use Modules\Xot\Tests\TestCase;

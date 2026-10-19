@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\[A-Za-z]*\tests\Unit\Fixtures;
+namespace Modules\Xot\Tests\Unit\Fixtures;
 
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Filters\Filter;
