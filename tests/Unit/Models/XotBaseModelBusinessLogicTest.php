@@ -4,20 +4,21 @@ declare(strict_types=1);
 
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Models\XotBaseModel;
+use PHPUnit\Framework\Assert;
 
 describe('XotBaseModel Business Logic', function () {
     test('xot base model extends eloquent model', function () {
-        expect(XotBaseModel::class)->toBeSubclassOf(Model::class);
+        Assert::assertSame(Model::class, get_parent_class(XotBaseModel::class));
     });
 
-    test('xot base model can be instantiated', function () {
-        $model = new XotBaseModel();
+    test('xot base model is abstract foundation for module models', function () {
+        $reflection = new \ReflectionClass(XotBaseModel::class);
 
-        expect($model)->toBeInstanceOf(XotBaseModel::class);
-        expect($model)->toBeInstanceOf(Model::class);
+        Assert::assertTrue($reflection->isAbstract());
+        Assert::assertTrue($reflection->isSubclassOf(Model::class));
     });
 
     test('xot base model provides foundation for other models', function () {
-        expect(class_exists(XotBaseModel::class))->toBeTrue();
+        Assert::assertTrue(class_exists(XotBaseModel::class));
     });
 });

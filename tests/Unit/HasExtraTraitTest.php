@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\[A-Za-z]*\tests\Unit;
+namespace Modules\Xot\Tests\Unit;
 
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Exception;
