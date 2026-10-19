@@ -16,8 +16,7 @@ use Illuminate\Database\Eloquent\Relations\Pivot;
 use Illuminate\Support\Carbon;
 use Laravel\Passport\Contracts\OAuthenticatable;
 use Laravel\Passport\PersonalAccessTokenResult;
-use Laravel\Passport\Token;
-use Laravel\Passport\TransientToken;
+use Laravel\Passport\Contracts\ScopeAuthorizable;
 use Modules\User\Contracts\TeamContract;
 use Modules\User\Models\Role as UserRole;
 use Modules\User\Models\Team;
@@ -68,9 +67,9 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
     /**
      * Get the access token currently associated with the user.
      *
-     * @return Token|TransientToken|null
+     * @return ScopeAuthorizable|null
      */
-    public function token();
+    public function token(): ?ScopeAuthorizable;
 
     /**
      * Create a new personal access token for the user.
@@ -161,7 +160,7 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
      * @param  string|int|array<int|string>|UserRole|Collection<int, UserRole>|\BackedEnum  ...$role
      * @return $this
      */
-    public function removeRole(...$role);
+    public function removeRole(...$role): static;
 
     /**
      * Determine if the user owns the given team.
