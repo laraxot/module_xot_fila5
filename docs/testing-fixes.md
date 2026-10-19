@@ -221,4 +221,7 @@ Dopo le correzioni:
 - Seguire la struttura standard per i TestCase dei moduli
 - Documentare eventuali modifiche alla struttura di testing
 
+## xotbasemodel business logic (2026-10)
+
+`XotBaseModelBusinessLogicTest` usa `Assert` e verifica che `XotBaseModel` sia abstract ed estenda Eloquent, evitando `expect()->toBeSubclassOf()` che fa crashare PHPStan.
 

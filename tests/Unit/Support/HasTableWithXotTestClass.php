@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\[A-Za-z]*\tests\Unit\Support;
+namespace Modules\Xot\Tests\Unit\Support;
 
 use Filament\Schemas\Schema;
 use Filament\Support\Contracts\TranslatableContentDriver;
