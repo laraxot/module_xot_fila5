@@ -2,7 +2,7 @@
 title: "Xot module documentation index"
 type: index
 status: active
-updated: 2026-10-14
+updated: 2026-10-20
 tags: [xot, foundation, module, documentation]
 qmd: "Xot foundation module documentation index"
 ---
@@ -21,7 +21,7 @@ il 2026-10-14: 254 file `.md` in `docs/`, 71 voci nella radice, nessun `index.md
 |---|---|
 | [README.md](README.md) | identita, fatti dal codice, quick start, limiti |
 | [decision-log.md](decision-log.md) | due decisioni del 2026-10-08 (riallineamento a `cadb1578e`, contratto `HasRecursiveRelationships`) |
-| [stories/](stories/) | 22 file: 11 con data (2026-10-06 .. 2026-10-13), 11 numerati o storici (`7.1.*`, `8.*`, `legacy-readme-*`) |
+| [stories/](stories/) | 39 file al 2026-10-20 (22 al 2026-10-14: 11 con data da 2026-10-06 a 2026-10-13, 11 numerati o storici `7.1.*`, `8.*`, `legacy-readme-*`) |
 | [wiki/index.md](wiki/index.md), [wiki/log.md](wiki/log.md) | indice e registro del wiki; l'indice elenca 37 bersagli distinti che non esistono, 25 dei quali sotto `concepts/`, `rules/`, `overviews/` (vedi Problemi noti) |
 | [wiki/concepts/](wiki/concepts/) | 2 pagine reali: `claude-code-laraxot-rules-path-scoping.md`, `filament-wizard-architecture-right-way.md` |
 | [wiki/memories/index.md](wiki/memories/index.md) | 6 note di memoria del modulo |
@@ -56,7 +56,10 @@ il 2026-10-14: 254 file `.md` in `docs/`, 71 voci nella radice, nessun `index.md
 
 - Marker di merge: 24 file `.md` hanno righe `<<<<<<< ` o `>>>>>>> ` fuori dai blocchi di codice (misura 2026-10-14): 9 in `stories/` (es. `7.1-bmad-docs-audit-report.story.md`, `8.1-phpstan-l10-error-categorization.story.md`, `legacy-readme-new.md`) e 15 in `bmad/stories/`. Sono story: la policy vieta di riscriverle, quindi non sono state toccate; il testo di quei file non e' affidabile finche' i marker non vengono risolti.
 
+- Merge `9230d1083` del 2026-10-20: ha riportato `app/Services/*.php` (rimossi l'8-9 ottobre, vedi [module-service-test-decision](bmad/stories/module-service-test-decision.story.md) e `stories/services-to-actions-*`), un secondo `Helpers/Helper.php` maiuscolo accanto a `helpers/Helper.php` (l'unico caricato da composer) e coppie di file che differiscono solo per le maiuscole (`tests/Pest.php` e `pest.php`, `00-INDEX.md` e `00-index.md`, `CHANGELOG.MD` e `changelog.MD`, `brainstorm-test-case-hierarchy-xot-base.md` che si aggiunge allo stub `BRAINSTORM-TestCase-Hierarchy-XotBase.md`). Segnalati, non rimossi: dettaglio e decisioni aperte in [phpstan-test-wave-xot](stories/phpstan-test-wave-xot.story.md).
+
 ## Story recenti
+- [PHPStan Modules: test riespansi dopo il pull (2026-10-20)](stories/phpstan-test-wave-regression.story.md), [lane xot](stories/phpstan-test-wave-xot.story.md)
 - [Docs Xot: studio del codice e ingressi (2026-10-14)](stories/docs-xot-studio-e-ingressi.story.md)
 - [DCP-45 isolamento del DB nei test con pest-scratch-db.sh](stories/dcp-45-isolamento-db-test-pest-scratch.story.md) (open)
 - [PHPStan cleanup Xot app (2026-10-06)](stories/phpstan-cleanup-xot-app.story.md), [Xot rest](stories/phpstan-cleanup-xot-rest.story.md)
