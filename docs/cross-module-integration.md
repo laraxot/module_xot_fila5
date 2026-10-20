@@ -1,3 +1,13 @@
+---
+title: "Integrazione Cross-Module - Laraxot PTVX"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "Integrazione Cross-Module - Laraxot PTVX"
+---
 # Integrazione Cross-Module - Laraxot PTVX
 
 ## Panoramica

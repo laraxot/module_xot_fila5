@@ -4,28 +4,77 @@ module: Xot
 bmad: true
 status: active
 type: note
-updated: 2026-10-13
+updated: 2026-10-20
 tags: [docs, xot, bmad]
-qmd: "phpstan status   xot xot"
+qmd: "phpstan status modules zero file_errors xot gate"
 ---
 # PHPStan Status — Xot
 
 Stato vivo del gate. Non copiare numeri da report storici: rimisura.
 
-## Misura verificata 2026-10-14 — comando canonico dell'utente
+## Misura verificata 2026-10-20 (pm) — gate modulo Xot
 
-Il comando di consegna è quello eseguito dalla radice Laravel, senza path
-alternativi né baseline:
+```bash
+cd laravel && php -d memory_limit=2048M ./vendor/bin/phpstan analyse Modules/Xot
+# [OK] No errors
+```
+
+Dettaglio fix test wave r3: [phpstan-fixes.md](../phpstan-fixes.md).
+
+## Misura verificata 2026-10-20 — gate Modules a ZERO (post Lang-TestCase)
+
+Comando canonico (radice Laravel, senza baseline):
 
 ```bash
 cd laravel
-./vendor/bin/phpstan analyse Modules
+./vendor/bin/phpstan analyse Modules --memory-limit=2G
 ```
 
-Esecuzione verificata dopo la rigenerazione dell'autoload e con la cache
-PHPStan disponibile: **`[OK] No errors`** su 8.823 file. Le segnalazioni
-storiche riportate sotto non descrivono più lo stato corrente: prima di
-riaprire una storia bisogna ripetere questo comando nel checkout interessato.
+Esito rimisurato: **`file_errors` 0**, **`errors` 0**, exit 0, banner
+`[OK] No errors` (coordinatore ~12:30 dopo clear-result-cache; config **solo**
+`laravel/phpstan.neon`). Spike ~12:21: 153 `phpstan.parse` (marker merge
+Lang/AI/Cms) — non debito tipi; `rg '<<<<<<<' Modules` = 0 al verify.
+Story: [phpstan-modules-zero-wave3](../stories/phpstan-modules-zero-wave3.story.md).
+Neon: [single-neon](../wiki/memories/phpstan-single-neon-config.md) (solo umano).
+
+| Ratchet (non errori PHPStan) | Stato |
+|------------------------------|--------|
+| `*Service.php` applicativi in `Modules/` | **0** (W0: `TermsOfService` Livewire ritirato; allowlist arch vuota) |
+| Custom Livewire panel (`Http/Livewire`) | **~28** — [fleet](../bmad/stories/livewire-to-filament-widgets-fleet.story.md) ready-for-dev |
+| Services → Actions | [services-to-actions-global-wave](../stories/services-to-actions-global-wave.story.md) |
+
+Religione: **scopo → fix**. Post-zero: boy scout + docs + prompt (ordine permanente).
+
+### Nota 2026-10-20 pm — ignore `constantTypeCoverage` non matchato
+
+<!-- gateguard: update existing status note; linked from 00-INDEX gate table; user pasted unmatched ignore error from analyse Modules -->
+
+Se compare `Ignored error pattern #typeCoverage\.constantTypeCoverage# was not matched`,
+non e' un bug del codice Modules: e' un **ignore stale** in `phpstan.neon` dopo
+che le costanti tipizzate hanno fatto sparire quel identifier (soglia
+`tomasvotruba/type-coverage` 99%). Con `reportUnmatchedIgnoredErrors` default,
+l'ignore inutilizzato diventa l'unico "errore".
+
+Cronologia: `3951a9ca` add ignore → `606a380b` remove (~7 min). Disco attuale:
+nessuna riga `constantTypeCoverage` nel neon. Rimisura ~11:50: `[OK] No errors`.
+
+Non reintrodurre l'ignore, non spegnere `reportUnmatchedIgnoredErrors`, non
+de-tipizzare costanti per far matchare il pattern. `phpstan.neon` = solo umano.
+Vedi anche anti-pattern in [11-phpstan.md](../../../../../bashscripts/docs/prompts/11-phpstan.md).
+
+### Religione — un solo neon (2026-10-20)
+
+Gate = **solo** `laravel/phpstan.neon`. Agenti: niente `-c`, niente neon nuovi
+sotto moduli/temi/docs, niente edit del neon root. Neon storici in
+`Modules/*/phpstan*.neon*` = legacy. Memoria:
+[phpstan-single-neon-config](../wiki/memories/phpstan-single-neon-config.md).
+Decisione aggiornata: [final-config](../phpstan-fix-plan/final-config.md).
+
+## Misura 2026-10-14 (storica) — stessa famiglia di comando
+
+Stesso comando: allora **`[OK] No errors`** su 8.823 file. Le segnalazioni
+piu' vecchie sotto non descrivono lo stato corrente: prima di riaprire una storia
+bisogna ripetere il comando nel checkout interessato.
 
 ## Misura 2026-10-06 (sera) — swarm Xot/app: scopo prima dell'errore
 
@@ -169,10 +218,13 @@ Per dichiarare «siamo a zero» serve il comando senza argomenti.
 
 ## Collegamenti
 
-- [phpstan-modules-fix.md](./wiki/troubleshooting/phpstan-modules-fix.md) — ricette
-- [phpstan-best-practices.md](./wiki/phpstan-best-practices.md) — pattern Pest
+- [phpstan-modules-zero-wave3](../stories/phpstan-modules-zero-wave3.story.md) — wave3 json + boy scout Lang
+- [services-to-actions-global-wave](../stories/services-to-actions-global-wave.story.md) — ratchet Services
+- [livewire-to-filament-widgets-fleet](../bmad/stories/livewire-to-filament-widgets-fleet.story.md) — ratchet UI panel
+- [phpstan-modules-fix.md](../wiki/troubleshooting/phpstan-modules-fix.md) — ricette
+- [phpstan-best-practices.md](../wiki/phpstan-best-practices.md) — pattern Pest
 - [18.59](./stories/18.59.phpstan-repo-wide-zero-2026-09-21.story.md) — drift 23→0 del 2026-09-21
 - [2026-10-08 regressioni Xot/app](../stories/phpstan-xot-app-regressions.story.md) — `$models` di MorphMany, `urlAct` (row e beforeLast), assert finti
 - [phpstan-journey.md](../../../../../bashscripts/ai/wiki/second-brain/phpstan-journey.md) — second brain
-- [CloudStorage coverage](../../CloudStorage/docs/coverage.md) — incidente require-dev Symplify
+- [CloudStorage coverage](../../../CloudStorage/docs/coverage.md) — incidente require-dev Symplify
 - [contract-suffix memory](../../../../../bashscripts/ai/wiki/memories/contract-suffix-no-interfaces-folder.md) — religione `*Contract`

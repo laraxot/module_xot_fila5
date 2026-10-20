@@ -1,3 +1,13 @@
+---
+title: "PHPStan Best Practices per Factory Laravel - Laraxot Framework"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "PHPStan Best Practices per Factory Laravel - Laraxot Framework"
+---
 # PHPStan Best Practices per Factory Laravel - Laraxot Framework
 
 ## 🎯 Overview

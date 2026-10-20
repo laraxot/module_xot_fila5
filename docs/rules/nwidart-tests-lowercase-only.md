@@ -1,3 +1,13 @@
+---
+title: "Nwidart tests directory convention — lowercase only"
+type: note
+status: unverified
+created: 2026-10-20
+updated: 2026-10-20
+module: Xot
+tags: [xot, rules]
+qmd: "Nwidart tests directory convention — lowercase only"
+---
 # Nwidart tests directory convention — lowercase only
 
 **Status:** mandatory

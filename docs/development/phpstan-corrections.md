@@ -1,3 +1,13 @@
+---
+title: "Correzioni PHPStan nel Progetto Laravel-Xot"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, development]
+qmd: "Correzioni PHPStan nel Progetto Laravel-Xot"
+---
 # Correzioni PHPStan nel Progetto Laravel-Xot
 
 ## Introduzione

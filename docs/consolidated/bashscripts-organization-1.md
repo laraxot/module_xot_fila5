@@ -120,7 +120,7 @@ La riorganizzazione è stata completata il **2025-01-29** seguendo questi passag
 ## Collegamenti
 
 - [Struttura Generale Progetto](structure.md)
-- [Script di Automazione](../tools/)
+- [Script di Automazione](../../../../tools)
 - [Documentazione Git](git/)
 - [Documentazione PHPStan](phpstan/)
 

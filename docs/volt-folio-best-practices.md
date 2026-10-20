@@ -1,3 +1,13 @@
+---
+title: "Best Practices per Volt e Folio"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "Best Practices per Volt e Folio"
+---
 # Best Practices per Volt e Folio
 
 ## Collegamenti correlati

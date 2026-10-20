@@ -1,3 +1,13 @@
+---
+title: "XotBaseServiceProvider: Architettura, Ruolo e Best Practice"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "XotBaseServiceProvider: Architettura, Ruolo e Best Practice"
+---
 # XotBaseServiceProvider: Architettura, Ruolo e Best Practice
 
 ## Ruolo della Classe

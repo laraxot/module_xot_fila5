@@ -81,10 +81,10 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 - [Gestione Asset](assets.md)
 - [Struttura Temi](themes.md)
 - [Linee Guida per i Loghi](../../../../docs/standards/logo_guidelines.md)
-- [Documentazione Principale](../../../../docs/readme.md)
-- [Standard di Progetto](../../../../docs/standards/readme.md)
-- [Gestione Media](../../media/docs/readme.md)
-- [Gestione UI](../../ui/docs/readme.md)
+- [Documentazione Principale](../../../../../docs/README.md)
+- [Standard di Progetto](../standards/README.md)
+- [Gestione Media](../../../Media/docs/README.md)
+- [Gestione UI](../../../UI/docs/README.md)
 - [Gestione Temi](../../cms/docs/themes.md)
 
 ## Collegamenti Correlati

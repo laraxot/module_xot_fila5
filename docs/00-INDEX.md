@@ -2,18 +2,22 @@
 title: "Xot module documentation index"
 type: index
 status: active
-updated: 2026-10-14
+updated: 2026-10-20
 tags: [xot, foundation, module, documentation]
 qmd: "Xot foundation module documentation index"
 ---
 
 # Xot: indice canonico
 
-Questo e' l'unico indice del modulo (contratto:
-[module-theme-docs-contract.md](../../../../bmad-output/docs-architecture/module-theme-docs-contract.md)).
+Questo e' l'indice operativo del modulo (contratto:
+[docs-organization.md](conventions/docs-organization.md)).
 `wiki/index.md` e `bmad/index.md` sono indici di sezione, non alternative a questo.
 Identita, ownership, quick start e limiti: [README.md](README.md). Stato verificato
 il 2026-10-14: 254 file `.md` in `docs/`, 71 voci nella radice, nessun `index.md` in radice.
+
+La docs locale è la fonte canonica; Hindsight/QMD recuperano decisioni e contesto
+ma non sono un archivio parallelo. Dopo una modifica si aggiorna il decision log
+dell'owner e si reindicizza solo il perimetro toccato.
 
 ## Canoniche (mantenute, da qui si parte)
 
@@ -21,11 +25,12 @@ il 2026-10-14: 254 file `.md` in `docs/`, 71 voci nella radice, nessun `index.md
 |---|---|
 | [README.md](README.md) | identita, fatti dal codice, quick start, limiti |
 | [decision-log.md](decision-log.md) | due decisioni del 2026-10-08 (riallineamento a `cadb1578e`, contratto `HasRecursiveRelationships`) |
-| [stories/](stories/) | 22 file: 11 con data (2026-10-06 .. 2026-10-13), 11 numerati o storici (`7.1.*`, `8.*`, `legacy-readme-*`) |
+| [stories/](stories/) | 39 file al 2026-10-20 (22 al 2026-10-14: 11 con data da 2026-10-06 a 2026-10-13, 11 numerati o storici `7.1.*`, `8.*`, `legacy-readme-*`) |
 | [wiki/index.md](wiki/index.md), [wiki/log.md](wiki/log.md) | indice e registro del wiki; l'indice elenca 37 bersagli distinti che non esistono, 25 dei quali sotto `concepts/`, `rules/`, `overviews/` (vedi Problemi noti) |
 | [wiki/concepts/](wiki/concepts/) | 2 pagine reali: `claude-code-laraxot-rules-path-scoping.md`, `filament-wizard-architecture-right-way.md` |
 | [wiki/memories/index.md](wiki/memories/index.md) | 6 note di memoria del modulo |
-| [bmad/phpstan-status.md](bmad/phpstan-status.md) | stato vivo del gate PHPStan; il 2026-10-14 `phpstan analyse Modules/Xot` esce 0 senza errori |
+| [bmad/phpstan-status.md](bmad/phpstan-status.md) | stato vivo del gate PHPStan; **2026-10-20** `phpstan analyse Modules` → file_errors 0 (vedi wave3 sotto) |
+| [bmad/epic-code-quality-ratchet.md](bmad/epic-code-quality-ratchet.md) | epic (planned) del cricchetto di qualita': perche' PHPStan a 0 non prova il codice, sicurezza dei test, wave W0-W5, contatori che scendono |
 | [bmad/stories/](bmad/stories/) | 81 voci di story BMAD storiche (flotta PHPStan, export, docs); cronologia, non si rinumera |
 | [rules/](rules/) | 3 regole (`laraxot-rules.md`, `prompt-rules.md`, `xot-base-section-rule.md`) |
 | [investigation/](investigation/) | `investigation.md`, diagnosi non risolta |
@@ -56,9 +61,44 @@ il 2026-10-14: 254 file `.md` in `docs/`, 71 voci nella radice, nessun `index.md
 
 - Marker di merge: 24 file `.md` hanno righe `<<<<<<< ` o `>>>>>>> ` fuori dai blocchi di codice (misura 2026-10-14): 9 in `stories/` (es. `7.1-bmad-docs-audit-report.story.md`, `8.1-phpstan-l10-error-categorization.story.md`, `legacy-readme-new.md`) e 15 in `bmad/stories/`. Sono story: la policy vieta di riscriverle, quindi non sono state toccate; il testo di quei file non e' affidabile finche' i marker non vengono risolti.
 
+- Merge `9230d1083` del 2026-10-20: aveva riportato `app/Services/*.php` applicativi (gia' rimossi l'8-9 ottobre). **Post-wave delete + boy scout:** `*Service.php` applicativi **GONE**; `ProfileTest.php` in Services **GONE**; `Translators/*` + `Trend/Adapters/*` sotto Services = **zombie delete-again** (decisione DELETE di [xot-small](stories/services-to-actions-xot-small.story.md), mai relocate; vivo = `*TranslateAction` + `BuildTrendCollectionAction`). Hub: [services-to-actions-global-wave](stories/services-to-actions-global-wave.story.md). `00-index.md` e' stub verso questo file.
+
+## Gate qualita' e religione (2026-10-20)
+
+| Fatto | Dove |
+|---|---|
+| `phpstan analyse Modules` → **file_errors 0**, exit 0 | [phpstan-modules-zero-gate](stories/phpstan-modules-zero-gate.story.md) (comando + acceptance), [phpstan-modules-zero-wave3](stories/phpstan-modules-zero-wave3.story.md), [bmad/phpstan-status.md](bmad/phpstan-status.md) |
+| Services applicativi → Actions (`execute()`); delete-or-retarget, mai duplicare | [services-to-actions-global-wave](stories/services-to-actions-global-wave.story.md), [brainstorm](bmad/brainstorming-services-to-actions-wave.md) |
+| Panel UI: niente custom Livewire → `XotBase*Widget` (panel-first; FO Folio/Volt ok) | [perche'](bmad/livewire-widget-advantages.md), [brainstorm](bmad/livewire-to-filament-widgets-brainstorming.md), [blueprint](bmad/livewire-to-filament-widgets-filament-blueprint.md), [fleet](bmad/stories/livewire-to-filament-widgets-fleet.story.md) |
+| Religione **scopo → fix** + DRY+KISS | capire perche' esiste il codice, correggere la causa; niente `@phpstan-ignore` / baseline per chiudere il gate |
+| Un solo gate PHPStan: `laravel/phpstan.neon` (**solo umano**; mai altri `.neon` / `-c`) | [single-neon](wiki/memories/phpstan-single-neon-config.md), [regola](../../../../bashscripts/ai/wiki/rules/phpstan-neon-immutable.md), [11-phpstan](../../../../bashscripts/docs/prompts/11-phpstan.md) |
+
+<!-- gateguard: append neon row; linked from AGENTS; user: "devi utilizzare laravel/phpstan.neon e solo io posso modificarlo, non puoi creare altri .neon" -->
+
+## Organizzazione delle docs (misura 2026-10-20)
+
+Numeri prima e dopo e decisioni aperte: [docs-organization-xot](stories/docs-organization-xot.story.md). Parita' dei Service: [services-parity-audit-xot](stories/services-parity-audit-xot.story.md).
+
+| Misura | Valore |
+|---|---|
+| File `.md` / di 0 byte (tracciati) | 2501 / 1626 (1612 vuoti sono citati da qualcuno e restano; 17 senza riferimenti cancellati) |
+| `.md` non vuoti senza frontmatter | 304 (solo `archive/`, `consolidated/`, `-integration/`, `_integration/` e poche story) |
+| Link relativi rotti | 1582 su 2336 controllati (stesso script prima e dopo: erano 1737 su 2412) |
+| Coppie che differiscono per le maiuscole | 10, tutte con la copia debole `status: superseded` e `superseded_by` verso la canonica |
+| Regola `.gitignore` di docs | `!stories/**/archive/`, `!stories/**/consolidated/` (e `bmad/stories/`): le story annidate non vengono piu' nascoste |
+
+Le copie superate restano per storia: `changelog.MD`, `REFACTOR-panelmixin.md`, `QA-VERIFICATION.md`, `index.md` (radice), `wiki/AGENTS.md`, `wiki/Architecture.md`, `wiki/concepts/INDEX.md`, `wiki/commands/INDEX.md`. Ingresso canonico: questo file e' l'indice operativo; `README.md` e `INDEX.md` rivendicano anch'essi un ruolo di ingresso (decisione aperta nella story).
+
 ## Story recenti
+- [Riordino della docs Xot: numeri prima e dopo](stories/docs-organization-xot.story.md) - vuoti, `.gitignore`, coppie di maiuscole, frontmatter, decisioni aperte
+- [PHPStan Modules zero gate](stories/phpstan-modules-zero-gate.story.md) — checkpoint: 0 errori, zero `*Service.php` applicativi, `NotificationManager::execute()` tipizzato; Translators/Trend = delete-again
+- [PHPStan Modules zero wave3](stories/phpstan-modules-zero-wave3.story.md) — gate json+`[OK]` verificato 2026-10-20; boy scout ProfileTest GONE + zombie Translators/Trend
+- [Wave globale Services→Actions](stories/services-to-actions-global-wave.story.md) — applicativi GONE; Translators/Trend delete (mai relocate)
+- [Parita' dei Service cancellati (epic Service verso QueueableAction, W2)](stories/services-parity-audit-xot.story.md) - scopo, tabella successori, conversioni finte e difetti da correggere; ready-for-dev
+- [Fleet Livewire → Filament Widgets](bmad/stories/livewire-to-filament-widgets-fleet.story.md) — planning ready-for-dev; W0 = REUSE gemelli (UI/Lang/legal)
+- [PHPStan Modules: test riespansi dopo il pull (2026-10-20)](stories/phpstan-test-wave-regression.story.md), [lane xot](stories/phpstan-test-wave-xot.story.md)
 - [Docs Xot: studio del codice e ingressi (2026-10-14)](stories/docs-xot-studio-e-ingressi.story.md)
 - [DCP-45 isolamento del DB nei test con pest-scratch-db.sh](stories/dcp-45-isolamento-db-test-pest-scratch.story.md) (open)
 - [PHPStan cleanup Xot app (2026-10-06)](stories/phpstan-cleanup-xot-app.story.md), [Xot rest](stories/phpstan-cleanup-xot-rest.story.md)
 - [Regressioni PHPStan su app (2026-10-08)](stories/phpstan-xot-app-regressions.story.md), [test senza assert (2026-10-08)](stories/phpstan-xot-tests-without-assertions.story.md)
-- [Da Services ad Actions: artisan](stories/services-to-actions-xot-artisan.story.md), [route](stories/services-to-actions-xot-route.story.md), [small](stories/services-to-actions-xot-small.story.md)
+- [Da Services ad Actions: artisan](stories/services-to-actions-xot-artisan.story.md), [route](stories/services-to-actions-xot-route.story.md), [small](stories/services-to-actions-xot-small.story.md), [brainstorm wave](bmad/brainstorming-services-to-actions-wave.md)

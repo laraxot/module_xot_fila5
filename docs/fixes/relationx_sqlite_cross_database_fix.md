@@ -1,3 +1,13 @@
+---
+title: "RelationX SQLite Cross-Database Fix"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, fixes]
+qmd: "RelationX SQLite Cross-Database Fix"
+---
 # RelationX SQLite Cross-Database Fix
 
 ## Problema Risolto

@@ -223,8 +223,8 @@ class ChartDataValidator
 
 ### Documentation
 - [Safe Library Documentation](https://github.com/thecodingmachine/safe)
-- [PHPStan Configuration](../phpstan.neon)
-- [Chart Module Documentation](../Chart/docs/)
+- [PHPStan Configuration](../../../phpstan.neon)
+- [Chart Module Documentation](../../../../Chart/docs)
 - [<nome progetto> Module Documentation](../<nome progetto>/docs/)
 
 ## Emergency Procedures

@@ -11,8 +11,8 @@ references:
   - bashscripts/ai/wiki/memories/agent-standing-order.md
   - docs/sprint-status.yaml
 type: story
-updated: 2026-10-07
-tags: [docs, xot, bmad]
+updated: 2026-10-20
+tags: [docs, xot, bmad, phpstan, swarm]
 qmd: "phpstan modules swarm random + docs moduli/temi xot"
 ---
 
@@ -146,3 +146,58 @@ swarm parallelo per singolo modulo in ordine random, come da pilastro 8.
     5. Fix 12 real bugs (Pdnd Firebase, Activity UserContract, Performance instanceof)
   - **Per-module logic assessment**: ALL CLEAN per purpose (no logic errors, only config/bootstrap issues)
   - **Story status**: cluster 5 analysis complete, report finalized, awaiting bootstrap configuration fixes
+
+- 2026-10-20 (coordinatore Cursor, wave Modules gate vivo):
+  - Gate: `cd laravel && ./vendor/bin/phpstan analyse Modules` → inventariato in
+    `.cursor-scratch/phpstan-wave/` (coordinator-owned). Baseline wave:
+    **414 file_errors** (SUMMARY.tsv): Cms78 Activity59 Geo59 Xot48 Notify34 Job33
+    User27 UI19 Gdpr17 Media17 Lang12 Comment5 Tenant5 Rating1.
+  - Ordine permanente senza conferma: scopo prima dell'errore, swarm random su
+    scope disgiunti, BMAD + second brain, docs moduli/temi, miglioramento prompt.
+  - Bootstrap: un run Rating ha colpito `HasRecursiveRelationshipsContract` con
+    return type nativo `: string` su `getParentKeyName` → fatal con trait vendor
+    Staudenmeir. Stato vivo del contratto = tipi **solo** in `@return` (decision-log
+    Xot 2026-10-08). Non tipizzare nativamente quei metodi.
+  - Rating: TSV 1 (`variable.unused` su slug options) → file mirato **exit 0**
+    dopo assert su `generateSlugFrom`/`slugField` (scopo: slug da titolo).
+  - Lane parallele (random, file-disgiunte): Comment+Tenant+Lang; Media+Gdpr+UI;
+    User+Job+Notify; Geo+Cms+Activity; docs/prompts; Xot gia' in coda flock su
+    `.cursor-scratch/phpstan-wave/Xot.files`.
+  - Iniziativa Hindsight: `kp-488f44dba98a47b38c9e6854d85e8ff7`.
+  - Prossimo: a swarm fermo rimisurare `analyse Modules` (flock), aggiornare TSV,
+    chiudere residui, boy scout + Services→Actions.
+  - Rimisura 18:33: **5 file_errors** (Notify parse `foreach as case` senza `$`,
+    Xot paren mancante). Fix sintassi → sblocca analisi completa.
+  - Rimisura 18:46: **40 file_errors** emersi (prima mascherati dai parse):
+    Activity26 Notify7 Xot5 Cms1 Job1. Lane chiuse su Activity e Notify+Job+Cms+Xot.
+  - Lezione: parse error = Result incomplete; il conteggio basso non e' vittoria
+    finche' non c'e' `[OK] No errors` + totals 0 ([11-phpstan.md] vittoria verificata).
+
+- 2026-10-20 (lane docs/prompts + diario wave, APPEND):
+  - Baseline confermata da `.cursor-scratch/phpstan-wave/SUMMARY.tsv`: **414**
+    `file_errors` (Cms78 Activity59 Geo59 Xot48 Notify34 Job33 User27 UI19
+    Gdpr17 Media17 Lang12 Comment5 Tenant5 Rating1).
+  - Lane swarm (scope file-disgiunti): Comment/Tenant/Lang; Media/Gdpr/UI;
+    User/Job/Notify; Geo/Cms/Activity; **Xot+Geo lane** (Geo 59 + Xot 48 in TSV;
+    `Geo.files` + `Xot.files`, flock `/tmp/phpstan-gate.lock`): analyse mirato
+    **0** residui su entrambi i bucket (2026-10-20 sera). Pattern: assert
+    comportamentali al posto di `assertInstanceOf`/`variable.unused`; `assertCount`
+    al posto di `assertSame(..., $c->count())`; `TestDatabaseGuard` con costanti
+    tipizzate (`private const string|array`).
+  - **Rating 1→0 verificato** (mirato sul path TSV: `variable.unused` su slug
+    options → exit 0 dopo assert su `generateSlugFrom`/`slugField`).
+  - Contratto adjacency: `HasRecursiveRelationshipsContract` = tipi **solo** in
+    `@return`, mai return type nativi (fatal con trait vendor Staudenmeir) —
+    elevazione a HARD in `bashscripts/docs/prompts/11-phpstan.md` + lezione in
+    INDEX; Sixteen hub Auth/Login aggiornato in `Themes/Sixteen/docs/bmad/`.
+
+  - 2026-10-20 19:26 **VITTORIA VERIFICATA**: `analyse Modules` → 0 file_errors,
+    exit 0, banner `[OK] No errors` (controprova umana). Baseline wave era 414.
+    Ultimo residuo: ActionFactoriesTest assertInstanceOf su interfaccia di ritorno
+    della factory → assertSame sulla classe concreta del driver.
+  - Status story: gate Modules verde; continua boy scout (Services→Actions, docs).
+
+- 2026-10-20 19:36 (ordine permanente rieseguito senza conferma):
+  - `analyse Modules` → **0 file_errors**, exit 0, banner `[OK] No errors`.
+  - `app/Services/` applicativi: **0** cartelle / 0 `*Service.php` sotto Services.
+  - Swarm post-zero: boy scout + docs/prompts in parallelo; graphify-out gitignore gia' allineato.

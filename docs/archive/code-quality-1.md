@@ -68,8 +68,8 @@ This document outlines the best practices for maintaining high code quality with
 
 ## Links to Related Documentation
 - [Xot Base Classes](../xot/docs/xot_base_classes.md)
-- [Filament Extension Pattern](../../notify/docs/filament_extension_pattern.md)
-- [Filament Extension Pattern Analysis](../../notify/docs/filament_extension_pattern_analysis.md)
+- [Filament Extension Pattern](../../../Notify/docs/filament_extension_pattern.md)
+- [Filament Extension Pattern Analysis](../../../Notify/docs/filament_extension_pattern_analysis.md)
 - [Patient Module - Namespace Conventions](../../patient/docs/namespace_conventions.md)
 - [Patient Module - Validation Errors](../../patient/docs/validation_errors.md)
 - [PHP Strict Types](./php-strict-types.md)
