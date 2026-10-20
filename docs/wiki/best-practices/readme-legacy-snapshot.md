@@ -1,4 +1,13 @@
 ---
+title: legacy snapshot (ex readme.md)
+status: archive
+canonical: README.md
+---
+
+> Snapshot recuperato da git dopo unificazione `readme.md` verso `README.md`.
+> Ingresso attivo: [README.md](./README.md).
+
+---
 qmd: "readme"
 issues: []
 discussions: []

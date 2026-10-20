@@ -1,3 +1,13 @@
+---
+title: "Correzioni PHPStan - 6 Gennaio 2025"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "Correzioni PHPStan - 6 Gennaio 2025"
+---
 # Correzioni PHPStan - 6 Gennaio 2025
 
 ## Errori Risolti

@@ -10,7 +10,7 @@ related:
   - ./index.md
   - ../../bmad/phpstan-status.md
   - ../../phpstan-fix-plan/final-config.md
-  - ../../../../../bashscripts/docs/prompts/11-phpstan.md
+  - ../../../../../../bashscripts/docs/prompts/11-phpstan.md
 ---
 
 <!--
@@ -74,4 +74,4 @@ Filament dedicato: il blueprint UI non cambia il misuratore
 
 Conferma: agenti non creano, non editano, non usano `-c` su neon legacy sotto
 moduli/docs. Inventario storico (Activity/Geo/Xot `phpstan*.neon*`) = archivio,
-non gate. Regola wiki: [phpstan-neon-immutable.md](../../../../../bashscripts/ai/wiki/rules/phpstan-neon-immutable.md).
+non gate. Regola wiki: [phpstan-neon-immutable.md](../../../../../../bashscripts/ai/wiki/rules/phpstan-neon-immutable.md).

@@ -1,3 +1,13 @@
+---
+title: "Organizzazione dei Namespace Filament nel Modulo Xot"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, filament]
+qmd: "Organizzazione dei Namespace Filament nel Modulo Xot"
+---
 # Organizzazione dei Namespace Filament nel Modulo Xot
 
 ## Problema Identificato: Duplicazione di Classi Base

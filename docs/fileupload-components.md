@@ -1,3 +1,13 @@
+---
+title: "FileUpload Components in XotBaseResource"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "FileUpload Components in XotBaseResource"
+---
 # FileUpload Components in XotBaseResource
 
 ## Overview

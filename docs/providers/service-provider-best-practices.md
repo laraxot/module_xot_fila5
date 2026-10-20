@@ -1,3 +1,13 @@
+---
+title: "Best Practices nei Service Provider"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, providers]
+qmd: "Best Practices nei Service Provider"
+---
 # Best Practices nei Service Provider
 
 ## Decisione Architetturale (2025-05-13)

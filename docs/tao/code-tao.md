@@ -1,3 +1,13 @@
+---
+title: "Il Tao del Codice"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, tao]
+qmd: "Il Tao del Codice"
+---
 # Il Tao del Codice
 
 ## Il Principio Fondamentale

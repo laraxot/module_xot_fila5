@@ -5,9 +5,10 @@ tags: [documentation, xot, filament, base-resource]
 created: 2026-10-15
 updated: 2026-10-15
 qmd: "xot modulo docs indice canonico base resource filament phpstan"
-status: stable
 issues: []
 discussions: []
+status: superseded
+superseded_by: INDEX.md
 ---
 
 # Xot: documentazione canonica

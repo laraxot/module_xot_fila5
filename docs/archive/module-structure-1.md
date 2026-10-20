@@ -34,16 +34,16 @@ ModuleName/
 ## Collegamenti
 
 ### Documentazione Correlata
-- [README](../readme.md) - Panoramica del modulo Xot
+- [README](../README.md) - Panoramica del modulo Xot
 - [Convenzioni di Naming](./naming-conventions.md) - Regole di naming
 - [Case Sensitivity](./directory-case-sensitivity.md) - Regole per la case sensitivity
 - [Namespace Rules](./namespace-rules.md) - Regole per i namespace
 
 ### Moduli Collegati
-- [UI](../ui/docs/readme.md) - Componenti di interfaccia
-- [Cms](../cms/docs/readme.md) - Gestione contenuti
-- [Lang](../lang/docs/readme.md) - Traduzioni
-- [User](../user/docs/readme.md) - Gestione utenti
+- [UI](../../../UI/docs/README.md) - Componenti di interfaccia
+- [Cms](../../../Cms/docs/README.md) - Gestione contenuti
+- [Lang](../../../Lang/docs/README.md) - Traduzioni
+- [User](../../../User/docs/README.md) - Gestione utenti
 
 ## Struttura Dettagliata
 
@@ -201,26 +201,26 @@ User/
 ## Collegamenti Moduli
 
 ### Modulo UI
-- [Componenti Volt](../ui/docs/components/volt.md)
+- [Componenti Volt](../../../UI/docs/components/volt.md)
 - [Layout](../ui/docs/layouts.md)
 - [Temi](../ui/docs/themes.md)
-- [Best Practices](../ui/docs/best-practices.md)
+- [Best Practices](../../../UI/docs/best-practices.md)
 
 ### Modulo Cms
 - [Frontend](../cms/docs/frontend.md)
 - [Temi](../cms/docs/themes.md)
-- [Contenuti](../cms/docs/content.md)
-- [Convenzioni Filament](../cms/docs/convenzioni-namespace-filament.md)
+- [Contenuti](../../../Cms/docs/content.md)
+- [Convenzioni Filament](../../../Cms/docs/convenzioni-namespace-filament.md)
 
 ### Modulo Lang
-- [Traduzioni](../lang/docs/translations.md)
+- [Traduzioni](../../../Lang/docs/translations.md)
 - [Localizzazione](../lang/docs/localization.md)
 - [API Traduzioni](../lang/docs/api.md)
 
 ### Modulo User
 - [Autenticazione](../user/docs/auth.md)
-- [Permessi](../user/docs/permissions.md)
-- [Profilo](../user/docs/profile.md)
+- [Permessi](../../../User/docs/permissions.md)
+- [Profilo](../../../User/docs/profile.md)
 
 ### Modulo Patient
 - [Gestione Pazienti](../patient/docs/patients.md)
@@ -234,7 +234,7 @@ User/
 
 ### Modulo Tenant
 - [Multi-tenant](../tenant/docs/multi-tenant.md)
-- [Configurazione](../tenant/docs/configuration.md)
+- [Configurazione](../../../Tenant/docs/configuration.md)
 - [Migrazione](../tenant/docs/migration.md)
 
 ### Modulo Media
@@ -243,9 +243,9 @@ User/
 - [Storage](../media/docs/storage.md)
 
 ### Modulo Notify
-- [Notifiche](../notify/docs/notifications.md)
+- [Notifiche](../../../Notify/docs/notifications.md)
 - [Email](../notify/docs/email.md)
-- [SMS](../notify/docs/sms.md)
+- [SMS](../../../Notify/docs/sms.md)
 
 ### Modulo Reporting
 - [Report](../reporting/docs/reports.md)
@@ -254,8 +254,8 @@ User/
 
 ### Modulo Gdpr
 - [Privacy](../gdpr/docs/privacy.md)
-- [Consensi](../gdpr/docs/consents.md)
-- [Sicurezza](../gdpr/docs/security.md)
+- [Consensi](../../../Gdpr/docs/consents.md)
+- [Sicurezza](../../../Gdpr/docs/security.md)
 
 ### Modulo Job
 - [Jobs](../job/docs/jobs.md)

@@ -706,7 +706,7 @@ See [ROADMAP.md](roadmap.md) for details.
 - [Geo Module](../../../Geo/docs/README.md) - Geographic data services
 
 ### Project Documentation
-- [CLAUDE.md](../../../../CLAUDE.md) - Project architecture and development rules
+- [CLAUDE.md](../../../../claude.md) - Project architecture and development rules
 - [Project README](../../../README.md) - Main project documentation
 
 ### External Resources

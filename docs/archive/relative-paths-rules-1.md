@@ -1,7 +1,7 @@
 # Regole per i Percorsi Relativi nella Documentazione
 
 > **Collegamenti correlati**
-> - [README.md documentazione generale](../../../../../docs/readme.md)
+> - [README.md documentazione generale](../../../../../docs/README.md)
 > - [Struttura dei Prompt](./prompts.md)
 > - [Regole per i Prompt](./prompt_rules.md)
 > - [README.md toolkit bashscripts](../../../../bashscripts/docs/readme.md)
@@ -36,7 +36,7 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 
 1. **MAI utilizzare percorsi assoluti** come:
    ```markdown
-   [ERRATO](../xot/docs/readme.md)
+   [ERRATO](../README.md)
    ```
 
 2. **MAI utilizzare percorsi che iniziano con /**:
@@ -48,7 +48,7 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 3. **MAI utilizzare percorsi che non tengono conto della posizione relativa del file sorgente**:
    ```markdown
    [ERRATO](modules/xot/docs/readme.md) <!-- Da un file nella root -->
-   [ERRATO](../xot/docs/readme.md) <!-- Da un file in un modulo, senza contare correttamente i livelli -->
+   [ERRATO](../README.md) <!-- Da un file in un modulo, senza contare correttamente i livelli -->
    ```
 
 ## Come Calcolare Correttamente i Percorsi Relativi

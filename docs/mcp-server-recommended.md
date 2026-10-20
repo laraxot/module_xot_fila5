@@ -1,3 +1,13 @@
+---
+title: "MCP Server Consigliati per il Modulo Xot"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "MCP Server Consigliati per il Modulo Xot"
+---
 # MCP Server Consigliati per il Modulo Xot
 
 ## Scopo del Modulo

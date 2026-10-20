@@ -7,7 +7,8 @@ updated: 2026-09-26
 qmd: "development rules"
 issues: []
 discussions: []
-status: draft
+status: superseded
+superseded_by: ../../architecture/development-rules.md
 ---
 
 # Regole Generali di Sviluppo del Progetto

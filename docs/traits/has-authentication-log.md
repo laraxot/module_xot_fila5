@@ -1,3 +1,13 @@
+---
+title: "Trait HasAuthenticationLogTrait"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, traits]
+qmd: "Trait HasAuthenticationLogTrait"
+---
 # Trait HasAuthenticationLogTrait
 
 ## Descrizione

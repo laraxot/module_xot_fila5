@@ -78,7 +78,7 @@ switcher, Job status/schedule e User Auth* → W0–W1 prioritizzano `REUSE` +
 chiusura caller. Story
 [livewire-to-filament-widgets-fleet.story.md](./stories/livewire-to-filament-widgets-fleet.story.md)
 passa a `ready-for-dev`. Prompt
-[05-livewire-to-filament-widgets.md](../../../../bashscripts/docs/prompts/05-livewire-to-filament-widgets.md)
+[05-livewire-to-filament-widgets.md](../../../../../bashscripts/docs/prompts/05-livewire-to-filament-widgets.md)
 allineato al conteggio reale. Implementazione non avviata finché non si apre
 una wave esplicita.
 

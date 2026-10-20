@@ -52,3 +52,6 @@ unica modifica; agenti mai altri `.neon`). Vedi
 - Planning: [bmad-planning.md](../bmad-planning.md)
 - Brainstorming: [bmad-brainstorming.md](../bmad-brainstorming.md)
 - Livewire→Widget blueprint: [livewire-to-filament-widgets-filament-blueprint.md](./livewire-to-filament-widgets-filament-blueprint.md)
+- Code quality wave: [code-quality-wave.md](./code-quality-wave.md)
+- Services→Actions Filament: [services-to-queueable-actions-filament-blueprint.md](./services-to-queueable-actions-filament-blueprint.md)
+- Ratchet: `Modules/Xot/tests/Unit/Filament/NeverExtendFilamentDirectlyTest.php`

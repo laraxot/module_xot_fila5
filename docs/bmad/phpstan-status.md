@@ -217,5 +217,5 @@ Per dichiarare «siamo a zero» serve il comando senza argomenti.
 - [18.59](./stories/18.59.phpstan-repo-wide-zero-2026-09-21.story.md) — drift 23→0 del 2026-09-21
 - [2026-10-08 regressioni Xot/app](../stories/phpstan-xot-app-regressions.story.md) — `$models` di MorphMany, `urlAct` (row e beforeLast), assert finti
 - [phpstan-journey.md](../../../../../bashscripts/ai/wiki/second-brain/phpstan-journey.md) — second brain
-- [CloudStorage coverage](../../CloudStorage/docs/coverage.md) — incidente require-dev Symplify
+- [CloudStorage coverage](../../../CloudStorage/docs/coverage.md) — incidente require-dev Symplify
 - [contract-suffix memory](../../../../../bashscripts/ai/wiki/memories/contract-suffix-no-interfaces-folder.md) — religione `*Contract`

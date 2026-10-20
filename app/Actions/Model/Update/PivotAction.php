@@ -17,7 +17,7 @@ class PivotAction
      */
     public function execute(Model $_model, RelationDTO $relationDTO): void
     {
-        dddx('wip');
+        throw new \LogicException('Update\PivotAction not implemented');
 
         /*
          *

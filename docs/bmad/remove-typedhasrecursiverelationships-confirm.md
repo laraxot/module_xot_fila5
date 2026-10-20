@@ -1,3 +1,13 @@
+---
+title: "BMAD Story: Remove TypedHasRecursiveRelationships (CONFIRMED)"
+type: note
+status: unverified
+created: 2026-10-19
+updated: 2026-10-19
+module: Xot
+tags: [xot, bmad]
+qmd: "BMAD Story: Remove TypedHasRecursiveRelationships (CONFIRMED)"
+---
 # BMAD Story: Remove TypedHasRecursiveRelationships (CONFIRMED)
 
 type: decision

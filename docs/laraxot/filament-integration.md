@@ -1,3 +1,13 @@
+---
+title: "Filament Integration in Laraxot"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, laraxot]
+qmd: "Filament Integration in Laraxot"
+---
 # Filament Integration in Laraxot
 
 ## Resource Implementation

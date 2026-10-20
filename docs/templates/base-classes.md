@@ -1,3 +1,13 @@
+---
+title: "Template Classi Base - Modulo Xot"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, templates]
+qmd: "Template Classi Base - Modulo Xot"
+---
 # Template Classi Base - Modulo Xot
 
 ## 🎯 Panoramica

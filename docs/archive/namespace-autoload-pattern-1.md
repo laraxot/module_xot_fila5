@@ -82,5 +82,5 @@ namespace Modules\ModuleName\App\Console\Commands;
 
 ## Collegamenti
 
-- [Convenzioni di Namespace](../xot/docs/namespace_conventions.md)
+- [Convenzioni di Namespace](../namespace_conventions.md)
 - [Struttura Moduli](../xot/docs/module_structure.md)

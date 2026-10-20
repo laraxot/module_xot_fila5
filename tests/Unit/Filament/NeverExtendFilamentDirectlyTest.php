@@ -25,7 +25,8 @@ uses(TestCase::class);
  * nuovi: `RatingsColumn extends TextColumn`, `HasRatingValuesFilter extends
  * TernaryFilter`, `WorkerTypeFilter extends Filter`. Nessuna delle tre dava errore.
  *
- * Debito storico misurato: 6 RelationManager estendono `RelationManager` di Filament.
+ * Debito storico residuo: mock di test RelationManager (1 file). Wave qualità
+ * 2026-10-20: Notify Select/ViewColumn + UI TextColumn migrati a XotBase*.
  * Tetto decrescente: la guardia non pretende zero, impedisce che il numero salga.
  *
  * @see docs/wiki/rules/fundamental-xotbase-rule.md
@@ -49,8 +50,17 @@ function filamentBasesWithXotEquivalent(): array
         'TernaryFilter' => 'XotBaseTernaryFilter',
         'Filter' => 'XotBaseFilter',
         'Section' => 'XotBaseSection',
+        // Wave qualità 2026-10-20 — blueprint Filament
+        'Select' => 'XotBaseSelect',
+        'Field' => 'XotBaseField',
+        'TextInput' => 'XotBaseTextInput',
     ];
 }
+
+/*
+ * GateGuard test: behaviour = ratchet never-extend-Filament; module Xot;
+ * existing file this; user: "migliora qualità codice , fa tutto con bmad + second brain + filament blueprint"
+ */
 
 /**
  * @return array<string, string> file => violazione
@@ -105,12 +115,10 @@ function classesExtendingFilamentDirectly(): array
 }
 
 /**
- * Tetto misurato il 2026-09-08 dopo la bonifica del modulo Rating: **27 file**.
- * Per classe: Section 12, RelationManager 6, SelectFilter 4, Filter 2, poi
- * ViewColumn, SelectColumn e TextColumn uno ciascuno. Scende con la bonifica, non
- * sale mai.
+ * Tetto dopo wave qualità Notify+UI XotBase*: **1 file** residuo
+ * (TestRelationManager mock). Scende con la bonifica, non sale mai.
  */
-const FILAMENT_DIRECT_EXTENDS_BASELINE = 27;
+const FILAMENT_DIRECT_EXTENDS_BASELINE = 1;
 
 test('nessuna classe nuova estende Filament al posto della sua XotBase', function (): void {
     $offenders = classesExtendingFilamentDirectly();
