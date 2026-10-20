@@ -30,6 +30,22 @@ letti dal filesystem e dalla storia git, non decisioni: la decisione per classe
 
 # Cosa dicono i dati
 
+## Addendum snapshot filesystem — 2026-10-20
+
+Il census storico sopra non rappresenta più lo stato corrente. La verifica live
+del filesystem e dello staging mostra:
+
+- `Geo/app/Services/`: cinque classi presenti, tutte aggiunte allo staging;
+- `Notify/app/Services/.gitkeep`: cancellato;
+- `Xot/app/Services/.gitignore`: cancellato;
+- non esiste ancora una directory `Geo/app/Services` vuota: prima va completata
+  la migrazione dei cinque file;
+- non si deve inferire che una cancellazione sia sicura solo perché un file è
+  nello staging: occorre controllare i successori Action e i caller dinamici
+  prima del commit.
+
+Questo addendum prevale sul conteggio storico per la pianificazione della wave.
+
 1. **Solo ~22 dei 42 sono Service applicativi.** Gli altri sono adapter di driver (`Trend/Adapters` x4), strategie di config (`Tenant/Config` x5, con un contratto), traduttori (`Translators` x6, ognuno ha gia' una `*TranslateAction`), un motore mail (`MailtrapEngine`), uno stream HTTP (`VideoStream`), un file con nome da test (`ProfileTest`) e un falso positivo (`User/app/Http/Livewire/TermsOfService.php`, widget Livewire fuori da `Services/`).
 2. **25 su 42 non hanno nessun chiamante di produzione statico.** Tra questi `AIService` (690 righe), `GeoService` (8 metodi statici), `RouteService` (353 righe), `SmsService`, `SubtitleService`.
 3. **Quasi tutti hanno gia' un'Action affine** nello stesso modulo (colonna "Action affine", trovata per nome: l'equivalenza funzionale non e' verificata).

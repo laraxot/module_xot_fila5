@@ -22,8 +22,9 @@ cd laravel
 ```
 
 Esito rimisurato: **`file_errors` 0**, **`errors` 0**, exit 0, banner
-`[OK] No errors` (coordinatore ~12:02 e ~12:10 `/tmp/phpstan_ord_121026.json`;
-post Lang `TestCase::makeLangServiceProvider`; config **solo** `laravel/phpstan.neon`).
+`[OK] No errors` (coordinatore ~12:30 dopo clear-result-cache; config **solo**
+`laravel/phpstan.neon`). Spike ~12:21: 153 `phpstan.parse` (marker merge
+Lang/AI/Cms) — non debito tipi; `rg '<<<<<<<' Modules` = 0 al verify.
 Story: [phpstan-modules-zero-wave3](../stories/phpstan-modules-zero-wave3.story.md).
 Neon: [single-neon](../wiki/memories/phpstan-single-neon-config.md) (solo umano).
 

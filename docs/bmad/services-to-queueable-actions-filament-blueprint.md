@@ -1,7 +1,7 @@
 ---
 title: "Filament blueprint — Services to Queueable Actions"
 type: filament-blueprint
-status: proposed
+status: active
 module: Xot
 created: 2026-10-20
 updated: 2026-10-20
@@ -14,8 +14,9 @@ related:
 
 # Contratto Filament
 
-La UI non contiene la logica dei Services migrati. Resource, Page, Widget e
-Livewire raccolgono input, autorizzano, invocano l'Action e presentano lo stato.
+La UI non contiene la logica dei Services migrati. Resource, Page e Widget
+raccolgono input, autorizzano, invocano l'Action e presentano lo stato. Nessun
+Resource, Page, Widget o provider può reintrodurre `app/Services` come facciata.
 
 ## Regole
 
@@ -26,6 +27,8 @@ Livewire raccolgono input, autorizzano, invocano l'Action e presentano lo stato.
 - `execute()` per risultato immediato; `dispatch()` solo per operazioni asincrone;
 - notificare `queued`, `completed` e `failed` senza bloccare il worker UI;
 - non passare componenti Filament, Request o Closure dentro una Action dispatchata.
+- dopo ogni migrazione verificare che la directory `app/Services/` sia assente;
+- adapter tecnici usati dal Widget vivono in `Adapters`/`Infrastructure`, mai in `Services`.
 
 ## Mappa UI → Action
 
@@ -57,3 +60,4 @@ Ogni Action dispatchata deve definire:
 - [ ] sync/queue scelto esplicitamente;
 - [ ] test Livewire/Filament e PHPStan passano;
 - [ ] story e decision log aggiornati.
+- [ ] `find Modules/<Modulo>/app -type d -name Services` non restituisce risultati.
