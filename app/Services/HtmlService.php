@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Services;
 
+use Spatie\QueueableAction\QueueableAction;
 // use Maatwebsite\Excel\Facades\Excel;
 // use PHPExcel;
 // use PhpOffice\PhpSpreadsheet\Spreadsheet;
@@ -28,6 +29,8 @@ use Spipu\Html2Pdf\Html2Pdf;
  */
 class HtmlService
 {
+    use QueueableAction;
+    
     public static function toPdf(
         string $html,
         string $out = 'show',
@@ -94,4 +97,19 @@ class HtmlService
      * return $mpdf->Output();
      * }
      */
+
+    /**
+     * QueueableAction execute method for HtmlService.
+     * Converts HTML to PDF or returns HTML for debugging.
+     *
+     * @param  string  $html
+     * @param  string  $out
+     * @param  string  $pdforientation
+     * @param  string  $filename
+     * @return string
+     */
+    public function execute(string $html, string $out = 'show', string $pdforientation = 'L', string $filename = ''): string
+    {
+        return $this->toPdf($html, $out, $pdforientation, $filename);
+    }
 }

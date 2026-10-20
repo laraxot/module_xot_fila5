@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Services;
 
+use Spatie\QueueableAction\QueueableAction;
 use stdClass;
 use Exception;
 use Illuminate\Support\Facades\File;
@@ -18,6 +19,8 @@ use ReflectionClass;
  */
 class ModuleService
 {
+    use QueueableAction;
+    
     public string $name;
 
     private static null|self $_instance = null;
@@ -75,6 +78,7 @@ class ModuleService
         $mod_path = str_replace(['\\', '/'], [\DIRECTORY_SEPARATOR, \DIRECTORY_SEPARATOR], $mod_path);
 
         $files = File::files($mod_path);
+        /** @var array<string, class-string> $data */
         $data = [];
         $ns = 'Modules\\' . $mod->getName() . '\\Models'; // con la barra davanti non va il search ?
         foreach ($files as $file) {
@@ -111,5 +115,16 @@ class ModuleService
         }
 
         return $data;
+    }
+
+    /**
+     * QueueableAction execute method for ModuleService.
+     * Accepts module name and returns its models.
+     *
+     * @return array<string, class-string>
+     */
+    public function execute(string $name): array
+    {
+        return $this->setName($name)->getModels();
     }
 }

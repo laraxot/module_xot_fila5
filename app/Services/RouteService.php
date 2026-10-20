@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Services;
 
+use Spatie\QueueableAction\QueueableAction;
 use Exception;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
@@ -20,6 +21,8 @@ use function count;
  */
 class RouteService
 {
+    use QueueableAction;
+
     /**
      * Verifica se l'utente è in modalità amministrazione.
      *
@@ -255,7 +258,6 @@ class RouteService
          * $new_post->lang = $lang;
          * $new_post->save();
          * $guid = $new_post->guid;
-         * }
          * } else {
          * $route_key_name = $v->getRouteKeyName();
          * $guid = $v->$route_key_name;
@@ -348,5 +350,17 @@ class RouteService
                 return $params[$item] ?? $item;
             })
             ->implode('.');
+    }
+
+    /**
+     * QueueableAction execute method for RouteService.
+     * Executes the inAdmin check.
+     *
+     * @param  array<string,string>  $params
+     * @return bool
+     */
+    public function execute(array $params = []): bool
+    {
+        return $this->inAdmin($params);
     }
 }
