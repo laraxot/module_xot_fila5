@@ -1,19 +1,18 @@
 <?php
 
-/**
- * @see https://www.webslesson.info/2019/02/import-excel-file-in-laravel.html
- * @see https://sweetcode.io/import-and-export-excel-files-data-using-in-laravel/
- */
-
 declare(strict_types=1);
 
 namespace Modules\Xot\Services;
+
+use Spatie\QueueableAction\QueueableAction;
 
 /**
  * Undocumented class.
  */
 class UrlService
 {
+    use QueueableAction;
+
     private static null|self $instance = null;
 
     public function __construct() {}
@@ -38,5 +37,17 @@ class UrlService
     public function checkValidUrl(string $url): bool
     {
         return false !== filter_var($url, FILTER_VALIDATE_URL);
+    }
+
+    /**
+     * QueueableAction execute method for UrlService.
+     * Checks if a URL is valid.
+     *
+     * @param  string  $url
+     * @return bool
+     */
+    public function execute(string $url): bool
+    {
+        return $this->checkValidUrl($url);
     }
 }
