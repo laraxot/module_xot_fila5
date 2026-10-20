@@ -93,3 +93,11 @@ Decisioni lasciate all'utente, raccolte dai report di lane:
 - `laravel/phpstan.neon` righe 12-14: `parallel`/`maximumNumberOfProcesses`/`jobSize`/`processTimeout` sono tutti commentati, quindi vale il default (nproc = 24, 18-20 worker).
 - Regola adottata: coda `flock` unica per ogni run su piu' di ~5 file, cartella, modulo o `Modules`, con controllo di run vivi e `MemAvailable` ([11-phpstan.md](../../../../../bashscripts/docs/prompts/11-phpstan.md#passi-metodo-swarm), [46-multi-agent-module-swarm.md](../../../../../bashscripts/docs/prompts/46-multi-agent-module-swarm.md)). Un run morto per SIGKILL non vale come misura.
 - Decisione aperta per l'utente (solo lui tocca il neon): attivare `parallel.maximumNumberOfProcesses` in `laravel/phpstan.neon` per limitare i worker per run. Gli agenti non modificano il file.
+
+## Marker di conflitto in `Xot/docs/archive` (2026-10-20)
+
+- Misura: 9 file con marker veri (open, mid e close in numero uguale), 49 hunk, fermi da 3,7 ore, senza lock: `archive/filament-4-laraxot{,-rules,-rules-conflict,-e5a872,-rules-conflict-e5a872}.md` (7 hunk ciascuno, tutti dentro blocchi di codice di esempio), `archive/old_tasks/phpstan-{session-report,level10-success-nov2025,batch-nov2025}.md` e `archive/phpstan/phpstan-level-10-dry-kiss-analysis-.md`.
+- Prova: ricostruita ogni versione "lato A" e "lato B" dell'intero file e cercata in git (`git log --all --find-object=<blob>`). Il lato A coincide byte per byte con un blob gia' committato per tutti e 9 (commit `f9c590a5d`, `66d2e1897`, `22ea84e46`, `d85d12599`, aprile e luglio 2026). Il lato B esiste in git solo per 2 file (commit `b876d8f6b`, 2026-09-24), per gli altri 7 e' una variante nuova.
+- Differenza: in tutti i 49 hunk i due lati sono identici dopo la sostituzione `healthcare_app` -> `ModuloEsempio` (verifica fatta per codice). Il marker nasce da un'anonimizzazione del nome di un modulo di un altro progetto.
+- Decisione: tenuto il lato B (segnaposto generico `ModuloEsempio`, gia' 61 occorrenze nelle docs; `healthcare_app` non esiste in questo repo). Nessuna riga non-marker persa: controllato per codice. L'originale con il nome vecchio si recupera con `git -C laravel/Modules/Xot show <commit>:docs/archive/<file>` dai commit sopra.
+- Esito: 0 marker in `laravel/Modules` e `laravel/Themes` (md, php, json), verificato con `grep -E` e `rg -P`. Nessun commit.

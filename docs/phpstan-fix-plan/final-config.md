@@ -8,7 +8,7 @@ qmd: "phpstan single neon immutabile perche senso no altri neon no ignore unmatc
 related:
   - ../wiki/memories/phpstan-single-neon-config.md
   - ../bmad/phpstan-status.md
-  - ../../../../bashscripts/docs/prompts/11-phpstan.md
+  - ../../../../../bashscripts/docs/prompts/11-phpstan.md
   - ../bmad/livewire-to-filament-widgets-filament-blueprint.md
 ---
 

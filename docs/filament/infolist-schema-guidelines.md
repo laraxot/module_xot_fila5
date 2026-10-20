@@ -1,3 +1,13 @@
+---
+title: "Linee Guida per l'Implementazione di getInfolistSchema"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, filament]
+qmd: "Linee Guida per l'Implementazione di getInfolistSchema"
+---
 # Linee Guida per l'Implementazione di getInfolistSchema
 
 ## Requisiti Fondamentali

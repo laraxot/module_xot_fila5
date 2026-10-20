@@ -1,3 +1,13 @@
+---
+title: "zsh"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, install]
+qmd: "zsh"
+---
 
 link: https://www.reddit.com/r/bash/comments/12lz3kb/is_it_possible_to_make_zsh_look_like_gitbash/
 

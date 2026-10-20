@@ -1,3 +1,13 @@
+---
+title: "Risoluzione Conflitto in SushiToJsons"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, git]
+qmd: "Risoluzione Conflitto in SushiToJsons"
+---
 # Risoluzione Conflitto in SushiToJsons
 
 ## Panoramica

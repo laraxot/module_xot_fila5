@@ -1,4 +1,4 @@
-# 10000-phpstan-modules-fix-2026-10-15.story.md
+# 10000-phpstan-modules-fix.story.md
 
 ## Overview
 BMAD Story for PHPStan analysis and fix of all reported errors in `Modules` directory. Total errors: 154 (as of 2026-03-02).

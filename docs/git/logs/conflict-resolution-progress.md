@@ -1,3 +1,13 @@
+---
+title: "Stato Avanzamento Risoluzione Conflitti Git"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-18
+module: Xot
+tags: [xot, git]
+qmd: "Stato Avanzamento Risoluzione Conflitti Git"
+---
 # Stato Avanzamento Risoluzione Conflitti Git
 
 ## Panoramica

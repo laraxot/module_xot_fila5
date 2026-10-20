@@ -1,10 +1,11 @@
 ---
 title: "Changelog - Modulo Xot"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, xot]
 qmd: "changelog - modulo xot xot"
+status: superseded
+superseded_by: CHANGELOG.MD
 ---
 # Changelog - Modulo Xot
 

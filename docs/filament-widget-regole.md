@@ -1,3 +1,13 @@
+---
+title: "Regole Widget Filament (XotBase)"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "Regole Widget Filament (XotBase)"
+---
 # Regole Widget Filament (XotBase)
 
 ## Path delle view dei Widget Filament

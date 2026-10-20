@@ -4,13 +4,14 @@ issues: []
 discussions: []
 title: "Qa Verification"
 type: concept
-status: deprecated
 module: "Xot"
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "deprecated QA-VERIFICATION"
 related:
   - "./qa-verification.md"
+status: superseded
+superseded_by: qa-verification.md
 ---
 # Qa Verification
 

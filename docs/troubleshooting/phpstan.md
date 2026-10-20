@@ -1,3 +1,13 @@
+---
+title: "Risoluzione Problemi PHPStan"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, troubleshooting]
+qmd: "Risoluzione Problemi PHPStan"
+---
 # Risoluzione Problemi PHPStan
 
 Questo documento fornisce soluzioni per i problemi comuni che si possono incontrare durante l'esecuzione di PHPStan nel progetto Laraxot.

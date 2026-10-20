@@ -1,18 +1,19 @@
 ---
 title: "Censimento verificato: Services to Queueable Actions"
 type: bmad-census
-status: draft
+status: verified
 module: Xot
 track: bmad-method
 created: 2026-10-20
 updated: 2026-10-20
 tags: [bmad, services, queueable-actions, census, w0]
-qmd: "censimento services queueable actions chiamanti storia git copie risorte adapter"
+qmd: "censimento services queueable actions chiamanti storia git copie risorte adapter zero dirs"
 related:
   - ./services-to-queueable-actions-objective.md
   - ./services-to-queueable-actions-brainstorming.md
   - ./services-to-queueable-actions-architecture.md
-  - ./stories/services-to-queueable-actions-fleet.story.md
+  - ./brainstorming-services-to-actions-wave.md
+  - ../stories/services-to-actions-global-wave.story.md
 ---
 
 # Scopo
@@ -30,21 +31,21 @@ letti dal filesystem e dalla storia git, non decisioni: la decisione per classe
 
 # Cosa dicono i dati
 
-## Addendum snapshot filesystem — 2026-10-20
+## Addendum snapshot filesystem — 2026-10-20 (pomeriggio, prevale)
 
-Il census storico sopra non rappresenta più lo stato corrente. La verifica live
-del filesystem e dello staging mostra:
+Il census storico (42 file) **non** rappresenta il working tree corrente.
 
-- `Geo/app/Services/`: cinque classi presenti, tutte aggiunte allo staging;
-- `Notify/app/Services/.gitkeep`: cancellato;
-- `Xot/app/Services/.gitignore`: cancellato;
-- non esiste ancora una directory `Geo/app/Services` vuota: prima va completata
-  la migrazione dei cinque file;
-- non si deve inferire che una cancellazione sia sicura solo perché un file è
-  nello staging: occorre controllare i successori Action e i caller dinamici
-  prima del commit.
+| Misura | Esito |
+|--------|-------|
+| `find Modules -type d -path '*/app/Services'` (escl. vendor/tests) | **0** |
+| `find Modules -path '*/app/Services/*.php'` | **0** |
+| Actions `*Action.php` | **~682** |
+| Mid-sessione (~12:40) | 8 dirs + 5 Geo PHP riesumati; `rg 'use Modules\\Geo\\Services\\'` = **0** (match solo commenti «Sostituisce…») |
+| Successori Geo | `LoadGeoHierarchyAction`, `ValidateGeoDataIntegrityAction`, `GoogleMapsHttpAction`, Distance/Polygon Actions |
+| Ratchet | `archAllowedServicesDirs()` = `[]` |
 
-Questo addendum prevale sul conteggio storico per la pianificazione della wave.
+Se un merge riesuma Geo Services → **delete-again**, non convertire. Non inferire
+sicurezza solo dal disco: controllare diff, Action successore e caller dinamici.
 
 1. **Solo ~22 dei 42 sono Service applicativi.** Gli altri sono adapter di driver (`Trend/Adapters` x4), strategie di config (`Tenant/Config` x5, con un contratto), traduttori (`Translators` x6, ognuno ha gia' una `*TranslateAction`), un motore mail (`MailtrapEngine`), uno stream HTTP (`VideoStream`), un file con nome da test (`ProfileTest`) e un falso positivo (`User/app/Http/Livewire/TermsOfService.php`, widget Livewire fuori da `Services/`).
 2. **25 su 42 non hanno nessun chiamante di produzione statico.** Tra questi `AIService` (690 righe), `GeoService` (8 metodi statici), `RouteService` (353 righe), `SmsService`, `SubtitleService`.

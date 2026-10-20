@@ -1,3 +1,13 @@
+---
+title: "Convenzioni di Codifica del Modulo Performance"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, conventions]
+qmd: "Convenzioni di Codifica del Modulo Performance"
+---
 # Convenzioni di Codifica del Modulo Performance
 
 ## Struttura delle Directory

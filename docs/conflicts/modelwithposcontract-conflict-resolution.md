@@ -1,3 +1,13 @@
+---
+title: "Risoluzione del Conflitto in ModelWithPosContract.php"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, conflicts]
+qmd: "Risoluzione del Conflitto in ModelWithPosContract.php"
+---
 # Risoluzione del Conflitto in ModelWithPosContract.php
 
 ## Problema

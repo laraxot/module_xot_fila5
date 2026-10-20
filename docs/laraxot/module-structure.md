@@ -1,3 +1,13 @@
+---
+title: "Module Structure in Laraxot"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, laraxot]
+qmd: "Module Structure in Laraxot"
+---
 # Module Structure in Laraxot
 
 ## Directory Structure
