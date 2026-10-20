@@ -4,7 +4,7 @@ type: filament-blueprint
 status: active
 module: Xot
 created: 2026-10-16
-updated: 2026-10-16
+updated: 2026-10-19
 tags: [bmad, filament, blueprint, xot]
 qmd: "filament blueprint xot xotbase resource widget"
 related:
@@ -30,6 +30,9 @@ i confini di dominio.
 - `ModuleResource`
 - `LogResource`
 
+`XotBaseMigration` risolve il modello dal file `create_{modello}_table`.
+La Resource non lo ricalca con `$model_class` sulla migration.
+
 ## Form / Table / Infolist
 
 Preferire triad schema dedicati (`*Form`, `*Table`, `*Infolist`) quando la Resource
@@ -39,6 +42,10 @@ cresce oltre pochi campi. Enum tipizzati al posto di option array.
 
 Ogni query Filament rispetta tenant + policy del modello owner. Nessun elenco
 cross-tenant per comodita admin.
+
+## Asset del pannello
+
+`header-actions-wrap.css` e' un asset Filament del modulo: sorgente in `resources/css/`, pubblicato da `FilamentAsset` in `public_html/assets/xot/`. Non va nell'`outDir` del tema Sixteen (`Themes/Sixteen/public`), che e' solo il prodotto di `vite build`.
 
 ## Related
 
