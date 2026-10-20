@@ -17,9 +17,12 @@ related:
 
 # Obiettivo
 
-Portare la logica applicativa dei moduli da classi `app/Services` a Actions con
-`Spatie\QueueableAction\QueueableAction`, mantenendo invariati i contratti dei
-caller, il comportamento di dominio, la persistenza, le policy e le integrazioni.
+Eliminare completamente `laravel/Modules/<modulo>/app/Services/`: ogni use-case
+applicativo deve vivere in una `Spatie\QueueableAction\QueueableAction` dentro
+`app/Actions`, mantenendo invariati i contratti dei caller, il comportamento di
+dominio, la persistenza, le policy e le integrazioni. Anche adapter, resolver,
+translator e client tecnici devono essere ricollocati in `Adapters`, `Contracts`,
+`Support` o `Infrastructure`; la cartella `Services/` non è un'eccezione.
 
 ## Domanda guida
 
@@ -32,7 +35,7 @@ devono restare nel loro confine?
 - nessuna migrazione meccanica per nome;
 - un use-case = una Action con `execute(...)`;
 - eliminare wrapper morti o duplicati invece di ricrearli;
-- mantenere `app/Services` per adapter/framework solo se motivato e documentato;
+- nessuna cartella `app/Services` deve restare, nemmeno per adapter/framework;
 - Filament usa esclusivamente wrapper `XotBase*` e delega la logica alle Actions;
 - ogni wave ha ownership disgiunta, story BMAD, verifica PHPStan/Pest e nota second brain;
 - nessuna modifica a `phpstan.neon`, baseline o contratti pubblici senza evidenza.
@@ -47,12 +50,14 @@ devono restare nel loro confine?
 
 ## Inventario verificato (ripasso disco vivo)
 
-I `*Service.php` applicativi sotto `Modules/*/app` sono a **zero**. `ProfileTest`
-in Services e' **GONE**. `Translators/*` e `Trend/Adapters/*` sotto Services sono
-**zombie delete-again** (DELETE gia' in [xot-small](../stories/services-to-actions-xot-small.story.md);
-vivo = `*TranslateAction` + `BuildTrendCollectionAction`) — mai relocate. Resta
-ratchet anti-merge. Dettaglio:
+Lo snapshot del 2026-10-20 mostra ancora le cartelle `Services/` per Geo, Notify
+e Xot: il precedente claim di zero servizi era stale. Geo contiene cinque classi
+(`BaseGeoService`, `GeoDataService`, `GeoDataValidator`, `GeoService`,
+`GoogleMapsService`) già coperte da Actions omonime/affini; Notify contiene un
+`.gitkeep`; Xot contiene `RouteService.php.bak`. Il piano corrente deve chiudere
+anche le directory vuote e i detriti non-PHP. Dettaglio storico:
 [services-to-actions-global-wave.story.md](../stories/services-to-actions-global-wave.story.md).
 
-Wave residua: delete-again se Translators/Trend riappaiono + guard anti-merge.
-Non aprire nuove "conversioni" di masse senza `rg` che dimostri un Service applicativo vivo.
+Wave residua: migrare/retargetare Geo, rimuovere i detriti e aggiungere il ratchet
+anti-merge. Non dichiarare completata la wave finché `find Modules -type d -path
+'*/app/Services'` è vuoto.

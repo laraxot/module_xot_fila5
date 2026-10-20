@@ -81,4 +81,3 @@ il 2026-10-14: 254 file `.md` in `docs/`, 71 voci nella radice, nessun `index.md
 - [PHPStan cleanup Xot app (2026-10-06)](stories/phpstan-cleanup-xot-app.story.md), [Xot rest](stories/phpstan-cleanup-xot-rest.story.md)
 - [Regressioni PHPStan su app (2026-10-08)](stories/phpstan-xot-app-regressions.story.md), [test senza assert (2026-10-08)](stories/phpstan-xot-tests-without-assertions.story.md)
 - [Da Services ad Actions: artisan](stories/services-to-actions-xot-artisan.story.md), [route](stories/services-to-actions-xot-route.story.md), [small](stories/services-to-actions-xot-small.story.md), [brainstorm wave](bmad/brainstorming-services-to-actions-wave.md)
-

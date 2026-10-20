@@ -50,17 +50,19 @@ asincrono esplicito e il payload è serializzabile/idempotente.
 **Conseguenze:** Filament mantiene feedback immediato per letture e validazioni;
 AI, media, geocoding, mail e SMS possono essere dispatchati in modo controllato.
 
-## ADR-003 — Adapter e framework services non diventano pseudo-Actions
+## ADR-003 — Nessun Services come contenitore tecnico
 
 **Stato:** Proposed
 
 **Decisione:** translator Laravel, driver Mail/SMS, client HTTP, resolver/registry,
-validator, strategy, trend adapter e streaming HTTP restano componenti tecnici.
-Se la cartella `Services` è vietata dal modulo, si ricollocano in `Adapters`,
-`Contracts`, `Support` o `Infrastructure` solo dopo verifica dei binding.
+validator, strategy, trend adapter e streaming HTTP restano componenti tecnici,
+ma non possono vivere in `app/Services`. Si ricollocano in `Adapters`, `Contracts`,
+`Support` o `Infrastructure`; le operazioni applicative che li orchestrano sono
+Queueable Actions.
 
-**Conseguenze:** il confine architetturale è leggibile; il nome `Service` residuo
-richiede una motivazione documentata, non una conversione cosmetica.
+**Conseguenze:** il confine architetturale è leggibile e verificabile con il solo
+path: la presenza di una directory `Services` è una violazione, anche quando non
+contiene classi PHP.
 
 ## ADR-004 — Eliminare duplicati prima di progettare nuove Actions
 
@@ -73,11 +75,11 @@ si rimuove il wrapper dopo i gate. Non si crea una terza implementazione.
 
 | Wave | Scope | Decisione | Gate |
 |---|---|---|---|
-| W0 | inventory 41 file, caller dinamici, binding | classify/retain/retire | rg, container, PHPStan |
-| W1 | Job, Tenant, Geo data, Xot duplicati, Media residui | consolidate/remove | PHPStan + Pest modulo |
-| W2 | AI, Notify send, Geo provider, Subtitle/Media I/O | split/migrate | sync + queue fake + idempotenza |
-| W3 | Xot/Lang framework-facing e residui UI | retain/relocate only if justified | bootstrap + Filament + PHPStan |
-| W4 | audit finale Modules/Themes/docs | close | full PHPStan, tests mirati, link/docs |
+| W0 | census reale, caller, binding e Action gemelle | classify/migrate/delete | rg, container, PHPStan |
+| W1 | Geo: 5 classi residue | retarget Actions, test, delete | Geo PHPStan + Pest |
+| W2 | directory vuote, `.gitkeep`, `.bak`, Facade e riferimenti residui | relocate/delete/retarget | rg path + autoload + Filament |
+| W3 | ratchet globale e docs owner Modules/Themes | prevent reintroduction | architecture test + docs checks |
+| W4 | audit finale | close only at zero Services dirs | full PHPStan, tests, links |
 
 ## Regola per ogni Service
 

@@ -142,4 +142,3 @@ Stickiness (solo edit ai canonici esistenti):
 - `Modules/Xot/tests` e `Modules/Cms/tests` hanno anche `pest.php` minuscolo (duplicato riportato dal pull); alcuni file in `Modules/Xot/docs/` contengono ancora marker di conflitto.
 - `worklog.py index` scrive i `.md` di `docs/worklog` senza frontmatter; `docs/worklog/2026/10/09/` fallisce `verify`.
 - Reindicizzazione QMD non ottenuta: `bash bashscripts/docs/llm-wiki-qmd.sh update` esce con 0 ma le quattro collezioni (`trade-fila5-prompts`, `-bashscripts`, `-modules`, `-wiki`) puntano a `/mnt/nas07/var/www/_bases/base_ptvx_fila5/...`, un altro progetto: 0 nuovi, 0 aggiornati, e una `search` sul testo nuovo non trova nulla. E' il caso descritto in `55-md-conventions.md` (un `update` senza errori non prova l'indicizzazione). Va ripuntato l'indice a questo repo: decisione dell'utente, non toccata qui.
-
