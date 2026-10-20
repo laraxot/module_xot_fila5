@@ -1,0 +1,94 @@
+---
+title: Wave globale Services verso Spatie Queueable Actions
+type: story
+module: Xot
+status: in-progress
+priority: high
+created: 2026-10-20
+updated: 2026-10-20
+tags: [bmad, services, queueable-action, planning, filament-blueprint]
+qmd: "services to actions global wave tenant geo xot notify zombies trend translators ratchet delete"
+related:
+  - ../bmad/brainstorming-services-to-actions-wave.md
+  - ../bmad/filament-blueprint.md
+  - ../bmad/services-to-queueable-actions-architecture.md
+  - ../bmad/services-to-queueable-actions-filament-blueprint.md
+  - ../bmad/services-to-queueable-actions-objective.md
+  - ./services-to-actions-xot-small.story.md
+  - ./phpstan-modules-zero-wave3.story.md
+  - ./phpstan-modules-zero-gate.story.md
+  - ../../Notify/docs/stories/services-to-actions-notify.story.md
+  - ../../Notify/docs/stories/phpstan-notificationmanager-service-removed.story.md
+  - ../../Tenant/docs/stories/services-to-actions-tenant.story.md
+  - ../../../../../bashscripts/docs/prompts/25-services-to-actions.md
+  - ../../../../../bashscripts/ai/wiki/rules/no-services-rule.md
+---
+
+# Wave globale: Services → Queueable Actions
+
+Fase BMAD: **planning** (brainstorm sintetizzato) → ready-for-dev.
+Brainstorm: [brainstorming-services-to-actions-wave.md](../bmad/brainstorming-services-to-actions-wave.md).
+
+## Perche'
+
+Regola religione: niente Service applicativi; un caso d'uso = una Action Spatie
+con `execute()`. I residui attuali sono quasi sempre **copie riesumate dal merge**
+di Actions gia' esistenti: convertire a tappeto duplica; la procedura e'
+**cerca Action → retarget chiamanti → delete Service**.
+
+## Stato misurato (disco vivo, 2026-10-20 post-PHPStan Modules zero)
+
+| Cluster | Stato | Prossimo passo |
+|---------|-------|----------------|
+| Notify / Geo / Tenant / Xot `*Service` applicativi / Lang / Media / Job / AI | **GONE** | chiuso (vedi verifica sotto) |
+| Notify `Services/NotificationManager` | **GONE** | vivo = `Actions\NotificationManager` tipizzato ([story](../../Notify/docs/stories/phpstan-notificationmanager-service-removed.story.md)) |
+| Xot `Services/ProfileTest.php` | **GONE** | eliminato questa sessione (stub spurio, 0 caller) |
+| Xot `Services/Translators/*` + `Services/Trend/Adapters/*` | **zombie delete-again** | **DELETE** (mai relocate): gia' deciso in [xot-small](./services-to-actions-xot-small.story.md); Actions vive = `Actions\Translation\*TranslateAction` + `Actions\Trend\BuildTrendCollectionAction`. Se un merge li riesuma → `rg` a zero → delete di nuovo |
+| `TermsOfService` Livewire | ritirato W0 REUSE | n/a |
+
+## Ordine di chiusura residua
+
+1. **Translators + Trend sotto `Xot/app/Services/`** — se presenti: **delete** (non relocate). Zero caller produzione; Trend e' gia' nel vendor Flowframe + `BuildTrendCollectionAction`; Translators erano stub. Owner delete: coordinatore (stessa decisione xot-small 2026-10-08).
+2. Delete detriti non-PHP (`*.bak`, `*.no`, `*.test`, `FileService.ot_action`, …) in Services quando sicuro.
+3. Ratchet arch/pest: **fatto** in `laravel/tests/Architecture/ModulesArchitectureTest.php` (gate cross-module; non sotto `Modules/Xot/tests/` perche' governa tutti i moduli). Vietati `Modules/*/app/Services/**/*Service.php` e ogni altro `*Service.php` applicativo sotto `Modules/*/app` (allowlist vuota post W0).
+4. Gate: [phpstan-modules-zero-gate](./phpstan-modules-zero-gate.story.md); `find … *Service.php` sotto `app/Services` vuoto.
+
+## Filament
+
+Ogni modulo owner: [filament-blueprint](../bmad/filament-blueprint.md) — form/page
+chiamano Actions, mai Service. Cms Appearance/Breadcrumb e' il canarino Tenant.
+
+## Acceptance
+
+- [x] Zero `*Service.php` applicativi sotto `Modules/*/app` (misura viva)
+- [x] Cartella `app/Services` senza PHP applicativo (zombie Translators/Trend ri-deleted; detriti non-PHP opzionali)
+- [x] Caller Filament/Data su Actions (Tenant canary = commenti `Was:` + `SaveTenantConfigAction` / `GetTenantConfigArrayAction`)
+- [x] Ratchet anti-riesumazione presente (`laravel/tests/Architecture/ModulesArchitectureTest.php`: vietati `Modules/*/app/Services/**/*Service.php` + ban globale `*Service.php` applicativi; allowlist solo `TermsOfService` Livewire)
+- [x] PHPStan perimetro toccato a 0 (`analyse Modules` file_errors 0, 2026-10-20); story per-modulo aggiornate
+- [x] Docs indice modulo linkano questa wave / brainstorm
+- [x] `ProfileTest.php` in Services **GONE**
+- [x] Translators/Trend Services: assenti sul disco vivo (policy delete-again se merge riesuma)
+
+## Verifica 2026-10-20 (wave delete/retarget)
+
+**Perche'**: i `*Service.php` riesumati dal pull erano copie morte di Actions gia' presenti; tenerli viola no-services e rischia doppia logica.
+
+| Cluster | Esito |
+|---------|--------|
+| Notify `SmsService` + `Services/NotificationManager` | **GONE**; canonico `Actions\NotificationManager::execute()` tipizzato |
+| Geo 5 Services | gia' assenti; rimosso residuo `GeoDataValidator.php` (successore `ValidateGeoDataIntegrityAction`) |
+| Tenant `TenantService` + `Services/Config/**` | **deleted**; chiamanti vivi = 0 |
+| Xot 9 Services | **deleted**; retarget: `Helpers/Helper.php` → `GetAllModelsByModuleNameAction` |
+| Xot `ProfileTest.php` | **GONE** (sessione corrente) |
+| Xot Translators/Trend Services | policy **DELETE** (zombie merge); Actions gia' presenti — non relocate |
+
+Residuo `*Service.php` applicativo in Modules: solo `User/.../TermsOfService.php` (Livewire, skip intenzionale).
+
+### Re-delete merge-zombie (stessa sessione, dopo wave4 PHPStan)
+
+| Residuo | Perche' esisteva | Esito |
+|---------|------------------|-------|
+| `Services/Translators/*` | stub mai chiamati; vivo = `Actions/Translation/*` | deleted |
+| `Services/Trend/Adapters/*` | terza copia; vivo = Flowframe + `Actions/Trend/*` | deleted |
+| `Services/ProfileTest.php` | stub `isSuperAdmin(): true` | deleted |
+| `FileService.ot_action` + `bashscripts/` + `cacheservice.md` sotto Services | bozza / pollution | deleted (tracciati); `RouteService.php.bak` untracked **non** cancellato |
