@@ -16,23 +16,23 @@ related:
 
 ## Scopo
 
-Portare a zero i Service applicativi senza rompere i caller: ogni classe viene
-letta per responsabilità, chiamanti e side effect; solo un use-case applicativo
-diventa una `Spatie\QueueableAction\QueueableAction`. Adapter, contract,
-resolver e translator restano nei loro confini se non sono use-case.
+Portare a zero le directory `Modules/*/app/Services` senza rompere i caller:
+ogni classe viene letta per responsabilità, chiamanti e side effect; ogni
+use-case applicativo diventa una `Spatie\QueueableAction\QueueableAction` e ogni
+componente tecnico viene ricollocato fuori da `Services`.
 
 ## Dipendenze e wave
 
-1. **Research:** inventario 41 file, riferimenti diretti/indiretti, Action già
-   esistenti, test e comportamento osservabile.
-2. **Wave A (parallela):** Lang, Job, Media, UI, Notify. Scope disgiunti per
-   modulo; ogni worker aggiorna caller, test e story del proprio modulo.
-3. **Wave B:** Geo e Tenant, dopo il gate della Wave A perché hanno resolver e
-   integrazioni condivise.
-4. **Wave C:** Xot, in seriale sulle classi condivise; prima adapter e registry,
-   poi eventuali use-case residui.
-5. **Wave D:** audit AI e rimozione dei residui morti, senza ricreare Service
-   già ritirati e senza spostare codice didattico nelle docs.
+1. **Research:** census live di directory, classi, FQCN, caller, binding, route,
+   config, test e Action già esistenti.
+2. **Wave A (parallela):** Geo data, Geo math e Geo provider HTTP; scope
+   separati per sottodominio, senza modifiche concorrenti agli stessi file.
+3. **Wave B:** retarget dei caller Filament/Folio/test e rimozione dei cinque
+   Geo Service dopo il gate A.
+4. **Wave C:** rimozione di `.gitkeep`, `.bak` e directory `Services` vuote;
+   ricerca globale di riferimenti residui e aggiornamento docs owner.
+5. **Wave D:** ratchet architetturale che fallisce su qualunque directory
+   `app/Services`, audit Modules/Themes e chiusura solo con conteggio zero.
 
 ## Gate per ogni step
 
@@ -46,6 +46,12 @@ Poi eseguire il test Pest mirato e verificare con `rg` i caller residui. Nessuna
 classe viene cancellata prima di avere zero riferimenti e una Action successora
 verificata. Per Filament, Resource e Widget restano su basi `XotBase*` e
 delegano alle Actions; non si trasferisce logica nei form/table hooks.
+Il gate strutturale è:
+
+```bash
+test -z "$(find Modules -type d -path '*/app/Services' -print -quit)"
+test -z "$(find Modules -type f -path '*/app/Services/*' -print -quit)"
+```
 
 ## Review avversariale
 
