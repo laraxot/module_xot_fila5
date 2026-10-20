@@ -42,6 +42,8 @@ Artefatti: `/tmp/phpstan_wave3.json` (62 byte), `/tmp/phpstan_wave3_human.txt`.
 Rimisura 2026-10-20 ~11:58: `/tmp/phpstan_perm_115824.json` — `file_errors` 0, `errors` 0, exit 0, banner `[OK] No errors`.
 Rimisura ~12:10: `/tmp/phpstan_ord_121026.json` — stesso esito (config `laravel/phpstan.neon` only).
 
+Rimisura 2026-10-20 dopo la wave di conflitti PHP: `./vendor/bin/phpstan analyse Modules --memory-limit=2G --no-progress` ha restituito `[OK] No errors`, exit `0`. Il run senza limite esplicito è stato interrotto dal kernel con `SIGKILL` durante la parallelizzazione: è un limite operativo di memoria/concorrenza, non una segnalazione PHPStan del codice. La verifica ripetibile usa comunque la configurazione centrale `laravel/phpstan.neon`, senza introdurre altri `.neon`.
+
 Controprova obbligatoria: **entrambi** json con `totals` e banner `[OK]` — un json vuoto/troncato non conta come vittoria ([11-phpstan.md](../../../../../bashscripts/docs/prompts/11-phpstan.md)).
 
 <!-- gateguard: append measure to existing wave3 story; linked from 00-INDEX/00-start; user permanent order phpstan+swarm+docs -->
