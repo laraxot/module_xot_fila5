@@ -60,3 +60,96 @@ BMAD aggiornati); l'implementazione parte solo aprendo esplicitamente una wave.
 Hub: [brainstorming](../livewire-to-filament-widgets-brainstorming.md),
 [filament-blueprint](../livewire-to-filament-widgets-filament-blueprint.md),
 [decision-log](../livewire-widget-decision-log.md).
+
+## Nota di verifica 2026-10-20 sera
+
+Fase BMAD: Document. Misure rifatte sul disco con `rg -P` e `find`, con
+controprova; i numeri sono volatili (piu' sessioni editano il repo). Interpretazione
+e fonti: [decision-log](../livewire-widget-decision-log.md), voce "Allineamento
+al canone 2026-05". Sintesi: la direttiva ripete il canone del 2026-05-28 (niente
+Livewire puro, solo dentro widget Filament, FO incluso); la lettura "FO resta
+KEEP" scritta sopra e' piu' debole del canone e non e' sostenuta da nessun uso.
+
+### Stato reale contro gli acceptance criteria
+
+- Baseline: **23** classi vive, non 28; **143** file in `*/Filament/Widgets`, non
+  ~168. Le 5 classi di W0 sono cancellate e committate (`e9f84faa1`).
+  Il criterio "baseline riproducibile" regge, i numeri vanno aggiornati.
+- "Ogni classe ha classificazione": la matrice dell'inventory raggruppa le classi
+  e tiene 4 `KEEP` senza uso (Toast, Cms `Page\Show`, Geo `FormSearchAddressCategories`,
+  Media `Card\Video\Clip`). La tabella qui sotto classifica per classe e li
+  sostituisce.
+- W0 `DONE` regge per le classi, non per le cartelle: restano **21** cartelle
+  (19 `app/Http/Livewire`, `UI/app/Livewire`, `User/app/Livewire`), 12 delle 19
+  con solo `.gitkeep` e `_components.json`.
+- Aperti tutti gli altri criteri; "scan finale senza custom Livewire residui" e'
+  falso finche' esistono le 23 classi e le 21 cartelle.
+
+### Classificazione per classe (23)
+
+Zero chiamanti di produzione per FQCN. Unico tag per alias: `<livewire:toast />`
+in `User/resources/views/components/layouts/main.blade.php:48`.
+
+| Componente | Gemello widget | Stato proposto | Rischio |
+|---|---|---|---|
+| UI `Toast` | `UI\ToastWidget`, gia' montato nel layout UI | REUSE+RETIRE (chiudere il tag User) | basso |
+| Cms `Page\Show` | nessuno | RETIRE (orfano) | basso |
+| Geo `FormSearchAddressCategories` | `LocationWidget` parziale | RETIRE (stub orfano); MIGRATE solo se il prodotto vuole address search FO | medio (decisione prodotto) |
+| Geo `Test` | `Xot\TestWidget`, `UI\TestWidget` | RETIRE | basso |
+| Job `Broad` | nessuno | RETIRE | basso |
+| Job `Job\Status` | `JobStatusWidget` | REUSE+RETIRE | basso |
+| Job `Schedule\Crud` | `ScheduleCrudWidget` | REUSE+RETIRE | basso |
+| Job `Schedule\Status` | `ScheduleStatusWidget` | REUSE+RETIRE | basso |
+| Media `Card\Video\Clip` | nessuno (vista mancante) | RETIRE | basso |
+| User `Auth\Login` | `Auth\LoginWidget` | REUSE+RETIRE | medio: il redirect per ruolo (`getRedirectUrl`) non ha equivalente nei widget |
+| User `Auth\Register` | `Auth\RegisterWidget` | REUSE+RETIRE | basso |
+| User `Auth\Logout` | `Auth\LogoutWidget` | REUSE+RETIRE | basso |
+| User `Auth\AuthLogout` | `Auth\AuthLogoutWidget` | REUSE+RETIRE | basso |
+| User `Auth\Passwords\Confirm` | nessuno (`PasswordResetConfirmWidget` ha altro scopo) | RETIRE o MIGRATE (decisione) | medio |
+| User `Auth\Passwords\Email` | `Auth\ForgotPasswordWidget` | REUSE+RETIRE | basso |
+| User `Auth\Passwords\Reset` | `Auth\ResetPasswordWidget` | REUSE+RETIRE | basso |
+| User `Auth\Verify` | nessuno | MIGRATE (nuovo `XotBaseWidget`) o RETIRE | medio |
+| User `Profile\DeleteAccount` | `Profile\DeleteAccountWidget`, non montato | REUSE+RETIRE, dopo averlo montato e testato | medio (azione distruttiva) |
+| User `Profile\SuperAdmin` | `Profile\SuperAdminWidget` | REUSE+RETIRE | basso |
+| User `Socialite\Buttons` | `Auth\SocialLoginWidget` | REUSE+RETIRE | basso |
+| User `Team\Change` | `Team\TeamChangeWidget` | REUSE+RETIRE | basso |
+| User `Livewire\Logout` | `LogoutWidget` | REUSE+RETIRE | basso |
+| Xot `XotBaseComponent` | n/a | RETIRE (zero sottoclassi, ultimo) | basso |
+
+Totali: 15 REUSE+RETIRE, 6 RETIRE, 2 da decidere (Confirm, Verify). `KEEP`: 0.
+
+### Ordine delle wave aggiornato
+
+Dentro una wave le lane disgiunte partono in ordine casuale; dipendenze e gate
+restano ordinati. Nessuna wave e' aperta da questa nota.
+
+1. **W1 stabilizzare:** chiudere gli eventuali merge aperti e capire perche' i
+   pull riportano i file ritirati (D e A alternati per Team\Change, Geo Test, Job
+   Status). Senza questo, ogni ritiro puo' essere annullato da un pull.
+2. **W2 ritiri a rischio basso:** lane disgiunte per modulo (UI Toast, Cms,
+   Geo Test, Job, Media, User Register/Logout/AuthLogout/Email/Reset/SuperAdmin/
+   Buttons/Team, Geo FormSearch dopo la decisione di prodotto). Xot
+   `XotBaseComponent` per ultimo e in seriale.
+3. **W3 auth a rischio medio (seriale):** `Verify`, `Passwords\Confirm`, redirect
+   per ruolo del `Login` portato nel widget, `DeleteAccountWidget` da montare e
+   testare prima di ritirare `Profile\DeleteAccount`.
+4. **W4 Volt/Folio:** il solo confine aperto. 7 classi Cms Volt e
+   `ProfileEditVoltComponent` (RETIRE), 15 pagine Folio in
+   `User/resources/views/pages`, `profile/edit` (714 righe) verso tre
+   `XotBaseSchemaWidget`. Richiede una decisione dell'utente sul confine.
+5. **W5 guardia:** cartelle assenti, `RegisterLivewireComponentsAction` ritirata,
+   test `NoLivewireDirectoriesInModulesTest` esteso a `UI/app/Livewire` e coerente
+   con i test di ritiro (Geo, Job, User, UI) che oggi pretendono presenza o assenza
+   opposte. `GetComponentsAction` ricrea la cartella sotto `Modules/` se manca
+   (righe 41-45): tenerlo lontano da questi path.
+
+### Stato finale
+
+Nessuna cartella `app/Http/Livewire` ne' `app/Livewire` sotto `laravel/Modules`,
+`.gitkeep` e `_components.json` compresi. Stessa forma della regola sui Service
+([epic-services-to-queueable-actions](../../../../../../bmad-output/epic-services-to-queueable-actions.md)).
+
+```bash
+find laravel/Modules -type d \( -path '*/app/Http/Livewire' -o -path '*/app/Livewire' \)   # oggi 21, atteso 0
+find laravel/Modules -type d -path '*/app/Http' | wc -l                                      # controprova: il find vede le cartelle
+```
