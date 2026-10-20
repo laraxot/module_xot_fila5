@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Services;
 
+use Spatie\QueueableAction\QueueableAction;
 use Exception;
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Illuminate\Contracts\Support\Renderable;
@@ -29,6 +30,8 @@ if (! defined('STDIN')) {
  */
 class ArtisanService
 {
+    use QueueableAction;
+
     /**
      * @throws FileNotFoundException
      */
@@ -174,7 +177,7 @@ class ArtisanService
          *
          * dddx([
          * 'file' => $file,
-         * 'views' => ThemeService::getDefaultViewArray(),
+ * 'views' => ThemeService::getDefaultViewArray(),
          * ]);
          */
         /**
@@ -286,5 +289,17 @@ class ArtisanService
          * catch (\Symfony\Component\Console\Exception\CommandNotFoundException $e) {
          * return '<br/>'.$command.' non effettuato';
          * }*/
+    }
+
+    /**
+     * QueueableAction execute method for ArtisanService.
+     * Executes an Artisan command.
+     *
+     * @param  string  $act
+     * @return string
+     */
+    public function execute(string $act): string
+    {
+        return $this->act($act);
     }
 }
