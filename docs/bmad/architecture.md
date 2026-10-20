@@ -18,6 +18,7 @@ related:
   - ../../app/Providers/XotBaseServiceProvider.php
   - ../../app/Filament/Resources/XotBaseResource.php
   - ../../app/Models/XotBaseModel.php
+status: draft
 ---
 
 # Xot — architettura

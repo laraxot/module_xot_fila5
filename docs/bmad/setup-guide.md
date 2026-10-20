@@ -12,6 +12,7 @@ module: "Xot"
 alias: "xot"
 documentation_date: "2026-05-27"
 bmad_version: "6.2.0"
+status: draft
 ---
 
 # Xot — BMAD Setup Guide
