@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "README"
 issues: []
 discussions: []
+status: stale
 ---
+
+> Nota 2026-10-14 (docs-audit): Il blocco 'Collegamenti tra versioni di README.md' (62 link non risolti) punta a percorsi di altri progetti (docs/moduli, patient, dental, isee) e la sezione STI cita il modulo Patient, che non esiste in questo progetto (Modules/ contiene 19 moduli, nessuno e Patient). L'elenco dei file e stato corretto il 2026-10-14. Contenuto non riscritto, verificare prima di usarlo.
 
 # Standard di Codice
 
@@ -15,9 +18,10 @@ Questa cartella contiene gli standard di codice e le convenzioni utilizzate nel 
 
 ## File Contenuti
 
-- `coding-standards.md` - Standard di codice generali
-- `phpstan-rules.md` - Regole PHPStan specifiche
-- `testing-standards.md` - Standard per i test
+- [coding-standards.md](coding-standards.md) - Standard di codice generali
+- [namespace-rules.md](namespace-rules.md) - Regole sui namespace
+- [naming-conventions.md](naming-conventions.md) - Convenzioni di nome
+- `phpstan-rules.md` e `testing-standards.md` erano elencati qui ma non esistono (verificato 2026-10-14 con `ls`); lo stato PHPStan vive in [../bmad/phpstan-status.md](../bmad/phpstan-status.md); `../phpstan/` contiene solo report per livello (evidence).
 
 ## Note
 
@@ -58,44 +62,44 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 * [README.md](../../../chart/docs/readme.md)
 * [README.md](../../../reporting/docs/readme.md)
 * [README.md](../../../gdpr/docs/phpstan/readme.md)
-* [README.md](../../../gdpr/docs/readme.md)
+* [README.md](../../../Gdpr/docs/readme.md)
 * [README.md](../../../notify/docs/phpstan/readme.md)
-* [README.md](../../../notify/docs/readme.md)
+* [README.md](../../../Notify/docs/readme.md)
 * [README.md](../../../xot/docs/filament/readme.md)
 * [README.md](../../../xot/docs/phpstan/readme.md)
 * [README.md](../../../xot/docs/exceptions/readme.md)
-* [README.md](../../../xot/docs/readme.md)
+* [README.md](../README.md)
 * [README.md](../../../xot/docs/standards/readme.md)
 * [README.md](../../../xot/docs/conventions/readme.md)
 * [README.md](../../../xot/docs/development/readme.md)
 * [README.md](../../../dental/docs/readme.md)
 * [README.md](../../../user/docs/phpstan/readme.md)
-* [README.md](../../../user/docs/readme.md)
-* [README.md](../../../user/docs/readme.md)
+* [README.md](../../../User/docs/readme.md)
+* [README.md](../../../User/docs/readme.md)
 * [README.md](../../../ui/docs/phpstan/readme.md)
-* [README.md](../../../ui/docs/readme.md)
+* [README.md](../../../UI/docs/README.md)
 * [README.md](../../../ui/docs/standards/readme.md)
 * [README.md](../../../ui/docs/themes/readme.md)
 * [README.md](../../../ui/docs/components/readme.md)
 * [README.md](../../../lang/docs/phpstan/readme.md)
-* [README.md](../../../lang/docs/readme.md)
+* [README.md](../../../Lang/docs/readme.md)
 * [README.md](../../../job/docs/phpstan/readme.md)
-* [README.md](../../../job/docs/readme.md)
+* [README.md](../../../Job/docs/readme.md)
 * [README.md](../../../media/docs/phpstan/readme.md)
-* [README.md](../../../media/docs/readme.md)
+* [README.md](../../../Media/docs/readme.md)
 * [README.md](../../../tenant/docs/phpstan/readme.md)
-* [README.md](../../../tenant/docs/readme.md)
+* [README.md](../../../Tenant/docs/README.md)
 * [README.md](../../../activity/docs/phpstan/readme.md)
-* [README.md](../../../activity/docs/readme.md)
+* [README.md](../../../Activity/docs/readme.md)
 * [README.md](../../../patient/docs/readme.md)
 * [README.md](../../../patient/docs/standards/readme.md)
 * [README.md](../../../patient/docs/value-objects/readme.md)
-* [README.md](../../../cms/docs/blocks/readme.md)
-* [README.md](../../../cms/docs/readme.md)
-* [README.md](../../../cms/docs/standards/readme.md)
-* [README.md](../../../cms/docs/content/readme.md)
-* [README.md](../../../cms/docs/frontoffice/readme.md)
-* [README.md](../../../cms/docs/components/readme.md)
+* [README.md](../../../Cms/docs/blocks/README.md)
+* [README.md](../../../Cms/docs/README.md)
+* [README.md](../../../Cms/docs/standards/README.md)
+* [README.md](../../../Cms/docs/content/README.md)
+* [README.md](../../../Cms/docs/frontoffice/README.md)
+* [README.md](../../../Cms/docs/components/README.md)
 * [README.md](../../../../themes/two/docs/readme.md)
 * [README.md](../../../../themes/one/docs/readme.md)
 

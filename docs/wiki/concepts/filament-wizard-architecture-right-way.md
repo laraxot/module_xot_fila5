@@ -11,7 +11,8 @@ updated: 2026-05-05
 tags: [filament, wizard, architecture, haswizard, zen]
 related:
   - concepts/filament-haswizard-traits-analysis.md
-  - ../../../../docs/wiki/concepts/filament-admin-pub-theme-wizard-boundary.md
+  - ../../../../../../docs/wiki/concepts/filament-admin-pub-theme-wizard-boundary.md
+status: draft
 ---
 
 # Filament Wizard Architecture - The Right Way

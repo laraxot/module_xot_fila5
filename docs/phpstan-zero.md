@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "phpstan zero 2026 09 07"
 issues: []
 discussions: []
+status: draft
 ---
 
 # PHPStan Zero — Xot Module (2026-09-07)
