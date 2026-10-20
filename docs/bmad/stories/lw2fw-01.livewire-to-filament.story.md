@@ -21,7 +21,7 @@ related:
   - ../../../.../Media/app/Http/Livewire
   - ../../../.../Ptv/app/Http/Livewire
   - ../../../.../Xot/app/Http/Livewire
-  - ../../../../../bashscripts/ai/wiki/rules/11-forms/no-module-livewire-use-filament-widgets.md
+  - ../../../../../../bashscripts/ai/wiki/rules/11-forms/no-module-livewire-use-filament-widgets.md
   - ../../../../User/docs/bmad/livewire-inventory.md
 qmd: "eliminare Modules app Http Livewire convertire Filament widget XotBaseWidget XotBaseSchemaWidget refactor"
 description: "Rimozione totale delle directory Modules/*/app/Http/Livewire (e User/app/Livewire): le classi già convertite in widget Filament vengono ritirate (gemelli SSoT), quelle ancora vive (FO/vista) vengono ritirate se senza punto di montaggio, e viene smontata la registrazione automatica RegisterLivewireComponentsAction."

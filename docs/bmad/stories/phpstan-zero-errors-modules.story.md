@@ -8,6 +8,10 @@ acceptance_criteria:
   - Docs moduli riorganizzate/aggiornate
 references:
   - /tmp/phpstan-full-output.txt
+type: story
+updated: 2026-10-07
+tags: [docs, xot, bmad]
+qmd: "phpstan zero errori su modules xot"
 ---
 
 # PHPStan zero errori su Modules
