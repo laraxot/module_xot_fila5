@@ -63,7 +63,7 @@ chiamano Actions, mai Service. Cms Appearance/Breadcrumb e' il canarino Tenant.
 - [x] Zero `*Service.php` applicativi sotto `Modules/*/app` (misura viva)
 - [x] Cartella `app/Services` senza PHP applicativo (zombie Translators/Trend ri-deleted; detriti non-PHP opzionali)
 - [x] Caller Filament/Data su Actions (Tenant canary = commenti `Was:` + `SaveTenantConfigAction` / `GetTenantConfigArrayAction`)
-- [x] Ratchet anti-riesumazione presente (`laravel/tests/Architecture/ModulesArchitectureTest.php`: vietati `Modules/*/app/Services/**/*Service.php` + ban globale `*Service.php` applicativi; allowlist solo `TermsOfService` Livewire)
+- [x] Ratchet anti-riesumazione presente (`laravel/tests/Architecture/ModulesArchitectureTest.php`: vietati `Modules/*/app/Services/**/*Service.php` + ban globale `*Service.php` applicativi; allowlist vuota post W0)
 - [x] PHPStan perimetro toccato a 0 (`analyse Modules` file_errors 0, 2026-10-20); story per-modulo aggiornate
 - [x] Docs indice modulo linkano questa wave / brainstorm
 - [x] `ProfileTest.php` in Services **GONE**
@@ -82,7 +82,7 @@ chiamano Actions, mai Service. Cms Appearance/Breadcrumb e' il canarino Tenant.
 | Xot `ProfileTest.php` | **GONE** (sessione corrente) |
 | Xot Translators/Trend Services | policy **DELETE** (zombie merge); Actions gia' presenti — non relocate |
 
-Residuo `*Service.php` applicativo in Modules: solo `User/.../TermsOfService.php` (Livewire, skip intenzionale).
+Residuo `*Service.php` applicativo in Modules: **0** (W0 ha ritirato anche il falso positivo Livewire TermsOfService).
 
 ### Re-delete merge-zombie (stessa sessione, dopo wave4 PHPStan)
 
