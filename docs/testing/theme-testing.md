@@ -1,3 +1,13 @@
+---
+title: "Testing del Tema"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, testing]
+qmd: "Testing del Tema"
+---
 # Testing del Tema
 
 ## Principi di Testing

@@ -1,3 +1,13 @@
+---
+title: "Regola Globale: Metodo getTableColumns per Filament Table"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, filament]
+qmd: "Regola Globale: Metodo getTableColumns per Filament Table"
+---
 # Regola Globale: Metodo getTableColumns per Filament Table
 
 ## Descrizione

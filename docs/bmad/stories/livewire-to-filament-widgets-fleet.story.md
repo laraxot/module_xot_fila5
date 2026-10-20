@@ -121,7 +121,10 @@ Totali: 15 REUSE+RETIRE, 6 RETIRE, 2 da decidere (Confirm, Verify). `KEEP`: 0.
 ### Ordine delle wave aggiornato
 
 Dentro una wave le lane disgiunte partono in ordine casuale; dipendenze e gate
-restano ordinati. Nessuna wave e' aperta da questa nota.
+restano ordinati. Nessuna wave e' aperta da questa nota. Questa numerazione
+sostituisce quella della tabella "Piano di esecuzione" sopra (dove Job era W1 e
+Cms/Geo/Media W2); il [piano di parallelizzazione](../livewire-widget-parallelization-plan.md)
+la richiama nella nota in testa.
 
 1. **W1 stabilizzare:** chiudere gli eventuali merge aperti e capire perche' i
    pull riportano i file ritirati (D e A alternati per Team\Change, Geo Test, Job

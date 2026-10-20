@@ -1,3 +1,13 @@
+---
+title: "PHPStan Analysis Report - 18 Agosto 2025"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "PHPStan Analysis Report - 18 Agosto 2025"
+---
 # PHPStan Analysis Report - 18 Agosto 2025
 
 ## 🚨 REGOLA CRITICA RISPETTATA 🚨

@@ -1,3 +1,13 @@
+---
+title: "Filament 4 + Laraxot Rules - Xot Module"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "Filament 4 + Laraxot Rules - Xot Module"
+---
 # Filament 4 + Laraxot Rules - Xot Module
 
 ## 🎯 Regole Fondamentali

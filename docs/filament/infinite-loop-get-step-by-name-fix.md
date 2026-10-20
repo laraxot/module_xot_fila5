@@ -1,3 +1,13 @@
+---
+title: "CRITICAL FIX: Loop Infinito in getStepByName() - XotBaseResource"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, filament]
+qmd: "CRITICAL FIX: Loop Infinito in getStepByName() - XotBaseResource"
+---
 # CRITICAL FIX: Loop Infinito in getStepByName() - XotBaseResource
 
 ## 🚨 **PROBLEMA CRITICO RISOLTO**

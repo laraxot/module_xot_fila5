@@ -1,3 +1,13 @@
+---
+title: "Architettura Modulo Xot"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, core]
+qmd: "Architettura Modulo Xot"
+---
 # Architettura Modulo Xot
 
 ## 🏗️ Panoramica Architetturale

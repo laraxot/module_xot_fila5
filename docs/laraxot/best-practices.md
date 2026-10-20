@@ -1,3 +1,13 @@
+---
+title: "Laraxot Best Practices"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, laraxot]
+qmd: "Laraxot Best Practices"
+---
 # Laraxot Best Practices
 
 ## Form Schema Best Practices

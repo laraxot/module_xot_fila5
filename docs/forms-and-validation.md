@@ -1,3 +1,13 @@
+---
+title: "Form e Validazione nel Progetto il progetto"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "Form e Validazione nel Progetto il progetto"
+---
 # Form e Validazione nel Progetto il progetto
 
 ## Filament Widgets vs Form Blade Tradizionali

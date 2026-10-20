@@ -1,3 +1,13 @@
+---
+title: "Ottimizzazioni Modulo Xot - DRY + KISS"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "Ottimizzazioni Modulo Xot - DRY + KISS"
+---
 # Ottimizzazioni Modulo Xot - DRY + KISS
 
 ## Panoramica

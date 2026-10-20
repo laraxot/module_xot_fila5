@@ -9,11 +9,15 @@ qmd: "Xot foundation module documentation index"
 
 # Xot: indice canonico
 
-Questo e' l'unico indice del modulo (contratto:
-[module-theme-docs-contract.md](../../../../bmad-output/docs-architecture/module-theme-docs-contract.md)).
+Questo e' l'indice operativo del modulo (contratto:
+[docs-organization.md](conventions/docs-organization.md)).
 `wiki/index.md` e `bmad/index.md` sono indici di sezione, non alternative a questo.
 Identita, ownership, quick start e limiti: [README.md](README.md). Stato verificato
 il 2026-10-14: 254 file `.md` in `docs/`, 71 voci nella radice, nessun `index.md` in radice.
+
+La docs locale è la fonte canonica; Hindsight/QMD recuperano decisioni e contesto
+ma non sono un archivio parallelo. Dopo una modifica si aggiorna il decision log
+dell'owner e si reindicizza solo il perimetro toccato.
 
 ## Canoniche (mantenute, da qui si parte)
 
@@ -26,6 +30,7 @@ il 2026-10-14: 254 file `.md` in `docs/`, 71 voci nella radice, nessun `index.md
 | [wiki/concepts/](wiki/concepts/) | 2 pagine reali: `claude-code-laraxot-rules-path-scoping.md`, `filament-wizard-architecture-right-way.md` |
 | [wiki/memories/index.md](wiki/memories/index.md) | 6 note di memoria del modulo |
 | [bmad/phpstan-status.md](bmad/phpstan-status.md) | stato vivo del gate PHPStan; **2026-10-20** `phpstan analyse Modules` → file_errors 0 (vedi wave3 sotto) |
+| [bmad/epic-code-quality-ratchet.md](bmad/epic-code-quality-ratchet.md) | epic (planned) del cricchetto di qualita': perche' PHPStan a 0 non prova il codice, sicurezza dei test, wave W0-W5, contatori che scendono |
 | [bmad/stories/](bmad/stories/) | 81 voci di story BMAD storiche (flotta PHPStan, export, docs); cronologia, non si rinumera |
 | [rules/](rules/) | 3 regole (`laraxot-rules.md`, `prompt-rules.md`, `xot-base-section-rule.md`) |
 | [investigation/](investigation/) | `investigation.md`, diagnosi non risolta |
@@ -70,10 +75,26 @@ il 2026-10-14: 254 file `.md` in `docs/`, 71 voci nella radice, nessun `index.md
 
 <!-- gateguard: append neon row; linked from AGENTS; user: "devi utilizzare laravel/phpstan.neon e solo io posso modificarlo, non puoi creare altri .neon" -->
 
+## Organizzazione delle docs (misura 2026-10-20)
+
+Numeri prima e dopo e decisioni aperte: [docs-organization-xot](stories/docs-organization-xot.story.md). Parita' dei Service: [services-parity-audit-xot](stories/services-parity-audit-xot.story.md).
+
+| Misura | Valore |
+|---|---|
+| File `.md` / di 0 byte (tracciati) | 2501 / 1626 (1612 vuoti sono citati da qualcuno e restano; 17 senza riferimenti cancellati) |
+| `.md` non vuoti senza frontmatter | 304 (solo `archive/`, `consolidated/`, `-integration/`, `_integration/` e poche story) |
+| Link relativi rotti | 1582 su 2336 controllati (stesso script prima e dopo: erano 1737 su 2412) |
+| Coppie che differiscono per le maiuscole | 10, tutte con la copia debole `status: superseded` e `superseded_by` verso la canonica |
+| Regola `.gitignore` di docs | `!stories/**/archive/`, `!stories/**/consolidated/` (e `bmad/stories/`): le story annidate non vengono piu' nascoste |
+
+Le copie superate restano per storia: `changelog.MD`, `REFACTOR-panelmixin.md`, `QA-VERIFICATION.md`, `index.md` (radice), `wiki/AGENTS.md`, `wiki/Architecture.md`, `wiki/concepts/INDEX.md`, `wiki/commands/INDEX.md`. Ingresso canonico: questo file e' l'indice operativo; `README.md` e `INDEX.md` rivendicano anch'essi un ruolo di ingresso (decisione aperta nella story).
+
 ## Story recenti
+- [Riordino della docs Xot: numeri prima e dopo](stories/docs-organization-xot.story.md) - vuoti, `.gitignore`, coppie di maiuscole, frontmatter, decisioni aperte
 - [PHPStan Modules zero gate](stories/phpstan-modules-zero-gate.story.md) — checkpoint: 0 errori, zero `*Service.php` applicativi, `NotificationManager::execute()` tipizzato; Translators/Trend = delete-again
 - [PHPStan Modules zero wave3](stories/phpstan-modules-zero-wave3.story.md) — gate json+`[OK]` verificato 2026-10-20; boy scout ProfileTest GONE + zombie Translators/Trend
 - [Wave globale Services→Actions](stories/services-to-actions-global-wave.story.md) — applicativi GONE; Translators/Trend delete (mai relocate)
+- [Parita' dei Service cancellati (epic Service verso QueueableAction, W2)](stories/services-parity-audit-xot.story.md) - scopo, tabella successori, conversioni finte e difetti da correggere; ready-for-dev
 - [Fleet Livewire → Filament Widgets](bmad/stories/livewire-to-filament-widgets-fleet.story.md) — planning ready-for-dev; W0 = REUSE gemelli (UI/Lang/legal)
 - [PHPStan Modules: test riespansi dopo il pull (2026-10-20)](stories/phpstan-test-wave-regression.story.md), [lane xot](stories/phpstan-test-wave-xot.story.md)
 - [Docs Xot: studio del codice e ingressi (2026-10-14)](stories/docs-xot-studio-e-ingressi.story.md)

@@ -1,3 +1,13 @@
+---
+title: "DIVIETO ASSOLUTO DI IMPLEMENTARE table()"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, filament]
+qmd: "DIVIETO ASSOLUTO DI IMPLEMENTARE table()"
+---
 # DIVIETO ASSOLUTO DI IMPLEMENTARE table()
 
 ## Regola Fondamentale Inviolabile

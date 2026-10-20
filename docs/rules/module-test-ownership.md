@@ -1,3 +1,13 @@
+---
+title: "Module test ownership"
+type: note
+status: unverified
+created: 2026-10-20
+updated: 2026-10-20
+module: Xot
+tags: [xot, rules]
+qmd: "Module test ownership"
+---
 # Module test ownership
 
 **Status:** canonical repository rule

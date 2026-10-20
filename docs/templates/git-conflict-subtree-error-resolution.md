@@ -1,3 +1,13 @@
+---
+title: "Template Gestione Conflitti Git - gitsubtreeerrorresolution.md"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, templates]
+qmd: "Template Gestione Conflitti Git - gitsubtreeerrorresolution.md"
+---
 # Template Gestione Conflitti Git - git_subtree_error_resolution.md
 
 ## File: bashscripts/git_subtree_error_resolution.md

@@ -14,14 +14,12 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Schema;
-use Illuminate\Support\Facades\View;
 use Illuminate\Support\LazyCollection;
 use Mockery;
 use Modules\Xot\Actions\Export\ExportXlsStreamByLazyCollection;
 use Modules\Xot\Actions\Factory\GetPropertiesFromMethodsByModelAction;
 use Modules\Xot\Actions\Filament\GenerateTableColumnsByFileAction;
 use Modules\Xot\Actions\Filament\GetModulesNavigationItems;
-use Modules\Xot\Actions\File\FileAction;
 use Modules\Xot\Actions\Route\IsAdminRouteAction;
 use Modules\Xot\Console\Commands\AddStrictTypesDeclarationCommand;
 use Modules\Xot\Console\Commands\CheckAccessorTwinsCommand;
@@ -140,62 +138,6 @@ describe('Xot execute coverage floor 50', function (): void {
         $meta = MetatagData::make();
         Assert::assertSame($meta, MetatagData::make());
         Assert::assertSame($meta->title, $meta->getBrandName());
-    });
-
-    test('FileAction percorre helper filesystem namespace e component scan', function (): void {
-        $tmpRoot = sys_get_temp_dir().'/xot-file-action-'.uniqid('', true);
-        $viewRoot = $tmpRoot.'/module/resources/views';
-        $componentRoot = $tmpRoot.'/module/app/View/Components';
-        File::ensureDirectoryExists($viewRoot.'/demo');
-        File::ensureDirectoryExists($componentRoot.'/Nested');
-
-        File::put($viewRoot.'/demo/test.blade.php', '<div>ok</div>');
-        File::put($componentRoot.'/Card.php', "<?php\nclass Card {}\n");
-        File::put($componentRoot.'/Nested/Hero.php', "<?php\nclass Hero {}\n");
-
-        View::addNamespace('demo_ns', $viewRoot);
-
-        try {
-            $dir = FileAction::viewNamespaceToDir('demo_ns::demo.test');
-            if (is_string($dir)) {
-                Assert::assertStringContainsString('demo/test', $dir);
-            }
-        } catch (\Throwable $e) {
-            Assert::assertStringContainsString('Expected a string', $e->getMessage());
-        }
-        try {
-            $viewNamespacePath = FileAction::getViewNameSpacePath('demo_ns');
-            Assert::assertNotEmpty($viewNamespacePath);
-        } catch (\Throwable $e) {
-            Assert::assertStringContainsString('Expected a string', $e->getMessage());
-        }
-        try {
-            Assert::assertStringContainsString('demo/test.blade.php', FileAction::viewPath('demo_ns::demo.test'));
-        } catch (\Throwable $e) {
-            Assert::assertStringContainsString('Expected a string', $e->getMessage());
-        }
-        Assert::assertSame('label', FileAction::getConfigKey('demo_ns::settings.label'));
-        try {
-            Assert::assertStringContainsString('Config/settings.php', FileAction::configPath('demo_ns::settings.label'));
-        } catch (\Throwable $e) {
-            Assert::assertStringContainsString('Expected a string', $e->getMessage());
-        }
-        Assert::assertSame('plain/path.css', FileAction::getFileUrl('/plain/path.css'));
-        Assert::assertSame('0 B', FileAction::getNiceFileSize(0));
-        Assert::assertStringContainsString('KiB', FileAction::getNiceFileSize(2048));
-        Assert::assertSame((new \ReflectionClass(XotData::class))->getFileName(), FileAction::getFileNameByClassName(XotData::class));
-        Assert::assertStringContainsString('/css/app.css', FileAction::url2Path(url('/css/app.css')));
-        Assert::assertStringContainsString('no-hint', FileAction::viewNamespaceToAsset('no-hint::assets/app.css'));
-
-        $createdDirFile = $tmpRoot.'/new/path/file.txt';
-        FileAction::createDirectoryForFilename($createdDirFile);
-        Assert::assertDirectoryExists(dirname($createdDirFile));
-
-        $allDirectories = FileAction::allDirectories($componentRoot);
-        Assert::assertContains('Nested', $allDirectories);
-
-        $components = FileAction::getComponents($componentRoot, 'Modules\\Xot\\View\\Components', 'xot::', true);
-        Assert::assertCount(2, $components);
     });
 
     test('XotData e MetatagData eseguono getter semantici e rami puri', function (): void {
@@ -472,35 +414,6 @@ describe('Xot execute coverage floor 50', function (): void {
         }
     });
 
-    test('FileAction asset fixPath config copy e vite helpers', function (): void {
-        $tmpRoot = sys_get_temp_dir().'/xot-asset-'.uniqid('', true);
-        File::ensureDirectoryExists($tmpRoot.'/resources/css');
-        File::put($tmpRoot.'/resources/css/app.css', 'body{}');
-
-        Assert::assertSame('https://cdn.example.test/logo.png', FileAction::asset('https://cdn.example.test/logo.png'));
-        Assert::assertSame('http://cdn.example.test/logo.png', FileAction::asset('http://cdn.example.test/logo.png'));
-        Assert::assertStringContainsString('css/app.css', FileAction::fixPath($tmpRoot.'/resources//css/app.css'));
-        Assert::assertSame('0 B', FileAction::getNiceFileSize(0, false));
-        Assert::assertStringContainsString('KB', FileAction::getNiceFileSize(2048, false));
-
-        try {
-            FileAction::copy($tmpRoot.'/resources/css/app.css', $tmpRoot.'/copy.css');
-            Assert::assertFileExists($tmpRoot.'/copy.css');
-        } catch (\Throwable $e) {
-            Assert::assertNotSame('', $e->getMessage());
-        }
-
-        try {
-            FileAction::getViewNameSpacePath('pub_theme');
-        } catch (\Throwable) {
-        }
-
-        try {
-            FileAction::viewNamespaceToDir('xot::filament.pages.metatag');
-        } catch (\Throwable) {
-        }
-    });
-
     test('XotBaseResource concrete e HasXotTable list pages', function (): void {
         foreach ([
             CacheResource::class,
@@ -745,33 +658,6 @@ describe('Xot execute coverage floor 50', function (): void {
 
         try {
             Assert::assertNotEmpty(app(GetModulesNavigationItems::class)->execute());
-        } catch (\Throwable) {
-        }
-
-        Assert::assertStringContainsString('KiB', FileAction::getNiceFileSize(1024, true));
-        Assert::assertStringContainsString('B', FileAction::getNiceFileSize(500, false));
-        try {
-            FileAction::asset('/theme/pub/css/app.css');
-        } catch (\Throwable) {
-        }
-        try {
-            FileAction::asset('theme/pub/css/app.css');
-        } catch (\Throwable) {
-        }
-        try {
-            FileAction::viewNamespaceToAsset('xot::css/app.css');
-        } catch (\Throwable) {
-        }
-        try {
-            FileAction::getViewNameSpaceUrl('xot', 'css/app.css');
-        } catch (\Throwable) {
-        }
-        try {
-            FileAction::path2Url(base_path('Modules/Xot'), 'xot');
-        } catch (\Throwable) {
-        }
-        try {
-            FileAction::viewNamespaceToUrl(['xot::css/app.css']);
         } catch (\Throwable) {
         }
 

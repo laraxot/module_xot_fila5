@@ -6,7 +6,7 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 ## Collegamenti
 
 ### Documentazione Correlata
-- [README](../readme.md) - Panoramica del modulo Xot
+- [README](../README.md) - Panoramica del modulo Xot
 - [Convenzioni di Naming](./naming_conventions.md) - Regole di naming per campi, classi e directory
 - [Struttura dei Moduli](./module_structure.md) - Convenzioni di struttura dei moduli
 - [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt

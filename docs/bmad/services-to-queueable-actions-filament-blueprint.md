@@ -35,7 +35,7 @@ Resource, Page, Widget o provider può reintrodurre `app/Services` come facciata
 | UI | Input | Action | Modalità |
 |---|---|---|---|
 | Filament AI proposal | dati redatti + policy | classify/suggest/confirm Action | sync review, queue provider |
-| Filament Geo selectors | codici regione/provincia | Geo data Actions | sync |
+| Filament Geo selectors | codici regione/provincia | `LoadGeoHierarchyAction` / GetRegions/Cities | sync (mai `Geo*Service`) |
 | Filament Notify | template, recipient, channel | Send notification/SMS Action | queue con idempotenza |
 | Filament Media | media + operation | Subtitle/convert Action | queue |
 | Filament Tenant | config value | Tenant config Action | sync, transazione controllata |
