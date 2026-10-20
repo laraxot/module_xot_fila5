@@ -32,7 +32,7 @@ class CustomRelationAction
             if (\in_array($keyName, array_keys($data), false)) {
                 app(UpdateAction::class)->execute($related, $data, []);
             } else {
-                dddx(['model' => $model, 'relationDTO' => $relationDTO]);
+                throw new \LogicException('Update\CustomRelationAction: rows without primary key not implemented, relation ['.$relationDTO->name.']');
             }
         }
     }

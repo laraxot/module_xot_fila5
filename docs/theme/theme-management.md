@@ -1,3 +1,13 @@
+---
+title: "Gestione del Tema"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, theme]
+qmd: "Gestione del Tema"
+---
 # Gestione del Tema
 
 ## Principi Fondamentali

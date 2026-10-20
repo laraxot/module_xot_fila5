@@ -1,3 +1,13 @@
+---
+title: "Convenzioni per la documentazione in Laraxot PTVX"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "Convenzioni per la documentazione in Laraxot PTVX"
+---
 # Convenzioni per la documentazione in Laraxot PTVX
 
 ## Convenzioni di naming

@@ -1,3 +1,13 @@
+---
+title: "errore di compatibilità nelle firme dei metodi"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, errors]
+qmd: "errore di compatibilità nelle firme dei metodi"
+---
 # errore di compatibilità nelle firme dei metodi
 
 ## problema

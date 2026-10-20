@@ -342,7 +342,7 @@ class XotData extends Data implements Wireable
 
     public function save(): void
     {
-        dddx('wip');
+        throw new \LogicException('XotData::save() not implemented');
     }
 
     public function getPubThemeViewPath(string $key = ''): string

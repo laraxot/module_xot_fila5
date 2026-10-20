@@ -1,3 +1,13 @@
+---
+title: "Sistema di Prompt per la Documentazione"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "Sistema di Prompt per la Documentazione"
+---
 # Sistema di Prompt per la Documentazione
 
 ## Panoramica

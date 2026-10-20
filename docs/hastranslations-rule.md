@@ -1,3 +1,13 @@
+---
+title: "🚨 REGOLA FONDAMENTALE: HasTranslations"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "🚨 REGOLA FONDAMENTALE: HasTranslations"
+---
 # 🚨 REGOLA FONDAMENTALE: HasTranslations
 
 ## Regola Critica

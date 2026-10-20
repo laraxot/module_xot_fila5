@@ -99,7 +99,7 @@ con collegamenti bidirezionali...
 ## Collegamenti
 - [Regole di Documentazione](../documentation_rules.md)
 - [Gestione della Documentazione](../DOCUMENTATION_MANAGEMENT.md)
-- [Best Practices](../best-practices.md)
+- [Best Practices](../../best-practices.md)
 
 ## Validazione e Correzione dei Percorsi
 

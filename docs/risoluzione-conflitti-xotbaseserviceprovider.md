@@ -1,3 +1,13 @@
+---
+title: "Risoluzione Conflitti in XotBaseServiceProvider"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "Risoluzione Conflitti in XotBaseServiceProvider"
+---
 # Risoluzione Conflitti in XotBaseServiceProvider
 
 ## File Coinvolto

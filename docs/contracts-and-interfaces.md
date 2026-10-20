@@ -1,3 +1,13 @@
+---
+title: "Xot Contracts and Interfaces Documentation"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "Xot Contracts and Interfaces Documentation"
+---
 # Xot Contracts and Interfaces Documentation
 
 **Last Updated**: 2025-01-23
