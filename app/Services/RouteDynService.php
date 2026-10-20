@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Services;
 
+use Spatie\QueueableAction\QueueableAction;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
@@ -16,6 +17,8 @@ use function Safe\preg_replace;
  */
 class RouteDynService
 {
+    use QueueableAction;
+    
     private static string $namespace_start = '';
 
     // Commentato: La proprietà $curr non viene mai letta, quindi potrebbe essere rimossa
@@ -364,6 +367,24 @@ class RouteDynService
             'update' => $prefix.'.update',
             'destroy' => $prefix.'.destroy',
         ];
+    }
+
+    /**
+     * QueueableAction execute method for RouteDynService.
+     * Accepts the parameters for dynamic_route and executes it.
+     *
+     * @param  array<int, array<string, mixed>>  $array
+     * @param  ?string  $namespace
+     * @param  ?string  $namespace_start
+     * @param  ?string  $curr
+     */
+    public function execute(
+        array $array,
+        ?string $namespace = null,
+        ?string $namespace_start = null,
+        ?string $curr = null,
+    ): void {
+        $this->dynamic_route($array, $namespace, $namespace_start, $curr);
     }
 
     // --------------------------------------------------
