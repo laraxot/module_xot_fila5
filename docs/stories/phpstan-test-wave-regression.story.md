@@ -73,3 +73,12 @@ Bucket; errori prima/dopo sui suoi file; cause corrette con conteggi; file neutr
 Da compilare a fine run.
 
 - Lane xot: 603 -> 0 errori sui 28 file del bucket (`phpstan analyse Modules/Xot` esce 0). Causa: test e infrastruttura di test di Xot riportati dal merge come bozze anteriori al ciclo verificato; ripristinate da `6c8a5bb3f` (18 test, `TestCase`, `CreatesApplication`) e correzioni sul posto per 5 sorgenti. Dettaglio e decisioni aperte (servizi risorti, `Helpers/Helper.php` maiuscolo): [phpstan-test-wave-xot.story.md](phpstan-test-wave-xot.story.md).
+
+## Nota OOM
+
+- 2026-10-20 12:27 UTC: `cd laravel && ./vendor/bin/phpstan analyse Modules` dell'utente termina con `Child process was killed by signal 9 (SIGKILL)` e "Result is incomplete because of severe errors". Non e' un errore di codice e non produce un conteggio.
+- Causa (dmesg/journal): il kernel ha ucciso `php8.4` (worker PHPStan, anon-rss ~535 MB) alle 12:27:28 per `global_oom`. Memoria: 91842 MiB totali, 5121 MiB disponibili, swap 8190/8191 MiB, PSI memoria some avg10=35.3 e full avg10=28.8.
+- In quei minuti giravano 3 `analyse Modules` completi in parallelo di altri strumenti (codex app-server due volte, opencode una), ciascuno con 18-20 worker (~8-11 GiB per run): 85 processi phpstan, ~26 GiB RSS. Le lane Claude facevano run piccoli.
+- `laravel/phpstan.neon` righe 12-14: `parallel`/`maximumNumberOfProcesses`/`jobSize`/`processTimeout` sono tutti commentati, quindi vale il default (nproc = 24, 18-20 worker).
+- Regola adottata: coda `flock` unica per ogni run su piu' di ~5 file, cartella, modulo o `Modules`, con controllo di run vivi e `MemAvailable` ([11-phpstan.md](../../../../../bashscripts/docs/prompts/11-phpstan.md#passi-metodo-swarm), [46-multi-agent-module-swarm.md](../../../../../bashscripts/docs/prompts/46-multi-agent-module-swarm.md)). Un run morto per SIGKILL non vale come misura.
+- Decisione aperta per l'utente (solo lui tocca il neon): attivare `parallel.maximumNumberOfProcesses` in `laravel/phpstan.neon` per limitare i worker per run. Gli agenti non modificano il file.
