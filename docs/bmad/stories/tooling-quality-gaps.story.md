@@ -13,7 +13,7 @@ status: ready
 track: quality/tooling
 qmd: "phpinsights install qmd embed backlog graphify update lento phpmd ruleset quality tooling gap"
 related:
-  - ../../../../../bashscripts/docs/prompts/03-quality-gates.md
+  - ../../../../../../bashscripts/docs/prompts/03-quality-gates.md
   - ../../../docs/bmad/stories/quality-gates-03-exec-improve.story.md
 ---
 

@@ -1,18 +1,14 @@
-<<<<<<< .merge_file_RrUMNO
-<<<<<<< .merge_file_ssppLM
-=======
-=======
->>>>>>> .merge_file_uTjUQw
 ---
-title: "Xot - docs-consolidation-orphan-files.story.md"
+title: "Docs consolidation — orphan files + structure normalization — 2026-10-06"
+type: story
 module: Xot
 bmad: true
-status: active
+status: in-progress
+updated: 2026-10-09
+tags: [docs, xot, bmad]
+qmd: "docs consolidation   orphan files + structure normalization   2026-10-06 xot"
 ---
-<<<<<<< .merge_file_RrUMNO
->>>>>>> .merge_file_YlRf72
-=======
->>>>>>> .merge_file_uTjUQw
+
 # Docs consolidation — orphan files + structure normalization — 2026-10-06
 
 ## Epic
