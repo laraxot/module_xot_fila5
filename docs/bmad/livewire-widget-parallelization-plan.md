@@ -16,6 +16,16 @@ related:
 
 # Piano di parallelizzazione
 
+> Nota di verifica 2026-10-20 sera: la seconda intestazione "Wave 4" e' ora
+> **Wave 7**; Job e' Wave 2 qui e W2 nella
+> [story](./stories/livewire-to-filament-widgets-fleet.story.md) (la vecchia tabella
+> della story con Job in W1 e' sostituita dalla sua nota di verifica). Mappa verso la
+> story: Wave 1 e Wave 2 = W2 (ritiri a basso rischio), Wave 3 = W2/W3 (auth a rischio
+> medio), Wave 7 = W5 (guardia). Le menzioni di 28 classi e di Toast `KEEP` in Wave 0
+> sono superate (oggi 23 classi, Toast e' REUSE+RETIRE): vedi il
+> [decision-log](./livewire-widget-decision-log.md), voce "Allineamento al canone
+> 2026-05".
+
 Questo documento applica BMAD Parallel Plan al blueprint di piattaforma. Le
 lane possono essere eseguite da subagent in ordine casuale **solo nella stessa
 wave** e solo con ownership disgiunta. Il coordinatore esegue gli scan globali
@@ -89,7 +99,7 @@ globali impediscono modifiche simultanee a `Xot/app/Filament/Widgets`, ai
 provider User, alle viste auth, all'header UI/Lang e ai widget Limesurvey
 consumati dinamicamente da Quaeris.
 
-## Wave 4 — ritiro e gate globali (seriale)
+## Wave 7 — ritiro e gate globali (seriale)
 
 - rimuovere discovery HTTP e alias solo dopo scan a zero riferimenti;
 - aggiornare gli indici docs del modulo/tema coinvolto;
