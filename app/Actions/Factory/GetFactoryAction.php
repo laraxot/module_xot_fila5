@@ -29,7 +29,9 @@ class GetFactoryAction
      * Resolve (or generate) the Eloquent factory for a model class.
      *
      * Scopo: unico punto di risoluzione per HasXotFactory (runtime). Per PHPStan
-     * nei test preferire `ModelFactory::new()` — `::factory()` resta dinamico.
+     * `Model::factory()` e' tipizzato dal resolver che `XotServiceProvider` registra con
+     * `Factory::guessFactoryNamesUsing()` e che usa `getFactoryClass()`: nei test non serve
+     * ripiegare su `ModelFactory::new()` ne' su `assert($x instanceof Model)`.
      *
      * @template TModel of Model
      *
