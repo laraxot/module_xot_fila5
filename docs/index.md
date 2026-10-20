@@ -20,10 +20,7 @@ marcati `superseded` o `stale`, non cancellati (regola BMAD).
 | Tema | File | Stato |
 |------|------|-------|
 | Base Resource (final methods, Form class contract) | [xot-base-resource-final-contract.md](./xot-base-resource-final-contract.md) | stable |
-<<<<<<< HEAD
 | PHPStan stato vivo | [bmad/phpstan-status.md](./bmad/phpstan-status.md) | active |
-=======
->>>>>>> laraxot/dev
 
 ## Storie correlate
 
