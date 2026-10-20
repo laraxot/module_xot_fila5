@@ -136,3 +136,99 @@ twins, confusione runtime≠residuo, FO forzato in panel, create invece di
 REUSE, dominio nel widget, ritiro con caller vivi. Insight operativi:
 correggere inventory legal → REUSE; W0–W1 caller-closure; gate “zero”
 esplicito; Action boundary su ogni MIGRATE; W3/W4 seriali dopo foglie.
+
+## [2026-10-20 sera] Allineamento al canone 2026-05
+
+**Fase BMAD:** Document (riverifica sul disco con `rg -P` e `find`, con controprova; nessun PHP).
+
+**Decision:** la direttiva di oggi ("non utilizziamo piu' componenti livewire ma
+utilizziamo al loro posto filament widget") ripete il canone dell'utente del
+2026-05-28 e non lo estende. Il canone dice: niente Livewire puro, Livewire solo
+dentro i widget Filament, front office incluso. Le voci di questo log che
+leggono l'ordine come "panel-first, FO resta KEEP" (planning refresh e reverse
+brainstorm del 2026-10-20) sono piu' deboli del canone e per il front office
+sono **superate**. Restano valide: il runtime Livewire interno a Filament non
+e' un residuo; il sostituto e' `XotBase*Widget`, mai `Filament\Widgets\Widget`
+diretto; il dominio sta in Action.
+
+**Perche' (fonti):**
+
+- `bashscripts/ai/wiki/rules/no-standalone-livewire-classes.md` riga 20: "Non
+  utilizziamo livewire puro. Lo utilizziamo solo dentro widget di Filament."
+  (utente, 2026-05-28);
+- `bashscripts/ai/wiki/concepts/no-pure-livewire-outside-filament-widgets.md`
+  riga 19: niente Livewire/Volt standalone nel front office (Folio, pagine CMS,
+  blocchi tema);
+- `stories/lw2fw-01.livewire-to-filament.story.md` riga 37: nessuna directory
+  `Modules/*/app/Http/Livewire/`, con guardia
+  `Xot/tests/Unit/NoLivewireDirectoriesInModulesTest.php`;
+- vantaggi (discovery, auth/tenancy, i18n, test, Action):
+  [livewire-widget-advantages.md](./livewire-widget-advantages.md).
+
+**Conteggi riverificati (sera):**
+
+- 23 classi custom vive, non 28: `find Modules \( -path '*/Http/Livewire/*.php'
+  -o -path '*/app/Livewire/*.php' \) ! -path '*/tests/*'` (senza il filtro
+  `tests` sono 25; Themes 0). Le 5 di W0 (Lang `Change`/`Switcher`, UI
+  `DarkModeSwitcher`, User `TermsOfService`/`PrivacyPolicy`) sono cancellate
+  e ora anche committate (`e9f84faa1`); prima erano solo `D` nel working tree.
+- 21 cartelle: 19 `app/Http/Livewire` piu' `UI/app/Livewire` e
+  `User/app/Livewire`. Dodici delle 19 non contengono nulla oltre a `.gitkeep`
+  e `_components.json` (cache di `GetComponentsAction`): sopravvivono a ogni
+  ritiro di classi, quindi lo stato finale va misurato sulle cartelle.
+- zero chiamanti di produzione per FQCN delle 23 (le sole occorrenze sono le
+  dichiarazioni `namespace`; controprova: la stessa regex le trova tutte). Per
+  alias resta un solo tag reale, `<livewire:toast />` in
+  `User/resources/views/components/layouts/main.blade.php:48`, mentre
+  `UI\Filament\Widgets\ToastWidget` e' gia' montato in
+  `UI/resources/views/components/layouts/main.blade.php:27`. Altri tag per alias
+  (`@livewire('test')` in Xot `admin/index/acts/test.blade.php`, wrapper Geo
+  `form_search_address_categories.blade.php`) puntano a uno stub (Geo `Test`) o
+  a un wrapper che nessuna vista usa; la raggiungibilita' della vista Xot
+  "acts" non e' verificata a runtime.
+- 143 file in `*/Filament/Widgets` (l'inventory dice ~168).
+- Volt: 7 classi Cms in `app/Http/Volt` e `User/app/View/Pages/ProfileEditVoltComponent`;
+  15 pagine Folio con `use Livewire\Volt\Component`, tutte in
+  `User/resources/views/pages` (piu' `genesis/power-ups` con `@volt` inline);
+  nessun Volt Blade fuori da User; `profile/edit` e' di 714 righe.
+
+**Cosa resta aperto:** solo Volt/Folio, cioe' l'unica superficie FO non-widget
+con traffico reale (le 15 pagine di User, `profile/edit`, `area-personale/*`).
+Nessun `KEEP` ha un uso reale: Toast ha il gemello gia' montato (REUSE+RETIRE);
+Cms `Page\Show`, Geo `FormSearchAddressCategories`, Media `Card\Video\Clip`
+non hanno chiamanti. Il verdetto `KEEP` nasceva da "e' forma di FO", non da un
+uso. Decisioni di prodotto aperte: Auth `Verify` e `Passwords\Confirm`
+(MIGRATE o RETIRE), address search FO. Dettaglio per componente nella
+[nota di verifica della story](./stories/livewire-to-filament-widgets-fleet.story.md).
+
+**Incoerenze documentali trovate (da sanare, non da cancellare):**
+
+1. due sezioni "Wave 4" nel piano di parallelizzazione, e Job e' W1 nella story
+   ma Wave 2 nel piano;
+2. la voce "Baseline 27" sopra dice "implementazione non avviata", mentre la story
+   segna W0 `DONE`: la voce e' storica;
+3. il prompt 05 si contraddice (`KEEP` per switcher, toast, logout, form
+   pubblici contro la tabella W0 che impone `REUSE`);
+4. `no-standalone-livewire-classes.md` riga 28 ammette `@volt` inline in Folio,
+   mentre il concept `no-pure-livewire-outside-filament-widgets.md` (riga 25) lo
+   vieta come sostituto di layout o componente UI;
+5. lw2fw-01 ha l'AC "nessuna directory" spuntato (riga 46) ma le cartelle sono
+   21; la guardia non copre `UI/app/Livewire`;
+6. test di ritiro con attese opposte (lettura statica, non eseguiti): Geo
+   `HttpLivewireTestRetiredTest` (righe 22-24) pretende
+   `FormSearchAddressCategories` viva, Xot `NoLivewireDirectoriesInModulesTest`
+   pretende zero cartelle, Job `JobExecuteCoverage50Test` (299-304) e User
+   `RetiredChromeLivewireTest` pretendono classi assenti che sono presenti;
+7. i file ritirati tornano con i pull: `git log --diff-filter=AD` mostra D e A
+   alternati per `User/.../Team/Change.php` (D 2026-09-21, A 2026-09-24),
+   `Geo/.../Test.php` (D 2026-09-21, A 2026-09-24) e `Job/.../Job/Status.php`
+   (D 2026-10-06, A 2026-10-08).
+
+**Stesso schema dei Service:** lo stato finale richiesto e' una condizione sulle
+cartelle (nessuna `app/Http/Livewire` ne' `app/Livewire`), non solo sulle classi;
+vedi `bmad-output/epic-services-to-queueable-actions.md` (righe 23 e 60) e il
+fenomeno dei file ritirati che tornano dal pull di `laraxot/dev`.
+
+**Next:** nessuna wave aperta; questa voce non autorizza edit PHP. Ordine
+aggiornato W1 stabilizzare, W2 ritiri a rischio basso, W3 auth, W4 Volt/Folio,
+W5 guardia: vedi la nota di verifica della story.

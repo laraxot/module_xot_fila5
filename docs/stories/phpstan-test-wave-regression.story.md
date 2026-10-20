@@ -70,7 +70,18 @@ Bucket; errori prima/dopo sui suoi file; cause corrette con conteggi; file neutr
 
 ## Esito
 
-Da compilare a fine run.
+Misura finale (2026-10-20, dopo la baseline di 10053 errori delle 09:00): `cd laravel && ./vendor/bin/phpstan analyse Modules --error-format=json` esce 0 con `totals` `errors` 0 e `file_errors` 0, nessun errore generale. Non e' un falso zero: 8855 file PHP nel perimetro, 251 s di CPU, circa 15000 voci di cache toccate, e lo stesso comando alle 09:00 dava 10053. Prima del run intero un giro modulo per modulo (19 moduli, ordine casuale, uno alla volta dal gate `flock` + `nice`) ha dato 18 moduli a 0 e un solo errore in Geo (`HereService` chiamava `TenantService`, rimosso dalla conversione dei Service), sparito con il ritiro di `HereService` e riconfermato a 0 su `Modules/Geo`. `laravel/phpstan.neon` non e' stato toccato dagli agenti (ultima modifica dell'utente, commit `606a380b6`, 10:28) e nessun `.neon` e' stato creato. Il run dell'utente delle 12:27 non conta: e' stato interrotto dall'OOM (vedi la nota sotto).
+
+Lane chiuse a 0 e riverificate dal coordinatore sui file del bucket: media-job (472), xot (603), tenant (764), user-b (1406), activity (605), notify-b (1175), ui (720), notify-a (1175), geo (483), user-a (1406). Restano da ricevere i report finali delle lane cms e gdpr-lang-ai, i cui moduli risultano pero' a 0 nel giro. Finche' un'altra lane o sessione scrive su `Modules/`, la misura vale per l'istante del run: rilanciare prima di dichiarare chiuso.
+
+Decisioni lasciate all'utente, raccolte dai report di lane:
+
+- `laraxot/dev` riporta a ogni pull test-bozza e `Services` gia' ritirati: senza riallineare il remoto o un guard architetturale la prossima merge riapre il problema.
+- Test messi in `skip` perche' il codice che provavano non esiste (corpi in git): Notify `Theme` ed `EmailTemplate` (tabelle senza migration), User `api/users`, Activity `LoginListener::handle()`.
+- Bug di prodotto non toccati: `SendNotificationAction::handle()` contro `execute()` della coda; `MailTemplateVersion` usa `template_id` ma le migration creano `mail_template_id`; `ChangeProfilePasswordAction` non chiede la password corrente; `Tenant` senza cast per `settings` e `trial_ends_at`.
+- `TestCase::setUp()` di User ha ancora un ripiego su SQLite, contro la regola MySQL.
+- `.gitignore` di modulo con `phpstan*` (Media, UI `docs/`) ignora le story di lane: servono `git add -f` o una modifica del pattern.
+- `.lock` tracciati in git nel repo Notify (4 file) e `.neon` di modulo arrivati col pull (Activity x5, User x2, Xot x3, Geo, Gdpr, Job, Cms, Setting): da togliere dal repo a cura tua.
 
 - Lane xot: 603 -> 0 errori sui 28 file del bucket (`phpstan analyse Modules/Xot` esce 0). Causa: test e infrastruttura di test di Xot riportati dal merge come bozze anteriori al ciclo verificato; ripristinate da `6c8a5bb3f` (18 test, `TestCase`, `CreatesApplication`) e correzioni sul posto per 5 sorgenti. Dettaglio e decisioni aperte (servizi risorti, `Helpers/Helper.php` maiuscolo): [phpstan-test-wave-xot.story.md](phpstan-test-wave-xot.story.md).
 
