@@ -12,7 +12,7 @@ related:
   - ./livewire-to-filament-widgets-brainstorming.md
   - ./livewire-to-filament-widgets-filament-blueprint.md
   - ./livewire-widget-decision-log.md
-  - ../../../../bashscripts/docs/prompts/05-livewire-to-filament-widgets.md
+  - ../../../../../bashscripts/docs/prompts/05-livewire-to-filament-widgets.md
 ---
 
 <!--

@@ -9,9 +9,11 @@ qmd: "xot modulo base XotBase classi base provider contratti quick start limiti 
 ---
 # Xot: documentazione
 
-Ingresso unico alla documentazione del modulo. L'indice operativo (cartelle
-canoniche, evidence, legacy) e [00-INDEX.md](00-INDEX.md); questo file dice che
-cosa e' il modulo e come si verifica. Fatti controllati sul codice il 2026-10-14.
+Ingresso unico alla documentazione del modulo. Convenzione naming/spine:
+[conventions/docs-organization.md](conventions/docs-organization.md).
+Indice operativo: [00-INDEX.md](00-INDEX.md) · spine navigabile: [INDEX.md](INDEX.md).
+
+Questo file dice che cosa e' il modulo e come si verifica.
 
 ## Identita e ownership
 
@@ -25,6 +27,8 @@ cosa e' il modulo e come si verifica. Fatti controllati sul codice il 2026-10-14
 - Ownership della documentazione: questa cartella. Le story del lavoro corrente
   stanno in [stories/](stories/), le decisioni in [decision-log.md](decision-log.md).
 - Regola test: [module-test-ownership.md](rules/module-test-ownership.md).
+- Religione no-services (hub): [bmad/brainstorming-services-to-actions-wave.md](bmad/brainstorming-services-to-actions-wave.md)
+  · story [stories/services-to-actions-global-wave.story.md](stories/services-to-actions-global-wave.story.md).
 
 ## Cosa contiene il codice (conteggi del 2026-10-14)
 
@@ -83,5 +87,5 @@ con la config unica. Per i test vedi la prima voce dei Limiti.
   `docs-organizer.py --busy-minutes 0`); cause e file in [00-INDEX.md](00-INDEX.md).
 
 Il contratto dei docs e in
-[module-theme-docs-contract.md](../../../../bmad-output/docs-architecture/module-theme-docs-contract.md);
+[docs-organization.md](conventions/docs-organization.md);
 l'indice generale del repo e [docs/README.md](../../../../docs/README.md).

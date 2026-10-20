@@ -1,3 +1,13 @@
+---
+title: "Analisi Completa del Codice - Sistema Laraxot"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "Analisi Completa del Codice - Sistema Laraxot"
+---
 # Analisi Completa del Codice - Sistema Laraxot
 
 ## Panoramica

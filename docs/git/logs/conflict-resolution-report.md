@@ -1,3 +1,13 @@
+---
+title: "Risoluzione Conflitti Git - Report di Intervento"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-18
+module: Xot
+tags: [xot, git]
+qmd: "Risoluzione Conflitti Git - Report di Intervento"
+---
 # Risoluzione Conflitti Git - Report di Intervento
 
 ## Panoramica

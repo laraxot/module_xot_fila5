@@ -1,3 +1,13 @@
+---
+title: "Guida PHPStan - Modulo Xot"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, development]
+qmd: "Guida PHPStan - Modulo Xot"
+---
 # Guida PHPStan - Modulo Xot
 
 ## 🎯 Principi Fondamentali

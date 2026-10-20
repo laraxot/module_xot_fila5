@@ -12,7 +12,7 @@ related:
   - ./livewire-widget-advantages.md
   - ./livewire-widget-decision-log.md
   - ./stories/livewire-to-filament-widgets-fleet.story.md
-  - ../../../../bashscripts/docs/prompts/05-livewire-to-filament-widgets.md
+  - ../../../../../bashscripts/docs/prompts/05-livewire-to-filament-widgets.md
 ---
 
 # Obiettivo

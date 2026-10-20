@@ -1,3 +1,13 @@
+---
+title: "Fix PHPStan Modelli - Generics e Tipizzazione Completa"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "Fix PHPStan Modelli - Generics e Tipizzazione Completa"
+---
 # Fix PHPStan Modelli - Generics e Tipizzazione Completa
 
 ## Data: 2025-01-27

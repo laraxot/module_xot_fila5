@@ -1,3 +1,13 @@
+---
+title: "Regole Generali di Comportamento"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, conventions]
+qmd: "Regole Generali di Comportamento"
+---
 # Regole Generali di Comportamento
 
 ## 1. Struttura del Codice

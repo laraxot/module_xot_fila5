@@ -1,3 +1,13 @@
+---
+title: "Regole per i file di traduzione in Laraxot PTVX"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, translations]
+qmd: "Regole per i file di traduzione in Laraxot PTVX"
+---
 # Regole per i file di traduzione in Laraxot PTVX
 
 ## Panoramica

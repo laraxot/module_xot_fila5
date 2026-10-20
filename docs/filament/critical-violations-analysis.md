@@ -1,3 +1,13 @@
+---
+title: "Analisi Violazioni Critiche XotBaseResource"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, filament]
+qmd: "Analisi Violazioni Critiche XotBaseResource"
+---
 # Analisi Violazioni Critiche XotBaseResource
 
 ## 🚨 Violazioni Identificate

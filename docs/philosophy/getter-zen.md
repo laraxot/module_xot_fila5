@@ -1,3 +1,13 @@
+---
+title: "La Filosofia Zen dei Getter Semantici"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, philosophy]
+qmd: "La Filosofia Zen dei Getter Semantici"
+---
 # La Filosofia Zen dei Getter Semantici
 
 ## Il Principio Fondamentale

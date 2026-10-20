@@ -147,10 +147,10 @@ done
 
 ## Collegamenti
 
-- [HasXotTable Trait](../app/Filament/Traits/HasXotTable.php)
+- [HasXotTable Trait](../../../app/Filament/Traits/HasXotTable.php)
 - [Filament Best Practices](./filament-best-practices.md)
 - [Testing Guidelines](./testing-guidelines.md)
-- [Git Conflict Resolution Guide](../../../bashscripts/docs/git-conflict-resolution-guide.md)
+- [Git Conflict Resolution Guide](../../../../../../bashscripts/docs/git-conflict-resolution-guide.md)
 
 ## Verifica Post-Fix
 

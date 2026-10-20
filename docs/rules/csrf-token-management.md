@@ -1,3 +1,13 @@
+---
+title: "Gestione Token CSRF nei Widget XotBase"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, rules]
+qmd: "Gestione Token CSRF nei Widget XotBase"
+---
 # Gestione Token CSRF nei Widget XotBase
 
 ## Descrizione

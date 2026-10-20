@@ -1,3 +1,13 @@
+---
+title: "Aggiornamento Linee Guida Critiche - Agosto 2025"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "Aggiornamento Linee Guida Critiche - Agosto 2025"
+---
 # Aggiornamento Linee Guida Critiche - Agosto 2025
 
 ## 1. VIOLAZIONE GRAVE: Cartella Docs Root

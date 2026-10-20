@@ -1,3 +1,13 @@
+---
+title: "Guida all'Installazione Base <nome progetto>"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, getting-started]
+qmd: "Guida all'Installazione Base <nome progetto>"
+---
 # Guida all'Installazione Base <nome progetto>
 
 ## Prerequisiti

@@ -1,3 +1,13 @@
+---
+title: "Risoluzione dei Conflitti di Merge nel Modulo Xot"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "Risoluzione dei Conflitti di Merge nel Modulo Xot"
+---
 # Risoluzione dei Conflitti di Merge nel Modulo Xot
 
 ## Problema

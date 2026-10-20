@@ -1,3 +1,13 @@
+---
+title: "NWIDART MODULAR STRUCTURE - CRITICAL RULE"
+type: note
+status: unverified
+created: 2026-10-20
+updated: 2026-10-20
+module: Xot
+tags: [xot, rules]
+qmd: "NWIDART MODULAR STRUCTURE - CRITICAL RULE"
+---
 # NWIDART MODULAR STRUCTURE - CRITICAL RULE
 
 **STATUS**: MANDATORY - Violation = Architect Error  

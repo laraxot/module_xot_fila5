@@ -1,3 +1,13 @@
+---
+title: "Testing del Brand"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, testing]
+qmd: "Testing del Brand"
+---
 # Testing del Brand
 
 ## Principi di Testing

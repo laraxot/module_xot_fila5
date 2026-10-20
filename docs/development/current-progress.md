@@ -1,3 +1,13 @@
+---
+title: "Stato Attuale del Progetto (15 marzo 2024)"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, development]
+qmd: "Stato Attuale del Progetto (15 marzo 2024)"
+---
 # Stato Attuale del Progetto (15 marzo 2024)
 
 ## Correzioni PHPStan Completate
