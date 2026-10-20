@@ -8,6 +8,7 @@ use Exception;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 
 use function count;
 
@@ -80,7 +81,6 @@ class RouteService
         $route_params = [];
         if ($route_current instanceof \Illuminate\Routing\Route) {
             $route_params = $route_current->parameters();
-            $routename = $route_current->getName();
         }
 
         /*
@@ -336,9 +336,9 @@ class RouteService
         $tmp_arr = explode('\\', $controllerName);
 
         $params = getRouteParameters();
-        [$containers, $items] = params2ContainerItem($params);
+        [$containers] = params2ContainerItem($params);
 
-        $params['containers'] = implode('.', $containers);
+        $params['containers'] = implode('.', array_map(SafeStringCastAction::cast(...), $containers));
 
         return collect($tmp_arr)
             ->filter(static fn($item): bool => !\in_array($item, ['Module', 'Item'], false))
