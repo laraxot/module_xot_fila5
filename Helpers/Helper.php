@@ -164,17 +164,6 @@ if (! function_exists('dddx')) {
     function dddx(mixed $params): string
     {
         $tmp = debug_backtrace();
-        $file = $tmp[0]['file'] ?? 'file-unknown';
-        $file = str_replace('/', DIRECTORY_SEPARATOR, $file);
-
-        Assert::string($doc_root = $_SERVER['DOCUMENT_ROOT'], __FILE__.':'.__LINE__.' - Helper');
-        $doc_root = str_replace('/', DIRECTORY_SEPARATOR, $doc_root);
-
-        $dir_piece = explode(DIRECTORY_SEPARATOR, __DIR__);
-        $dir_piece = array_slice($dir_piece, 0, -6);
-
-        $dir_copy = implode(DIRECTORY_SEPARATOR, $dir_piece);
-        $file = str_replace($dir_copy, $doc_root, $file);
 
         if (! defined('LARAVEL_START')) {
             define('LARAVEL_START', microtime(true));
@@ -238,6 +227,9 @@ if (! function_exists('dddx')) {
  */
 
 if (! function_exists('getFilename')) {
+    /**
+     * @param  array<string, mixed>  $params
+     */
     function getFilename(array $params): string
     {
         $tmp = debug_backtrace();
@@ -261,7 +253,7 @@ if (! function_exists('req_uri')) {
 
 if (! function_exists('in_admin')) {
     /**
-     * ---.
+     * @param  array<string, mixed>  $params
      */
     function in_admin(array $params = []): bool
     {
@@ -271,7 +263,7 @@ if (! function_exists('in_admin')) {
 
 if (! function_exists('inAdmin')) {
     /**
-     * ---.
+     * @param  array<string, mixed>  $params
      */
     function inAdmin(array $params = []): bool
     {
@@ -389,7 +381,8 @@ if (! function_exists('isItem')) {
 
 if (! function_exists('params2ContainerItem')) {
     /**
-     * @return array<array>
+     * @param  array<string, mixed>|null  $params
+     * @return array{0: array<int|string, mixed>, 1: array<int|string, mixed>}
      */
     function params2ContainerItem(?array $params = null): array
     {
@@ -408,19 +401,15 @@ if (! function_exists('params2ContainerItem')) {
         $container = [];
         $item = [];
         foreach ($params as $k => $v) {
-            $pattern = '/(container|item)(\d+)/';
-            preg_match($pattern, $k, $matches);
+            preg_match('/(container|item)(\d+)/', $k, $matches);
+            if (! isset($matches[1], $matches[2])) {
+                continue;
+            }
 
-            if (
-                ! empty($matches) &&
-                    isset($matches[1], $matches[2]) &&
-                    is_string($matches[1]) &&
-                    is_string($matches[2])
-            ) {
-                $sk = $matches[1];
-                $sv = $matches[2];
-                // @phpstan-ignore offsetAccess.nonOffsetAccessible
-                ${$sk}[$sv] = $v;
+            if ($matches[1] === 'container') {
+                $container[$matches[2]] = $v;
+            } else {
+                $item[$matches[2]] = $v;
             }
         }
 
@@ -429,6 +418,9 @@ if (! function_exists('params2ContainerItem')) {
 }
 
 if (! function_exists('getModelFields')) {
+    /**
+     * @return array<int, string>
+     */
     function getModelFields(Model $model): array
     {
         return $model->getConnection()->getSchemaBuilder()->getColumnListing($model->getTable());
@@ -541,7 +533,6 @@ if (! function_exists('getModuleNameFromModelName')) {
 if (! function_exists('getTransformerFromModel')) {
     function getTransformerFromModel(object $model, string $type = 'Resource'): mixed
     {
-        $class = $model::class;
         $module_name = getModuleNameFromModel($model);
         $transformer = '\\Modules\\'.$module_name.'\Transformers\\'.class_basename($model).''.$type;
         // dddx($transformer.' '.class_exists($transformer));
@@ -554,9 +545,19 @@ if (! function_exists('getTransformerFromModel')) {
 }
 
 if (! function_exists('getAllModules')) {
+    /**
+     * @return array<string, \Nwidart\Modules\Module>
+     */
     function getAllModules(): array
     {
-        return Module::all();
+        $modules = [];
+        foreach (Module::all() as $name => $module) {
+            if (is_string($name) && $module instanceof Nwidart\Modules\Module) {
+                $modules[$name] = $module;
+            }
+        }
+
+        return $modules;
     }
 }
 
@@ -607,6 +608,8 @@ if (! function_exists('getAllModulesModels')) {
 
 if (! function_exists('getModuleModels')) {
     /**
+     * @return array<string, class-string>
+     *
      * @throws ReflectionException
      */
     function getModuleModels(string $module): array
@@ -664,7 +667,7 @@ if (! function_exists('deltaTime')) {
 if (! function_exists('bracketsToDotted')) {
     // privacies[111][pivot][title] => privacies.111.pivot.title
 
-    function bracketsToDotted(string $str, string $_quotation_marks = ''): string
+    function bracketsToDotted(string $str): string
     {
         return str_replace(['[', ']'], ['.', ''], $str);
     }
@@ -672,7 +675,7 @@ if (! function_exists('bracketsToDotted')) {
 
 if (! function_exists('dottedToBrackets')) {
     // privacies.111.pivot.title => privacies[111][pivot][title]
-    function dottedToBrackets(string $str, string $_quotation_marks = ''): string
+    function dottedToBrackets(string $str): string
     {
         return collect(explode('.', $str))
             ->map(static fn (string $v, $k): string => $k === 0 ? $v : ('['.$v.']'))
@@ -681,6 +684,11 @@ if (! function_exists('dottedToBrackets')) {
 }
 
 if (! function_exists('array_merge_recursive_distinct')) {
+    /**
+     * @param  array<array-key, mixed>  $array1
+     * @param  array<array-key, mixed>  $array2
+     * @return array<array-key, mixed>
+     */
     function array_merge_recursive_distinct(array &$array1, array &$array2): array
     {
         $merged = $array1;
@@ -699,6 +707,8 @@ if (! function_exists('array_merge_recursive_distinct')) {
 
 if (! function_exists('getRelationships')) {
     /**
+     * @return list<array{name: string, type: string, model: class-string}>
+     *
      * @throws ReflectionException
      */
     function getRelationships(Model $model): array
@@ -722,20 +732,13 @@ if (! function_exists('getRelationships')) {
 
             try {
                 $return = $reflection->invoke($model);
-                $check = $return instanceof Relation;
-                /*
-                if ($check) {
-                    $related_model = new ReflectionClass($return->getRelated())->getName();
-                    $msg = [
+                if ($return instanceof Relation) {
+                    $data[] = [
                         'name' => $reflection->name,
                         'type' => class_basename($return),
-                        // 'check'=>$check,
-                        // $msg['type']=(new \ReflectionClass($return))->getShortName();
-                        'model' => $related_model,
+                        'model' => $return->getRelated()::class,
                     ];
-                    $data[] = $msg;
                 }
-                    */
             } catch (Throwable $e) {
                 // Gestione generica delle eccezioni che potrebbero verificarsi durante l'analisi delle relazioni
                 // Log::debug(['error' => $e->getMessage(), 'file' => $e->getFile(), 'line' => $e->getLine()]);
@@ -784,6 +787,9 @@ if (! function_exists('getRelationships')) {
  */
 
 if (! function_exists('removeQueryParams')) {
+    /**
+     * @param  array<int, string>  $params
+     */
     function removeQueryParams(array $params = []): string
     {
         $url = url()->current(); // get the base URL - everything to the left of the "?"
@@ -811,6 +817,9 @@ if (! function_exists('removeQueryParams')) {
  * 2. https://example.com/orders/123?order=ABC009&status=shipped&coupon=CCC2019
  */
 if (! function_exists('addQueryParams')) {
+    /**
+     * @param  array<string, mixed>  $params
+     */
     function addQueryParams(array $params = []): string
     {
         $query = array_merge((array) request()->query(), $params); // merge the existing query parameters with the ones we want to add
@@ -861,6 +870,9 @@ if (! function_exists('isJson')) {
  * }
  */
 if (! function_exists('getRouteParameters')) {
+    /**
+     * @return array<string, mixed>
+     */
     function getRouteParameters(): array
     {
         $route = request()->route();
@@ -868,7 +880,14 @@ if (! function_exists('getRouteParameters')) {
             return [];
         }
 
-        return $route->parameters();
+        $parameters = [];
+        foreach ($route->parameters() as $name => $value) {
+            if (is_string($name)) {
+                $parameters[$name] = $value;
+            }
+        }
+
+        return $parameters;
     }
 }
 
@@ -926,6 +945,8 @@ if (! function_exists('getModTradFilepath')) {
 if (! function_exists('is_active')) {
     /**
      * Determines if the given routes are active.
+     *
+     * @param  array<int, string>  $routes
      */
     function is_active(array $routes): bool
     {
@@ -1005,7 +1026,9 @@ if (! function_exists('secondsToHms')) {
 
 if (! function_exists('rowsToSql')) {
     /**
-     * Undocumented function.
+     * Sostituisce i binding nella query e restituisce l'SQL risultante.
+     *
+     * @param  HasOne<Model, Model>|Builder|\Illuminate\Database\Eloquent\Builder<Model>  $rows
      */
     function rowsToSql(HasOne|Builder|Illuminate\Database\Eloquent\Builder $rows): string
     {
@@ -1058,6 +1081,9 @@ if (! function_exists('str_limit')) {
 }
 
 if (! function_exists('inArrayBetween')) {
+    /**
+     * @param  array<int, array<string, int>>  $data
+     */
     function inArrayBetween(
         int $curr,
         array $data,
@@ -1082,6 +1108,9 @@ if (! function_exists('inArrayBetween')) {
 }
 
 if (! function_exists('inArrayBetweenKey')) {
+    /**
+     * @param  array<int, array<string, int>>  $data
+     */
     function inArrayBetweenKey(
         int $curr,
         array $data,
@@ -1113,6 +1142,9 @@ if (! function_exists('is_base64')) {
 }
 
 if (! function_exists('recursive_unset')) {
+    /**
+     * @param  array<array-key, mixed>  $array
+     */
     function recursive_unset(array &$array, string $unwanted_key): void
     {
         unset($array[$unwanted_key]);

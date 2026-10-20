@@ -16,11 +16,7 @@ class UrlService
 {
     private static null|self $instance = null;
 
-    public function __construct()
-    {
-        // ---
-        include_once __DIR__ . '/vendor/autoload.php';
-    }
+    public function __construct() {}
 
     public static function getInstance(): self
     {
