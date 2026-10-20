@@ -9,6 +9,12 @@ related:
   - architecture/module-boundary.md
   - architecture/composite-filter-column-span.md
   - architecture/sync-modules-cli.md
+  - app/Providers/XotBaseServiceProvider.php
+  - app/Filament/Resources/XotBaseResource.php
+  - app/Models/XotBaseModel.php
+  - ../../app/Providers/XotBaseServiceProvider.php
+  - ../../app/Filament/Resources/XotBaseResource.php
+  - ../../app/Models/XotBaseModel.php
   - ../../app/Providers/XotBaseServiceProvider.php
   - ../../app/Filament/Resources/XotBaseResource.php
   - ../../app/Models/XotBaseModel.php
@@ -112,6 +118,39 @@ Ogni risorsa concreta segue il pattern: `Resource.php` + `Pages/` + `Schemas/For
 ## Verifica link
 
 I link relativi puntano a file esistenti in questo modulo. Vedasi `README.md` per lo story index e `discussions/01-traits-composition.md` per il contesto architetturale.
+# Architettura del modulo Xot
+
+## Overview
+
+[DA COMPLETARE]
+
+## Componenti principali
+
+### Actions
+Azioni eseguibili (Queueable Actions) per la logica di business.
+
+### Resources
+Risorse Filament per il pannello di amministrazione.
+
+### Widget
+Widget Filament per dashboard e pannelli.
+
+### Models
+Modelli Eloquent per l'interazione con il database.
+
+### Contracts
+Interfacce per l'iniezione di dipendenze.
+
+## Flussi di dati
+
+[DA COMPLETARE]
+
+## Pattern utilizzati
+
+- Action invece di Service
+- Filament Widget invece di Livewire
+- Array una chiave per riga
+- Schema-driven Forms (XotBaseSchemaWidget)
 
 ## Pattern utilizzati
 

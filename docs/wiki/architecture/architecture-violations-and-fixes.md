@@ -7,6 +7,7 @@ type: reference
 tags: [wiki, no-frontmatter-fix]
 created: 2026-08-24
 updated: 2026-08-24
+status: draft
 ---
 
 # Violazioni Architetturali e Correzioni - Pattern XotData
@@ -343,8 +344,8 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 
 ### **Esempi Implementazione**
 - [CreateUserAction](../app/Actions/Socialite/CreateUserAction.php)
-- [XotBaseMigration](../app/Database/Migrations/XotBaseMigration.php)
-- [IsTenant Trait](../../User/app/Models/Traits/IsTenant.php)
+- [XotBaseMigration](../../../app/Database/Migrations/XotBaseMigration.php)
+- [IsTenant Trait](../../../../User/app/Models/Traits/IsTenant.php)
 
 ### **Documentazione Moduli**
 - [Cms Architecture](../../Cms/project_docs/architecture-xotdata-pattern.md)

@@ -4,6 +4,8 @@ type: reference
 tags: [wiki, no-frontmatter-fix]
 created: 2026-08-24
 updated: 2026-08-24
+status: draft
+qmd: "architettura xot xot"
 ---
 
 # Architettura Xot
@@ -51,5 +53,5 @@ return new class() extends XotBaseMigration {
 
 ## Collegamenti
 
-- [Xot Principale](../README.md)
-- [Filament](../filament/)
+- [Xot Principale](../readme.md)
+- [Filament](../../filament)

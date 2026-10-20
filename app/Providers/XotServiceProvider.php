@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Providers;
 
 use Composer\Autoload\ClassLoader;
+use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\Exports\Jobs\CreateXlsxFile;
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\DateTimePicker;
@@ -27,6 +28,7 @@ use Modules\Xot\Actions\PaDesignColorsAction;
 use Modules\Xot\Console\Commands\GenerateFilamentResources;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Exports\Jobs\XotCreateXlsxFile;
+use Modules\Xot\Filament\Traits\HasXotTable;
 use Modules\Xot\View\Composers\XotComposer;
 use Webmozart\Assert\Assert;
 
@@ -54,6 +56,7 @@ class XotServiceProvider extends XotBaseServiceProvider
         $this->registerTimezone();
         $this->registerFilamentMacros();
         $this->registerPaFilamentColors();
+        $this->registerBulkDeleteAuthorization();
         $this->registerXotLivewireComponents();
         $this->registerProviders();
     }
@@ -126,6 +129,17 @@ class XotServiceProvider extends XotBaseServiceProvider
         );
         TimePicker::configureUsing(fn (TimePicker $component) => $component->timezone($timezone));
         TextColumn::configureUsing(fn (TextColumn $column) => $column->timezone($timezone));
+    }
+
+    /**
+     * Eliminazione di gruppo: Filament autorizza una volta sola con `deleteAny()`, che 35 policy del progetto non definiscono (audit DCP-181, A-1).
+     * Un solo punto per tutti i siti, presenti e futuri: ogni record passa da `delete()` se il modello ha una policy.
+     */
+    public function registerBulkDeleteAuthorization(): void
+    {
+        DeleteBulkAction::configureUsing(
+            fn (DeleteBulkAction $action): DeleteBulkAction => $action->authorizeIndividualRecords(HasXotTable::bulkDeleteRecordAuthorization()),
+        );
     }
 
     /**

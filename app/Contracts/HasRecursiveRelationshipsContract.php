@@ -7,7 +7,6 @@ namespace Modules\Xot\Contracts;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Database\Query\Builder;
 use Staudenmeir\LaravelAdjacencyList\Eloquent\Builder as AdjacencyBuilder;
 use Staudenmeir\LaravelAdjacencyList\Eloquent\Collection;
 use Staudenmeir\LaravelAdjacencyList\Eloquent\Relations\Ancestors;
@@ -42,12 +41,9 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\Relations\Siblings;
  *
  * @phpstan-require-extends Model
  *
- * Tipi di ritorno solo nel `@return`, non nativi, sui metodi che il trait vendor
- * `Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships` dichiara senza
- * tipo (`getParentKeyName()`, `getPathName()`, `hasNestedPath()`, ...): i modelli che usano
- * quel trait direttamente non possono implementare un contratto con tipi nativi senza
- * fatal runtime. `TypedHasRecursiveRelationships` li restringe comunque ai tipi nativi
- * quando serve, e PHPStan legge il `@return`.
+ * The vendor trait is the source of truth for implementation. Its public methods are
+ * intentionally untyped, so this contract keeps runtime-compatible signatures and
+ * documents the types for static analysis instead.
  *
  * @mixin \Illuminate\Database\Eloquent\Model
  */
@@ -189,9 +185,12 @@ interface HasRecursiveRelationshipsContract
     public function isIntegerAttribute($attribute);
 
     /**
+     * The parameter stays untyped because Eloquent's Model method is untyped at runtime.
+     *
+     * @param  \Illuminate\Database\Query\Builder  $query
      * @return AdjacencyBuilder<Model>
      */
-    public function newEloquentBuilder(Builder $query);
+    public function newEloquentBuilder($query);
 
     /**
      * @param  list<Model>  $models
