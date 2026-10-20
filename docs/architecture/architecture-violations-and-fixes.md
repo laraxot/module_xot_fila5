@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "architecture violations and fixes"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Violazioni Architetturali e Correzioni - Pattern XotData
@@ -343,8 +344,8 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 
 ### **Esempi Implementazione**
 - [CreateUserAction](../app/Actions/Socialite/CreateUserAction.php)
-- [XotBaseMigration](../app/Database/Migrations/XotBaseMigration.php)
-- [IsTenant Trait](../../User/app/Models/Traits/IsTenant.php)
+- [XotBaseMigration](../../app/Database/Migrations/XotBaseMigration.php)
+- [IsTenant Trait](../../../User/app/Models/Traits/IsTenant.php)
 
 ### **Documentazione Moduli**
 - [Cms Architecture](../../Cms/project_docs/architecture-xotdata-pattern.md)
@@ -352,15 +353,6 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 - [Testing Strategy](../../<nome progetto>/project_docs/testing/real-data-testing-strategy.md)
 
 ---
-
-title: "architecture violations and fixes"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "architecture violations and fixes"
-issues: []
-discussions: []
 **Ultimo Aggiornamento**: Gennaio 2025
 **Stato**: ✅ Pattern Documentato e Implementato
 ---

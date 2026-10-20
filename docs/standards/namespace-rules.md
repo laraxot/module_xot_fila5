@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "namespace rules"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Regole di Namespace
@@ -145,7 +146,7 @@ Se si verificano errori "Class not found" o problemi di autoloading:
 ## Collegamenti Correlati
 
 - [Convenzioni](../../../../docs/conventions.md)
-- [Naming Conventions](../../../../docs/naming-conventions.md)
+- [Naming Conventions](../../../../../docs/naming-conventions.md)
 - [Documentazione Xot](../code-standards.md)
 - [Collegamenti Documentazione](../../../../../docs/collegamenti-documentazione.md)
 

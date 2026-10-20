@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "xot architecture overview"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Xot Architecture

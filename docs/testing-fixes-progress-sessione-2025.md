@@ -11,6 +11,7 @@ name: testing-fixes-progress-sessione-2025-0
 description: "Data: 2025-01-22"
 metadata:
   type: documentation
+status: draft
 ---
 
 # Testing Fixes Progress - Sessione 2025-01-22
@@ -129,11 +130,11 @@ Tutti i test corretti seguono questo principio:
 ## 🔗 Collegamenti
 
 - [Testing Rules](../testing-rules.md)
-- [Activity TestCase Fix](../../activity/docs/testing-testcase-database-connection-fix.md)
-- [Geo TestCase Fix](../../geo/docs/testing-testcase-database-connection-fix.md)
-- [Media TestCase Fix](../../media/docs/testing-testcase-database-connection-fix.md)
-- [Notify TestCase Fix](../../notify/docs/testing-testcase-database-connection-fix.md)
-- [User Command Integration Fix](../../user/docs/testing-user-command-integration-fix.md)
+- [Activity TestCase Fix](../../Activity/docs/testing-testcase-database-connection-fix.md)
+- [Geo TestCase Fix](../../Geo/docs/testing-testcase-database-connection-fix.md)
+- [Media TestCase Fix](../../Media/docs/testing-testcase-database-connection-fix.md)
+- [Notify TestCase Fix](../../Notify/docs/testing-testcase-database-connection-fix.md)
+- [User Command Integration Fix](../../User/docs/testing-user-command-integration-fix.md)
 
 ---
 

@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "agents"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Xot {{TYPE^}} LLM Wiki Agent Instructions
@@ -149,6 +150,6 @@ Related:
 
 ## Related Documentation
 
-- [Project Wiki Integration](../../docs/wiki/README.md)
+- [Project Wiki Integration](readme.md)
 - [Project Wiki Agent Instructions](../../docs/wiki/AGENTS.md)
 - [Module Documentation](../README.md)

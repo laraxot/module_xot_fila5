@@ -10,6 +10,7 @@ use Filament\Actions\Contracts\HasActions;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
 use Filament\Schemas\Components\Wizard\Step;
+use Filament\Schemas\Concerns\RestrictsFileUploadsToSchemaComponents;
 use Filament\Schemas\Schema;
 use Filament\Widgets\Widget as FilamentWidget;
 use Illuminate\Contracts\Support\Htmlable;
@@ -35,6 +36,9 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
 {
     use InteractsWithActions;
     use InteractsWithForms;
+
+    // Upload di Livewire solo verso campi di caricamento dello schema: senza, un ospite poteva usare `_startUpload` su qualunque widget (audit DCP-181, A-2)
+    use RestrictsFileUploadsToSchemaComponents;
     use TransTrait;
 
     public string $title = '';
