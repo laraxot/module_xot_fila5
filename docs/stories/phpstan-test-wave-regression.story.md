@@ -71,3 +71,5 @@ Bucket; errori prima/dopo sui suoi file; cause corrette con conteggi; file neutr
 ## Esito
 
 Da compilare a fine run.
+
+- Lane xot: 603 -> 0 errori sui 28 file del bucket (`phpstan analyse Modules/Xot` esce 0). Causa: test e infrastruttura di test di Xot riportati dal merge come bozze anteriori al ciclo verificato; ripristinate da `6c8a5bb3f` (18 test, `TestCase`, `CreatesApplication`) e correzioni sul posto per 5 sorgenti. Dettaglio e decisioni aperte (servizi risorti, `Helpers/Helper.php` maiuscolo): [phpstan-test-wave-xot.story.md](phpstan-test-wave-xot.story.md).
