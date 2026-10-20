@@ -1,3 +1,13 @@
+---
+title: "Struttura delle Configurazioni"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, config]
+qmd: "Struttura delle Configurazioni"
+---
 # Struttura delle Configurazioni
 
 Questo documento definisce la struttura standard delle configurazioni per tutti i moduli.

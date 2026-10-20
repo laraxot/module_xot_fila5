@@ -50,7 +50,7 @@ class MorphManyAction
                 $res = app(UpdateAction::class)->execute($related, $safeData, []);
                 $models[] = $res;
             } else {
-                dddx(['model' => $model, 'relationDTO' => $relationDTO]);
+                throw new \LogicException('Update\MorphManyAction: rows without primary key not implemented, relation ['.$relationDTO->name.']');
             }
         }
 

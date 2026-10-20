@@ -1,3 +1,13 @@
+---
+title: "Workflow Analisi PHPStan"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "Workflow Analisi PHPStan"
+---
 # Workflow Analisi PHPStan
 
 > **Nota**: Per una panoramica completa sulla gestione della documentazione e delle regole, consultare [DOCUMENTATION_MANAGEMENT.md](DOCUMENTATION_MANAGEMENT.md)

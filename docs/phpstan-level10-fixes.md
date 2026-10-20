@@ -1,3 +1,13 @@
+---
+title: "Correzioni PHPStan Livello 10 - Modulo User"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "Correzioni PHPStan Livello 10 - Modulo User"
+---
 # Correzioni PHPStan Livello 10 - Modulo User
 
 Questo documento traccia gli errori PHPStan di livello 10 identificati nel modulo User e le relative soluzioni implementate.

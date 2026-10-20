@@ -1,3 +1,13 @@
+---
+title: "links"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, open-sources]
+qmd: "links"
+---
 https://github.com/pterodactyl/panel/tree/develop
 
 https://github.com/serversideup/financial-freedom

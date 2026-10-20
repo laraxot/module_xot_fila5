@@ -1,3 +1,13 @@
+---
+title: "VIOLAZIONI CRITICHE XotBaseResource - Regole Globali Laraxot PTVX"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "VIOLAZIONI CRITICHE XotBaseResource - Regole Globali Laraxot PTVX"
+---
 # VIOLAZIONI CRITICHE XotBaseResource - Regole Globali Laraxot PTVX
 
 ## 🚨 ERRORI GRAVISSIMI DA EVITARE SEMPRE

@@ -3,6 +3,8 @@ title: Url Not Found
 description: Url Not Found
 extends: _layouts.documentation
 section: content
+status: superseded
+superseded_by: ../errors/url-not-found.md
 ---
 
 # Url Not Found {#url-not-found}

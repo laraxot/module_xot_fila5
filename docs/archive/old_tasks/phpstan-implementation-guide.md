@@ -292,7 +292,7 @@ Ogni modulo dovrebbe documentare le soluzioni ai problemi PHPStan specifici in `
 - [Blog PHPStan sui Generics](https://phpstan.org/blog/generics-in-php-using-phpdocs)
 - [Solving Undefined Properties](https://phpstan.org/blog/solving-phpstan-access-to-undefined-property)
 - [Modules/Xot/docs/PHPSTAN-GENERIC-TYPES.md](../xot/docs/phpstan-generic-types.md) - Guida specifica per tipi generici
-- [Modules/Xot/docs/NAMESPACE-CONVENTIONS.md](../xot/docs/namespace-conventions.md) - Convenzioni per i namespace
+- [Modules/Xot/docs/NAMESPACE-CONVENTIONS.md](../../namespace-conventions.md) - Convenzioni per i namespace
 
 ---
 

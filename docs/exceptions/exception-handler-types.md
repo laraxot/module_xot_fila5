@@ -1,3 +1,13 @@
+---
+title: "ExceptionHandler Types - Tipizzazione e Best Practices"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, exceptions]
+qmd: "ExceptionHandler Types - Tipizzazione e Best Practices"
+---
 # ExceptionHandler Types - Tipizzazione e Best Practices
 
 ## Overview

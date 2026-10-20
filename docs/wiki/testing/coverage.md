@@ -7,7 +7,8 @@ updated: 2026-09-26
 qmd: "coverage"
 issues: []
 discussions: []
-status: draft
+status: superseded
+superseded_by: ../../bmad/coverage.md
 ---
 
 # Xot Module Test Coverage

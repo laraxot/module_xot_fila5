@@ -1,3 +1,13 @@
+---
+title: "Template Gestione Conflitti Git - composer.json"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, templates]
+qmd: "Template Gestione Conflitti Git - composer.json"
+---
 # Template Gestione Conflitti Git - composer.json
 
 ## File: bashscripts/composer.json

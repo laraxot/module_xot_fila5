@@ -1,3 +1,13 @@
+---
+title: "🔧 PHPStan Fixes - Modulo Xot - Gennaio 2025"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "🔧 PHPStan Fixes - Modulo Xot - Gennaio 2025"
+---
 # 🔧 PHPStan Fixes - Modulo Xot - Gennaio 2025
 
 **Data**: 27 Gennaio 2025  

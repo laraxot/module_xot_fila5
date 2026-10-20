@@ -4,10 +4,13 @@ type: note
 updated: 2026-10-09
 tags: [docs, xot, governance]
 qmd: "struttura canonica della documentazione xot"
-status: stale
+status: superseded
+superseded_by: ../conventions/docs-organization.md
 ---
 
-> Nota 2026-10-14 (docs-audit): Afferma che README.md e l'unico ingresso attivo, mentre il contratto del 2026-10-13 (bmad-output/docs-architecture/module-theme-docs-contract.md) richiede README.md e 00-INDEX.md; colloca le story in docs/bmad/ mentre in Xot vivono in docs/stories/ (22 file) e docs/bmad/stories/. Contenuto non riscritto, verificare prima di usarlo.
+> Documento storico. Usare [docs-organization.md](../conventions/docs-organization.md),
+> che risolve il conflitto tra gli indici multipli e definisce ownership e
+> integrazione Second Brain.
 
 # Struttura canonica della documentazione
 

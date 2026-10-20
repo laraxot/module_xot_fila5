@@ -7,6 +7,7 @@ namespace Modules\Xot\Contracts;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Query\Builder;
 use Staudenmeir\LaravelAdjacencyList\Eloquent\Builder as AdjacencyBuilder;
 use Staudenmeir\LaravelAdjacencyList\Eloquent\Collection;
 use Staudenmeir\LaravelAdjacencyList\Eloquent\Relations\Ancestors;
@@ -45,7 +46,7 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\Relations\Siblings;
  * intentionally untyped, so this contract keeps runtime-compatible signatures and
  * documents the types for static analysis instead.
  *
- * @mixin \Illuminate\Database\Eloquent\Model
+ * @mixin Model
  */
 interface HasRecursiveRelationshipsContract
 {
@@ -54,8 +55,6 @@ interface HasRecursiveRelationshipsContract
      *
      * Il ritorno e' `mixed` perche' il trait vendor `HasAdjacencyList` lo dichiara cosi':
      * un tipo piu' stretto qui rende fatale il caricamento di ogni classe che usa il trait.
-     *
-     * @return mixed
      */
     public static function withMaxDepth(int $maxDepth, callable $query): mixed;
 
@@ -178,8 +177,7 @@ interface HasRecursiveRelationshipsContract
     /**
      * Determine if an attribute is an integer.
      *
-     * @param string $attribute
-     *
+     * @param  string  $attribute
      * @return bool
      */
     public function isIntegerAttribute($attribute);
@@ -187,7 +185,7 @@ interface HasRecursiveRelationshipsContract
     /**
      * The parameter stays untyped because Eloquent's Model method is untyped at runtime.
      *
-     * @param  \Illuminate\Database\Query\Builder  $query
+     * @param  Builder  $query
      * @return AdjacencyBuilder<Model>
      */
     public function newEloquentBuilder($query);

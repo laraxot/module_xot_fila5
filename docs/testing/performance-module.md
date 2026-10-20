@@ -1,3 +1,13 @@
+---
+title: "Test del Modulo Performance"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, testing]
+qmd: "Test del Modulo Performance"
+---
 # Test del Modulo Performance
 
 ## Struttura dei Test

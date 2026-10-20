@@ -1,3 +1,13 @@
+---
+title: "Best Practices per Proprietà Modelli Eloquent - Modulo Xot"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "Best Practices per Proprietà Modelli Eloquent - Modulo Xot"
+---
 # Best Practices per Proprietà Modelli Eloquent - Modulo Xot
 
 ## ⚠️ Regola Critica: property_exists() VIETATO
