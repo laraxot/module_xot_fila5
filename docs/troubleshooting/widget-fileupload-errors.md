@@ -1,3 +1,13 @@
+---
+title: "Widget FileUpload Errors - Troubleshooting Guide"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, troubleshooting]
+qmd: "Widget FileUpload Errors - Troubleshooting Guide"
+---
 # Widget FileUpload Errors - Troubleshooting Guide
 
 ## Errore: "foreach() argument must be of type array|object, string given"

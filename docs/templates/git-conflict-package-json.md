@@ -1,3 +1,13 @@
+---
+title: "Template Gestione Conflitti Git - package.json"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, templates]
+qmd: "Template Gestione Conflitti Git - package.json"
+---
 # Template Gestione Conflitti Git - package.json
 
 ## File: bashscripts/package.json

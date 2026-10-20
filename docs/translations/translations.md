@@ -1,3 +1,13 @@
+---
+title: "Gestione delle Traduzioni"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, translations]
+qmd: "Gestione delle Traduzioni"
+---
 # Gestione delle Traduzioni
 
 ## Configurazione Base

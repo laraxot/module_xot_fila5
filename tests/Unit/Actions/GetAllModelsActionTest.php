@@ -34,7 +34,7 @@ class GetAllModelsActionTest extends TestCase
     /** @test Action can be instantiated */
     public function it_can_be_instantiated(): void
     {
-        Assert::assertInstanceOf(GetAllModelsAction::class, $this->action);
+        Assert::assertSame(GetAllModelsAction::class, $this->action::class);
     }
 
     /** @test Action retrieves core User model */

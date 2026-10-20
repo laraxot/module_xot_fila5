@@ -1,3 +1,13 @@
+---
+title: "Architettura Folio + Volt + Filament in il progetto"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "Architettura Folio + Volt + Filament in il progetto"
+---
 # Architettura Folio + Volt + Filament in il progetto
 
 ## Panoramica

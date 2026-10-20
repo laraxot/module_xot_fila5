@@ -1,3 +1,13 @@
+---
+title: "Form Schema Checker"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, development]
+qmd: "Form Schema Checker"
+---
 # Form Schema Checker
 
 ## Perché

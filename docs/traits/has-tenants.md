@@ -1,3 +1,13 @@
+---
+title: "Trait HasTenants"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, traits]
+qmd: "Trait HasTenants"
+---
 # Trait HasTenants
 
 ## Descrizione

@@ -191,7 +191,7 @@ $averageTime = $count > 0 ? $totalTime / $count : 0.0;
 6. **Monitoring Safety**: Gestione sicura di metriche e logging
 
 ## Collegamenti Correlati
-- [Architettura Modulo Xot](../architecture.md)
+- [Architettura Modulo Xot](../../architecture.md)
 - [Guida PHPStan](../../../../docs/phpstan-guide.md)
 - [Best Practices Laraxot](../../../../docs/laraxot-best-practices.md)
 

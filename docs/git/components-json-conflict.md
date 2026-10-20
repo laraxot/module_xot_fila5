@@ -1,3 +1,13 @@
+---
+title: "Risoluzione Conflitto in components.json"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, git]
+qmd: "Risoluzione Conflitto in components.json"
+---
 # Risoluzione Conflitto in _components.json
 
 ## Panoramica

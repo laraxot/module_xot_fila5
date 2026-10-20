@@ -3,9 +3,9 @@
 ## Collegamenti correlati
 - [README modulo Xot](./readme.md)
 - [Struttura dei moduli](./module_structure.md)
-- [Convenzioni di Path](../user/docs/path_conventions.md)
-- [Implementazione Auth con Volt e Folio](../user/docs/volt_folio_auth_implementation.md)
-- [Analisi Logout Blade](../user/docs/logout_blade_analysis.md)
+- [Convenzioni di Path](../../../User/docs/path_conventions.md)
+- [Implementazione Auth con Volt e Folio](../../../User/docs/volt_folio_auth_implementation.md)
+- [Analisi Logout Blade](../../../User/docs/logout_blade_analysis.md)
 
 ## Introduzione
 
