@@ -26,9 +26,10 @@ Ordine dell'utente (2026-10-20): "i services vanno tutti convertiti in spatie qu
 
 ## Stato misurato il 2026-10-20 alle 12:44 UTC (volatile)
 
-- Dal disco: `Xot/app/Services/` contiene `.gitignore` (tracciato) e `RouteService.php.bak` (non tracciato, 10590 byte, 357 righe, sha256 `388dc8d063fd772c57d4526a1968fddf9ba4c74bca0bad655107438e9ac80944`, ignorato da `.gitignore:23` radice). Nessun `*.php`.
+- Dal disco (12:47): `Xot/app/Services/` non esiste. Alle 12:44 conteneva `.gitignore` (tracciato) e `RouteService.php.bak` (non tracciato, 10590 byte, 357 righe, sha256 `388dc8d063fd772c57d4526a1968fddf9ba4c74bca0bad655107438e9ac80944`). La rimozione e' dichiarata dalla sessione `base-quaeris-fila5-94`; il file `.bak` non si trova piu' in nessuna cartella del repo (`find` per `RouteService.php.bak*`: vuoto).
+- Il contenuto del `.bak` esiste ancora come blob nel database oggetti di `Modules/Xot`: `git cat-file -p def10b017e95 | sha256sum` restituisce lo stesso sha256 e `git cat-file -s def10b017e95` 10590 byte. Il blob non e' raggiungibile da `ls-tree HEAD`: se nessun commit lo aggancia, `git gc` puo' eliminarlo. Non verificato se un commit lo contenga.
 - `git -C Modules/Xot ls-tree -r --name-only HEAD -- app/Services` e `laraxot/dev`: 1 file (`.gitignore`). Alle 10:00 `laraxot/dev` ne aveva 33: la pulizia e' arrivata a monte alle 12:19 con `398a78fa1`. Controprova della misura: stesso comando su Geo restituisce 6.
-- La cartella `Xot/tests/Unit/Services/` esiste con 2 test tracciati (`ThemeServiceTest`, `UrlServiceTest`) che importano solo le Action (`Get/Set/Is/GetPathThemeAction`, `IsValidUrlAction`), non i Service.
+- La cartella `Xot/tests/Unit/Services/` esiste ancora (e il comando `find ... -name Services` la stampa) con 2 test tracciati (`ThemeServiceTest`, `UrlServiceTest`) che importano solo le Action (`Get/Set/Is/GetPathThemeAction`, `IsValidUrlAction`), non i Service.
 - Il merge su Xot e' chiuso (nessun `MERGE_HEAD`, nessun file non risolto alle 12:34). Prima di agire rifare `git -C Modules/Xot status --short` e `git -C Modules/Xot diff --name-only --diff-filter=U`.
 
 ## Analisi dello scopo dei Service cancellati
@@ -98,17 +99,18 @@ Lettura: otto successori su dieci non hanno consumatori in produzione. Cancellar
 - Nessuna Action che incarta una relazione Eloquent gia' presente su model o trait.
 - Non trasformare `Translators/*` in Action: un Translator Laravel vive in `Adapters/`.
 - Nessuna modifica a `phpstan.neon` (solo l'utente).
-- Non cancellare `RouteService.php.bak`: non e' tracciato, non si recupera da git.
+- Non cancellare `RouteService.php.bak` se ricompare: era non tracciato; oggi esiste solo come blob `def10b017e95`.
+- Non modificare `laravel/tests/Architecture/ModulesArchitectureTest.php` (ratchet con allowlist `archAllowedServicesDirs()`, oggi solo Geo): si cita, non si duplica.
 - Non toccare file in stato di merge (`DU`, `UD`, `UU`) finche' chi ha avviato il merge non lo chiude. Prima di ogni file: `rg -c '^(<<<<<<<|=======|>>>>>>>)' <file>`.
 - Non riabilitare `Helpers/Helper.php` maiuscolo "per sicurezza".
 
 ## Acceptance criteria
 
 - [ ] Per ogni riga della tabella sopra, la parita' tra Service (da `git show 398a78fa1^:...`) e successore e' registrata nella story con differenze volute e non volute.
-- [ ] La cartella `laravel/Modules/Xot/app/Services/` non esiste piu' (su disco e nell'indice del repo del modulo), con ogni file non-Service che conteneva spostato nella sede giusta (Adapters/, Actions/, Datas/, docs/archive) o eliminato come copia morta con evidenza.
-- [ ] `RouteService.php.bak` (non tracciato) e' SPOSTATO, non cancellato, in `docs/archive/services/` (cartella ignorata da `.gitignore:55`, quindi resta solo su disco) e la story registra percorso, 10590 byte e sha256 dopo lo spostamento.
-- [ ] `app/Services/.gitignore` e' rimosso solo dopo aver verificato che `.gitignore` radice copra `*.lock`, `package-lock.json`, `*.bak` (righe 3, 9, 23: verificato) e che `docs/phpstan/` e `/vendor` non servano piu' (non verificato).
-- [ ] `tests/Unit/Services/` di Xot non esiste piu': `ThemeServiceTest` e `UrlServiceTest` spostati in `tests/Unit/Actions/Theme/` e `tests/Unit/Actions/Url/` (cartelle oggi inesistenti), senza rinominare i file di altri.
+- [ ] Da verificare: la cartella `laravel/Modules/Xot/app/Services/` non esiste (su disco e nell'indice del repo del modulo), con `find laravel/Modules laravel/Themes laravel/app -type d -name Services -not -path '*/vendor/*'` (oggi, 12:47: nessun `app/Services`; il comando stampa solo `Xot/tests/Unit/Services` e `Notify/tests/Unit/Services`) e con `git -C laravel/Modules/Xot ls-files app/Services` vuoto. Ogni file non-Service che la cartella conteneva e' finito nella sede giusta (Adapters/, Actions/, Datas/, docs/archive) o e' stato eliminato come copia morta con evidenza: da confermare, perche' la rimozione e' di un'altra sessione.
+- [ ] Da verificare: `RouteService.php.bak` (non tracciato) non e' stato cancellato. Il blob `def10b017e95` esiste con sha256 identico; registrare in questa story dove vive (un commit che lo contiene, oppure una copia in `docs/archive/services/`, cartella ignorata da `.gitignore:55`, quindi solo su disco).
+- [ ] Da verificare: la rimozione di `app/Services/.gitignore` e' sicura. La radice copre `*.lock`, `package-lock.json`, `*.bak` (righe 3, 9, 23: verificato); `docs/phpstan/` e `/vendor` non verificati.
+- [ ] La cartella `tests/Unit/Services/` di Xot non esiste piu' (il ratchet `laravel/tests/Architecture/ModulesArchitectureTest.php` controlla solo `Modules/*/app/Services`, non questa): `ThemeServiceTest` e `UrlServiceTest` spostati in `tests/Unit/Actions/Theme/` e `tests/Unit/Actions/Url/` (cartelle oggi inesistenti), senza rinominare i file di altri. Stessa decisione per `Notify/tests/Unit/Services` (vuota).
 - [ ] `FileAction` e' diviso o le sue chiamate migrate; zero `dddx()` attivi in `Actions/File/FileAction.php` (oggi 4).
 - [ ] `HtmlToPdfAction` non legge `request()` e non fa `echo`.
 - [ ] `docs/services/queueable-action-migration.md` marcato `status: superseded` con rimando a questa story.
@@ -127,7 +129,7 @@ find Modules Themes app -type d -name Services -not -path '*/vendor/*'
 find Modules Themes app -type d -name Actions -not -path '*/vendor/*' | wc -l   # controprova: > 0 (oggi 57)
 ```
 
-Atteso a fine W2: primo e terzo comando vuoti, secondo 0, quarto senza `Modules/Xot/app/Services`.
+Atteso a fine W2: primo e terzo comando vuoti, secondo 0, quarto senza `Modules/Xot/app/Services` e senza `tests/Unit/Services`. Guardia di cartella gia' presente: `php artisan test tests/Architecture/ModulesArchitectureTest.php --filter="has no Modules"` da `laravel/` (non eseguito da questa sessione).
 
 ## Non verificato
 
