@@ -10,6 +10,7 @@ issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/33"
 discussions:
   - "https://github.com/laraxot/module_xot_fila5/discussions/34"
+status: draft
 ---
 
 # Xot Module - memories Index
@@ -30,12 +31,12 @@ qmd search "Xot memories" --limit 5
 - [phpstan-single-neon-config](./phpstan-single-neon-config.md) — solo `laravel/phpstan.neon`, mai altri `.neon`.
 - [phpstan-remediation-swarm](./phpstan-remediation-swarm.md) — memoria remediation PHPStan multi-agente.
 - [tabella-appartiene-alla-resource-non-alla-pagina](./tabella-appartiene-alla-resource-non-alla-pagina.md) — la tabella la costruisce la Resource; `getTable*` su una List page e' fatal o silenziosamente morto.
-- [header-actions-doppi-filament-5](./header-actions-doppi-filament-5.md) — page header e table header sono due barre distinte: da qui il doppio pulsante "Crea".
+- [header-actions-doppi-filament-5](./header-actions-doppi-filament.md) — page header e table header sono due barre distinte: da qui il doppio pulsante "Crea".
 - [traduzioni-placeholder-navigation](./traduzioni-placeholder-navigation.md) — i placeholder nascono da `persistGeneratedTransFuncLabel()`, non da una svista: e' un difetto permanente e silenzioso.
 - [merge-marker-spazzatura-worktree](./merge-marker-spazzatura-worktree.md) — i marker di merge possono essere spazzatura del worktree, non contenuto di HEAD.
 
 ## See Also
-- [Root Trigger Map](../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
+- [Root Trigger Map](../../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
 - [Root Wiki](../../../docs/wiki/)
 
 ---

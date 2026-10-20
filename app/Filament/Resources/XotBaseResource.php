@@ -126,10 +126,11 @@ abstract class XotBaseResource extends FilamentResource
 
     /**
      * @return array<int|string, \Filament\Schemas\Components\Component>
+     * DEVE ESSERE FINAL !!
      */
     final public function getFormSchema(): array
     {
-        return static::getFormSchemaOld();
+        return [];
     }
 
     /**
@@ -143,8 +144,9 @@ abstract class XotBaseResource extends FilamentResource
      * `getFormSchemaOld` su `Modules/*`) — vedi docs/chat/STOP-*-getformschema-*.md.
      *
      * @return array<int|string, \Filament\Schemas\Components\Component>
+     * DEVE ESSERE FINAL !!
      */
-    public function getFormSchemaOld(): array
+    final public function getFormSchemaOld(): array
     {
         return [];
     }

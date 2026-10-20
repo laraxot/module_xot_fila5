@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "architecture complete"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Xot Module - Complete Architecture Guide (2025)
@@ -25,15 +26,6 @@ discussions: []
 6. [Best Practices](#best-practices)
 
 ---
-
-title: "architecture complete"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "architecture complete"
-issues: []
-discussions: []
 ## Module Overview
 
 ### Primary Purpose

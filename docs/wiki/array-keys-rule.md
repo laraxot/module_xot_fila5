@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "array keys rule"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Array Keys Rule for Filament Schemas
