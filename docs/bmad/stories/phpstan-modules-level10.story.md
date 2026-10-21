@@ -7,12 +7,9 @@ story_id: "2026-10-06-phpstan-modules-level10"
 status: done
 track: quality/phpstan
 related:
-  - ../../../../Rating/docs/bmad/stories/conflict-marker-resolution-phpstan-bootstrap.story.md
+  - ../../../../Rating/docs/bmad/stories/conflict-marker-resolution-phpstan-bootstrap-2026-10-06.story.md
   - ../../../../IndennitaCondizioniLavoro/docs/bmad/2026-10-06-phpstan-l10-fix.story.md
-  - ../../../../User/docs/bmad/stories/phpstan-l10-user-lang-fix.story.md
-updated: 2026-10-09
-tags: [docs, xot, bmad]
-qmd: "phpstan level 10   correzione fleet moduli xot"
+  - ../../../../User/docs/bmad/stories/phpstan-l10-user-lang-fix-20261006.story.md
 ---
 
 # PHPStan Level 10 — correzione fleet moduli
@@ -131,6 +128,11 @@ sintattici, non il criterio funzionale del lavoro.
 - 2026-10-06: risolto cluster Tenant SushiToJson.php: aggiunto return type array<array<string,mixed>> a getRows() e risolta variabile $schema
 - 2026-10-06: organizzate docs moduli e temi secondo BMAD.
 - 2026-10-06: completati Progressioni, Rating e Sigma; PHPStan globale finale verde.
+<<<<<<< .merge_file_GTCkmW
+<<<<<<< .merge_file_WoaPAI
+=======
+=======
+>>>>>>> .merge_file_IwYUDf
 
 ## Seguito in base_quaeris_fila5
 
@@ -147,3 +149,7 @@ sintattici, non il criterio funzionale del lavoro.
 - Lezione: cambiare la firma di un contratto Xot richiede di censire chi lo implementa in ogni
   progetto che monta il modulo (`grep -rl HasRecursiveRelationshipsContract Modules`), non solo
   in quello corrente.
+<<<<<<< .merge_file_GTCkmW
+>>>>>>> .merge_file_7kYwRp
+=======
+>>>>>>> .merge_file_IwYUDf
