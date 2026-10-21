@@ -9,7 +9,7 @@ track: quality/fleet
 created: 2026-10-21
 updated: 2026-10-21
 tags: [phpstan, swarm, bmad, second-brain, filament-blueprint, docs]
-qmd: "phpstan modules zero swarm random bmad second brain filament blueprint docs modules themes prompt stipendioTabellare"
+qmd: "phpstan modules zero swarm random Progressioni Ptv Sigma Pdnd residui 55 gate stipendioTabellare coeff covariant"
 related:
   - ./phpstan-zero-errors-modules.story.md
   - ./phpstan-ptv-incentivi-indennitaresponsabilita.story.md
@@ -17,7 +17,10 @@ related:
   - ../../../../Themes/Zero/docs/bmad/stories/quality-gates-phpstan-swarm-2026-09-23.story.md
   - ../../../User/docs/bmad/stories/user-module-independent-of-comment.story.md
   - ../../../Progressioni/docs/wiki/concepts/stipendio-tabellare-relationship.md
+  - ../../../Progressioni/docs/bmad/stories/stipendio-tabellare-hasone-contract.story.md
+  - ../../../Progressioni/docs/bmad/stories/phpstan-progressioni-remediation.story.md
   - ../../../Ptv/docs/wiki/concepts/base-scheda-stub-relationships.md
+  - ../../../Ptv/docs/bmad/architecture/phpstan-ptv-patterns.md
   - ../../../Sigma/docs/wiki/concepts/phpstan-sigma-mass-extra-cleanup.md
   - ../../../Pdnd/docs/bmad/filament-custom-pages.md
 ---
@@ -43,15 +46,30 @@ widget) e, se il codice è morto, rimuoverlo. Baseline dichiarata: 0 errori
 
 ## Acceptance criteria
 
-- [ ] `phpstan analyse Modules/<Modulo>` verde per ogni modulo toccato.
+- [x] `phpstan analyse Modules/<Modulo>` verde per Progressioni, Ptv, Sigma, Pdnd (gate 4).
 - [ ] `phpstan analyse Modules` verde a fine giro (o debito residuo documentato con causa).
 - [ ] Nessuna soppressione nuova in `phpstan.neon`; nessun `@phpstan-ignore` senza motivo scritto.
 - [ ] User resta indipendente da Comment (composer + codice + test + docs).
 - [ ] Docs di moduli/temi aggiornate con indice canonico e frontmatter; nessun duplicato esatto.
 - [x] `bashscripts/docs/prompts` riordinati (indice + set canonico, duplicati assorbiti).
 - [ ] Pest verde nello scope toccato su host non di produzione (host attuale: NOLWA004, ok).
-- [ ] Story di cluster nei docs dei moduli owner; `docs/sprint-status.yaml` aggiornato.
+- [x] Story di cluster nei docs dei moduli owner; `docs/sprint-status.yaml` aggiornato (residui 4 moduli).
 - [ ] Second brain: memoria/regola aggiornata e `qmd update` (se disponibile).
+
+## Residui cluster Progressioni/Ptv/Sigma/Pdnd — **55 → 0**
+
+Chiusura relazioni / stub (scopo: contratto leaf ↔ base, non silenziare `return.type`):
+
+| Modulo | Esito |
+|--------|-------|
+| Progressioni | 0 — trait relazioni `HasMany`/`HasOne`/`MorphMany` + related concreto + `$this`; `coeff()`; `stipendioTabellare`→`StipendioTabellare`; `msg()` Assert |
+| Ptv | 0 — `BaseScheda::stipendioTabellare` `HasOne<covariant Model, $this>`; `performanceIndividuale` owner `$this`; `HasCriteriValutazione` `HasMany<covariant Model, $this>` |
+| Sigma | 0 (già nel giro MassExtra / Asz00f) |
+| Pdnd | 0 (GuzzleProxy + resto cluster) |
+
+Story owner: [stipendio-tabellare-hasone-contract](../../../Progressioni/docs/bmad/stories/stipendio-tabellare-hasone-contract.story.md),
+[phpstan-progressioni-remediation](../../../Progressioni/docs/bmad/stories/phpstan-progressioni-remediation.story.md),
+pattern [phpstan-ptv-patterns](../../../Ptv/docs/bmad/architecture/phpstan-ptv-patterns.md).
 
 ## Vincoli
 
@@ -168,6 +186,9 @@ chiuso tutte le collection. Nessun commit/push.
   decisione Ptv stipendio **chiusa**; Sigma MassExtra cleanup concept (story già
   parziale); Pdnd `GuzzleProxyPage` documentata; rimosso `Sigma/docs/readme.md`
   duplicato di `README.md`; temi One/Three/Zero invariati (già organizzati).
+- 2026-10-21c docs-guardian (no PHP): chiusura docs relazioni Progressioni/Ptv —
+  residui cluster **55→0** sui 4 moduli; story stipendio + remediation + pattern
+  `$this`+`covariant` aggiornati; sprint-status riga swarm annotata.
 
 ## Docs temi (2026-10-21)
 
