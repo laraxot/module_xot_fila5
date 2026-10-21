@@ -117,11 +117,7 @@
             "helpers/Helper.php"
         ]
     },
-    "autoload-dev": {
-        "files": [
-            "tests/Support/helpers.php"
-        ]
-    },
+    "autoload-dev": {},
     "scripts": {
         "analyse": "vendor/bin/phpstan analyse",
         "test": "vendor/bin/pest",

@@ -42,6 +42,16 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\Relations\Siblings;
  *
  * @phpstan-require-extends Model
  *
+<<<<<<< .merge_file_uw2HA8
+=======
+ * Tipi di ritorno solo nel `@return`, non nativi, sui metodi che il trait vendor
+ * `Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships` dichiara senza
+ * tipo (`getParentKeyName()`, `getPathName()`, `hasNestedPath()`, ...): i modelli che usano
+ * quel trait direttamente non possono implementare un contratto con tipi nativi senza
+ * fatal runtime. `TypedHasRecursiveRelationships` li restringe comunque ai tipi nativi
+ * quando serve, e PHPStan legge il `@return`.
+ *
+>>>>>>> .merge_file_5tQDgW
  * @mixin \Illuminate\Database\Eloquent\Model
  */
 interface HasRecursiveRelationshipsContract
@@ -49,72 +59,75 @@ interface HasRecursiveRelationshipsContract
     /**
      * Execute a query with a maximum depth constraint for the recursive query.
      *
-     * @return AdjacencyBuilder<Model>
+     * Il ritorno e' `mixed` perche' il trait vendor `HasAdjacencyList` lo dichiara cosi':
+     * un tipo piu' stretto qui rende fatale il caricamento di ogni classe che usa il trait.
+     *
+     * @return mixed
      */
-    public static function withMaxDepth(int $maxDepth, callable $query): AdjacencyBuilder;
+    public static function withMaxDepth(int $maxDepth, callable $query): mixed;
 
     /**
      * Get the name of the parent key column.
      *
      * @return string
      */
-    public function getParentKeyName(): string;
+    public function getParentKeyName();
 
     /**
      * Get the qualified parent key column.
      *
      * @return string
      */
-    public function getQualifiedParentKeyName(): string;
+    public function getQualifiedParentKeyName();
 
     /**
      * Get the name of the local key column.
      *
      * @return string
      */
-    public function getLocalKeyName(): string;
+    public function getLocalKeyName();
 
     /**
      * Get the qualified local key column.
      *
      * @return string
      */
-    public function getQualifiedLocalKeyName(): string;
+    public function getQualifiedLocalKeyName();
 
     /**
      * Get the name of the depth column.
      *
      * @return string
      */
-    public function getDepthName(): string;
+    public function getDepthName();
 
     /**
      * Get the name of the path column.
      *
      * @return string
      */
-    public function getPathName(): string;
+    public function getPathName();
 
     /**
      * Get the path separator.
      *
      * @return string
      */
-    public function getPathSeparator(): string;
+    public function getPathSeparator();
 
     /**
      * Get the additional custom paths.
      *
      * @return array<string>
      */
-    public function getCustomPaths(): array;
+    public function getCustomPaths();
 
     /**
      * Get the name of the common table expression.
      *
      * @return string
      */
-    public function getExpressionName(): string;
+    public function getExpressionName();
 
     /** @return Ancestors<Model, Model> */
     public function ancestors();
@@ -160,21 +173,23 @@ interface HasRecursiveRelationshipsContract
      *
      * @return string
      */
-    public function getFirstPathSegment(): string;
+    public function getFirstPathSegment();
 
     /**
      * Determine whether the model's path is nested.
      *
      * @return bool
      */
-    public function hasNestedPath(): bool;
+    public function hasNestedPath();
 
     /**
      * Determine if an attribute is an integer.
      *
+     * @param string $attribute
+     *
      * @return bool
      */
-    public function isIntegerAttribute(string $attribute): bool;
+    public function isIntegerAttribute($attribute);
 
     /**
      * @return AdjacencyBuilder<Model>

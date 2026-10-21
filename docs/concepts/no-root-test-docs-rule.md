@@ -1,3 +1,14 @@
+---
+title: "no root test docs rule"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "no root test docs rule"
+issues: []
+discussions: []
+---
+
 # REGOLA CRITICA: Test Docs NEI MODULI/TEMI
 
 ## PROBLEMA
