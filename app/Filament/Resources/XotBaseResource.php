@@ -143,10 +143,13 @@ abstract class XotBaseResource extends FilamentResource
      * ~100 consumer che ancora implementano solo `getFormSchemaOld()` (grep
      * `getFormSchemaOld` su `Modules/*`) — vedi docs/chat/STOP-*-getformschema-*.md.
      *
+     * NON final: ~55 Resource in Modules/* sovrascrivono questo metodo durante
+     * la migrazione. Con `final` ogni override fallisce al bootstrap
+     * ("Cannot override final method") e blocca anche PHPStan.
+     *
      * @return array<int|string, \Filament\Schemas\Components\Component>
-     * DEVE ESSERE FINAL !!
      */
-    final public function getFormSchemaOld(): array
+    public function getFormSchemaOld(): array
     {
         return [];
     }
