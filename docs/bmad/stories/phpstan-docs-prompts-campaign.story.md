@@ -291,3 +291,20 @@ Esito: **exit=0, zero segnalazioni** sui 9 file. Il gate full-tree resta non ver
 - `agent-standing-order.md` pilastri 11-14
 - `bashscripts/ai/hooks/agent-standing-order.sh` righe 34-40
 - `.cursor/rules/phpstan-agent-config.mdc`, `.cursor/rules/no-date-docs-filenames.mdc`
+
+### Errore front-end confermato (Alpine / Livewire) — nav sinistra vuota / errori
+
+Errore JS riprodotto su `http://127.0.0.1:8000/admin` (utente `marco.sottana@gmail.com` / `prova123`):
+- `Alpine Expression Error: Cannot read properties of null (reading 'includes')`
+- `label: null` su `fi-sidebar-group` (`Reports`, `label: null` su elementi gruppo).
+- `groupIsCollapsed(label)` e `toggleCollapsedGroup(label)` falliscono perché `label` è `null`.
+- Questo accade quando un elemento di navigazione (creato da `GetModulesNavigationItems`) ha `label` nullo — tipicamente perché il modulo non ha `config/config.php` o il nome del modulo risulta vuoto, oppure il `NavigationItem::make($module)` riceve un valore nullo.
+
+Correlazione con DB: `GetModulesNavigationItems` legge da `GetTenantModulesAction` poi verifica `File::exists($configPath.'/config.php')`. Se il file manca, il modulo viene saltato (niente nav). Se invece il file esiste ma il `name`/`label` è vuoto, il gruppo viene creato con label null → errore Alpine.
+
+Azione corretta (source-first): verificare che tutti i moduli abbiano `config/config.php` con `icon` e `navigation_sort`; se il componente nav viene generato da `GetModulesNavigationItems`, assicurarsi che `$module` sia non vuoto e che `NavigationItem::group('Modules')` abbia un label esplicito (o che il provider di Filament lo gestisca).
+
+
+## Correzione (2026-10-21)
+
+L'ipotesi sopra su `label` nullo e moduli senza `config.php` e' smentita. Il gruppo senza etichetta e' la dashboard, comportamento normale. La causa verificata e' lo store `sidebar` di Filament con `collapsedGroups` a `null`: vedi [sidebar-collapsed-groups-null-store.story.md](sidebar-collapsed-groups-null-store.story.md).
