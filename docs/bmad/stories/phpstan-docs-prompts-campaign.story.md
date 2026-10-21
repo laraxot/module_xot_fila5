@@ -268,3 +268,26 @@ Nessun conflitto tra subagent: gli scope di file erano disgiunti (un modulo per 
 5. Campaign story aggiornata; niente date nel nome; verifica con `phpstan.agent.*.neon` per modulo (evita collisione tmpDir).
 
 **Check (non dichiarato zero)**: il full-tree `analyse Modules --level=max -c phpstan.neon` supera 300s su WSL2 (timeout ambientale, non zero fittizio). Il run con `--level=max -c phpstan.neon` (bg_185) ha prodotto 41 errori; i subagent riduciranno quelli su ciascun modulo. Quando ogni subagent concludera' con `exit 0` sul proprio `phpstan.agent.*.neon`, il gate sara' verde per modulo; il full-tree sara' verificabile solo su host dedicato con memoria sufficiente.
+
+### Verifica finale sui file toccati (bg_198, exit=0)
+
+Config dedicato `laravel/phpstan.agent.fixed.neon` (tmpDir `/tmp/phpstan-fixed`, `paths:` = 9 file modificati) analizzato a `--level=max`:
+
+- `Modules/Sigma/app/Models/Asz00f.php` (scopeOfYear ripristinato, `Builder<static>`)
+- `Modules/Sigma/app/Models/Traits/Extras/FunctionExtra.php` (diff con `normalizeRowList`, debug `$test` rimosso)
+- `Modules/Sigma/app/Models/Traits/Extras/MassExtra.php` (subagent: dead code rimosso)
+- `Modules/Sigma/app/Models/Traits/Relationships/EnteMatrDateRangeRelationship.php` (else ridondante rimosso)
+- `Modules/User/database/seeders/{RolesSeeder,UserMassSeeder,UserSeeder}.php` (`?Command` + `?->info()`)
+- `Modules/Ptv/app/Actions/Scheda/UpdateQuotaTeoricaAction.php` (blocco `$html` morto rimosso)
+- `Modules/Sigma/app/Filament/Pages/SqlUpload.php` (docblock `$storage`)
+
+Esito: **exit=0, zero segnalazioni** sui 9 file. Il gate full-tree resta non verificabile in questo ambiente (timeout 300s su WSL2, `bg_197` exit=124 per Sigma e User) — limite ambientale dichiarato, non silenziato.
+
+### Permanenza (memoria mechanicale)
+
+- `bashscripts/ai/wiki/memories/phpstan-agent-config-per-module.md`
+- `bashscripts/ai/wiki/memories/source-first-before-fix.md`
+- `bashscripts/ai/wiki/memories/no-date-in-docs-filenames.md`
+- `agent-standing-order.md` pilastri 11-14
+- `bashscripts/ai/hooks/agent-standing-order.sh` righe 34-40
+- `.cursor/rules/phpstan-agent-config.mdc`, `.cursor/rules/no-date-docs-filenames.mdc`
