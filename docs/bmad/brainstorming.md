@@ -11,6 +11,7 @@ related:
   - discussions/01-traits-composition.md
   - architecture.md
   - README.md
+status: draft
 ---
 
 # Xot — brainstorming
@@ -46,7 +47,7 @@ Le risposte devono diventare story BMAD con acceptance criteria misurabili, rife
 ## Vedi anche
 
 - [Architecture](architecture.md)
-- [Stories](stories/) — indice completo in [README.md](README.md)
+- [Stories](stories/) — indice completo in [README.md](readme.md)
 - [Epics](epics/module-roadmap.md)
 # Brainstorming - Modulo Xot
 

@@ -42,6 +42,7 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\Relations\Siblings;
  *
  * @phpstan-require-extends Model
  *
+<<<<<<< .merge_file_zxYkWP
 <<<<<<< .merge_file_uw2HA8
 =======
  * Tipi di ritorno solo nel `@return`, non nativi, sui metodi che il trait vendor
@@ -53,6 +54,13 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\Relations\Siblings;
  *
 >>>>>>> .merge_file_5tQDgW
  * @mixin \Illuminate\Database\Eloquent\Model
+=======
+ * The vendor trait is the source of truth for implementation. Its public methods are
+ * intentionally untyped, so this contract keeps runtime-compatible signatures and
+ * documents the types for static analysis instead.
+ *
+ * @mixin Model
+>>>>>>> .merge_file_CwyGpF
  */
 interface HasRecursiveRelationshipsContract
 {
@@ -61,8 +69,11 @@ interface HasRecursiveRelationshipsContract
      *
      * Il ritorno e' `mixed` perche' il trait vendor `HasAdjacencyList` lo dichiara cosi':
      * un tipo piu' stretto qui rende fatale il caricamento di ogni classe che usa il trait.
+<<<<<<< .merge_file_zxYkWP
      *
      * @return mixed
+=======
+>>>>>>> .merge_file_CwyGpF
      */
     public static function withMaxDepth(int $maxDepth, callable $query): mixed;
 
@@ -185,16 +196,23 @@ interface HasRecursiveRelationshipsContract
     /**
      * Determine if an attribute is an integer.
      *
+<<<<<<< .merge_file_zxYkWP
      * @param string $attribute
      *
+=======
+     * @param  string  $attribute
+>>>>>>> .merge_file_CwyGpF
      * @return bool
      */
     public function isIntegerAttribute($attribute);
 
     /**
+     * The parameter stays untyped because Eloquent's Model method is untyped at runtime.
+     *
+     * @param  Builder  $query
      * @return AdjacencyBuilder<Model>
      */
-    public function newEloquentBuilder(Builder $query);
+    public function newEloquentBuilder($query);
 
     /**
      * @param  list<Model>  $models
