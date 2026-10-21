@@ -22,6 +22,7 @@ use Illuminate\View\Middleware\ShareErrorsFromSession;
 use Modules\User\Filament\Pages\MyProfilePage;
 use Modules\Xot\Actions\Filament\GetModulesNavigationItems;
 use Modules\Xot\Actions\Panel\ApplyMetatagToPanelAction;
+use Modules\Xot\Filament\AvatarProviders\InitialsAvatarProvider;
 use Modules\Xot\Filament\Pages\MainDashboard;
 
 abstract class XotBaseMainPanelProvider extends PanelProvider
@@ -45,6 +46,8 @@ abstract class XotBaseMainPanelProvider extends PanelProvider
 
         $panel = $panel
             ->passwordReset()
+            // avatar predefinito generato in locale: il provider di Filament carica ui-avatars.com a ogni pagina (DCP-139)
+            ->defaultAvatarProvider(InitialsAvatarProvider::class)
             ->sidebarFullyCollapsibleOnDesktop()
             ->spa()
             ->profile(null, true);

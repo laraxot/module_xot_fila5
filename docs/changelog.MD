@@ -1,3 +1,12 @@
+---
+title: "Changelog - Modulo Xot"
+type: note
+updated: 2026-10-07
+tags: [docs, xot]
+qmd: "changelog - modulo xot xot"
+status: superseded
+superseded_by: CHANGELOG.MD
+---
 # Changelog - Modulo Xot
 
 Tutte le modifiche significative al modulo Xot saranno documentate in questo file.

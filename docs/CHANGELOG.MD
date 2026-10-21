@@ -1,3 +1,11 @@
+---
+title: "Changelog - Modulo Xot"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, xot]
+qmd: "changelog - modulo xot xot"
+---
 # Changelog - Modulo Xot
 
 Tutte le modifiche significative al modulo Xot saranno documentate in questo file.

@@ -85,9 +85,11 @@ trait HasExtraTrait
     }
 
     /**
-     * @param  int|float|string|array<string, mixed>|bool|null  $value
+     * Persist a schemaless attribute on the related Extra model.
+     *
+     * @param  array<string, mixed>|bool|float|int|string|null  $value
      */
-    public function setExtra(string $name, int|float|string|array|bool|null $value): void
+    public function setExtra(string $name, array|bool|float|int|string|null $value): void
     {
         $extra = $this->extra;
         if (! $extra instanceof ExtraContract || ! $extra instanceof Model) {

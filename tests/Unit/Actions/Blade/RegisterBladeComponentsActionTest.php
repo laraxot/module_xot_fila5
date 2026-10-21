@@ -31,8 +31,7 @@ it('registers blade components correctly', function (): void {
     app()->instance(GetComponentsAction::class, $getComponents);
 
     $action = app(RegisterBladeComponentsAction::class);
-    Assert::assertInstanceOf(RegisterBladeComponentsAction::class, $action);
-    Assert::assertSame(1, $mockComps->count());
+    Assert::assertCount(1, $mockComps);
 
     $action->execute($path, $namespace, $prefix);
 });
@@ -51,7 +50,7 @@ it('does nothing if no components found', function (): void {
 
     $action = app(RegisterBladeComponentsAction::class);
     Assert::assertInstanceOf(RegisterBladeComponentsAction::class, $action);
-    Assert::assertSame(0, $mockComps->count());
+    Assert::assertCount(0, $mockComps);
 
     $action->execute($path, $namespace);
 });

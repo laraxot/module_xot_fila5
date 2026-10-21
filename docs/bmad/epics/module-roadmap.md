@@ -6,6 +6,7 @@ module: Xot
 created: 2026-09-28
 updated: 2026-09-28
 qmd: "Xot epic roadmap qualità architettura test documentazione"
+tags: [docs, xot, bmad]
 ---
 # Xot — epic roadmap
 
