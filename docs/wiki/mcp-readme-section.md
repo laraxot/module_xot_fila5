@@ -3,6 +3,13 @@ title: "Xot - mcp-readme-section.md"
 module: Xot
 bmad: true
 status: active
+<<<<<<< .merge_file_9D506t
+=======
+type: note
+updated: 2026-10-09
+tags: [docs, xot, wiki]
+qmd: "mcp (model context protocol) integration xot"
+>>>>>>> .merge_file_APItb9
 ---
 # MCP (Model Context Protocol) Integration
 

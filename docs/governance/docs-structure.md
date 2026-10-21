@@ -1,3 +1,20 @@
+<<<<<<< .merge_file_Oz2vjK
+=======
+---
+title: "Struttura canonica della documentazione"
+type: note
+updated: 2026-10-09
+tags: [docs, xot, governance]
+qmd: "struttura canonica della documentazione xot"
+status: superseded
+superseded_by: ../conventions/docs-organization.md
+---
+
+> Documento storico. Usare [docs-organization.md](../conventions/docs-organization.md),
+> che risolve il conflitto tra gli indici multipli e definisce ownership e
+> integrazione Second Brain.
+
+>>>>>>> .merge_file_lZFKkZ
 # Struttura canonica della documentazione
 
 Questo documento è il riferimento per la riorganizzazione delle docs di moduli,

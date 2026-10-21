@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "architecture best practices"
 issues: []
 discussions: []
+<<<<<<< .merge_file_VbqCTf
+=======
+status: draft
+>>>>>>> .merge_file_9TrnGy
 ---
 
 ## Convenzioni di naming per le azioni (Actions)

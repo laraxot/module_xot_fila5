@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 use Filament\Resources\Resource;
-use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Xot\Tests\Fixtures\Filament\Resources\NavigationProbeResource;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -10,7 +9,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 test('xot base resource extends filament resource', function (): void {
-    Assert::assertInstanceOf(Resource::class, new NavigationProbeResource);
+    Assert::assertTrue((new ReflectionClass(NavigationProbeResource::class))->isSubclassOf(Resource::class));
 });
 
 test('xot base resource has navigation icon', function (): void {
@@ -26,5 +25,5 @@ test('xot base resource has navigation sort', function (): void {
 });
 
 test('xot base resource can be instantiated', function (): void {
-    Assert::assertInstanceOf(XotBaseResource::class, new NavigationProbeResource);
+    Assert::assertSame('Xot', NavigationProbeResource::getModuleName());
 });

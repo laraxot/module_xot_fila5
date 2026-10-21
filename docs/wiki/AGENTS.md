@@ -7,6 +7,8 @@ type: reference
 tags: [wiki, no-frontmatter-fix]
 created: 2026-08-24
 updated: 2026-08-24
+status: superseded
+superseded_by: agents.md
 ---
 
 # Xot {{TYPE^}} LLM Wiki Agent Instructions
@@ -146,6 +148,6 @@ Related:
 
 ## Related Documentation
 
-- [Project Wiki Integration](../../docs/wiki/README.md)
+- [Project Wiki Integration](readme.md)
 - [Project Wiki Agent Instructions](../../docs/wiki/AGENTS.md)
 - [Module Documentation](../README.md)

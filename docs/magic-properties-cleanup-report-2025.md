@@ -11,6 +11,10 @@ name: magic-properties-cleanup-report-2025-1
 description: "Report 2025-11-17: sostituzione di property_exists() con isset() sulle proprietà magiche dei modelli Eloquent"
 metadata:
   type: documentation
+<<<<<<< .merge_file_OtZLRW
+=======
+status: draft
+>>>>>>> .merge_file_77wRhS
 ---
 
 # Magic Properties Cleanup Report - 2025-11-17

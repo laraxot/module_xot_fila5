@@ -16,7 +16,7 @@ test('XotBaseResourceTable configure applica colonne e filtri dalla classe table
 
     $configured = XotBaseResourceTableConfigureFixture::configure($table);
 
-    Assert::assertInstanceOf(Table::class, $configured);
+    Assert::assertSame($table, $configured);
 });
 
 test('XotBaseResourceTable configure su classe astratta solleva LogicException', function (): void {

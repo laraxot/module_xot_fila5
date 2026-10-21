@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_eKWDJa
 <<<<<<< .merge_file_RrUMNO
 <<<<<<< .merge_file_ssppLM
 =======
@@ -13,6 +14,19 @@ status: active
 >>>>>>> .merge_file_YlRf72
 =======
 >>>>>>> .merge_file_uTjUQw
+=======
+---
+title: "Docs consolidation — orphan files + structure normalization — 2026-10-06"
+type: story
+module: Xot
+bmad: true
+status: in-progress
+updated: 2026-10-09
+tags: [docs, xot, bmad]
+qmd: "docs consolidation   orphan files + structure normalization   2026-10-06 xot"
+---
+
+>>>>>>> .merge_file_4A4hRU
 # Docs consolidation — orphan files + structure normalization — 2026-10-06
 
 ## Epic

@@ -11,7 +11,7 @@ status: backlog
 track: docs-hygiene
 qmd: "docs filename no date timestamp bonifica xot git-rewrite artifact"
 related:
-  - ../../../../../docs/sprint-status.yaml
+  - ../../../../../../docs/sprint-status.yaml
 ---
 
 # Xot — .md senza data/timestamp nel nome (batch trovato 2026-09-22)
@@ -35,7 +35,7 @@ gia' incluso in quel conteggio o e' nuovo (creato dopo).
 - `docs/xot-git-push-resolution-2026-07-28.md`
 - `docs/session-summary-2026-09-16-hasxottable-scheda-pdf.md`
 - `docs/testing-progress-session-2025-01-22.md`
-- `docs/lfs-resolution-2026-07-28.md`
+- `docs/lfs-resolution-corruption.md`
 - `docs/git-conflict-resolution-2026-07-31.md`
 - `docs/BRAINSTORM-TestCase-Hierarchy-XotBase-2026-06-10.md`
 - `docs/session-2026-09-15-lessons-learned.md`
@@ -49,18 +49,18 @@ gia' incluso in quel conteggio o e' nuovo (creato dopo).
 - `docs/stato-qualita-progetto-2026-08-31.md`
 - `docs/git-push-resolution-2026-07-28.md`
 - `docs/REFACTOR-panelmixin-2026-07-07.md`
-- `docs/lessons-learned-2025-08-25.md`
-- `docs/ponytail-audit-2026-07-02.md`
+- `docs/lessons-learned.md`
+- `docs/ponytail-audit-user-module-findings.md`
 - `docs/QA-VERIFICATION-2026-06-30.md`
 - `docs/brainstorm-testcase-hierarchy-xotbase-2026-06-10.md`
 - `docs/phpstan-progress-report-2025-10-13.md`
-- `docs/quality-gates-2026-07-28.md`
+- `docs/quality-gates-analysis-user-module.md`
 - `docs/qa-verification-2026-06-30.md`
 - `docs/refactor-panelmixin-2026-07-07.md`
 - `docs/git-conflicts-resolution-2025-01-06.md`
 - `docs/filament/hasxtable-visibility-fix-2026-01-27.md`
 - `docs/historical/hasxtable-visibility-fix-2026-01-27.md` (duplicato del punto sopra — verificare se identico prima di unificare)
-- `docs/consolidated/lessons-learned-2025-08-25.md` (duplicato di sopra)
+- `docs/consolidated/lessons-learned.md` (duplicato di sopra)
 - `docs/consolidated/git-conflicts-resolution-2025-01-06.md` (duplicato di sopra)
 - `docs/wiki/redundancy-audit-2026-05-26.md`
 - `docs/wiki/troubleshooting/git-merge-conflict-inventory-2026-04-28.md`

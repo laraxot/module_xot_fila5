@@ -223,8 +223,6 @@ final class ModuleRemainingCoverage
         $executed = 0;
 
         if (! is_dir($appRoot)) {
-            Assert::assertSame(0, $executed);
-
             return;
         }
 
