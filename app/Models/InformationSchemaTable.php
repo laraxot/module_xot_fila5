@@ -8,7 +8,6 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
 use Modules\Tenant\Models\BaseModelJson;
-use Modules\Tenant\Models\Traits\SushiToJson;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Database\Factories\InformationSchemaTableFactory;
 
@@ -44,8 +43,6 @@ use Modules\Xot\Database\Factories\InformationSchemaTableFactory;
  */
 class InformationSchemaTable extends BaseModelJson
 {
-
-
     /**
      * @var list<string>
      */

@@ -1,3 +1,14 @@
+---
+title: "xot base section rule"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xot base section rule"
+issues: []
+discussions: []
+---
+
 # Regola XotBaseSection - Politica, Filosofia, Religione, Zen
 
 ## Scopo (Purpose)
@@ -158,6 +169,14 @@ class CompanySection extends XotBaseSection
 
 ---
 
+title: "xot base section rule"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xot base section rule"
+issues: []
+discussions: []
 **Data creazione**: 2025-12-12
 **Status**: ✅ Regola attiva e obbligatoria
 **Priorità**: CRITICA - Violazioni bloccano il codice

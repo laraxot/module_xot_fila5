@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_z8d13y
-<<<<<<< .merge_file_t0hOOQ
 ---
 title: "Xot — architettura BMAD"
 type: architecture
@@ -14,6 +12,12 @@ related:
   - app/Providers/XotBaseServiceProvider.php
   - app/Filament/Resources/XotBaseResource.php
   - app/Models/XotBaseModel.php
+  - ../../app/Providers/XotBaseServiceProvider.php
+  - ../../app/Filament/Resources/XotBaseResource.php
+  - ../../app/Models/XotBaseModel.php
+  - ../../app/Providers/XotBaseServiceProvider.php
+  - ../../app/Filament/Resources/XotBaseResource.php
+  - ../../app/Models/XotBaseModel.php
 ---
 
 # Xot — architettura
@@ -114,9 +118,6 @@ Ogni risorsa concreta segue il pattern: `Resource.php` + `Pages/` + `Schemas/For
 ## Verifica link
 
 I link relativi puntano a file esistenti in questo modulo. Vedasi `README.md` per lo story index e `discussions/01-traits-composition.md` per il contesto architetturale.
-=======
-=======
->>>>>>> .merge_file_SsvJtK
 # Architettura del modulo Xot
 
 ## Overview
@@ -150,7 +151,11 @@ Interfacce per l'iniezione di dipendenze.
 - Filament Widget invece di Livewire
 - Array una chiave per riga
 - Schema-driven Forms (XotBaseSchemaWidget)
-<<<<<<< .merge_file_z8d13y
->>>>>>> .merge_file_MNfWYP
-=======
->>>>>>> .merge_file_SsvJtK
+
+## Pattern utilizzati
+
+- Action (Spatie QueueableAction con `execute()`) al posto dei Service.
+- Widget Filament al posto di componenti Livewire dedicati.
+- Array PHP con una chiave per riga.
+- Form schema-driven tramite `XotBaseSchemaWidget` (`app/Filament/Widgets/XotBaseSchemaWidget.php`).
+- Contratti per l'iniezione di dipendenze in `app/Contracts/` (es. `DataContract`, `ExtraContract`).
