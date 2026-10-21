@@ -7,10 +7,7 @@ story_id: "2026-10-06-remove-typedhasrecursiverelationships"
 status: done
 track: quality/refactor
 related:
-  - phpstan-modules-level10.story.md
-updated: 2026-10-09
-tags: [docs, xot, bmad]
-qmd: "remove typedhasrecursiverelationships wrapper xot"
+  - 2026-10-06-phpstan-modules-level10.story.md
 ---
 
 # Remove TypedHasRecursiveRelationships wrapper
@@ -29,7 +26,7 @@ Rimuovere il trait wrapper `TypedHasRecursiveRelationships` e usare direttamente
 ## Criteri di accettazione
 
 - [x] `TypedHasRecursiveRelationships` rimosso
-- [x] `HasRecursiveRelationshipsContract` mantenuto runtime-compatible con le firme vendor e documentato con PHPDoc
+- [x] `HasRecursiveRelationshipsContract` aggiornato con template covariante `TModel`
 - [x] Tutti i 4 modelli usano `use Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships;`
 - [x] PHPStan Level 10 passa su tutti i moduli
 - [x] Test Pest: errori preesistenti su temi mancanti (non correlati)
@@ -38,14 +35,14 @@ Rimuovere il trait wrapper `TypedHasRecursiveRelationships` e usare direttamente
 ## Diario
 
 - 2026-10-06: Story creata, analisi iniziata
-- 2026-10-06: Capito il "perché": il wrapper aggiunge complessità e duplicava il vendor. Il trait vendor resta la fonte unica del comportamento; il contratto mantiene firme native compatibili e usa PHPDoc per i tipi che il pacchetto espone via annotazioni.
+- 2026-10-06: Capito il "perché": il wrapper aggiunge complessità; usando template covariante nel contratto + vendor trait diretto, PHPStan inferisce i tipi dal trait vendor (docblock `@return Ancestors<static, static>`) e il contratto è soddisfatto.
 - 2026-10-06: Xot (`BaseTreeModel`, `XotBaseTreeModel`) e Cms `BaseTreeModel` usano il trait vendor; wrapper cancellato. Cms `Menu` aggiornato.
 - 2026-10-06: Risolti tutti gli errori PHPStan Level 10 su tutti i moduli (31 errori iniziali → 0)
 - 2026-10-06: Story completata
 
 ## Note tecniche
 
-Il pattern chiave è non duplicare le firme del pacchetto: `HasRecursiveRelationships` implementa il comportamento e i suoi PHPDoc espongono `static` nelle relazioni. Il contratto Xot resta volutamente non generico e non introduce return type nativi dove il vendor non li dichiara, perché una restrizione nativa renderebbe incompatibili i model che compongono direttamente il trait.
+Il pattern chiave: in PHP 8.0+, template covariante `@template-covariant TModel of Model` nell'interfaccia permette di usare `TModel` nelle posizioni di ritorno. Il vendor trait ha docblock `@return Ancestors<static, static>` che PHPStan usa per inferire i tipi. Con il contratto covariante, `HasRecursiveRelationshipsContract<Menu>` è sottotipo di `HasRecursiveRelationshipsContract<Model>`.
 
 Modelli aggiornati:
 - `Modules\Xot\Models\XotBaseTreeModel`

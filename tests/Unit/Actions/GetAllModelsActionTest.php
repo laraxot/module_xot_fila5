@@ -12,35 +12,31 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit\Actions;
 
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Modules\Xot\Actions\Model\GetAllModelsAction;
 use PHPUnit\Framework\Assert;
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
 class GetAllModelsActionTest extends TestCase
 {
-    use RefreshDatabase;
-    use WithFaker;
-
-    protected GetAllModelsAction $action;
+    private GetAllModelsAction $getAllModelsAction;
 
     protected function setUp(): void
     {
         parent::setUp();
-        $this->action = new GetAllModelsAction;
+        $this->getAllModelsAction = new GetAllModelsAction;
     }
 
-    /** @test Action can be instantiated */
+    #[Test]
     public function it_can_be_instantiated(): void
     {
-        Assert::assertSame(GetAllModelsAction::class, $this->action::class);
+        Assert::assertSame(GetAllModelsAction::class, $this->getAllModelsAction::class);
     }
 
-    /** @test Action retrieves core User model */
+    #[Test]
     public function it_retrieves_user_model(): void
     {
-        $models = $this->action->execute();
+        $models = $this->getAllModelsAction->execute();
 
         $userModels = array_values(array_filter(
             $models,
@@ -50,10 +46,10 @@ class GetAllModelsActionTest extends TestCase
         Assert::assertGreaterThan(0, count($userModels));
     }
 
-    /** @test Action returns model class names */
+    #[Test]
     public function it_returns_valid_model_class_names(): void
     {
-        $models = $this->action->execute();
+        $models = $this->getAllModelsAction->execute();
 
         foreach ($models as $model) {
             Assert::assertIsString($model);
@@ -61,22 +57,22 @@ class GetAllModelsActionTest extends TestCase
         }
     }
 
-    /** @test Action handles empty namespace gracefully */
+    #[Test]
     public function it_handles_invalid_namespaces(): void
     {
         $this->expectNotToPerformAssertions();
 
         try {
-            $this->action->execute();
+            $this->getAllModelsAction->execute();
         } catch (\Exception $e) {
             $this->fail('Action threw exception on invalid namespace: '.$e->getMessage());
         }
     }
 
-    /** @test Action result is not empty for core application */
+    #[Test]
     public function it_returns_non_empty_result(): void
     {
-        $models = $this->action->execute();
+        $models = $this->getAllModelsAction->execute();
 
         Assert::assertGreaterThan(0, count($models));
     }
