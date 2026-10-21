@@ -22,7 +22,7 @@ class CreateTableIndexByModelClassColumnsAction
     /**
      * Execute the action.
      *
-     * @param  class-string<Model>  $modelClass  fully qualified model class name
+     * @param  string  $modelClass  fully qualified model class name, validated at runtime
      * @param  array<string>  $columns  array of column names to include in the index
      *
      * @throws \InvalidArgumentException|\RuntimeException

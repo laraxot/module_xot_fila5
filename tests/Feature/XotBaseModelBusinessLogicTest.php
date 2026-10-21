@@ -34,7 +34,7 @@ describe('Xot Base Model Business Logic', function (): void {
 
     test('it has required traits', function (): void {
         // Arrange & Act
-        $baseModel = createXotBaseModelFixture();
+        createXotBaseModelFixture();
 
         // Assert
     });
@@ -109,7 +109,7 @@ describe('Xot Base Model Business Logic', function (): void {
 
     test('it supports soft deletes when configured', function (): void {
         // Arrange & Act
-        $baseModel = createXotBaseModelFixture();
+        createXotBaseModelFixture();
 
         // Assert - Soft deletes may or may not be configured
     });
@@ -128,14 +128,14 @@ describe('Xot Base Model Business Logic', function (): void {
 
     test('it supports tenant isolation when configured', function (): void {
         // Arrange & Act
-        $baseModel = createXotBaseModelFixture();
+        createXotBaseModelFixture();
 
         // Assert - Tenant isolation may or may not be configured
     });
 
     test('it supports audit trail when configured', function (): void {
         // Arrange & Act
-        $baseModel = createXotBaseModelFixture();
+        createXotBaseModelFixture();
 
         // Assert - Audit trail may or may not be configured
     });
@@ -201,14 +201,14 @@ describe('Xot Base Model Business Logic', function (): void {
 
     test('it supports relationship loading', function (): void {
         // Arrange & Act
-        $baseModel = createXotBaseModelFixture();
+        createXotBaseModelFixture();
 
         // Assert
     });
 
     test('it supports attribute access', function (): void {
         // Arrange & Act
-        $baseModel = createXotBaseModelFixture();
+        createXotBaseModelFixture();
 
         // Assert
     });
@@ -228,28 +228,28 @@ describe('Xot Base Model Business Logic', function (): void {
 
     test('it supports model events', function (): void {
         // Arrange & Act
-        $baseModel = createXotBaseModelFixture();
+        createXotBaseModelFixture();
 
         // Assert
     });
 
     test('it supports observers', function (): void {
         // Arrange & Act
-        $baseModel = createXotBaseModelFixture();
+        createXotBaseModelFixture();
 
         // Assert
     });
 
     test('it supports scopes', function (): void {
         // Arrange & Act
-        $baseModel = createXotBaseModelFixture();
+        createXotBaseModelFixture();
 
         // Assert
     });
 
     test('it supports accessors and mutators', function (): void {
         // Arrange & Act
-        $baseModel = createXotBaseModelFixture();
+        createXotBaseModelFixture();
 
         // Assert
     });
