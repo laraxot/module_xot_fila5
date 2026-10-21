@@ -33,6 +33,6 @@ it('throws if record has no email', function (): void {
         app(SendMailByRecordAction::class)->execute($record, \stdClass::class);
         Assert::fail('Expected exception was not thrown.');
     } catch (\InvalidArgumentException $e) {
-        Assert::assertInstanceOf(\InvalidArgumentException::class, $e);
+        Assert::assertNotEmpty($e->getMessage());
     }
 });

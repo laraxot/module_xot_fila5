@@ -160,7 +160,7 @@ describe('Get Pdf Content By Record Action', function () use (&$action): void {
             app(GetPdfContentByRecordAction::class)->execute($user, $customFilename);
             Assert::fail('Expected exception was not thrown.');
         } catch (\Exception $e) {
-            Assert::assertInstanceOf(\Exception::class, $e);
+            Assert::assertNotEmpty($e->getMessage());
         }
     });
 

@@ -18,6 +18,10 @@ related:
   - ../../app/Providers/XotBaseServiceProvider.php
   - ../../app/Filament/Resources/XotBaseResource.php
   - ../../app/Models/XotBaseModel.php
+<<<<<<< .merge_file_zmW4Qt
+=======
+status: draft
+>>>>>>> .merge_file_lGYeMu
 ---
 
 # Xot — architettura
