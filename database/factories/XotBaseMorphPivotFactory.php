@@ -24,29 +24,5 @@ class XotBaseMorphPivotFactory extends Factory
      */
     protected $model = XotBaseMorphPivot::class;
 
-    /**
-     * Define the model's default state.
-     *
-     * @return array<string, mixed>
-     */
-    public function definition(): array
-    {
-        return [
-            'id' => fake()->uuid(),
-            'morph_type' => 'Modules\\'.fake()->word().'\\Models\\'.fake()->word(),
-            'morph_id' => fake()->randomNumber(),
-            'related_type' => fake()->optional(0.7)->randomElement([
-                'Modules\User\Models\User',
-                'Modules\Post\Models\Post',
-                'Modules\Comment\Models\Comment',
-            ]),
-            'related_id' => fake()->optional()->randomNumber(),
-            'created_at' => fake()->dateTimeBetween('-1 year', 'now'),
-            'updated_at' => fake()->dateTimeBetween('-1 month', 'now'),
-            'deleted_at' => fake()->optional(0.1)->dateTime(),
-            'created_by' => fake()->optional(0.7)->uuid(),
-            'updated_by' => fake()->optional(0.7)->uuid(),
-            'deleted_by' => fake()->optional(0.1)->uuid(),
-        ];
-    }
+
 }
