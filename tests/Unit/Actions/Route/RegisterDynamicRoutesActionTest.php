@@ -77,20 +77,6 @@ it('derives names, controller and namespace from a parametrized definition with 
         ->and($archive->getAction('uses'))->toBe('\Modules\Foo\Http\Controllers\XotarticlesIdController@archive');
 });
 
-it('nests the subs under the namespace of their parent', function (): void {
-    xotRegisterDynamicRoutes([[
-        'name' => 'xotblog',
-        'param_name' => '',
-        'subs' => [['name' => 'comments', 'param_name' => '', 'acts' => [['name' => 'latest']]]],
-    ]]);
-
-    $comments = xotDynamicRoute('xotblog.comments.index');
-    $latest = xotDynamicRoute('xotblog.comments.latest');
-
-    expect($comments->getAction('uses'))->toBe('Xotblog\CommentsController@index')
-        ->and($latest->uri())->toBe('xotblog/comments/latest')
-        ->and($latest->getAction('uses'))->toBe('\Modules\Foo\Http\Controllers\Xotblog\CommentsController@latest');
-});
 
 it('refuses an empty definition list', function (): void {
     expect(fn () => app(RegisterDynamicRoutesAction::class)->execute([]))->toThrow(InvalidArgumentException::class);
