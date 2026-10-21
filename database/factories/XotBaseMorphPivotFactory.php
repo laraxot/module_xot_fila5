@@ -15,7 +15,7 @@ use Modules\Xot\Models\XotBaseMorphPivot;
  *
  * @extends Factory<XotBaseMorphPivot>
  */
-class XotBaseMorphPivotFactory extends Factory
+abstract class XotBaseMorphPivotFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
@@ -23,6 +23,4 @@ class XotBaseMorphPivotFactory extends Factory
      * @var class-string<XotBaseMorphPivot>
      */
     protected $model = XotBaseMorphPivot::class;
-
-
 }
