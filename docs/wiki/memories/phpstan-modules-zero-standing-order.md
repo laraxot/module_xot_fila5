@@ -4,7 +4,7 @@ type: memory
 module: Xot
 status: active
 created: 2026-10-20
-updated: 2026-10-20
+updated: 2026-10-22
 qmd: "phpstan analyse Modules zero ordine permanente senza conferma catena source fix swarm bmad docs prompts boy scout turn non banale"
 related:
   - ./phpstan-single-neon-config.md
@@ -38,6 +38,10 @@ in Hindsight non e' prova del presente.
 
 Contano **entrambe**: json `totals.file_errors` e `totals.errors` a `0`, piu'
 banner `[OK] No errors` nello stesso run del coordinatore.
+
+Ultima rimisura coordinatore: **2026-10-22** — `file_errors=0`, `errors=0`,
+`[OK] No errors` (story [phpstan-modules-zero-gate](../../stories/phpstan-modules-zero-gate.story.md)).
+A zero → boy scout docs (184 file ridondanti rimossi nella stessa sessione).
 
 ## Collegamenti
 
