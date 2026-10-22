@@ -8,7 +8,7 @@ module: Xot
 tags: [phpstan, cleanup, xot, swarm, tests, pest, lessons-learned]
 related:
   - ./2026-10-06-phpstan-cleanup-xot-rest.story.md
-  - ./2026-10-06-phpstan-cleanup-xot-app.dev.md
+  - ./phpstan-cleanup-xot-app-dev-gruppo.dev.md
   - ../bmad/phpstan-status.md
 ---
 
