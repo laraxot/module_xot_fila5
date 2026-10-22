@@ -59,6 +59,7 @@ Resource, widget e test Filament passano da **`laravel/phpstan.neon` solo** (mod
 - Livewire→Widget blueprint: [livewire-to-filament-widgets-filament-blueprint.md](./livewire-to-filament-widgets-filament-blueprint.md)
 - Code quality wave: [code-quality-wave.md](./code-quality-wave.md)
 - Services→Actions Filament: [services-to-queueable-actions-filament-blueprint.md](./services-to-queueable-actions-filament-blueprint.md)
+- Zero cartelle `app/Services` (planning): [planning-services-to-actions-zero-folders.md](./planning-services-to-actions-zero-folders.md)
 - Ratchet: `Modules/Xot/tests/Unit/Filament/NeverExtendFilamentDirectlyTest.php`
 
 ## Tooling fuori dal panel
