@@ -59,4 +59,4 @@ Non riproducibili dopo la modifica del file: erano risultati stale della result-
 Issue: TODO (gh non installato su questa macchina)
 Discussion: TODO
 
-Vedi [dev](./phpstan-cleanup-xot-app.dev.md).
+Vedi [dev](./2026-10-06-phpstan-cleanup-xot-app.dev.md).

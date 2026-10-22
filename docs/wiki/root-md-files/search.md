@@ -10,7 +10,10 @@ updated: 2026-07-14
 qmd: "search"
 related:
   - "./eloquent-magic-properties-rule.md"
+<<<<<<< .merge_file_V3glb8
+=======
 status: draft
+>>>>>>> .merge_file_Rhf3Ul
 ---
 
 

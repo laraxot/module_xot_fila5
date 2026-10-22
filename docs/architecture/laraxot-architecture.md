@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "laraxot architecture"
 issues: []
 discussions: []
+<<<<<<< .merge_file_YQTR6Z
+=======
 status: draft
+>>>>>>> .merge_file_FZrMvl
 ---
 
 # Laraxot Architecture: Philosophy, Religion, Politics, and Zen

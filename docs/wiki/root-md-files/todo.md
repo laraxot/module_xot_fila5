@@ -10,7 +10,10 @@ updated: 2026-07-14
 qmd: "todo"
 related:
   - "./eloquent-magic-properties-rule.md"
+<<<<<<< .merge_file_N6BQXr
+=======
 status: draft
+>>>>>>> .merge_file_wncpmQ
 ---
 
 

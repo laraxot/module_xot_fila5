@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "array keys rule"
 issues: []
 discussions: []
+<<<<<<< .merge_file_TFMOKk
+=======
 status: draft
+>>>>>>> .merge_file_55pUKX
 ---
 
 # Array Keys Rule for Filament Schemas

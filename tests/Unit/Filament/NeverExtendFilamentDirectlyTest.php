@@ -54,6 +54,7 @@ function filamentBasesWithXotEquivalent(): array
         'Select' => 'XotBaseSelect',
         'Field' => 'XotBaseField',
         'TextInput' => 'XotBaseTextInput',
+        'Widget' => 'XotBaseWidget',
     ];
 }
 

@@ -9,8 +9,6 @@ created: 2026-10-09
 updated: 2026-10-09
 related:
   - ./5.260-phpstan-modules-current-remediation.story.md
-tags: [docs, xot, bmad]
-qmd: "scopo xot"
 ---
 
 # Scopo
