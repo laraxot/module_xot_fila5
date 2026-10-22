@@ -82,6 +82,13 @@ passa a `ready-for-dev`. Prompt
 allineato al conteggio reale. Implementazione non avviata finché non si apre
 una wave esplicita.
 
+## [2026-10-20 19:45] DELETE zombie `tableto_formx` / `Tableto_formx`
+
+**Decision:** rimossi i due file senza estensione in `Xot/app/Http/Livewire/`
+(importavano `ColumnService`/`PanelService` morti). Gia' classificati dead
+nell'inventario sopra; boy scout post-zero Services→Actions li elimina a
+riferimenti zero (recuperabili da git del modulo Xot).
+
 <!-- gateguard: append to existing decision-log (not first create); linked from advantages/fleet/brainstorming; user: "non utilizziamo piu' componenti livewire ma utilizziamo al loro posto filament widget" + brainstorming/planning BMAD + filament blueprint -->
 
 ## [2026-10-20] Planning refresh — religione panel-first + legal REUSE
