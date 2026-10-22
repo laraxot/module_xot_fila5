@@ -104,7 +104,7 @@ Progressioni, Lang, Indennita*, Sigma, Pdnd, Tenant.
 ## Prompts reorg (2026-10-21)
 
 Scope esclusivo: `bashscripts/docs/prompts/` + memoria
-`bashscripts/ai/wiki/memories/docs-prompts-canonical-set-20261021.md`.
+`bashscripts/ai/wiki/memories/docs-prompts-canonical-set.md`.
 Nessun codice applicativo, nessuna docs di modulo o tema.
 
 ### Fusioni e rimozioni

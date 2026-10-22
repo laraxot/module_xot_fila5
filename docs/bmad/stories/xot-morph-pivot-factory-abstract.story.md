@@ -9,7 +9,7 @@ created: 2026-10-21
 updated: 2026-10-21
 related:
   - ./2026-10-09-phpstan-modules-remediation.story.md
-  - ../../../UI/docs/bmad/stories/phpstan-clusterB-20261021.story.md
+  - ../../../UI/docs/bmad/stories/phpstan-clusterB.story.md
 ---
 
 # Scopo
