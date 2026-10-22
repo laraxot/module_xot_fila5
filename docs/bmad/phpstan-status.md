@@ -96,7 +96,7 @@ Orfane che erano logica tolta, non rumore: `RelationX::morphToManyX()` (prefisso
 (non popolava `$data`), `--type` di `xot:analyze-components` (mai applicato).
 Gli errori `HasXotTable` "in context of class@anonymous" erano result-cache stale.
 <<<<<<< .merge_file_m9BlYs
-Dettaglio e lezioni: [dev-story](../stories/2026-10-06-phpstan-cleanup-xot-app.dev.md).
+Dettaglio e lezioni: [dev-story](../stories/phpstan-cleanup-xot-app-dev-gruppo.dev.md).
 =======
 Dettaglio e lezioni: [dev-story](../stories/phpstan-cleanup-xot-app.dev.md).
 >>>>>>> .merge_file_TcYpDe
@@ -112,7 +112,7 @@ comportamento del titolo); 53 erano parametri inutilizzati degli stub Pest
 senza PHPDoc risolto -> classe nominata). Pest non eseguito (`.env.testing` = MySQL).
 Da decidere: `tests/PestStubs.php` e' orfano ma e' lui a risolvere `Pest\Laravel\*` per PHPStan.
 <<<<<<< .merge_file_m9BlYs
-Dettaglio e lezioni: [dev-story](../stories/2026-10-06-phpstan-cleanup-xot-rest.dev.md).
+Dettaglio e lezioni: [dev-story](../stories/phpstan-cleanup-xot-rest-dev-tests-helpers-stub.dev.md).
 =======
 Dettaglio e lezioni: [dev-story](../stories/phpstan-cleanup-xot-rest.dev.md).
 >>>>>>> .merge_file_TcYpDe

@@ -4,7 +4,7 @@
 =======
 >>>>>>> .merge_file_pLDTXi
 ---
-title: "Xot - phpstan-fleet-remediation-2026-10-06.story.md"
+title: "Xot - phpstan-fleet-remediation-xot-story-md.story.md"
 module: Xot
 bmad: true
 status: active
