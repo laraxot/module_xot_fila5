@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Support;
+namespace Modules\Xot\Actions\Filament;
 
 use Filament\Panel;
 use Illuminate\Support\Arr;
@@ -12,14 +12,22 @@ use Illuminate\Support\Str;
 use Nwidart\Modules\Facades\Module;
 use Nwidart\Modules\Module as NwidartModule;
 use Webmozart\Assert\Assert;
+use Spatie\QueueableAction\QueueableAction;
 
 /**
- * Risoluzione modulo/config da Filament Panel — helper puro, non QueueableAction.
+ * Lettura config modulo nwidart da un Filament Panel (funzioni pure — non QueueableAction).
  */
-final class PanelModuleResolver
+final class PanelModuleAction
 {
-    private function __construct() {}
+    use QueueableAction;
 
+    /**
+     * @return array<string, mixed>
+     */
+    public function execute(Panel $panel): array
+    {
+        return self::config($panel);
+    }
     public static function moduleName(Panel $panel): string
     {
         $name = Str::before($panel->getId(), '::');
@@ -69,7 +77,9 @@ final class PanelModuleResolver
     public static function navigationLabel(Panel $panel): string
     {
         $name = Arr::get(self::moduleConfig($panel), 'name');
-        Assert::string($name, sprintf('[%s] module config missing name', $panel->getId()));
+        if (! is_string($name) || $name === '') {
+            return self::moduleName($panel);
+        }
 
         return $name;
     }
@@ -77,7 +87,9 @@ final class PanelModuleResolver
     public static function navigationIcon(Panel $panel): string
     {
         $icon = Arr::get(self::moduleConfig($panel), 'icon');
-        Assert::string($icon, sprintf('[%s] module config missing icon', $panel->getId()));
+        if (! is_string($icon) || $icon === '') {
+            return 'heroicon-o-cube';
+        }
 
         return $icon;
     }

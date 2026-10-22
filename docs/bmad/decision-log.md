@@ -4,7 +4,7 @@ type: decision-log
 module: Xot
 status: active
 created: 2026-10-16
-updated: 2026-10-20
+updated: 2026-10-22
 tags: [bmad, decision-log, xot, no-services, boy-scout]
 qmd: "decision log xot"
 related:
@@ -14,6 +14,20 @@ related:
 ---
 
 # Decision log — Xot
+
+## 2026-10-22 — Deep audit Support (Bag + Infrastructure)
+
+- **Decisione:** rinominare Blog `Theme*Support` → `Theme*Bag`; spostare `GeoDataValidationRules` in `Infrastructure\Validation`; docs canoniche AI/Media/Cms aggiornate; debito `ShieldUtilsAction` registrato.
+- **Artefatto:** [support-deep-audit.md](./support-deep-audit.md).
+- **Perche':** user «controlla meglio e piu' a fondo» — zero cartelle non basta se restano faux-Action e naming Support.
+
+## 2026-10-22 — Wave Support: zero `app/Support` + niente faux-Action
+
+- **Decisione:** nessuna cartella `Support` sotto `Modules/*/app` o `Themes/*/app|src`. Use-case → QueueableAction; registry → `Adapters`; costanti URL/cache → `Infrastructure\Config`. Vietato Action con `execute()` vuoto.
+- **Esempi wave:** Geo `Infrastructure\Config\{GeoApiEndpoints,GeoDataConfig}`; AI `Adapters\AiActionHandlerRegistry`; Blog Article* → Actions + `ArticlePresentationAdapter`; Media path/exporter → Actions; Fixcity seeders → `Demo/`.
+- **Perche':** user — Support devono sparire / diventare Spatie Queueable Actions (con ruoli semantici, non fingere la coda).
+- **Gate:** `NoServicesTest` (Support dir + namespace); process [no-app-support-queueable-actions](../../../../../docs/second-brain/process/no-app-support-queueable-actions.md).
+- **Track:** BMAD + second brain + filament blueprint Services→Actions.
 
 ## 2026-10-20 — Planning BMAD zero-folders Services (chiusura maintain)
 
