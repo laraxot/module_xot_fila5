@@ -254,7 +254,7 @@ dealerdirect/phpcodesniffer-composer-installer is blocked by allow-plugins confi
 
 - **PHPStan output:** `/tmp/phpstan_xot_l10_clean.log` (1000+ error lines, sampled)
 <<<<<<< .merge_file_y5S9nJ
-- **LFS documentation:** `laravel/Modules/Xot/docs/LFS_RESOLUTION_2026_07_28.md`
+- **LFS documentation:** `laravel/Modules/Xot/docs/LFS_RESOLUTION-corruption.md`
 =======
 - **LFS documentation:** `laravel/Modules/Xot/docs/LFS_RESOLUTION.md`
 >>>>>>> .merge_file_ujm6HE

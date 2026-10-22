@@ -69,13 +69,13 @@ Per i 17 controllo finale con `rg -F -i --hidden` e `grep -rliF` sul basename e 
 (controprova positiva sul basename `machine-learning.md`: rg 3, grep 3).
 
 Cancellati (17, elenco completo):
-`archive/laragon/update-mysql-8-0.md`, `archive/laravelfs-analysis.md`, `consolidated/archive/class-string-fixes.md`,
+`archive/laragon/update-mysql-aggiornare.md`, `archive/laravelfs-analysis.md`, `consolidated/archive/class-string-fixes.md`,
 `consolidated/archive/data-object-fixes.md`, `consolidated/archive/fixes-effettuate.md`, `consolidated/archive/laravelfs-analysis.md`,
 `consolidated/archive/level-10-analysis.md`, `consolidated/archive/missing-data-classes-fixes.md`,
 `consolidated/archive/mixed-type-solutions.md`, `consolidated/archive/path-resolution-fixes.md`,
 `consolidated/archive/property-type-fixes.md`, `consolidated/archive/return-type-fixes.md`,
 `consolidated/archive/static-access-fixes.md`, `consolidated/archive/summary-of-all-fixes.md`,
-`consolidated/archive/update-mysql-8-0.md`, `consolidated/panel-provider-1.md`, `consolidated/xotbase-extension-rules-2.md`.
+`consolidated/archive/update-mysql-aggiornare.md`, `consolidated/panel-provider-1.md`, `consolidated/xotbase-extension-rules-2.md`.
 Lock per directory (`archive`, `consolidated`), rilasciati. Git li ricorda.
 
 Restano 1612 vuoti referenziati, per tipo di riferimento:

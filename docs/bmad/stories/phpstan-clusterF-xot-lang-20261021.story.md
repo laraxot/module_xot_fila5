@@ -11,7 +11,7 @@ updated: 2026-10-21
 tags: [phpstan, swarm, cluster-f, xot, lang, factory, phpunit, bmad]
 qmd: "phpstan cluster f xot lang zero errori factory astratta phpunit attribute test database guard lock stale 20261021"
 related:
-  - ./phpstan-modules-swarm-20261021.story.md
+  - ./phpstan-modules-swarm.story.md
   - ./phpstan-zero-errors-modules.story.md
   - ../filament-blueprint.md
   - ../../../../Lang/docs/bmad/filament-blueprint.md
