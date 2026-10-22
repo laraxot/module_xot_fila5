@@ -37,9 +37,10 @@ fantasma (es. modulo assente): solo Actions tipizzate o dati già risolti a mont
   entrambe le modalita'; la scelta e' del caller UI, non del suffisso legacy `Service`;
 - notificare `queued`, `completed` e `failed` senza bloccare il worker UI;
 - non passare componenti Filament, Request o Closure dentro una Action dispatchata.
-- dopo ogni migrazione verificare che la directory `app/Services/` sia assente;
-- adapter tecnici usati dal Widget vivono in `Adapters`/`Infrastructure`, mai in `Services`.
-- Blade/temi: nessun `app('Modules\\…\\Services\\…')`; i dati arrivano da props CMS o da Action nel View Model.
+- dopo ogni migrazione verificare che `app/Services/` e `app/Support/` siano assenti (anche nested);
+- adapter/registry usati dal Widget vivono in `Adapters`/`Infrastructure`, mai in `Services`/`Support`;
+- costanti config (URL, cache) in `Infrastructure\Config`, non Action faux;
+- Blade/temi: nessun Services/Support via `app()`; dati da props CMS o Action.
 
 ## Mappa UI → Action
 
@@ -72,3 +73,7 @@ Ogni Action dispatchata deve definire:
 - [ ] test Livewire/Filament e PHPStan passano;
 - [ ] story e decision log aggiornati.
 - [ ] `find Modules/<Modulo>/app -type d -name Services` non restituisce risultati.
+
+## Deep audit
+
+Vedi [support-deep-audit.md](./support-deep-audit.md) (Bag rename, Infrastructure validation, debito ShieldUtils).

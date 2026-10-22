@@ -53,7 +53,7 @@ use Modules\Xot\Filament\Resources\ModuleResource;
 use Modules\Xot\Filament\Resources\ModuleResource\Pages\ListModules;
 use Modules\Xot\Filament\Resources\SessionResource;
 use Modules\Xot\Filament\Resources\SessionResource\Pages\ListSessions;
-use Modules\Xot\Filament\Support\RecordAnchor;
+use Modules\Xot\Filament\Links\RecordAnchor;
 use Modules\Xot\Filament\Widgets\Clock;
 use Modules\Xot\Filament\Widgets\EnvWidget;
 use Modules\Xot\Filament\Widgets\FilterFormWidget;
@@ -705,7 +705,7 @@ describe('Xot execute coverage floor 50', function (): void {
     });
 
     test('Support ColumnBuilder BaseQueryBuilder HandlerDecorator e zero-coverage bulk', function (): void {
-        $support = \Modules\Xot\Filament\Support\ColumnBuilder::class;
+        $support = \Modules\Xot\Filament\Builders\ColumnBuilder::class;
         Assert::assertNotNull($support::id());
         Assert::assertNotNull($support::name());
         Assert::assertNotNull($support::title());
