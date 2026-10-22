@@ -1,9 +1,18 @@
+<<<<<<< .merge_file_ql987i
+<<<<<<< .merge_file_nW64Fm
+=======
+=======
+>>>>>>> .merge_file_fi3qKy
 ---
 title: "Xot - legacy-readme-en.md"
 module: Xot
 bmad: true
 status: active
 ---
+<<<<<<< .merge_file_ql987i
+>>>>>>> .merge_file_colt3P
+=======
+>>>>>>> .merge_file_fi3qKy
 # ⚡ Xot — English presentation
 
 [![Core](https://img.shields.io/badge/Role-Platform%20Core-6A1B9A.svg)](#)
