@@ -79,6 +79,38 @@ test('no Services directory exists in production code', function (): void {
     expect($found)->toBe([]);
 });
 
+test('no Support directory exists under production module app roots', function (): void {
+    $found = [];
+    foreach (productionRoots() as $root) {
+        foreach (walk($root) as $entry) {
+            if ($entry->isDir() && $entry->getFilename() === 'Support') {
+                $found[] = relative($entry->getPathname());
+            }
+        }
+    }
+    sort($found);
+
+    expect($found)->toBe([]);
+});
+
+test('production code does not use a Support namespace', function (): void {
+    $found = [];
+    foreach (productionRoots() as $root) {
+        foreach (walk($root) as $entry) {
+            if (! $entry->isFile() || $entry->getExtension() !== 'php') {
+                continue;
+            }
+            $source = file_get_contents($entry->getPathname());
+            if (preg_match('/^(?:namespace|use)\s+(?:Modules|Themes|App)\\\\[A-Za-z0-9_\\\\]*\\\\Support(?:\\\\|\s|;)/m', $source) === 1) {
+                $found[] = relative($entry->getPathname());
+            }
+        }
+    }
+    sort($found);
+
+    expect($found)->toBe([]);
+});
+
 test('no class lives in a Services namespace', function (): void {
     $found = [];
     foreach (productionRoots() as $root) {
