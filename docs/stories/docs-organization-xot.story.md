@@ -145,7 +145,7 @@ Altri 38 candidati non scritti: 32 senza frontmatter (il tool non ne crea), 6 oc
 
 Nomi con data o suffisso: `md-filenames.py plan` propone 82 rinomine in Xot. Applicate solo 2, con `apply --only` e `--map-out`:
 `bmad/stories/10000-phpstan-modules-fix-2026-10-15.story.md` diventa `10000-phpstan-modules-fix.story.md` (il numero 10000 resta),
-`phpstan-fixes-summary-3.md` diventa `phpstan-fixes-summary-risultati-finali-gennaio.md`. Entrambi senza riferimenti fuori dagli indici generati
+`phpstan-fixes-summary.md` diventa `phpstan-fixes-summary-risultati-finali-gennaio.md`. Entrambi senza riferimenti fuori dagli indici generati
 (tre `project-docs-index.md` riscritti dal tool; 308 file sporchi saltati, con le due copie piu' vecchie ancora al nome vecchio: sono indici generati).
 Non applicate le altre, per tre motivi: 80 sono in `archive/` e 40 in `consolidated/`, cartelle ignorate da git (rinominare un file tracciato li' lo fa uscire dal tracciamento);
 in radice i 6 rimasti sono citati come esempio di nome vietato in guideline e report (il tool li riscriverebbe distruggendo la spiegazione) o sono falsi positivi;

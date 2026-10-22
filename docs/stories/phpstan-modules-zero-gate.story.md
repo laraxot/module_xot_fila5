@@ -4,7 +4,7 @@ type: story
 module: Xot
 status: done
 created: 2026-10-20
-updated: 2026-10-20
+updated: 2026-10-22
 tags: [phpstan, quality-gate, no-services, notificationmanager, translators, trend]
 qmd: "phpstan modules zero gate services translators trend notificationmanager execute typed"
 related:
@@ -48,7 +48,20 @@ find Modules -path '*/app/Services/*' -name '*.php'
 # atteso: vuoto
 ```
 
-## Acceptance (verificato 2026-10-20)
+## Acceptance
+
+### Rimisura 2026-10-22 (ordine permanente)
+
+| Check | Criterio | Esito |
+|-------|----------|-------|
+| JSON `totals.errors` | 0 | OK |
+| JSON `totals.file_errors` | 0 | OK |
+| Exit code `analyse Modules` | 0 | OK |
+| Banner umano | `[OK] No errors` | OK |
+| `*.php` sotto `*/app/Services/*` | nessuno | OK |
+| Boy scout docs | 184 duplicati case/data rimossi; 0 collisioni `readme`/`INDEX` residue | OK |
+
+### Checkpoint storico 2026-10-20
 
 | Check | Criterio | Esito |
 |-------|----------|-------|
