@@ -101,4 +101,5 @@ Le copie superate restano per storia: `changelog.MD`, `REFACTOR-panelmixin.md`, 
 - [DCP-45 isolamento del DB nei test con pest-scratch-db.sh](stories/dcp-45-isolamento-db-test-pest-scratch.story.md) (open)
 - [PHPStan cleanup Xot app (2026-10-06)](stories/phpstan-cleanup-xot-app.story.md), [Xot rest](stories/phpstan-cleanup-xot-rest.story.md)
 - [Regressioni PHPStan su app (2026-10-08)](stories/phpstan-xot-app-regressions.story.md), [test senza assert (2026-10-08)](stories/phpstan-xot-tests-without-assertions.story.md)
+- [EnvPage non funziona e non e' collegata (2026-10-22)](stories/env-page-broken-unused-team-decision.story.md): 500 su `/xot/admin/env-page`, pagina funzionante gia' in Notify (`SettingPage`); in attesa della decisione del team
 - [Da Services ad Actions: artisan](stories/services-to-actions-xot-artisan.story.md), [route](stories/services-to-actions-xot-route.story.md), [small](stories/services-to-actions-xot-small.story.md), [brainstorm wave](bmad/brainstorming-services-to-actions-wave.md)
