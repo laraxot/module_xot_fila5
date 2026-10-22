@@ -6,6 +6,7 @@ module: Xot
 track: bmad-method
 created: 2026-10-20
 updated: 2026-10-20
+snapshot_evening: 2026-10-20
 tags: [bmad, services, queueable-actions, census, w0]
 qmd: "censimento services queueable actions chiamanti storia git copie risorte adapter zero dirs"
 related:
@@ -13,6 +14,7 @@ related:
   - ./services-to-queueable-actions-brainstorming.md
   - ./services-to-queueable-actions-architecture.md
   - ./brainstorming-services-to-actions-wave.md
+  - ./planning-services-to-actions-zero-folders.md
   - ../stories/services-to-actions-global-wave.story.md
 ---
 
@@ -31,9 +33,27 @@ letti dal filesystem e dalla storia git, non decisioni: la decisione per classe
 
 # Cosa dicono i dati
 
-## Addendum snapshot filesystem — 2026-10-20 (pomeriggio, prevale)
 
-Il census storico (42 file) **non** rappresenta il working tree corrente.
+## Addendum snapshot filesystem — 2026-10-20 (sera, prevale)
+
+| Misura | Esito |
+|--------|-------|
+| `find Modules -type d -path '*/app/Services'` | **0** |
+| `find Modules -path '*/app/Services/*.php'` | **0** |
+| `find Themes+Modules+app -type d -name Services` (prod) | **0** |
+| Actions `app/Actions/*.php` | **~770** |
+| `laraxot/dev` `app/Services` (Xot/Fixcity/Notify/User/Geo/Tenant) | **0** file |
+| Falsi positivi `*Service.php` | `Themes/Sixteen/.../MunicipalService.php`, `Service.php` = **modelli dominio** (servizi comunali), non layer Services |
+| Residuo Blade | `Themes/TwentyOne/.../hero/dynamic.blade.php` — ex `PredictService` (modulo Predict assente); orchestratore → **props**, non layer Services |
+| Ratchet | `NoServicesTest.php` (DCP-270) — allowlist vuota; **3 PASS** (sera, pest-scratch) |
+| `use Modules\…\Services\` prod | **0** |
+
+Religione: la cartella `app/Services` **non deve riapparire**. Merge che la riesuma → DELETE se Action/adapter gia' esistono; altrimenti migrare a QueueableAction. Planning maintain: [planning-services-to-actions-zero-folders.md](./planning-services-to-actions-zero-folders.md).
+
+## Addendum snapshot filesystem — 2026-10-20 (pomeriggio, storico)
+
+Il census storico (42 file) **non** rappresenta il working tree corrente. Per lo
+stato vivo usare l'addendum **sera** sopra.
 
 | Misura | Esito |
 |--------|-------|
