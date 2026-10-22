@@ -201,3 +201,26 @@ swarm parallelo per singolo modulo in ordine random, come da pilastro 8.
   - `analyse Modules` → **0 file_errors**, exit 0, banner `[OK] No errors`.
   - `app/Services/` applicativi: **0** cartelle / 0 `*Service.php` sotto Services.
   - Swarm post-zero: boy scout + docs/prompts in parallelo; graphify-out gitignore gia' allineato.
+
+- 2026-10-20 19:39 (richiesta ripetuta: fix PHPStan alla fonte, parallelo BMAD+SB+Filament blueprint):
+  - Rimisura `inventory-now.json`: **0 file_errors**, exit 0.
+  - Nessuna lane di fix codice necessaria; swarm docs random + prompt Filament stickiness avviati.
+  - Regola operativa ribadita: scopo/utilita' prima dell'identifier PHPStan.
+
+- 2026-10-20 19:45 (boy scout post-zero — Services→Actions, prompt 25+24+15):
+  - Inventario `find Modules -path '*/app/Services/*.php'` + dirs `*/app/Services`: **0/0**.
+    Controprova Themes `app/Services`: **0**. Actions vive: **770**.
+  - Controprova `laraxot/dev` `app/Services` per moduli campione (Xot/Notify/Geo/Tenant/User/
+    Fixcity/Cms/Media/Lang/UI/Job/Seo): **0** (Seo: false positive iniziale = ServiceProvider/docs).
+  - Classi sotto `app/Services/`: **nessuna** → nessuna decisione MIGRATE su Service vivo.
+  - Zombie residui (non sotto Services/, ma `use …\Services\` / copia StoreJob) → **DELETE**:
+    `Xot/app/Datas/{XotData,xotdata}.php.fixed` (TenantService; live = `GetTenantConfigArrayAction`);
+    `Xot/app/Http/Livewire/{Table,table}to_formx` (ColumnService/PanelService, no ext, dead);
+    `Xot/app/Jobs/PanelCrud/store.md` (ModelService/PanelService, job-as-md);
+    `Fixcity/tests/Feature/TicketWorkflowIntegrationTest.php.old` (Notification/Ticket/WorkflowService;
+    successori = Actions Fixcity, es. `TransitionTicketStatusAction`).
+  - Debito tema gia' chiuso altrove: TwentyOne hero non usa piu' PredictService
+    (`Themes/TwentyOne/docs/bmad/decision-log.md`).
+  - Story companion: `Modules/Xot/docs/stories/services-delete-again-boy-scout.story.md`.
+  - Gate post-delete: dirs Services produzione **0**; `use Modules\…\Services\` fuori docs/test
+    architettura **0**. Nessun commit. `phpstan.neon` non toccato.
