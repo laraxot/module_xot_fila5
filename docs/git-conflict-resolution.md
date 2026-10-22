@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "git conflict resolution 2026 07 31"
 issues: []
 discussions: []
+<<<<<<< .merge_file_nFZSXq
+=======
 status: draft
+>>>>>>> .merge_file_4vlpF0
 ---
 
 # Audit collisioni Git committate in bashscripts

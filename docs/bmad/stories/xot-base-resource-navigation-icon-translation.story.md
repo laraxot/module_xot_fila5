@@ -3,11 +3,31 @@ title: "Rimozione delle icone statiche dalle XotBaseResource"
 status: ready-for-dev
 epic: code-quality
 related:
+<<<<<<< .merge_file_VosFqx
+<<<<<<< .merge_file_M3x55W
+<<<<<<< .merge_file_wpYRjp
+  - ../../../../Incentivi/docs/bmad/stories/xot-base-resource-navigation-icon-translation.story.md
+  - ../../../../IndennitaCondizioniLavoro/docs/bmad/stories/xot-base-resource-navigation-icon-translation.story.md
+  - ../../../../Performance/docs/bmad/stories/xot-base-resource-navigation-icon-translation.story.md
+<<<<<<< HEAD
+  - ../../../../Ptv/docs/bmad/stories/xot-base-resource-navigation-icon-translation.story.md
+  - ../../../../IndennitaResponsabilita/docs/bmad/stories/xot-base-resource-navigation-icon-translation.story.md
+  - ../../../../User/docs/bmad/stories/xot-base-resource-navigation-icon-translation.story.md
+=======
+>>>>>>> laraxot/dev
+=======
+  - ../../../../User/docs/bmad/stories/xot-base-resource-navigation-icon-translation.story.md
+>>>>>>> .merge_file_GJ4IrH
+=======
+  - ../../../../User/docs/bmad/stories/xot-base-resource-navigation-icon-translation.story.md
+>>>>>>> .merge_file_Syczhb
+=======
   - ../../../../User/docs/bmad/stories/xot-base-resource-navigation-icon-translation.story.md
 type: story
 updated: 2026-10-09
 tags: [docs, xot, bmad]
 qmd: "story xot"
+>>>>>>> .merge_file_JdBWuH
 ---
 
 # Story
@@ -26,11 +46,25 @@ Come manutentore Filament, voglio che le Resource che estendono `XotBaseResource
 
 L’ispezione iniziale ha trovato Resource in Incentivi, IndennitaCondizioniLavoro e Performance; il censimento completo diretto e transitivo resta il primo task di implementazione. La story centrale Xot definisce il contratto comune.
 
+<<<<<<< .merge_file_VosFqx
+<<<<<<< .merge_file_M3x55W
+<<<<<<< .merge_file_wpYRjp
+=======
+=======
+>>>>>>> .merge_file_Syczhb
+=======
+>>>>>>> .merge_file_JdBWuH
 Story gemelle con lo stesso nome esistono nei moduli Incentivi, IndennitaCondizioniLavoro,
 Performance, Ptv e IndennitaResponsabilita della flotta Laraxot; questi moduli non sono
 presenti in questo repo, quindi i link relativi sono stati rimossi da `related` (erano rotti).
 L'unica gemella locale e' quella del modulo User.
 
+<<<<<<< .merge_file_VosFqx
+<<<<<<< .merge_file_M3x55W
+>>>>>>> .merge_file_GJ4IrH
+=======
+>>>>>>> .merge_file_Syczhb
+=======
 Percorsi rimossi da `related` (conservati qui per cronologia, tutti con suffisso `/docs/bmad/stories/xot-base-resource-navigation-icon-translation.story.md`):
 
 - `../../../../Incentivi`
@@ -39,6 +73,7 @@ Percorsi rimossi da `related` (conservati qui per cronologia, tutti con suffisso
 - `../../../../Ptv`
 - `../../../../IndennitaResponsabilita`
 
+>>>>>>> .merge_file_JdBWuH
 ## Vincoli
 
 - Non introdurre label UI hardcoded: le traduzioni restano la fonte dei testi di navigazione.
