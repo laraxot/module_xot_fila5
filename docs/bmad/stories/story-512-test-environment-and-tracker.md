@@ -14,7 +14,11 @@ discussions:
 related:
   - ../../testing-database-strategy.md
   - ../../wiki/concepts/env-testing-parity-copy-env.md
+<<<<<<< .merge_file_EA1jvT
+  - ../../../../../docs/sprint-status.yaml
+=======
   - ../../../../../../docs/sprint-status.yaml
+>>>>>>> .merge_file_JLBXQm
 ---
 
 # STORY-512 — Ambiente test e tracker verificabili

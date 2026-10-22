@@ -3,10 +3,13 @@ title: "Xot - readme.md"
 module: Xot
 bmad: true
 status: active
+<<<<<<< .merge_file_yl3evU
+=======
 type: index
 updated: 2026-10-09
 tags: [docs, xot, architecture]
 qmd: "architettura xot xot"
+>>>>>>> .merge_file_iHn9uL
 ---
 # Architettura Xot
 
