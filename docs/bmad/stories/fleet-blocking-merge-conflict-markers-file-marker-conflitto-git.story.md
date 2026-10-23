@@ -5,19 +5,12 @@ module: Xot
 epic: quality
 status: done
 created: 2026-09-29
-updated: 2026-09-29
+updated: 2026-10-23
 tags: [quality, git, phpstan, bootstrap, fleet-blocking]
 issues: []
 discussions: []
 related:
   - "./5.254-list-page-table-hooks.story.md"
-<<<<<<< .merge_file_NGYAWo
-<<<<<<< .merge_file_MlH0Q1
-  - "../../../Progressioni/docs/bmad/stories/ceddiffs-table-class-migration-pending-20260929.story.md"
-=======
->>>>>>> .merge_file_OCh6YR
-=======
->>>>>>> .merge_file_RnXcZI
 ---
 
 # Marker di conflitto Git irrisolti — bloccavano tutta la fleet
@@ -86,28 +79,11 @@ il duplicato"):
   **conservati** i metodi statici `getNotifyThemeTableColumns()` /
   `getNotifyThemeTableFilters()` (nome non `getTable*`, quindi fuori dalla regola
   meccanica, e condivisi con altro codice per docblock).
-<<<<<<< .merge_file_NGYAWo
-<<<<<<< .merge_file_MlH0Q1
-<<<<<<< HEAD
-=======
-  **Aggiornamento 2026-10-06**: i due helper statici sono stati poi rimossi dal sync
-  di Notify; l'ultimo chiamante (`Quaeris/.../ManageNotifyThemes`) ora eredita i filtri
-  da `NotifyThemesTable` — vedi
-  [story Quaeris](../../../../Quaeris/docs/stories/manage-notify-themes-table-filters-phpstan.story.md).
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_RnXcZI
-  **Aggiornamento upstream 2026-10-06** (`laraxot/dev`): i due helper statici sono stati
-  poi rimossi dal sync di Notify e l'ultimo chiamante (`Quaeris/.../ManageNotifyThemes`,
-  modulo non presente in questo repo) eredita i filtri da `NotifyThemesTable` (story
-  `manage-notify-themes-table-filters-phpstan` nel modulo Quaeris). In questo repo i due
-  helper sono ancora presenti in `ListNotifyThemes.php` (verificato 2026-10-07), quindi
-  lo stato upstream non e' adottato qui.
-<<<<<<< .merge_file_NGYAWo
->>>>>>> .merge_file_OCh6YR
-=======
->>>>>>> .merge_file_RnXcZI
+  **Aggiornamento 2026-10-06** (`laraxot/dev`, verificato qui il 2026-10-23): i due helper
+  statici sono stati poi rimossi dal sync di Notify; `ListNotifyThemes.php` oggi estende
+  solo `XotBaseListRecords` senza metodi propri e i filtri vivono in `NotifyThemesTable`.
+  Un chiamante esterno (`ManageNotifyThemes`, in un modulo di un altro progetto non presente
+  in questo repo) eredita i filtri dalla stessa Table class.
 - `Notify/.../NotificationResource/Pages/ListNotifications.php` — rimosso solo il
   wrapper `getTableFilters()`; **conservati** `notificationTableColumns()` /
   `notificationTableFilters()` perché chiamati direttamente da
@@ -157,16 +133,7 @@ singolo file del genere blocca `phpstan analyse Modules` per **tutta** la fleet,
 non solo per il file toccato — vale la pena di un guard rapido
 (`grep -rl '^<<<<<<< ' --include='*.php' --include='*.yaml' Modules Themes`) prima
 di ogni run pesante, dato quanto costa in tempo-fleet un bootstrap fatal silenzioso.
-<<<<<<< .merge_file_NGYAWo
-<<<<<<< .merge_file_MlH0Q1
-=======
-=======
->>>>>>> .merge_file_RnXcZI
 
 ## Nota sui link
 
 La story correlata `ceddiffs-table-class-migration-pending-20260929` vive nel modulo Progressioni, non presente in questo repo: il link relativo in `related` era rotto ed e' stato rimosso.
-<<<<<<< .merge_file_NGYAWo
->>>>>>> .merge_file_OCh6YR
-=======
->>>>>>> .merge_file_RnXcZI

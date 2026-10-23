@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "xot base section rule"
 issues: []
 discussions: []
-<<<<<<< .merge_file_wRIHPO
-=======
 status: draft
->>>>>>> .merge_file_guPhTs
 ---
 
 # Regola XotBaseSection - Politica, Filosofia, Religione, Zen
@@ -172,7 +169,6 @@ class CompanySection extends XotBaseSection
 - Filament v4 Documentation: https://filamentphp.com/docs/4.x/forms/layout/section
 
 ---
-<<<<<<< .merge_file_wRIHPO
 
 title: "xot base section rule"
 type: note
@@ -182,8 +178,6 @@ updated: 2026-09-26
 qmd: "xot base section rule"
 issues: []
 discussions: []
-=======
->>>>>>> .merge_file_guPhTs
 **Data creazione**: 2025-12-12
 **Status**: ✅ Regola attiva e obbligatoria
 **Priorità**: CRITICA - Violazioni bloccano il codice

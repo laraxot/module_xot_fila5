@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "index"
 issues: []
 discussions: []
-<<<<<<< .merge_file_6jVeLW
-=======
 status: draft
->>>>>>> .merge_file_zj3ked
 ---
 
 # Xot Module - concepts Index

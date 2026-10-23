@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "namespace rules"
 issues: []
 discussions: []
-<<<<<<< .merge_file_yqy5ZE
-=======
 status: draft
->>>>>>> .merge_file_acwvcB
 ---
 
 # Regole di Namespace
