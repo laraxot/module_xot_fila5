@@ -1,11 +1,7 @@
 ---
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_zREdhN
-updated: 2026-09-26
-=======
 updated: 2026-10-20
->>>>>>> .merge_file_nKAIzT
 qmd: "livewire widget decision log"
 issues: []
 discussions: []

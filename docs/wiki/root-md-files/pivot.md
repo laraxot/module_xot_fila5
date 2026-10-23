@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "pivot 2"
 related:
   - "./eloquent-magic-properties-rule.md"
-<<<<<<< .merge_file_4l3uW9
-=======
 status: draft
->>>>>>> .merge_file_JCqm3Z
 ---
 # _pivot
 

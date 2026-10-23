@@ -4,11 +4,8 @@ type: reference
 tags: [wiki, no-frontmatter-fix]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< .merge_file_ZcrzeT
-=======
 status: draft
 qmd: "architettura xot xot"
->>>>>>> .merge_file_ZkCVB1
 ---
 
 # Architettura Xot
@@ -56,10 +53,5 @@ return new class() extends XotBaseMigration {
 
 ## Collegamenti
 
-<<<<<<< .merge_file_ZcrzeT
-- [Xot Principale](../README.md)
-- [Filament](../filament/)
-=======
-- [Xot Principale](../readme.md)
+- [Xot Principale](../../README.md)
 - [Filament](../../filament)
->>>>>>> .merge_file_ZkCVB1

@@ -6,6 +6,8 @@ decisioni architetturali, regole e storie BMAD.
 - [Governance docs](governance/docs-structure.md)
 - [BMAD](bmad/)
 - [Architecture](architecture/)
+- [Queueable Actions](architecture/queueable-actions.md)
+- [Data object convention](data/data-objects.md)
 - [Wiki](wiki/)
 - [Standards](standards/)
 - [Indice generale](../../../../docs/README.md)

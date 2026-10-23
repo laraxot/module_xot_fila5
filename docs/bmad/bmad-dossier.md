@@ -7,10 +7,7 @@ tags: [bmad, xot, foundation, contracts]
 qmd: "Xot module product brief PRD architecture UX security epics gaps release"
 issues: ["https://github.com/laraxot/base_fixcity_fila5/issues/383"]
 discussions: ["https://github.com/laraxot/base_fixcity_fila5/discussions/392"]
-<<<<<<< .merge_file_yxQTQv
-=======
 status: draft
->>>>>>> .merge_file_ujoeOX
 ---
 # Xot — BMAD dossier
 ## Product brief / PRD

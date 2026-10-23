@@ -1,7 +1,7 @@
 ---
 initiative: PHPStan Zero + Spatie Queueable Actions Conversion
 author: AI Agent
-status: active
+status: completed
 created: 2026-10-20
 ---
 
@@ -9,7 +9,7 @@ created: 2026-10-20
 
 ## 1. Brainstorming (Perché?)
 
-**Scopo (lo scopo del servizio):** I servizi `app/Services/` e `app/Actions/` gestiscono operazioni di business (invio notifiche, recupero dati, gestione attività). Al momento sono chiamati sincroni, senza meccanismo di retry, senza isolamento della coda, senza possibilità di scalare su worker separati.
+**Scopo:** le operazioni di business vivono nelle `app/Actions/`; `app/Services/` e i wrapper `app/Jobs/` non sono confini applicativi ammessi.
 
 **Perché deve essere convertito in Spatie Queueable Actions:**
 - `Spatie\QueueableAction\QueueableAction` permette a ogni azione di essere sia sincrona (`execute()`) che asincrona (`dispatch()` su coda).
@@ -28,7 +28,7 @@ created: 2026-10-20
 
 ## 3. Filament Blueprint (Struttura del modulo)
 
-Per ogni modulo: `app/Actions/` deve contenere action che usano `QueueableAction`. I service `app/Services/` esistenti devono ESSERE sostituiti dai corrispondenti Action (non duplicati, non cancellati ma ridefiniti come Action con `execute()`).
+Per ogni modulo: `app/Actions/` contiene le Action che usano `QueueableAction`, con entrypoint `execute()`. Non si ricreano `app/Services/` o `app/Jobs/`.
 
 ## 4. Second Brain / Hindsight Note
 
