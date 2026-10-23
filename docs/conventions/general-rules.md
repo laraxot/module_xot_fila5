@@ -58,8 +58,10 @@ qmd: "Regole Generali di Comportamento"
 - Separare la logica in metodi privati quando necessario
 - Utilizzare `match` per logiche condizionali semplici
 
-### 2.2 Data Transfer Objects
+### 2.2 Data Transfer Objects (Datas/)
 - Utilizzare Spatie Laravel Data
+- Ogni oggetto dati vive in `app/Datas/` (plurale), mai `app/Data/` (singolare), `DTOs/`, `DataObjects/` o `DataTransferObjects/`
+- Nome della classe: `*Data`, estende `Spatie\LaravelData\Data`
 - Definire proprietà pubbliche con tipi
 - Implementare `from()` per la creazione da array
 - Utilizzare `toArray()` per la serializzazione

@@ -1,18 +1,9 @@
-<<<<<<< .merge_file_xZUxQU
-<<<<<<< .merge_file_SVOJg6
-=======
-=======
->>>>>>> .merge_file_WxVu9j
 ---
 title: "Xot - legacy-readme-new.md"
 module: Xot
 bmad: true
 status: active
 ---
-<<<<<<< .merge_file_xZUxQU
->>>>>>> .merge_file_ISglD6
-=======
->>>>>>> .merge_file_WxVu9j
 # Xot Module - Core Foundation
 
 **Last Update**: 2025-12-05
