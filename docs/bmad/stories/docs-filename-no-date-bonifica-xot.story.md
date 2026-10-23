@@ -61,7 +61,7 @@ gia' incluso in quel conteggio o e' nuovo (creato dopo).
 - `docs/filament/hasxtable-visibility-fix-2026-01-27.md`
 - `docs/historical/hasxtable-visibility-fix-2026-01-27.md` (duplicato del punto sopra — verificare se identico prima di unificare)
 - `docs/consolidated/lessons-learned.md` (duplicato di sopra)
-- `docs/consolidated/git-conflicts-resolution-2025-01-06.md` (duplicato di sopra)
+- `docs/consolidated/git-conflicts-resolution-archive.md` (duplicato di sopra)
 - `docs/wiki/redundancy-audit-2026-05-26.md`
 - `docs/wiki/troubleshooting/git-merge-conflict-inventory-2026-04-28.md`
 - `docs/wiki/quality-analysis/phpstan-2026-05-13.md`

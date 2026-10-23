@@ -10,10 +10,7 @@ discussions: []
 module: Xot
 topic: method-deprecation-documentation
 canonical: ../../docs/filament/xotbase-manage-related-records.md
-<<<<<<< .merge_file_67DEZ1
-=======
 status: stub
->>>>>>> .merge_file_ZeMb7x
 ---
 
 # Documento BMAD: `getTableColumns()` — NON deprecato, documentazione sostituto

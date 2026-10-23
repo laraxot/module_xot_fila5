@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "laraxot architecture rules"
 issues: []
 discussions: []
-<<<<<<< .merge_file_2zt13F
-=======
 status: draft
->>>>>>> .merge_file_Vux1l7
 ---
 
 # Laraxot Architecture Rules - Xot Module

@@ -7,16 +7,11 @@ updated: 2026-09-26
 qmd: "README"
 issues: []
 discussions: []
-<<<<<<< .merge_file_4kYce9
----
-
-=======
 status: stale
 ---
 
 > Nota 2026-10-14 (docs-audit): Il blocco 'Collegamenti tra versioni di README.md' (62 link non risolti) punta a percorsi di altri progetti (docs/moduli, patient, dental, isee) e la sezione STI cita il modulo Patient, che non esiste in questo progetto (Modules/ contiene 19 moduli, nessuno e Patient). L'elenco dei file e stato corretto il 2026-10-14. Contenuto non riscritto, verificare prima di usarlo.
 
->>>>>>> .merge_file_mMYLGO
 # Standard di Codice
 
 Questa cartella contiene gli standard di codice e le convenzioni utilizzate nel progetto.
