@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use Modules\Xot\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
 use function Safe\file;
 use function Safe\glob;
@@ -28,7 +29,6 @@ uses(TestCase::class)->group('no-xot-db');
  *
  * @see Modules/Xot/docs/bmad/stories/module-root-hygiene.story.md
  */
-
 if (! function_exists('moduleRootHygieneModules')) {
     /**
      * Moduli con repo git propria (`Modules/<Mod>/.git`); esclude Modules/docs.
@@ -104,7 +104,21 @@ if (! function_exists('moduleRootHygieneRemoteName')) {
     }
 }
 
-dataset('module_roots', fn (): array => moduleRootHygieneModules());
+if (! function_exists('moduleRootHygieneRequireRepo')) {
+    /**
+     * Salta la riga segnaposto del dataset vuoto. Perche': un dataset vuoto fa fallire la
+     * raccolta di Pest per tutto il modulo; in un checkout senza `Modules/<Mod>/.git` le regole
+     * per-repo non hanno nulla da guardare, e lo dice il test 'ha dei moduli da controllare'.
+     */
+    function moduleRootHygieneRequireRepo(string $moduleDir): void
+    {
+        if ($moduleDir === '') {
+            Assert::markTestSkipped('nessun modulo con repo git propria (Modules/<Mod>/.git)');
+        }
+    }
+}
+
+dataset('module_roots', fn (): array => moduleRootHygieneModules() ?: ['nessun modulo con .git' => ['']]);
 
 it('ha dei moduli da controllare', function (): void {
     expect(moduleRootHygieneModules())->not->toBe([]);
@@ -130,6 +144,8 @@ it('in Modules ci sono solo moduli: ogni cartella ha module.json', function (): 
 });
 
 it('root modulo senza cartelle con maiuscole', function (string $moduleDir): void {
+    moduleRootHygieneRequireRepo($moduleDir);
+
     /** @var list<string> $dirs */
     $dirs = glob($moduleDir.'/*', GLOB_ONLYDIR);
 
@@ -147,6 +163,8 @@ it('root modulo senza cartelle con maiuscole', function (string $moduleDir): voi
 })->with('module_roots');
 
 it('root modulo senza cartelle di tooling vietate', function (string $moduleDir): void {
+    moduleRootHygieneRequireRepo($moduleDir);
+
     $forbidden = [
         'bashscripts',
         'graphify-out',
@@ -175,6 +193,8 @@ it('root modulo senza cartelle di tooling vietate', function (string $moduleDir)
 })->with('module_roots');
 
 it('root modulo con un solo .code-workspace chiamato dal remote', function (string $moduleDir): void {
+    moduleRootHygieneRequireRepo($moduleDir);
+
     $module = basename($moduleDir);
     $name = moduleRootHygieneRemoteName($moduleDir);
 
@@ -191,6 +211,8 @@ it('root modulo con un solo .code-workspace chiamato dal remote', function (stri
 })->with('module_roots');
 
 it('root modulo con README, CHANGELOG e al massimo 6 .md', function (string $moduleDir): void {
+    moduleRootHygieneRequireRepo($moduleDir);
+
     $module = basename($moduleDir);
     /** @var list<string> $markdown */
     $markdown = glob($moduleDir.'/*.md');
@@ -205,6 +227,8 @@ it('root modulo con README, CHANGELOG e al massimo 6 .md', function (string $mod
 })->with('module_roots');
 
 it('root modulo con /.github/skills/ nel .gitignore', function (string $moduleDir): void {
+    moduleRootHygieneRequireRepo($moduleDir);
+
     $module = basename($moduleDir);
     $gitignore = $moduleDir.'/.gitignore';
     /** @var list<string> $lines */
@@ -217,6 +241,8 @@ it('root modulo con /.github/skills/ nel .gitignore', function (string $moduleDi
 })->with('module_roots');
 
 it('modulo senza docs/graphify e con docs/graphify nel .gitignore', function (string $moduleDir): void {
+    moduleRootHygieneRequireRepo($moduleDir);
+
     $module = basename($moduleDir);
     $gitignore = $moduleDir.'/.gitignore';
     /** @var list<string> $lines */
@@ -233,6 +259,8 @@ it('modulo senza docs/graphify e con docs/graphify nel .gitignore', function (st
 })->with('module_roots');
 
 it('modulo senza resources/lang e con resources/lang nel .gitignore', function (string $moduleDir): void {
+    moduleRootHygieneRequireRepo($moduleDir);
+
     $module = basename($moduleDir);
     $gitignore = $moduleDir.'/.gitignore';
     /** @var list<string> $lines */

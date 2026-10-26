@@ -4,13 +4,48 @@ module: Xot
 bmad: true
 status: active
 type: note
-updated: 2026-10-23
+updated: 2026-10-25
 tags: [docs, xot, bmad]
 qmd: "phpstan status modules zero file_errors xot gate"
 ---
 # PHPStan Status — Xot
 
 Stato vivo del gate. Non copiare numeri da report storici: rimisura.
+
+## Misura 2026-10-25 — verde dopo la coerenza vendor (Pint incluso)
+
+```bash
+cd laravel
+APP_ENV=testing ./vendor/bin/phpstan analyse Modules --memory-limit=-1 --no-progress --error-format=json
+# {"totals":{"errors":0,"file_errors":0},"files":{},"errors":[]}   exit 0
+APP_ENV=testing ./vendor/bin/phpstan analyse Modules --memory-limit=-1 --no-progress
+# [OK] No errors                                                  exit 0
+```
+
+Partenza della sessione: **30 `file_errors`** su un vendor incoerente (`composer.lock`
+riscritto: Filament v5.10.3, Laravel 13.38.0, spatie/laravel-permission 8.3.2,
+phpstan 2.3.2 + Larastan). Sei famiglie chiuse **alla radice**, zero ignore aggiunti:
+
+| Dove | Identifier | Radice |
+|------|-----------|--------|
+| `Fixcity/.../Blocks/TicketList/Agid.php` | `identical.alwaysFalse` | `reports.status` è `string`: narrowing su `is_string()`, non cast |
+| `Lang/app/Models/TranslationFile.php` | `nullCoalesce.offset` | `?->` morto su chiave sempre presente; nuovo `enrichTranslationRow()` tipizzato a shape |
+| `UI/.../Table/TableLayoutTrait.php` | `argument.type` | `getCurrentLayout()`: `instanceof TableLayoutEnum` + `tryFrom()`; il ramo `is_int` era un TypeError latente |
+| `Xot/.../View/GetViewByClassAction.php` | `return.type` | `$after` da `explode()` nativo (`list<string>`) invece di `toArray()` non tipizzato |
+| `Xot/app/Models/Module.php` | `property.notFound` | `getRows()` riscritto su `foreach` + `instanceof NModule` |
+| `Xot/tests/CreatesApplication.php` | `class.notFound` | `tests/Support/TestDatabaseGuard.php` ricreato dal contratto documentato (guardia dati sacri, 4 test Pest verdi) |
+
+Prerequisito non negoziabile: **`APP_ENV=testing`** su un checkout senza `.env`, altrimenti
+Larastan muore con `No application encryption key has been specified` e il json contiene un
+solo `errors`. `phpstan.neon` invariato (solo umano). Racconto completo:
+[phpstan-modules-zero-gate](../stories/phpstan-modules-zero-gate.story.md).
+
+**Riverifica a fine giornata** (dopo 156 gruppi di gemelli `.md` collassati e lo scaffold di
+`Modules/Event`): stesso comando, `{"totals":{"errors":0,"file_errors":0}}` exit 0 —
+`/tmp/opencode/phpstan/run6.json`. `composer dump-autoload` ha aggiunto `Modules\Event\` a
+`autoload_psr4.php`, quindi il modello `Event` è finalmente autoloadable (prima no: la
+cartella non aveva `composer.json`); il modulo resta `[Disabled]` in `php artisan module:list`
+perché non compare in `modules_statuses.json`, e la sua migration non viene caricata.
 
 ## Misura verificata 2026-10-20 (pm) — gate modulo Xot
 
