@@ -13,6 +13,7 @@ related:
   - ./brainstorming-services-to-actions-wave.md
   - ../conventions/docs-organization.md
   - ../conventions/code-quality-checklist.md
+type: note
 ---
 
 <!--

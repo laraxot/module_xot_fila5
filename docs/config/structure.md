@@ -154,7 +154,7 @@ return array_merge(require __DIR__.'/../vendor/module/config/module.php', [
 ## Collegamenti
 
 - [Architettura](../architecture/module-structure.md)
-- [Best Practices](../BEST-PRACTICES.md)
+- [Best Practices](../best-practices.md)
 - [Sicurezza](../security/README.md)
 - [Performance](../performance/README.md) 
 

@@ -1,3 +1,11 @@
+---
+title: "10000-phpstan-modules-fix.story.md"
+type: story
+status: draft
+updated: 2026-10-20
+tags: [docs, xot, bmad]
+qmd: "10000-phpstan-modules-fix.story.md xot"
+---
 # 10000-phpstan-modules-fix.story.md
 
 ## Overview

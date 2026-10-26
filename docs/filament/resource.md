@@ -3,6 +3,11 @@ title: Creazione di una Resource
 description: Creazione di una Resource
 extends: _layouts.documentation
 section: content
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, filament]
+qmd: "creazione di una resource {#creazione-resource} xot"
 ---
 
 # Creazione di una Resource {#creazione-resource}

@@ -10,7 +10,7 @@ qmd: "mcp consigliati xot ptvx lean stack context7 playwright laravel-boost qmd 
 related:
   - ./mcp-errors-and-lessons.md
   - ./mcp-integration.md
-  - ../../../docs/wiki/how-to/mcp-minimum-stack.md
+  - ../../../../docs/wiki/how-to/mcp-minimum-stack.md
   - ../../../.mcp.json
 ---
 
@@ -23,7 +23,7 @@ Gli MCP devono **aumentare accuratezza** (docs Laravel/Filament aggiornate, UI
 verificata, second brain) senza gonfiare il contesto.
 
 SSoT config: [`.mcp.json`](../../../.mcp.json) · how-to:
-[mcp-minimum-stack](../../../docs/wiki/how-to/mcp-minimum-stack.md).
+[mcp-minimum-stack](../../../../docs/wiki/how-to/mcp-minimum-stack.md).
 
 ## Consigliati (attivi)
 

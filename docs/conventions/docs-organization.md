@@ -10,6 +10,9 @@ related:
   - ../INDEX.md
   - ../00-INDEX.md
   - ../bmad/brainstorming-services-to-actions-wave.md
+type: note
+updated: 2026-10-20
+tags: [docs, xot, conventions]
 ---
 
 # Convenzione docs — moduli e temi

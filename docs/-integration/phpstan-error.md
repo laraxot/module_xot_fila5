@@ -1,3 +1,11 @@
+---
+title: "phpstan_error"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, -integration]
+qmd: "phpstan_error xot"
+---
 # phpstan_error
 
 <!-- Contenuto migrato da _docs/phpstan_error.txt -->

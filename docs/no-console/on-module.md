@@ -3,6 +3,11 @@ title: Comandi per il singolo modulo
 description: Comandi per il singolo modulo
 extends: _layouts.documentation
 section: content
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, no-console]
+qmd: "comandi per il singolo modulo {#comandi-per-il-singolo-modulo} xot"
 ---
 
 # Comandi per il singolo modulo {#comandi-per-il-singolo-modulo}

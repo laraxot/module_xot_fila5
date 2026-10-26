@@ -11,6 +11,7 @@ related:
   - ./livewire-to-filament-widgets-filament-blueprint.md
   - ./stories/livewire-to-filament-widgets-fleet.story.md
   - ../../../../../bashscripts/docs/prompts/05-livewire-to-filament-widgets.md
+tags: [docs, xot, bmad]
 ---
 
 # Baseline (rimisurata 2026-10-20 pomeriggio)

@@ -1,3 +1,11 @@
+---
+title: "Filament"
+type: index
+status: draft
+updated: 2026-10-20
+tags: [docs, xot, filament]
+qmd: "filament xot"
+---
 # Filament
 
 Questa cartella contiene la documentazione relativa all'implementazione di Filament nel progetto.

@@ -4,6 +4,8 @@ type: architecture
 status: active
 module: Xot
 tags: [architecture, queueable-actions, jobs, services, bmad]
+updated: 2026-10-23
+qmd: "queueable actions xot"
 ---
 
 # Queueable Actions

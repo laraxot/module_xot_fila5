@@ -2,7 +2,8 @@
 title: "Xot - phpstan-l10-job-media-notify-xot-story-md.story.md"
 module: Xot
 bmad: true
-status: active
+status: superseded
+superseded_by: phpstan-l10-job-media-notify.story.md
 ---
 # BMAD Story: PHPStan L10 Job, Media, Notify
 

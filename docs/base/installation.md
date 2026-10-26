@@ -3,6 +3,11 @@ title: Installazione
 description: Come Installare la Base
 extends: _layouts.documentation
 section: content
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, base]
+qmd: "installazione {#installation} xot"
 ---
 
 # Installazione {#installation}
