@@ -23,10 +23,10 @@ final class TestDatabaseGuard
      * Connessioni che leggono una variabile DB_* non definita in `.env.testing`
      * e quindi ricadono su un nome reale (config/localhost/database.php).
      */
-    private const ALLOWED_CONNECTIONS = ['liveuser_general'];
+    private const array ALLOWED_CONNECTIONS = ['liveuser_general'];
 
     /** Prefisso dei database temporanei creati da `bashscripts/tools/pest-scratch-db.sh`. */
-    private const ALLOWED_PREFIXES = ['claude_scratch_pest_'];
+    private const array ALLOWED_PREFIXES = ['claude_scratch_pest_'];
 
     /**
      * @param  array<string, array{driver?: string|null, database?: string|null, url?: string|null}>  $connections
