@@ -4,6 +4,9 @@ status: correction
 scope: [laravel/Modules/docs, laravel/Themes/docs, laravel/Modules/Ticket/docs]
 updated: 2026-10-20
 reference: Modules/Xot/docs/conventions/docs-organization.md
+type: note
+tags: [docs, xot]
+qmd: "correzione   docs organization xot"
 ---
 
 # Correzione — docs organization

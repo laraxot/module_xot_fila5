@@ -8,6 +8,8 @@ updated: 2026-10-26
 tags: [bmad, xot, module, stories, remaining-work]
 related:
   - ../../docs/second-brain/project/bmad-architecture.md
+status: draft
+qmd: "xot module   bmad stories & remaining work xot"
 ---
 
 # Xot Module — BMAD Stories & Remaining Work

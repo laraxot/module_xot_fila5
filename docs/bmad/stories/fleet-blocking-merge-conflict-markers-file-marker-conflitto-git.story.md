@@ -11,6 +11,7 @@ issues: []
 discussions: []
 related:
   - "./5.254-list-page-table-hooks.story.md"
+qmd: "marker di conflitto git irrisolti   bloccavano tutta la fleet xot"
 ---
 
 # Marker di conflitto Git irrisolti — bloccavano tutta la fleet

@@ -1,3 +1,11 @@
+---
+title: "Xot — documentazione"
+type: index
+status: draft
+updated: 2026-10-26
+tags: [docs, xot]
+qmd: "xot   documentazione xot"
+---
 # Xot — documentazione
 
 Xot è il modulo fondazionale Laraxot. Questa è la sede canonica delle sue

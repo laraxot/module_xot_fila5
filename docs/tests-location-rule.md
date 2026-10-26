@@ -5,6 +5,8 @@ status: critical
 created: 2026-10-15
 tags: [tests, modularity, laravel, rule, bmad, second-brain]
 source_of_truth: true
+updated: 2026-10-19
+qmd: "regola canonica: posizione dei test dei moduli xot"
 ---
 
 # Regola canonica: posizione dei test dei moduli

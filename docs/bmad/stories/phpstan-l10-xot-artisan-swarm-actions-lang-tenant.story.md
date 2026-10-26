@@ -2,11 +2,12 @@
 title: "PHPStan L10 Xot Artisan actions (swarm-lang-tenant)"
 type: story
 module: Xot
-status: done
 created: 2026-10-06
 track: quality/phpstan
 related:
   - ../../../../Xot/docs/bmad/stories/2026-10-06-phpstan-modules-level10.story.md
+status: superseded
+superseded_by: phpstan-l10-xot-artisan-swarm.story.md
 ---
 
 # PHPStan L10 Xot Artisan actions

@@ -207,7 +207,7 @@ Prima di ogni commit in qualsiasi modulo, verificare:
 ## Riferimenti
 
 - [Regola Cursor](../../.cursor/rules/eloquent-properties.md)
-- [Memoria Cursor](../../.cursor/memories)
+- [Memoria Cursor](../../../../.cursor/memories)
 - [Linee Guida AI](../../.ai/guidelines/CORE.md)
 - [Esempio Corretto](../../Notify/app/Notifications/GenericNotification.php)
 

@@ -42,7 +42,7 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 * [README.md](docs/troubleshooting/git-conflicts/readme.md)
 * [README.md](docs/tecnico/laraxot/readme.md)
 * [README.md](docs/modules/readme.md)
-* [README.md](docs/conventions/readme.md)
+* [README.md](../conventions/readme.md)
 * [README.md](docs/amministrazione/backup/readme.md)
 * [README.md](docs/amministrazione/monitoraggio/readme.md)
 * [README.md](docs/amministrazione/deployment/readme.md)

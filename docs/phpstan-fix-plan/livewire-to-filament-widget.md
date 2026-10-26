@@ -2,6 +2,11 @@
 initiative: Migrazione da Livewire a Filament Widget
 status: active
 created: 2026-10-20
+title: "BMAD — Perché Filament Widget (non più Livewire Componenti)"
+type: note
+updated: 2026-10-20
+tags: [docs, xot, phpstan-fix-plan]
+qmd: "bmad   perché filament widget (non più livewire componenti) xot"
 ---
 
 # BMAD — Perché Filament Widget (non più Livewire Componenti)

@@ -3,6 +3,11 @@ title: Aggiornare Mysql a 8.0
 description: Aggiornare Mysql a 8.0
 extends: _layouts.documentation
 section: content
+type: note
+status: draft
+updated: 2026-10-22
+tags: [docs, xot, laragon]
+qmd: "aggiornare mysql a 8.0 {#update-mysql-to-8-0} xot"
 ---
 
 # Aggiornare Mysql a 8.0 {#update-mysql-to-8-0}

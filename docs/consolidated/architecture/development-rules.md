@@ -8,7 +8,7 @@ qmd: "development rules"
 issues: []
 discussions: []
 status: superseded
-superseded_by: ../../architecture/development-rules.md
+superseded_by: ../development-rules.md
 ---
 
 # Regole Generali di Sviluppo del Progetto

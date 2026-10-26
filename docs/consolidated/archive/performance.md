@@ -6,6 +6,7 @@ tags: [archive, performance, migrato-da-txt]
 created: 2026-10-23
 updated: 2026-10-23
 status: draft
+qmd: "performance   risorse esterne xot"
 ---
 
 # Performance — risorse esterne

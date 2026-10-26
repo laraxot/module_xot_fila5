@@ -1,12 +1,13 @@
 ---
 title: "Massimizzare il livello di confidenza"
 type: note
-status: unverified
 created: 2026-05-26
 updated: 2026-05-26
 module: Xot
 tags: [xot, bashscripts]
 qmd: "Massimizzare il livello di confidenza"
+status: superseded
+superseded_by: ../../confidence_guidelines.md
 ---
 # Massimizzare il livello di confidenza
 

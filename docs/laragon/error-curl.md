@@ -1,3 +1,11 @@
+---
+title: "error curl"
+type: note
+status: draft
+updated: 2026-10-22
+tags: [docs, xot, laragon]
+qmd: "error curl xot"
+---
 Download the latest cacert.pem file from
 https://curl.se/docs/caextract.html
 

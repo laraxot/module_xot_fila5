@@ -56,7 +56,7 @@ related:
 ## 2026-10-20 — Boy scout post-zero: census `Modules/*/app/Services`
 
 - **Audit:** `rg --files -g '*Service.php' Modules/*/app/Services` → **0 file**; nessuna directory `app/Services/` sotto `Modules/*/app` né `Themes/*/app|src`. Zero `use …\Services\…` in PHP di produzione (solo ratchet `NoServicesTest`).
-- **Stato domini (campione):** Fixcity — ex `WorkflowService` / `NotificationService` / `TicketService` **assenti**; vivo = Actions (`TransitionTicketStatusAction`, notify Actions, CRUD ticket Actions). Seo — ex `MetatagService` **assente**; vivo = `MetatagFacadeAdapter` + `Get/Replace/MergeMetatagDataAction`. Geo — già chiuso in [Geo decision-log](../../Geo/docs/bmad/decision-log.md).
+- **Stato domini (campione):** Fixcity — ex `WorkflowService` / `NotificationService` / `TicketService` **assenti**; vivo = Actions (`TransitionTicketStatusAction`, notify Actions, CRUD ticket Actions). Seo — ex `MetatagService` **assente**; vivo = `MetatagFacadeAdapter` + `Get/Replace/MergeMetatagDataAction`. Geo — già chiuso in [Geo decision-log](../../../Geo/docs/bmad/decision-log.md).
 - **Residuo merge:** `Modules/Seo/tests/Unit/Services/MetatagServiceExtendedTest.php.old` importava classe cancellata → **rimosso** (test orfano `.old`, non suite Pest).
 - **Non fare ora:** migrazione massiva; eventuali riesumazioni da merge → delete-again + ratchet (vedi voce Services→Actions sotto).
 - **Track:** [decisions/action-conversion.md](../decisions/action-conversion.md), [NoServicesTest.php](../../tests/Unit/Architecture/NoServicesTest.php).

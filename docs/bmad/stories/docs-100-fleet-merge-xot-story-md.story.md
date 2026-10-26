@@ -3,6 +3,10 @@ title: "Xot - docs-100-fleet-merge-xot-story-md.story.md"
 module: Xot
 bmad: true
 status: active
+type: story
+updated: 2026-10-23
+tags: [docs, xot, bmad]
+qmd: "epic   docs ≤100 .md ricorsivi via merge (fleet-wide, 2026-10-05) xot"
 ---
 # Epic — Docs ≤100 .md ricorsivi via merge (fleet-wide, 2026-10-05)
 

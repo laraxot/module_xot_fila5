@@ -7,6 +7,7 @@ created: 2026-10-21
 updated: 2026-10-21
 tags: [phpstan, swarm, phpstan-F, user, xot, done]
 qmd: "phpstan fw user xot zero errors verified"
+type: note
 ---
 
 # Final Verify — User + Xot (same exact process)

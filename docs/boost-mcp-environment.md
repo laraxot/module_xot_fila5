@@ -2,6 +2,9 @@
 title: "Boost MCP environment and working directory"
 type: troubleshooting
 tags: [boost, mcp, environment, artisan, bootstrap]
+status: draft
+updated: 2026-10-26
+qmd: "boost mcp environment and working directory xot"
 ---
 
 # Boost MCP environment and working directory
