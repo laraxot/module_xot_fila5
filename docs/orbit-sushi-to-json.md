@@ -1,6 +1,11 @@
 ---
 title: SushiToJsons/Orbit
 description: Salvataggio su File invece che in tabella
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot]
+qmd: "invece di usare orbit {#invece-di-usare-orbit} xot"
 ---
 
 # Invece di usare Orbit {#invece-di-usare-orbit}

@@ -17,7 +17,7 @@ related:
   - ./swarm-phpstan-modular-docs-org.story.md
   - ./phpstan-modules-swarm-random.story.md
   - ./phpstan-modules-zero-wave3.story.md
-  - ../../../../docs/wiki/rules/00-TRIGGER_MAP.md
+  - ../../../../../../docs/wiki/rules/00-TRIGGER_MAP.md
 ---
 # PHPStan + docs + prompts + second brain (2026-10-21)
 

@@ -1,12 +1,13 @@
 ---
 title: "Action Usage Patterns - Regole Fondamentali"
 type: note
-status: unverified
 created: 2026-07-03
 updated: 2026-07-03
 module: Xot
 tags: [xot, actions]
 qmd: "Action Usage Patterns - Regole Fondamentali"
+status: superseded
+superseded_by: ../action-usage-patterns.md
 ---
 # Action Usage Patterns - Regole Fondamentali
 

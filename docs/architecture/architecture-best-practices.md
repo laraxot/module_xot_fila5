@@ -7,7 +7,8 @@ updated: 2026-09-26
 qmd: "architecture best practices"
 issues: []
 discussions: []
-status: draft
+status: superseded
+superseded_by: ../architecture-best-practices.md
 ---
 
 ## Convenzioni di naming per le azioni (Actions)

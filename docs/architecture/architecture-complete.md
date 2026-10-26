@@ -26,15 +26,6 @@ status: draft
 6. [Best Practices](#best-practices)
 
 ---
-
-title: "architecture complete"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "architecture complete"
-issues: []
-discussions: []
 ## Module Overview
 
 ### Primary Purpose

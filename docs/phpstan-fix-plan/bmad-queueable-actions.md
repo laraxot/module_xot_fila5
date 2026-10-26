@@ -3,6 +3,11 @@ initiative: PHPStan Zero + Spatie Queueable Actions Conversion
 author: AI Agent
 status: completed
 created: 2026-10-20
+title: "BMAD Planning — Spatie Queueable Actions"
+type: note
+updated: 2026-10-23
+tags: [docs, xot, phpstan-fix-plan]
+qmd: "bmad planning   spatie queueable actions xot"
 ---
 
 # BMAD Planning — Spatie Queueable Actions

@@ -1,3 +1,11 @@
+---
+title: "Support to Queueable Actions"
+type: note
+status: draft
+updated: 2026-10-22
+tags: [docs, xot, plans]
+qmd: "support to queueable actions xot"
+---
 # Support to Queueable Actions
 
 ## Intent

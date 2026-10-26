@@ -3,6 +3,10 @@ title: "Xot - phpstan-fleet-remediation-xot-story-md.story.md"
 module: Xot
 bmad: true
 status: active
+type: story
+updated: 2026-10-23
+tags: [docs, xot, bmad]
+qmd: "phpstan fleet remediation   2026-10-06 xot"
 ---
 # PHPStan fleet remediation — 2026-10-06
 

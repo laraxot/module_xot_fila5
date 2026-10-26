@@ -1,6 +1,5 @@
 ---
 title: "PHPStan L10 — Ptv, Incentivi, IndennitaResponsabilita swarm"
-status: in_progress
 epic: code-quality
 priority: high
 acceptance_criteria:
@@ -15,6 +14,8 @@ references:
   - docs/sprint-status.yaml
 date_created: 2026-10-06
 phase: ricognizione
+status: superseded
+superseded_by: phpstan-ptv-incentivi-indennitaresponsabilita.story.md
 ---
 
 # PHPStan L10 — Ptv, Incentivi, IndennitaResponsabilita swarm

@@ -1,12 +1,13 @@
 ---
 title: "Pagine Dashboard Filament - Documentazione Root"
 type: note
-status: unverified
 created: 2026-09-24
 updated: 2026-10-20
 module: Xot
 tags: [xot, filament]
 qmd: "Pagine Dashboard Filament - Documentazione Root"
+status: superseded
+superseded_by: ../filament-dashboard-pages.md
 ---
 # Pagine Dashboard Filament - Documentazione Root
 

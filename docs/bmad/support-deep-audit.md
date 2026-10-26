@@ -12,7 +12,7 @@ related:
   - ./services-to-queueable-actions-filament-blueprint.md
   - ./filament-blueprint.md
   - ./decision-log.md
-  - ../../plans/support-to-queueable-actions.md
+  - ../plans/support-to-queueable-actions.md
   - ../../../../../docs/second-brain/process/no-app-support-queueable-actions.md
 ---
 

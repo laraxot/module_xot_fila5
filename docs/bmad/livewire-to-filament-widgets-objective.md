@@ -13,6 +13,8 @@ related:
   - ./livewire-widget-decision-log.md
   - ./stories/livewire-to-filament-widgets-fleet.story.md
   - ../../../../../bashscripts/docs/prompts/05-livewire-to-filament-widgets.md
+tags: [docs, xot, bmad]
+qmd: "obiettivo xot"
 ---
 
 # Obiettivo

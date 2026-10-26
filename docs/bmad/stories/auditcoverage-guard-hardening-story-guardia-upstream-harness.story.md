@@ -9,12 +9,13 @@ type: story
 module: Xot
 epic: quality
 story_id: "auditcoverage-guard-hardening-2026-09-24"
-status: done
 qmd: "audit-coverage guard upstream REMOTE HARNESS claude-audit bridge superseded shallow repo"
 related:
   - ../../../../Rating/docs/bmad/stories/auditcoverage-reinjection-story-tests-reiniettata-remote.story.md
   - ../../wiki/concepts/tests-audit-coverage-forbidden.md
   - ../../../../../../bashscripts/ai/wiki/rules/tests-auditcoverage-forbidden.md
+status: superseded
+superseded_by: auditcoverage-guard-hardening.story.md
 ---
 # auditcoverage-guard-hardening-2026-09-24
 

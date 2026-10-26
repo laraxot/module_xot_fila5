@@ -3,6 +3,11 @@ title: Filter
 description: 
 extends: _layouts.documentation
 section: content
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, links]
+qmd: "links filter xot"
 ---
 
 # links filter
