@@ -123,7 +123,7 @@ $prop = property_exists($class, 'property') ? $class::$property : [];
 ## 🔗 **Collegamenti**
 
 ### **File Modificati**
-- [XotBaseResource.php](../../../Modules/Xot/app/Filament/Resources/XotBaseResource.php) - Fix principale
+- [XotBaseResource.php](../../../app/Filament/Resources/XotBaseResource.php) - Fix principale
 - [DoctorResource.php](../../../Modules/<nome progetto>/app/Filament/Resources/DoctorResource.php) - Utilizzo step
 
 ### **Documentazione Correlata**

@@ -6,6 +6,7 @@ tags: [archive, models, eloquent, migrato-da-txt]
 created: 2026-10-23
 updated: 2026-10-23
 status: draft
+qmd: "models   risorse esterne xot"
 ---
 
 # Models — risorse esterne

@@ -10,6 +10,9 @@ related:
   - ../../../../Rating/docs/bmad/stories/conflict-marker-resolution-phpstan-bootstrap-2026-10-06.story.md
   - ../../../../IndennitaCondizioniLavoro/docs/bmad/2026-10-06-phpstan-l10-fix.story.md
   - ../../../../User/docs/bmad/stories/phpstan-l10-user-lang-fix-20261006.story.md
+updated: 2026-10-23
+tags: [docs, xot, bmad]
+qmd: "phpstan level 10   correzione fleet moduli xot"
 ---
 
 # PHPStan Level 10 — correzione fleet moduli

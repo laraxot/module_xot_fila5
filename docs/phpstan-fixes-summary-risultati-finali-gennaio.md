@@ -1,3 +1,11 @@
+---
+title: "PHPStan Fixes - Risultati Finali (Gennaio 2025)"
+type: note
+status: draft
+updated: 2026-10-20
+tags: [docs, xot]
+qmd: "phpstan fixes - risultati finali (gennaio 2025) xot"
+---
 # PHPStan Fixes - Risultati Finali (Gennaio 2025)
 
 ## 📊 Statistiche Finali

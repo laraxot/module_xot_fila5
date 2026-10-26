@@ -11,6 +11,7 @@ issues:
   - "https://github.com/laraxot/base_predict_fila5/issues/237"
 discussions:
   - "https://github.com/laraxot/module_xot_fila5/discussions/29"
+status: draft
 ---
 
 # Activity Log — Xot

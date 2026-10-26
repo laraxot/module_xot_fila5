@@ -12,6 +12,8 @@ related:
   - ./livewire-to-filament-widgets-inventory.md
   - ./livewire-to-filament-widgets-filament-blueprint.md
   - ./stories/livewire-to-filament-widgets-fleet.story.md
+tags: [docs, xot, bmad]
+qmd: "brainstorming bmad xot"
 ---
 
 # Brainstorming BMAD

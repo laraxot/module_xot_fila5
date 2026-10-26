@@ -12,6 +12,7 @@ related:
   - ../../bmad/decision-log.md
   - ../../../../../../bashscripts/docs/prompts/00-start.md
   - ../../../../../../bashscripts/docs/prompts/11-phpstan.md
+tags: [docs, xot, wiki]
 ---
 
 # PHPStan `Modules` a zero — ordine permanente

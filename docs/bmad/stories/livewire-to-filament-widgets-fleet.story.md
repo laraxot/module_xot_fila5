@@ -17,6 +17,7 @@ related:
   - ../livewire-widget-parallelization-plan.md
   - ../livewire-widget-advantages.md
   - ../livewire-widget-decision-log.md
+tags: [docs, xot, bmad]
 ---
 
 # Story fleet

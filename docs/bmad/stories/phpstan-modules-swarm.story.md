@@ -15,7 +15,7 @@ related:
   - ./phpstan-ptv-incentivi-indennitaresponsabilita.story.md
   - ./swarm-phpstan-modular-docs-org.story.md
   - ../../../../Themes/Zero/docs/bmad/stories/quality-gates-phpstan-swarm-2026-09-23.story.md
-  - ../../../User/docs/bmad/stories/user-module-independent-of-comment.story.md
+  - ../../../../User/docs/bmad/stories/user-module-independent-of-comment.story.md
   - ../../../Progressioni/docs/wiki/concepts/stipendio-tabellare-relationship.md
   - ../../../Progressioni/docs/bmad/stories/stipendio-tabellare-hasone-contract.story.md
   - ../../../Progressioni/docs/bmad/stories/phpstan-progressioni-remediation.story.md
