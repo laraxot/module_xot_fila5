@@ -3,7 +3,7 @@ title: "Xot: riordino della docs, numeri prima e dopo"
 type: story
 status: in-progress
 created: 2026-10-20
-updated: 2026-10-20
+updated: 2026-10-25
 module: Xot
 tags: [docs, organizzazione, xot, bmad, gitignore, frontmatter, superseded, vuoti]
 related:
@@ -180,7 +180,7 @@ la riparazione finisce nel ripristino del coordinatore. Nessuna annotazione `--a
    (spine) e `conventions/docs-organization.md` dice README unico ingresso con gli altri come alias. Tre pagine, tre rivendicazioni: serve una decisione.
 4. **Rinomina dei 120 nomi con data in `archive/` e `consolidated/`.** Prima va deciso se quei file devono essere tracciati (oggi sono tracciati ma la cartella e' ignorata).
 5. **Falso positivo del tool** `migrazione-filament-4.md`: aggiungere `filament` a `KEEP_AFTER` in `md-filenames.py` (non toccato qui).
-6. **Coppie di maiuscole** ancora presenti (10): cancellare una meta' dopo aver riscritto i link per path esatto.
+6. **Coppie di maiuscole** chiuse il 2026-10-25 (vedi sotto): 8 -> 0 gruppi.
 7. **Link rotti rimasti**: 1582, soprattutto verso path di altri progetti, `docs/` di altri moduli inesistenti e README di cartelle sparite. Nessun intervento qui (divieto del coordinatore).
 8. **`wiki/Architecture.md`** era `stale`, ora `superseded`: la ragione `stale` e' nel corpo, non piu' nello status.
 
@@ -199,3 +199,33 @@ la riparazione finisce nel ripristino del coordinatore. Nessuna annotazione `--a
 - In zsh una variabile non quotata non si divide in parole: `rg ... $SC` cercava in una directory chiamata `laravel/Modules laravel/Themes ...` e dava 0 per ogni file (falso zero). Con array bash la controprova stampa 3.
 - `rg --no-ignore` salta comunque le cartelle nascoste (`bashscripts/ai/.agents/...`): serve anche `--hidden`.
 - `md-filenames.py check --paths <cartella>` stampa 0 perche' scarta i path che non finiscono in `.md`; per questo il conteggio dei nomi usa `violations()` del tool, importato.
+
+## Collasso delle coppie di maiuscole
+
+Le 8 coppie ancora aperte sono state chiuse con una politica unica: il nome
+canonico e' il minuscolo, la meta' maiuscola o camelCase viene archiviata con
+`git mv <gemello> <nome>.old` (nessun file cancellato). Prima di ogni rinomina,
+prova di sussunzione: `grep -vxFf <canonico> <gemello> | grep -vc '^$'`; se il
+gemello aveva righe uniche, fusione a mano nel canonico.
+
+| Coppia | Esito |
+|---|---|
+| `CHANGELOG.MD` / `changelog.MD` | assorbiti in `CHANGELOG.md` di radice; archiviati come `changelog-md-uppercase.md.old` e `changelog-md-lowercase.md.old` |
+| `QA-VERIFICATION.md` / `qa-verification.md` | `qa-verification.md.old`; lo stub minuscolo ora punta alla story della bonifica, non a se stesso |
+| `REFACTOR-panelmixin.md` / `refactor-panelmixin.md` | `refactor-panelmixin.md.old`, stesso trattamento |
+| `bmad/stories/ST-XX-relationx-analysis.md` / `st-xx-...` | `st-xx-relationx-analysis.md.old` (corpi identici) |
+| `consolidated/CODE_QUALITY.md` / `code_quality.md` | `code_quality.md.old` (il maiuscolo era 0 byte) |
+| `stories/STORY-XXX-phpstan-zero-error-compliance-bmad.md` / `story-xxx-...` | `story-xxx-phpstan-zero-error-compliance-bmad.md.old` (corpi identici, 13126 byte) |
+| `wiki/AGENTS.md` / `agents.md` | `agents.md.old` (il maiuscolo era lo stub superseded) |
+| `filament/infinite-loop-getStepByName-fix.md` / `...getstepbyname-fix.md` | stub archiviato con `superseded_by` corretto a `infinite-loop-get-step-by-name-fix.md`, che e' il documento reale (4908 byte); la minuscola era 0 byte |
+
+Trovato in piu' nella stessa cartella: `filament/infinite_loop_getstepbyname_fix.md`
+(0 byte, underscore) era un terzo gemello dello stesso concetto, archiviato anche lui.
+
+Effetto collaterale riparato: `CHANGELOG.md` di radice conteneva due volte lo stesso
+blocco assorbito (145 righe duplicate), un blocco di chiavi frontmatter senza delimitatori
+a meta' corpo e 4 link a documenti inesistenti. Ora e' un changelog unico, con la voce
+`[2025-06-04]` che esisteva solo nelle due copie in `docs/`.
+
+Misura con lo stesso script del censimento (`os.walk` su `docs/`, basename in minuscolo):
+**8 gruppi -> 0**; file `.md` 1851 -> 1842 (i `.old` non rientrano nel conteggio).

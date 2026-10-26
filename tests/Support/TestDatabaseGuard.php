@@ -7,126 +7,130 @@ namespace Modules\Xot\Tests\Support;
 use Illuminate\Contracts\Config\Repository;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\ConfigurationUrlParser;
-use InvalidArgumentException;
 use RuntimeException;
 
 /**
- * Rifiuta di avviare i test se possono raggiungere un database non usa-e-getta.
+ * Guardia di bootstrap dei test: si ferma prima del primo test se una
+ * connessione puo' raggiungere un database che non e' usa-e-getta.
  *
- * Una sola implementazione, chiamata da `Modules\Xot\Tests\CreatesApplication` (TestCase di modulo)
- * e da `Tests\TestCase` (radice) dopo il boot dell'app e prima di qualunque test.
- * Legge la config EFFETTIVA (anche se in cache), non le variabili d'ambiente.
- *
- * Aborta se l'ambiente non e' `testing`, oppure se una connessione non sqlite ha un database
- * che non finisce per `_test`. sqlite (anche `:memory:`) e' sempre ammesso. Non stampa mai password.
- *
- * @see Modules/Xot/docs/stories/test-database-guard.story.md
+ * Il DB reale e quello di test vivono sullo stesso server con lo stesso
+ * account (che ha DROP): li separa solo il nome. Vedi
+ * `Modules/Xot/docs/stories/test-database-guard.story.md`.
  */
 final class TestDatabaseGuard
 {
-    private const string DISPOSABLE_SUFFIX = '_test';
-
-    /** Prefisso dei DB creati e poi eliminati da bashscripts/tools/pest-scratch-db.sh (non finiscono per `_test`). */
-    private const string SCRATCH_PREFIX = 'claude_scratch_pest_';
-
     /**
-     * Connessioni escluse dal controllo.
-     *
-     * `liveuser_general` (config/localhost/database.php) legge DB_DATABASE_LU, che nessun `.env*` definisce:
-     * ha quindi il fallback fisso `forge13` anche nel caso normale. L'unico consumatore e' il repository dei
-     * token di reset password (`auth.passwords.users.connection`). Senza esclusione la guardia scatterebbe sempre.
-     * Da togliere quando `.env.testing` definisce DB_DATABASE_LU=<nome>_test.
-     *
-     * @var list<string>
+     * Connessioni che leggono una variabile DB_* non definita in `.env.testing`
+     * e quindi ricadono su un nome reale (config/localhost/database.php).
      */
-    private const array IGNORED_CONNECTIONS = ['liveuser_general'];
+    private const ALLOWED_CONNECTIONS = ['liveuser_general'];
+
+    /** Prefisso dei database temporanei creati da `bashscripts/tools/pest-scratch-db.sh`. */
+    private const ALLOWED_PREFIXES = ['claude_scratch_pest_'];
 
     /**
-     * Controlla l'app avviata (ambiente e `database.connections` effettivi).
-     */
-    public static function assertApplication(Application $app): void
-    {
-        $env = $app->environment();
-        $raw = $app->make(Repository::class)->get('database.connections', []);
-
-        $connections = [];
-        foreach (is_array($raw) ? $raw : [] as $name => $connection) {
-            if (! is_string($name) || ! is_array($connection)) {
-                continue;
-            }
-            $driver = $connection['driver'] ?? null;
-            $database = $connection['database'] ?? null;
-            $url = $connection['url'] ?? null;
-            $connections[$name] = [
-                'driver' => is_string($driver) ? $driver : '',
-                'database' => is_string($database) ? $database : null,
-                'url' => is_string($url) ? $url : null,
-            ];
-        }
-
-        self::assert(is_string($env) ? $env : '', $connections);
-    }
-
-    /**
-     * Funzione pura: nessun accesso a Laravel ne' al database.
-     *
-     * @param  array<string, array{driver?: string, database?: string|null, url?: string|null}>  $connections
-     *
-     * @throws RuntimeException se l'ambiente non e' `testing` o una connessione punta a un DB non usa-e-getta
+     * @param  array<string, array{driver?: string|null, database?: string|null, url?: string|null}>  $connections
      */
     public static function assert(string $env, array $connections): void
     {
         if ($env !== 'testing') {
-            throw new RuntimeException(sprintf(
-                'Test abortiti: APP_ENV="%s" invece di "testing". Un APP_ENV gia\' esportato nella shell batte phpunit.xml '
-                .'e carica .env (DB reale). Fare unset APP_ENV e rilanciare.',
-                $env,
-            ));
-        }
-
-        $offenders = [];
-        foreach ($connections as $name => $connection) {
-            if (in_array($name, self::IGNORED_CONNECTIONS, true)) {
-                continue;
-            }
-            [$driver, $database] = self::effective($connection);
-            if ($driver === 'sqlite' || $database === '' || self::isDisposable($database)) {
-                continue;
-            }
-            $offenders[] = sprintf('"%s" (%s) -> database "%s"', $name, $driver, $database);
-        }
-
-        if ($offenders !== []) {
             throw new RuntimeException(
-                'Test abortiti: connessioni verso database non usa-e-getta (il nome deve finire per "_test"): '
-                .implode('; ', $offenders).'. Cause tipiche: DB_DATABASE* gia\' esportati nella shell, '
-                .'.env.testing mancante, DB_URL impostato, bootstrap/cache/config.php obsoleto.',
+                \sprintf('Test bootstrap refused: APP_ENV is "%s", expected "testing".', $env),
             );
         }
+
+        foreach ($connections as $name => $connection) {
+            if (\in_array($name, self::ALLOWED_CONNECTIONS, true)) {
+                continue;
+            }
+
+            [$driver, $database] = self::resolve($connection);
+
+            if ($driver === null || $database === null || $database === '') {
+                continue;
+            }
+
+            if ($driver === 'sqlite' || $database === ':memory:' || \str_ends_with($database, '_test')) {
+                continue;
+            }
+
+            foreach (self::ALLOWED_PREFIXES as $prefix) {
+                if (\str_starts_with($database, $prefix)) {
+                    continue 2;
+                }
+            }
+
+            throw new RuntimeException(\sprintf(
+                'Test bootstrap refused: connection "%s" (driver %s) points to database "%s", which does not end with "_test".',
+                $name,
+                $driver,
+                $database,
+            ));
+        }
+    }
+
+    public static function assertApplication(Application $app): void
+    {
+        $env = $app->environment();
+        if (! \is_string($env)) {
+            throw new RuntimeException('Test bootstrap refused: the application environment is not a string.');
+        }
+
+        $config = $app->make('config');
+        if (! $config instanceof Repository) {
+            throw new RuntimeException('Test bootstrap refused: the config repository is not bound.');
+        }
+
+        self::assert($env, self::narrowConnections($config->get('database.connections')));
     }
 
     /**
-     * Driver e database con cui Laravel si connette davvero: se `url` e' valorizzato, schema e path dell'URL
-     * vincono su `driver` e `database` (stesso parser del runtime). L'URL non viene mai stampato.
-     *
-     * @param  array{driver?: string, database?: string|null, url?: string|null}  $connection
-     * @return array{string, string}
+     * @param  array{driver?: string|null, database?: string|null, url?: string|null}  $connection
+     * @return array{string|null, string|null} driver e database effettivi (l'URL vince, come a runtime)
      */
-    private static function effective(array $connection): array
+    private static function resolve(array $connection): array
     {
-        try {
-            $resolved = (new ConfigurationUrlParser)->parseConfiguration($connection);
-        } catch (InvalidArgumentException) {
-            return [$connection['driver'] ?? '', '<url non analizzabile>'];
-        }
-        $driver = $resolved['driver'] ?? null;
-        $database = $resolved['database'] ?? null;
+        $driver = $connection['driver'] ?? null;
+        $database = $connection['database'] ?? null;
+        $url = $connection['url'] ?? null;
 
-        return [is_string($driver) ? $driver : '', is_string($database) ? $database : ''];
+        if ($url === null || $url === '') {
+            return [$driver, $database];
+        }
+
+        $parsed = (new ConfigurationUrlParser)->parseConfiguration(['url' => $url]);
+
+        $urlDriver = $parsed['driver'] ?? null;
+        $urlDatabase = $parsed['database'] ?? null;
+
+        return [
+            \is_string($urlDriver) ? $urlDriver : $driver,
+            \is_string($urlDatabase) ? $urlDatabase : $database,
+        ];
     }
 
-    private static function isDisposable(string $database): bool
+    /**
+     * @return array<string, array{driver?: string|null, database?: string|null, url?: string|null}>
+     */
+    private static function narrowConnections(mixed $connections): array
     {
-        return str_ends_with($database, self::DISPOSABLE_SUFFIX) || str_starts_with($database, self::SCRATCH_PREFIX);
+        if (! \is_array($connections)) {
+            return [];
+        }
+
+        $narrowed = [];
+        foreach ($connections as $name => $connection) {
+            if (! \is_string($name) || ! \is_array($connection)) {
+                continue;
+            }
+
+            $narrowed[$name] = [
+                'driver' => \is_string($connection['driver'] ?? null) ? $connection['driver'] : null,
+                'database' => \is_string($connection['database'] ?? null) ? $connection['database'] : null,
+                'url' => \is_string($connection['url'] ?? null) ? $connection['url'] : null,
+            ];
+        }
+
+        return $narrowed;
     }
 }
