@@ -98,15 +98,20 @@ final class Module extends BaseModel
      */
     public function getRows(): array
     {
-        $modules = ModuleFacade::all();
-        $modules = Arr::map($modules, function (NModule $module): array {
+        $rows = [];
+
+        foreach (ModuleFacade::all() as $module) {
+            if (! $module instanceof NModule) {
+                continue;
+            }
+
             $config = config('tenant::config');
             if (! is_array($config)) {
                 $config = [];
             }
             $colors = Arr::get($config, 'colors', []);
 
-            return [
+            $rows[] = [
                 'name' => $module->getName(),
                 // 'alias' => $module->getAlias(),
                 'description' => $module->getDescription(),
@@ -116,10 +121,7 @@ final class Module extends BaseModel
                 'icon' => Arr::get($config, 'icon', 'heroicon-o-question-mark-circle'),
                 'colors' => json_encode($colors),
             ];
-        });
-
-        /** @var array<int, array<string, mixed>> $rows */
-        $rows = array_values($modules);
+        }
 
         return $rows;
     }

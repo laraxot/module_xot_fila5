@@ -30,10 +30,7 @@ class GetViewByClassAction
     {
         $module = Str::of($class)->betweenFirst('Modules\\', '\\')->toString();
         $module_low = Str::of($module)->lower()->toString();
-        $after = Str::of($class)
-            ->after('Modules\\'.$module.'\\')
-            ->explode('\\')
-            ->toArray();
+        $after = explode('\\', Str::of($class)->after('Modules\\'.$module.'\\')->toString());
 
         $mapped = Arr::map($after, function (string $value, int $key) use ($after) {
             if ($key > 0 && isset($after[$key - 1])) {

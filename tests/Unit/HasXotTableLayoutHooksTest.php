@@ -5,7 +5,10 @@ use Filament\Tables\Columns\Column;
 use Filament\Tables\Enums\FiltersLayout;
 use Filament\Tables\Enums\RecordActionsPosition;
 use Modules\Xot\Filament\Traits\HasXotTable;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 function invokeProtectedTableHook(object $instance, string $method): mixed
 {

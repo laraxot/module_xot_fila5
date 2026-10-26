@@ -14,3 +14,5 @@ decisioni architetturali, regole e storie BMAD.
 
 Le directory storiche o duplicate vengono classificate progressivamente; non
 sono cancellate automaticamente.
+
+- [Boost MCP: environment and working-directory recovery](boost-mcp-environment.md) — verified command registration and real stdio handshake.
