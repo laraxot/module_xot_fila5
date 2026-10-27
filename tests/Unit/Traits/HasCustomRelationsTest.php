@@ -4,7 +4,7 @@ declare(strict_types=1);
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Relations\CustomRelation;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\TestCase;
 use Modules\Xot\Traits\HasCustomRelations;
 use PHPUnit\Framework\Assert;
 
@@ -39,5 +39,5 @@ it('creates custom relation', function (): void {
         $eagerMatcher
     );
 
-    Assert::assertInstanceOf(CustomRelation::class, $relation);
+    Assert::assertSame(CustomRelation::class, $relation::class);
 });

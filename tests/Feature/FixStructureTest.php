@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Feature;
+namespace Modules\Xot\Tests\Feature;
 
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Safe\chdir;
@@ -21,7 +21,7 @@ uses(TestCase::class);
 
 // $this dentro le closure Pest e' tipizzato da Pest come TestCall (vedi
 // @param-closure-this in vendor/pestphp/pest/src/Functions.php), non come
-// Tests\Modules\Xot\TestCase: PHPStan vieta di ritipizzare $this via @var,
+// Modules\Xot\Tests\TestCase: PHPStan vieta di ritipizzare $this via @var,
 // quindi lo stato del test vive in una variabile locale condivisa per riferimento.
 $testDir = '';
 

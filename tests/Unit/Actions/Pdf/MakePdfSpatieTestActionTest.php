@@ -3,7 +3,7 @@
 declare(strict_types=1);
 use Illuminate\Support\Facades\Facade;
 use Modules\Xot\Actions\Pdf\MakePdfSpatieTestAction;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 

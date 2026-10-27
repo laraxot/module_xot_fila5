@@ -4,7 +4,7 @@ declare(strict_types=1);
 use Filament\Facades\Filament;
 use Modules\User\Models\Role;
 use Modules\Xot\Database\Seeders\PanelRoleSeeder;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\TestCase;
 
 uses(TestCase::class);
 

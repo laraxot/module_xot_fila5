@@ -8,15 +8,15 @@ updated: 2026-10-08
 module: Xot
 tags: [phpstan, xot, regressione, swarm, urlact, update-actions]
 related:
-  - ./phpstan-cleanup-xot-app.story.md
-  - ./phpstan-cleanup-xot-app.dev.md
+  - ./2026-10-06-phpstan-cleanup-xot-app.story.md
+  - ./phpstan-cleanup-xot-app-dev-gruppo.dev.md
 ---
 
 # [STORY] PHPStan Xot/app: regressioni del cleanup del 2026-10-06
 
 ## User Request
 
-Azzerare gli errori PHPStan di `Xot/app` (7 segnalazioni in 5 file) partendo dallo scopo del codice, non dal messaggio. Il sospetto di partenza: il cleanup del 2026-10-06 ([story](./phpstan-cleanup-xot-app.story.md)) aveva tolto variabili "inutilizzate" che in realta' servivano.
+Azzerare gli errori PHPStan di `Xot/app` (7 segnalazioni in 5 file) partendo dallo scopo del codice, non dal messaggio. Il sospetto di partenza: il cleanup del 2026-10-06 ([story](./2026-10-06-phpstan-cleanup-xot-app.story.md)) aveva tolto variabili "inutilizzate" che in realta' servivano.
 
 ## Analysis
 

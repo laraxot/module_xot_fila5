@@ -3,14 +3,15 @@
 declare(strict_types=1);
 use Modules\Xot\Actions\PaDesignColorsAction;
 use Modules\Xot\Datas\MetatagData;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
 test('MetatagData puo essere istanziata', function () {
     $metatagData = new MetatagData;
-    Assert::assertInstanceOf(MetatagData::class, $metatagData);
+
+    Assert::assertSame('xot', $metatagData->generator);
 });
 
 test('getFilamentColors restituisce i colori Filament corretti', function (): void {

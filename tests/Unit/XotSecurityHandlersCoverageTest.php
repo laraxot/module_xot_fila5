@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Unit;
+namespace Modules\Xot\Tests\Unit;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Queue;
 use Mockery;
 use Modules\Xot\Exceptions\Handlers\HandlersRepository;
 use Modules\Xot\Http\Middleware\SecurityMiddleware;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\HttpException;

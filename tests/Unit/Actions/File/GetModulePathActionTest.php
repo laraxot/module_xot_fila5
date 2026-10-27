@@ -3,7 +3,7 @@
 declare(strict_types=1);
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\File\GetModulePathAction;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\TestCase;
 use Nwidart\Modules\Facades\Module;
 use PHPUnit\Framework\Assert;
 
@@ -11,11 +11,10 @@ uses(TestCase::class);
 
 it('gets module path from facade correctly', function (): void {
     // Spy on Module facade
-    Module::partialMock()->allows([
-        'getModulePath' => function (string $module): string {
-            return $module === 'Xot' ? '/path/to/Xot/' : '';
-        },
-    ]);
+    // allows(['metodo' => closure]) restituisce la closure, non il suo risultato: serve andReturnUsing().
+    Module::partialMock()->shouldReceive('getModulePath')->andReturnUsing(
+        fn (string $module): string => $module === 'Xot' ? '/path/to/Xot/' : '',
+    );
 
     $action = app(GetModulePathAction::class);
     $result = $action->execute('Xot');
@@ -37,16 +36,20 @@ it('gets module path from fallback correctly', function (): void {
     }
 
     // Spy on Module facade to throw exception, forcing fallback
-    Module::partialMock()->allows([
-        'getModulePath' => function (string $module): string {
-            throw new Exception('Module not found');
+    Module::partialMock()->shouldReceive('getModulePath')->andReturnUsing(
+        static function (string $module): string {
+            throw new Exception('Module not found: '.$module);
         },
-    ]);
+    );
 
     $action = app(GetModulePathAction::class);
-    // Case-insensitive search
-    $result = $action->execute('testmodule');
+    try {
+        // Case-insensitive search
+        $result = $action->execute('testmodule');
+    } finally {
+        // Sempre, anche se il test fallisce: una Modules/TestModule rimasta e' una cartella spuria per tutto il repo.
+        File::deleteDirectory($dummyModule);
+    }
 
     Assert::assertSame($dummyModule, $result);
-    File::deleteDirectory($dummyModule);
 });

@@ -2,12 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Unit\Filament;
+namespace Modules\Xot\Tests\Unit\Filament;
 
 use Modules\Xot\Filament\Traits\HasXotTable;
+use Modules\Xot\Tests\TestCase;
 use ReflectionClass;
 
 use function Safe\file_get_contents;
+
+uses(TestCase::class);
 
 /**
  * Guardia della regola docs/wiki/rules/xot-table-method-names.md:

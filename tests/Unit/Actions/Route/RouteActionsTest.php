@@ -4,7 +4,7 @@ declare(strict_types=1);
 use Modules\Xot\Actions\Route\BuildLanguageUrlAction;
 use Modules\Xot\Actions\Route\BuildNestedRouteNameAction;
 use Modules\Xot\Actions\Route\IsAdminRouteAction;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);

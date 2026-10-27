@@ -50,6 +50,11 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\Relations\Siblings;
  * quando serve, e PHPStan legge il `@return`.
  *
  * @mixin \Illuminate\Database\Eloquent\Model
+ * The vendor trait is the source of truth for implementation. Its public methods are
+ * intentionally untyped, so this contract keeps runtime-compatible signatures and
+ * documents the types for static analysis instead.
+ *
+ * @mixin Model
  */
 interface HasRecursiveRelationshipsContract
 {
@@ -189,9 +194,12 @@ interface HasRecursiveRelationshipsContract
     public function isIntegerAttribute($attribute);
 
     /**
+     * The parameter stays untyped because Eloquent's Model method is untyped at runtime.
+     *
+     * @param  Builder  $query
      * @return AdjacencyBuilder<Model>
      */
-    public function newEloquentBuilder(Builder $query);
+    public function newEloquentBuilder($query);
 
     /**
      * @param  list<Model>  $models

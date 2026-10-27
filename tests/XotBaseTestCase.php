@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot;
+namespace Modules\Xot\Tests;
 
 use Illuminate\Database\DatabaseManager;
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -17,13 +17,13 @@ use Mockery\MockInterface;
 use Modules\User\Database\Factories\TenantFactory;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\Tenant;
-use Modules\Xot\Actions\Testing\ResolveSharedSqlitePathAction;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Database\Factories\ModuleFactory;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Models\Module;
 use Modules\Xot\Providers\XotServiceProvider;
 use PHPUnit\Framework\MockObject\MockObject;
+use Safe\Exceptions\FilesystemException;
 
 /**
  * Class XotBaseTestCase.
@@ -154,6 +154,15 @@ abstract class XotBaseTestCase extends BaseTestCase
         ];
     }
 
+    /**
+     * Dati sacri: nessun TestCase modulo puo' lanciare migrate:fresh.
+     * I figli che `use RefreshDatabase` lo riattivano — quel trait e' vietato
+     * (vedi Fixcity REGOLA_DATI_SACRI / TestDatabaseGuard).
+     */
+    protected function refreshDatabase(): void
+    {
+    }
+
     protected function setUp(): void
     {
         parent::setUp();
@@ -257,7 +266,24 @@ abstract class XotBaseTestCase extends BaseTestCase
      */
     public static function sharedSqlitePath(): string
     {
-        return (new ResolveSharedSqlitePathAction())->execute();
+        $configured = config('xot.testing.sqlite_file');
+
+        if (is_string($configured) && $configured !== '') {
+            return database_path($configured);
+        }
+
+        try {
+            /** @var list<string> $found */
+            $found = \Safe\glob(database_path('*.sqlite'));
+        } catch (FilesystemException) {
+            $found = [];
+        }
+
+        if (count($found) === 1) {
+            return $found[0];
+        }
+
+        return database_path('test_data.sqlite');
     }
 
     /**

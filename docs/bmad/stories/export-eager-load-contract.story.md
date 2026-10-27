@@ -15,10 +15,6 @@ qmd: "getXlsEagerLoad ExportXlsAction SchedaExporter eager load ratings ratingMo
 related:
   - ../../../app/Filament/Actions/Header/ExportXlsAction.php
   - ../../../app/Exports/XotBaseExporter.php
-<<<<<<< HEAD
-  - ../../stories/xotbaseexporter-scopo.md
-=======
->>>>>>> laraxot/dev
   - ../../../app/Exports/CollectionExport.php
   - ../../../Ptv/app/Filament/Exports/SchedaExporter.php
 ---

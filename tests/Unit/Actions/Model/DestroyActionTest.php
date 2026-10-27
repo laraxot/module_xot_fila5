@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Unit\Actions\Model;
+namespace Modules\Xot\Tests\Unit\Actions\Model;
 
 use Illuminate\Support\Facades\Session;
 use Modules\Xot\Actions\Model\DestroyAction;
 use Modules\Xot\Models\BaseModel;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);

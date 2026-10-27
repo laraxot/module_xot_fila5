@@ -3,7 +3,7 @@
 declare(strict_types=1);
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\Xot\Models\Module;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);

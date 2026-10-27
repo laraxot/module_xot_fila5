@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 use Modules\Xot\Helpers\PathHelper;
-use Tests\Modules\Xot\XotBaseTestCase;
+use Modules\Xot\Tests\XotBaseTestCase;
 
 uses(XotBaseTestCase::class);
 

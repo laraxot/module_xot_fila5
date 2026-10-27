@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Unit\Filament\Actions\Header;
+namespace Modules\Xot\Tests\Unit\Filament\Actions\Header;
 
 use Filament\Actions\Exports\Enums\ExportFormat;
 use Filament\Actions\Exports\Models\Export;
@@ -11,9 +11,8 @@ use Modules\Xot\Exports\XlsFieldsExporter;
 use Modules\Xot\Exports\XotBaseExporter;
 use Modules\Xot\Filament\Actions\Header\ExportXlsxAction;
 use Modules\Xot\Filament\Actions\XotBaseExportAction;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use Tests\Modules\Xot\Unit\Filament\Actions\Header\ExporterStub;
 
 uses(TestCase::class);
 

@@ -2,15 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Unit;
+namespace Modules\Xot\Tests\Unit;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Modules\Xot\Filament\Builders\ColumnBuilder;
 use Modules\Xot\Filament\Builders\FilterBuilder;
-use Modules\Xot\Filament\Support\ColumnBuilder as SupportColumnBuilder;
-use Modules\Xot\Filament\Support\RecordAnchor;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Filament\Links\RecordAnchor;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class)->group('no-xot-db');
@@ -86,9 +85,9 @@ describe('Xot filament builders', function (): void {
         Assert::assertFalse(ColumnBuilder::updater(toggleable: false)->isToggledHiddenByDefault());
     });
 
-    test('Support ColumnBuilder tooltip legge il valore dal record e tace senza record', function (): void {
-        $title = SupportColumnBuilder::title();
-        $description = SupportColumnBuilder::description();
+    test('ColumnBuilder tooltip legge il valore dal record e tace senza record', function (): void {
+        $title = ColumnBuilder::title();
+        $description = ColumnBuilder::description();
         Assert::assertSame('', $title->getTooltip());
         Assert::assertSame('', $description->getTooltip());
 
@@ -97,8 +96,8 @@ describe('Xot filament builders', function (): void {
         Assert::assertSame('Descrizione', $description->record($record)->getTooltip());
     });
 
-    test('Support ColumnBuilder status mappa gli stati sul colore del badge', function (): void {
-        $status = SupportColumnBuilder::status();
+    test('ColumnBuilder status mappa gli stati sul colore del badge', function (): void {
+        $status = ColumnBuilder::status();
 
         Assert::assertSame('success', $status->getColor('published'));
         Assert::assertSame('warning', $status->getColor('draft'));
@@ -106,28 +105,28 @@ describe('Xot filament builders', function (): void {
         Assert::assertSame('gray', $status->getColor('qualunque'));
     });
 
-    test('Support ColumnBuilder publishedAt e verde solo per date passate', function (): void {
-        $column = SupportColumnBuilder::publishedAt();
+    test('ColumnBuilder publishedAt e verde solo per date passate', function (): void {
+        $column = ColumnBuilder::publishedAt();
 
         $past = xotSupportRecord(['published_at' => now()->subDay()]);
         $future = xotSupportRecord(['published_at' => now()->addDay()]);
 
         Assert::assertSame('success', $column->record($past)->getColor(null));
         Assert::assertSame('warning', $column->record($future)->getColor(null));
-        Assert::assertSame('warning', SupportColumnBuilder::publishedAt()->getColor(null));
+        Assert::assertSame('warning', ColumnBuilder::publishedAt()->getColor(null));
     });
 
-    test('Support ColumnBuilder raggruppa timestamps audit e soft delete', function (): void {
-        Assert::assertSame(['created_at', 'updated_at'], array_keys(SupportColumnBuilder::timestamps()));
+    test('ColumnBuilder raggruppa timestamps audit e soft delete', function (): void {
+        Assert::assertSame(['created_at', 'updated_at'], array_keys(ColumnBuilder::timestamps()));
         Assert::assertSame(
             ['created_at', 'updated_at', 'created_by', 'updated_by'],
-            array_keys(SupportColumnBuilder::auditColumns()),
+            array_keys(ColumnBuilder::auditColumns()),
         );
         Assert::assertSame(
             ['created_at', 'updated_at', 'deleted_at'],
-            array_keys(SupportColumnBuilder::softDeleteColumns()),
+            array_keys(ColumnBuilder::softDeleteColumns()),
         );
-        Assert::assertTrue(SupportColumnBuilder::deletedAt()->isToggledHiddenByDefault());
+        Assert::assertTrue(ColumnBuilder::deletedAt()->isToggledHiddenByDefault());
     });
 
     test('FilterBuilder statusSelect e prioritySelect uniscono i valori personalizzati ai default', function (): void {

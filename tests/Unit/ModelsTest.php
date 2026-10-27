@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Unit;
+namespace Modules\Xot\Tests\Unit;
 
 use Modules\Tenant\Database\Factories\TenantFactory;
 use Modules\Tenant\Models\Tenant;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
 use Modules\Xot\Models\Module;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);

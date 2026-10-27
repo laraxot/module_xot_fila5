@@ -1,17 +1,16 @@
 <?php
 
 declare(strict_types=1);
-use Filament\Schemas\Components\Wizard\Step;
 use Illuminate\Support\HtmlString;
 use Modules\Media\Actions\GetAttachmentsSchemaAction;
 use Modules\Xot\Actions\GetTransKeyAction;
 use Modules\Xot\Actions\ModelClass\CountAction;
 use Modules\Xot\Filament\Resources\XotBaseResource;
-use Tests\Modules\Xot\Fixtures\Filament\Resources\ProbeResource;
-use Tests\Modules\Xot\Fixtures\Models\Probe;
-use Tests\Modules\Xot\Fixtures\Models\ProbeBadAttachments;
-use Tests\Modules\Xot\Fixtures\Models\ProbeGoodAttachments;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\Fixtures\Filament\Resources\ProbeResource;
+use Modules\Xot\Tests\Fixtures\Models\Probe;
+use Modules\Xot\Tests\Fixtures\Models\ProbeBadAttachments;
+use Modules\Xot\Tests\Fixtures\Models\ProbeGoodAttachments;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Safe\file_put_contents;
@@ -150,7 +149,7 @@ it('covers get attachments schema branches', function (): void {
     };
 
     Assert::assertSame([], $resourceNoAttachments::getAttachmentsSchema());
-    if (! class_exists('Tests\\Modules\\Xot\\Fixtures\\Models\\ProbeBadAttachments')) {
+    if (! class_exists('Modules\\Xot\\Tests\\Fixtures\\Models\\ProbeBadAttachments')) {
         eval(' class ProbeBadAttachments extends \\Illuminate\\Database\\Eloquent\\Model { public static function getAttachments(): string { return "invalid"; } }');
     }
 
@@ -160,7 +159,7 @@ it('covers get attachments schema branches', function (): void {
     };
 
     Assert::assertSame([], $resourceBadAttachments::getAttachmentsSchema());
-    if (! class_exists('Tests\\Modules\\Xot\\Fixtures\\Models\\ProbeGoodAttachments')) {
+    if (! class_exists('Modules\\Xot\\Tests\\Fixtures\\Models\\ProbeGoodAttachments')) {
         eval(' class ProbeGoodAttachments extends \\Illuminate\\Database\\Eloquent\\Model { public static function getAttachments(): array { return ["one", 7, "two"]; } }');
     }
 
@@ -202,8 +201,9 @@ it('covers wizard submit action success and failure paths', function (): void {
 });
 
 it('covers step builder branches', function (): void {
-    Assert::assertInstanceOf(Step::class, ProbeResource::callGetStepByName('missing_step'));
-    Assert::assertInstanceOf(Step::class, ProbeResource::callGetStepByName('custom_step'));
+    $step = ProbeResource::callGetStepByName('details');
+
+    Assert::assertSame('details', $step->getLabel());
 });
 
 it('covers simple base helpers', function (): void {

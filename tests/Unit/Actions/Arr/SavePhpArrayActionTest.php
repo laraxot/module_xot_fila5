@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Unit\Actions\Arr;
+namespace Modules\Xot\Tests\Unit\Actions\Arr;
 
 use Modules\Xot\Actions\Arr\SavePhpArrayAction;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Safe\file_get_contents;
@@ -17,7 +17,7 @@ use function Safe\unlink;
 uses(TestCase::class);
 
 // $this dentro le closure Pest e' tipizzato da Pest come TestCall, non come
-// Tests\Modules\Xot\TestCase: PHPStan vieta di ritipizzare $this via @var, quindi
+// Modules\Xot\Tests\TestCase: PHPStan vieta di ritipizzare $this via @var, quindi
 // la temp dir del test vive in una variabile locale condivisa per riferimento.
 $tempDir = '';
 
