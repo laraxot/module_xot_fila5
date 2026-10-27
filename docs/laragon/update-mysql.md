@@ -1,30 +1,13 @@
 ---
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "update mysql 8 0"
-issues: []
-discussions: []
-title: Aggiornare Mysql a 8.0
-description: Aggiornare Mysql a 8.0
-extends: _layouts.documentation
-section: content
-status: draft
+title: "Aggiornare Mysql a 8.0"
+type: alias
+status: superseded
+canonical: "wiki/laragon/update-mysql-aggiornare.md"
+qmd: "update-mysql alias superseded"
 ---
 
-# Aggiornare Mysql a 8.0 {#update-mysql-to-8-0}
+# Aggiornare Mysql a 8.0
 
-Articolo di riferimento https://gist.github.com/meorajrul/b57803bf1b4ddfd2f93e6ad37c3ac5f2
+Documento identico al canonico: [update-mysql-aggiornare.md](../wiki/laragon/update-mysql-aggiornare.md).
 
-* scaricare la versione di mysql 8.0.30 tramite link https://downloads.mysql.com/archives/get/p/23/file/mysql-8.0.30-winx64.zip
-* Decomprimere il file inC:\laragon\bin\mysql
-* Apri la riga di comando di Laragon e passa a quella cartella C:\laragon\bin\mysql\mysql-8.0.30-winx64\bin
-* Esegui comando
-  ```php
-  mysqld --initialize-insecure
-  ```
-
-* Fare clic con il tasto destro su Laragon Tray e passare alla versione MySQL 8.*
-* Avvia i servizi
-* Apri HeidiSQL o uno qualsiasi dei tuoi IDE DB e inizia ad accedere alla tabella
+Canonico: `laravel/Modules/Xot/docs/wiki/laragon/update-mysql-aggiornare.md`. Qui non ci sono istruzioni: seguire il file collegato.
