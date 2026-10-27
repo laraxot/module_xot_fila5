@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "prompt rules"
 issues: []
 discussions: []
-<<<<<<< .merge_file_0rZvOx
-=======
 status: draft
->>>>>>> .merge_file_UOyxVz
 ---
 
 # Regole per i Prompt

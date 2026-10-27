@@ -11,6 +11,7 @@ qmd: "brainstorming services to actions spatie queueable perche 5 whys scamper r
 related:
   - ../bmad-brainstorming.md
   - ./filament-blueprint.md
+  - ./planning-services-to-actions-zero-folders.md
   - ./services-to-queueable-actions-brainstorming.md
   - ./services-to-queueable-actions-architecture.md
   - ./services-to-queueable-actions-filament-blueprint.md
@@ -53,7 +54,7 @@ Adapter / translator Laravel / registry / stream HTTP **non** sono use-case:
 vivono in `Adapters/`, `Contracts/`, `Support/`, `Infrastructure/` — **mai** sotto
 `app/Services/`.
 
-## Inventario misurato (disco vivo, 2026-10-20 pomeriggio)
+## Inventario misurato (disco vivo, 2026-10-20)
 
 Gate:
 
@@ -66,15 +67,18 @@ find Modules -path '*/app/Actions/*Action.php' | wc -l
 | Esito | Dettaglio |
 |-------|-----------|
 | Cartelle `Modules/*/app/Services` | **0** |
+| Cartelle `Themes/*/app|…/Services` | **0** |
 | `*.php` sotto `app/Services` | **0** |
-| Actions | **~682** `*Action.php` |
-| Mid-sessione (stesso giorno ~12:40) | 8 dirs + 5 Geo PHP riesumati; **0** `use Modules\Geo\Services\`; match = commenti «Sostituisce…» nelle Actions |
-| Post-cleanup | Geo Services di nuovo **GONE**; allowlist ratchet `archAllowedServicesDirs()` = **[]** |
-| Falsi positivi | `TermsOfService` Livewire (non Services); `*/tests/Unit/Services` (test, fuori gate `app/`) |
-| PHPStan | `analyse Modules --memory-limit=2G` → **OK No errors** (SIGKILL OOM su run paralleli senza limite) |
+| `use Modules\…\Services\` prod | **0** |
+| Actions | **~770** sotto `Modules/*/app/Actions` (sera); ~682 mid-giorno |
+| Mid-sessione (~12:40) | 8 dirs + 5 Geo PHP riesumati; **0** `use Modules\Geo\Services\`; match = commenti «Sostituisce…» |
+| Post-cleanup + sera | dirs=0; allowlist ratchet = **[]**; `NoServicesTest` **3 PASS** |
+| Falsi positivi | `TermsOfService` Livewire; `*/tests/Unit/Services` (fuori gate `app/`) |
+| PHPStan | `analyse Modules --memory-limit=2G` → **OK No errors** |
 
-Insight: la wave non e' «convertire 22 Service»; e' **delete-or-retarget di
-riesumazioni merge** + **ratchet che vieta la directory**, non solo il file.
+Insight: la wave non e' «convertire N Service»; e' **delete-or-retarget di
+riesumazioni merge** + **ratchet sulla directory**. Planning maintain:
+[planning-services-to-actions-zero-folders.md](./planning-services-to-actions-zero-folders.md).
 
 ## 5 Whys
 
@@ -119,7 +123,7 @@ riesumazioni merge** + **ratchet che vieta la directory**, non solo il file.
 
 | | |
 |---|---|
-| **S** | ~682 Actions; story per-modulo; blueprint Filament; ratchet arch gia' presente |
+| **S** | ~770 Actions; story per-modulo; blueprint Filament; `NoServicesTest` verde |
 | **W** | Merge riesuma; sessioni parallele riscrivono gli stessi path |
 | **O** | Gate dirs=0 stabile; boy scout delete-again automatico |
 | **T** | OOM PHPStan (SIGKILL); lock caldi; docs che citano ancora API Service |
@@ -128,7 +132,7 @@ riesumazioni merge** + **ratchet che vieta la directory**, non solo il file.
 
 1. **Religione = cartella assente**, non solo file assenti.
 2. **Geo mid-sessione era zombie comment-only**: Actions gia' sostituiscono; delete, non convert.
-3. **Ratchet**: `ModulesArchitectureTest` vieta `*Service.php` e directory `app/Services`; allowlist deve restare `[]`.
+3. **Ratchet**: `NoServicesTest` (directory + namespace + `use`); allowlist `[]`.
 4. **Filament blueprint** e' vincolo permanente: Resource/Page/Widget → Actions.
 5. **PHPStan Modules a zero non chiude la wave**: continua boy scout no-services senza conferma.
 
@@ -140,7 +144,8 @@ riesumazioni merge** + **ratchet che vieta la directory**, non solo il file.
 
 ## Next BMAD
 
-Story operativa: [services-to-actions-global-wave.story.md](../stories/services-to-actions-global-wave.story.md)
-— stato **acceptance dirs=0**; se merge riesuma Geo → riaprire
+Planning maintain: [planning-services-to-actions-zero-folders.md](./planning-services-to-actions-zero-folders.md).
+Story: [services-to-actions-global-wave.story.md](../stories/services-to-actions-global-wave.story.md)
+— **done** su acceptance dirs=0; se merge riesuma Geo →
 [services-zombie-delete-wave3](../../../Geo/docs/stories/services-zombie-delete-wave3.story.md)
-come delete-again (mai nuova conversione di massa).
+come delete-again (mai conversione di massa).

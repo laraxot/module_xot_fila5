@@ -4,6 +4,10 @@ status: completed
 module: Geo (5 Services → Actions esistenti, dir rimossa), Xot (.gitignore + .bak rimossi), AI/Job/Lang/Media/Notify/UI (vuoti confermati)
 initiative: kp-5ecdb68985424ad593740489df567c2d
 scope: chiudere ogni directory `app/Services/`; verificare semanticamente i cinque Geo Service presenti nello staging; riusare le QueueableActions esistenti e crearne di nuove solo se manca un use-case successore. Perché: il confine deve esprimere use-case eseguibili con `execute()`, senza duplicare adapter, resolver o codice morto. `laravel/phpstan.neon` è l'unica configurazione autorizzata e non viene modificata.
+type: note
+updated: 2026-10-20
+tags: [docs, xot, phpstan-fix-plan]
+qmd: "elimina services xot"
 ---
 
 ## Perché (scopo) — il senso dell'azione

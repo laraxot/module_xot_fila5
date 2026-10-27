@@ -7,16 +7,11 @@ updated: 2026-09-26
 qmd: "README"
 issues: []
 discussions: []
-<<<<<<< .merge_file_4kYce9
----
-
-=======
 status: stale
 ---
 
 > Nota 2026-10-14 (docs-audit): Il blocco 'Collegamenti tra versioni di README.md' (62 link non risolti) punta a percorsi di altri progetti (docs/moduli, patient, dental, isee) e la sezione STI cita il modulo Patient, che non esiste in questo progetto (Modules/ contiene 19 moduli, nessuno e Patient). L'elenco dei file e stato corretto il 2026-10-14. Contenuto non riscritto, verificare prima di usarlo.
 
->>>>>>> .merge_file_mMYLGO
 # Standard di Codice
 
 Questa cartella contiene gli standard di codice e le convenzioni utilizzate nel progetto.
@@ -47,7 +42,7 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 * [README.md](docs/troubleshooting/git-conflicts/readme.md)
 * [README.md](docs/tecnico/laraxot/readme.md)
 * [README.md](docs/modules/readme.md)
-* [README.md](docs/conventions/readme.md)
+* [README.md](../conventions/readme.md)
 * [README.md](docs/amministrazione/backup/readme.md)
 * [README.md](docs/amministrazione/monitoraggio/readme.md)
 * [README.md](docs/amministrazione/deployment/readme.md)

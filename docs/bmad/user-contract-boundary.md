@@ -4,6 +4,7 @@ type: decision
 status: active
 updated: 2026-10-18
 tags: [bmad, second-brain, architecture, contracts, user]
+qmd: "usercontract boundary xot"
 ---
 
 # UserContract boundary

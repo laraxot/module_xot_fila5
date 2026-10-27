@@ -8,7 +8,7 @@ tags: [wiki, no-frontmatter-fix]
 created: 2026-08-24
 updated: 2026-08-24
 status: superseded
-superseded_by: ../../architecture/architecture-best-practices.md
+superseded_by: ../../architecture-best-practices.md
 ---
 
 ## Convenzioni di naming per le azioni (Actions)

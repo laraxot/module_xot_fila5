@@ -12,7 +12,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit\Models;
 
-use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Modules\Xot\Database\Factories\ModuleFactory;
 use Modules\Xot\Models\Module;
@@ -21,7 +20,6 @@ use Tests\TestCase;
 
 class ModuleTest extends TestCase
 {
-    use RefreshDatabase;
     use WithFaker;
 
     protected Module $module;

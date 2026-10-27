@@ -3,20 +3,50 @@ title: "Xot - phpstan-status.md"
 module: Xot
 bmad: true
 status: active
-<<<<<<< .merge_file_m9BlYs
-=======
 type: note
-updated: 2026-10-20
+updated: 2026-10-25
 tags: [docs, xot, bmad]
 qmd: "phpstan status modules zero file_errors xot gate"
->>>>>>> .merge_file_TcYpDe
 ---
 # PHPStan Status — Xot
 
 Stato vivo del gate. Non copiare numeri da report storici: rimisura.
 
-<<<<<<< .merge_file_m9BlYs
-=======
+## Misura 2026-10-25 — verde dopo la coerenza vendor (Pint incluso)
+
+```bash
+cd laravel
+APP_ENV=testing ./vendor/bin/phpstan analyse Modules --memory-limit=-1 --no-progress --error-format=json
+# {"totals":{"errors":0,"file_errors":0},"files":{},"errors":[]}   exit 0
+APP_ENV=testing ./vendor/bin/phpstan analyse Modules --memory-limit=-1 --no-progress
+# [OK] No errors                                                  exit 0
+```
+
+Partenza della sessione: **30 `file_errors`** su un vendor incoerente (`composer.lock`
+riscritto: Filament v5.10.3, Laravel 13.38.0, spatie/laravel-permission 8.3.2,
+phpstan 2.3.2 + Larastan). Sei famiglie chiuse **alla radice**, zero ignore aggiunti:
+
+| Dove | Identifier | Radice |
+|------|-----------|--------|
+| `Fixcity/.../Blocks/TicketList/Agid.php` | `identical.alwaysFalse` | `reports.status` è `string`: narrowing su `is_string()`, non cast |
+| `Lang/app/Models/TranslationFile.php` | `nullCoalesce.offset` | `?->` morto su chiave sempre presente; nuovo `enrichTranslationRow()` tipizzato a shape |
+| `UI/.../Table/TableLayoutTrait.php` | `argument.type` | `getCurrentLayout()`: `instanceof TableLayoutEnum` + `tryFrom()`; il ramo `is_int` era un TypeError latente |
+| `Xot/.../View/GetViewByClassAction.php` | `return.type` | `$after` da `explode()` nativo (`list<string>`) invece di `toArray()` non tipizzato |
+| `Xot/app/Models/Module.php` | `property.notFound` | `getRows()` riscritto su `foreach` + `instanceof NModule` |
+| `Xot/tests/CreatesApplication.php` | `class.notFound` | `tests/Support/TestDatabaseGuard.php` ricreato dal contratto documentato (guardia dati sacri, 4 test Pest verdi) |
+
+Prerequisito non negoziabile: **`APP_ENV=testing`** su un checkout senza `.env`, altrimenti
+Larastan muore con `No application encryption key has been specified` e il json contiene un
+solo `errors`. `phpstan.neon` invariato (solo umano). Racconto completo:
+[phpstan-modules-zero-gate](../stories/phpstan-modules-zero-gate.story.md).
+
+**Riverifica a fine giornata** (dopo 156 gruppi di gemelli `.md` collassati e lo scaffold di
+`Modules/Event`): stesso comando, `{"totals":{"errors":0,"file_errors":0}}` exit 0 —
+`/tmp/opencode/phpstan/run6.json`. `composer dump-autoload` ha aggiunto `Modules\Event\` a
+`autoload_psr4.php`, quindi il modello `Event` è finalmente autoloadable (prima no: la
+cartella non aveva `composer.json`); il modulo resta `[Disabled]` in `php artisan module:list`
+perché non compare in `modules_statuses.json`, e la sua migration non viene caricata.
+
 ## Misura verificata 2026-10-20 (pm) — gate modulo Xot
 
 ```bash
@@ -81,7 +111,6 @@ Stesso comando: allora **`[OK] No errors`** su 8.823 file. Le segnalazioni
 piu' vecchie sotto non descrivono lo stato corrente: prima di riaprire una storia
 bisogna ripetere il comando nel checkout interessato.
 
->>>>>>> .merge_file_TcYpDe
 ## Misura 2026-10-06 (sera) — swarm Xot/app: scopo prima dell'errore
 
 `analyse Modules/Xot/app`: 147 segnalazioni del file errori -> **21**, tutte
@@ -95,11 +124,7 @@ Orfane che erano logica tolta, non rumore: `RelationX::morphToManyX()` (prefisso
 `RouteService::urlAct()` (nome route letto dopo l'uso), `extractBelongsToRelations()`
 (non popolava `$data`), `--type` di `xot:analyze-components` (mai applicato).
 Gli errori `HasXotTable` "in context of class@anonymous" erano result-cache stale.
-<<<<<<< .merge_file_m9BlYs
-Dettaglio e lezioni: [dev-story](../stories/2026-10-06-phpstan-cleanup-xot-app.dev.md).
-=======
 Dettaglio e lezioni: [dev-story](../stories/phpstan-cleanup-xot-app.dev.md).
->>>>>>> .merge_file_TcYpDe
 
 ## Misura 2026-10-06 (notte) — swarm Xot/rest: test, helpers, stub Pest
 
@@ -111,11 +136,7 @@ comportamento del titolo); 53 erano parametri inutilizzati degli stub Pest
 `xotPestStubFailure()`); 2 di fixture (`SendMailByRecordActionTest`: classe anonima annidata
 senza PHPDoc risolto -> classe nominata). Pest non eseguito (`.env.testing` = MySQL).
 Da decidere: `tests/PestStubs.php` e' orfano ma e' lui a risolvere `Pest\Laravel\*` per PHPStan.
-<<<<<<< .merge_file_m9BlYs
-Dettaglio e lezioni: [dev-story](../stories/2026-10-06-phpstan-cleanup-xot-rest.dev.md).
-=======
 Dettaglio e lezioni: [dev-story](../stories/phpstan-cleanup-xot-rest.dev.md).
->>>>>>> .merge_file_TcYpDe
 
 ## Misura 2026-10-06 — EnsureKeysAction + file scratch rimossi
 
@@ -124,11 +145,7 @@ Dettaglio e lezioni: [dev-story](../stories/phpstan-cleanup-xot-rest.dev.md).
 - `app/Actions/Arr/ScratchNarrowingTest.php` e `ScratchNarrowingTest2.php` (3 errori):
   classi di prova sul narrowing di `Assert`, mai referenziate, arrivate col sync dentro
   `app/`. **Cancellate**, non corrette: è codice morto, stessa logica di
-<<<<<<< .merge_file_m9BlYs
-  [phpstan-no-probes-rule](../../../../bashscripts/ai/wiki/rules/phpstan-no-probes-rule.md)
-=======
   [phpstan-no-probes-rule](../../../../../bashscripts/ai/wiki/rules/phpstan-no-probes-rule.md)
->>>>>>> .merge_file_TcYpDe
   ("rimuovere codice morto non referenziato").
 - `app/Actions/Arr/EnsureKeysAction.php` (`return.type`): `Arr::map()` di Laravel non ha
   tipo di ritorno generico, quindi il risultato era `array` nudo. Sostituito con un
@@ -143,13 +160,8 @@ Fuori da Xot: `analyse Modules/Tenant` riporta ancora errori su `SushiToJson`,
 
 `analyse Modules` dopo fix `@template TModel` / `@use GeoTrait<Address>`:
 **0** `file_errors`. Canon:
-<<<<<<< .merge_file_m9BlYs
-[geo-trait.md](../Geo/docs/traits/geo-trait.md) ·
-[phpstan-journey.md](../../../../bashscripts/ai/wiki/second-brain/phpstan-journey.md).
-=======
 [geo-trait.md](../../../Geo/docs/traits/geo-trait.md) ·
 [phpstan-journey.md](../../../../../bashscripts/ai/wiki/second-brain/phpstan-journey.md).
->>>>>>> .merge_file_TcYpDe
 
 ## Misura 2026-09-24 — regressione naming (CloudStorage + Symplify)
 
@@ -162,11 +174,7 @@ Laraxot usa `*Contract` (non `*Interface`), basi `BaseModel` / `XotBase*` / `Tes
 (non `Abstract*`), trait `Has*` (non suffisso `*Trait`). Symplify
 `ExplicitClassPrefixSuffixRule` (via `naming-rules.neon`, `symplify.naming=true`)
 impone esattamente il contrario. Memoria:
-<<<<<<< .merge_file_m9BlYs
-[contract-suffix-no-interfaces-folder.md](../../../../bashscripts/ai/wiki/memories/contract-suffix-no-interfaces-folder.md).
-=======
 [contract-suffix-no-interfaces-folder.md](../../../../../bashscripts/ai/wiki/memories/contract-suffix-no-interfaces-folder.md).
->>>>>>> .merge_file_TcYpDe
 
 ### Cosa è successo
 
@@ -245,23 +253,13 @@ Per dichiarare «siamo a zero» serve il comando senza argomenti.
 
 ## Collegamenti
 
-<<<<<<< .merge_file_m9BlYs
-- [phpstan-modules-fix.md](./wiki/troubleshooting/phpstan-modules-fix.md) — ricette
-- [phpstan-best-practices.md](./wiki/phpstan-best-practices.md) — pattern Pest
-- [18.59](./stories/18.59.phpstan-repo-wide-zero-2026-09-21.story.md) — drift 23→0 del 2026-09-21
-- [2026-10-08 regressioni Xot/app](../stories/2026-10-08-phpstan-xot-app-regressions.story.md) — `$models` di MorphMany, `urlAct` (row e beforeLast), assert finti
-- [phpstan-journey.md](../../../../bashscripts/ai/wiki/second-brain/phpstan-journey.md) — second brain
-- [CloudStorage coverage](../../CloudStorage/docs/coverage.md) — incidente require-dev Symplify
-- [contract-suffix memory](../../../../bashscripts/ai/wiki/memories/contract-suffix-no-interfaces-folder.md) — religione `*Contract`
-=======
 - [phpstan-modules-zero-wave3](../stories/phpstan-modules-zero-wave3.story.md) — wave3 json + boy scout Lang
 - [services-to-actions-global-wave](../stories/services-to-actions-global-wave.story.md) — ratchet Services
 - [livewire-to-filament-widgets-fleet](../bmad/stories/livewire-to-filament-widgets-fleet.story.md) — ratchet UI panel
-- [phpstan-modules-fix.md](../wiki/troubleshooting/phpstan-modules-fix.md) — ricette
-- [phpstan-best-practices.md](../wiki/phpstan-best-practices.md) — pattern Pest
-- [18.59](./stories/18.59.phpstan-repo-wide-zero-2026-09-21.story.md) — drift 23→0 del 2026-09-21
+- [phpstan-modules-fix.md](../wiki/troubleshooting/phpstan-modules-fix.md) _(target mancante, verificato 2026-10-23)_ — ricette
+- [phpstan-best-practices.md](../wiki/phpstan-best-practices.md) _(target mancante, verificato 2026-10-23)_ — pattern Pest
+- [18.59](./stories/18.59.phpstan-repo-wide-zero-2026-09-21.story.md) _(target mancante, verificato 2026-10-23)_ — drift 23→0 del 2026-09-21
 - [2026-10-08 regressioni Xot/app](../stories/phpstan-xot-app-regressions.story.md) — `$models` di MorphMany, `urlAct` (row e beforeLast), assert finti
 - [phpstan-journey.md](../../../../../bashscripts/ai/wiki/second-brain/phpstan-journey.md) — second brain
-- [CloudStorage coverage](../../../CloudStorage/docs/coverage.md) — incidente require-dev Symplify
+- [CloudStorage coverage](../../../CloudStorage/docs/coverage.md) _(modulo CloudStorage assente in questo checkout)_ — incidente require-dev Symplify
 - [contract-suffix memory](../../../../../bashscripts/ai/wiki/memories/contract-suffix-no-interfaces-folder.md) — religione `*Contract`
->>>>>>> .merge_file_TcYpDe
