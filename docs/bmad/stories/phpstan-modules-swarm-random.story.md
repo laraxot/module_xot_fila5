@@ -96,7 +96,7 @@ swarm parallelo per singolo modulo in ordine random, come da pilastro 8.
     dichiarazioni di classe concatenate e una firma incompleta. `php artisan
     --version` riproduceva lo stesso ParseError.
   - Fix funzionale registrato nella story di modulo
-    `IndennitaCondizioniLavoro/docs/bmad/stories/phpstan-bootstrap-fix-20261006.story.md`:
+    `IndennitaCondizioniLavoro/docs/bmad/stories/phpstan-bootstrap-fix.story.md`:
     una sola classe `XotBaseRelationManager`, form dal/al, colonne tariffarie e
     azioni CRUD per la relazione HasMany.
   - `php -l` sul file e `php artisan --version` verdi.
