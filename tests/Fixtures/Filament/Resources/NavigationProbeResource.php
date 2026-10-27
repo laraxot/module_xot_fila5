@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Fixtures\Filament\Resources;
+namespace Modules\Xot\Tests\Fixtures\Filament\Resources;
 
 use Modules\Xot\Filament\Resources\XotBaseResource;
 

@@ -6,7 +6,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 use Modules\Xot\Actions\Query\CreateTableIndexByModelClassColumnsAction;
 use Modules\Xot\Models\XotBaseModel;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);

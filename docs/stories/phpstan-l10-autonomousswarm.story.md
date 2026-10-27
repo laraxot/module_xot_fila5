@@ -374,3 +374,14 @@ These require deeper refactoring beyond type hints:
 - Stub Unit Exports estendono `XotBaseExporter` (non Filament `Exporter` nudo) e non ridefiniscono `xlsxCell` con firme non covarianti.
 - `ExporterEagerLoadModelStub` tipizza `HasMany`/`MorphMany` con entrambi i type param.
 
+## Nota di misura (2026-10-15 13:34 UTC)
+
+I conteggi "67 errori" e "13 errori" di questa story non descrivono lo stato di `laravel/Modules`. La misura completa delle 13:34 UTC e' diversa:
+
+- Comando: `cd laravel && ./vendor/bin/phpstan analyse Modules --error-format=json` (config unica `laravel/phpstan.neon`, nessun `--level`).
+- Esito: **exit 1, 1134 errori in 39 file** (Geo 583, Tenant 280, Notify 73, User 70, Blog 66, Fixcity 49, Xot 13). 1131 sono in `tests/` (Pest), scritti contro API che non esistono.
+- Il "13 errori finali" dichiarato sopra non e' il totale di `Modules`: nella misura, 13 e' il solo conteggio di `Xot/tests/Unit/Models/ModuleTest.php`.
+- Dettaglio, cause e proprietari dei file: [DCP-240](../../../../../bmad-output/epic-phpstan-modules-test-contro-api-inesistenti.md). Il test Xot e' tracciato in `dcp-243-test-model-module-xot-contro-api-reale.story.md`.
+
+Questa story resta `in_progress`: il dato da usare e' quello dell'epic DCP-240, da rimisurare con un run completo a swarm fermo.
+

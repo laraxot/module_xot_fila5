@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Unit;
+namespace Modules\Xot\Tests\Unit;
 
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Schema\Blueprint;
@@ -17,8 +17,8 @@ use Modules\Xot\Actions\Model\Update\HasManyAction;
 use Modules\Xot\Datas\RelationData;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 use Modules\Xot\Models\Cache as CacheModel;
-use Tests\Modules\Xot\Fixtures\Stubs\XotWidgetFormHost;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\Fixtures\Stubs\XotWidgetFormHost;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use ReflectionClass;
 use ReflectionMethod;

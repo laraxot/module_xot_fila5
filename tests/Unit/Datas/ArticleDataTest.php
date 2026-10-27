@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Unit\Datas;
+namespace Modules\Xot\Tests\Unit\Datas;
 
 use Modules\Xot\Datas\ArticleData;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
@@ -14,7 +14,6 @@ describe('Article Data', function (): void {
     test('can create article data with defaults', function (): void {
         $data = ArticleData::make();
 
-        Assert::assertInstanceOf(ArticleData::class, $data);
         Assert::assertEquals(['post', 'page', 'news'], $data->types);
         Assert::assertEquals([], $data->categories);
         Assert::assertEquals('markdown', $data->editor);

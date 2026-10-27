@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Fixtures\Enums;
+namespace Modules\Xot\Tests\Fixtures\Enums;
 
 use Modules\Xot\Traits\EnumTrait;
 

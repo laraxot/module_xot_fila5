@@ -1,9 +1,9 @@
 <?php
 
 declare(strict_types=1);
-use Tests\Modules\Xot\TestCase;
-use Tests\Modules\Xot\Unit\Support\DummyTestModel;
-use Tests\Modules\Xot\Unit\Support\OptionLabelProbeForm;
+use Modules\Xot\Tests\TestCase;
+use Modules\Xot\Tests\Unit\Support\DummyTestModel;
+use Modules\Xot\Tests\Unit\Support\OptionLabelProbeForm;
 
 uses(TestCase::class)->group('no-xot-db');
 

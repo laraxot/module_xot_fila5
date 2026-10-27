@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Feature;
+namespace Modules\Xot\Tests\Feature;
 
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\TestCase;
 
 uses(TestCase::class);
 

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot;
+namespace Modules\Xot\Tests;
 
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Database\Eloquent\Model;
@@ -13,10 +13,10 @@ use PHPUnit\Framework\Assert;
 /**
  * Helper di test condivisi da tutti i moduli.
  *
- * Raggiungibile per **autoload PSR-4** (`Tests\Modules\Xot\` => `tests/Modules/Xot`):
+ * Raggiungibile per **autoload PSR-4** (`Modules\Xot\Tests\` => `Modules/Xot/tests`):
  * un modulo che ne ha bisogno importa la classe, non include un file.
  *
- *     use Tests\Modules\Xot\XotBasePest;
+ *     use Modules\Xot\Tests\XotBasePest;
  *
  *     XotBasePest::assertThrows(fn () => $action->execute(), InvalidArgumentException::class);
  *

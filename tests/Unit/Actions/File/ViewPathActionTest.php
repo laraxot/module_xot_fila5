@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Unit\Actions\File;
+namespace Modules\Xot\Tests\Unit\Actions\File;
 
 use Mockery;
 use Mockery\MockInterface;
 use Modules\Xot\Actions\File\FixPathAction;
 use Modules\Xot\Actions\File\GetViewNameSpacePathAction;
 use Modules\Xot\Actions\File\ViewPathAction;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot;
+namespace Modules\Xot\Tests;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Application;

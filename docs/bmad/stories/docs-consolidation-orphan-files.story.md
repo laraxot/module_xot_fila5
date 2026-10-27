@@ -4,7 +4,7 @@ type: story
 module: Xot
 bmad: true
 status: in-progress
-updated: 2026-10-09
+updated: 2026-10-23
 tags: [docs, xot, bmad]
 qmd: "docs consolidation   orphan files + structure normalization   2026-10-06 xot"
 ---

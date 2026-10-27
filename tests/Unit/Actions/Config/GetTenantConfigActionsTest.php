@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Unit\Actions\Config;
+namespace Modules\Xot\Tests\Unit\Actions\Config;
 
 use Illuminate\Support\Facades\File;
 use Mockery;
 use Mockery\MockInterface;
 use Modules\Tenant\Actions\Config\GetTenantFilePathAction;
 use Modules\Xot\Actions\Config\GetTenantConfigArrayAction;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Safe\tempnam;

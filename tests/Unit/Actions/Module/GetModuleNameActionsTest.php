@@ -5,7 +5,7 @@ use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\Module\GetModuleNameByClassAction;
 use Modules\Xot\Actions\Module\GetModuleNameByModelAction;
 use Modules\Xot\Actions\Module\GetModuleNameByModelClassAction;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);

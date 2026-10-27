@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Fixtures\Models;
+namespace Modules\Xot\Tests\Fixtures\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use ValueError;

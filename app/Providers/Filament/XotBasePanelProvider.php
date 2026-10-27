@@ -20,6 +20,7 @@ use Illuminate\Session\Middleware\StartSession;
 use Illuminate\Support\Str;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 // Remove if not used elsewhere implicitly
+use Modules\Xot\Actions\Filament\GetSidebarStateScriptAction;
 use Modules\Xot\Actions\Panel\ApplyMetatagToPanelAction;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\AvatarProviders\InitialsAvatarProvider;
@@ -123,6 +124,10 @@ abstract class XotBasePanelProvider extends PanelProvider
                     </script>
                     HTML,
                 scopes: Login::class,
+            )
+            ->renderHook(
+                PanelsRenderHook::HEAD_END,
+                fn (): string => app(GetSidebarStateScriptAction::class)->execute(),
             );
 
         if ($this->discoverModuleComponents) {

@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Unit\Actions\File;
+namespace Modules\Xot\Tests\Unit\Actions\File;
 
 use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\AssetPathAction;
 use Modules\Xot\Actions\File\GetModulePathAction;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\TestCase;
 use Nwidart\Modules\Facades\Module;
 use PHPUnit\Framework\Assert;
 use ReflectionMethod;

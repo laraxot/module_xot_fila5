@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Unit\Filament\Actions\Table;
+namespace Modules\Xot\Tests\Unit\Filament\Actions\Table;
 
 use Modules\Xot\Filament\Actions\Table\PdfAction;
 use Modules\Xot\Filament\Actions\XotBaseAction;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);

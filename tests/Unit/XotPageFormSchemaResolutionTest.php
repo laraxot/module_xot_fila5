@@ -3,8 +3,8 @@
 declare(strict_types=1);
 use Filament\Forms\Components\TextInput;
 use Modules\Xot\Filament\Pages\XotBasePage;
-use Tests\Modules\Xot\TestCase;
-use Tests\Modules\Xot\Unit\Fixtures\FormSchemaPageFixture;
+use Modules\Xot\Tests\TestCase;
+use Modules\Xot\Tests\Unit\Fixtures\FormSchemaPageFixture;
 use PHPUnit\Framework\Assert;
 use ReflectionMethod;
 

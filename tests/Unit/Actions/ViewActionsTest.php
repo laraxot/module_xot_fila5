@@ -4,7 +4,7 @@ declare(strict_types=1);
 use Illuminate\Support\Facades\View as ViewFacade;
 use Illuminate\View\View;
 use Modules\Xot\Actions\GetViewByClassAction;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);

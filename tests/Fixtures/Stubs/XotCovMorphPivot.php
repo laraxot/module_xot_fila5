@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Fixtures\Stubs;
+namespace Modules\Xot\Tests\Fixtures\Stubs;
 
 use Illuminate\Database\Eloquent\Relations\MorphPivot;
 

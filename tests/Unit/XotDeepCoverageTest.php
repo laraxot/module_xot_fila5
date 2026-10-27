@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Unit;
+namespace Modules\Xot\Tests\Unit;
 
-use Tests\Modules\Xot\ModuleDeepCoverage;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\ModuleDeepCoverage;
+use Modules\Xot\Tests\TestCase;
 
 uses(TestCase::class)->group('no-xot-db');
 

@@ -6,7 +6,7 @@ use Modules\Xot\Actions\File\AssetPathAction;
 use Modules\Xot\Actions\File\FixPathAction;
 use Modules\Xot\Actions\File\GetViewNameSpacePathAction;
 use Modules\Xot\Actions\File\ViewPathAction;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\TestCase;
 use Nwidart\Modules\Facades\Module;
 use PHPUnit\Framework\Assert;
 

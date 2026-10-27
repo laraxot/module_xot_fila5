@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Feature\Filament\Traits;
+namespace Modules\Xot\Tests\Feature\Filament\Traits;
 
 use Filament\Tables\Columns\Column;
 use Illuminate\Database\Eloquent\Model;

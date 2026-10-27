@@ -4,7 +4,7 @@ declare(strict_types=1);
 /*
  * Isolated unit tests for HasCommonScopes.
  *
- * Deliberately does NOT use Tests\Modules\Xot\TestCase: that base class
+ * Deliberately does NOT use Modules\Xot\Tests\TestCase: that base class
  * opens transactions on the app's configured mysql/sqlite connections
  * during setUp(), which is unrelated to what this trait needs and depends
  * on env wiring outside this test's control. Instead we boot a throwaway
@@ -14,8 +14,11 @@ declare(strict_types=1);
 
 use Illuminate\Database\Capsule\Manager as Capsule;
 use Illuminate\Support\Carbon;
-use Tests\Modules\Xot\Fixtures\Models\HasCommonScopesProbe;
+use Modules\Xot\Tests\Fixtures\Models\HasCommonScopesProbe;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 beforeEach(function (): void {
     $capsule = new Capsule;

@@ -3,7 +3,7 @@
 declare(strict_types=1);
 use Modules\Xot\Actions\Module\GetModuleConfigAction;
 use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Safe\file_put_contents;

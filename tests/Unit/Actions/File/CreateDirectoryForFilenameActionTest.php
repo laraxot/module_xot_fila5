@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Unit\Actions\File;
+namespace Modules\Xot\Tests\Unit\Actions\File;
 
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\File\CreateDirectoryForFilenameAction;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
 // $this dentro le closure Pest e' tipizzato da Pest come TestCall (vedi
 // @param-closure-this in vendor/pestphp/pest/src/Functions.php), non come
-// Tests\Modules\Xot\TestCase: PHPStan vieta di ritipizzare $this via @var,
+// Modules\Xot\Tests\TestCase: PHPStan vieta di ritipizzare $this via @var,
 // quindi la working dir del test vive in una variabile locale condivisa per riferimento.
 $workDir = '';
 

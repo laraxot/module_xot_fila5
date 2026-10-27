@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Fixtures\Filament\Resources\ProbeResource\Pages;
+namespace Modules\Xot\Tests\Fixtures\Filament\Resources\ProbeResource\Pages;
 
 use Filament\Resources\Pages\EditRecord;
-use Tests\Modules\Xot\Fixtures\Filament\Resources\ProbeResource;
+use Modules\Xot\Tests\Fixtures\Filament\Resources\ProbeResource;
 
 class EditProbe extends EditRecord
 {

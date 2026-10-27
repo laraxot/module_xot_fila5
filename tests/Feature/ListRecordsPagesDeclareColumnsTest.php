@@ -1,7 +1,7 @@
 <?php
 
 declare(strict_types=1);
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\TestCase;
 
 use function Safe\file_get_contents;
 use function Safe\glob;

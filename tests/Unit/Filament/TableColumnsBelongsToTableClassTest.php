@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Unit\Filament;
+namespace Modules\Xot\Tests\Unit\Filament;
 
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\TestCase;
 use Webmozart\Assert\Assert as WebmozartAssert;
 
 use function Safe\file_get_contents;

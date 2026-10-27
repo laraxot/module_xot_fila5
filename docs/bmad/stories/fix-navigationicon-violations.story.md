@@ -4,7 +4,7 @@ type: story
 module: Xot
 bmad: true
 status: draft
-updated: 2026-10-09
+updated: 2026-10-23
 tags: [docs, xot, bmad]
 qmd: "bmad story   fix navigationicon dichiarazioni vietate in resource che estendono xotbaseresource xot"
 ---

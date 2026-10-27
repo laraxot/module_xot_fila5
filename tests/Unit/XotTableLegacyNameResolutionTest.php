@@ -3,8 +3,8 @@
 declare(strict_types=1);
 use Filament\Tables\Columns\Column;
 use Modules\Xot\Filament\Traits\HasXotTable;
-use Tests\Modules\Xot\TestCase;
-use Tests\Modules\Xot\Unit\Fixtures\LegacyTableNameFixture;
+use Modules\Xot\Tests\TestCase;
+use Modules\Xot\Tests\Unit\Fixtures\LegacyTableNameFixture;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);

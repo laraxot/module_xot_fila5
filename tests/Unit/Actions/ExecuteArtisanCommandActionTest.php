@@ -3,7 +3,7 @@
 declare(strict_types=1);
 use Illuminate\Support\Facades\Process;
 use Modules\Xot\Actions\ExecuteArtisanCommandAction;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);

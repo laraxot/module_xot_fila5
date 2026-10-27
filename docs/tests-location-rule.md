@@ -5,23 +5,31 @@ status: critical
 created: 2026-10-15
 tags: [tests, modularity, laravel, rule, bmad, second-brain]
 source_of_truth: true
+updated: 2026-10-19
+qmd: "regola canonica: posizione dei test dei moduli xot"
 ---
 
-# Regola assoluta: posizione dei test dei moduli
+# Regola canonica: posizione dei test dei moduli
 
-**ERRORE GRAVISSIMO COMMESSO**: i test erano stati creati dentro `laravel/Modules/<Module>/tests/`. 
+I test appartenenti a un modulo vivono in:
 
-**REGOLA CORRETTA**: i test dei moduli vivono ESCLUSIVAMENTE in `laravel/tests/Modules/<Module>/`.
-
-Motivo (sorgente, non sintomo):
-- La modularità richiede che `laravel/Modules/<Module>/` contenga solo il codice applicativo del modulo; i test devono essere esterni per non contaminare il package e per permettere l'autoload separato.
-- `laravel/tests/Modules/` è la directory standard del framework Laravel per i test di pacchetto/modulo (vedi `tests/Modules/Geo/`, `tests/Modules/Cms/` esistenti).
-- Mai creare `tests/` dentro un modulo; mai spostare i test dai moduli in `laravel/Modules/` se esistono già in `laravel/tests/Modules/`.
-
-Verifica:
-```bash
-find laravel/Modules -maxdepth 2 -type d -name 'tests'  # DEVE essere vuoto
-ls laravel/tests/Modules/  # DEVE contenere tutti i moduli
+```text
+laravel/Modules/<Module>/tests/
 ```
 
-Aggiornato in: `.memory-bank/phpstan-correct-all.md`, `bashscripts/docs/prompts/01-architecture-patterns.md`, `docs/stories/phpstan-correct-all.story.md`.
+La struttura reale del repository e i bootstrap dei moduli confermano questa
+ownership. `laravel/tests/` resta riservato a test applicativi, trasversali e di
+tema. Eventuali cartelle `laravel/tests/Modules/<Module>/` già presenti vanno
+inventariate caso per caso: non sono una motivazione per creare nuovi test lì,
+ma non vanno cancellate o spostate automaticamente.
+
+## Origine dell'errore documentato
+
+Questo file conteneva una regola opposta perché una nota storica aveva confuso
+la posizione di alcuni test applicativi con la proprietà dei test Nwidart. La
+regola era stata propagata senza verificare filesystem, namespace, bootstrap e
+configurazione Pest dei moduli. È una correzione di processo: prima si verifica
+la struttura effettiva, poi si aggiorna la documentazione.
+
+Per la regola completa e il checklist operativo vedere
+`rules/module-test-ownership.md`.

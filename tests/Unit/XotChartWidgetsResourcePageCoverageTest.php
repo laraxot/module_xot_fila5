@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Unit;
+namespace Modules\Xot\Tests\Unit;
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\DB;
@@ -14,8 +14,8 @@ use Modules\Xot\Filament\Resources\Pages\XotBasePage as ResourceXotBasePage;
 use Modules\Xot\Filament\Widgets\ModelTrendChartWidget;
 use Modules\Xot\Filament\Widgets\StatesChartWidget;
 use Modules\Xot\Models\Cache as CacheModel;
-use Tests\Modules\Xot\Fixtures\Stubs\XotResPageStub;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\Fixtures\Stubs\XotResPageStub;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use ReflectionClass;
 use ReflectionMethod;

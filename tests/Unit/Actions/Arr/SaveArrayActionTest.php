@@ -3,14 +3,14 @@
 declare(strict_types=1);
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\Arr\SaveArrayAction;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Safe\json_decode;
 
 uses(TestCase::class);
 
-// $this dentro le closure Pest non e' Tests\Modules\Xot\TestCase: la cartella temporanea
+// $this dentro le closure Pest non e' Modules\Xot\Tests\TestCase: la cartella temporanea
 // vive in una variabile locale condivisa per riferimento (stessa scelta di SavePhpArrayActionTest).
 $tempDir = '';
 
