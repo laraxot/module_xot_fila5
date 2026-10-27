@@ -1,7 +1,7 @@
 ---
 tags: [module-root, hygiene, workspace, bmad, guard]
 created: 2026-09-29
-updated: 2026-09-29
+updated: 2026-10-27
 issues: []
 discussions: []
 title: "Igiene della root dei moduli: cartelle, tooling, workspace, md"
@@ -9,7 +9,7 @@ type: story
 module: Xot
 status: in-progress
 track: docs-hygiene
-qmd: "module root hygiene code-workspace remote fila5 cartelle maiuscole tooling vietato readme changelog max sei md github skills gitignore"
+qmd: "module root hygiene code-workspace remote fila5 cartelle maiuscole tooling vietato readme changelog max sei md github skills gitignore docs archive"
 related:
   - ./docs-modules-themes-continuous-reorg.story.md
   - ./5.158-module-root-md-cap-five.story.md
@@ -140,6 +140,31 @@ Guardia aggiunta: caso `in Modules ci sono solo moduli: ogni cartella ha module.
 vede). Verde sullo stato attuale; rosso con una cartella di prova `Modules/zzprobe`
 ("cartelle in Modules che non sono moduli: zzprobe"). Casi 6-8: `Tests: 37 passed`,
 PHPStan `[OK] No errors`, PHPMD 0.
+
+## Regola 9: `docs/archive/` nei `.gitignore` (richiesta utente 2026-10-27)
+
+Richiesta: "la cartella docs/archive/ deve essere messa in tutti i .gitignore delle root
+dei moduli e dei temi".
+
+Perche': ogni `Modules/<Mod>` e `Themes/<T>` e' un repo Git separato, quindi l'ignore del
+monorepo non lo copre. `docs/archive/` e' tassonomia parallela vietata dalla wiki
+(`docs/wiki/concepts/no-docs-archive-rule.md`): se resta tracciata, ogni merge/sync tra
+basi diverse la riporta e sporca la storia.
+
+Misura (2026-10-27, 20 cartelle modulo e 4 temi, tutti con `.gitignore` in root):
+
+- gia' coperti con pattern equivalente: 19/20 moduli (`docs/archive`, `/docs/archive`,
+  `docs/**/archive/`, `docs/archive/**`) e 4/4 temi;
+- **Fixcity**: riga corrotta `docs/archive/agentdb.rvf` (concat di due pattern) che
+  ignora un file dentro `docs/archive/`, non la cartella, e non ignora `agentdb.rvf`
+  in root. Corretta in due righe: `docs/archive/` + `agentdb.rvf`;
+- mancanti: `laravel/Modules/.gitignore`, `laravel/Themes/.gitignore` e
+  `laravel/Modules/.gitignore_template` (futuri moduli). Aggiunta la riga.
+
+Nessun `git rm --cached` eseguito in questa sessione: shell non disponibile
+(`DAYTONA_API_KEY` assente), quindi lo stato dell'indice non e' stato verificato.
+Se qualche repo ha gia' `docs/archive/` tracciata, va sbloccata con
+`git -C Modules/<Mod> rm -r --cached -- docs/archive` (solo quel path).
 
 ## Verifica finale
 

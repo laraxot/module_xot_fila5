@@ -1,3 +1,13 @@
+---
+title: "Massimizzare il livello di confidenza"
+type: note
+status: unverified
+created: 2026-05-26
+updated: 2026-05-26
+module: Xot
+tags: [xot, bashscripts]
+qmd: "Massimizzare il livello di confidenza"
+---
 # Massimizzare il livello di confidenza
 
 1. **Test automatizzati**: copertura >90%, includi test unitari, integrazione, e fine‑to‑end.
