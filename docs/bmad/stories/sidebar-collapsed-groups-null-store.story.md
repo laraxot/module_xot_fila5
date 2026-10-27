@@ -81,3 +81,18 @@ etichetta della dashboard, comportamento normale. Il vero difetto e' lo store.
   la rinomina in un aggiornamento, lo script va aggiornato.
 - Se il browser blocca localStorage (modalita' privata), lo store non e'
   persistente e il bug non si presenta.
+
+## Continuazione (stato al 2026-10-21 sera)
+
+Stato: correzione implementata e sintatticamente valida. Verifica end-to-end nel browser NON ancora passata: il server locale rispondeva oltre 150 secondi con load average 46-50 (run PHPStan e un `composer update -W` di altre sessioni).
+
+Passi per la prossima sessione, quando il load scende sotto circa 10:
+
+1. Riavviare il server se il pannello `artisan dev` mostra un processo vecchio: `cd laravel && php artisan serve --host=127.0.0.1 --port=8000`.
+2. Verificare con lo script del repo, senza credenziali nel file:
+   `ADMIN_EMAIL=... ADMIN_PASSWORD=... SCREENSHOT_DIR=/tmp node bashscripts/tools/admin-sidebar/verify-sidebar-fresh-login.js`
+   Richiede `playwright-core` risolvibile da NODE_PATH. Browser: `~/.cache/ms-playwright/chromium-1228/chrome-linux64/chrome`, oppure variabile `CHROME_PATH`.
+3. Esito atteso: `visible=19/19 pageerrors=0`. Se `pageerrors` e' maggiore di 0 o le voci sono meno di 19, la correzione non basta: non chiudere la story.
+4. Solo con esito positivo: impostare `status: done` nel frontmatter e registrare qui l'esito.
+
+Lezione: il timeout della verifica non e' un errore applicativo, e' il server sotto carico. Con un server lento non usare `networkidle`, che non si stabilizza mai: usare `load`.
