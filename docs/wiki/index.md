@@ -35,6 +35,8 @@ Indice operativo del wiki Xot (core framework).
 
 ## Struttura canonica (sacred)
 
+- [no-docs-archive](../../../../../bashscripts/ai/wiki/concepts/no-docs-archive-rule.md) — regola Second Brain cross-modulo: niente alberi `docs/archive/`; storia wiki in `docs/wiki/_archive/`.
+
 - [module-directory-structure-rule.md](../module-directory-structure-rule.md) _(target mancante, verificato 2026-10-14)_ — regola cartelle modulo (PHP solo in `app/`)
 - [concepts/](./concepts/): Pattern architetturali e metodologie Xot/Laraxot.
 - [entities/](./entities/): Modelli e componenti chiave.

@@ -66,3 +66,8 @@ Resource, widget e test Filament passano da **`laravel/phpstan.neon` solo** (mod
 ## Tooling fuori dal panel
 
 `graphify-out/` e tooling second brain (grafo codice), **non** contratto Filament: non montare Resource/Widget che leggono quel path; ignorarlo in `.gitignore` ([graphify-out-gitignore.md](./graphify-out-gitignore.md)).
+
+La cartella `docs/archive/` e' governance della documentazione, **non** un path
+consumato dal panel: ogni root di modulo/tema la esclude in `.gitignore`. Risorse
+Filament non devono leggere o scrivere archivi; usare le destinazioni canoniche
+indicate dalla [regola Second Brain](../../../../../bashscripts/ai/wiki/concepts/no-docs-archive-rule.md).
