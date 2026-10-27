@@ -54,3 +54,8 @@ Esito: `[OK] No errors` (exit 0), eseguito il 2026-10-21 sullo stato del working
 
 - Nessun file di codice modificato in questa passata: la decisione era gia' nel working tree.
 - `laravel/phpstan.neon` non toccato.
+
+## Re-verifica 2026-10-21 (php-backend-agent)
+
+`analyse Modules/Xot` → **0** errori. `XotBaseMorphPivotFactory` resta `abstract`
+senza `definition()` (reflection: `isAbstract=yes`, method abstract `definition`).
