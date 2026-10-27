@@ -63,6 +63,7 @@ docs/coverage-*.md
 docs/coverage.md
 docs/**/legacy/
 docs/legacy
+docs/archive/
 docs/phpstan/
 docs/**/scripts/
 docs/scripts/
