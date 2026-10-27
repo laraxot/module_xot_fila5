@@ -1,3 +1,13 @@
+---
+title: "Organizzazione Cartella BashScripts"
+type: note
+status: unverified
+created: 2026-04-08
+updated: 2026-04-08
+module: Xot
+tags: [xot, bashscripts]
+qmd: "Organizzazione Cartella BashScripts"
+---
 # Organizzazione Cartella BashScripts
 
 ## Regola Fondamentale

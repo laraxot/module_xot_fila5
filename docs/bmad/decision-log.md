@@ -4,7 +4,7 @@ type: decision-log
 module: Xot
 status: active
 created: 2026-10-16
-updated: 2026-10-22
+updated: 2026-10-27
 tags: [bmad, decision-log, xot, no-services, boy-scout]
 qmd: "decision log xot"
 related:
@@ -14,6 +14,23 @@ related:
 ---
 
 # Decision log — Xot
+
+## 2026-10-27 — `docs/archive/` vietata e ignorata in ogni modulo/tema
+
+- **Decisione:** ogni `.gitignore` alla root di `laravel/Modules/<Modulo>` e
+  `laravel/Themes/<Tema>` dichiara esplicitamente `docs/archive/`.
+- **Perche':** la policy Second Brain vieta alberi archivio paralleli: creano una
+  seconda tassonomia, duplicano la fonte di verita' e sottraggono documenti alla
+  ricerca QMD/wiki. La storia rimane nella cronologia Git; conoscenza attiva in
+  `docs/wiki/`, fonti grezze in `docs/raw/`, e l'archivio wiki canonico in
+  `docs/wiki/_archive/`.
+- **Ambito:** il pattern previene nuove aggiunte non tracciate e rende uniforme il
+  confine dei repo annidati; non rimuove file gia' versionati o dal working tree.
+- **Filament:** nessun impatto su Resource, Widget o pannelli; il blueprint resta
+  owner del contratto Filament e rimanda qui per la sola governance documentale.
+- **Canon:** [no-docs-archive](../../../../../bashscripts/ai/wiki/concepts/no-docs-archive-rule.md),
+  [memoria Second Brain](../../../../../bashscripts/ai/wiki/memories/no-docs-archive-folders.md),
+  [blueprint Filament](./filament-blueprint.md).
 
 ## 2026-10-22 — Deep audit Support (Bag + Infrastructure)
 
