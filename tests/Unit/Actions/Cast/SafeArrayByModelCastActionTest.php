@@ -2,14 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Unit\Actions\Cast;
+namespace Modules\Xot\Tests\Unit\Actions\Cast;
 
 use Illuminate\Database\Eloquent\Model;
 use Mockery;
 use Mockery\MockInterface;
 use Modules\Activity\Models\Activity;
 use Modules\Xot\Actions\Cast\SafeArrayByModelCastAction;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 describe('Safe Array By Model Cast Action', function (): void {
     test('converts model attributes to array correctly', function (): void {

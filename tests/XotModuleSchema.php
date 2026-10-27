@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot;
+namespace Modules\Xot\Tests;
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Support\Facades\DB;

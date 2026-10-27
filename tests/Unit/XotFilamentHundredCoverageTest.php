@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Unit;
+namespace Modules\Xot\Tests\Unit;
 
 use Modules\Xot\Models\Cache;
-use Tests\Modules\Xot\Fixtures\Stubs\XotFilamentRelationContract;
-use Tests\Modules\Xot\Fixtures\Stubs\XotFilamentResourceContract;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\Fixtures\Stubs\XotFilamentRelationContract;
+use Modules\Xot\Tests\Fixtures\Stubs\XotFilamentResourceContract;
+use Modules\Xot\Tests\TestCase;
 
 uses(TestCase::class)->group('no-xot-db');
 

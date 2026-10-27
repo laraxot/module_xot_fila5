@@ -4,9 +4,9 @@ declare(strict_types=1);
 use Filament\Actions\Action;
 use Filament\Actions\BulkAction;
 use Filament\Tables\Columns\TextColumn;
-use Tests\Modules\Xot\Fixtures\Traits\HasTableFunctionsCustomSlugProbe;
-use Tests\Modules\Xot\Fixtures\Traits\HasTableFunctionsTraitProbe;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\Fixtures\Traits\HasTableFunctionsCustomSlugProbe;
+use Modules\Xot\Tests\Fixtures\Traits\HasTableFunctionsTraitProbe;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);

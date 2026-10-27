@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Feature\Actions\Pdf;
+namespace Modules\Xot\Tests\Feature\Actions\Pdf;
 
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\Xot\Actions\Pdf\GetPdfContentByRecordAction;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
 // $this dentro le closure Pest e' tipizzato da Pest come TestCall, non come
-// Tests\Modules\Xot\TestCase: PHPStan vieta di ritipizzare $this via @var, quindi
+// Modules\Xot\Tests\TestCase: PHPStan vieta di ritipizzare $this via @var, quindi
 // l'action del test vive in una variabile locale condivisa per riferimento. Per lo
 // stesso motivo expectException()/markTestSkipped() via $this non sono risolvibili
 // da PHPStan qui: si usano try/catch + Assert e Assert::markTestSkipped() statico.
@@ -160,7 +160,7 @@ describe('Get Pdf Content By Record Action', function () use (&$action): void {
             app(GetPdfContentByRecordAction::class)->execute($user, $customFilename);
             Assert::fail('Expected exception was not thrown.');
         } catch (\Exception $e) {
-            Assert::assertInstanceOf(\Exception::class, $e);
+            Assert::assertNotEmpty($e->getMessage());
         }
     });
 

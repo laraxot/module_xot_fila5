@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Unit;
+namespace Modules\Xot\Tests\Unit;
 
 use Filament\Schemas\Components\Utilities\Set;
 use Illuminate\Database\Schema\Blueprint;
@@ -13,8 +13,8 @@ use Illuminate\Support\Facades\Schema;
 use Mockery;
 use Modules\Xot\Exports\QueryExport;
 use Modules\Xot\Filament\Actions\Form\FieldRefreshAction;
-use Tests\Modules\Xot\Fixtures\Stubs\XotRefreshRecord;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\Fixtures\Stubs\XotRefreshRecord;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use ReflectionClass;
 use ReflectionMethod;

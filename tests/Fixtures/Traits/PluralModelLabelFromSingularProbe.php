@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Fixtures\Traits;
+namespace Modules\Xot\Tests\Fixtures\Traits;
 
 final class PluralModelLabelFromSingularProbe extends HasCustomModelLabelProbeBase
 {

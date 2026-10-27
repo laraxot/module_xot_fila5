@@ -16,6 +16,9 @@ use Sushi\Sushi;
 use function Safe\json_encode;
 
 /**
+ * Registry Sushi dei moduli nwidart: espone name/slug/status/path per Filament e query.
+ * Non esiste un campo `alias` (nwidart alias → `slug` / `name`); i timestamp seguono BaseModel.
+ *
  * @property int $id
  * @property string|null $name
  * @property string|null $slug
@@ -35,6 +38,8 @@ use function Safe\json_encode;
  * @property Carbon|null $deactivation_date
  * @property Carbon|null $installation_date
  * @property array<array-key, mixed>|null $update_history
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  *
  * @method static Builder<static>|Module newModelQuery()
  * @method static Builder<static>|Module newQuery()
@@ -47,6 +52,8 @@ use function Safe\json_encode;
  * @method static Builder<static>|Module wherePath($value)
  * @method static Builder<static>|Module wherePriority($value)
  * @method static Builder<static>|Module whereStatus($value)
+ * @method static Builder<static>|Module whereSlug($value)
+ * @method static Builder<static>|Module whereEnabled($value)
  *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
@@ -91,15 +98,20 @@ final class Module extends BaseModel
      */
     public function getRows(): array
     {
-        $modules = ModuleFacade::all();
-        $modules = Arr::map($modules, function (NModule $module): array {
+        $rows = [];
+
+        foreach (ModuleFacade::all() as $module) {
+            if (! $module instanceof NModule) {
+                continue;
+            }
+
             $config = config('tenant::config');
             if (! is_array($config)) {
                 $config = [];
             }
             $colors = Arr::get($config, 'colors', []);
 
-            return [
+            $rows[] = [
                 'name' => $module->getName(),
                 // 'alias' => $module->getAlias(),
                 'description' => $module->getDescription(),
@@ -109,10 +121,7 @@ final class Module extends BaseModel
                 'icon' => Arr::get($config, 'icon', 'heroicon-o-question-mark-circle'),
                 'colors' => json_encode($colors),
             ];
-        });
-
-        /** @var array<int, array<string, mixed>> $rows */
-        $rows = array_values($modules);
+        }
 
         return $rows;
     }

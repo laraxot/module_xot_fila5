@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Fixtures;
+namespace Modules\Xot\Tests\Fixtures;
 
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\States\Transitions\XotBaseTransition;

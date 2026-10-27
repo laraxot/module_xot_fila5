@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Unit\Traits;
+namespace Modules\Xot\Tests\Unit\Traits;
 
 use Illuminate\Database\Schema\Blueprint;
 use Mockery;
 use Mockery\MockInterface;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
-use Tests\Modules\Xot\Fixtures\Enums\EmptyDefinitionsEnum;
-use Tests\Modules\Xot\Fixtures\Enums\TestEnum;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\Fixtures\Enums\EmptyDefinitionsEnum;
+use Modules\Xot\Tests\Fixtures\Enums\TestEnum;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);

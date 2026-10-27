@@ -2,16 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Feature;
+namespace Modules\Xot\Tests\Feature;
 
 use Illuminate\Database\ConnectionInterface;
-use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Models\BaseModel;
 use Modules\Xot\Models\Module;
-use Modules\Xot\Models\XotBaseModel;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+use function Safe\class_uses;
 use function Safe\json_encode;
 use function Safe\unserialize;
 
@@ -28,15 +27,13 @@ describe('Xot Base Model Business Logic', function (): void {
         $baseModel = createXotBaseModelFixture();
 
         // Assert
-        Assert::assertInstanceOf(XotBaseModel::class, $baseModel);
-        Assert::assertInstanceOf(Model::class, $baseModel);
+        Assert::assertSame('id', $baseModel->getKeyName());
     });
 
     test('it has required traits', function (): void {
-        // Arrange & Act
-        createXotBaseModelFixture();
+        $baseModel = createXotBaseModelFixture();
 
-        // Assert
+        Assert::assertNotEmpty(class_uses($baseModel));
     });
 
     test('it can be instantiated without database', function (): void {
@@ -44,7 +41,7 @@ describe('Xot Base Model Business Logic', function (): void {
         $baseModel = createXotBaseModelFixture();
 
         // Assert
-        Assert::assertInstanceOf(BaseModel::class, $baseModel);
+        Assert::assertFalse($baseModel->exists);
     });
 
     test('it supports table name override', function (): void {
@@ -88,8 +85,7 @@ describe('Xot Base Model Business Logic', function (): void {
         $module = new Module;
 
         // Act & Assert
-        Assert::assertInstanceOf(XotBaseModel::class, $module);
-        Assert::assertInstanceOf(Model::class, $module);
+        Assert::assertSame('modules', $module->getTable());
     });
 
     test('it supports model configuration', function (): void {
@@ -172,7 +168,6 @@ describe('Xot Base Model Business Logic', function (): void {
 
         // Assert
         Assert::assertNotEmpty($json);
-        Assert::assertNotFalse($json);
     });
 
     test('it supports array conversion', function (): void {

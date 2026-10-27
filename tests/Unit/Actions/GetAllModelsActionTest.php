@@ -5,88 +5,75 @@ declare(strict_types=1);
 /**
  * GetAllModelsAction Test Suite
  *
- * Tests the core Xot Action for retrieving all models:
- * - Collects all application models from configured namespaces
- * - Filters based on module context
- * - Handles missing or invalid model classes
- * - Returns structured array of model metadata
+ * Scopo: l'action elenca i model dell'applicazione (class-string) per tooling
+ * Xot (studio, generatori). Verifica istanziazione, presenza User, e risultato
+ * non vuoto senza guardie ridondanti su tipi gia' array.
  */
 
-namespace Tests\Unit\Modules\Xot\Actions;
+namespace Modules\Xot\Tests\Unit\Actions;
 
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
-use Modules\User\Models\User;
 use Modules\Xot\Actions\Model\GetAllModelsAction;
+use PHPUnit\Framework\Assert;
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
 class GetAllModelsActionTest extends TestCase
 {
-    use RefreshDatabase, WithFaker;
-
-    protected GetAllModelsAction $action;
+    private GetAllModelsAction $getAllModelsAction;
 
     protected function setUp(): void
     {
         parent::setUp();
-        $this->action = new GetAllModelsAction;
+        $this->getAllModelsAction = new GetAllModelsAction;
     }
 
-    /** @test Action can be instantiated */
+    #[Test]
     public function it_can_be_instantiated(): void
     {
-        $this->assertInstanceOf(GetAllModelsAction::class, $this->action);
+        Assert::assertSame(GetAllModelsAction::class, $this->getAllModelsAction::class);
     }
 
-    /** @test Action retrieves core User model */
+    #[Test]
     public function it_retrieves_user_model(): void
     {
-        $models = $this->action->execute();
+        $models = $this->getAllModelsAction->execute();
 
-        // Should return collection or array of models
-        $this->assertTrue(is_iterable($models));
+        $userModels = array_values(array_filter(
+            $models,
+            static fn (string $model): bool => str_contains($model, 'User'),
+        ));
 
-        // Check if User model is in results
-        $userModels = collect($models)->filter(function ($model) {
-            return is_string($model) && strpos($model, 'User') !== false;
-        });
-
-        $this->assertGreaterThan(0, $userModels->count());
+        Assert::assertGreaterThan(0, count($userModels));
     }
 
-    /** @test Action returns model class names */
+    #[Test]
     public function it_returns_valid_model_class_names(): void
     {
-        $models = $this->action->execute();
+        $models = $this->getAllModelsAction->execute();
 
         foreach ($models as $model) {
-            // Each model should be a valid class string or instance
-            $this->assertTrue(
-                is_string($model) || is_object($model),
-                "Model is not string or object: " . gettype($model)
-            );
+            Assert::assertIsString($model);
+            Assert::assertNotSame('', $model);
         }
     }
 
-    /** @test Action handles empty namespace gracefully */
+    #[Test]
     public function it_handles_invalid_namespaces(): void
     {
-        // Action should not throw when namespace doesn't exist
         $this->expectNotToPerformAssertions();
 
         try {
-            $models = $this->action->execute();
-            $this->assertIsIterable($models);
+            $this->getAllModelsAction->execute();
         } catch (\Exception $e) {
-            $this->fail("Action threw exception on invalid namespace: " . $e->getMessage());
+            $this->fail('Action threw exception on invalid namespace: '.$e->getMessage());
         }
     }
 
-    /** @test Action result is not empty for core application */
+    #[Test]
     public function it_returns_non_empty_result(): void
     {
-        $models = $this->action->execute();
+        $models = $this->getAllModelsAction->execute();
 
-        $this->assertGreaterThan(0, count((array)$models));
+        Assert::assertGreaterThan(0, count($models));
     }
 }

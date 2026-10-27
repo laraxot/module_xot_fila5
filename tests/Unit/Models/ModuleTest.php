@@ -5,23 +5,22 @@ declare(strict_types=1);
 /**
  * Module Model Test Suite
  *
- * Tests the core Xot\Models\Module functionality:
- * - Table configuration and relationships
- * - Module state management (enabled/disabled)
- * - Module configuration retrieval
- * - Database persistence and querying
+ * Scopo: verificare il contratto del registry Sushi dei moduli nwidart
+ * (Modules\Xot\Models\Module): tabella, fillable, enable/disable, lookup per
+ * name/slug, timestamp di BaseModel, factory tipizzata via HasXotFactory.
  */
 
-namespace Tests\Unit\Modules\Xot\Models;
+namespace Modules\Xot\Tests\Unit\Models;
 
-use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
+use Modules\Xot\Database\Factories\ModuleFactory;
 use Modules\Xot\Models\Module;
+use PHPUnit\Framework\Assert;
 use Tests\TestCase;
 
 class ModuleTest extends TestCase
 {
-    use RefreshDatabase, WithFaker;
+    use WithFaker;
 
     protected Module $module;
 
@@ -34,13 +33,13 @@ class ModuleTest extends TestCase
     /** @test Module has correct table name */
     public function it_has_correct_table_name(): void
     {
-        $this->assertEquals('modules', $this->module->getTable());
+        Assert::assertSame('modules', $this->module->getTable());
     }
 
     /** @test Module has correct primary key */
     public function it_has_correct_primary_key(): void
     {
-        $this->assertEquals('id', $this->module->getKeyName());
+        Assert::assertSame('id', $this->module->getKeyName());
     }
 
     /** @test Module can be created with valid data */
@@ -48,17 +47,17 @@ class ModuleTest extends TestCase
     {
         $data = [
             'name' => 'TestModule',
-            'alias' => 'test-module',
+            'slug' => 'test-module',
             'description' => 'Test module description',
             'enabled' => true,
         ];
 
         $module = Module::create($data);
 
-        $this->assertInstanceOf(Module::class, $module);
-        $this->assertEquals('TestModule', $module->name);
-        $this->assertEquals('test-module', $module->alias);
-        $this->assertTrue($module->enabled);
+        Assert::assertInstanceOf(Module::class, $module);
+        Assert::assertSame('TestModule', $module->name);
+        Assert::assertSame('test-module', $module->slug);
+        Assert::assertTrue((bool) $module->enabled);
     }
 
     /** @test Module can be updated */
@@ -66,7 +65,7 @@ class ModuleTest extends TestCase
     {
         $module = Module::create([
             'name' => 'OriginalName',
-            'alias' => 'original-alias',
+            'slug' => 'original-slug',
             'enabled' => true,
         ]);
 
@@ -75,8 +74,10 @@ class ModuleTest extends TestCase
             'enabled' => false,
         ]);
 
-        $this->assertEquals('UpdatedName', $module->fresh()->name);
-        $this->assertFalse($module->fresh()->enabled);
+        $fresh = $module->fresh();
+        Assert::assertInstanceOf(Module::class, $fresh);
+        Assert::assertSame('UpdatedName', $fresh->name);
+        Assert::assertFalse((bool) $fresh->enabled);
     }
 
     /** @test Module can be enabled */
@@ -84,13 +85,15 @@ class ModuleTest extends TestCase
     {
         $module = Module::create([
             'name' => 'TestModule',
-            'alias' => 'test-module',
+            'slug' => 'test-module',
             'enabled' => false,
         ]);
 
         $module->update(['enabled' => true]);
 
-        $this->assertTrue($module->fresh()->enabled);
+        $fresh = $module->fresh();
+        Assert::assertInstanceOf(Module::class, $fresh);
+        Assert::assertTrue((bool) $fresh->enabled);
     }
 
     /** @test Module can be disabled */
@@ -98,59 +101,61 @@ class ModuleTest extends TestCase
     {
         $module = Module::create([
             'name' => 'TestModule',
-            'alias' => 'test-module',
+            'slug' => 'test-module',
             'enabled' => true,
         ]);
 
         $module->update(['enabled' => false]);
 
-        $this->assertFalse($module->fresh()->enabled);
+        $fresh = $module->fresh();
+        Assert::assertInstanceOf(Module::class, $fresh);
+        Assert::assertFalse((bool) $fresh->enabled);
     }
 
     /** @test Module can be found by name */
     public function it_can_be_found_by_name(): void
     {
-        $module = Module::create([
+        Module::create([
             'name' => 'BlogModule',
-            'alias' => 'blog',
+            'slug' => 'blog',
         ]);
 
         $found = Module::where('name', 'BlogModule')->first();
 
-        $this->assertInstanceOf(Module::class, $found);
-        $this->assertEquals('BlogModule', $found->name);
+        Assert::assertInstanceOf(Module::class, $found);
+        Assert::assertSame('BlogModule', $found->name);
     }
 
-    /** @test Module can be found by alias */
-    public function it_can_be_found_by_alias(): void
+    /** @test Module can be found by slug (nwidart alias surface) */
+    public function it_can_be_found_by_slug(): void
     {
-        $module = Module::create([
+        Module::create([
             'name' => 'UserModule',
-            'alias' => 'user-management',
+            'slug' => 'user-management',
         ]);
 
-        $found = Module::where('alias', 'user-management')->first();
+        $found = Module::where('slug', 'user-management')->first();
 
-        $this->assertInstanceOf(Module::class, $found);
-        $this->assertEquals('UserModule', $found->name);
+        Assert::assertInstanceOf(Module::class, $found);
+        Assert::assertSame('UserModule', $found->name);
     }
 
     /** @test Can query only enabled modules */
     public function it_can_query_only_enabled_modules(): void
     {
-        Module::create(['name' => 'Module1', 'alias' => 'mod1', 'enabled' => true]);
-        Module::create(['name' => 'Module2', 'alias' => 'mod2', 'enabled' => false]);
-        Module::create(['name' => 'Module3', 'alias' => 'mod3', 'enabled' => true]);
+        Module::create(['name' => 'Module1', 'slug' => 'mod1', 'enabled' => true]);
+        Module::create(['name' => 'Module2', 'slug' => 'mod2', 'enabled' => false]);
+        Module::create(['name' => 'Module3', 'slug' => 'mod3', 'enabled' => true]);
 
         $enabled = Module::where('enabled', true)->get();
 
-        $this->assertCount(2, $enabled);
+        Assert::assertCount(2, $enabled);
     }
 
     /** @test Module uses timestamps */
     public function it_uses_timestamps(): void
     {
-        $this->assertTrue($this->module->usesTimestamps());
+        Assert::assertTrue($this->module->usesTimestamps());
     }
 
     /** @test Module has created_at and updated_at timestamps */
@@ -158,11 +163,11 @@ class ModuleTest extends TestCase
     {
         $module = Module::create([
             'name' => 'TestModule',
-            'alias' => 'test',
+            'slug' => 'test',
         ]);
 
-        $this->assertNotNull($module->created_at);
-        $this->assertNotNull($module->updated_at);
+        Assert::assertNotNull($module->created_at);
+        Assert::assertNotNull($module->updated_at);
     }
 
     /** @test Module can be deleted */
@@ -170,7 +175,7 @@ class ModuleTest extends TestCase
     {
         $module = Module::create([
             'name' => 'ToDelete',
-            'alias' => 'to-delete',
+            'slug' => 'to-delete',
         ]);
 
         $moduleId = $module->id;
@@ -182,20 +187,21 @@ class ModuleTest extends TestCase
     /** @test Module can be counted */
     public function it_can_be_counted(): void
     {
-        Module::factory()->count(5)->create();
+        // Factory concreta: HasXotFactory risolve a runtime e PHPStan vede mixed su ::factory()
+        ModuleFactory::new()->count(5)->create();
 
         $count = Module::count();
 
-        $this->assertGreaterThanOrEqual(5, $count);
+        Assert::assertGreaterThanOrEqual(5, $count);
     }
 
     /** @test Module can be retrieved with limit */
     public function it_can_be_limited(): void
     {
-        Module::factory()->count(10)->create();
+        ModuleFactory::new()->count(10)->create();
 
         $limited = Module::limit(3)->get();
 
-        $this->assertCount(3, $limited);
+        Assert::assertCount(3, $limited);
     }
 }

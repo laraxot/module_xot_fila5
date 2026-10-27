@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot;
+namespace Modules\Xot\Tests;
 
 use Filament\Forms\Components\BaseFileUpload;
 use Filament\Forms\Contracts\HasForms;
@@ -223,8 +223,6 @@ final class ModuleRemainingCoverage
         $executed = 0;
 
         if (! is_dir($appRoot)) {
-            Assert::assertSame(0, $executed);
-
             return;
         }
 

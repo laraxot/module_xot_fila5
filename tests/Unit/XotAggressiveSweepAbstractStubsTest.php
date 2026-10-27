@@ -2,20 +2,20 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Unit;
+namespace Modules\Xot\Tests\Unit;
 
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Process;
 use Mockery;
-use Tests\Modules\Xot\Fixtures\Stubs\XotAbsCheckbox3;
-use Tests\Modules\Xot\Fixtures\Stubs\XotAbsGroup3;
-use Tests\Modules\Xot\Fixtures\Stubs\XotAbsRadio3;
-use Tests\Modules\Xot\Fixtures\Stubs\XotAbsSection3;
-use Tests\Modules\Xot\Fixtures\Stubs\XotAbsSelect3;
-use Tests\Modules\Xot\Fixtures\Stubs\XotAbsTableAction3;
-use Tests\Modules\Xot\Fixtures\Stubs\XotAbsViewColumn3;
-use Tests\Modules\Xot\Fixtures\Stubs\XotAbsWizard3;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\Fixtures\Stubs\XotAbsCheckbox3;
+use Modules\Xot\Tests\Fixtures\Stubs\XotAbsGroup3;
+use Modules\Xot\Tests\Fixtures\Stubs\XotAbsRadio3;
+use Modules\Xot\Tests\Fixtures\Stubs\XotAbsSection3;
+use Modules\Xot\Tests\Fixtures\Stubs\XotAbsSelect3;
+use Modules\Xot\Tests\Fixtures\Stubs\XotAbsTableAction3;
+use Modules\Xot\Tests\Fixtures\Stubs\XotAbsViewColumn3;
+use Modules\Xot\Tests\Fixtures\Stubs\XotAbsWizard3;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use ReflectionClass;
 use ReflectionMethod;

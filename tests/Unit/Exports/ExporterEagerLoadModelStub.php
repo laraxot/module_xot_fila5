@@ -2,50 +2,31 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Unit\Exports;
+namespace Modules\Xot\Tests\Unit\Exports;
 
-use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Database\Eloquent\Relations\MorphMany;
 
 /**
- * Stub per XotBaseExporter::modifyQuery (eager-load ratings / ratingMorphs).
+ * Stub minimo per verificare gli eager-load di XotBaseExporter::modifyQuery.
+ *
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, ExporterEagerLoadModelStub> $ratings
  */
 final class ExporterEagerLoadModelStub extends Model
 {
-    protected $table = 'test_models';
-
     /**
-     * @return Builder<static>
-     */
-    public function newQuery(): Builder
-    {
-        /** @var Builder<static> $query */
-        $query = parent::newQuery();
-
-        return $query;
-    }
-
-    /**
-     * @return HasMany<ExporterEagerLoadModelStub, ExporterEagerLoadModelStub>
+     * @return HasMany<ExporterEagerLoadModelStub, $this>
      */
     public function ratings(): HasMany
     {
-        /** @var HasMany<ExporterEagerLoadModelStub, ExporterEagerLoadModelStub> $relation */
-        $relation = $this->hasMany(self::class);
-
-        return $relation;
+        return $this->hasMany(self::class);
     }
 
     /**
-     * @return MorphMany<ExporterEagerLoadModelStub, ExporterEagerLoadModelStub>
+     * @return HasMany<ExporterEagerLoadModelStub, $this>
      */
-    public function ratingMorphs(): MorphMany
+    public function ratingMorphs(): HasMany
     {
-        /** @var MorphMany<ExporterEagerLoadModelStub, ExporterEagerLoadModelStub> $relation */
-        $relation = $this->morphMany(self::class, 'rating');
-
-        return $relation;
+        return $this->hasMany(self::class);
     }
 }

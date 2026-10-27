@@ -3,7 +3,7 @@
 declare(strict_types=1);
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\Model\GetAllModelsByModuleNameAction;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\QueueableAction\QueueableAction;
 

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Feature;
+namespace Modules\Xot\Tests\Feature;
 
-use Tests\Modules\Xot\Fixtures\Models\TestConcreteMorphPivot;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\Fixtures\Models\TestConcreteMorphPivot;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);

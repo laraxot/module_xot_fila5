@@ -5,7 +5,7 @@ epic: code-quality
 related:
   - ../../../../User/docs/bmad/stories/xot-base-resource-navigation-icon-translation.story.md
 type: story
-updated: 2026-10-09
+updated: 2026-10-23
 tags: [docs, xot, bmad]
 qmd: "story xot"
 ---

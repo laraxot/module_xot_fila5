@@ -43,3 +43,9 @@ Plan. DCP-184 ha chiuso l'emergenza (app a 500 per `getFormSchemaOld()` diventat
 
 ## Non verificato
 Nessun uso reale di `AddressField` (non esiste); il comportamento in altri progetti che usano Xot; la causa dei docblock duplicati.
+
+## Nota di verifica (2026-10-20, progetto Quaeris)
+D221-2 si e' verificata come previsto. Dopo il pull dei sottomoduli nel progetto Quaeris, `./vendor/bin/phpstan analyse Modules` si fermava su `Cannot override final method XotBaseResource::getFormSchemaOld()`: sei override, mai migrati perche' il cambio di base era stato fatto e migrato in un altro progetto. Migrati qui con lo stesso metodo di DCP-184 (contenuto spostato nella `*Form`, poi override tolto):
+- Chart: [getformschemaold-final-chart-resources](../../../Chart/docs/stories/getformschemaold-final-chart-resources.story.md) (`ChartResource`, `MixedChartResource`).
+- Quaeris: [getformschemaold-final-quaeris-resources](../../../Quaeris/docs/stories/getformschemaold-final-quaeris-resources.story.md) (`ContactResource`, `QuestionChartResource`, `PdfStyleResource`, `CustomerResource`).
+Per chi cambia una firma della base: il conteggio degli override va fatto in ogni progetto che monta Xot, non solo in quello dove si lavora.

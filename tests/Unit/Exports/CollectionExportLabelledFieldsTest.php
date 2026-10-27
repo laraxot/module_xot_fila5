@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 use Illuminate\Support\Collection;
 use Modules\Xot\Exports\CollectionExport;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\TestCase;
 
 uses(TestCase::class);
 

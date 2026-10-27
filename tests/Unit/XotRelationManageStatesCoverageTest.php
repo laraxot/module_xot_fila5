@@ -2,17 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Unit;
+namespace Modules\Xot\Tests\Unit;
 
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Illuminate\Database\Eloquent\Relations\MorphToMany;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Modules\Xot\Models\Cache as CacheModel;
-use Tests\Modules\Xot\Fixtures\Stubs\XotCovManageRelated;
-use Tests\Modules\Xot\Fixtures\Stubs\XotCovRelationHost;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\Fixtures\Stubs\XotCovManageRelated;
+use Modules\Xot\Tests\Fixtures\Stubs\XotCovRelationHost;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class)->group('no-xot-db');
@@ -58,7 +56,6 @@ describe('Xot RelationX ManageRelated StatesChart', function (): void {
         $host->exists = true;
 
         $relation = $host->belongsToManyX(CacheModel::class);
-        Assert::assertInstanceOf(BelongsToMany::class, $relation);
         Assert::assertSame('cache_cache', $relation->getTable());
         Assert::assertSame(
             ['cache_id', 'related_id', 'extra', 'created_at', 'updated_at'],
@@ -66,7 +63,6 @@ describe('Xot RelationX ManageRelated StatesChart', function (): void {
         );
 
         $morphRelation = $host->morphToManyX(CacheModel::class, 'taggable');
-        Assert::assertInstanceOf(MorphToMany::class, $morphRelation);
         Assert::assertSame('cache_morph', $morphRelation->getTable());
         Assert::assertSame(
             ['cache_id', 'related_id', 'related_type', 'created_at', 'updated_at'],

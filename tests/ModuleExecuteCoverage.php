@@ -2,15 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot;
+namespace Modules\Xot\Tests;
 
 use Illuminate\Console\Command;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use Mockery;
-use Modules\Xot\Actions\File\FileAction;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
-use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Actions\XotBaseAction;
 use Modules\Xot\Filament\Builders\ColumnBuilder;
 use Modules\Xot\Filament\Builders\FilterBuilder;
@@ -53,7 +51,6 @@ final class ModuleExecuteCoverage
         self::testAllEnums($appRoot, $moduleNamespace);
         self::testInvokePublicMethodsOnModels($appRoot, $moduleNamespace);
         self::testActionsStaticMethods($appRoot, $moduleNamespace);
-        self::testFileActionStatics();
         self::testXotBaseMigrationHelpers();
         self::testAllMiddleware($appRoot, $moduleNamespace);
         self::testAllConsoleCommands($appRoot, $moduleNamespace);
@@ -323,50 +320,6 @@ final class ModuleExecuteCoverage
         Assert::assertGreaterThanOrEqual(0, $executed);
     }
 
-    public static function testFileActionStatics(): void
-    {
-        $executed = 0;
-        $safeMethods = [
-            'getModulePath',
-            'createDirectoryForFilename',
-            'getNiceFileSize',
-            'getFileNameByClassName',
-            'url2Path',
-            'fixPath',
-            'getFileUrl',
-            'getConfigKey',
-            'allDirectories',
-            'getComponents',
-        ];
-
-        foreach ($safeMethods as $name) {
-            try {
-                match ($name) {
-                    'getModulePath' => FileAction::getModulePath('Xot'),
-                    'createDirectoryForFilename' => FileAction::createDirectoryForFilename(sys_get_temp_dir().'/xot-cov/'.uniqid('', true).'.txt'),
-                    'getNiceFileSize' => FileAction::getNiceFileSize(1024),
-                    'getFileNameByClassName' => FileAction::getFileNameByClassName(XotData::class),
-                    'url2Path' => FileAction::url2Path(url('/css/app.css')),
-                    'fixPath' => FileAction::fixPath('/tmp//double//slash'),
-                    'getFileUrl' => FileAction::getFileUrl('/plain/path.css'),
-                    'getConfigKey' => FileAction::getConfigKey('demo_ns::settings.label'),
-                    'allDirectories' => FileAction::allDirectories(base_path('Modules/Xot/app')),
-                    default => FileAction::getComponents(
-                        base_path('Modules/Xot/app/View/Components'),
-                        'Modules\\Xot\\View\\Components',
-                        'xot::',
-                        true
-                    ),
-                };
-                $executed++;
-            } catch (\Throwable) {
-                $executed++;
-            }
-        }
-
-        Assert::assertGreaterThan(0, $executed);
-    }
-
     public static function testXotBaseMigrationHelpers(): void
     {
         $migration = new class extends XotBaseMigration
@@ -480,15 +433,7 @@ final class ModuleExecuteCoverage
     public static function testActionsStaticMethods(string $appRoot, string $moduleNamespace): void
     {
         $executed = 0;
-        $skipClasses = [
-            FileAction::class,
-        ];
-
         foreach (ModuleBusinessCoverage::discoverPhpClasses($appRoot, $moduleNamespace, 'Actions') as $class) {
-            if (in_array($class, $skipClasses, true)) {
-                continue;
-            }
-
             $ref = new ReflectionClass($class);
             $sourceFile = $ref->getFileName();
             if (is_string($sourceFile) && is_file($sourceFile)) {
