@@ -2,19 +2,19 @@
 
 declare(strict_types=1);
 
-use Modules\Xot\Tests\TestCase;
-
 /*
  * |--------------------------------------------------------------------------
  * | Test Case
  * |--------------------------------------------------------------------------
  * |
- * | Il TestCase di default per tutti i test del modulo Xot.
- * | Estende il TestCase specifico del modulo che fornisce il setup necessario.
+ * | Il TestCase del modulo Xot (Modules\Xot\Tests\TestCase) si lega file per file.
  * |
  */
 
-pest()->extend(TestCase::class)->in('Feature', 'Unit');
+// Niente pest()->extend(TestCase::class)->in('Feature', 'Unit') qui: ogni file *Test.php
+// dichiara gia' uses(TestCase::class). Con entrambi Pest lancia TestCaseAlreadyInUse in
+// raccolta e non gira nessun test. Si tiene uses() nel file: e' la maggioranza e permette
+// a PHPStan di tipizzare $this. Un nuovo file di test deve aggiungere la sua uses().
 
 /*
  * |--------------------------------------------------------------------------

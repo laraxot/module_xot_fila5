@@ -4,7 +4,7 @@ type: decision-log
 module: Xot
 status: active
 created: 2026-10-16
-updated: 2026-10-20
+updated: 2026-10-22
 tags: [bmad, decision-log, xot, no-services, boy-scout]
 qmd: "decision log xot"
 related:
@@ -15,10 +15,48 @@ related:
 
 # Decision log — Xot
 
+## 2026-10-22 — Deep audit Support (Bag + Infrastructure)
+
+- **Decisione:** rinominare Blog `Theme*Support` → `Theme*Bag`; spostare `GeoDataValidationRules` in `Infrastructure\Validation`; docs canoniche AI/Media/Cms aggiornate; debito `ShieldUtilsAction` registrato.
+- **Artefatto:** [support-deep-audit.md](./support-deep-audit.md).
+- **Perche':** user «controlla meglio e piu' a fondo» — zero cartelle non basta se restano faux-Action e naming Support.
+
+## 2026-10-22 — Wave Support: zero `app/Support` + niente faux-Action
+
+- **Decisione:** nessuna cartella `Support` sotto `Modules/*/app` o `Themes/*/app|src`. Use-case → QueueableAction; registry → `Adapters`; costanti URL/cache → `Infrastructure\Config`. Vietato Action con `execute()` vuoto.
+- **Esempi wave:** Geo `Infrastructure\Config\{GeoApiEndpoints,GeoDataConfig}`; AI `Adapters\AiActionHandlerRegistry`; Blog Article* → Actions + `ArticlePresentationAdapter`; Media path/exporter → Actions; Fixcity seeders → `Demo/`.
+- **Perche':** user — Support devono sparire / diventare Spatie Queueable Actions (con ruoli semantici, non fingere la coda).
+- **Gate:** `NoServicesTest` (Support dir + namespace); process [no-app-support-queueable-actions](../../../../../docs/second-brain/process/no-app-support-queueable-actions.md).
+- **Track:** BMAD + second brain + filament blueprint Services→Actions.
+
+## 2026-10-20 — Planning BMAD zero-folders Services (chiusura maintain)
+
+- **Decisione:** wave Services→Actions = **done/maintain**; piano sticky in [planning-services-to-actions-zero-folders](./planning-services-to-actions-zero-folders.md). Nessuna conversione di massa: disco gia' a 0 dirs / 0 import prod / ~770 Actions / `NoServicesTest` PASS.
+- **Perche':** user standing order — cartelle `app/Services` non devono esistere; use-case = Spatie QueueableAction; Filament solo Actions.
+- **Track:** [brainstorming-services-to-actions-wave](./brainstorming-services-to-actions-wave.md), [services-to-actions-global-wave.story](../stories/services-to-actions-global-wave.story.md) status `done`.
+
+## 2026-10-20 — Cartella `app/Services` assente (ratchet)
+
+- **Decisione:** `Modules/*/app/Services` resta **0** directory e **0** PHP; ogni use-case = Spatie QueueableAction.
+- **Perche':** evitare contenitori senza confini e riesumazioni merge; Filament invoca solo Actions.
+- **Artefatti:** [census](./services-to-queueable-actions-census.md), [brainstorming](./services-to-queueable-actions-brainstorming.md), [filament-blueprint](./services-to-queueable-actions-filament-blueprint.md), `NoServicesTest`.
+- **Track:** bmad-method + second brain
+
+## 2026-10-20 — Gate PHPStan Modules zero; Filament blueprint SSoT UI admin
+
+- **Decisione:** `analyse Modules` resta `[OK] No errors`; ogni tocco Resource/widget BO segue [filament-blueprint](./filament-blueprint.md) (XotBase, Lang, fix alla sorgente prima di zittire).
+- **Track:** [phpstan-modules-zero-standing-order](../wiki/memories/phpstan-modules-zero-standing-order.md), [NeverExtendFilamentDirectlyTest.php](../../tests/Unit/Filament/NeverExtendFilamentDirectlyTest.php).
+
+## 2026-10-20 — Snapshot sera: zero Services confermato (census BMAD)
+
+- **Misura:** `find Modules -type d -path '*/app/Services'` = **0**; `find Modules -path '*/app/Services/*.php'` = **0**; Actions ≈ **770**; campione moduli su `laraxot/dev` (Xot, Fixcity, Notify, User, Geo, Tenant) = **0** file in `app/Services/`.
+- **Non-layer:** modelli Sixteen `MunicipalService` / `Service` = dominio; residuo Blade TwentyOne (`PredictService`, modulo assente) → props/orchestratore, non reintroduzione Services.
+- **Track:** [services-to-queueable-actions-census](./services-to-queueable-actions-census.md) (addendum sera prevale), [services-to-queueable-actions-brainstorming](./services-to-queueable-actions-brainstorming.md).
+
 ## 2026-10-20 — Boy scout post-zero: census `Modules/*/app/Services`
 
 - **Audit:** `rg --files -g '*Service.php' Modules/*/app/Services` → **0 file**; nessuna directory `app/Services/` sotto `Modules/*/app` né `Themes/*/app|src`. Zero `use …\Services\…` in PHP di produzione (solo ratchet `NoServicesTest`).
-- **Stato domini (campione):** Fixcity — ex `WorkflowService` / `NotificationService` / `TicketService` **assenti**; vivo = Actions (`TransitionTicketStatusAction`, notify Actions, CRUD ticket Actions). Seo — ex `MetatagService` **assente**; vivo = `MetatagFacadeAdapter` + `Get/Replace/MergeMetatagDataAction`. Geo — già chiuso in [Geo decision-log](../../Geo/docs/bmad/decision-log.md).
+- **Stato domini (campione):** Fixcity — ex `WorkflowService` / `NotificationService` / `TicketService` **assenti**; vivo = Actions (`TransitionTicketStatusAction`, notify Actions, CRUD ticket Actions). Seo — ex `MetatagService` **assente**; vivo = `MetatagFacadeAdapter` + `Get/Replace/MergeMetatagDataAction`. Geo — già chiuso in [Geo decision-log](../../../Geo/docs/bmad/decision-log.md).
 - **Residuo merge:** `Modules/Seo/tests/Unit/Services/MetatagServiceExtendedTest.php.old` importava classe cancellata → **rimosso** (test orfano `.old`, non suite Pest).
 - **Non fare ora:** migrazione massiva; eventuali riesumazioni da merge → delete-again + ratchet (vedi voce Services→Actions sotto).
 - **Track:** [decisions/action-conversion.md](../decisions/action-conversion.md), [NoServicesTest.php](../../tests/Unit/Architecture/NoServicesTest.php).
@@ -27,7 +65,7 @@ related:
 
 - **Decisione:** ogni `laravel/Modules/*` e `laravel/Themes/*` (oltre a root / aggregatori) dichiara `graphify-out/` nel `.gitignore`. Se la cartella esisteva in index → `git rm --cached -rf` (working tree ok). **Mai** Git LFS.
 - **Perche:** artefatto generato (graphify AST/JSON), riscritto a ogni update; commit = churn e tentazione LFS vietata. Non e' superficie Filament ([filament-blueprint](./filament-blueprint.md)).
-- **Track:** [graphify-out-gitignore.md](./graphify-out-gitignore.md); regola [no-git-lfs](../../../../../bashscripts/ai/wiki/rules/no-git-lfs.md). Job/Lang: rimossi dall'indice path `docs/graphify/graphify-out/**` (story `*graphify-out*.story.md` restano tracciate).
+- **Track:** [graphify-out-gitignore.md](./graphify-out-gitignore.md) (anche da [index.md](./index.md)); regola [no-git-lfs](../../../../../bashscripts/ai/wiki/rules/no-git-lfs.md). Job/Lang: rimossi dall'indice path `docs/graphify/graphify-out/**` (story `*graphify-out*.story.md` restano tracciate).
 
 ## 2026-10-20 — PHPStan `Modules` a zero senza conferma (ordine permanente)
 

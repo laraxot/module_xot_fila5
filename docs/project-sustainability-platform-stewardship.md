@@ -5,6 +5,7 @@ module: Xot
 status: decision-input
 updated: 2026-10-15
 tags: [sustainability, xot, stewardship, bmad]
+qmd: "stewardship piattaforma (ownership xot   limiti) xot"
 ---
 
 # Stewardship piattaforma (ownership Xot — limiti)

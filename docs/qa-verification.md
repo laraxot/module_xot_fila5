@@ -10,10 +10,12 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "deprecated QA-VERIFICATION"
 related:
-  - "./qa-verification.md"
+  - "./bmad/stories/docs-filename-no-date-bonifica-xot.story.md"
 ---
 # Qa Verification
 
 > Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
 
-Vedi il file canonico: [QA-VERIFICATION.md](./qa-verification.md)
+Stub del file con data nel nome, svuotato nella bonifica dei filename.
+Il documento originale non e' piu' nel working tree: la traccia sta in
+[docs-filename-no-date-bonifica-xot.story.md](./bmad/stories/docs-filename-no-date-bonifica-xot.story.md).

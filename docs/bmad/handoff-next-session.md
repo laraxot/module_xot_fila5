@@ -3,7 +3,7 @@ title: "Passaggio di consegne per la prossima sessione"
 type: handoff
 status: active
 created: 2026-10-20
-updated: 2026-10-20
+updated: 2026-10-25
 module: Xot
 tags: [bmad, handoff, phpstan, qualita, services, livewire, test, docs]
 qmd: "handoff prossima sessione ripartire domani stato verificato decisioni utente run completo guardia db story epic"
@@ -50,11 +50,11 @@ Risolvere tutti gli errori PHPStan di `cd laravel && ./vendor/bin/phpstan analys
 
 ## Decisioni che aspettano l'utente
 
-1. Account MySQL di test con grant solo su `*_test`; conferma che i DB `*_test` sono usa-e-getta; creare i DB (la regola chiede di chiedere prima).
+1. Account MySQL di test con grant solo su `*_test`; conferma che i DB `*_test` sono usa-e-getta. **Fatto il 2026-10-25**: `fixcity_data_test` e `fixcity_user_test` creati con lo script additivo documentato (`CREATE DATABASE IF NOT EXISTS`, nessun DROP, nessuna migrazione). Resta aperto l'account con grant ristretto.
 2. `composer dump-autoload` (esegue gli script post-autoload-dump, avvia l'app).
 3. Cancellare i Service anche sul remoto `laraxot/dev`, o accettare il ratchet locale.
 4. Perimetro Livewire: letto come "nessun Livewire puro, FO incluso" (canone del 2026-05-28); aperto solo Volt/Folio (15 pagine in User, `profile/edit` da 714 righe).
-5. Installare `filament/blueprint` oppure restare sui contratti scritti a mano (`docs/bmad/filament-blueprint.md`, 13 moduli; ne mancano 5 con 202 file Filament).
+5. ~~Installare `filament/blueprint` oppure restare sui contratti scritti a mano~~ — **deciso il 2026-10-25: contratti scritti a mano.** `filament/blueprint` e il repository privato `packages.filamentphp.com` sono stati rimossi da `laravel/composer.json`: 401 sul repo, 404 su Packagist, zero citazioni nel codice. Restano i contratti in `Modules/<M>/docs/bmad/filament-blueprint.md` (13 moduli; ne mancano 5 con 202 file Filament).
 6. `laravel/phpstan.neon` (solo l'umano): il blocco `parallel` e' tutto commentato (default = nproc, 18-20 worker, causa dell'OOM con run concorrenti); `Lime*.php` (50 file, 4897 righe) sono esclusi dall'analisi.
 7. Se `APP_ENV=testing` e' mai impostato fuori dai test (Quaeris: rami `environment('testing')` spengono l'autorizzazione).
 8. Test su sqlite o MySQL (la regola dice MySQL; 9 TestCase configurano sqlite).

@@ -1,12 +1,13 @@
 ---
 title: "Standard di Traduzione - Documentazione Root"
 type: note
-status: unverified
 created: 2026-09-24
 updated: 2026-10-20
 module: Xot
 tags: [xot, translations]
 qmd: "Standard di Traduzione - Documentazione Root"
+status: superseded
+superseded_by: ../translation-standards.md
 ---
 # Standard di Traduzione - Documentazione Root
 

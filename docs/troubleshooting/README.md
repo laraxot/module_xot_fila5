@@ -1,3 +1,11 @@
+---
+title: "Troubleshooting Guide"
+type: index
+status: draft
+updated: 2026-10-20
+tags: [docs, xot, troubleshooting]
+qmd: "troubleshooting guide xot"
+---
 # Troubleshooting Guide
 
 ## Common Issues

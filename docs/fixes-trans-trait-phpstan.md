@@ -117,7 +117,7 @@ protected function transChoice(string $key, int $number, array $replace = []): s
 
 ## Collegamenti
 
-- [TransTrait.php](../../app/Filament/Traits/TransTrait.php)
+- [TransTrait.php](../app/Filament/Traits/TransTrait.php)
 - [PHPStan Fixes](./phpstan-fixes.md)
 - [Translation System](./translation-system.md)
 

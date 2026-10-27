@@ -5,9 +5,12 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseManageRelatedRecords;
 use Modules\Xot\Filament\Traits\HasXotTable;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
 use Modules\Xot\Filament\Traits\TransTrait;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Safe\file_get_contents;
+
+uses(TestCase::class);
 
 /**
  * Guardia meccanica contro due regressioni avvenute nello stesso giorno

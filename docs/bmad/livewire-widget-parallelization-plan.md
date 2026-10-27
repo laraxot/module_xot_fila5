@@ -12,6 +12,7 @@ related:
   - ./livewire-to-filament-widgets-inventory.md
   - ./livewire-widget-decision-log.md
   - ./stories/livewire-to-filament-widgets-fleet.story.md
+qmd: "piano di parallelizzazione xot"
 ---
 
 # Piano di parallelizzazione

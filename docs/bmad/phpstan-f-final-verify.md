@@ -7,6 +7,7 @@ created: 2026-10-21
 updated: 2026-10-21
 tags: [phpstan, swarm, phpstan-F, user, xot, done]
 qmd: "phpstan fw user xot zero errors verified"
+type: note
 ---
 
 # Final Verify — User + Xot (same exact process)
@@ -36,7 +37,7 @@ NON si re-de-tizza.
 ## User
 
 - Phase 1 (`phpstan-l10-user-lang-fix.story.md`): done — 77 `offsetAccess` risolti con cast `(array)` e `@var`.
-- Phase 2 (`phpstan-l10-user-phase2-20261006.story.md`): done — 5 file con PHPDoc malformato (`/* @var */` → `/** @var */`) corretti: `HasModules.php` (39), `Reset.php` (63), `HasTeams.php` (406), `EditUserWidget.php` (127), `TeamResource.php` (23). Nessun `@phpstan-ignore`, nessuna baseline.
+- Phase 2 (`phpstan-l10-user-phase2-module-phase-malformed-phpdoc.story.md`): done — 5 file con PHPDoc malformato (`/* @var */` → `/** @var */`) corretti: `HasModules.php` (39), `Reset.php` (63), `HasTeams.php` (406), `EditUserWidget.php` (127), `TeamResource.php` (23). Nessun `@phpstan-ignore`, nessuna baseline.
 - Verifica: `php -l` passata su ciascun file; story aggiornata; no regressione.
 
 ## Constraints rispettate (ordini permanenti)
@@ -51,5 +52,5 @@ NON si re-de-tizza.
 - `laravel/Modules/Xot/docs/bmad/phpstan-status.md` — stato 2026-10-20 verificato (conflicts documentati nel `.md`, non nel `.php`).
 - `laravel/Modules/Xot/docs/stories/phpstan-modules-zero-wave3.story.md` — done.
 - `laravel/Modules/User/docs/bmad/stories/phpstan-l10-user-lang-fix.story.md` — done.
-- `laravel/Modules/User/docs/bmad/stories/phpstan-l10-user-phase2-20261006.story.md` — done (5 file corretti).
+- `laravel/Modules/User/docs/bmad/stories/phpstan-l10-user-phase2-module-phase-malformed-phpdoc.story.md` — done (5 file corretti).
 - Nuovo: questo `phpstan-f-final-verify.md` per il turn `phpstan-F`.

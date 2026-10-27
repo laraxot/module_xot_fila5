@@ -308,7 +308,7 @@ return [
 
 ### Documentazione Moduli
 - [Progressioni: XotBaseResource Violations](../laravel/Modules/Progressioni/docs/xotbaseresource-violations-critical.md)
-- [Xot: XotBaseResource Rules](../laravel/Modules/Xot/docs/filament/resources/xot-base-resource.md)
+- [Xot: XotBaseResource Rules](filament/resources/xot-base-resource.md)
 - [Xot: Filament Resource Guidelines](../laravel/Modules/Xot/docs/rules/filament-resource-guidelines.md)
 
 ### Regole Correlate

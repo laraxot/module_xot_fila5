@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "coding standards"
 issues: []
 discussions: []
-<<<<<<< .merge_file_4uVSjL
-=======
 status: draft
->>>>>>> .merge_file_tseLfM
 ---
 
 # Standard di Codice per il progetto

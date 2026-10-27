@@ -44,10 +44,17 @@ Religione: cartella assente; Action viva → DELETE.
 
 ## Acceptance
 
-- [ ] dirs = 0
-- [ ] allowlist = `[]`
-- [ ] nessuna Action duplicata
+- [x] dirs = 0
+- [x] allowlist = `[]` (NoServicesTest: nessuna allowlist)
+- [x] nessuna Action duplicata (nessun Service vivo da convertire)
 
 ## Testing strategy
 
-`ModulesArchitectureTest` + `find` gate.
+`ModulesArchitectureTest` + `find` gate + `NoServicesTest.php`.
+
+## Diario 2026-10-20 19:45
+
+Inventario path-only `*/app/Services/`: vuoto. Boy scout su residui zombie con
+`use …\Services\` fuori dal path (`.fixed`, `*to_formx`, `store.md`, `.old` Fixcity)
+→ DELETE a chiamanti zero; successori Action gia' vivi. Dettaglio in
+[`../bmad/stories/phpstan-modules-swarm-random.story.md`](../bmad/stories/phpstan-modules-swarm-random.story.md).

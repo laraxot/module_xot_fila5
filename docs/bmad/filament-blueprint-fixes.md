@@ -1,3 +1,11 @@
+---
+title: "Filament Blueprint Fixes — 2026-10-21"
+type: note
+status: draft
+updated: 2026-10-21
+tags: [docs, xot, bmad]
+qmd: "filament blueprint fixes   2026-10-21 xot"
+---
 # Filament Blueprint Fixes — 2026-10-21
 
 ## Stato

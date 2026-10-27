@@ -154,11 +154,11 @@ php artisan test Modules/Xot/tests/Unit/Models/BaseModelTest.php
 
 ## Collegamenti
 
-- [BaseModel.php](../../app/Models/BaseModel.php)
-- [BaseExtra.php](../../app/Models/BaseExtra.php)
-- [BaseTreeModel.php](../../app/Models/BaseTreeModel.php)
-- [Cache.php](../../app/Models/Cache.php)
-- [BaseModelTest.php](../../tests/Unit/Models/BaseModelTest.php)
+- [BaseModel.php](../app/Models/BaseModel.php)
+- [BaseExtra.php](../app/Models/BaseExtra.php)
+- [BaseTreeModel.php](../app/Models/BaseTreeModel.php)
+- [Cache.php](../app/Models/Cache.php)
+- [BaseModelTest.php](../tests/Unit/Models/BaseModelTest.php)
 - [PHPStan Fixes](./phpstan-fixes.md)
 
 ## Note per il Futuro

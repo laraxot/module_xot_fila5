@@ -7,10 +7,8 @@ updated: 2026-09-26
 qmd: "development rules"
 issues: []
 discussions: []
-<<<<<<< .merge_file_8ZHukN
-=======
-status: draft
->>>>>>> .merge_file_PerqME
+status: superseded
+superseded_by: ../consolidated/development-rules.md
 ---
 
 # Regole Generali di Sviluppo del Progetto
@@ -438,7 +436,6 @@ TextInput::make('name')
 - [ ] Ho aggiornato le regole per evitare errori futuri?
 
 ---
-<<<<<<< .merge_file_8ZHukN
 
 title: "development rules"
 type: note
@@ -448,6 +445,4 @@ updated: 2026-09-26
 qmd: "development rules"
 issues: []
 discussions: []
-=======
->>>>>>> .merge_file_PerqME
 **Nota**: Queste regole sono fondamentali per mantenere la qualità e la consistenza del progetto. Devono essere sempre seguite e aggiornate quando necessario.

@@ -7,10 +7,8 @@ type: reference
 tags: [wiki, no-frontmatter-fix]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< .merge_file_OlftGA
-=======
-status: draft
->>>>>>> .merge_file_HRvBrl
+status: superseded
+superseded_by: ../../-integration/nwidart.md
 ---
 
 # nwidart

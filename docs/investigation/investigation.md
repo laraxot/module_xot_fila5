@@ -1,15 +1,11 @@
 ---
 type: investigation
 title: "Investigation Core Contract Refactoring"
-<<<<<<< .merge_file_NsBjiR
-links: {github_issue: #XXX}
-=======
 links: {github_issue: "#XXX"}
 status: draft
-updated: 2026-10-09
+updated: 2026-10-23
 tags: [docs, xot, investigation]
 qmd: "investigation: core contract refactoring xot"
->>>>>>> .merge_file_aasv7O
 ---
 # Investigation: Core Contract Refactoring
 
