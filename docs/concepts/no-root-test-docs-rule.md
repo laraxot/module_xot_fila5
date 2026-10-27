@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "no root test docs rule"
 issues: []
 discussions: []
-<<<<<<< .merge_file_FnkOxw
-=======
 status: draft
->>>>>>> .merge_file_tVkIXz
 ---
 
 # REGOLA CRITICA: Test Docs NEI MODULI/TEMI

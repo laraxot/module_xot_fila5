@@ -5,6 +5,9 @@ created: 2026-10-21
 updated: 2026-10-21
 module: Xot
 supersedes_hypothesis_in: docs/bmad/stories/phpstan-docs-prompts-campaign.story.md
+type: story
+tags: [docs, xot, bmad]
+qmd: "sidebar admin vuota al primo accesso: store collapsedgroups a null xot"
 ---
 
 # Sidebar admin vuota al primo accesso: store collapsedGroups a null

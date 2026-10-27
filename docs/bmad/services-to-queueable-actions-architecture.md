@@ -50,19 +50,23 @@ asincrono esplicito e il payload è serializzabile/idempotente.
 **Conseguenze:** Filament mantiene feedback immediato per letture e validazioni;
 AI, media, geocoding, mail e SMS possono essere dispatchati in modo controllato.
 
-## ADR-003 — Nessun Services come contenitore tecnico
+## ADR-003 — Nessun Services / Support come contenitore tecnico
 
-**Stato:** Accepted
+**Stato:** Accepted (rafforzato 2026-10-22 — wave Support)
 
 **Decisione:** translator Laravel, driver Mail/SMS, client HTTP, resolver/registry,
 validator, strategy, trend adapter e streaming HTTP restano componenti tecnici,
-ma non possono vivere in `app/Services`. Si ricollocano in `Adapters`, `Contracts`,
-`Support` o `Infrastructure`; le operazioni applicative che li orchestrano sono
-Queueable Actions.
+ma non possono vivere in `app/Services` o `app/Support`. Si ricollocano in
+`Adapters`, `Contracts` o `Infrastructure`; le operazioni applicative che li
+orchestrano sono Queueable Actions. Costanti infrastrutturali (URL API, cache
+key) → `Infrastructure\Config`, **non** Action con `execute()` finto. Registry
+multi-metodo → `Adapters`.
 
 **Conseguenze:** il confine architetturale è leggibile e verificabile con il solo
-path: la presenza di una directory `Services` è una violazione, anche quando non
-contiene classi PHP. Gate CI: `ModulesArchitectureTest` (`archAllowedServicesDirs` = `[]`).
+path: la presenza di una directory `Services` o `Support` sotto `app` è una
+violazione, anche quando non contiene classi PHP. Gate: `NoServicesTest`
+(Services **e** Support). Process:
+[no-app-support-queueable-actions.md](../../../../../docs/second-brain/process/no-app-support-queueable-actions.md).
 
 ## ADR-004 — Eliminare duplicati prima di progettare nuove Actions
 

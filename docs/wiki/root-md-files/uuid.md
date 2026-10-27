@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "uuid"
 related:
   - "./eloquent-magic-properties-rule.md"
-<<<<<<< .merge_file_w3KTqZ
-=======
 status: draft
->>>>>>> .merge_file_Eqfucf
 ---
 # _uuid
 

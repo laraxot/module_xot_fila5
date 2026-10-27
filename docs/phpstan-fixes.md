@@ -4,6 +4,7 @@ type: note
 tags: [phpstan, xot, tests]
 updated: 2026-10-20
 qmd: "phpstan fixes xot wave r3 test guard"
+status: draft
 ---
 
 # Xot Module — PHPStan

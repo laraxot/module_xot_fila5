@@ -1,32 +1,14 @@
-<<<<<<< .merge_file_pxi6GL
-<<<<<<< .merge_file_hdJYYJ
-<<<<<<< .merge_file_hOgbVz
-=======
-=======
->>>>>>> .merge_file_twCKk3
----
-title: "Xot - swarm-phpstan-modular-docs-org.story.md"
-module: Xot
-bmad: true
-status: active
----
-<<<<<<< .merge_file_hdJYYJ
->>>>>>> .merge_file_N5KNxE
-=======
->>>>>>> .merge_file_twCKk3
-=======
 ---
 title: "BMAD Story — Swarm parallel: analisi PHPStan modulare + docs org + wiki/second brain"
 type: story
 module: Xot
 bmad: true
 status: draft
-updated: 2026-10-09
+updated: 2026-10-23
 tags: [docs, xot, bmad]
 qmd: "bmad story   swarm parallel: analisi phpstan modulare + docs org + wiki/second brain xot"
 ---
 
->>>>>>> .merge_file_v9xEu7
 # BMAD Story — Swarm parallel: analisi PHPStan modulare + docs org + wiki/second brain
 
 ## Epic

@@ -13,11 +13,11 @@ track: quality/fleet
 updated: 2026-10-21
 qmd: "phpstan max Modules docs bmad wiki prompts 11-phpstan.md 89 files consolidazione second brain"
 related:
-  - ./phpstan-modules-2026-09-24.story.md
+  - ./phpstan-modules-story-analyse-fix-fleet.story.md
   - ./swarm-phpstan-modular-docs-org.story.md
   - ./phpstan-modules-swarm-random.story.md
   - ./phpstan-modules-zero-wave3.story.md
-  - ../../../../docs/wiki/rules/00-TRIGGER_MAP.md
+  - ../../../../../../docs/wiki/rules/00-TRIGGER_MAP.md
 ---
 # PHPStan + docs + prompts + second brain (2026-10-21)
 

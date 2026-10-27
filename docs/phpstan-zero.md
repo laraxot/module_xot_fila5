@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "phpstan zero 2026 09 07"
 issues: []
 discussions: []
-<<<<<<< .merge_file_LZEckY
-=======
 status: draft
->>>>>>> .merge_file_QnYn4N
 ---
 
 # PHPStan Zero — Xot Module (2026-09-07)

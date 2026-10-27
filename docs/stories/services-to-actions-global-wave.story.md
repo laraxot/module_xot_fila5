@@ -2,7 +2,7 @@
 title: Wave globale Services verso Spatie Queueable Actions
 type: story
 module: Xot
-status: ready-for-dev
+status: done
 priority: high
 created: 2026-10-20
 updated: 2026-10-20
@@ -10,6 +10,7 @@ tags: [bmad, services, queueable-action, planning, filament-blueprint]
 qmd: "services to actions global wave tenant geo xot notify zombies trend translators ratchet delete zero dirs"
 related:
   - ../bmad/brainstorming-services-to-actions-wave.md
+  - ../bmad/planning-services-to-actions-zero-folders.md
   - ../bmad/filament-blueprint.md
   - ../bmad/services-to-queueable-actions-architecture.md
   - ../bmad/services-to-queueable-actions-filament-blueprint.md
@@ -29,7 +30,8 @@ related:
 
 # Wave globale: Services → Queueable Actions
 
-Fase BMAD: **planning sintetizzato** → ready-for-dev (boy scout delete-again se merge).
+Fase BMAD: **done** (maintain + boy scout delete-again se merge).
+Planning: [planning-services-to-actions-zero-folders.md](../bmad/planning-services-to-actions-zero-folders.md).
 Brainstorm: [brainstorming-services-to-actions-wave.md](../bmad/brainstorming-services-to-actions-wave.md).
 Architecture: [services-to-queueable-actions-architecture.md](../bmad/services-to-queueable-actions-architecture.md).
 Filament: [services-to-queueable-actions-filament-blueprint.md](../bmad/services-to-queueable-actions-filament-blueprint.md).
@@ -41,15 +43,16 @@ Un caso d'uso = una Action Spatie con `execute()`. I residui tipici sono **copie
 riesumate dal merge** di Actions gia' esistenti: convertire a tappeto duplica;
 la procedura e' **cerca Action → retarget chiamanti → delete Service → rmdir**.
 
-## Stato misurato (disco vivo, 2026-10-20 pomeriggio)
+## Stato misurato (disco vivo, 2026-10-20 sera)
 
 | Cluster | Stato | Prossimo passo |
 |---------|-------|----------------|
 | Notify / Tenant / Xot / Lang / Media / Job / AI / UI `*Service` applicativi | **GONE** | chiuso |
-| Geo cinque `*Service` | **GONE** (mid-sessione erano riesumati; 0 `use Modules\Geo\Services\`) | delete-again se merge |
+| Geo cinque `*Service` | **GONE** (0 `use Modules\Geo\Services\`) | delete-again se merge |
 | Notify `Services/NotificationManager` | **GONE** | vivo = `Actions\NotificationManager` |
 | Xot `ProfileTest` / Translators / Trend sotto Services | **GONE** | policy delete-again |
-| Cartelle `app/Services` | **0** | mantenere ratchet allowlist `[]` |
+| Cartelle `app/Services` | **0** | ratchet `NoServicesTest` PASS |
+| Actions `Modules/*/app/Actions` | **~770** | n/a |
 | `TermsOfService` Livewire | ritirato W0 REUSE | n/a |
 
 ## Ordine operativo (se riesumazione)
@@ -77,8 +80,9 @@ form/page/widget chiamano Actions, mai Service. Cms Appearance/Breadcrumb = cana
 - [x] Docs/brainstorm/architecture/filament blueprint aggiornati
 - [x] Policy delete-again documentata per Translators/Trend/Geo
 
-## Verifica mid-sessione → chiusura
+## Verifica mid-sessione → chiusura sera
 
 Mid-sessione (~12:40): 8 dirs + 5 Geo PHP. Actions gia' dichiaravano «Sostituisce…».
-`use Modules\Geo\Services\` = 0. Post-cleanup: dirs=0, PHP=0, allowlist vuota.
-PHPStan Modules OK. Boy scout resta aperto su ogni merge.
+`use Modules\Geo\Services\` = 0. Post-cleanup + sera: dirs=0, PHP=0, import prod=0,
+Actions ~770, `NoServicesTest` 3 PASS, PHPStan Modules OK.
+Boy scout resta standing order su ogni merge.

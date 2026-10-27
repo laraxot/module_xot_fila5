@@ -13,17 +13,10 @@ track: quality/fleet
 updated: 2026-09-24
 qmd: "phpstan analyse certify no path type-coverage swarm bmad AuditCoverage"
 related:
-<<<<<<< .merge_file_foCays
-  - ./phpstan-modules-2026-09-24.story.md
-  - ../phpstan-status.md
-  - ../../../../../docs/wiki/memories/merge-remote-repo-2-reinjects-conflict-markers.md
-  - ../../../../../docs/wiki/memories/phpstan-modules-swarm-session.md
-=======
   - ./phpstan-modules.story.md
   - ../phpstan-status.md
   - ../../../../../../docs/wiki/memories/merge-remote-repo-2-reinjects-conflict-markers.md
   - ../../../../../../docs/wiki/memories/phpstan-modules-swarm-session.md
->>>>>>> .merge_file_qGV3ps
 ---
 # phpstan-analyse-no-path-certify
 

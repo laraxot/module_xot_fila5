@@ -1,3 +1,11 @@
+---
+title: "BMAD Story: PHPStan & Pest Analysis Campaign"
+type: note
+status: draft
+updated: 2026-10-22
+tags: [docs, xot, bmad]
+qmd: "bmad story: phpstan & pest analysis campaign xot"
+---
 # BMAD Story: PHPStan & Pest Analysis Campaign
 
 ## Overview

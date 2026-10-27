@@ -25,8 +25,8 @@ uses(TestCase::class);
  * nuovi: `RatingsColumn extends TextColumn`, `HasRatingValuesFilter extends
  * TernaryFilter`, `WorkerTypeFilter extends Filter`. Nessuna delle tre dava errore.
  *
- * Debito storico residuo: mock di test RelationManager (1 file). Wave qualità
- * 2026-10-20: Notify Select/ViewColumn + UI TextColumn migrati a XotBase*.
+ * Debito storico residuo: 0 file (wave 2026-10-22: tutti i componenti
+ * Notify, Blog, Fixcity, UI, Xot mock bonificati a XotBase*).
  * Tetto decrescente: la guardia non pretende zero, impedisce che il numero salga.
  *
  * @see docs/wiki/rules/fundamental-xotbase-rule.md
@@ -54,6 +54,7 @@ function filamentBasesWithXotEquivalent(): array
         'Select' => 'XotBaseSelect',
         'Field' => 'XotBaseField',
         'TextInput' => 'XotBaseTextInput',
+        'Widget' => 'XotBaseWidget',
     ];
 }
 
@@ -115,10 +116,11 @@ function classesExtendingFilamentDirectly(): array
 }
 
 /**
- * Tetto dopo wave qualità Notify+UI XotBase*: **1 file** residuo
- * (TestRelationManager mock). Scende con la bonifica, non sale mai.
+ * Tetto dopo wave qualità Notify+UI XotBase*: **0 file** residuo
+ * Tutte le classi Filament ora si estendono via XotBase.
+ * Non deve salire mai.
  */
-const FILAMENT_DIRECT_EXTENDS_BASELINE = 1;
+const FILAMENT_DIRECT_EXTENDS_BASELINE = 0;
 
 test('nessuna classe nuova estende Filament al posto della sua XotBase', function (): void {
     $offenders = classesExtendingFilamentDirectly();

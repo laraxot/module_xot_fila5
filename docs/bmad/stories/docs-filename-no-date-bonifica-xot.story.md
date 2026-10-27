@@ -41,10 +41,10 @@ gia' incluso in quel conteggio o e' nuovo (creato dopo).
 - `docs/session-2026-09-15-lessons-learned.md`
 - `docs/redundancy-audit-2026-05-21.md`
 - `docs/phpstan-zero-2026-09-07.md`
-- `docs/phpstan-fixes-summary-2025-08-18.md`
-- `docs/phpstan-analysis-2025-08-18.md`
+- `docs/phpstan-fixes-summary-agosto.md`
+- `docs/phpstan-analysis-report-agosto.md`
 - `docs/logging-best-practices-2026-03-02.md`
-- `docs/phpstan-fixes-2025-01-06.md`
+- `docs/phpstan-fixes-correzioni-gennaio.md`
 - `docs/phpstan-analysis-report-2025-11-18.md`
 - `docs/stato-qualita-progetto-2026-08-31.md`
 - `docs/git-push-resolution-2026-07-28.md`
@@ -57,11 +57,11 @@ gia' incluso in quel conteggio o e' nuovo (creato dopo).
 - `docs/quality-gates-analysis-user-module.md`
 - `docs/qa-verification-2026-06-30.md`
 - `docs/refactor-panelmixin-2026-07-07.md`
-- `docs/git-conflicts-resolution-2025-01-06.md`
+- `docs/git-conflicts-resolution.md`
 - `docs/filament/hasxtable-visibility-fix-2026-01-27.md`
 - `docs/historical/hasxtable-visibility-fix-2026-01-27.md` (duplicato del punto sopra — verificare se identico prima di unificare)
 - `docs/consolidated/lessons-learned.md` (duplicato di sopra)
-- `docs/consolidated/git-conflicts-resolution-2025-01-06.md` (duplicato di sopra)
+- `docs/consolidated/git-conflicts-resolution-archive.md` (duplicato di sopra)
 - `docs/wiki/redundancy-audit-2026-05-26.md`
 - `docs/wiki/troubleshooting/git-merge-conflict-inventory-2026-04-28.md`
 - `docs/wiki/quality-analysis/phpstan-2026-05-13.md`

@@ -4,9 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit;
 
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Safe\glob;
+
+uses(TestCase::class);
 
 /**
  * `laravel/Modules/` contiene solo moduli: ogni cartella ha un `module.json`.
