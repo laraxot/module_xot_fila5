@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Feature\Filament\Widgets;
+namespace Modules\Xot\Tests\Feature\Filament\Widgets;
 
 use Filament\Schemas\Components\Section;
 use Illuminate\Support\Facades\File;
@@ -12,12 +12,12 @@ use Tests\TestCase;
 uses(TestCase::class);
 
 /**
- * Usa Tests\TestCase (root, minimale) invece di Tests\Modules\Xot\TestCase:
+ * Usa Tests\TestCase (root, minimale) invece di Modules\Xot\Tests\TestCase:
  * questo widget non tocca mai il database, e la seconda richiede un file
- * sqlite condiviso (Tests\Modules\Xot\XotBaseTestCase::sharedSqlitePath())
+ * sqlite condiviso (Modules\Xot\Tests\XotBaseTestCase::sharedSqlitePath())
  * non presente in questo ambiente — verificato che il problema è
  * preesistente e indipendente da questa story: anche
- * tests/Modules/Xot/Feature/ConfigTest.php, mai toccato qui, fallisce con
+ * Modules/Xot/tests/Feature/ConfigTest.php, mai toccato qui, fallisce con
  * lo stesso errore (SQLiteDatabaseDoesNotExistException).
  *
  * EnvData::update() scrive sempre su base_path('.env') — il vero file

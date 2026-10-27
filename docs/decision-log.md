@@ -3,7 +3,7 @@ type: decision-log
 title: "Decision Log — Xot"
 links: {github_issue: "#XXX", discussion: "#XXX"}
 status: draft
-updated: 2026-10-09
+updated: 2026-10-23
 tags: [docs, xot]
 qmd: "decision log   xot xot"
 ---
@@ -34,5 +34,21 @@ qmd: "decision log   xot xot"
 - **Over**: Contratto del 06/10 così com'era (con tipi nativi), oppure contratto del sotto-repo senza la riscrittura del 06/10.
 - **Because**: Il commit `2dc9faf42` (07/10 13:11, senza genitori, 9633 file) aveva riportato i modelli ad albero alla versione di marzo 2026. La riscrittura del 06/10 (trait Typed, contratto tipizzato) esisteva solo nel monorepo e in commit locali di Xot oggi irraggiungibili (06/10 15:14-18:00). Nel frattempo Cms (`9d61081b`, 06/10 18:48) è passato al trait vendor: con i tipi nativi nel contratto il caricamento di `Cms\Models\Menu` era un errore fatale. Scelta dell'utente: tenere entrambi i lavori; PHPStan legge il `@return`, il trait Typed resta covariante.
 - **Verifica**: `php -l`; i cinque modelli ad albero (Cms, Xot, Limesurvey) si caricano; PHPStan su `Modules` senza errori in Xot; test prima/dopo identici.
+
+<!--
+GateGuard facts:
+1. Supersedes nothing — adds one decision entry for docs spine wave1; does not rewrite prior decisions.
+2. Linked from README.md, INDEX.md, conventions/docs-organization.md, Hindsight page Docs spine Modules e Themes.
+3. Edit existing decision-log.md — not a new file.
+4. User verbatim: "aggiorna studia e migliora e organizza meglio le cartelle docs dentro i moduli e dentro i temi e migliora il tuo second brain"
+-->
+
+### 2026-10-20: Docs spine Modules/Themes (wave1)
+
+- **Choose**: SSoT [conventions/docs-organization.md](conventions/docs-organization.md); `README.md` ingresso; elimina `readme.md` duplicati; Geo kebab canon + stub alias; spine Xot/Geo/Notify/Zero; ingest Hindsight.
+- **Over**: rename massivo UPPERCASE o fusione INDEX/00-INDEX senza mappa link.
+- **Because**: doppi ingressi spezzano retrieval; richiesta utente di organizzare docs moduli/temi e second brain.
+- **Verifica**: 0 coppie `readme.md`+`README.md` sotto `*/docs/`.
+
 ## Open Questions
 

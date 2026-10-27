@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 use App\Application;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\TestCase;
 use Webmozart\Assert\Assert;
 
 uses(TestCase::class)->group('no-xot-db');

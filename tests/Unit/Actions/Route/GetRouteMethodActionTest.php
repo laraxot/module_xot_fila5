@@ -2,7 +2,10 @@
 
 declare(strict_types=1);
 use Modules\Xot\Actions\Route\GetRouteMethodAction;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 test('GetRouteMethodAction restituisce il metodo dichiarato as-is (Arr::wrap non filtra)', function (): void {
     // Nota: il test originale (RouteDynServiceTest) asseriva un filtro dei

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot;
+namespace Modules\Xot\Tests;
 
 use Filament\Infolists\Components\Entry;
 use Filament\Schemas\Components\Component as SchemaComponent;
@@ -87,7 +87,6 @@ final class FilamentSchemaCoverage
 
         foreach (array_keys($schema) as $chiave) {
             Assert::assertNotEmpty($chiave, "chiave numerica in {$context}");
-            Assert::assertNotSame('', $chiave);
         }
     }
 

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Unit\Actions\Arrays;
+namespace Modules\Xot\Tests\Unit\Actions\Arrays;
 
 use Modules\Xot\Actions\Arr\SaveArrayAction;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Safe\glob;

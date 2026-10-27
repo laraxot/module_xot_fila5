@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Fixtures\Stubs;
+namespace Modules\Xot\Tests\Fixtures\Stubs;
 
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 use Modules\Xot\Models\Cache as CacheModel;
@@ -11,9 +11,6 @@ final class XotWidgetFormHost extends XotBaseWidget
 {
     protected string $view = 'xot::filament.widgets.base';
 
-    /**
-     * @return array<int, mixed>
-     */
     public function getFormSchema(): array
     {
         return [];
@@ -22,13 +19,5 @@ final class XotWidgetFormHost extends XotBaseWidget
     public function getFormModel(): string
     {
         return CacheModel::class;
-    }
-
-    /**
-     * @return array<string, mixed>
-     */
-    public function getFormFill(): array
-    {
-        return [];
     }
 }

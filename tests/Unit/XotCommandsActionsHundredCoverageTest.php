@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Unit;
+namespace Modules\Xot\Tests\Unit;
 
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\Filament\GenerateFormByFileAction;
 use Modules\Xot\Actions\Filament\GenerateTableColumnsByFileAction;
 use Modules\Xot\Console\Commands\OptimizeFilamentMemoryCommand;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\TestCase;
 use Symfony\Component\Finder\SplFileInfo;
 
 uses(TestCase::class)->group('no-xot-db');

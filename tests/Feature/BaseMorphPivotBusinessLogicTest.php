@@ -2,11 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Feature;
+namespace Modules\Xot\Tests\Feature;
 
-use Illuminate\Database\Eloquent\Relations\Pivot;
-use Tests\Modules\Xot\Fixtures\Models\TestConcreteMorphPivot;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\Fixtures\Models\TestConcreteMorphPivot;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
@@ -17,7 +16,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
         $pivot = new TestConcreteMorphPivot;
 
         // Assert
-        Assert::assertInstanceOf(Pivot::class, $pivot);
+        Assert::assertSame('test_morph_pivot', $pivot->getTable());
     });
 
     test('it can manage morph type', function (): void {

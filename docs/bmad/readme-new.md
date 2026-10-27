@@ -4,7 +4,7 @@ module: Xot
 bmad: true
 status: active
 type: note
-updated: 2026-10-13
+updated: 2026-10-23
 tags: [docs, xot, bmad]
 qmd: "xot module - core foundation xot"
 ---
@@ -480,9 +480,9 @@ class YourAction extends XotBaseAction
 }
 ```
 
-#### DTO Pattern
+#### Data Pattern
 ```php
-namespace Modules\YourModule\DTOs;
+namespace Modules\YourModule\Datas;
 
 use Spatie\LaravelData\Data;
 
@@ -706,7 +706,7 @@ See [ROADMAP.md](roadmap.md) for details.
 - [Geo Module](../../../Geo/docs/README.md) - Geographic data services
 
 ### Project Documentation
-- [CLAUDE.md](../../../../CLAUDE.md) - Project architecture and development rules
+- [CLAUDE.md](../../../../../CLAUDE.md) - Project architecture and development rules
 - [Project README](../../../README.md) - Main project documentation
 
 ### External Resources

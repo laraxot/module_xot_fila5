@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Feature;
+namespace Modules\Xot\Tests\Feature;
 
 use Illuminate\Database\QueryException;
 use Modules\Xot\Database\Factories\ModuleFactory;
 use Modules\Xot\Models\Module;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
@@ -98,7 +98,6 @@ describe('Module Business Logic', function (): void {
             ]);
             Assert::fail('Expected QueryException was not thrown');
         } catch (QueryException $e) {
-            Assert::assertInstanceOf(QueryException::class, $e);
         }
     });
 
@@ -318,7 +317,6 @@ describe('Module Business Logic', function (): void {
                 Module::create($moduleData);
                 Assert::fail("Expected QueryException for missing field: $field");
             } catch (QueryException $e) {
-                Assert::assertInstanceOf(QueryException::class, $e);
             }
         }
     });

@@ -17,13 +17,16 @@ use Filament\Support\Facades\FilamentColor;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\BaseFilter;
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Events\MigrationsEnded;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\View;
+use Illuminate\Support\Str;
 use Modules\Xot\Actions\Composer\RegisterRuntimePsr4NamespacesAction;
+use Modules\Xot\Actions\Factory\GetFactoryAction;
 use Modules\Xot\Actions\PaDesignColorsAction;
 use Modules\Xot\Console\Commands\GenerateFilamentResources;
 use Modules\Xot\Datas\XotData;
@@ -72,6 +75,7 @@ class XotServiceProvider extends XotBaseServiceProvider
         // $this->extendExceptionHandler();
         $this->registerCommands();
         $this->registerExportJobs();
+        $this->registerFactoryNameResolver();
     }
 
     /**
@@ -83,6 +87,32 @@ class XotServiceProvider extends XotBaseServiceProvider
     private function registerExportJobs(): void
     {
         $this->app->bind(CreateXlsxFile::class, XotCreateXlsxFile::class);
+    }
+
+    /**
+     * `Model::factory()` risolve la factory con `GetFactoryAction` (`Modules\<M>\Models\X` ->
+     * `Modules\<M>\Database\Factories\XFactory`), ma `Factory::factoryForModel()` (relazioni magiche
+     * `has*`/`for*`) e Larastan usano il resolver di Laravel, che per i modelli dei moduli punta a
+     * `Database\Factories\XFactory`, classe inesistente. Un solo resolver allinea runtime e analisi statica:
+     * `Team::factory()->create()` e' `Team`, non `mixed`. Fuori da `Modules\` vale la convenzione Laravel.
+     */
+    private function registerFactoryNameResolver(): void
+    {
+        Factory::guessFactoryNamesUsing(static function (string $modelName): string {
+            if (str_starts_with($modelName, 'Modules\\')) {
+                $factoryClass = (new GetFactoryAction)->getFactoryClass($modelName);
+            } else {
+                $modelsNamespace = app()->getNamespace().'Models\\';
+                $relativeName = Str::startsWith($modelName, $modelsNamespace)
+                    ? Str::after($modelName, $modelsNamespace)
+                    : Str::after($modelName, app()->getNamespace());
+                $factoryClass = Factory::$namespace.$relativeName.'Factory';
+            }
+
+            // Factory inesistente: `Factory::class` (astratta) al posto di una classe fantasma, cosi' il
+            // tipo resta `class-string<Factory>`; chi la usa fallisce comunque ("Cannot instantiate abstract").
+            return is_a($factoryClass, Factory::class, true) ? $factoryClass : Factory::class;
+        });
     }
 
     public function registerProviders(): void

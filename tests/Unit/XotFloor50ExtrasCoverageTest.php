@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Unit;
+namespace Modules\Xot\Tests\Unit;
 
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Http;
@@ -10,9 +10,9 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Process;
 use Illuminate\Support\Facades\Queue;
 use Mockery;
-use Tests\Modules\Xot\ModuleDeepCoverage;
-use Tests\Modules\Xot\ModuleExecuteCoverage;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\ModuleDeepCoverage;
+use Modules\Xot\Tests\ModuleExecuteCoverage;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class)->group('no-xot-db');

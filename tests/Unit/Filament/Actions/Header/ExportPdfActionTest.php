@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Unit\Filament\Actions\Header;
+namespace Modules\Xot\Tests\Unit\Filament\Actions\Header;
 
 use Modules\Xot\Filament\Actions\Header\ExportPdfAction;
 use Modules\Xot\Filament\Actions\XotBaseAction;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);

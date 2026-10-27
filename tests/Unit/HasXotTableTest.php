@@ -3,10 +3,10 @@
 declare(strict_types=1);
 use Filament\Tables\Table;
 use Mockery\MockInterface;
-use Tests\Modules\Xot\TestCase;
-use Tests\Modules\Xot\Unit\Support\DummyTestModel;
-use Tests\Modules\Xot\Unit\Support\HasTableWithoutOptionalMethodsTestClass;
-use Tests\Modules\Xot\Unit\Support\HasTableWithXotTestClass;
+use Modules\Xot\Tests\TestCase;
+use Modules\Xot\Tests\Unit\Support\DummyTestModel;
+use Modules\Xot\Tests\Unit\Support\HasTableWithoutOptionalMethodsTestClass;
+use Modules\Xot\Tests\Unit\Support\HasTableWithXotTestClass;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);

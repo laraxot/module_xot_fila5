@@ -3,7 +3,7 @@
 declare(strict_types=1);
 use Filament\Tables\Columns\Column;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
-use Tests\Modules\Xot\Unit\Support\DummyTestModel;
+use Modules\Xot\Tests\Unit\Support\DummyTestModel;
 use PHPUnit\Framework\Assert;
 use PHPUnit\Framework\TestCase;
 

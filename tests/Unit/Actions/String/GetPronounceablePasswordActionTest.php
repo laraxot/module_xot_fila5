@@ -2,7 +2,10 @@
 
 declare(strict_types=1);
 use Modules\Xot\Actions\String\GetPronounceablePasswordAction;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 it('rispetta la lunghezza richiesta e le categorie di caratteri', function (int $length): void {
     $password = (new GetPronounceablePasswordAction)->execute($length);

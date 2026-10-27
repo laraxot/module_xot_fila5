@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Unit\Exports;
+namespace Modules\Xot\Tests\Unit\Exports;
 
 use Modules\Xot\Actions\Export\GetExportFileNameAction;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);

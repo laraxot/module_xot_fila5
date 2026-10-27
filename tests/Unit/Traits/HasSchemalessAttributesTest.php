@@ -3,8 +3,8 @@
 declare(strict_types=1);
 use Illuminate\Database\Eloquent\Builder;
 use Mockery\MockInterface;
-use Tests\Modules\Xot\Fixtures\Models\SchemalessTestModel;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\Fixtures\Models\SchemalessTestModel;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\SchemalessAttributes\SchemalessAttributes;
 

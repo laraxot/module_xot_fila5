@@ -2,9 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Unit\Exports;
+namespace Modules\Xot\Tests\Unit\Exports;
 
 use Modules\Xot\Filament\Actions\XotBaseExportAction;
 
-/** Concrete di XotBaseExportAction. SSoT: tests/Unit/Exports/ — non Tests/Fixtures/. */
+/**
+ * Action concreta di test: `setUp()` di XotBaseExportAction fissa il job.
+ */
 class ExportActionStub extends XotBaseExportAction {}

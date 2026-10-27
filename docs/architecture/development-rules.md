@@ -7,7 +7,8 @@ updated: 2026-09-26
 qmd: "development rules"
 issues: []
 discussions: []
-status: draft
+status: superseded
+superseded_by: ../consolidated/development-rules.md
 ---
 
 # Regole Generali di Sviluppo del Progetto
@@ -435,4 +436,13 @@ TextInput::make('name')
 - [ ] Ho aggiornato le regole per evitare errori futuri?
 
 ---
+
+title: "development rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "development rules"
+issues: []
+discussions: []
 **Nota**: Queste regole sono fondamentali per mantenere la qualità e la consistenza del progetto. Devono essere sempre seguite e aggiornate quando necessario.

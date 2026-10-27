@@ -58,3 +58,26 @@ Escluse (al limite, conformi): IndennitaCondizioniLavoro 100, Job 100, UI 100.
 
 - Flapping fleet (resurrezioni da snapshot): verifica finale dei conteggi dall'orchestratore.
 - `qmd` lento (timeout 120s il 2026-10-05): un solo `qmd update` finale con timeout, skip documentato se fallisce.
+
+## Misura del 2026-10-22 (worklog del giorno, prompt 98, Passo 7)
+
+Misura in sola lettura (`docs-organizer.py audit --out`), nessuna correzione: le story di consolidamento docs sono aperte. Moduli con commit il 2026-10-22.
+
+| Modulo | md | link | rotti | collisioni maiuscole | nomi con data | doppioni | stub |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| AI | 266 | 257 | 18 | 23 | 0 | 12 | 61 |
+| Activity | 812 | 697 | 187 | 0 | 4 | 6 | 154 |
+| Cms | 983 | 1355 | 465 | 31 | 0 | 25 | 202 |
+| Gdpr | 430 | 245 | 10 | 14 | 0 | 32 | 172 |
+| Geo | 2102 | 382 | 128 | 80 | 12 | 185 | 357 |
+| Job | 527 | 116 | 42 | 0 | 3 | 8 | 200 |
+| Lang | 1023 | 461 | 104 | 96 | 2 | 11 | 68 |
+| Media | 582 | 462 | 127 | 45 | 2 | 14 | 102 |
+| Notify | 3889 | 1055 | 426 | 602 | 14 | 41 | 129 |
+| Quaeris | 208 | 85 | 14 | 0 | 12 | 0 | 1 |
+| UI | 443 | 132 | 98 | 0 | 0 | 0 | 290 |
+| User | 2641 | 6704 | 3297 | 97 | 13 | 29 | 174 |
+| Xot | 1618 | 637 | 346 | 13 | 1 | 10 | 1002 |
+| **Totale** | 15524 | 12588 | 5262 | 1001 | 63 | 373 | 2912 |
+
+Lo stesso giorno, in Notify, i 719 link riscritti verso i nomi senza data (commit `42f1b0d010`) erano validi 47 prima e 55 dopo le rinomine: il resto puntava gia' a file inesistenti. Dettaglio in `docs/worklog/2026/10/22/`.

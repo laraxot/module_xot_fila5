@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Unit\Exports;
+namespace Modules\Xot\Tests\Unit\Exports;
 
 use Filament\Actions\Exports\ExportColumn;
 use Filament\Actions\Exports\Jobs\CreateXlsxFile;
@@ -16,7 +16,7 @@ use Modules\Xot\Exports\Jobs\XotCreateXlsxFile;
 use Modules\Xot\Exports\Jobs\XotExportCsv;
 use Modules\Xot\Exports\Jobs\XotPrepareCsvExport;
 use Modules\Xot\Exports\XotBaseExporter;
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\TestCase;
 use OpenSpout\Common\Entity\Cell\EmptyCell;
 use OpenSpout\Common\Entity\Cell\FormulaCell;
 use OpenSpout\Common\Entity\Cell\NumericCell;
@@ -49,7 +49,6 @@ describe('XotBaseExporter — colonne da getXlsFields del Resource', function ()
         $model = new ExporterEagerLoadModelStub;
 
         $query = $model->newQuery();
-        /** @var array<string, mixed> $eager */
         $eager = XotBaseExporterStub::modifyQuery($query)->getEagerLoads();
 
         Assert::assertArrayHasKey('ratings', $eager);

@@ -8,8 +8,8 @@ updated: 2026-10-08
 module: Xot
 tags: [phpstan, xot, tests, pest, swarm, coverage-sweep, variable-unused]
 related:
-  - ./phpstan-cleanup-xot-app.story.md
-  - ./phpstan-xot-app-regressions.story.md
+  - ./2026-10-06-phpstan-cleanup-xot-app.story.md
+  - ./2026-10-08-phpstan-xot-app-regressions.story.md
 ---
 
 # [STORY] PHPStan Xot/tests: test senza asserzioni

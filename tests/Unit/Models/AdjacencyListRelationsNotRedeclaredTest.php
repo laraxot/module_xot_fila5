@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Xot\Unit\Models;
+namespace Modules\Xot\Tests\Unit\Models;
 
-use Tests\Modules\Xot\TestCase;
+use Modules\Xot\Tests\TestCase;
 
 use function Safe\file_get_contents;
 use function Safe\glob;
