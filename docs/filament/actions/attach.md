@@ -1,12 +1,13 @@
 ---
 title: "attach"
 type: note
-status: unverified
 created: 2026-09-24
 updated: 2026-10-20
 module: Xot
 tags: [xot, filament]
 qmd: "attach"
+status: superseded
+superseded_by: ../../consolidated/archive/attach.md
 ---
 ```php
 AttachAction::make()->modifyRecordSelectUsing(

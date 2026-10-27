@@ -58,7 +58,7 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 3. **MAI utilizzare percorsi che non tengono conto della posizione relativa del file sorgente**:
    ```markdown
    [ERRATO](Modules/Xot/docs/README.md) <!-- Da un file nella root -->
-   [ERRATO](../Xot/docs/README.md) <!-- Da un file in un modulo, senza contare correttamente i livelli -->
+   [ERRATO](README.md) <!-- Da un file in un modulo, senza contare correttamente i livelli -->
    ```
 
 ## Come Calcolare Correttamente i Percorsi Relativi

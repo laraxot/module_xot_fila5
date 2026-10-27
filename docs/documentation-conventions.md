@@ -110,8 +110,8 @@ Utilizzare script nella cartella `bashscripts` per automatizzare le verifiche e 
 
 ## Collegamenti a documentazione correlata
 
-- [Documentazione generale](../../../docs/documentation_rules.md)
-- [Convenzioni di naming in generale](../../../docs/naming_conventions.md)
+- [Documentazione generale](documentation_rules.md)
+- [Convenzioni di naming in generale](../../../../docs/naming_conventions.md)
 - [Regole per ServiceProvider](../../IndennitaCondizioniLavoro/docs/service_provider.md)
 - [Regole per file di traduzione](../../../.cursor/rules/translation_files_rules.mdc)
 

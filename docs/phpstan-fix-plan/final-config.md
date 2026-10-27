@@ -10,6 +10,7 @@ related:
   - ../bmad/phpstan-status.md
   - ../../../../../bashscripts/docs/prompts/11-phpstan.md
   - ../bmad/livewire-to-filament-widgets-filament-blueprint.md
+tags: [docs, xot, phpstan-fix-plan]
 ---
 
 <!--

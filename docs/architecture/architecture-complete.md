@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "architecture complete"
 issues: []
 discussions: []
-<<<<<<< .merge_file_NDHQOZ
-=======
 status: draft
->>>>>>> .merge_file_yRl8XI
 ---
 
 # Xot Module - Complete Architecture Guide (2025)
@@ -29,18 +26,6 @@ status: draft
 6. [Best Practices](#best-practices)
 
 ---
-<<<<<<< .merge_file_NDHQOZ
-
-title: "architecture complete"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "architecture complete"
-issues: []
-discussions: []
-=======
->>>>>>> .merge_file_yRl8XI
 ## Module Overview
 
 ### Primary Purpose

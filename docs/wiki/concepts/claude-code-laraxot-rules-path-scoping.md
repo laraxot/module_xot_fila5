@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "claude code laraxot rules path scoping"
 issues: []
 discussions: []
-<<<<<<< .merge_file_dhJ2PX
-=======
 status: draft
->>>>>>> .merge_file_xoRYDi
 ---
 
 # Claude Code Laraxot Rules Path Scoping

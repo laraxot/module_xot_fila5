@@ -1,18 +1,9 @@
-<<<<<<< .merge_file_zeiFsW
-<<<<<<< .merge_file_wn7Xfs
-=======
-=======
->>>>>>> .merge_file_CNQvnN
 ---
 title: "Xot - legacy-readme-consolidation-plan.md"
 module: Xot
 bmad: true
 status: active
 ---
-<<<<<<< .merge_file_zeiFsW
->>>>>>> .merge_file_Kc3Osg
-=======
->>>>>>> .merge_file_CNQvnN
 # Piano Consolidamento File readme.md Duplicati
 
 **Data**: 2026-01-09  

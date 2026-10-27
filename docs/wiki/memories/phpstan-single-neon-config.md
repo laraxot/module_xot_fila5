@@ -12,6 +12,7 @@ related:
   - ../../bmad/phpstan-status.md
   - ../../phpstan-fix-plan/final-config.md
   - ../../../../../../bashscripts/docs/prompts/11-phpstan.md
+tags: [docs, xot, wiki]
 ---
 
 <!--

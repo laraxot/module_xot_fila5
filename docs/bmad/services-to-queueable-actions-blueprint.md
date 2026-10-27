@@ -10,6 +10,7 @@ related:
   - ./services-to-queueable-actions-objective.md
   - ../development/queueable-actions.md
   - ./filament-blueprint.md
+qmd: "blueprint operativo xot"
 ---
 
 # Blueprint operativo

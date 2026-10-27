@@ -3,6 +3,11 @@ title: Configurazione Modulo
 description: Configurazione Modulo
 extends: _layouts.documentation
 section: content
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, activity]
+qmd: "configurazione modulo {#configurazione modulo} xot"
 ---
 
 # Configurazione Modulo {#configurazione modulo}

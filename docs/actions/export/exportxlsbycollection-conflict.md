@@ -1,12 +1,13 @@
 ---
 title: "Risoluzione Conflitto in ExportXlsByCollection"
 type: note
-status: unverified
 created: 2026-09-24
 updated: 2026-10-20
 module: Xot
 tags: [xot, actions]
 qmd: "Risoluzione Conflitto in ExportXlsByCollection"
+status: superseded
+superseded_by: ../../consolidated/archive/exportxlsbycollection-conflict.md
 ---
 # Risoluzione Conflitto in ExportXlsByCollection
 

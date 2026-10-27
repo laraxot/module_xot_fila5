@@ -10,6 +10,7 @@ related:
   - ../bmad/brainstorming-services-to-actions-wave.md
   - ../stories/services-to-actions-global-wave.story.md
   - ../decision-log.md
+qmd: "decisione bmad   xot: action conversion (framework base) xot"
 ---
 
 # Decisione BMAD — Xot: Action conversion (framework base)

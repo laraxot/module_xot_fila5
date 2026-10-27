@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "continuous integration tools 2"
 related:
   - "./eloquent-magic-properties-rule.md"
-<<<<<<< .merge_file_rULy6A
-=======
 status: draft
->>>>>>> .merge_file_7BudfY
 ---
 # continuous_integration_tools
 

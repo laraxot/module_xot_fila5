@@ -11,6 +11,8 @@ related:
   - ./livewire-to-filament-widgets-brainstorming.md
   - ./filament-blueprint.md
   - ./stories/livewire-to-filament-widgets-fleet.story.md
+tags: [docs, xot, bmad]
+qmd: "blueprint filament xot"
 ---
 
 # Blueprint Filament

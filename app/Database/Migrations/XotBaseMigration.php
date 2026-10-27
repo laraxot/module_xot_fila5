@@ -353,37 +353,38 @@ abstract class XotBaseMigration extends LaravelMigration
         $xot = XotData::make();
         $userClass = $xot->getUserClass();
 
-        // Check and add each timestamp column only if it doesn't exist
-        if (! $this->hasColumn('created_at')) {
+        // Listing fresca: evita "Duplicate column" quando RefreshDatabase / migrate
+        // in-process lasciano la cache Schema fuori sync rispetto a information_schema.
+        $columns = array_map(
+            static fn (mixed $name): string => is_string($name) ? strtolower($name) : '',
+            $this->getConn()->getColumnListing($this->getTable()),
+        );
+
+        if (! in_array('created_at', $columns, true)) {
             $table->timestamp('created_at')->nullable();
         }
 
-        if (! $this->hasColumn('updated_at')) {
+        if (! in_array('updated_at', $columns, true)) {
             $table->timestamp('updated_at')->nullable();
         }
 
-        // Check and add foreign key columns only if they don't exist
-        if (! $this->hasColumn('updated_by')) {
+        if (! in_array('updated_by', $columns, true)) {
             $table->foreignIdFor($userClass, 'updated_by')->nullable();
         }
 
-        if (! $this->hasColumn('created_by')) {
+        if (! in_array('created_by', $columns, true)) {
             $table->foreignIdFor($userClass, 'created_by')->nullable();
         }
 
-        // Handle soft deletes
         if ($hasSoftDeletes) {
-            if (! $this->hasColumn('deleted_at')) {
+            if (! in_array('deleted_at', $columns, true)) {
                 $table->softDeletes();
             }
-            if (! $this->hasColumn('deleted_by')) {
+            if (! in_array('deleted_by', $columns, true)) {
                 $table->foreignIdFor($userClass, 'deleted_by')->nullable();
             }
-        } else {
-            // If soft deletes are not requested but deleted_at exists, add deleted_by
-            if ($this->hasColumn('deleted_at') && ! $this->hasColumn('deleted_by')) {
-                $table->foreignIdFor($userClass, 'deleted_by')->nullable();
-            }
+        } elseif (in_array('deleted_at', $columns, true) && ! in_array('deleted_by', $columns, true)) {
+            $table->foreignIdFor($userClass, 'deleted_by')->nullable();
         }
     }
 

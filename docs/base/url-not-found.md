@@ -5,6 +5,10 @@ extends: _layouts.documentation
 section: content
 status: superseded
 superseded_by: ../errors/url-not-found.md
+type: note
+updated: 2026-10-20
+tags: [docs, xot, base]
+qmd: "url not found {#url-not-found} xot"
 ---
 
 # Url Not Found {#url-not-found}

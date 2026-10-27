@@ -2,6 +2,10 @@
 title: legacy snapshot (ex readme.md)
 status: archive
 canonical: README.md
+type: note
+updated: 2026-10-20
+tags: [docs, xot, wiki]
+qmd: "best practices xot"
 ---
 
 > Snapshot recuperato da git dopo unificazione `readme.md` verso `README.md`.
