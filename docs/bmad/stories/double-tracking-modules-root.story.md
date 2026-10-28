@@ -1,4 +1,9 @@
 ---
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+issues: []
+discussions: []
 title: "Story — doppio tracking laravel/Modules: repo root + submoduli"
 type: story
 module: Xot
@@ -9,7 +14,7 @@ track: quality/fleet
 qmd: "doppio tracking git root laravel/Modules submoduli gitmodules.ini commit duplicati policy"
 related:
   - ../../../docs/bmad/stories/git-status-fleet-sync.story.md
-  - ../../../../../bashscripts/docs/prompts/03-quality-gates.md
+  - ../../../../../../bashscripts/docs/prompts/03-quality-gates.md
 ---
 
 # double-tracking-modules-root

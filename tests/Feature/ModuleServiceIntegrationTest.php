@@ -24,17 +24,18 @@ describe('GetAllModelsByModuleNameAction Integration', function () {
     });
 
     it('returns models from existing modules', function () {
-        $models = app(GetAllModelsByModuleNameAction::class)->execute('Chart');
+        // Il modulo Chart non esiste in questo repo: si usa un modulo presente con app/Models.
+        $models = app(GetAllModelsByModuleNameAction::class)->execute('User');
 
-        $hasChartModel = false;
+        $hasUserModel = false;
         foreach ($models as $modelClass) {
-            if (str_contains($modelClass, 'Chart\\Models\\Chart')) {
-                $hasChartModel = true;
+            if (str_contains($modelClass, 'User\\Models\\User')) {
+                $hasUserModel = true;
                 break;
             }
         }
 
-        Assert::assertTrue($hasChartModel);
+        Assert::assertTrue($hasUserModel);
     });
 
     it('handles User module models correctly', function () {
@@ -103,10 +104,11 @@ describe('GetAllModelsByModuleNameAction Integration', function () {
     });
 
     it('handles namespace construction correctly', function () {
-        $models = app(GetAllModelsByModuleNameAction::class)->execute('Chart');
+        $models = app(GetAllModelsByModuleNameAction::class)->execute('User');
 
+        Assert::assertNotEmpty($models);
         foreach ($models as $modelClass) {
-            Assert::assertStringContainsString('Modules\\Chart\\', $modelClass);
+            Assert::assertStringContainsString('Modules\\User\\', $modelClass);
         }
     });
 

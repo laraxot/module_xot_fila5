@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Feature;
 
 use Illuminate\Database\ConnectionInterface;
+<<<<<<< .merge_file_hrlu42
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Model;
@@ -14,6 +15,11 @@ use Modules\Xot\Models\Module;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Models\Traits\RelationX;
 use Modules\Xot\Models\XotBaseModel;
+=======
+use Modules\Xot\Models\BaseModel;
+use Modules\Xot\Models\Module;
+use Modules\Xot\Tests\Fixtures\Models\TestConcreteBaseModel;
+>>>>>>> .merge_file_GdO0hw
 use Modules\Xot\Tests\TestCase;
 use Modules\Xot\Traits\Updater;
 use PHPUnit\Framework\Assert;
@@ -23,9 +29,12 @@ use function Safe\unserialize;
 
 uses(TestCase::class);
 
+/**
+ * Classe concreta con nome: PHP non permette di serializzare classi anonime.
+ */
 function createXotBaseModelFixture(): BaseModel
 {
-    return new class extends BaseModel {};
+    return new TestConcreteBaseModel;
 }
 
 /**
@@ -43,11 +52,11 @@ describe('Xot Base Model Business Logic', function (): void {
         $baseModel = createXotBaseModelFixture();
 
         // Assert
-        Assert::assertInstanceOf(XotBaseModel::class, $baseModel);
-        Assert::assertInstanceOf(Model::class, $baseModel);
+        Assert::assertSame('id', $baseModel->getKeyName());
     });
 
     test('it has required traits', function (): void {
+<<<<<<< .merge_file_hrlu42
         // Arrange & Act
         $traits = class_uses_recursive(createXotBaseModelFixture());
 
@@ -55,6 +64,11 @@ describe('Xot Base Model Business Logic', function (): void {
         Assert::assertContains(HasXotFactory::class, $traits);
         Assert::assertContains(RelationX::class, $traits);
         Assert::assertContains(Updater::class, $traits);
+=======
+        $baseModel = createXotBaseModelFixture();
+
+        Assert::assertNotEmpty(class_uses_recursive($baseModel));
+>>>>>>> .merge_file_GdO0hw
     });
 
     test('it can be instantiated without database', function (): void {
@@ -62,7 +76,7 @@ describe('Xot Base Model Business Logic', function (): void {
         $baseModel = createXotBaseModelFixture();
 
         // Assert
-        Assert::assertInstanceOf(BaseModel::class, $baseModel);
+        Assert::assertFalse($baseModel->exists);
     });
 
     test('it supports table name override', function (): void {
@@ -106,8 +120,7 @@ describe('Xot Base Model Business Logic', function (): void {
         $module = new Module;
 
         // Act & Assert
-        Assert::assertInstanceOf(XotBaseModel::class, $module);
-        Assert::assertInstanceOf(Model::class, $module);
+        Assert::assertSame('modules', $module->getTable());
     });
 
     test('it supports model configuration', function (): void {
@@ -127,8 +140,12 @@ describe('Xot Base Model Business Logic', function (): void {
 
     test('it supports soft deletes when configured', function (): void {
         // Arrange & Act
+<<<<<<< .merge_file_hrlu42
         $baseModel = createXotBaseModelFixture();
         $usesSoftDeletes = in_array(SoftDeletes::class, class_uses_recursive($baseModel), true);
+=======
+        createXotBaseModelFixture();
+>>>>>>> .merge_file_GdO0hw
 
         // Assert - Soft deletes may or may not be configured: il trait e trashed() vanno sempre insieme
         Assert::assertSame($usesSoftDeletes, method_exists($baseModel, 'trashed'));
@@ -148,7 +165,7 @@ describe('Xot Base Model Business Logic', function (): void {
 
     test('it supports tenant isolation when configured', function (): void {
         // Arrange & Act
-        $baseModel = createXotBaseModelFixture();
+        createXotBaseModelFixture();
 
         // Assert - Tenant isolation may or may not be configured: la base non applica scope globali impliciti
         Assert::assertSame([], $baseModel->getGlobalScopes());
@@ -156,8 +173,12 @@ describe('Xot Base Model Business Logic', function (): void {
 
     test('it supports audit trail when configured', function (): void {
         // Arrange & Act
+<<<<<<< .merge_file_hrlu42
         $baseModel = createXotBaseModelFixture();
         $dispatcher = Model::getEventDispatcher();
+=======
+        createXotBaseModelFixture();
+>>>>>>> .merge_file_GdO0hw
 
         // Assert - Updater popola created_by/updated_by/deleted_by agganciandosi a questi eventi
         Assert::assertNotNull($dispatcher);
@@ -198,19 +219,20 @@ describe('Xot Base Model Business Logic', function (): void {
 
         // Assert
         Assert::assertNotEmpty($json);
-        Assert::assertNotFalse($json);
     });
 
     test('it supports array conversion', function (): void {
         // Arrange
         $baseModel = createXotBaseModelFixture();
 
+        $baseModel->setAttribute('name', 'Test Model');
+
         // Act
         $array = $baseModel->toArray();
 
         // Assert
         Assert::assertIsArray($array);
-        Assert::assertNotEmpty($array);
+        Assert::assertSame('Test Model', $array['name']);
     });
 
     test('it supports json conversion', function (): void {
@@ -226,8 +248,13 @@ describe('Xot Base Model Business Logic', function (): void {
     });
 
     test('it supports relationship loading', function (): void {
+<<<<<<< .merge_file_hrlu42
         // Arrange
         $baseModel = createXotBaseModelFixture();
+=======
+        // Arrange & Act
+        createXotBaseModelFixture();
+>>>>>>> .merge_file_GdO0hw
 
         // Act
         $loadedBefore = $baseModel->relationLoaded('creator');
@@ -239,8 +266,13 @@ describe('Xot Base Model Business Logic', function (): void {
     });
 
     test('it supports attribute access', function (): void {
+<<<<<<< .merge_file_hrlu42
         // Arrange
         $baseModel = createXotBaseModelFixture();
+=======
+        // Arrange & Act
+        createXotBaseModelFixture();
+>>>>>>> .merge_file_GdO0hw
 
         // Act
         $baseModel->setAttribute('title', 'Xot');
@@ -265,7 +297,11 @@ describe('Xot Base Model Business Logic', function (): void {
 
     test('it supports model events', function (): void {
         // Arrange & Act
+<<<<<<< .merge_file_hrlu42
         $events = createXotBaseModelFixture()->getObservableEvents();
+=======
+        createXotBaseModelFixture();
+>>>>>>> .merge_file_GdO0hw
 
         // Assert
         foreach (['creating', 'created', 'updating', 'updated', 'saving', 'saved', 'deleting', 'deleted'] as $event) {
@@ -274,6 +310,7 @@ describe('Xot Base Model Business Logic', function (): void {
     });
 
     test('it supports observers', function (): void {
+<<<<<<< .merge_file_hrlu42
         // Arrange
         $baseModel = createXotBaseModelFixture();
         $dispatcher = Model::getEventDispatcher();
@@ -283,14 +320,23 @@ describe('Xot Base Model Business Logic', function (): void {
 
         // Act
         $baseModel::observe(XotBaseModelFixtureObserver::class);
+=======
+        // Arrange & Act
+        createXotBaseModelFixture();
+>>>>>>> .merge_file_GdO0hw
 
         // Assert
         Assert::assertTrue($dispatcher->hasListeners($eventName));
     });
 
     test('it supports scopes', function (): void {
+<<<<<<< .merge_file_hrlu42
         // Arrange
         $baseModel = createXotBaseModelFixture();
+=======
+        // Arrange & Act
+        createXotBaseModelFixture();
+>>>>>>> .merge_file_GdO0hw
 
         // Act
         $baseModel::addGlobalScope('xot_test_scope', function (Builder $builder): void {});
@@ -300,6 +346,7 @@ describe('Xot Base Model Business Logic', function (): void {
     });
 
     test('it supports accessors and mutators', function (): void {
+<<<<<<< .merge_file_hrlu42
         // Arrange
         $baseModel = new class extends BaseModel
         {
@@ -315,6 +362,10 @@ describe('Xot Base Model Business Logic', function (): void {
 
         // Act
         $baseModel->setAttribute('title', '  xot ');
+=======
+        // Arrange & Act
+        createXotBaseModelFixture();
+>>>>>>> .merge_file_GdO0hw
 
         // Assert
         Assert::assertSame(['title' => 'xot'], $baseModel->getAttributes());

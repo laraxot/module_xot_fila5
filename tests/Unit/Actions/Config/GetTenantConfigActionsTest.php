@@ -22,7 +22,7 @@ describe('Get Tenant Config Actions', function (): void {
         $tempPath = tempnam(sys_get_temp_dir(), 'test_config_').'.php';
         $configData = ['key' => 'value'];
 
-        File::put($tempPath, 'return '.var_export($configData, true).';');
+        File::put($tempPath, "<?php\nreturn ".var_export($configData, true).";\n");
 
         /** @var GetTenantFilePathAction&MockInterface $mock */
         $mock = Mockery::mock(GetTenantFilePathAction::class);

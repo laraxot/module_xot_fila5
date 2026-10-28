@@ -1,9 +1,22 @@
 ---
+<<<<<<< .merge_file_JPuNAF
 title: "Xot - docs-consolidation-orphan-files.story.md"
 module: Xot
 bmad: true
 status: active
 ---
+=======
+title: "Docs consolidation — orphan files + structure normalization — 2026-10-06"
+type: story
+module: Xot
+bmad: true
+status: in-progress
+updated: 2026-10-23
+tags: [docs, xot, bmad]
+qmd: "docs consolidation   orphan files + structure normalization   2026-10-06 xot"
+---
+
+>>>>>>> .merge_file_yhvDfW
 # Docs consolidation — orphan files + structure normalization — 2026-10-06
 
 ## Epic

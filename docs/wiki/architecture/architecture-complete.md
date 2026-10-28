@@ -1,9 +1,13 @@
 ---
+qmd: "architecture complete"
+issues: []
+discussions: []
 title: "Architecture Complete"
 type: reference
 tags: [wiki, no-frontmatter-fix]
 created: 2026-08-24
 updated: 2026-08-24
+status: draft
 ---
 
 # Xot Module - Complete Architecture Guide (2025)
@@ -150,15 +154,11 @@ All Filament resources extend this base class:
 
 **Required Methods:**
 ```php
-<<<<<<< HEAD
 abstract public function getFormSchema(): array;
-=======
-<<<<<<< HEAD
 abstract public function getFormSchema(): array;
-=======
 abstract public function getFormSchema(): array;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
+---
+abstract public function getFormSchema(): array;
 abstract public static function getTableColumns(): array;
 // Optional: getInfolistSchema(), getRelations(), getPages()
 ```
@@ -596,15 +596,11 @@ class MyResource extends XotBaseResource
 {
     protected static ?string $model = MyModel::class;
 
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
+---
+    public function getFormSchema(): array
     {
         return [
             TextInput::make('field1')->required(),
@@ -681,15 +677,11 @@ class ArticleResource extends XotBaseResource
 {
     protected static ?string $model = Article::class;
 
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
+---
+    public function getFormSchema(): array
     {
         return [
             TextInput::make('title')

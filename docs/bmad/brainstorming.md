@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_Xj829y
 ---
 title: "Xot - brainstorming.md"
 module: Xot
@@ -6,6 +7,8 @@ status: active
 ---
 <<<<<<< .merge_file_1Dz7nj
 <<<<<<< .merge_file_clcYBo
+=======
+>>>>>>> .merge_file_bNBezg
 ---
 title: "Xot — brainstorming BMAD"
 type: brainstorming
@@ -19,6 +22,7 @@ related:
   - discussions/01-traits-composition.md
   - architecture.md
   - README.md
+status: draft
 ---
 
 # Xot — brainstorming
@@ -54,11 +58,8 @@ Le risposte devono diventare story BMAD con acceptance criteria misurabili, rife
 ## Vedi anche
 
 - [Architecture](architecture.md)
-- [Stories](stories/) — indice completo in [README.md](README.md)
+- [Stories](stories/) — indice completo in [README.md](readme.md)
 - [Epics](epics/module-roadmap.md)
-=======
-=======
->>>>>>> .merge_file_gPHhQw
 # Brainstorming - Modulo Xot
 
 ## Idee iniziali
@@ -81,7 +82,3 @@ Le risposte devono diventare story BMAD con acceptance criteria misurabili, rife
 
 - [DOMANDA 1]
 - [DOMANDA 2]
-<<<<<<< .merge_file_1Dz7nj
->>>>>>> .merge_file_HCSLKu
-=======
->>>>>>> .merge_file_gPHhQw

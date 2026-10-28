@@ -18,7 +18,11 @@ class FilterRelationsAction
     {
         $filtered = [];
 
+<<<<<<< .merge_file_KR8Zfv
         foreach ($relations as $relation) {
+=======
+        foreach ($relations as $_name => $relation) {
+>>>>>>> .merge_file_YClCLv
             Assert::isInstanceOf($relation, Relation::class);
             $related = $relation->getRelated();
             Assert::isInstanceOf($related, Model::class);

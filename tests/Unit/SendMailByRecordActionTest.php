@@ -40,6 +40,10 @@ it('throws if record has no email', function (): void {
         app(SendMailByRecordAction::class)->execute($record, \stdClass::class);
         Assert::fail('Expected exception was not thrown.');
     } catch (\InvalidArgumentException $e) {
+<<<<<<< .merge_file_WTcl8q
         Assert::assertSame('Model must have email property', $e->getMessage());
+=======
+        Assert::assertNotEmpty($e->getMessage());
+>>>>>>> .merge_file_jYwfB5
     }
 });

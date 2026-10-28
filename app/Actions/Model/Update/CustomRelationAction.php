@@ -15,7 +15,10 @@ class CustomRelationAction
     use QueueableAction;
 
     /**
-     * Undocumented function.
+     * Aggiorna i record correlati di una CustomRelation dal payload del form.
+     *
+     * La relazione custom non ha un'operazione di associazione (save/attach/sync): resta solo
+     * l'aggiornamento dei campi di ogni riga, quindi il risultato di UpdateAction non serve.
      */
     public function execute(Model $model, RelationDTO $relationDTO): void
     {
@@ -29,7 +32,7 @@ class CustomRelationAction
             if (\in_array($keyName, array_keys($data), false)) {
                 app(UpdateAction::class)->execute($related, $data, []);
             } else {
-                dddx(['model' => $model, 'relationDTO' => $relationDTO]);
+                throw new \LogicException('Update\CustomRelationAction: rows without primary key not implemented, relation ['.$relationDTO->name.']');
             }
         }
     }

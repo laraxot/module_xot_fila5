@@ -3,40 +3,44 @@ title: "Xot Module Wiki Index"
 type: index
 module: Xot
 tags: [xot, wiki, index, xotbase, migrations, phpstan]
-created: 2026-04-28
-updated: 2026-07-24
+created: 2026-10-28
+updated: 2026-10-28
 qmd: "xot module wiki index XotBase migrations phpstan filament actions pest domain ownership"
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/28"
 discussions:
   - "https://github.com/laraxot/module_xot_fila5/discussions/29"
 related:
-  - ./concepts/migration-update-timestamps-only.md
-  - ./concepts/module-model-artifact-parity.md
-  - ./concepts/ai-harness-xot-discipline.md
-  - ./concepts/second-brain-local-discipline.md
-  - ./concepts/no-domain-actions-in-xot.md
-  - ./rules/module-testcase-xotbase-hierarchy.md
+  - ./concepts/migration-update-timestamps-only.md  # target mancante, verificato 2026-10-14
+  - ./concepts/module-model-artifact-parity.md  # target mancante, verificato 2026-10-14
+  - ./concepts/ai-harness-xot-discipline.md  # target mancante, verificato 2026-10-14
+  - ./concepts/second-brain-local-discipline.md  # target mancante, verificato 2026-10-14
+  - ./concepts/no-domain-actions-in-xot.md  # target mancante, verificato 2026-10-14
+  - ./rules/module-testcase-xotbase-hierarchy.md  # target mancante, verificato 2026-10-14
   - ../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md
   - ../../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md
   - ../../../../../docs/wiki/rules/domain-actions-belong-to-domain-module.md
+status: active
 ---
 
 # Xot Module LLM Wiki
 
-## Boundaries (2026-07-24)
+## Boundaries (2026-10-28)
 
-- [no-domain-actions-in-xot](./concepts/no-domain-actions-in-xot.md) — niente `Actions/AI|Geo|…`
-- Raw: [no-domain-logic-in-xot.md](../no-domain-logic-in-xot.md)
-- AI owner: [ollama-actions-ownership](../../AI/docs/wiki/concepts/ollama-actions-ownership.md)
+- [no-domain-actions-in-xot](./concepts/no-domain-actions-in-xot.md) _(target mancante, verificato 2026-10-14)_ — niente `Actions/AI|Geo|…`
+- Raw: [no-domain-logic-in-xot.md](../no-domain-logic-in-xot.md) _(target mancante, verificato 2026-10-14)_
+- AI owner: [ollama-actions-ownership](../../../AI/docs/wiki/concepts/ollama-actions-ownership.md)
 
 Indice operativo del wiki Xot (core framework).
 
 ## Struttura canonica (sacred)
 
-- [module-directory-structure-rule.md](../module-directory-structure-rule.md) — regola cartelle modulo (PHP solo in `app/`)
+- [no-docs-archive](../../../../../bashscripts/ai/wiki/concepts/no-docs-archive-rule.md) — regola Second Brain cross-modulo: niente alberi `docs/archive/`; storia wiki in `docs/wiki/_archive/`.
+
+- [module-directory-structure-rule.md](../module-directory-structure-rule.md) _(target mancante, verificato 2026-10-14)_ — regola cartelle modulo (PHP solo in `app/`)
 - [concepts/](./concepts/): Pattern architetturali e metodologie Xot/Laraxot.
 - [entities/](./entities/): Modelli e componenti chiave.
+<<<<<<< .merge_file_9Oxumk
 - [sources/](./sources/): Dati di ricerca e link esterni.
 - [comparisons/](./comparisons/): Implementazioni alternative.
 - [decisions/](./decisions/): ADL (Architectural Decision Log).
@@ -141,14 +145,12 @@ Aggiornato: 2026-07-27
 - Analisi indipendente parallela, stesso giorno, mappa completa in [../index.md#discussioni-architetturali--2026-09-11](../index.md#discussioni-architetturali--2026-09-11) — censimento pagine, verifica dal vivo pannello/modulo, prova di precedenza classe/trait.
 
 - [File proposto XotBaseManageRelatedRecords](../app/Filament/Resources/Pages/XotBaseManageRelatedRecords.php.md) — PHP documentato, review e coordinamento multi-agente.
+=======
+- [architettura](./concepts/xot-module-architecture-overview.md): Panoramica architetturale del modulo Xot (sovrapponibile a `bmad/architecture.md`).
+- [rules/](./rules/): Regole operative e contratti.
+- [overviews/](./overviews/): Viste panoramiche.
+>>>>>>> .merge_file_pSLwru
 
-**Aggiornamento 2026-09-11 (piu' tardi, stesso giorno)**: "quinta direzione"
-in fondo al file sopra — `form()`/`table()` delegano per intero alla
-Resource correlata (mai bridge per singolo hook come nella quarta), unici
-override point per-pagina `getTableColumns()`/`getTableHeaderActions()`.
-Non implementata. Story: `Modules/Xot/docs/stories/xotbasemanagerelatedrecords-convention-over-configuration.story.md`.
-# Punto di ingresso Xot
+## Architettura Canonica (BMAD)
 
-- [README del modulo](../../README.md)
-- [Memoria: contratto README moduli](memories/module-readme-normalization-20260928.md)
-- [Story BMAD: normalizzazione README](../bmad/stories/module-readmes-normalization-20260928.story.md)
+Vedere l'architettura BMAD ufficiale in [bmad/architecture.md](../bmad/architecture.md) — questa è la fonte d'autore per la struttura del modulo Xot.

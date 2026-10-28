@@ -3,15 +3,11 @@ title: "Rimozione delle icone statiche dalle XotBaseResource"
 status: ready-for-dev
 epic: code-quality
 related:
-  - ../../../../Incentivi/docs/bmad/stories/xot-base-resource-navigation-icon-translation.story.md
-  - ../../../../IndennitaCondizioniLavoro/docs/bmad/stories/xot-base-resource-navigation-icon-translation.story.md
-  - ../../../../Performance/docs/bmad/stories/xot-base-resource-navigation-icon-translation.story.md
-<<<<<<< HEAD
-  - ../../../../Ptv/docs/bmad/stories/xot-base-resource-navigation-icon-translation.story.md
-  - ../../../../IndennitaResponsabilita/docs/bmad/stories/xot-base-resource-navigation-icon-translation.story.md
   - ../../../../User/docs/bmad/stories/xot-base-resource-navigation-icon-translation.story.md
-=======
->>>>>>> laraxot/dev
+type: story
+updated: 2026-10-23
+tags: [docs, xot, bmad]
+qmd: "story xot"
 ---
 
 # Story
@@ -29,6 +25,19 @@ Come manutentore Filament, voglio che le Resource che estendono `XotBaseResource
 ## Ambito emerso
 
 L’ispezione iniziale ha trovato Resource in Incentivi, IndennitaCondizioniLavoro e Performance; il censimento completo diretto e transitivo resta il primo task di implementazione. La story centrale Xot definisce il contratto comune.
+
+Story gemelle con lo stesso nome esistono nei moduli Incentivi, IndennitaCondizioniLavoro,
+Performance, Ptv e IndennitaResponsabilita della flotta Laraxot; questi moduli non sono
+presenti in questo repo, quindi i link relativi sono stati rimossi da `related` (erano rotti).
+L'unica gemella locale e' quella del modulo User.
+
+Percorsi rimossi da `related` (conservati qui per cronologia, tutti con suffisso `/docs/bmad/stories/xot-base-resource-navigation-icon-translation.story.md`):
+
+- `../../../../Incentivi`
+- `../../../../IndennitaCondizioniLavoro`
+- `../../../../Performance`
+- `../../../../Ptv`
+- `../../../../IndennitaResponsabilita`
 
 ## Vincoli
 

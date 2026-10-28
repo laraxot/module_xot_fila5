@@ -1,9 +1,23 @@
 ---
+<<<<<<< .merge_file_2gup1y
 title: "Xot - coding-standards.md"
 module: Xot
 bmad: true
 status: active
 ---
+=======
+title: "coding standards"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "coding standards"
+issues: []
+discussions: []
+status: draft
+---
+
+>>>>>>> .merge_file_d1l1XD
 # Standard di Codice per il progetto
 
 > **Nota**: Questo documento è correlato a [Convenzioni](../../../project_docs/conventions.md) e [Naming Conventions](../../../project_docs/naming-conventions.md). Per una panoramica completa, consulta tutti i documenti correlati.

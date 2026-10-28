@@ -47,7 +47,11 @@ class ExportXlsStreamByLazyCollection
 
                 fputcsv($file, $headStrings);
 
+<<<<<<< .merge_file_CEXrbB
                 foreach ($data as $value) {
+=======
+                foreach ($data as $_key => $value) {
+>>>>>>> .merge_file_Xj53YZ
                     // Gestiamo sia oggetti che possono essere convertiti ad array che array diretti
                     if (is_object($value) && method_exists($value, 'toArray')) {
                         /** @var array<string|int|float|bool|null> $rowData */

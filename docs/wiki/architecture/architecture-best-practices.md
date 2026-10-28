@@ -1,9 +1,14 @@
 ---
+qmd: "architecture best practices"
+issues: []
+discussions: []
 title: "Architecture Best Practices"
 type: reference
 tags: [wiki, no-frontmatter-fix]
 created: 2026-08-24
 updated: 2026-08-24
+status: superseded
+superseded_by: ../../architecture-best-practices.md
 ---
 
 ## Convenzioni di naming per le azioni (Actions)

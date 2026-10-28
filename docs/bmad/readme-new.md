@@ -3,6 +3,13 @@ title: "Xot - readme-new.md"
 module: Xot
 bmad: true
 status: active
+<<<<<<< .merge_file_aKJCLH
+=======
+type: note
+updated: 2026-10-23
+tags: [docs, xot, bmad]
+qmd: "xot module - core foundation xot"
+>>>>>>> .merge_file_Q7qZuz
 ---
 # Xot Module - Core Foundation
 
@@ -476,9 +483,9 @@ class YourAction extends XotBaseAction
 }
 ```
 
-#### DTO Pattern
+#### Data Pattern
 ```php
-namespace Modules\YourModule\DTOs;
+namespace Modules\YourModule\Datas;
 
 use Spatie\LaravelData\Data;
 
@@ -695,14 +702,14 @@ See [ROADMAP.md](roadmap.md) for details.
 ## 📖 Related Documentation
 
 ### Internal Modules
-- [User Module](../User/docs/README.md) - User management and authentication
-- [UI Module](../UI/docs/README.md) - UI components and design system
-- [Tenant Module](../Tenant/docs/README.md) - Multi-tenancy support
-- [Lang Module](../Lang/docs/README.md) - Translation and localization
-- [Geo Module](../Geo/docs/README.md) - Geographic data services
+- [User Module](../../../User/docs/README.md) - User management and authentication
+- [UI Module](../../../UI/docs/README.md) - UI components and design system
+- [Tenant Module](../../../Tenant/docs/README.md) - Multi-tenancy support
+- [Lang Module](../../../Lang/docs/README.md) - Translation and localization
+- [Geo Module](../../../Geo/docs/README.md) - Geographic data services
 
 ### Project Documentation
-- [CLAUDE.md](../../../CLAUDE.md) - Project architecture and development rules
+- [CLAUDE.md](../../../../../CLAUDE.md) - Project architecture and development rules
 - [Project README](../../../README.md) - Main project documentation
 
 ### External Resources

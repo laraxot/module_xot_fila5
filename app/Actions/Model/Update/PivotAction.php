@@ -17,7 +17,12 @@ class PivotAction
      */
     public function execute(Model $_model, RelationDTO $relationDTO): void
     {
+<<<<<<< .merge_file_JuSLys
         dddx('wip');
+=======
+        throw new \LogicException('Update\PivotAction not implemented');
+
+>>>>>>> .merge_file_OaWfDd
         /*
          *
          * $parent_panel = $this->panel->getParent();

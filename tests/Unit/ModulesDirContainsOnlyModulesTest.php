@@ -4,16 +4,19 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit;
 
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Safe\glob;
+
+uses(TestCase::class);
 
 /**
  * `laravel/Modules/` contiene solo moduli: ogni cartella ha un `module.json`.
  * Una cartella senza (`test`, `docs`, `x`, `Config`...) e' scritta a runtime da un test o da un tool:
  * il 2026-08-24 sette di queste finirono in git.
  *
- * @see docs/chat/moduli-fantasma-scritti-dai-test-2026-08-24.md
+ * @see docs/chat/moduli-fantasma-scritti-dai-test.md
  */
 /**
  * @return list<string>

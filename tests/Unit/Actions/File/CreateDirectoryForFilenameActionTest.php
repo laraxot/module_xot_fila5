@@ -50,7 +50,6 @@ describe('Create Directory For Filename Action', function () use (&$workDir): vo
 
     test('handles root level file', function () use (&$workDir): void {
         $filename = $workDir.'/rootfile.txt';
-        File::makeDirectory($workDir, 0755, true);
 
         app(CreateDirectoryForFilenameAction::class)->execute($filename);
 

@@ -12,6 +12,7 @@ use Illuminate\Support\Str;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Contracts\StateContract;
 use Modules\Xot\Filament\Traits\TransTrait;
+use Webmozart\Assert\Assert;
 
 /**
  * Abstract base class for appointment state management.
@@ -126,6 +127,18 @@ abstract class XotBaseState implements StateContract
      */
     public function processStateAction(array $arguments, array $data): void
     {
+<<<<<<< .merge_file_K6V7ga
+=======
+        Assert::isArray($arguments);
+        Assert::isArray($data);
+        /*
+         *
+         * $appointmentId = $arguments['appointment'];
+         * $appointment = Appointment::firstWhere('id',$appointmentId);
+         *
+         * $appointment?->state->transitionTo($stateClass,$message);
+         */
+>>>>>>> .merge_file_lK6ueW
         // Fallback safe-mode when model-states package is not available.
         // Transition by generic arguments is intentionally a no-op.
     }
