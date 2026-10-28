@@ -1,9 +1,22 @@
 ---
+<<<<<<< .merge_file_bCXsft
 title: "Xot - fix-navigationicon-violations.story.md"
 module: Xot
 bmad: true
 status: active
 ---
+=======
+title: "BMAD Story — Fix navigationIcon dichiarazioni vietate in Resource che estendono XotBaseResource"
+type: story
+module: Xot
+bmad: true
+status: draft
+updated: 2026-10-23
+tags: [docs, xot, bmad]
+qmd: "bmad story   fix navigationicon dichiarazioni vietate in resource che estendono xotbaseresource xot"
+---
+
+>>>>>>> .merge_file_uTLFY9
 # BMAD Story — Fix navigationIcon dichiarazioni vietate in Resource che estendono XotBaseResource
 
 ## Epic

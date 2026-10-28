@@ -1,4 +1,8 @@
 ---
+type: note
+tags: [documentation]
+issues: []
+discussions: []
 id: "xot-quality-gates-prompt-exec"
 title: "Esegui e migliora 03-quality-gates.md"
 status: review
@@ -7,9 +11,9 @@ created: 2026-09-22
 updated: 2026-09-22
 qmd: "quality gates prompt phpmd-ruleset pint parallel session files nested git pest skip"
 related:
-  - ../../../../../bashscripts/docs/prompts/03-quality-gates.md
+  - ../../../../../../bashscripts/docs/prompts/03-quality-gates.md
   - ../../stories/3.30.quality-gates-prompt-improve-and-exec.story.md
-  - ../../../../../docs/wiki/memories/03-quality-gates-workflow.md
+  - ../../../../../../docs/wiki/memories/03-quality-gates-workflow.md
   - ./cleanup-all-modules.story.md
 ---
 

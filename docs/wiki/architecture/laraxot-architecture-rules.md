@@ -1,9 +1,13 @@
 ---
+qmd: "laraxot architecture rules"
+issues: []
+discussions: []
 title: "Laraxot Architecture Rules"
 type: reference
 tags: [wiki, no-frontmatter-fix]
 created: 2026-08-24
 updated: 2026-08-24
+status: draft
 ---
 
 # Laraxot Architecture Rules - Xot Module
@@ -55,15 +59,11 @@ class MyResource extends XotBaseResource
 {
     protected static ?string $model = MyModel::class;
     
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
+---
+    public function getFormSchema(): array
     {
         return [
             // Form components
@@ -278,15 +278,11 @@ class QuestionChartResource extends XotBaseResource
 {
     protected static ?string $model = QuestionChart::class;
 
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
+---
+    public function getFormSchema(): array
     {
         return [
             // Form components

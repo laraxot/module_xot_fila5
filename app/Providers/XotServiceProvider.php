@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Providers;
 
 use Composer\Autoload\ClassLoader;
+use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\Exports\Jobs\CreateXlsxFile;
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\DateTimePicker;
@@ -16,17 +17,21 @@ use Filament\Support\Facades\FilamentColor;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\BaseFilter;
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Events\MigrationsEnded;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\View;
+use Illuminate\Support\Str;
 use Modules\Xot\Actions\Composer\RegisterRuntimePsr4NamespacesAction;
+use Modules\Xot\Actions\Factory\GetFactoryAction;
 use Modules\Xot\Actions\PaDesignColorsAction;
 use Modules\Xot\Console\Commands\GenerateFilamentResources;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Exports\Jobs\XotCreateXlsxFile;
+use Modules\Xot\Filament\Traits\HasXotTable;
 use Modules\Xot\View\Composers\XotComposer;
 use Webmozart\Assert\Assert;
 
@@ -54,6 +59,7 @@ class XotServiceProvider extends XotBaseServiceProvider
         $this->registerTimezone();
         $this->registerFilamentMacros();
         $this->registerPaFilamentColors();
+        $this->registerBulkDeleteAuthorization();
         $this->registerXotLivewireComponents();
         $this->registerProviders();
     }
@@ -69,6 +75,7 @@ class XotServiceProvider extends XotBaseServiceProvider
         // $this->extendExceptionHandler();
         $this->registerCommands();
         $this->registerExportJobs();
+        $this->registerFactoryNameResolver();
     }
 
     /**
@@ -80,6 +87,32 @@ class XotServiceProvider extends XotBaseServiceProvider
     private function registerExportJobs(): void
     {
         $this->app->bind(CreateXlsxFile::class, XotCreateXlsxFile::class);
+    }
+
+    /**
+     * `Model::factory()` risolve la factory con `GetFactoryAction` (`Modules\<M>\Models\X` ->
+     * `Modules\<M>\Database\Factories\XFactory`), ma `Factory::factoryForModel()` (relazioni magiche
+     * `has*`/`for*`) e Larastan usano il resolver di Laravel, che per i modelli dei moduli punta a
+     * `Database\Factories\XFactory`, classe inesistente. Un solo resolver allinea runtime e analisi statica:
+     * `Team::factory()->create()` e' `Team`, non `mixed`. Fuori da `Modules\` vale la convenzione Laravel.
+     */
+    private function registerFactoryNameResolver(): void
+    {
+        Factory::guessFactoryNamesUsing(static function (string $modelName): string {
+            if (str_starts_with($modelName, 'Modules\\')) {
+                $factoryClass = (new GetFactoryAction)->getFactoryClass($modelName);
+            } else {
+                $modelsNamespace = app()->getNamespace().'Models\\';
+                $relativeName = Str::startsWith($modelName, $modelsNamespace)
+                    ? Str::after($modelName, $modelsNamespace)
+                    : Str::after($modelName, app()->getNamespace());
+                $factoryClass = Factory::$namespace.$relativeName.'Factory';
+            }
+
+            // Factory inesistente: `Factory::class` (astratta) al posto di una classe fantasma, cosi' il
+            // tipo resta `class-string<Factory>`; chi la usa fallisce comunque ("Cannot instantiate abstract").
+            return is_a($factoryClass, Factory::class, true) ? $factoryClass : Factory::class;
+        });
     }
 
     public function registerProviders(): void
@@ -126,6 +159,17 @@ class XotServiceProvider extends XotBaseServiceProvider
         );
         TimePicker::configureUsing(fn (TimePicker $component) => $component->timezone($timezone));
         TextColumn::configureUsing(fn (TextColumn $column) => $column->timezone($timezone));
+    }
+
+    /**
+     * Eliminazione di gruppo: Filament autorizza una volta sola con `deleteAny()`, che 35 policy del progetto non definiscono (audit DCP-181, A-1).
+     * Un solo punto per tutti i siti, presenti e futuri: ogni record passa da `delete()` se il modello ha una policy.
+     */
+    public function registerBulkDeleteAuthorization(): void
+    {
+        DeleteBulkAction::configureUsing(
+            fn (DeleteBulkAction $action): DeleteBulkAction => $action->authorizeIndividualRecords(HasXotTable::bulkDeleteRecordAuthorization()),
+        );
     }
 
     /**

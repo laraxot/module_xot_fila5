@@ -44,7 +44,19 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\Relations\Siblings;
  *
  * @phpstan-require-extends Model
  *
+ * Tipi di ritorno solo nel `@return`, non nativi, sui metodi che il trait vendor
+ * `Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships` dichiara senza
+ * tipo (`getParentKeyName()`, `getPathName()`, `hasNestedPath()`, ...): i modelli che usano
+ * quel trait direttamente non possono implementare un contratto con tipi nativi senza
+ * fatal runtime. `TypedHasRecursiveRelationships` li restringe comunque ai tipi nativi
+ * quando serve, e PHPStan legge il `@return`.
+ *
  * @mixin \Illuminate\Database\Eloquent\Model
+ * The vendor trait is the source of truth for implementation. Its public methods are
+ * intentionally untyped, so this contract keeps runtime-compatible signatures and
+ * documents the types for static analysis instead.
+ *
+ * @mixin Model
  */
 interface HasRecursiveRelationshipsContract
 {
@@ -177,14 +189,26 @@ interface HasRecursiveRelationshipsContract
     /**
      * Determine if an attribute is an integer.
      *
+     * @param string $attribute
+     *
      * @return bool
      */
+<<<<<<< .merge_file_A9wzUC
     public function isIntegerAttribute(string $attribute);
 
     /**
      * @return AdjacencyBuilder<TModel>
+=======
+    public function isIntegerAttribute($attribute);
+
+    /**
+     * The parameter stays untyped because Eloquent's Model method is untyped at runtime.
+     *
+     * @param  Builder  $query
+     * @return AdjacencyBuilder<Model>
+>>>>>>> .merge_file_UsDqvX
      */
-    public function newEloquentBuilder(Builder $query);
+    public function newEloquentBuilder($query);
 
     /**
      * @param  list<TModel>  $models

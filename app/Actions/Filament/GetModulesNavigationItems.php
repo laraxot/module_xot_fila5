@@ -37,6 +37,7 @@ class GetModulesNavigationItems
         $navs = [];
 
         $modules = app(GetTenantModulesAction::class)->execute();
+<<<<<<< .merge_file_9Ysrkv
 
         foreach ($modules as $module) {
             Assert::string($module, 'Il nome del modulo deve essere una stringa');
@@ -100,6 +101,12 @@ class GetModulesNavigationItems
 
                     return (bool) $user->hasRole($role);
                 });
+=======
+        // Pre-load user roles to avoid N+1 queries (unused — kept for future role-based filtering)
+
+        foreach ($modules as $module) {
+            $nav = app(GetNavigationItemByModulename::class)->execute($module);
+>>>>>>> .merge_file_tb6XxI
 
             $navs[] = $nav;
         }

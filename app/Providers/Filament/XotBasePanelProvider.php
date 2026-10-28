@@ -20,8 +20,10 @@ use Illuminate\Session\Middleware\StartSession;
 use Illuminate\Support\Str;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 // Remove if not used elsewhere implicitly
+use Modules\Xot\Actions\Filament\GetSidebarStateScriptAction;
 use Modules\Xot\Actions\Panel\ApplyMetatagToPanelAction;
 use Modules\Xot\Datas\XotData;
+use Modules\Xot\Filament\AvatarProviders\InitialsAvatarProvider;
 use Webmozart\Assert\Assert;
 
 abstract class XotBasePanelProvider extends PanelProvider
@@ -68,6 +70,8 @@ abstract class XotBasePanelProvider extends PanelProvider
             ->passwordReset()
             // ->emailVerification()
             // ->profile()
+            // avatar predefinito generato in locale: il provider di Filament carica ui-avatars.com a ogni pagina (DCP-139)
+            ->defaultAvatarProvider(InitialsAvatarProvider::class)
             ->sidebarFullyCollapsibleOnDesktop();
 
         $panel = app(ApplyMetatagToPanelAction::class)->execute(panel: $panel);
@@ -120,6 +124,10 @@ abstract class XotBasePanelProvider extends PanelProvider
                     </script>
                     HTML,
                 scopes: Login::class,
+            )
+            ->renderHook(
+                PanelsRenderHook::HEAD_END,
+                fn (): string => app(GetSidebarStateScriptAction::class)->execute(),
             );
 
         if ($this->discoverModuleComponents) {

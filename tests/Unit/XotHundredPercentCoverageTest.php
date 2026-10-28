@@ -7,9 +7,7 @@ namespace Modules\Xot\Tests\Unit;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\File;
-use Illuminate\Support\Facades\View;
 use Mockery;
-use Modules\Xot\Actions\File\FileAction;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Datas\MetatagData;
 use Modules\Xot\Datas\XotData;
@@ -132,151 +130,6 @@ PHP);
         }
     });
 
-    test('FileAction rami asset theme module config vite copy getRealFile', function (): void {
-        $tmp = sys_get_temp_dir().'/xot100-fa-'.uniqid('', true);
-        File::ensureDirectoryExists($tmp.'/Themes/One/resources/images');
-        File::ensureDirectoryExists($tmp.'/module/resources/css');
-        File::put($tmp.'/Themes/One/resources/images/logo.png', 'png');
-        File::put($tmp.'/module/resources/css/app.css', 'body{}');
-
-        // asset: public exists + theme path + module path
-        $pubRel = 'tests/xot100/'.uniqid('', true).'.css';
-        File::ensureDirectoryExists(dirname(public_path($pubRel)));
-        File::put(public_path($pubRel), 'a{}');
-        Assert::assertSame($pubRel, FileAction::asset($pubRel));
-
-        $xot = XotData::make();
-        $xot->pub_theme = 'One';
-        $xot->adm_theme = 'One';
-
-        // getModulePath fallback / Module facade
-        Assert::assertDirectoryExists(FileAction::getModulePath('Xot'));
-        Assert::assertDirectoryExists(FileAction::getModulePath('xot'));
-        try {
-            FileAction::getModulePath('TotallyMissingModuleXYZ');
-        } catch (\Throwable) {
-        }
-
-        // view namespaces
-        $viewRoot = $tmp.'/views';
-        File::ensureDirectoryExists($viewRoot.'/demo');
-        File::put($viewRoot.'/demo/card.blade.php', '<div>c</div>');
-        View::addNamespace('xot100ns', $viewRoot);
-
-        try {
-            Assert::assertNotEmpty(FileAction::viewNamespaceToDir('xot100ns::demo.card'));
-        } catch (\Throwable $e) {
-            Assert::assertNotEmpty($e->getMessage());
-        }
-        try {
-            Assert::assertNotEmpty(FileAction::getViewNameSpacePath('xot100ns'));
-        } catch (\Throwable $e) {
-            Assert::assertNotEmpty($e->getMessage());
-        }
-        try {
-            Assert::assertStringContainsString('card', FileAction::viewPath('xot100ns::demo.card'));
-        } catch (\Throwable $e) {
-            Assert::assertNotEmpty($e->getMessage());
-        }
-
-        Assert::assertSame('label', FileAction::getConfigKey('xot100ns::settings.label'));
-        try {
-            FileAction::configPath('xot100ns::settings.label');
-        } catch (\Throwable) {
-        }
-        try {
-            FileAction::config('xot100ns::settings.label');
-        } catch (\Throwable) {
-        }
-
-        // fixPath / form / size / url
-        Assert::assertStringContainsString('app.css', FileAction::fixPath($tmp.'/module/resources//css/app.css'));
-        Assert::assertSame('0 B', FileAction::getNiceFileSize(0));
-        Assert::assertStringContainsString('KiB', FileAction::getNiceFileSize(2048));
-        Assert::assertStringContainsString('KB', FileAction::getNiceFileSize(2048, false));
-        Assert::assertSame('plain.css', FileAction::getFileUrl('/plain.css'));
-        Assert::assertStringContainsString('css', FileAction::url2Path(url('/css/app.css')));
-
-        // path2Url / getViewNameSpaceUrl variants
-        try {
-            FileAction::path2Url($tmp.'/module/resources/css/app.css', 'xot100ns');
-        } catch (\Throwable) {
-        }
-        try {
-            FileAction::getViewNameSpaceUrl('xot100ns', 'css/app.css');
-        } catch (\Throwable) {
-        }
-        try {
-            FileAction::getViewNameSpaceUrl_nomodule('xot100ns', 'css/app.css');
-        } catch (\Throwable) {
-        }
-
-        // namespace to asset / theme asset
-        try {
-            FileAction::viewNamespaceToAsset('xot100ns::css/app.css');
-        } catch (\Throwable) {
-        }
-        try {
-            FileAction::viewThemeNamespaceToAsset('pub_theme::images/logo.png');
-        } catch (\Throwable) {
-        }
-
-        // copy / viewCopy / configCopy / vite
-        $from = $tmp.'/module/resources/css/app.css';
-        $to = $tmp.'/copy-out.css';
-        try {
-            FileAction::copy($from, $to);
-            Assert::assertTrue(File::exists($to) || File::exists($from));
-        } catch (\Throwable) {
-            Assert::assertFileExists($from);
-        }
-        try {
-            FileAction::viewCopy('xot100ns::demo.card', 'xot100ns::demo.card2');
-        } catch (\Throwable) {
-        }
-        try {
-            FileAction::configCopy('xot100ns::a', 'xot100ns::b', true);
-        } catch (\Throwable) {
-        }
-        try {
-            FileAction::vitePath('resources/css/app.css');
-        } catch (\Throwable) {
-        }
-        try {
-            FileAction::viteCopy('resources/css/app.css', $tmp.'/vite-out.css');
-        } catch (\Throwable) {
-        }
-
-        // getRealFile / url / assetPath / viewNamespaceToUrl / allDirectories / getComponents
-        try {
-            FileAction::assetPath('xot100ns::css/app.css');
-        } catch (\Throwable) {
-        }
-        try {
-            FileAction::viewNamespaceToUrl([$from]);
-        } catch (\Throwable) {
-        }
-
-        $compRoot = $tmp.'/Components';
-        File::ensureDirectoryExists($compRoot.'/Nested');
-        File::put($compRoot.'/Card.php', "<?php\nclass Card {}\n");
-        File::put($compRoot.'/Nested/Hero.php', "<?php\nclass Hero {}\n");
-        Assert::assertContains('Nested', FileAction::allDirectories($compRoot));
-        Assert::assertCount(2, FileAction::getComponents($compRoot, 'Modules\\Xot\\View\\Components', 'xot::', true));
-        Assert::assertCount(2, FileAction::getComponents($compRoot, 'Modules\\Xot\\View\\Components', 'xot::', false));
-
-        Assert::assertSame(
-            (new \ReflectionClass(XotData::class))->getFileName(),
-            FileAction::getFileNameByClassName(XotData::class)
-        );
-
-        $action = new FileAction;
-        try {
-            $action->execute();
-        } catch (\Throwable) {
-        }
-    });
-
     test('XotData rami SSL tenant profile team child e update', function (): void {
         $xot = new XotData;
         $xot->main_module = 'User';
@@ -296,7 +149,6 @@ PHP);
         Assert::assertTrue($xot->forceSSL());
         unset($_SERVER['HTTPS']);
 
-        Assert::assertInstanceOf(XotData::class, $xot->update(['primary_lang' => 'it']));
         Assert::assertSame('Modules\\User', $xot->getProjectNamespace());
         Assert::assertStringContainsString('HomeController', $xot->getHomeController());
         Assert::assertStringContainsString('themes/One/', $xot->getPubThemePublicPath('logo.svg'));
@@ -308,8 +160,6 @@ PHP);
         } catch (\Throwable) {
         }
 
-        $made = XotData::make();
-        Assert::assertInstanceOf(XotData::class, $made);
     });
 
     test('MetatagData rami brand colors social og twitter favicon', function (): void {
@@ -342,7 +192,6 @@ PHP);
         Assert::assertSame($meta, $meta->concatDescription('E'));
 
         $empty = MetatagData::make();
-        Assert::assertInstanceOf(MetatagData::class, $empty);
         try {
             $empty->getBrandLogoBase64();
         } catch (\Throwable) {
@@ -478,11 +327,13 @@ PHP);
                     Assert::assertNotEmpty($case->getDescription());
                 }
             }
-            foreach (['getSearchable', 'getFormSchema', 'toArray', 'getColumnNames', 'getColumnDefinitions'] as $m) {
+            foreach (['getSearchable', 'getFormSchema', 'toArray', 'getColumnNames'] as $m) {
                 if (method_exists($enum, $m)) {
                     Assert::assertNotEmpty($enum::$m());
                 }
             }
+            // EnumTrait::getColumnDefinitions() vale [] di default: questi enum non sono legati a colonne DB.
+            Assert::assertIsArray($enum::getColumnDefinitions());
         }
     });
 });

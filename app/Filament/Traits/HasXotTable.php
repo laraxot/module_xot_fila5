@@ -33,6 +33,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\Relation;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Str;
 use Livewire\Component;
 use Modules\UI\Enums\TableLayoutEnum;
@@ -237,6 +238,13 @@ trait HasXotTable
         // getTableColumns() può restituire, in alcuni contesti, elementi non tipizzati
         // (fallback deprecato di Filament): si filtrano per restare coerenti col tipo
         // atteso da TableLayoutEnum::getTableColumns().
+        // Le Resource costruiscono la tabella da un'istanza della `*Table` class, che non e' un
+        // componente Livewire: bootHasXotTable() non scatta e $layoutView resterebbe sempre LIST.
+        // Qui si legge la scelta dell'utente (griglia per il cellulare) dalla sessione.
+        if (! $this instanceof Component) {
+            $this->mountTableLayoutFromSession();
+        }
+
         $tableColumns = array_values(array_filter(
             // @phpstan-ignore method.deprecated
             $this->getTableColumns(),
@@ -378,6 +386,18 @@ trait HasXotTable
         }
 
         return $actions;
+    }
+
+    /**
+     * Regola per record dell'azione di eliminazione di gruppo (audit DCP-181, A-1): come Filament, un modello SENZA policy resta consentito (la
+     * stringa `'delete'` lo negherebbe: `Gate::inspect` senza policy dice no); con una policy decide `delete()` su ogni record.
+     *
+     * @return \Closure(Model): bool
+     */
+    public static function bulkDeleteRecordAuthorization(): \Closure
+    {
+        return static fn (Model $record): bool => Gate::getPolicyFor($record) === null
+            || Gate::allows('delete', $record);
     }
 
     /**

@@ -1,7 +1,7 @@
 ---
 tags: [documentation, docs-hygiene, bmad]
 created: 2026-09-29
-updated: 2026-09-29
+updated: 2026-10-27
 issues: []
 discussions: []
 title: "Riorganizzazione continua docs moduli e temi (lotto C, prima passata)"
@@ -12,8 +12,8 @@ track: docs-hygiene
 qmd: "docs modules themes continuous reorg misura stories bmad purpose readme"
 related:
   - ./docs-filename-no-date-bonifica-xot.story.md
-  - ./git-conflicts-docs-markers-2026-09-24.story.md
-  - ../../../../../docs/sprint-status.yaml
+  - ./git-conflicts-docs-markers.story.md
+  - ../../../../../../docs/sprint-status.yaml
 ---
 
 # Riorganizzazione continua docs moduli e temi
@@ -170,6 +170,43 @@ come mappa di recupero.
 ```yaml
   "Xot/docs-modules-themes-continuous-reorg": in-progress # direttiva permanente docs moduli/temi; misura 21 target, 13 story spostate in docs/bmad/stories (Three, Pdnd, Incentivi, IndennitaCondizioniLavoro, Progressioni), backlog per modulo. Story Modules/Xot/docs/bmad/stories/docs-modules-themes-continuous-reorg.story.md
 ```
+
+## Passata 2026-10-27: rischio credenziali nei docs
+
+Il controllo delle cartelle docs ha trovato un rischio maggiore della taxonomia:
+`docs/wiki/log.md` conteneva tre volte `Password sudo: <valore>` in chiaro, quindi una
+credenziale versionata e gia' finita nella storia Git. Redatta in
+`Password sudo: [REDACTED — ruotare]` nelle tre righe (21:26, 21:30, 23:22 del
+2026-10-26). La redazione **non** chiude il rischio: la password va ruotata e le altre
+occorrenze vanno cercate per nome del campo, senza stampare il valore.
+
+Regola operativa (wiki, log, story BMAD, chat):
+
+- mai password, token, chiavi o secret nei documenti: solo il riferimento
+  (`laravel/.env`, riga N) o `[REDACTED]`;
+- se il valore e' gia' in un file versionato: redigere, ruotare, aggiornare
+  `.env`/CI, poi cercare altre occorrenze;
+- la storia Git conserva il valore: la rotazione e' l'unica mitigazione reale.
+
+Verifica docs (2026-10-27): 20/20 moduli e 4/4 temi hanno `docs/README.md`.
+Nessun file di codice toccato. Shell non disponibile (`DAYTONA_API_KEY` assente):
+niente `git grep`, `git diff`, commit o test; controllo eseguito leggendo i file.
+
+## Passata 2026-10-27: regola `docs/archive/` su ogni root
+
+- Le 20 root modulo e le 4 root tema dichiarano `docs/archive/` nel proprio
+  `.gitignore`; il template dei moduli mantiene la regola per le root future.
+- La decisione owner e' in `Modules/Xot/docs/bmad/decision-log.md`. La
+  convenzione docs e il blueprint Sixteen chiariscono l'impatto e rimandano alla
+  regola Second Brain canonica.
+- `git check-ignore --no-index` ha verificato un percorso di prova in tutte le
+  24 root. `git ls-files` non trova file tracciati sotto gli archivi dei moduli
+  o dei temi.
+- Le cartelle locali ignorate di User e Tenant sono state conservate: aggiungere
+  la regola non cancella i file. Un'eventuale migrazione richiede inventario e
+  controllo dei link, in una passata separata.
+- Graphify non e' disponibile nel PATH; QMD non ha trovato un artefatto owner
+  piu' pertinente delle fonti locali consultate. Canon: [Second Brain](../../../../../../bashscripts/ai/wiki/concepts/no-docs-archive-rule.md), [convenzione Xot](../../conventions/docs-organization.md), [decision log](../decision-log.md), [blueprint Xot](../filament-blueprint.md).
 
 ## Acceptance
 

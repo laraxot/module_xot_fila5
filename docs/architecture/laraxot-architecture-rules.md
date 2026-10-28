@@ -1,9 +1,23 @@
 ---
+<<<<<<< .merge_file_zyJW5D
 title: "Xot - laraxot-architecture-rules.md"
 module: Xot
 bmad: true
 status: active
 ---
+=======
+title: "laraxot architecture rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "laraxot architecture rules"
+issues: []
+discussions: []
+status: draft
+---
+
+>>>>>>> .merge_file_MzTtO2
 # Laraxot Architecture Rules - Xot Module
 
 ## 🎯 Regole Fondamentali Laraxot
@@ -53,15 +67,28 @@ class MyResource extends XotBaseResource
 {
     protected static ?string $model = MyModel::class;
     
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
+---
+title: "laraxot architecture rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "laraxot architecture rules"
+issues: []
+discussions: []
     public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
+---
+title: "laraxot architecture rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "laraxot architecture rules"
+issues: []
+discussions: []
+    public function getFormSchema(): array
     {
         return [
             // Form components
@@ -276,15 +303,12 @@ class QuestionChartResource extends XotBaseResource
 {
     protected static ?string $model = QuestionChart::class;
 
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
+---
     public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
+---
+    public function getFormSchema(): array
     {
         return [
             // Form components

@@ -20,6 +20,9 @@ class GenerateFormByFileAction
     /**
      * Genera un form Filament basato su un file di risorsa.
      *
+     * WIP: la generazione dello schema non e' implementata, oggi si conta soltanto. Per riscrivere il corpo di
+     * form() usare GetMethodBodyAction come fa GenerateTableColumnsByFileAction per table().
+     *
      * @param  File  $file  Il file della risorsa Filament
      * @return int Numero di input aggiunti
      */

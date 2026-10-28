@@ -1,9 +1,23 @@
 ---
+<<<<<<< .merge_file_s7TvO2
 title: "Xot - prompt-rules.md"
 module: Xot
 bmad: true
 status: active
 ---
+=======
+title: "prompt rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "prompt rules"
+issues: []
+discussions: []
+status: draft
+---
+
+>>>>>>> .merge_file_ZSG7UE
 # Regole per i Prompt
 
 ## Regola Universale

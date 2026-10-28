@@ -3,6 +3,13 @@ title: "Xot - readme-en.md"
 module: Xot
 bmad: true
 status: active
+<<<<<<< .merge_file_C2IKR4
+=======
+type: note
+updated: 2026-10-23
+tags: [docs, xot, bmad]
+qmd: "xot   english presentation xot"
+>>>>>>> .merge_file_AsUtcE
 ---
 # ⚡ Xot — English presentation
 
@@ -45,7 +52,7 @@ No FixCity without Xot: internal framework preventing duplication and architectu
 
 Want to build **platform**, not just features? Start here.
 
-Frontoffice stack: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filament v5** — see [STORY-133](../../../docs/stories/STORY-133-frontend-stack-religion-tailwind-alpine-lit.md).
+Frontoffice stack: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filament v5** — see [STORY-133](../../../../../docs/stories/STORY-133-frontend-stack-religion-tailwind-alpine-lit.md).
 
 ---
 

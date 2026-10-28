@@ -1,4 +1,9 @@
 ---
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+issues: []
+discussions: []
 title: "Story — gap tooling quality: phpinsights assente, qmd embed backlog, graphify lento"
 type: story
 module: Xot
@@ -8,7 +13,7 @@ status: ready
 track: quality/tooling
 qmd: "phpinsights install qmd embed backlog graphify update lento phpmd ruleset quality tooling gap"
 related:
-  - ../../../../../bashscripts/docs/prompts/03-quality-gates.md
+  - ../../../../../../bashscripts/docs/prompts/03-quality-gates.md
   - ../../../docs/bmad/stories/quality-gates-03-exec-improve.story.md
 ---
 

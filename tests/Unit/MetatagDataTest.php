@@ -10,7 +10,8 @@ uses(TestCase::class);
 
 test('MetatagData puo essere istanziata', function () {
     $metatagData = new MetatagData;
-    Assert::assertInstanceOf(MetatagData::class, $metatagData);
+
+    Assert::assertSame('xot', $metatagData->generator);
 });
 
 test('getFilamentColors restituisce i colori Filament corretti', function (): void {
