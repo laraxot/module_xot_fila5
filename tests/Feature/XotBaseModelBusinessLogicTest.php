@@ -7,18 +7,21 @@ namespace Modules\Xot\Tests\Feature;
 use Illuminate\Database\ConnectionInterface;
 use Modules\Xot\Models\BaseModel;
 use Modules\Xot\Models\Module;
+use Modules\Xot\Tests\Fixtures\Models\TestConcreteBaseModel;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-use function Safe\class_uses;
 use function Safe\json_encode;
 use function Safe\unserialize;
 
 uses(TestCase::class);
 
+/**
+ * Classe concreta con nome: PHP non permette di serializzare classi anonime.
+ */
 function createXotBaseModelFixture(): BaseModel
 {
-    return new class extends BaseModel {};
+    return new TestConcreteBaseModel;
 }
 
 describe('Xot Base Model Business Logic', function (): void {
@@ -33,7 +36,7 @@ describe('Xot Base Model Business Logic', function (): void {
     test('it has required traits', function (): void {
         $baseModel = createXotBaseModelFixture();
 
-        Assert::assertNotEmpty(class_uses($baseModel));
+        Assert::assertNotEmpty(class_uses_recursive($baseModel));
     });
 
     test('it can be instantiated without database', function (): void {
@@ -174,12 +177,14 @@ describe('Xot Base Model Business Logic', function (): void {
         // Arrange
         $baseModel = createXotBaseModelFixture();
 
+        $baseModel->setAttribute('name', 'Test Model');
+
         // Act
         $array = $baseModel->toArray();
 
         // Assert
         Assert::assertIsArray($array);
-        Assert::assertNotEmpty($array);
+        Assert::assertSame('Test Model', $array['name']);
     });
 
     test('it supports json conversion', function (): void {
