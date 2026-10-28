@@ -4,7 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Design;
 
-use Modules\Xot\Support\PaDesignColors;
+use Modules\Xot\Actions\PaDesignColorsAction;
+use Modules\Xot\Enums\PaDesignColorEnum;
 use Spatie\QueueableAction\QueueableAction;
 
 /**
@@ -17,16 +18,16 @@ final class GetPaFilamentPaletteAction
     use QueueableAction;
 
     /** Verde PA — azioni primarie, CTA istituzionali */
-    public const string PRIMARY_HEX = PaDesignColors::PRIMARY_HEX;
+    public const string PRIMARY_HEX = PaDesignColorEnum::Primary->value;
 
     /** Blu istituzionale — info, link header */
-    public const string INSTITUTIONAL_BLUE_HEX = PaDesignColors::INSTITUTIONAL_BLUE_HEX;
+    public const string INSTITUTIONAL_BLUE_HEX = PaDesignColorEnum::InstitutionalBlue->value;
 
     /**
      * @return array<string, array<int, string>|string>
      */
     public function execute(): array
     {
-        return PaDesignColors::filamentPalette();
+        return app(PaDesignColorsAction::class)->filamentPalette();
     }
 }

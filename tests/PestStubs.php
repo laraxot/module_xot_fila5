@@ -30,11 +30,7 @@ use Pest\PendingCalls\UsesCall;
  */
 function actingAs(Authenticatable|int|string|null $user = null, ?string $driver = null): TestResponse
 {
-<<<<<<< .merge_file_YlGmgv
     \xotPestStubFailure('actingAs', $user, $driver);
-=======
-    throw new \RuntimeException('Stub: This function is meant for static analysis only: '.(is_string($user) ? $user : '').($driver ?? ''));
->>>>>>> .merge_file_sppUoR
 }
 
 /**
@@ -46,11 +42,7 @@ function actingAs(Authenticatable|int|string|null $user = null, ?string $driver 
  */
 function get(string|array $uri = '', array $options = []): TestResponse
 {
-<<<<<<< .merge_file_YlGmgv
     \xotPestStubFailure('get', $uri, $options);
-=======
-    throw new \RuntimeException('Stub: This function is meant for static analysis only: '.(is_string($uri) ? $uri : '').count($options));
->>>>>>> .merge_file_sppUoR
 }
 
 /**
@@ -63,11 +55,7 @@ function get(string|array $uri = '', array $options = []): TestResponse
  */
 function post(string|array $uri, array $data = [], array $options = []): TestResponse
 {
-<<<<<<< .merge_file_YlGmgv
     \xotPestStubFailure('post', $uri, $data, $options);
-=======
-    throw new \RuntimeException('Stub: This function is meant for static analysis only: '.(is_string($uri) ? $uri : '').count($data).count($options));
->>>>>>> .merge_file_sppUoR
 }
 
 /**
@@ -79,11 +67,7 @@ function post(string|array $uri, array $data = [], array $options = []): TestRes
  */
 function put(string|array $uri, array $data = []): TestResponse
 {
-<<<<<<< .merge_file_YlGmgv
     \xotPestStubFailure('put', $uri, $data);
-=======
-    throw new \RuntimeException('Stub: This function is meant for static analysis only: '.(is_string($uri) ? $uri : '').count($data));
->>>>>>> .merge_file_sppUoR
 }
 
 /**
@@ -95,11 +79,7 @@ function put(string|array $uri, array $data = []): TestResponse
  */
 function patch(string|array $uri, array $data = []): TestResponse
 {
-<<<<<<< .merge_file_YlGmgv
     \xotPestStubFailure('patch', $uri, $data);
-=======
-    throw new \RuntimeException('Stub: This function is meant for static analysis only: '.(is_string($uri) ? $uri : '').count($data));
->>>>>>> .merge_file_sppUoR
 }
 
 /**
@@ -110,11 +90,7 @@ function patch(string|array $uri, array $data = []): TestResponse
  */
 function delete(string|array $uri): TestResponse
 {
-<<<<<<< .merge_file_YlGmgv
     \xotPestStubFailure('delete', $uri);
-=======
-    throw new \RuntimeException('Stub: This function is meant for static analysis only: '.(is_string($uri) ? $uri : ''));
->>>>>>> .merge_file_sppUoR
 }
 
 /**
@@ -125,11 +101,7 @@ function delete(string|array $uri): TestResponse
  */
 function head(string|array $uri): TestResponse
 {
-<<<<<<< .merge_file_YlGmgv
     \xotPestStubFailure('head', $uri);
-=======
-    throw new \RuntimeException('Stub: This function is meant for static analysis only: '.(is_string($uri) ? $uri : ''));
->>>>>>> .merge_file_sppUoR
 }
 
 /**
@@ -140,11 +112,7 @@ function head(string|array $uri): TestResponse
  */
 function options(string|array $uri): TestResponse
 {
-<<<<<<< .merge_file_YlGmgv
     \xotPestStubFailure('options', $uri);
-=======
-    throw new \RuntimeException('Stub: This function is meant for static analysis only: '.(is_string($uri) ? $uri : ''));
->>>>>>> .merge_file_sppUoR
 }
 
 /**
@@ -156,11 +124,7 @@ function options(string|array $uri): TestResponse
  */
 function getJson(string|array $uri, array $headers = []): TestResponse
 {
-<<<<<<< .merge_file_YlGmgv
     \xotPestStubFailure('getJson', $uri, $headers);
-=======
-    throw new \RuntimeException('Stub: This function is meant for static analysis only: '.(is_string($uri) ? $uri : '').count($headers));
->>>>>>> .merge_file_sppUoR
 }
 
 /**
@@ -173,11 +137,7 @@ function getJson(string|array $uri, array $headers = []): TestResponse
  */
 function postJson(string|array $uri, array $data = [], array $headers = []): TestResponse
 {
-<<<<<<< .merge_file_YlGmgv
     \xotPestStubFailure('postJson', $uri, $data, $headers);
-=======
-    throw new \RuntimeException('Stub: This function is meant for static analysis only: '.(is_string($uri) ? $uri : '').count($data).count($headers));
->>>>>>> .merge_file_sppUoR
 }
 
 /**
@@ -190,11 +150,7 @@ function postJson(string|array $uri, array $data = [], array $headers = []): Tes
  */
 function putJson(string|array $uri, array $data = [], array $headers = []): TestResponse
 {
-<<<<<<< .merge_file_YlGmgv
     \xotPestStubFailure('putJson', $uri, $data, $headers);
-=======
-    throw new \RuntimeException('Stub: This function is meant for static analysis only: '.(is_string($uri) ? $uri : '').count($data).count($headers));
->>>>>>> .merge_file_sppUoR
 }
 
 /**
@@ -207,11 +163,7 @@ function putJson(string|array $uri, array $data = [], array $headers = []): Test
  */
 function patchJson(string|array $uri, array $data = [], array $headers = []): TestResponse
 {
-<<<<<<< .merge_file_YlGmgv
     \xotPestStubFailure('patchJson', $uri, $data, $headers);
-=======
-    throw new \RuntimeException('Stub: This function is meant for static analysis only: '.(is_string($uri) ? $uri : '').count($data).count($headers));
->>>>>>> .merge_file_sppUoR
 }
 
 /**
@@ -224,11 +176,7 @@ function patchJson(string|array $uri, array $data = [], array $headers = []): Te
  */
 function deleteJson(string|array $uri, array $data = [], array $headers = []): TestResponse
 {
-<<<<<<< .merge_file_YlGmgv
     \xotPestStubFailure('deleteJson', $uri, $data, $headers);
-=======
-    throw new \RuntimeException('Stub: This function is meant for static analysis only: '.(is_string($uri) ? $uri : '').count($data).count($headers));
->>>>>>> .merge_file_sppUoR
 }
 
 /**
@@ -238,11 +186,7 @@ function deleteJson(string|array $uri, array $data = [], array $headers = []): T
  */
 function followingRedirects(int $number = 5): TestResponse
 {
-<<<<<<< .merge_file_YlGmgv
     \xotPestStubFailure('followingRedirects', $number);
-=======
-    throw new \RuntimeException('Stub: This function is meant for static analysis only: '.$number);
->>>>>>> .merge_file_sppUoR
 }
 
 /**
@@ -250,11 +194,7 @@ function followingRedirects(int $number = 5): TestResponse
  */
 function test(string $description, ?\Closure $closure = null): TestCall
 {
-<<<<<<< .merge_file_YlGmgv
     \xotPestStubFailure('test', $description, $closure);
-=======
-    throw new \RuntimeException('Stub: This function is meant for static analysis only: '.$description.($closure instanceof \Closure ? 'closure' : ''));
->>>>>>> .merge_file_sppUoR
 }
 
 /**
@@ -262,11 +202,7 @@ function test(string $description, ?\Closure $closure = null): TestCall
  */
 function it(string $description, ?\Closure $closure = null): TestCall
 {
-<<<<<<< .merge_file_YlGmgv
     \xotPestStubFailure('it', $description, $closure);
-=======
-    throw new \RuntimeException('Stub: This function is meant for static analysis only: '.$description.($closure instanceof \Closure ? 'closure' : ''));
->>>>>>> .merge_file_sppUoR
 }
 
 /**
@@ -274,11 +210,7 @@ function it(string $description, ?\Closure $closure = null): TestCall
  */
 function describe(string $description, \Closure $closure): DescribeCall
 {
-<<<<<<< .merge_file_YlGmgv
     \xotPestStubFailure('describe', $description, $closure);
-=======
-    throw new \RuntimeException('Stub: This function is meant for static analysis only: '.$description.spl_object_id($closure));
->>>>>>> .merge_file_sppUoR
 }
 
 /**
@@ -286,11 +218,7 @@ function describe(string $description, \Closure $closure): DescribeCall
  */
 function beforeEach(\Closure $closure): BeforeEachCall
 {
-<<<<<<< .merge_file_YlGmgv
     \xotPestStubFailure('beforeEach', $closure);
-=======
-    throw new \RuntimeException('Stub: This function is meant for static analysis only: '.spl_object_id($closure));
->>>>>>> .merge_file_sppUoR
 }
 
 /**
@@ -298,11 +226,7 @@ function beforeEach(\Closure $closure): BeforeEachCall
  */
 function afterEach(\Closure $closure): AfterEachCall
 {
-<<<<<<< .merge_file_YlGmgv
     \xotPestStubFailure('afterEach', $closure);
-=======
-    throw new \RuntimeException('Stub: This function is meant for static analysis only: '.spl_object_id($closure));
->>>>>>> .merge_file_sppUoR
 }
 
 /**
@@ -312,9 +236,5 @@ function afterEach(\Closure $closure): AfterEachCall
  */
 function uses(string ...$classes): UsesCall
 {
-<<<<<<< .merge_file_YlGmgv
     \xotPestStubFailure('uses', ...$classes);
-=======
-    throw new \RuntimeException('Stub: This function is meant for static analysis only: '.implode(',', $classes));
->>>>>>> .merge_file_sppUoR
 }

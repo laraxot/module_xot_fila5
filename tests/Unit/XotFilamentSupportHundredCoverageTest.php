@@ -185,8 +185,8 @@ describe('Xot filament builders', function (): void {
         Assert::assertStringNotContainsString('deleted_at', $query->toSql());
         Assert::assertSame([], $query->getQuery()->wheres);
     });
+});
 
-<<<<<<< .merge_file_pwY86Q
 describe('Xot filament support hundred', function (): void {
     test('Support ColumnBuilder e RecordAnchor reflection', function (): void {
         $n = 0;
@@ -238,10 +238,5 @@ describe('Xot filament support hundred', function (): void {
         }
         Assert::assertGreaterThan(0, $n);
         Assert::assertSame('id', ColumnBuilder::id()->getName());
-=======
-    test('RecordAnchor appende il frammento in coda alla query string', function (): void {
-        Assert::assertSame('record-9f2', RecordAnchor::id('9f2'));
-        Assert::assertSame('/list?page=2#record-7', RecordAnchor::appendTo('/list?page=2', 7));
->>>>>>> .merge_file_XJV1A1
     });
 });
