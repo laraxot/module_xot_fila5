@@ -8,7 +8,7 @@ updated: 2026-10-08
 module: Xot
 tags: [services-to-actions, queueable-action, route, urlact, dynamic-routes, bmad]
 related:
-  - ./2026-10-06-phpstan-cleanup-xot-app.story.md
+  - ./phpstan-cleanup-xot-app.story.md
   - ./2026-10-08-phpstan-xot-app-regressions.story.md
   - ../wiki/decisions/services-to-actions-migration.md
   - ../../../../bmad-output/epic-code-standards-services-mixed-const.md

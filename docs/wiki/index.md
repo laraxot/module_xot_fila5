@@ -135,11 +135,11 @@ Aggiornato: 2026-07-27
 
 ## Lezioni 2026-10-06 — PHPStan cleanup Xot/app
 
-- [dev-story](../stories/2026-10-06-phpstan-cleanup-xot-app.dev.md) — scopo prima dell'errore: variabili orfane = logica tolta (`RelationX`, `RouteService`), costanti tipizzate vs `composer.json` `php ^8.2`, result-cache PHPStan stale tra agenti paralleli. Story: [story](../stories/2026-10-06-phpstan-cleanup-xot-app.story.md).
+- [dev-story](../stories/phpstan-cleanup-xot-app.dev.md) — scopo prima dell'errore: variabili orfane = logica tolta (`RelationX`, `RouteService`), costanti tipizzate vs `composer.json` `php ^8.2`, result-cache PHPStan stale tra agenti paralleli. Story: [story](../stories/phpstan-cleanup-xot-app.story.md).
 
 ## Lezioni 2026-10-06 — PHPStan cleanup Xot (tests, helpers, stub Pest)
 
-- [dev-story](../stories/2026-10-06-phpstan-cleanup-xot-rest.dev.md) — test segnaposto con variabile non letta = asserzione persa; stub `Pest\Laravel\*` risolti da `tests/PestStubs.php` prima del vendor (firme intoccabili, parametri resi utili con `xotPestStubFailure()`); classe anonima annidata = PHPDoc non risolto, serve una classe nominata. Story: [story](../stories/2026-10-06-phpstan-cleanup-xot-rest.story.md).
+- [dev-story](../stories/phpstan-cleanup-xot-rest.dev.md) — test segnaposto con variabile non letta = asserzione persa; stub `Pest\Laravel\*` risolti da `tests/PestStubs.php` prima del vendor (firme intoccabili, parametri resi utili con `xotPestStubFailure()`); classe anonima annidata = PHPDoc non risolto, serve una classe nominata. Story: [story](../stories/phpstan-cleanup-xot-rest.story.md).
 
 ## Decisioni in discussione — 2026-09-11
 
