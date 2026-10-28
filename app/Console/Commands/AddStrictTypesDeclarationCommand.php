@@ -66,9 +66,6 @@ class AddStrictTypesDeclarationCommand extends Command
                     continue;
                 }
 
-                // PHPStan hint: at this point $path is definitely a string
-                assert(is_string($path));
-
                 try {
                     $action->execute($path);
                     $this->info("Aggiunta dichiarazione strict_types a: {$path}");

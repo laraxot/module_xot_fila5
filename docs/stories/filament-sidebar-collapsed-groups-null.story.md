@@ -1,5 +1,5 @@
 ---
-title: Sidebar admin senza moduli: stato dei gruppi a null
+title: "Sidebar admin senza moduli: stato dei gruppi a null"
 status: done-pending-verification
 module: Xot
 created: 2026-10-21
