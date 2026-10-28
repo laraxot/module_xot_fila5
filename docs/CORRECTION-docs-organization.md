@@ -1,5 +1,5 @@
 ---
-title: Correction: docs organization — INDEX.md condiviso e correzione Ticket
+title: "Correction: docs organization — INDEX.md condiviso e correzione Ticket"
 status: correction
 scope: [laravel/Modules/docs, laravel/Themes/docs, laravel/Modules/Ticket/docs]
 updated: 2026-10-20
