@@ -238,6 +238,13 @@ trait HasXotTable
         // getTableColumns() può restituire, in alcuni contesti, elementi non tipizzati
         // (fallback deprecato di Filament): si filtrano per restare coerenti col tipo
         // atteso da TableLayoutEnum::getTableColumns().
+        // Le Resource costruiscono la tabella da un'istanza della `*Table` class, che non e' un
+        // componente Livewire: bootHasXotTable() non scatta e $layoutView resterebbe sempre LIST.
+        // Qui si legge la scelta dell'utente (griglia per il cellulare) dalla sessione.
+        if (! $this instanceof Component) {
+            $this->mountTableLayoutFromSession();
+        }
+
         $tableColumns = array_values(array_filter(
             // @phpstan-ignore method.deprecated
             $this->getTableColumns(),
@@ -614,7 +621,6 @@ trait HasXotTable
      */
     protected function getDefaultTableSortColumn(): ?string
     {
-
         try {
             $modelClass = $this->getModelClass();
             /** @var Model $model */

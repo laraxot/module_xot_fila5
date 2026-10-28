@@ -8,6 +8,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Actions\Header;
 
 use Filament\Resources\Pages\ListRecords;
+use Illuminate\Contracts\Support\Htmlable;
 use Modules\Xot\Actions\GetTransKeyAction;
 use Modules\Xot\Actions\Pdf\DownloadPdfByViewAction;
 use Modules\Xot\Actions\View\GetViewByModelClassAction;
@@ -15,7 +16,7 @@ use Modules\Xot\Filament\Actions\XotBaseAction;
 use Webmozart\Assert\Assert;
 
 /**
- * Export PDF da lista: icona `xot-files.pdf`, solo icona (tooltip), view
+ * Export PDF da lista: bottone con icona `xot-files.pdf` ed etichetta sr-only (tooltip), view
  * `{modulo}::{model}.index.pdf` con RichEditor via `{!! $rating->getTxtHtml() !!}`.
  */
 class ExportPdfAction extends XotBaseAction
@@ -24,10 +25,13 @@ class ExportPdfAction extends XotBaseAction
     {
         parent::setUp();
         $this
-            ->label('')
-            ->hiddenLabel(true)
-            ->iconButton()
-            // ->color('danger')
+            // Bottone (vista di default) con etichetta solo per screen reader, come le altre
+            // azioni dell'header (Trova esclusi, ...). Prima `iconButton()`: un glifo grigio senza
+            // area cliccabile, che non sembrava un comando.
+            ->label(fn (): Htmlable|string|null => $this->getTooltip())
+            ->hiddenLabel()
+            // ->color('danger'): non usato, il rosso segnala un'azione distruttiva; resta il
+            // primario come i bottoni accanto.
             ->icon('xot-files.pdf')
             ->tooltip(function (): string {
                 $livewire = $this->getLivewire();
