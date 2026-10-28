@@ -1,5 +1,4 @@
 ---
-<<<<<<< .merge_file_jaRg26
 title: "Xot Module Documentation"
 module: Xot
 bmad: true
@@ -13,7 +12,6 @@ updated: 2026-10-06
 # Xot Docs
 
 Consolidated architecture, concepts, coding standards, module paths, and audit reports.
-=======
 title: "Xot — documentazione"
 type: index
 status: draft
@@ -39,4 +37,3 @@ Le directory storiche o duplicate vengono classificate progressivamente; non
 sono cancellate automaticamente.
 
 - [Boost MCP: environment and working-directory recovery](boost-mcp-environment.md) — verified command registration and real stdio handshake.
->>>>>>> .merge_file_Pqnl4t

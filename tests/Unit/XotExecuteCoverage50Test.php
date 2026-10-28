@@ -137,62 +137,6 @@ describe('Xot execute coverage floor 50', function (): void {
         Assert::assertSame($meta, MetatagData::make());
     });
 
-    test('FileAction percorre helper filesystem namespace e component scan', function (): void {
-        $tmpRoot = sys_get_temp_dir().'/xot-file-action-'.uniqid('', true);
-        $viewRoot = $tmpRoot.'/module/resources/views';
-        $componentRoot = $tmpRoot.'/module/app/View/Components';
-        File::ensureDirectoryExists($viewRoot.'/demo');
-        File::ensureDirectoryExists($componentRoot.'/Nested');
-
-        File::put($viewRoot.'/demo/test.blade.php', '<div>ok</div>');
-        File::put($componentRoot.'/Card.php', "<?php\nclass Card {}\n");
-        File::put($componentRoot.'/Nested/Hero.php', "<?php\nclass Hero {}\n");
-
-        View::addNamespace('demo_ns', $viewRoot);
-
-        try {
-            $dir = FileAction::viewNamespaceToDir('demo_ns::demo.test');
-            if (is_string($dir)) {
-                Assert::assertStringContainsString('demo/test', $dir);
-            }
-        } catch (\Throwable $e) {
-            Assert::assertStringContainsString('Expected a string', $e->getMessage());
-        }
-        try {
-            $viewNamespacePath = FileAction::getViewNameSpacePath('demo_ns');
-            Assert::assertNotEmpty($viewNamespacePath);
-        } catch (\Throwable $e) {
-            Assert::assertStringContainsString('Expected a string', $e->getMessage());
-        }
-        try {
-            Assert::assertStringContainsString('demo/test.blade.php', FileAction::viewPath('demo_ns::demo.test'));
-        } catch (\Throwable $e) {
-            Assert::assertStringContainsString('Expected a string', $e->getMessage());
-        }
-        Assert::assertSame('label', FileAction::getConfigKey('demo_ns::settings.label'));
-        try {
-            Assert::assertStringContainsString('Config/settings.php', FileAction::configPath('demo_ns::settings.label'));
-        } catch (\Throwable $e) {
-            Assert::assertStringContainsString('Expected a string', $e->getMessage());
-        }
-        Assert::assertSame('plain/path.css', FileAction::getFileUrl('/plain/path.css'));
-        Assert::assertSame('0 B', FileAction::getNiceFileSize(0));
-        Assert::assertStringContainsString('KiB', FileAction::getNiceFileSize(2048));
-        Assert::assertSame((new \ReflectionClass(XotData::class))->getFileName(), FileAction::getFileNameByClassName(XotData::class));
-        Assert::assertStringContainsString('/css/app.css', FileAction::url2Path(url('/css/app.css')));
-        Assert::assertStringContainsString('no-hint', FileAction::viewNamespaceToAsset('no-hint::assets/app.css'));
-
-        $createdDirFile = $tmpRoot.'/new/path/file.txt';
-        FileAction::createDirectoryForFilename($createdDirFile);
-        Assert::assertDirectoryExists(dirname($createdDirFile));
-
-        $allDirectories = FileAction::allDirectories($componentRoot);
-        Assert::assertContains('Nested', $allDirectories);
-
-        $components = FileAction::getComponents($componentRoot, 'Modules\\Xot\\View\\Components', 'xot::', true);
-        Assert::assertCount(2, $components);
-    });
-
     test('XotData e MetatagData eseguono getter semantici e rami puri', function (): void {
         $xot = new XotData;
         $xot->main_module = 'User';

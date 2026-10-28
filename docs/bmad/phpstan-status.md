@@ -1,14 +1,5 @@
 ---
-<<<<<<< .merge_file_VCtZAx
 title: "Xot - phpstan-status.md"
-module: Xot
-bmad: true
-status: active
----
-# PHPStan Status — Xot
-=======
-title: "Stato del gate PHPStan sui moduli"
-type: status
 module: Xot
 status: active
 created: 2026-10-28
@@ -18,11 +9,10 @@ qmd: "PHPStan Modules stato corrente analisi full tree level massimo"
 related:
   - ./stories/ecc-codex-plugin-setup.story.md
 ---
->>>>>>> .merge_file_J5iwj8
+# PHPStan Status — Xot
 
 # Stato del gate PHPStan sui moduli
 
-<<<<<<< .merge_file_VCtZAx
 ## Misura 2026-10-06 (sera) — swarm Xot/app: scopo prima dell'errore
 
 `analyse Modules/Xot/app`: 147 segnalazioni del file errori -> **21**, tutte
@@ -51,9 +41,11 @@ Da decidere: `tests/PestStubs.php` e' orfano ma e' lui a risolvere `Pest\Laravel
 Dettaglio e lezioni: [dev-story](../stories/2026-10-06-phpstan-cleanup-xot-rest.dev.md).
 
 ## Misura 2026-10-06 — EnsureKeysAction + file scratch rimossi
-=======
+
+
+# Stato del gate PHPStan sui moduli
+
 ## Verifica corrente
->>>>>>> .merge_file_J5iwj8
 
 È stato eseguito il comando richiesto da root:
 

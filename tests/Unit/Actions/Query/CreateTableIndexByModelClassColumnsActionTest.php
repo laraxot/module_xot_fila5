@@ -69,6 +69,9 @@ it('throws exception for missing column and creates no index', function (): void
     };
     $action = app(CreateTableIndexByModelClassColumnsAction::class);
 
-    expect(fn (): bool => $action->execute($modelClassName, ['id']))
-        ->toThrow(\RuntimeException::class, "Table 'missing_table' does not exist");
+    expect(fn (): bool => $action->execute($model::class, ['missing_col']))
+        ->toThrow(\RuntimeException::class, "Column 'missing_col' does not exist in table 'test_index_table'.");
+
+    $indexNames = array_column(Schema::connection('xot')->getIndexes('test_index_table'), 'name');
+    Assert::assertNotContains('test_index_table_missing_col_index', $indexNames);
 });

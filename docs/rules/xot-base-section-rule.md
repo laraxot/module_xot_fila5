@@ -1,23 +1,9 @@
 ---
-<<<<<<< .merge_file_JXDWr5
 title: "Xot - xot-base-section-rule.md"
 module: Xot
 bmad: true
 status: active
 ---
-=======
-title: "xot base section rule"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "xot base section rule"
-issues: []
-discussions: []
-status: draft
----
-
->>>>>>> .merge_file_8ic83u
 # Regola XotBaseSection - Politica, Filosofia, Religione, Zen
 
 ## Scopo (Purpose)

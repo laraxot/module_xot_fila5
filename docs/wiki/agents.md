@@ -1,23 +1,9 @@
 ---
-<<<<<<< .merge_file_PIPysg
 title: "Xot - agents.md"
 module: Xot
 bmad: true
 status: active
 ---
-=======
-title: "agents"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "agents"
-issues: []
-discussions: []
-status: draft
----
-
->>>>>>> .merge_file_wnJFpb
 # Xot {{TYPE^}} LLM Wiki Agent Instructions
 
 > **Module/Theme:** Xot

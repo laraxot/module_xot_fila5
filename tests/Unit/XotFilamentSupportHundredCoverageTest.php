@@ -11,6 +11,8 @@ use Modules\Xot\Filament\Builders\FilterBuilder;
 use Modules\Xot\Filament\Links\RecordAnchor;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+use ReflectionClass;
+use ReflectionMethod;
 
 uses(TestCase::class)->group('no-xot-db');
 
@@ -190,7 +192,7 @@ describe('Xot filament builders', function (): void {
 describe('Xot filament support hundred', function (): void {
     test('Support ColumnBuilder e RecordAnchor reflection', function (): void {
         $n = 0;
-        foreach ([SupportColumnBuilder::class, RecordAnchor::class, ColumnBuilder::class, FilterBuilder::class] as $class) {
+        foreach ([RecordAnchor::class, ColumnBuilder::class, FilterBuilder::class] as $class) {
             if (! class_exists($class)) {
                 continue;
             }

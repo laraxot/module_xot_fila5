@@ -1,23 +1,9 @@
 ---
-<<<<<<< .merge_file_krLR0R
 title: "Xot - laraxot-architecture.md"
 module: Xot
 bmad: true
 status: active
 ---
-=======
-title: "laraxot architecture"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "laraxot architecture"
-issues: []
-discussions: []
-status: draft
----
-
->>>>>>> .merge_file_rNIUJg
 # Laraxot Architecture: Philosophy, Religion, Politics, and Zen
 
 ## Core Philosophy (Filosofia)

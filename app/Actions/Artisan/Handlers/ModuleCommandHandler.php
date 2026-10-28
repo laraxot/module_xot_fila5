@@ -4,14 +4,16 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Artisan\Handlers;
 
-use Modules\Xot\Actions\Artisan\Contracts\CommandHandlerInterface;
 use Modules\Xot\Actions\Artisan\RunArtisanCommandAction;
 use Webmozart\Assert\Assert;
 
 /**
  * Handles module-related artisan commands.
+ *
+ * @deprecated Residuo: l'interfaccia dei handler e il registry sono stati rimossi, i comandi `module-*`
+ *             li serve `HandleArtisanActRequestAction` tramite `ArtisanActEnum`. Nessun chiamante.
  */
-class ModuleCommandHandler implements CommandHandlerInterface
+class ModuleCommandHandler
 {
     /** @var list<string> */
     private const array MODULE_COMMANDS = ['module-list', 'module-disable', 'module-enable'];

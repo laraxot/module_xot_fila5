@@ -1,25 +1,9 @@
 ---
-<<<<<<< .merge_file_QMZXZ3
 title: "Xot - README.md"
 module: Xot
 bmad: true
 status: active
 ---
-=======
-title: "README"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "README"
-issues: []
-discussions: []
-status: stale
----
-
-> Nota 2026-10-14 (docs-audit): Il blocco 'Collegamenti tra versioni di README.md' (62 link non risolti) punta a percorsi di altri progetti (docs/moduli, patient, dental, isee) e la sezione STI cita il modulo Patient, che non esiste in questo progetto (Modules/ contiene 19 moduli, nessuno e Patient). L'elenco dei file e stato corretto il 2026-10-14. Contenuto non riscritto, verificare prima di usarlo.
-
->>>>>>> .merge_file_fQEkzX
 # Standard di Codice
 
 Questa cartella contiene gli standard di codice e le convenzioni utilizzate nel progetto.
@@ -36,6 +20,9 @@ Questa cartella contiene gli standard di codice e le convenzioni utilizzate nel 
 Questi standard si applicano a tutti i moduli del progetto e devono essere seguiti per mantenere la coerenza del codice.
 
 ## Collegamenti tra versioni di README.md
+
+> Nota 2026-10-14 (docs-audit): Il blocco 'Collegamenti tra versioni di README.md' punta in larga parte a percorsi di altri progetti (docs/moduli, patient, dental, isee) e la sezione STI cita il modulo Patient, che non esiste in questo progetto (`laravel/Modules/` non contiene alcun modulo Patient). L'elenco dei file e stato corretto il 2026-10-14. Contenuto non riscritto, verificare prima di usarlo.
+
 * [README.md](docs/laravel-app/phpstan/readme.md)
 * [README.md](docs/laravel-app/readme.md)
 * [README.md](docs/moduli/struttura/readme.md)
