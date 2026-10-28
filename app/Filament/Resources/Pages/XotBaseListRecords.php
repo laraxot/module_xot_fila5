@@ -82,7 +82,7 @@ abstract class XotBaseListRecords extends FilamentListRecords
     /**
      * DEVE ESSERE FINAL
      */
-    final public function getTableColumns(): array
+    public function getTableColumns(): array
     {
         return [];
     }
@@ -90,7 +90,7 @@ abstract class XotBaseListRecords extends FilamentListRecords
     /**
      * DEVE ESSERE FINAL
      */
-    final public function getTableActions(): array
+    public function getTableActions(): array
     {
         return [];
     }
@@ -98,7 +98,7 @@ abstract class XotBaseListRecords extends FilamentListRecords
     /**
      * DEVE ESSERE FINAL
      */
-    final public function getTableFilters(): array
+    public function getTableFilters(): array
     {
        return [];
     }
@@ -106,7 +106,7 @@ abstract class XotBaseListRecords extends FilamentListRecords
     /**
      * DEVE ESSERE FINAL
      */
-    final public function getTableBulkActions(): array
+    public function getTableBulkActions(): array
     {
         return [];
     }

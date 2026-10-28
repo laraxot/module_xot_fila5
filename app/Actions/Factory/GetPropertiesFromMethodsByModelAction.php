@@ -146,14 +146,10 @@ class GetPropertiesFromMethodsByModelAction
             Assert::string($foreignKeyName, 'Il nome della chiave esterna deve essere una stringa');
 
             // Otteniamo la classe relazionata
-<<<<<<< .merge_file_ViJpy5
             $relatedClass = get_class($relationObj->getRelated());
 
             // La colonna FK viene valorizzata con la factory del model correlato.
             $data[$foreignKeyName] = 'factory('.$relatedClass.'::class)';
-=======
-            get_class($relationObj->getRelated());
->>>>>>> .merge_file_koBmp9
         } catch (\Exception $e) {
             // In caso di errore, ignoriamo la relazione
             return;

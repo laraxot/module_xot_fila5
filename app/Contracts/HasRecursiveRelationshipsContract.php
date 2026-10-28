@@ -193,20 +193,10 @@ interface HasRecursiveRelationshipsContract
      *
      * @return bool
      */
-<<<<<<< .merge_file_A9wzUC
     public function isIntegerAttribute(string $attribute);
 
     /**
      * @return AdjacencyBuilder<TModel>
-=======
-    public function isIntegerAttribute($attribute);
-
-    /**
-     * The parameter stays untyped because Eloquent's Model method is untyped at runtime.
-     *
-     * @param  Builder  $query
-     * @return AdjacencyBuilder<Model>
->>>>>>> .merge_file_UsDqvX
      */
     public function newEloquentBuilder($query);
 

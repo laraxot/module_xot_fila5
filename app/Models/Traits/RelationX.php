@@ -90,13 +90,6 @@ trait RelationX
         $table = $this->qualifyPivotTable($pivot, $related_model, $pivot->getTable());
         $pivotFields = $pivot->getFillable();
 
-<<<<<<< .merge_file_h9FLE4
-=======
-        if ($table === null) {
-            $table = $pivot->getTable();
-        }
-
->>>>>>> .merge_file_EFty8q
         return $this->morphToMany(
             related: $related,
             name: $name,

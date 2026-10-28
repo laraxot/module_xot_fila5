@@ -135,7 +135,6 @@ describe('Xot execute coverage floor 50', function (): void {
 
         $meta = MetatagData::make();
         Assert::assertSame($meta, MetatagData::make());
-<<<<<<< .merge_file_uRtkxY
     });
 
     test('FileAction percorre helper filesystem namespace e component scan', function (): void {
@@ -192,9 +191,6 @@ describe('Xot execute coverage floor 50', function (): void {
 
         $components = FileAction::getComponents($componentRoot, 'Modules\\Xot\\View\\Components', 'xot::', true);
         Assert::assertCount(2, $components);
-=======
-        Assert::assertSame($meta->title, $meta->getBrandName());
->>>>>>> .merge_file_GkYK44
     });
 
     test('XotData e MetatagData eseguono getter semantici e rami puri', function (): void {

@@ -1,19 +1,13 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_MUws8i
 use Illuminate\Support\Str;
 use Modules\Xot\Services\ModuleService;
-=======
-
-use Modules\Xot\Actions\Model\GetAllModelsByModuleNameAction;
->>>>>>> .merge_file_39kcVn
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-<<<<<<< .merge_file_MUws8i
 function xotModuleServiceTestInstance(): ModuleService
 {
     return (new ModuleService)->setName('TestModule');
@@ -88,18 +82,6 @@ describe('ModuleService', function () {
         Assert::assertIsString($docComment);
         Assert::assertStringContainsString('@return array<string, class-string>', $docComment);
     });
-=======
-test('gets concrete models for a module through the current action', function (): void {
-    $models = app(GetAllModelsByModuleNameAction::class)->execute('Xot');
->>>>>>> .merge_file_39kcVn
-
-    Assert::assertIsArray($models);
-    Assert::assertArrayNotHasKey('base_model', $models);
-
-<<<<<<< .merge_file_MUws8i
-        Assert::assertTrue($method->isPublic());
-        Assert::assertSame(0, $method->getNumberOfParameters());
-    });
 
     it('handles empty module gracefully', function () {
         $emptyService = (new ModuleService)->setName('NonExistentModule');
@@ -166,14 +148,4 @@ test('gets concrete models for a module through the current action', function ()
 
         Assert::assertSame([], $result);
     });
-=======
-    foreach ($models as $name => $class) {
-        Assert::assertIsString($name);
-        Assert::assertIsString($class);
-    }
-});
-
-test('returns no models for an unknown module', function (): void {
-    Assert::assertSame([], app(GetAllModelsByModuleNameAction::class)->execute('NonExistentModule'));
->>>>>>> .merge_file_39kcVn
 });
