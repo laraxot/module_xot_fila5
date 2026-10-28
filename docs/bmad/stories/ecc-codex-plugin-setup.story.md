@@ -30,6 +30,8 @@ second brain, sicurezza e qualità già definite da PTVX.
   le differenze tra harness.
 - [x] Documentare provenienza, scelte, limiti e verifica nel second brain.
 - [x] Eseguire `phpstan analyse Modules` a cache fredda: zero segnalazioni.
+- [x] Eseguire l'audit deterministico ECC del repository PTVX e valutare i finding
+  contro il contratto locale del second brain.
 
 ## Piano
 
@@ -86,6 +88,36 @@ second brain, sicurezza e qualità già definite da PTVX.
   tranche.
 - Non verificato: avvio end-to-end del browser Chrome DevTools; non eseguito il test
   di interazione del plugin dentro una nuova sessione UI Codex.
+
+## Audit ECC harness
+
+Il comando ufficiale `scripts/harness-audit.js repo --format json` ha inizialmente
+fallito perché la cache del plugin non aveva installato `@iarna/toml`, dipendenza
+runtime dichiarata nel `package.json`. Ho installato le dipendenze dichiarate usando
+`npm ci --omit=dev --ignore-scripts --no-audit --no-fund` nella cache ECC 2.2.3;
+manifest e lockfile non sono stati modificati. Il comando nativo è poi terminato con
+exit 0.
+
+Risultato ripetibile: target `consumer`, 34/39 punti in 7 categorie applicabili.
+Tool Coverage 10/10, Context Efficiency 10/10, Quality Gates 10/10, Eval Coverage
+10/10, Security Guardrails 10/10; Memory Persistence 0/2 e GitHub Integration 7/10.
+
+I tre finding del report sono:
+
+- `.claude/memory.md` assente (2 punti): finding non accolto come gap. PTVX mantiene
+  il second brain canonico in `bashscripts/ai/wiki` e lo indicizza con QMD; creare
+  un secondo archivio ECC violerebbe `ptvx-integration.md`.
+- `.github/dependabot.yml` assente (2 punti).
+- `.github/CODEOWNERS` assente (1 punto).
+
+Non aggiungo file per alzare il punteggio senza una decisione su owner/code reviewer
+e policy Dependabot. La scorecard è un audit ECC, non sostituisce le regole del
+progetto: i primi due finding di governance restano opportunità da valutare in una
+story con scope e owner GitHub definiti.
+
+Seconda esecuzione diretta dalla cache plugin (senza `NODE_PATH`) ha restituito lo
+stesso punteggio, confermando che l'harness ora è eseguibile nell'installazione ECC
+di questo utente.
 
 ## Riferimenti
 
