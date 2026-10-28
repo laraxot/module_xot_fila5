@@ -49,7 +49,7 @@ trait HasExtraTrait
         return $this->morphOne($extraClass, 'model');
     }
 
-    /** @return array<string, mixed>|bool|float|int|string|null */
+    /** @return array<array-key, mixed>|bool|float|int|string|null */
     public function getExtra(string $name): array|bool|float|int|string|null
     {
         $extra = $this->extra;
@@ -65,16 +65,8 @@ trait HasExtraTrait
         $value = $attributes->get($name);
 
         if (\is_array($value)) {
-            $result = [];
-            foreach ($value as $key => $item) {
-                if (! \is_string($key)) {
-                    continue;
-                }
-
-                $result[$key] = $item;
-            }
-
-            return $result;
+            // Liste e mappe restano com'erano: il round-trip di setExtra non deve perdere elementi.
+            return $value;
         }
 
         if (\is_bool($value) || \is_float($value) || \is_int($value) || \is_string($value)) {

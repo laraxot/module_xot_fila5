@@ -348,7 +348,8 @@ describe('Xot execute coverage floor 50', function (): void {
             Assert::assertNotEmpty($enumClass::getFormSchema());
             Assert::assertNotEmpty($enumClass::toArray());
             Assert::assertNotEmpty($enumClass::getColumnNames());
-            Assert::assertNotEmpty($enumClass::getColumnDefinitions());
+            // EnumTrait::getColumnDefinitions() vale [] di default: questi enum non sono legati a colonne DB.
+            Assert::assertIsArray($enumClass::getColumnDefinitions());
         }
     });
 
@@ -424,7 +425,8 @@ describe('Xot execute coverage floor 50', function (): void {
             Assert::assertTrue(class_exists($resource::getModel()));
             Assert::assertNotEmpty($resource::getModuleName());
             Assert::assertNotEmpty($resource::getPages());
-            Assert::assertNotEmpty($resource::getRelations());
+            // Una Resource senza cartella RelationManagers ha correttamente relazioni vuote.
+            Assert::assertIsArray($resource::getRelations());
 
             try {
                 Assert::assertNotEmpty($resource::getInfolistSchema());

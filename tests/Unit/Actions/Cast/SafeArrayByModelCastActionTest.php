@@ -29,7 +29,7 @@ describe('Safe Array By Model Cast Action', function (): void {
     test('falls back to safe execute on error', function (): void {
         /** @var Model&MockInterface $model */
         $model = Mockery::mock(Model::class);
-        $model->shouldReceive('attributesToArray')->andThrow(new \Exception('Mock error'));
+        $model->shouldReceive('attributesToArray')->andThrow(new \ValueError('Mock error'));
         $model->shouldReceive('getAttributes')->andReturn(['name' => 'Fallback']);
         $model->shouldReceive('getAttribute')->andReturn('Fallback');
 
