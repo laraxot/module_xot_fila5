@@ -1,14 +1,9 @@
-<<<<<<< .merge_file_rUqF0T
 ---
 title: "Xot - architecture.md"
 module: Xot
 bmad: true
 status: active
 ---
-<<<<<<< .merge_file_z8d13y
-<<<<<<< .merge_file_t0hOOQ
-=======
->>>>>>> .merge_file_7s7XAj
 ---
 title: "Xot — architettura BMAD"
 type: architecture

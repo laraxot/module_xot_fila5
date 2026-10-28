@@ -1,23 +1,9 @@
 ---
-<<<<<<< .merge_file_JT3X9S
 title: "Xot - index.md"
 module: Xot
 bmad: true
 status: active
 ---
-=======
-title: "index"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "index"
-issues: []
-discussions: []
-status: draft
----
-
->>>>>>> .merge_file_s8gBd7
 # Xot Module - concepts Index
 
 ## Purpose

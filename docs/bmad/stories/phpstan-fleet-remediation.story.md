@@ -1,5 +1,5 @@
 ---
-title: "Xot - phpstan-fleet-remediation-2026-10-06.story.md"
+title: "Xot - phpstan-fleet-remediation.story.md"
 module: Xot
 bmad: true
 status: active
@@ -85,7 +85,6 @@ Quando subagent docs torna:
 ## Stato finale
 ✅ **DONE** — Fleet PHPStan clean (0 errori). Docs organizing in-progress. Learning loop captured.
 
-<<<<<<< HEAD
 
 ---
 
@@ -166,6 +165,3 @@ cd laravel && ./vendor/bin/phpstan analyse Modules --no-progress --memory-limit=
 ---
 
 **Task status**: ✅ **DONE** — Fleet è clean, docs consolidated, learning loop captured, handoff stories created.
-
-=======
->>>>>>> laraxot/dev

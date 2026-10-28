@@ -101,7 +101,7 @@ class GetPropertiesFromMethodsByModelAction
                 Assert::stringNotEmpty($codeStr, 'Il corpo della funzione non può essere vuoto');
 
                 // Cerchiamo relazioni belongsTo
-                $this->extractBelongsToRelations($codeStr, $model, $method);
+                $data = array_merge($data, $this->extractBelongsToRelations($codeStr, $model, $method));
             } catch (\Exception $e) {
                 // Se c'è un errore nell'analisi del metodo, lo ignoriamo e passiamo al successivo
                 continue;
@@ -117,14 +117,15 @@ class GetPropertiesFromMethodsByModelAction
      * @param  string  $codeStr  Il codice da analizzare
      * @param  Model  $model  Il modello
      * @param  string  $method  Il nome del metodo
+     * @return array<string, string> Chiave esterna => espressione factory del model correlato
      */
-    private function extractBelongsToRelations(string $codeStr, Model $model, string $method): void
+    private function extractBelongsToRelations(string $codeStr, Model $model, string $method): array
     {
         $search = '$this->belongsTo(';
         $pos = mb_stripos($codeStr, $search);
 
         if ($pos === false) {
-            return; // Il metodo non contiene una relazione belongsTo
+            return []; // Il metodo non contiene una relazione belongsTo
         }
 
         try {
@@ -133,7 +134,7 @@ class GetPropertiesFromMethodsByModelAction
 
             // Verifichiamo che sia effettivamente una relazione
             if (! $relationObj instanceof Relation) {
-                return;
+                return [];
             }
 
             // Verifichiamo che il metodo getForeignKeyName esista
@@ -149,10 +150,10 @@ class GetPropertiesFromMethodsByModelAction
             $relatedClass = get_class($relationObj->getRelated());
 
             // La colonna FK viene valorizzata con la factory del model correlato.
-            $data[$foreignKeyName] = 'factory('.$relatedClass.'::class)';
+            return [$foreignKeyName => 'factory('.$relatedClass.'::class)'];
         } catch (\Exception $e) {
             // In caso di errore, ignoriamo la relazione
-            return;
+            return [];
         }
     }
 }

@@ -1,24 +1,9 @@
 ---
-<<<<<<< .merge_file_YLjZfJ
 title: "Xot - development-rules.md"
 module: Xot
 bmad: true
 status: active
 ---
-=======
-title: "development rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "development rules"
-issues: []
-discussions: []
-status: superseded
-superseded_by: ../development-rules.md
----
-
->>>>>>> .merge_file_r2rLOK
 # Regole Generali di Sviluppo del Progetto
 
 ## Collegamenti

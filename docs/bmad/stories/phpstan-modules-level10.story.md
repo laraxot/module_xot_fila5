@@ -3,7 +3,7 @@ title: "PHPStan Level 10 — correzione fleet moduli"
 type: story
 module: Xot
 epic: quality
-story_id: "2026-10-06-phpstan-modules-level10"
+story_id: "phpstan-modules-level10"
 status: done
 track: quality/phpstan
 related:

@@ -1,23 +1,9 @@
 ---
-<<<<<<< .merge_file_zyJW5D
 title: "Xot - laraxot-architecture-rules.md"
 module: Xot
 bmad: true
 status: active
 ---
-=======
-title: "laraxot architecture rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "laraxot architecture rules"
-issues: []
-discussions: []
-status: draft
----
-
->>>>>>> .merge_file_MzTtO2
 # Laraxot Architecture Rules - Xot Module
 
 ## 🎯 Regole Fondamentali Laraxot
@@ -407,7 +393,3 @@ BadgeColumn::make('status')
 - [Spatie Queueable Actions](https://github.com/spatie/laravel-queueable-action)
 
 Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
-
-
-
-

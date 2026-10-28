@@ -198,7 +198,7 @@ interface HasRecursiveRelationshipsContract
     /**
      * @return AdjacencyBuilder<TModel>
      */
-    public function newEloquentBuilder($query);
+    public function newEloquentBuilder(Builder $query);
 
     /**
      * @param  list<TModel>  $models

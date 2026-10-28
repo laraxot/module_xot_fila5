@@ -40,7 +40,9 @@ Indice operativo del wiki Xot (core framework).
 - [module-directory-structure-rule.md](../module-directory-structure-rule.md) _(target mancante, verificato 2026-10-14)_ — regola cartelle modulo (PHP solo in `app/`)
 - [concepts/](./concepts/): Pattern architetturali e metodologie Xot/Laraxot.
 - [entities/](./entities/): Modelli e componenti chiave.
-<<<<<<< .merge_file_9Oxumk
+- [architettura](./concepts/xot-module-architecture-overview.md): Panoramica architetturale del modulo Xot (sovrapponibile a `bmad/architecture.md`).
+- [rules/](./rules/): Regole operative e contratti.
+- [overviews/](./overviews/): Viste panoramiche.
 - [sources/](./sources/): Dati di ricerca e link esterni.
 - [comparisons/](./comparisons/): Implementazioni alternative.
 - [decisions/](./decisions/): ADL (Architectural Decision Log).
@@ -145,11 +147,6 @@ Aggiornato: 2026-07-27
 - Analisi indipendente parallela, stesso giorno, mappa completa in [../index.md#discussioni-architetturali--2026-09-11](../index.md#discussioni-architetturali--2026-09-11) — censimento pagine, verifica dal vivo pannello/modulo, prova di precedenza classe/trait.
 
 - [File proposto XotBaseManageRelatedRecords](../app/Filament/Resources/Pages/XotBaseManageRelatedRecords.php.md) — PHP documentato, review e coordinamento multi-agente.
-=======
-- [architettura](./concepts/xot-module-architecture-overview.md): Panoramica architetturale del modulo Xot (sovrapponibile a `bmad/architecture.md`).
-- [rules/](./rules/): Regole operative e contratti.
-- [overviews/](./overviews/): Viste panoramiche.
->>>>>>> .merge_file_pSLwru
 
 ## Architettura Canonica (BMAD)
 

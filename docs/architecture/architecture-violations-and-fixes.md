@@ -1,23 +1,9 @@
 ---
-<<<<<<< .merge_file_Ndb2Gz
 title: "Xot - architecture-violations-and-fixes.md"
 module: Xot
 bmad: true
 status: active
 ---
-=======
-title: "architecture violations and fixes"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "architecture violations and fixes"
-issues: []
-discussions: []
-status: draft
----
-
->>>>>>> .merge_file_maOZPd
 # Violazioni Architetturali e Correzioni - Pattern XotData
 
 ## 🚨 **Violazioni Architetturali Critiche**

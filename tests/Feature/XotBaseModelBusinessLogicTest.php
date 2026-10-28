@@ -14,6 +14,7 @@ use Modules\Xot\Models\Module;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Models\Traits\RelationX;
 use Modules\Xot\Models\XotBaseModel;
+use Modules\Xot\Tests\Fixtures\Models\TestConcreteBaseModel;
 use Modules\Xot\Tests\TestCase;
 use Modules\Xot\Traits\Updater;
 use PHPUnit\Framework\Assert;
@@ -149,7 +150,7 @@ describe('Xot Base Model Business Logic', function (): void {
 
     test('it supports tenant isolation when configured', function (): void {
         // Arrange & Act
-        createXotBaseModelFixture();
+        $baseModel = createXotBaseModelFixture();
 
         // Assert - Tenant isolation may or may not be configured: la base non applica scope globali impliciti
         Assert::assertSame([], $baseModel->getGlobalScopes());
