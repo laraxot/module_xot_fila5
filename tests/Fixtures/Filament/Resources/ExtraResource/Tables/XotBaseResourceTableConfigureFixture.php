@@ -2,12 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Unit\Fixtures;
+namespace Modules\Xot\Tests\Fixtures\Filament\Resources\ExtraResource\Tables;
 
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\Filter;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
+/**
+ * Table di ExtraResource: getResource() la deduce dal namespace `{Resource}\\Tables\\`.
+ */
 final class XotBaseResourceTableConfigureFixture extends XotBaseResourceTable
 {
     /**

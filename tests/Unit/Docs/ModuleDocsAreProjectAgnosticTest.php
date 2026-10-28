@@ -82,7 +82,7 @@ function moduleDocsWithHostProjectName(): array
  * Tetto misurato il 2026-09-08. Scende con la bonifica, non sale mai.
  * Quando bonifichi, abbassalo: un ratchet che non scende torna verde per inerzia.
  */
-const MODULE_DOCS_HOST_NAME_FILE_BASELINE = 1642;
+const MODULE_DOCS_HOST_NAME_FILE_BASELINE = 1261;
 
 test('nessun documento nuovo di modulo nomina il progetto ospite', function (): void {
     $hits = moduleDocsWithHostProjectName();
