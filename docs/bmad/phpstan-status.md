@@ -26,7 +26,7 @@ Orfane che erano logica tolta, non rumore: `RelationX::morphToManyX()` (prefisso
 `RouteService::urlAct()` (nome route letto dopo l'uso), `extractBelongsToRelations()`
 (non popolava `$data`), `--type` di `xot:analyze-components` (mai applicato).
 Gli errori `HasXotTable` "in context of class@anonymous" erano result-cache stale.
-Dettaglio e lezioni: [dev-story](../stories/2026-10-06-phpstan-cleanup-xot-app.dev.md).
+Dettaglio e lezioni: [dev-story](../stories/phpstan-cleanup-xot-app.dev.md).
 
 ## Misura 2026-10-06 (notte) — swarm Xot/rest: test, helpers, stub Pest
 
@@ -38,7 +38,7 @@ comportamento del titolo); 53 erano parametri inutilizzati degli stub Pest
 `xotPestStubFailure()`); 2 di fixture (`SendMailByRecordActionTest`: classe anonima annidata
 senza PHPDoc risolto -> classe nominata). Pest non eseguito (`.env.testing` = MySQL).
 Da decidere: `tests/PestStubs.php` e' orfano ma e' lui a risolvere `Pest\Laravel\*` per PHPStan.
-Dettaglio e lezioni: [dev-story](../stories/2026-10-06-phpstan-cleanup-xot-rest.dev.md).
+Dettaglio e lezioni: [dev-story](../stories/phpstan-cleanup-xot-rest.dev.md).
 
 ## Misura 2026-10-06 — EnsureKeysAction + file scratch rimossi
 
