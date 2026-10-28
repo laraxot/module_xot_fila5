@@ -71,7 +71,7 @@ abstract class XotBaseResource extends FilamentResource
 
     public static function getModuleName(): string
     {
-        return Str::between(static::class, 'Modules\\', '\Filament');
+        return Str::before(Str::after(static::class, 'Modules\\'), '\\');
     }
 
     public function hasCombinedRelationManagerTabsWithContent(): bool

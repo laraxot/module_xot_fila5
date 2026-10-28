@@ -24,6 +24,7 @@ class ExportPdfAction extends XotBaseAction
     {
         parent::setUp();
         $this
+            ->label('')
             ->hiddenLabel(true)
             ->iconButton()
             // ->color('danger')

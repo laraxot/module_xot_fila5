@@ -26,7 +26,7 @@ class ExportXlsAction extends XotBaseAction
     protected function setUp(): void
     {
         parent::setUp();
-        $this->translateLabel()
+        $this->label('')
             ->hiddenLabel(true)
             ->iconButton()
             ->tooltip(function (): string {
