@@ -12,6 +12,7 @@ namespace Modules\Xot\Filament\Actions\Header;
 use Exception;
 use Filament\Notifications\Notification;
 use Filament\Resources\Pages\ListRecords;
+use Illuminate\Contracts\Support\Htmlable;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Export\ExportXlsByCollection;
 use Modules\Xot\Actions\Export\GetExportFileNameAction;
@@ -26,9 +27,12 @@ class ExportXlsAction extends XotBaseAction
     protected function setUp(): void
     {
         parent::setUp();
-        $this->label('')
-            ->hiddenLabel(true)
-            ->iconButton()
+        $this->translateLabel()
+            // Bottone (vista di default) con etichetta solo per screen reader, come le altre
+            // azioni dell'header (Trova esclusi, ...). Prima `iconButton()`: un glifo grigio senza
+            // area cliccabile, che non sembrava un comando.
+            ->label(fn (): Htmlable|string|null => $this->getTooltip())
+            ->hiddenLabel()
             ->tooltip(function (): string {
                 $livewire = $this->getLivewire();
                 if (! $livewire instanceof ListRecords) {
