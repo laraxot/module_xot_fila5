@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Models;
 
 use Modules\Xot\Contracts\HasRecursiveRelationshipsContract;
-use Modules\Xot\Models\Traits\TypedHasRecursiveRelationships;
+use Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships;
 
 /**
  * @template TModel of BaseTreeModel
@@ -13,5 +13,5 @@ use Modules\Xot\Models\Traits\TypedHasRecursiveRelationships;
  */
 abstract class BaseTreeModel extends BaseModel implements HasRecursiveRelationshipsContract
 {
-    use TypedHasRecursiveRelationships;
+    use HasRecursiveRelationships;
 }
