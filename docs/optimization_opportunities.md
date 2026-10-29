@@ -128,7 +128,7 @@ abstract class UIBaseStatsWidget extends XotBaseStatsOverviewWidget
 abstract class UIBaseTestWidget extends XotBaseWidget
 {
     protected static string $view = 'ui::filament.widgets.base-test';
-    protected static bool $isLazy = true;
+    protected static ?bool $isLazyLoaded = true;
     
     // Metodi comuni per tutti i widget di test
 }
