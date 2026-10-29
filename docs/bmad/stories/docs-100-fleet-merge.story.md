@@ -81,3 +81,24 @@ Misura in sola lettura (`docs-organizer.py audit --out`), nessuna correzione: le
 | **Totale** | 15524 | 12588 | 5262 | 1001 | 63 | 373 | 2912 |
 
 Lo stesso giorno, in Notify, i 719 link riscritti verso i nomi senza data (commit `42f1b0d010`) erano validi 47 prima e 55 dopo le rinomine: il resto puntava gia' a file inesistenti. Dettaglio in `docs/worklog/2026/10/22/`.
+
+## Misura del 2026-10-29 (worklog del giorno, prompt 98, Passo 7)
+
+Misura in sola lettura (`docs-organizer.py audit --out`), nessuna correzione: le story di consolidamento docs sono ancora aperte. Moduli con commit propri il 2026-10-29 (il riallineamento della radice tocca anche AI, Cms, Gdpr, Job, Lang e Zero, ma senza commit di quel giorno nei loro repo).
+
+| Modulo | md | link | rotti | collisioni maiuscole | nomi con data | doppioni | stub |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Activity | 710 | 231 | 87 | 0 | 0 | 1 | 130 |
+| Chart | 671 | 733 | 585 | 0 | 1 | 8 | 33 |
+| Geo | 2048 | 341 | 121 | 19 | 12 | 47 | 345 |
+| Limesurvey | 71 | 39 | 3 | 0 | 2 | 0 | 13 |
+| Media | 556 | 204 | 26 | 32 | 0 | 2 | 112 |
+| Notify | 3633 | 672 | 241 | 536 | 0 | 0 | 144 |
+| Quaeris | 209 | 85 | 14 | 0 | 12 | 0 | 1 |
+| Tenant | 529 | 185 | 70 | 0 | 0 | 0 | 134 |
+| UI | 454 | 359 | 304 | 3 | 0 | 1 | 56 |
+| User | 2136 | 301 | 134 | 82 | 0 | 2 | 144 |
+| Xot | 1568 | 606 | 380 | 2 | 0 | 0 | 340 |
+| **Totale** | 12585 | 3756 | 1965 | 674 | 27 | 61 | 1452 |
+
+Confronto con il 2026-10-22 sui moduli presenti in tutte e due le misure: i link rotti scendono in User (da 3297 a 134), Notify (da 426 a 241), Activity (da 187 a 87), Media (da 127 a 26) e Geo (da 128 a 121); salgono in UI (da 98 a 304) e Xot (da 346 a 380); restano 14 in Quaeris. Gli stub di Xot scendono da 1002 a 340. Le variazioni vengono dai commit di modulo registrati fra le due misure (dettaglio in `docs/worklog/2026/10/29/`), non da correzioni del Passo 7.
