@@ -73,19 +73,34 @@ Verifica: `phpstan analyse` pulito su `HasXotTable`, sui 5 utilizzatori diretti 
   `docs/wiki/rules/enum-pattern-filament.md`, senza consumer in questo repo. L'annotazione porta gia' il motivo.
   Si risolve solo ritirando il pattern o aggiungendo un consumer reale (per esempio un enum int-backed che lo usa).
 
-### Non rimosso: HasXotTable (7 annotazioni `method.deprecated`)
+### Rimosso in un secondo giro: HasXotTable (ultime 7 annotazioni `method.deprecated`)
 
 Righe con `$this->getTableColumns()` (2), `getTableFilters()` (2), `getTableHeaderActions()`, `getTableActions()`,
 `getTableBulkActions()`. Nel contesto di `XotBaseRelationManager` (due varianti), `XotBaseManageRelatedRecords`
 (`XotBaseResource/Pages`) e `XotBaseTableWidget` PHPStan risolve il metodo sull'override dichiarato dalla classe stessa
 (o, per il widget, sul metodo concreto ereditato da `TableWidget`, perche' il metodo astratto del trait non lo sostituisce),
-che non ha `@not-deprecated`. Fuori corsia di questo file. Per toglierle: aggiungere `@not-deprecated` agli override
-`getTableColumns()/getTableFilters()/getTableActions()/getTableBulkActions()/getTableHeaderActions()` in quelle classi
-(per il widget, dichiarare `getTableColumns()` con `@not-deprecated`), poi cancellare le 7 righe nel trait.
+che non aveva `@not-deprecated`. Fatto il 2026-10-30:
+
+| File | Cambio |
+|---|---|
+| `Filament/Resources/RelationManagers/XotBaseRelationManager.php` | `@not-deprecated` su `getTableColumns/Actions/BulkActions/HeaderActions`; `getTableFilters()` ha ora un docblock (`array<string\|int, BaseFilter>`). |
+| `Filament/Resources/XotBaseResource/RelationManager/XotBaseRelationManager.php` | `@not-deprecated` su `getTableColumns()`. |
+| `Filament/Resources/XotBaseResource/Pages/XotBaseManageRelatedRecords.php` | `@not-deprecated` su `getTableColumns/HeaderActions/Actions`; `disableCreateAnother()` (deprecato in Filament) sostituito dall'equivalente `createAnother(false)`. |
+| `Filament/Widgets/XotBaseTableWidget.php` | nuovo `getTableColumns()` (`return []`, come il metodo di Filament) con `@not-deprecated`. |
+| `Filament/Resources/Pages/XotBaseListRecords.php` | `@not-deprecated` sui quattro stub `getTableColumns/Actions/Filters/BulkActions`. |
+| `Filament/Traits/HasXotTable.php` | cancellate le 7 righe `@phpstan-ignore method.deprecated`. |
+
+Perche' sono emerse due segnalazioni nuove al primo giro: dentro un metodo deprecato PHPStan non segnala le chiamate a
+metodi deprecati. Togliendo la deprecazione ereditata, `disableCreateAnother()` in `XotBaseManageRelatedRecords` e la
+chiamata di `User` `TenantsRelationManager` a `ListTenants::getTableColumns()` (stub di `XotBaseListRecords` senza tag) sono
+diventate visibili. Entrambe si correggono alla radice (API non deprecata, tag sulla famiglia di stub), non con un ignore.
+
+Verifica: `cd laravel && ./vendor/bin/phpstan analyse Modules --memory-limit=-1 --no-progress` -> 0 errori dopo il giro
+(`HasXotTable` senza piu' alcuna annotazione).
 
 ## Non verificato
 
-- Non e' stato lanciato `analyse Modules` intero: la conferma finale a livello di modulo spetta al coordinatore.
+- `analyse Modules` intero lanciato dal coordinatore dopo tutte le lane e dopo il secondo giro `@not-deprecated`: 0 errori (con cache svuotata dopo le lane).
 - Cinque trait (`HasCsrfToken`, `HasCustomRelations`, `HasTableFunctionsTrait`, `HasSchemalessAttributes`,
   `HasCommonScopes`) risultano "usati" solo da test o fixture in `Modules/`: se quei test venissero rimossi o spostati
   fuori dal percorso analizzato, `trait.unused` tornerebbe.
@@ -93,6 +108,8 @@ che non ha `@not-deprecated`. Fuori corsia di questo file. Per toglierle: aggiun
 
 ### Non verificato: trait e pagine Filament
 
-- Il contesto "classe che usa `HasXotTable`" e' stato verificato solo sui 5 utilizzatori diretti e sulle fixture Xot; nessun
-  `analyse Modules` intero (spetta al coordinatore). Un utilizzatore esterno a `Modules/` non e' coperto.
+- Il contesto "classe che usa `HasXotTable`" e' coperto da `analyse Modules` (0 errori); un utilizzatore esterno a `Modules/`
+  (per esempio nei temi) non e' coperto dal percorso di `phpstan.neon`.
+- `XotBaseTableWidget` dichiara ora `getTableColumns()` `protected` (come Filament): un'estensione fuori dal repo che lo
+  ridefinisca con firma incompatibile non e' stata guardata.
 - Nessun test Pest eseguito (database di test con dati reali).
