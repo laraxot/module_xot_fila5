@@ -9,6 +9,7 @@ use Filament\Actions\ActionGroup;
 use Filament\Actions\CreateAction;
 use Filament\Resources\Pages\ListRecords as FilamentListRecords;
 use Illuminate\Support\Str;
+use Modules\Xot\Filament\Links\RecordAnchor;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Webmozart\Assert\Assert;
 
@@ -75,7 +76,12 @@ abstract class XotBaseListRecords extends FilamentListRecords
     protected function getHeaderActions(): array
     {
         return [
-            'create' => CreateAction::make()->icon('heroicon-o-plus'),
+            'create' => CreateAction::make()
+                ->icon('heroicon-o-plus')
+                ->url(fn (): string => RecordAnchor::appendReturnTo(
+                    static::getResource()::getUrl('create'),
+                    RecordAnchor::currentUrl(),
+                )),
         ];
     }
 
@@ -100,7 +106,7 @@ abstract class XotBaseListRecords extends FilamentListRecords
      */
     public function getTableFilters(): array
     {
-       return [];
+        return [];
     }
 
     /**

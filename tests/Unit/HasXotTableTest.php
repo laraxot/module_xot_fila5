@@ -36,6 +36,7 @@ function stubTableChain(MockInterface $tableMock): MockInterface
         'recordActionsPosition',
         'emptyStateActions',
         'striped',
+        'stackedOnMobile',
         'paginated',
         'defaultSort',
         'poll',

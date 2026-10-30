@@ -3,10 +3,10 @@
 declare(strict_types=1);
 ?>
 @extends('pub_theme::layouts.app')
-@section('title', 'Error log')
+@section('title', __('xot::error_log.sections.title.title'))
 @section('content')
 <div class="text-center">
-    <h3>Error log</h3>
+    <h3>{{ __('xot::error_log.sections.title.title') }}</h3>
 </div>
 
 <ul>
@@ -16,7 +16,7 @@ declare(strict_types=1);
 </ul>
 
 @if ($urls !== [])
-<h4>URLs</h4>
+<h4>{{ __('xot::error_log.sections.urls.label') }}</h4>
 <ul>
     @foreach ($urls as $url)
     <li>{{ stripslashes($url) }}</li>

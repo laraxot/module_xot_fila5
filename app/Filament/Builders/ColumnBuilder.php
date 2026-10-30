@@ -9,6 +9,7 @@ use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+use Modules\UI\Filament\Tables\Columns\IDColumn;
 
 /**
  * Column Builder for common Filament table columns.
@@ -35,7 +36,7 @@ class ColumnBuilder
      */
     public static function id(bool $sortable = true, bool $searchable = true): TextColumn
     {
-        return TextColumn::make('id')
+        return IDColumn::make('id')
             ->sortable($sortable)
             ->searchable($searchable)
             ->label('ID');

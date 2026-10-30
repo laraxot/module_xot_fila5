@@ -12,6 +12,7 @@ use Filament\Notifications\Notification;
 use Filament\Widgets\WidgetConfiguration;
 use Illuminate\Support\Facades\Artisan;
 use Laraxot\SmtpHealthCheck\SmtpCheck;
+use Modules\Xot\Filament\Traits\SuperAdminOnlyTrait;
 use Modules\Xot\Filament\Widgets\HealthOverviewWidget;
 use Spatie\CpuLoadHealthCheck\CpuLoadCheck;
 use Spatie\Health\Checks\Check;
@@ -37,6 +38,8 @@ use Spatie\SecurityAdvisoriesHealthCheck\SecurityAdvisoriesCheck;
 
 class HealthPage extends XotBasePage
 {
+    use SuperAdminOnlyTrait;
+
     /**
      * @var array<string, string>
      */

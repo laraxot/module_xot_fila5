@@ -55,6 +55,9 @@ return [
         'command_completed_desc' => 'Il comando :command è stato completato con successo',
         'command_failed' => 'Comando Fallito',
         'command_failed_desc' => 'Il comando :command è fallito. Controlla l\'output per i dettagli.',
+        'running_command' => [
+            'message' => 'Comando in esecuzione: :command',
+        ],
     ],
     'hints' => [
         'running' => 'Il comando è in esecuzione. L\'output apparirà in tempo reale.',
@@ -94,4 +97,5 @@ return [
             'label' => 'Elimina Artisan Commands Manager',
         ],
     ],
+    'select_command' => 'Seleziona un comando dall\'intestazione per iniziare.',
 ];

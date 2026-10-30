@@ -771,7 +771,9 @@ describe('Xot execute coverage floor 50', function (): void {
         Assert::assertSame('record-7', RecordAnchor::id(7));
         Assert::assertSame('#record-7', RecordAnchor::fragment(7));
         Assert::assertStringEndsWith('#record-7', RecordAnchor::appendTo('/list', 7));
-        Assert::assertSame('/list#x', RecordAnchor::appendTo('/list#x', 7));
+        Assert::assertSame('/list#record-7', RecordAnchor::appendTo('/list#x', 7));
+        Assert::assertStringEndsWith('return_to=%2Flist%23record-7', RecordAnchor::appendReturnTo('/edit', '/list', 7));
+        Assert::assertNull(RecordAnchor::resolveReturnTo('javascript:alert(1)', 7));
 
         $qb = new class extends BaseQueryBuilder
         {

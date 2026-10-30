@@ -10,6 +10,7 @@ use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
+use Modules\UI\Filament\Tables\Columns\IDColumn;
 
 /** @phpstan-ignore trait.unused */
 trait HasTableFunctionsTrait
@@ -22,7 +23,7 @@ trait HasTableFunctionsTrait
     public function getTableColumns(): array
     {
         return [
-            'id' => TextColumn::make('id'),
+            'id' => IDColumn::make('id'),
             'name' => TextColumn::make('name'),
             'created_at' => TextColumn::make('created_at')->dateTime(),
             'updated_at' => TextColumn::make('updated_at')->dateTime(),
