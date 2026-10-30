@@ -87,6 +87,8 @@ abstract class XotBaseListRecords extends FilamentListRecords
 
     /**
      * DEVE ESSERE FINAL
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
     public function getTableColumns(): array
     {
@@ -95,6 +97,8 @@ abstract class XotBaseListRecords extends FilamentListRecords
 
     /**
      * DEVE ESSERE FINAL
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
     public function getTableActions(): array
     {
@@ -103,6 +107,8 @@ abstract class XotBaseListRecords extends FilamentListRecords
 
     /**
      * DEVE ESSERE FINAL
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
     public function getTableFilters(): array
     {
@@ -111,6 +117,8 @@ abstract class XotBaseListRecords extends FilamentListRecords
 
     /**
      * DEVE ESSERE FINAL
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
     public function getTableBulkActions(): array
     {

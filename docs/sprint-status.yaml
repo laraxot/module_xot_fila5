@@ -44,3 +44,8 @@ stories:
     epic: "Salute delle Blade"
     story: "../../User/docs/stories/blade-templates-that-do-not-compile.story.md"
     notes: "Corrette hero (User) e contact-column (Notify); le due partials di Cms sono copie troncate non richiamate, lasciate. Controllo: bashscripts/tools/blade-compile-check.php."
+\n  "Sixteen/blade-i18n-no-hardcoded-text-pass-2-20261030":
+    status: review
+    epic: "Salute delle Blade"
+    story: "../../../Themes/Sixteen/docs/stories/blade-i18n-no-hardcoded-text.story.md"
+    notes: "Passata 2 testi fissi: scanner 2840 -> 2228 occorrenze (555 -> 506 file), chiavi mancanti 332 -> 274, Blade rotte 18 -> 2. Sezione 'Passata 2026-10-30' nelle story di Sixteen, TwentyOne, Two, Meetup, Zero (nuova), Geo, UI, User, Cms, Notify (nuova), Xot, Gdpr, Lang (nuova), Tenant (nuova) e altri moduli piccoli. Residui: pages_old* di Sixteen (545, codice morto), chiavi fixcity:: inesistenti, Notify/Employee it da rileggere."

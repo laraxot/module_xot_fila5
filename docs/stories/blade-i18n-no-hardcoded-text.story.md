@@ -52,3 +52,15 @@ Metodo e regola completa: [story del tema Two](../../../../Themes/Two/docs/stori
 ## Seguito: forma delle chiavi
 
 Le chiavi a 2-3 segmenti create da questa campagna sono state in parte portate a `ns::file.collezione.chiave.tipo`: **15 chiavi spostate** in questo proprietario (stesso testo, tutte le lingue, usi riscritti, nessun uso della vecchia chiave rimasto). La frase sui «tre o quattro elementi» qui sopra descrive lo stato precedente: le chiavi rimaste a 3-4 elementi non sono state verificate una per una; la misura assoluta, lo strumento e i residui sono in [la story di Lang](../../../Lang/docs/stories/translation-key-shape-rekey.story.md).
+
+### Passata 2026-10-30 (sessione 97f16a39, i18n-small-modules: Xot)
+
+Scanner `Modules/Xot`: prima 24 occorrenze in 12 file (22 text, 2 attr), dopo 20 in 11 file (18 text, 2 attr).
+
+- Blade toccata (1): `pdf/spatie-test.blade.php` («Generato il», «Nessun dato fornito.», «Chiave», «Valore»), usata da `MakePdfSpatieTestAction`. La data resta nel formato `d/m/Y H:i:s` e `<html lang="it">` non e' stato cambiato (attributo, fuori regola).
+- Chiavi nuove: `xot::pdf_spatie_test.{sections.generated_at.label (:date), sections.empty.message, fields.key.label, fields.value.label}` in `it`, `en`, `de`, `es` (4 per lingua). `it` e' il testo originale identico.
+- Buchi colmati (chiavi usate dalle Blade, presenti solo in `it`/`en`): nuovi `de/widgets.php` e `es/widgets.php` (10 chiavi ciascuno: `base.*`, `infolist.record_not_available.label`, `modules_overview.*`, `schema.submit.label`) e nuovi `de/xot_base_resource_form.php` e `es/xot_base_resource_form.php` (6 chiavi: `actions.{submit,previous,next}`, `steps.{privacy,data,summary}`). Totale: it +4, en +4, de +20, es +20.
+- Controlli: `check-blade-keys` su `Modules/Xot` da 11 chiavi mancanti (de, es) a 0; compilazione Blade 60 file, 1 non compila (`rss/feed.blade.php`, gia' rotta prima, la sistema un altro agente; `livewire/test` ora compila); `php -l` pulito sui file lingua toccati; `check-key-shape`: nessuna delle chiavi nuove e' tra le storte.
+- Residui (20): pagine di test o sviluppo non instradate (`livewire/test` in due copie, `test` in due copie, `filament/widgets/test` con testo italiano di prova ma `TestWidget` usa `xot::filament.widgets.base`; 13 occorrenze), stub `index` e `layouts/master` (3), `title="titolo di prova"` in `components/dashboard/item` (2 copie, componente mai usato), `weekly` della sitemap (valore `changefreq`, falso positivo), frammento `@endif @endforeach` in `livewire/rate/multi` (falso positivo).
+- Resta da fare: le chiavi `xot::widgets.*` e `xot::xot_base_resource_form.*` hanno 3 segmenti dopo `::` (preesistenti, non rinominate).
+- Non verificato: nessun PDF generato e nessuna pagina guardata; testi PHP non cercati (il titolo «Spatie PDF Test» e' in `MakePdfSpatieTestAction`).

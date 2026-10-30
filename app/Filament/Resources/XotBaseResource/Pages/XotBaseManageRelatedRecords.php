@@ -77,6 +77,8 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      * Questo metodo può essere sovrascritto nelle classi figlie.
      *
      * @return array<string, TextColumn>
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
     public function getTableColumns(): array
     {
@@ -98,11 +100,13 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      * Questo metodo può essere sovrascritto nelle classi figlie.
      *
      * @return array<string, Action>
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
     public function getTableHeaderActions(): array
     {
         return [
-            'create' => CreateAction::make()->label('Crea Nuovo')->disableCreateAnother(),
+            'create' => CreateAction::make()->label('Crea Nuovo')->createAnother(false),
         ];
     }
 
@@ -111,6 +115,8 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      * Questo metodo può essere sovrascritto nelle classi figlie.
      *
      * @return array<string, Action>
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
     public function getTableActions(): array
     {

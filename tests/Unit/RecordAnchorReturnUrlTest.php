@@ -4,13 +4,15 @@ declare(strict_types=1);
 
 use Illuminate\Http\Request;
 use Modules\Xot\Filament\Links\RecordAnchor;
-use Modules\Xot\Tests\TestCase;
+use Modules\Xot\Tests\XotBaseTestCase;
 use PHPUnit\Framework\Assert;
 
 use function Safe\json_encode;
 use function Safe\parse_url;
 
-uses(TestCase::class);
+// Questo test esercita solo la normalizzazione degli URL: non usa Eloquent né il database.
+// XotBaseTestCase evita di avviare DatabaseTransactions e mantiene il test realmente unitario.
+uses(XotBaseTestCase::class);
 
 test('currentUrl restituisce l URL completo fuori da una richiesta Livewire', function (): void {
     app()->instance('request', Request::create('/admin/users?page=2'));

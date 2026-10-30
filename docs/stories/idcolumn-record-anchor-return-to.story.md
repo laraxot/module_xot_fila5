@@ -57,10 +57,26 @@ Il valore arriva dalla query string, quindi `resolveReturnTo()` lo accetta solo 
 
 ## Non verificato
 
-- Pest non e' stato eseguito: `.env.testing` punta a MySQL con dati veri. Test scritti e non eseguiti: `Modules/Xot/tests/Unit/RecordAnchorReturnUrlTest.php`.
+- Il test mirato e' stato eseguito in due modalita': con l'ambiente predefinito il bootstrap lo rifiuta correttamente (`APP_ENV=local`); anche impostando `APP_ENV=testing`, il bootstrap applicativo continua a risolvere `local` e quindi la guardia interrompe il test prima delle asserzioni. Non e' stata bypassata la guardia e non e' stato toccato il database.
 - Nessuna pagina del pannello e' stata aperta in un browser (serve il login): scroll ed evidenziazione su desktop e mobile non sono verificati.
 - Verifiche fatte a runtime senza database: un `Table` simulato (`getVisibleColumns()` con e senza `IDColumn`) un harness PHP su `resolveReturnTo()` (28 valori da rifiutare, 7 da accettare) e una lettura indipendente di sicurezza con fuzz differenziale PHP contro il parser URL dei browser (circa 109.000 candidati: nessun valore accettato apre un'origine diversa, nessuna eccezione).
 - PHPStan su `Modules` (livello max) rieseguito dopo la modifica di `RecordAnchor` e del test: **0 errori**. Una corsa precedente, a merge Tenant ancora aperto, ne aveva 108 tutti in `Modules/TechPlanner/config/*.php`, sotto il claim di un altro agente («PHPStan TechPlanner config cache-safe duplicate cleanup»): che li ha chiusi, non io.
+
+## Audit disgiunto RecordAnchor / test
+
+La revisione ha confermato il contratto corrente senza regressioni dimostrate:
+
+- `RecordAnchor::currentUrl()` distingue correttamente una pagina HTTP dalla richiesta Livewire di aggiornamento.
+- `appendReturnTo()` conserva query e frammento dell'elenco e costruisce il parametro con `PHP_QUERY_RFC3986`.
+- `resolveReturnTo()` applica una allowlist same-origin su schema, host e porta, rifiuta caratteri che il parser URL del browser interpreta in modo ambiguo e limita il frammento al formato `record-*`.
+- `IDColumn` e l'ancora sull'azione di riga fanno escaping HTML; il test copre host esterno, schema, porta, userinfo, backslash e caratteri di controllo.
+- Il test usa `XotBaseTestCase`, evitando `DatabaseTransactions` per una suite che esercita solo URL e request. Il bootstrap applicativo resta comunque soggetto alla guardia del database: l'isolamento non viene simulato né allentato.
+
+Verifiche di questa revisione:
+
+- PHPStan mirato su `RecordAnchor.php` e `RecordAnchorReturnUrlTest.php`: **0 errori**.
+- Pest mirato: bloccato prima delle asserzioni dalla guardia `TestDatabaseGuard` perché il processo non carica un ambiente `testing` effettivo; nessuna regressione funzionale è stata quindi osservata nel codice sotto test.
+- Nessuna modifica a `RecordAnchor.php` o al test: il worktree contiene lavoro concorrente e non è stata dimostrata una correzione necessaria.
 
 ## Aperto
 

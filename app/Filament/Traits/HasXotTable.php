@@ -133,7 +133,6 @@ trait HasXotTable
     {
         $columns = [];
 
-        // @phpstan-ignore method.deprecated (override senza @not-deprecated in XotBaseRelationManager/XotBaseManageRelatedRecords/XotBaseTableWidget)
         foreach (array_values($this->getTableColumns()) as $column) {
             if ($column instanceof ColumnGroup) {
                 // Stack::make() non accetta ColumnGroup: nella vista a griglia le colonne
@@ -191,7 +190,6 @@ trait HasXotTable
      */
     public function getTableFiltersFormColumns(): int
     {
-        // @phpstan-ignore method.deprecated (override senza @not-deprecated in XotBaseRelationManager/XotBaseManageRelatedRecords/XotBaseTableWidget)
         $count = count($this->getTableFilters()) + 1;
 
         return min($count, 6);
@@ -248,7 +246,6 @@ trait HasXotTable
         }
 
         $tableColumns = array_values(array_filter(
-            // @phpstan-ignore method.deprecated (override senza @not-deprecated in XotBaseRelationManager/XotBaseManageRelatedRecords/XotBaseTableWidget)
             $this->getTableColumns(),
             static fn (mixed $column): bool => $column instanceof Column || $column instanceof ColumnGroup || $column instanceof LayoutComponent,
         ));
@@ -258,19 +255,15 @@ trait HasXotTable
         $table = $table
             ->recordTitleAttribute($this->getTableRecordTitleAttribute())
             ->heading($this->getTableHeading())
-            // @phpstan-ignore method.deprecated (override senza @not-deprecated in XotBaseRelationManager/XotBaseManageRelatedRecords/XotBaseTableWidget)
             ->headerActions($this->getTableHeaderActions())
             ->columns($columns)
             ->contentGrid($this->layoutView->getTableContentGrid())
-            // @phpstan-ignore method.deprecated (override senza @not-deprecated in XotBaseRelationManager/XotBaseManageRelatedRecords/XotBaseTableWidget)
             ->filters($this->getTableFilters())
             ->filtersLayout($this->getTableFiltersLayout())
             ->filtersFormColumns($this->getTableFiltersFormColumns())
             ->deferFilters($this->shouldDeferTableFilters())
             ->persistFiltersInSession($this->shouldPersistTableFiltersInSession())
-            // @phpstan-ignore method.deprecated (override senza @not-deprecated in XotBaseRelationManager/XotBaseManageRelatedRecords/XotBaseTableWidget)
             ->recordActions($this->getTableActions())
-            // @phpstan-ignore method.deprecated (override senza @not-deprecated in XotBaseRelationManager/XotBaseManageRelatedRecords/XotBaseTableWidget)
             ->toolbarActions($this->getTableBulkActions())
             ->recordActionsPosition($this->getTableRecordActionsPosition())
             ->emptyStateActions($this->getTableEmptyStateActions())
