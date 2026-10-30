@@ -5,7 +5,7 @@ module: Xot
 status: in-progress
 created: 2026-10-30
 updated: 2026-10-30
-tags: [phpstan, phpstan-ignore, trait-unused, xot]
+tags: [phpstan, phpstan-ignore, trait-unused, not-deprecated, xot]
 qmd: "phpstan ignore removal xot trait.unused callable.nonCallable EnumTrait HasUuid EnumIntegerTrait"
 ---
 
@@ -43,6 +43,28 @@ singoli non viene mai riportata). Analizzando le directory dei trait, `Xot/app/E
 Xot di sopra e `EnumTrait.php` (con le enum `YesNoEnum`, `GenderEnum`) e' pulito. Gli unici due `trait.unused`
 emersi in quel sottoinsieme riguardano trait del modulo User, fuori dalla corsia.
 
+### Esito: trait e pagine Filament (HasXotTable e correlati)
+
+Sezione dell'agente "Filament Traits". Annotazioni: 34 prima, 7 dopo. Nessun cambio di comportamento: solo docblock e righe di commento.
+
+| File | Prima | Dopo | Cosa e' cambiato |
+|---|---|---|---|
+| `Filament/Traits/HasXotTable.php` | 25 | 7 | 18 rimosse: 6 `method.deprecated` risolti con `@not-deprecated` sugli 11 hook del trait; 12 obsolete (`alreadyNarrowedType`, `argument.type`, `method.childReturnType`, `next-line` generici: PHPStan non riporta piu' nulla). |
+| `Filament/Resources/Pages/XotBaseManageRelatedRecords.php` | 5 | 0 | `@not-deprecated` sui 5 hook `getTable*` della pagina. |
+| `Filament/Traits/TransTrait.php` | 2 | 0 | Obsolete: `trans()`/`__()` accettano `array $replace`, nessun `argument.type`. |
+| `Filament/Traits/NavigationPageLabelTrait.php` | 1 | 0 | Obsoleta: il trait e' usato da `Job` `CreateSchedule` e da `User` `PasswordExpired`. |
+| `Traits/Filament/HasCustomModelLabel.php` | 1 | 0 | Obsoleta: usato dalla fixture `Xot/tests/Fixtures/Traits/HasCustomModelLabelProbeBase.php`. |
+
+Causa radice dei `method.deprecated`: gli hook di progetto (`getTableColumns()`, `getTableFilters()`, `getTableActions()`,
+`getTableBulkActions()`, `getTableHeaderActions()`, `getTableEmptyStateActions()`, `getTableHeading()`, `isTableStriped()`,
+`shouldPersistTableFiltersInSession()`, `getDefaultTableSortColumn()`, `getDefaultTableSortDirection()`) hanno lo stesso nome di
+metodi `@deprecated` di Filament, e PHPStan eredita la deprecazione dal genitore. Il tag PHPDoc `@not-deprecated` dichiara
+che l'hook di progetto e' API attiva (non e' un ignore: nessun errore viene soppresso, cambia la dichiarazione). Rinominare gli
+hook avrebbe rotto le sottoclassi e i progetti esterni.
+
+Verifica: `phpstan analyse` pulito su `HasXotTable`, sui 5 utilizzatori diretti (`XotBaseTableWidget`, i due `XotBaseRelationManager`,
+`XotBaseManageRelatedRecords` di `XotBaseResource/Pages`, `XotBaseResourceTable`) e sulle fixture di test che lo usano.
+
 ## Non rimosso (con motivo)
 
 - `Models/Traits/HasUuid.php` (`trait.unused`): nessuna classe nel repo lo usa (ne' in `app` ne' in `tests`, ne' in `Themes`).
@@ -51,10 +73,26 @@ emersi in quel sottoinsieme riguardano trait del modulo User, fuori dalla corsia
   `docs/wiki/rules/enum-pattern-filament.md`, senza consumer in questo repo. L'annotazione porta gia' il motivo.
   Si risolve solo ritirando il pattern o aggiungendo un consumer reale (per esempio un enum int-backed che lo usa).
 
+### Non rimosso: HasXotTable (7 annotazioni `method.deprecated`)
+
+Righe con `$this->getTableColumns()` (2), `getTableFilters()` (2), `getTableHeaderActions()`, `getTableActions()`,
+`getTableBulkActions()`. Nel contesto di `XotBaseRelationManager` (due varianti), `XotBaseManageRelatedRecords`
+(`XotBaseResource/Pages`) e `XotBaseTableWidget` PHPStan risolve il metodo sull'override dichiarato dalla classe stessa
+(o, per il widget, sul metodo concreto ereditato da `TableWidget`, perche' il metodo astratto del trait non lo sostituisce),
+che non ha `@not-deprecated`. Fuori corsia di questo file. Per toglierle: aggiungere `@not-deprecated` agli override
+`getTableColumns()/getTableFilters()/getTableActions()/getTableBulkActions()/getTableHeaderActions()` in quelle classi
+(per il widget, dichiarare `getTableColumns()` con `@not-deprecated`), poi cancellare le 7 righe nel trait.
+
 ## Non verificato
 
 - Non e' stato lanciato `analyse Modules` intero: la conferma finale a livello di modulo spetta al coordinatore.
 - Cinque trait (`HasCsrfToken`, `HasCustomRelations`, `HasTableFunctionsTrait`, `HasSchemalessAttributes`,
   `HasCommonScopes`) risultano "usati" solo da test o fixture in `Modules/`: se quei test venissero rimossi o spostati
   fuori dal percorso analizzato, `trait.unused` tornerebbe.
+- Nessun test Pest eseguito (database di test con dati reali).
+
+### Non verificato: trait e pagine Filament
+
+- Il contesto "classe che usa `HasXotTable`" e' stato verificato solo sui 5 utilizzatori diretti e sulle fixture Xot; nessun
+  `analyse Modules` intero (spetta al coordinatore). Un utilizzatore esterno a `Modules/` non e' coperto.
 - Nessun test Pest eseguito (database di test con dati reali).
