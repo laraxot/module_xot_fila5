@@ -52,17 +52,17 @@ declare(strict_types=1);
 <body>
     <h1>{{ $title }}</h1>
     <div class="meta">
-        Generato il {{ $generated_at->format('d/m/Y H:i:s') }}
+        {{ __('xot::pdf_spatie_test.sections.generated_at.label', ['date' => $generated_at->format('d/m/Y H:i:s')]) }}
     </div>
 
     @if($payload === [])
-        <p class="empty">Nessun dato fornito.</p>
+        <p class="empty">{{ __('xot::pdf_spatie_test.sections.empty.message') }}</p>
     @else
         <table>
             <thead>
                 <tr>
-                    <th>Chiave</th>
-                    <th>Valore</th>
+                    <th>{{ __('xot::pdf_spatie_test.fields.key.label') }}</th>
+                    <th>{{ __('xot::pdf_spatie_test.fields.value.label') }}</th>
                 </tr>
             </thead>
             <tbody>

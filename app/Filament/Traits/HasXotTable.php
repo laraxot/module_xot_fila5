@@ -86,6 +86,8 @@ trait HasXotTable
      * Vedi: Modules/Xot/docs/filament/widget-method-visibility-rules.md
      *
      * @return array<int|string, Action|ActionGroup>
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
     public function getTableHeaderActions(): array
     {
@@ -131,6 +133,7 @@ trait HasXotTable
     {
         $columns = [];
 
+        // @phpstan-ignore method.deprecated (override senza @not-deprecated in XotBaseRelationManager/XotBaseManageRelatedRecords/XotBaseTableWidget)
         foreach (array_values($this->getTableColumns()) as $column) {
             if ($column instanceof ColumnGroup) {
                 // Stack::make() non accetta ColumnGroup: nella vista a griglia le colonne
@@ -188,6 +191,7 @@ trait HasXotTable
      */
     public function getTableFiltersFormColumns(): int
     {
+        // @phpstan-ignore method.deprecated (override senza @not-deprecated in XotBaseRelationManager/XotBaseManageRelatedRecords/XotBaseTableWidget)
         $count = count($this->getTableFilters()) + 1;
 
         return min($count, 6);
@@ -244,6 +248,7 @@ trait HasXotTable
         }
 
         $tableColumns = array_values(array_filter(
+            // @phpstan-ignore method.deprecated (override senza @not-deprecated in XotBaseRelationManager/XotBaseManageRelatedRecords/XotBaseTableWidget)
             $this->getTableColumns(),
             static fn (mixed $column): bool => $column instanceof Column || $column instanceof ColumnGroup || $column instanceof LayoutComponent,
         ));
@@ -253,15 +258,19 @@ trait HasXotTable
         $table = $table
             ->recordTitleAttribute($this->getTableRecordTitleAttribute())
             ->heading($this->getTableHeading())
+            // @phpstan-ignore method.deprecated (override senza @not-deprecated in XotBaseRelationManager/XotBaseManageRelatedRecords/XotBaseTableWidget)
             ->headerActions($this->getTableHeaderActions())
             ->columns($columns)
             ->contentGrid($this->layoutView->getTableContentGrid())
+            // @phpstan-ignore method.deprecated (override senza @not-deprecated in XotBaseRelationManager/XotBaseManageRelatedRecords/XotBaseTableWidget)
             ->filters($this->getTableFilters())
             ->filtersLayout($this->getTableFiltersLayout())
             ->filtersFormColumns($this->getTableFiltersFormColumns())
             ->deferFilters($this->shouldDeferTableFilters())
             ->persistFiltersInSession($this->shouldPersistTableFiltersInSession())
+            // @phpstan-ignore method.deprecated (override senza @not-deprecated in XotBaseRelationManager/XotBaseManageRelatedRecords/XotBaseTableWidget)
             ->recordActions($this->getTableActions())
+            // @phpstan-ignore method.deprecated (override senza @not-deprecated in XotBaseRelationManager/XotBaseManageRelatedRecords/XotBaseTableWidget)
             ->toolbarActions($this->getTableBulkActions())
             ->recordActionsPosition($this->getTableRecordActionsPosition())
             ->emptyStateActions($this->getTableEmptyStateActions())
@@ -298,6 +307,8 @@ trait HasXotTable
      * Vedi: Modules/Xot/docs/filament/widget-method-visibility-rules.md
      *
      * @return array<string|int, Filter|TernaryFilter|BaseFilter>
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
     public function getTableFilters(): array
     {
@@ -311,6 +322,8 @@ trait HasXotTable
      * Vedi: Modules/Xot/docs/filament/widget-method-visibility-rules.md
      *
      * @return array<int|string, Action|ActionGroup>
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
     public function getTableActions(): array
     {
@@ -444,6 +457,8 @@ trait HasXotTable
      * Vedi: Modules/Xot/docs/filament/widget-method-visibility-rules.md
      *
      * @return array<int|string, BulkAction>
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
     public function getTableBulkActions(): array
     {
@@ -522,11 +537,15 @@ trait HasXotTable
      * Get list table columns.
      *
      * @return array<string, Column|ColumnGroup|LayoutComponent>
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
     abstract protected function getTableColumns(): array;
 
     /**
      * Get table heading.
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
     protected function getTableHeading(): ?string
     {
@@ -558,6 +577,8 @@ trait HasXotTable
      * Get table empty state actions.
      *
      * @return array<int|string, Action>
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
     protected function getTableEmptyStateActions(): array
     {
@@ -624,6 +645,8 @@ trait HasXotTable
 
     /**
      * Whether table rows are striped.
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
     protected function isTableStriped(): bool
     {
@@ -632,6 +655,8 @@ trait HasXotTable
 
     /**
      * Whether table filters persist in session.
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
     protected function shouldPersistTableFiltersInSession(): bool
     {
@@ -651,6 +676,8 @@ trait HasXotTable
 
     /**
      * Get default table sort column.
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
     protected function getDefaultTableSortColumn(): ?string
     {
@@ -668,6 +695,8 @@ trait HasXotTable
 
     /**
      * Get default table sort direction.
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
     protected function getDefaultTableSortDirection(): ?string
     {
