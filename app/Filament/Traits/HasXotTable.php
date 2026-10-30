@@ -90,10 +90,8 @@ trait HasXotTable
     public function getTableHeaderActions(): array
     {
         $resource = $this;
-        /* @phpstan-ignore-next-line */
         if ($this instanceof ListRecords) {
             $resourceClass = $this->getResource();
-            // @phpstan-ignore-next-line staticMethod.alreadyNarrowedType
             Assert::string($resourceClass);
             $resource = app($resourceClass);
         }
@@ -133,7 +131,6 @@ trait HasXotTable
     {
         $columns = [];
 
-        // @phpstan-ignore method.deprecated
         foreach (array_values($this->getTableColumns()) as $column) {
             if ($column instanceof ColumnGroup) {
                 // Stack::make() non accetta ColumnGroup: nella vista a griglia le colonne
@@ -191,7 +188,6 @@ trait HasXotTable
      */
     public function getTableFiltersFormColumns(): int
     {
-        // @phpstan-ignore method.deprecated
         $count = count($this->getTableFilters()) + 1;
 
         return min($count, 6);
@@ -248,7 +244,6 @@ trait HasXotTable
         }
 
         $tableColumns = array_values(array_filter(
-            // @phpstan-ignore method.deprecated
             $this->getTableColumns(),
             static fn (mixed $column): bool => $column instanceof Column || $column instanceof ColumnGroup || $column instanceof LayoutComponent,
         ));
@@ -257,27 +252,19 @@ trait HasXotTable
 
         $table = $table
             ->recordTitleAttribute($this->getTableRecordTitleAttribute())
-            // @phpstan-ignore method.deprecated
             ->heading($this->getTableHeading())
-            // @phpstan-ignore method.deprecated, argument.type
             ->headerActions($this->getTableHeaderActions())
             ->columns($columns)
             ->contentGrid($this->layoutView->getTableContentGrid())
-            // @phpstan-ignore method.deprecated
             ->filters($this->getTableFilters())
             ->filtersLayout($this->getTableFiltersLayout())
             ->filtersFormColumns($this->getTableFiltersFormColumns())
             ->deferFilters($this->shouldDeferTableFilters())
-            // @phpstan-ignore method.deprecated
             ->persistFiltersInSession($this->shouldPersistTableFiltersInSession())
-            // @phpstan-ignore method.deprecated, method.childReturnType, argument.type
             ->recordActions($this->getTableActions())
-            // @phpstan-ignore method.deprecated
             ->toolbarActions($this->getTableBulkActions())
             ->recordActionsPosition($this->getTableRecordActionsPosition())
-            // @phpstan-ignore method.deprecated
             ->emptyStateActions($this->getTableEmptyStateActions())
-            // @phpstan-ignore method.deprecated
             ->striped($this->isTableStriped())
             // Mobile: sotto `sm` (640 px) ogni riga diventa una card con etichetta + valore per
             // cella, ordinamento in un select e "seleziona tutti" nell'intestazione: niente scroll
@@ -287,9 +274,7 @@ trait HasXotTable
             ->paginated($this->getTablePaginated());
 
         // Configurazioni opzionali personalizzabili
-        // @phpstan-ignore method.deprecated
         $sortColumn = $this->getDefaultTableSortColumn();
-        // @phpstan-ignore method.deprecated
         $sortDirection = $this->getDefaultTableSortDirection();
         if ($sortColumn !== null && $sortDirection !== null) {
             $table = $table->defaultSort($sortColumn, $sortDirection);
@@ -331,7 +316,6 @@ trait HasXotTable
     {
         $actions = [];
         $resource = $this;
-        /* @phpstan-ignore-next-line */
         // Ripristinato a method_exists() il 2026-09-11: un giro precedente
         // aveva ristretto questo controllo a `$this instanceof ListRecords`,
         // pensato per le pagine, ma XotBaseResourceTable::getTableActions()
@@ -346,14 +330,11 @@ trait HasXotTable
         // per il resto di questa sessione.
         if (method_exists($this, 'getResource')) {
             $resourceClass = $this->getResource();
-            // @phpstan-ignore-next-line staticMethod.alreadyNarrowedType
             Assert::string($resourceClass);
             $resource = app($resourceClass);
         }
-        // @phpstan-ignore-next-line staticMethod.alreadyNarrowedType
         Assert::object($resource);
 
-        // @phpstan-ignore-next-line function.alreadyNarrowedType
         if (method_exists($resource, 'canView')) {
             $actions['view'] = self::withRecordReturnTo(
                 ViewAction::make()
@@ -363,7 +344,6 @@ trait HasXotTable
             );
         }
 
-        // @phpstan-ignore-next-line function.alreadyNarrowedType
         if (method_exists($resource, 'canEdit')) {
             $actions['edit'] = self::withRecordReturnTo(
                 EditAction::make()
@@ -373,7 +353,6 @@ trait HasXotTable
             );
         }
 
-        // @phpstan-ignore-next-line function.alreadyNarrowedType
         if (method_exists($resource, 'canDelete')) {
             $actions['delete'] = DeleteAction::make()
                 ->iconButton()
@@ -387,7 +366,6 @@ trait HasXotTable
 
         // Check if class has the getRelationship method
         // Note: In some contexts (ListRecords), getRelationship() may not exist
-        // @phpstan-ignore-next-line function.alreadyNarrowedType (needed for contexts where method doesn't exist)
         if ($this->shouldShowDetachAction() && method_exists($this, 'getRelationship')) {
             $relationship = $this->getRelationship();
 
@@ -505,7 +483,6 @@ trait HasXotTable
             }
         }
 
-        /* @phpstan-ignore-next-line function.alreadyNarrowedType */
         if (method_exists($this, 'getModel')) {
             $model = $this->getModel();
             Assert::string($model);
@@ -594,13 +571,11 @@ trait HasXotTable
 
     protected function shouldShowAttachAction(): bool
     {
-        // @phpstan-ignore-next-line
         return method_exists($this, 'getRelationship');
     }
 
     protected function shouldShowDetachAction(): bool
     {
-        // @phpstan-ignore-next-line
         return method_exists($this, 'getRelationship');
     }
 
