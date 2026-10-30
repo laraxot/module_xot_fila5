@@ -38,10 +38,12 @@ use Illuminate\Support\Str;
 use Livewire\Component;
 use Modules\UI\Enums\TableLayoutEnum;
 use Modules\UI\Filament\Actions\Table\TableLayoutToggleTableAction;
+use Modules\UI\Filament\Tables\Columns\IDColumn;
 use Modules\UI\Filament\Traits\HasTableLayoutPage;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Filament\PlainTextFromFilamentValueAction;
 use Modules\Xot\Actions\GetTransKeyAction;
+use Modules\Xot\Filament\Links\RecordAnchor;
 use RuntimeException;
 use Webmozart\Assert\Assert;
 
@@ -277,6 +279,11 @@ trait HasXotTable
             ->emptyStateActions($this->getTableEmptyStateActions())
             // @phpstan-ignore method.deprecated
             ->striped($this->isTableStriped())
+            // Mobile: sotto `sm` (640 px) ogni riga diventa una card con etichetta + valore per
+            // cella, ordinamento in un select e "seleziona tutti" nell'intestazione: niente scroll
+            // orizzontale. Da `sm` in su la tabella resta identica. Vedi
+            // Modules/UI/docs/stories/mobile-ux-pass.story.md
+            ->stackedOnMobile()
             ->paginated($this->getTablePaginated());
 
         // Configurazioni opzionali personalizzabili
@@ -348,16 +355,22 @@ trait HasXotTable
 
         // @phpstan-ignore-next-line function.alreadyNarrowedType
         if (method_exists($resource, 'canView')) {
-            $actions['view'] = ViewAction::make()
-                ->iconButton()
-                ->visible(static fn (Model $record): bool => (bool) $resource->canView($record));
+            $actions['view'] = self::withRecordReturnTo(
+                ViewAction::make()
+                    ->iconButton()
+                    ->visible(static fn (Model $record): bool => (bool) $resource->canView($record)),
+                isAnchor: true,
+            );
         }
 
         // @phpstan-ignore-next-line function.alreadyNarrowedType
         if (method_exists($resource, 'canEdit')) {
-            $actions['edit'] = EditAction::make()
-                ->iconButton()
-                ->visible(static fn (Model $record): bool => (bool) $resource->canEdit($record));
+            $actions['edit'] = self::withRecordReturnTo(
+                EditAction::make()
+                    ->iconButton()
+                    ->visible(static fn (Model $record): bool => (bool) $resource->canEdit($record)),
+                isAnchor: ! isset($actions['view']),
+            );
         }
 
         // @phpstan-ignore-next-line function.alreadyNarrowedType
@@ -386,6 +399,51 @@ trait HasXotTable
         }
 
         return $actions;
+    }
+
+    /**
+     * Azione di riga con `return_to`: dalla pagina view/edit si torna all'elenco sulla stessa riga
+     * (`#record-N`, vedi IDColumn). L'URL di destinazione e' quello che Filament assegnerebbe
+     * comunque; dove non ce n'e' uno (modale, widget) resta `null`.
+     *
+     * `$isAnchor`: l'ancora `record-N` sta sull'azione quando nessuna IDColumn e' visibile. Una colonna
+     * nascosta di default (la regola nei `*Table` del repo) non entra nel DOM, e senza bersaglio il ritorno
+     * non troverebbe la riga. Con l'ID visibile resta lo `<span>` della colonna: mai due `id` uguali.
+     */
+    private static function withRecordReturnTo(Action $action, bool $isAnchor): Action
+    {
+        $action->url(static function (Action $action): ?string {
+            $url = $action->getHasActionsLivewire()?->getDefaultActionUrl($action);
+            $record = $action->getRecord();
+            $key = $record instanceof Model ? $record->getKey() : null;
+
+            return $url === null || (! is_int($key) && ! is_string($key))
+                ? $url
+                : RecordAnchor::appendReturnTo($url, RecordAnchor::currentUrl(), $key);
+        });
+
+        if (! $isAnchor) {
+            return $action;
+        }
+
+        return $action->extraAttributes(static function (Action $action, Model $record): array {
+            $key = $record->getKey();
+
+            return (! is_int($key) && ! is_string($key)) || self::hasVisibleIdColumn($action)
+                ? []
+                : ['id' => RecordAnchor::id($key)];
+        });
+    }
+
+    private static function hasVisibleIdColumn(Action $action): bool
+    {
+        foreach ($action->getTable()?->getVisibleColumns() ?? [] as $column) {
+            if ($column instanceof IDColumn) {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     /**
@@ -568,9 +626,9 @@ trait HasXotTable
      */
     protected function getHeaderActions(): array
     {
-        return [
-            'create' => CreateAction::make()->icon('heroicon-o-plus'),
-        ];
+        $create = CreateAction::make()->icon('heroicon-o-plus');
+
+        return ['create' => $create];
     }
 
     /**

@@ -15,6 +15,7 @@ use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+use Modules\UI\Filament\Tables\Columns\IDColumn;
 use Modules\Xot\Filament\Traits\HasRelationshipModelClass;
 use Modules\Xot\Filament\Traits\HasXotTable;
 use Override;
@@ -80,7 +81,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
     public function getTableColumns(): array
     {
         return [
-            'id' => TextColumn::make('id')->label('ID')->sortable(),
+            'id' => IDColumn::make('id'),
             'name' => TextColumn::make('name')
                 ->label('Nome')
                 ->searchable()
