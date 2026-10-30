@@ -283,6 +283,8 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      * correlata (vedi table() sopra). Un override sostituisce (nessun merge
      * implicito); per estendere: `[...proprie, ...parent::getTableColumns()]`.
      *
+     * @not-deprecated Hook di progetto omonimo a un nome deprecato di Filament: API attiva di questa classe.
+     *
      * @return array<string, Column>
      */
     public function getTableColumns(): array
@@ -297,6 +299,8 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      * `survey_pdf_id` in `ManageContacts`) — il default della Resource
      * correlata non le conosce comunque.
      *
+     * @not-deprecated Hook di progetto omonimo a un nome deprecato di Filament: API attiva di questa classe.
+     *
      * @return array<string, Action|ActionGroup>
      */
     public function getTableHeaderActions(): array
@@ -306,6 +310,8 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
 
     /**
      * Override point per le azioni riga (record actions). Stessa semantica.
+     *
+     * @not-deprecated Hook di progetto omonimo a un nome deprecato di Filament: API attiva di questa classe.
      *
      * @return array<int|string, Action|ActionGroup>
      */
@@ -320,6 +326,8 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      * azione bulk — invece delle azioni reali della Resource correlata
      * (es. make-token/send-invite/send-spatie-email di `ContactsTable`).
      *
+     * @not-deprecated Hook di progetto omonimo a un nome deprecato di Filament: API attiva di questa classe.
+     *
      * @return array<int|string, Action|ActionGroup>
      */
     public function getTableBulkActions(): array
@@ -329,6 +337,8 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
 
     /**
      * Override point per i filtri. Stessa semantica.
+     *
+     * @not-deprecated Hook di progetto omonimo a un nome deprecato di Filament: API attiva di questa classe.
      *
      * @return array<string, BaseFilter>
      */
