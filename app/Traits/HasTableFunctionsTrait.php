@@ -12,7 +12,6 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
 use Modules\UI\Filament\Tables\Columns\IDColumn;
 
-/** @phpstan-ignore trait.unused */
 trait HasTableFunctionsTrait
 {
     /**

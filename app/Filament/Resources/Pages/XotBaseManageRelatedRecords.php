@@ -255,15 +255,10 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
             ->modifyQueryUsing(fn (Builder $query): Builder => $this->modifyRelatedQuery($query));
 
         return $this->relatedResourceTable
-            // @phpstan-ignore method.deprecated (hook di progetto omonimo a un nome deprecato Filament, vedi docblock di classe)
             ->columns($this->getTableColumns())
-            // @phpstan-ignore method.deprecated (hook di progetto omonimo a un nome deprecato Filament, vedi docblock di classe)
             ->headerActions($this->getTableHeaderActions())
-            // @phpstan-ignore method.deprecated (hook di progetto omonimo a un nome deprecato Filament, vedi docblock di classe)
             ->recordActions($this->getTableActions())
-            // @phpstan-ignore method.deprecated (hook di progetto omonimo a un nome deprecato Filament, vedi docblock di classe)
             ->toolbarActions($this->getTableBulkActions())
-            // @phpstan-ignore method.deprecated (hook di progetto omonimo a un nome deprecato Filament, vedi docblock di classe)
             ->filters($this->getTableFilters());
     }
 

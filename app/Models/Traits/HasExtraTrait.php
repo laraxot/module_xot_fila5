@@ -22,7 +22,6 @@ use function Safe\json_encode;
  * @property int $qty
  * @property ExtraContract|null $extra
  */
-/** @phpstan-ignore trait.unused */
 trait HasExtraTrait
 {
     /**
