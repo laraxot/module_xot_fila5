@@ -1,3 +1,11 @@
+---
+title: "Lessons Learned – Consolidated Rules (2025-08-25)"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot]
+qmd: "lessons learned   consolidated rules (2025-08-25) xot"
+---
 # Lessons Learned – Consolidated Rules (2025-08-25)
 
 This document consolidates recurring fixes and rules applied across modules. Keep files lowercase (README.md excepted).

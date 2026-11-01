@@ -12,6 +12,7 @@ use Illuminate\Support\Str;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Contracts\StateContract;
 use Modules\Xot\Filament\Traits\TransTrait;
+use Webmozart\Assert\Assert;
 
 /**
  * Abstract base class for appointment state management.
@@ -126,15 +127,6 @@ abstract class XotBaseState implements StateContract
      */
     public function processStateAction(array $arguments, array $data): void
     {
-        $message = Arr::get($data, 'message');
-        $stateClass = static::class;
-        /*
-         *
-         * $appointmentId = $arguments['appointment'];
-         * $appointment = Appointment::firstWhere('id',$appointmentId);
-         *
-         * $appointment?->state->transitionTo($stateClass,$message);
-         */
         // Fallback safe-mode when model-states package is not available.
         // Transition by generic arguments is intentionally a no-op.
     }

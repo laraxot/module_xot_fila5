@@ -1,3 +1,13 @@
+---
+title: "CSRF Token Handling in Xot"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, security]
+qmd: "CSRF Token Handling in Xot"
+---
 # CSRF Token Handling in Xot
 
 ## Table of Contents
@@ -94,6 +104,6 @@ public function mount(): void
    ```
 
 ## Related Documentation
-- [Laravel CSRF Protection](https://laravel.com/project_docs/csrf)
-- [Livewire Forms](https://laravel-livewire.com/project_docs/2.x/input)
+- [Laravel CSRF Protection](https://laravel.com/docs/csrf)
+- [Livewire Forms](https://laravel-livewire.com/docs/2.x/input)
 - [Xot Widget Development](xot-widgets.md)

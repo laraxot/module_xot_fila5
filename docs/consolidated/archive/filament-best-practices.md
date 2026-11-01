@@ -1,3 +1,11 @@
+---
+title: "Filament Best Practices (Moduli Riutilizzabili)"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "filament best practices (moduli riutilizzabili) xot"
+---
 # Filament Best Practices (Moduli Riutilizzabili)
 
 ## Descrizione
@@ -42,7 +50,7 @@ class UserResource extends Resource
 Tutte le risorse Filament devono implementare il metodo `getFormSchema()` che restituisce un array di componenti:
 
 ```php
-public function getFormSchema(): array
+public static function getFormSchema(): array
 {
     return [
         TextInput::make('nome')->required(),
@@ -128,7 +136,7 @@ class SocioResource extends XotBaseResource
     protected static ?int $navigationSort = 1;
 
     // Form Schema - CORRETTO ✅
-    public function getFormSchema(): array
+    public static function getFormSchema(): array
     {
         return [
             TextInput::make('cognome')
@@ -308,7 +316,7 @@ return [
 Utilizzare componenti come `Section`, `Tabs` e `Fieldset` per organizzare logicamente i campi:
 
 ```php
-public function getFormSchema(): array
+public static function getFormSchema(): array
 {
     return [
         Forms\Components\Tabs::make('Tabs')
@@ -562,7 +570,7 @@ class SocioResource extends XotBaseResource
 {
     protected static ?string $model = Socio::class;
 
-    public function getFormSchema(): array
+    public static function getFormSchema(): array
     {
         return [
             TextInput::make('nome')->required(),
@@ -588,8 +596,8 @@ Consulta l'esempio completo all'inizio di questo documento per una implementazio
 ## Riferimenti
 
 - [Documentazione Filament](https://filamentphp.com/docs)
-- [Documentazione XotBaseResource](base_orisbroker_fila3/laravel/Modules/Xot/project_docs/resource.md)
-- [Best Practices Laraxot](base_orisbroker_fila3/laravel/Modules/Xot/project_docs/best-practices.md)
+- [Documentazione XotBaseResource](base_orisbroker_fila5/laravel/Modules/Xot/project_docs/resource.md)
+- [Best Practices Laraxot](base_orisbroker_fila5/laravel/Modules/Xot/project_docs/best-practices.md)
 
 ## Regole per Widget Filament: Path View e Localizzazione
 

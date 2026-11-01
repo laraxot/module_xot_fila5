@@ -4,10 +4,13 @@ declare(strict_types=1);
 use Modules\Xot\Filament\Resources\Pages\XotBaseManageRelatedRecords;
 use Modules\Xot\Filament\Traits\HasXotTable;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
-use Modules\Xot\Filament\Traits\TransTrait;
+use Modules\Xot\Filament\Traits\TransFuncTrait;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Safe\file_get_contents;
+
+uses(TestCase::class);
 
 /**
  * Guardia meccanica contro due regressioni avvenute nello stesso giorno
@@ -30,11 +33,13 @@ use function Safe\file_get_contents;
  * @see Modules/Xot/docs/stories/xotbasemanagerelatedrecords-convention-over-configuration.story.md
  * @see Modules/Xot/docs/stories/18.27.hasxottable-fuori-dai-componenti-filament.story.md
  */
-it('usa i trait richiesti (NavigationLabelTrait, TransTrait) e NON HasXotTable', function (): void {
+it('usa i trait richiesti (NavigationLabelTrait, TransFuncTrait) e NON HasXotTable', function (): void {
     $traits = class_uses_recursive(XotBaseManageRelatedRecords::class);
 
+    // La pagina chiama static::transFunc(): il metodo arriva da TransFuncTrait, usato
+    // da NavigationLabelTrait (vedi la docblock della classe). TransTrait non serve qui.
     Assert::assertArrayHasKey(NavigationLabelTrait::class, $traits);
-    Assert::assertArrayHasKey(TransTrait::class, $traits);
+    Assert::assertArrayHasKey(TransFuncTrait::class, $traits);
 
     // Story 18.27: XotBaseManageRelatedRecords e' nominata esplicitamente
     // fra le classi che NON devono usare HasXotTable (implementa HasTable,

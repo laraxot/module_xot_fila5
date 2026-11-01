@@ -9,8 +9,8 @@ return [
         'group' => [
             'name' => 'Admin',
         ],
-        'label' => 'session.navigation',
-        'icon' => 'session.navigation',
+        'label' => 'Sessione',
+        'icon' => 'heroicon-o-user',
         'sort' => 21,
     ],
     'pages' => [

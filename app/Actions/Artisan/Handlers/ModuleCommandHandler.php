@@ -4,38 +4,33 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Artisan\Handlers;
 
-use Modules\Xot\Actions\Artisan\Contracts\CommandHandlerInterface;
 use Modules\Xot\Actions\Artisan\RunArtisanCommandAction;
 use Webmozart\Assert\Assert;
 
 /**
  * Handles module-related artisan commands.
+ *
+ * @deprecated Residuo: l'interfaccia dei handler e il registry sono stati rimossi, i comandi `module-*`
+ *             li serve `HandleArtisanActRequestAction` tramite `ArtisanActEnum`. Nessun chiamante.
  */
-class ModuleCommandHandler implements CommandHandlerInterface
+class ModuleCommandHandler
 {
-    /** @var array<string, string> */
-    private const array MODULE_COMMANDS = [
-        'module-list' => 'listModules',
-        'module-disable' => 'disableModule',
-        'module-enable' => 'enableModule',
-    ];
+    /** @var list<string> */
+    private const array MODULE_COMMANDS = ['module-list', 'module-disable', 'module-enable'];
 
     public function handle(string $moduleName = ''): string
     {
-        $command = $this->getCurrentCommand();
-
-        if (isset(self::MODULE_COMMANDS[$command])) {
-            $method = self::MODULE_COMMANDS[$command];
-
-            return $this->$method($moduleName);
-        }
-
-        return '';
+        return match ($this->getCurrentCommand()) {
+            'module-list' => $this->listModules(),
+            'module-disable' => $this->disableModule($moduleName),
+            'module-enable' => $this->enableModule($moduleName),
+            default => '',
+        };
     }
 
     public function supports(string $command): bool
     {
-        return isset(self::MODULE_COMMANDS[$command]);
+        return in_array($command, self::MODULE_COMMANDS, true);
     }
 
     private function getCurrentCommand(): string
@@ -46,7 +41,7 @@ class ModuleCommandHandler implements CommandHandlerInterface
         return $command;
     }
 
-    private function listModules(string $moduleName): string
+    private function listModules(): string
     {
         return app(RunArtisanCommandAction::class)->execute('module:list');
     }

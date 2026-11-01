@@ -1,4 +1,9 @@
 ---
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+issues: []
+discussions: []
 title: "Story — bonifica marker merge residui fleet"
 type: story
 module: Xot
@@ -9,7 +14,7 @@ track: quality/fleet
 qmd: "merge marker conflitto residui fleet bonifica gitmodules HEAD checkout marker committati"
 related:
   - ../../../docs/bmad/stories/git-status-fleet-sync.story.md
-  - ../../../../../bashscripts/docs/prompts/03-quality-gates.md
+  - ../../../../../../bashscripts/docs/prompts/03-quality-gates.md
 ---
 
 # merge-marker-fleet-residue

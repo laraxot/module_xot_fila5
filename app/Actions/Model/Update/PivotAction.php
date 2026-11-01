@@ -17,10 +17,7 @@ class PivotAction
      */
     public function execute(Model $_model, RelationDTO $relationDTO): void
     {
-        $rows = $relationDTO->rows;
-        // $rows is already typed as Relation in RelationDTO
         dddx('wip');
-
         /*
          *
          * $parent_panel = $this->panel->getParent();

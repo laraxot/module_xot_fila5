@@ -1,3 +1,11 @@
+---
+title: "Laravel XOT Architecture Documentation"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "laravel xot architecture documentation xot"
+---
 # Laravel XOT Architecture Documentation
 
 ## Overview
@@ -1200,7 +1208,7 @@ XotBaseResource è la classe base per tutte le risorse Filament nel framework. F
 
 3. **Form Schema**
    ```php
-   public function getFormSchema(): array
+   public static function getFormSchema(): array
    {
        return [
            // Form fields
@@ -1971,14 +1979,14 @@ A partire dal 10 Marzo 2025, tutti i moduli devono essere validati con PHPStan a
 Per validare tutti i moduli con PHPStan a livello 7:
 
 ```bash
-cd base_orisbroker_fila3/laravel
+cd base_orisbroker_fila5/laravel
 vendor/bin/phpstan analyse Modules --configuration=phpstan.neon
 ```
 
 Per validare un singolo modulo:
 
 ```bash
-cd base_orisbroker_fila3/laravel
+cd base_orisbroker_fila5/laravel
 vendor/bin/phpstan analyse Modules/NomeModulo --configuration=phpstan.neon
 ```
 
@@ -4439,7 +4447,7 @@ protected function getListTableBulkActions(): array
 protected function getFormSchema(): array
 
 // ✅ CORRETTO: getFormSchema deve essere statico
-public function getFormSchema(): array
+public static function getFormSchema(): array
 ```
 
 ### 2. Implementazione Corretta
@@ -4449,7 +4457,7 @@ class TicketResource extends XotBaseResource
     protected static ?string $model = Ticket::class;
 
     // ✅ CORRETTO: Metodo statico
-    public function getFormSchema(): array
+    public static function getFormSchema(): array
     {
         return [
             TextInput::make('title')->required(),
@@ -4470,13 +4478,13 @@ protected function getFormSchema(): array
 public function getFormSchema(): array
 
 // ✅ CORRETTO: public e statico
-public function getFormSchema(): array
+public static function getFormSchema(): array
 ```
 
 ### 2. Accesso a Proprietà
 ```php
 // ❌ ERRATO: Accesso a $this in metodo statico
-public function getFormSchema(): array
+public static function getFormSchema(): array
 {
     return [
         TextInput::make('name')
@@ -4485,7 +4493,7 @@ public function getFormSchema(): array
 }
 
 // ✅ CORRETTO: Usa metodi statici o proprietà statiche
-public function getFormSchema(): array
+public static function getFormSchema(): array
 {
     return [
         TextInput::make('name')
@@ -4503,7 +4511,7 @@ public function getFormSchema(): array
     *
     * @return array<int, \Filament\Forms\Components\Component>
     */
-   public function getFormSchema(): array
+   public static function getFormSchema(): array
    {
        return [
            // schema components
@@ -4535,7 +4543,7 @@ public function getFormSchema(): array
 2. **Type Safety**:
    ```php
    // Usa sempre return type declarations
-   public function getFormSchema(): array
+   public static function getFormSchema(): array
    ```
 
 3. **Documentazione**:
@@ -4543,7 +4551,7 @@ public function getFormSchema(): array
    /**
     * @return array<int, \Filament\Forms\Components\Component>
     */
-   public function getFormSchema(): array
+   public static function getFormSchema(): array
    ```
 
 4. **Contesto Statico**:
@@ -5696,7 +5704,7 @@ class TicketResource extends XotBaseResource
 {
     protected static ?string $model = Ticket::class;
 
-    public function getFormSchema(): array
+    public static function getFormSchema(): array
     {
         return [...];
     }
@@ -7143,7 +7151,7 @@ protected function getListTableBulkActions(): array
 protected function getFormSchema(): array
 
 // ✅ CORRETTO: getFormSchema deve essere statico
-public function getFormSchema(): array
+public static function getFormSchema(): array
 ```
 
 ### 2. Implementazione Corretta
@@ -7153,7 +7161,7 @@ class TicketResource extends XotBaseResource
     protected static ?string $model = Ticket::class;
 
     // ✅ CORRETTO: Metodo statico
-    public function getFormSchema(): array
+    public static function getFormSchema(): array
     {
         return [
             TextInput::make('title')->required(),
@@ -7174,13 +7182,13 @@ protected function getFormSchema(): array
 public function getFormSchema(): array
 
 // ✅ CORRETTO: public e statico
-public function getFormSchema(): array
+public static function getFormSchema(): array
 ```
 
 ### 2. Accesso a Proprietà
 ```php
 // ❌ ERRATO: Accesso a $this in metodo statico
-public function getFormSchema(): array
+public static function getFormSchema(): array
 {
     return [
         TextInput::make('name')
@@ -7189,7 +7197,7 @@ public function getFormSchema(): array
 }
 
 // ✅ CORRETTO: Usa metodi statici o proprietà statiche
-public function getFormSchema(): array
+public static function getFormSchema(): array
 {
     return [
         TextInput::make('name')
@@ -7207,7 +7215,7 @@ public function getFormSchema(): array
     *
     * @return array<int, \Filament\Forms\Components\Component>
     */
-   public function getFormSchema(): array
+   public static function getFormSchema(): array
    {
        return [
            // schema components
@@ -7239,7 +7247,7 @@ public function getFormSchema(): array
 2. **Type Safety**:
    ```php
    // Usa sempre return type declarations
-   public function getFormSchema(): array
+   public static function getFormSchema(): array
    ```
 
 3. **Documentazione**:
@@ -7247,7 +7255,7 @@ public function getFormSchema(): array
    /**
     * @return array<int, \Filament\Forms\Components\Component>
     */
-   public function getFormSchema(): array
+   public static function getFormSchema(): array
    ```
 
 4. **Contesto Statico**:
@@ -8016,7 +8024,7 @@ Le pagine di lista devono seguire questa struttura:
 La struttura base del progetto segue questo schema:
 ```
                    # Root del workspace
-└── base_orisbroker_fila3/          # Directory principale del progetto
+└── base_orisbroker_fila5/          # Directory principale del progetto
     └── laravel/                    # Applicazione Laravel
         └── Modules/               # Directory dei moduli
             └── [ModuleName]/     # Singolo modulo

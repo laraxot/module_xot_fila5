@@ -8,6 +8,8 @@ tags: [migrato-da-txt, xot]
 converted_from: DataTables.txt
 created: 2026-08-24
 updated: 2026-08-24
+status: draft
+qmd: "datatables xot"
 ---
 
 Server-Side Rendering of DataTables in Laravel

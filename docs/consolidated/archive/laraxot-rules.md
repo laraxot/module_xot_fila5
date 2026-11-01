@@ -1,3 +1,11 @@
+---
+title: "LARAXOT FRAMEWORK RULES"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "laraxot framework rules xot"
+---
 # LARAXOT FRAMEWORK RULES
 
 ## CLASS EXTENSION
@@ -108,7 +116,7 @@
 
 ## DOCUMENTATION
 - Always consult docs folders before taking action
-- Never include specific absolute paths (e.g., base_*_fila3)
+- Never include specific absolute paths (e.g., base_*_fila5)
 - Document model relationships and field purposes
 - Add PHPDoc blocks to all classes and methods
 

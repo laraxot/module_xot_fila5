@@ -1,3 +1,11 @@
+---
+title: "Best Practices - Documentazione Consolidata DRY + KISS"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "best practices - documentazione consolidata dry + kiss xot"
+---
 # Best Practices - Documentazione Consolidata DRY + KISS
 
 > **🎯 Single Source of Truth**: Questo documento centralizza TUTTE le best practices del progetto
@@ -240,7 +248,7 @@ use Filament\Forms\Components\TextInput;
 
 class ExampleResource extends XotBaseResource
 {
-    public function getFormSchema(): array
+    public static function getFormSchema(): array
     {
         return [
             TextInput::make('name')->required(),
@@ -255,7 +263,7 @@ class ExampleResource extends XotBaseResource
 /**
  * @return array<string, \Filament\Forms\Components\Component>
  */
-public function getFormSchema(): array
+public static function getFormSchema(): array
 {
     return [
         // Schema del form

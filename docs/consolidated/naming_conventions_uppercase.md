@@ -1,13 +1,10 @@
 ---
 title: "Convenzioni di Nomenclatura in <nome progetto>"
-module: "Xot"
-type: concept
-tags: [naming, conventions, uppercase]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "naming conventions uppercase"
-related:
-  - "./eloquent-magic-properties-rule.md"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "convenzioni di nomenclatura in <nome progetto> xot"
 ---
 # Convenzioni di Nomenclatura in <nome progetto>
 

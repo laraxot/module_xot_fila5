@@ -65,7 +65,7 @@
         "fakerphp/faker": "^1.24",
         "fruitcake/laravel-debugbar": "^4.2",
         "larastan/larastan": "*",
-        "laravel/boost": "^2.0",
+        "laravel/boost": "^2.10",
         "laravel/pint": "^1.18",
         "laravel/sail": "^1.41",
         "mockery/mockery": "^1.6",
@@ -117,11 +117,7 @@
             "helpers/Helper.php"
         ]
     },
-    "autoload-dev": {
-        "files": [
-            "tests/Support/helpers.php"
-        ]
-    },
+    "autoload-dev": {},
     "scripts": {
         "analyse": "vendor/bin/phpstan analyse",
         "test": "vendor/bin/pest",

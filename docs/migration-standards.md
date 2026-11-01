@@ -1,3 +1,11 @@
+---
+title: "Standard per le Migrazioni in"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot]
+qmd: "standard per le migrazioni in xot"
+---
 # Standard per le Migrazioni in
 
 ## Introduzione

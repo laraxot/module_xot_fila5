@@ -1,3 +1,11 @@
+---
+title: "Evoluzione dei metodi in XotBaseResource"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "evoluzione dei metodi in xotbaseresource xot"
+---
 # Evoluzione dei metodi in XotBaseResource
 
 ## Metodi deprecati vs attuali
@@ -47,7 +55,7 @@ class ProductResource extends XotBaseResource
     protected static ?string $model = Product::class;
 
     // UNICO metodo che dovrebbe essere implementato
-    public function getFormSchema(): array
+    public static function getFormSchema(): array
     {
         return [
             'name' => Forms\Components\TextInput::make('name')

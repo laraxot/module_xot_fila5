@@ -10,6 +10,7 @@ use Filament\Actions\Contracts\HasActions;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
 use Filament\Schemas\Components\Wizard\Step;
+use Filament\Schemas\Concerns\RestrictsFileUploadsToSchemaComponents;
 use Filament\Schemas\Schema;
 use Filament\Widgets\Widget as FilamentWidget;
 use Illuminate\Contracts\Support\Htmlable;
@@ -35,6 +36,9 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
 {
     use InteractsWithActions;
     use InteractsWithForms;
+
+    // Upload di Livewire solo verso campi di caricamento dello schema: senza, un ospite poteva usare `_startUpload` su qualunque widget (audit DCP-181, A-2)
+    use RestrictsFileUploadsToSchemaComponents;
     use TransTrait;
 
     public string $title = '';
@@ -52,8 +56,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
      * Vista predefinita per widget che estendono XotBaseWidget.
      * Deve essere sovrascritta nelle classi figlie.
      */
-    /** @var view-string */
-    protected string $view;
+    protected string $view = 'xot::filament.widgets.base';
 
     protected int|string|array $columnSpan = 'full';
 
@@ -225,14 +228,22 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
 
     private function resolveView(): void
     {
-        /** @var view-string $defaultView */
         $defaultView = 'xot::filament.widgets.base';
 
-        /** @var view-string $view */
-        $view = app(GetViewByClassAction::class)->execute(static::class);
-        $this->view = $view;
-        // fallback to default if action fails or view not exists
-        $this->view = $defaultView;
+        if ($this->view !== $defaultView && view()->exists($this->view)) {
+            return;
+        }
+
+        try {
+            $view = app(GetViewByClassAction::class)->execute(static::class);
+            if (view()->exists($view)) {
+                $this->view = $view;
+            }
+        } catch (\Exception $e) {
+            if (! view()->exists($this->view)) {
+                throw $e;
+            }
+        }
     }
 
     /**

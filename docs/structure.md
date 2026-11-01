@@ -1,3 +1,11 @@
+---
+title: "Analisi della Discrepanza tra Namespace e Struttura Directory nei Moduli Laraxot"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot]
+qmd: "analisi della discrepanza tra namespace e struttura directory nei moduli laraxot xot"
+---
 ### Versione HEAD
 
 # Analisi della Discrepanza tra Namespace e Struttura Directory nei Moduli Laraxot

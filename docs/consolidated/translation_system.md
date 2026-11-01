@@ -1,13 +1,10 @@
 ---
-title: "Sistema di Traduzione "
-module: "Xot"
-type: concept
-tags: [translation, system]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "translation system"
-related:
-  - "./eloquent-magic-properties-rule.md"
+title: "Sistema di Traduzione"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "sistema di traduzione xot"
 ---
 # Sistema di Traduzione 
 

@@ -1,3 +1,11 @@
+---
+title: "XotBaseResource: Regole fondamentali"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "xotbaseresource: regole fondamentali xot"
+---
 # XotBaseResource: Regole fondamentali
 
 ## Principio di progettazione
@@ -46,7 +54,7 @@ class MyResource extends XotBaseResource
     protected static ?string $model = MyModel::class;
 
     // SOLO questo metodo è necessario
-    public function getFormSchema(): array
+    public static function getFormSchema(): array
     {
         return [
             'title' => TextInput::make('title')->required(),

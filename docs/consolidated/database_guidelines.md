@@ -1,13 +1,10 @@
 ---
 title: "Linee Guida per i Database in Laraxot"
-module: "Xot"
-type: how-to
-tags: [database, guidelines]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "database guidelines"
-related:
-  - "./eloquent-magic-properties-rule.md"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "linee guida per i database in laraxot xot"
 ---
 # Linee Guida per i Database in Laraxot
 

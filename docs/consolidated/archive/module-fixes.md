@@ -1,3 +1,11 @@
+---
+title: "Correzioni nel Modulo Xot"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "correzioni nel modulo xot xot"
+---
 # Correzioni nel Modulo Xot
 
 ## Nuovi Errori PHPStan (Livello 2)
@@ -87,7 +95,7 @@ protected function generateFormSchema(string $file, string $content, string $cla
 ```php
 declare(strict_types=1);
 
-public function getFormSchema(): array
+public static function getFormSchema(): array
 {
     return [
         'field_name' => [
@@ -148,7 +156,7 @@ public function getFormSchema(): array
 ### Composer.json
 ```json
 {
-    "name": "laraxot/module_xot_fila3",
+    "name": "laraxot/module_xot_fila5",
     "autoload": {
         "psr-4": {
             "Modules\\Xot\\": "app/",

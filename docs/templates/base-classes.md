@@ -1,3 +1,13 @@
+---
+title: "Template Classi Base - Modulo Xot"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, templates]
+qmd: "Template Classi Base - Modulo Xot"
+---
 # Template Classi Base - Modulo Xot
 
 ## 🎯 Panoramica
@@ -97,11 +107,7 @@ class {ModelName}Resource extends XotBaseResource
     /**
      * @return array<int, \Filament\Forms\Components\Component>
      */
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
+    public static function getFormSchema(): array
     {
         return [
             Forms\Components\TextInput::make('name')
@@ -320,5 +326,5 @@ class Create{ModelName}Action
 
 ---
 
-**Ultimo aggiornamento:** Gennaio 2025
+**Ultimo aggiornamento:** Gennaio 2025  
 **Versione:** 2.0 - Consolidata DRY + KISS

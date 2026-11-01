@@ -1,3 +1,11 @@
+---
+title: "Struttura Traduzioni Espansa - Modulo Xot"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, architecture]
+qmd: "struttura traduzioni espansa - modulo xot xot"
+---
 # Struttura Traduzioni Espansa - Modulo Xot
 
 ## Scopo

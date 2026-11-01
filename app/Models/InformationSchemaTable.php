@@ -7,7 +7,7 @@ namespace Modules\Xot\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
-use Modules\Tenant\Models\Traits\SushiToJson;
+use Modules\Tenant\Models\BaseModelJson;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Database\Factories\InformationSchemaTableFactory;
 
@@ -41,10 +41,8 @@ use Modules\Xot\Database\Factories\InformationSchemaTableFactory;
  *
  * @mixin \Eloquent
  */
-class InformationSchemaTable extends BaseModel
+class InformationSchemaTable extends BaseModelJson
 {
-    use SushiToJson;
-
     /**
      * @var list<string>
      */

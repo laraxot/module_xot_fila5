@@ -1,13 +1,10 @@
 ---
 title: "Best Practices per Laraxot"
-module: "Xot"
-type: concept
-tags: [best, practices]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "best practices"
-related:
-  - "./eloquent-magic-properties-rule.md"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "best practices per laraxot xot"
 ---
 # Best Practices per Laraxot
 

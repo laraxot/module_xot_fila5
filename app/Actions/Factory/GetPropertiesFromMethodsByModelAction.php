@@ -101,7 +101,7 @@ class GetPropertiesFromMethodsByModelAction
                 Assert::stringNotEmpty($codeStr, 'Il corpo della funzione non può essere vuoto');
 
                 // Cerchiamo relazioni belongsTo
-                $this->extractBelongsToRelations($codeStr, $model, $method, $data);
+                $data = array_merge($data, $this->extractBelongsToRelations($codeStr, $model, $method));
             } catch (\Exception $e) {
                 // Se c'è un errore nell'analisi del metodo, lo ignoriamo e passiamo al successivo
                 continue;
@@ -117,15 +117,15 @@ class GetPropertiesFromMethodsByModelAction
      * @param  string  $codeStr  Il codice da analizzare
      * @param  Model  $model  Il modello
      * @param  string  $method  Il nome del metodo
-     * @param  array<string, string>  &$data  L'array in cui salvare i dati estratti
+     * @return array<string, string> Chiave esterna => espressione factory del model correlato
      */
-    private function extractBelongsToRelations(string $codeStr, Model $model, string $method, array &$data): void
+    private function extractBelongsToRelations(string $codeStr, Model $model, string $method): array
     {
         $search = '$this->belongsTo(';
         $pos = mb_stripos($codeStr, $search);
 
         if ($pos === false) {
-            return; // Il metodo non contiene una relazione belongsTo
+            return []; // Il metodo non contiene una relazione belongsTo
         }
 
         try {
@@ -134,7 +134,7 @@ class GetPropertiesFromMethodsByModelAction
 
             // Verifichiamo che sia effettivamente una relazione
             if (! $relationObj instanceof Relation) {
-                return;
+                return [];
             }
 
             // Verifichiamo che il metodo getForeignKeyName esista
@@ -149,14 +149,11 @@ class GetPropertiesFromMethodsByModelAction
             // Otteniamo la classe relazionata
             $relatedClass = get_class($relationObj->getRelated());
 
-            // Chiamiamo GetFakerAction con parametri corretti
-            $fakerAction = app(GetFakerAction::class);
-            // Assert::isCallable rimosso - metodo verificato a compile time
-
-            $type = 'factory('.$relatedClass.'::class)';
+            // La colonna FK viene valorizzata con la factory del model correlato.
+            return [$foreignKeyName => 'factory('.$relatedClass.'::class)'];
         } catch (\Exception $e) {
             // In caso di errore, ignoriamo la relazione
-            return;
+            return [];
         }
     }
 }

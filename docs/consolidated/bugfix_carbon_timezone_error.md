@@ -1,13 +1,10 @@
 ---
 title: "Bugfix: Carbon Timezone Error in XotServiceProvider"
-module: "Xot"
-type: concept
-tags: [bugfix, carbon, timezone, error]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "bugfix carbon timezone error"
-related:
-  - "./eloquent-magic-properties-rule.md"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "bugfix: carbon timezone error in xotserviceprovider xot"
 ---
 # Bugfix: Carbon Timezone Error in XotServiceProvider
 

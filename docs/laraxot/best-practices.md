@@ -1,3 +1,13 @@
+---
+title: "Laraxot Best Practices"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, laraxot]
+qmd: "Laraxot Best Practices"
+---
 # Laraxot Best Practices
 
 ## Form Schema Best Practices
@@ -15,17 +25,13 @@
 
 ### Implementazione
 ```php
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
+public static function getFormSchema(): array
 {
     return [
         // Campi modificabili dall'utente
         TextInput::make('name')->required(),
         Select::make('type')->options([...]),
-
+        
         // NO: Non includere campi automatici
         // TextInput::make('created_at')
         // TextInput::make('updated_at')
@@ -51,7 +57,7 @@ return [
                 // Campi del form
                 'name' => 'Nome',
                 'type' => 'Tipo',
-
+                
                 // Campi automatici (da mantenere)
                 'created_at' => 'Data Creazione',
                 'updated_at' => 'Ultima Modifica'
@@ -69,7 +75,7 @@ return [
 ## XotBaseResource
 
 ### Regole di Estensione
-1. Implementare `public function getFormSchema(): array`
+1. Implementare `public static function getFormSchema(): array`
 2. NON implementare il metodo `form(Form $form): Form`
 3. NON definire `protected static ?string $navigationIcon`
 4. La navigazione è gestita interamente da XotBaseResource
@@ -80,11 +86,7 @@ class MyResource extends XotBaseResource
 {
     protected static ?string $model = MyModel::class;
 
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
+    public static function getFormSchema(): array
     {
         return [
             TextInput::make('name')->required(),
@@ -112,12 +114,16 @@ class MyResource extends XotBaseResource
 - Seguire una struttura modulare
 ### Versione HEAD
 
+
 ## Collegamenti tra versioni di best-practices.md
 * [best-practices.md](docs/tecnico/filament/best-practices.md)
-* [best-practices.md](../../../xot/project_docs/laraxot/best-practices.md)
-* [best-practices.md](../../../ui/project_docs/best-practices.md)
-* [best-practices.md](../../../../themes/one/project_docs/best-practices.md)
+* [best-practices.md](../../../Xot/docs/laraxot/best-practices.md)
+* [best-practices.md](../../../UI/docs/best-practices.md)
+* [best-practices.md](../../../../Themes/One/docs/best-practices.md)
+
 
 ### Versione Incoming
 
+
 ---
+

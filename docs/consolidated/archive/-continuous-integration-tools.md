@@ -1,13 +1,10 @@
 ---
 title: "_continuous_integration_tools"
-module: "Xot"
-type: concept
-tags: [, continuous, integration, tools]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: " continuous integration tools"
-related:
-  - "./eloquent-magic-properties-rule.md"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "_continuous_integration_tools xot"
 ---
 # _continuous_integration_tools
 

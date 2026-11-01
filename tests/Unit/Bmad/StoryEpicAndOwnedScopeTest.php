@@ -1,11 +1,14 @@
 <?php
 
 declare(strict_types=1);
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Safe\file_get_contents;
 use function Safe\preg_match;
 use function Safe\preg_match_all;
+
+uses(TestCase::class);
 
 /**
  * Le story BMAD si shardano da `docs/epics.md`: il numero non si sceglie.

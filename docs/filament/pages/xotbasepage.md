@@ -1,13 +1,23 @@
+---
+title: "XotBasePage - Classe Base per le Pagine Filament"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, filament]
+qmd: "XotBasePage - Classe Base per le Pagine Filament"
+---
 # XotBasePage - Classe Base per le Pagine Filament
 
 ## Descrizione
 
-La classe `XotBasePage` rappresenta un componente fondamentale nell'architettura di <nome progetto>, fungendo da intermediario tra le pagine Filament e le implementazioni specifiche dell'applicazione. Questa classe astratta segue il pattern architetturale di non estendere mai direttamente le classi di Filament, ma utilizzare sempre classi wrapper con prefisso `XotBase`.
+La classe `XotBasePage` rappresenta un componente fondamentale nell'architettura di SaluteOra, fungendo da intermediario tra le pagine Filament e le implementazioni specifiche dell'applicazione. Questa classe astratta segue il pattern architetturale di non estendere mai direttamente le classi di Filament, ma utilizzare sempre classi wrapper con prefisso `XotBase`.
 
 ## Percorso del File
 
 ```
-Modules/Xot/app/Filament/Resources/Pages/XotBasePage.php
+/var/www/html/base_saluteora/laravel/Modules/Xot/app/Filament/Resources/Pages/XotBasePage.php
 ```
 
 ## Gerarchia di Ereditarietà
@@ -37,7 +47,7 @@ public static function getNavigationLabel(): string
     return static::transFunc(__FUNCTION__);
 }
 
-public function getTitle(): string
+public function getTitle(): string 
 {
     return static::transTitle();
 }
@@ -46,7 +56,7 @@ public function getTitle(): string
 ### Form Standardizzato
 
 ```php
-public function form(Form $form): Form
+public function form(\Filament\Schemas\Schema $form): \Filament\Schemas\Schema
 {
     return $form
         ->schema($this->getFormSchema())
@@ -67,14 +77,14 @@ public function form(Form $form): Form
 ### Estensione Corretta
 
 ```php
-namespace Modules\<nome progetto>\Filament\Pages;
+namespace Modules\SaluteOra\Filament\Pages;
 
 use Modules\Xot\Filament\Resources\Pages\XotBasePage;
 
 class MyCustomPage extends XotBasePage
 {
     protected static ?string $navigationIcon = 'heroicon-o-document';
-
+    
     protected function getFormSchema(): array
     {
         return [
@@ -88,7 +98,7 @@ class MyCustomPage extends XotBasePage
 
 ```php
 // ❌ ERRORE: Non estendere mai direttamente Page
-namespace Modules\<nome progetto>\Filament\Pages;
+namespace Modules\SaluteOra\Filament\Pages;
 
 use Filament\Pages\Page;
 
@@ -123,7 +133,7 @@ class MyCustomPage extends Page // ⚠️ ERRATO!
 class MyPage extends XotBasePage implements HasForms  // ⚠️ ERRATO!
 {
     use InteractsWithForms;  // ⚠️ ERRATO!
-
+    
     // ...
 }
 ```
@@ -135,7 +145,7 @@ class MyPage extends XotBasePage implements HasForms  // ⚠️ ERRATO!
 class MyPage extends XotBasePage
 {
     // Nessuna ridichiarazione di trait/interfacce già presenti
-
+    
     protected function getFormSchema(): array
     {
         return [
@@ -169,7 +179,7 @@ La classe è progettata per essere compatibile con Filament v3+ e garantisce il 
 
 ## Collegamenti
 
-- [Documentazione di Filament](https://filamentphp.com/project_docs/3.x/panels/pages)
-- [Pattern di Estensione](modules/xot/project_docs/filament/filament_best_practices.md)
-- [Principi di Ereditarietà](modules/xot/project_docs/class_inheritance_principles.md)
-- [Architettura Filament-Xot](modules/xot/project_docs/filament_xot_architecture.md)
+- [Documentazione di Filament](https://filamentphp.com/docs/3.x/panels/pages)
+- [Pattern di Estensione](/var/www/html/base_saluteora/laravel/Modules/Xot/docs/filament/filament_best_practices.md)
+- [Principi di Ereditarietà](/var/www/html/base_saluteora/laravel/Modules/Xot/docs/class_inheritance_principles.md)
+- [Architettura Filament-Xot](/var/www/html/base_saluteora/laravel/Modules/Xot/docs/filament_xot_architecture.md)

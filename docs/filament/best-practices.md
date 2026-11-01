@@ -1,3 +1,13 @@
+---
+title: "Best Practices Filament - Modulo Xot"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, filament]
+qmd: "Best Practices Filament - Modulo Xot"
+---
 # Best Practices Filament - Modulo Xot
 
 ## 🎯 Principi Fondamentali
@@ -58,17 +68,13 @@ abstract class XotBaseRelationManager extends RelationManager
 // ✅ CORRETTO - Implementare solo i metodi necessari
 class UserResource extends XotBaseResource
 {
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
+    public static function getFormSchema(): array
     {
         return [
             // Schema del form
         ];
     }
-
+    
     public static function getTableColumns(): array
     {
         return [
@@ -143,21 +149,17 @@ class UserResource extends XotBaseResource
 
 ### **2. Schema Form Standardizzato**
 ```php
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
+public static function getFormSchema(): array
 {
     return [
         Forms\Components\TextInput::make('name')
             ->required()
             ->maxLength(255),
-
+            
         Forms\Components\EmailInput::make('email')
             ->required()
             ->unique(ignoreRecord: true),
-
+            
         Forms\Components\Select::make('role')
             ->options([
                 'admin' => 'Amministratore',
@@ -176,15 +178,15 @@ public static function getTableColumns(): array
         Tables\Columns\TextColumn::make('name')
             ->searchable()
             ->sortable(),
-
+            
         Tables\Columns\TextColumn::make('email')
             ->searchable()
             ->sortable(),
-
+            
         Tables\Columns\TextColumn::make('role')
             ->badge()
             ->color('primary'),
-
+            
         Tables\Columns\TextColumn::make('created_at')
             ->dateTime()
             ->sortable(),
@@ -220,7 +222,7 @@ public static function getTableBulkActions(): array
 public function boot(): void
 {
     parent::boot();
-
+    
     // Registrazione risorse Filament
     Filament::registerResources([
         UserResource::class,
@@ -271,10 +273,10 @@ return [
 
 - [Architettura Modulo Xot](../core/architecture.md)
 - [Convenzioni di Naming](../core/naming-conventions.md)
-- [Best Practices Sistema](../../../../docs/core/best-practices.md)
+- [Best Practices Sistema](../../../docs/core/best-practices.md)
 - [Template Filament](../templates/filament.md)
 
 ---
 
-**Ultimo aggiornamento:** Gennaio 2025
+**Ultimo aggiornamento:** Gennaio 2025  
 **Versione:** 2.0 - Consolidata DRY + KISS

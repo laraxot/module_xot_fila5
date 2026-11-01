@@ -59,7 +59,6 @@ class ExecuteArtisanCommandAction
 
         /** @var list<string> $output */
         $output = [];
-        $status = 'running';
 
         try {
             $process = Process::path(base_path())

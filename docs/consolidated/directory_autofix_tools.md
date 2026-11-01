@@ -1,13 +1,10 @@
 ---
 title: "Strumenti di Correzione Automatica della Struttura delle Directory"
-module: "Xot"
-type: concept
-tags: [directory, autofix, tools]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "directory autofix tools"
-related:
-  - "./eloquent-magic-properties-rule.md"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "strumenti di correzione automatica della struttura delle directory xot"
 ---
 # Strumenti di Correzione Automatica della Struttura delle Directory
 

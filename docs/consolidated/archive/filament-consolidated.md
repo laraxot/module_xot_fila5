@@ -1,3 +1,11 @@
+---
+title: "Filament - Guida Completa Consolidata"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "filament - guida completa consolidata xot"
+---
 # Filament - Guida Completa Consolidata
 
 **Ultimo aggiornamento**: 2025-01-06
@@ -47,7 +55,7 @@ class PatientResource extends XotBaseResource
     /**
      * @return array<string, \Filament\Forms\Components\Component>
      */
-    public function getFormSchema(): array
+    public static function getFormSchema(): array
     {
         return [
             TextInput::make('name')

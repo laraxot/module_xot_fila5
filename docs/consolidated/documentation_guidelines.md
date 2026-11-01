@@ -1,13 +1,10 @@
 ---
 title: "Linee Guida per la Documentazione in Laraxot"
-module: "Xot"
-type: how-to
-tags: [documentation, guidelines]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "documentation guidelines"
-related:
-  - "./eloquent-magic-properties-rule.md"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "linee guida per la documentazione in laraxot xot"
 ---
 
 # Linee Guida per la Documentazione in Laraxot

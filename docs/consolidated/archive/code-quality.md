@@ -1,3 +1,11 @@
+---
+title: "Laraxot Code Quality Standards"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "laraxot code quality standards xot"
+---
 # Laraxot Code Quality Standards
 
 ## Overview
@@ -127,7 +135,7 @@ return [
 
 ```php
 // ✅ CORRECT
-public function getFormSchema(): array
+public static function getFormSchema(): array
 {
     return [
         'name' => TextInput::make('name'),
@@ -136,7 +144,7 @@ public function getFormSchema(): array
 }
 
 // ❌ WRONG
-public function getFormSchema(): array
+public static function getFormSchema(): array
 {
     return [
         TextInput::make('name')->label('Nome'),
