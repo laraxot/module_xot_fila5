@@ -17,8 +17,22 @@ Pest: skip — `DB_HOST=10.100.200.53` DOWN (non host 15).
 
 `analyse Modules` dopo fix `@template TModel` / `@use GeoTrait<Address>`:
 **0** `file_errors`. Canon:
-[geo-trait.md](../Geo/docs/traits/geo-trait.md) ·
 [phpstan-journey.md](../../../../bashscripts/ai/wiki/second-brain/phpstan-journey.md).
+
+Questa misura documenta lo stato storico prima della rimozione del trait.
+Nella verifica corrente il trait e i relativi probe sono stati rimossi dopo
+l'audit completo dei chiamanti: nessun consumer PHP resta nel repository.
+`GeographicalScopes`, `Address` e `HasAddress` coprono i comportamenti ancora
+utilizzati.
+
+## Misura 2026-09-24 (notte) — gate freddo dopo cache stale
+
+Un run intermedio ha segnalato `phpstan.path` verso il file GeoTrait non più
+presente. Dopo il controllo read-only dei chiamanti e l'arresto di tutte le run,
+`phpstan clear-result-cache` è uscito 0. Il successivo
+`phpstan analyse Modules --no-progress --memory-limit=-1 --error-format=json`
+ha chiuso con **EXIT 0**, `totals.errors=0`, `totals.file_errors=0`.
+Report: `build/phpstan-modules-final.json`.
 
 ## Misura 2026-09-24 — regressione naming (CloudStorage + Symplify)
 
