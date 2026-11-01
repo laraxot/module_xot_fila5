@@ -30,7 +30,7 @@ return [
             'name' => 'General',
             'description' => 'General Settings',
         ],
-        'label' => 'Gender Enum',
+        'label' => 'Genere',
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],

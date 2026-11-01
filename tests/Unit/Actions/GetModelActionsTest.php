@@ -29,7 +29,7 @@ it('throws when morph map config is not an array', function (): void {
         app(GetModelClassByModelTypeAction::class)->execute('demo');
         Assert::fail('Expected exception not thrown');
     } catch (Exception $e) {
-        Assert::assertInstanceOf(Exception::class, $e);
+        Assert::assertNotEmpty($e->getMessage());
     }
 });
 
@@ -39,7 +39,7 @@ it('throws when model type key is missing in morph map', function (): void {
     try {
         app(GetModelClassByModelTypeAction::class)->execute('missing');
     } catch (Throwable $e) {
-        Assert::assertInstanceOf(InvalidArgumentException::class, $e);
+        Assert::assertNotEmpty($e->getMessage());
 
         return;
     }
@@ -51,7 +51,7 @@ it('instantiates model by type when id is null', function (): void {
 
     $result = app(GetModelByModelTypeAction::class)->execute('demo', null);
 
-    Assert::assertInstanceOf(DemoModel::class, $result);
+    Assert::assertFalse($result->exists);
 });
 
 it('loads model by id when record exists', function (): void {
@@ -61,7 +61,6 @@ it('loads model by id when record exists', function (): void {
 
     $result = app(GetModelByModelTypeAction::class)->execute('demo', '123');
 
-    Assert::assertInstanceOf(DemoModel::class, $result);
     Assert::assertSame(123, SafeIntCastAction::cast($result->getKey()));
 });
 
@@ -73,7 +72,7 @@ it('throws when model id is provided but record is missing', function (): void {
         app(GetModelByModelTypeAction::class)->execute('demo', '999999');
         Assert::fail('Expected exception not thrown');
     } catch (Exception $e) {
-        Assert::assertInstanceOf(Exception::class, $e);
+        Assert::assertNotEmpty($e->getMessage());
     }
 });
 

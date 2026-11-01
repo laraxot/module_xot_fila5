@@ -1,3 +1,11 @@
+---
+title: "MIGRATION BASE RULES"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot]
+qmd: "migration base rules xot"
+---
 # MIGRATION BASE RULES
 
 ## Regola universale

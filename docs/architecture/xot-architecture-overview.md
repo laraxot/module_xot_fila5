@@ -1,3 +1,9 @@
+---
+title: "Xot - xot-architecture-overview.md"
+module: Xot
+bmad: true
+status: active
+---
 # Xot Architecture
 
 Xot is the foundational layer of Laraxot. It provides base classes, conventions, and utilities that all 47 other modules extend.

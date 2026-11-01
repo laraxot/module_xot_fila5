@@ -1,3 +1,13 @@
+---
+title: "metatag"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, install]
+qmd: "metatag"
+---
 ~~~ php
 <?php
 declare(strict_types=1);
@@ -35,10 +45,14 @@ return [
 ~~~
 ### Versione HEAD
 
+
 ## Collegamenti tra versioni di metatag.md
-* [metatag.md](../../../xot/project_docs/install/metatag.md)
-* [metatag.md](../../../tenant/project_docs/it/config/metatag.md)
+* [metatag.md](../../../Xot/docs/install/metatag.md)
+* [metatag.md](../../../Tenant/docs/it/config/metatag.md)
+
 
 ### Versione Incoming
 
+
 ---
+

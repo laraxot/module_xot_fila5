@@ -1,3 +1,11 @@
+---
+title: "Metodi da NON implementare in classi che estendono XotBaseResource"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "metodi da non implementare in classi che estendono xotbaseresource xot"
+---
 # Metodi da NON implementare in classi che estendono XotBaseResource
 
 ## Regola fondamentale
@@ -34,7 +42,7 @@ class ProductResource extends XotBaseResource
     protected static ?string $model = Product::class;
 
     // UNICI metodi che dovrebbero essere implementati
-    public function getFormSchema(): array
+    public static function getFormSchema(): array
     {
         return [
             'name' => Forms\Components\TextInput::make('name')

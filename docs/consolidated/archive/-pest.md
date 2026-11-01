@@ -1,13 +1,10 @@
 ---
 title: "_pest"
-module: "Xot"
-type: concept
-tags: [, pest]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: " pest"
-related:
-  - "./eloquent-magic-properties-rule.md"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "_pest xot"
 ---
 # _pest
 

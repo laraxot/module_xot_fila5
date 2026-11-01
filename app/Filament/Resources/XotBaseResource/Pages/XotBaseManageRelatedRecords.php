@@ -15,6 +15,7 @@ use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+use Modules\UI\Filament\Tables\Columns\IDColumn;
 use Modules\Xot\Filament\Traits\HasRelationshipModelClass;
 use Modules\Xot\Filament\Traits\HasXotTable;
 use Override;
@@ -76,11 +77,13 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      * Questo metodo può essere sovrascritto nelle classi figlie.
      *
      * @return array<string, TextColumn>
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
     public function getTableColumns(): array
     {
         return [
-            'id' => TextColumn::make('id')->label('ID')->sortable(),
+            'id' => IDColumn::make('id'),
             'name' => TextColumn::make('name')
                 ->label('Nome')
                 ->searchable()
@@ -97,11 +100,13 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      * Questo metodo può essere sovrascritto nelle classi figlie.
      *
      * @return array<string, Action>
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
     public function getTableHeaderActions(): array
     {
         return [
-            'create' => CreateAction::make()->label('Crea Nuovo')->disableCreateAnother(),
+            'create' => CreateAction::make()->label('Crea Nuovo')->createAnother(false),
         ];
     }
 
@@ -110,6 +115,8 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      * Questo metodo può essere sovrascritto nelle classi figlie.
      *
      * @return array<string, Action>
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
     public function getTableActions(): array
     {
@@ -186,16 +193,10 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      */
     public function getTitle(): string
     {
-        $resource = static::getResource();
         $recordTitle = $this->getRecordTitle();
         $relationship = static::getRelationshipName();
 
-        $titleString = '';
-        if ($recordTitle instanceof Htmlable) {
-            $titleString = $recordTitle->toHtml();
-        } else {
-            $titleString = (string) $recordTitle;
-        }
+        $titleString = $recordTitle instanceof Htmlable ? $recordTitle->toHtml() : (string) $recordTitle;
 
         return Str::of($relationship)
             ->title()

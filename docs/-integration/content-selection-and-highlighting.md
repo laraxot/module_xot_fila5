@@ -8,6 +8,8 @@ tags: [migrato-da-txt, xot]
 converted_from: content_selection_and_highlighting.txt
 created: 2026-08-24
 updated: 2026-08-24
+status: draft
+qmd: "content selection and highlighting xot"
 ---
 
 https://javascript.plainenglish.io/medium-like-text-highlighting-in-react-afa35a29a81a

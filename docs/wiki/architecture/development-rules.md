@@ -1,9 +1,14 @@
 ---
+qmd: "development rules"
+issues: []
+discussions: []
 title: "Development Rules"
 type: reference
 tags: [wiki, no-frontmatter-fix]
 created: 2026-08-24
 updated: 2026-08-24
+status: superseded
+superseded_by: ../../consolidated/archive/development-rules.md
 ---
 
 # Regole Generali di Sviluppo del Progetto

@@ -16,6 +16,6 @@ class GenerateModelByTableAction
 
     public function execute(): void
     {
-        dddx('WIP');
+        throw new \LogicException('GenerateModelByTableAction::execute() not implemented');
     }
 }

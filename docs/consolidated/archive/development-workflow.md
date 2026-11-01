@@ -1,3 +1,11 @@
+---
+title: "Development Workflow in Laraxot"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "development workflow in laraxot xot"
+---
 # Development Workflow in Laraxot
 
 ## Creating New Resources
@@ -30,7 +38,7 @@ class MyModelResource extends XotBaseResource
 {
     protected static ?string $model = MyModel::class;
 
-    public function getFormSchema(): array
+    public static function getFormSchema(): array
     {
         return [
             TextInput::make('name')->required(),

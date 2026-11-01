@@ -31,7 +31,7 @@ return [
         ],
     ],
     'navigation' => [
-        'label' => 'Export Xls',
+        'label' => 'Esporta Excel',
         'name' => 'Export Xls',
         'plural' => 'Export Xls',
         'group' => [

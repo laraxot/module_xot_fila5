@@ -1,3 +1,11 @@
+---
+title: "Filament Resources"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "filament resources xot"
+---
 # Filament Resources
 
 ## XotBaseResource
@@ -23,7 +31,7 @@ class SessionResource extends XotBaseResource
 {
     protected static ?string $model = Session::class;
 
-    public function getFormSchema(): array
+    public static function getFormSchema(): array
     {
         return [
             // La chiave 'id' corrisponde a session.fields.id nel file di traduzione

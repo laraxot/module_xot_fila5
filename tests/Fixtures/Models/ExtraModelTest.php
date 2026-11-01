@@ -7,6 +7,7 @@ namespace Modules\Xot\Tests\Fixtures\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Modules\Xot\Contracts\ExtraContract;
+use Spatie\SchemalessAttributes\Casts\SchemalessAttributes as SchemalessAttributesCast;
 use Spatie\SchemalessAttributes\SchemalessAttributes;
 
 /**
@@ -25,7 +26,7 @@ class ExtraModelTest extends Model implements ExtraContract
     protected function casts(): array
     {
         return [
-            'extra_attributes' => SchemalessAttributes::class,
+            'extra_attributes' => SchemalessAttributesCast::class,
         ];
     }
 

@@ -1,3 +1,11 @@
+---
+title: "Violazioni Architetturali e Correzioni - Pattern XotData"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "violazioni architetturali e correzioni - pattern xotdata xot"
+---
 # Violazioni Architetturali e Correzioni - Pattern XotData
 
 ## 🚨 **Violazioni Architetturali Critiche**
@@ -58,7 +66,7 @@ $user = $userClass::factory()->create($attributes);
 public function getUserClass(): string
 {
     $class = config('auth.providers.users.model');
-    
+
     // Validazioni automatiche
     Assert::stringNotEmpty($class, 'check config auth');
     Assert::classExists($class, '['.$class.'] check config auth');
@@ -96,7 +104,7 @@ interface UserContract
 // ✅ SEMPRE così
 $userClass = XotData::make()->getUserClass();
 
-// ❌ MAI così  
+// ❌ MAI così
 use Modules\SpecificModule\Models\User;
 ```
 
@@ -145,19 +153,19 @@ function getUserClass(): string
 function createTestUser(array $attributes = []): UserContract
 {
     $userClass = getUserClass();
-    
+
     $defaultAttributes = [
         'email' => fake()->unique()->safeEmail(),
         'password' => Hash::make('password123'),
         'first_name' => fake()->firstName(),
         'last_name' => fake()->lastName(),
     ];
-    
+
     $attributes = array_merge($defaultAttributes, $attributes);
-    
+
     /** @var UserContract */
     $user = $userClass::factory()->create($attributes);
-    
+
     return $user;
 }
 ```
@@ -169,13 +177,13 @@ class CreateUserAction
     public function execute(UserData $data): UserContract
     {
         $userClass = XotData::make()->getUserClass();
-        
+
         /** @var UserContract */
         $user = $userClass::create([
             'name' => $data->name,
             'email' => $data->email,
         ]);
-        
+
         return $user;
     }
 }
@@ -219,15 +227,15 @@ class ChangeTypeCommand extends Command
     public function handle(): void
     {
         $email = text('User email?');
-        
+
         /** @var UserContract */
         $user = XotData::make()->getUserByEmail($email);
-        
+
         if (!$user) {
             $this->error("User with email '{$email}' not found.");
             return;
         }
-        
+
         // Continua elaborazione...
     }
 }
@@ -252,7 +260,7 @@ use Modules\Xot\Datas\XotData;
 // ❌ VIETATO
 $user = \Modules\<nome progetto>\Models\User::find($id);
 
-// ✅ CONSENTITO  
+// ✅ CONSENTITO
 $userClass = XotData::make()->getUserClass();
 $user = $userClass::find($id);
 ```
@@ -302,6 +310,7 @@ $userClass::factory()->create();
 
 ### **Fase 1: Identificazione Violazioni**
 ```bash
+
 # Cerca import diretti tra moduli
 grep -r "use Modules\.*Models\User" --include="*.php" ./
 
@@ -311,7 +320,7 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 
 ### **Fase 2: Sostituzione Pattern**
 1. Sostituire import diretti con XotData
-2. Cambiare type hints con UserContract  
+2. Cambiare type hints con UserContract
 3. Aggiornare factory calls
 4. Implementare helper functions
 
@@ -325,7 +334,7 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 
 ### **Documentazione Core**
 - [XotData API Reference](xotdata-api.md)
-- [UserContract Specification](contracts/user-contract.md)  
+- [UserContract Specification](contracts/user-contract.md)
 - [Best Practices](best-practices.md)
 - [Module Architecture](module-architecture.md)
 
@@ -341,6 +350,5 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 
 ---
 
-**Ultimo Aggiornamento**: Gennaio 2025  
-**Stato**: ✅ Pattern Documentato e Implementato  
-**Responsabile**: Team Architettura Laraxot 
+**Ultimo Aggiornamento**: Gennaio 2025
+**Stato**: ✅ Pattern Documentato e Implementato

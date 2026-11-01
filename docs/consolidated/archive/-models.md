@@ -1,13 +1,10 @@
 ---
 title: "_models"
-module: "Xot"
-type: concept
-tags: [, models]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: " models"
-related:
-  - "./eloquent-magic-properties-rule.md"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "_models xot"
 ---
 # _models
 

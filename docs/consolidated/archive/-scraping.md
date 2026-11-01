@@ -1,13 +1,10 @@
 ---
 title: "_scraping"
-module: "Xot"
-type: concept
-tags: [, scraping]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: " scraping"
-related:
-  - "./eloquent-magic-properties-rule.md"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "_scraping xot"
 ---
 # _scraping
 

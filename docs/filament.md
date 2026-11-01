@@ -1,3 +1,15 @@
+---
+title: "filament"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament"
+issues: []
+discussions: []
+status: draft
+---
+
 # Filament - Best Practices Centralizzate
 
 ## Principi Fondamentali
@@ -34,11 +46,17 @@ use Filament\Forms\Components\DatePicker;
 
 class ExampleResource extends XotBaseResource
 {
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
+---
+title: "filament"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament"
+issues: []
+discussions: []
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             TextInput::make('nome')->required(),
@@ -120,11 +138,9 @@ class ModuleNameServiceProvider extends XotBaseServiceProvider
 /**
  * @return array<string, \Filament\Forms\Components\Component>
  */
-<<<<<<< HEAD
 public function getFormSchema(): array
-=======
+---
 public function getFormSchema(): array
->>>>>>> laraxot/dev
 {
     return [
         // Schema del form

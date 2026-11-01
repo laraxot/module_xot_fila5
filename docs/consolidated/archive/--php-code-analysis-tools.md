@@ -1,13 +1,10 @@
 ---
 title: "__php-code-analysis-tools"
-module: "Xot"
-type: concept
-tags: [, php, code, analysis]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: " php code analysis tools"
-related:
-  - "./eloquent-magic-properties-rule.md"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "__php-code-analysis-tools xot"
 ---
 # __php-code-analysis-tools
 

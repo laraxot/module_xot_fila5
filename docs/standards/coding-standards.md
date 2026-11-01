@@ -1,3 +1,9 @@
+---
+title: "Xot - coding-standards.md"
+module: Xot
+bmad: true
+status: active
+---
 # Standard di Codice per il progetto
 
 > **Nota**: Questo documento è correlato a [Convenzioni](../../../project_docs/conventions.md) e [Naming Conventions](../../../project_docs/naming-conventions.md). Per una panoramica completa, consulta tutti i documenti correlati.

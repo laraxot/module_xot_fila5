@@ -30,7 +30,7 @@ use Pest\PendingCalls\UsesCall;
  */
 function actingAs(Authenticatable|int|string|null $user = null, ?string $driver = null): TestResponse
 {
-    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+    \xotPestStubFailure('actingAs', $user, $driver);
 }
 
 /**
@@ -42,7 +42,7 @@ function actingAs(Authenticatable|int|string|null $user = null, ?string $driver 
  */
 function get(string|array $uri = '', array $options = []): TestResponse
 {
-    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+    \xotPestStubFailure('get', $uri, $options);
 }
 
 /**
@@ -55,7 +55,7 @@ function get(string|array $uri = '', array $options = []): TestResponse
  */
 function post(string|array $uri, array $data = [], array $options = []): TestResponse
 {
-    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+    \xotPestStubFailure('post', $uri, $data, $options);
 }
 
 /**
@@ -67,7 +67,7 @@ function post(string|array $uri, array $data = [], array $options = []): TestRes
  */
 function put(string|array $uri, array $data = []): TestResponse
 {
-    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+    \xotPestStubFailure('put', $uri, $data);
 }
 
 /**
@@ -79,7 +79,7 @@ function put(string|array $uri, array $data = []): TestResponse
  */
 function patch(string|array $uri, array $data = []): TestResponse
 {
-    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+    \xotPestStubFailure('patch', $uri, $data);
 }
 
 /**
@@ -90,7 +90,7 @@ function patch(string|array $uri, array $data = []): TestResponse
  */
 function delete(string|array $uri): TestResponse
 {
-    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+    \xotPestStubFailure('delete', $uri);
 }
 
 /**
@@ -101,7 +101,7 @@ function delete(string|array $uri): TestResponse
  */
 function head(string|array $uri): TestResponse
 {
-    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+    \xotPestStubFailure('head', $uri);
 }
 
 /**
@@ -112,7 +112,7 @@ function head(string|array $uri): TestResponse
  */
 function options(string|array $uri): TestResponse
 {
-    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+    \xotPestStubFailure('options', $uri);
 }
 
 /**
@@ -124,7 +124,7 @@ function options(string|array $uri): TestResponse
  */
 function getJson(string|array $uri, array $headers = []): TestResponse
 {
-    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+    \xotPestStubFailure('getJson', $uri, $headers);
 }
 
 /**
@@ -137,7 +137,7 @@ function getJson(string|array $uri, array $headers = []): TestResponse
  */
 function postJson(string|array $uri, array $data = [], array $headers = []): TestResponse
 {
-    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+    \xotPestStubFailure('postJson', $uri, $data, $headers);
 }
 
 /**
@@ -150,7 +150,7 @@ function postJson(string|array $uri, array $data = [], array $headers = []): Tes
  */
 function putJson(string|array $uri, array $data = [], array $headers = []): TestResponse
 {
-    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+    \xotPestStubFailure('putJson', $uri, $data, $headers);
 }
 
 /**
@@ -163,7 +163,7 @@ function putJson(string|array $uri, array $data = [], array $headers = []): Test
  */
 function patchJson(string|array $uri, array $data = [], array $headers = []): TestResponse
 {
-    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+    \xotPestStubFailure('patchJson', $uri, $data, $headers);
 }
 
 /**
@@ -176,7 +176,7 @@ function patchJson(string|array $uri, array $data = [], array $headers = []): Te
  */
 function deleteJson(string|array $uri, array $data = [], array $headers = []): TestResponse
 {
-    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+    \xotPestStubFailure('deleteJson', $uri, $data, $headers);
 }
 
 /**
@@ -186,7 +186,7 @@ function deleteJson(string|array $uri, array $data = [], array $headers = []): T
  */
 function followingRedirects(int $number = 5): TestResponse
 {
-    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+    \xotPestStubFailure('followingRedirects', $number);
 }
 
 /**
@@ -194,7 +194,7 @@ function followingRedirects(int $number = 5): TestResponse
  */
 function test(string $description, ?\Closure $closure = null): TestCall
 {
-    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+    \xotPestStubFailure('test', $description, $closure);
 }
 
 /**
@@ -202,7 +202,7 @@ function test(string $description, ?\Closure $closure = null): TestCall
  */
 function it(string $description, ?\Closure $closure = null): TestCall
 {
-    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+    \xotPestStubFailure('it', $description, $closure);
 }
 
 /**
@@ -210,7 +210,7 @@ function it(string $description, ?\Closure $closure = null): TestCall
  */
 function describe(string $description, \Closure $closure): DescribeCall
 {
-    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+    \xotPestStubFailure('describe', $description, $closure);
 }
 
 /**
@@ -218,7 +218,7 @@ function describe(string $description, \Closure $closure): DescribeCall
  */
 function beforeEach(\Closure $closure): BeforeEachCall
 {
-    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+    \xotPestStubFailure('beforeEach', $closure);
 }
 
 /**
@@ -226,7 +226,7 @@ function beforeEach(\Closure $closure): BeforeEachCall
  */
 function afterEach(\Closure $closure): AfterEachCall
 {
-    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+    \xotPestStubFailure('afterEach', $closure);
 }
 
 /**
@@ -236,5 +236,5 @@ function afterEach(\Closure $closure): AfterEachCall
  */
 function uses(string ...$classes): UsesCall
 {
-    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+    \xotPestStubFailure('uses', ...$classes);
 }

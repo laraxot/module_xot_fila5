@@ -1,13 +1,10 @@
 ---
 title: "_pivot"
-module: "Xot"
-type: concept
-tags: [, pivot]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: " pivot"
-related:
-  - "./eloquent-magic-properties-rule.md"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "_pivot xot"
 ---
 # _pivot
 

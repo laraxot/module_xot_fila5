@@ -1,3 +1,11 @@
+---
+title: "Componenti Filament Personalizzati in Laraxot"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "componenti filament personalizzati in laraxot xot"
+---
 # Componenti Filament Personalizzati in Laraxot
 
 Questo documento descrive i componenti personalizzati di Filament disponibili nel framework Laraxot e come utilizzarli correttamente.
@@ -23,7 +31,7 @@ class ClienteResource extends XotBaseResource
     protected static ?string $navigationIcon = 'heroicon-o-users';
     protected static ?string $cluster = ClienteCluster::class;
 
-    public function getFormSchema(): array
+    public static function getFormSchema(): array
     {
         return [
             // Schema del form

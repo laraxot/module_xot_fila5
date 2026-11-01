@@ -1,3 +1,11 @@
+---
+title: "CRITICAL: Filament Resource-Model Alignment Rules"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "critical: filament resource-model alignment rules xot"
+---
 # CRITICAL: Filament Resource-Model Alignment Rules
 
 ## 🚨 ERRORE CRITICO IDENTIFICATO E RISOLTO
@@ -46,7 +54,7 @@ DatePicker::make('date_field'),                      // Date
 protected $fillable = ['id', 'categoria', 'lista_propro', 'lista_propro_sup', 'posti', 'anno'];
 
 // RISORSA SBAGLIATA (PRIMA):
-public function getFormSchema(): array
+public static function getFormSchema(): array
 {
     return [
         TextInput::make('id')->disabled(),
@@ -61,7 +69,7 @@ public function getFormSchema(): array
 ### ✅ CORREZIONE: Campi Allineati al Modello
 ```php
 // RISORSA CORRETTA (DOPO):
-public function getFormSchema(): array
+public static function getFormSchema(): array
 {
     return [
         TextInput::make('id')->disabled(),

@@ -1,3 +1,9 @@
+---
+title: "Xot - architecture.md"
+module: Xot
+bmad: true
+status: active
+---
 # 🏗️ **Architettura Modulo Xot**
 
 ## 📋 **Panoramica Architetturale**
@@ -97,11 +103,7 @@ abstract class XotBaseResource extends Resource
 {
     use HasXotTable;
 
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return static::getFormSchemaImplementation();
     }

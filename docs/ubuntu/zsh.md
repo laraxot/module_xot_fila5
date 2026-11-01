@@ -1,3 +1,13 @@
+---
+title: "zsh"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, ubuntu]
+qmd: "zsh"
+---
 ~~~ bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 touch ~/.zshrc
@@ -20,6 +30,8 @@ source ~/.zshrc
 usefull links:
 - https://zsh-prompt-generator.site/
 
+
 ## Collegamenti tra versioni di zsh.md
-* [zsh.md](../../../xot/project_docs/install/zsh.md)
-* [zsh.md](../../../xot/project_docs/ubuntu/zsh.md)
+* [zsh.md](../../../Xot/docs/install/zsh.md)
+* [zsh.md](../../../Xot/docs/ubuntu/zsh.md)
+

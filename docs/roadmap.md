@@ -1,3 +1,11 @@
+---
+title: "Xot Module - Complete Roadmap 2026"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot]
+qmd: "xot module - complete roadmap 2026 xot"
+---
 # Xot Module - Complete Roadmap 2026
 
 **Generated**: 2026-01-02

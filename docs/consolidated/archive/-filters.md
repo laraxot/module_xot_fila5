@@ -1,13 +1,10 @@
 ---
 title: "_filters"
-module: "Xot"
-type: concept
-tags: [, filters]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: " filters"
-related:
-  - "./eloquent-magic-properties-rule.md"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "_filters xot"
 ---
 # _filters
 

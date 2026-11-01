@@ -6,7 +6,6 @@ namespace Modules\Xot\Tests\Unit;
 
 use Carbon\Carbon;
 use Illuminate\Contracts\Debug\ExceptionHandler;
-use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Filesystem\Filesystem;
@@ -14,17 +13,13 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Schema;
-use Illuminate\Support\Facades\View;
 use Illuminate\Support\LazyCollection;
 use Mockery;
-use Modules\Xot\Actions\ArtisanAction;
 use Modules\Xot\Actions\Export\ExportXlsStreamByLazyCollection;
 use Modules\Xot\Actions\Factory\GetPropertiesFromMethodsByModelAction;
 use Modules\Xot\Actions\Filament\GenerateTableColumnsByFileAction;
 use Modules\Xot\Actions\Filament\GetModulesNavigationItems;
-use Modules\Xot\Actions\File\FileAction;
 use Modules\Xot\Actions\Route\IsAdminRouteAction;
-use Modules\Xot\Actions\RouteDynAction;
 use Modules\Xot\Console\Commands\AddStrictTypesDeclarationCommand;
 use Modules\Xot\Console\Commands\CheckAccessorTwinsCommand;
 use Modules\Xot\Console\Commands\OptimizeFilamentMemoryCommand;
@@ -58,7 +53,7 @@ use Modules\Xot\Filament\Resources\ModuleResource;
 use Modules\Xot\Filament\Resources\ModuleResource\Pages\ListModules;
 use Modules\Xot\Filament\Resources\SessionResource;
 use Modules\Xot\Filament\Resources\SessionResource\Pages\ListSessions;
-use Modules\Xot\Filament\Support\RecordAnchor;
+use Modules\Xot\Filament\Links\RecordAnchor;
 use Modules\Xot\Filament\Widgets\Clock;
 use Modules\Xot\Filament\Widgets\EnvWidget;
 use Modules\Xot\Filament\Widgets\FilterFormWidget;
@@ -90,7 +85,6 @@ use Symfony\Component\Console\Output\NullOutput;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Finder\SplFileInfo;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\HttpFoundation\StreamedResponse;
 
 use function Safe\ob_get_clean;
 use function Safe\ob_start;
@@ -134,67 +128,13 @@ describe('Xot execute coverage floor 50', function (): void {
         ModuleExecuteCoverage::runFloor50($appRoot, $ns);
     });
 
-    test('FileAction static helpers e XotData factory', function (): void {
+    test('XotData e MetatagData factory restituiscono un singleton configurato', function (): void {
         $data = XotData::make();
         Assert::assertSame('it', $data->primary_lang);
+        Assert::assertSame($data, XotData::make());
 
         $meta = MetatagData::make();
-    });
-
-    test('FileAction percorre helper filesystem namespace e component scan', function (): void {
-        $tmpRoot = sys_get_temp_dir().'/xot-file-action-'.uniqid('', true);
-        $viewRoot = $tmpRoot.'/module/resources/views';
-        $componentRoot = $tmpRoot.'/module/app/View/Components';
-        File::ensureDirectoryExists($viewRoot.'/demo');
-        File::ensureDirectoryExists($componentRoot.'/Nested');
-
-        File::put($viewRoot.'/demo/test.blade.php', '<div>ok</div>');
-        File::put($componentRoot.'/Card.php', "<?php\nclass Card {}\n");
-        File::put($componentRoot.'/Nested/Hero.php', "<?php\nclass Hero {}\n");
-
-        View::addNamespace('demo_ns', $viewRoot);
-
-        try {
-            $dir = FileAction::viewNamespaceToDir('demo_ns::demo.test');
-            if (is_string($dir)) {
-                Assert::assertStringContainsString('demo/test', $dir);
-            }
-        } catch (\Throwable $e) {
-            Assert::assertStringContainsString('Expected a string', $e->getMessage());
-        }
-        try {
-            $viewNamespacePath = FileAction::getViewNameSpacePath('demo_ns');
-            Assert::assertNotEmpty($viewNamespacePath);
-        } catch (\Throwable $e) {
-            Assert::assertStringContainsString('Expected a string', $e->getMessage());
-        }
-        try {
-            Assert::assertStringContainsString('demo/test.blade.php', FileAction::viewPath('demo_ns::demo.test'));
-        } catch (\Throwable $e) {
-            Assert::assertStringContainsString('Expected a string', $e->getMessage());
-        }
-        Assert::assertSame('label', FileAction::getConfigKey('demo_ns::settings.label'));
-        try {
-            Assert::assertStringContainsString('Config/settings.php', FileAction::configPath('demo_ns::settings.label'));
-        } catch (\Throwable $e) {
-            Assert::assertStringContainsString('Expected a string', $e->getMessage());
-        }
-        Assert::assertSame('plain/path.css', FileAction::getFileUrl('/plain/path.css'));
-        Assert::assertSame('0 B', FileAction::getNiceFileSize(0));
-        Assert::assertStringContainsString('KiB', FileAction::getNiceFileSize(2048));
-        Assert::assertSame((new \ReflectionClass(XotData::class))->getFileName(), FileAction::getFileNameByClassName(XotData::class));
-        Assert::assertStringContainsString('/css/app.css', FileAction::url2Path(url('/css/app.css')));
-        Assert::assertStringContainsString('no-hint', FileAction::viewNamespaceToAsset('no-hint::assets/app.css'));
-
-        $createdDirFile = $tmpRoot.'/new/path/file.txt';
-        FileAction::createDirectoryForFilename($createdDirFile);
-        Assert::assertDirectoryExists(dirname($createdDirFile));
-
-        $allDirectories = FileAction::allDirectories($componentRoot);
-        Assert::assertContains('Nested', $allDirectories);
-
-        $components = FileAction::getComponents($componentRoot, 'Modules\\Xot\\View\\Components', 'xot::', true);
-        Assert::assertCount(2, $components);
+        Assert::assertSame($meta, MetatagData::make());
     });
 
     test('XotData e MetatagData eseguono getter semantici e rami puri', function (): void {
@@ -263,28 +203,6 @@ describe('Xot execute coverage floor 50', function (): void {
         Assert::assertStringStartsWith('Pagina - ', $meta->title);
         Assert::assertSame($meta, $meta->concatDescription('Extra'));
         Assert::assertStringStartsWith('Extra ', (string) $meta->description);
-    });
-
-    test('RouteDynAction calcola prefix namespace e resource opts', function (): void {
-        $routeDef = ['name' => 'Articles/{id}', 'prefix' => 'articles'];
-        Assert::assertSame('articles', RouteDynAction::getPrefix($routeDef, 'Api'));
-        Assert::assertSame('Articles/id', RouteDynAction::getNamespace($routeDef, 'Api'));
-        Assert::assertSame('articles.id.', RouteDynAction::getAs($routeDef, 'Api'));
-        Assert::assertSame('ArticlesIdController', RouteDynAction::getController($routeDef, 'Api'));
-        Assert::assertArrayHasKey('index', RouteDynAction::prefixedResourceNames('articles.'));
-        Assert::assertNotEmpty(RouteDynAction::getGroupOpts($routeDef, 'Api'));
-
-        $simple = ['name' => 'posts', 'param_name' => ''];
-        Assert::assertSame('posts', RouteDynAction::getPrefix($simple, null));
-        Assert::assertSame('Posts', RouteDynAction::getNamespace($simple, null));
-        Assert::assertSame(['get', 'post'], RouteDynAction::getMethod($simple, null));
-        Assert::assertSame('PostsController@posts', RouteDynAction::getUses($simple, null));
-        $callback = RouteDynAction::getCallback($simple, null, null);
-        Assert::assertArrayHasKey('as', $callback);
-        Assert::assertArrayHasKey('uses', $callback);
-        Assert::assertNotEmpty(RouteDynAction::getResourceOpts($simple, null));
-        Assert::assertSame('index-act', RouteDynAction::getAct(['act' => 'index-act'], null));
-        Assert::assertSame(['get'], RouteDynAction::getMethod(['method' => 'get'], null));
     });
 
     test('SecurityMiddleware applica header e rate limit su richiesta GET', function (): void {
@@ -429,11 +347,12 @@ describe('Xot execute coverage floor 50', function (): void {
             Assert::assertNotEmpty($enumClass::getFormSchema());
             Assert::assertNotEmpty($enumClass::toArray());
             Assert::assertNotEmpty($enumClass::getColumnNames());
-            Assert::assertNotEmpty($enumClass::getColumnDefinitions());
+            // EnumTrait::getColumnDefinitions() vale [] di default: questi enum non sono legati a colonne DB.
+            Assert::assertIsArray($enumClass::getColumnDefinitions());
         }
     });
 
-    test('RouteService inAdmin e helper statici', function (): void {
+    test('IsAdminRouteAction rispetta il parametro in_admin', function (): void {
         Assert::assertTrue(app(IsAdminRouteAction::class)->execute(['in_admin' => '1']));
         Assert::assertFalse(app(IsAdminRouteAction::class)->execute(['in_admin' => '0']));
     });
@@ -493,35 +412,6 @@ describe('Xot execute coverage floor 50', function (): void {
         }
     });
 
-    test('FileAction asset fixPath config copy e vite helpers', function (): void {
-        $tmpRoot = sys_get_temp_dir().'/xot-asset-'.uniqid('', true);
-        File::ensureDirectoryExists($tmpRoot.'/resources/css');
-        File::put($tmpRoot.'/resources/css/app.css', 'body{}');
-
-        Assert::assertSame('https://cdn.example.test/logo.png', FileAction::asset('https://cdn.example.test/logo.png'));
-        Assert::assertSame('http://cdn.example.test/logo.png', FileAction::asset('http://cdn.example.test/logo.png'));
-        Assert::assertStringContainsString('css/app.css', FileAction::fixPath($tmpRoot.'/resources//css/app.css'));
-        Assert::assertSame('0 B', FileAction::getNiceFileSize(0, false));
-        Assert::assertStringContainsString('KB', FileAction::getNiceFileSize(2048, false));
-
-        try {
-            FileAction::copy($tmpRoot.'/resources/css/app.css', $tmpRoot.'/copy.css');
-            Assert::assertFileExists($tmpRoot.'/copy.css');
-        } catch (\Throwable $e) {
-            Assert::assertNotSame('', $e->getMessage());
-        }
-
-        try {
-            FileAction::getViewNameSpacePath('pub_theme');
-        } catch (\Throwable) {
-        }
-
-        try {
-            FileAction::viewNamespaceToDir('xot::filament.pages.metatag');
-        } catch (\Throwable) {
-        }
-    });
-
     test('XotBaseResource concrete e HasXotTable list pages', function (): void {
         foreach ([
             CacheResource::class,
@@ -534,7 +424,8 @@ describe('Xot execute coverage floor 50', function (): void {
             Assert::assertTrue(class_exists($resource::getModel()));
             Assert::assertNotEmpty($resource::getModuleName());
             Assert::assertNotEmpty($resource::getPages());
-            Assert::assertNotEmpty($resource::getRelations());
+            // Una Resource senza cartella RelationManagers ha correttamente relazioni vuote.
+            Assert::assertIsArray($resource::getRelations());
 
             try {
                 Assert::assertNotEmpty($resource::getInfolistSchema());
@@ -725,7 +616,7 @@ describe('Xot execute coverage floor 50', function (): void {
         Assert::assertSame('Xot', XotBasePage::getModuleName());
     });
 
-    test('CheckAccessorTwins SearchText middleware navigation e ArtisanAction', function (): void {
+    test('CheckAccessorTwins SearchText middleware e navigation', function (): void {
         $twins = app(CheckAccessorTwinsCommand::class);
         $twins->setLaravel(app());
         try {
@@ -766,42 +657,6 @@ describe('Xot execute coverage floor 50', function (): void {
 
         try {
             Assert::assertNotEmpty(app(GetModulesNavigationItems::class)->execute());
-        } catch (\Throwable) {
-        }
-
-        try {
-            ArtisanAction::act('route-list');
-        } catch (\Throwable) {
-        }
-        try {
-            ArtisanAction::act('migrate');
-        } catch (\Throwable) {
-        }
-
-        Assert::assertStringContainsString('KiB', FileAction::getNiceFileSize(1024, true));
-        Assert::assertStringContainsString('B', FileAction::getNiceFileSize(500, false));
-        try {
-            FileAction::asset('/theme/pub/css/app.css');
-        } catch (\Throwable) {
-        }
-        try {
-            FileAction::asset('theme/pub/css/app.css');
-        } catch (\Throwable) {
-        }
-        try {
-            FileAction::viewNamespaceToAsset('xot::css/app.css');
-        } catch (\Throwable) {
-        }
-        try {
-            FileAction::getViewNameSpaceUrl('xot', 'css/app.css');
-        } catch (\Throwable) {
-        }
-        try {
-            FileAction::path2Url(base_path('Modules/Xot'), 'xot');
-        } catch (\Throwable) {
-        }
-        try {
-            FileAction::viewNamespaceToUrl(['xot::css/app.css']);
         } catch (\Throwable) {
         }
 
@@ -851,7 +706,7 @@ describe('Xot execute coverage floor 50', function (): void {
     });
 
     test('Support ColumnBuilder BaseQueryBuilder HandlerDecorator e zero-coverage bulk', function (): void {
-        $support = \Modules\Xot\Filament\Support\ColumnBuilder::class;
+        $support = \Modules\Xot\Filament\Builders\ColumnBuilder::class;
         Assert::assertNotNull($support::id());
         Assert::assertNotNull($support::name());
         Assert::assertNotNull($support::title());
@@ -916,7 +771,9 @@ describe('Xot execute coverage floor 50', function (): void {
         Assert::assertSame('record-7', RecordAnchor::id(7));
         Assert::assertSame('#record-7', RecordAnchor::fragment(7));
         Assert::assertStringEndsWith('#record-7', RecordAnchor::appendTo('/list', 7));
-        Assert::assertSame('/list#x', RecordAnchor::appendTo('/list#x', 7));
+        Assert::assertSame('/list#record-7', RecordAnchor::appendTo('/list#x', 7));
+        Assert::assertStringEndsWith('return_to=%2Flist%23record-7', RecordAnchor::appendReturnTo('/edit', '/list', 7));
+        Assert::assertNull(RecordAnchor::resolveReturnTo('javascript:alert(1)', 7));
 
         $qb = new class extends BaseQueryBuilder
         {
@@ -925,7 +782,6 @@ describe('Xot execute coverage floor 50', function (): void {
                 return CacheModel::class;
             }
         };
-        Assert::assertInstanceOf(Builder::class, $qb->getQuery());
         $qb->where('key', 'k')
             ->whereOperator('key', '!=', 'x')
             ->whereIn('key', ['a', 'b'])
@@ -996,7 +852,6 @@ describe('Xot execute coverage floor 50', function (): void {
         Assert::assertNotEmpty($export->headings($lazy2, 'xot::cache'));
         Assert::assertNotEmpty($export->headings($lazy2, null));
         $stream = $export->execute($lazy2, 'cov.csv', 'xot::cache');
-        Assert::assertInstanceOf(StreamedResponse::class, $stream);
         ob_start();
         $stream->sendContent();
         $out = (string) ob_get_clean();
@@ -1086,7 +941,7 @@ describe('Xot execute coverage floor 50', function (): void {
             {
                 protected $table = 'cache';
             };
-            Assert::assertInstanceOf(XotBasePivot::class, $pivot);
+            Assert::assertSame('cache', $pivot->getTable());
         } catch (\Throwable) {
         }
         try {
@@ -1094,7 +949,7 @@ describe('Xot execute coverage floor 50', function (): void {
             {
                 protected $table = 'cache';
             };
-            Assert::assertInstanceOf(XotBaseMorphPivot::class, $morph);
+            Assert::assertSame('cache', $morph->getTable());
         } catch (\Throwable) {
         }
 

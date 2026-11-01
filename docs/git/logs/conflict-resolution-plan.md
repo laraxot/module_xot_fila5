@@ -1,13 +1,12 @@
 ---
 title: "Piano di Risoluzione Conflitti Git"
-module: "Xot"
-type: concept
-tags: [conflict, resolution, plan]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "conflict resolution plan"
-related:
-  - "./eloquent-magic-properties-rule.md"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-18
+module: Xot
+tags: [xot, git]
+qmd: "Piano di Risoluzione Conflitti Git"
 ---
 # Piano di Risoluzione Conflitti Git
 
@@ -86,4 +85,4 @@ Per ogni file risolto, verrà creata o aggiornata la documentazione seguendo que
 
 ## Monitoraggio e avanzamento
 
-L'avanzamento della risoluzione sarà tracciato in un documento dedicato in `docs/logs/conflict_resolution_progress.md`.
+L'avanzamento della risoluzione sarà tracciato in un documento dedicato in `docs/logs/conflict_resolution_progress.md`. 

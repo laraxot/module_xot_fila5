@@ -223,8 +223,6 @@ final class ModuleRemainingCoverage
         $executed = 0;
 
         if (! is_dir($appRoot)) {
-            Assert::assertSame(0, $executed);
-
             return;
         }
 
@@ -1090,7 +1088,7 @@ final class ModuleRemainingCoverage
     }
 
     /**
-     * @return array<string, mixed>
+     * @return array<string, int|string>
      */
     private static function defaultModelAttributes(): array
     {

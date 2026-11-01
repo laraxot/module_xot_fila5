@@ -1,13 +1,10 @@
 ---
 title: "_macro"
-module: "Xot"
-type: concept
-tags: [, macro]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: " macro"
-related:
-  - "./eloquent-magic-properties-rule.md"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "_macro xot"
 ---
 # _macro
 
