@@ -5,7 +5,10 @@ use Filament\Tables\Columns\Column;
 use Filament\Tables\Enums\FiltersLayout;
 use Filament\Tables\Enums\RecordActionsPosition;
 use Modules\Xot\Filament\Traits\HasXotTable;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 function invokeProtectedTableHook(object $instance, string $method): mixed
 {
@@ -22,7 +25,6 @@ test('getTableFiltersLayout default e override', function (): void {
         public string $tableSearch = '';
 
         /** @return array<string, Column> */
-        /** @return array<string, Column> */
         public function getTableColumns(): array
         {
             return [];
@@ -37,7 +39,6 @@ test('getTableFiltersLayout default e override', function (): void {
 
         public string $tableSearch = '';
 
-        /** @return array<string, Column> */
         /** @return array<string, Column> */
         public function getTableColumns(): array
         {
@@ -61,7 +62,6 @@ test('getTableRecordActionsPosition default e override', function (): void {
         public string $tableSearch = '';
 
         /** @return array<string, Column> */
-        /** @return array<string, Column> */
         public function getTableColumns(): array
         {
             return [];
@@ -76,7 +76,6 @@ test('getTableRecordActionsPosition default e override', function (): void {
 
         public string $tableSearch = '';
 
-        /** @return array<string, Column> */
         /** @return array<string, Column> */
         public function getTableColumns(): array
         {

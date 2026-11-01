@@ -3,7 +3,7 @@ type: investigation
 title: "Investigation Core Contract Refactoring"
 links: {github_issue: "#XXX"}
 status: draft
-updated: 2026-10-09
+updated: 2026-10-23
 tags: [docs, xot, investigation]
 qmd: "investigation: core contract refactoring xot"
 ---

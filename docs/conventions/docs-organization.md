@@ -10,6 +10,9 @@ related:
   - ../INDEX.md
   - ../00-INDEX.md
   - ../bmad/brainstorming-services-to-actions-wave.md
+type: note
+updated: 2026-10-27
+tags: [docs, xot, conventions]
 ---
 
 # Convenzione docs — moduli e temi
@@ -31,6 +34,12 @@ retrieval e link. Organizzare = rendere trovabile lo **scopo**, non archiviare t
 6. Prima di creare un `.md`, cerca se esiste gia' lo stesso argomento (`rg`/glob).
 7. Si creano file solo dentro cartelle `docs/` **gia' esistenti** (non si creano cartelle `docs` nuove).
 8. Link **relativi**; focus business logic (DRY + KISS).
+9. **Mai creare `docs/archive/`** nei moduli o temi: la cartella replica una
+   tassonomia e sottrae materiale alla ricerca canonica. Ogni root Git di
+   modulo/tema la esclude esplicitamente nel `.gitignore`. Non cancellare o
+   spostare archivi esistenti come effetto collaterale; la memoria storica
+   della wiki vive in `docs/wiki/_archive/`. Canon:
+   [no-docs-archive](../../../../../bashscripts/ai/wiki/concepts/no-docs-archive-rule.md).
 
 ## Se esistono sia `readme.md` sia `README.md`
 

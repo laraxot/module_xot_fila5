@@ -3,7 +3,7 @@ type: decision-log
 title: "Decision Log — Xot"
 links: {github_issue: "#XXX", discussion: "#XXX"}
 status: draft
-updated: 2026-10-09
+updated: 2026-10-23
 tags: [docs, xot]
 qmd: "decision log   xot xot"
 ---

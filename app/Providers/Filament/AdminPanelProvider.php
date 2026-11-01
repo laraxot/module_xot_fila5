@@ -7,6 +7,7 @@ namespace Modules\Xot\Providers\Filament;
 use Filament\Panel;
 use Filament\Support\Assets\Css;
 use Filament\Support\Facades\FilamentAsset;
+use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Filament\Pages\MainDashboard;
 
 class AdminPanelProvider extends XotBasePanelProvider
@@ -30,9 +31,16 @@ class AdminPanelProvider extends XotBasePanelProvider
         // delle azioni header di Filament (.fi-ac) non va a capo di default —
         // con molte azioni su ArtisanCommandsManager, quelle in eccesso
         // escono dallo schermo invece di scendere su una riga successiva.
+        // Il CSS appartiene al modulo Xot: pubblicarlo tramite AssetAction
+        // rende disponibile il file prima che Filament emetta l'URL.
+        $headerActionsCss = app(AssetAction::class)->execute('xot::css/header-actions-wrap.css');
+
         FilamentAsset::register(
             [
-                Css::make('xot-header-actions-wrap', asset('assets/xot/header-actions-wrap.css')),
+                Css::make(
+                    'xot-header-actions-wrap',
+                    asset($headerActionsCss),
+                ),
             ],
             'xot::admin',
         );

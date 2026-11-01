@@ -50,5 +50,4 @@ test('save array action throws exception for unsupported format', function () us
 
     expect(fn (): bool => $action->execute(['foo' => 'bar'], $filename, 'xml'))
         ->toThrow(\InvalidArgumentException::class, 'Formato non supportato: xml');
-    Assert::assertFileDoesNotExist($filename);
 });

@@ -71,3 +71,41 @@ Contatore dei `catch` vuoti (sola lettura): script `token_get_all` che segna ogn
 1. Apri `test-database-guard.story.md`, controlla `status` e chiedi all'utente il via ai test; senza via, resta sulle voci 2, 3, 4, 8 (solo rinomine e diff).
 2. Rilancia i comandi di "Stato misurato" e annota le differenze con una nota datata in fondo a questa story.
 3. Per ogni coppia della voce 2: `diff` dei due file, porta il corpo nel `*Test.php`, controlla `rg -w` dei riferimenti, solo dopo togli il minuscolo.
+
+## Esecuzione 2026-10-26
+
+Fase BMAD: Dev + verifica. Pest eseguito solo su DB scratch usa-e-getta (`pest-scratch-db.sh`), mai su DB reali.
+
+### Cosa e' cambiato
+- `tests/Pest.php`: tolta `pest()->extend(TestCase::class)->in('Feature', 'Unit')`, al suo posto un commento che spiega perche'. Un solo meccanismo: `uses()` nel file (decisione aperta 1 chiusa cosi', come in Activity e User).
+- `tests/pest.php` (minuscolo) cancellato: `cmp` lo dava identico a `Pest.php` prima della modifica.
+- `uses(TestCase::class)` aggiunto, dopo `namespace` e import, a 17 file `*Test.php` che non lo avevano. 4 file sono test a classe PHPUnit e non ne hanno bisogno: `Feature/Filament/Traits/HasXotTableReorderingTest.php`, `Unit/Actions/GetAllModelsActionTest.php`, `Unit/Binary/BinaryAssetsNotCrStrippedTest.php`, `Unit/Models/ModuleTest.php`. Cartella `Integration`: non esiste.
+- `Unit/ModuleRootHygieneTest.php`: il dataset `module_roots` era vuoto (nessun `Modules/<Mod>/.git` in questo checkout) e un dataset vuoto blocca la raccolta di tutto il modulo. Ora ha una riga segnaposto che salta i 7 test per-repo con un motivo; il test 'ha dei moduli da controllare' resta e fallisce, e dice il vero.
+- `Unit/XotBaseTransitionTest.php`, `Unit/Actions/Cast/SafeEloquentCastActionTest.php`: chiamavano funzioni globali di `tests/Support/helpers.php`, mai caricato. Ora usano `Fixtures\XotBaseTransitionFixture::make()` e `Fixtures\SafeEloquentCastFixture::make()` (13 test).
+- `Unit/Actions/File/GetModulePathActionTest.php`: `allows(['metodo' => closure])` restituiva la closure; ora `andReturnUsing()`. La cartella `Modules/TestModule` si cancella in `finally`: prima, se il test falliva, restava in `laravel/Modules` e rompeva `ModulesDirContainsOnlyModulesTest`. La cartella vuota lasciata dal primo run e' stata rimossa.
+- Pint sui file toccati, `php -l` pulito, PHPStan 0 errori su `Modules/Xot/tests`.
+
+### Comando
+Dalla root: `PEST_OUT=<file> bash bashscripts/tools/pest-scratch-db.sh --test-directory=Modules/Xot/tests Modules/Xot/tests`
+
+### Numeri misurati
+| Momento | Risultato |
+|---|---|
+| Prima | `TestCaseAlreadyInUse` in raccolta, 0 test eseguiti |
+| Dopo il binding | 105 failed, 23 risky, 6 incomplete, 5 todos, 30 skipped, 698 passed (2884 asserzioni), 561 s |
+| Dopo i fix nei test | 88 failed, 23 risky, 6 incomplete, 5 todos, 30 skipped, 715 passed (2916 asserzioni), 510 s |
+
+Controllo `config/local/fixcity/database/content`: md5 di `git status --short` uguale prima e dopo (`8c3a1bb9...`), nessun file piu' recente dell'avvio del run.
+
+### Acceptance criteria
+- [x] `find Modules/Xot/tests -name pest.php` non stampa nulla.
+- [x] `pest --test-directory=Modules/Xot/tests --list-tests` gira senza `TestCaseAlreadyInUse` (Chart non toccato).
+- [ ] Tautologie: ancora 31. `Artisan::call('migrate'`: ancora 1. File con `sqlite`/`:memory:`: 18. File mai raccolti: non riverificato.
+
+### Cosa resta (88 failed, per causa)
+- Bug in `app/` (fuori perimetro): `GetAllModelsByModuleNameAction.php:31` cerca `<modulo>/Models`, i modelli stanno in `app/Models` (13 test: ModuleService*, GetAllModelsActionTest).
+- Fixture rotte: `HasExtraTrait` deriva `Tests\Fixtures\Models\Extra`, che non esiste; il cast `SchemalessAttributes::class` di `ExtraModelTest` non costruisce (6 test).
+- Stato del repo, non dei test: manca `docs/epics.md`, manca `bashscripts/tools/audit/case-collisions-baseline.txt`, manca `bashscripts/fix_structure.sh` (3), `config/local/ptvx/metatag.php` non tracciato, PNG con CR tolti in Activity e Barthelemy, story senza Owned Scope sopra soglia, nessun `Modules/<Mod>/.git`.
+- Test contro codice cambiato: aspettative su messaggi e nomi (`GetPdfContentByRecordAction`, tabella `test_morph_pivots`, microsecondi delle date, `ConfigTest` null), `XotBasePest::assertArray` rifiuta l'array vuoto che il suo test accetta, `TransTrait` assente da `XotBaseManageRelatedRecords`.
+- Schema/sqlite: tabella `tenants` assente nello scratch; 2 test su sqlite `:memory:` (colonna `slug`, database `model_type_actions_test`).
+- Output completo: `/tmp/claude-1000/-var-www--bases-base-fixcity-fila5/9efa4a45-3f20-4d25-8480-17dd7f3717e8/scratchpad/xot-2.txt`.

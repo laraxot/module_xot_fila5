@@ -128,15 +128,3 @@ sulla `GetAllModelsByModuleNameAction`. Eliminato senza riscrittura: riscriverlo
   file con lock dell'agente Artisan, che ha creato `Enums/ArtisanActEnum` con gli stessi valori `act`. Da chiudere li'.
   Handlers e `CommandRegistry` non hanno chiamanti fuori dal loro albero (il `match` e' in `HandleArtisanActRequestAction`).
 - I docblock "Replaces ... (archived to .bak)" nelle Actions `Html`, `Url`, `Theme`: i `.bak` non esistono, la riga e' solo storica.
-
-## Riesuma 2026-10-20
-
-I nove `*Service.php` (Artisan/Config/Html/Module/Route/RouteDyn/Theme/Url/Xot) erano di nuovo su disco.
-Zero chiamanti produzione tranne `Helpers/Helper.php` → `ModuleService` (retarget a `GetAllModelsByModuleNameAction`).
-Tutti e nove eliminati; nessuna Action nuova.
-
-## Boy scout post-zero (stesso giorno)
-
-- `ProfileTest.php` in Services: di nuovo riesumato e **ri-deleted** (GONE).
-- `Services/Translators/*` + `Services/Trend/Adapters/*`: policy confermata **DELETE** (mai relocate). Sono zombie merge con 0 caller; vivo = `Actions\Translation\*TranslateAction` + `BuildTrendCollectionAction`. Se riappaiono → delete di nuovo. Hub: [services-to-actions-global-wave](./services-to-actions-global-wave.story.md).
-

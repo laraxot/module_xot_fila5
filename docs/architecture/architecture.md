@@ -1,15 +1,9 @@
 ---
-title: "architecture"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "architecture"
-issues: []
-discussions: []
-status: draft
+title: "Xot - architecture.md"
+module: Xot
+bmad: true
+status: active
 ---
-
 # 🏗️ **Architettura Modulo Xot**
 
 ## 📋 **Panoramica Architetturale**
@@ -109,27 +103,6 @@ abstract class XotBaseResource extends Resource
 {
     use HasXotTable;
 
-    public function getFormSchema(): array
-    public function getFormSchema(): array
----
-title: "architecture"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "architecture"
-issues: []
-discussions: []
-    public function getFormSchema(): array
----
-title: "architecture"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "architecture"
-issues: []
-discussions: []
     public function getFormSchema(): array
     {
         return static::getFormSchemaImplementation();
@@ -420,7 +393,7 @@ test('all models extend base model', function () {
 
 ## 🔗 **Collegamenti e Riferimenti**
 
-- [**README.md**](readme.md) - Documentazione principale del modulo
+- [**README.md**](README.md) - Documentazione principale del modulo
 - [**Best Practices**](../project_docs/best-practices.md) - Best practices globali
 - [**Troubleshooting**](../project_docs/troubleshooting.md) - Risoluzione problemi
 

@@ -3,6 +3,8 @@ title: Filter Relations Action
 description: Filter Relations Model with Queuable Action
 extends: _layouts.documentation
 section: content
+status: superseded
+superseded_by: ../../consolidated/archive/filter-relations.md
 ---
 
 # Filter Relations Action {#filter-relations}

@@ -53,5 +53,5 @@ return new class() extends XotBaseMigration {
 
 ## Collegamenti
 
-- [Xot Principale](../readme.md)
+- [Xot Principale](../../README.md)
 - [Filament](../../filament)

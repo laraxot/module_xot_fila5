@@ -7,6 +7,7 @@ namespace Modules\Xot\Contracts;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Query\Builder;
 use Staudenmeir\LaravelAdjacencyList\Eloquent\Builder as AdjacencyBuilder;
 use Staudenmeir\LaravelAdjacencyList\Eloquent\Collection;
 use Staudenmeir\LaravelAdjacencyList\Eloquent\Relations\Ancestors;
@@ -19,33 +20,43 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\Relations\Siblings;
 /**
  * Modules\Xot\Contracts\HasRecursiveRelationshipsContract.
  *
+ * @template TModel of Model
+ *
  * @property int $id
  * @property string $name
  * @property int $depth
- * @property Collection<int, Model> $children
+ * @property Collection<int, TModel> $children
  * @property int|null $children_count
- * @property Collection<int, Model> $ancestors The model's recursive parents.
+ * @property Collection<int, TModel> $ancestors The model's recursive parents.
  * @property int|null $ancestors_count
- * @property Collection<int, Model> $ancestorsAndSelf The model's recursive parents and itself.
+ * @property Collection<int, TModel> $ancestorsAndSelf The model's recursive parents and itself.
  * @property int|null $ancestors_and_self_count
- * @property Collection<int, Model> $bloodline The model's ancestors, descendants and itself.
+ * @property Collection<int, TModel> $bloodline The model's ancestors, descendants and itself.
  * @property int|null $bloodline_count
- * @property Collection<int, Model> $childrenAndSelf The model's direct children and itself.
+ * @property Collection<int, TModel> $childrenAndSelf The model's direct children and itself.
  * @property int|null $children_and_self_count
- * @property Collection<int, Model> $descendants The model's recursive children.
+ * @property Collection<int, TModel> $descendants The model's recursive children.
  * @property int|null $descendants_count
- * @property Collection<int, Model> $descendantsAndSelf The model's recursive children and itself.
+ * @property Collection<int, TModel> $descendantsAndSelf The model's recursive children and itself.
  * @property int|null $descendants_and_self_count
- * @property Collection<int, Model> $parentAndSelf The model's direct parent and itself.
+ * @property Collection<int, TModel> $parentAndSelf The model's direct parent and itself.
  * @property int|null $parent_and_self_count
  *
  * @phpstan-require-extends Model
  *
+ * Tipi di ritorno solo nel `@return`, non nativi, sui metodi che il trait vendor
+ * `Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships` dichiara senza
+ * tipo (`getParentKeyName()`, `getPathName()`, `hasNestedPath()`, ...): i modelli che usano
+ * quel trait direttamente non possono implementare un contratto con tipi nativi senza
+ * fatal runtime. `TypedHasRecursiveRelationships` li restringe comunque ai tipi nativi
+ * quando serve, e PHPStan legge il `@return`.
+ *
+ * @mixin \Illuminate\Database\Eloquent\Model
  * The vendor trait is the source of truth for implementation. Its public methods are
  * intentionally untyped, so this contract keeps runtime-compatible signatures and
  * documents the types for static analysis instead.
  *
- * @mixin \Illuminate\Database\Eloquent\Model
+ * @mixin Model
  */
 interface HasRecursiveRelationshipsContract
 {
@@ -122,43 +133,43 @@ interface HasRecursiveRelationshipsContract
      */
     public function getExpressionName();
 
-    /** @return Ancestors<Model, Model> */
+/** @return Ancestors<TModel, TModel> */
     public function ancestors();
 
-    /** @return Ancestors<Model, Model> */
+    /** @return Ancestors<TModel, TModel> */
     public function ancestorsAndSelf();
 
-    /** @return Bloodline<Model, Model> */
+    /** @return Bloodline<TModel, TModel> */
     public function bloodline();
 
-    /** @return HasMany<Model, Model> */
+    /** @return HasMany<TModel, TModel> */
     public function children();
 
-    /** @return Descendants<Model, Model> */
+    /** @return Descendants<TModel, TModel> */
     public function childrenAndSelf();
 
-    /** @return Descendants<Model, Model> */
+    /** @return Descendants<TModel, TModel> */
     public function descendants();
 
-    /** @return Descendants<Model, Model> */
+    /** @return Descendants<TModel, TModel> */
     public function descendantsAndSelf();
 
-    /** @return BelongsTo<Model, Model> */
+    /** @return BelongsTo<TModel, TModel> */
     public function parent();
 
-    /** @return Ancestors<Model, Model> */
+    /** @return Ancestors<TModel, TModel> */
     public function parentAndSelf();
 
-    /** @return RootAncestor<Model, Model> */
+    /** @return RootAncestor<TModel, TModel> */
     public function rootAncestor();
 
-    /** @return RootAncestorOrSelf<Model, Model> */
+    /** @return RootAncestorOrSelf<TModel, TModel> */
     public function rootAncestorOrSelf();
 
-    /** @return Siblings<Model, Model> */
+    /** @return Siblings<TModel, TModel> */
     public function siblings();
 
-    /** @return Siblings<Model, Model> */
+    /** @return Siblings<TModel, TModel> */
     public function siblingsAndSelf();
 
     /**
@@ -182,19 +193,16 @@ interface HasRecursiveRelationshipsContract
      *
      * @return bool
      */
-    public function isIntegerAttribute($attribute);
+    public function isIntegerAttribute(string $attribute);
 
     /**
-     * The parameter stays untyped because Eloquent's Model method is untyped at runtime.
-     *
-     * @param  \Illuminate\Database\Query\Builder  $query
-     * @return AdjacencyBuilder<Model>
+     * @return AdjacencyBuilder<TModel>
      */
-    public function newEloquentBuilder($query);
+    public function newEloquentBuilder(Builder $query);
 
     /**
-     * @param  list<Model>  $models
-     * @return Collection<int, Model>
+     * @param  list<TModel>  $models
+     * @return Collection<int, TModel>
      */
     public function newCollection(array $models = []);
 

@@ -154,6 +154,15 @@ abstract class XotBaseTestCase extends BaseTestCase
         ];
     }
 
+    /**
+     * Dati sacri: nessun TestCase modulo puo' lanciare migrate:fresh.
+     * I figli che `use RefreshDatabase` lo riattivano — quel trait e' vietato
+     * (vedi Fixcity REGOLA_DATI_SACRI / TestDatabaseGuard).
+     */
+    protected function refreshDatabase(): void
+    {
+    }
+
     protected function setUp(): void
     {
         parent::setUp();
