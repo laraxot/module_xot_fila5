@@ -113,3 +113,9 @@ Verifica: `cd laravel && ./vendor/bin/phpstan analyse Modules --memory-limit=-1 
 - `XotBaseTableWidget` dichiara ora `getTableColumns()` `protected` (come Filament): un'estensione fuori dal repo che lo
   ridefinisca con firma incompatibile non e' stata guardata.
 - Nessun test Pest eseguito (database di test con dati reali).
+
+## 2026-11-03: `HasDynamicFillable` nel progetto Quaeris
+
+La tabella sopra da' `HasDynamicFillable` come "usato da `TechPlanner/app/Models/Client.php`". In questo progetto il modulo TechPlanner non c'e': dopo il pull PHPStan riportava `trait.unused`. Niente ignore e niente probe: aggiunto un test reale, `tests/Unit/Traits/HasDynamicFillableTest.php`, che esercita il trait su modelli anonimi (ammesso dalla regola no-phpstan-probe-models) e verifica il comportamento di `getFillable()`: valori degli enum in coda, nessun duplicato, fillable invariato senza enum. Vale in ogni progetto che condivide Xot. Usa `XotBaseTestCase`, che non apre il DB: 3 passed. PHPStan sull'intero progetto `[OK] No errors`.
+
+Stesso giro, Quaeris: `ContactWidget::getTableQuery()` ha ricevuto `@not-deprecated` secondo questo pattern.
