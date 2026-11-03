@@ -102,3 +102,22 @@ Misura in sola lettura (`docs-organizer.py audit --out`), nessuna correzione: le
 | **Totale** | 12585 | 3756 | 1965 | 674 | 27 | 61 | 1452 |
 
 Confronto con il 2026-10-22 sui moduli presenti in tutte e due le misure: i link rotti scendono in User (da 3297 a 134), Notify (da 426 a 241), Activity (da 187 a 87), Media (da 127 a 26) e Geo (da 128 a 121); salgono in UI (da 98 a 304) e Xot (da 346 a 380); restano 14 in Quaeris. Gli stub di Xot scendono da 1002 a 340. Le variazioni vengono dai commit di modulo registrati fra le due misure (dettaglio in `docs/worklog/2026/10/29/`), non da correzioni del Passo 7.
+
+
+## Misura del 2026-11-03 (worklog del giorno, prompt 98, Passo 7)
+
+Misura in sola lettura (`docs-organizer.py audit --out`), nessuna correzione: questa story e' ancora `in-progress`. Moduli e temi con commit propri il 2026-11-03 (il riallineamento della radice tocca anche AI, Cms, Gdpr, Job, Lang, Media e UI, ma senza commit di quel giorno nei loro repo).
+
+| Perimetro | md | link | rotti | collisioni maiuscole | nomi con data | doppioni | stub |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Activity | 712 | 231 | 87 | 0 | 0 | 1 | 130 |
+| Geo | 2050 | 343 | 122 | 19 | 12 | 47 | 345 |
+| Notify | 3635 | 673 | 241 | 536 | 0 | 0 | 144 |
+| Quaeris | 211 | 85 | 14 | 0 | 12 | 0 | 1 |
+| Tenant | 532 | 186 | 70 | 0 | 0 | 0 | 133 |
+| User | 2140 | 303 | 134 | 82 | 0 | 2 | 144 |
+| Xot | 1576 | 609 | 380 | 2 | 1 | 0 | 340 |
+| Zero (tema) | 234 | 281 | 34 | 4 | 0 | 0 | 6 |
+| **Totale** | 11090 | 2711 | 1082 | 643 | 25 | 50 | 1243 |
+
+Confronto con il 2026-10-29 sui sette moduli misurati in tutte e due le date: link rotti invariati in Activity (87), Notify (241), Quaeris (14), Tenant (70), User (134) e Xot (380), +1 in Geo (da 121 a 122). In Xot compare un nome con data, `bmad/stories/phpstan-analyse-modules-2026-09-24.story.md`: aggiunto il 2026-09-24 da Marco Sottana e arrivato con il pull, non creato oggi. Zero non era nella misura del 2026-10-29. Le variazioni vengono dai commit di modulo fra le due misure (dettaglio in `docs/worklog/2026/11/03/`), non da correzioni del Passo 7.
