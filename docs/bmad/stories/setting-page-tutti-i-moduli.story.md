@@ -1,6 +1,6 @@
 ---
 title: SettingPage in tutti i 18 moduli
-status: in-progress
+status: done
 module: Xot (owner della base), 11 moduli consumatori
 created: 2026-11-04
 updated: 2026-11-04
@@ -67,10 +67,12 @@ senza campi impliciti (`anni`), evitando cambiamenti ai componenti condivisi e a
 
 - PHP lint: nessun errore nei file PHP aggiunti o modificati.
 - Pint: verde sui file `SettingPage` e Data.
-- Pest: guardia e test Data dei moduli eseguiti insieme; esito finale da registrare dopo il run
-  corrente.
-- PHPStan: gate globale su 10.400/10.400 file, exit 0, `[OK] No errors`; report JSON con
-  `totals.errors=0` e `totals.file_errors=0`.
+- Pest: `./vendor/bin/pest --test-directory=Modules/Xot/tests Modules/Xot/tests/Unit/Filament/Pages/EveryModuleHasSettingPageTest.php --no-coverage`
+  → exit 0, **72 passed, 108 assertions**, durata 336.11 s; copre i 18 moduli per
+  classe pagina, risoluzione ConfigData, traduzioni `it`/`en` e coerenza schema/proprietà.
+- PHPStan: gate globale concluso su `Modules`, exit 0 (`/tmp/claude-1000/phpstan-final.log`);
+  acquisizione JSON integrata precedente su 10.400/10.400 file con `totals.errors=0` e
+  `totals.file_errors=0`.
 - `php artisan --version`: Laravel Framework 13.38.0.
 - QMD: indicizzazione da ripetere dopo questo riordino della story.
 
@@ -87,3 +89,6 @@ La correzione Activity che rimuoveva override incompatibili con gli hook `final`
 - Sigma e Pdnd hanno schema vuoto; le loro chiavi tecniche e credenziali non sono esposte.
 - Le pagine vuote sono una richiesta esplicita, non pagine di configurazione già pronte per
   valori ipotetici.
+- Riparata anche la sintassi di `docs/sprint-status.yaml`: chiavi di `development_status`
+  riportate all'indentazione uniforme e note legacy non-YAML rese commenti; parsing PyYAML
+  completato con successo.

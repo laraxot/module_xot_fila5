@@ -1,6 +1,6 @@
 ---
 title: "PHPStan globale: analizzare Modules e correggere le cause"
-status: in-progress
+status: done
 module: Xot (coordinamento), tutti i moduli coinvolti (owner dei fix)
 created: 2026-11-04
 updated: 2026-11-04
@@ -32,10 +32,10 @@ senza ignorare errori o alterare la configurazione PHPStan.
 | Owner | Scope | Stato |
 |---|---|---|
 | `/root` | Baseline, clustering, coordinamento, integrazione e verifica globale | done — gate completo exit 0 |
-| `/root/activity_table_fix` | Activity: override di hook tabella che bloccano bootstrap | in progress |
-| `/root/prompt_audit` | `bashscripts/docs/prompts/11-phpstan.md`, coordinamento README solo se necessario | in progress |
+| `/root/activity_table_fix` | Activity: override di hook tabella che bloccano bootstrap | done — gate Pest e PHPStan mirati verdi |
+| `/root/prompt_audit` | `bashscripts/docs/prompts/11-phpstan.md`, coordinamento README solo se necessario | done — comandi in coda `flock`, output/exit code distinti, destinazioni story corrette |
 | `/root/prompts_core` | `00-start.md`, `00-master-prompt.md`, `01-confidence-bootstrap.md`, `01-architecture-patterns.md`, `15-bmad.md`, `19-docs.md`, `25-services-to-actions.md`; audit del resto `00-*`–`29-*`, escluso `11-phpstan.md` | done — riferimenti alle story aggiornati a `docs/bmad/stories/`; anti-pattern chiarito |
-| `/root/prompts_extended` | Audit prompt `30-*` e file non numerati; esclusi gli indici | in progress |
+| `/root/prompts_extended` | Audit prompt `30-*` e file non numerati; esclusi gli indici | done — 16 prompt aggiornati; convenzione nomi verificata |
 
 ### Finding prompt 11
 
@@ -62,14 +62,18 @@ senza ignorare errori o alterare la configurazione PHPStan.
 - Reso esplicito in `01-architecture-patterns.md` che `bmad-output/` e `docs/stories/` non sono destinazioni valide per le story.
 - Ricontrollo dei riferimenti nel catalogo `00-*`–`29-*`: restano menzioni di `bmad-output/` solo come anti-pattern o controlli di assenza; `02-controller-to-folio-actions.md` e `05-livewire-to-filament-widgets.md` descrivono già la story dell'owner senza indicare un path errato.
 - `git -C bashscripts diff --check -- docs/prompts` → exit 0.
+- Prompt audit completato in tutti i gruppi assegnati; `python3 -I
+  bashscripts/tools/docs/md-filenames.py check --paths bashscripts/docs/prompts` → 0 nomi
+  non conformi. Lo script `11-phpstan.md` documenta run serializzati con `flock`, output
+  JSON/stderr/exit code dedicati e storie in `docs/bmad/stories/` nel modulo owner.
 
 ## Acceptance criteria
 
 - [x] `php artisan --version` e PHPStan completano il bootstrap (`Laravel Framework 13.38.0`).
 - [x] `./vendor/bin/phpstan analyse Modules` termina exit 0 con `totals.errors = 0`.
-- [ ] Ogni causa corretta e' descritta nella story owner con verifica reale.
-- [ ] Nessun ignore, baseline, cast o `mixed` usato per silenziare.
-- [ ] Aggiornati second brain e prompt riutilizzabili sulla base delle cause incontrate.
+- [x] Ogni causa corretta e' descritta nella story owner con verifica reale: Activity, Incentivi e Rating.
+- [x] Nessun ignore, baseline, cast o `mixed` e' stato introdotto per silenziare (audit diff PHP dei moduli: zero aggiunte).
+- [x] Second brain aggiornato con le story owner indicizzate e i prompt riutilizzabili revisionati.
 
 ## Stato
 
@@ -83,5 +87,11 @@ senza ignorare errori o alterare la configurazione PHPStan.
 - Nessun warning PHPStan residuo da correggere nel baseline verificato. Il gate finale e'
   stato eseguito dopo le modifiche concorrenti registrate nelle story dei rispettivi owner;
   l'analisi completa copre quindi il worktree integrato al momento dell'esecuzione.
+- Gate dopo la correzione finale Incentivi: `php -d memory_limit=2G ./vendor/bin/phpstan
+  analyse Modules/Incentivi --no-progress --error-format=raw` → exit 0; Pest del modulo
+  Incentivi → 64 passed, 0 failed (casi legati al DB saltati dalla guardia), exit 0.
+- Story owner aggiuntive: `Incentivi/filament-create-action-api-compatibility`,
+  `Incentivi/filament-and-policy-test-remediation` e
+  `Rating/rating-contract-template-binding`.
 - Rimane in corso la revisione indipendente dei prompt `bashscripts/docs/prompts/`; i relativi
   claim sono tracciati sopra e non cambiano l'esito del gate PHPStan.
