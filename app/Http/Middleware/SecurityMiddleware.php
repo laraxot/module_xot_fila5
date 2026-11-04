@@ -274,7 +274,7 @@ class SecurityMiddleware
         ];
 
         // Log solo eventi sospetti
-        if ($this->isSuspiciousRequest($request, $response)) {
+        if ($this->isSuspiciousRequest($request)) {
             Log::warning('Suspicious request detected', $securityData);
         }
 
@@ -292,9 +292,8 @@ class SecurityMiddleware
     /**
      * Verifica se la richiesta è sospetta.
      */
-    private function isSuspiciousRequest(Request $request, Response $response): bool
+    private function isSuspiciousRequest(Request $request): bool
     {
-        Assert::isInstanceOf($response, Response::class);
         // Pattern sospetti negli URL
         $suspiciousPatterns = [
             '/\.\.\//',           // Directory traversal

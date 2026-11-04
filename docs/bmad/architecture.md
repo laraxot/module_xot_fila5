@@ -1,4 +1,10 @@
 ---
+title: "Xot - architecture.md"
+module: Xot
+bmad: true
+status: active
+---
+---
 title: "Xot — architettura BMAD"
 type: architecture
 tags: [architecture, xot, base, filmato, filtro]

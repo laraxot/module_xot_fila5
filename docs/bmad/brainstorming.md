@@ -1,4 +1,10 @@
 ---
+title: "Xot - brainstorming.md"
+module: Xot
+bmad: true
+status: active
+---
+---
 title: "Xot — brainstorming BMAD"
 type: brainstorming
 tags: [brainstorming, xot, architettura, refactoring, phpstan]

@@ -5,10 +5,18 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Feature;
 
 use Illuminate\Database\ConnectionInterface;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Casts\Attribute;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Modules\Xot\Models\BaseModel;
 use Modules\Xot\Models\Module;
+use Modules\Xot\Models\Traits\HasXotFactory;
+use Modules\Xot\Models\Traits\RelationX;
+use Modules\Xot\Models\XotBaseModel;
 use Modules\Xot\Tests\Fixtures\Models\TestConcreteBaseModel;
 use Modules\Xot\Tests\TestCase;
+use Modules\Xot\Traits\Updater;
 use PHPUnit\Framework\Assert;
 
 use function Safe\json_encode;
@@ -24,6 +32,15 @@ function createXotBaseModelFixture(): BaseModel
     return new TestConcreteBaseModel;
 }
 
+/**
+ * Observer minimale: Model::observe() accetta solo nomi di classe risolvibili
+ * (le classi anonime contengono "@" e non sono registrabili come listener).
+ */
+final class XotBaseModelFixtureObserver
+{
+    public function saving(Model $model): void {}
+}
+
 describe('Xot Base Model Business Logic', function (): void {
     test('it extends correct base class', function (): void {
         // Arrange & Act
@@ -34,9 +51,13 @@ describe('Xot Base Model Business Logic', function (): void {
     });
 
     test('it has required traits', function (): void {
-        $baseModel = createXotBaseModelFixture();
+        // Arrange & Act
+        $traits = class_uses_recursive(createXotBaseModelFixture());
 
-        Assert::assertNotEmpty(class_uses_recursive($baseModel));
+        // Assert
+        Assert::assertContains(HasXotFactory::class, $traits);
+        Assert::assertContains(RelationX::class, $traits);
+        Assert::assertContains(Updater::class, $traits);
     });
 
     test('it can be instantiated without database', function (): void {
@@ -108,9 +129,11 @@ describe('Xot Base Model Business Logic', function (): void {
 
     test('it supports soft deletes when configured', function (): void {
         // Arrange & Act
-        createXotBaseModelFixture();
+        $baseModel = createXotBaseModelFixture();
+        $usesSoftDeletes = in_array(SoftDeletes::class, class_uses_recursive($baseModel), true);
 
-        // Assert - Soft deletes may or may not be configured
+        // Assert - Soft deletes may or may not be configured: il trait e trashed() vanno sempre insieme
+        Assert::assertSame($usesSoftDeletes, method_exists($baseModel, 'trashed'));
     });
 
     test('it supports timestamps when configured', function (): void {
@@ -127,16 +150,22 @@ describe('Xot Base Model Business Logic', function (): void {
 
     test('it supports tenant isolation when configured', function (): void {
         // Arrange & Act
-        createXotBaseModelFixture();
+        $baseModel = createXotBaseModelFixture();
 
-        // Assert - Tenant isolation may or may not be configured
+        // Assert - Tenant isolation may or may not be configured: la base non applica scope globali impliciti
+        Assert::assertSame([], $baseModel->getGlobalScopes());
     });
 
     test('it supports audit trail when configured', function (): void {
         // Arrange & Act
-        createXotBaseModelFixture();
+        $baseModel = createXotBaseModelFixture();
+        $dispatcher = Model::getEventDispatcher();
 
-        // Assert - Audit trail may or may not be configured
+        // Assert - Updater popola created_by/updated_by/deleted_by agganciandosi a questi eventi
+        Assert::assertNotNull($dispatcher);
+        foreach (['creating', 'updating', 'deleting'] as $event) {
+            Assert::assertTrue($dispatcher->hasListeners('eloquent.'.$event.': '.$baseModel::class));
+        }
     });
 
     test('it can be serialized', function (): void {
@@ -200,17 +229,28 @@ describe('Xot Base Model Business Logic', function (): void {
     });
 
     test('it supports relationship loading', function (): void {
-        // Arrange & Act
-        createXotBaseModelFixture();
+        // Arrange
+        $baseModel = createXotBaseModelFixture();
+
+        // Act
+        $loadedBefore = $baseModel->relationLoaded('creator');
+        $baseModel->setRelation('creator', null);
 
         // Assert
+        Assert::assertFalse($loadedBefore);
+        Assert::assertTrue($baseModel->relationLoaded('creator'));
     });
 
     test('it supports attribute access', function (): void {
-        // Arrange & Act
-        createXotBaseModelFixture();
+        // Arrange
+        $baseModel = createXotBaseModelFixture();
+
+        // Act
+        $baseModel->setAttribute('title', 'Xot');
 
         // Assert
+        Assert::assertSame('Xot', $baseModel->getAttribute('title'));
+        Assert::assertSame(['title' => 'Xot'], $baseModel->getAttributes());
     });
 
     test('it supports mass assignment protection', function (): void {
@@ -228,30 +268,60 @@ describe('Xot Base Model Business Logic', function (): void {
 
     test('it supports model events', function (): void {
         // Arrange & Act
-        createXotBaseModelFixture();
+        $events = createXotBaseModelFixture()->getObservableEvents();
 
         // Assert
+        foreach (['creating', 'created', 'updating', 'updated', 'saving', 'saved', 'deleting', 'deleted'] as $event) {
+            Assert::assertContains($event, $events);
+        }
     });
 
     test('it supports observers', function (): void {
-        // Arrange & Act
-        createXotBaseModelFixture();
+        // Arrange
+        $baseModel = createXotBaseModelFixture();
+        $dispatcher = Model::getEventDispatcher();
+        Assert::assertNotNull($dispatcher);
+        $eventName = 'eloquent.saving: '.$baseModel::class;
+        Assert::assertFalse($dispatcher->hasListeners($eventName));
+
+        // Act
+        $baseModel::observe(XotBaseModelFixtureObserver::class);
 
         // Assert
+        Assert::assertTrue($dispatcher->hasListeners($eventName));
     });
 
     test('it supports scopes', function (): void {
-        // Arrange & Act
-        createXotBaseModelFixture();
+        // Arrange
+        $baseModel = createXotBaseModelFixture();
+
+        // Act
+        $baseModel::addGlobalScope('xot_test_scope', function (Builder $builder): void {});
 
         // Assert
+        Assert::assertArrayHasKey('xot_test_scope', $baseModel->getGlobalScopes());
     });
 
     test('it supports accessors and mutators', function (): void {
-        // Arrange & Act
-        createXotBaseModelFixture();
+        // Arrange
+        $baseModel = new class extends BaseModel
+        {
+            /** @return Attribute<string|null, string> */
+            protected function title(): Attribute
+            {
+                return Attribute::make(
+                    get: fn (mixed $value): ?string => is_string($value) ? mb_strtoupper($value) : null,
+                    set: fn (string $value): string => trim($value),
+                );
+            }
+        };
+
+        // Act
+        $baseModel->setAttribute('title', '  xot ');
 
         // Assert
+        Assert::assertSame(['title' => 'xot'], $baseModel->getAttributes());
+        Assert::assertSame('XOT', $baseModel->getAttribute('title'));
     });
 
     test('it supports casting', function (): void {

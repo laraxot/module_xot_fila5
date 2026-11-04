@@ -4,7 +4,7 @@ type: filament-blueprint
 status: active
 module: Xot
 created: 2026-10-16
-updated: 2026-10-20
+updated: 2026-10-28
 tags: [bmad, filament, blueprint, xot]
 qmd: "filament blueprint xot xotbase resource widget"
 related:
@@ -47,6 +47,12 @@ cross-tenant per comodita admin.
 ## Asset del pannello
 
 `header-actions-wrap.css` e' un asset Filament del modulo: sorgente in `resources/css/`, pubblicato da `FilamentAsset` in `public_html/assets/xot/`. Non va nell'`outDir` del tema Sixteen (`Themes/Sixteen/public`), che e' solo il prodotto di `vite build`.
+
+Stesso canale per `mobile-touch-targets.css` (azioni di riga a 44 px sotto 640 px, solo nelle tabelle `stackedOnMobile()`): registrato in `AdminPanelProvider`, vale per tutti i pannelli. Modifica il sorgente e la copia in `public_html/assets/xot/css/` insieme: in produzione `AssetAction` non ricopia se la destinazione esiste.
+
+## Mobile
+
+`HasXotTable::table()` chiama `->stackedOnMobile()` (card per riga sotto 640 px, tabella identica da `sm`). Contratto, difetti e decisioni aperte (filtri comprimibili, etichette delle azioni di gruppo, posizione delle azioni): [Modules/UI/docs/stories/mobile-ux-pass.story.md](../../../UI/docs/stories/mobile-ux-pass.story.md).
 
 ## PHPStan (stesso gate del monorepo)
 

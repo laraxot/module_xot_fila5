@@ -1,4 +1,17 @@
 ---
+title: "Xot Module Documentation"
+module: Xot
+bmad: true
+status: active
+type: index
+tags: [docs, index, xot]
+created: 2026-10-06
+updated: 2026-10-06
+---
+
+# Xot Docs
+
+Consolidated architecture, concepts, coding standards, module paths, and audit reports.
 title: "Xot — documentazione"
 type: index
 status: draft

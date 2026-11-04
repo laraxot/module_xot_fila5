@@ -9,12 +9,15 @@ use Filament\Notifications\Notification;
 use Filament\Support\Enums\IconPosition;
 use Modules\Xot\Actions\ExecuteArtisanCommandAction;
 use Modules\Xot\Actions\ExecuteComposerDumpAutoloadAction;
+use Modules\Xot\Filament\Traits\SuperAdminOnlyTrait;
 
 /**
- * ---.
+ * Esegue migrate, passport:*, config:cache, composer dump-autoload: solo super-admin.
  */
 class ArtisanCommandsManager extends XotBasePage
 {
+    use SuperAdminOnlyTrait;
+
     /** @var list<string> */
     public array $output = [];
 
@@ -49,6 +52,8 @@ class ArtisanCommandsManager extends XotBasePage
      */
     public function executeCommand(string $command): void
     {
+        abort_unless(static::canAccess(), 403);
+
         $this->reset(['output', 'status']);
         $this->currentCommand = $command;
         $this->isRunning = true;
@@ -83,6 +88,8 @@ class ArtisanCommandsManager extends XotBasePage
      */
     public function executeComposerDumpAutoload(): void
     {
+        abort_unless(static::canAccess(), 403);
+
         $this->reset(['output', 'status']);
         $this->currentCommand = 'composer dump-autoload';
         $this->isRunning = true;

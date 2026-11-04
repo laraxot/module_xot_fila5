@@ -1,6 +1,5 @@
 ---
-title: "BMAD Story — Swarm parallel: analisi PHPStan modulare + docs org + wiki/second brain"
-type: story
+title: "Xot - swarm-phpstan-modular-docs-org.story.md"
 module: Xot
 bmad: true
 status: draft
