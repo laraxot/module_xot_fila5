@@ -9,6 +9,10 @@ use RecursiveCallbackFilterIterator;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use SplFileInfo;
+use Webmozart\Assert\Assert;
+
+use function Safe\file_get_contents;
+use function Safe\glob;
 
 uses(TestCase::class);
 
@@ -37,7 +41,9 @@ function moduleAppPhpFiles(): array
 {
     $files = [];
 
-    foreach (glob(base_path('Modules/*/app')) ?: [] as $appDir) {
+    foreach (glob(base_path('Modules/*/app')) as $appDir) {
+        Assert::string($appDir);
+
         $iterator = new RecursiveIteratorIterator(new RecursiveCallbackFilterIterator(
             new RecursiveDirectoryIterator($appDir, \FilesystemIterator::SKIP_DOTS),
             static fn (SplFileInfo $entry): bool => ! ($entry->isDir() && in_array($entry->getFilename(), ['vendor', 'node_modules'], true)),
@@ -122,10 +128,6 @@ test('nessun file nella cartella app dei moduli contiene una chiamata di debug r
 
     foreach (moduleAppPhpFiles() as $file) {
         $code = file_get_contents($file);
-
-        if ($code === false) {
-            continue;
-        }
 
         foreach (debugCallsIn($code) as [$line, $name]) {
             $offenders[] = str_replace(base_path().'/', '', $file).':'.$line.' '.$name.'()';
