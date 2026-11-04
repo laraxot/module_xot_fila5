@@ -133,3 +133,9 @@ Implementazione e gate complessivi sono tracciati nella story
 [`setting-page-tutti-i-moduli.story.md`](../bmad/stories/setting-page-tutti-i-moduli.story.md). Tutti i 18
 moduli hanno ora la propria pagina; quelli senza impostazioni di dominio mantengono schema e
 Data vuoti, senza introdurre default di anni o esporre chiavi tecniche/secret.
+
+## Correzione 2026-11-04: campi reali in ogni modulo
+
+Lo schema vuoto di `setting-page-tutti-i-moduli` era un errore di lettura della richiesta. La matrice per modulo, con i
+lettori verificati e il contratto di una impostazione vera, sta in
+[`setting-page-campi-reali.story.md`](../bmad/stories/setting-page-campi-reali.story.md).

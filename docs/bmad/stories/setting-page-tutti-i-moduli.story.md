@@ -21,6 +21,10 @@ Build. Decisione presa dall'utente il 2026-11-04: la pagina Impostazioni va in t
 Questa story supera la sezione "Revisione 2026-11-04" dell'epic `module-setting-pages.epic.md`,
 che proponeva di non crearla nei moduli senza impostazioni.
 
+> Decisione "Form vuoto invece di nessuna pagina" **corretta il 2026-11-04** da
+> [`setting-page-campi-reali.story.md`](./setting-page-campi-reali.story.md): "pagina in tutti i moduli" non voleva dire
+> pagina vuota. In ogni modulo c'e' qualcosa da configurare; `getFormSchema()` non restituisce piu' `[]`.
+
 ## Intento
 
 Ogni modulo ha `app/Filament/Pages/SettingPage.php` estende `BaseSettingPage`, con la
