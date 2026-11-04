@@ -63,17 +63,10 @@ test('a setting page declares form fields only when its config data has properti
     expect($declaresFields && ! $hasProperties)->toBeFalse();
 })->with('laraxot modules');
 
-<<<<<<< HEAD
-test('a setting page does not use an empty form placeholder', function (string $module): void {
-    $source = file_get_contents(base_path("Modules/{$module}/app/Filament/Pages/SettingPage.php"));
-
-    expect($source)->not->toContain('return [];');
-=======
 test('every setting page exposes at least one configurable field', function (string $module): void {
     $source = file_get_contents(base_path("Modules/{$module}/app/Filament/Pages/SettingPage.php"));
 
     expect($source)
         ->not->toContain('return [];')
         ->and($source)->toContain('getFormSchema');
->>>>>>> 6551e895bd0b9d316bb4df72f04eae413c5e523d
 })->with('laraxot modules');
