@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use Modules\Xot\Actions\Config\GetYearOptionsAction;
 use Modules\Xot\Actions\Config\ResolveModuleConfigDataAction;
+use Modules\Xot\Datas\XotConfigData;
 use Modules\Xot\Tests\TestCase;
 
 uses(TestCase::class);
@@ -14,10 +15,15 @@ test('module without a config data resolves to null', function (string $class): 
     expect(ResolveModuleConfigDataAction::dataClassFor($class))->toBeNull()
         ->and(app(ResolveModuleConfigDataAction::class)->execute($class))->toBeNull();
 })->with([
-    'xot, nessuna XotConfigData' => ['Modules\\Xot\\Filament\\Pages\\XotBasePage'],
+    'modulo che non esiste' => ['Modules\\Inesistente\\Filament\\Pages\\Pagina'],
     'classe fuori dai moduli' => ['App\\Models\\User'],
     'stringa vuota' => [''],
 ]);
+
+test('a nested class resolves the config data of the first segment after Modules', function (): void {
+    expect(ResolveModuleConfigDataAction::dataClassFor('Modules\\Xot\\Filament\\Pages\\XotBasePage'))
+        ->toBe(XotConfigData::class);
+});
 
 test('shared components fall back to their historical years when the module has none', function (): void {
     expect(app(GetYearOptionsAction::class)->execute('Modules\\Xot\\Models\\Module', [2023, 2024]))

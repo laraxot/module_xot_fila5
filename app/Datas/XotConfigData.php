@@ -9,10 +9,17 @@ use Modules\Xot\Filament\Pages\SettingPage;
 use Spatie\LaravelData\Data;
 
 /**
- * Impostazioni di Xot (`config/{tenant}/xot.php`).
+ * Impostazioni di Xot, nel file tenant `config/{tenant}/xra.php` (quello che legge `XotData::make()`).
  *
- * Vuota di proposito: la pagina legge e salva solo le chiavi dichiarate qui. Nessuna chiave
- * viene aggiunta ai config tenant finche' non servira' un campo.
+ * Ogni proprieta' ha un lettore in produzione e il default di `XotData`, che resta l'unico runtime:
+ * un sito che non salva nulla si comporta come prima (lo garantisce `XotConfigDataTest`).
+ *
+ * Esclusi di proposito:
+ * - `pub_theme`, `register_pub_theme`: sono di Cms (`CmsConfigData`), che li scrive nello stesso file.
+ * - `adm_theme`: nei tenant vale `AdminLTE`, un tema non installato, quindi non c'e' una scelta valida da offrire.
+ * - `super_admin`: assegna privilegi, non si cambia da un form.
+ * - `show_trans_key`, `login_verified`, `register_type`, `verification_type`, `search_action`,
+ *   `disable_frontend_dynamic_route`, `disable_admin_dynamic_route`: dichiarate in `XotData` ma lette da nessuno.
  *
  * @see SettingPage
  */
@@ -20,11 +27,20 @@ class XotConfigData extends Data
 {
     use MakesFromTenantConfig;
 
-    public string $pub_theme = 'Four';
+    /** Modulo il cui pannello e' quello predefinito (`XotBasePanelProvider`) e che da' il nome alle chiavi di traduzione. */
+    public string $main_module = '';
 
-    public string $adm_theme = 'AdminLTE';
-
+    /** Lingua dei contenuti CMS quando manca la traduzione nella lingua corrente (`Cms\View\Components\PageContent`). */
     public string $primary_lang = 'it';
 
+    /** Forza lo schema https negli URL generati (`XotServiceProvider::redirectSSL`); ignorato su localhost. */
     public bool $force_ssl = false;
+
+    /** Disattiva la campanella delle notifiche nel pannello (`Notify\AdminPanelProvider`). */
+    public bool $disable_database_notifications = true;
+
+    public static function tenantConfigName(): string
+    {
+        return 'xra';
+    }
 }
