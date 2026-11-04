@@ -1,5 +1,5 @@
 ---
-title: Code quality — audit label hardcoded Filament
+title: Code quality: audit label hardcoded Filament
 type: story
 module: Xot
 status: ready-for-dev

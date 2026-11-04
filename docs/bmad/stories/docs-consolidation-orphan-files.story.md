@@ -8,7 +8,7 @@ tags: [docs, xot, bmad]
 qmd: "docs consolidation   orphan files + structure normalization   2026-10-06 xot"
 ---
 
-# Docs consolidation — orphan files + structure normalization — 2026-10-06
+# Docs consolidation: orphan files + structure normalization: 2026-10-06
 
 ## Epic
 Documentation organization + knowledge base maintainability.

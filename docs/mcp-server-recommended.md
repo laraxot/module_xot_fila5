@@ -1,5 +1,5 @@
 ---
-title: "MCP consigliati — modulo Xot / monorepo PTVX"
+title: "MCP consigliati: modulo Xot / monorepo PTVX"
 type: note
 status: active
 created: 2026-09-24
@@ -48,9 +48,9 @@ SSoT config: [`.mcp.json`](../../../.mcp.json) · how-to:
 
 Non aggiungere per Xot:
 
-- `filesystem`, `fetch`, `memory`, `sequential-thinking` — Cursor li ha gia'
-- `puppeteer` — usare Playwright
-- MCP Postgres su DB reali — dati sacri; solo `*_test` via Pest
+- `filesystem`, `fetch`, `memory`, `sequential-thinking`: Cursor li ha gia'
+- `puppeteer`: usare Playwright
+- MCP Postgres su DB reali: dati sacri; solo `*_test` via Pest
 
 ## Config minima (gia' in root)
 

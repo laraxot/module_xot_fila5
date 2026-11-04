@@ -1,5 +1,5 @@
 ---
-title: "DCP-270 — No Services: guardia vera e ultimi residui (app/, tema Sixteen)"
+title: "DCP-270: No Services: guardia vera e ultimi residui (app/, tema Sixteen)"
 type: story
 module: Xot
 status: done
@@ -13,7 +13,7 @@ related:
   - ../../../User/docs/bmad/stories/dcp-269-login-google-localizzato-e-rientro-nella-lingua.story.md
 ---
 
-# DCP-270 — No Services: guardia vera e ultimi residui
+# DCP-270: No Services: guardia vera e ultimi residui
 
 **Numero:** 270, preso con controllo che blocca (massimo trovato 269) e controllo del nome file con lo strumento della regola.
 

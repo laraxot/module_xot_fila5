@@ -1,5 +1,5 @@
 ---
-title: "Filament Blueprint — Xot"
+title: "Filament Blueprint: Xot"
 type: filament-blueprint
 status: active
 module: Xot
@@ -19,7 +19,7 @@ i confini di dominio.
 
 ## Regole non negoziabili
 
-1. Estendere solo `XotBaseResource` / `XotBaseWidget` / basi Xot — mai classi Filament dirette.
+1. Estendere solo `XotBaseResource` / `XotBaseWidget` / basi Xot: mai classi Filament dirette.
 2. Nessun `->label()` hardcoded: chiavi in `lang/<locale>/` del modulo.
 3. Business logic nelle Actions del modulo (`QueueableAction` + `execute()`), non nei form hooks grassi e **mai** in `*Service` / `app/Support` ([services-to-queueable-actions-filament-blueprint](./services-to-queueable-actions-filament-blueprint.md) · [no-app-support process](../../../../../docs/second-brain/process/no-app-support-queueable-actions.md)).
 4. FO: widget montati esplicitamente; non abusare `discoverWidgets` per chrome.

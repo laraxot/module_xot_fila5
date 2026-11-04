@@ -1,5 +1,5 @@
 ---
-title: "Continuazione 2026-10-21 — non perdere nulla"
+title: "Continuazione 2026-10-21: non perdere nulla"
 type: memory
 status: active
 updated: 2026-10-21
@@ -18,8 +18,8 @@ tags: [continuation, tomorrow, bmad, second-brain, checklist]
 - Vite installato (`npm install`, `laravel/node_modules/.bin/vite` v6.4.5); `npm run build` avviato
 - DB: `DB_HOST=10.100.200.53` (remoto); ruoli utente esistono; `roles` table assente locale (documentato)
 
-**Cosa resta per domani (in ordine non sequenziale — swarm)**:
-1. Verificare se `bg_200` (o successivo loop) completa `Progressioni` trait generics — documentare varianza, non inventare generics falsi.
+**Cosa resta per domani (in ordine non sequenziale: swarm)**:
+1. Verificare se `bg_200` (o successivo loop) completa `Progressioni` trait generics: documentare varianza, non inventare generics falsi.
 2. Se full-tree PHPStan ancora timeout, documentare in `docs/coverage.md` per il modulo; non dichiarare zero senza prova.
 3. Correggere il `label: null` Alpine nel nav: verificare che tutti i moduli abbiano `config/config.php` con `navigation_sort` e `icon`; se qualche modulo manca il config, aggiungerlo oppure filtrare in `GetModulesNavigationItems` con guardia non-null.
 4. Assicurare che `AdminPanelProvider` di ogni modulo registri correttamente le risorse (alcuni potrebbero avere `discoverModuleComponents = true` ma file in `app/Filament/Resources` non caricate per namespace errato).

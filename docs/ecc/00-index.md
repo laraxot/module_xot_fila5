@@ -1,5 +1,5 @@
 ---
-title: "ECC — indice documentazione PTVX"
+title: "ECC: indice documentazione PTVX"
 type: index
 module: Xot
 status: active
@@ -12,7 +12,7 @@ related:
   - ../00-INDEX.md
 ---
 
-# ECC — indice documentazione PTVX
+# ECC: indice documentazione PTVX
 
 Questi documenti descrivono il plugin ECC nativo installato nell'ambiente Codex e
 il suo uso nel repository PTVX. ECC aggiunge strumenti riutilizzabili; le istruzioni

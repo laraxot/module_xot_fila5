@@ -1,5 +1,5 @@
 ---
-title: "Pi — ripristino settings e migrazione hooks"
+title: "Pi: ripristino settings e migrazione hooks"
 type: story
 status: done
 epic: "PROJECT-TOOLING"
@@ -10,7 +10,7 @@ tags: [docs, xot, bmad]
 qmd: "pi   ripristino settings e migrazione hooks xot"
 ---
 
-# Pi — ripristino settings e migrazione hooks
+# Pi: ripristino settings e migrazione hooks
 
 ## Problema
 

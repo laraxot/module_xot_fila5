@@ -6,12 +6,12 @@ updated: 2026-09-26
 qmd: "quality gates 2026 07 28"
 issues: []
 discussions: []
-title: Quality Gates Analysis — Xot Module
+title: Quality Gates Analysis: Xot Module
 date: 2026-07-28
 status: completed-with-constraints
 ---
 
-# Quality Gates Analysis — laravel/Modules/Xot
+# Quality Gates Analysis: laravel/Modules/Xot
 
 ## Execution Summary
 
@@ -212,8 +212,8 @@ dealerdirect/phpcodesniffer-composer-installer is blocked by allow-plugins confi
 4. **Environment Audit:** Diagnosed PHPMD/Insights compatibility issues
 
 ### Blocked ⚠️
-1. **PHPMD:** Dependency conflict (PDepend/Symfony incompatibility) — shared with User module
-2. **PHP Insights:** Plugin allowlist issue (security-gated) — shared with User module
+1. **PHPMD:** Dependency conflict (PDepend/Symfony incompatibility): shared with User module
+2. **PHP Insights:** Plugin allowlist issue (security-gated): shared with User module
 
 ### Next Steps (For Future Sessions)
 
@@ -223,8 +223,8 @@ dealerdirect/phpcodesniffer-composer-installer is blocked by allow-plugins confi
 - Re-run PHPStan at Level 5-7 (more practical)
 
 **Tier 2 (Important):**
-- Resolve PHPMD dependency conflict (update PDepend or downgrade PHPMD) — affects all modules
-- Approve dealerdirect plugin in composer.json for PHP Insights — affects all modules
+- Resolve PHPMD dependency conflict (update PDepend or downgrade PHPMD): affects all modules
+- Approve dealerdirect plugin in composer.json for PHP Insights: affects all modules
 - Re-run both tools after fixes
 
 **Tier 3 (Polish):**

@@ -1,5 +1,5 @@
 ---
-title: "Architecture — custom Livewire UI a Filament Widgets"
+title: "Architecture: custom Livewire UI a Filament Widgets"
 type: architecture
 module: Xot
 status: approved-ready-for-dev
@@ -17,7 +17,7 @@ qmd: "architettura e adr xot"
 
 # Architettura e ADR
 
-## ADR-001 — Classificare per responsabilità
+## ADR-001: Classificare per responsabilità
 
 **Decisione:** admin/dashboard interattivo → Widget; CRUD → Resource/Page/Action;
 front-office pubblico → Folio/Volt/Blade oppure Widget solo se il contratto è
@@ -27,7 +27,7 @@ sono candidati automatici.
 **Perché:** il nome Livewire descrive il trasporto reattivo, non lo scopo del
 componente. Un rename meccanico altera routing, UX e autorizzazioni.
 
-## ADR-002 — Usare esclusivamente le basi Xot
+## ADR-002: Usare esclusivamente le basi Xot
 
 **Decisione:** i moduli applicativi estendono la variante più specifica tra
 `XotBaseWidget`, `XotBaseSchemaWidget`, `XotBaseTableWidget`,
@@ -37,19 +37,19 @@ componente. Un rename meccanico altera routing, UX e autorizzazioni.
 **Conseguenza:** nessun `Filament\Widgets\*` diretto nei moduli applicativi;
 discovery e convenzioni restano centralizzate in Xot.
 
-## ADR-003 — Separare UI e caso d'uso
+## ADR-003: Separare UI e caso d'uso
 
 **Decisione:** il Widget raccoglie stato, invoca l'Action, delega schema e
 renderizza; query, mutazioni, transazioni, integrazioni e side effect vivono in
 Spatie Queueable Actions o Actions di dominio già esistenti.
 
-## ADR-004 — Discovery e mount espliciti
+## ADR-004: Discovery e mount espliciti
 
 **Decisione:** usare discovery del panel per i widget del panel e FQCN esplicito
 nei partial che devono montare un widget. Gli alias stringa legacy sono ritirati
 solo dopo la matrice caller.
 
-## ADR-005 — Sicurezza e stato invariati
+## ADR-005: Sicurezza e stato invariati
 
 **Decisione:** ogni conversione conserva policy, `canView`, tenant context,
 guard, redirect, query string, polling e limiti di input; una differenza è una

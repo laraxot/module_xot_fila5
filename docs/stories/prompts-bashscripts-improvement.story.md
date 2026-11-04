@@ -83,7 +83,7 @@ Sovrapposizioni di scopo tra canonici risolte per puntatore: `19-docs` (dove scr
 
 Dopo la verifica wave3 a zero errori su `analyse Modules`, i prompt sono stati rafforzati cosi' che lo zero non chiuda il lavoro ne' venga dichiarato su un report falso:
 
-- `bashscripts/docs/prompts/00-start.md`: ordine permanente — a zero continua Services→Actions + docs/boy scout; vittoria solo con json `totals` e banner `[OK] No errors`.
+- `bashscripts/docs/prompts/00-start.md`: ordine permanente: a zero continua Services→Actions + docs/boy scout; vittoria solo con json `totals` e banner `[OK] No errors`.
 - `bashscripts/docs/prompts/11-phpstan.md`: sezione `Vittoria verificata` (calo improvviso a 0 = lane finite **oppure** JSON troncato).
 - `bashscripts/docs/prompts/25-services-to-actions.md` e `INDEX.md`: trigger e lezione collegati.
 - Traccia locale prompt: `bashscripts/docs/prompts/prompts-review.story.md` (sezione Wave 3).
@@ -91,7 +91,7 @@ Dopo la verifica wave3 a zero errori su `analyse Modules`, i prompt sono stati r
 
 ## Wave 4 (boy scout: zombie Services + prompt)
 
-Misura: `/tmp/phpstan_wave4.json` — `file_errors` 0, `errors` 0, exit 0, banner `[OK] No errors`.
+Misura: `/tmp/phpstan_wave4.json`: `file_errors` 0, `errors` 0, exit 0, banner `[OK] No errors`.
 
 - `24-boy-scout.md`: post-zero continua bonifica Services/docs/prompt (ordine permanente).
 - `25-services-to-actions.md`: misura viva zero `*Service.php` applicativi (~745 Actions); `ProfileTest` spurio DELETED; Translators/Trend = **DELETE** non relocate a zero callers; gate aggiornato.
@@ -105,25 +105,25 @@ Nessun prompt nuovo. Solo canonici sotto `bashscripts/docs/prompts/`:
 - `00-start.md`: sezione `A zero non ti fermi` (vittoria = json `totals` 0 **e** `[OK] No errors`); Hindsight empty/auth non blocca.
 - `11-phpstan.md`: `Anti zombie Service`; coordinator-only `analyse Modules`; anti-pattern tipizzare/relocare zombie.
 - `44-module-docs-continuous.md` + `57-second-brain.md`: Hindsight vuoto/auth fail/reflect 500 non ferma docs/QMD/PHPStan.
-- Hindsight reflect in sessione: 500 auth — fallback docs+QMD usato (coerente coi prompt).
+- Hindsight reflect in sessione: 500 auth: fallback docs+QMD usato (coerente coi prompt).
 
-### Wave 4c (2026-10-20 ~11:52 — gate verde + ordine permanente)
+### Wave 4c (2026-10-20 ~11:52: gate verde + ordine permanente)
 
 <!-- GateGuard: edit existing story linked from 00-start §1.4; user: esegui phpstan analyse Modules e sistema tutte le segnalazioni … sempre senza conferma -->
 
 Rimisura: `analyse Modules` → `0/0` + `[OK] No errors`. Aggiornati
 `00-start.md` (**Ricordalo sempre**) e `11-phpstan.md` (SSoT `TestCase` helper).
 
-## Wave 5 (2026-10-20 — prompt stickiness; PHPStan ancora zero)
+## Wave 5 (2026-10-20: prompt stickiness; PHPStan ancora zero)
 
 Misura verificata ora: `analyse Modules` → `file_errors` 0, exit 0, banner `[OK] No errors`. Nessun PHP, nessun edit a `phpstan.neon`. Solo stickiness dei prompt cosi' l'ordine permanente non si dimentica:
 
 - `00-start.md`: tabella **Impossibile da dimenticare** → canoni 11 / 25 / 44 / 05; sezione **A zero non ti fermi** in checklist esplicita (boy scout, Services→Actions, docs, REUSE W0, prompt).
 - `11-phpstan.md`: HARD Pest helpers = `TestCase` FQCN SSoT (no `scanFiles`); anti-pattern ignore unmatched (`constantTypeCoverage` **oppure** `Out of N possible constant types`) = rimozione umana ignore, non `reportUnmatchedIgnoredErrors: false`.
-- `05-livewire-to-filament-widgets.md`: sezione **W0 REUSE — gemelli legali** (`TermsOfService`/`PrivacyPolicy`).
-- `44-module-docs-continuous.md`: gate concreto tema Zero — `README.md` = indice (`test -f …/README.md && test ! -e …/00-INDEX.md`).
+- `05-livewire-to-filament-widgets.md`: sezione **W0 REUSE: gemelli legali** (`TermsOfService`/`PrivacyPolicy`).
+- `44-module-docs-continuous.md`: gate concreto tema Zero: `README.md` = indice (`test -f …/README.md && test ! -e …/00-INDEX.md`).
 
-## Wave 6 (2026-10-20 ~12:10 — catena permanente + single-neon)
+## Wave 6 (2026-10-20 ~12:10: catena permanente + single-neon)
 
 Misura verificata: `/tmp/phpstan_ord_121026.json` → `file_errors` 0, `errors` 0, banner `[OK] No errors`. Nessun PHP, nessun edit a `laravel/phpstan.neon`, nessun altro `.neon` creato. Nessun prompt nuovo sullo stesso tema.
 

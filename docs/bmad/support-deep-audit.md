@@ -1,5 +1,5 @@
 ---
-title: "Deep audit — no app/Support"
+title: "Deep audit: no app/Support"
 type: bmad-audit
 module: Xot
 status: active
@@ -16,7 +16,7 @@ related:
   - ../../../../../docs/second-brain/process/no-app-support-queueable-actions.md
 ---
 
-# Deep audit — zero `app/Support` (2026-10-22)
+# Deep audit: zero `app/Support` (2026-10-22)
 
 ## Misura disco
 
@@ -31,14 +31,14 @@ related:
 
 | Artefatto | Verdetto |
 |-----------|----------|
-| `tests/**/Support` | OK — fixture test |
-| `packages/spatie/*/Support` | OK — vendor |
-| `SupportsCommentNotifications`, `SupportedLocale` | OK — nomi dominio/enum |
+| `tests/**/Support` | OK: fixture test |
+| `packages/spatie/*/Support` | OK: vendor |
+| `SupportsCommentNotifications`, `SupportedLocale` | OK: nomi dominio/enum |
 | Blog `Theme*Support` | **rinominato** → `Theme*Bag` (Composition/Data) |
 | Geo `GeoDataValidationRules` in Actions | **spostato** → `Infrastructure/Validation` |
 | AI `AiActionHandlerRegistry` | **Adapters/** (non Action) |
 | Geo API/cache const | **Infrastructure/Config** |
-| User `ShieldUtilsAction` | Debito: wrapper statico ex Utils — spezzare |
+| User `ShieldUtilsAction` | Debito: wrapper statico ex Utils: spezzare |
 
 ## Filament blueprint
 
