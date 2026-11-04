@@ -6,6 +6,7 @@ namespace Modules\Xot\Filament\Resources\Pages;
 
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
+use Filament\Actions\BulkAction;
 use Filament\Resources\Pages\ManageRelatedRecords as FilamentManageRelatedRecords;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Schema;
@@ -301,7 +302,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      *
      * @not-deprecated Hook di progetto omonimo a un nome deprecato di Filament: API attiva di questa classe.
      *
-     * @return array<string, Action|ActionGroup>
+     * @return array<int|string, Action|BulkAction|ActionGroup>
      */
     public function getTableHeaderActions(): array
     {
