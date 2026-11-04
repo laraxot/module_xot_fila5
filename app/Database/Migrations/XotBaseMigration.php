@@ -236,6 +236,7 @@ abstract class XotBaseMigration extends LaravelMigration
                     return true;
                 }
             }
+
             return false;
         }
 
@@ -328,6 +329,54 @@ abstract class XotBaseMigration extends LaravelMigration
         }
 
         $this->getConn()->table($tableName, $next);
+    }
+
+    /**
+     * Crea solo gli indici che mancano, sulla connessione del modello della migrazione.
+     *
+     * Idempotente: un indice c'e' gia' se esiste con quel nome oppure sulle stesse colonne nello stesso
+     * ordine (`Builder::hasIndex()` accetta l'elenco), cosi' un indice equivalente con altro nome non viene
+     * duplicato. Salta la tabella o l'indice se manca una colonna: lo schema di un ambiente puo' essere piu'
+     * vecchio. Non toglie mai nulla: eliminare un indice in produzione e' una decisione dell'utente.
+     *
+     * Per una colonna di testo confrontata con un intero l'indice non basta (MySQL scandisce tutto l'indice):
+     * la query deve passare il valore come stringa.
+     *
+     * @param  array<string, array<string, list<string>>>  $indexes  tabella => nome indice => colonne in ordine
+     */
+    protected function ensureIndexes(array $indexes): void
+    {
+        $schema = $this->getConn();
+
+        foreach ($indexes as $tableName => $tableIndexes) {
+            if (! $schema->hasTable($tableName)) {
+                continue;
+            }
+
+            foreach ($tableIndexes as $indexName => $columns) {
+                if ($this->shouldSkipIndex($schema, $tableName, $indexName, $columns)) {
+                    continue;
+                }
+
+                $schema->table($tableName, static function (Blueprint $table) use ($columns, $indexName): void {
+                    $table->index($columns, $indexName);
+                });
+            }
+        }
+    }
+
+    /**
+     * @param  list<string>  $columns
+     */
+    private function shouldSkipIndex(Builder $schema, string $tableName, string $indexName, array $columns): bool
+    {
+        foreach ($columns as $column) {
+            if (! $schema->hasColumn($tableName, $column)) {
+                return true;
+            }
+        }
+
+        return $schema->hasIndex($tableName, $indexName) || $schema->hasIndex($tableName, $columns);
     }
 
     /**
