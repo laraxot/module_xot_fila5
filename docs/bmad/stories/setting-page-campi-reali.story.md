@@ -96,7 +96,7 @@ Letto dal codice delle `SettingPage`, non dalla matrice. Dove l'esito diverge da
 | Media | `media` | `attachment_max_size_kb`, `attachment_mime_types` | |
 | Notify | `notify` | `cleanup_enabled`, `cleanup_older_than_days`, `cleanup_batch_size`, `cleanup_keep_failed`, `fcm_url` | `fcm.server_key` resta segreto in `.env` |
 | Seo | `seo` | `path_aliases` | `indexable` fuori: richiederebbe modifiche a Cms |
-| Tenant | `metatag` | `title`, `logo_height` | i lettori stanno in Xot (`MetatagData`, usato dal `Head` di Cms); `MetatagPage` di Xot scrive lo stesso file: da decidere chi lo possiede |
+| Tenant | `metatag` | `title`, `logo_height` | i lettori stanno in Xot (`MetatagData`, usato dal `Head` di Cms); `MetatagPage` di Xot scrive lo stesso file (vedi decisione sotto) |
 | Trade | `trade` | `news_feeds` | `mcp.enabled` e stato in sola lettura scartati; kill switch, live e auto restano nell'ambiente |
 | UI | `ui` | `dark_mode_switcher_enabled` | `default_table_layout` non aggiunto |
 | User | `user` | `create_personal_team`, `passport_enable_password_grant` | token, modelli e scope Passport restano fuori |
@@ -128,7 +128,14 @@ modulo. Per questo ogni modulo dichiara i suoi lettori nella propria story.
 - [x] PHPStan livello max e Pint su ogni file toccato; Pest dei test nuovi e della guardia
 - [x] prompt riusabile per aggiungere un campo senza ripetere l'errore, e memoria aggiornata (`bashscripts/docs/prompts/59-setting-page-real-fields.md`; memoria `setting-page-real-fields`)
 - [ ] chiusura per modulo (phpmd, phpinsights, `docs/coverage.md`) su Activity, Job, Lang, Seo, Tenant, Xot, Trade
-- [ ] decidere chi possiede il file `metatag` (Tenant `SettingPage` o `MetatagPage` di Xot)
+- [x] decidere chi possiede il file `metatag` (Tenant `SettingPage` o `MetatagPage` di Xot): **tutte e due, con ruoli diversi**.
+  `MetatagPage` (Xot) e' l'editor completo del file (title, sitename, generator, charset, author, description, keywords, loghi,
+  `colors`); la `SettingPage` di Tenant ne e' la forma breve per il super-admin, con le sole due chiavi che hanno un lettore
+  certo (`title`, `logo_height`). Non si calpestano: entrambe salvano con `SaveTenantConfigAction`, che fonde in modo ricorsivo e
+  conserva le chiavi che la pagina non gestisce, quindi salvare dall'una non cancella quello che ha scritto l'altra. Le due
+  chiavi in comune hanno un solo valore: vince l'ultimo salvataggio. Non si tolgono i campi a Tenant: senza di loro la pagina
+  tornerebbe vuota, e un campo duplicato e' meno grave di un campo senza lettore. Se un giorno `MetatagPage` diventa una
+  `SettingPage` vera, Tenant la sostituisce e questa pagina si rimpicciolisce.
 
 ## Coordinamento
 
