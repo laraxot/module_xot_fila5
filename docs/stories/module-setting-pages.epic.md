@@ -130,6 +130,6 @@ tempo senza deploy. Da quella nasce `{Modulo}ConfigData` e poi la pagina.
 ## Esito della decisione utente
 
 Implementazione e gate complessivi sono tracciati nella story
-[`setting-page-tutti-i-moduli.story.md`](./setting-page-tutti-i-moduli.story.md). Tutti i 18
+[`setting-page-tutti-i-moduli.story.md`](../bmad/stories/setting-page-tutti-i-moduli.story.md). Tutti i 18
 moduli hanno ora la propria pagina; quelli senza impostazioni di dominio mantengono schema e
 Data vuoti, senza introdurre default di anni o esporre chiavi tecniche/secret.

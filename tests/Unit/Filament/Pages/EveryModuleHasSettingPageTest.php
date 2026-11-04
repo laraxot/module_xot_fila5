@@ -6,12 +6,16 @@ use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\Config\ResolveModuleConfigDataAction;
 use Modules\Xot\Tests\TestCase;
 
+use function Safe\file_get_contents;
+use function Safe\preg_match;
+use function Safe\scandir;
+
 uses(TestCase::class)->group('no-xot-db');
 
 dataset('laraxot modules', function (): array {
     $modulesPath = dirname(__DIR__, 5);
     $names = [];
-    foreach (scandir($modulesPath) ?: [] as $name) {
+    foreach (scandir($modulesPath) as $name) {
         if (! str_starts_with($name, '.') && is_dir($modulesPath.'/'.$name.'/app')) {
             $names[$name] = [$name];
         }
@@ -36,7 +40,7 @@ test('every module has setting page navigation labels in it and en', function (s
 })->with('laraxot modules');
 
 test('a setting page declares form fields only when its config data has properties', function (string $module): void {
-    $source = file_get_contents(base_path("Modules/{$module}/app/Filament/Pages/SettingPage.php")) ?: '';
+    $source = file_get_contents(base_path("Modules/{$module}/app/Filament/Pages/SettingPage.php"));
     preg_match('/function getFormSchema\(\): array\s*\{(.*?)\n    \}/s', $source, $body);
     $declaresFields = str_contains($body[1] ?? '', '=>');
     $dataClass = "Modules\\{$module}\\Datas\\{$module}ConfigData";

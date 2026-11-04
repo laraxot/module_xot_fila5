@@ -9,8 +9,8 @@ qmd: "SettingPage tutti i moduli 18 moduli BaseSettingPage ConfigData menu Filam
 repository: "https://github.com/provtv/base_ptv_fila5_mono"
 related:
   - ./base-setting-page.story.md
-  - ./module-setting-pages.epic.md
-  - ../../../Notify/docs/stories/setting-page.story.md
+  - ../../stories/module-setting-pages.epic.md
+  - ../../../Notify/docs/bmad/stories/setting-page.story.md
 ---
 
 # SettingPage in tutti i 18 moduli
