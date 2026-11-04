@@ -762,6 +762,16 @@ trait HasXotTable
     }
 
     /**
+     * Esito di `Schema::hasColumn()` per connessione.tabella.colonna, valido per la durata del processo.
+     * Senza, ogni costruzione di tabella (lista, relation manager, ogni update Livewire) lancia una query
+     * su `information_schema.columns` per sapere se esiste `order_column`. Lo schema cambia solo con una
+     * migrazione, quindi non serve rileggerlo a ogni richiesta.
+     *
+     * @var array<string, bool>
+     */
+    private static array $columnExistsCache = [];
+
+    /**
      * Check if model has a specific column via schema introspection.
      * Generic, reusable method for any column check.
      */
@@ -771,7 +781,9 @@ trait HasXotTable
         $model = app($modelClass);
         Assert::isInstanceOf($model, Model::class);
 
-        return $model->getConnection()
+        $cacheKey = $model->getConnectionName().'.'.$model->getTable().'.'.$column;
+
+        return self::$columnExistsCache[$cacheKey] ??= $model->getConnection()
             ->getSchemaBuilder()
             ->hasColumn($model->getTable(), $column);
     }
