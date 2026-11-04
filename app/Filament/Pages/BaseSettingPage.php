@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Pages;
 
 use Filament\Actions\Action;
-use Filament\Facades\Filament;
 use Filament\Forms\Components\TagsInput;
 use Filament\Notifications\Notification;
 use Filament\Schemas\Schema;
@@ -13,8 +12,8 @@ use Illuminate\Support\Str;
 use Modules\Tenant\Actions\Config\GetTenantConfigArrayAction;
 use Modules\Tenant\Actions\Config\SaveTenantConfigAction;
 use Modules\Xot\Actions\Config\ResolveModuleConfigDataAction;
-use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
+use Modules\Xot\Filament\Traits\SuperAdminOnlyTrait;
 use Spatie\LaravelData\Data;
 use Webmozart\Assert\Assert;
 
@@ -42,6 +41,7 @@ use Webmozart\Assert\Assert;
 abstract class BaseSettingPage extends XotBasePage
 {
     use NavigationLabelTrait;
+    use SuperAdminOnlyTrait;
 
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-cog-6-tooth';
 
@@ -49,13 +49,6 @@ abstract class BaseSettingPage extends XotBasePage
     protected static ?string $slug = 'setting';
 
     protected string $view = 'xot::filament.pages.base-setting';
-
-    public static function canAccess(): bool
-    {
-        $user = Filament::auth()->user();
-
-        return $user instanceof UserContract && $user->hasRole('super-admin');
-    }
 
     /**
      * Nome del file di configurazione, senza `.php`: `Progressioni` => `progressioni`.

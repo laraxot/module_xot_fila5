@@ -1,15 +1,9 @@
 ---
-title: "architecture"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "architecture"
-issues: []
-discussions: []
-status: draft
+title: "Xot - architecture.md"
+module: Xot
+bmad: true
+status: active
 ---
-
 # 🏗️ **Architettura Modulo Xot**
 
 ## 📋 **Panoramica Architetturale**
@@ -404,4 +398,5 @@ test('all models extend base model', function () {
 - [**Troubleshooting**](../project_docs/troubleshooting.md) - Risoluzione problemi
 
 ---
+
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*

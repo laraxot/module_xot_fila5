@@ -139,4 +139,4 @@ di ogni run pesante, dato quanto costa in tempo-fleet un bootstrap fatal silenzi
 
 ## Nota sui link
 
-La story correlata `ceddiffs-table-class-migration-pending-20260929` vive nel modulo Progressioni, non presente in questo repo: il link relativo in `related` era rotto ed e' stato rimosso. Percorso originale: `../../../Progressioni/docs/bmad/stories/ceddiffs-table-class-migration-pending-20260929.story.md`.
+La story correlata `ceddiffs-table-class-migration-pending-20260929` vive nel modulo Progressioni, non presente in questo repo: il link relativo in `related` era rotto ed e' stato rimosso. Percorso originale: `../../../Progressioni/docs/bmad/stories/ceddiffs-table-class-migration-pending.story.md`.

@@ -1,10 +1,9 @@
 ---
-title: "BMAD Story — XotBaseResource: rimuovere $navigationIcon (traduzioni gestiscono)"
-type: story
+title: "Xot - xotbase-navigationicon-rule.story.md"
 module: Xot
 bmad: true
 status: draft
-updated: 2026-10-09
+updated: 2026-10-23
 tags: [docs, xot, bmad]
 qmd: "bmad story   xotbaseresource: rimuovere $navigationicon (traduzioni gestiscono) xot"
 ---

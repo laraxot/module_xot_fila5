@@ -4,7 +4,7 @@ module: Xot
 bmad: true
 status: active
 type: note
-updated: 2026-10-13
+updated: 2026-10-23
 tags: [docs, xot, bmad]
 qmd: "xot   english presentation xot"
 ---
