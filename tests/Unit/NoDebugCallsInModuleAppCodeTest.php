@@ -28,7 +28,6 @@ uses(TestCase::class);
  *
  * @see docs/stories/wave0-repository-recovery-lock-and-debug-calls.story.md
  */
-
 const DEBUG_FUNCTION_NAMES = ['dd', 'ddd', 'dddx', 'dump', 'ray', 'var_dump'];
 
 /**
