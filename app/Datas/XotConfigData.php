@@ -20,7 +20,6 @@ class XotConfigData extends Data
 {
     use MakesFromTenantConfig;
 
-    public bool $enabled = true;
     public string $pub_theme = 'Four';
 
     public string $adm_theme = 'AdminLTE';

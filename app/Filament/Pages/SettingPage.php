@@ -29,7 +29,6 @@ class SettingPage extends BaseSettingPage
     protected function getFormSchema(): array
     {
         return [
-            'enabled' => Toggle::make('enabled')->default(true)->required(),
             'pub_theme' => TextInput::make('pub_theme')->required()->maxLength(80),
             'adm_theme' => TextInput::make('adm_theme')->required()->maxLength(80),
             'primary_lang' => Select::make('primary_lang')->options(['it' => 'Italiano', 'en' => 'English'])->required(),
