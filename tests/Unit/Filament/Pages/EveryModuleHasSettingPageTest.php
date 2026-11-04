@@ -21,7 +21,9 @@ dataset('laraxot modules', function (): array {
         }
 
         $name = $file->getFilename();
-        if (! str_starts_with($name, '.') && is_dir($file->getPathname().'/app')) {
+        if (! str_starts_with($name, '.')
+            && is_file($file->getPathname().'/module.json')
+            && is_dir($file->getPathname().'/app')) {
             $names[$name] = [$name];
         }
     }
@@ -44,6 +46,13 @@ test('every module has setting page navigation labels in it and en', function (s
         ->and(File::exists(base_path("Modules/{$module}/lang/en/setting.php")))->toBeTrue();
 })->with('laraxot modules');
 
+test('every module ignores lock files in its own repository', function (string $module): void {
+    $gitignore = base_path("Modules/{$module}/.gitignore");
+
+    expect(File::exists($gitignore))->toBeTrue()
+        ->and(file_get_contents($gitignore))->toContain('*.lock');
+})->with('laraxot modules');
+
 test('a setting page declares form fields only when its config data has properties', function (string $module): void {
     $source = file_get_contents(base_path("Modules/{$module}/app/Filament/Pages/SettingPage.php"));
     preg_match('/function getFormSchema\(\): array\s*\{(.*?)\n    \}/s', $source, $body);
@@ -52,4 +61,10 @@ test('a setting page declares form fields only when its config data has properti
     $hasProperties = get_class_vars($dataClass) !== [];
 
     expect($declaresFields && ! $hasProperties)->toBeFalse();
+})->with('laraxot modules');
+
+test('a setting page does not use an empty form placeholder', function (string $module): void {
+    $source = file_get_contents(base_path("Modules/{$module}/app/Filament/Pages/SettingPage.php"));
+
+    expect($source)->not->toContain('return [];');
 })->with('laraxot modules');

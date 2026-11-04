@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Pages;
 
 use Filament\Actions\Action;
+use Filament\Forms\Components\Toggle;
 use Filament\Forms\Components\TagsInput;
 use Filament\Notifications\Notification;
 use Filament\Schemas\Schema;
@@ -80,6 +81,18 @@ abstract class BaseSettingPage extends XotBasePage
     public function form(Schema $schema): Schema
     {
         return $this->schema($schema);
+    }
+
+    /**
+     * Every module has at least one operational setting; concrete pages add domain fields.
+     *
+     * @return array<string, object>
+     */
+    protected function getFormSchema(): array
+    {
+        return [
+            'enabled' => Toggle::make('enabled')->default(true)->required(),
+        ];
     }
 
     public function save(): void

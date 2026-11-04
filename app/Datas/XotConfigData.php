@@ -19,4 +19,6 @@ use Spatie\LaravelData\Data;
 class XotConfigData extends Data
 {
     use MakesFromTenantConfig;
+
+    public bool $enabled = true;
 }

@@ -4,23 +4,23 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Pages;
 
+use Filament\Forms\Components\Toggle;
 use Modules\Xot\Datas\XotConfigData;
 
 /**
  * Impostazioni di Xot (`config/{tenant}/xot.php`), solo super-admin.
  *
- * Form vuoto: il modulo non ha ancora impostazioni. La pagina esiste per uniformita' e per
- * essere pronta quando servira' un campo.
+ * Form configurato con i campi operativi comuni del modulo.
  *
  * @see XotConfigData
  */
 class SettingPage extends BaseSettingPage
 {
-    /**
-     * @return array<string, never>
-     */
+    /** @return array<string, object> */
     protected function getFormSchema(): array
     {
-        return [];
+        return [
+            'enabled' => Toggle::make('enabled')->default(true)->required(),
+        ];
     }
 }
