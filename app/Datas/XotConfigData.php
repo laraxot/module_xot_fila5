@@ -19,4 +19,12 @@ use Spatie\LaravelData\Data;
 class XotConfigData extends Data
 {
     use MakesFromTenantConfig;
+
+    public string $pub_theme = 'Four';
+
+    public string $adm_theme = 'AdminLTE';
+
+    public string $primary_lang = 'it';
+
+    public bool $force_ssl = false;
 }
