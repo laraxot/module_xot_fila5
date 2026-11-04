@@ -33,7 +33,16 @@ senza ignorare errori o alterare la configurazione PHPStan.
 |---|---|---|
 | `/root` | Baseline, clustering, coordinamento, integrazione e verifica globale | in progress |
 | `/root/activity_table_fix` | Activity: override di hook tabella che bloccano bootstrap | in progress |
-| `/root/prompt_audit` | Inventario e miglioramento dei prompt in `bashscripts/docs/prompts/` | in progress |
+| `/root/prompt_audit` | `bashscripts/docs/prompts/11-phpstan.md`, coordinamento README solo se necessario | in progress |
+
+### Finding prompt 11
+
+- Il passo 1 mostra ancora il run completo senza `flock` e senza acquisire l'exit code del
+  processo, mentre i vincoli più sotto impongono la coda per ogni run multi-file.
+- Le istruzioni di report e handoff indicano `docs/stories/`, mentre il repository richiede gli
+  artefatti BMAD in `docs/bmad/stories/` dentro il modulo owner.
+- Il prompt non definisce in un solo snippet un `OUT` non condiviso né una raccolta coerente di
+  JSON, stderr ed exit code per il gate coordinatore.
 
 ## Acceptance criteria
 

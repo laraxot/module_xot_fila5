@@ -8,15 +8,20 @@ use Modules\Xot\Tests\TestCase;
 
 use function Safe\file_get_contents;
 use function Safe\preg_match;
-use function Safe\scandir;
 
 uses(TestCase::class)->group('no-xot-db');
 
 dataset('laraxot modules', function (): array {
     $modulesPath = dirname(__DIR__, 5);
     $names = [];
-    foreach (scandir($modulesPath) as $name) {
-        if (! str_starts_with($name, '.') && is_dir($modulesPath.'/'.$name.'/app')) {
+    $iterator = new DirectoryIterator($modulesPath);
+    foreach ($iterator as $file) {
+        if ($file->isDot() || ! $file->isDir()) {
+            continue;
+        }
+
+        $name = $file->getFilename();
+        if (! str_starts_with($name, '.') && is_dir($file->getPathname().'/app')) {
             $names[$name] = [$name];
         }
     }
