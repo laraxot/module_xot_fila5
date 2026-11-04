@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Pages;
 
+use Filament\Forms\Components\Select;
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\Toggle;
 use Modules\Xot\Datas\XotConfigData;
 
 /**
@@ -16,11 +19,21 @@ use Modules\Xot\Datas\XotConfigData;
  */
 class SettingPage extends BaseSettingPage
 {
+    public static function getConfigName(): string
+    {
+        return 'xra';
+    }
+
     /**
-     * @return array<string, never>
+     * @return array<string, Select|TextInput|Toggle>
      */
     protected function getFormSchema(): array
     {
-        return [];
+        return [
+            'pub_theme' => TextInput::make('pub_theme')->required()->maxLength(80),
+            'adm_theme' => TextInput::make('adm_theme')->required()->maxLength(80),
+            'primary_lang' => Select::make('primary_lang')->options(['it' => 'Italiano', 'en' => 'English'])->required(),
+            'force_ssl' => Toggle::make('force_ssl')->default(false),
+        ];
     }
 }

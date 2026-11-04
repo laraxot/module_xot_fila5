@@ -1,9 +1,6 @@
 ---
-<<<<<<< .merge_file_3kcyGU
 title: "PHPStan — falsi positivi da scope parziale (trait.unused cross-modulo)"
-=======
 title: "PHPStan: falsi positivi da scope parziale (trait.unused cross-modulo)"
->>>>>>> .merge_file_xdoykA
 type: concept
 module: Xot
 tags: [phpstan, trait, scope, cross-module, false-positive, second-brain]
@@ -13,11 +10,8 @@ related:
   - ./phpstan-fixes-log.md
 ---
 
-<<<<<<< .merge_file_3kcyGU
 # PHPStan — falsi positivi da scope parziale
-=======
 # PHPStan: falsi positivi da scope parziale
->>>>>>> .merge_file_xdoykA
 
 ## Stato dell'esempio Geo (2026-09-24)
 
@@ -45,11 +39,8 @@ analizzato. Esempio reale (2026-07-06):
 
 Analogamente, un secondo tipo di falso positivo da scope parziale:
 `Ignored error pattern #PHPDoc tag @mixin contains unknown class # was not
-<<<<<<< .merge_file_3kcyGU
 matched in reported errors` — appare ogni volta che si analizza un
-=======
 matched in reported errors`: appare ogni volta che si analizza un
->>>>>>> .merge_file_xdoykA
 sotto-percorso invece di tutto `Modules/`, perché il pattern di
 `ignoreErrors` in `phpstan.neon` matcha errori che esistono altrove
 nell'albero. Non è un errore di codice.
