@@ -81,23 +81,54 @@ di `SaveTenantConfigAction` conserva le chiavi non gestite, quindi piu' pagine p
 
 La matrice e' la partenza: ogni modulo la conferma o la corregge nella propria story con le righe di codice dei lettori.
 
+## Esito (2026-11-04): 39 campi in 14 moduli
+
+Letto dal codice delle `SettingPage`, non dalla matrice. Dove l'esito diverge dal piano sta scritto il perche'.
+
+| Modulo | File tenant | Campi | Scarto dal piano |
+|--------|-------------|-------|------------------|
+| AI | `ai` | `model`, `chat_model`, `temperature`, `chat_temperature`, `max_tokens`, `timeout`, `retry_attempts`, `openai_base_url` | `MakeAIRequestAction` mantiene `gpt-4`/0.3/2000 (default invariato) |
+| Activity | `activitylog` | `enabled`, `clean_after_days`, `default_log_name`, `include_soft_deleted_subjects` | la chiave v4 `delete_records_older_than_days` non e' letta da nessuno, sostituita da quella v5; lettore: il pacchetto, via `ApplyActivityConfigAction` |
+| Cms | `xra` | `pub_theme`, `register_pub_theme` | `adm_theme` (nessuno registra il namespace, le Action che lo leggono non hanno chiamanti) e `disable_frontend_dynamic_route` (dichiarata in `XotData`, letta da nessuno) fuori; `primary_lang` e' di Xot |
+| Gdpr | `gdpr` | `consent_lifetime`, `policy_path` | `cookie.extra` fuori: dichiarare un cookie non tecnico cambia il banner da informazione a consenso |
+| Job | `job` | `max_attempts`, `timeout_seconds`, `sleep_seconds` | `cache.*` era una lettura morta (`job::cache.*`), non una impostazione |
+| Lang | `lang` | `default_locale`, `supported_locales` | `save_missing_translations` non esposto: scrive file di lingua dal web in produzione |
+| Media | `media` | `attachment_max_size_kb`, `attachment_mime_types` | |
+| Notify | `notify` | `cleanup_enabled`, `cleanup_older_than_days`, `cleanup_batch_size`, `cleanup_keep_failed`, `fcm_url` | `fcm.server_key` resta segreto in `.env` |
+| Seo | `seo` | `path_aliases` | `indexable` fuori: richiederebbe modifiche a Cms |
+| Tenant | `metatag` | `title`, `logo_height` | i lettori stanno in Xot (`MetatagData`, usato dal `Head` di Cms); `MetatagPage` di Xot scrive lo stesso file: da decidere chi lo possiede |
+| Trade | `trade` | `news_feeds` | `mcp.enabled` e stato in sola lettura scartati; kill switch, live e auto restano nell'ambiente |
+| UI | `ui` | `dark_mode_switcher_enabled` | `default_table_layout` non aggiunto |
+| User | `user` | `create_personal_team`, `passport_enable_password_grant` | token, modelli e scope Passport restano fuori |
+| Xot | `xra` | `main_module`, `primary_lang`, `force_ssl`, `disable_database_notifications` | `show_trans_key`, `login_verified`, `disable_admin_dynamic_route`, `disable_frontend_dynamic_route`: dichiarate in `XotData`, lette da nessuno (elenco completo nel docblock di `XotConfigData`) |
+
+Cose trovate dalla guardia e dalla sync (dettaglio nella story di AI): la pulizia dei marker di merge `1e721ce` aveva tolto i
+lettori di AI, e il fix del remoto cambiava i default di `MakeAIRequestAction` e aggiungeva `enabled` senza lettore.
+
 ## Guardia (ECC: verifica, non fiducia)
 
-`Xot/tests/Unit/Filament/Pages/EveryModuleHasSettingPageTest.php` oggi dice che un form vuoto va bene. Si ribalta, per
-modulo: lo schema ha almeno un campo; i campi sono esattamente le proprieta' pubbliche della Data (esclusa `name`); ogni
-campo ha l'etichetta in `it` e `en`; ogni proprieta' ha un lettore fuori da pagina e Data. Si committa quando tutti i
-moduli la superano, per non lasciare rosso il gate degli altri agenti.
+`Xot/tests/Unit/Filament/Pages/EveryModuleHasSettingPageTest.php` ora, per ogni modulo: lo schema ha almeno un campo; i
+campi sono esattamente le proprieta' pubbliche della Data (esclusa `name`); ogni campo ha l'etichetta in `it` e `en`; ogni
+proprieta' ha un lettore fuori da pagina e Data. Il lettore si cerca (`->prop` o `->camelProp`) nel modulo stesso; per Xot, che
+e' la base di tutti, in ogni modulo; per Tenant anche in Xot (`SETTING_READER_MODULES`); per Activity nel pacchetto
+`spatie/laravel-activitylog` (`SETTING_PACKAGE_READERS`). Un test controlla che la ricerca non trovi niente per una
+proprieta' inventata. E' un'euristica: prova che un lettore esiste, non che sia quello giusto.
+
+Limite noto: il nome di una proprieta' molto comune (`enabled`, `title`) puo' combaciare con un'altra cosa nello stesso
+modulo. Per questo ogni modulo dichiara i suoi lettori nella propria story.
 
 ## Criteri di accettazione
 
-- [ ] Cms (riferimento: tema pubblico e di amministrazione)
-- [ ] AI, Notify, UI, User, Activity
-- [ ] Gdpr, Seo (con lettori spostati sulla Data)
-- [ ] Job, Lang (con correzione dei lettori)
-- [ ] Tenant, Xot, Trade
-- [ ] guardia ribaltata e verde su tutti i moduli
-- [ ] PHPStan livello max e Pint su ogni file toccato; Pest dei test nuovi e della guardia
+- [x] Cms (riferimento: tema pubblico, `pub_theme` come Select dei temi installati)
+- [x] AI, Notify, UI, User, Activity
+- [x] Gdpr, Seo (con lettori spostati sulla Data)
+- [x] Job, Lang (con correzione dei lettori)
+- [x] Tenant, Xot, Trade
+- [x] guardia ribaltata e verde su tutti i moduli (113 test, PHPStan 0, Pint ok)
+- [x] PHPStan livello max e Pint su ogni file toccato; Pest dei test nuovi e della guardia
 - [ ] prompt riusabile per aggiungere un campo senza ripetere l'errore, e memoria aggiornata
+- [ ] chiusura per modulo (phpmd, phpinsights, `docs/coverage.md`) su Activity, Job, Lang, Seo, Tenant, Xot, Trade
+- [ ] decidere chi possiede il file `metatag` (Tenant `SettingPage` o `MetatagPage` di Xot)
 
 ## Coordinamento
 
