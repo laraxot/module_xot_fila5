@@ -27,6 +27,8 @@ Header delle liste e toggle griglia/lista: [stories/list-header-buttons-and-grid
 
 Risoluzione Form/Table/Infolist (nome dal modello, poi dalla Resource): [stories/resource-part-class-by-resource-name.story.md](./stories/resource-part-class-by-resource-name.story.md).
 
+Percorsi duplicati per sola differenza di maiuscole (audit di flotta e piano): [stories/case-only-duplicates-fleet-audit.story.md](./stories/case-only-duplicates-fleet-audit.story.md).
+
 ## Cosa manca per completare
 
 [completion-status.md](./completion-status.md): indicatori misurati, problemi noti e story aperte (2026-10-28).
