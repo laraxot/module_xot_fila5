@@ -126,7 +126,7 @@ modulo. Per questo ogni modulo dichiara i suoi lettori nella propria story.
 - [x] Tenant, Xot, Trade
 - [x] guardia ribaltata e verde su tutti i moduli (113 test, PHPStan 0, Pint ok)
 - [x] PHPStan livello max e Pint su ogni file toccato; Pest dei test nuovi e della guardia
-- [ ] prompt riusabile per aggiungere un campo senza ripetere l'errore, e memoria aggiornata
+- [x] prompt riusabile per aggiungere un campo senza ripetere l'errore, e memoria aggiornata (`bashscripts/docs/prompts/59-setting-page-real-fields.md`; memoria `setting-page-real-fields`)
 - [ ] chiusura per modulo (phpmd, phpinsights, `docs/coverage.md`) su Activity, Job, Lang, Seo, Tenant, Xot, Trade
 - [ ] decidere chi possiede il file `metatag` (Tenant `SettingPage` o `MetatagPage` di Xot)
 
