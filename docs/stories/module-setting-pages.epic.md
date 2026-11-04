@@ -8,6 +8,7 @@ github_issue: "https://github.com/provtv/base_ptv_fila5_mono/issues"
 github_discussion: "https://github.com/provtv/base_ptv_fila5_mono/discussions"
 related:
   - ./base-setting-page.story.md
+  - ./module-real-settings.story.md
   - ../../../Progressioni/docs/stories/setting-page-config.story.md
   - ../../../Progressioni/docs/stories/setting-page-worker-types.story.md
 ---
@@ -31,6 +32,10 @@ codice, senza deploy. Una pagina vuota e' rumore nel menu; una pagina che espone
 rompono il boot (tema, routing, classi) e' un rischio. Default = comportamento attuale.
 
 ## Decisione per modulo (evidenze nelle story di modulo)
+
+> Aggiornamento 2026-11-04: per direttiva dell'utente (ogni modulo ha qualcosa da configurare, `getFormSchema()` non
+> puo' essere vuoto) le righe "no" e "rinviata" sotto sono superate da [module-real-settings.story.md](./module-real-settings.story.md).
+> I vincoli (chiavi che rompono il boot, segreti in `.env`, niente duplicati) restano validi.
 
 | Modulo | Decisione | Impostazioni |
 |--------|-----------|--------------|
