@@ -845,7 +845,7 @@ Xot Module (Core Framework)
 
 ---
 
-## 📌 Appendice — Stato attuale e TODO operativi (roadmap precedente)
+## 📌 Appendice: Stato attuale e TODO operativi (roadmap precedente)
 
 ### 📊 Stato Attuale
 

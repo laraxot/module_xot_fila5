@@ -11,14 +11,14 @@ Xot is the foundational layer of Laraxot. It provides base classes, conventions,
 ## Core Abstractions
 
 **Base Classes:**
-- `XotBaseModel` — Eloquent models with `created_by`, `updated_by`, `deleted_by` tracking
-- `XotBaseUuidModel` — UUID-keyed models
-- `XotBaseTreeModel` — Hierarchical (adjacency list) models
-- `XotBaseResource` — Filament resources with `final form()` and `infolist()`
-- `XotBasePage` — Filament pages
-- `XotBasePanelProvider` — Filament panel configuration with auto-discovery
-- `XotBaseServiceProvider` — Module initialization and convention-driven registration
-- `XotBaseMigration` — Idempotent migration methods
+- `XotBaseModel`: Eloquent models with `created_by`, `updated_by`, `deleted_by` tracking
+- `XotBaseUuidModel`: UUID-keyed models
+- `XotBaseTreeModel`: Hierarchical (adjacency list) models
+- `XotBaseResource`: Filament resources with `final form()` and `infolist()`
+- `XotBasePage`: Filament pages
+- `XotBasePanelProvider`: Filament panel configuration with auto-discovery
+- `XotBaseServiceProvider`: Module initialization and convention-driven registration
+- `XotBaseMigration`: Idempotent migration methods
 
 **Rationale:** Framework APIs (Filament, Livewire, Laravel) change every major version. Xot interposes a stable layer: a single change to `XotBaseResource::form()` updates all 47 modules at once.
 
@@ -49,10 +49,10 @@ In `app/Filament/Resources/`:
 ## System Pages
 
 In `app/Filament/Pages/`:
-- `HealthPage` — Spatie Health dashboard
-- `MetatagPage` — Branding config (title, logo, colors)
-- `EnvPage` — Environment variables
-- `MainDashboard` — User panel redirect
+- `HealthPage`: Spatie Health dashboard
+- `MetatagPage`: Branding config (title, logo, colors)
+- `EnvPage`: Environment variables
+- `MainDashboard`: User panel redirect
 
 ## Configuration
 

@@ -18,7 +18,7 @@ references:
   - "https://aider.chat/docs/install.html"
 ---
 
-# Story — Installer AI coding agent
+# Story: Installer AI coding agent
 
 ## Obiettivo
 

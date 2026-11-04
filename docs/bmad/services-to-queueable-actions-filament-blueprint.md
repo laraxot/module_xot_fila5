@@ -1,5 +1,5 @@
 ---
-title: "Filament blueprint — Services to Queueable Actions"
+title: "Filament blueprint: Services to Queueable Actions"
 type: filament-blueprint
 status: active
 module: Xot
@@ -31,7 +31,7 @@ fantasma (es. modulo assente): solo Actions tipizzate o dati già risolti a mont
   la UI Filament/Livewire deve mostrare esito, errori di validazione o dati subito
   (select Geo, tenant config, review AI); `SomeAction::dispatch(...)` (o equivalente
   Spatie) solo quando l'operazione puo' completarsi in worker (notify, media, job
-  lunghi) e la UI gestisce stato `queued` / polling / notifica — **mai** dispatch
+  lunghi) e la UI gestisce stato `queued` / polling / notifica: **mai** dispatch
   per sostituire un Service sincrono che la tabella o il form attendono in-request;
 - non confondere «Action queueable» con «sempre async»: la stessa classe supporta
   entrambe le modalita'; la scelta e' del caller UI, non del suffisso legacy `Service`;

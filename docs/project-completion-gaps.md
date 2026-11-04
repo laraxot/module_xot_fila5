@@ -1,5 +1,5 @@
 ---
-title: "Lacune di completamento — Xot"
+title: "Lacune di completamento: Xot"
 type: audit
 status: open
 created: 2026-10-28
@@ -10,7 +10,7 @@ related:
   - "./project-completion-readiness.md"
 ---
 
-# Lacune di completamento — Xot
+# Lacune di completamento: Xot
 
 ## Esito
 
@@ -75,13 +75,13 @@ Lettura read-only delle 151 story locali (`*.story.md`): 115 hanno uno stato div
 
 ### Esempi prioritari da riconciliare
 
-- `blocked` — [`dcp-243-test-model-module-xot-contro-api-reale.story.md`](stories/dcp-243-test-model-module-xot-contro-api-reale.story.md)
-- `blocked` — [`env-page-broken-unused-team-decision.story.md`](stories/env-page-broken-unused-team-decision.story.md)
-- `blocked` — [`fix-xot-feature-tests.story.md`](stories/fix-xot-feature-tests.story.md)
-- `blocked` — [`xot-test-env-pending-migrations.story.md`](stories/xot-test-env-pending-migrations.story.md)
-- `in_progress` — [`1.1-phpstan-xot-fixes.story.md`](bmad/stories/1.1-phpstan-xot-fixes.story.md)
-- `in-progress` — [`10.01-docs-orphan-consolidation.story.md`](bmad/stories/10.01-docs-orphan-consolidation.story.md)
-- `in-progress` — [`5.249-bmad-docs-fleet-completion.story.md`](bmad/stories/5.249-bmad-docs-fleet-completion.story.md)
-- `in-progress` — [`5.256-user-module-clusters-widgets-actions.story.md`](bmad/stories/5.256-user-module-clusters-widgets-actions.story.md)
+- `blocked`: [`dcp-243-test-model-module-xot-contro-api-reale.story.md`](stories/dcp-243-test-model-module-xot-contro-api-reale.story.md)
+- `blocked`: [`env-page-broken-unused-team-decision.story.md`](stories/env-page-broken-unused-team-decision.story.md)
+- `blocked`: [`fix-xot-feature-tests.story.md`](stories/fix-xot-feature-tests.story.md)
+- `blocked`: [`xot-test-env-pending-migrations.story.md`](stories/xot-test-env-pending-migrations.story.md)
+- `in_progress`: [`1.1-phpstan-xot-fixes.story.md`](bmad/stories/1.1-phpstan-xot-fixes.story.md)
+- `in-progress`: [`10.01-docs-orphan-consolidation.story.md`](bmad/stories/10.01-docs-orphan-consolidation.story.md)
+- `in-progress`: [`5.249-bmad-docs-fleet-completion.story.md`](bmad/stories/5.249-bmad-docs-fleet-completion.story.md)
+- `in-progress`: [`5.256-user-module-clusters-widgets-actions.story.md`](bmad/stories/5.256-user-module-clusters-widgets-actions.story.md)
 
 Prima di lavorare su questi elementi, verificare lo stato canonico nello sprint status, claim/lock e dipendenze. Una story senza `status` non va considerata automaticamente completata.

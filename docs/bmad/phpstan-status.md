@@ -9,11 +9,11 @@ qmd: "PHPStan Modules stato corrente analisi full tree level massimo"
 related:
   - ./stories/ecc-codex-plugin-setup.story.md
 ---
-# PHPStan Status — Xot
+# PHPStan Status: Xot
 
 # Stato del gate PHPStan sui moduli
 
-## Misura 2026-10-06 (sera) — swarm Xot/app: scopo prima dell'errore
+## Misura 2026-10-06 (sera): swarm Xot/app: scopo prima dell'errore
 
 `analyse Modules/Xot/app`: 147 segnalazioni del file errori -> **21**, tutte
 `classConstant.nativeTypeNotSupported`: `laravel/composer.json` dichiara `"php": "^8.2"`,
@@ -28,7 +28,7 @@ Orfane che erano logica tolta, non rumore: `RelationX::morphToManyX()` (prefisso
 Gli errori `HasXotTable` "in context of class@anonymous" erano result-cache stale.
 Dettaglio e lezioni: [dev-story](../stories/phpstan-cleanup-xot-app.dev.md).
 
-## Misura 2026-10-06 (notte) — swarm Xot/rest: test, helpers, stub Pest
+## Misura 2026-10-06 (notte): swarm Xot/rest: test, helpers, stub Pest
 
 `analyse Modules`: 87 segnalazioni del file errori -> **0** in `Modules/Xot/{tests,helpers}`.
 12 erano result-cache stale (`iterableValue` su classi anonime con PHPDoc presente);
@@ -40,7 +40,7 @@ senza PHPDoc risolto -> classe nominata). Pest non eseguito (`.env.testing` = My
 Da decidere: `tests/PestStubs.php` e' orfano ma e' lui a risolvere `Pest\Laravel\*` per PHPStan.
 Dettaglio e lezioni: [dev-story](../stories/phpstan-cleanup-xot-rest.dev.md).
 
-## Misura 2026-10-06 — EnsureKeysAction + file scratch rimossi
+## Misura 2026-10-06: EnsureKeysAction + file scratch rimossi
 
 
 # Stato del gate PHPStan sui moduli

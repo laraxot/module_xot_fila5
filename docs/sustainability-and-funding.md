@@ -1,5 +1,5 @@
 ---
-title: "Sostenibilità e inbound marketing — Xot"
+title: "Sostenibilità e inbound marketing: Xot"
 type: bmad-pointer
 status: decision-input
 updated: 2026-10-15

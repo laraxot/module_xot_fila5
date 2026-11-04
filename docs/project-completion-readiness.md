@@ -30,24 +30,24 @@ piano di lavoro, non vanno chiuse in massa senza prove.
 
 | Owner | Markdown | Story | Frontmatter iniziale | README/purpose mancanti |
 |---|---:|---:|---:|---|
-| Modules/Activity | 737 | 39 | 720/737 | — |
+| Modules/Activity | 737 | 39 | 720/737 |: |
 | Modules/Incentivi | 150 | 21 | 112/150 | README.md |
-| Modules/IndennitaCondizioniLavoro | 212 | 59 | 167/212 | — |
-| Modules/IndennitaResponsabilita | 476 | 157 | 439/476 | — |
-| Modules/Job | 459 | 32 | 459/459 | — |
-| Modules/Lang | 1003 | 37 | 1002/1003 | — |
-| Modules/Media | 542 | 36 | 542/542 | — |
-| Modules/Notify | 3671 | 48 | 3652/3671 | — |
-| Modules/Pdnd | 139 | 17 | 110/139 | — |
-| Modules/Performance | 104 | 28 | 83/104 | — |
-| Modules/Progressioni | 206 | 54 | 150/206 | — |
+| Modules/IndennitaCondizioniLavoro | 212 | 59 | 167/212 |: |
+| Modules/IndennitaResponsabilita | 476 | 157 | 439/476 |: |
+| Modules/Job | 459 | 32 | 459/459 |: |
+| Modules/Lang | 1003 | 37 | 1002/1003 |: |
+| Modules/Media | 542 | 36 | 542/542 |: |
+| Modules/Notify | 3671 | 48 | 3652/3671 |: |
+| Modules/Pdnd | 139 | 17 | 110/139 |: |
+| Modules/Performance | 104 | 28 | 83/104 |: |
+| Modules/Progressioni | 206 | 54 | 150/206 |: |
 | Modules/Ptv | 461 | 132 | 425/461 | purpose.md |
-| Modules/Rating | 567 | 149 | 563/567 | — |
-| Modules/Sigma | 353 | 57 | 313/353 | — |
-| Modules/Tenant | 529 | 28 | 528/529 | — |
-| Modules/UI | 444 | 22 | 444/444 | — |
-| Modules/User | 2195 | 155 | 2034/2195 | — |
-| Modules/Xot | 1556 | 151 | 1552/1556 | — |
+| Modules/Rating | 567 | 149 | 563/567 |: |
+| Modules/Sigma | 353 | 57 | 313/353 |: |
+| Modules/Tenant | 529 | 28 | 528/529 |: |
+| Modules/UI | 444 | 22 | 444/444 |: |
+| Modules/User | 2195 | 155 | 2034/2195 |: |
+| Modules/Xot | 1556 | 151 | 1552/1556 |: |
 | Themes/One | 113 | 6 | 113/113 | purpose.md |
 | Themes/Three | 58 | 2 | 58/58 | purpose.md |
 | Themes/Zero | 221 | 10 | 221/221 | purpose.md |
@@ -88,26 +88,26 @@ file creati sono stabili e non contengono date o timestamp.
 
 ## Cosa manca per dichiarare completato il progetto
 
-1. **Prodotto e requisiti** — inventario approvato dei flussi HR e valutazione; ogni
+1. **Prodotto e requisiti**: inventario approvato dei flussi HR e valutazione; ogni
    requisito deve avere acceptance criteria, owner modulo/tema, priorità e test/prova.
-2. **Correttezza funzionale** — chiudere i finding e le decisioni bloccanti (in
+2. **Correttezza funzionale**: chiudere i finding e le decisioni bloccanti (in
    particolare i punti citati sopra) e verificare casi limite, autorizzazioni e dati.
-3. **Integrazione** — provare i flussi cross-module completi (Progressioni/Ptv/
+3. **Integrazione**: provare i flussi cross-module completi (Progressioni/Ptv/
    Performance/Rating/Indennità/Identity/Tenant), inclusi export, notifiche, job e
    configurazioni tenant, dove applicabili.
-4. **Qualità** — rilanciare su HEAD i gate di modulo: Pest, PHPStan, Pint e gli altri
+4. **Qualità**: rilanciare su HEAD i gate di modulo: Pest, PHPStan, Pint e gli altri
    controlli richiesti dal modulo; conservare comando, exit code, conteggi e ambiente.
    Non si riportano qui test eseguiti: questa passata è documentale.
-5. **Sicurezza e dati** — chiudere le story security, verificare permessi/tenant, rotazione
+5. **Sicurezza e dati**: chiudere le story security, verificare permessi/tenant, rotazione
    di eventuali segreti già committati e assenza di segreti attivi. Mai eseguire comandi
    DB distruttivi; nessuna migrazione è stata lanciata.
-6. **Consegna** — definire runbook di deploy/rollback forward-only, configurazioni/secret
+6. **Consegna**: definire runbook di deploy/rollback forward-only, configurazioni/secret
    necessari, queue/scheduler, backup e osservabilità; validare un rilascio reale prima
    di segnare il progetto pronto.
-7. **Documentazione** — completare le schede owner, riparare frontmatter/naming/indici,
+7. **Documentazione**: completare le schede owner, riparare frontmatter/naming/indici,
    aggiornare QMD e chiudere i riferimenti obsoleti. Restano da validare i contenuti
    architetturali nei 21 owner, non solo i conteggi.
-8. **Governance Git** — riconciliare le divergenze dei repository con fetch e piano
+8. **Governance Git**: riconciliare le divergenze dei repository con fetch e piano
    esplicito, preservando modifiche concorrenti; niente force-push o merge automatico
    rischioso.
 

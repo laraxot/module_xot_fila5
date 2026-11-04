@@ -23,7 +23,7 @@ related: laravel-adjacency-list (staudenmeir/laravel-adjacency-list v1.26 for La
    use Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships;
    ```
    (Confermato: `grep -r` su `laravel/Modules/` trova 12 riferimenti, nessuno al trait wrapper).
-3. Il contratto `Modules\Xot\Contracts\HasRecursiveRelationshipsContract` mantiene la compatibilità **runtime** (non impone return type rigorosi, solo PHPDoc `@return mixed`) — questo è il pattern corretto per non rompere il vendor trait.
+3. Il contratto `Modules\Xot\Contracts\HasRecursiveRelationshipsContract` mantiene la compatibilità **runtime** (non impone return type rigorosi, solo PHPDoc `@return mixed`): questo è il pattern corretto per non rompere il vendor trait.
 
 ## Perché NON va modificato `laravel/phpstan.neon`
 

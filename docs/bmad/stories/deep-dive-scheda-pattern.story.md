@@ -21,9 +21,9 @@ Verificare a fondo la filosofia "scheda" tra i due moduli e documentare il patte
 
 ## Background
 
-Nel modulo **IndennitaResponsabilita**: pattern coerente — 1 risorsa base astratta (`IndennitaResponsabilitaResource`, super-admin only), 5 risorse figlio (`SchedaDip`, `SchedaDirigente`, `SchedaPo`, `SchedaPolizia`, `SchedaRegionale`) che estendono la base specializzando `$model` + `$navigationSort`. Pagina `CompilaIndennitaResponsabilita` condivisa (XotBasePage + Infolist/Form + recalculate readonly).
+Nel modulo **IndennitaResponsabilita**: pattern coerente: 1 risorsa base astratta (`IndennitaResponsabilitaResource`, super-admin only), 5 risorse figlio (`SchedaDip`, `SchedaDirigente`, `SchedaPo`, `SchedaPolizia`, `SchedaRegionale`) che estendono la base specializzando `$model` + `$navigationSort`. Pagina `CompilaIndennitaResponsabilita` condivisa (XotBasePage + Infolist/Form + recalculate readonly).
 
-Nel modulo **Progressioni**: pattern **duplicato** — risorsa `SchedaDipResource` con pagina `CompilaSchedaDip` copia-incolla della struttura IndennitaResponsabilita, ma con namespace proprio. Questo causa errore fatale `Cannot redeclare class CompilaSchedaDip` (stesso FQCN tra moduli).
+Nel modulo **Progressioni**: pattern **duplicato**: risorsa `SchedaDipResource` con pagina `CompilaSchedaDip` copia-incolla della struttura IndennitaResponsabilita, ma con namespace proprio. Questo causa errore fatale `Cannot redeclare class CompilaSchedaDip` (stesso FQCN tra moduli).
 
 ## Risultati chiave
 

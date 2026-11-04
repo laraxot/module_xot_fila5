@@ -1,5 +1,5 @@
 ---
-title: "Xot — brainstorming BMAD"
+title: "Xot: brainstorming BMAD"
 type: brainstorming
 status: active
 module: Xot
@@ -8,7 +8,7 @@ updated: 2026-09-28
 qmd: "Xot brainstorming rischi opportunità domande aperte"
 tags: [docs, xot, bmad]
 ---
-# Xot — brainstorming
+# Xot: brainstorming
 
 ## Punto di partenza
 

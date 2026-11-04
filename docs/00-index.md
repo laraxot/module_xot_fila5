@@ -1,5 +1,5 @@
 ---
-title: "Xot — alias indice"
+title: "Xot: alias indice"
 type: alias
 module: Xot
 status: superseded
@@ -10,7 +10,7 @@ qmd: "indice legacy Xot reindirizza a index ecc codex"
 tags: [docs, xot]
 ---
 
-# Alias — indice Xot
+# Alias: indice Xot
 
 Indice canonico: [index.md](./index.md).
 

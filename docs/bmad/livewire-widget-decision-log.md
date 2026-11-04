@@ -5,7 +5,7 @@ updated: 2026-10-20
 qmd: "livewire widget decision log"
 issues: []
 discussions: []
-title: "Decision log — Livewire → widget"
+title: "Decision log: Livewire → widget"
 type: decision-log
 module: Xot
 status: active
@@ -59,7 +59,7 @@ registrato ma `handle()` no-op; `tableto_formx`/`Tableto_formx` file PHP senza e
 sottoclassi di `XotBaseComponent` repo-wide; `_components.json` di Xot = `[]`; percorso di
 deprecation di `RegisterLivewireComponentsAction` subordinato al ritiro degli
 `Http/Livewire` dei moduli foglia (rimozione chiamata da `XotBaseServiceProvider::boot()`
-riga 44, non svuotamento directory — `GetComponentsAction.php:41-45` la ricreerebbe).
+riga 44, non svuotamento directory: `GetComponentsAction.php:41-45` la ricreerebbe).
 
 ## [2026-10-20] Piano fleet aggiornato
 
@@ -91,7 +91,7 @@ riferimenti zero (recuperabili da git del modulo Xot).
 
 <!-- gateguard: append to existing decision-log (not first create); linked from advantages/fleet/brainstorming; user: "non utilizziamo piu' componenti livewire ma utilizziamo al loro posto filament widget" + brainstorming/planning BMAD + filament blueprint -->
 
-## [2026-10-20] Planning refresh — religione panel-first + legal REUSE
+## [2026-10-20] Planning refresh: religione panel-first + legal REUSE
 
 **Decision (brainstorm Update + planning):** conferma ordine utente "niente
 componenti Livewire custom, al loro posto Filament Widget" interpretato come
@@ -108,14 +108,14 @@ componenti Livewire custom, al loro posto Filament Widget" interpretato come
   [livewire-widget-advantages.md](./livewire-widget-advantages.md).
 - **Next:** aprire wave W0 esplicita; questa entry non autorizza ancora edit PHP.
 
-## [2026-10-20] Un solo `laravel/phpstan.neon` — solo umano
+## [2026-10-20] Un solo `laravel/phpstan.neon`: solo umano
 
-**Decision:** riaffermazione utente — gate PHPStan = **solo**
+**Decision:** riaffermazione utente: gate PHPStan = **solo**
 `laravel/phpstan.neon`; solo l'umano lo modifica; gli agenti **non** creano
 altri `.neon`, non usano `-c`/`--level`, non toccano neon legacy sotto moduli.
 
 **Perche':** un secondo misuratore spezza CI/swarm (verde locale ≠ verde
-progetto). UI Filament (`XotBase*`) usa lo stesso gate — nessun neon Filament.
+progetto). UI Filament (`XotBase*`) usa lo stesso gate: nessun neon Filament.
 
 **Canon:** [phpstan-single-neon-config](../wiki/memories/phpstan-single-neon-config.md),
 [phpstan-neon-immutable](../../../../../bashscripts/ai/wiki/rules/phpstan-neon-immutable.md),
@@ -125,7 +125,7 @@ progetto). UI Filament (`XotBase*`) usa lo stesso gate — nessun neon Filament.
 
 **Decision:** sessione BMAD Reverse Brainstorming appendata in
 [livewire-to-filament-widgets-brainstorming.md](./livewire-to-filament-widgets-brainstorming.md)
-(sezione *Reverse brainstorm refresh — sessione planning*). Nessun PHP,
+(sezione *Reverse brainstorm refresh: sessione planning*). Nessun PHP,
 nessun commit, nessun `bmad-output/`.
 
 **Religione ribadita (verificata su disco):**

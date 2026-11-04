@@ -1,5 +1,5 @@
 ---
-title: "Brainstorming — Livewire verso Filament Widgets"
+title: "Brainstorming: Livewire verso Filament Widgets"
 type: brainstorming
 module: Xot
 status: complete
@@ -91,7 +91,7 @@ qmd: "brainstorming bmad xot"
 Adottare una migrazione incrementale a wave, con `XotBase*` come standard,
 Actions per il dominio e una matrice di classificazione come source of truth.
 
-## Sintesi swarm — 2026-10-20
+## Sintesi swarm: 2026-10-20
 
 Il brainstorming parallelo ha confermato che la causa radice è l'assenza di
 una classificazione affidabile dei caller e del confine BO/FO, non Livewire in
@@ -110,7 +110,7 @@ tecnologia**. Filament continua a usare Livewire internamente; ciò che viene
 ritirato è il componente HTTP custom quando il panel possiede già il contratto
 Widget.
 
-## Refresh baseline — 2026-10-20 pomeriggio
+## Refresh baseline: 2026-10-20 pomeriggio
 
 Rimisurazione `find` su `Http/Livewire` + `app/Livewire`: **28** classi
 applicative (non 63). I gemelli Filament esistono già per UI dark-mode, Lang
@@ -129,13 +129,13 @@ Piano: vedi [inventory](./livewire-to-filament-widgets-inventory.md) e
 [fleet story](./stories/livewire-to-filament-widgets-fleet.story.md)
 (`ready-for-dev`).
 
-## Update planning — 2026-10-20 (ordine utente: niente custom Livewire, solo Widget)
+## Update planning: 2026-10-20 (ordine utente: niente custom Livewire, solo Widget)
 
 ### 5 Whys (rinfresco sul senso)
 
 1. **Perche'** l'utente dice "niente Livewire, solo Filament Widget"? Perche' la
    UI del **panel** deve avere un solo contratto: discovery, policy, tenancy,
-   traduzioni Lang, layout colonne — gia' offerti da `XotBase*Widget`.
+   traduzioni Lang, layout colonne: gia' offerti da `XotBase*Widget`.
 2. **Perche'** un custom `Livewire\Component` sotto `Http/Livewire` e' debito?
    Perche' reinventano mount/state/auth e **non** entrano nella discovery del
    panel: due stack per lo stesso intento UI.
@@ -169,7 +169,7 @@ Piano: vedi [inventory](./livewire-to-filament-widgets-inventory.md) e
 4. Parallel plan e fleet story devono usare la **stessa** numerazione wave.
 5. Implementazione parte solo quando si apre esplicitamente una wave (questa sessione = brainstorm + planning).
 
-## Reverse brainstorm refresh — sessione planning
+## Reverse brainstorm refresh: sessione planning
 
 Tecnica: Reverse Brainstorming (solo planning). Domanda guida: *come
 farebbe fallire la fleet se volessimo rompere la migrazione?* Ogni riga
@@ -212,7 +212,7 @@ Religione verificata su codice/docs (non inventata):
    → `REUSE` (gemelli User verificati su disco); includere la chiusura
    caller in W1–W2, non lasciarli in un generico “legal KEEP FO”.
 2. **W0–W1 = REUSE + caller, non create:** DarkMode, Lang, Job status/schedule,
-   Auth* twins — ogni lane misura “caller residui = 0”, non “widget creato”.
+   Auth* twins: ogni lane misura “caller residui = 0”, non “widget creato”.
 3. **Definire il gate “zero” in story acceptance:** formula esplicita =
    `find` custom applicativi − `KEEP` documentati − mount FQCN Widget validi
    = 0; runtime Filament escluso dal conteggio.

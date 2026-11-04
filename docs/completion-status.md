@@ -42,22 +42,22 @@ Problemi trasversali (valgono per tutto il progetto): vedi `project-completion-s
 |---|---|
 | in_progress | [Fix PHPStan Level 10 Errors in Xot Module](docs/bmad/stories/1.1-phpstan-xot-fixes.story.md) |
 | in-progress | [Consolidate orphan docs across modules](docs/bmad/stories/10.01-docs-orphan-consolidation.story.md) |
-| in-progress | [Story 5.249 — BMAD docs fleet: documenti canonici mancanti in ogni modulo](docs/bmad/stories/5.249-bmad-docs-fleet-completion.story.md) |
-| in-progress | [Story 5.256 — Modulo User: cluster, widget, azioni, DRY/KISS/UI-UX/a11y](docs/bmad/stories/5.256-user-module-clusters-widgets-actions.story.md) |
-| in-progress | [Story 5.258 — Eseguire e poi migliorare tutti i prompt di bashscripts/docs/prompts (swarm,](docs/bmad/stories/5.258-prompts-execute-improve.story.md) |
-| in-progress | [Story 5.260 — PHPStan Modules: remediation del baseline corrente](docs/bmad/stories/5.260-phpstan-modules-current-remediation.story.md) |
-| in-progress | [PHPStan analyse Modules — 480 errori su 68 file (Sigma 302, Tenant 177, Performance 1)](docs/bmad/stories/5.261-phpstan-modules-480-errors.story.md) |
-| in-progress | [Story 5.300 — Le base List per-modulo vuote in Resources/Pages/ sono un anti-pattern: la b](docs/bmad/stories/5.300-no-empty-list-base-classes.story.md) |
-| in-progress | [Story 5.301 — PSR-4 autoload compliance fleet + runtime smoke verde](docs/bmad/stories/5.301-psr-4-autoload-compliance-fleet.story.md) |
-| in-progress | [Story 8.25: Docs Consolidation Audit — strategy per moduli e temi](docs/bmad/stories/8.25.docs-consolidation-audit-strategy.story.md) |
+| in-progress | [Story 5.249: BMAD docs fleet: documenti canonici mancanti in ogni modulo](docs/bmad/stories/5.249-bmad-docs-fleet-completion.story.md) |
+| in-progress | [Story 5.256: Modulo User: cluster, widget, azioni, DRY/KISS/UI-UX/a11y](docs/bmad/stories/5.256-user-module-clusters-widgets-actions.story.md) |
+| in-progress | [Story 5.258: Eseguire e poi migliorare tutti i prompt di bashscripts/docs/prompts (swarm,](docs/bmad/stories/5.258-prompts-execute-improve.story.md) |
+| in-progress | [Story 5.260: PHPStan Modules: remediation del baseline corrente](docs/bmad/stories/5.260-phpstan-modules-current-remediation.story.md) |
+| in-progress | [PHPStan analyse Modules: 480 errori su 68 file (Sigma 302, Tenant 177, Performance 1)](docs/bmad/stories/5.261-phpstan-modules-480-errors.story.md) |
+| in-progress | [Story 5.300: Le base List per-modulo vuote in Resources/Pages/ sono un anti-pattern: la b](docs/bmad/stories/5.300-no-empty-list-base-classes.story.md) |
+| in-progress | [Story 5.301: PSR-4 autoload compliance fleet + runtime smoke verde](docs/bmad/stories/5.301-psr-4-autoload-compliance-fleet.story.md) |
+| in-progress | [Story 8.25: Docs Consolidation Audit: strategy per moduli e temi](docs/bmad/stories/8.25.docs-consolidation-audit-strategy.story.md) |
 | in-progress | [Installazione setup automazioni per Codex](docs/bmad/stories/codex-project-setup.story.md) |
 | in-progress | [Approfondimento "scheda" pattern (IndennitaResponsabilita vs Progressioni)](docs/bmad/stories/deep-dive-scheda-pattern.story.md) |
-| in-progress | [Epic — Docs ≤100 .md ricorsivi via merge (fleet-wide, 2026-10-05)](docs/bmad/stories/docs-100-fleet-merge.story.md) |
-| in-progress | [Docs consolidation — orphan files + structure normalization — 2026-10-06](docs/bmad/stories/docs-consolidation-orphan-files.story.md) |
+| in-progress | [Epic: Docs ≤100 .md ricorsivi via merge (fleet-wide, 2026-10-05)](docs/bmad/stories/docs-100-fleet-merge.story.md) |
+| in-progress | [Docs consolidation: orphan files + structure normalization: 2026-10-06](docs/bmad/stories/docs-consolidation-orphan-files.story.md) |
 | in-progress | [Riorganizzazione continua docs moduli e temi (lotto C, prima passata)](docs/bmad/stories/docs-modules-themes-continuous-reorg.story.md) |
 | in-progress | [Riorganizzazione massiva docs moduli, temi e prompt](docs/bmad/stories/docs-prompts-reorganization.story.md) |
-| in_progress | [STORY-492 (Xot/bmad/stories) — `getTableColumns()`: che cosa usare al suo posto (guida + d](docs/bmad/stories/gettablecolumns-deprecation-guidance.story.md) |
-| in_progress | [Eliminare Modules/*/app/Http/Livewire — canon Framework: Filament widget](docs/bmad/stories/lw2fw-01.livewire-to-filament.story.md) |
+| in_progress | [STORY-492 (Xot/bmad/stories): `getTableColumns()`: che cosa usare al suo posto (guida + d](docs/bmad/stories/gettablecolumns-deprecation-guidance.story.md) |
+| in_progress | [Eliminare Modules/*/app/Http/Livewire: canon Framework: Filament widget](docs/bmad/stories/lw2fw-01.livewire-to-filament.story.md) |
 | in-progress | [Igiene della root dei moduli: cartelle, tooling, workspace, md](docs/bmad/stories/module-root-hygiene.story.md) |
 | in-progress | [Approfondimento orientamento progetto (deep dive)](docs/bmad/stories/project-orientation-deep-dive.story.md) |
 | in-progress | [Qualità progetto: verifica e correzioni prioritarie](docs/bmad/stories/project-quality-audit.story.md) |
@@ -83,23 +83,23 @@ Problemi trasversali (valgono per tutto il progetto): vedi `project-completion-s
 | review | [[STORY] Residui di debug in produzione: Xot, Cms, Lang, UI](docs/stories/debug-leftovers-cleanup-xot.story.md) |
 | review | [Mai app/Jobs ne' app/Services: il perche' nella regola, eccezioni e guardie](docs/stories/no-jobs-no-services-rule-why.story.md) |
 | ready-for-dev | [Correzione max 5 .md in root per tutti i moduli](docs/bmad/stories/5.128-module-root-md-max5-fix.story.md) |
-| ready-for-dev | [Story 5.163 — ExportXlsLazyAction perde i title rating](docs/bmad/stories/5.163-lazy-export-labelled-headings.story.md) |
-| ready-for-dev | [TRIGGER_MAP — voce export ratings XLS / getXlsFields](docs/bmad/stories/5.175-trigger-map-export-ratings-xls.story.md) |
-| ready-for-dev | [Export XLS/XLSX — sanitizzare formula injection (=, +, -, @)](docs/bmad/stories/5.176-export-xls-formula-injection-sanitize.story.md) |
+| ready-for-dev | [Story 5.163: ExportXlsLazyAction perde i title rating](docs/bmad/stories/5.163-lazy-export-labelled-headings.story.md) |
+| ready-for-dev | [TRIGGER_MAP: voce export ratings XLS / getXlsFields](docs/bmad/stories/5.175-trigger-map-export-ratings-xls.story.md) |
+| ready-for-dev | [Export XLS/XLSX: sanitizzare formula injection (=, +, -, @)](docs/bmad/stories/5.176-export-xls-formula-injection-sanitize.story.md) |
 | ready-for-dev | [Supersede Xot/5.161 export-xls-headings → collection-export intestazioni](docs/bmad/stories/5.177-export-xls-headings-supersede.story.md) |
 | ready-for-dev | [Dedup story lazy export labels (5.163 + export-lazy-action-labels)](docs/bmad/stories/5.178-export-lazy-labels-dedup.story.md) |
-| ready-for-dev | [Xot — pack export lazy + TRIGGER_MAP per domani](docs/bmad/stories/5.247-tomorrow-pack-export-lazy-and-trigger-map.story.md) |
-| ready-for-dev | [Story 5.255 — Doppi header actions in ogni List page (Create due volte)](docs/bmad/stories/5.255-doppi-header-actions-list-page.story.md) |
-| ready | [Story — doppio tracking laravel/Modules: repo root + submoduli](docs/bmad/stories/double-tracking-modules-root.story.md) |
-| ready | [Story — contratto getXlsEagerLoad su Resource](docs/bmad/stories/export-eager-load-contract.story.md) |
-| ready | [Story — ExportXlsLazyAction: label degradate a path tecnico](docs/bmad/stories/export-lazy-action-labels.story.md) |
+| ready-for-dev | [Xot: pack export lazy + TRIGGER_MAP per domani](docs/bmad/stories/5.247-tomorrow-pack-export-lazy-and-trigger-map.story.md) |
+| ready-for-dev | [Story 5.255: Doppi header actions in ogni List page (Create due volte)](docs/bmad/stories/5.255-doppi-header-actions-list-page.story.md) |
+| ready | [Story: doppio tracking laravel/Modules: repo root + submoduli](docs/bmad/stories/double-tracking-modules-root.story.md) |
+| ready | [Story: contratto getXlsEagerLoad su Resource](docs/bmad/stories/export-eager-load-contract.story.md) |
+| ready | [Story: ExportXlsLazyAction: label degradate a path tecnico](docs/bmad/stories/export-lazy-action-labels.story.md) |
 | ready-for-dev | [Migrare i custom Livewire UI a Filament Widgets](docs/bmad/stories/livewire-to-filament-widgets-fleet.story.md) |
-| ready | [Story — bonifica marker merge residui fleet](docs/bmad/stories/merge-marker-fleet-residue.story.md) |
-| ready-for-dev | [Xot — baseline BMAD e analisi completa](docs/bmad/stories/module-bmad-audit.story.md) |
+| ready | [Story: bonifica marker merge residui fleet](docs/bmad/stories/merge-marker-fleet-residue.story.md) |
+| ready-for-dev | [Xot: baseline BMAD e analisi completa](docs/bmad/stories/module-bmad-audit.story.md) |
 | ready-for-dev | [Verifica e correzione max 5 .md in root modulo ($MODULO)](docs/bmad/stories/root-md-max5-verify.story.md) |
-| ready | [Story — gap tooling quality: phpinsights assente, qmd embed backlog, graphify lento](docs/bmad/stories/tooling-quality-gaps.story.md) |
+| ready | [Story: gap tooling quality: phpinsights assente, qmd embed backlog, graphify lento](docs/bmad/stories/tooling-quality-gaps.story.md) |
 | ready-for-dev | [Rimozione delle icone statiche dalle XotBaseResource](docs/bmad/stories/xot-base-resource-navigation-icon-translation.story.md) |
-| ready-for-dev | [Code quality — audit label hardcoded Filament](docs/stories/code-quality-filament-label-audit.story.md) |
+| ready-for-dev | [Code quality: audit label hardcoded Filament](docs/stories/code-quality-filament-label-audit.story.md) |
 
 ... e altre 47 (cercare `status:` diverso da done in `docs/**/*.story.md`).
 

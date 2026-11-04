@@ -66,7 +66,7 @@ I commit e2282c1b (Media) e c74fdcb (Rating) del 2026-10-22 hanno cancellato gli
 |------|------|---------------------|
 | `Media/docs/README.md` righe 29, 79 | `INDEX.md` | `index.md` (269 righe) |
 | `Media/docs/README.md` riga 80 e `related` | `bmad/00-INDEX.md`, `bmad/readme.md` | nessuno |
-| `Rating/docs/README.md` riga 27 | `00-INDEX.md` | `index.md` («Rating Module — Documentation Index») |
+| `Rating/docs/README.md` riga 27 | `00-INDEX.md` | `index.md` («Rating Module: Documentation Index») |
 
 La «Mappa delle directory» del vecchio `Media/docs/00-INDEX.md` non sopravvive in nessun file: si recupera da `git -C laravel/Modules/Media show e2282c1b~1:docs/00-INDEX.md`.
 

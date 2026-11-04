@@ -31,11 +31,11 @@ senza ignorare errori o alterare la configurazione PHPStan.
 
 | Owner | Scope | Stato |
 |---|---|---|
-| `/root` | Baseline, clustering, coordinamento, integrazione e verifica globale | done — gate completo exit 0 |
-| `/root/activity_table_fix` | Activity: override di hook tabella che bloccano bootstrap | done — gate Pest e PHPStan mirati verdi |
-| `/root/prompt_audit` | `bashscripts/docs/prompts/11-phpstan.md`, coordinamento README solo se necessario | done — comandi in coda `flock`, output/exit code distinti, destinazioni story corrette |
-| `/root/prompts_core` | `00-start.md`, `00-master-prompt.md`, `01-confidence-bootstrap.md`, `01-architecture-patterns.md`, `15-bmad.md`, `19-docs.md`, `25-services-to-actions.md`; audit del resto `00-*`–`29-*`, escluso `11-phpstan.md` | done — riferimenti alle story aggiornati a `docs/bmad/stories/`; anti-pattern chiarito |
-| `/root/prompts_extended` | Audit prompt `30-*` e file non numerati; esclusi gli indici | done — 16 prompt aggiornati; convenzione nomi verificata |
+| `/root` | Baseline, clustering, coordinamento, integrazione e verifica globale | done: gate completo exit 0 |
+| `/root/activity_table_fix` | Activity: override di hook tabella che bloccano bootstrap | done: gate Pest e PHPStan mirati verdi |
+| `/root/prompt_audit` | `bashscripts/docs/prompts/11-phpstan.md`, coordinamento README solo se necessario | done: comandi in coda `flock`, output/exit code distinti, destinazioni story corrette |
+| `/root/prompts_core` | `00-start.md`, `00-master-prompt.md`, `01-confidence-bootstrap.md`, `01-architecture-patterns.md`, `15-bmad.md`, `19-docs.md`, `25-services-to-actions.md`; audit del resto `00-*`–`29-*`, escluso `11-phpstan.md` | done: riferimenti alle story aggiornati a `docs/bmad/stories/`; anti-pattern chiarito |
+| `/root/prompts_extended` | Audit prompt `30-*` e file non numerati; esclusi gli indici | done: 16 prompt aggiornati; convenzione nomi verificata |
 
 ### Finding prompt 11
 
@@ -77,7 +77,7 @@ senza ignorare errori o alterare la configurazione PHPStan.
 
 ## Stato
 
-## Esito gate globale — 2026-11-04
+## Esito gate globale: 2026-11-04
 
 - `cd laravel && php artisan --version` → exit 0, Laravel Framework 13.38.0.
 - `cd laravel && ./vendor/bin/phpstan analyse Modules` → exit 0, scansione 10.400/10.400,

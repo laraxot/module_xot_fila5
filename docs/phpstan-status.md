@@ -1,8 +1,8 @@
-# PHPStan Status — Xot
+# PHPStan Status: Xot
 
 Stato vivo del gate. Non copiare numeri da report storici: rimisura.
 
-## Misura 2026-09-24 (notte) — certify no-path + harness worktree
+## Misura 2026-09-24 (notte): certify no-path + harness worktree
 
 `./vendor/bin/phpstan analyse` (no path CLI): **`[OK] No errors` EXIT 0**.
 
@@ -11,9 +11,9 @@ worktree (restano in HEAD) → ~394 `class.notFound`. Fix:
 `git checkout HEAD -- tests/…` o `ensure-audit-coverage-gitignore.sh --fix`.
 Story: [phpstan-analyse-no-path-certify.story.md](./bmad/stories/phpstan-analyse-no-path-certify.story.md).
 
-Pest: skip — `DB_HOST=10.100.200.53` DOWN (non host 15).
+Pest: skip: `DB_HOST=10.100.200.53` DOWN (non host 15).
 
-## Misura 2026-09-24 (sera) — GeoTrait generics + re-zero
+## Misura 2026-09-24 (sera): GeoTrait generics + re-zero
 
 `analyse Modules` dopo fix `@template TModel` / `@use GeoTrait<Address>`:
 **0** `file_errors`. Canon:
@@ -25,7 +25,7 @@ l'audit completo dei chiamanti: nessun consumer PHP resta nel repository.
 `GeographicalScopes`, `Address` e `HasAddress` coprono i comportamenti ancora
 utilizzati.
 
-## Misura 2026-09-24 (notte) — gate freddo dopo cache stale
+## Misura 2026-09-24 (notte): gate freddo dopo cache stale
 
 Un run intermedio ha segnalato `phpstan.path` verso il file GeoTrait non più
 presente. Dopo il controllo read-only dei chiamanti e l'arresto di tutte le run,
@@ -34,7 +34,7 @@ presente. Dopo il controllo read-only dei chiamanti e l'arresto di tutte le run,
 ha chiuso con **EXIT 0**, `totals.errors=0`, `totals.file_errors=0`.
 Report: `build/phpstan-modules-final.json`.
 
-## Misura 2026-09-24 — regressione naming (CloudStorage + Symplify)
+## Misura 2026-09-24: regressione naming (CloudStorage + Symplify)
 
 Dopo cache clear, `cd laravel && ./vendor/bin/phpstan analyse Modules` ha riportato
 **571** poi **394** `file_errors` (non più lo zero certificato del 2026-09-23).
@@ -74,13 +74,13 @@ rm -rf /tmp/phpstan && mkdir -p /tmp/phpstan
 php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules --memory-limit=2G
 ```
 
-## Misura 2026-09-23 (story 5.224 — comando utente)
+## Misura 2026-09-23 (story 5.224: comando utente)
 
 ```bash
 cd laravel
 rm -rf /tmp/phpstan && mkdir -p /tmp/phpstan
 php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules --memory-limit=2G
-# EXIT 0 — [OK] No errors — 9421 file
+# EXIT 0: [OK] No errors: 9421 file
 # phpstan.neon immutato (level max, ignoreErrors vuoto)
 ```
 
@@ -124,9 +124,9 @@ Per dichiarare «siamo a zero» serve il comando senza argomenti.
 
 ## Collegamenti
 
-- [phpstan-modules-fix.md](./wiki/troubleshooting/phpstan-modules-fix.md) — ricette
-- [phpstan-best-practices.md](./wiki/phpstan-best-practices.md) — pattern Pest
-- [18.59](./stories/18.59.phpstan-repo-wide-zero-2026-09-21.story.md) — drift 23→0 del 2026-09-21
-- [phpstan-journey.md](../../../../bashscripts/ai/wiki/second-brain/phpstan-journey.md) — second brain
-- [CloudStorage coverage](../../CloudStorage/docs/coverage.md) — incidente require-dev Symplify
-- [contract-suffix memory](../../../../bashscripts/ai/wiki/memories/contract-suffix-no-interfaces-folder.md) — religione `*Contract`
+- [phpstan-modules-fix.md](./wiki/troubleshooting/phpstan-modules-fix.md): ricette
+- [phpstan-best-practices.md](./wiki/phpstan-best-practices.md): pattern Pest
+- [18.59](./stories/18.59.phpstan-repo-wide-zero-2026-09-21.story.md): drift 23→0 del 2026-09-21
+- [phpstan-journey.md](../../../../bashscripts/ai/wiki/second-brain/phpstan-journey.md): second brain
+- [CloudStorage coverage](../../CloudStorage/docs/coverage.md): incidente require-dev Symplify
+- [contract-suffix memory](../../../../bashscripts/ai/wiki/memories/contract-suffix-no-interfaces-folder.md): religione `*Contract`
