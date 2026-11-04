@@ -20,9 +20,7 @@ class XotConfigData extends Data
 {
     use MakesFromTenantConfig;
 
-<<<<<<< HEAD
     public bool $enabled = true;
-=======
     public string $pub_theme = 'Four';
 
     public string $adm_theme = 'AdminLTE';
@@ -30,5 +28,4 @@ class XotConfigData extends Data
     public string $primary_lang = 'it';
 
     public bool $force_ssl = false;
->>>>>>> 6551e895bd0b9d316bb4df72f04eae413c5e523d
 }
