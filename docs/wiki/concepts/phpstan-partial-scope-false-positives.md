@@ -1,4 +1,5 @@
 ---
+title: "PHPStan — falsi positivi da scope parziale (trait.unused cross-modulo)"
 title: "PHPStan: falsi positivi da scope parziale (trait.unused cross-modulo)"
 type: concept
 module: Xot
@@ -9,6 +10,7 @@ related:
   - ./phpstan-fixes-log.md
 ---
 
+# PHPStan — falsi positivi da scope parziale
 # PHPStan: falsi positivi da scope parziale
 
 ## Stato dell'esempio Geo (2026-09-24)
@@ -37,6 +39,7 @@ analizzato. Esempio reale (2026-07-06):
 
 Analogamente, un secondo tipo di falso positivo da scope parziale:
 `Ignored error pattern #PHPDoc tag @mixin contains unknown class # was not
+matched in reported errors` — appare ogni volta che si analizza un
 matched in reported errors`: appare ogni volta che si analizza un
 sotto-percorso invece di tutto `Modules/`, perché il pattern di
 `ignoreErrors` in `phpstan.neon` matcha errori che esistono altrove

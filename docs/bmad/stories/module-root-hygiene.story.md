@@ -166,6 +166,40 @@ Nessun `git rm --cached` eseguito in questa sessione: shell non disponibile
 Se qualche repo ha gia' `docs/archive/` tracciata, va sbloccata con
 `git -C Modules/<Mod> rm -r --cached -- docs/archive` (solo quel path).
 
+## Regola 10: `*.lock` nei `.gitignore` (richiesta utente 2026-11-04)
+
+Richiesta: "in ogni modulo nel file .gitignore deve esserci che ignoriamo *.lock".
+
+Perche': i lock degli agenti (`bashscripts/lock/lock.sh`) sono file `<path>.lock` accanto al file
+bloccato. Ogni modulo e' un repo a se', quindi l'ignore del monorepo (riga 22 del `.gitignore` di
+root) non li copre. Un lock committato resta li' quando l'agente sparisce e `claims-open.py` lo
+mostra come claim vivo per settimane.
+
+Misura (2026-11-04, 14 moduli con `.git`): 13 avevano gia' `*.lock`; **Notify** no, e aveva
+**5 lock tracciati** (2 di `opencode` del 5 ottobre, 3 di `notify`/`codex` del 28 ottobre).
+`Themes/Four` aveva la riga; `Themes/public` non e' un repo (lo copre il root).
+
+Fatto:
+
+- riga `*.lock` nel `.gitignore` di Notify (task `module-lock-ignore` di codex);
+- 5 lock tolti dall'indice con `git rm --cached` sui soli 5 path, nel solo repo Notify (commit
+  `4fa75386b`); i file restano su disco, quindi chi li tiene non perde il claim;
+- guardia: in `ModuleRootHygieneTest` il caso `modulo con *.lock nel .gitignore e nessun *.lock
+  tracciato`. Controlla la riga e `git ls-files '*.lock'` per modulo. RED vista su Notify (5 file
+  tracciati), poi verde.
+
+`AI/.gitignore` ripete `*.lock` tre volte (righe 21, 27, 99): innocuo, da ripulire quando si tocca
+quel file. `composer.lock` e `yarn.lock` erano gia' ignorati nei moduli, quindi la regola non cambia
+niente per loro.
+
+Stato della guardia intera dopo la regola 10: 85 verdi, 29 rossi. I 29 sono **debito delle regole
+1-7, preesistente e non toccato qui**: workspace con nome diverso da
+`_module_<nome>_fila5.code-workspace` (AI, Cms, Gdpr, Job, Lang, Media, Notify, UI), riga
+`/.github/skills/` mancante (AI, Cms, Gdpr, Trade), `resources/lang` ancora presente (Gdpr, Lang,
+Notify, Trade), `docs/graphify` ancora presente (Lang, Notify, UI), cartelle vietate (Activity
+`tools`, Notify `bashscripts` e `.github/skills`), `CHANGELOG.md` mancante in Trade. Cancellare
+cartelle richiede di guardare dentro prima: `resources/lang` puo' contenere traduzioni vere.
+
 ## Verifica finale
 
 `vendor/bin/pest Modules/Xot/tests/Unit/ModuleRootHygieneTest.php` verde (mai su
