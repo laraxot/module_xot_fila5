@@ -21,9 +21,9 @@ trait InformationSchemaTableCounters
      */
     public static function updateModelCount(string $modelClass, int $total): void
     {
-        $model = static::resolveModelInstance($modelClass);
+        $model = self::resolveModelInstance($modelClass);
 
-        static::updateOrCreate(static::modelLookupAttributes($model, $modelClass), [
+        static::updateOrCreate(self::modelLookupAttributes($model, $modelClass), [
             'table_rows' => $total,
         ]);
     }
@@ -35,9 +35,9 @@ trait InformationSchemaTableCounters
      */
     public static function getModelCount(string $modelClass): int
     {
-        $model = static::resolveModelInstance($modelClass);
+        $model = self::resolveModelInstance($modelClass);
 
-        $record = static::firstOrCreate(static::modelLookupAttributes($model, $modelClass));
+        $record = static::firstOrCreate(self::modelLookupAttributes($model, $modelClass));
 
         if ($record->table_rows === null) {
             $record->update(['table_rows' => $model->count()]);
