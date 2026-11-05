@@ -63,19 +63,22 @@ usare `tableUpdate()` con guardie, senza una seconda creazione concorrente.
 ## Inventario verificato
 
 L'audit dei percorsi canonici minuscoli `Modules/*/database/migrations/` ha
-contato 252 file: 247 rispettano il formato `timestamp_azione_tabella_table.php`.
-Le cinque eccezioni trovate sono:
+contato 252 file: 245 rispettano il formato `YYYY_MM_DD_HHMMSS_azione_tabella_table.php`.
+Le sette eccezioni trovate sono:
 
 - `Activity/2026_02_13_171410_fix_causer_id_to_uuid.php`
+- `Sigma/2026_09_30_create_import_logs_table.php`
+- `Sigma/2026_09_30_create_import_trackers_table.php`
 - `User/2026_02_13_172135_add_lang_column.php`
 - `User/2026_10_16_000001_fix_profiles_id_autoincrement.php`
 - `User/2026_10_22_000001_repair_users_type_state_columns.php`
 - `User/2026_11_04_220000_add_query_supporting_indexes.php`
 
-Sono aggiornamenti già presenti nello storico: non rinominarli senza controllo
-del ledger di tutti gli ambienti e prova di idempotenza. Il file Activity è
-riconducibile a `activities`; i quattro file User a `users`/`profiles`; quello sugli
-indici interessa tre tabelle e non ha un unico modello owner. Anche il percorso
+Questi filename sono già presenti nello storico: non rinominarli senza controllo
+del ledger di tutti gli ambienti e prova di idempotenza. I file Sigma usano la
+data senza la componente `HHMMSS`. Il file Activity è riconducibile a
+`activities`; i quattro file User a `users`/`profiles`;
+quello sugli indici interessa tre tabelle e non ha un unico modello owner. Anche il percorso
 legacy maiuscolo `Lang/database/Migrations/2024_03_20_000001_create_language_lines_table.php`
 va verificato rispetto al loader prima di spostarlo o rimuoverlo. Queste eccezioni
 sono debito storico censito, non esempi da replicare per nuove migrazioni.
