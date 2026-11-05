@@ -10,6 +10,7 @@ qmd: "XotBaseMigration naming model_class schema idempotenza dati migration forw
 related:
   - ./migration-base-rules.md
   - ../../Lang/docs/migrations.md
+  - ./wiki/rules/migration-filename-from-model-name.md
 ---
 # Convenzioni per le migrazioni Xot
 
@@ -25,8 +26,9 @@ valori in proprietà `$table` o `$connection`.
   modulo. Non dichiarare `$model_class` in questo caso.
 - Per ogni altro nome, inclusi `update_*`, `add_*` e `rename_*`, dichiarare
   esplicitamente `protected ?string $model_class = Model::class;`.
-- Le migrazioni additive nominano l'owner al singolare e descrivono l'operazione,
-  ad esempio `2026_11_05_100001_update_translation_user_id_uuid.php`.
+- Tutti i filename usano `YYYY_MM_DD_HHMMSS_<azione>_<tabella_plurale>_table.php`;
+  per esempio `2026_11_05_100001_update_translations_table.php`. Il nome resta
+  quello della tabella owner, senza dettagli delle singole colonne.
 
 ## Struttura
 
