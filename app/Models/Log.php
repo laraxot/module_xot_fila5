@@ -8,8 +8,8 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Database\Factories\LogFactory;
-use Sushi\Sushi;
 use Modules\Xot\Models\Traits\LogMutators;
+use Sushi\Sushi;
 
 // --- services
 // --- TRAITS ---
@@ -38,7 +38,6 @@ use Modules\Xot\Models\Traits\LogMutators;
 class Log extends BaseModel
 {
     use LogMutators;
-
     use Sushi;
 
     protected $fillable = ['id', 'name', 'size'];
