@@ -63,3 +63,9 @@ test('a missing or protected twin is not called, even on a model with __call', f
     expect(FieldRefreshAction::hasPublicGetter($record, 'getMissing'))->toBeFalse()
         ->and(FieldRefreshAction::hasPublicGetter($record, 'getSecret'))->toBeFalse();
 });
+
+test('a date from the twin becomes the date picker state string', function (): void {
+    expect(FieldRefreshAction::make('last_integ_param_at')->toFieldState(Carbon\Carbon::parse('2024-01-01 10:00')))
+        ->toBe('2024-01-01')
+        ->and(FieldRefreshAction::make('posiz')->toFieldState(217))->toBe(217);
+});
