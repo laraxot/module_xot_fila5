@@ -95,7 +95,6 @@ XotBaseColumn       // Table column with translation support
 GetModulePathByGeneratorAction
 GetFactoryAction
 GetViewByClassAction
-ApplyTenancyToPanelAction
 ```
 
 #### **3. Contract System**
