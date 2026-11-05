@@ -88,7 +88,7 @@ class CheckAccessorTwinsCommand extends Command
                 }
                 if (
                     count($parameters) !== 1
-                    || ($parameters[0]->getName() ?? null) !== 'value'
+                    || $parameters[0]->getName() !== 'value'
                     || $parameters[0]->getType() === null
                 ) {
                     $missing[$class][] = $method->getName().'() deve ricevere un solo parametro $value tipizzato';
@@ -379,7 +379,7 @@ class CheckAccessorTwinsCommand extends Command
         $relative = substr($file, \strlen($modulesRoot));
         $parts = explode(\DIRECTORY_SEPARATOR, $relative);
 
-        if (\count($parts) < 4 || ($parts[1] ?? null) !== 'app' || ($parts[2] ?? null) !== 'Models') {
+        if (\count($parts) < 4 || $parts[1] !== 'app' || $parts[2] !== 'Models') {
             return null;
         }
 
