@@ -68,7 +68,13 @@ class CheckAccessorTwinsCommand extends Command
                     continue;
                 }
 
-                // Solo metodi dichiarati nei file dei moduli (esclude framework/trait vendor come HasFactory, HasTranslations).
+                // Esclude metodi di dominio ereditati da trait/framework vendor
+                // (es. HasFactory::getUseFactoryAttribute, HasTranslations::getTranslatableColumnsFromAttribute).
+                if ($this->methodFromVendor($reflection, $method)) {
+                    continue;
+                }
+
+                // Solo metodi dichiarati nei file dei moduli.
                 $declaredIn = (string) $method->getDeclaringClass()->getFileName();
                 if ($declaredIn === '' || ! str_starts_with($declaredIn, base_path('Modules'))) {
                     continue;
@@ -214,6 +220,43 @@ class CheckAccessorTwinsCommand extends Command
         }
 
         return 'get'.$name;
+    }
+
+    /**
+     * Verifica se un metodo `get{X}Attribute()` origina da un trait/vendor class
+     * (es. HasFactory::getUseFactoryAttribute, HasTranslations::getTranslatableColumnsFromAttribute).
+     * I metodi ereditati da trait vendor non sono accessor di dominio e vanno esclusi.
+     */
+    /** @phpstan-ignore-next-line missingType.generics */
+    private function methodFromVendor(\ReflectionClass $reflection, \ReflectionMethod $method): bool
+    {
+        $checked = [];
+        $queue = [$reflection];
+
+        while (! empty($queue)) {
+            $current = array_pop($queue);
+            if (isset($checked[$current->getName()])) {
+                continue;
+            }
+            $checked[$current->getName()] = true;
+
+            foreach ($current->getTraits() as $trait) {
+                if ($trait->hasMethod($method->getName())) {
+                    $traitFile = $trait->getFileName();
+                    if ($traitFile === '' || str_starts_with((string) $traitFile, base_path('vendor'))) {
+                        return true;
+                    }
+                }
+                $queue[] = $trait;
+            }
+
+            $parent = $current->getParentClass();
+            if ($parent && ! $parent->isInternal()) {
+                $queue[] = $parent;
+            }
+        }
+
+        return false;
     }
 
     private function twinLabel(string $accessor): string
