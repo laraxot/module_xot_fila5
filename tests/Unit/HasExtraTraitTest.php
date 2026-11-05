@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit;
 
-use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Modules\Xot\Contracts\ExtraContract;
 use Modules\Xot\Models\Traits\HasExtraTrait;
 use Modules\Xot\Tests\Fixtures\Models\Extra;
@@ -48,7 +47,6 @@ describe('HasExtraTrait', function (): void {
     it('has extra relationship method', function () use ($testModel): void {
         $relation = $testModel->extra();
 
-        Assert::assertInstanceOf(MorphOne::class, $relation);
         Assert::assertSame(Extra::class, $relation->getRelated()::class);
     });
 

@@ -78,6 +78,43 @@ I nuovi accessor moderni che restituiscono `Illuminate\Database\Eloquent\Casts\A
 seguono il contratto Laravel moderno e non sono metodi `get{Nome}Attribute()`;
 non rientrano in questa regola legacy.
 
+## Posizione nei modelli e nei trait
+
+- Se una classe modello contiene un accessor legacy e il suo metodo di appoggio,
+  spostare entrambi insieme in un trait dedicato sotto
+  `app/Models/Traits/Mutators/`. La classe modello importa il trait e non conserva
+  una copia che possa prevalere o fare shadowing.
+- Spostare le relazioni Eloquent dichiarate nelle classi modello in trait dedicati
+  sotto `app/Models/Traits/Relationships/`. Conservare firma, tipo di ritorno,
+  chiavi esplicite e comportamento relazionale.
+- Tenere distinti i trait `Mutators` e `Relationships`. Raggruppare per modello o
+  responsabilità di dominio; non creare un trait per ogni singolo metodo.
+- Prima di spostare, controllare la precedenza PHP dei trait e cercare metodi
+  omonimi: il trait più vicino può sostituire silenziosamente il metodo importato
+  da un altro trait.
+- Il modello concreto resta il punto di composizione. Questa regola non sposta
+  Action o logica di dominio fuori dal modulo owner.
+
+## Organizzazione di mutator, helper e relazioni
+
+Il modello concreto deve comporre il comportamento, non accumulare tutta
+l'implementazione nel corpo della classe. Quando un mutator/accessor ha metodi di
+appoggio, spostare insieme la coppia e gli helper necessari in un trait dedicato
+del modulo owner (per esempio `Models/Traits/Mutators/<Modello>Mutator.php`).
+Accessor e gemello restano nello stesso trait/file.
+
+Spostare anche i metodi che dichiarano relazioni Eloquent (`belongsTo`, `hasMany`,
+`morphTo`, `HasManyDeep` e analoghe) in trait dedicati alle relazioni (per esempio
+`Models/Traits/Relations/<Modello>Relations.php`). Mantenere i nomi invocati dai
+consumer, firme e tipi di ritorno, PHPDoc generici e foreign key esplicite. Non
+creare trait duplicati se un trait owner esistente rappresenta già quel concern.
+
+Durante l'estrazione verificare i metodi chiamati tramite `self`, `static`,
+`__FUNCTION__` o `__CLASS__`, i trait conflict/precedence e gli override nei modelli
+derivati: lo spostamento non deve cambiare la risoluzione PHP né il comportamento
+di eager loading e serialization. Non trasferire helper non correlati solo per
+ridurre il numero di righe del modello.
+
 ## Verifica e inventario
 
 Il controllo automatico deve segnalare separatamente:

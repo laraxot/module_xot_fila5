@@ -5,11 +5,11 @@ declare(strict_types=1);
 namespace Modules\Xot\Models;
 
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
 use Modules\Tenant\Models\BaseModelJson;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Database\Factories\InformationSchemaTableFactory;
+use Modules\Xot\Models\Traits\InformationSchemaTableCounters;
 
 /**
  * @property int|null $table_rows
@@ -43,6 +43,8 @@ use Modules\Xot\Database\Factories\InformationSchemaTableFactory;
  */
 class InformationSchemaTable extends BaseModelJson
 {
+    use InformationSchemaTableCounters;
+
     /**
      * @var list<string>
      */
@@ -95,69 +97,5 @@ class InformationSchemaTable extends BaseModelJson
         $rows = $this->getSushiRows();
 
         return $rows;
-    }
-
-    /**
-     * Aggiorna il numero di record memorizzato per un modello.
-     *
-     * @param  class-string<Model>  $modelClass
-     */
-    public static function updateModelCount(string $modelClass, int $total): void
-    {
-        if (! class_exists($modelClass)) {
-            throw new \InvalidArgumentException("Model class [{$modelClass}] does not exist");
-        }
-
-        /** @var Model $model */
-        $model = app($modelClass);
-        if (! $model instanceof Model) {
-            throw new \InvalidArgumentException("Class [{$modelClass}] must be an instance of ".Model::class);
-        }
-
-        $connection = $model->getConnection();
-        $database = $connection->getDatabaseName();
-        $table = $model->getTable();
-
-        static::updateOrCreate([
-            'table_schema' => $database,
-            'model_class' => $modelClass,
-            'table_name' => $table,
-        ], [
-            'table_rows' => $total,
-        ]);
-    }
-
-    /**
-     * Restituisce il numero di record per un modello.
-     *
-     * @param  class-string<Model>  $modelClass
-     */
-    public static function getModelCount(string $modelClass): int
-    {
-        if (! class_exists($modelClass)) {
-            throw new \InvalidArgumentException("Model class [{$modelClass}] does not exist");
-        }
-
-        /** @var Model $model */
-        $model = app($modelClass);
-        if (! $model instanceof Model) {
-            throw new \InvalidArgumentException("Class [{$modelClass}] must be an instance of ".Model::class);
-        }
-
-        $connection = $model->getConnection();
-        $database = $connection->getDatabaseName();
-        $table = $model->getTable();
-
-        $record = static::firstOrCreate([
-            'table_schema' => $database,
-            'model_class' => $modelClass,
-            'table_name' => $table,
-        ]);
-
-        if ($record->table_rows === null) {
-            $record->update(['table_rows' => $model->count()]);
-        }
-
-        return (int) $record->table_rows;
     }
 }

@@ -42,6 +42,7 @@ Indice operativo del wiki Xot (core framework).
 - [entities/](./entities/): Modelli e componenti chiave.
 - [architettura](./concepts/xot-module-architecture-overview.md): Panoramica architetturale del modulo Xot (sovrapponibile a `bmad/architecture.md`).
 - [rules/](./rules/): Regole operative e contratti.
+- [Accessor Eloquent e gemello nello stesso file](./rules/accessor-twin-method.md): firma pubblica tipizzata, delega, purezza e collocazione nei trait.
 - [Accessor Eloquent + gemello nello stesso file](./rules/accessor-twin-method.md): firma pubblica tipizzata, delega e purezza del calcolo.
 - [overviews/](./overviews/): Viste panoramiche.
 - [sources/](./sources/): Dati di ricerca e link esterni.

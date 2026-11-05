@@ -466,6 +466,40 @@ abstract class XotBaseMigration extends LaravelMigration
         }
     }
 
+    /**
+     * Converte user_id da bigint a UUID, solo se la colonna e' ancora bigint.
+     *
+     * Rifiuta la conversione se esistono valori: un id intero non diventa un UUID,
+     * e uno schema cambiato in silenzio corrompe i dati. Il mapping va deciso prima.
+     */
+    public function convertUserIdToUuidIfLegacyBigint(Blueprint $table, bool $nullable = true): void
+    {
+        if (! $this->hasColumn('user_id') || $this->getColumnType('user_id') !== 'bigint') {
+            return;
+        }
+
+        $legacyRows = DB::connection($this->getConnection())
+            ->table($this->getTable())
+            ->whereNotNull('user_id')
+            ->count();
+
+        if ($legacyRows > 0) {
+            throw new \RuntimeException(sprintf(
+                'Conversione user_id bloccata su %s: %d righe con valore bigint. Serve un mapping verso UUID prima della migrazione.',
+                $this->getTable(),
+                $legacyRows,
+            ));
+        }
+
+        if ($nullable) {
+            $table->uuid('user_id')->nullable()->change();
+
+            return;
+        }
+
+        $table->uuid('user_id')->change();
+    }
+
     public function updateUserKeyInt(Blueprint $table): void
     {
         if (! $this->hasColumn('id')) {

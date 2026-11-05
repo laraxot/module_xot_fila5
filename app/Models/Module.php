@@ -9,6 +9,7 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Database\Factories\ModuleFactory;
+use Modules\Xot\Models\Traits\ModuleStatus;
 use Nwidart\Modules\Facades\Module as ModuleFacade;
 use Nwidart\Modules\Module as NModule;
 use Sushi\Sushi;
@@ -65,6 +66,7 @@ use function Safe\json_encode;
  */
 final class Module extends BaseModel
 {
+    use ModuleStatus;
     use Sushi;
 
     protected $fillable = [
@@ -138,23 +140,5 @@ final class Module extends BaseModel
             'icon' => 'string',
             'colors' => 'array',
         ];
-    }
-
-    public function isEnabled(): bool
-    {
-        if ($this->enabled !== null) {
-            return (bool) $this->enabled;
-        }
-
-        if ($this->status !== null) {
-            return (bool) $this->status;
-        }
-
-        return (bool) ($this->is_active ?? false);
-    }
-
-    public function isDisabled(): bool
-    {
-        return ! $this->isEnabled();
     }
 }
