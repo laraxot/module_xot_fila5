@@ -1,6 +1,10 @@
 ---
 title: "Epic: SettingPage nei moduli, solo dove serve davvero"
+<<<<<<< .merge_file_xw0YJt
 status: done
+=======
+status: in-progress
+>>>>>>> .merge_file_QeI3Ya
 module: Xot (owner), Ptv, IndennitaCondizioniLavoro, IndennitaResponsabilita, Incentivi, Performance, Media
 created: 2026-10-28
 repository: "https://github.com/provtv/base_ptv_fila5_mono"
@@ -8,6 +12,10 @@ github_issue: "https://github.com/provtv/base_ptv_fila5_mono/issues"
 github_discussion: "https://github.com/provtv/base_ptv_fila5_mono/discussions"
 related:
   - ./base-setting-page.story.md
+<<<<<<< .merge_file_xw0YJt
+=======
+  - ./module-real-settings.story.md
+>>>>>>> .merge_file_QeI3Ya
   - ../../../Progressioni/docs/stories/setting-page-config.story.md
   - ../../../Progressioni/docs/stories/setting-page-worker-types.story.md
 ---
@@ -32,6 +40,13 @@ rompono il boot (tema, routing, classi) e' un rischio. Default = comportamento a
 
 ## Decisione per modulo (evidenze nelle story di modulo)
 
+<<<<<<< .merge_file_xw0YJt
+=======
+> Aggiornamento 2026-11-04: per direttiva dell'utente (ogni modulo ha qualcosa da configurare, `getFormSchema()` non
+> puo' essere vuoto) le righe "no" e "rinviata" sotto sono superate da [module-real-settings.story.md](./module-real-settings.story.md).
+> I vincoli (chiavi che rompono il boot, segreti in `.env`, niente duplicati) restano validi.
+
+>>>>>>> .merge_file_QeI3Ya
 | Modulo | Decisione | Impostazioni |
 |--------|-----------|--------------|
 | Ptv | SettingPage | `mail_from_address`, `mail_from_name` (prima fissi su Provincia di Treviso in `SchedaMail` di Ptv e IR), `email_fallback_recipient` (prima `config('ptv.email.fallback_recipient')`, chiave mai definita: valeva sempre l'indirizzo scritto nel codice), `anni` |
@@ -48,7 +63,11 @@ rompono il boot (tema, routing, classi) e' un rischio. Default = comportamento a
 | Xot | no, rinviata | `xra` contiene chiavi che rompono l'app (main_module, *_class, temi). Bug trovato: il tenant scrive `forcessl`, XotData legge `force_ssl` |
 | Lang | no, rinviata | `locales` scritto a mano in 7 punti incluso il routing al boot: prima unificare nel codice |
 | Sigma, Pdnd | no, rinviata | parametri tecnici/di sicurezza (purpose id, verify_ssl, endpoint); segreti in chiaro da togliere prima |
+<<<<<<< .merge_file_xw0YJt
 | Notify | no | ha gia' `SettingPage` (EnvWidget su .env): nome in collisione, ruolo diverso |
+=======
+| Notify | SettingPage esistente, migrata alla base | mantiene `EnvWidget` per le sole chiavi `.env`; `getFormSchema()` resta vuoto perché Notify non ha impostazioni tenant di dominio né `NotifyConfigData`. Nessun segreto viene copiato nella config tenant |
+>>>>>>> .merge_file_QeI3Ya
 
 ## Decisione emersa durante il lavoro
 
@@ -100,3 +119,45 @@ recente fa importare l'anno sbagliato a chi non guarda). Cosi' ogni modulo ha un
 - Test: `Xot/tests/Unit/Actions/Config/ResolveModuleConfigDataActionTest.php`,
   `Incentivi/tests/Unit/Datas/IncentiviConfigDataTest.php`, casi aggiunti in
   `Progressioni/tests/Unit/Datas/ProgressioniConfigDataTest.php`. Pest saltato: produzione.
+<<<<<<< .merge_file_xw0YJt
+=======
+
+## Revisione 2026-11-04: richiesta "SettingPage in tutti gli altri moduli"
+
+Richiesta: creare `SettingPage.php` in tutti i moduli che non l'hanno, a partire dal modello di
+IndennitaResponsabilita.
+
+Verifica nel codice (sola lettura):
+
+- Ptv, IndennitaCondizioniLavoro, IndennitaResponsabilita, Incentivi, Performance, Media e
+  Progressioni hanno gia' la pagina: sono la lista "SettingPage" della tabella.
+- I 10 moduli rimasti (Activity, Job, Lang, Pdnd, Rating, Sigma, Tenant, UI, User, Xot) non hanno
+  `{Modulo}ConfigData` ne' `config/{modulo}.php` del modulo. Non e' un dettaglio: `BaseSettingPage::getConfigDataClass()`
+  fa `Assert::notNull` e `mount()` chiama `getConfigState()`. Una `SettingPage` senza Data va in
+  eccezione alla prima apertura.
+- Sigma ha la password di default in chiaro in `config/sigma.php` e Pdnd ha credenziali proxy in
+  chiaro: esporle in una pagina di configurazione amplierebbe il rischio, non lo ridurrebbe.
+
+Decisione: nessuna nuova SettingPage. Creare pagine per questi moduli significa scegliere una
+Data vuota solo per far passare l'`Assert` e mostrare un menu senza campi, il caso che l'epic
+ha escluso. Ogni modulo rimasto resta "no" con la sua motivazione sopra.
+
+Per riaprire un modulo serve una decisione esplicita dell'owner: quale impostazione cambia nel
+tempo senza deploy. Da quella nasce `{Modulo}ConfigData` e poi la pagina.
+
+> Superseded 2026-11-04 da `setting-page-tutti-i-moduli.story.md`: la pagina va in tutti i moduli
+> (decisione dell'utente). Il ragionamento sopra resta valido per il rischio dei menu vuoti e dei segreti.
+
+## Esito della decisione utente
+
+Implementazione e gate complessivi sono tracciati nella story
+[`setting-page-tutti-i-moduli.story.md`](../bmad/stories/setting-page-tutti-i-moduli.story.md). Tutti i 18
+moduli hanno ora la propria pagina; quelli senza impostazioni di dominio mantengono schema e
+Data vuoti, senza introdurre default di anni o esporre chiavi tecniche/secret.
+
+## Correzione 2026-11-04: campi reali in ogni modulo
+
+Lo schema vuoto di `setting-page-tutti-i-moduli` era un errore di lettura della richiesta. La matrice per modulo, con i
+lettori verificati e il contratto di una impostazione vera, sta in
+[`setting-page-campi-reali.story.md`](../bmad/stories/setting-page-campi-reali.story.md).
+>>>>>>> .merge_file_QeI3Ya

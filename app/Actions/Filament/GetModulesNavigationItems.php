@@ -37,10 +37,69 @@ class GetModulesNavigationItems
         $navs = [];
 
         $modules = app(GetTenantModulesAction::class)->execute();
-        // Pre-load user roles to avoid N+1 queries (unused — kept for future role-based filtering)
 
         foreach ($modules as $module) {
-            $nav = app(GetNavigationItemByModulename::class)->execute($module);
+            Assert::string($module, 'Il nome del modulo deve essere una stringa');
+
+            $module_low = Str::lower($module);
+            Assert::stringNotEmpty($module_low, 'Il nome del modulo convertito in minuscolo non può essere vuoto');
+
+            // Tolleranza: durante comandi CLI alcuni moduli possono non avere ancora struttura completa
+            try {
+                $configPath = app(GetModulePathByGeneratorAction::class)->execute($module, 'config');
+            } catch (\Throwable $e) {
+                // Skip modulo non pronto/senza generator path config
+                continue;
+            }
+            $configFilePath = $configPath.'/config.php';
+
+            // Verifichiamo che il file esista
+            if (! File::exists($configFilePath)) {
+                continue;
+            }
+
+            // Carichiamo la configurazione
+            try {
+                /** @var array<string, mixed> $config */
+                $config = File::getRequire($configFilePath);
+                Assert::isArray($config, 'Il file di configurazione deve restituire un array');
+            } catch (\Exception $e) {
+                continue;
+            }
+
+            // Estraiamo i valori di configurazione con valori predefiniti
+            $icon = $config['icon'] ?? 'heroicon-o-question-mark-circle';
+            Assert::string($icon, "L'icona deve essere una stringa");
+
+            // $role è sempre stringa non vuota (concatenazione di stringhe non vuote), check ridondante rimosso
+            $role = $module_low.'::admin';
+
+            $navigation_sort = $config['navigation_sort'] ?? 1;
+            Assert::integerish($navigation_sort, 'navigation_sort deve essere un intero');
+            $navigation_sort = (int) $navigation_sort;
+
+            // Il ruolo viene verificato lazy in visible(), per utente corrente
+            $nav = NavigationItem::make($module)
+                ->url('/'.$module_low.'/admin')
+                ->icon($icon)
+                ->group('Modules')
+                ->sort($navigation_sort)
+                ->visible(static function () use ($role): bool {
+                    /**
+                     * @var Authenticatable|null $user
+                     */
+                    $user = Auth::user();
+                    if ($user === null) {
+                        return false;
+                    }
+
+                    // Verifichiamo che il metodo hasRole esista
+                    if (! method_exists($user, 'hasRole')) {
+                        return false;
+                    }
+
+                    return (bool) $user->hasRole($role);
+                });
 
             $navs[] = $nav;
         }

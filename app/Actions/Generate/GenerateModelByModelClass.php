@@ -88,7 +88,6 @@ class GenerateModelByModelClass
          *
          * dddx(
          * [
-         * 'res'=>$res,
          * 'output'=>$output,
          * 'model_name'=>$model_name,
          * 'module_name'=>$module_name,

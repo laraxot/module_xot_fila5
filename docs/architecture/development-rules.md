@@ -1,16 +1,9 @@
 ---
-title: "development rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "development rules"
-issues: []
-discussions: []
-status: superseded
-superseded_by: ../consolidated/development-rules.md
+title: "Xot - development-rules.md"
+module: Xot
+bmad: true
+status: active
 ---
-
 # Regole Generali di Sviluppo del Progetto
 
 ## Collegamenti

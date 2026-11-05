@@ -54,7 +54,7 @@ Risolvere tutti gli errori PHPStan di `cd laravel && ./vendor/bin/phpstan analys
 2. `composer dump-autoload` (esegue gli script post-autoload-dump, avvia l'app).
 3. Cancellare i Service anche sul remoto `laraxot/dev`, o accettare il ratchet locale.
 4. Perimetro Livewire: letto come "nessun Livewire puro, FO incluso" (canone del 2026-05-28); aperto solo Volt/Folio (15 pagine in User, `profile/edit` da 714 righe).
-5. ~~Installare `filament/blueprint` oppure restare sui contratti scritti a mano~~ — **deciso il 2026-10-25: contratti scritti a mano.** `filament/blueprint` e il repository privato `packages.filamentphp.com` sono stati rimossi da `laravel/composer.json`: 401 sul repo, 404 su Packagist, zero citazioni nel codice. Restano i contratti in `Modules/<M>/docs/bmad/filament-blueprint.md` (13 moduli; ne mancano 5 con 202 file Filament).
+5. ~~Installare `filament/blueprint` oppure restare sui contratti scritti a mano~~: **deciso il 2026-10-25: contratti scritti a mano.** `filament/blueprint` e il repository privato `packages.filamentphp.com` sono stati rimossi da `laravel/composer.json`: 401 sul repo, 404 su Packagist, zero citazioni nel codice. Restano i contratti in `Modules/<M>/docs/bmad/filament-blueprint.md` (13 moduli; ne mancano 5 con 202 file Filament).
 6. `laravel/phpstan.neon` (solo l'umano): il blocco `parallel` e' tutto commentato (default = nproc, 18-20 worker, causa dell'OOM con run concorrenti); `Lime*.php` (50 file, 4897 righe) sono esclusi dall'analisi.
 7. Se `APP_ENV=testing` e' mai impostato fuori dai test (Quaeris: rami `environment('testing')` spengono l'autorizzazione).
 8. Test su sqlite o MySQL (la regola dice MySQL; 9 TestCase configurano sqlite).

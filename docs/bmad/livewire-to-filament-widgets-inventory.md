@@ -1,5 +1,5 @@
 ---
-title: "Inventario fleet — custom Livewire e destinazioni"
+title: "Inventario fleet: custom Livewire e destinazioni"
 type: inventory
 module: Xot
 status: baseline-2026-10-20-pm
@@ -25,7 +25,7 @@ Conteggio applicativo: **28 classi** custom Livewire (+ 2 test sotto
 `extends Component` sui View Components. Controprova:
 `find Modules \( -path '*/Http/Livewire/*.php' -o -path '*/app/Livewire/*.php' \) ! -path '*/tests/*'`.
 
-Widget Filament già presenti: **~168** file sotto `*/Filament/Widgets/` —
+Widget Filament già presenti: **~168** file sotto `*/Filament/Widgets/` -
 spesso il gemello esiste già (`REUSE`).
 
 > Nota 2026-10-20 sera: i numeri 28 e ~168 sono superati (oggi 23 classi e 143
@@ -40,18 +40,18 @@ Stati: `MIGRATE` | `REUSE` | `KEEP` | `RETIRE`.
 | Modulo | Componente | Scopo | Gemello Filament | Verdetto | Wave |
 |--------|------------|-------|------------------|----------|------|
 | UI | `DarkModeSwitcher` | toggle tema UI chrome | `DarkModeSwitcherWidget` | **DONE** ritirato HTTP; SSoT widget | W0 ✓ |
-| UI | `Toast` | feedback flash non-panel | — (chrome FO) | `KEEP` o View/Blade **[superata 2026-10-20 sera: `ToastWidget` e' gia' montato nel layout UI, quindi REUSE+RETIRE]** | W0 |
+| UI | `Toast` | feedback flash non-panel |: (chrome FO) | `KEEP` o View/Blade **[superata 2026-10-20 sera: `ToastWidget` e' gia' montato nel layout UI, quindi REUSE+RETIRE]** | W0 |
 | Lang | `Lang\Switcher`, `Lang\Change` | cambio locale | `LanguageSwitcherWidget` | **DONE** ritirati HTTP+view; SSoT widget | W0 ✓ |
 | Job | `Job\Status`, `Schedule\Status`, `Schedule\Crud`, `Broad` | stato code/schedule admin | `JobStatusWidget`, `ScheduleStatusWidget`, `ScheduleCrudWidget` | `REUSE`/`MIGRATE` | W1 |
 | User | `Auth\Login\|Register\|Logout\|Verify\|Passwords\*` | auth FO/panel twin | `LoginWidget`, `RegisterWidget`, `LogoutWidget`, … | `MIGRATE`/`REUSE` + test auth | W1–W2 |
 | User | `AuthLogout`, `Livewire\Logout` | logout | `AuthLogoutWidget` / `LogoutWidget` | `REUSE` | W1 |
 | User | `Profile\*`, `Team\Change`, `Socialite\Buttons` | profilo/team/OAuth | widget parziali + Actions | `MIGRATE` o Folio | W2 |
 | User | `TermsOfService`, `PrivacyPolicy` | testo legale (config) in UI | `TermsOfServiceWidget`, `PrivacyPolicyWidget` | **DONE** ritirati HTTP+view+alias; SSoT widget | W0 ✓ |
-| Cms | `Page\Show` | render pagina CMS | — | `KEEP` FO Folio **[superata 2026-10-20 sera: zero chiamanti, RETIRE]** | W2 |
-| Geo | `FormSearchAddressCategories`, `Test` | ricerca indirizzo / stub | — | `KEEP` FO / `RETIRE` Test **[KEEP superata 2026-10-20 sera: stub orfano, RETIRE]** | W2 |
-| Media | `Card\Video\Clip` | clip video card | — | `KEEP` o Action+Blade **[superata 2026-10-20 sera: zero chiamanti e vista mancante, RETIRE]** | W2 |
-| Xot | `XotBaseComponent` (+ registrazione legacy) | base/registrazione | — | `RETIRE` solo a foglie chiuse | W3 |
-| Themes | — | mount FQCN widget | — | `KEEP` mount FQCN | W0 |
+| Cms | `Page\Show` | render pagina CMS |: | `KEEP` FO Folio **[superata 2026-10-20 sera: zero chiamanti, RETIRE]** | W2 |
+| Geo | `FormSearchAddressCategories`, `Test` | ricerca indirizzo / stub |: | `KEEP` FO / `RETIRE` Test **[KEEP superata 2026-10-20 sera: stub orfano, RETIRE]** | W2 |
+| Media | `Card\Video\Clip` | clip video card |: | `KEEP` o Action+Blade **[superata 2026-10-20 sera: zero chiamanti e vista mancante, RETIRE]** | W2 |
+| Xot | `XotBaseComponent` (+ registrazione legacy) | base/registrazione |: | `RETIRE` solo a foglie chiuse | W3 |
+| Themes |: | mount FQCN widget |: | `KEEP` mount FQCN | W0 |
 
 ## Caller da verificare prima di ogni ritiro
 

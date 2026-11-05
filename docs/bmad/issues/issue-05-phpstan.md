@@ -10,7 +10,7 @@ discussions: []
 status: draft
 ---
 
-# Issue GH #05 — PHPStan 272 errors: piano di risoluzione modulo-per-modulo
+# Issue GH #05: PHPStan 272 errors: piano di risoluzione modulo-per-modulo
 
 **Repo:** `git@github.com:laraxot/module_xot_fila5.git`
 **Title:** `[Quality] Ridurre i 272 errori PHPStan modulo per modulo (BMAD)`

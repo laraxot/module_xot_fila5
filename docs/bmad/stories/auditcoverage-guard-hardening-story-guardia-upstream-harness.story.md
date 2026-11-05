@@ -4,7 +4,7 @@ created: 2026-09-26
 updated: 2026-09-26
 issues: []
 discussions: []
-title: "Story — guardia AuditCoverage: upstream, harness Xot, canon contraddittorio (2026-09-24)"
+title: "Story: guardia AuditCoverage: upstream, harness Xot, canon contraddittorio (2026-09-24)"
 type: story
 module: Xot
 epic: quality

@@ -1,5 +1,5 @@
 ---
-title: "Blueprint piattaforma — Livewire HTTP a Filament Widgets"
+title: "Blueprint piattaforma: Livewire HTTP a Filament Widgets"
 type: bmad-blueprint
 status: active
 module: Xot
@@ -43,7 +43,7 @@ caller, superficie (BO/FO), Action usata, stato e decisione.
 
 ## Wave BMAD
 
-### Wave 0 — Ricerca e contratti
+### Wave 0: Ricerca e contratti
 
 - verificare componenti PHP, alias `_components.json`, viste, route e mount;
 - classificare ogni entry in `widget`, `page/resource`, `front-office`,
@@ -51,7 +51,7 @@ caller, superficie (BO/FO), Action usata, stato e decisione.
 - congelare `XotBaseWidget`, policy, tenant, traduzioni e accessibilità;
 - non modificare ancora PHP.
 
-### Wave 1 — Ritiro sicuro e sostituzioni già esistenti
+### Wave 1: Ritiro sicuro e sostituzioni già esistenti
 
 Scope disgiunti: `Job`, `Geo`, `Lang`, `UI`, `Media`.
 
@@ -59,19 +59,19 @@ Scope disgiunti: `Job`, `Geo`, `Lang`, `UI`, `Media`.
 - sostituire i mount con il widget/page già esistente;
 - mantenere le Actions e rimuovere alias/view solo dopo ricerca a zero riferimenti.
 
-### Wave 2 — User e superfici del pannello
+### Wave 2: User e superfici del pannello
 
 Convertire solo i flussi realmente montati nel panel: login, logout, team,
 profilo e notifiche. Auth/password/legal restano Page/FO se non appartengono al
 chrome Filament. Ogni widget deve rispettare policy, tenant e traduzioni.
 
-### Wave 3 — Cms, Quaeris e dashboard
+### Wave 3: Cms, Quaeris e dashboard
 
 Riconciliare Page/Show, Pulse e blocchi FO con Filament Pages/Widgets soltanto
 quando il prodotto richiede una superficie panel. Non trasformare una pagina FO
 in un KPI widget per ridurre il conteggio dei componenti.
 
-### Wave 4 — Registro e gate finali
+### Wave 4: Registro e gate finali
 
 - eliminare discovery HTTP e alias rimasti solo quando tutti i moduli foglia
   sono migrati o hanno un'eccezione registrata;

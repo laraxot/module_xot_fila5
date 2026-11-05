@@ -37,7 +37,7 @@ trait HasXotFactory
      * @param  (callable(array<string, mixed>, Model|null): array<string, mixed>)|array<string, mixed>  $state
      * @return Factory<static>
      */
-    public static function factory($count = null, $state = []): Factory
+    public static function factory(callable|array|int|null $count = null, callable|array $state = []): Factory
     {
         $factory = (new GetFactoryAction)->execute(static::class);
         $factoryState = is_callable($count)

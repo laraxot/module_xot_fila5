@@ -1,6 +1,6 @@
 ---
 id: Xot/module-bmad-audit-20260928
-title: "Xot — baseline BMAD e analisi completa"
+title: "Xot: baseline BMAD e analisi completa"
 status: ready-for-dev
 module: Xot
 epic: module-governance
@@ -15,7 +15,7 @@ updated: 2026-10-07
 tags: [docs, xot, bmad]
 qmd: "story   xot: baseline bmad xot"
 ---
-# Story — Xot: baseline BMAD
+# Story: Xot: baseline BMAD
 
 Come manutentore del modulo Xot, voglio una baseline BMAD verificabile, così da poter pianificare lavoro senza confondere ipotesi, WIP e comportamento osservato.
 

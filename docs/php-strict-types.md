@@ -69,7 +69,7 @@ This document provides guidelines for using strict typing in PHP within a Larave
 - [Service Provider Best Practices](service-provider-best-practices.md)
 - [Filament Best Practices](filament-best-practices.md)
 
-## 2026-09-21 — follow-up 2 blade
+## 2026-09-21: follow-up 2 blade
 
 **Perché**: wizard submit e PDF Spatie sono punti di uscita (click / byte PDF).
 Senza `declare` sulla vista, i tipi già strict in `XotBase*` possono essere

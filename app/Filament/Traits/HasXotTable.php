@@ -38,10 +38,12 @@ use Illuminate\Support\Str;
 use Livewire\Component;
 use Modules\UI\Enums\TableLayoutEnum;
 use Modules\UI\Filament\Actions\Table\TableLayoutToggleTableAction;
+use Modules\UI\Filament\Tables\Columns\IDColumn;
 use Modules\UI\Filament\Traits\HasTableLayoutPage;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Filament\PlainTextFromFilamentValueAction;
 use Modules\Xot\Actions\GetTransKeyAction;
+use Modules\Xot\Filament\Links\RecordAnchor;
 use RuntimeException;
 use Webmozart\Assert\Assert;
 
@@ -84,14 +86,14 @@ trait HasXotTable
      * Vedi: Modules/Xot/docs/filament/widget-method-visibility-rules.md
      *
      * @return array<int|string, Action|ActionGroup>
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
     public function getTableHeaderActions(): array
     {
         $resource = $this;
-        /* @phpstan-ignore-next-line */
         if ($this instanceof ListRecords) {
             $resourceClass = $this->getResource();
-            // @phpstan-ignore-next-line staticMethod.alreadyNarrowedType
             Assert::string($resourceClass);
             $resource = app($resourceClass);
         }
@@ -131,7 +133,6 @@ trait HasXotTable
     {
         $columns = [];
 
-        // @phpstan-ignore method.deprecated
         foreach (array_values($this->getTableColumns()) as $column) {
             if ($column instanceof ColumnGroup) {
                 // Stack::make() non accetta ColumnGroup: nella vista a griglia le colonne
@@ -189,7 +190,6 @@ trait HasXotTable
      */
     public function getTableFiltersFormColumns(): int
     {
-        // @phpstan-ignore method.deprecated
         $count = count($this->getTableFilters()) + 1;
 
         return min($count, 6);
@@ -246,7 +246,6 @@ trait HasXotTable
         }
 
         $tableColumns = array_values(array_filter(
-            // @phpstan-ignore method.deprecated
             $this->getTableColumns(),
             static fn (mixed $column): bool => $column instanceof Column || $column instanceof ColumnGroup || $column instanceof LayoutComponent,
         ));
@@ -255,34 +254,29 @@ trait HasXotTable
 
         $table = $table
             ->recordTitleAttribute($this->getTableRecordTitleAttribute())
-            // @phpstan-ignore method.deprecated
             ->heading($this->getTableHeading())
-            // @phpstan-ignore method.deprecated, argument.type
             ->headerActions($this->getTableHeaderActions())
             ->columns($columns)
             ->contentGrid($this->layoutView->getTableContentGrid())
-            // @phpstan-ignore method.deprecated
             ->filters($this->getTableFilters())
             ->filtersLayout($this->getTableFiltersLayout())
             ->filtersFormColumns($this->getTableFiltersFormColumns())
             ->deferFilters($this->shouldDeferTableFilters())
-            // @phpstan-ignore method.deprecated
             ->persistFiltersInSession($this->shouldPersistTableFiltersInSession())
-            // @phpstan-ignore method.deprecated, method.childReturnType, argument.type
             ->recordActions($this->getTableActions())
-            // @phpstan-ignore method.deprecated
             ->toolbarActions($this->getTableBulkActions())
             ->recordActionsPosition($this->getTableRecordActionsPosition())
-            // @phpstan-ignore method.deprecated
             ->emptyStateActions($this->getTableEmptyStateActions())
-            // @phpstan-ignore method.deprecated
             ->striped($this->isTableStriped())
+            // Mobile: sotto `sm` (640 px) ogni riga diventa una card con etichetta + valore per
+            // cella, ordinamento in un select e "seleziona tutti" nell'intestazione: niente scroll
+            // orizzontale. Da `sm` in su la tabella resta identica. Vedi
+            // Modules/UI/docs/stories/mobile-ux-pass.story.md
+            ->stackedOnMobile()
             ->paginated($this->getTablePaginated());
 
         // Configurazioni opzionali personalizzabili
-        // @phpstan-ignore method.deprecated
         $sortColumn = $this->getDefaultTableSortColumn();
-        // @phpstan-ignore method.deprecated
         $sortDirection = $this->getDefaultTableSortDirection();
         if ($sortColumn !== null && $sortDirection !== null) {
             $table = $table->defaultSort($sortColumn, $sortDirection);
@@ -306,6 +300,8 @@ trait HasXotTable
      * Vedi: Modules/Xot/docs/filament/widget-method-visibility-rules.md
      *
      * @return array<string|int, Filter|TernaryFilter|BaseFilter>
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
     public function getTableFilters(): array
     {
@@ -319,12 +315,13 @@ trait HasXotTable
      * Vedi: Modules/Xot/docs/filament/widget-method-visibility-rules.md
      *
      * @return array<int|string, Action|ActionGroup>
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
     public function getTableActions(): array
     {
         $actions = [];
         $resource = $this;
-        /* @phpstan-ignore-next-line */
         // Ripristinato a method_exists() il 2026-09-11: un giro precedente
         // aveva ristretto questo controllo a `$this instanceof ListRecords`,
         // pensato per le pagine, ma XotBaseResourceTable::getTableActions()
@@ -339,28 +336,29 @@ trait HasXotTable
         // per il resto di questa sessione.
         if (method_exists($this, 'getResource')) {
             $resourceClass = $this->getResource();
-            // @phpstan-ignore-next-line staticMethod.alreadyNarrowedType
             Assert::string($resourceClass);
             $resource = app($resourceClass);
         }
-        // @phpstan-ignore-next-line staticMethod.alreadyNarrowedType
         Assert::object($resource);
 
-        // @phpstan-ignore-next-line function.alreadyNarrowedType
         if (method_exists($resource, 'canView')) {
-            $actions['view'] = ViewAction::make()
-                ->iconButton()
-                ->visible(static fn (Model $record): bool => (bool) $resource->canView($record));
+            $actions['view'] = self::withRecordReturnTo(
+                ViewAction::make()
+                    ->iconButton()
+                    ->visible(static fn (Model $record): bool => (bool) $resource->canView($record)),
+                isAnchor: true,
+            );
         }
 
-        // @phpstan-ignore-next-line function.alreadyNarrowedType
         if (method_exists($resource, 'canEdit')) {
-            $actions['edit'] = EditAction::make()
-                ->iconButton()
-                ->visible(static fn (Model $record): bool => (bool) $resource->canEdit($record));
+            $actions['edit'] = self::withRecordReturnTo(
+                EditAction::make()
+                    ->iconButton()
+                    ->visible(static fn (Model $record): bool => (bool) $resource->canEdit($record)),
+                isAnchor: ! isset($actions['view']),
+            );
         }
 
-        // @phpstan-ignore-next-line function.alreadyNarrowedType
         if (method_exists($resource, 'canDelete')) {
             $actions['delete'] = DeleteAction::make()
                 ->iconButton()
@@ -374,7 +372,6 @@ trait HasXotTable
 
         // Check if class has the getRelationship method
         // Note: In some contexts (ListRecords), getRelationship() may not exist
-        // @phpstan-ignore-next-line function.alreadyNarrowedType (needed for contexts where method doesn't exist)
         if ($this->shouldShowDetachAction() && method_exists($this, 'getRelationship')) {
             $relationship = $this->getRelationship();
 
@@ -386,6 +383,51 @@ trait HasXotTable
         }
 
         return $actions;
+    }
+
+    /**
+     * Azione di riga con `return_to`: dalla pagina view/edit si torna all'elenco sulla stessa riga
+     * (`#record-N`, vedi IDColumn). L'URL di destinazione e' quello che Filament assegnerebbe
+     * comunque; dove non ce n'e' uno (modale, widget) resta `null`.
+     *
+     * `$isAnchor`: l'ancora `record-N` sta sull'azione quando nessuna IDColumn e' visibile. Una colonna
+     * nascosta di default (la regola nei `*Table` del repo) non entra nel DOM, e senza bersaglio il ritorno
+     * non troverebbe la riga. Con l'ID visibile resta lo `<span>` della colonna: mai due `id` uguali.
+     */
+    private static function withRecordReturnTo(Action $action, bool $isAnchor): Action
+    {
+        $action->url(static function (Action $action): ?string {
+            $url = $action->getHasActionsLivewire()?->getDefaultActionUrl($action);
+            $record = $action->getRecord();
+            $key = $record instanceof Model ? $record->getKey() : null;
+
+            return $url === null || (! is_int($key) && ! is_string($key))
+                ? $url
+                : RecordAnchor::appendReturnTo($url, RecordAnchor::currentUrl(), $key);
+        });
+
+        if (! $isAnchor) {
+            return $action;
+        }
+
+        return $action->extraAttributes(static function (Action $action, Model $record): array {
+            $key = $record->getKey();
+
+            return (! is_int($key) && ! is_string($key)) || self::hasVisibleIdColumn($action)
+                ? []
+                : ['id' => RecordAnchor::id($key)];
+        });
+    }
+
+    private static function hasVisibleIdColumn(Action $action): bool
+    {
+        foreach ($action->getTable()?->getVisibleColumns() ?? [] as $column) {
+            if ($column instanceof IDColumn) {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     /**
@@ -408,6 +450,8 @@ trait HasXotTable
      * Vedi: Modules/Xot/docs/filament/widget-method-visibility-rules.md
      *
      * @return array<int|string, BulkAction>
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
     public function getTableBulkActions(): array
     {
@@ -447,7 +491,6 @@ trait HasXotTable
             }
         }
 
-        /* @phpstan-ignore-next-line function.alreadyNarrowedType */
         if (method_exists($this, 'getModel')) {
             $model = $this->getModel();
             Assert::string($model);
@@ -487,11 +530,15 @@ trait HasXotTable
      * Get list table columns.
      *
      * @return array<string, Column|ColumnGroup|LayoutComponent>
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
     abstract protected function getTableColumns(): array;
 
     /**
      * Get table heading.
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
     protected function getTableHeading(): ?string
     {
@@ -523,6 +570,8 @@ trait HasXotTable
      * Get table empty state actions.
      *
      * @return array<int|string, Action>
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
     protected function getTableEmptyStateActions(): array
     {
@@ -536,13 +585,11 @@ trait HasXotTable
 
     protected function shouldShowAttachAction(): bool
     {
-        // @phpstan-ignore-next-line
         return method_exists($this, 'getRelationship');
     }
 
     protected function shouldShowDetachAction(): bool
     {
-        // @phpstan-ignore-next-line
         return method_exists($this, 'getRelationship');
     }
 
@@ -568,9 +615,9 @@ trait HasXotTable
      */
     protected function getHeaderActions(): array
     {
-        return [
-            'create' => CreateAction::make()->icon('heroicon-o-plus'),
-        ];
+        $create = CreateAction::make()->icon('heroicon-o-plus');
+
+        return ['create' => $create];
     }
 
     /**
@@ -591,6 +638,8 @@ trait HasXotTable
 
     /**
      * Whether table rows are striped.
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
     protected function isTableStriped(): bool
     {
@@ -599,6 +648,8 @@ trait HasXotTable
 
     /**
      * Whether table filters persist in session.
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
     protected function shouldPersistTableFiltersInSession(): bool
     {
@@ -618,6 +669,8 @@ trait HasXotTable
 
     /**
      * Get default table sort column.
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
     protected function getDefaultTableSortColumn(): ?string
     {
@@ -635,6 +688,8 @@ trait HasXotTable
 
     /**
      * Get default table sort direction.
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
     protected function getDefaultTableSortDirection(): ?string
     {
@@ -707,6 +762,16 @@ trait HasXotTable
     }
 
     /**
+     * Esito di `Schema::hasColumn()` per connessione.tabella.colonna, valido per la durata del processo.
+     * Senza, ogni costruzione di tabella (lista, relation manager, ogni update Livewire) lancia una query
+     * su `information_schema.columns` per sapere se esiste `order_column`. Lo schema cambia solo con una
+     * migrazione, quindi non serve rileggerlo a ogni richiesta.
+     *
+     * @var array<string, bool>
+     */
+    private static array $columnExistsCache = [];
+
+    /**
      * Check if model has a specific column via schema introspection.
      * Generic, reusable method for any column check.
      */
@@ -716,7 +781,9 @@ trait HasXotTable
         $model = app($modelClass);
         Assert::isInstanceOf($model, Model::class);
 
-        return $model->getConnection()
+        $cacheKey = $model->getConnectionName().'.'.$model->getTable().'.'.$column;
+
+        return self::$columnExistsCache[$cacheKey] ??= $model->getConnection()
             ->getSchemaBuilder()
             ->hasColumn($model->getTable(), $column);
     }

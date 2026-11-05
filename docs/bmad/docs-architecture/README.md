@@ -32,7 +32,7 @@ trovarli, quale documento è autorevole e come evitare nuova duplicazione.
 
 ## Documenti correlati
 
-- [project-documentation.md](../project-documentation.md) — baseline brownfield;
-- [decision-log.md](../decision-log.md) — decisioni cross-project;
-- [front-office-design-comuni/](../front-office-design-comuni/) — piano Design Comuni;
-- [migration-plan.md](migration-plan.md) — consolidamento progressivo senza perdita.
+- [project-documentation.md](../project-documentation.md): baseline brownfield;
+- [decision-log.md](../decision-log.md): decisioni cross-project;
+- [front-office-design-comuni/](../front-office-design-comuni/): piano Design Comuni;
+- [migration-plan.md](migration-plan.md): consolidamento progressivo senza perdita.

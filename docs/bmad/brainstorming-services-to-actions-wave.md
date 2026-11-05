@@ -1,5 +1,5 @@
 ---
-title: Brainstorming — wave Services verso Spatie Queueable Actions
+title: Brainstorming: wave Services verso Spatie Queueable Actions
 type: bmad-brainstorming
 status: synthesized
 module: Xot
@@ -51,7 +51,7 @@ Una **Spatie QueueableAction** con `execute()`:
    ([filament-blueprint](./services-to-queueable-actions-filament-blueprint.md)).
 
 Adapter / translator Laravel / registry / stream HTTP **non** sono use-case:
-vivono in `Adapters/`, `Contracts/`, `Support/`, `Infrastructure/` — **mai** sotto
+vivono in `Adapters/`, `Contracts/`, `Support/`, `Infrastructure/`: **mai** sotto
 `app/Services/`.
 
 ## Inventario misurato (disco vivo, 2026-10-20)
@@ -146,6 +146,6 @@ riesumazioni merge** + **ratchet sulla directory**. Planning maintain:
 
 Planning maintain: [planning-services-to-actions-zero-folders.md](./planning-services-to-actions-zero-folders.md).
 Story: [services-to-actions-global-wave.story.md](../stories/services-to-actions-global-wave.story.md)
-— **done** su acceptance dirs=0; se merge riesuma Geo →
+- **done** su acceptance dirs=0; se merge riesuma Geo →
 [services-zombie-delete-wave3](../../../Geo/docs/stories/services-zombie-delete-wave3.story.md)
 come delete-again (mai conversione di massa).

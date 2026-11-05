@@ -1,15 +1,9 @@
 ---
-title: "namespace rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "namespace rules"
-issues: []
-discussions: []
-status: draft
+title: "Xot - namespace-rules.md"
+module: Xot
+bmad: true
+status: active
 ---
-
 # Regole di Namespace
 
 ## Struttura dei Namespace

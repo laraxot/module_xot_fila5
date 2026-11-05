@@ -9,6 +9,7 @@ use Filament\Actions\ActionGroup;
 use Filament\Actions\CreateAction;
 use Filament\Resources\Pages\ListRecords as FilamentListRecords;
 use Illuminate\Support\Str;
+use Modules\Xot\Filament\Links\RecordAnchor;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Webmozart\Assert\Assert;
 
@@ -75,38 +76,51 @@ abstract class XotBaseListRecords extends FilamentListRecords
     protected function getHeaderActions(): array
     {
         return [
-            'create' => CreateAction::make()->icon('heroicon-o-plus'),
+            'create' => CreateAction::make()
+                ->icon('heroicon-o-plus')
+                ->url(fn (): string => RecordAnchor::appendReturnTo(
+                    static::getResource()::getUrl('create'),
+                    RecordAnchor::currentUrl(),
+                )),
         ];
     }
 
     /**
      * DEVE ESSERE FINAL
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
-    final public function getTableColumns(): array
+    public function getTableColumns(): array
     {
         return [];
     }
 
     /**
      * DEVE ESSERE FINAL
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
-    final public function getTableActions(): array
+    public function getTableActions(): array
     {
         return [];
     }
 
     /**
      * DEVE ESSERE FINAL
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
-    final public function getTableFilters(): array
+    public function getTableFilters(): array
     {
-       return [];
+        return [];
     }
 
     /**
      * DEVE ESSERE FINAL
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
-    final public function getTableBulkActions(): array
+    public function getTableBulkActions(): array
     {
         return [];
     }

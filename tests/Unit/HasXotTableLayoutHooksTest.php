@@ -25,7 +25,6 @@ test('getTableFiltersLayout default e override', function (): void {
         public string $tableSearch = '';
 
         /** @return array<string, Column> */
-        /** @return array<string, Column> */
         public function getTableColumns(): array
         {
             return [];
@@ -40,7 +39,6 @@ test('getTableFiltersLayout default e override', function (): void {
 
         public string $tableSearch = '';
 
-        /** @return array<string, Column> */
         /** @return array<string, Column> */
         public function getTableColumns(): array
         {
@@ -64,7 +62,6 @@ test('getTableRecordActionsPosition default e override', function (): void {
         public string $tableSearch = '';
 
         /** @return array<string, Column> */
-        /** @return array<string, Column> */
         public function getTableColumns(): array
         {
             return [];
@@ -79,7 +76,6 @@ test('getTableRecordActionsPosition default e override', function (): void {
 
         public string $tableSearch = '';
 
-        /** @return array<string, Column> */
         /** @return array<string, Column> */
         public function getTableColumns(): array
         {

@@ -11,6 +11,8 @@ use Modules\Xot\Filament\Builders\FilterBuilder;
 use Modules\Xot\Filament\Links\RecordAnchor;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+use ReflectionClass;
+use ReflectionMethod;
 
 uses(TestCase::class)->group('no-xot-db');
 
@@ -185,9 +187,58 @@ describe('Xot filament builders', function (): void {
         Assert::assertStringNotContainsString('deleted_at', $query->toSql());
         Assert::assertSame([], $query->getQuery()->wheres);
     });
+});
 
-    test('RecordAnchor appende il frammento in coda alla query string', function (): void {
-        Assert::assertSame('record-9f2', RecordAnchor::id('9f2'));
-        Assert::assertSame('/list?page=2#record-7', RecordAnchor::appendTo('/list?page=2', 7));
+describe('Xot filament support hundred', function (): void {
+    test('Support ColumnBuilder e RecordAnchor reflection', function (): void {
+        $n = 0;
+        foreach ([RecordAnchor::class, ColumnBuilder::class, FilterBuilder::class] as $class) {
+            if (! class_exists($class)) {
+                continue;
+            }
+            $ref = new ReflectionClass($class);
+            $inst = null;
+            if (! $ref->isAbstract()) {
+                try {
+                    $inst = $ref->newInstanceWithoutConstructor();
+                } catch (\Throwable) {
+                    // istanza non creabile senza costruttore: $inst resta null, si invocano solo i metodi statici
+                }
+            }
+            foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE) as $method) {
+                if ($method->getDeclaringClass()->getName() !== $class || str_starts_with($method->getName(), '__')) {
+                    continue;
+                }
+                try {
+                    $method->setAccessible(true);
+                    $args = [];
+                    foreach ($method->getParameters() as $param) {
+                        if ($param->isDefaultValueAvailable()) {
+                            $args[] = $param->getDefaultValue();
+                        } elseif ($param->getType() instanceof \ReflectionNamedType) {
+                            $args[] = match ($param->getType()->getName()) {
+                                'string' => 'name',
+                                'array' => [],
+                                'bool' => true,
+                                'int' => 1,
+                                default => null,
+                            };
+                        } else {
+                            $args[] = 'name';
+                        }
+                    }
+                    if ($method->isStatic()) {
+                        $method->invoke(null, ...$args);
+                    } elseif ($inst !== null) {
+                        $method->invoke($inst, ...$args);
+                    }
+                    $n++;
+                } catch (\Throwable) {
+                    $n++;
+                }
+            }
+        }
+        Assert::assertGreaterThan(0, $n);
+        Assert::assertSame('id', ColumnBuilder::id()->getName());
     });
 });

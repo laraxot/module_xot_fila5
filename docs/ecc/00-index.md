@@ -1,5 +1,9 @@
 ---
+<<<<<<< .merge_file_mBLIL3
 title: "ECC — indice documentazione PTVX"
+=======
+title: "ECC: indice documentazione PTVX"
+>>>>>>> .merge_file_rMJ8mA
 type: index
 module: Xot
 status: active
@@ -12,7 +16,11 @@ related:
   - ../00-INDEX.md
 ---
 
+<<<<<<< .merge_file_mBLIL3
 # ECC — indice documentazione PTVX
+=======
+# ECC: indice documentazione PTVX
+>>>>>>> .merge_file_rMJ8mA
 
 Questi documenti descrivono il plugin ECC nativo installato nell'ambiente Codex e
 il suo uso nel repository PTVX. ECC aggiunge strumenti riutilizzabili; le istruzioni

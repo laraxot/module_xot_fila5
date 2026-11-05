@@ -3,6 +3,7 @@
 declare(strict_types=1);
 use Modules\Xot\Actions\PaDesignColorsAction;
 use Modules\Xot\Datas\MetatagData;
+use Modules\Xot\Datas\XotData;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
@@ -63,4 +64,28 @@ test('Le proprieta hanno i valori di default corretti', function () {
     Assert::assertSame('xot', $metatagData->author);
     Assert::assertSame('2em', $metatagData->logo_height);
     Assert::assertSame('/favicon.ico', $metatagData->favicon);
+});
+
+test('getBrandLogoSvg restituisce stringa vuota se il modulo principale non ha un logo.svg', function (): void {
+    $xot = XotData::make();
+    $original = $xot->main_module;
+    $xot->main_module = 'ModuleWithoutLogoSvg';
+
+    try {
+        Assert::assertSame('', (new MetatagData)->getBrandLogoSvg());
+    } finally {
+        $xot->main_module = $original;
+    }
+});
+
+test('getBrandLogoSvg legge il logo.svg del modulo principale quando esiste', function (): void {
+    $xot = XotData::make();
+    $original = $xot->main_module;
+    $xot->main_module = 'Xot';
+
+    try {
+        Assert::assertStringContainsString('<svg', (new MetatagData)->getBrandLogoSvg());
+    } finally {
+        $xot->main_module = $original;
+    }
 });

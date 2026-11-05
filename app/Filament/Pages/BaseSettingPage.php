@@ -5,16 +5,26 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Pages;
 
 use Filament\Actions\Action;
+<<<<<<< .merge_file_3b1NUK
 use Filament\Facades\Filament;
 use Filament\Forms\Components\TagsInput;
+=======
+use Filament\Forms\Components\TagsInput;
+use Filament\Forms\Components\Toggle;
+>>>>>>> .merge_file_UDdtN3
 use Filament\Notifications\Notification;
 use Filament\Schemas\Schema;
 use Illuminate\Support\Str;
 use Modules\Tenant\Actions\Config\GetTenantConfigArrayAction;
 use Modules\Tenant\Actions\Config\SaveTenantConfigAction;
 use Modules\Xot\Actions\Config\ResolveModuleConfigDataAction;
+<<<<<<< .merge_file_3b1NUK
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
+=======
+use Modules\Xot\Filament\Traits\NavigationLabelTrait;
+use Modules\Xot\Filament\Traits\SuperAdminOnlyTrait;
+>>>>>>> .merge_file_UDdtN3
 use Spatie\LaravelData\Data;
 use Webmozart\Assert\Assert;
 
@@ -42,6 +52,10 @@ use Webmozart\Assert\Assert;
 abstract class BaseSettingPage extends XotBasePage
 {
     use NavigationLabelTrait;
+<<<<<<< .merge_file_3b1NUK
+=======
+    use SuperAdminOnlyTrait;
+>>>>>>> .merge_file_UDdtN3
 
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-cog-6-tooth';
 
@@ -50,6 +64,7 @@ abstract class BaseSettingPage extends XotBasePage
 
     protected string $view = 'xot::filament.pages.base-setting';
 
+<<<<<<< .merge_file_3b1NUK
     public static function canAccess(): bool
     {
         $user = Filament::auth()->user();
@@ -57,6 +72,8 @@ abstract class BaseSettingPage extends XotBasePage
         return $user instanceof UserContract && $user->hasRole('super-admin');
     }
 
+=======
+>>>>>>> .merge_file_UDdtN3
     /**
      * Nome del file di configurazione, senza `.php`: `Progressioni` => `progressioni`.
      */
@@ -89,6 +106,21 @@ abstract class BaseSettingPage extends XotBasePage
         return $this->schema($schema);
     }
 
+<<<<<<< .merge_file_3b1NUK
+=======
+    /**
+     * Every module has at least one operational setting; concrete pages add domain fields.
+     *
+     * @return array<string, object>
+     */
+    protected function getFormSchema(): array
+    {
+        return [
+            'enabled' => Toggle::make('enabled')->default(true)->required(),
+        ];
+    }
+
+>>>>>>> .merge_file_UDdtN3
     public function save(): void
     {
         /** @var array<string, mixed> $state */

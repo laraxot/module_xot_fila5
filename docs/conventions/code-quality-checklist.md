@@ -1,5 +1,5 @@
 ---
-title: "Code Quality Checklist — Audit Subagent (BMAD + Blueprint)"
+title: "Code Quality Checklist: Audit Subagent (BMAD + Blueprint)"
 type: convention-checklist
 status: active
 module: Xot
@@ -44,7 +44,7 @@ Checklist del wave BMAD ([code-quality-wave.md](../bmad/code-quality-wave.md)).
 ## 2. PHPStan (static analysis)
 
 - Comando: `vendor/bin/phpstan analyse Modules --no-progress --memory-limit=512M`
-- Stato: **OK** — `[OK] No errors`
+- Stato: **OK**: `[OK] No errors`
 - Config: solo `laravel/phpstan.neon` (regola non negoziabile; nessun `.neon` aggiunto).
 
 ## 3. Strict types (`declare(strict_types=1)`)
@@ -62,7 +62,7 @@ Target: 2–3 moduli chiave con `filament-blueprint.md` (Xot, Cms, AI, User, Not
 
 ### Xot (base)
 - Resource che estendono `XotBaseResource`: 6/7 (`ModuleResource`, `LogResource`, `CacheResource` + schema sub-files)
-- Azioni `QueueableAction` + `execute()`: **223/241** azioni (`app/Actions/`) — alta conformità; poche eccezioni (test, stub, bak).
+- Azioni `QueueableAction` + `execute()`: **223/241** azioni (`app/Actions/`): alta conformità; poche eccezioni (test, stub, bak).
 - Regola 2 (`label()` hardcoded): non verificata nel dettaglio (richiede lettura per-resource); segnala per follow-up autorizzato.
 
 ### Cms
@@ -74,21 +74,21 @@ Target: 2–3 moduli chiave con `filament-blueprint.md` (Xot, Cms, AI, User, Not
 - Azioni: **29/29** `QueueableAction`; **29/29** `execute()`. Massima conformità.
 
 ### User
-- Resource: 32/35 estendono `XotBaseResource`. 3 eccezioni (cluster Passport self-reference, `ProfileResource` → `BaseProfileResource`, `OAuthRefreshTokenResource` self-reference) — accettabili per architettura cluster.
+- Resource: 32/35 estendono `XotBaseResource`. 3 eccezioni (cluster Passport self-reference, `ProfileResource` → `BaseProfileResource`, `OAuthRefreshTokenResource` self-reference): accettabili per architettura cluster.
 - Azioni: 56/60 `QueueableAction`; 56/60 `execute()`. 4 azioni probabili test/stub.
 
 ### Notify
 - Resource: tutte estendono base (6/6, con `LangBaseResource` per `MailTemplateResource`).
 - Azioni: 50/50 `QueueableAction`; 49/50 `execute()` (1 mancante). Ottimo.
 
-### Regola 3 — Business logic nelle Actions, mai in `*Service`
+### Regola 3: Business logic nelle Actions, mai in `*Service`
 - Non svolto audit completo sui `Service` (fuori scope sequenziale); verificato solo che le azioni principali (Xot, AI, Cms) usano `QueueableAction` + `execute()`. Eventuale verifica `*Service` registrata come nota per wave successivo.
 
 # Soluzioni / Note incrementali
 
 1. **Pint**: intervento necessario ma non eseguito (regola: non correggere automaticamente, documenta solo). File con problemi elencati sopra; raccomandato `vendor/bin/pint --dirty` con autorizzazione separata per lotto controllato.
 2. **Strict types**: 17 file da aggiornare (fabbrica + migrazione + seeder + 1 test page). Lotti sicuri: `Cms/database/Factories/`, `Cms/database/Migrations/`, `Cms/database/Seeders/`, `Media/app/Filament/Clusters/极est/Pages/AwsTest.php`. Nessun `app/Contracts/` o `app/Actions/` toccato.
-3. **Blueprint — hardcoded label()**: non verificato nel dettaglio; se necessario, audit per-resource su `XotBaseResource`, `ModuleResource`, `LogResource`, `AiActionProposalResource`, `PageContentResource`.
+3. **Blueprint: hardcoded label()**: non verificato nel dettaglio; se necessario, audit per-resource su `XotBaseResource`, `ModuleResource`, `LogResource`, `AiActionProposalResource`, `PageContentResource`.
 4. **PHP commenti / doc**: nessuna modifica a `.neon`; `phpstan.neon` non toccato.
 
 # Link

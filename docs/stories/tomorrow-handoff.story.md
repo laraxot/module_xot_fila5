@@ -1,5 +1,5 @@
 ---
-title: Handoff BMAD — continua domani
+title: Handoff BMAD: continua domani
 type: story
 module: Xot
 status: ready-for-dev
@@ -24,7 +24,7 @@ related:
   - ../conventions/docs-organization.md
 ---
 
-# Handoff — continua domani
+# Handoff: continua domani
 
 Hub unico per ripartire senza rileggere tutta la chat. Religione: PHPStan zero
 non ferma il lavoro; BMAD + second brain + Filament blueprint restano obbligatori.

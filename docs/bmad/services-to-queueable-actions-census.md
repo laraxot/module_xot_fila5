@@ -34,7 +34,7 @@ letti dal filesystem e dalla storia git, non decisioni: la decisione per classe
 # Cosa dicono i dati
 
 
-## Addendum snapshot filesystem — 2026-10-20 (sera, prevale)
+## Addendum snapshot filesystem: 2026-10-20 (sera, prevale)
 
 | Misura | Esito |
 |--------|-------|
@@ -44,13 +44,13 @@ letti dal filesystem e dalla storia git, non decisioni: la decisione per classe
 | Actions `app/Actions/*.php` | **~770** |
 | `laraxot/dev` `app/Services` (Xot/Fixcity/Notify/User/Geo/Tenant) | **0** file |
 | Falsi positivi `*Service.php` | `Themes/Sixteen/.../MunicipalService.php`, `Service.php` = **modelli dominio** (servizi comunali), non layer Services |
-| Residuo Blade | `Themes/TwentyOne/.../hero/dynamic.blade.php` — ex `PredictService` (modulo Predict assente); orchestratore → **props**, non layer Services |
-| Ratchet | `NoServicesTest.php` (DCP-270) — allowlist vuota; **3 PASS** (sera, pest-scratch) |
+| Residuo Blade | `Themes/TwentyOne/.../hero/dynamic.blade.php`: ex `PredictService` (modulo Predict assente); orchestratore → **props**, non layer Services |
+| Ratchet | `NoServicesTest.php` (DCP-270): allowlist vuota; **3 PASS** (sera, pest-scratch) |
 | `use Modules\…\Services\` prod | **0** |
 
 Religione: la cartella `app/Services` **non deve riapparire**. Merge che la riesuma → DELETE se Action/adapter gia' esistono; altrimenti migrare a QueueableAction. Planning maintain: [planning-services-to-actions-zero-folders.md](./planning-services-to-actions-zero-folders.md).
 
-## Addendum snapshot filesystem — 2026-10-20 (pomeriggio, storico)
+## Addendum snapshot filesystem: 2026-10-20 (pomeriggio, storico)
 
 Il census storico (42 file) **non** rappresenta il working tree corrente. Per lo
 stato vivo usare l'addendum **sera** sopra.
