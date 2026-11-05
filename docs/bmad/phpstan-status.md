@@ -1,5 +1,6 @@
 ---
-title: "Xot - phpstan-status.md"
+title: "Stato del gate PHPStan sui moduli"
+type: status
 module: Xot
 status: active
 created: 2026-10-28
@@ -9,6 +10,11 @@ qmd: "PHPStan Modules stato corrente analisi full tree level massimo"
 related:
   - ./stories/ecc-codex-plugin-setup.story.md
 ---
+<<<<<<< .merge_file_onGVl1
+
+# Stato del gate PHPStan sui moduli
+
+=======
 # PHPStan Status: Xot
 
 # Stato del gate PHPStan sui moduli
@@ -45,6 +51,7 @@ Dettaglio e lezioni: [dev-story](../stories/phpstan-cleanup-xot-rest.dev.md).
 
 # Stato del gate PHPStan sui moduli
 
+>>>>>>> .merge_file_twuE1P
 ## Verifica corrente
 
 È stato eseguito il comando richiesto da root:
@@ -68,4 +75,8 @@ rilanciarla dopo modifiche PHP che possono cambiare i risultati.
 ## Riferimenti
 
 - Story e dettaglio dei gate: [ECC e PHPStan](./stories/ecc-codex-plugin-setup.story.md).
+<<<<<<< .merge_file_onGVl1
 - Regola source-first: [memoria condivisa](../../../../../bashscripts/ai/wiki/memories/source-first-before-fix.md).
+=======
+- Regola source-first: [memoria condivisa](../../../../../bashscripts/ai/wiki/memories/source-first-before-fix.md).
+>>>>>>> .merge_file_twuE1P

@@ -100,3 +100,18 @@ public function panel(Panel $panel): Panel
 - [Configurazione Moduli](../../../docs/MODULE_ARCHITECTURE.md)
 
 *Ultimo aggiornamento: 2025-01-06*
+
+## XotBasePanelProvider: pannelli trasversali e tenancy
+
+Oltre al pannello admin del modulo (`{modulo}::admin`, `/{modulo}/admin`), un modulo può ospitare pannelli trasversali (cliente, fornitore, operatore) estendendo `XotBasePanelProvider` e sovrascrivendo:
+
+| Proprietà | Default | Uso |
+| --- | --- | --- |
+| `$panelId` / `$panelPath` | `{modulo}::admin` / `{modulo}/admin` | id e path del pannello trasversale (es. `roosko::customer`, `roosko/customer`) |
+| `$componentsDirectory` | `null` | sottocartella di `app/Filament` da scoprire: con `'Customer'` il pannello scopre solo `app/Filament/Customer/{Resources,Pages,Widgets,Clusters}` |
+| `$discoverModuleComponents` | `true` | `false` per montare a mano i componenti |
+| `$hasTenancy` | `false` | `true` per la [tenancy di Filament](https://filamentphp.com/docs/5.x/users/tenancy): tenant = `XotData::getTenantClass()`, identificato nell'URL dallo `slug` |
+
+Con la tenancy accesa lo scope automatico di Filament vale solo dentro quel pannello: i pannelli admin degli stessi modelli non sono filtrati. Lo scope non è autorizzazione: policy, `canAccessTenant()` e query fuori dalle resource (widget, select, export) vanno filtrati a mano.
+
+Story: [tenancy-pannelli](stories/tenancy-pannelli.story.md).

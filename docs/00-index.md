@@ -26,9 +26,12 @@ SettingPage nei moduli, solo dove serve (epic): [stories/module-setting-pages.ep
 Header delle liste e toggle griglia/lista: [stories/list-header-buttons-and-grid-toggle.story.md](./stories/list-header-buttons-and-grid-toggle.story.md).
 
 Risoluzione Form/Table/Infolist (nome dal modello, poi dalla Resource): [stories/resource-part-class-by-resource-name.story.md](./stories/resource-part-class-by-resource-name.story.md).
+<<<<<<< .merge_file_QJN8ww
+=======
 
 Percorsi duplicati per sola differenza di maiuscole (audit di flotta e piano): [stories/case-only-duplicates-fleet-audit.story.md](./stories/case-only-duplicates-fleet-audit.story.md).
 
 ## Cosa manca per completare
 
 [completion-status.md](./completion-status.md): indicatori misurati, problemi noti e story aperte (2026-10-28).
+>>>>>>> .merge_file_1uauO0
