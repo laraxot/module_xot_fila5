@@ -68,6 +68,12 @@ class CheckAccessorTwinsCommand extends Command
                     continue;
                 }
 
+                // Solo metodi dichiarati nei file dei moduli (esclude framework/trait vendor come HasFactory, HasTranslations).
+                $declaredIn = (string) $method->getDeclaringClass()->getFileName();
+                if ($declaredIn === '' || ! str_starts_with($declaredIn, base_path('Modules'))) {
+                    continue;
+                }
+
                 $accessors++;
 
                 if (! $reflection->hasMethod($twin)) {

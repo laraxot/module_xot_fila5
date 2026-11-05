@@ -9,10 +9,10 @@ tags: [eloquent, accessor, mutator, audit, quality]
 qmd: "Eloquent accessor gemello contratto public raw value delega get calcolo puro inventario moduli temi"
 related:
   - ../../../../Sigma/docs/bmad/stories/accessor-twin-contract-audit.story.md
-  - ../stories/setting-page-tutti-i-moduli.story.md
 references:
-  - ../../../Sigma/docs/bmad/accessor-twin-method.md
-  - ../../../Ptv/docs/bmad/accessor-twin-method.md
+  - ../../../../Sigma/docs/bmad/accessor-twin-method.md
+  - ../../../../Ptv/docs/bmad/accessor-twin-method.md
+  - ../../wiki/rules/accessor-twin-method.md
   - ../../../../bashscripts/ai/wiki/rules/accessor-twin-method.md
 ---
 
@@ -26,6 +26,12 @@ nello stesso file e nello stesso tipo PHP. L'accessor è pubblico, riceve il val
 grezzo tipizzato `$value`, conserva la semantica di cache/persistenza del dominio e
 delega il calcolo al gemello pubblico senza effetti collaterali.
 
+La revisione include anche la struttura dei modelli: accessor/mutator con i
+relativi metodi di appoggio e relazioni Eloquent dichiarati direttamente nel
+modello vanno spostati in trait dedicati del modulo owner. Il modello resta il
+punto di composizione; nomi, visibilità, tipi, cache e comportamento relazionale
+devono restare invariati.
+
 ## Criteri di accettazione
 
 - [ ] La regola canonica spiega same-file/same-type, firma, visibilità, valore grezzo, delega, purezza,
@@ -37,6 +43,13 @@ delega il calcolo al gemello pubblico senza effetti collaterali.
 - [ ] Tutti i finding confermati sono corretti preservando risultati, cache e
   scritture di dominio; nessun wrapper cieco maschera relazioni o ricalcola dati
   già presenti.
+- [ ] Accessor/mutator con i relativi helper sono collocati in trait dedicati; i
+  metodi di relazione Eloquent sono collocati in trait di relazioni dedicati.
+  Ogni estrazione conserva firme, visibilità, PHPDoc, risoluzione dei trait e
+  comportamento osservabile dei consumer.
+- [ ] L'inventario distingue relazioni vere e metodi omonimi non relazionali; ogni
+  eccezione (codice vendor/generato o override intenzionale) è motivata nel doc
+  del modulo owner.
 - [ ] L'analizzatore automatico copre file, tipo PHP, firma e delega, è registrato in Artisan e
   produce lo stesso inventario ripetibile.
 - [ ] Story, documentazione per i moduli owner, `docs/sprint-status.yaml` e second
@@ -67,3 +80,10 @@ delega il calcolo al gemello pubblico senza effetti collaterali.
 Le modifiche a Sigma, Ptv e a eventuali moduli leaf hanno story owner e lock
 separati. `docs/sprint-status.yaml` ha un lock attivo di un'altra sessione e resta
 intatto finché il lock non viene rilasciato.
+
+## Claim aggiornato
+
+- Ambito aggiunto su richiesta utente: estrazione in trait dei mutator/accessor
+  con helper e delle relazioni Eloquent dichiarate nelle classi modello.
+- Owner coordinatore: Xot. I worker mantengono scope per modulo e lock per file;
+  i documenti owner e lo sprint status si aggiornano con i rispettivi lock.

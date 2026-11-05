@@ -36,23 +36,23 @@ it('handles where extra attribute scope', function (): void {
 
 it('gets and sets extra attributes', function (): void {
     $model = new SchemalessTestModel;
-    $model->setExtraAttribute('foo', 'bar');
+    $model->setExtraValue('foo', 'bar');
 
-    Assert::assertSame('bar', $model->getExtraAttribute('foo'));
+    Assert::assertSame('bar', $model->getExtraValue('foo'));
     Assert::assertTrue($model->hasExtraAttribute('foo'));
     Assert::assertFalse($model->hasExtraAttribute('baz'));
 });
 
 it('returns all extra attributes as array', function (): void {
     $model = new SchemalessTestModel;
-    $model->setExtraAttribute('a', 1);
+    $model->setExtraValue('a', 1);
 
     Assert::assertSame(['a' => 1], $model->getExtraAttributes());
 });
 
 it('removes extra attribute', function (): void {
     $model = new SchemalessTestModel;
-    $model->setExtraAttribute('temp', 'val');
+    $model->setExtraValue('temp', 'val');
 
     Assert::assertTrue($model->hasExtraAttribute('temp'));
     $model->removeExtraAttribute('temp');
