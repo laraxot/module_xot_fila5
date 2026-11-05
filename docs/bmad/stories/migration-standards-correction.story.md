@@ -8,7 +8,7 @@ updated: 2026-11-05
 tags: [bmad, migration, docs, xotbase]
 qmd: "Xot migration standards model filename model_class table connection forward-only safety"
 related:
-  - ../../../Lang/docs/stories/user-id-uuid-migration-convention.story.md
+  - ../../../../Lang/docs/stories/user-id-uuid-migration-convention.story.md
   - ../../migration-standards.md
 ---
 # Correggere il contratto documentato delle migrazioni Xot
