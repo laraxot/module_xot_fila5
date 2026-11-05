@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Translation\ArrayLoader;
 use Illuminate\Translation\Translator;
+use Mockery\Expectation;
+use Mockery\ExpectationDirector;
+use Mockery\LegacyMockInterface;
 use Mockery\MockInterface;
 use Modules\User\Database\Factories\TenantFactory;
 use Modules\User\Database\Factories\UserFactory;
@@ -126,6 +129,23 @@ abstract class XotBaseTestCase extends BaseTestCase
         $mock = $this->mock($abstract, $callback);
 
         return $mock;
+    }
+
+    /**
+     * Mockery 1.6 shouldReceive() always returns a CompositeExpectation, whatever its docblock says, so a
+     * wrapper with a native `Expectation` return type throws TypeError at runtime. The director holds the real
+     * Expectation that shouldReceive() just registered, which keeps chained with()/once()/andReturn() typed.
+     */
+    public static function singleExpectation(LegacyMockInterface $mock, string $method): Expectation
+    {
+        $mock->shouldReceive($method);
+        $director = $mock->mockery_getExpectationsFor($method);
+        self::assertInstanceOf(ExpectationDirector::class, $director);
+        $expectations = $director->getExpectations();
+        $expectation = end($expectations);
+        self::assertInstanceOf(Expectation::class, $expectation);
+
+        return $expectation;
     }
 
     public function skipTest(string $message = ''): never
