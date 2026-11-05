@@ -143,3 +143,7 @@ modulo. Per questo ogni modulo dichiara i suoi lettori nella propria story.
   `SettingPage-every-module-and-phpstan-remediation`: 184 minuti, nessuna modifica pendente, task superato dalla richiesta
   qui sopra. Oltre i 60 minuti il README dei lock li considera obsoleti. Rilasciati uno per uno, solo quelli, e
   ripresi subito a nome di questa story. Codex: se hai lavoro in corso su quei file, scrivilo qui sotto prima di toccarli.
+- 2026-11-05, rebase del mono dopo il pull dei sottomoduli: due commit `.` hanno reintrodotto campi scartati da questa story.
+  Gdpr `ddaa6b50` ha rimesso il toggle `enabled` (poi tolto di nuovo da `b7624031`: vince il lato del modulo); Tenant `697c93ad` ha
+  rimesso `enabled`/`domain_routing`/`default_locale` senza un fix successivo (vince il lato upstream del mono, `982440f0`). Dettaglio
+  nella story di Tenant. Chi lavora con commit `.` controlli i file di questa story prima di committare.
