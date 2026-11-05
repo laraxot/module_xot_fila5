@@ -16,7 +16,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
         $pivot = new TestConcreteMorphPivot;
 
         // Assert
-        Assert::assertSame('test_morph_pivot', $pivot->getTable());
+        Assert::assertSame('test_morph_pivots', $pivot->getTable());
     });
 
     test('it can manage morph type', function (): void {
@@ -87,7 +87,8 @@ describe('Base Morph Pivot Business Logic', function (): void {
     test('it can manage timestamps', function (): void {
         // Arrange
         $pivot = new TestConcreteMorphPivot;
-        $now = now();
+        // Le date passano per fromDateTime(): la precisione e' al secondo, come la colonna DB.
+        $now = now()->startOfSecond();
         $pivot->setAttribute('created_at', $now);
         $pivot->setAttribute('updated_at', $now);
 
@@ -103,7 +104,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     test('it can manage soft deletes', function (): void {
         // Arrange
         $pivot = new TestConcreteMorphPivot;
-        $deletedAt = now();
+        $deletedAt = now()->startOfSecond();
         $pivot->setAttribute('deleted_at', $deletedAt);
 
         // Act
