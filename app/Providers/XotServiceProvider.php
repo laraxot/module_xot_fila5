@@ -28,14 +28,9 @@ use Illuminate\Support\Str;
 use Modules\Xot\Actions\Composer\RegisterRuntimePsr4NamespacesAction;
 use Modules\Xot\Actions\Factory\GetFactoryAction;
 use Modules\Xot\Actions\PaDesignColorsAction;
-<<<<<<< HEAD
 use Modules\Xot\Console\Commands\BuildTestSqliteCommand;
 use Modules\Xot\Console\Commands\CheckAccessorTwinsCommand;
 use Modules\Xot\Console\Commands\GenerateFilamentResources;
-=======
-use Modules\Xot\Console\Commands\GenerateFilamentResources;
-use Modules\Xot\Console\Commands\CheckAccessorTwinsCommand;
->>>>>>> laraxot/dev
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Exports\Jobs\XotCreateXlsxFile;
 use Modules\Xot\Filament\Traits\HasXotTable;
@@ -262,10 +257,7 @@ class XotServiceProvider extends XotBaseServiceProvider
             $this->commands([
                 GenerateFilamentResources::class,
                 CheckAccessorTwinsCommand::class,
-<<<<<<< HEAD
                 BuildTestSqliteCommand::class,
-=======
->>>>>>> laraxot/dev
                 // \Modules\Xot\Console\Commands\OptimizeFilamentMemoryCommand::class,
             ]);
         }
