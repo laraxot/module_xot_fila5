@@ -11,12 +11,9 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Modules\Xot\Models\BaseModel;
 use Modules\Xot\Models\Module;
-<<<<<<< .merge_file_vFNYeC
-=======
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Models\Traits\RelationX;
 use Modules\Xot\Models\XotBaseModel;
->>>>>>> .merge_file_QLGa4G
 use Modules\Xot\Tests\Fixtures\Models\TestConcreteBaseModel;
 use Modules\Xot\Tests\TestCase;
 use Modules\Xot\Traits\Updater;
@@ -33,8 +30,6 @@ uses(TestCase::class);
 function createXotBaseModelFixture(): BaseModel
 {
     return new TestConcreteBaseModel;
-<<<<<<< .merge_file_vFNYeC
-=======
 }
 
 /**
@@ -44,7 +39,6 @@ function createXotBaseModelFixture(): BaseModel
 final class XotBaseModelFixtureObserver
 {
     public function saving(Model $model): void {}
->>>>>>> .merge_file_QLGa4G
 }
 
 describe('Xot Base Model Business Logic', function (): void {
@@ -60,14 +54,10 @@ describe('Xot Base Model Business Logic', function (): void {
         // Arrange & Act
         $traits = class_uses_recursive(createXotBaseModelFixture());
 
-<<<<<<< .merge_file_vFNYeC
-        Assert::assertNotEmpty(class_uses_recursive($baseModel));
-=======
         // Assert
         Assert::assertContains(HasXotFactory::class, $traits);
         Assert::assertContains(RelationX::class, $traits);
         Assert::assertContains(Updater::class, $traits);
->>>>>>> .merge_file_QLGa4G
     });
 
     test('it can be instantiated without database', function (): void {
