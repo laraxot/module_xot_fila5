@@ -43,6 +43,32 @@ coppia in due trait diversi: la regola di co-locazione del [gemello accessor](./
 - Tenere metodi di relazione nello stesso gruppo semplifica l'analisi delle dipendenze,
   degli eager load e dei trait che possono fare shadowing.
 
+<<<<<<< HEAD
+=======
+## Relazioni polimorfiche su tabelle condivise
+
+Non sostituire una relazione in base al nome `polimorfica`: scegliere il metodo in
+base alla struttura delle chiavi e al tipo della relazione.
+
+Per una tabella condivisa come `logs`, con una colonna testuale `tbl` e una chiave
+`id_tbl`, questo pattern:
+
+```php
+return $this->hasMany(MyLog::class, 'id_tbl', 'id')
+    ->where('tbl', $this->getTable());
+```
+
+equivale a `tableMorphMany(MyLog::class)`. Quest'helper restituisce una
+`HasMany` con il filtro sul nome tabella e non usa il morph map di Laravel.
+`morphToManyX()` crea invece una `MorphToMany` basata su tabella pivot, richiede
+anche il nome morph e non è un sostituto compatibile.
+
+L'audit del 2026-11-05 non ha trovato varianti manuali del pattern nei moduli o
+nei temi. Cinque relazioni `MyLog` usano già `tableMorphMany()` in Performance e
+IndennitaResponsabilita; una relazione aggiunge anche un filtro di dominio su
+`note`, che va mantenuto quando si usa l'helper.
+
+>>>>>>> laraxot/dev
 ## Procedura di estrazione
 
 1. Verificare i chiamanti, i trait già usati e ogni dichiarazione omonima prima di

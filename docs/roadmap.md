@@ -95,7 +95,10 @@ XotBaseColumn       // Table column with translation support
 GetModulePathByGeneratorAction
 GetFactoryAction
 GetViewByClassAction
+<<<<<<< HEAD
 ApplyTenancyToPanelAction
+=======
+>>>>>>> laraxot/dev
 ```
 
 #### **3. Contract System**

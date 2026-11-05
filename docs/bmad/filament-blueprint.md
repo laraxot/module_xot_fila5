@@ -31,8 +31,15 @@ i confini di dominio.
 - `ModuleResource`
 - `LogResource`
 
+<<<<<<< HEAD
 `XotBaseMigration` risolve il modello dal file `create_{modello}_table`.
 La Resource non lo ricalca con `$model_class` sulla migration.
+=======
+`XotBaseMigration` risolve il modello dal file `create_{tabella_plurale}_table`.
+Le migrazioni di modifica usano il suffisso della tabella plurale e dichiarano
+`$model_class`; i dettagli sono nel [contratto migration Xot](../migration-standards.md).
+La Resource non ricalca questa associazione con `$model_class` sulla migration.
+>>>>>>> laraxot/dev
 
 ## Form / Table / Infolist
 

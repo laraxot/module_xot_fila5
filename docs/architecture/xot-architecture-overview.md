@@ -35,7 +35,11 @@ Xot is the foundational layer of Laraxot. It provides base classes, conventions,
 220+ reusable actions in `app/Actions/`:
 - **Cast**: `SafeStringCast`, `SafeIntCast`, `SafeArray`, etc.
 - **Model**: `StoreAction`, `UpdateAction`, `CountAction`, `GenerateModelByTable`
+<<<<<<< HEAD
 - **Panel**: `ApplyMetatagToPanelAction`, `ApplyTenancyToPanelAction`
+=======
+- **Panel**: `ApplyMetatagToPanelAction` (la tenancy si accende con `$hasTenancy` in `XotBasePanelProvider`, vedi `panel-provider.md`)
+>>>>>>> laraxot/dev
 - **Export**: `ExportXlsByCollection`, `ExportXlsByQuery`, `PdfByView`
 - **Translation**: `DeepLTranslateAction` (DeepL, Google, MyMemory, Systran, Apertium)
 

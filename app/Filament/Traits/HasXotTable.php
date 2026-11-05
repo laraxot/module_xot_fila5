@@ -43,6 +43,10 @@ use Modules\UI\Filament\Traits\HasTableLayoutPage;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Filament\PlainTextFromFilamentValueAction;
 use Modules\Xot\Actions\GetTransKeyAction;
+<<<<<<< HEAD
+=======
+use Modules\Xot\Actions\Model\ModelHasColumnAction;
+>>>>>>> laraxot/dev
 use Modules\Xot\Filament\Links\RecordAnchor;
 use RuntimeException;
 use Webmozart\Assert\Assert;
@@ -762,6 +766,7 @@ trait HasXotTable
     }
 
     /**
+<<<<<<< HEAD
      * Esito di `Schema::hasColumn()` per connessione.tabella.colonna, valido per la durata del processo.
      * Senza, ogni costruzione di tabella (lista, relation manager, ogni update Livewire) lancia una query
      * su `information_schema.columns` per sapere se esiste `order_column`. Lo schema cambia solo con una
@@ -772,6 +777,8 @@ trait HasXotTable
     private static array $columnExistsCache = [];
 
     /**
+=======
+>>>>>>> laraxot/dev
      * Check if model has a specific column via schema introspection.
      * Generic, reusable method for any column check.
      */
@@ -781,11 +788,17 @@ trait HasXotTable
         $model = app($modelClass);
         Assert::isInstanceOf($model, Model::class);
 
+<<<<<<< HEAD
         $cacheKey = $model->getConnectionName().'.'.$model->getTable().'.'.$column;
 
         return self::$columnExistsCache[$cacheKey] ??= $model->getConnection()
             ->getSchemaBuilder()
             ->hasColumn($model->getTable(), $column);
+=======
+        // Cache per connessione.tabella.colonna ora in ModelHasColumnAction, condivisa con i componenti
+        // Filament che si nascondono dove la colonna manca.
+        return app(ModelHasColumnAction::class)->execute($model, $column);
+>>>>>>> laraxot/dev
     }
 
     /**
