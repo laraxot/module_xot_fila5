@@ -6,6 +6,8 @@ namespace Modules\Xot\Tests\Unit\Docs;
 
 use function Safe\glob;
 
+uses(\Modules\Xot\Tests\TestCase::class);
+
 /**
  * `docs/chat/` e' un archivio in sola lettura.
  *
