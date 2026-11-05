@@ -6,9 +6,10 @@ status: in-progress
 created: 2026-11-05
 updated: 2026-11-05
 tags: [eloquent, accessor, mutator, audit, quality]
-qmd: "Eloquent accessor gemello contratto public raw value delega get calcolo puro inventario moduli temi"
+qmd: "Eloquent accessor gemello get Attribute stesso file trait mutator relazioni modello tableMorphMany MyLog id_tbl tbl morphToManyX pivot PHPStan Pest Modules Themes"
 related:
   - ../../../../Sigma/docs/bmad/stories/accessor-twin-contract-audit.story.md
+  - ../../wiki/rules/table-morph-many.md
 references:
   - ../../../../Sigma/docs/bmad/accessor-twin-method.md
   - ../../../../Ptv/docs/bmad/accessor-twin-method.md
@@ -34,7 +35,7 @@ devono restare invariati.
 
 ## Criteri di accettazione
 
-- [ ] La regola canonica spiega same-file/same-type, firma, visibilità, valore grezzo, delega, purezza,
+- [x] La regola canonica spiega same-file/same-type, firma, visibilità, valore grezzo, delega, purezza,
   cache/persistenza, attributi virtuali ed eccezioni motivate.
 - [ ] Inventario completo dei candidati in `laravel/Modules/*` e
   `laravel/Themes/*`, con classificazione dei falsi positivi e dei trait shadowed.
@@ -50,6 +51,9 @@ devono restare invariati.
 - [ ] L'inventario distingue relazioni vere e metodi omonimi non relazionali; ogni
   eccezione (codice vendor/generato o override intenzionale) è motivata nel doc
   del modulo owner.
+- [ ] Relazioni log legacy con `id_tbl` e `tbl` sono rilevate e usano l'helper
+  uno-a-molti `tableMorphMany()`. `morphToManyX()` è riservato ai pivot molti-a-molti;
+  le due semantiche non vanno confuse.
 - [ ] L'analizzatore automatico copre file, tipo PHP, firma e delega, è registrato in Artisan e
   produce lo stesso inventario ripetibile.
 - [ ] Story, documentazione per i moduli owner, `docs/sprint-status.yaml` e second
@@ -87,3 +91,26 @@ intatto finché il lock non viene rilasciato.
   con helper e delle relazioni Eloquent dichiarate nelle classi modello.
 - Owner coordinatore: Xot. I worker mantengono scope per modulo e lock per file;
   i documenti owner e lo sprint status si aggiornano con i rispettivi lock.
+
+## Esito intermedio
+
+- Il PHPStan full-tree richiesto dall'utente è stato eseguito con configurazione
+  `phpstan.neon`: 10.565 file analizzati, `[OK] No errors`.
+- Themes: zero metodi applicativi `get*Attribute()` trovati.
+- Lang, Tenant, Job, Notify e Xot: 49 metodi mutator/helper e relazioni trasferiti
+  in trait dedicati; checker accessor zero gemelli mancanti, PHPStan verde nei cinque
+  moduli.
+- Incentivi e IndennitaCondizioniLavoro: 42 accessor auditati, zero casi senza
+  gemello/delega; 34 relazioni trasferite da 19 modelli. PHPStan verde in entrambi.
+- Sigma: 79 accessor, zero gemelli mancanti; 26 relazioni in 14 classi modellate
+  in trait dedicati. PHPStan verde; Pest modulo ancora in esecuzione al momento
+  dell'ultimo aggiornamento.
+- User e Media: accessori e helper del `BaseUser`/`MediaConvert` sono già separati
+  in trait dedicati; l'audit delle altre relazioni User è in corso.
+- Relazioni log con `id_tbl`/`tbl`: la scansione non trova più la forma inline
+  `hasMany(MyLog::class, 'id_tbl', 'id')->where(...)`; i consumer usano
+  `tableMorphMany()`. `morphToManyX()` resta riservato alle relazioni many-to-many
+  con pivot e nome morph.
+- La migrazione Lang per `translations.user_id` è in verifica sotto lock owner.
+  `migrate --pretend` ha mostrato che `tableUpdate()` emette una creazione vuota
+  se la tabella target manca: va aggiunta una guardia esplicita prima della chiusura.
