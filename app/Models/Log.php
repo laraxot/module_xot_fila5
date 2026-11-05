@@ -61,9 +61,14 @@ class Log extends BaseModel
         return $rows;
     }
 
-    public function getFileContentAttribute(?string $value): ?string
+    public function getFileContent(): string
     {
         return File::get(storage_path('logs/'.$this->id.'.log'));
+    }
+
+    public function getFileContentAttribute(?string $value): ?string
+    {
+        return $this->getFileContent();
     }
 
     /** @return array<string, string> */

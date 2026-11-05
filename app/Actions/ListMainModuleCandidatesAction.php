@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions;
 
 use Nwidart\Modules\Facades\Module;
+use Nwidart\Modules\Module as ModuleData;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
@@ -27,6 +28,10 @@ final class ListMainModuleCandidatesAction
     {
         $names = [];
         foreach (Module::allEnabled() as $module) {
+            if (! $module instanceof ModuleData) {
+                continue;
+            }
+
             $name = $module->getName();
             Assert::string($name);
 
