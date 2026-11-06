@@ -34,3 +34,23 @@ Il run sul progetto intero non ha errori in nessun altro modulo: Activity, Incen
 - Notify (10 errori): MailTemplateVersion.php:86 e NotificationTemplateVersion.php:59 (docblock di relazione fuori posto su restoreTemplate), Traits/*Relations.php (generics), NotifyThemeMutators (getLogo e getLogoAttribute con array<string, mixed>), NotifyThemeRelations::linkable (MorphTo<Model, $this>).
 - Proprietario: `agent-general-accessors` (task accessor-methods-trait-extraction, lock 09:42, file ancora in modifica alle 10:58). Non forzo il lock.
 - Richiesta: includere queste correzioni nel proprio batch (ricetta: relazioni con `/** @return BelongsTo<Related, $this> */` e `public function`, docblock fuori posto rimossa, array tipizzati). Alla chiusura del lock rilancio `analyse Modules`; obiettivo exit 0.
+
+## Sweep swarm 2026-11-05 (sera): 253 → 110 → 71, i 71 residui sono di ambiente
+Mandato permanente dell'utente (memoria `feedback_phpstan_swarm_standing_order`): `analyse Modules` in ordine casuale, in parallelo, partendo dallo scopo del codice e non dalla riga d'errore.
+- **Misure** (stesso comando, `--error-format=json`): 253 → 110 → **71**. I 71 sono solo Cms 50 e Geo 21; ogni altro modulo è a 0, Restaurant compreso (37 → 0).
+- **Cause radice trovate** (non le righe):
+  - Il lato `HEAD` dei marcatori di merge aveva tolto i `use Trait` dai modelli: i `trait.unused` a grappolo di User/Lang non erano codice morto. Ripristinati in avanti (`User/docs/stories/phpstan-unused-relation-traits.story.md`).
+  - `BaseTenant` aveva perso `HasUuids`. Ripristinato senza l'alias `resolveRouteBindingQuery` del lato `laraxot/dev`: in Spatie Sluggable 4.0.x quel metodo non è in `HasSlug`, l'alias era un fatal in autoload. Guardia: `User/tests/Unit/Models/BaseTenantKeyTest.php` (non eseguita, vedi sotto).
+  - Lang: due copie piatte stale di `PostMutators`/`PostRelations` rientrate col sync (`merge -s resolve` non gestisce le rinomine); rimosse, le sottocartelle sono le più nuove (`Lang/docs/stories/phpstan-zero-errors-lang.story.md`).
+  - Restaurant: tipi di dominio, UI Filament e test, tre story (`Restaurant/docs/stories/phpstan-*-types.story.md`). `@property $pec` di `Company` e `Location` allineato al nome reale `certified_email` (la migrazione `translate_identifiers_to_english` lo aveva già rinominato).
+- **Residui bloccati dall'ambiente, non dal codice:**
+  - Cms 50: `laravel/head` è dichiarato in `Cms/composer.json` ma assente da `composer.lock` e `vendor/` (`Laravel\Head\Schema\*` not found). Story `Cms/docs/stories/phpstan-head-schema.story.md`.
+  - Geo 21: `Filament\Support\Components\Attributes\Exposed` non esiste nel Filament installato (5.9.0; il lock dice 5.10.3, `composer.json` chiede ^5.11).
+  - Un `composer update -W` mirato non risolve (`laravel/tinker` contro illuminate 13; `symfony/process` bloccato da security advisory). Nessun file modificato: l'aggiornamento delle dipendenze è una decisione dell'utente, non si fa da qui.
+- **Non verificato:** Pest. `.env.testing` ha `DB_USERNAME` vuoto e `TestCase` fallisce con `Access denied for user ''@'localhost'` prima di ogni asserzione. La prova è PHPStan più `php -r` sul bootstrap reale. Test da eseguire quando l'ambiente c'è: `BaseTenantKeyTest`, e per Restaurant `CashRegister::methods()`, `advanceAction` con note vuote, `tableCardsAll()`.
+- **Decisioni aperte:**
+  - `Restaurant ChangesOrder`: con `Safe\preg_match` una nota con UTF-8 non valido ora lancia `PcreException` invece di essere trattata come nota libera.
+  - `Order::$waiter_id` è documentato `int|null` ma la colonna è uuid e non ha cast (dipende da ADR-108): non toccato.
+  - Lang: se un clone gemello ha ancora i file piatti, `merge_remote_repo_2.sh` può riportarli; in quel caso ricancellarli.
+  - `Restaurant/docs/stories/20.{2,3,4,5}*.lock`: quattro lock del 2026-10-14 su story che non esistono nella cartella, di agenti morti; da pulire con `bashscripts/lock/README.md` alla mano.
+- **Stato:** AC1 ok sui moduli puliti; AC3 non raggiungibile finché Cms e Geo dipendono dal vendor. Nessun commit.
