@@ -75,3 +75,28 @@ Regola di collaborazione (protocollo `bashscripts/lock/README.md`): un lock vivo
 ## Record degli agenti
 
 (Ogni agente appende qui la propria sezione: lock, append, unlock.)
+
+### Agente A (Claude), 2026-11-06 07:50-07:58
+
+Perimetro dopo il cambio del coordinatore: riscrittura dei due file Tenant liberi; revisione in sola lettura dei cinque modelli User che Codex aveva lockato (`Authentication`, `AuthenticationLog`, `BaseTeam`, `BaseTeamUser`, `BaseTenant`). Lock presi e rilasciati: i due file Tenant e questa story.
+
+Nota di stato trovata all'avvio: nei due repo di modulo (User, Tenant) il sync delle 07:44-07:47 era in corso (`MERGE_HEAD`, file `UU`); il working tree dei sette file non aveva piu' marcatori e `git show dc34e53d6:<path>` (parent) conteneva ancora marcatori nei sette file, quindi `dc34e53d6` non e' uno stato pulito per questi file (lo e' `88cc11900` nel repo User). Per i lati si sono usati gli stage dell'indice e poi i commit `88cc11900` (A) e `98e3cd53e` (B) del repo User, `5333afc` e `8f9becce` (B) del repo Tenant.
+
+**`Tenant/app/Models/TenantSetting.php`** (riscritto)
+- Scopo: impostazione chiave/valore di un tenant (`tenant_settings`, connessione `tenant`); la relazione `tenant()` sta in `TenantSettingRelations`. Chiamanti: `TenantSettingSeeder`, `TenantSettingFactory`, `MultiTenantScopeTest`, `TenantBusinessLogicTest`.
+- Da A: nessun import di `BelongsTo` (la relazione e' nel trait), `@mixin \Eloquent` non preso. Da B: `@mixin \Eloquent` tolto (nessun altro modello Tenant lo usa; `TenantDomain` no). I due lati divergevano solo per un import inutilizzato, il `@mixin` e una riga vuota prima della `}`: nessuna funzione persa.
+- Migliorato: PHPDoc della classe con scopo e rinvio al trait, `@var list<string>` su `$fillable`, riga ` *` finale del docblock tolta.
+- Verifica: marcatori 0, `php -l`, Pint (passed), Reflection su bootstrap reale (parent `BaseModel`, trait `TenantSettingRelations`, `tenant()` e' `BelongsTo` verso `Tenant` con fk `tenant_id`, fillable invariato, tabella `tenant_settings`, connessione `tenant`), `phpstan analyse Modules/Tenant`: 0 errori. Pest non eseguibile (`DB_USERNAME` vuoto).
+
+**`Tenant/app/Models/TenantSubscription.php`** (riscritto)
+- Scopo: piano, limiti e fatturazione di un tenant (`tenant_subscriptions`); `tenant()` in `TenantSubscriptionRelations`. Chiamanti: `TenantSubscriptionSeeder`, factory, `TenantStatementCoverageTest` (esige `expires_at` in `getCasts()`), `TenantBusinessLogicTest`.
+- Da A: `casts()` che fonde `parent::casts()` con `next_billing_date`/`expires_at` come `datetime`, senza import `BelongsTo`. Da B: nessun `@mixin`. Corpo identico nei due lati.
+- Migliorato: PHPDoc di classe, `@var list<string>` su `$fillable`, `@return array<string, string>` su `casts()` (come `BaseModel::casts()`), docblock senza riga ` *` finale. Runtime invariato.
+- Verifica: come sopra; Reflection conferma `expires_at` e `next_billing_date` = `datetime`, `created_at` ereditato.
+- **PROPOSTO, non fatto** (cambierebbe il runtime): la migrazione definisce `max_storage_gb`, `current_storage_gb` e `billing_amount` come `decimal(12,2)` ma il PHPDoc dice `int|null`/`float|null` e non c'e' alcun cast, quindi Eloquent restituisce stringhe decimali; un cast `decimal:2` allineerebbe tipo e schema. I due trait `*Relations` hanno `tenant()` identico: candidabili a un solo trait condiviso, da decidere con il modulo.
+
+**Revisione dei cinque file di Codex** (nessuna modifica da parte mia; dossier completo in `scratchpad/dossier-A.md` della sessione). A lock FREE e marcatori 0 alle 07:53, working tree uguale a `ca43cd7a2`:
+- Passano: `php -l`, Reflection (trait attesi, relazioni dichiarate nei `*RelationsTrait` e costruite con 0 query), guardia `BaseTenantKeyTest` riprodotta a mano, i tre casi di `TenantTest` su `resolveRouteBindingQuery`, `phpstan analyse` sui 5 file: 0 errori.
+- Difetti: `BaseTeam` ha l'import `XotData` inutilizzato; `BaseTenant` conserva l'alias morto `resolveRouteBindingQueryFromUuids` (nessun chiamante) e un `instanceof Model` ridondante con tipo di ritorno `Builder` piu' stretto del contratto Laravel; `pint --test` fallisce su tutti e 5 (ordine dei trait, separazione degli attributi di classe, FQN nell'alias).
+- Fatto verificato sul vendor installato (laravel 13.34.0, spatie/laravel-sluggable 4.0.3): `resolveRouteBindingQuery` non e' in `HasSlug`, e' in `HasUniqueStringIds` (via `HasUuids`) e in `Model`; nessuna collisione oggi. Non verificabile in locale per 4.0.4 e laravel 13.38.0 (versioni del lock). Un metodo definito nella classe sopprime comunque il conflitto fra trait (provato su PHP 8.3).
+- **Decisione aperta per l'utente su `BaseTenant`:** la story `User/docs/stories/tenant-key-string.story.md` (AC4, Dev record del 2026-11-05) vuole la validazione UUID e nessun override; `TenantTest` del lato B (caso `uses_id_for_non_uuid_value`) esige che un id non UUID passi a `where('id', ...)` senza 404, coerente con AC1 ("un id esplicito resta com'e'"). Il codice attuale segue `TenantTest`. Va scelta una delle due semantiche e allineata l'altra (story o test).
