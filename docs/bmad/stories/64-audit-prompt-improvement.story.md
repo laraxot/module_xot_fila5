@@ -2,7 +2,7 @@
 title: "Xot - Prompt 64 di audit multidisciplinare: esecuzione, revisione e completamento"
 module: Xot
 bmad: true
-status: review
+status: done
 owner: Modules/Xot (i prompt condivisi vivono in bashscripts/docs/prompts)
 related:
   - ./gitattributes-svg-merge-markers.story.md
@@ -69,6 +69,30 @@ nel prompt 46 (`46-multi-agent-module-swarm.md`), entrambi nel `related` del 64.
 
 - `python3 -I bashscripts/tools/docs/md-filenames.py check --paths <file>`: 0 non conformi per prompt e story.
 - Nessun nome di progetto o percorso assoluto nel prompt (e' condiviso tra progetti).
+
+## Chiusura 2026-11-06
+
+- Corretto il refuso `reamente` e riallineato il riferimento al trigger map
+  canonico `docs/wiki/rules/00-TRIGGER_MAP.md`.
+- Aggiunta la matrice minima obbligatoria per perimetro, copertura e stato
+  `unverified`, evitando audit senza fine o copertura dichiarata senza prova.
+- Esplicitato il confine di scrittura tra `audit-only`, `remediation-plan` e
+  `implementation-authorized`, così la sezione di chiusura non contraddice la
+  modalità selezionata.
+- Rimossa l'assunzione ambientale su PHP 8.4 e resa più sicura la diagnostica
+  delle cache, vietando pulizie automatiche su directory condivise o produzione.
+- Aggiornato l'indice prompt da `review` a `stable`.
+
+### Gate eseguiti
+
+| Gate | Esito |
+|---|---|
+| `python3 -I bashscripts/tools/docs/md-filenames.py check --paths bashscripts/docs/prompts` | BLOCKED: lo script non esiste in questo checkout |
+| ricerca marker di conflitto in `64-audit.md` | PASS: nessun marker trovato |
+| `git -C bashscripts diff --check -- docs/prompts/64-audit.md` | PASS |
+| frontmatter YAML e riferimenti prompt | PASS |
+
+Nessun codice PHP, configurazione runtime, dato, commit o push è stato toccato.
 
 ## Decisioni aperte
 
