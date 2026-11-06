@@ -5,7 +5,7 @@ module: Xot
 phase: BMAD Quick Flow, analisi, implementazione, QA
 status: done
 created: 2026-10-20
-updated: 2026-10-20
+updated: 2026-11-05
 tags: [prompts, bashscripts, second-brain, bmad, phpstan, wave3, wave5, wave6]
 qmd: "miglioramento prompt bashscripts docs prompts scopo perche quando usarlo passi gate anti-pattern alias canonici lezioni apprese inventario duplicati wave3 wave4 wave5 wave6 phpstan zero vittoria verificata a zero non ti fermi prompt stickiness catena permanente single-neon services-to-actions ProfileTest DELETED Hindsight non blocca"
 related:
