@@ -8,7 +8,11 @@ updated: 2026-10-23
 tags: [docs, xot, bmad]
 qmd: "epic   docs ≤100 .md ricorsivi via merge (fleet-wide, 2026-10-05) xot"
 ---
+<<<<<<< HEAD
 # Epic — Docs ≤100 .md ricorsivi via merge (fleet-wide, 2026-10-05)
+=======
+# Epic: Docs ≤100 .md ricorsivi via merge (fleet-wide, 2026-10-05)
+>>>>>>> laraxot/dev
 
 > Status: in-progress. Owner: sessione corrente. Metodo: BMAD + second brain + ponytail.
 
@@ -16,7 +20,7 @@ qmd: "epic   docs ≤100 .md ricorsivi via merge (fleet-wide, 2026-10-05) xot"
 
 - Limite **ricorsivo**: ogni `docs/` di moduli e temi ≤100 `.md` totali.
 - Come rientrare: **unire i file, migliorare il contenuto, più sintetico**
-  (union + sintesi nel survivor canonico, `git rm` degli originali fusi — la history resta in git).
+  (union + sintesi nel survivor canonico, `git rm` degli originali fusi: la history resta in git).
 - Perimetro: **tutto subito**, swarm parallelo con lock.
 
 ## Perimetro e baseline (conteggi ricorsivi, audit 2026-10-05)

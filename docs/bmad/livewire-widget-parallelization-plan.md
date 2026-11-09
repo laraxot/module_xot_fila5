@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 title: "Parallelization plan — Livewire custom a Filament Widgets"
+=======
+title: "Parallelization plan: Livewire custom a Filament Widgets"
+>>>>>>> laraxot/dev
 type: bmad-parallel-plan
 status: ready-for-execution
 module: Xot
@@ -32,7 +36,11 @@ lane possono essere eseguite da subagent in ordine casuale **solo nella stessa
 wave** e solo con ownership disgiunta. Il coordinatore esegue gli scan globali
 e l'integrazione.
 
+<<<<<<< HEAD
 ## Wave 0 — baseline chiusa + primi `REUSE` (seriale poi lane)
+=======
+## Wave 0: baseline chiusa + primi `REUSE` (seriale poi lane)
+>>>>>>> laraxot/dev
 
 <!-- gateguard: update existing parallelization plan; linked from fleet story; user: "non utilizziamo piu' componenti livewire ma utilizziamo al loro posto filament widget" + planning BMAD -->
 
@@ -48,7 +56,11 @@ Alla **apertura** di W0 (implementazione, non questa sessione di planning):
 Gate planning (questa sessione): matrice aggiornata, nessun PHP modificato.
 Gate implementazione W0: Pest widget + scan caller.
 
+<<<<<<< HEAD
 ## Wave 1 — orfani indipendenti (lane disgiunte, ordine casuale)
+=======
+## Wave 1: orfani indipendenti (lane disgiunte, ordine casuale)
+>>>>>>> laraxot/dev
 
 | Lane | Ownership | Esito atteso |
 |---|---|---|
@@ -60,14 +72,22 @@ Gate implementazione W0: Pest widget + scan caller.
 Dipendenze: Wave 0. Le lane non modificano provider Xot, indice globale o
 file di un'altra lane.
 
+<<<<<<< HEAD
 ## Wave 2 — Job (seriale, ownership unica)
+=======
+## Wave 2: Job (seriale, ownership unica)
+>>>>>>> laraxot/dev
 
 Scope: `Modules/Job` Livewire, Page, Widget, views e test correlati. Convergere
 su `JobStatus`/`ScheduleResource` solo dopo aver deciso `saveEnv()`,
 `dummyAction()` e i comandi Artisan: le capability pericolose non diventano
 widget senza allowlist e policy.
 
+<<<<<<< HEAD
 ## Wave 3 — User e Gdpr (seriale rispetto ai flussi sensibili)
+=======
+## Wave 3: User e Gdpr (seriale rispetto ai flussi sensibili)
+>>>>>>> laraxot/dev
 
 Scope: `Modules/User` e i suoi test/docs. Analizzare separatamente auth,
 password, legal, profilo, team e socialite. Convertire in widget solo il
@@ -79,17 +99,29 @@ accessibilità e test di autorizzazione.
 `Modules/Gdpr` resta nello stesso stream semantico per `RegisterWidget` e
 consenso; scegliere una sola SSoT per logout, reset password e social login.
 
+<<<<<<< HEAD
 ## Wave 4 — UI e Lang (lane tecnicamente separate, merge coordinato)
+=======
+## Wave 4: UI e Lang (lane tecnicamente separate, merge coordinato)
+>>>>>>> laraxot/dev
 
 `Modules/UI` e `Modules/Lang` condividono header e switcher. Possono analizzare
 in parallelo, ma il merge è coordinato: preservare sessione, locale, refresh,
 dark mode, toast e navigation.
 
+<<<<<<< HEAD
 ## Wave 5 — Limesurvey (seriale)
 
 Stabilizzare i chart widget e i mount dinamici FQCN prima dei consumer Quaeris.
 
 ## Wave 6 — Quaeris e dashboard (seriale)
+=======
+## Wave 5: Limesurvey (seriale)
+
+Stabilizzare i chart widget e i mount dinamici FQCN prima dei consumer Quaeris.
+
+## Wave 6: Quaeris e dashboard (seriale)
+>>>>>>> laraxot/dev
 
 | Lane | Ownership | Esito atteso |
 |---|---|---|
@@ -100,7 +132,11 @@ globali impediscono modifiche simultanee a `Xot/app/Filament/Widgets`, ai
 provider User, alle viste auth, all'header UI/Lang e ai widget Limesurvey
 consumati dinamicamente da Quaeris.
 
+<<<<<<< HEAD
 ## Wave 7 — ritiro e gate globali (seriale)
+=======
+## Wave 7: ritiro e gate globali (seriale)
+>>>>>>> laraxot/dev
 
 - rimuovere discovery HTTP e alias solo dopo scan a zero riferimenti;
 - aggiornare gli indici docs del modulo/tema coinvolto;

@@ -10,7 +10,7 @@ discussions: []
 status: draft
 ---
 
-# Stato di qualita' del progetto — misurazione 2026-08-31
+# Stato di qualita' del progetto: misurazione 2026-08-31
 
 **Domanda**: il progetto e' perfetto?
 **Risposta**: no. Segue la misurazione, non l'opinione.
@@ -70,7 +70,7 @@ cd laravel && find Modules Themes -type d -not -path '*/vendor/*' \
 **97 hanno contenuto identico** (pura duplicazione) e **16 sono divergenti** (due
 verita' diverse sotto lo stesso nome logico).
 
-Su Linux convivono. Su filesystem case-insensitive — macOS di default, Windows — un
+Su Linux convivono. Su filesystem case-insensitive: macOS di default, Windows: un
 clone del repository e' corrotto in partenza: i due file collidono e uno sovrascrive
 l'altro in modo non deterministico.
 
@@ -187,12 +187,12 @@ Vanno spostati fuori dall'albero applicativo e ignorati entrambi.
 
 ## Ordine consigliato
 
-1. `./Themes/` dentro il gate PHPStan — punto 1.
-2. Riconciliazione delle 16 coppie divergenti e delle 97 identiche — punto 2.
-3. Decisione esplicita su `->label()` e su `*Service` — punto 3.
-4. Un test Pest per ogni regola che si decide di tenere — punto 4.
-5. Potatura della documentazione, un owner canonico per argomento — punto 5.
-6. Pulizia degli artefatti — punto 6.
+1. `./Themes/` dentro il gate PHPStan: punto 1.
+2. Riconciliazione delle 16 coppie divergenti e delle 97 identiche: punto 2.
+3. Decisione esplicita su `->label()` e su `*Service`: punto 3.
+4. Un test Pest per ogni regola che si decide di tenere: punto 4.
+5. Potatura della documentazione, un owner canonico per argomento: punto 5.
+6. Pulizia degli artefatti: punto 6.
 
 I punti 1 e 2 sono difetti: producono bug e rompono il repository su alcune
 piattaforme. I punti 3, 4 e 5 sono debito strutturale: non rompono nulla oggi e
@@ -215,7 +215,7 @@ Ognuno di questi merita una misurazione dedicata prima di qualsiasi affermazione
 
 ---
 
-## 7. Aggiornamento misurazione — 2026-08-31 (sera)
+## 7. Aggiornamento misurazione: 2026-08-31 (sera)
 
 Dati verificati in sessione, senza migrazioni distruttive.
 
@@ -226,7 +226,7 @@ Dati verificati in sessione, senza migrazioni distruttive.
 | `RefreshDatabase` nei test moduli | **0 uso reale** | solo commenti/docblock che vietano il trait |
 | Dati sacri in Xot Artisan | **fix applicati** | niente `--force` su `migrate` in `ArtisanAction` / handlers |
 | Pest unit GC (Intervention + Quotation + Billing) | **77 passed** | `php artisan test Modules/{Intervention,Quotation,Billing}/tests/Unit` |
-| Pest feature Filament (es. Billing invoices) | **fallisce** | `workorder_data_test.roles` assente — debito **D17** |
+| Pest feature Filament (es. Billing invoices) | **fallisce** | `workorder_data_test.roles` assente: debito **D17** |
 | ide-helper | **OK** | `generate` + `meta` + `models --nowrite` |
 
 **Interpretazione:** il gate statico sui moduli è verde, ma **perfezione operativa** richiede ancora

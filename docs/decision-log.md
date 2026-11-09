@@ -1,13 +1,17 @@
 ---
 type: decision-log
+<<<<<<< HEAD
 title: "Decision Log — Xot"
+=======
+title: "Decision Log: Xot"
+>>>>>>> laraxot/dev
 links: {github_issue: "#XXX", discussion: "#XXX"}
 status: draft
 updated: 2026-10-23
 tags: [docs, xot]
 qmd: "decision log   xot xot"
 ---
-# Decision Log — Xot
+# Decision Log: Xot
 
 ## Decisions
 
@@ -37,9 +41,15 @@ qmd: "decision log   xot xot"
 
 <!--
 GateGuard facts:
+<<<<<<< HEAD
 1. Supersedes nothing — adds one decision entry for docs spine wave1; does not rewrite prior decisions.
 2. Linked from README.md, INDEX.md, conventions/docs-organization.md, Hindsight page Docs spine Modules e Themes.
 3. Edit existing decision-log.md — not a new file.
+=======
+1. Supersedes nothing: adds one decision entry for docs spine wave1; does not rewrite prior decisions.
+2. Linked from README.md, INDEX.md, conventions/docs-organization.md, Hindsight page Docs spine Modules e Themes.
+3. Edit existing decision-log.md: not a new file.
+>>>>>>> laraxot/dev
 4. User verbatim: "aggiorna studia e migliora e organizza meglio le cartelle docs dentro i moduli e dentro i temi e migliora il tuo second brain"
 -->
 

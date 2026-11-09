@@ -1,12 +1,20 @@
 ---
+<<<<<<< HEAD
 title: "Xot — completion backlog"
+=======
+title: "Xot: completion backlog"
+>>>>>>> laraxot/dev
 type: note
 status: draft
 updated: 2026-10-26
 tags: [docs, xot]
 qmd: "xot   completion backlog xot"
 ---
+<<<<<<< HEAD
 # Xot — completion backlog
+=======
+# Xot: completion backlog
+>>>>>>> laraxot/dev
 
 Status: partial and evidence-driven. This file is the canonical owner-local list for future work.
 

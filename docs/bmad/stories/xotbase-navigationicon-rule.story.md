@@ -8,7 +8,11 @@ tags: [docs, xot, bmad]
 qmd: "bmad story   xotbaseresource: rimuovere $navigationicon (traduzioni gestiscono) xot"
 ---
 
+<<<<<<< HEAD
 # BMAD Story — XotBaseResource: rimuovere $navigationIcon (traduzioni gestiscono)
+=======
+# BMAD Story: XotBaseResource: rimuovere $navigationIcon (traduzioni gestiscono)
+>>>>>>> laraxot/dev
 
 ## Epic
 XOT-ARCH-001

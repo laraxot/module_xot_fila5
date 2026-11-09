@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 title: Elimina Services — converte tutto in QueueableActions
+=======
+title: Elimina Services: converte tutto in QueueableActions
+>>>>>>> laraxot/dev
 status: completed
 module: Geo (5 Services → Actions esistenti, dir rimossa), Xot (.gitignore + .bak rimossi), AI/Job/Lang/Media/Notify/UI (vuoti confermati)
 initiative: kp-5ecdb68985424ad593740489df567c2d
@@ -10,12 +14,20 @@ tags: [docs, xot, phpstan-fix-plan]
 qmd: "elimina services xot"
 ---
 
+<<<<<<< HEAD
 ## Perché (scopo) — il senso dell'azione
+=======
+## Perché (scopo): il senso dell'azione
+>>>>>>> laraxot/dev
 - `Services/` = facades statiche con stato locale (`Config::set`, `Request::segment`, variabili globali).
 - `QueueableActions/` = classi serializzabili, stateless, eseguibili sia sincrono (`execute()`) che asincrono (`dispatch()`), compatibili con `DatabaseQueue`, `Redis`, `SQS`.
 - Regola inviolabile: ogni servizio deve diventare un'azione con `execute()` pubblico; se contiene stato interno (`Cache`, `DB`), deve essere passato esplicitamente come parametro o letto nel costruttore.
 
+<<<<<<< HEAD
 ## Brainstorming — decisioni chiave
+=======
+## Brainstorming: decisioni chiave
+>>>>>>> laraxot/dev
 1. Verificare i cinque Geo Service presenti nello staging contro le Actions già presenti e i caller runtime.
 2. Non creare `BaseGeoAction` o wrapper equivalenti: gli adapter HTTP devono stare in `Adapters`/`Infrastructure` se ancora necessari.
 3. Verificare che dati geografici e matematica abbiano Actions specifiche già esistenti; aggiungerne una solo con test di comportamento.

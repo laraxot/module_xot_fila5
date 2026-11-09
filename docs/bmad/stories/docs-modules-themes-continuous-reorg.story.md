@@ -176,7 +176,11 @@ come mappa di recupero.
 Il controllo delle cartelle docs ha trovato un rischio maggiore della taxonomia:
 `docs/wiki/log.md` conteneva tre volte `Password sudo: <valore>` in chiaro, quindi una
 credenziale versionata e gia' finita nella storia Git. Redatta in
+<<<<<<< HEAD
 `Password sudo: [REDACTED — ruotare]` nelle tre righe (21:26, 21:30, 23:22 del
+=======
+`Password sudo: [REDACTED: ruotare]` nelle tre righe (21:26, 21:30, 23:22 del
+>>>>>>> laraxot/dev
 2026-10-26). La redazione **non** chiude il rischio: la password va ruotata e le altre
 occorrenze vanno cercate per nome del campo, senza stampare il valore.
 
@@ -188,9 +192,31 @@ Regola operativa (wiki, log, story BMAD, chat):
   `.env`/CI, poi cercare altre occorrenze;
 - la storia Git conserva il valore: la rotazione e' l'unica mitigazione reale.
 
+<<<<<<< HEAD
 Verifica docs (2026-10-27): 20/20 moduli e 4/4 temi hanno `docs/README.md`.
 Nessun file di codice toccato. Shell non disponibile (`DAYTONA_API_KEY` assente):
 niente `git grep`, `git diff`, commit o test; controllo eseguito leggendo i file.
+=======
+Stessa passata, altri errori corretti subito: `.env` mancava in Comment/Event/Mobile,
+era parziale in AI/Gdpr/Rating/Fixcity, Sixteen copriva solo `.env.local`/`.env.*.local`,
+e Barthelemy/Meetup piu' gli ombrelli `Modules/.gitignore` e `Themes/.gitignore` non lo
+prevedevano. Aggiunto `.env`, `.env.*`, `!.env.example` a tutte le 20 root modulo, alle
+4 root tema e ai 2 ombrelli (sono repo separati: l'ombrello da solo non basta). In Media
+la negazione era prima di `.env.*` e quindi inefficace: riordinata. Corretti
+anche il frontmatter YAML invalido di `wiki-markdown-frontmatter-mandatory` (voci orfane
+sotto `story:`) e il riferimento a un validatore inesistente nell'hook
+`check-docs-frontmatter.sh`.
+
+Regola frontmatter consolidata (Ponytail, meno duplicazione): la copia in `11-forms` e'
+ora un alias al canon, lo stub `migrated-from-agents` ha un solo blocco YAML, rimossi i
+link a `.schema` e al validatore inesistente, corretti i link a `00-TRIGGER_MAP.md` nei
+tre stub.
+
+Verifica docs (2026-10-27): 20/20 moduli e 4/4 temi hanno `docs/README.md`.
+Nessuna logica applicativa toccata (solo .md, .gitignore e un commento/echo dell'hook).
+Shell non disponibile (`DAYTONA_API_KEY` assente): niente `git grep`, `git diff`,
+commit o test; controllo eseguito leggendo i file.
+>>>>>>> laraxot/dev
 
 ## Passata 2026-10-27: regola `docs/archive/` su ogni root
 

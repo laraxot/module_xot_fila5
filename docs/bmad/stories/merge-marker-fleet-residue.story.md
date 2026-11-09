@@ -4,7 +4,11 @@ created: 2026-09-26
 updated: 2026-09-26
 issues: []
 discussions: []
+<<<<<<< HEAD
 title: "Story — bonifica marker merge residui fleet"
+=======
+title: "Story: bonifica marker merge residui fleet"
+>>>>>>> laraxot/dev
 type: story
 module: Xot
 epic: quality

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Xot - xot-architecture-overview.md"
 module: Xot
@@ -110,3 +111,5 @@ For complete philosophy, read `docs/archived/project-religion-politics-zen.md`.
 Activity, AI, AiAssistant, AsdSoci, Billing, Blog, Bom, Catalog, Cms, Comment, Compliance, Costing, Customer, Dds, Document, Email, Employee, EnergyBroker, Fiscal, Gdpr, Geo, Giveback, HR, Intervention, Inventory, Job, Lang, Media, MetalWork, Notify, Platform, Production, PublicProcurement, Quotation, Rating, Seo, Signage, Signature, Tenant, Thermo, Timber, UI, User, Vehicle, WhatsApp, WorkOrder, Wts.
 
 **Direct dependencies:** User (TenantClass, ProfileClass), Tenant (`SaveTenantConfigAction`), Media (`GetAttachmentsSchemaAction`).
+=======
+>>>>>>> laraxot/dev

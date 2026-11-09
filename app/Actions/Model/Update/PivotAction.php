@@ -12,12 +12,14 @@ class PivotAction
 {
     use QueueableAction;
 
-    /**
-     * Undocumented function.
-     */
-    public function execute(Model $_model, RelationDTO $relationDTO): void
+    public function execute(Model $_model, RelationDTO $_relationDTO): void
     {
+<<<<<<< HEAD
         dddx('wip');
+=======
+        // Come Store\PivotAction: stub non implementato, senza caller. Prima dddx('wip') uccideva la richiesta.
+        throw new \LogicException('Update\PivotAction not implemented');
+>>>>>>> laraxot/dev
         /*
          *
          * $parent_panel = $this->panel->getParent();

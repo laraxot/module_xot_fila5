@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 title: "Filament Blueprint — widget come sostituti dei custom Livewire"
+=======
+title: "Filament Blueprint: widget come sostituti dei custom Livewire"
+>>>>>>> laraxot/dev
 type: blueprint
 module: Xot
 status: approved-for-execution
@@ -40,7 +44,11 @@ Contratto modulo Xot: [filament-blueprint.md](./filament-blueprint.md).
 | wizard | `XotBaseWizardWidget` |
 | UI composita senza schema standard | `XotBaseWidget` (es. `TermsOfServiceWidget`, `DarkModeSwitcherWidget`) |
 | CRUD di record | Resource/Page/Action |
+<<<<<<< HEAD
 | auth FO pubblico | gemello Auth `*Widget` se montato in panel/theme; altrimenti Folio/Volt — non inventare secondo stack |
+=======
+| auth FO pubblico | gemello Auth `*Widget` se montato in panel/theme; altrimenti Folio/Volt: non inventare secondo stack |
+>>>>>>> laraxot/dev
 | pagina CMS / media card FO | `KEEP` Folio/Blade finche' lo scopo non e' card di panel |
 | testo legale gia' con gemello | `REUSE` (`TermsOfServiceWidget` / `PrivacyPolicyWidget`) + ritiro HTTP |
 
@@ -83,7 +91,11 @@ lock; non modifica indice docs o provider condivisi senza ownership esplicita.
 - PHPStan **solo** via `laravel/phpstan.neon` (immutabile, **solo umano**; mai
   altri `.neon`, mai `-c`): lane
   `analyse Modules/<M>/…` senza `-c` / neon temp; coordinatore
+<<<<<<< HEAD
   `analyse Modules` a swarm fermo —
+=======
+  `analyse Modules` a swarm fermo -
+>>>>>>> laraxot/dev
   [single-neon](../wiki/memories/phpstan-single-neon-config.md);
 - Pest del modulo e test di autorizzazione/redirect;
 - `git diff --check`;

@@ -18,13 +18,21 @@ related:
 
 <!--
 GateGuard facts:
+<<<<<<< HEAD
 1. Supersedes nothing — boy-scout companion to services-to-actions-global-wave already ready-for-dev.
+=======
+1. Supersedes nothing: boy-scout companion to services-to-actions-global-wave already ready-for-dev.
+>>>>>>> laraxot/dev
 2. Linked from tomorrow-handoff.story.md row 4.
 3. New file in existing Modules/Xot/docs/stories/.
 4. User verbatim: "fa tutte le bmad stories per continuare domani"
 -->
 
+<<<<<<< HEAD
 # Services — delete-again continuo
+=======
+# Services: delete-again continuo
+>>>>>>> laraxot/dev
 
 ## Perche'
 

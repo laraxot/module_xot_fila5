@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 title: "MCP consigliati — modulo Xot / monorepo PTVX"
+=======
+title: "MCP consigliati: modulo Xot / monorepo PTVX"
+>>>>>>> laraxot/dev
 type: note
 status: active
 created: 2026-09-24
@@ -48,9 +52,15 @@ SSoT config: [`.mcp.json`](../../../.mcp.json) · how-to:
 
 Non aggiungere per Xot:
 
+<<<<<<< HEAD
 - `filesystem`, `fetch`, `memory`, `sequential-thinking` — Cursor li ha gia'
 - `puppeteer` — usare Playwright
 - MCP Postgres su DB reali — dati sacri; solo `*_test` via Pest
+=======
+- `filesystem`, `fetch`, `memory`, `sequential-thinking`: Cursor li ha gia'
+- `puppeteer`: usare Playwright
+- MCP Postgres su DB reali: dati sacri; solo `*_test` via Pest
+>>>>>>> laraxot/dev
 
 ## Config minima (gia' in root)
 

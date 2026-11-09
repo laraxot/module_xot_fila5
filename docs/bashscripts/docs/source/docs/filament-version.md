@@ -1,15 +1,27 @@
 ---
+<<<<<<< HEAD
 title: "Filament Version Declaration — {ModuleOrThemeName}"
+=======
+title: "Filament Version Declaration: {ModuleOrThemeName}"
+>>>>>>> laraxot/dev
 type: note
 created: 2026-05-26
 updated: 2026-05-26
 module: Xot
 tags: [xot, bashscripts]
+<<<<<<< HEAD
 qmd: "Filament Version Declaration — {ModuleOrThemeName}"
 status: superseded
 superseded_by: ../../filament-version.md
 ---
 # Filament Version Declaration — {ModuleOrThemeName}
+=======
+qmd: "Filament Version Declaration: {ModuleOrThemeName}"
+status: superseded
+superseded_by: ../../filament-version.md
+---
+# Filament Version Declaration: {ModuleOrThemeName}
+>>>>>>> laraxot/dev
 
 **Current Version**: Filament v5 (Livewire v4 + Schemas)
 
@@ -25,4 +37,4 @@ All resources, forms, tables, infolists, widgets and actions must follow the v5 
 
 **Last verified**: 2026-05-21
 
-**Firmato:** Cursor Agent (Composer) — template propagato ai package `docs/`
+**Firmato:** Cursor Agent (Composer): template propagato ai package `docs/`

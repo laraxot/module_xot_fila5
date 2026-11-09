@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Xot — alias indice"
 type: alias
@@ -26,3 +27,5 @@ SettingPage nei moduli, solo dove serve (epic): [stories/module-setting-pages.ep
 Header delle liste e toggle griglia/lista: [stories/list-header-buttons-and-grid-toggle.story.md](./stories/list-header-buttons-and-grid-toggle.story.md).
 
 Risoluzione Form/Table/Infolist (nome dal modello, poi dalla Resource): [stories/resource-part-class-by-resource-name.story.md](./stories/resource-part-class-by-resource-name.story.md).
+=======
+>>>>>>> laraxot/dev

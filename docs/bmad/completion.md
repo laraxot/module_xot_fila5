@@ -1,12 +1,20 @@
 ---
+<<<<<<< HEAD
 title: "BMAD completion pack — Xot"
+=======
+title: "BMAD completion pack: Xot"
+>>>>>>> laraxot/dev
 type: note
 status: draft
 updated: 2026-10-26
 tags: [docs, xot, bmad]
 qmd: "bmad completion pack   xot xot"
 ---
+<<<<<<< HEAD
 # BMAD completion pack — Xot
+=======
+# BMAD completion pack: Xot
+>>>>>>> laraxot/dev
 
 This is the owner-local BMAD entry point. Cross-owner contracts are in plans/fixcity-completion-architecture.md; the backlog is in docs/completion-backlog.md.
 

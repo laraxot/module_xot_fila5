@@ -7,7 +7,14 @@ namespace Modules\Xot\Traits;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Session;
 
+<<<<<<< HEAD
 trait HasCsrfToken
+=======
+/**
+ * @phpstan-ignore trait.unused
+ */
+trait HasCsrfToken // @phpstan-ignore trait.unused
+>>>>>>> laraxot/dev
 {
     /**
      * CSRF token for the current request.

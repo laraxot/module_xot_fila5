@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 title: Livewire → Widgets W1 — User Auth twins
+=======
+title: Livewire → Widgets W1: User Auth twins
+>>>>>>> laraxot/dev
 type: story
 module: User
 status: ready-for-dev
@@ -18,13 +22,21 @@ related:
 
 <!--
 GateGuard facts:
+<<<<<<< HEAD
 1. Supersedes nothing — W1 User Auth executable slice; complements 10.3.retire-auth-livewire-twins.
+=======
+1. Supersedes nothing: W1 User Auth executable slice; complements 10.3.retire-auth-livewire-twins.
+>>>>>>> laraxot/dev
 2. Linked from tomorrow-handoff.story.md and livewire-to-filament-widgets-fleet.story.md.
 3. New file in existing Modules/Xot/docs/stories/; owns User Auth Livewire/Widgets.
 4. User verbatim: "fa tutte le bmad stories per continuare domani"
 -->
 
+<<<<<<< HEAD
 # Livewire W1 — User Auth
+=======
+# Livewire W1: User Auth
+>>>>>>> laraxot/dev
 
 ## Perche'
 

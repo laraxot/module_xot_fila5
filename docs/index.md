@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "INDEX"
 type: index
@@ -33,3 +34,5 @@ marcati `superseded` o `stale`, non cancellati (regola BMAD).
 ## Non toccare
 
 - `phpstan.neon` (sacro, solo utente).
+=======
+>>>>>>> laraxot/dev

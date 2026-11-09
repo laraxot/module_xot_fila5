@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 title: Tests Location Rule — Non Ripetere Errore
+=======
+title: Tests Location Rule: Non Ripetere Errore
+>>>>>>> laraxot/dev
 type: rule
 status: critical
 created: 2026-10-15

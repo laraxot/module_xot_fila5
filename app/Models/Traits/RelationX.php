@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Models\Traits;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\MorphPivot;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
@@ -62,6 +63,28 @@ trait RelationX
             ->using($pivot::class)
             ->withPivot($pivotFields)
             ->withTimestamps();
+    }
+
+    /**
+     * Relazione polimorfica per tabella: il padre sta in una tabella condivisa (es. log) e le righe
+     * si riconoscono da due colonne, il nome della tabella del padre e la sua chiave.
+     *
+     * Non e' un morph di Laravel: non usa il morph map, quindi non dipende dal morph class del tenant.
+     *
+     * @template TRelatedModel of \Illuminate\Database\Eloquent\Model
+     *
+     * @param  class-string<TRelatedModel>  $related
+     * @return HasMany<TRelatedModel, $this>
+     */
+    public function tableMorphMany(
+        string $related,
+        string $typeColumn = 'tbl',
+        string $idColumn = 'id_tbl',
+    ): HasMany {
+        Assert::subclassOf($related, Model::class);
+
+        return $this->hasMany($related, $idColumn, 'id')
+            ->where($typeColumn, $this->getTable());
     }
 
     /**

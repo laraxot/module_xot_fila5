@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 title: "BMAD Planning — Xot"
+=======
+title: "BMAD Planning: Xot"
+>>>>>>> laraxot/dev
 type: bmad-planning
 status: active
 module: Xot

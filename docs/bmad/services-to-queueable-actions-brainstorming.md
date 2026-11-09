@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 title: "BMAD brainstorming — Services to Queueable Actions"
+=======
+title: "BMAD brainstorming: Services to Queueable Actions"
+>>>>>>> laraxot/dev
 type: bmad-brainstorming
 status: synthesized
 module: Xot
@@ -38,7 +42,11 @@ e' il ratchet: se ricompare, e' regressione, non "lavoro in corso".
 Filament: Resource/Widget chiamano Actions; mai `app(SomethingService::class)`.
 Vedi [services-to-queueable-actions-filament-blueprint.md](./services-to-queueable-actions-filament-blueprint.md).
 
+<<<<<<< HEAD
 ## 5 Whys — perche' Action e non Service (religione operativa)
+=======
+## 5 Whys: perche' Action e non Service (religione operativa)
+>>>>>>> laraxot/dev
 
 1. **Perche' eliminare i Service applicativi?** Perche' ogni use-case deve essere
    **una** Action queueable tipizzata (`execute()` / `dispatch()`), non un metodo
@@ -61,7 +69,11 @@ Vedi [services-to-queueable-actions-filament-blueprint.md](./services-to-queueab
 non il layer rimosso. Residui Blade (es. hero TwentyOne + `PredictService`) si
 correggono con **props** e Actions del modulo owner, mai reintroducendo `app/Services`.
 
+<<<<<<< HEAD
 ## SCAMPER — idee selezionate
+=======
+## SCAMPER: idee selezionate
+>>>>>>> laraxot/dev
 
 | Leva | Decisione | Impatto | Fattibilita' |
 |---|---|---:|---:|
@@ -72,7 +84,11 @@ correggono con **props** e Actions del modulo owner, mai reintroducendo `app/Ser
 | Eliminate | Wrapper morti e duplicati dopo verifica caller; **rmdir Services** | Alto | Alta |
 | Rearrange | Wave: duplicati → I/O esterno → framework → residui → ratchet dirs | Alto | Alta |
 
+<<<<<<< HEAD
 ## Reverse brainstorming — modi per rompere la migrazione
+=======
+## Reverse brainstorming: modi per rompere la migrazione
+>>>>>>> laraxot/dev
 
 - convertire ogni `*Service` senza leggere i caller;
 - lasciare `app/Services/` vuota «temporaneamente»;
@@ -91,7 +107,11 @@ correggono con **props** e Actions del modulo owner, mai reintroducendo `app/Ser
 2. **Queueable non significa sempre asincrono**: stessa Action sync quando la UI
    richiede il risultato immediato.
 3. **Adapter, registry, resolver, validator, strategy e stream restano confini
+<<<<<<< HEAD
    tecnici** in `Adapters`/`Support`/`Infrastructure` — **mai** in `app/Services`.
+=======
+   tecnici** in `Adapters`/`Support`/`Infrastructure`: **mai** in `app/Services`.
+>>>>>>> laraxot/dev
 4. La rimozione avviene solo dopo caller statici/dinamici, test, provider, config,
    route, Livewire e Filament verificati; poi **la directory sparisce**.
 

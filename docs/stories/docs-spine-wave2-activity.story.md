@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 title: Docs spine wave2 — Activity UPPERCASE e date nei nomi
+=======
+title: Docs spine wave2: Activity UPPERCASE e date nei nomi
+>>>>>>> laraxot/dev
 type: story
 module: Activity
 status: ready-for-dev
@@ -22,7 +26,11 @@ GateGuard facts:
 4. User verbatim: "fa tutte le bmad stories per continuare domani"
 -->
 
+<<<<<<< HEAD
 # Docs spine wave2 — Activity
+=======
+# Docs spine wave2: Activity
+>>>>>>> laraxot/dev
 
 ## Perche'
 

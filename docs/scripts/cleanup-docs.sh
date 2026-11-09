@@ -6,7 +6,11 @@
 set -e
 
 MODULE=${1:-"Xot"}
+<<<<<<< HEAD
 DOCS_DIR="/var/www/_bases/base_ptvx_fila5_mono/laravel/Modules/$MODULE/docs"
+=======
+DOCS_DIR="/var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/$MODULE/docs"
+>>>>>>> 6ed19256f (.)
 
 if [ ! -d "$DOCS_DIR" ]; then
     echo "❌ Directory non trovata: $DOCS_DIR"
@@ -114,4 +118,9 @@ echo "📁 File archiviati in:"
 echo "  - $DOCS_DIR/archive/historical/"
 echo "  - $DOCS_DIR/archive/duplicates/"
 echo "  - $DOCS_DIR/archive/uppercase/"
+<<<<<<< HEAD
 echo ""
+=======
+echo ""
+
+>>>>>>> 6ed19256f (.)

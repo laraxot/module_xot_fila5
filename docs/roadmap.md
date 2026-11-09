@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Xot Module - Complete Roadmap 2026"
 type: note
@@ -942,3 +943,5 @@ Xot is the foundational module of the Laraxot ecosystem. Its mission is to provi
 ### 📂 Backlog / Future Ideas
 - Self-healing database migrations.
 - Automatic API documentation generation for all modules.
+=======
+>>>>>>> laraxot/dev

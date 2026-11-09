@@ -8,7 +8,11 @@ tags: [docs, xot, bmad]
 qmd: "bmad story   swarm parallel: analisi phpstan modulare + docs org + wiki/second brain xot"
 ---
 
+<<<<<<< HEAD
 # BMAD Story — Swarm parallel: analisi PHPStan modulare + docs org + wiki/second brain
+=======
+# BMAD Story: Swarm parallel: analisi PHPStan modulare + docs org + wiki/second brain
+>>>>>>> laraxot/dev
 
 ## Epic
 SWARM-PHPSTAN-001

@@ -4,7 +4,11 @@ created: 2026-09-26
 updated: 2026-09-26
 issues: []
 discussions: []
+<<<<<<< HEAD
 title: "Story — gap tooling quality: phpinsights assente, qmd embed backlog, graphify lento"
+=======
+title: "Story: gap tooling quality: phpinsights assente, qmd embed backlog, graphify lento"
+>>>>>>> laraxot/dev
 type: story
 module: Xot
 epic: quality
@@ -34,7 +38,7 @@ Quality gates (prompt 03 v3.32.0) girano ma con buchi documentati:
       il gate dal prompt 03 (onesta' documentazione)
 - [ ] Schedulare `qmd embed` in batch notturno o CI (fuori sessione agente)
 - [ ] Valutare `graphify update` scoped per modulo (`graphify update laravel/Modules/X`)
-      invece di `.` — misurare tempi
+      invece di `.`: misurare tempi
 - [ ] Documentare policy Pest: suite smoke senza DB (unit pure) vs suite DB
 - [ ] Verificare `laravel/.php-cs-fixer.php` presente (peer segnala possibile
       `.php_cs` legacy)

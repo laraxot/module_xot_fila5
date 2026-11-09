@@ -5,11 +5,11 @@ declare(strict_types=1);
 namespace Modules\Xot\Models;
 
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
 use Modules\Tenant\Models\BaseModelJson;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Database\Factories\InformationSchemaTableFactory;
+use Modules\Xot\Models\Traits\InformationSchemaTableCounters;
 
 /**
  * @property int|null $table_rows
@@ -43,6 +43,11 @@ use Modules\Xot\Database\Factories\InformationSchemaTableFactory;
  */
 class InformationSchemaTable extends BaseModelJson
 {
+<<<<<<< HEAD
+=======
+    use InformationSchemaTableCounters;
+
+>>>>>>> laraxot/dev
     /**
      * @var list<string>
      */
@@ -95,6 +100,7 @@ class InformationSchemaTable extends BaseModelJson
         $rows = $this->getSushiRows();
 
         return $rows;
+<<<<<<< HEAD
     }
 
     /**
@@ -159,5 +165,7 @@ class InformationSchemaTable extends BaseModelJson
         }
 
         return (int) $record->table_rows;
+=======
+>>>>>>> laraxot/dev
     }
 }

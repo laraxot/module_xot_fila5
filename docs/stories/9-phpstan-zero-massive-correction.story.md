@@ -11,12 +11,20 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< HEAD
 # BMAD Story 9: PHPStan Zero — Massiva Correzione Errori
+=======
+# BMAD Story 9: PHPStan Zero: Massiva Correzione Errori
+>>>>>>> laraxot/dev
 
 **Phase**: 9  
 **Owner**: Claude Haiku 4.5 / Swarm Agent(s)  
 **Start**: 2026-10-20  
+<<<<<<< HEAD
 **Status**: Active — Swarm bers choix (scope disgiunti file level)  
+=======
+**Status**: Active: Swarm bers choix (scope disgiunti file level)  
+>>>>>>> laraxot/dev
 
 ---
 

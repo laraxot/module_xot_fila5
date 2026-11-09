@@ -38,9 +38,14 @@ class ShowArtisanErrorLogAction
         $matches = [];
         preg_match_all($pattern, $content, $matches);
 
+<<<<<<< HEAD
         /** @var list<string> $urlList */
         $urlList = $matches[1] ?? [];
         $urls = array_values(array_unique($urlList));
+=======
+        // PREG_PATTERN_ORDER con un solo gruppo: $matches[1] esiste sempre (lista vuota se nessun match).
+        $urls = array_values(array_unique($matches[1]));
+>>>>>>> laraxot/dev
         $view_params = [
             'view' => $view,
             'lang' => app()->getLocale(),

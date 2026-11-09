@@ -6,7 +6,11 @@ updated: 2026-09-26
 qmd: "quick reference"
 issues: []
 discussions: []
+<<<<<<< HEAD
 title: "Xot — BMAD Quick Reference"
+=======
+title: "Xot: BMAD Quick Reference"
+>>>>>>> laraxot/dev
 description: "Comandi rapidi BMAD per il modulo Xot"
 module: "Xot"
 alias: "xot"
@@ -15,7 +19,7 @@ bmad_version: "6.2.0"
 status: draft
 ---
 
-# Xot — BMAD Quick Reference
+# Xot: BMAD Quick Reference
 
 ## Comandi Rapidi
 
@@ -59,9 +63,15 @@ bmad-quick-spec "Specifica tecnica XotBaseResource"
 
 ## Cartelle Chiave
 
+<<<<<<< HEAD
 - `docs/bmad/` — questa documentazione BMAD
 - `_bmad-output/` — artefatti generati (repo root)
 - `_bmad/` — framework BMAD esterno (non incluso nel repo; installato via BMAD CLI)
+=======
+- `docs/bmad/`: questa documentazione BMAD
+- `_bmad-output/`: artefatti generati (repo root)
+- `_bmad/`: framework BMAD esterno (non incluso nel repo; installato via BMAD CLI)
+>>>>>>> laraxot/dev
 
 ## Vedi Anche
 

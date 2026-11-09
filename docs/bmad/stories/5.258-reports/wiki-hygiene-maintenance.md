@@ -1,5 +1,5 @@
 ---
-title: "5.258 report — Wiki hygiene BMAD tranche 1"
+title: "5.258 report: Wiki hygiene BMAD tranche 1"
 type: report
 story_id: "5.258"
 status: in-progress
@@ -12,7 +12,7 @@ sources:
 qmd: "wiki hygiene   tranche 1 xot"
 ---
 
-# Wiki hygiene — tranche 1
+# Wiki hygiene: tranche 1
 
 ## Obiettivo
 

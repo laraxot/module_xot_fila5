@@ -5,8 +5,13 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Unit;
 
 use Illuminate\Support\Facades\Validator;
+<<<<<<< HEAD
 use Tests\TestCase;
 use PHPUnit\Framework\Assert;
+=======
+use PHPUnit\Framework\Assert;
+use Tests\TestCase;
+>>>>>>> laraxot/dev
 
 use function Safe\preg_match;
 
@@ -67,6 +72,22 @@ it('does not fall back to Italian for the global validation rules', function (st
     return $cases;
 });
 
+<<<<<<< HEAD
+=======
+/*
+ * DCP-378: Livewire legge `validation.uploaded` quando un upload fallisce (es. foto oltre il limite del server); senza la chiave
+ * italiana usava il suo testo inglese di riserva «The image failed to upload».
+ */
+it('translates the failed upload message in every locale', function (string $locale): void {
+    // Livewire passa il nome interno del campo (`data.images.f...`): la frase intera non lo deve mostrare al cittadino
+    $message = trans('validation.uploaded', ['attribute' => 'data.images.f1'], $locale);
+
+    Assert::assertNotSame('validation.uploaded', $message, "Chiave non tradotta in '{$locale}'");
+    Assert::assertStringNotContainsString(':attribute', $message);
+    Assert::assertStringNotContainsString('data.images', $message, "Il nome interno del campo trapela in '{$locale}'");
+})->with(['it', 'en', 'de', 'es']);
+
+>>>>>>> laraxot/dev
 it('speaks the language of the page in the User module validation messages', function (string $locale, string $key) use ($replace): void {
     $message = trans('user::validation.'.$key, $replace, $locale);
 
@@ -84,3 +105,29 @@ it('speaks the language of the page in the User module validation messages', fun
 
     return $cases;
 });
+<<<<<<< HEAD
+=======
+
+/*
+ * Foto dalla fotocamera: quando PHP scarta il file (limite di dimensione) Livewire risponde 422 con `validation.uploaded`
+ * e il cittadino leggeva la chiave grezza in italiano e una frase inglese in `validation.file` (it, de). Le due regole
+ * del caricamento devono parlare la lingua della pagina.
+ */
+it('translates the upload rules in the language of the page', function (string $locale, string $key) use ($replace): void {
+    // `fallback_locale = it`: senza hasForLocale una chiave mancante in de/es tornerebbe in italiano e passerebbe a vuoto
+    Assert::assertTrue(app('translator')->hasForLocale('validation.'.$key, $locale), "Chiave assente in '{$locale}': {$key}");
+    $message = trans('validation.'.$key, $replace, $locale);
+
+    Assert::assertNotSame('validation.'.$key, $message, "Chiave non tradotta in '{$locale}': {$key}");
+    Assert::assertSame(0, preg_match('/\b(The|must|failed|field)\b/', $message), "Testo inglese nel messaggio '{$key}' in '{$locale}': {$message}");
+})->with(function (): array {
+    $cases = [];
+    foreach (['it', 'de', 'es'] as $locale) {
+        foreach (['uploaded', 'file', 'distinct', 'mimetypes'] as $key) {
+            $cases["{$locale} {$key}"] = [$locale, $key];
+        }
+    }
+
+    return $cases;
+});
+>>>>>>> laraxot/dev

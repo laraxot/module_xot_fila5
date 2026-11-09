@@ -27,7 +27,11 @@ status: active
 
 ## Boundaries (2026-10-28)
 
+<<<<<<< HEAD
 - [no-domain-actions-in-xot](./concepts/no-domain-actions-in-xot.md) _(target mancante, verificato 2026-10-14)_ — niente `Actions/AI|Geo|…`
+=======
+- [no-domain-actions-in-xot](./concepts/no-domain-actions-in-xot.md) _(target mancante, verificato 2026-10-14)_: niente `Actions/AI|Geo|…`
+>>>>>>> laraxot/dev
 - Raw: [no-domain-logic-in-xot.md](../no-domain-logic-in-xot.md) _(target mancante, verificato 2026-10-14)_
 - AI owner: [ollama-actions-ownership](../../../AI/docs/wiki/concepts/ollama-actions-ownership.md)
 
@@ -35,13 +39,24 @@ Indice operativo del wiki Xot (core framework).
 
 ## Struttura canonica (sacred)
 
+<<<<<<< HEAD
 - [no-docs-archive](../../../../../bashscripts/ai/wiki/concepts/no-docs-archive-rule.md) — regola Second Brain cross-modulo: niente alberi `docs/archive/`; storia wiki in `docs/wiki/_archive/`.
 
 - [module-directory-structure-rule.md](../module-directory-structure-rule.md) _(target mancante, verificato 2026-10-14)_ — regola cartelle modulo (PHP solo in `app/`)
+=======
+- [no-docs-archive](../../../../../bashscripts/ai/wiki/concepts/no-docs-archive-rule.md): regola Second Brain cross-modulo: niente alberi `docs/archive/`; storia wiki in `docs/wiki/_archive/`.
+
+- [module-directory-structure-rule.md](../module-directory-structure-rule.md) _(target mancante, verificato 2026-10-14)_: regola cartelle modulo (PHP solo in `app/`)
+>>>>>>> laraxot/dev
 - [concepts/](./concepts/): Pattern architetturali e metodologie Xot/Laraxot.
 - [entities/](./entities/): Modelli e componenti chiave.
 - [architettura](./concepts/xot-module-architecture-overview.md): Panoramica architetturale del modulo Xot (sovrapponibile a `bmad/architecture.md`).
 - [rules/](./rules/): Regole operative e contratti.
+<<<<<<< HEAD
+=======
+- [Accessor Eloquent e gemello nello stesso file](./rules/accessor-twin-method.md): firma pubblica tipizzata, delega, purezza e collocazione nei trait.
+- [Accessor Eloquent + gemello nello stesso file](./rules/accessor-twin-method.md): firma pubblica tipizzata, delega e purezza del calcolo.
+>>>>>>> laraxot/dev
 - [overviews/](./overviews/): Viste panoramiche.
 - [sources/](./sources/): Dati di ricerca e link esterni.
 - [comparisons/](./comparisons/): Implementazioni alternative.
@@ -52,10 +67,10 @@ Indice operativo del wiki Xot (core framework).
 
 ## Regole collegate
 
-- [ai-harness-xot-discipline.md](./concepts/ai-harness-xot-discipline.md) — harness agenti (canon moduli)
-- [module-testcase-xotbase-hierarchy.md](./rules/module-testcase-xotbase-hierarchy.md) — TestCase dei moduli estendono `XotBaseTestCase`; nWidart Tests e' dev-only nel package installato
-- [composer-root-skeleton-modular.md](./concepts/composer-root-skeleton-modular.md) — root Composer minimo, merge solo `Modules/*/composer.json`
-- [pest-global-class-imports.md](./rules/pest-global-class-imports.md) — nei test senza namespace rimuovere `use ReflectionClass;` e altre import globali inutili
+- [ai-harness-xot-discipline.md](./concepts/ai-harness-xot-discipline.md): harness agenti (canon moduli)
+- [module-testcase-xotbase-hierarchy.md](./rules/module-testcase-xotbase-hierarchy.md): TestCase dei moduli estendono `XotBaseTestCase`; nWidart Tests e' dev-only nel package installato
+- [composer-root-skeleton-modular.md](./concepts/composer-root-skeleton-modular.md): root Composer minimo, merge solo `Modules/*/composer.json`
+- [pest-global-class-imports.md](./rules/pest-global-class-imports.md): nei test senza namespace rimuovere `use ReflectionClass;` e altre import globali inutili
 - [second-brain-local-discipline.md](./concepts/second-brain-local-discipline.md)
 - [hackernoon-ai-coding-tips-fixcity-map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md) (root)
 - [forbidden-folders-rule](../../../../docs/wiki/concepts/forbidden-folders.md): Vincoli strutturali strict.
@@ -69,7 +84,11 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 
 ## Completamento piattaforma
 
+<<<<<<< HEAD
 - [overviews/platform-completion-roadmap.md](./overviews/platform-completion-roadmap.md) — **SSoT** roadmap 16 moduli + 4 temi (2026-06-13)
+=======
+- [overviews/platform-completion-roadmap.md](./overviews/platform-completion-roadmap.md): **SSoT** roadmap 16 moduli + 4 temi (2026-06-13)
+>>>>>>> laraxot/dev
 - [PHPStan troubleshooting](../troubleshooting/phpstan.md)
 
 ## Compiled Pages
@@ -133,6 +152,7 @@ Aggiornato: 2026-07-27
 | Hub runtime cross-modulo | [runtime-config-religion-hub](../../../../Themes/docs/shared-components/runtime-config-religion-hub.md) |
 | Tenant `modules_statuses` | [tenant-module-status-registry](../../Tenant/docs/tenant-module-status-registry.md) |
 
+<<<<<<< HEAD
 ## Lezioni 2026-10-06 — PHPStan cleanup Xot/app
 
 - [dev-story](../stories/phpstan-cleanup-xot-app.dev.md) — scopo prima dell'errore: variabili orfane = logica tolta (`RelationX`, `RouteService`), costanti tipizzate vs `composer.json` `php ^8.2`, result-cache PHPStan stale tra agenti paralleli. Story: [story](../stories/phpstan-cleanup-xot-app.story.md).
@@ -142,12 +162,31 @@ Aggiornato: 2026-07-27
 - [dev-story](../stories/phpstan-cleanup-xot-rest.dev.md) — test segnaposto con variabile non letta = asserzione persa; stub `Pest\Laravel\*` risolti da `tests/PestStubs.php` prima del vendor (firme intoccabili, parametri resi utili con `xotPestStubFailure()`); classe anonima annidata = PHPDoc non risolto, serve una classe nominata. Story: [story](../stories/phpstan-cleanup-xot-rest.story.md).
 
 ## Decisioni in discussione — 2026-09-11
+=======
+## Lezioni 2026-10-06: PHPStan cleanup Xot/app
+>>>>>>> laraxot/dev
 
-- [Owner e Resource correlata](concepts/manage-related-records-resource-delegation.md) — riuso form/colonne, DRY/KISS e vincoli Filament; traccia vendor completa (`makeTable()`→`configureTable()`).
-- Analisi indipendente parallela, stesso giorno, mappa completa in [../index.md#discussioni-architetturali--2026-09-11](../index.md#discussioni-architetturali--2026-09-11) — censimento pagine, verifica dal vivo pannello/modulo, prova di precedenza classe/trait.
+- [dev-story](../stories/phpstan-cleanup-xot-app.dev.md): scopo prima dell'errore: variabili orfane = logica tolta (`RelationX`, `RouteService`), costanti tipizzate vs `composer.json` `php ^8.2`, result-cache PHPStan stale tra agenti paralleli. Story: [story](../stories/phpstan-cleanup-xot-app.story.md).
 
+<<<<<<< HEAD
 - [File proposto XotBaseManageRelatedRecords](../app/Filament/Resources/Pages/XotBaseManageRelatedRecords.php.md) — PHP documentato, review e coordinamento multi-agente.
 
 ## Architettura Canonica (BMAD)
 
 Vedere l'architettura BMAD ufficiale in [bmad/architecture.md](../bmad/architecture.md) — questa è la fonte d'autore per la struttura del modulo Xot.
+=======
+## Lezioni 2026-10-06: PHPStan cleanup Xot (tests, helpers, stub Pest)
+
+- [dev-story](../stories/phpstan-cleanup-xot-rest.dev.md): test segnaposto con variabile non letta = asserzione persa; stub `Pest\Laravel\*` risolti da `tests/PestStubs.php` prima del vendor (firme intoccabili, parametri resi utili con `xotPestStubFailure()`); classe anonima annidata = PHPDoc non risolto, serve una classe nominata. Story: [story](../stories/phpstan-cleanup-xot-rest.story.md).
+
+## Decisioni in discussione: 2026-09-11
+
+- [Owner e Resource correlata](concepts/manage-related-records-resource-delegation.md): riuso form/colonne, DRY/KISS e vincoli Filament; traccia vendor completa (`makeTable()`→`configureTable()`).
+- Analisi indipendente parallela, stesso giorno, mappa completa in [../index.md#discussioni-architetturali--2026-09-11](../index.md#discussioni-architetturali--2026-09-11): censimento pagine, verifica dal vivo pannello/modulo, prova di precedenza classe/trait.
+
+- [File proposto XotBaseManageRelatedRecords](../app/Filament/Resources/Pages/XotBaseManageRelatedRecords.php.md): PHP documentato, review e coordinamento multi-agente.
+
+## Architettura Canonica (BMAD)
+
+Vedere l'architettura BMAD ufficiale in [bmad/architecture.md](../bmad/architecture.md): questa è la fonte d'autore per la struttura del modulo Xot.
+>>>>>>> laraxot/dev

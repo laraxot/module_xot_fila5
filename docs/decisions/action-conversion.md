@@ -1,6 +1,10 @@
 ---
 type: decision
+<<<<<<< HEAD
 title: "BMAD — Xot: Action conversion (Services → Queueable Actions, framework wave)"
+=======
+title: "BMAD: Xot: Action conversion (Services → Queueable Actions, framework wave)"
+>>>>>>> laraxot/dev
 status: verified
 updated: 2026-10-20
 date: 2026-10-20
@@ -13,7 +17,11 @@ related:
 qmd: "decisione bmad   xot: action conversion (framework base) xot"
 ---
 
+<<<<<<< HEAD
 # Decisione BMAD — Xot: Action conversion (framework base)
+=======
+# Decisione BMAD: Xot: Action conversion (framework base)
+>>>>>>> laraxot/dev
 
 ## Perché esiste questo file
 Documenta la conversione dei servizi framework (`Xot`) da `app/Services/` (assente per policy) verso `app/Actions/` (62 Actions). Il modulo Xot è il base framework per tutti gli altri moduli (`BaseResource`, `BasePage`, `BasePanelProvider`, dispatcher, contratti, traduzioni).

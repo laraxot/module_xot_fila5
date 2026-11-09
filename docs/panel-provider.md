@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Panel Provider in Modulo Xot"
 type: note
@@ -100,3 +101,5 @@ public function panel(Panel $panel): Panel
 - [Configurazione Moduli](../../../docs/MODULE_ARCHITECTURE.md)
 
 *Ultimo aggiornamento: 2025-01-06*
+=======
+>>>>>>> laraxot/dev

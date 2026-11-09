@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 title: Code quality — audit label hardcoded Filament
+=======
+title: Code quality: audit label hardcoded Filament
+>>>>>>> laraxot/dev
 type: story
 module: Xot
 status: ready-for-dev

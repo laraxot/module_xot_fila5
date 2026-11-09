@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Xot - phpstan-status.md"
 module: Xot
@@ -69,3 +70,5 @@ rilanciarla dopo modifiche PHP che possono cambiare i risultati.
 
 - Story e dettaglio dei gate: [ECC e PHPStan](./stories/ecc-codex-plugin-setup.story.md).
 - Regola source-first: [memoria condivisa](../../../../../bashscripts/ai/wiki/memories/source-first-before-fix.md).
+=======
+>>>>>>> laraxot/dev

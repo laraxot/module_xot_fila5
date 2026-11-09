@@ -6,7 +6,11 @@ updated: 2026-09-26
 qmd: "setup guide"
 issues: []
 discussions: []
+<<<<<<< HEAD
 title: "Xot — BMAD Setup Guide"
+=======
+title: "Xot: BMAD Setup Guide"
+>>>>>>> laraxot/dev
 description: "Setup e configurazione BMAD per il modulo Xot"
 module: "Xot"
 alias: "xot"
@@ -15,7 +19,7 @@ bmad_version: "6.2.0"
 status: draft
 ---
 
-# Xot — BMAD Setup Guide
+# Xot: BMAD Setup Guide
 
 ## Scopo
 

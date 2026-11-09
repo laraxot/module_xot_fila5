@@ -1,14 +1,24 @@
 ---
+<<<<<<< HEAD
 title: "Nwidart tests directory convention — lowercase only"
+=======
+title: "Nwidart tests directory convention: lowercase only"
+>>>>>>> laraxot/dev
 type: note
 status: unverified
 created: 2026-10-20
 updated: 2026-10-20
 module: Xot
 tags: [xot, rules]
+<<<<<<< HEAD
 qmd: "Nwidart tests directory convention — lowercase only"
 ---
 # Nwidart tests directory convention — lowercase only
+=======
+qmd: "Nwidart tests directory convention: lowercase only"
+---
+# Nwidart tests directory convention: lowercase only
+>>>>>>> laraxot/dev
 
 **Status:** mandatory
 

@@ -4,7 +4,11 @@ created: 2026-09-26
 updated: 2026-09-26
 issues: []
 discussions: []
+<<<<<<< HEAD
 title: "Story — doppio tracking laravel/Modules: repo root + submoduli"
+=======
+title: "Story: doppio tracking laravel/Modules: repo root + submoduli"
+>>>>>>> laraxot/dev
 type: story
 module: Xot
 epic: quality
