@@ -6,14 +6,10 @@ namespace Modules\Xot\Traits\Filament;
 
 use Illuminate\Support\Str;
 
-<<<<<<< HEAD
-trait HasCustomModelLabel
-=======
 /**
  * @phpstan-ignore trait.unused
  */
 trait HasCustomModelLabel // @phpstan-ignore trait.unused
->>>>>>> laraxot/dev
 {
     /**
      * Get the plural label of the resource.

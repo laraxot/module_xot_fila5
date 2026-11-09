@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
-title: "PHPStan — un solo neon, solo umano"
-=======
 title: "PHPStan: un solo neon, solo umano"
->>>>>>> laraxot/dev
 type: decision
 module: Xot
 status: active
@@ -21,19 +17,11 @@ tags: [docs, xot, phpstan-fix-plan]
 GateGuard facts:
 1. Supersedes prior stale body of THIS file (wrong: reportUnmatched false + ignore constantTypeCoverage).
 2. Linked from memories/phpstan-single-neon-config, phpstan-status, 11-phpstan.
-<<<<<<< HEAD
-3. Edit existing same-topic file — not a new topic.
-4. User: "devi utilizzare laravel/phpstan.neon e solo io posso modificarlo, non puoi creare altri .neon..."
--->
-
-# PHPStan — un solo neon
-=======
 3. Edit existing same-topic file: not a new topic.
 4. User: "devi utilizzare laravel/phpstan.neon e solo io posso modificarlo, non puoi creare altri .neon..."
 -->
 
 # PHPStan: un solo neon
->>>>>>> laraxot/dev
 
 ## Perche' (religione)
 
@@ -73,9 +61,5 @@ il neon root. Non crearne di nuovi.
 ## Filament blueprint
 
 Widget `XotBase*` e Resource/Page passano dallo stesso gate. Nessun neon
-<<<<<<< HEAD
-Filament dedicato — vedi
-=======
 Filament dedicato: vedi
->>>>>>> laraxot/dev
 [livewire-to-filament-widgets-filament-blueprint.md](../bmad/livewire-to-filament-widgets-filament-blueprint.md).

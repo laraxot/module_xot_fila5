@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
-title: "Obiettivo — eliminazione dei custom Livewire UI"
-=======
 title: "Obiettivo: eliminazione dei custom Livewire UI"
->>>>>>> laraxot/dev
 type: objective
 module: Xot
 status: approved-ready-for-dev

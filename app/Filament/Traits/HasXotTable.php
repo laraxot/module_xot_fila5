@@ -43,10 +43,7 @@ use Modules\UI\Filament\Traits\HasTableLayoutPage;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Filament\PlainTextFromFilamentValueAction;
 use Modules\Xot\Actions\GetTransKeyAction;
-<<<<<<< HEAD
-=======
 use Modules\Xot\Actions\Model\ModelHasColumnAction;
->>>>>>> laraxot/dev
 use Modules\Xot\Filament\Links\RecordAnchor;
 use RuntimeException;
 use Webmozart\Assert\Assert;

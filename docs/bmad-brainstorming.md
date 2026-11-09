@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
-title: "BMAD Brainstorming — Xot"
-=======
 title: "BMAD Brainstorming: Xot"
->>>>>>> laraxot/dev
 type: bmad-brainstorming
 status: synthesized
 module: Xot
@@ -51,11 +47,7 @@ Quale criterio fa entrare qualcosa in Xot invece di restare nel modulo owner?
 | Eliminate | Duplicazioni di verita (second store, Livewire legacy, Controllers) | H | H |
 | Reverse | Progettare dai failure mode privacy/authz prima delle feature | H | H |
 
-<<<<<<< HEAD
-## Reverse brainstorming — come romperlo
-=======
 ## Reverse brainstorming: come romperlo
->>>>>>> laraxot/dev
 
 - Copiare planning Ticket in questo owner (gia successo: stub da correggere).
 - Mettere business rules nel tema o Controllers.
@@ -72,8 +64,4 @@ Quale criterio fa entrare qualcosa in Xot invece di restare nel modulo owner?
 
 ## Prossimo step BMAD
 
-<<<<<<< HEAD
-Vedi [bmad-planning.md](./bmad-planning.md) — eseguire la Wave 1 e aggiornare il decision-log owner.
-=======
 Vedi [bmad-planning.md](./bmad-planning.md): eseguire la Wave 1 e aggiornare il decision-log owner.
->>>>>>> laraxot/dev

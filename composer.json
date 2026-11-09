@@ -116,13 +116,9 @@
             "helpers/Helper.php"
         ]
     },
-<<<<<<< HEAD
-    "autoload-dev": {},
-=======
     "autoload-dev": {
         "classmap": ["tests/"]
     },
->>>>>>> laraxot/dev
     "scripts": {
         "analyse": "vendor/bin/phpstan analyse",
         "test": "vendor/bin/pest",

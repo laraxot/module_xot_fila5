@@ -5,13 +5,8 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Unit;
 
 use Illuminate\Support\Facades\Validator;
-<<<<<<< HEAD
-use Tests\TestCase;
-use PHPUnit\Framework\Assert;
-=======
 use PHPUnit\Framework\Assert;
 use Tests\TestCase;
->>>>>>> laraxot/dev
 
 use function Safe\preg_match;
 
@@ -72,8 +67,6 @@ it('does not fall back to Italian for the global validation rules', function (st
     return $cases;
 });
 
-<<<<<<< HEAD
-=======
 /*
  * DCP-378: Livewire legge `validation.uploaded` quando un upload fallisce (es. foto oltre il limite del server); senza la chiave
  * italiana usava il suo testo inglese di riserva «The image failed to upload».
@@ -87,7 +80,6 @@ it('translates the failed upload message in every locale', function (string $loc
     Assert::assertStringNotContainsString('data.images', $message, "Il nome interno del campo trapela in '{$locale}'");
 })->with(['it', 'en', 'de', 'es']);
 
->>>>>>> laraxot/dev
 it('speaks the language of the page in the User module validation messages', function (string $locale, string $key) use ($replace): void {
     $message = trans('user::validation.'.$key, $replace, $locale);
 
@@ -105,8 +97,6 @@ it('speaks the language of the page in the User module validation messages', fun
 
     return $cases;
 });
-<<<<<<< HEAD
-=======
 
 /*
  * Foto dalla fotocamera: quando PHP scarta il file (limite di dimensione) Livewire risponde 422 con `validation.uploaded`
@@ -130,4 +120,3 @@ it('translates the upload rules in the language of the page', function (string $
 
     return $cases;
 });
->>>>>>> laraxot/dev

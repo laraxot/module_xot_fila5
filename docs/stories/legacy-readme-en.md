@@ -4,11 +4,7 @@ module: Xot
 bmad: true
 status: active
 ---
-<<<<<<< HEAD
-# ⚡ Xot — English presentation
-=======
 # ⚡ Xot: English presentation
->>>>>>> laraxot/dev
 
 [![Core](https://img.shields.io/badge/Role-Platform%20Core-6A1B9A.svg)](#)
 [![Laravel 12](https://img.shields.io/badge/Laravel-12-red.svg)](https://laravel.com/)

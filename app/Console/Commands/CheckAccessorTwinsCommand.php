@@ -35,13 +35,9 @@ class CheckAccessorTwinsCommand extends Command
     public function handle(): int
     {
         $module = $this->option('module');
-<<<<<<< HEAD
-        $pattern = base_path('Modules/'.(is_string($module) && $module !== '' ? $module : '*').'/app/Models/*.php');
-=======
         $moduleName = is_string($module) && $module !== '' ? $module : null;
         $pattern = base_path('Modules/'.($moduleName ?? '*').'/app/Models/*.php');
         $files = $this->modelFiles($moduleName);
->>>>>>> laraxot/dev
 
         if ($this->option('orphans') === true) {
             return $this->reportOrphanTwins($pattern);
@@ -72,9 +68,6 @@ class CheckAccessorTwinsCommand extends Command
                     continue;
                 }
 
-<<<<<<< HEAD
-                $accessors++;
-=======
                 // Esclude metodi di dominio ereditati da trait/framework vendor
                 // (es. HasFactory::getUseFactoryAttribute, HasTranslations::getTranslatableColumnsFromAttribute).
                 if ($this->methodFromVendor($reflection, $method)) {
@@ -103,7 +96,6 @@ class CheckAccessorTwinsCommand extends Command
                 if ($method->getReturnType() === null) {
                     $missing[$class][] = $method->getName().'() non dichiara il tipo di ritorno';
                 }
->>>>>>> laraxot/dev
 
                 if (! $reflection->hasMethod($twin)) {
                     $missing[$class][] = $method->getName().'(): manca '.$twin.'()';

@@ -26,10 +26,6 @@ use Modules\Xot\Datas\XotData;
 use Modules\Xot\Models\Module;
 use Modules\Xot\Providers\XotServiceProvider;
 use PHPUnit\Framework\MockObject\MockObject;
-<<<<<<< HEAD
-use Safe\Exceptions\FilesystemException;
-=======
->>>>>>> laraxot/dev
 
 /**
  * Class XotBaseTestCase.
@@ -134,8 +130,6 @@ abstract class XotBaseTestCase extends BaseTestCase
         return $mock;
     }
 
-<<<<<<< HEAD
-=======
     /**
      * Mockery 1.6 shouldReceive() always returns a CompositeExpectation, whatever its docblock says, so a
      * wrapper with a native `Expectation` return type throws TypeError at runtime. The director holds the real
@@ -153,7 +147,6 @@ abstract class XotBaseTestCase extends BaseTestCase
         return $expectation;
     }
 
->>>>>>> laraxot/dev
     public function skipTest(string $message = ''): never
     {
         $this->markTestSkipped($message);

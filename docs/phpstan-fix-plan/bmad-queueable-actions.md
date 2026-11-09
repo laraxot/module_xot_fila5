@@ -3,22 +3,14 @@ initiative: PHPStan Zero + Spatie Queueable Actions Conversion
 author: AI Agent
 status: completed
 created: 2026-10-20
-<<<<<<< HEAD
-title: "BMAD Planning — Spatie Queueable Actions"
-=======
 title: "BMAD Planning: Spatie Queueable Actions"
->>>>>>> laraxot/dev
 type: note
 updated: 2026-10-23
 tags: [docs, xot, phpstan-fix-plan]
 qmd: "bmad planning   spatie queueable actions xot"
 ---
 
-<<<<<<< HEAD
-# BMAD Planning — Spatie Queueable Actions
-=======
 # BMAD Planning: Spatie Queueable Actions
->>>>>>> laraxot/dev
 
 ## 1. Brainstorming (Perché?)
 
@@ -32,11 +24,7 @@ qmd: "bmad planning   spatie queueable actions xot"
 
 **Perché NON cancellare ma convertire:** La funzionalità esistente (invio messaggi, gestione log, recupero dati) deve essere preservata; la conversione aggiunge solo la capacità di coda e il pattern standard.
 
-<<<<<<< HEAD
-## 2. Methodology — BMAD Step by Step
-=======
 ## 2. Methodology: BMAD Step by Step
->>>>>>> laraxot/dev
 
 - **B = Brainstorming:** Fatto sopra (scopo: decoupling, retry, scala).
 - **M = Methodology:** Per ogni modulo, identificare i file `Actions/*.php` che MANgano `use QueueableAction;`. Se mancano, aggiungere.
@@ -49,11 +37,7 @@ Per ogni modulo: `app/Actions/` contiene le Action che usano `QueueableAction`, 
 
 ## 4. Second Brain / Hindsight Note
 
-<<<<<<< HEAD
-> 🧠 **From Hindsight memory (phpstan-fixes.md)** — Il modulo DbForge usa già `Spatie\QueueableAction\QueueableAction`; il progetto ha già il package installato; il baseline `phpstan.neon` ignora solo errori specifici di Tenant. La conversione deve mantenere `strict_types=1`, `Safe\json_decode`, e non introdurre suppressions.
-=======
 > 🧠 **From Hindsight memory (phpstan-fixes.md)**: Il modulo DbForge usa già `Spatie\QueueableAction\QueueableAction`; il progetto ha già il package installato; il baseline `phpstan.neon` ignora solo errori specifici di Tenant. La conversione deve mantenere `strict_types=1`, `Safe\json_decode`, e non introdurre suppressions.
->>>>>>> laraxot/dev
 
 ---
 

@@ -331,8 +331,6 @@ abstract class XotBaseMigration extends LaravelMigration
         $this->getConn()->table($tableName, $next);
     }
 
-<<<<<<< HEAD
-=======
     /**
      * Crea solo gli indici che mancano, sulla connessione del modello della migrazione.
      *
@@ -381,7 +379,6 @@ abstract class XotBaseMigration extends LaravelMigration
         return $schema->hasIndex($tableName, $indexName) || $schema->hasIndex($tableName, $columns);
     }
 
->>>>>>> laraxot/dev
     /**
      * @param  mixed  $result  Risultato di Connection::selectOne() (atteso array{count?: mixed}|object|null)
      */

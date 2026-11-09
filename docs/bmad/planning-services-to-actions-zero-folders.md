@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
-title: Planning — zero cartelle app/Services (Spatie Queueable Actions)
-=======
 title: Planning: zero cartelle app/Services (Spatie Queueable Actions)
->>>>>>> laraxot/dev
 type: bmad-planning
 status: done
 module: Xot
@@ -47,11 +43,7 @@ prescrivere la procedura se un merge riesuma path.
 | Cartella invita debito | Assenza della directory = segnale CI |
 
 Adapter, translator, registry, stream HTTP **non** sono use-case: vanno in
-<<<<<<< HEAD
-`Adapters/`, `Contracts/`, `Support/`, `Infrastructure/` — **mai** sotto
-=======
 `Adapters/`, `Contracts/`, `Support/`, `Infrastructure/`: **mai** sotto
->>>>>>> laraxot/dev
 `app/Services/`.
 
 Filament: Resource / Page / Widget chiamano Actions, mai Service
@@ -84,11 +76,7 @@ Brainstorm: [brainstorming-services-to-actions-wave.md](./brainstorming-services
 
 1. `rg` Action successore (`Sostituisce…` / nome verbale) + caller `use …\Services\`.
 2. Retarget caller (Facade / composer / test) verso Action.
-<<<<<<< HEAD
-3. **DELETE** Service + `rmdir` cartella — non relocate sotto altro nome Service.
-=======
 3. **DELETE** Service + `rmdir` cartella: non relocate sotto altro nome Service.
->>>>>>> laraxot/dev
 4. Confermare `NoServicesTest` + `find` dirs = 0.
 5. PHPStan perimetro se il call graph e' cambiato (`--memory-limit=2G` se RAM bassa).
 
@@ -122,11 +110,7 @@ Procedura lunga: [prompt 25](../../../../../bashscripts/docs/prompts/25-services
 - [x] Zero import produzione `…\Services\`
 - [x] Ratchet Pest verde
 - [x] Docs BMAD allineati (brainstorm + census + story + decision-log)
-<<<<<<< HEAD
-- [ ] Boy scout permanente su ogni merge (non chiudibile — standing order)
-=======
 - [ ] Boy scout permanente su ogni merge (non chiudibile: standing order)
->>>>>>> laraxot/dev
 
 # Story
 

@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
-title: Code quality — Pint lotto Xot/Cms/User
-=======
 title: Code quality: Pint lotto Xot/Cms/User
->>>>>>> laraxot/dev
 type: story
 module: Xot
 status: ready-for-dev
@@ -22,21 +18,13 @@ related:
 
 <!--
 GateGuard facts:
-<<<<<<< HEAD
-1. Supersedes nothing — new executable story from code-quality-wave "Next: Pint Cms/User".
-=======
 1. Supersedes nothing: new executable story from code-quality-wave "Next: Pint Cms/User".
->>>>>>> laraxot/dev
 2. Linked from tomorrow-handoff.story.md and code-quality-wave.md.
 3. New file in existing docs/stories/.
 4. User verbatim: "fa tutte le bmad stories per continuare domani"
 -->
 
-<<<<<<< HEAD
-# Pint — lotto Xot / Cms / User
-=======
 # Pint: lotto Xot / Cms / User
->>>>>>> laraxot/dev
 
 ## Perche'
 

@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
-title: "BMAD objective — Services to Queueable Actions"
-=======
 title: "BMAD objective: Services to Queueable Actions"
->>>>>>> laraxot/dev
 type: bmad-brainstorm-objective
 status: active
 module: Xot

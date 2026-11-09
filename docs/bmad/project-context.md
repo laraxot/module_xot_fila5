@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
-title: "Project context — Xot"
-=======
 title: "Project context: Xot"
->>>>>>> laraxot/dev
 type: constitution
 module: Xot
 track: bmad-method
@@ -18,11 +14,7 @@ related:
   - ./filament-blueprint.md
 ---
 
-<<<<<<< HEAD
-# Costituzione — Xot
-=======
 # Costituzione: Xot
->>>>>>> laraxot/dev
 
 Infrastruttura Laraxot stabile (XotBase*, contratti, tenancy) senza diventare discarica di dominio.
 

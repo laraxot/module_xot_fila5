@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
-title: Livewire → Widgets W1 — Job Status/Schedule/Crud
-=======
 title: Livewire → Widgets W1: Job Status/Schedule/Crud
->>>>>>> laraxot/dev
 type: story
 module: Job
 status: ready-for-dev
@@ -24,21 +20,13 @@ related:
 
 <!--
 GateGuard facts:
-<<<<<<< HEAD
-1. Supersedes nothing — executable slice of fleet W1 Job lane (fleet remains hub).
-=======
 1. Supersedes nothing: executable slice of fleet W1 Job lane (fleet remains hub).
->>>>>>> laraxot/dev
 2. Linked from tomorrow-handoff.story.md and livewire-to-filament-widgets-fleet.story.md.
 3. New file in existing Modules/Xot/docs/stories/; owns Modules/Job Livewire paths.
 4. User verbatim: "fa tutte le bmad stories per continuare domani"
 -->
 
-<<<<<<< HEAD
-# Livewire W1 — Job
-=======
 # Livewire W1: Job
->>>>>>> laraxot/dev
 
 ## Perche'
 

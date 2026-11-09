@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
-title: "Correction: docs organization — INDEX.md condiviso e correzione Ticket"
-=======
 title: "Correction: docs organization: INDEX.md condiviso e correzione Ticket"
->>>>>>> laraxot/dev
 status: correction
 scope: [laravel/Modules/docs, laravel/Themes/docs, laravel/Modules/Ticket/docs]
 updated: 2026-10-20
@@ -13,11 +9,7 @@ tags: [docs, xot]
 qmd: "correzione   docs organization xot"
 ---
 
-<<<<<<< HEAD
-# Correzione — docs organization
-=======
 # Correzione: docs organization
->>>>>>> laraxot/dev
 
 Cosa diceva la memoria / stato precedente: `Modules/docs/` e `Themes/docs/` non avevano `INDEX.md`; i moduli avevano solo `INDEX.md` locale senza riferimento alla convenzione transversale (`docs-organization.md`) ni all'indice prompt (`bashscripts/docs/prompts/INDEX.md`). Il gap del widget commenti Ticket era solo annotato come ❌ senza traccia di correzione documentata.
 

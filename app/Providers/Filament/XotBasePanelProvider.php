@@ -56,8 +56,6 @@ abstract class XotBasePanelProvider extends PanelProvider
      */
     protected bool $discoverModuleComponents = true;
 
-<<<<<<< HEAD
-=======
     /**
      * Sottocartella di `app/Filament` da cui scoprire i componenti.
      *
@@ -77,7 +75,6 @@ abstract class XotBasePanelProvider extends PanelProvider
      */
     protected bool $hasTenancy = false;
 
->>>>>>> laraxot/dev
     public function panel(Panel $panel): Panel
     {
         $moduleNamespace = $this->getModuleNamespace();
@@ -103,12 +100,6 @@ abstract class XotBasePanelProvider extends PanelProvider
             ->globalSearch($this->globalSearch)
             ->readOnlyRelationManagersOnResourceViewPagesByDefault(false)
             ->navigation($this->navigation)
-<<<<<<< HEAD
-            // ->tenant($teamClass)
-            // ->tenant($teamClass,ownershipRelationship:'users')
-            // ->tenant($teamClass)
-=======
->>>>>>> laraxot/dev
             ->id($this->panelId ?? $moduleLow.'::admin')
             ->path($this->panelPath ?? $moduleLow.'/admin')
             ->middleware([

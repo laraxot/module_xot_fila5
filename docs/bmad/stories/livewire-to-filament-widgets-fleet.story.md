@@ -41,11 +41,7 @@ Parallel lanes: [parallelization-plan](../livewire-widget-parallelization-plan.m
 
 ## Piano di esecuzione (ready-for-dev)
 
-<<<<<<< HEAD
-Religione (perché): **panel-first** — niente nuovi custom `Http/Livewire` per UI
-=======
 Religione (perché): **panel-first**: niente nuovi custom `Http/Livewire` per UI
->>>>>>> laraxot/dev
 di panel; sostituto = `XotBase*Widget` + Action. Livewire runtime Filament resta.
 FO (Folio/Volt/Blade) resta se lo scopo non e' una card di panel.
 

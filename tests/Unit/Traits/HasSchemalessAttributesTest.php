@@ -36,11 +36,7 @@ it('handles where extra attribute scope', function (): void {
 
 it('gets and sets extra attributes', function (): void {
     $model = new SchemalessTestModel;
-<<<<<<< HEAD
-    $model->setExtraAttribute('foo', 'bar');
-=======
     $model->setExtraValue('foo', 'bar');
->>>>>>> laraxot/dev
 
     Assert::assertSame('bar', $model->getExtraValue('foo'));
     Assert::assertTrue($model->hasExtraAttribute('foo'));
@@ -49,22 +45,14 @@ it('gets and sets extra attributes', function (): void {
 
 it('returns all extra attributes as array', function (): void {
     $model = new SchemalessTestModel;
-<<<<<<< HEAD
-    $model->setExtraAttribute('a', 1);
-=======
     $model->setExtraValue('a', 1);
->>>>>>> laraxot/dev
 
     Assert::assertSame(['a' => 1], $model->getExtraAttributes());
 });
 
 it('removes extra attribute', function (): void {
     $model = new SchemalessTestModel;
-<<<<<<< HEAD
-    $model->setExtraAttribute('temp', 'val');
-=======
     $model->setExtraValue('temp', 'val');
->>>>>>> laraxot/dev
 
     Assert::assertTrue($model->hasExtraAttribute('temp'));
     $model->removeExtraAttribute('temp');

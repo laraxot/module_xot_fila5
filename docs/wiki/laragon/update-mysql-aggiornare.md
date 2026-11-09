@@ -1,35 +1,4 @@
 ---
-<<<<<<< HEAD
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "update mysql 8 0"
-issues: []
-discussions: []
-title: Aggiornare Mysql a 8.0
-description: Aggiornare Mysql a 8.0
-extends: _layouts.documentation
-section: content
-status: draft
----
-
-# Aggiornare Mysql a 8.0 {#update-mysql-to-8-0}
-
-Articolo di riferimento https://gist.github.com/meorajrul/b57803bf1b4ddfd2f93e6ad37c3ac5f2
-
-* scaricare la versione di mysql 8.0.30 tramite link https://downloads.mysql.com/archives/get/p/23/file/mysql-8.0.30-winx64.zip
-* Decomprimere il file inC:\laragon\bin\mysql
-* Apri la riga di comando di Laragon e passa a quella cartella C:\laragon\bin\mysql\mysql-8.0.30-winx64\bin
-* Esegui comando
-  ```php
-  mysqld --initialize-insecure
-  ```
-
-* Fare clic con il tasto destro su Laragon Tray e passare alla versione MySQL 8.*
-* Avvia i servizi
-* Apri HeidiSQL o uno qualsiasi dei tuoi IDE DB e inizia ad accedere alla tabella
-=======
 title: "Aggiornare MySQL a 8.0 su Laragon"
 description: "Passare un Laragon su Windows a MySQL 8.0.30 portatile, senza reinstallare Laragon."
 type: how-to
@@ -76,4 +45,3 @@ Il testo era in quattro copie identiche piu' un alias; questa e' l'unica canonic
 e [`laragon/update-mysql-aggiornare.md`](../../laragon/update-mysql-aggiornare.md) sono alias che rimandano qui,
 [`update-mysql.md`](./update-mysql.md) (in questa cartella) e' gia' marcata `superseded`, e `laragon/update-mysql-8.md`
 (il "8" era la versione di MySQL, non un suffisso di copia) e' stato ritirato come `.md.old`.
->>>>>>> laraxot/dev

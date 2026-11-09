@@ -3,10 +3,7 @@
 declare(strict_types=1);
 use Modules\Xot\Actions\PaDesignColorsAction;
 use Modules\Xot\Datas\MetatagData;
-<<<<<<< HEAD
-=======
 use Modules\Xot\Datas\XotData;
->>>>>>> laraxot/dev
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 

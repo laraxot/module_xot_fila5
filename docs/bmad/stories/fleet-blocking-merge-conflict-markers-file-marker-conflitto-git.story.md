@@ -85,11 +85,7 @@ il duplicato"):
   solo `XotBaseListRecords` senza metodi propri e i filtri vivono in `NotifyThemesTable`.
   Un chiamante esterno (`ManageNotifyThemes`, in un modulo di un altro progetto non presente
   in questo repo) eredita i filtri dalla stessa Table class.
-<<<<<<< HEAD
-- `Notify/.../NotificationResource/Pages/ListNotifications.php` — rimosso solo il
-=======
 - `Notify/.../NotificationResource/Pages/ListNotifications.php`: rimosso solo il
->>>>>>> laraxot/dev
   wrapper `getTableFilters()`; **conservati** `notificationTableColumns()` /
   `notificationTableFilters()` perché chiamati direttamente da
   `Notify/tests/Unit/Filament/Resources/NotifyFilamentResourcesCoverageTest.php:101-102`.

@@ -21,11 +21,7 @@ Eliminare la duplicazione tra Services e Actions e portare ogni use-case
 applicativo a Queueable Action, senza trasformare adapter o framework services in
 wrapper artificiali.
 
-<<<<<<< HEAD
-## Task pianificati — wave BMAD/Blueprint
-=======
 ## Task pianificati: wave BMAD/Blueprint
->>>>>>> laraxot/dev
 
 - [x] W0: census filesystem, staging, caller statici e Actions candidate;
 - [ ] W1A (parallela, scope Geo/data): verificare GeoDataService e GeoDataValidator,

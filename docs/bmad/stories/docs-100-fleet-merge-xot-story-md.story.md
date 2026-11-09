@@ -8,11 +8,7 @@ updated: 2026-10-23
 tags: [docs, xot, bmad]
 qmd: "epic   docs ≤100 .md ricorsivi via merge (fleet-wide, 2026-10-05) xot"
 ---
-<<<<<<< HEAD
-# Epic — Docs ≤100 .md ricorsivi via merge (fleet-wide, 2026-10-05)
-=======
 # Epic: Docs ≤100 .md ricorsivi via merge (fleet-wide, 2026-10-05)
->>>>>>> laraxot/dev
 
 > Status: in-progress. Owner: sessione corrente. Metodo: BMAD + second brain + ponytail.
 

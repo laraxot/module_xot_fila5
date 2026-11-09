@@ -71,11 +71,7 @@ discussions:
   - "https://github.com/laraxot/module_xot_fila5/discussions/29"
 ---
 
-<<<<<<< HEAD
-## [2026-06-30] ponytail audit remediation — repo-wide
-=======
 ## [2026-06-30] ponytail audit remediation: repo-wide
->>>>>>> laraxot/dev
 
 - Delete dead: `RouteDynService`, `ContextCompressor`, UI NullMap stack, Geo probe test dupes.
 - Predict: seeder ad-hoc → `*.php.bak` (no cartella `Legacy/`); wiki [seeder-canonical-orchestrator.md](../../laravel/Modules/Predict/docs/wiki/concepts/seeder-canonical-orchestrator.md) _(target mancante, verificato 2026-10-14)_ + regola [no-legacy-folders-code.md](../../../../../docs/wiki/concepts/no-legacy-folders-code.md).
@@ -93,15 +89,9 @@ discussions:
 - §6.1: tabella fix PHPStan + link `phpstan-trait-probes.md`; pattern Spatie `insteadof` su `BaseUser`.
 - `run-session-gate.sh` allineato a §1.6.
 
-<<<<<<< HEAD
-## [2026-06-30] prompts | start.txt v15 — baseline PHPStan 0 + Spatie teams
-
-- **PHPStan:** `Modules/` a **0 errori** (level max, ~5357 file) — regola gate aggiornata: mantenere baseline, non ~25 backlog.
-=======
 ## [2026-06-30] prompts | start.txt v15: baseline PHPStan 0 + Spatie teams
 
 - **PHPStan:** `Modules/` a **0 errori** (level max, ~5357 file): regola gate aggiornata: mantenere baseline, non ~25 backlog.
->>>>>>> laraxot/dev
 - **Runtime gate:** check autoload `BaseUser` (trait collision `teams()` prima di PHPStan).
 - **§5:** GitHub / perimetro cross-modulo (condensato da welcome).
 - **Pattern second brain:** tabella fix (trait probe, MorphMany, Spatie `teams()` vs `membershipTeams()`).
@@ -195,11 +185,7 @@ discussions:
 - `start.txt` v5: sezioni `.claude` junction, ponytail, ponytail-audit hub, policy/actions protetti, fallback PHPStan modulo/file, anti-append ricorsivo.
 - `rules.txt`: conflitti Git risolti forward-only; allineato a policy stub + Queueable Actions + migrations.
 - Gate sessione: git pulito; conflitti PHP ok; 16 prompt fratelli ancora con `
-<<<<<<< HEAD
-## [2026-06-30] prompts | start.txt v4 — gate one-shot e igiene prompt
-=======
 ## [2026-06-30] prompts | start.txt v4: gate one-shot e igiene prompt
->>>>>>> laraxot/dev
 
 - `start.txt` v4: blocco **gate rapido one-shot**, regola igiene (no append query utente), `find -mindepth 1` per audit cartelle, link a `module-root-php-folders-forbidden.md`, `start.txt` canonico se `rules.txt` in conflitto.
 - Gate: composer skeleton ok; artisan 13.17; runtime PSR-4 ok; 3 conflitti PHP Geo/Job; `rules.txt` in conflitto; 5 cartelle root maiuscole Xot (`Datas`, `View`, `Helpers`, `Services`, `Filament`).
@@ -258,11 +244,7 @@ discussions:
 
 ## [2026-06-13] docs | Hub platform-completion-roadmap + gate PHPStan zero
 
-<<<<<<< HEAD
-- Creato [overviews/platform-completion-roadmap.md](overviews/platform-completion-roadmap.md) _(target mancante, verificato 2026-10-14)_ — SSoT completamento 16 moduli + 4 temi.
-=======
 - Creato [overviews/platform-completion-roadmap.md](overviews/platform-completion-roadmap.md) _(target mancante, verificato 2026-10-14)_: SSoT completamento 16 moduli + 4 temi.
->>>>>>> laraxot/dev
 - Aggiornati [phpstan-best-practices.md](phpstan-best-practices.md), [phpstan-pest-bridge-discipline.md](concepts/phpstan-pest-bridge-discipline.md) _(target mancante, verificato 2026-10-14)_.
 - Fix test: `FileActionsTest`, `GetClassNameByPathActionTest` (pattern `@var` / `assertIsString`).
 - Base [#372](https://github.com/laraxot/base_fixcity_fila5/issues/372).
@@ -451,15 +433,9 @@ discussions:
 - UserBasePolicy: Spatie Permission, user-authenticated, RBAC
 - Commit: docs: add cross-reference to policy boundary decision
 
-<<<<<<< HEAD
-2026-06-30 | start.txt v12 — cleanup: rimosso §1.10 duplicato, rg pre-check, test-naming in output, PHPStan consolidato in §6, appendice compressa
-
-## 2026-09-11 — Delega Resource per ManageRelatedRecords
-=======
 2026-06-30 | start.txt v12: cleanup: rimosso §1.10 duplicato, rg pre-check, test-naming in output, PHPStan consolidato in §6, appendice compressa
 
 ## 2026-09-11: Delega Resource per ManageRelatedRecords
->>>>>>> laraxot/dev
 
 Brainstorming documentale e story BMAD, nessuna implementazione. [Memoria](concepts/manage-related-records-resource-delegation.md), [analisi](../filament/manage-related-records-resource-delegation-brainstorming.md), [story](../stories/manage-related-records-resource-delegation.story.md) _(target mancante, verificato 2026-10-14)_. QMD search/update tentati ma bloccati da ABI Node/SQLite; fonti lette direttamente.
 
@@ -483,15 +459,9 @@ Create [issue #112](https://github.com/laraxot/module_xot_fila5/issues/112) e [d
 
 - Richiesta utente: cambiare `SMS_DRIVER=netfun` nel `.env` di produzione, ma nessun accesso SSH/FTP disponibile per modificarlo a mano (vedi [module_quaeris_fila5#38](https://github.com/laraxot/module_quaeris_fila5/issues/38)).
 - `EnvWidget` esisteva già e scrive `.env` dal pannello admin, ma non esponeva `SMS_DRIVER`. Aggiunta proprietà `sms_driver` a [`EnvData`](../../app/Datas/EnvData.php) e campo `Select` (opzioni chiuse sui driver mappati in `SmsActionFactory`, non testo libero) a [`EnvWidget::getFormSchema()`](../../app/Filament/Widgets/EnvWidget.php). Attivato in `Notify\SettingPage` (`only`).
-<<<<<<< HEAD
-- Richiesta successiva dell'utente, stesso giorno: poter anche vedere/modificare `NETFUN_TOKEN` dalla stessa pagina (verifica di cosa c'è già in produzione, senza SSH). Aggiunta proprietà `netfun_token` a `EnvData` e `TextInput` (non `Select`: valore libero fornito dal provider) a `EnvWidget`, anch'esso attivato in `Notify\SettingPage`. Compare già valorizzato al caricamento della pagina — `mount()` carica sempre `$_ENV` corrente nel form, nessun lavoro aggiuntivo richiesto per la visualizzazione.
-- Documentato il meccanismo generale (mai descritto prima): [concepts/env-widget-no-ssh-env-editor.md](concepts/env-widget-no-ssh-env-editor.md) _(target mancante, verificato 2026-10-14)_ — come aggiungere una variabile editabile, e il passo successivo obbligato (`config:cache` via `ArtisanCommandsManager`, già disponibile) se la config è cache-ata in produzione.
-- PHPStan pulito sui 3 file toccati (`EnvData.php`, `EnvWidget.php`, `Notify\SettingPage.php`), `php -l` ok. Nessuna verifica end-to-end in produzione — i valori vanno ancora selezionati/salvati dall'utente dopo il deploy.
-=======
 - Richiesta successiva dell'utente, stesso giorno: poter anche vedere/modificare `NETFUN_TOKEN` dalla stessa pagina (verifica di cosa c'è già in produzione, senza SSH). Aggiunta proprietà `netfun_token` a `EnvData` e `TextInput` (non `Select`: valore libero fornito dal provider) a `EnvWidget`, anch'esso attivato in `Notify\SettingPage`. Compare già valorizzato al caricamento della pagina: `mount()` carica sempre `$_ENV` corrente nel form, nessun lavoro aggiuntivo richiesto per la visualizzazione.
 - Documentato il meccanismo generale (mai descritto prima): [concepts/env-widget-no-ssh-env-editor.md](concepts/env-widget-no-ssh-env-editor.md) _(target mancante, verificato 2026-10-14)_: come aggiungere una variabile editabile, e il passo successivo obbligato (`config:cache` via `ArtisanCommandsManager`, già disponibile) se la config è cache-ata in produzione.
 - PHPStan pulito sui 3 file toccati (`EnvData.php`, `EnvWidget.php`, `Notify\SettingPage.php`), `php -l` ok. Nessuna verifica end-to-end in produzione: i valori vanno ancora selezionati/salvati dall'utente dopo il deploy.
->>>>>>> laraxot/dev
 
 ---
 
@@ -500,9 +470,6 @@ Create [issue #112](https://github.com/laraxot/module_xot_fila5/issues/112) e [d
 - Cleared `function.alreadyNarrowedType` error.
 # Log wiki Xot
 
-<<<<<<< HEAD
-- 2026-09-28 — aggiunto il contratto verificabile per i README root dei 18 moduli e la relativa story BMAD.
-=======
 - 2026-09-28: aggiunto il contratto verificabile per i README root dei 18 moduli e la relativa story BMAD.
 
 ## 2026-11-09 — xot:theme-link / xot:module-link
@@ -515,4 +482,3 @@ Create [issue #112](https://github.com/laraxot/module_xot_fila5/issues/112) e [d
 
 - Canonico: `Modules/{M}/public` → `public_html/assets/{lower(m)}` — è esattamente `xot:module-link`. NON `resources/images` → `public_html/modules/`.
 - `public_html/modules/{techplanner,ui}` è albero legacy: nessun riferimento nel codice (solo doc); le sorgenti sono `Modules/{M}/resources/`. Da non estendere con symlink senza prima verificare gli URL referenziati.
->>>>>>> laraxot/dev

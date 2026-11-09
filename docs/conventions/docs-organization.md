@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
-title: Docs Organization Convention — Modules & Themes
-=======
 title: Docs Organization Convention: Modules & Themes
->>>>>>> laraxot/dev
 status: standard
 scope: docs incrementali; nessun rinome massivo senza autorizzazione; solo piccoli lotti verificabili
 reference: Modules/Xot/docs/
@@ -19,11 +15,7 @@ updated: 2026-10-27
 tags: [docs, xot, conventions]
 ---
 
-<<<<<<< HEAD
-# Convenzione docs — moduli e temi
-=======
 # Convenzione docs: moduli e temi
->>>>>>> laraxot/dev
 
 ## Perche'
 
@@ -37,11 +29,7 @@ retrieval e link. Organizzare = rendere trovabile lo **scopo**, non archiviare t
 1. **Niente delete/rinome massivo** senza autorizzazione e mappa link.
 2. **Solo piccoli lotti verificabili** (un tema di naming per volta).
 3. **Un ingresso root attivo:** `README.md` (unico nome con maiuscole ammesso oltre a `CHANGELOG.md` se gia' presente).
-<<<<<<< HEAD
-4. `INDEX.md` / `00-INDEX.md` / `index.md` storici restano **alias** verso `README.md` o verso l'indice operativo gia' canonico del modulo — non crearne di nuovi per cosmesi.
-=======
 4. `INDEX.md` / `00-INDEX.md` / `index.md` storici restano **alias** verso `README.md` o verso l'indice operativo gia' canonico del modulo: non crearne di nuovi per cosmesi.
->>>>>>> laraxot/dev
 5. **Nuovi `.md`:** solo kebab-case minuscolo; **niente date** nel nome file; niente `SCREAMING_SNAKE` nuovi.
 6. Prima di creare un `.md`, cerca se esiste gia' lo stesso argomento (`rg`/glob).
 7. Si creano file solo dentro cartelle `docs/` **gia' esistenti** (non si creano cartelle `docs` nuove).

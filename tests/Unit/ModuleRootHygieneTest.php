@@ -4,10 +4,7 @@ declare(strict_types=1);
 
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-<<<<<<< HEAD
-=======
 use Symfony\Component\Process\Process;
->>>>>>> laraxot/dev
 
 use function Safe\file;
 use function Safe\glob;

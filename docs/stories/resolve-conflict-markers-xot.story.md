@@ -3,10 +3,7 @@ title: Resolve conflict markers in Xot
 module: Xot
 status: partially-done
 date: 2026-10-21
-<<<<<<< HEAD
-=======
 updated: 2026-11-03
->>>>>>> laraxot/dev
 ---
 
 # Resolve conflict markers in Xot
@@ -68,9 +65,6 @@ PHPStan Level 10 was not run on these files in this story.
 
 ## Lock
 
-<<<<<<< HEAD
-Locks were acquired with `bashscripts/lock/lock.sh` for all five files and removed after editing.
-=======
 Locks were acquired with `bashscripts/lock/lock.sh` for all five files and removed after editing.
 ## 2026-11-03: mono rebase after the submodule pull
 
@@ -145,4 +139,3 @@ Locks were acquired with `bashscripts/lock/lock.sh` (task `xot-rebase-conflicts-
 
 - `app/Filament/Builders/ColumnBuilder.php`: Pint applied. The only change is the `IDColumn` import moved into alphabetical order (`ordered_imports`). The remaining PHPMD findings on this class (boolean flag arguments, 27 public methods) are about the Xot API design and were left as they are.
 - `tests/Unit/Traits/HasDynamicFillableTest.php`: arrays rewritten with one key per line.
->>>>>>> laraxot/dev

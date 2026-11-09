@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
-title: "Xot Module — BMAD Stories & Remaining Work"
-=======
 title: "Xot Module: BMAD Stories & Remaining Work"
->>>>>>> laraxot/dev
 type: concept
 sources: ["../../AGENTS.md"]
 confidence: medium
@@ -16,24 +12,15 @@ status: draft
 qmd: "xot module   bmad stories & remaining work xot"
 ---
 
-<<<<<<< HEAD
-# Xot Module — BMAD Stories & Remaining Work
-=======
 # Xot Module: BMAD Stories & Remaining Work
->>>>>>> laraxot/dev
 
 ## Module Overview
 The Xot module provides shared base infrastructure, contracts, and cross-module utilities.
 
 ## Remaining Work
 1. PHPStan Zero Verification ✅
-<<<<<<< HEAD
-2. Base Contracts — Verify `HasRecursiveRelationshipsContract` and other base contracts
-3. Shared Infrastructure — Document shared patterns and contracts
-=======
 2. Base Contracts: Verify `HasRecursiveRelationshipsContract` and other base contracts
 3. Shared Infrastructure: Document shared patterns and contracts
->>>>>>> laraxot/dev
 4. Module Documentation 📋
 5. BMAD Stories 📋
 

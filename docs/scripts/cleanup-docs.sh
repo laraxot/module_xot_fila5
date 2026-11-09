@@ -6,11 +6,15 @@
 set -e
 
 MODULE=${1:-"Xot"}
-<<<<<<< HEAD
-DOCS_DIR="/var/www/_bases/base_ptvx_fila5_mono/laravel/Modules/$MODULE/docs"
-=======
-DOCS_DIR="/var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/$MODULE/docs"
->>>>>>> 6ed19256f (.)
+# docs/ del modulo target: se il modulo coincide con Xot uso la docs/ che contiene questo script,
+# altrimenti cerco laravel/Modules/$MODULE/docs risalendo dalla root del repo.
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_ROOT="$(cd "$SCRIPT_DIR/../../../../.." && pwd)"
+if [ "$MODULE" = "Xot" ]; then
+    DOCS_DIR="$SCRIPT_DIR/.."
+else
+    DOCS_DIR="$REPO_ROOT/laravel/Modules/$MODULE/docs"
+fi
 
 if [ ! -d "$DOCS_DIR" ]; then
     echo "❌ Directory non trovata: $DOCS_DIR"
@@ -118,9 +122,4 @@ echo "📁 File archiviati in:"
 echo "  - $DOCS_DIR/archive/historical/"
 echo "  - $DOCS_DIR/archive/duplicates/"
 echo "  - $DOCS_DIR/archive/uppercase/"
-<<<<<<< HEAD
 echo ""
-=======
-echo ""
-
->>>>>>> 6ed19256f (.)

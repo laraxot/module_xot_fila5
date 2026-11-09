@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
-title: "DCP-270 — No Services: guardia vera e ultimi residui (app/, tema Sixteen)"
-=======
 title: "DCP-270: No Services: guardia vera e ultimi residui (app/, tema Sixteen)"
->>>>>>> laraxot/dev
 type: story
 module: Xot
 status: done
@@ -17,11 +13,7 @@ related:
   - ../../../User/docs/bmad/stories/dcp-269-login-google-localizzato-e-rientro-nella-lingua.story.md
 ---
 
-<<<<<<< HEAD
-# DCP-270 — No Services: guardia vera e ultimi residui
-=======
 # DCP-270: No Services: guardia vera e ultimi residui
->>>>>>> laraxot/dev
 
 **Numero:** 270, preso con controllo che blocca (massimo trovato 269) e controllo del nome file con lo strumento della regola.
 

@@ -166,8 +166,6 @@ Nessun `git rm --cached` eseguito in questa sessione: shell non disponibile
 Se qualche repo ha gia' `docs/archive/` tracciata, va sbloccata con
 `git -C Modules/<Mod> rm -r --cached -- docs/archive` (solo quel path).
 
-<<<<<<< HEAD
-=======
 ## Regola 10: `*.lock` nei `.gitignore` (richiesta utente 2026-11-04)
 
 Richiesta: "in ogni modulo nel file .gitignore deve esserci che ignoriamo *.lock".
@@ -202,7 +200,6 @@ Notify, Trade), `docs/graphify` ancora presente (Lang, Notify, UI), cartelle vie
 `tools`, Notify `bashscripts` e `.github/skills`), `CHANGELOG.md` mancante in Trade. Cancellare
 cartelle richiede di guardare dentro prima: `resources/lang` puo' contenere traduzioni vere.
 
->>>>>>> laraxot/dev
 ## Verifica finale
 
 `vendor/bin/pest Modules/Xot/tests/Unit/ModuleRootHygieneTest.php` verde (mai su

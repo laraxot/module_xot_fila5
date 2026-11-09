@@ -4,11 +4,7 @@ created: 2026-09-26
 updated: 2026-09-26
 issues: []
 discussions: []
-<<<<<<< HEAD
-title: "Xot — bonifica .md con data/timestamp nel nome file"
-=======
 title: "Xot: bonifica .md con data/timestamp nel nome file"
->>>>>>> laraxot/dev
 type: story
 module: Xot
 status: backlog
@@ -63,11 +59,7 @@ gia' incluso in quel conteggio o e' nuovo (creato dopo).
 - `docs/refactor-panelmixin-2026-07-07.md`
 - `docs/git-conflicts-resolution.md`
 - `docs/filament/hasxtable-visibility-fix-2026-01-27.md`
-<<<<<<< HEAD
-- `docs/historical/hasxtable-visibility-fix-2026-01-27.md` (duplicato del punto sopra — verificare se identico prima di unificare)
-=======
 - `docs/historical/hasxtable-visibility-fix-2026-01-27.md` (duplicato del punto sopra: verificare se identico prima di unificare)
->>>>>>> laraxot/dev
 - `docs/consolidated/lessons-learned.md` (duplicato di sopra)
 - `docs/consolidated/git-conflicts-resolution-archive.md` (duplicato di sopra)
 - `docs/wiki/redundancy-audit-2026-05-26.md`

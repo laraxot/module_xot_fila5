@@ -28,14 +28,9 @@ use Illuminate\Support\Carbon;
  * ```
  *
  * @see docs/METODI_DUPLICATI_ANALISI.md - Proposta 4: Model Traits
-<<<<<<< HEAD
- */
-trait HasCommonScopes
-=======
  * @phpstan-ignore trait.unused
  */
 trait HasCommonScopes // @phpstan-ignore trait.unused
->>>>>>> laraxot/dev
 {
     /**
      * Scope query to only active records.

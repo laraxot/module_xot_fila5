@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
-title: "BMAD architecture — Services to Queueable Actions"
-=======
 title: "BMAD architecture: Services to Queueable Actions"
->>>>>>> laraxot/dev
 type: bmad-architecture
 status: accepted
 module: Xot
@@ -32,11 +28,7 @@ Filament / Folio / Livewire / Command
              DB / API / filesystem
 ```
 
-<<<<<<< HEAD
-## ADR-001 — Un use-case, una Queueable Action
-=======
 ## ADR-001: Un use-case, una Queueable Action
->>>>>>> laraxot/dev
 
 **Stato:** Accepted
 
@@ -47,11 +39,7 @@ identificabile vive in `app/Actions/<Context>/...Action.php`, usa
 **Conseguenze:** test e retry sono per caso d'uso; i god-service vengono spezzati.
 Non si creano Action per utility pure o per API framework.
 
-<<<<<<< HEAD
-## ADR-002 — Dispatch deciso dal caller
-=======
 ## ADR-002: Dispatch deciso dal caller
->>>>>>> laraxot/dev
 
 **Stato:** Accepted
 
@@ -62,15 +50,9 @@ asincrono esplicito e il payload è serializzabile/idempotente.
 **Conseguenze:** Filament mantiene feedback immediato per letture e validazioni;
 AI, media, geocoding, mail e SMS possono essere dispatchati in modo controllato.
 
-<<<<<<< HEAD
-## ADR-003 — Nessun Services / Support come contenitore tecnico
-
-**Stato:** Accepted (rafforzato 2026-10-22 — wave Support)
-=======
 ## ADR-003: Nessun Services / Support come contenitore tecnico
 
 **Stato:** Accepted (rafforzato 2026-10-22: wave Support)
->>>>>>> laraxot/dev
 
 **Decisione:** translator Laravel, driver Mail/SMS, client HTTP, resolver/registry,
 validator, strategy, trend adapter e streaming HTTP restano componenti tecnici,
@@ -86,11 +68,7 @@ violazione, anche quando non contiene classi PHP. Gate: `NoServicesTest`
 (Services **e** Support). Process:
 [no-app-support-queueable-actions.md](../../../../../docs/second-brain/process/no-app-support-queueable-actions.md).
 
-<<<<<<< HEAD
-## ADR-004 — Eliminare duplicati prima di progettare nuove Actions
-=======
 ## ADR-004: Eliminare duplicati prima di progettare nuove Actions
->>>>>>> laraxot/dev
 
 **Stato:** Accepted
 

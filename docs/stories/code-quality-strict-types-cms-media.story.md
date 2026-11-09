@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
-title: Code quality — strict_types Cms factories + Media
-=======
 title: Code quality: strict_types Cms factories + Media
->>>>>>> laraxot/dev
 type: story
 module: Cms
 status: ready-for-dev
@@ -27,11 +23,7 @@ GateGuard facts:
 4. User verbatim: "fa tutte le bmad stories per continuare domani"
 -->
 
-<<<<<<< HEAD
-# strict_types — Cms database + Media AwsTest
-=======
 # strict_types: Cms database + Media AwsTest
->>>>>>> laraxot/dev
 
 ## Perche'
 

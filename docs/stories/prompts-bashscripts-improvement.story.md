@@ -5,11 +5,7 @@ module: Xot
 phase: BMAD Quick Flow, analisi, implementazione, QA
 status: done
 created: 2026-10-20
-<<<<<<< HEAD
-updated: 2026-10-20
-=======
 updated: 2026-11-05
->>>>>>> laraxot/dev
 tags: [prompts, bashscripts, second-brain, bmad, phpstan, wave3, wave5, wave6]
 qmd: "miglioramento prompt bashscripts docs prompts scopo perche quando usarlo passi gate anti-pattern alias canonici lezioni apprese inventario duplicati wave3 wave4 wave5 wave6 phpstan zero vittoria verificata a zero non ti fermi prompt stickiness catena permanente single-neon services-to-actions ProfileTest DELETED Hindsight non blocca"
 related:
@@ -87,11 +83,7 @@ Sovrapposizioni di scopo tra canonici risolte per puntatore: `19-docs` (dove scr
 
 Dopo la verifica wave3 a zero errori su `analyse Modules`, i prompt sono stati rafforzati cosi' che lo zero non chiuda il lavoro ne' venga dichiarato su un report falso:
 
-<<<<<<< HEAD
-- `bashscripts/docs/prompts/00-start.md`: ordine permanente — a zero continua Services→Actions + docs/boy scout; vittoria solo con json `totals` e banner `[OK] No errors`.
-=======
 - `bashscripts/docs/prompts/00-start.md`: ordine permanente: a zero continua Services→Actions + docs/boy scout; vittoria solo con json `totals` e banner `[OK] No errors`.
->>>>>>> laraxot/dev
 - `bashscripts/docs/prompts/11-phpstan.md`: sezione `Vittoria verificata` (calo improvviso a 0 = lane finite **oppure** JSON troncato).
 - `bashscripts/docs/prompts/25-services-to-actions.md` e `INDEX.md`: trigger e lezione collegati.
 - Traccia locale prompt: `bashscripts/docs/prompts/prompts-review.story.md` (sezione Wave 3).
@@ -99,11 +91,7 @@ Dopo la verifica wave3 a zero errori su `analyse Modules`, i prompt sono stati r
 
 ## Wave 4 (boy scout: zombie Services + prompt)
 
-<<<<<<< HEAD
-Misura: `/tmp/phpstan_wave4.json` — `file_errors` 0, `errors` 0, exit 0, banner `[OK] No errors`.
-=======
 Misura: `/tmp/phpstan_wave4.json`: `file_errors` 0, `errors` 0, exit 0, banner `[OK] No errors`.
->>>>>>> laraxot/dev
 
 - `24-boy-scout.md`: post-zero continua bonifica Services/docs/prompt (ordine permanente).
 - `25-services-to-actions.md`: misura viva zero `*Service.php` applicativi (~745 Actions); `ProfileTest` spurio DELETED; Translators/Trend = **DELETE** non relocate a zero callers; gate aggiornato.
@@ -117,42 +105,25 @@ Nessun prompt nuovo. Solo canonici sotto `bashscripts/docs/prompts/`:
 - `00-start.md`: sezione `A zero non ti fermi` (vittoria = json `totals` 0 **e** `[OK] No errors`); Hindsight empty/auth non blocca.
 - `11-phpstan.md`: `Anti zombie Service`; coordinator-only `analyse Modules`; anti-pattern tipizzare/relocare zombie.
 - `44-module-docs-continuous.md` + `57-second-brain.md`: Hindsight vuoto/auth fail/reflect 500 non ferma docs/QMD/PHPStan.
-<<<<<<< HEAD
-- Hindsight reflect in sessione: 500 auth — fallback docs+QMD usato (coerente coi prompt).
-
-### Wave 4c (2026-10-20 ~11:52 — gate verde + ordine permanente)
-=======
 - Hindsight reflect in sessione: 500 auth: fallback docs+QMD usato (coerente coi prompt).
 
 ### Wave 4c (2026-10-20 ~11:52: gate verde + ordine permanente)
->>>>>>> laraxot/dev
 
 <!-- GateGuard: edit existing story linked from 00-start §1.4; user: esegui phpstan analyse Modules e sistema tutte le segnalazioni … sempre senza conferma -->
 
 Rimisura: `analyse Modules` → `0/0` + `[OK] No errors`. Aggiornati
 `00-start.md` (**Ricordalo sempre**) e `11-phpstan.md` (SSoT `TestCase` helper).
 
-<<<<<<< HEAD
-## Wave 5 (2026-10-20 — prompt stickiness; PHPStan ancora zero)
-=======
 ## Wave 5 (2026-10-20: prompt stickiness; PHPStan ancora zero)
->>>>>>> laraxot/dev
 
 Misura verificata ora: `analyse Modules` → `file_errors` 0, exit 0, banner `[OK] No errors`. Nessun PHP, nessun edit a `phpstan.neon`. Solo stickiness dei prompt cosi' l'ordine permanente non si dimentica:
 
 - `00-start.md`: tabella **Impossibile da dimenticare** → canoni 11 / 25 / 44 / 05; sezione **A zero non ti fermi** in checklist esplicita (boy scout, Services→Actions, docs, REUSE W0, prompt).
 - `11-phpstan.md`: HARD Pest helpers = `TestCase` FQCN SSoT (no `scanFiles`); anti-pattern ignore unmatched (`constantTypeCoverage` **oppure** `Out of N possible constant types`) = rimozione umana ignore, non `reportUnmatchedIgnoredErrors: false`.
-<<<<<<< HEAD
-- `05-livewire-to-filament-widgets.md`: sezione **W0 REUSE — gemelli legali** (`TermsOfService`/`PrivacyPolicy`).
-- `44-module-docs-continuous.md`: gate concreto tema Zero — `README.md` = indice (`test -f …/README.md && test ! -e …/00-INDEX.md`).
-
-## Wave 6 (2026-10-20 ~12:10 — catena permanente + single-neon)
-=======
 - `05-livewire-to-filament-widgets.md`: sezione **W0 REUSE: gemelli legali** (`TermsOfService`/`PrivacyPolicy`).
 - `44-module-docs-continuous.md`: gate concreto tema Zero: `README.md` = indice (`test -f …/README.md && test ! -e …/00-INDEX.md`).
 
 ## Wave 6 (2026-10-20 ~12:10: catena permanente + single-neon)
->>>>>>> laraxot/dev
 
 Misura verificata: `/tmp/phpstan_ord_121026.json` → `file_errors` 0, `errors` 0, banner `[OK] No errors`. Nessun PHP, nessun edit a `laravel/phpstan.neon`, nessun altro `.neon` creato. Nessun prompt nuovo sullo stesso tema.
 
@@ -185,8 +156,6 @@ Richiesta dell'utente: "esegui e poi migliora il prompt 98". Fase BMAD: Quick Fl
   5. Passo 7: "con commit" vuol dire commit nel repo del modulo; i 6 moduli toccati solo dal riallineamento non contano.
   Quattro righe nuove nella tabella "Errori gia' commessi"; riferimento al blocco rinominato aggiornato; frontmatter `updated: 2026-10-29`. Una sola copia del prompt nel repo (verificato con `find`).
 - **Regola d'oro non soddisfatta:** `verify` non passa sui worklog del 2026-10-22 e del 2026-10-20, perche' il registro e' cresciuto dopo la scrittura (difetto 4). Va rieseguito il prompt su due giorni passati (revisione dichiarata, Passo 6): 109 e 223 commit, lavoro da chiedere all'utente.
-<<<<<<< HEAD
-=======
 
 ## Prompt 98, run del 2026-11-03
 
@@ -203,4 +172,3 @@ Richiesta dell'utente: "prima esegui e poi migliora il prompt 98". Fase BMAD: Qu
   Cinque righe nuove nella tabella "Errori gia' commessi", bullet su `detail` aggiornato con la misura del giorno (257 test, 7 propri), frontmatter `updated: 2026-11-03`. I tre blocchi modificati sono stati eseguiti cosi' come sono scritti nel prompt. Una sola copia del prompt nel repo (verificato con `find`).
 - **Regola d'oro non soddisfatta:** `verify` sul 2026-10-29 da' 7 problemi (registro da 25 a 30 commit, difetto 4) e sul 2026-10-22 10 problemi (registro da 48 a 109 commit). Va rieseguito il prompt su due giorni passati, con revisione dichiarata (Passo 6): 30 e 109 commit, lavoro da chiedere all'utente. Anche il 2026-11-03 cambiera' quando verranno committati i file di questo run.
 - **Aperto:** il worklog del 2026-10-29 scrive "da 381 commit di modulo": con il blocco nuovo sono 140 versioni copiate. Va corretto alla prossima revisione di quel giorno.
->>>>>>> laraxot/dev

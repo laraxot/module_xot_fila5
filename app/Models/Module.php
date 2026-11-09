@@ -141,25 +141,4 @@ final class Module extends BaseModel
             'colors' => 'array',
         ];
     }
-<<<<<<< HEAD
-
-    public function isEnabled(): bool
-    {
-        if ($this->enabled !== null) {
-            return (bool) $this->enabled;
-        }
-
-        if ($this->status !== null) {
-            return (bool) $this->status;
-        }
-
-        return (bool) ($this->is_active ?? false);
-    }
-
-    public function isDisabled(): bool
-    {
-        return ! $this->isEnabled();
-    }
-=======
->>>>>>> laraxot/dev
 }

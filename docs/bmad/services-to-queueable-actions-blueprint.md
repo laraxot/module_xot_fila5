@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
-title: "Blueprint — Services a Queueable Actions"
-=======
 title: "Blueprint: Services a Queueable Actions"
->>>>>>> laraxot/dev
 type: bmad-blueprint
 status: active
 module: Xot

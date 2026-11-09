@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
-title: "Code Quality Wave — BMAD + Second Brain + Filament Blueprint"
-=======
 title: "Code Quality Wave: BMAD + Second Brain + Filament Blueprint"
->>>>>>> laraxot/dev
 status: active
 module: Xot
 scope: cross-module (Modules/)
@@ -22,15 +18,9 @@ type: note
 
 <!--
 GateGuard facts:
-<<<<<<< HEAD
-1. Supersedes doc-only wave status — now records authorized PHP Filament XotBase migrations + gates.
-2. Linked from filament-blueprint, code-quality-checklist, Hindsight initiative Qualità codice.
-3. Edit existing code-quality-wave.md — not a new file.
-=======
 1. Supersedes doc-only wave status: now records authorized PHP Filament XotBase migrations + gates.
 2. Linked from filament-blueprint, code-quality-checklist, Hindsight initiative Qualità codice.
 3. Edit existing code-quality-wave.md: not a new file.
->>>>>>> laraxot/dev
 4. User verbatim: "migliora qualità codice , fa tutto con bmad + second brain + filament blueprint"
 -->
 

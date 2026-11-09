@@ -47,10 +47,6 @@ describe('HasExtraTrait', function (): void {
     it('has extra relationship method', function () use ($testModel): void {
         $relation = $testModel->extra();
 
-<<<<<<< HEAD
-        Assert::assertInstanceOf(MorphOne::class, $relation);
-=======
->>>>>>> laraxot/dev
         Assert::assertSame(Extra::class, $relation->getRelated()::class);
     });
 

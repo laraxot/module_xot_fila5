@@ -5,11 +5,7 @@ updated: 2026-09-26
 qmd: "continuazione domani"
 issues: []
 discussions: []
-<<<<<<< HEAD
-title: "Continuazione BMAD — Domani (export lazy + trigger map)"
-=======
 title: "Continuazione BMAD: Domani (export lazy + trigger map)"
->>>>>>> laraxot/dev
 type: module-fix
 scope: Xot
 epic: "5"

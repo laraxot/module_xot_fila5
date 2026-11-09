@@ -17,23 +17,6 @@ qmd search "Xot concepts" --limit 5
 
 ## Moduli & skeleton (2026-07-27)
 
-<<<<<<< HEAD
-- [module-theme-root-hygiene.md](./module-theme-root-hygiene.md) _(target mancante, verificato 2026-10-14)_ — root lowercase, workspace, IDE folders vietate
-- [module-providers-dual-registration-mandatory.md](./module-providers-dual-registration-mandatory.md) _(target mancante, verificato 2026-10-14)_ — **min 2 provider** in `module.json` + `composer.json`
-- [module-filament-panel-triad.md](./module-filament-panel-triad.md) _(target mancante, verificato 2026-10-14)_ — **SSoT** trinità panel
-- [module-config-php-religion.md](./module-config-php-religion.md) _(target mancante, verificato 2026-10-14)_ — **obbligatorio** `Modules/{M}/config/config.php`
-- [module-config-icon-svg.md](./module-config-icon-svg.md) _(target mancante, verificato 2026-10-14)_ — `resources/svg/icon.svg` → `{alias}-icon`
-- [module-admin-panel-provider-mandatory.md](./module-admin-panel-provider-mandatory.md) _(target mancante, verificato 2026-10-14)_ — `AdminPanelProvider` + doppia registrazione
-- [module-dashboard-page-mandatory.md](./module-dashboard-page-mandatory.md) _(target mancante, verificato 2026-10-14)_ — **obbligatorio** `app/Filament/Pages/Dashboard.php`
-- [module-providers-dual-registration-mandatory.md](./module-providers-dual-registration-mandatory.md) _(target mancante, verificato 2026-10-14)_ — `module.json` + `composer.json`
-- [module-model-artifact-parity.md](./module-model-artifact-parity.md) _(target mancante, verificato 2026-10-14)_ — N modelli = N migrate + factory + seeder
-- [composer-root-skeleton-modular.md](./composer-root-skeleton-modular.md) _(target mancante, verificato 2026-10-14)_ — Root Composer minimo
-- [module-testcase-xotbase-hierarchy.md](./module-testcase-xotbase-hierarchy.md) _(target mancante, verificato 2026-10-14)_ — TestCase → XotBaseTestCase
-
-## Migrazioni & Filament
-
-- [migration-foreign-id-for.md](./migration-foreign-id-for.md) _(target mancante, verificato 2026-10-14)_ — FK via modello
-=======
 - [module-theme-root-hygiene.md](./module-theme-root-hygiene.md) _(target mancante, verificato 2026-10-14)_: root lowercase, workspace, IDE folders vietate
 - [module-providers-dual-registration-mandatory.md](./module-providers-dual-registration-mandatory.md) _(target mancante, verificato 2026-10-14)_: **min 2 provider** in `module.json` + `composer.json`
 - [module-filament-panel-triad.md](./module-filament-panel-triad.md) _(target mancante, verificato 2026-10-14)_: **SSoT** trinità panel
@@ -49,7 +32,6 @@ qmd search "Xot concepts" --limit 5
 ## Migrazioni & Filament
 
 - [migration-foreign-id-for.md](./migration-foreign-id-for.md) _(target mancante, verificato 2026-10-14)_: FK via modello
->>>>>>> laraxot/dev
 - [xotbase-filament-widget-hierarchy.md](./xotbase-filament-widget-hierarchy.md) _(target mancante, verificato 2026-10-14)_
 - [no-app-support-queueable-actions.md](./no-app-support-queueable-actions.md) _(target mancante, verificato 2026-10-14)_: Actions, non Services
 

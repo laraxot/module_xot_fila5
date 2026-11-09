@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
 
->>>>>>> laraxot/dev
 use Filament\Resources\Resource;
 use Modules\Xot\Tests\Fixtures\Filament\Resources\NavigationProbeResource;
 use Modules\Xot\Tests\TestCase;
@@ -19,16 +16,6 @@ test('xot base resource extends filament resource', function (): void {
     Assert::assertTrue((new ReflectionClass(NavigationProbeResource::class))->isSubclassOf(Resource::class));
 });
 
-<<<<<<< HEAD
-test('xot base resource reads navigation icon from translations', function (): void {
-    Assert::assertSame('heroicon-o-beaker', NavigationProbeResource::getNavigationIcon());
-});
-
-test('xot base resource reads navigation group from translations', function (): void {
-    Assert::assertSame('Sistema', NavigationProbeResource::getNavigationGroup());
-});
-
-=======
 test('application filament resources do not extend filament resource directly', function (): void {
     $resources = new RecursiveIteratorIterator(
         new RecursiveDirectoryIterator(base_path('Modules'), FilesystemIterator::SKIP_DOTS),
@@ -68,7 +55,6 @@ test('xot base resource reads navigation group from translations', function (): 
     Assert::assertSame('Sistema', NavigationProbeResource::getNavigationGroup());
 });
 
->>>>>>> laraxot/dev
 test('xot base resource reads navigation sort from translations', function (): void {
     Assert::assertSame(59, NavigationProbeResource::getNavigationSort());
 });

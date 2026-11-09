@@ -4,11 +4,7 @@ created: 2026-09-26
 updated: 2026-09-26
 issues: []
 discussions: []
-<<<<<<< HEAD
-title: "Story — ExportXlsLazyAction: label degradate a path tecnico"
-=======
 title: "Story: ExportXlsLazyAction: label degradate a path tecnico"
->>>>>>> laraxot/dev
 type: story
 module: Xot
 epic: export

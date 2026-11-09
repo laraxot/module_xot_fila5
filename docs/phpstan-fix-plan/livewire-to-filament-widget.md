@@ -2,26 +2,16 @@
 initiative: Migrazione da Livewire a Filament Widget
 status: active
 created: 2026-10-20
-<<<<<<< HEAD
-title: "BMAD — Perché Filament Widget (non più Livewire Componenti)"
-=======
 title: "BMAD: Perché Filament Widget (non più Livewire Componenti)"
->>>>>>> laraxot/dev
 type: note
 updated: 2026-10-20
 tags: [docs, xot, phpstan-fix-plan]
 qmd: "bmad   perché filament widget (non più livewire componenti) xot"
 ---
 
-<<<<<<< HEAD
-# BMAD — Perché Filament Widget (non più Livewire Componenti)
-
-## 1. Brainstorming — Scopo e Perché
-=======
 # BMAD: Perché Filament Widget (non più Livewire Componenti)
 
 ## 1. Brainstorming: Scopo e Perché
->>>>>>> laraxot/dev
 
 **Scopo attuale nel codice:**
 Il progetto utilizza `filament/filament` v5.8.4 come framework admin/panel. Esistono già `Filament/Widgets/` in moduli come `Gdpr`, `Lang`, `Job`. I componenti `Livewire` erano utilizzati per interfacce reattive, ma la gestione separata di Livewire + Filament crea duplicazione di pattern, duplicazione di stili CSS, duplicazione di logica di stato.
@@ -36,11 +26,7 @@ Il progetto utilizza `filament/filament` v5.8.4 come framework admin/panel. Esis
 **Perché NON è una cancellazione ma una migrazione:**
 I componenti Livewire non vengono cancellati: la loro funzionalità (visualizzazione, paginazione, azioni) viene spostata in widget Filament equivalenti (`LanguageSwitcherWidget`, `QueueListenWidget`, `ScheduleStatusWidget`, `ClockWidget`, `JobStatusWidget`, `ScheduleCrudWidget`). Il codice business (`Actions`, `Services`) rimane intatto.
 
-<<<<<<< HEAD
-## 2. Methodology — BMAD Step
-=======
 ## 2. Methodology: BMAD Step
->>>>>>> laraxot/dev
 
 - **B (Brainstorm):** Fatto sopra. Scopo = coerenza architetturale, riduzione duplicazione, integrazione pannello.
 - **M (Methodology):** Per ogni modulo con componenti Livewire (es. `CanPaginate` in Activity, `ListLogActivities` in Activity):
@@ -63,8 +49,4 @@ Il pattern `CanPaginate` in Activity è in realtà una `Page` (`ListLogActivitie
 
 ## 4. Second Brain / Hindsight Note
 
-<<<<<<< HEAD
-> 🧠 **From Hindsight memory (AGENTS.md + docs)** — Il modulo `DbForge` usa `Spatie\QueueableAction\QueueableAction`; il modulo `Notify` ha `NotificationManager` convertito; il modulo `AI` ha `ClassifyTicketAction` e `SuggestSolutionsAction`. I componenti Livewire (`CanPaginate`) sono in realtà pagine Filament (`ListLogActivities`). La conversione non richiede cancellazione ma spostamento della logica nel pattern corretto.
-=======
 > 🧠 **From Hindsight memory (AGENTS.md + docs)**: Il modulo `DbForge` usa `Spatie\QueueableAction\QueueableAction`; il modulo `Notify` ha `NotificationManager` convertito; il modulo `AI` ha `ClassifyTicketAction` e `SuggestSolutionsAction`. I componenti Livewire (`CanPaginate`) sono in realtà pagine Filament (`ListLogActivities`). La conversione non richiede cancellazione ma spostamento della logica nel pattern corretto.
->>>>>>> laraxot/dev

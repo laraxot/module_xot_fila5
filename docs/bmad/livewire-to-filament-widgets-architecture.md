@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
-title: "Architecture — custom Livewire UI a Filament Widgets"
-=======
 title: "Architecture: custom Livewire UI a Filament Widgets"
->>>>>>> laraxot/dev
 type: architecture
 module: Xot
 status: approved-ready-for-dev
@@ -21,11 +17,7 @@ qmd: "architettura e adr xot"
 
 # Architettura e ADR
 
-<<<<<<< HEAD
-## ADR-001 — Classificare per responsabilità
-=======
 ## ADR-001: Classificare per responsabilità
->>>>>>> laraxot/dev
 
 **Decisione:** admin/dashboard interattivo → Widget; CRUD → Resource/Page/Action;
 front-office pubblico → Folio/Volt/Blade oppure Widget solo se il contratto è
@@ -35,11 +27,7 @@ sono candidati automatici.
 **Perché:** il nome Livewire descrive il trasporto reattivo, non lo scopo del
 componente. Un rename meccanico altera routing, UX e autorizzazioni.
 
-<<<<<<< HEAD
-## ADR-002 — Usare esclusivamente le basi Xot
-=======
 ## ADR-002: Usare esclusivamente le basi Xot
->>>>>>> laraxot/dev
 
 **Decisione:** i moduli applicativi estendono la variante più specifica tra
 `XotBaseWidget`, `XotBaseSchemaWidget`, `XotBaseTableWidget`,
@@ -49,31 +37,19 @@ componente. Un rename meccanico altera routing, UX e autorizzazioni.
 **Conseguenza:** nessun `Filament\Widgets\*` diretto nei moduli applicativi;
 discovery e convenzioni restano centralizzate in Xot.
 
-<<<<<<< HEAD
-## ADR-003 — Separare UI e caso d'uso
-=======
 ## ADR-003: Separare UI e caso d'uso
->>>>>>> laraxot/dev
 
 **Decisione:** il Widget raccoglie stato, invoca l'Action, delega schema e
 renderizza; query, mutazioni, transazioni, integrazioni e side effect vivono in
 Spatie Queueable Actions o Actions di dominio già esistenti.
 
-<<<<<<< HEAD
-## ADR-004 — Discovery e mount espliciti
-=======
 ## ADR-004: Discovery e mount espliciti
->>>>>>> laraxot/dev
 
 **Decisione:** usare discovery del panel per i widget del panel e FQCN esplicito
 nei partial che devono montare un widget. Gli alias stringa legacy sono ritirati
 solo dopo la matrice caller.
 
-<<<<<<< HEAD
-## ADR-005 — Sicurezza e stato invariati
-=======
 ## ADR-005: Sicurezza e stato invariati
->>>>>>> laraxot/dev
 
 **Decisione:** ogni conversione conserva policy, `canView`, tenant context,
 guard, redirect, query string, polling e limiti di input; una differenza è una

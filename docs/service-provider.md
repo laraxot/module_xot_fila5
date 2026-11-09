@@ -89,15 +89,9 @@ class CustomModuleServiceProvider extends XotBaseServiceProvider
 - Evitare collisioni di prefissi tra moduli diversi.
 
 ## Collegamenti e Backlink
-<<<<<<< HEAD
-- [COMPONENTI_PERSONALIZZATI.md](./COMPONENTI_PERSONALIZZATI.md) — Regole e path per Blade components modulari
-- [CONFLITTI_MERGE_RISOLTI.md](./conflitti_merge_risolti.md) — Tracciamento conflitti risolti su ServiceProvider
-- [FILAMENT_TABLE_COLUMNS.md](./FILAMENT_TABLE_COLUMNS.md) — Standardizzazione metodi colonne Filament
-=======
 - [COMPONENTI_PERSONALIZZATI.md](./COMPONENTI_PERSONALIZZATI.md): Regole e path per Blade components modulari
 - [CONFLITTI_MERGE_RISOLTI.md](./conflitti_merge_risolti.md): Tracciamento conflitti risolti su ServiceProvider
 - [FILAMENT_TABLE_COLUMNS.md](./FILAMENT_TABLE_COLUMNS.md): Standardizzazione metodi colonne Filament
->>>>>>> laraxot/dev
 
 ---
 

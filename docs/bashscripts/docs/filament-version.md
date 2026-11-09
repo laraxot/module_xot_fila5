@@ -1,24 +1,14 @@
 ---
-<<<<<<< HEAD
-title: "Filament Version Declaration — {ModuleOrThemeName}"
-=======
 title: "Filament Version Declaration: {ModuleOrThemeName}"
->>>>>>> laraxot/dev
 type: note
 status: unverified
 created: 2026-05-26
 updated: 2026-05-26
 module: Xot
 tags: [xot, bashscripts]
-<<<<<<< HEAD
-qmd: "Filament Version Declaration — {ModuleOrThemeName}"
----
-# Filament Version Declaration — {ModuleOrThemeName}
-=======
 qmd: "Filament Version Declaration: {ModuleOrThemeName}"
 ---
 # Filament Version Declaration: {ModuleOrThemeName}
->>>>>>> laraxot/dev
 
 **Current Version**: Filament v5 (Livewire v4 + Schemas)
 

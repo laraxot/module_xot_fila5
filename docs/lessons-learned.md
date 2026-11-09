@@ -1,14 +1,4 @@
 ---
-<<<<<<< HEAD
-title: "Lessons Learned – Consolidated Rules (2025-08-25)"
-type: note
-status: draft
-updated: 2026-10-18
-tags: [docs, xot]
-qmd: "lessons learned   consolidated rules (2025-08-25) xot"
----
-# Lessons Learned – Consolidated Rules (2025-08-25)
-=======
 title: "Lessons learned: consolidated rules"
 type: note
 status: active
@@ -26,7 +16,6 @@ related:
 ---
 
 # Lessons learned: consolidated rules
->>>>>>> laraxot/dev
 
 Recurring fixes and rules applied across modules, in one place. Each item is a rule that was broken at least once and
 cost a fix; the linked rule files carry the full reasoning. Paths are relative to `laravel/` unless stated otherwise.
@@ -119,10 +108,6 @@ cost a fix; the linked rule files carry the full reasoning. Paths are relative t
 
 ## 11. Translation hygiene
 
-<<<<<<< HEAD
----
-- Backlinks: see `Modules/<nome progetto>/project_docs/translation-rules-consolidated.md`, `Modules/Xot/project_docs/translation-structure-expanded.md`, `.windsurf/rules/full_calendar*.mdc`.
-=======
 - Never remove keys or content, only add.
 - If `helper_text` equals the key name, set it to the empty string `''`.
 - Fix non-Italian translations that contain Italian text.
@@ -149,4 +134,3 @@ the PHPStan level (`9+`, then `10+`), in the project names (a placeholder in one
 other), in a duplicated "Icons" block and in a tail with front matter pasted into the body. Sections 5 and 14 of the
 old text (both FullCalendar) are now section 5; section 6 and section 13 were brought up to date with the current rules,
 and the old backlinks to `project_docs/` were replaced by the rule files linked above.
->>>>>>> laraxot/dev

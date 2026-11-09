@@ -1,12 +1,3 @@
-<<<<<<< HEAD
----
-title: "Xot - architecture.md"
-module: Xot
-bmad: true
-status: active
----
-=======
->>>>>>> laraxot/dev
 ---
 title: "Xot - architecture.md"
 module: Xot

@@ -8,11 +8,7 @@ tags: [docs, xot, bmad]
 qmd: "bmad story   fix navigationicon dichiarazioni vietate in resource che estendono xotbaseresource xot"
 ---
 
-<<<<<<< HEAD
-# BMAD Story — Fix navigationIcon dichiarazioni vietate in Resource che estendono XotBaseResource
-=======
 # BMAD Story: Fix navigationIcon dichiarazioni vietate in Resource che estendono XotBaseResource
->>>>>>> laraxot/dev
 
 ## Epic
 XOT-ARCH-002

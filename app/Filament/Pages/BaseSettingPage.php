@@ -6,10 +6,7 @@ namespace Modules\Xot\Filament\Pages;
 
 use Filament\Actions\Action;
 use Filament\Forms\Components\TagsInput;
-<<<<<<< HEAD
-=======
 use Filament\Forms\Components\Toggle;
->>>>>>> laraxot/dev
 use Filament\Notifications\Notification;
 use Filament\Schemas\Schema;
 use Illuminate\Support\Str;
@@ -86,8 +83,6 @@ abstract class BaseSettingPage extends XotBasePage
         return $this->schema($schema);
     }
 
-<<<<<<< HEAD
-=======
     /**
      * Every module has at least one operational setting; concrete pages add domain fields.
      *
@@ -100,7 +95,6 @@ abstract class BaseSettingPage extends XotBasePage
         ];
     }
 
->>>>>>> laraxot/dev
     public function save(): void
     {
         /** @var array<string, mixed> $state */

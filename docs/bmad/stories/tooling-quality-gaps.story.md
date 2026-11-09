@@ -4,11 +4,7 @@ created: 2026-09-26
 updated: 2026-09-26
 issues: []
 discussions: []
-<<<<<<< HEAD
-title: "Story — gap tooling quality: phpinsights assente, qmd embed backlog, graphify lento"
-=======
 title: "Story: gap tooling quality: phpinsights assente, qmd embed backlog, graphify lento"
->>>>>>> laraxot/dev
 type: story
 module: Xot
 epic: quality

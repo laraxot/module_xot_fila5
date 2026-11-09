@@ -104,11 +104,7 @@ class XotServiceProvider extends XotBaseServiceProvider
     {
         Factory::guessFactoryNamesUsing(static function (string $modelName): string {
             if (str_starts_with($modelName, 'Modules\\')) {
-<<<<<<< HEAD
-                $factoryClass = (new GetFactoryAction)->getFactoryClass($modelName);
-=======
                 $factoryClass = (new GetFactoryAction())->getFactoryClass($modelName);
->>>>>>> laraxot/dev
             } else {
                 $modelsNamespace = app()->getNamespace().'Models\\';
                 $relativeName = Str::startsWith($modelName, $modelsNamespace)
@@ -142,11 +138,7 @@ class XotServiceProvider extends XotBaseServiceProvider
             return;
         }
 
-<<<<<<< HEAD
-        (new RegisterRuntimePsr4NamespacesAction)->execute($loader);
-=======
         (new RegisterRuntimePsr4NamespacesAction())->execute($loader);
->>>>>>> laraxot/dev
     }
 
     public function registerTimezone(): void

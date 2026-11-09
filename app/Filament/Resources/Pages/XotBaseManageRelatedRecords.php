@@ -302,11 +302,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      *
      * @not-deprecated Hook di progetto omonimo a un nome deprecato di Filament: API attiva di questa classe.
      *
-<<<<<<< HEAD
-     * @return array<string, Action|ActionGroup>
-=======
      * @return array<int|string, Action|BulkAction|ActionGroup>
->>>>>>> laraxot/dev
      */
     public function getTableHeaderActions(): array
     {

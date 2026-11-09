@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
-title: "Sostenibilità — stewardship piattaforma Xot"
-=======
 title: "Sostenibilità: stewardship piattaforma Xot"
->>>>>>> laraxot/dev
 type: concept
 module: Xot
 status: decision-input
@@ -12,11 +8,7 @@ tags: [sustainability, xot, stewardship, bmad]
 qmd: "stewardship piattaforma (ownership xot   limiti) xot"
 ---
 
-<<<<<<< HEAD
-# Stewardship piattaforma (ownership Xot — limiti)
-=======
 # Stewardship piattaforma (ownership Xot: limiti)
->>>>>>> laraxot/dev
 
 ## Perché menzionare Xot
 

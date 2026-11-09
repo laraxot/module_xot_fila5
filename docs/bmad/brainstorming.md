@@ -1,12 +1,3 @@
-<<<<<<< HEAD
----
-title: "Xot - brainstorming.md"
-module: Xot
-bmad: true
-status: active
----
-=======
->>>>>>> laraxot/dev
 ---
 title: "Xot - brainstorming.md"
 module: Xot
@@ -62,11 +53,7 @@ Le risposte devono diventare story BMAD con acceptance criteria misurabili, rife
 ## Vedi anche
 
 - [Architecture](architecture.md)
-<<<<<<< HEAD
-- [Stories](stories/) — indice completo in [README.md](readme.md)
-=======
 - [Stories](stories/): indice completo in [README.md](readme.md)
->>>>>>> laraxot/dev
 - [Epics](epics/module-roadmap.md)
 # Brainstorming - Modulo Xot
 

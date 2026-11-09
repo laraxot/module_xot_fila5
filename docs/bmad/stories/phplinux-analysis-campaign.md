@@ -62,10 +62,6 @@ Based on the analysis and existing blueprint guidelines, the following filament 
 
 ## Conclusion
 
-<<<<<<< HEAD
-The campaign revealed substantial static analysis debt (~2,500 errors). While the goal of achieving zero errors remains unmet due to the extensive codebase, the identified issues provide clear paths forward. Prioritizing the most critical errors—those affecting core business logic (IndennitaCondizioniLavoro, Rating, Sigma)—will yield the highest impact on system stability and maintainability.
-=======
 The campaign revealed substantial static analysis debt (~2,500 errors). While the goal of achieving zero errors remains unmet due to the extensive codebase, the identified issues provide clear paths forward. Prioritizing the most critical errors-those affecting core business logic (IndennitaCondizioniLavoro, Rating, Sigma)-will yield the highest impact on system stability and maintainability.
->>>>>>> laraxot/dev
 
 *BMAD Story Completed*

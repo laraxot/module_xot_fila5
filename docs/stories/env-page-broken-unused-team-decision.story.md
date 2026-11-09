@@ -55,11 +55,7 @@ Notify → Impostazioni: `Modules\Notify\Filament\Pages\SettingPage`, URL `/noti
 
 - Schema delle pagine Impostazioni: `docs/wiki/concepts/env-widget-no-ssh-env-editor.md` del modulo Xot. **Eliminato il 2026-10-05** (commit `3d81ee3904`); si legge con `git -C laravel/Modules/Xot show 3d81ee3904^:docs/wiki/concepts/env-widget-no-ssh-env-editor.md`. La story Quaeris collegata lo cita ancora (link rotto).
 - [module-dashboard-page-mandatory](../../../../../bashscripts/ai/wiki/rules/module-dashboard-page-mandatory.md): ogni modulo ha `Dashboard.php` che estende `XotBaseDashboard`, mai `XotBasePage`. Vale per la pagina iniziale del pannello, non per le pagine Impostazioni.
-<<<<<<< HEAD
-- Nessuna story, issue o discussion su `EnvPage`. Compare solo nell'elenco di [xot-architecture-overview](../architecture/xot-architecture-overview.md) ("`EnvPage` — Environment variables").
-=======
 - Nessuna story, issue o discussion su `EnvPage`. Compare solo nell'elenco di [xot-architecture-overview](../architecture/xot-architecture-overview.md) ("`EnvPage`: Environment variables").
->>>>>>> laraxot/dev
 
 ## Decisione richiesta al team
 

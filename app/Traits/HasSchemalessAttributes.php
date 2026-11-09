@@ -18,10 +18,7 @@ use function Safe\json_encode;
  * @property SchemalessAttributes|null $extra_attributes
  *
  * @see https://github.com/spatie/laravel-schemaless-attributes
-<<<<<<< HEAD
-=======
  * @phpstan-ignore trait.unused
->>>>>>> laraxot/dev
  */
 trait HasSchemalessAttributes // @phpstan-ignore trait.unused
 {
