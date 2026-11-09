@@ -30,19 +30,21 @@ class SecurityMiddleware
         // 1. Rate Limiting avanzato
         $this->applyAdvancedRateLimiting($request);
 
-        // 2. Headers di sicurezza
+        // 2. Validazione input e CSRF PRIMA di eseguire la richiesta.
+        // Eseguiti dopo $next() erano inutili come protezione (l'azione era già avvenuta)
+        // e rompevano il login: Filament rigenera sessione e token CSRF all'accesso,
+        // quindi il confronto a posteriori falliva sempre con 419 "Page Expired".
+        // NON spostarli dopo $next(): vedi Modules/Xot/docs/wiki/decisions/security-middleware-csrf-order.md
+        $this->validateInputs($request);
+        $this->enhanceCSRFProtection($request);
+
+        // 3. Headers di sicurezza
         $response = $next($request);
         Assert::isInstanceOf($response, Response::class);
-        $this->addSecurityHeaders($response);
+        $this->addSecurityHeaders($response, $request);
 
-        // 3. Logging sicurezza
+        // 4. Logging sicurezza
         $this->logSecurityEvents($request, $response);
-
-        // 4. Validazione input avanzata
-        $this->validateInputs($request);
-
-        // 5. Protezione CSRF avanzata
-        $this->enhanceCSRFProtection($request);
 
         return $response;
     }
@@ -164,14 +166,20 @@ class SecurityMiddleware
     /**
      * Aggiungi header di sicurezza.
      */
-    private function addSecurityHeaders(Response $response): void
+    private function addSecurityHeaders(Response $response, Request $request): void
     {
+        $secure = $request->secure();
+
         // Content Security Policy
-        $csp = $this->buildCSP();
+        $csp = $this->buildCSP($secure);
         $response->headers->set('Content-Security-Policy', $csp);
 
-        // Strict Transport Security
-        $response->headers->set('Strict-Transport-Security', 'max-age=31536000; includeSubDomains; preload');
+        // Strict Transport Security — solo su connessioni HTTPS: su HTTP il browser
+        // lo ignorerebbe, ma in ambienti proxy/browser aggressivi puo' comunque
+        // influenzare l'upgrade forzato delle richieste.
+        if ($secure) {
+            $response->headers->set('Strict-Transport-Security', 'max-age=31536000; includeSubDomains; preload');
+        }
 
         // X-Frame-Options
         $response->headers->set('X-Frame-Options', 'DENY');
@@ -198,7 +206,7 @@ class SecurityMiddleware
     /**
      * Costruisci Content Security Policy.
      */
-    private function buildCSP(): string
+    private function buildCSP(bool $secure = false): string
     {
         $csp = [
             "default-src 'self'",
@@ -213,9 +221,15 @@ class SecurityMiddleware
             "base-uri 'self'",
             "form-action 'self'",
             "frame-ancestors 'none'",
-            'upgrade-insecure-requests',
-            'block-all-mixed-content',
         ];
+
+        // Solo quando la risposta e' servita in HTTPS: altrimenti il browser
+        // aggiornerebbe le sotto-risorse a https:// e il server HTTP locale
+        // risponderebbe con connessione chiusa (ERR_CONNECTION_CLOSED).
+        if ($secure) {
+            $csp[] = 'upgrade-insecure-requests';
+            $csp[] = 'block-all-mixed-content';
+        }
 
         return implode('; ', $csp);
     }
@@ -234,20 +248,12 @@ class SecurityMiddleware
             'magnetometer=()',
             'gyroscope=()',
             'accelerometer=()',
-            'ambient-light-sensor=()',
             'autoplay=()',
-            'battery=()',
-            'bluetooth=()',
             'display-capture=()',
             'fullscreen=(self)',
             'gamepad=()',
             'midi=()',
-            'notifications=(self)',
-            'persistent-storage=(self)',
-            'push=()',
             'screen-wake-lock=()',
-            'speaker=()',
-            'web-share=()',
             'xr-spatial-tracking=()',
         ];
 

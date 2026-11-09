@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
 title: "Performance — risorse esterne"
-=======
-title: "Performance: risorse esterne"
->>>>>>> laraxot/dev
 type: reference
 module: Xot
 tags: [archive, performance, migrato-da-txt]
@@ -13,11 +9,7 @@ status: draft
 qmd: "performance   risorse esterne xot"
 ---
 
-<<<<<<< HEAD
 # Performance — risorse esterne
-=======
-# Performance: risorse esterne
->>>>>>> laraxot/dev
 
 <!-- Contenuto migrato da _docs/_performance.txt -->
 

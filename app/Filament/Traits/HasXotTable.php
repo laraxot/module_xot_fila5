@@ -101,9 +101,20 @@ trait HasXotTable
 
         // dddx(method_exists($resource, 'canAttach'));
 
-        $actions = [
-            CreateAction::make(),
-        ];
+        $actions = [];
+        // Niente "Nuovo" se la risorsa non ha la pagina `create` (es. moderazione commenti):
+        // il pulsante portava a una rotta inesistente.
+        $resourceClass = match (true) {
+            $this instanceof ListRecords => $this->getResource(),
+            method_exists($this, 'getResource') && (new \ReflectionMethod($this, 'getResource'))->isStatic() => static::getResource(),
+            default => null,
+        };
+        $hasCreatePage = ! \is_string($resourceClass)
+            || ! method_exists($resourceClass, 'getPages')
+            || \array_key_exists('create', $resourceClass::getPages());
+        if ($hasCreatePage) {
+            $actions[] = CreateAction::make();
+        }
 
         if ($this->shouldShowAssociateAction()) {
             $actions[] = AssociateAction::make()
