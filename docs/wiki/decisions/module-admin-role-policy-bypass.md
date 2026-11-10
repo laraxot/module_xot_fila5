@@ -45,3 +45,14 @@ policy che lanciano eccezioni.
   Per `user::admin` restano i blocchi di `BaseUserPolicy` (niente azioni distruttive su sé stessi).
 - I moduli condivisi vengono sincronizzati dai repository upstream (`laraxot/module_*_fila5`):
   la modifica va portata anche lì, altrimenti la prossima sincronizzazione la cancella.
+
+## Eccezione: moduli con permessi operativi (2026-11-10)
+
+Nei moduli in cui il ruolo del pannello serve solo a entrare e i permessi dicono chi fa cosa, il bypass e' un
+problema. Roosko, Waste, Warehouse, Processing, Weighing, Labeling e Rentri distinguono operatore di piazzale,
+accettazione e responsabile tecnico. Con il bypass, l'operatore (che ha `roosko::admin` per usare la pagina di
+scansione) poteva rettificare pesi ed eliminare conferimenti.
+
+Quelle policy usano il trait `Concerns\RequiresOperationalPermissions`: `moduleAdminRole()` restituisce null,
+quindi passa solo il super-admin. Test: Roosko `AuthorizationTest` ("il ruolo del pannello ... non concede
+abilita' operative").

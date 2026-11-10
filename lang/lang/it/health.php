@@ -25,9 +25,4 @@ return [
             ],
         ],
     ],
-    'actions' => [
-        'refresh' => [
-            'label' => 'refresh',
-        ],
-    ],
 ];

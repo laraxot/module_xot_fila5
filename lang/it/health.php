@@ -34,7 +34,6 @@ return [
         'logout' => [
             'tooltip' => '',
             'icon' => 'logout',
-            'label' => 'logout',
         ],
         'save' => [
             'label' => 'Salva',
