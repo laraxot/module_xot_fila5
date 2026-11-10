@@ -18,6 +18,7 @@ use Filament\Actions\ReplicateAction;
 use Filament\Actions\ViewAction;
 use Filament\Notifications\Notification;
 use Filament\Resources\Pages\ListRecords;
+use Filament\Resources\Resource;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\ColumnGroup;
 use Filament\Tables\Columns\Layout\Component as LayoutComponent;
@@ -45,6 +46,7 @@ use Modules\Xot\Actions\Filament\PlainTextFromFilamentValueAction;
 use Modules\Xot\Actions\GetTransKeyAction;
 use Modules\Xot\Actions\Model\ModelHasColumnAction;
 use Modules\Xot\Filament\Links\RecordAnchor;
+use ReflectionMethod;
 use RuntimeException;
 use Webmozart\Assert\Assert;
 
@@ -104,15 +106,8 @@ trait HasXotTable
         $actions = [];
         // Niente "Nuovo" se la risorsa non ha la pagina `create` (es. moderazione commenti):
         // il pulsante portava a una rotta inesistente.
-        $resourceClass = match (true) {
-            $this instanceof ListRecords => $this->getResource(),
-            method_exists($this, 'getResource') && (new \ReflectionMethod($this, 'getResource'))->isStatic() => static::getResource(),
-            default => null,
-        };
-        $hasCreatePage = ! \is_string($resourceClass)
-            || ! method_exists($resourceClass, 'getPages')
-            || \array_key_exists('create', $resourceClass::getPages());
-        if ($hasCreatePage) {
+        $createPageResource = $this->resolveCreatePageResource();
+        if ($createPageResource === null || array_key_exists('create', $createPageResource::getPages())) {
             $actions[] = CreateAction::make();
         }
 
@@ -593,6 +588,29 @@ trait HasXotTable
     protected function shouldShowAssociateAction(): bool
     {
         return false;
+    }
+
+    /**
+     * La Resource le cui pagine dicono se il pulsante "Nuovo" porta da qualche parte.
+     *
+     * Vale per le pagine ListRecords e per le classi Table con `getResource()` statico
+     * (XotBaseResourceTable). I RelationManager restano fuori di proposito: il loro
+     * `getResource()` d'istanza restituisce la Resource dell'owner, le cui pagine non dicono
+     * nulla sulla creazione di un record della relazione. `null` = nessuna Resource da
+     * interrogare, quindi "Nuovo" resta visibile.
+     *
+     * @return class-string<resource>|null
+     */
+    private function resolveCreatePageResource(): ?string
+    {
+        $resourceClass = null;
+        if ($this instanceof ListRecords) {
+            $resourceClass = $this->getResource();
+        } elseif (method_exists($this, 'getResource') && (new ReflectionMethod($this, 'getResource'))->isStatic()) {
+            $resourceClass = $this->getResource();
+        }
+
+        return is_string($resourceClass) && is_a($resourceClass, Resource::class, true) ? $resourceClass : null;
     }
 
     protected function shouldShowAttachAction(): bool
