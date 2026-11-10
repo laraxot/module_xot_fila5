@@ -1,5 +1,5 @@
 ---
-title: "Performance: risorse esterne"
+title: "Performance — risorse esterne"
 type: reference
 module: Xot
 tags: [archive, performance, migrato-da-txt]
@@ -9,7 +9,7 @@ status: draft
 qmd: "performance   risorse esterne xot"
 ---
 
-# Performance: risorse esterne
+# Performance — risorse esterne
 
 <!-- Contenuto migrato da _docs/_performance.txt -->
 

@@ -1,5 +1,5 @@
 ---
-title: "Models: risorse esterne"
+title: "Models — risorse esterne"
 type: reference
 module: Xot
 tags: [archive, models, eloquent, migrato-da-txt]
@@ -9,7 +9,7 @@ status: draft
 qmd: "models   risorse esterne xot"
 ---
 
-# Models: risorse esterne
+# Models — risorse esterne
 
 <!-- Contenuto migrato da _docs/_models.txt -->
 
