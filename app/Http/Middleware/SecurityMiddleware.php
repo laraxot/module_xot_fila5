@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Modules\Xot\Http\Middleware;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\Facades\Log;
-use Modules\Xot\Actions\Cast\SafeIntCastAction;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Symfony\Component\HttpFoundation\Response;
 use Webmozart\Assert\Assert;
@@ -22,6 +22,19 @@ use function Safe\preg_match;
  */
 class SecurityMiddleware
 {
+    /** Richieste al minuto per IP (pagine, Livewire, API). */
+    private const DEFAULT_LIMIT = 300;
+
+    /** Invii al minuto per IP verso indirizzi sensibili. */
+    private const STRICT_LIMITS = [
+        'api/tickets/create' => 20,
+        'api/tickets/search' => 50,
+        'api/tickets' => 100,
+        'auth/login' => 10,
+        'auth/register' => 5,
+        'password/reset' => 5,
+    ];
+
     /**
      * Handle an incoming request.
      */
@@ -50,117 +63,57 @@ class SecurityMiddleware
     }
 
     /**
-     * Applica rate limiting avanzato.
+     * Rate limiting per IP e per gruppo di indirizzi (finestra fissa di 60 secondi).
+     *
+     * Prima c'erano tre contatori che bloccavano il sito intero (ADR security-middleware-rate-limit):
+     * - per IP su tutte le pagine, ma con il limite dell'indirizzo richiesto: dopo 5 pagine
+     *   qualsiasi, la pagina di accesso (limite 5) rispondeva 429;
+     * - per User-Agent e per indirizzo, condivisi tra tutti i visitatori: 5 accessi al minuto
+     *   in tutto il mondo bastavano a bloccare il login per chiunque;
+     * - `cache()->put(+1, 60)` rinnovava la scadenza a ogni richiesta: il blocco non finiva mai.
      */
     private function applyAdvancedRateLimiting(Request $request): void
     {
-        $ip = $request->ip() ?? 'unknown';
-        $userAgent = $request->userAgent() ?? 'unknown';
-        $endpoint = $request->path();
-
-        // Rate limiting per IP
-        $this->checkIPRateLimit($ip, $endpoint);
-
-        // Rate limiting per User Agent
-        $this->checkUserAgentRateLimit($userAgent, $endpoint);
-
-        // Rate limiting per endpoint specifici
-        $this->checkEndpointRateLimit($endpoint, $ip);
+        $this->checkIPRateLimit($request->ip() ?? 'unknown', $request->path(), $request->isMethodSafe());
     }
 
     /**
-     * Controlla rate limit per IP.
+     * Controlla rate limit per IP sul gruppo dell'indirizzo (login, registrazione, … o "default").
+     * I limiti stretti valgono solo per gli invii (POST, PUT, …): aprire la pagina non conta.
      */
-    private function checkIPRateLimit(string $ip, string $endpoint): void
+    private function checkIPRateLimit(string $ip, string $endpoint, bool $safeMethod = true): void
     {
-        $key = "rate_limit:ip:{$ip}";
-        $limit = $this->getRateLimitForEndpoint($endpoint);
+        [$bucket, $limit] = $this->getRateLimitBucket($endpoint, $safeMethod);
+        $key = "security:rate_limit:{$bucket}:{$ip}";
 
-        $current = SafeIntCastAction::cast(cache()->get($key, 0));
-
-        if ($current >= $limit) {
+        if (RateLimiter::tooManyAttempts($key, $limit)) {
             Log::warning('Rate limit exceeded for IP', [
                 'ip' => $ip,
                 'endpoint' => $endpoint,
-                'current' => $current,
+                'bucket' => $bucket,
                 'limit' => $limit,
             ]);
 
             abort(429, 'Too Many Requests');
         }
 
-        cache()->put($key, $current + 1, 60); // 1 minuto
+        RateLimiter::hit($key, 60);
     }
 
     /**
-     * Controlla rate limit per User Agent.
+     * @return array{0: string, 1: int} gruppo e limite al minuto
      */
-    private function checkUserAgentRateLimit(string $userAgent, string $endpoint): void
+    private function getRateLimitBucket(string $endpoint, bool $safeMethod): array
     {
-        $key = 'rate_limit:ua:'.md5($userAgent);
-        $limit = $this->getRateLimitForEndpoint($endpoint);
-
-        $current = SafeIntCastAction::cast(cache()->get($key, 0));
-
-        if ($current >= $limit) {
-            Log::warning('Rate limit exceeded for User Agent', [
-                'user_agent' => $userAgent,
-                'endpoint' => $endpoint,
-                'current' => $current,
-                'limit' => $limit,
-            ]);
-
-            abort(429, 'Too Many Requests');
-        }
-
-        cache()->put($key, $current + 1, 60);
-    }
-
-    /**
-     * Controlla rate limit per endpoint.
-     */
-    private function checkEndpointRateLimit(string $endpoint, string $ip): void
-    {
-        $key = "rate_limit:endpoint:{$endpoint}";
-        $limit = $this->getRateLimitForEndpoint($endpoint);
-
-        $current = SafeIntCastAction::cast(cache()->get($key, 0));
-
-        if ($current >= $limit) {
-            Log::warning('Rate limit exceeded for endpoint', [
-                'endpoint' => $endpoint,
-                'ip' => $ip,
-                'current' => $current,
-                'limit' => $limit,
-            ]);
-
-            abort(429, 'Too Many Requests');
-        }
-
-        cache()->put($key, $current + 1, 60);
-    }
-
-    /**
-     * Ottieni rate limit per endpoint.
-     */
-    private function getRateLimitForEndpoint(string $endpoint): int
-    {
-        $limits = [
-            'api/tickets' => 100,
-            'api/tickets/create' => 20,
-            'api/tickets/search' => 50,
-            'auth/login' => 5,
-            'auth/register' => 3,
-            'password/reset' => 2,
-        ];
-
-        foreach ($limits as $pattern => $limit) {
-            if (str_contains($endpoint, $pattern)) {
-                return $limit;
+        if (! $safeMethod) {
+            foreach (self::STRICT_LIMITS as $pattern => $limit) {
+                if (str_contains($endpoint, $pattern)) {
+                    return [$pattern, $limit];
+                }
             }
         }
 
-        return 60; // Default limit
+        return ['default', self::DEFAULT_LIMIT];
     }
 
     /**
