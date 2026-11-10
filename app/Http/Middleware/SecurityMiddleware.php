@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Modules\Xot\Http\Middleware;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\RateLimiter;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Symfony\Component\HttpFoundation\Response;
 use Webmozart\Assert\Assert;
@@ -23,10 +23,10 @@ use function Safe\preg_match;
 class SecurityMiddleware
 {
     /** Richieste al minuto per IP (pagine, Livewire, API). */
-    private const DEFAULT_LIMIT = 300;
+    private const int DEFAULT_LIMIT = 300;
 
     /** Invii al minuto per IP verso indirizzi sensibili. */
-    private const STRICT_LIMITS = [
+    private const array STRICT_LIMITS = [
         'api/tickets/create' => 20,
         'api/tickets/search' => 50,
         'api/tickets' => 100,
