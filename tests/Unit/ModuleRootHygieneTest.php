@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+use Symfony\Component\Process\Process;
 
 use function Safe\file;
 use function Safe\glob;
@@ -24,6 +25,9 @@ uses(TestCase::class)->group('no-xot-db');
  * 7. `resources/lang` assente e ignorato: i moduli traducono da `lang/`
  *    (`modules.paths.generator.lang`). Solo moduli: i temi caricano da `resources/lang`
  *    (`XotBaseThemeServiceProvider`), li' la regola romperebbe le traduzioni.
+ * 8. `*.lock` ignorato e mai tracciato: i lock degli agenti (`bashscripts/lock/lock.sh`) sono
+ *    `<file>.lock` accanto al file bloccato; se il `.gitignore` del modulo non li ignora finiscono
+ *    in un commit e restano li' quando l'agente sparisce (Notify ne aveva 5).
  *
  * Il dataset e' per modulo: il messaggio d'errore nomina modulo e violazione.
  *
@@ -273,5 +277,28 @@ it('modulo senza resources/lang e con resources/lang nel .gitignore', function (
     );
     expect(array_intersect($spellings, $lines))->not->toBeEmpty(
         $module.': manca la riga resources/lang nel .gitignore del modulo',
+    );
+})->with('module_roots');
+
+it('modulo con *.lock nel .gitignore e nessun *.lock tracciato', function (string $moduleDir): void {
+    moduleRootHygieneRequireRepo($moduleDir);
+
+    $module = basename($moduleDir);
+    $gitignore = $moduleDir.'/.gitignore';
+    /** @var list<string> $lines */
+    $lines = is_file($gitignore) ? file($gitignore, FILE_IGNORE_NEW_LINES) : [];
+    $lines = array_map('trim', $lines);
+
+    $git = new Process(['git', '-C', $moduleDir, 'ls-files', '*.lock']);
+    $git->mustRun();
+    $tracked = array_values(array_filter(explode("\n", trim($git->getOutput()))));
+
+    expect(in_array('*.lock', $lines, true))->toBeTrue(
+        $module.': manca la riga *.lock nel .gitignore del modulo',
+    );
+    Assert::assertSame(
+        [],
+        $tracked,
+        $module.': file *.lock tracciati in git (togliere con git rm --cached): '.implode(', ', $tracked),
     );
 })->with('module_roots');

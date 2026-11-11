@@ -1,14 +1,9 @@
 ---
-title: "PHPStan fleet remediation — 2026-10-06"
-type: story
+title: "Xot - phpstan-fleet-remediation.story.md"
 module: Xot
 bmad: true
-status: done
-updated: 2026-10-09
-tags: [docs, xot, bmad]
-qmd: "phpstan fleet remediation   2026-10-06 xot"
+status: active
 ---
-
 # PHPStan fleet remediation — 2026-10-06
 
 ## Epic
@@ -89,6 +84,7 @@ Quando subagent docs torna:
 
 ## Stato finale
 ✅ **DONE** — Fleet PHPStan clean (0 errori). Docs organizing in-progress. Learning loop captured.
+
 
 ---
 

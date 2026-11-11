@@ -1,5 +1,5 @@
 ---
-title: "Blueprint — Services a Queueable Actions"
+title: "Blueprint: Services a Queueable Actions"
 type: bmad-blueprint
 status: active
 module: Xot

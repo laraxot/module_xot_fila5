@@ -176,7 +176,7 @@ come mappa di recupero.
 Il controllo delle cartelle docs ha trovato un rischio maggiore della taxonomia:
 `docs/wiki/log.md` conteneva tre volte `Password sudo: <valore>` in chiaro, quindi una
 credenziale versionata e gia' finita nella storia Git. Redatta in
-`Password sudo: [REDACTED — ruotare]` nelle tre righe (21:26, 21:30, 23:22 del
+`Password sudo: [REDACTED: ruotare]` nelle tre righe (21:26, 21:30, 23:22 del
 2026-10-26). La redazione **non** chiude il rischio: la password va ruotata e le altre
 occorrenze vanno cercate per nome del campo, senza stampare il valore.
 

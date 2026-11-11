@@ -1,14 +1,9 @@
 ---
-title: "BMAD Story: PHPStan L10 Job, Media, Notify"
-type: story
+title: "Xot - phpstan-l10-job-media-notify.story.md"
 module: Xot
 bmad: true
 status: active
-updated: 2026-10-09
-tags: [docs, xot, bmad]
-qmd: "bmad story: phpstan l10 job, media, notify xot"
 ---
-
 # BMAD Story: PHPStan L10 Job, Media, Notify
 
 **Epic**: 8.26  

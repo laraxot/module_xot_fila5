@@ -1,6 +1,5 @@
 ---
-title: "BMAD Story — Fix navigationIcon dichiarazioni vietate in Resource che estendono XotBaseResource"
-type: story
+title: "Xot - fix-navigationicon-violations.story.md"
 module: Xot
 bmad: true
 status: draft
@@ -9,7 +8,7 @@ tags: [docs, xot, bmad]
 qmd: "bmad story   fix navigationicon dichiarazioni vietate in resource che estendono xotbaseresource xot"
 ---
 
-# BMAD Story — Fix navigationIcon dichiarazioni vietate in Resource che estendono XotBaseResource
+# BMAD Story: Fix navigationIcon dichiarazioni vietate in Resource che estendono XotBaseResource
 
 ## Epic
 XOT-ARCH-002

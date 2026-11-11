@@ -314,3 +314,61 @@ riportata qui): resta nella cronologia git, va ruotata. (2) Un controllo automat
   suite toccate dalla funzione foto serve Pest su sqlite, un processo alla volta.
 - I marker `.merge_file_*` (DCP-440) tornano a ondate e ogni onda riporta `phpstan.parse`: la misura vale per l'albero di
   quell'istante, va ripetuta dopo ogni sync.
+
+### Misura a freddo (sessione claude-code)
+
+Chiude il limite "cache calda" del punto precedente. Il `tmpDir` di `phpstan.neon` non si cambia, ma un config d'appoggio
+fuori repo lo puo' sovrascrivere senza toccare la cache condivisa: `includes:` con il percorso assoluto di
+`laravel/phpstan.neon` e `parameters: tmpDir: <cartella nuova>`, poi `analyse Modules -c <quel file>`.
+
+| Run | Ora | Cache | Esito |
+|-----|-----|-------|-------|
+| `analyse Modules`, JSON, sotto `flock` | 21:00:28 - 21:01:08 | `/tmp/phpstan` (calda) | exit 0, `errors: 0`, `file_errors: 0` |
+| `analyse Modules/Trade`, formato normale | dopo | calda | exit 0, `[OK] No errors` |
+| `analyse Modules -c <include>`, JSON, sotto `flock` | 21:02:37 - 21:03:24 | **nuova, 166 MiB popolata** | exit 0, `errors: 0`, `file_errors: 0` |
+
+- Il run a freddo dura 47 s su 24 core, quindi la cache calda non nascondeva nulla.
+- Controllo positivo con la stessa configurazione: un file di prova fuori repo con `undefined_function_xyz()` esce 1 con
+  3 `file_errors` (`function.notFound`, `binaryOp.invalid`, `return.type`). Lo zero non viene da una config che non analizza.
+- Gli exit sono quelli reali di PHPStan, scritti su file (`...; echo $? > .exit`), non quelli del job in background.
+- Dei 29 errori di `TradeResults.php` visti a inizio sessione non resta nulla: li hanno chiusi i proprietari del file.
+- Da ripetere dopo ogni onda di sync deprecato, come scritto sopra.
+
+## Run 2026-11-11 — rimisura: 110 segnalazioni in 5 cluster (sessione claude-code 29546f41)
+
+**Fase BMAD:** Dev / quality gate. **Misura:** `phpstan analyse Modules --no-progress --error-format=json`, exit **1** (letto da file, non
+dal job in background), `file_errors: 110` in 28 file, nessun «incomplete», nessun marker di merge nei `.php`. Non e' uno zero: ottobre
+(zero) e' superato dalla sync delle 14:3x. JSON grezzo in scratch, non versionato.
+
+| Cluster | Scope (file disgiunti) | Errori | Ipotesi verificata prima del fan-out | Stato |
+|---------|------------------------|--------|--------------------------------------|-------|
+| A | `Xot/tests/Unit/HostApp/{FeatureFlags,AppMiddleware,ViewComponents}Test.php` | 69 | 14 classi `App\...` assenti in `laravel/app`, mai cancellate (nessun `--diff-filter=D`), test aggiunti in un solo commit `483080dcac` | claim subagent A |
+| B | `Geo/app/Filament/Forms/Components/{Traits/HasCoordinatePicker,XotBaseCoordinateField}.php`, `Geo/tests/Unit/Filament/CoordinatePickerRefactorTest.php` | 22 | Filament 5.10.3 ha solo `ExposedLivewireMethod`; `Exposed` non esiste e PHP ignora l'attributo: metodi forse non esposti a Livewire | claim subagent B |
+| C | `Fixcity` `TicketForm`, `AccessibilityFeedbackForm`, `PersonalAreaNotificationsWidget` + 3 test (`view()` con `string` invece di `view-string`) | 11 | da capire l'origine delle stringhe | claim subagent C |
+| D | `Xot/lang/{en,es}/health.php`, `Xot/lang/it/xot_base_resource_form.php` (chiavi doppie); `Xot/.../FilterBuilder.php` e `User/.../UsersRelationManager.php` (`form()` deprecato); `User/.../RevokeUserAccessAction.php`; `Xot/tests/Unit/Deploy/ModulePublicAssetsLinksTest.php`; `Tenant/tests/Unit/Actions/Ente/GetEnteDataActionTest.php` | 9 | — | claim subagent D |
+
+Regole del run: niente commit dai subagent (committa la sync), niente story numerate nuove (le consolida il lead qui), PHPStan e Pest sotto
+`flock /tmp/claude-agents-qa.lock`, Pest solo via `pest-scratch-db.sh`. Gli esiti si aggiungono sotto, uno per cluster, dopo la verifica
+del lead (la causa riportata da un subagent si riproduce prima di crederle).
+
+### Esiti del run 2026-11-11 (riproduzione e verifica del lead)
+
+Le cause riportate dai subagent sono state riprodotte prima di crederle (regola della memoria `verify-subagent-root-cause-before-fixing`).
+
+| Cluster | Prima | Esito | Causa alla sorgente | Verificato / dedotto |
+|---------|-------|-------|---------------------|----------------------|
+| A Xot/HostApp | 69 | **0**: rimossi 3 test + 5 fixture blade | I tre test sono copie byte-per-byte dei test dell'host-app di PTVX (`base_ptvx_fila5/laravel/tests/Unit/{FeatureFlags,AppMiddleware,ViewComponents}Test.php`); le 11 classi `App\...` esistono solo li'. Arrivati in Xot (modulo condiviso) col commit `3caf9d7c5` / radice `483080dcac`. I comportamenti reali di Fixcity (trustHosts, `redirectGuestsTo`, guest, logout) sono gia' coperti da test Fixcity esistenti. | Verificato: originali PTVX presenti, `HostApp` ora ha solo 2 test indipendenti dall'host, PHPStan sul percorso exit 0. Dedotto: «Class not found» a runtime (Pest si ferma prima, alla `TestDatabaseGuard`). |
+| B Geo | 22 (21 al conteggio del subagent) | **nessuna modifica al codice** | `vendor` = Filament **5.10.3**, `composer.lock` e i moduli = **5.11.2**; `#[Exposed]` esiste da 5.11.0 (in 5.10.3 solo `ExposedLivewireMethod`). Riportare il codice indietro riapre il ping-pong gia' visto il 2026-11-05, 11-10 e oggi. Vendor indietro di 123 pacchetti sul lock (anche `laravel/framework` 13.38.0 contro 13.42.0, `larastan` 3.13.2 contro 3.14.0). | Verificato: `installed.json` contro `composer.lock`; con la classe `Exposed` caricata solo per la prova PHPStan exit 0 e Pest 8/8. Non provato: se i picker fossero rotti in produzione. |
+| C Fixcity | 11 | **0** sui 6 file | Non erano errori di tipo: Larastan accetta un letterale come `view-string` solo se `view()->exists()`; le viste `pub_theme::components.*` di Sixteen erano state **cancellate dall'albero** dal commit `483080dcac` (vedi sotto). Ripristinate 224 viste (153 referenziate per nome da codice/JSON vivi + 71 per chiusura degli include), solo in aggiunta, da `483080dcac^` (50 file piu' recenti dell'annidato) o dall'`HEAD` annidato, mai sovrascrivendo, nessun marker. | Verificato: 8/8 `view()->exists` e PHPStan sui 6 file exit 0 (prima 11). **Non** ripristinate le ~723 viste cancellate non referenziate per nome: possono essere obsolete o dinamiche. Lock stantio (16 giorni) su `components/wizard/data-step.blade.php.lock` (DCP-286, agente `w3a`): lasciato. |
+| D misti | 9 | **0** | Chiavi lang doppie (blocco identico ripetuto dall'auto-writer, testo visibile invariato); `->form(` su filtri diventa `->schema(` (alias deprecato, stessa firma); `RevokeUserAccessAction` usa `Str::random(60)` come `SessionGuard::cycleRememberToken` (prima `setRememberToken(null)` su un `string`; cambia da NULL a stringa casuale, vecchio cookie invalido uguale; test aggiornato + nuovo); test con `array_filter(..., is_string(...))` e base `Modules\Xot\Tests\TestCase`. | Verificato: PHPStan sui 9 file exit 0, Pest 40 verdi su 3 test. 2 rossi gia' presenti in `ModulePublicAssetsLinksTest` (righe 36 e 42): asserzioni su testo (`npm run copy` in un commento di `deploy.sh`; `outDir: './public'` ora `resolve(...)`), non sul comportamento: da riscrivere. |
+
+### Incidente `483080dcac` e infrastruttura (decisioni dell'utente, non prese)
+
+- **`483080dcac`** (marco76tv, "." 14:43 +0100, antenato di `HEAD`): 12 352 file cambiati, **1,23 milioni di righe cancellate** (lang/vendor ~3.5k, Notify/.github 1971, Sixteen docs 1076 e resources 1004, Xot docs 588, Geo docs 292...), **81 file di test** (Tenant 61 con `TestCase.php` e `Pest.php`, User 8, UI 1). Ipotesi (dedotta, non provata): merge `--allow-unrelated-histories -s resolve` da `laraxot/dev`, remoto condiviso fra progetti diversi (PTVX, trade, predict) con commit automatici `.`: cio' che e' specifico di FixCity sparisce. Stesso schema della memoria `other-machine-auto-sync-deletes-stubs-and-marker-commits`.
+- **Sync appesa:** `merge_remote_repo_2.sh laraxot` aspetta da minuti `/usr/bin/editor` sul `MERGE_MSG` di `Modules/Mobile`; nel repo `bashscripts` restano 39 file `UU` (19 prompt di `docs/prompts`, compreso `11-phpstan.md`). Non toccati: sono lo stato di un processo vivo.
+- **`pest-scratch-db.sh` cancellato** da `bashscripts/tools` (commit `eb98b388e`, 2026-10-28): la memoria lo dava per attivo. Su Fixcity non funziona neppure la copia recuperata (richiede `DB_DATABASE_LIMESURVEY`; assegna lo stesso scratch a `DB_DATABASE` e `DB_DATABASE_USER` mentre `config/local/fixcity/database.php` forza il DB utenti a `fixcity_user`): la `TestDatabaseGuard` rifiuta ogni test Fixcity. Ha protetto il DB di sviluppo: nessuna scrittura osservata.
+- **Vendor in ritardo sul lock:** serve `cd laravel && composer install` (parte dal lock, senza solver) dopo prova; cambia il vendor condiviso col dev su :8000 e le misure di tutti gli agenti, quindi non lanciato.
+
+### Misura finale del run 2026-11-11
+
+`phpstan analyse Modules --no-progress --error-format=json` sotto `flock`, dopo i fix: exit **1**, `errors: 0`, `file_errors: 21` in 3 file, nessun «incomplete». **110 -> 21.** I 21 sono tutti in Geo (`HasCoordinatePicker` 18, `XotBaseCoordinateField` 2, `CoordinatePickerRefactorTest` 1; 20 `attribute.notFound` + 1 `class.notFound`) e hanno una sola causa: `vendor` Filament 5.10.3 contro lock 5.11.2. Si azzerano con `composer install` dal lock (decisione dell'utente, vedi sopra), non con modifiche al codice.

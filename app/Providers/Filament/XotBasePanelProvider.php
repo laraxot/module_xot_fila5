@@ -56,6 +56,25 @@ abstract class XotBasePanelProvider extends PanelProvider
      */
     protected bool $discoverModuleComponents = true;
 
+    /**
+     * Sottocartella di `app/Filament` da cui scoprire i componenti.
+     *
+     * Null per il pannello admin del modulo (`app/Filament/Resources`, ...). Un pannello
+     * trasversale ospitato dal modulo (es. 'Customer') scopre solo
+     * `app/Filament/Customer/{Resources,Pages,Widgets,Clusters}`, cosi' non eredita le
+     * resource amministrative e l'admin non eredita le sue.
+     */
+    protected ?string $componentsDirectory = null;
+
+    /**
+     * Tenancy Filament del pannello (https://filamentphp.com/docs/5.x/users/tenancy).
+     *
+     * Spenta per i pannelli di gestione; accesa per le aree in cui l'utente lavora
+     * dentro un tenant (es. il cliente che vede solo i suoi dati). Il modello tenant
+     * e' `XotData::getTenantClass()`, identificato nell'URL dallo slug.
+     */
+    protected bool $hasTenancy = false;
+
     public function panel(Panel $panel): Panel
     {
         $moduleNamespace = $this->getModuleNamespace();
@@ -81,9 +100,6 @@ abstract class XotBasePanelProvider extends PanelProvider
             ->globalSearch($this->globalSearch)
             ->readOnlyRelationManagersOnResourceViewPagesByDefault(false)
             ->navigation($this->navigation)
-            // ->tenant($teamClass)
-            // ->tenant($teamClass,ownershipRelationship:'users')
-            // ->tenant($teamClass)
             ->id($this->panelId ?? $moduleLow.'::admin')
             ->path($this->panelPath ?? $moduleLow.'/admin')
             ->middleware([
@@ -130,24 +146,23 @@ abstract class XotBasePanelProvider extends PanelProvider
                 fn (): string => app(GetSidebarStateScriptAction::class)->execute(),
             );
 
+        if ($this->hasTenancy) {
+            $panel->tenant(XotData::make()->getTenantClass(), slugAttribute: 'slug');
+        }
+
         if ($this->discoverModuleComponents) {
+            $path = base_path('Modules/'.$this->module.'/app/Filament');
+            $namespace = $moduleNamespace.'\\Filament';
+            if ($this->componentsDirectory !== null) {
+                $path .= '/'.$this->componentsDirectory;
+                $namespace .= '\\'.$this->componentsDirectory;
+            }
+
             $panel
-                ->discoverResources(
-                    base_path('Modules/'.$this->module.'/app/Filament/Resources'),
-                    sprintf('%s\\Filament\\Resources', $moduleNamespace),
-                )
-                ->discoverPages(
-                    base_path('Modules/'.$this->module.'/app/Filament/Pages'),
-                    sprintf('%s\\Filament\\Pages', $moduleNamespace),
-                )
-                ->discoverWidgets(
-                    base_path('Modules/'.$this->module.'/app/Filament/Widgets'),
-                    sprintf('%s\\Filament\\Widgets', $moduleNamespace),
-                )
-                ->discoverClusters(
-                    base_path('Modules/'.$this->module.'/app/Filament/Clusters'),
-                    sprintf('%s\\Filament\\Clusters', $moduleNamespace),
-                );
+                ->discoverResources($path.'/Resources', $namespace.'\\Resources')
+                ->discoverPages($path.'/Pages', $namespace.'\\Pages')
+                ->discoverWidgets($path.'/Widgets', $namespace.'\\Widgets')
+                ->discoverClusters($path.'/Clusters', $namespace.'\\Clusters');
         }
 
         return $panel;

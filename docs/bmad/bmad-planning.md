@@ -1,5 +1,5 @@
 ---
-title: "BMAD Planning — Xot"
+title: "BMAD Planning: Xot"
 type: bmad-planning
 status: active
 module: Xot

@@ -245,7 +245,7 @@ PHP);
             'buildCSP' => [],
             'buildPermissionsPolicy' => [],
             'logSecurityEvents' => [$ok, response('l', 200)],
-            'isSuspiciousRequest' => [$bad, response('s', 403)],
+            'isSuspiciousRequest' => [$bad],
             'validateInputs' => [$deep],
             'validateStringInput' => ['q', "1' OR 1=1 --"],
             'validateArrayInput' => ['nested', ['x' => 'y']],
@@ -327,11 +327,13 @@ PHP);
                     Assert::assertNotEmpty($case->getDescription());
                 }
             }
-            foreach (['getSearchable', 'getFormSchema', 'toArray', 'getColumnNames', 'getColumnDefinitions'] as $m) {
+            foreach (['getSearchable', 'getFormSchema', 'toArray', 'getColumnNames'] as $m) {
                 if (method_exists($enum, $m)) {
                     Assert::assertNotEmpty($enum::$m());
                 }
             }
+            // EnumTrait::getColumnDefinitions() vale [] di default: questi enum non sono legati a colonne DB.
+            Assert::assertIsArray($enum::getColumnDefinitions());
         }
     });
 });

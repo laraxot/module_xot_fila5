@@ -1,5 +1,5 @@
 ---
-title: "Sostenibilità — stewardship piattaforma Xot"
+title: "Sostenibilità: stewardship piattaforma Xot"
 type: concept
 module: Xot
 status: decision-input
@@ -8,7 +8,7 @@ tags: [sustainability, xot, stewardship, bmad]
 qmd: "stewardship piattaforma (ownership xot   limiti) xot"
 ---
 
-# Stewardship piattaforma (ownership Xot — limiti)
+# Stewardship piattaforma (ownership Xot: limiti)
 
 ## Perché menzionare Xot
 

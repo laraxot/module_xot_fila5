@@ -61,7 +61,7 @@ use Filament\Resources\XotBaseResource;
 # ✅ additivo, mai distruttivo (dati sacri)
 cd laravel && php artisan migrate
 
-# ❌ VIETATO — distrugge i dati
+# ❌ VIETATO: distrugge i dati
 # php artisan migrate:fresh
 # php artisan migrate --force
 # php artisan db:wipe
@@ -445,7 +445,7 @@ SQLSTATE[23000]: Integrity constraint violation
 
 #### **Soluzioni**
 
-**Mai `RefreshDatabase` (dati sacri)** — usare `DatabaseTransactions` / TestCase modulo + `.env.testing`:
+**Mai `RefreshDatabase` (dati sacri)**: usare `DatabaseTransactions` / TestCase modulo + `.env.testing`:
 
 ```php
 use Illuminate\Foundation\Testing\DatabaseTransactions;

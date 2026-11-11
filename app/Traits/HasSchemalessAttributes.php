@@ -18,10 +18,9 @@ use function Safe\json_encode;
  * @property SchemalessAttributes|null $extra_attributes
  *
  * @see https://github.com/spatie/laravel-schemaless-attributes
- *
  * @phpstan-ignore trait.unused
  */
-trait HasSchemalessAttributes
+trait HasSchemalessAttributes // @phpstan-ignore trait.unused
 {
     /**
      * Aggiunge extra_attributes al fillable.
@@ -104,7 +103,7 @@ trait HasSchemalessAttributes
      * @param  scalar|array<array-key, mixed>|null  $default  Fallback JSON-serializzabile
      * @return mixed Valore schemaless (scalar|array|null nel dominio JSON)
      */
-    public function getExtraAttribute(string $key, mixed $default = null): mixed
+    public function getExtraValue(string $key, mixed $default = null): mixed
     {
         return $this->extraAttributesWrapper()->get($key, $default);
     }
@@ -114,7 +113,7 @@ trait HasSchemalessAttributes
      *
      * @param  scalar|array<array-key, mixed>|null  $value  Valore JSON-serializzabile
      */
-    public function setExtraAttribute(string $key, mixed $value): void
+    public function setExtraValue(string $key, mixed $value): void
     {
         $this->extraAttributesWrapper()->set($key, $value);
         $this->syncExtraAttributesWrapper();

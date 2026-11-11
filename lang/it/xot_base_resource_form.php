@@ -3,15 +3,26 @@
 declare(strict_types=1);
 
 return [
+    'actions' => [
+        'submit' => [
+            'label' => 'Invia',
+        ],
+        'previous' => [
+            'label' => 'Precedente',
+        ],
+        'next' => [
+            'label' => 'Successivo',
+        ],
+    ],
     'steps' => [
         'privacy' => [
-            'label' => 'privacy',
+            'label' => 'Privacy',
         ],
         'data' => [
-            'label' => 'data',
+            'label' => 'Dati',
         ],
         'summary' => [
-            'label' => 'summary',
+            'label' => 'Riepilogo',
         ],
     ],
 ];

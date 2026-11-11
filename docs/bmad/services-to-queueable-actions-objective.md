@@ -1,5 +1,5 @@
 ---
-title: "BMAD objective — Services to Queueable Actions"
+title: "BMAD objective: Services to Queueable Actions"
 type: bmad-brainstorm-objective
 status: active
 module: Xot

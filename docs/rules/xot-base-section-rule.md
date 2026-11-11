@@ -1,15 +1,9 @@
 ---
-title: "xot base section rule"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "xot base section rule"
-issues: []
-discussions: []
-status: draft
+title: "Xot - xot-base-section-rule.md"
+module: Xot
+bmad: true
+status: active
 ---
-
 # Regola XotBaseSection - Politica, Filosofia, Religione, Zen
 
 ## Scopo (Purpose)

@@ -1,6 +1,5 @@
 ---
-title: "BMAD Story — Swarm parallel: analisi PHPStan modulare + docs org + wiki/second brain"
-type: story
+title: "Xot - swarm-phpstan-modular-docs-org.story.md"
 module: Xot
 bmad: true
 status: draft
@@ -9,7 +8,7 @@ tags: [docs, xot, bmad]
 qmd: "bmad story   swarm parallel: analisi phpstan modulare + docs org + wiki/second brain xot"
 ---
 
-# BMAD Story — Swarm parallel: analisi PHPStan modulare + docs org + wiki/second brain
+# BMAD Story: Swarm parallel: analisi PHPStan modulare + docs org + wiki/second brain
 
 ## Epic
 SWARM-PHPSTAN-001

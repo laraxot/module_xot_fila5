@@ -4,7 +4,7 @@ created: 2026-09-26
 updated: 2026-09-26
 issues: []
 discussions: []
-title: "Xot — bonifica .md con data/timestamp nel nome file"
+title: "Xot: bonifica .md con data/timestamp nel nome file"
 type: story
 module: Xot
 status: backlog
@@ -14,20 +14,20 @@ related:
   - ../../../../../../docs/sprint-status.yaml
 ---
 
-# Xot — .md senza data/timestamp nel nome (batch trovato 2026-09-22)
+# Xot: .md senza data/timestamp nel nome (batch trovato 2026-09-22)
 
 ## Perche'
 
 Direttiva utente questa sessione: nessun filename `.md` con data o timestamp.
 `docs/sprint-status.yaml:257` referenzia una story `"5.29-docs-filename-no-date-bonifica"`
 (status `review`) di cui **non esiste il file** in nessun modulo (puntatore
-rotto — stesso bug tracciato in `5.25-second-brain-puntatori-rotti`,
+rotto: stesso bug tracciato in `5.25-second-brain-puntatori-rotti`,
 in-progress). Quella campagna (2026-09-01) copriva User/Notify/Xot/Lang/
 Activity/UI/Media/Job/Ptv/Tenant/Rating/Pdnd/Zero con debito residuo
-dichiarato aperto su User (~37 file) — non e' chiaro se il batch sotto sia
+dichiarato aperto su User (~37 file): non e' chiaro se il batch sotto sia
 gia' incluso in quel conteggio o e' nuovo (creato dopo).
 
-## Scope — file trovati con `[0-9]{4}-[0-9]{2}-[0-9]{2}` o timestamp nel nome
+## Scope: file trovati con `[0-9]{4}-[0-9]{2}-[0-9]{2}` o timestamp nel nome
 
 `find Modules/Xot -iname "*.md" | grep -E '[0-9]{4}-[0-9]{2}-[0-9]{2}|[0-9]{8}'`
 (esclusi `graphify-out/`, generato/gitignored):
@@ -59,7 +59,7 @@ gia' incluso in quel conteggio o e' nuovo (creato dopo).
 - `docs/refactor-panelmixin-2026-07-07.md`
 - `docs/git-conflicts-resolution.md`
 - `docs/filament/hasxtable-visibility-fix-2026-01-27.md`
-- `docs/historical/hasxtable-visibility-fix-2026-01-27.md` (duplicato del punto sopra — verificare se identico prima di unificare)
+- `docs/historical/hasxtable-visibility-fix-2026-01-27.md` (duplicato del punto sopra: verificare se identico prima di unificare)
 - `docs/consolidated/lessons-learned.md` (duplicato di sopra)
 - `docs/consolidated/git-conflicts-resolution-archive.md` (duplicato di sopra)
 - `docs/wiki/redundancy-audit-2026-05-26.md`
@@ -70,15 +70,15 @@ gia' incluso in quel conteggio o e' nuovo (creato dopo).
 - `docs/wiki/raw/composer-root-skeleton-comparison-2026-06-30{,-dup}.md`
 - `docs/wiki/raw/composer-root-skeleton-fixcity-comparison-2026-06-30{,-dup}.md`
 - `docs/stories/*-2026-09-*.story.md` e `docs/stories/*-1788*.story.md` (timestamp
-  Unix nel nome, non solo date ISO — stessa violazione)
+  Unix nel nome, non solo date ISO: stessa violazione)
 - `docs/bmad/stories/cleanup-xot-2026-09-22.story.md`,
   `cleanup-all-modules-2026-09-22.story.md`,
-  `subagent-A-parallel-tasks-2026-09-22.story.md` — **story BMAD stesse**, non
+  `subagent-A-parallel-tasks-2026-09-22.story.md`: **story BMAD stesse**, non
   solo doc storici: anche queste vanno rinominate (contenuto intatto).
 
 ## Trovato in aggiunta (fuori scope diretto, segnalare)
 
-`Modules/Xot/.git-rewrite/t/docs/...` — directory intera che rispecchia
+`Modules/Xot/.git-rewrite/t/docs/...`: directory intera che rispecchia
 `docs/` con path `.git-rewrite/t/`: residuo di un `git filter-repo`/
 `git-rewrite` mai ripulito. Non e' un problema di naming, e' un artefatto di
 rewrite storico che non dovrebbe essere nel working tree tracciato. Verificare

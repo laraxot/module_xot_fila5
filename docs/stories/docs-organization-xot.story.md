@@ -149,7 +149,7 @@ Nomi con data o suffisso: `md-filenames.py plan` propone 82 rinomine in Xot. App
 (tre `project-docs-index.md` riscritti dal tool; 308 file sporchi saltati, con le due copie piu' vecchie ancora al nome vecchio: sono indici generati).
 Non applicate le altre, per tre motivi: 80 sono in `archive/` e 40 in `consolidated/`, cartelle ignorate da git (rinominare un file tracciato li' lo fa uscire dal tracciamento);
 in radice i 6 rimasti sono citati come esempio di nome vietato in guideline e report (il tool li riscriverebbe distruggendo la spiegazione) o sono falsi positivi;
-`migrazione-filament-4.md` e' un falso positivo (4 e' la versione di Filament; `KEEP_AFTER` del tool non ha `filament`).
+`migrazione-filament.md` e' un falso positivo (4 e' la versione di Filament; `KEEP_AFTER` del tool non ha `filament`).
 
 Frontmatter: aggiunto lo schema minimo (`title`, `type: note`, `status: unverified`, `created`, `updated`, `module: Xot`, `tags`, piu' `qmd` perche' la convenzione 55 lo chiede) a 260 file non vuoti,
 con uno script proprio che antepone il blocco e verifica byte per byte che il corpo non sia cambiato (corpo identico per costruzione, asserzione nel codice).
@@ -179,7 +179,7 @@ la riparazione finisce nel ripristino del coordinatore. Nessuna annotazione `--a
 3. **Ingresso canonico.** L'ordine di questa lane dice `00-INDEX.md`; `README.md` si dichiara "ingresso unico"; `INDEX.md` si dichiara "indice canonico"
    (spine) e `conventions/docs-organization.md` dice README unico ingresso con gli altri come alias. Tre pagine, tre rivendicazioni: serve una decisione.
 4. **Rinomina dei 120 nomi con data in `archive/` e `consolidated/`.** Prima va deciso se quei file devono essere tracciati (oggi sono tracciati ma la cartella e' ignorata).
-5. **Falso positivo del tool** `migrazione-filament-4.md`: aggiungere `filament` a `KEEP_AFTER` in `md-filenames.py` (non toccato qui).
+5. **Falso positivo del tool** `migrazione-filament.md`: aggiungere `filament` a `KEEP_AFTER` in `md-filenames.py` (non toccato qui).
 6. **Coppie di maiuscole** chiuse il 2026-10-25 (vedi sotto): 8 -> 0 gruppi.
 7. **Link rotti rimasti**: 1582, soprattutto verso path di altri progetti, `docs/` di altri moduli inesistenti e README di cartelle sparite. Nessun intervento qui (divieto del coordinatore).
 8. **`wiki/Architecture.md`** era `stale`, ora `superseded`: la ragione `stale` e' nel corpo, non piu' nello status.

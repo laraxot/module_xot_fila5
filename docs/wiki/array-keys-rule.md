@@ -1,15 +1,9 @@
 ---
-title: "array keys rule"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "array keys rule"
-issues: []
-discussions: []
-status: draft
+title: "Xot - array-keys-rule.md"
+module: Xot
+bmad: true
+status: active
 ---
-
 # Array Keys Rule for Filament Schemas
 
 ## Regola

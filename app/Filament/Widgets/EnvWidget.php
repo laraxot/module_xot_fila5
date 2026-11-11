@@ -12,9 +12,12 @@ use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
 use Illuminate\Support\Arr;
 use Modules\Xot\Datas\EnvData;
+use Modules\Xot\Filament\Traits\SuperAdminOnlyTrait;
 
 class EnvWidget extends XotBaseSchemaWidget
 {
+    use SuperAdminOnlyTrait;
+
     /** @var array<string, mixed>|null */
     public ?array $data = [];
 
@@ -47,12 +50,26 @@ class EnvWidget extends XotBaseSchemaWidget
         $this->form->fill($this->data);
     }
 
+    public static function canView(): bool
+    {
+        return static::canAccess();
+    }
+
     public function submit(): void
     {
-        if (! is_array($this->data)) {
+        abort_unless(static::canAccess(), 403);
+
+        try {
+            // getState(), non $this->data: lo stato Livewire è modificabile dal client, il form no.
+            EnvData::make()->update($this->form->getState());
+        } catch (\InvalidArgumentException $e) {
+            Notification::make()
+                ->title($e->getMessage())
+                ->danger()
+                ->send();
+
             return;
         }
-        EnvData::make()->update($this->data);
         Notification::make()
             ->title('Saved successfully')
             ->success()
