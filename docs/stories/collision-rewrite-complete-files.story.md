@@ -250,3 +250,11 @@ Perimetro: i 28 file Xot assegnati (da `git ls-files -u`: 27 `UU`/`AA` + `docs/b
 - **`docs/bmad/stories/phpstan-modules-remediation.story.md`** (`DU`): il lato nostro l'aveva cancellato in una pulizia docs; il lato dev l'aveva riscritto (`status: done`,contenuto unico non duplicato altrove). Scelto il lato dev: una story done non si perde; nessun rename equivalente trovato.
 
 Verifica: `git ls-files -u` vuoto sui 28 file; zero marker `<<<<<<<`/`>>>>>>>` residui; `php -l` ok sui PHP toccati; `composer.json` JSON valido. Pest non eseguito (`.env.testing` senza `DB_USERNAME`, limite noto della story).
+
+#### Esito finale round 2 (coordinatore) — 2026-11-11
+
+- `git ls-files -u` = 0 su tutti i 18 repo; merge commits presenti; `HEAD..laraxot/dev` = 0 ovunque (la sync script `-s resolve` aveva gia' committato la maggior parte; i 3 temi e Xot sono stati chiusi manualmente con `git commit --no-edit` dopo verifica).
+- 3 file Fixcity con lock stale (PID morti, date 2026-09/10) rimossi e risolti: `TicketForm.php` (SEC-04 image decodability), `TicketResourceTest.php`, `dc-file-upload.blade.php` (aria-label) — ours era superset semantico, `php -l` ok.
+- 6 file con marker `.merge_file_*` **committati** (patologia nota della sync script): riscritti per il canon symlink — `Notify/docs/ai-agents/claude-pitfalls.md`, `Notify/docs/ai-agents/split/claude/theme-build-rules.md`, `Notify/docs/wiki/integrations/documentation-consolidated.md`, `UI/docs/theme-build.md`, `User/resources/views/docs/installation.md`, `User/resources/views/README.md`. Rimossa ogni traccia di `npm run copy` (dismesso): si resta su `xot:theme-link`/`xot:module-link`.
+- Restano ~20 file docs in `Notify/docs/**` con marker committati (molti duplicati case-variant in `_da-riconciliare/`): sweep delegato a subagent dedicato.
+- PHPStan: `./vendor/bin/phpstan analyse Modules` rilanciato post-merge (i log precedenti in `/tmp` erano di un altro checkout).
