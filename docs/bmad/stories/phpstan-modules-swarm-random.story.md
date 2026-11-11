@@ -333,7 +333,6 @@ fuori repo lo puo' sovrascrivere senza toccare la cache condivisa: `includes:` c
 - Gli exit sono quelli reali di PHPStan, scritti su file (`...; echo $? > .exit`), non quelli del job in background.
 - Dei 29 errori di `TradeResults.php` visti a inizio sessione non resta nulla: li hanno chiusi i proprietari del file.
 - Da ripetere dopo ogni onda di sync deprecato, come scritto sopra.
-<<<<<<< .merge_file_WpK22Q
 
 ## Run 2026-11-11 — rimisura: 110 segnalazioni in 5 cluster (sessione claude-code 29546f41)
 
@@ -373,8 +372,6 @@ Le cause riportate dai subagent sono state riprodotte prima di crederle (regola 
 ### Misura finale del run 2026-11-11
 
 `phpstan analyse Modules --no-progress --error-format=json` sotto `flock`, dopo i fix: exit **1**, `errors: 0`, `file_errors: 21` in 3 file, nessun «incomplete». **110 -> 21.** I 21 sono tutti in Geo (`HasCoordinatePicker` 18, `XotBaseCoordinateField` 2, `CoordinatePickerRefactorTest` 1; 20 `attribute.notFound` + 1 `class.notFound`) e hanno una sola causa: `vendor` Filament 5.10.3 contro lock 5.11.2. Si azzerano con `composer install` dal lock (decisione dell'utente, vedi sopra), non con modifiche al codice.
-=======
->>>>>>> .merge_file_k0RIm0
 
 ### Correzione: `composer install` dal lock NON e' la cura (verificato, dry-run)
 
@@ -393,3 +390,51 @@ Il vendor in ritardo e' quindi un sintomo di due insiemi di dipendenze diversi (
 **Non presi (20 file `UU` altrove in `bashscripts`):** `ai/wiki/rules` 7, `ai/.agents/docs` 4, `docs` 2, `ai/wiki/memories` 2, `ai/.agents` 2, `ai/wiki/how-to` 1, `tools/visual` 1, `ai/wiki/skills` 1 (somma 20, contata con `git ls-files -u`). Chi li vuole, li annoti qui prima.
 **Regole:** nessun `git add`, nessun commit (l'indice resta `UU`, ci pensa la sync), nessuna rinomina, `updated:` = la piu' recente fra i due lati, `qmd:` = unione, contenuto presente in un solo lato mai scartato; prova di non-perdita per file. In piu', P1 aggiunge a `11-phpstan.md` la sezione «Controlli prima del fan-out» con le lezioni del run (exit da file, vendor contro lock, `view-string` = vista mancante, test copiati da altro host, rimisura finale).
 **Esito:** a carico dei subagent; lo scrivo sotto quando i report sono verificati.
+
+## Incidente 2026-11-11 15:18 — la sync committa il merge con i marker e adotta 27 549 cancellazioni (`1af871d0c`)
+
+**Misurato (comandi in `bashscripts`, 15:34–15:37):**
+- Alle **15:18:13** la sync di questa macchina ha committato `1af871d0c` («.», Marco Xot, genitori `f7a39cc23` = nostro e `eb15551b0` = `laraxot/dev`, marco76tv 14:55:58). `MERGE_HEAD` non c'e' piu', 0 file `UU`. Il mio controllo delle 15:14 («nessuna sync viva») era giusto in quel momento ma la sync e' ripartita 4 minuti dopo: **«non c'e' un processo» non e' un blocco che regge**, e il mio claim non l'ha fermata.
+- Quel commit contiene ancora i marker di merge nei prompt (il secondo subagent li ha trovati in HEAD: 3 blocchi in 04/08/17/21/38/44/97, 15 in 25/46/98, 12 in README, 9 in INDEX). Le versioni risolte sono **modifiche non committate**: le committera' la prossima sync.
+- Rispetto al primo genitore il commit toglie **28 035 file** (27 549 veri + 486 `.merge_file_*` temporanei, la cui sparizione e' una pulizia): `ai/` 26 720, `tools/` 766, `docs/` 60. **Tutti i 27 549 erano gia' assenti nel secondo genitore**: il merge `-s resolve` ha adottato le cancellazioni dell'altra macchina, non le ha inventate. Stesso schema di `483080dcac`.
+- **Danno silenzioso provato:** `ai/.agents/hooks/md-filename-guard.sh` fa `[ -f "$tool" ] || exit 0` su `tools/docs/md-filenames.py`; sparito lo script, la regola dell'utente «mai date ne' `-1.md` nei nomi .md» non era piu' applicata e nessun errore lo diceva.
+
+**Fatto (solo in avanti, creazione esclusiva `open(...,"xb")`, nessun `git add`, nessun commit):** ripristinati da `f7a39cc23` i 6 strumenti che prompt, hook e `CLAUDE.md` citano e che mancavano: `tools/docs/md-filenames.py`, `tools/docs/docs-organizer.py`, `tools/claims-open.py`, `tools/i18n/audit-locales.py`, `tools/worklog/{worklog.py,collect-day.sh}`. Verificati: compilano; `md-filenames.py check --paths docs/zzz-prova-2026-11-11.md` esce con 1 e `docs/zzz-prova-nome-pulito.md` con 0 (prova inversa). Ho **ripristinato e subito tolto** `tools/pest-scratch-db.sh` (copia identica al blob): era tolto di proposito il 2026-10-28, non gira su Fixcity e ripristinarlo o sostituirlo e' una decisione dell'utente, non mia.
+
+**Non fatto, di proposito:** gli altri ~27 540 file (`ai/` 26 720 compresi) non sono stati ripristinati: nessuno di quelli che ho in mano li usa, e ripristinarli in blocco senza una decisione ricrea il ping-pong con l'altra macchina. **Dedotto, non provato:** al prossimo merge di `laraxot/dev` quell'altra macchina puo' toglierli di nuovo; i 6 strumenti ripristinati compresi.
+**Decisione per l'utente:** (a) fermare alla radice la sync che committa `.` con marker e adotta cancellazioni (`--no-edit`, nessun commit finche' ci sono `UU` o `.merge_file_*`, mai `-s resolve --allow-unrelated-histories` su un remoto condiviso); (b) quali di `ai/` e `tools/` sono davvero da riavere.
+
+## Esito 2026-11-11 15:45 — 19 prompt risolti, ma i marker sono gia' in `HEAD` anche nella story e in 20 file non presi
+
+**Verificato da me (non dai report dei subagent), `bashscripts/docs/prompts`:**
+- Tutti e 19 i prompt: 0 marker, frontmatter YAML valido senza chiavi duplicate, 0 file in stage, nessun commit mio. Link relativi dei 5 di P1 tutti risolti; 115 link di `INDEX.md` risolti, tutti gli 86 prompt numerati presenti in tabella, nessuna riga identica ripetuta.
+- P1 (`11-phpstan`, `00-start`, `01-architecture-patterns`, `03-quality-gates`, `02-controller-to-folio-actions`): scelte per blocco nel suo report; `00-start.md` tiene **entrambe** le versioni sovrapposte con una «Nota di fusione» (da sfoltire a mano: non fondibili senza perdite). Scartato dal lato `eb15551b0`: «`phpstan-baseline.neon` non esiste» (**falso**: 0 byte dal 17/10, verificato) e alcune righe di «Lezioni generiche», recuperabili da `eb15551b0`.
+- P2 (14 file, INDEX e README compresi): vedi il suo report; la sua ricostruzione per blocco dei 12 file piu' piccoli e' meno dettagliata.
+- In `11-phpstan.md` ho corretto due righe vecchie che contraddicevano la sezione nuova «Controlli prima del fan-out»: il passo 0 diceva «reinstalla» e usava `composer install --dry-run` senza `--no-scripts`; ora decide il dry-run e, se mostra **rimozioni** di pacchetti richiesti da un modulo (`codewithkyrian/transformers` per AI), si ferma e segnala. `updated: 2026-11-11`.
+
+**Scoperto dopo:** la sync delle 15:20 (`f2e454c2f`, repo annidato Xot) aveva committato `<<<<<<< .merge_file_WpK22Q` / `=======` / `>>>>>>> .merge_file_k0RIm0` **dentro questa story**, attorno alla sezione «Run 2026-11-11» (lato «loro» vuoto). Rimossi i 3 marker, nient'altro (diff = solo quelle 3 righe, copia in scratchpad `story-before-marker-removal.md`). Come per i prompt, la correzione e' una modifica non committata.
+**Ancora aperto:** 19 file nei restanti `bashscripts/ai/**` e `bashscripts/docs/*.md` hanno marker **committati in `HEAD`** (`ai/.agents/BOOTSTRAP.md` e `00-ON_DEMAND_USAGE.md` sono caricati all'avvio di ogni agente). Non presi da nessuno; da risolvere con la stessa regola (unione senza perdite, mai `git add`/commit).
+
+## Claim 2026-11-11 15:48 — i 19 file con marker in `HEAD` di `bashscripts` (54 blocchi)
+
+Fase BMAD: Dev, risoluzione senza perdite. Stesso regime dei prompt: niente `git add`, niente commit, niente rinomine, unione dei lati, `updated:` = piu' recente, contraddizioni risolte secondo le regole del progetto e annotate. L'indice non ha piu' stage (merge gia' committato): lati = `f7a39cc23:<path>` (nostro) e `eb15551b0:<path>` (`laraxot/dev`), base = `git merge-base` se esiste.
+- **P3 (28 blocchi):** `ai/wiki/rules/post-edit-quality-gate.md` (9), `ai/wiki/skills/cursor-second-brain-max-workflow.md` (9), `ai/wiki/rules/file-locking-validation-protocol.md` (6), `ai/wiki/rules/00-TRIGGER_MAP.md` (4).
+- **P4 (26 blocchi):** `ai/wiki/rules/multi-agent-file-lock-protocol.md` (4), `ai/wiki/how-to/multi-agent-coordination-discipline.md` (5), `ai/.agents/docs/multi-agent-coordination.md` (3), `ai/wiki/rules/agent-chat-directory.md` (2), `ai/wiki/memories/docs-chat-slug-per-topic.md` (2) e un blocco ciascuno in `ai/.agents/00-ON_DEMAND_USAGE.md`, `ai/.agents/BOOTSTRAP.md`, `ai/.agents/docs/{git-workflow,index,INDEX}.md`, `ai/wiki/memories/phpstan-quality-docs-bmad-standing-order.md`, `ai/wiki/rules/{docs-chat-filename-no-dates,on-demand-pattern}.md`, `docs/{modular-bmad-story-policy,root-script-policy}.md`.
+Fuori scope: `tools/visual/scratch-auth-fixture.sh` (nessun marker in `HEAD`), le copie speculari in `docs/wiki/` della radice (solo segnalare le divergenze).
+
+## Esito 2026-11-11 15:58 — i 19 file con marker in `HEAD` di `bashscripts` (P3 + P4)
+
+**Verificato da me, 15:53 (non dai report):** i 19 file hanno 0 marker, frontmatter YAML valido senza chiavi duplicate, 0 in stage, `HEAD` ancora `1af871d0c` (nessun commit mio), nessun `merge_remote_repo` vivo. `grep -rIlE '^(<<<<<<< |>>>>>>> )'` su tutto `bashscripts` (md, sh, py, json, yml): **nessun risultato**. Nello stesso scan dei file modificati di `laravel/` l'unico marker era nella mia story (gia' tolto).
+- **Limite del controllo:** confronto riga per riga contro `HEAD` (entrambi i lati). Le righe non piu' identiche sono riformulazioni o fusioni dichiarate dai subagent (P3: 12+17+27+14; P4: 75 in totale). Non prova l'equivalenza di significato: l'ho controllata a campione sui tre file piu' riscritti.
+- **`docs/wiki/rules` e' un symlink a `bashscripts/ai/wiki/rules`** (verificato con `ls -ld`): i file omonimi nella radice sono lo stesso file, nessuna divergenza possibile.
+- **Contraddizioni risolte secondo `CLAUDE.md`:** `docs/chat/` solo archivio in sola lettura, coordinamento nelle story BMAD del modulo/tema owner; `bmad-output/` vietato per i documenti; nessuna `docs/stories/` globale. Scartati con prova (`find`/`ls`): `bashscripts/tools/bmad-story.sh`, la story `second-brain-bmad-skills-audit`, `docs/planning-artifacts/multi-agent-coordination-protocol.md`, `phpstan-cleanup-xot-app.story.md`, `bmad-output/epic-code-standards-services-mixed-const.md`.
+- **Correzioni mie dopo i report:** `cursor-second-brain-max-workflow.md` riga 158 («log.md + chat aggiornati») ora rimanda all'`## Esito` della story owner; `multi-agent-coordination-discipline.md` riga 32 non ammette piu' una `docs/stories/` globale.
+
+**Aperto, non risolto (decisioni o lavoro a parte):**
+1. **Le versioni risolte sono solo nell'albero di lavoro.** `HEAD` ha ancora i marker in questi 19 file, nei 19 prompt e nella story; li ripulira' la prossima sync solo se non riporta dentro `laraxot/dev` altri conflitti. Se la sync parte durante un merge, rilanciare lo scan sopra.
+2. `ai/.agents/docs/index.md` e `INDEX.md` coesistono (320 e 84 righe): collisione solo di maiuscole, regola `no-case-variations`; serve una migration map, non una rinomina a mano.
+3. `00-start.md` (prompt) tiene due versioni sovrapposte con una «Nota di fusione»: da sfoltire a mano.
+4. Link gia' rotti prima del merge: `docs/chat/second-brain-toolchain-rotta.md`, `bashscripts/docs/file-lock.md`, `ai/project/qmd-local-docs-search.md`, 7 in `ai/.agents/docs/index.md`; `docs/stories/bmad-stories-operational-source.story.md` citata e inesistente.
+5. Strumenti citati e assenti dopo `1af871d0c` (`tools/cms/`, `tools/heavy-slot.sh`, `tools/visual/parity-wizard-steps.sh`, `tools/migrations/`, `tools/pest-scratch-db.sh`): vedi «Incidente» sopra; non ripristinati.
+6. La tabella di `root-script-policy.md` (2026-10-13) elenca 4 script in radice; oggi ci sono anche `deploy.sh` e `phpstan-fix-script.sh` e in `laravel/` `compare-html.py`, `fix-vartag-xot.sh`: non aggiornata.
+7. Una riga della policy modulare cita `github.com/provt/` (progetto di un'altra macchina): lasciata, non verificabile qui.
