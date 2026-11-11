@@ -1,14 +1,14 @@
 ---
-title: "Filament Version Declaration — {ModuleOrThemeName}"
+title: "Filament Version Declaration: {ModuleOrThemeName}"
 type: note
 status: unverified
 created: 2026-05-26
 updated: 2026-05-26
 module: Xot
 tags: [xot, bashscripts]
-qmd: "Filament Version Declaration — {ModuleOrThemeName}"
+qmd: "Filament Version Declaration: {ModuleOrThemeName}"
 ---
-# Filament Version Declaration — {ModuleOrThemeName}
+# Filament Version Declaration: {ModuleOrThemeName}
 
 **Current Version**: Filament v5 (Livewire v4 + Schemas)
 
@@ -24,4 +24,4 @@ All resources, forms, tables, infolists, widgets and actions must follow the v5 
 
 **Last verified**: 2026-05-21
 
-**Firmato:** Cursor Agent (Composer) — template propagato ai package `docs/`
+**Firmato:** Cursor Agent (Composer): template propagato ai package `docs/`

@@ -333,6 +333,7 @@ fuori repo lo puo' sovrascrivere senza toccare la cache condivisa: `includes:` c
 - Gli exit sono quelli reali di PHPStan, scritti su file (`...; echo $? > .exit`), non quelli del job in background.
 - Dei 29 errori di `TradeResults.php` visti a inizio sessione non resta nulla: li hanno chiusi i proprietari del file.
 - Da ripetere dopo ogni onda di sync deprecato, come scritto sopra.
+<<<<<<< .merge_file_WpK22Q
 
 ## Run 2026-11-11 — rimisura: 110 segnalazioni in 5 cluster (sessione claude-code 29546f41)
 
@@ -372,3 +373,23 @@ Le cause riportate dai subagent sono state riprodotte prima di crederle (regola 
 ### Misura finale del run 2026-11-11
 
 `phpstan analyse Modules --no-progress --error-format=json` sotto `flock`, dopo i fix: exit **1**, `errors: 0`, `file_errors: 21` in 3 file, nessun «incomplete». **110 -> 21.** I 21 sono tutti in Geo (`HasCoordinatePicker` 18, `XotBaseCoordinateField` 2, `CoordinatePickerRefactorTest` 1; 20 `attribute.notFound` + 1 `class.notFound`) e hanno una sola causa: `vendor` Filament 5.10.3 contro lock 5.11.2. Si azzerano con `composer install` dal lock (decisione dell'utente, vedi sopra), non con modifiche al codice.
+=======
+>>>>>>> .merge_file_k0RIm0
+
+### Correzione: `composer install` dal lock NON e' la cura (verificato, dry-run)
+
+Quanto scritto sopra («si azzerano con `composer install` dal lock») era sbagliato. `composer install --dry-run --no-scripts` dal `composer.lock` attuale dice: **122 aggiornamenti, 1 downgrade** (`phpseclib/phpseclib` 4.0.2 a 4.0.1), **12 rimozioni** (`codewithkyrian/transformers` e le sue dipendenze `rindow/*`, `jinja-php`, `transformers-libsloader`; `imagine/imagine`, `rokka/imagine-vips`, `jcupitt/vips`; `phenx/php-font-lib`; `theseer/tokenizer`), 0 nuovi, piu' l'avviso «lock not up to date with composer.json».
+Causa: il lock e' stato versionato il 2026-11-11 09:24 (commit `5754d755ff`, OPS-07) **dalla risoluzione della CI** (270 + 96 dev) per far girare `deploy.sh` con `composer install --no-dev`. Quel lock non contiene `codewithkyrian/transformers`, ma `Modules/AI/composer.json:40` lo richiede, il modulo AI e' abilitato (`modules_statuses.json`) e `Modules/AI/app/Actions/{SentimentAction,Sentiment/AnalyzeTransformersSentimentAction}.php` lo usano. Quindi: installarlo qui spegnerebbe l'analisi sentiment; **dedotto, non verificato**: lo stesso lock potrebbe farlo anche al deploy.
+Il vendor in ritardo e' quindi un sintomo di due insiemi di dipendenze diversi (CI/deploy contro questa macchina), non di un `install` dimenticato. Nessun comando eseguito sul vendor; copia delle versioni attuali in scratch (`installed.before.json`).
+**Opzioni per l'utente:** (1) far includere alla CI il `composer.json` del modulo AI (o decidere che il lock di deploy non lo deve avere) e rigenerare il lock, poi `composer install` qui; (2) aggiornare solo la famiglia Filament con `composer update 'filament/*' --with-dependencies --no-scripts` provando prima in una copia, sapendo che riscrive un lock che OPS-07 versiona per il deploy; (3) lasciare i 21 errori di Geo come rosso noto finche' non si decide. Raccomandazione: la 1, perche' e' l'unica che rende coerenti CI, deploy e dev.
+
+## Claim 2026-11-11 15:15 — prompt in conflitto in `bashscripts/docs/prompts`
+
+**Fase BMAD:** Dev (risoluzione di conflitti di merge, senza perdite). Chi: sessione PHPStan-Modules, due subagent a scope disgiunto.
+**Perche' ora:** il blocco che avevo registrato («non toccare i file `UU` mentre `merge_remote_repo_2.sh` e' vivo») non vale piu'. Verificato alle 15:14: nessun `merge_remote_repo`/`/usr/bin/editor` in esecuzione (l'unico match di `pgrep` era il comando di controllo stesso) e i 19 prompt hanno ancora mtime 14:28:36–14:28:50, cioe' nessuno li sta modificando. Resta `bashscripts/.git/MERGE_HEAD`, 39 file `UU` in tutto.
+**Presi (19 file, `bashscripts/docs/prompts/`):**
+- P1: `11-phpstan.md` (19 blocchi), `00-start.md` (6), `01-architecture-patterns.md` (5), `03-quality-gates.md` (3), `02-controller-to-folio-actions.md` (2).
+- P2: `98-daily-report.md`, `46-multi-agent-module-swarm.md`, `25-services-to-actions.md` (5 ciascuno), `README.md` (4), `INDEX.md`, `15-bmad.md` (3 ciascuno), e un blocco ciascuno in `99-closing-ritual.md`, `97-yaml-frontmatter-convention.md`, `44-module-docs-continuous.md`, `38-config-routes-views.md`, `21-translations.md`, `17-gitmodules-path-iteration.md`, `08-ui.md`, `04-filament.md`.
+**Non presi (20 file `UU` altrove in `bashscripts`):** `ai/wiki/rules` 7, `ai/.agents/docs` 4, `docs` 2, `ai/wiki/memories` 2, `ai/.agents` 2, `ai/wiki/how-to` 1, `tools/visual` 1, `ai/wiki/skills` 1 (somma 20, contata con `git ls-files -u`). Chi li vuole, li annoti qui prima.
+**Regole:** nessun `git add`, nessun commit (l'indice resta `UU`, ci pensa la sync), nessuna rinomina, `updated:` = la piu' recente fra i due lati, `qmd:` = unione, contenuto presente in un solo lato mai scartato; prova di non-perdita per file. In piu', P1 aggiunge a `11-phpstan.md` la sezione «Controlli prima del fan-out» con le lezioni del run (exit da file, vendor contro lock, `view-string` = vista mancante, test copiati da altro host, rimisura finale).
+**Esito:** a carico dei subagent; lo scrivo sotto quando i report sono verificati.

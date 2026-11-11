@@ -30,15 +30,24 @@ it('lists every module public folder in public_html/assets/.gitignore', function
 
 it('creates the module asset links in deploy.sh instead of copying', function (): void {
     $deploy = file_get_contents(base_path('../deploy.sh'));
+    // Contano i soli comandi: un commento che spiega «niente npm run copy» non e' una copia.
+    $commands = implode("\n", array_filter(
+        array_map(trim(...), explode("\n", $deploy)),
+        static fn (string $line): bool => $line !== '' && ! str_starts_with($line, '#'),
+    ));
 
-    Assert::assertStringContainsString('for module_public in Modules/*/public; do', $deploy);
-    Assert::assertStringContainsString('"../../laravel/Modules/$module/public"', $deploy);
-    Assert::assertStringNotContainsString('npm run copy', $deploy);
+    Assert::assertStringContainsString('for module_public in Modules/*/public; do', $commands);
+    Assert::assertStringContainsString('"../../laravel/Modules/$module/public"', $commands);
+    Assert::assertStringNotContainsString('npm run copy', $commands);
 });
 
 it('builds the Geo assets inside the module', function (): void {
     $vite = file_get_contents(base_path('Modules/Geo/vite.config.js'));
 
-    Assert::assertStringContainsString("outDir: './public'", $vite);
+    // L'output resta in Modules/Geo/public: vale sia la forma letterale sia resolve(__dirname, 'public').
+    Assert::assertMatchesRegularExpression(
+        '/outDir:\s*(?:\'\.\/public\'|resolve\(__dirname,\s*\'public\'\))/',
+        $vite,
+    );
     Assert::assertFileExists(base_path('Modules/Geo/public/manifest.json'));
 });
