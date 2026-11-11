@@ -1,5 +1,5 @@
 ---
-title: "Parallelization plan — Livewire custom a Filament Widgets"
+title: "Parallelization plan: Livewire custom a Filament Widgets"
 type: bmad-parallel-plan
 status: ready-for-execution
 module: Xot
@@ -32,7 +32,7 @@ lane possono essere eseguite da subagent in ordine casuale **solo nella stessa
 wave** e solo con ownership disgiunta. Il coordinatore esegue gli scan globali
 e l'integrazione.
 
-## Wave 0 — baseline chiusa + primi `REUSE` (seriale poi lane)
+## Wave 0: baseline chiusa + primi `REUSE` (seriale poi lane)
 
 <!-- gateguard: update existing parallelization plan; linked from fleet story; user: "non utilizziamo piu' componenti livewire ma utilizziamo al loro posto filament widget" + planning BMAD -->
 
@@ -48,7 +48,7 @@ Alla **apertura** di W0 (implementazione, non questa sessione di planning):
 Gate planning (questa sessione): matrice aggiornata, nessun PHP modificato.
 Gate implementazione W0: Pest widget + scan caller.
 
-## Wave 1 — orfani indipendenti (lane disgiunte, ordine casuale)
+## Wave 1: orfani indipendenti (lane disgiunte, ordine casuale)
 
 | Lane | Ownership | Esito atteso |
 |---|---|---|
@@ -60,14 +60,14 @@ Gate implementazione W0: Pest widget + scan caller.
 Dipendenze: Wave 0. Le lane non modificano provider Xot, indice globale o
 file di un'altra lane.
 
-## Wave 2 — Job (seriale, ownership unica)
+## Wave 2: Job (seriale, ownership unica)
 
 Scope: `Modules/Job` Livewire, Page, Widget, views e test correlati. Convergere
 su `JobStatus`/`ScheduleResource` solo dopo aver deciso `saveEnv()`,
 `dummyAction()` e i comandi Artisan: le capability pericolose non diventano
 widget senza allowlist e policy.
 
-## Wave 3 — User e Gdpr (seriale rispetto ai flussi sensibili)
+## Wave 3: User e Gdpr (seriale rispetto ai flussi sensibili)
 
 Scope: `Modules/User` e i suoi test/docs. Analizzare separatamente auth,
 password, legal, profilo, team e socialite. Convertire in widget solo il
@@ -79,17 +79,17 @@ accessibilità e test di autorizzazione.
 `Modules/Gdpr` resta nello stesso stream semantico per `RegisterWidget` e
 consenso; scegliere una sola SSoT per logout, reset password e social login.
 
-## Wave 4 — UI e Lang (lane tecnicamente separate, merge coordinato)
+## Wave 4: UI e Lang (lane tecnicamente separate, merge coordinato)
 
 `Modules/UI` e `Modules/Lang` condividono header e switcher. Possono analizzare
 in parallelo, ma il merge è coordinato: preservare sessione, locale, refresh,
 dark mode, toast e navigation.
 
-## Wave 5 — Limesurvey (seriale)
+## Wave 5: Limesurvey (seriale)
 
 Stabilizzare i chart widget e i mount dinamici FQCN prima dei consumer Quaeris.
 
-## Wave 6 — Quaeris e dashboard (seriale)
+## Wave 6: Quaeris e dashboard (seriale)
 
 | Lane | Ownership | Esito atteso |
 |---|---|---|
@@ -100,7 +100,7 @@ globali impediscono modifiche simultanee a `Xot/app/Filament/Widgets`, ai
 provider User, alle viste auth, all'header UI/Lang e ai widget Limesurvey
 consumati dinamicamente da Quaeris.
 
-## Wave 7 — ritiro e gate globali (seriale)
+## Wave 7: ritiro e gate globali (seriale)
 
 - rimuovere discovery HTTP e alias solo dopo scan a zero riferimenti;
 - aggiornare gli indici docs del modulo/tema coinvolto;

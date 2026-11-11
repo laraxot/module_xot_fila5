@@ -6,7 +6,7 @@ module: Xot
 epic: documentation/second-brain
 status: in-progress
 created: 2026-10-09
-updated: 2026-10-09
+updated: 2026-10-28
 tags: [bmad, docs, prompts, second-brain, swarm]
 qmd: "riorganizzazione docs prompt moduli temi second brain"
 ---
@@ -81,3 +81,33 @@ il codice applicativo durante questo epic documentale.
 2. Creazione degli indici canonici e risoluzione dei marker per gruppi disgiunti.
 3. Consolidamento dei prompt: indice, frontmatter minimo, riferimenti incrociati.
 4. Verifica link, `git diff --check`, QMD e graphify.
+
+## Ripresa: revisione completa dei prompt
+
+- Scope corrente: tutti i prompt operativi Markdown in `bashscripts/docs/prompts`,
+  partizionati per prefisso/domino su tre gruppi indipendenti con ownership file
+  disgiunta e lock per ogni edit.
+- Il coordinatore ha avviato il gate `phpstan analyse Modules`: prima esecuzione
+  exit 0, 9.775 file, zero segnalazioni; secondo run a cache fredda in corso.
+- Handoff da `prompt_quality_docs`: `15-bmad.md` contiene marker di merge in
+  frontmatter e body; la revisione del sorgente/storia è in corso prima di
+  ricomporre il prompt. Il file non va trattato come semplice citazione testuale.
+- Handoff da `prompt_audit_modules`: in `99-closing-ritual.md` il repository
+  `bashscripts` ha entry unmerged `:2`/`:3`, senza marker nel worktree. Il confronto
+  indica `:2` più recente ma con path BMAD obsoleto; `:3` è storico e ha un
+  contratto documentale superato. Integrare i punti validi di entrambi, preservando
+  la versione corrente e risolvendo l'indice solo per questo file.
+- Altri riscontri dei revisori: `55-md-conventions.md` è unmerged e cita il tool
+  inesistente `bashscripts/tools/docs/md-filenames.py`; `11-phpstan.md`,
+  `15-bmad.md` e `24-boy-scout.md` hanno entry unmerged, con stage 3 ridotti a
+  placeholder. I prompt sono stati confrontati alla sorgente; ogni stage va
+  risolto solo dopo il recupero dei contenuti validi, mai accettando un lato
+  meccanicamente. Risoluzione/staging limitati ai file attribuiti e senza commit.
+- Il revisore del gruppo `27–99` ha trovato riferimenti a `docs/md-filenames.py`,
+  `docs/docs-organizer.py` e `pest-scratch-db.sh` che non esistono nel checkout.
+  Ha anche indicato `claims-open.py` come assente dentro il subrepo `bashscripts`;
+  il coordinatore ha verificato che esiste a `bashscripts/tools/claims-open.py`
+  dalla root PTVX, quindi va corretta la base-path del comando invece di rimuoverlo.
+- Criterio: conservare l'intento autonomo dei prompt, eliminare solo istruzioni
+  duplicate o che contraddicono le regole correnti e documentare ogni marker con
+  confronto delle versioni sorgenti.

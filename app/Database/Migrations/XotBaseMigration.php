@@ -236,6 +236,7 @@ abstract class XotBaseMigration extends LaravelMigration
                     return true;
                 }
             }
+
             return false;
         }
 
@@ -331,6 +332,54 @@ abstract class XotBaseMigration extends LaravelMigration
     }
 
     /**
+     * Crea solo gli indici che mancano, sulla connessione del modello della migrazione.
+     *
+     * Idempotente: un indice c'e' gia' se esiste con quel nome oppure sulle stesse colonne nello stesso
+     * ordine (`Builder::hasIndex()` accetta l'elenco), cosi' un indice equivalente con altro nome non viene
+     * duplicato. Salta la tabella o l'indice se manca una colonna: lo schema di un ambiente puo' essere piu'
+     * vecchio. Non toglie mai nulla: eliminare un indice in produzione e' una decisione dell'utente.
+     *
+     * Per una colonna di testo confrontata con un intero l'indice non basta (MySQL scandisce tutto l'indice):
+     * la query deve passare il valore come stringa.
+     *
+     * @param  array<string, array<string, list<string>>>  $indexes  tabella => nome indice => colonne in ordine
+     */
+    protected function ensureIndexes(array $indexes): void
+    {
+        $schema = $this->getConn();
+
+        foreach ($indexes as $tableName => $tableIndexes) {
+            if (! $schema->hasTable($tableName)) {
+                continue;
+            }
+
+            foreach ($tableIndexes as $indexName => $columns) {
+                if ($this->shouldSkipIndex($schema, $tableName, $indexName, $columns)) {
+                    continue;
+                }
+
+                $schema->table($tableName, static function (Blueprint $table) use ($columns, $indexName): void {
+                    $table->index($columns, $indexName);
+                });
+            }
+        }
+    }
+
+    /**
+     * @param  list<string>  $columns
+     */
+    private function shouldSkipIndex(Builder $schema, string $tableName, string $indexName, array $columns): bool
+    {
+        foreach ($columns as $column) {
+            if (! $schema->hasColumn($tableName, $column)) {
+                return true;
+            }
+        }
+
+        return $schema->hasIndex($tableName, $indexName) || $schema->hasIndex($tableName, $columns);
+    }
+
+    /**
      * @param  mixed  $result  Risultato di Connection::selectOne() (atteso array{count?: mixed}|object|null)
      */
     protected function extractPrimaryKeyCount(mixed $result): int
@@ -415,6 +464,49 @@ abstract class XotBaseMigration extends LaravelMigration
         if ($this->hasColumn('user_id') && $this->getColumnType('user_id') === 'bigint') {
             $table->uuid('user_id')->change();
         }
+    }
+
+    /**
+     * Converte user_id da bigint a UUID, solo se la colonna e' ancora bigint.
+     *
+     * Rifiuta la conversione se esistono valori: un id intero non diventa un UUID,
+     * e uno schema cambiato in silenzio corrompe i dati. Il mapping va deciso prima.
+     */
+    public function convertUserIdToUuidIfLegacyBigint(Blueprint $table, bool $nullable = true): void
+    {
+        if (! $this->hasColumn('user_id') || $this->getColumnType('user_id') !== 'bigint') {
+            return;
+        }
+
+        $legacyRows = DB::connection($this->getConnection())
+            ->table($this->getTable())
+            ->whereNotNull('user_id')
+            ->count();
+
+        if ($legacyRows > 0) {
+            throw new \RuntimeException(sprintf(
+                'Conversione user_id bloccata su %s: %d righe con valore bigint. Serve un mapping verso UUID prima della migrazione.',
+                $this->getTable(),
+                $legacyRows,
+            ));
+        }
+
+        // MariaDB ha un tipo `uuid` nativo e rifiuta ALTER bigint -> uuid anche a tabella vuota
+        // ("Cannot cast 'bigint unsigned' as 'uuid'"). Passo intermedio a char(36), che entrambe le conversioni accettano;
+        // eseguito subito, prima del Blueprint esterno. MySQL mappa uuid() su char(36) e non ne ha bisogno.
+        if (DB::connection($this->getConnection())->getDriverName() === 'mariadb') {
+            $this->getConn()->table($this->getTable(), static function (Blueprint $intermediate): void {
+                $intermediate->char('user_id', 36)->nullable()->change();
+            });
+        }
+
+        if ($nullable) {
+            $table->uuid('user_id')->nullable()->change();
+
+            return;
+        }
+
+        $table->uuid('user_id')->change();
     }
 
     public function updateUserKeyInt(Blueprint $table): void

@@ -19,6 +19,10 @@ final class PaDesignColorsAction
 {
     use QueueableAction;
 
+    public const string PRIMARY_HEX = PaDesignColorEnum::Primary->value;
+
+    public const string INSTITUTIONAL_BLUE_HEX = PaDesignColorEnum::InstitutionalBlue->value;
+
     /**
      * @return array{primary: string, institutional_blue: string, danger: string, gray: string, info: string, success: string, warning: string}
      */
@@ -45,8 +49,8 @@ final class PaDesignColorsAction
         return [
             'danger' => \Filament\Support\Colors\Color::Red,
             'gray' => \Filament\Support\Colors\Color::Zinc,
-            'info' => \Filament\Support\Colors\Color::hex(PaDesignColorEnum::InstitutionalBlue->value),
-            'primary' => \Filament\Support\Colors\Color::hex(PaDesignColorEnum::Primary->value),
+            'info' => \Filament\Support\Colors\Color::hex(self::INSTITUTIONAL_BLUE_HEX),
+            'primary' => \Filament\Support\Colors\Color::hex(self::PRIMARY_HEX),
             'success' => \Filament\Support\Colors\Color::Green,
             'warning' => \Filament\Support\Colors\Color::Orange,
         ];

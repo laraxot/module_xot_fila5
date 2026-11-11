@@ -42,11 +42,9 @@ test('view path action works', function (): void {
 
 test('asset path action works', function (): void {
     // Spy on Module facade
-    Module::partialMock()->allows([
-        'getModulePath' => function (string $module): string {
-            return $module === 'test_module' ? '/module/path/' : '';
-        },
-    ]);
+    Module::partialMock()
+        ->shouldReceive('getModulePath')
+        ->andReturnUsing(fn (string $module): string => $module === 'test_module' ? '/module/path/' : '');
 
     $action = app(AssetPathAction::class);
     Assert::assertSame('/module/path/resources/css/style.css', $action->execute('test_module::css/style.css'));

@@ -1,107 +1,75 @@
 ---
 title: "Theme Assets Workflow - CSS/JS Frontend"
 type: note
-status: draft
-updated: 2026-10-18
-tags: [docs, xot]
-qmd: "theme assets workflow - css/js frontend xot"
+status: active
+updated: 2026-11-11
+tags: [docs, xot, themes, deploy]
+qmd: "theme assets workflow - css/js frontend xot symlink public_html themes"
 ---
-# 🎨 Theme Assets Workflow - CSS/JS Frontend
+# Asset dei temi: build nel tema, servizio per symlink
 
-**⚠️ REGOLA CRITICA**: Per modifiche CSS/JS del frontend, lavorare SEMPRE nella cartella del tema, NON nella root Laravel.
+**Regola:** CSS e JS del front office si modificano nella cartella del tema (`laravel/Themes/<Tema>/resources`), si
+compilano lì, e il risultato va in `laravel/Themes/<Tema>/public`. Nessuna copia verso la document root.
 
-## 📁 Struttura Corretta
+## Come arrivano al browser
 
-### Directory Temi
 ```
-/Themes/
-├── One/           # Tema principale
-│   ├── resources/ # Sorgenti CSS/JS/Sass
-│   └── public/    # Assets compilati
-└── Two/           # Tema alternativo
+public_html/themes/<Tema>   ->   ../../laravel/Themes/<Tema>/public      (symlink)
+public_html/assets/fixcity/svg -> ../../../laravel/Modules/Fixcity/resources/svg   (symlink)
 ```
 
-### Workflow Corretto
+- `@vite([...], 'themes/<Tema>')` legge `public_html/themes/<Tema>/manifest.json`, cioè il manifest del tema.
+- `public_html` è la document root: non si cancella né si svuota mai.
+- I link li crea `deploy.sh` (funzione `link_public_asset`), in modo idempotente. Se al posto del link c'è una cartella
+  vera, lo script avvisa e non la tocca: va sostituita a mano, dopo averne controllato il contenuto.
+
+**Perché un symlink e non `npm run copy`:**
+
+- **Una sola copia degli asset.** L'output della build è versionato nel repository del tema (`Themes/<Tema>/public`),
+  quindi ciò che si committa è ciò che si serve. Con la copia, `public_html` andava fuori sincronia appena qualcuno
+  dimenticava il comando.
+- **Niente passo manuale nel deploy.** Basta il `git pull` del tema.
+- **Il web server vede solo `public`.** I sorgenti del tema (`resources`, `node_modules`, script) restano fuori dalla
+  document root.
+
+## Lavorare su un tema
+
 ```bash
-# 🚨 SEMPRE lavorare nella cartella del tema
-cd /Themes/One/
-
-# 1. Modifica i file sorgente in:
-# - resources/css/
-# - resources/js/
-# - resources/sass/
-
-# 2. Compila gli assets
-npm run build
-
-# 3. Copia nella directory pubblica Laravel
-npm run copy
-```
-
-## ⚠️ NON Fare Mai
-❌ **NON modificare** `/public/css/` o `/public/js/` direttamente
-❌ **NON usare** `npm run build` dalla root Laravel
-❌ **NON dimenticare** il comando `npm run copy`
-
-## ✅ Processo Corretto
-1. **Modifica sorgenti** in `/Themes/[Theme]/resources/`
-2. **Build assets** con `npm run build` dalla cartella tema
-3. **Copy assets** con `npm run copy` dalla cartella tema
-4. **Verifica risultato** nel browser
-
-## 🔄 Comandi di Build per Tema
-
-### Tema One
-```bash
-cd Themes/One
-npm install          # Prima volta
-npm run build        # Compila Sass/JS
-npm run copy         # Copia in /public/
-```
-
-### Tema Two
-```bash
-cd Themes/Two
+cd laravel/Themes/Sixteen
 npm install
-npm run build
-npm run copy
+npm run dev      # sviluppo con hot reload
+npm run build    # produzione: scrive in ./public (servito dal symlink)
 ```
 
-## 🎯 File di Configurazione
+Lo script `copy` è stato tolto da `package.json` dei temi: non serve più.
 
-### package.json (Tema)
-```json
-{
-  "scripts": {
-    "build": "vite build",
-    "copy": "cp -r public/* ../../public/"
-  }
-}
+## Asset dei moduli: stessa regola
+
+```
+public_html/assets/<modulo in minuscolo>  ->  ../../laravel/Modules/<Modulo>/public   (symlink)
 ```
 
-### vite.config.js (Tema)
-```javascript
-export default defineConfig({
-  build: {
-    outDir: 'public'
-  }
-});
-```
+- Ogni modulo che espone file al browser li tiene in `Modules/<Modulo>/public`, versionata nel repository del modulo:
+  Geo (build Vite, `outDir: './public'`), Xot (css del pannello), Fixcity (`public/svg` -> `../resources/svg`, le icone).
+- `deploy.sh` crea un link per ogni `Modules/*/public`. Il nome è in minuscolo perché gli URL lo sono (`/assets/geo/...`),
+  e così resta uguale al namespace usato da `AssetAction` (`xot::css/x.css` -> `/assets/xot/css/x.css`).
+- `public_html/assets/.gitignore` elenca `<modulo>/` (e la stessa voce senza barra, perché git vede un symlink come un file):
+  il repository radice non versiona i link, che sono un prodotto del deploy, né il loro contenuto, che appartiene al modulo.
+  Il test `Modules/Xot/tests/Unit/Deploy/ModulePublicAssetsLinksTest.php` fallisce se un modulo con `public/` manca
+  dall'elenco.
+- `AssetAction` cerca prima in `Modules/<Modulo>/public` e restituisce l'URL sotto `/assets/<modulo>` senza copiare; la
+  copia da `resources/` resta solo come ripiego per i moduli non ancora migrati.
+- Una cartella vera trovata al posto del link (vecchia copia o vecchia build) viene spostata da `deploy.sh` fuori dalla
+  document root, in `$HOME/fixcity-backups/assets`, e sostituita dal link. `public_html` non si tocca.
 
-## 🐛 Troubleshooting
+Modulo nuovo con asset pubblici: crea `Modules/<Modulo>/public`, aggiungi `<modulo>/` e `<modulo>` a
+`public_html/assets/.gitignore`, esegui `deploy.sh` (o il `ln -s` a mano in sviluppo).
 
-### Modifiche Non Visibili?
-1. Verificare di aver eseguito `npm run build`
-2. Verificare di aver eseguito `npm run copy`
-3. Svuotare cache browser (Ctrl+F5)
-4. Verificare path corretti in vite.config.js
+## Problemi comuni
 
-### Errori di Build?
-1. `npm install` nella cartella tema
-2. Verificare versioni Node/npm
-3. Controllare sintassi Sass/JS
-4. Verificare dipendenze in package.json
-
----
-
-**⚠️ RICORDA**: Il workflow dei temi è DIVERSO dal normale workflow Laravel. Sempre theme → build → copy → public!
+| Sintomo | Causa | Cosa fare |
+| --- | --- | --- |
+| `ViteManifestNotFoundException` per `themes/Sixteen` | Manca il symlink o la build del tema | Controlla `ls -la public_html/themes/`; esegui `deploy.sh` o crea il link; `npm run build` nel tema |
+| CSS vecchio dopo una modifica | Build del tema non eseguita o non committata | `npm run build` nel tema e commit di `public/` |
+| Icone delle categorie mancanti (`/assets/fixcity/svg/*.svg`) | Manca `public_html/assets/fixcity` | Lo crea `deploy.sh` (link a `Modules/Fixcity/public`) |
+| Campo mappa assente nei pannelli (`assets/geo/manifest.json`) | Manca `public_html/assets/geo` o la build Geo non è committata | `deploy.sh`; in sviluppo `cd Modules/Geo && ../../node_modules/.bin/vite build` e commit di `public/` |

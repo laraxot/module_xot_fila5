@@ -18,7 +18,7 @@ PSR-4: `Modules\Xot\Tests\` → `tests/` (minuscolo). Nessuna cartella `Tests/` 
 
 `XotBaseExporter::xlsxCell(mixed $value, ?Style $style = null): Cell` delega a
 `XlsxCellFactory::make()`. OpenSpout `Cell` e' astratta: le istanze reali sono
-`NumericCell`, `StringCell`, `EmptyCell`, `FormulaCell`, … — mai una sottoclasse
+`NumericCell`, `StringCell`, `EmptyCell`, `FormulaCell`, …: mai una sottoclasse
 di test inventata.
 
 Anti-pattern rifiutato: `CellConcrete` + return type piu' stretto del parent +
@@ -63,6 +63,6 @@ Non creare `Modules/Xot/Tests/` (maiuscolo). PSR-4 punta a `tests/`. Una seconda
 Un solo file: `tests/Unit/Exports/ExporterEagerLoadModelStub.php` (namespace `Modules\Xot\Tests\Unit\Exports`).
 
 Vietato:
-- `Tests/` (maiuscolo) — fuori PSR-4, PHPStan lo scansiona e puo' dare `Could not read file` / parse error in race
-- `tests/Fixtures/ExporterEagerLoadModelStub.php` — namespace diverso, doppia classe
+- `Tests/` (maiuscolo): fuori PSR-4, PHPStan lo scansiona e puo' dare `Could not read file` / parse error in race
+- `tests/Fixtures/ExporterEagerLoadModelStub.php`: namespace diverso, doppia classe
 

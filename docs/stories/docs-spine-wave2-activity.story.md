@@ -1,5 +1,5 @@
 ---
-title: Docs spine wave2 — Activity UPPERCASE e date nei nomi
+title: Docs spine wave2: Activity UPPERCASE e date nei nomi
 type: story
 module: Activity
 status: ready-for-dev
@@ -22,7 +22,7 @@ GateGuard facts:
 4. User verbatim: "fa tutte le bmad stories per continuare domani"
 -->
 
-# Docs spine wave2 — Activity
+# Docs spine wave2: Activity
 
 ## Perche'
 

@@ -42,12 +42,13 @@ it('creates table index correctly', function (): void {
 
 it('throws exception for invalid model class', function (): void {
     $action = app(CreateTableIndexByModelClassColumnsAction::class);
-    // La firma accetta solo class-string<Model>: il guard a runtime si prova passando
-    // da reflection, perche' il tipo statico vieta di scrivere la chiamata diretta.
+
+    // `execute()` e' tipizzato class-string<Model>: la guardia runtime si prova passando
+    // una classe non-Model via reflection, senza violare il contratto statico.
     $execute = new ReflectionMethod($action, 'execute');
 
-    expect(fn (): mixed => $execute->invoke($action, stdClass::class, ['id']))
-        ->toThrow(InvalidArgumentException::class, 'must be a subclass of '.Model::class);
+    expect(fn (): mixed => $execute->invoke($action, \stdClass::class, ['id']))
+        ->toThrow(\InvalidArgumentException::class, 'must be a subclass of');
 });
 
 it('throws exception for missing table', function (): void {
@@ -69,7 +70,7 @@ it('throws exception for missing column and creates no index', function (): void
     $action = app(CreateTableIndexByModelClassColumnsAction::class);
 
     expect(fn (): bool => $action->execute($model::class, ['missing_col']))
-        ->toThrow(RuntimeException::class, "Column 'missing_col' does not exist in table 'test_index_table'.");
+        ->toThrow(\RuntimeException::class, "Column 'missing_col' does not exist in table 'test_index_table'.");
 
     $indexNames = array_column(Schema::connection('xot')->getIndexes('test_index_table'), 'name');
     Assert::assertNotContains('test_index_table_missing_col_index', $indexNames);

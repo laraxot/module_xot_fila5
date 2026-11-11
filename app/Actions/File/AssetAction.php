@@ -105,6 +105,17 @@ class AssetAction
             $module_path = Str::beforeLast($module_path, '/');
         }
 
+        // Asset statici del modulo in Modules/<Modulo>/public: serviti dal symlink
+        // public_html/assets/<modulo> -> ../../laravel/Modules/<Modulo>/public (deploy.sh). Niente copia.
+        $publicFile = app(FixPathAction::class)->execute($module_path.'/public/'.$ns_after);
+        if (File::exists($publicFile)) {
+            $asset = Str::replace(url(''), '', asset('assets/'.Str::lower($ns).'/'.$ns_after));
+            Assert::string($asset, '['.__LINE__.']['.class_basename(static::class).']');
+
+            return $asset;
+        }
+
+        // Ripiego storico: file in resources/ copiato in public_html/assets/<ns>.
         $filename_from = app(FixPathAction::class)->execute($module_path.'/resources/'.$ns_after);
 
         if (! File::exists($filename_from)) {

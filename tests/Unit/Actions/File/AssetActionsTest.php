@@ -83,6 +83,32 @@ it('publishes module asset to public assets path', function (): void {
     }
 });
 
+it('serves a module public asset through the assets/<module> symlink without copying', function (): void {
+    $moduleRoot = sys_get_temp_dir().'/xot_mod_pub_'.uniqid('', true);
+    $publicFile = $moduleRoot.'/public/css/style.css';
+    mkdir(\dirname($publicFile), 0o755, true);
+    file_put_contents($publicFile, 'body{}');
+    $copied = public_path('assets/xotpublictest/css/style.css');
+
+    app()->instance(GetModulePathAction::class, new class($moduleRoot) extends GetModulePathAction
+    {
+        public function __construct(private string $modulePath) {}
+
+        public function execute(string $module): string
+        {
+            return $this->modulePath;
+        }
+    });
+
+    try {
+        $result = app(AssetAction::class)->execute('XotPublicTest::css/style.css');
+        Assert::assertStringEndsWith('assets/xotpublictest/css/style.css', $result);
+        Assert::assertFileDoesNotExist($copied);
+    } finally {
+        unlink($publicFile);
+    }
+});
+
 it('keeps published dest when force-copy fails (best-effort via copyAsset)', function (): void {
     $from = sys_get_temp_dir().'/xot_asset_from_'.uniqid('', true).'.bin';
     $to = sys_get_temp_dir().'/xot_asset_to_'.uniqid('', true).'.bin';

@@ -10,7 +10,7 @@ tags: [docs, xot, bmad]
 qmd: "story   readme root dei moduli xot"
 ---
 
-# Story — README root dei moduli
+# Story: README root dei moduli
 
 ## Obiettivo
 

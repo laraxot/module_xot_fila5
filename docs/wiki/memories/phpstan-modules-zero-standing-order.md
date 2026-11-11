@@ -4,7 +4,7 @@ type: memory
 module: Xot
 status: active
 created: 2026-10-20
-updated: 2026-10-22
+updated: 2026-10-27
 qmd: "phpstan analyse Modules zero ordine permanente senza conferma catena source fix swarm bmad docs prompts boy scout turn non banale"
 related:
   - ./phpstan-single-neon-config.md
@@ -43,6 +43,11 @@ banner `[OK] No errors` nello stesso run del coordinatore.
 Ultima rimisura coordinatore: **2026-10-22** — `file_errors=0`, `errors=0`,
 `[OK] No errors` (story [phpstan-modules-zero-gate](../../stories/phpstan-modules-zero-gate.story.md)).
 A zero → boy scout docs (184 file ridondanti rimossi nella stessa sessione).
+
+Rimisura corrente: **2026-10-27** — `./vendor/bin/phpstan analyse Modules` sotto il gate
+condiviso, `totals.file_errors=0`, `totals.errors=0`, exit `0`. I finding Fixcity/User,
+la causa d'intento e le verifiche mirate sono registrati nella story
+[phpstan-modules-swarm-random](../../bmad/stories/phpstan-modules-swarm-random.story.md#run-2026-10-27--remediation-corrente).
 
 ## Collegamenti
 

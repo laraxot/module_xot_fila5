@@ -133,6 +133,8 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
 
     /**
      * @return array<int|string, Column|LayoutComponent>
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
     #[\Override]
     protected function getTableColumns(): array
@@ -201,6 +203,8 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
      * richiede che questo metodo sia pubblico.
      *
      * @return array<string, Action>
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
     public function getTableActions(): array
     {
@@ -235,6 +239,8 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
      * CRITICO: Deve essere PUBLIC per Filament InteractsWithTable.
      *
      * @return array<string, BulkAction>
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
     public function getTableBulkActions(): array
     {
@@ -257,6 +263,8 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
      * CRITICO: Deve essere PUBLIC per Filament InteractsWithTable.
      *
      * @return array<string, Action>
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
     public function getTableHeaderActions(): array
     {
@@ -276,6 +284,11 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
         return $actions;
     }
 
+    /**
+     * @return array<string|int, \Filament\Tables\Filters\BaseFilter>
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
+     */
     public function getTableFilters(): array
     {
         return [];
