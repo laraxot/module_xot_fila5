@@ -35,18 +35,17 @@ cd /Themes/One/
 npm run build
 
 # 3. Copia nella directory pubblica Laravel
-npm run copy
 ```
 
 ## ⚠️ NON Fare Mai
 ❌ **NON modificare** `/public/css/` o `/public/js/` direttamente
 ❌ **NON usare** `npm run build` dalla root Laravel
-❌ **NON dimenticare** il comando `npm run copy`
+❌ **NON dimenticare** il comando `symlink public_html/themes (npm run copy obsoleto)`
 
 ## ✅ Processo Corretto
 1. **Modifica sorgenti** in `/Themes/[Theme]/resources/`
 2. **Build assets** con `npm run build` dalla cartella tema
-3. **Copy assets** con `npm run copy` dalla cartella tema
+3. **Copy assets** con `symlink public_html/themes (npm run copy obsoleto)` dalla cartella tema
 4. **Verifica risultato** nel browser
 
 ## 🔄 Comandi di Build per Tema
@@ -56,7 +55,6 @@ npm run copy
 cd Themes/One
 npm install          # Prima volta
 npm run build        # Compila Sass/JS
-npm run copy         # Copia in /public/
 ```
 
 ### Tema Two
@@ -64,7 +62,6 @@ npm run copy         # Copia in /public/
 cd Themes/Two
 npm install
 npm run build
-npm run copy
 ```
 
 ## 🎯 File di Configurazione
@@ -92,7 +89,7 @@ export default defineConfig({
 
 ### Modifiche Non Visibili?
 1. Verificare di aver eseguito `npm run build`
-2. Verificare di aver eseguito `npm run copy`
+2. Verificare di aver eseguito `symlink public_html/themes (npm run copy obsoleto)`
 3. Svuotare cache browser (Ctrl+F5)
 4. Verificare path corretti in vite.config.js
 
