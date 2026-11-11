@@ -24,7 +24,7 @@
         "calebporzio/sushi": "^2.5",
         "coolsam/panel-modules": "*",
         "doctrine/dbal": "*",
-        "filament/filament": "^5.11",
+        "filament/filament": "^5.11.2",
         "filament/spatie-laravel-media-library-plugin": "*",
         "guzzlehttp/guzzle": "*",
         "laravel/folio": "^1.1",
@@ -117,6 +117,9 @@
         ]
     },
     "autoload-dev": {
+        "psr-4": {
+            "Modules\\Xot\\Tests\\": "tests/"
+        },
         "classmap": ["tests/"]
     },
     "scripts": {

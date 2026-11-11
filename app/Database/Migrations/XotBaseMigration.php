@@ -491,13 +491,12 @@ abstract class XotBaseMigration extends LaravelMigration
             ));
         }
 
-        // MariaDB ha un tipo `uuid` nativo e rifiuta ALTER bigint -> uuid anche a tabella vuota
-        // ("Cannot cast 'bigint unsigned' as 'uuid'"). Passo intermedio a char(36), che entrambe le conversioni accettano;
-        // eseguito subito, prima del Blueprint esterno. MySQL mappa uuid() su char(36) e non ne ha bisogno.
-        if (DB::connection($this->getConnection())->getDriverName() === 'mariadb') {
-            $this->getConn()->table($this->getTable(), static function (Blueprint $intermediate): void {
-                $intermediate->char('user_id', 36)->nullable()->change();
-            });
+        // MariaDB 10.7+ ha un tipo `uuid` nativo e rifiuta ALTER bigint -> uuid anche a tabella vuota
+        // (errore 4078 "Cannot cast 'bigint unsigned' as 'uuid'"), mentre char(36) -> uuid e' accettato.
+        // MySQL mappa uuid() su char(36) e non ha bisogno del passo intermedio. Lo stesso Blueprint emette
+        // un ALTER per colonna, in ordine: prima char(36), poi uuid.
+        if ($this->driver() === 'mariadb') {
+            $table->char('user_id', 36)->nullable()->change();
         }
 
         if ($nullable) {

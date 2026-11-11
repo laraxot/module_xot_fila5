@@ -27,9 +27,10 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-    'fields' => [
-    ],
-    'actions' => [
+    'page' => [
+        'last_check' => [
+            'label' => 'Última comprobación',
+        ],
     ],
     'page' => [
         'last_check' => [

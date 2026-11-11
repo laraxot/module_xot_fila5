@@ -32,6 +32,7 @@ use Modules\Xot\Console\Commands\BuildTestSqliteCommand;
 use Modules\Xot\Console\Commands\CheckAccessorTwinsCommand;
 use Modules\Xot\Console\Commands\GenerateFilamentResources;
 use Modules\Xot\Console\Commands\ModuleLinkCommand;
+use Modules\Xot\Console\Commands\SymlinkPublishCommand;
 use Modules\Xot\Console\Commands\ThemeLinkCommand;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Exports\Jobs\XotCreateXlsxFile;
@@ -262,6 +263,7 @@ class XotServiceProvider extends XotBaseServiceProvider
                 BuildTestSqliteCommand::class,
                 ThemeLinkCommand::class,
                 ModuleLinkCommand::class,
+                SymlinkPublishCommand::class,
                 // \Modules\Xot\Console\Commands\OptimizeFilamentMemoryCommand::class,
             ]);
         }
