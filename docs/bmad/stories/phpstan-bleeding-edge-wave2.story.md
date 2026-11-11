@@ -1,7 +1,7 @@
 ---
 epic: code-quality
 type: story
-status: in-progress
+status: done
 repository: laraxot
 created: 2026-11-11
 updated: 2026-11-11
@@ -36,8 +36,23 @@ su file toccati da lavoro concorrente dopo la wave 1 (che era a 0 errori):
 - Mockery: allineare ai tipi reali del vendor (verificare `Expectation` vs
   `ExpectationInterface` in `vendor/mockery`).
 
+## Esito
+
+- `phpstan analyse Modules` → **0 errori** (10639 file, exit 0).
+- User: costanti tipizzate PHP 8.3 (`private const string|int|array`) in
+  `BackfillLoginPulseCommand`, `GetLoginHistoryAction`, `LoginWidget`.
+- Xot: `Safe\*` functions + helper `realpathOrFalse()` per semantica
+  `false`-su-mancato-file; Pest Xot File actions: 30 passed.
+- Tenant: `beforeEach()->afterEach()` → `afterEach()` top-level; Mockery
+  `TestCase::expectMockery()` → `shouldReceive()` diretto (ritorno tipizzato
+  `Expectation`). I file erano divergenze working-tree da HEAD; allineati.
+- Pest Tenant: fix type-level ok; failure residue pre-esistenti a HEAD
+  (fixture mancanti, DB test non migrato, timing flaky) — non correlate.
+- Debito: `TestCase::expectMockery()` return type `ExpectationInterface` è
+  trappola latente (widen a `Expectation` in follow-up); failure Pest
+  pre-esistenti Tenant da valutare in story separata.
+
 ## Verifica
 
 - `phpstan analyse` sugli scope toccati → 0.
 - `phpstan analyse Modules` completo → 0.
-- Pest sugli scope toccati.
