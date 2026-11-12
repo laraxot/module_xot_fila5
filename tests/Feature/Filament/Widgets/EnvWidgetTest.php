@@ -13,6 +13,7 @@ use Mockery\MockInterface;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Filament\Widgets\EnvWidget;
 use Modules\Xot\Tests\TestCase;
+use Symfony\Component\HttpKernel\Exception\HttpException;
 
 uses(TestCase::class);
 
@@ -169,7 +170,7 @@ it('refuses to write .env for a user who is not super-admin', function (): void 
     $widget->mount();
     $widget->data['telegram_bot_token'] = 'pest-test-'.uniqid('', true);
 
-    expect(fn () => $widget->submit())->toThrow(\Symfony\Component\HttpKernel\Exception\HttpException::class);
+    expect(fn () => $widget->submit())->toThrow(HttpException::class);
     expect(File::get($this->envPath))->toBe($this->originalEnvContent);
 });
 
@@ -207,12 +208,14 @@ it('resolves field labels and section headings from the translation file, not fr
  * questa pagina esiste, dato che non c'e' accesso SSH al server.
  */
 it('clears the config cache after writing, otherwise a cached config keeps the old value', function (): void {
-    Artisan::spy();
+    // La verifica passa dallo spy e non dalla facade: Artisan::shouldHaveReceived()
+    // funziona a runtime (la facade la inoltra allo spy), ma per PHPStan non esiste.
+    $artisan = Artisan::spy();
 
     $widget = new EnvWidget;
     $widget->mount();
     $widget->data['mail_host'] = 'pest-test-'.uniqid('', true);
     $widget->submit();
 
-    Artisan::shouldHaveReceived('call')->with('config:clear')->once();
+    $artisan->shouldHaveReceived('call')->with('config:clear')->once();
 });
