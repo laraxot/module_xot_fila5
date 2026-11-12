@@ -366,9 +366,20 @@ class XotData extends Data implements Wireable
         return asset('themes/'.$this->pub_theme.'/'.$key);
     }
 
+    /**
+     * Layout HTML delle email: prima quello del tema pubblico, se il tema non lo ha quello del modulo Notify.
+     * Un tema senza `resources/mail-layouts` non deve far fallire l'invio (es. il reset della password).
+     */
     public function getMailHtmlLayoutPath(string $key = ''): string
     {
-        return base_path('Themes/'.$this->pub_theme.'/resources/mail-layouts/'.$key);
+        $themePath = base_path('Themes/'.$this->pub_theme.'/resources/mail-layouts/'.$key);
+        if ($key === '' || is_file($themePath)) {
+            return $themePath;
+        }
+
+        $notifyPath = base_path('Modules/Notify/resources/mail-layouts/'.$key);
+
+        return is_file($notifyPath) ? $notifyPath : $themePath;
     }
 
     /**
