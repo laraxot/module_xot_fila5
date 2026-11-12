@@ -6,6 +6,7 @@ namespace Modules\Xot\Tests\Feature\Filament\Widgets;
 
 use Filament\Facades\Filament;
 use Filament\Schemas\Components\Section;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\File;
 use Mockery;
 use Mockery\MockInterface;
@@ -195,4 +196,23 @@ it('resolves field labels and section headings from the translation file, not fr
     expect(trans('xot::env.fields.mail_mailer.label'))->toBe('Driver mail');
     expect(trans('xot::env.fields.netfun_token.label'))->toBe('Netfun token');
     expect(trans('xot::env.sections.Mail.heading'))->toBe('Mail');
+});
+
+/*
+ * module_quaeris_fila5#47. Scrivere nel .env non basta: con la configurazione
+ * in cache (`php artisan config:cache`, la norma in produzione) Laravel legge
+ * i valori da bootstrap/cache/config.php e il .env nuovo viene ignorato.
+ * Senza la pulizia, l'utente cambiava MAIL_HOST dal pannello, non succedeva
+ * niente, e concludeva che la pagina non funziona — proprio il caso per cui
+ * questa pagina esiste, dato che non c'e' accesso SSH al server.
+ */
+it('clears the config cache after writing, otherwise a cached config keeps the old value', function (): void {
+    Artisan::spy();
+
+    $widget = new EnvWidget;
+    $widget->mount();
+    $widget->data['mail_host'] = 'pest-test-'.uniqid('', true);
+    $widget->submit();
+
+    Artisan::shouldHaveReceived('call')->with('config:clear')->once();
 });
