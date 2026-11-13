@@ -3,8 +3,18 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< .merge_file_WhS6Ht
     'title' => 'Administration Panel',
     'description' => 'Administration panel management',
+=======
+    'title' => 'Pannello di Amministrazione',
+    'back_to_main_panel' => 'Main panel',
+    'sidebar_types' => [
+        'admin' => 'Administration',
+        'customer' => 'Customer area',
+    ],
+    'description' => 'Gestione del pannello di amministrazione',
+>>>>>>> .merge_file_qKIpUe
     'navigation' => [
         'dashboard' => 'Dashboard',
         'settings' => 'Settings',
@@ -104,6 +114,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-    'fields' => [
-    ],
 ];

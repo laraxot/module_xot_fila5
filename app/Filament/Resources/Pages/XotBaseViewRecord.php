@@ -23,7 +23,13 @@ abstract class XotBaseViewRecord extends FilamentViewRecord
     {
         return [
             'back' => Action::make('back')
+<<<<<<< .merge_file_Crum5Z
                 ->label(__('xot::panel.actions.back'))
+=======
+                // Filament non ha una traduzione per il ritorno all'elenco: la chiave filament-panels::...back.label
+                // compariva grezza sulla pagina. `xot::buttons.back` e' tradotta in it/en/de.
+                ->label(__('xot::buttons.back'))
+>>>>>>> .merge_file_50XuWg
                 ->icon('heroicon-o-arrow-left')
                 ->url(function (): string {
                     $record = $this->getRecord();

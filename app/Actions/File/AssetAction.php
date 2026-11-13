@@ -101,12 +101,14 @@ class AssetAction
             throw new Exception('file ['.$filename_public.'] not Exists , path ['.$originalPath.']');
         }
 
-        return $this->publicUrl('assets/'.$ns.'/'.$ns_after);
+        // public_html/assets/<modulo in minuscolo> -> ../../laravel/Modules/<Modulo>/public (deploy.sh, regola in CLAUDE.md):
+        // il nome del link e' sempre minuscolo, quindi anche l'URL (su Linux `assets/Xot` e `assets/xot` sono cartelle diverse).
+        return $this->publicUrl('assets/'.Str::lower($ns).'/'.$ns_after);
     }
 
     /**
      * Nothing is copied: public_html/assets/<module> and public_html/themes/<Theme> are symlinks
-     * (xot:module-link, xot:theme-link) to the module/theme `public` folder, so the URL is
+     * (created by deploy.sh) to the module/theme `public` folder, so the URL is
      * served straight from there. The old per-request copy wrote through the symlink and failed
      * with "Failed to open stream" whenever the link was missing or broken.
      */
