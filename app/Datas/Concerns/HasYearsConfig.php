@@ -13,6 +13,10 @@ namespace Modules\Xot\Datas\Concerns;
  *
  * La Data che usa il trait chiama `static::prepareAnni($properties)` dal proprio
  * `prepareForPipeline()`.
+<<<<<<< .merge_file_NTMeAJ
+=======
+ *
+>>>>>>> .merge_file_7lfgMy
  * @phpstan-ignore trait.unused
  */
 trait HasYearsConfig // @phpstan-ignore trait.unused

@@ -4,9 +4,17 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit\Docs;
 
+<<<<<<< .merge_file_QpdHn4
 use function Safe\glob;
 
 uses(\Modules\Xot\Tests\TestCase::class);
+=======
+use Modules\Xot\Tests\TestCase;
+
+use function Safe\glob;
+
+uses(TestCase::class);
+>>>>>>> .merge_file_MczgnR
 
 /**
  * `docs/chat/` e' un archivio in sola lettura.

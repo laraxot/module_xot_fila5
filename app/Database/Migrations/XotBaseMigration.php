@@ -471,13 +471,29 @@ abstract class XotBaseMigration extends LaravelMigration
      *
      * Rifiuta la conversione se esistono valori: un id intero non diventa un UUID,
      * e uno schema cambiato in silenzio corrompe i dati. Il mapping va deciso prima.
+<<<<<<< .merge_file_V4OxRm
      */
     public function convertUserIdToUuidIfLegacyBigint(Blueprint $table, bool $nullable = true): void
     {
+=======
+     *
+     * Con `preserveLegacyValues: true` la guardia non si applica: su MariaDB il
+     * passo intermedio bigint -> char(36) conserva i valori esatti come stringhe
+     * (niente dato cancellato) e la colonna converge a uuid. Le righe con valori
+     * senza utente corrispondente restano come stringa: referenza orfana ma
+     * reversibile, mai un CAST distruttivo.
+     */
+    public function convertUserIdToUuidIfLegacyBigint(
+        Blueprint $table,
+        bool $nullable = true,
+        bool $preserveLegacyValues = false,
+    ): void {
+>>>>>>> .merge_file_x6IwHV
         if (! $this->hasColumn('user_id') || $this->getColumnType('user_id') !== 'bigint') {
             return;
         }
 
+<<<<<<< .merge_file_V4OxRm
         $legacyRows = DB::connection($this->getConnection())
             ->table($this->getTable())
             ->whereNotNull('user_id')
@@ -489,6 +505,52 @@ abstract class XotBaseMigration extends LaravelMigration
                 $this->getTable(),
                 $legacyRows,
             ));
+        }
+
+=======
+        $legacyQuery = DB::connection($this->getConnection())
+            ->table($this->getTable())
+            ->whereNotNull('user_id');
+        $legacyRows = $legacyQuery->count();
+
+        if ($legacyRows > 0 && ! $preserveLegacyValues) {
+            /** @var list<mixed> $legacyIds */
+            $legacyIds = $legacyQuery
+                ->distinct()
+                ->orderBy('user_id')
+                ->pluck('user_id')
+                ->all();
+            $legacyIdList = implode(', ', array_map(
+                static fn (mixed $value): string => SafeStringCastAction::cast($value),
+                $legacyIds,
+            ));
+
+            throw new \RuntimeException(sprintf(
+                'Conversione user_id bloccata su %s: %d righe con valore bigint (%s). Serve un mapping esplicito verso UUID prima della migrazione.',
+                $this->getTable(),
+                $legacyRows,
+                $legacyIdList,
+            ));
+        }
+
+        if ($legacyRows > 0 && $preserveLegacyValues) {
+            // Preserve numeric legacy IDs as strings; a later verified mapping can resolve them to UUID users.
+            $legacyColumn = $table->char('user_id', 36);
+            if ($nullable) {
+                $legacyColumn->nullable();
+            }
+            $legacyColumn->change();
+
+            return;
+        }
+
+>>>>>>> .merge_file_x6IwHV
+        // MariaDB 10.7+ ha un tipo `uuid` nativo e rifiuta ALTER bigint -> uuid anche a tabella vuota
+        // (errore 4078 "Cannot cast 'bigint unsigned' as 'uuid'"), mentre char(36) -> uuid e' accettato.
+        // MySQL mappa uuid() su char(36) e non ha bisogno del passo intermedio. Lo stesso Blueprint emette
+        // un ALTER per colonna, in ordine: prima char(36), poi uuid.
+        if ($this->driver() === 'mariadb') {
+            $table->char('user_id', 36)->nullable()->change();
         }
 
         if ($nullable) {
