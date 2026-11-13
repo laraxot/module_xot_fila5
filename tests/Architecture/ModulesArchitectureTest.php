@@ -209,3 +209,25 @@ it('introduces no new module dependency cycles and drops the fixed ones from the
         ->and(array_values(array_diff(archKnownModuleCycles(), $found)))
         ->toBe([], 'cicli risolti: toglili dalla baseline');
 });
+<<<<<<< .merge_file_CkX4zS
+=======
+
+it('has no PHP classes under app/Console (commands live in Modules/*/app/Console/Commands)', function (): void {
+    // Comandi artisan belong to the owning module: XotBaseServiceProvider::registerCommands()
+    // scans Modules/<M>/app/Console/Commands. A file under laravel/app/Console is auto-discovered
+    // by Laravel silently, bypasses git/module boundaries and already happened once in production
+    // (SendTestMail.php, story send-test-mail-wrong-location).
+    $consoleDir = dirname(archModulesRoot()).'/app/Console';
+    $offenders = [];
+
+    if (is_dir($consoleDir)) {
+        foreach ((new Finder)->files()->in($consoleDir)->name('*.php') as $file) {
+            $offenders[] = $file->getPathname();
+        }
+    }
+
+    sort($offenders);
+
+    expect($offenders)->toBe([]);
+});
+>>>>>>> .merge_file_RELWHa

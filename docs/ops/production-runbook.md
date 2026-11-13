@@ -2,7 +2,11 @@
 title: "Runbook di produzione FixCity"
 type: runbook
 created: 2026-11-10
+<<<<<<< .merge_file_glSoig
 updated: 2026-11-10
+=======
+updated: 2026-11-12
+>>>>>>> .merge_file_KyezjF
 related:
   - ../stories/ci-deploy-ops-hardening.story.md
   - ../ci/ci-pipeline.md
@@ -193,6 +197,12 @@ Cosa fa `deploy.sh`, in ordine:
    - altrimenti `composer update -W`, con un avviso ben visibile, perché le versioni installate non sono mai passate dalla CI.
 6. Esegue `vendor:publish`, `migrate --force`, `filament:upgrade`, `optimize`, `queue:restart` e infine `artisan up`.
 
+<<<<<<< .merge_file_glSoig
+=======
+Lo script non elimina mai `database/migrations`: le migration sono parte del checkout
+versionato e devono restare disponibili per `migrate`, audit e rollback forward-only.
+
+>>>>>>> .merge_file_KyezjF
 Se uno step dopo il backup fallisce, il sito resta in manutenzione. Rimetterlo online con codice nuovo e schema vecchio farebbe più danni.
 
 Controlli dopo il deploy:
@@ -203,6 +213,24 @@ sudo supervisorctl status 'fixcity-worker:*'
 tail -n 50 laravel/storage/logs/laravel-$(date +%F).log
 ```
 
+<<<<<<< .merge_file_glSoig
+=======
+Per chiudere anche il gate front office Sixteen, dalla checkout locale con Chromium
+installato eseguire il controllo guest contro il dominio appena pubblicato:
+
+```bash
+cd laravel/Themes/Sixteen
+FIXCITY_BASE_URL=https://fixcity.eu A11Y_STRICT=1 \
+  npx playwright test tests/browser/a11y-axe.spec.mjs --reporter=list --workers=1
+```
+
+Il deploy non si considera verificato se una pagina guest fallisce per
+`label-content-name-mismatch`, se il manifest non viene servito dalla document root o
+se una pagina restituisce una schermata di eccezione. Le pagine protette vanno poi
+verificate con uno storage state isolato, mai con cookie o credenziali inseriti nei
+report.
+
+>>>>>>> .merge_file_KyezjF
 Variabili del deploy: `DEPLOY_BACKUP_DIR`, `DEPLOY_BACKUP_KEEP`, `DEPLOY_SKIP_DB_BACKUP=1` (sconsigliata: stampa un avviso) e `DEPLOY_TRUST_LOCK=1`.
 
 ## 6. Rollback

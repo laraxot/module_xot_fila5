@@ -26,7 +26,11 @@ YYYY_MM_DD_HHMMSS_<azione>_<modello_plurale>_table.php
 Esempi:
 
 - `2026_08_06_190100_create_translations_table.php`
+<<<<<<< .merge_file_nmnVd3
 - `2026_11_05_100001_update_translations_table.php`
+=======
+- `2026_11_05_100001_create_translations_table.php`
+>>>>>>> .merge_file_15AlXr
 
 `create_<modello_plurale>_table` consente a `XotBaseMigration` di derivare il
 modello e il modulo dal filename. Le azioni additive come `update` non sono

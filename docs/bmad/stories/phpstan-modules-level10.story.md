@@ -1,5 +1,5 @@
 ---
-title: "PHPStan Level 10: correzione fleet moduli"
+title: "PHPStan Level 10 — correzione fleet moduli"
 type: story
 module: Xot
 epic: quality
@@ -12,7 +12,7 @@ related:
   - ../../../../User/docs/bmad/stories/phpstan-l10-user-lang-fix-20261006.story.md
 ---
 
-# PHPStan Level 10: correzione fleet moduli
+# PHPStan Level 10 — correzione fleet moduli
 
 ## Obiettivo funzionale
 

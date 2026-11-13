@@ -12,8 +12,18 @@ use Mockery;
 use Mockery\MockInterface;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Filament\Widgets\EnvWidget;
+<<<<<<< .merge_file_SIoBuu
 use Modules\Xot\Tests\TestCase;
 use Symfony\Component\HttpKernel\Exception\HttpException;
+=======
+<<<<<<< .merge_file_Hj4T2D
+use Symfony\Component\HttpKernel\Exception\HttpException;
+use Tests\TestCase;
+=======
+use Modules\Xot\Tests\TestCase;
+use Symfony\Component\HttpKernel\Exception\HttpException;
+>>>>>>> .merge_file_PiAXvq
+>>>>>>> .merge_file_nwu73B
 
 uses(TestCase::class);
 

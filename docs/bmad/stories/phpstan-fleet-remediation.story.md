@@ -4,7 +4,7 @@ module: Xot
 bmad: true
 status: active
 ---
-# PHPStan fleet remediation: 2026-10-06
+# PHPStan fleet remediation — 2026-10-06
 
 ## Epic
 Qualità statica e manutenzione funzionale dei moduli PTVX.
@@ -19,7 +19,7 @@ Come team di manutenzione, vogliamo eseguire `./vendor/bin/phpstan analyse Modul
 - [x] Second brain aggiornato con learnings e regole.
 - [x] PHPStan completo finale senza errori; gate richiesti riportati.
 
-## Risultato: DONE
+## Risultato — DONE
 
 ### Fase 1: PHPStan Scan (2026-10-06 09:30-09:45 UTC)
 
@@ -30,7 +30,7 @@ Come team di manutenzione, vogliamo eseguire `./vendor/bin/phpstan analyse Modul
 - Exit code: 0
 - Fleet è clean (consolidamento precedente story 8.1/8.2/8.3 ha raggiunto l'obiettivo)
 
-**Implicazione**: No PHPStan fix work needed. Swarm di subagenti PHPStan fix cancellati (a9180e59c23961565, accf7eb48162344be, a7c3b5a1c3f0dd0af, a82998d0aa9f231bd, a357dbf0b96042b15, ad27317493bc2c010: all **CANCELLED**).
+**Implicazione**: No PHPStan fix work needed. Swarm di subagenti PHPStan fix cancellati (a9180e59c23961565, accf7eb48162344be, a7c3b5a1c3f0dd0af, a82998d0aa9f231bd, a357dbf0b96042b15, ad27317493bc2c010 — all **CANCELLED**).
 
 ### Fase 2: Docs Organizing (in-progress)
 
@@ -65,7 +65,7 @@ Quando subagent docs torna:
 ## Key learnings captured
 
 ### Regole architettura
-- **navigationIcon**: XotBaseResource non usa static: viene dalle traduzioni (lang/navigation.php)
+- **navigationIcon**: XotBaseResource non usa static — viene dalle traduzioni (lang/navigation.php)
 - **`//...` comments**: intentional markers, non rimuovere
 - **`@phpstan-ignore`**: vietato (solo narrowing/union/contract)
 - **PURPOSE**: concentrati su scopo funzionale, non su numero errore
@@ -83,12 +83,12 @@ Quando subagent docs torna:
 - Story precedenti: 8.1 (User), 8.2 (Tenant), 8.3 (Sigma) → consolidamento base raggiunto
 
 ## Stato finale
-✅ **DONE**: Fleet PHPStan clean (0 errori). Docs organizing in-progress. Learning loop captured.
+✅ **DONE** — Fleet PHPStan clean (0 errori). Docs organizing in-progress. Learning loop captured.
 
 
 ---
 
-## Consolidamento finale: 2026-10-06 10:30 UTC
+## Consolidamento finale — 2026-10-06 10:30 UTC
 
 ### Risultati notifiche subagenti
 
@@ -158,10 +158,10 @@ cd laravel && ./vendor/bin/phpstan analyse Modules --no-progress --memory-limit=
 
 ### Prossimi step (per altri agenti)
 
-1. **Themes audit + docs** (navigationicon-themes-audit.story.md): low priority
-2. **Assenza policy implementation** (assenza-admin-policy.story.md): ready-for-dev
-3. **Larastan configuration** (PHPStan cluster 5 finding): ~5 min fix, removes false positives
+1. **Themes audit + docs** (navigationicon-themes-audit.story.md) — low priority
+2. **Assenza policy implementation** (assenza-admin-policy.story.md) — ready-for-dev
+3. **Larastan configuration** (PHPStan cluster 5 finding) — ~5 min fix, removes false positives
 
 ---
 
-**Task status**: ✅ **DONE**: Fleet è clean, docs consolidated, learning loop captured, handoff stories created.
+**Task status**: ✅ **DONE** — Fleet è clean, docs consolidated, learning loop captured, handoff stories created.

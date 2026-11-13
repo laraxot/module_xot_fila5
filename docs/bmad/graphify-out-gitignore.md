@@ -12,7 +12,7 @@ related:
   - ../../../../../AGENTS.md
 ---
 
-# `graphify-out/`: perche' e' in ogni `.gitignore`
+# `graphify-out/` — perche' e' in ogni `.gitignore`
 
 ## Scopo
 
@@ -20,17 +20,17 @@ related:
 
 ## Perche' ignorarlo (religione)
 
-1. **Rigenerabile**: `graphify update .` lo riscrive intero; versionarlo produce diff enormi e merge inutili.
-2. **Locale / sporco atteso**: AGENTS.md: file dirty dopo hook o update incrementali; non e' motivo di commit.
-3. **No Git LFS**: non si "risolve" la mole con LFS ([no-git-lfs](../../../../../bashscripts/ai/wiki/rules/no-git-lfs.md)). Blob normali o, meglio, **non tracciare**.
-4. **Confini nwidart**: ogni modulo/tema ha `.gitignore` proprio; il root non basta se il modulo e' un repo nested.
+1. **Rigenerabile** — `graphify update .` lo riscrive intero; versionarlo produce diff enormi e merge inutili.
+2. **Locale / sporco atteso** — AGENTS.md: file dirty dopo hook o update incrementali; non e' motivo di commit.
+3. **No Git LFS** — non si "risolve" la mole con LFS ([no-git-lfs](../../../../../bashscripts/ai/wiki/rules/no-git-lfs.md)). Blob normali o, meglio, **non tracciare**.
+4. **Confini nwidart** — ogni modulo/tema ha `.gitignore` proprio; il root non basta se il modulo e' un repo nested.
 
 ## Contratto
 
 In **ogni** `laravel/Modules/*/.gitignore` e `laravel/Themes/*/.gitignore` (e aggregatori `Modules/`, `Themes/`, root):
 
 ```gitignore
-# graphify-out: generated AST/knowledge graph: never commit (no git-lfs; rebuild with graphify update)
+# graphify-out: generated AST/knowledge graph — never commit (no git-lfs; rebuild with graphify update)
 graphify-out/
 ```
 
@@ -50,7 +50,7 @@ Non cancellare il working tree se serve ancora in locale; togliere solo dall'ind
 
 ## Filament Blueprint
 
-Nessun impatto sul panel: Resources/Widgets/Pages non leggono `graphify-out/`. Vedi [filament-blueprint.md](./filament-blueprint.md): il grafo e' tooling second brain, non schema UI.
+Nessun impatto sul panel: Resources/Widgets/Pages non leggono `graphify-out/`. Vedi [filament-blueprint.md](./filament-blueprint.md) — il grafo e' tooling second brain, non schema UI.
 
 ## Verifica
 

@@ -16,6 +16,10 @@ use Webmozart\Assert\Assert;
 
 /**
  * Trait HasCustomRelations.
+<<<<<<< .merge_file_KQvLHL
+=======
+ *
+>>>>>>> .merge_file_wDl9JR
  * @phpstan-ignore trait.unused
  */
 trait HasCustomRelations // @phpstan-ignore trait.unused

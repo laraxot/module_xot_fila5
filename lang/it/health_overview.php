@@ -3,6 +3,18 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< .merge_file_AFpPZR
+=======
+<<<<<<< .merge_file_gCPAV8
+    'sections' => [
+        'empty' => [
+            'label' => '',
+            'heading' => '',
+        ],
+    ],
+=======
+>>>>>>> .merge_file_ITDUXA
+>>>>>>> .merge_file_sA26uV
     'label' => 'Health Overview',
     'plural_label' => 'Health Overview (Plurale)',
     'navigation' => [

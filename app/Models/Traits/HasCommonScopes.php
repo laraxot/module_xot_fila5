@@ -28,6 +28,10 @@ use Illuminate\Support\Carbon;
  * ```
  *
  * @see docs/METODI_DUPLICATI_ANALISI.md - Proposta 4: Model Traits
+<<<<<<< .merge_file_Juai7T
+=======
+ *
+>>>>>>> .merge_file_JKgWG2
  * @phpstan-ignore trait.unused
  */
 trait HasCommonScopes // @phpstan-ignore trait.unused
