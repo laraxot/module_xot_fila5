@@ -23,7 +23,7 @@ abstract class XotBaseViewRecord extends FilamentViewRecord
     {
         return [
             'back' => Action::make('back')
-                ->label(__('filament-panels::resources/pages/view-record.actions.back.label'))
+                ->label(__('xot::actions.back.label'))
                 ->icon('heroicon-o-arrow-left')
                 ->url(function (): string {
                     $record = $this->getRecord();
