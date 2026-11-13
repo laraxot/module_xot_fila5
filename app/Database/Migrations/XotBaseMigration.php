@@ -466,6 +466,48 @@ abstract class XotBaseMigration extends LaravelMigration
         }
     }
 
+    /**
+     * Converte user_id da bigint a UUID, solo se la colonna e' ancora bigint.
+     *
+     * Rifiuta la conversione se esistono valori: un id intero non diventa un UUID,
+     * e uno schema cambiato in silenzio corrompe i dati. Il mapping va deciso prima.
+     */
+    public function convertUserIdToUuidIfLegacyBigint(Blueprint $table, bool $nullable = true): void
+    {
+        if (! $this->hasColumn('user_id') || $this->getColumnType('user_id') !== 'bigint') {
+            return;
+        }
+
+        $legacyRows = DB::connection($this->getConnection())
+            ->table($this->getTable())
+            ->whereNotNull('user_id')
+            ->count();
+
+        if ($legacyRows > 0) {
+            throw new \RuntimeException(sprintf(
+                'Conversione user_id bloccata su %s: %d righe con valore bigint. Serve un mapping verso UUID prima della migrazione.',
+                $this->getTable(),
+                $legacyRows,
+            ));
+        }
+
+        // MariaDB 10.7+ ha un tipo `uuid` nativo e rifiuta ALTER bigint -> uuid anche a tabella vuota
+        // (errore 4078 "Cannot cast 'bigint unsigned' as 'uuid'"), mentre char(36) -> uuid e' accettato.
+        // MySQL mappa uuid() su char(36) e non ha bisogno del passo intermedio. Lo stesso Blueprint emette
+        // un ALTER per colonna, in ordine: prima char(36), poi uuid.
+        if ($this->driver() === 'mariadb') {
+            $table->char('user_id', 36)->nullable()->change();
+        }
+
+        if ($nullable) {
+            $table->uuid('user_id')->nullable()->change();
+
+            return;
+        }
+
+        $table->uuid('user_id')->change();
+    }
+
     public function updateUserKeyInt(Blueprint $table): void
     {
         if (! $this->hasColumn('id')) {

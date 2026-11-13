@@ -28,7 +28,12 @@ use Illuminate\Support\Str;
 use Modules\Xot\Actions\Composer\RegisterRuntimePsr4NamespacesAction;
 use Modules\Xot\Actions\Factory\GetFactoryAction;
 use Modules\Xot\Actions\PaDesignColorsAction;
+use Modules\Xot\Console\Commands\BuildTestSqliteCommand;
+use Modules\Xot\Console\Commands\CheckAccessorTwinsCommand;
 use Modules\Xot\Console\Commands\GenerateFilamentResources;
+use Modules\Xot\Console\Commands\ModuleLinkCommand;
+use Modules\Xot\Console\Commands\SymlinkPublishCommand;
+use Modules\Xot\Console\Commands\ThemeLinkCommand;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Exports\Jobs\XotCreateXlsxFile;
 use Modules\Xot\Filament\Traits\HasXotTable;
@@ -100,7 +105,7 @@ class XotServiceProvider extends XotBaseServiceProvider
     {
         Factory::guessFactoryNamesUsing(static function (string $modelName): string {
             if (str_starts_with($modelName, 'Modules\\')) {
-                $factoryClass = (new GetFactoryAction)->getFactoryClass($modelName);
+                $factoryClass = (new GetFactoryAction())->getFactoryClass($modelName);
             } else {
                 $modelsNamespace = app()->getNamespace().'Models\\';
                 $relativeName = Str::startsWith($modelName, $modelsNamespace)
@@ -134,7 +139,7 @@ class XotServiceProvider extends XotBaseServiceProvider
             return;
         }
 
-        (new RegisterRuntimePsr4NamespacesAction)->execute($loader);
+        (new RegisterRuntimePsr4NamespacesAction())->execute($loader);
     }
 
     public function registerTimezone(): void
@@ -254,6 +259,11 @@ class XotServiceProvider extends XotBaseServiceProvider
         if ($this->app->runningInConsole()) {
             $this->commands([
                 GenerateFilamentResources::class,
+                CheckAccessorTwinsCommand::class,
+                BuildTestSqliteCommand::class,
+                ThemeLinkCommand::class,
+                ModuleLinkCommand::class,
+                SymlinkPublishCommand::class,
                 // \Modules\Xot\Console\Commands\OptimizeFilamentMemoryCommand::class,
             ]);
         }
