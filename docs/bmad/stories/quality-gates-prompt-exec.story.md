@@ -11,9 +11,9 @@ created: 2026-09-22
 updated: 2026-09-22
 qmd: "quality gates prompt phpmd-ruleset pint parallel session files nested git pest skip"
 related:
-  - ../../../../../bashscripts/docs/prompts/03-quality-gates.md
+  - ../../../../../../bashscripts/docs/prompts/03-quality-gates.md
   - ../../stories/3.30.quality-gates-prompt-improve-and-exec.story.md
-  - ../../../../../docs/wiki/memories/03-quality-gates-workflow.md
+  - ../../../../../../docs/wiki/memories/03-quality-gates-workflow.md
   - ./cleanup-all-modules.story.md
 ---
 
@@ -38,7 +38,7 @@ Scope (`laravel/storage/app/ai/qg-session-files.txt`): `SendNetfunSMSAction.php`
 | Pint `--test` (no parallel) | **0** | `{"tool":"pint","result":"passed"}` → `build/pint.txt` |
 | PHPStan session (no tests/) | **0** | `[OK] No errors` → `build/phpstan.txt` |
 | PHPMD 3-arg `phpmd.xml` (come prompt) | **1** | `Cannot find specified rule-set "phpmd.xml"` |
-| PHPMD 1-arg wrapper | **2** | violazioni = exit 2 PHPMD, non timeout. 3× UnusedPrivateField su `$token/$endpoint/$vars` (usati in `execute()` — falso positivo PDepend) |
+| PHPMD 1-arg wrapper | **2** | violazioni = exit 2 PHPMD, non timeout. 3× UnusedPrivateField su `$token/$endpoint/$vars` (usati in `execute()`: falso positivo PDepend) |
 | Pest | **3** | DB irraggiungibile; `hostname -I` vuoto (host `zorin`, non 10.100.200.15) |
 | Insights | **3** | `vendor/bin/phpinsights` **assente**; wrapper `tools/phpinsights.sh` c'è |
 

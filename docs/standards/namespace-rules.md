@@ -1,14 +1,9 @@
 ---
-title: "namespace rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "namespace rules"
-issues: []
-discussions: []
+title: "Xot - namespace-rules.md"
+module: Xot
+bmad: true
+status: active
 ---
-
 # Regole di Namespace
 
 ## Struttura dei Namespace
@@ -144,8 +139,8 @@ Se si verificano errori "Class not found" o problemi di autoloading:
 
 ## Collegamenti Correlati
 
-- [Convenzioni](../../../../docs/conventions.md)
-- [Naming Conventions](../../../../docs/naming-conventions.md)
+- [Convenzioni](../conventions.md)
+- [Naming Conventions](../naming-conventions.md)
 - [Documentazione Xot](../code-standards.md)
 - [Collegamenti Documentazione](../../../../../docs/collegamenti-documentazione.md)
 

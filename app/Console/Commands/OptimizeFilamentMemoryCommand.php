@@ -314,10 +314,7 @@ class OptimizeFilamentMemoryCommand extends Command
     }
 
     /**
-     * Applica le ottimizzazioni globali (cache, tabelle, autoloader).
-     *
-     * Non dipende dai problemi rilevati dall'analisi: i problemi di codice (eager loading, paginazione...)
-     * non sono correggibili automaticamente, qui si ottimizza solo l'ambiente.
+     * Applica le ottimizzazioni.
      */
     private function applyOptimizations(): void
     {

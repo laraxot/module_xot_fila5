@@ -6,30 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\Model\Update\MorphManyAction;
 use Modules\Xot\Actions\Model\UpdateAction;
 use Modules\Xot\Datas\RelationData;
+use Modules\Xot\Tests\Fixtures\MorphManyRelationSpy;
 use Modules\Xot\Tests\TestCase;
 
 uses(TestCase::class);
-
-/**
- * Regressione: il cleanup PHPStan aveva tolto `$models` mentre `saveMany($models)` lo usava ancora,
- * quindi le righe del form non venivano mai (ri)associate al padre.
- */
-final class MorphManyRelationSpy
-{
-    public int $calls = 0;
-
-    /** @var list<Model> */
-    public array $saved = [];
-
-    /**
-     * @param  list<Model>  $models
-     */
-    public function saveMany(array $models): void
-    {
-        $this->calls++;
-        $this->saved = $models;
-    }
-}
 
 function morphManyRelationSpy(): MorphManyRelationSpy
 {
@@ -69,6 +49,10 @@ function morphManyPayload(array $rows): RelationData
     return $relationData;
 }
 
+/**
+ * Regressione: il cleanup PHPStan aveva tolto `$models` mentre `saveMany($models)` lo usava ancora,
+ * quindi le righe del form non venivano mai (ri)associate al padre.
+ */
 it('passes the rows updated by UpdateAction to saveMany', function (): void {
     app()->instance(UpdateAction::class, new class extends UpdateAction
     {

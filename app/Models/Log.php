@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Database\Factories\LogFactory;
+use Modules\Xot\Models\Traits\LogMutators;
 use Sushi\Sushi;
 
 // --- services
@@ -36,6 +37,7 @@ use Sushi\Sushi;
  */
 class Log extends BaseModel
 {
+    use LogMutators;
     use Sushi;
 
     protected $fillable = ['id', 'name', 'size'];
@@ -59,11 +61,6 @@ class Log extends BaseModel
         }
 
         return $rows;
-    }
-
-    public function getFileContentAttribute(?string $value): ?string
-    {
-        return File::get(storage_path('logs/'.$this->id.'.log'));
     }
 
     /** @return array<string, string> */

@@ -9,6 +9,9 @@ use Livewire\Wireable;
 use Spatie\LaravelData\Concerns\WireableData;
 use Spatie\LaravelData\Data;
 
+use function Safe\preg_match;
+use function Safe\preg_replace_callback;
+
 /**
  * Undocumented class.
  */
@@ -69,6 +72,9 @@ class EnvData extends Data implements Wireable
     }
 
     /**
+     * Scrive su `.env` solo le variabili dichiarate da EnvData: `$data` arriva dallo stato
+     * Livewire, modificabile dal client, e le sue chiavi non sono mai nomi di variabile fidati.
+     *
      * @param  array<string, mixed>  $data
      */
     public function update(array $data): void
@@ -76,33 +82,32 @@ class EnvData extends Data implements Wireable
         $env_path = base_path('.env');
         $env_content = File::get($env_path);
 
-        foreach ($data as $k => $v) {
+        foreach (array_intersect_key($data, get_object_vars($this)) as $k => $v) {
             if ($v !== $this->$k && (is_bool($v) || is_int($v) || is_string($v))) {
                 $env_content = $this->updateVar($k, $v, $env_content);
             }
         }
 
-        File::put($env_path, $env_content);
+        // ponytail: LOCK_EX sulla scrittura, non sul read-modify-write; rename atomico se serve concorrenza.
+        File::put($env_path, $env_content, true);
     }
 
     public function updateVar(string $key, int|bool|string $value, string $env_content): string
     {
         $key = str($key)->upper()->toString();
-        $replace = $this->getLine($key, $value);
-        $pos_start = mb_strpos($env_content, $key.'=');
-        if ($pos_start === false) {
-            // throw new \Exception('['.__LINE__.']['.class_basename($this).']');
-            return $env_content."\n".$replace;
-        }
-        $pos_end = mb_strpos($env_content, "\n", $pos_start);
-        if ($pos_end === false) {
-            throw new \Exception('['.__LINE__.']['.class_basename($this).']');
+        if (preg_match('/^[A-Z][A-Z0-9_]*\z/', $key) !== 1) {
+            throw new \InvalidArgumentException('Nome variabile .env non valido.');
         }
 
-        $length = $pos_end - $pos_start;
-        $find = mb_substr($env_content, $pos_start, $length + 1);
+        $line = $this->getLine($key, $value);
+        // Solo a inizio riga: `X_MAIL_HOST=` e `# MAIL_HOST=` non sono `MAIL_HOST=`.
+        $pattern = '/^'.$key.'=.*(?:\R|\z)/m';
 
-        return str($env_content)->replace($find, $replace)->toString();
+        if (preg_match($pattern, $env_content) !== 1) {
+            return ($env_content === '' || str_ends_with($env_content, "\n") ? $env_content : $env_content."\n").$line;
+        }
+
+        return preg_replace_callback($pattern, static fn (): string => $line, $env_content, 1);
     }
 
     public function getLine(string $key, int|bool|string $value): string
@@ -112,7 +117,11 @@ class EnvData extends Data implements Wireable
             $replace .= $value ? 'true' : 'false';
         }
         if (is_string($value)) {
-            $replace .= '"'.$value.'"';
+            if (preg_match('/[\r\n]/', $value) === 1) {
+                throw new \InvalidArgumentException('Il valore di '.$key.' non può contenere a capo.');
+            }
+            // Tra doppi apici dotenv vuole `\\` e `\"`; `$` resta libero per i riferimenti `${APP_NAME}`.
+            $replace .= '"'.addcslashes($value, '"\\').'"';
         }
         if (is_int($value)) {
             $replace .= $value;

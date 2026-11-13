@@ -2,24 +2,39 @@
 
 declare(strict_types=1);
 
+use Illuminate\Support\Str;
 use Modules\Xot\Actions\Model\GetAllModelsByModuleNameAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-test('gets concrete models for a module through the current action', function (): void {
-    $models = app(GetAllModelsByModuleNameAction::class)->execute('Xot');
+/*
+ * `Modules\Xot\Services\ModuleService::setName($m)->getModels()` non esiste piu' (niente Services):
+ * il suo compito, elencare i model concreti di un modulo, e' di GetAllModelsByModuleNameAction.
+ * Il nome del file resta quello storico; i casi coperti sono il contratto del vecchio servizio.
+ */
+describe('GetAllModelsByModuleNameAction (ex ModuleService::getModels)', function () {
+    it('returns an empty list for a module that is not registered', function () {
+        Assert::assertSame([], app(GetAllModelsByModuleNameAction::class)->execute('NonExistentModule'));
+    });
 
-    Assert::assertIsArray($models);
-    Assert::assertArrayNotHasKey('base_model', $models);
+    it('keys every concrete model by the snake_case basename of its class', function () {
+        $models = app(GetAllModelsByModuleNameAction::class)->execute('Xot');
 
-    foreach ($models as $name => $class) {
-        Assert::assertIsString($name);
-        Assert::assertIsString($class);
-    }
-});
+        Assert::assertNotEmpty($models);
+        foreach ($models as $key => $class) {
+            Assert::assertStringStartsWith('Modules\\Xot\\Models\\', $class);
+            Assert::assertSame(Str::snake(class_basename($class)), $key);
+        }
+    });
 
-test('returns no models for an unknown module', function (): void {
-    Assert::assertSame([], app(GetAllModelsByModuleNameAction::class)->execute('NonExistentModule'));
+    it('filters abstract classes out', function () {
+        $models = app(GetAllModelsByModuleNameAction::class)->execute('Xot');
+
+        Assert::assertArrayNotHasKey('base_model', $models);
+        foreach ($models as $class) {
+            Assert::assertFalse((new ReflectionClass($class))->isAbstract());
+        }
+    });
 });

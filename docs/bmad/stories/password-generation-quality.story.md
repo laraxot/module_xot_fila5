@@ -7,6 +7,9 @@ status: review
 created: 2026-10-05
 related:
   - ./project-quality-audit.story.md
+updated: 2026-10-07
+tags: [docs, xot, bmad]
+qmd: "generazione password: lunghezza e casualità crittografica xot"
 ---
 
 # Generazione password: lunghezza e casualità crittografica

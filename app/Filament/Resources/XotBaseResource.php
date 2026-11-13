@@ -71,7 +71,7 @@ abstract class XotBaseResource extends FilamentResource
 
     public static function getModuleName(): string
     {
-        return Str::between(static::class, 'Modules\\', '\Filament');
+        return Str::before(Str::after(static::class, 'Modules\\'), '\\');
     }
 
     public function hasCombinedRelationManagerTabsWithContent(): bool
@@ -126,10 +126,11 @@ abstract class XotBaseResource extends FilamentResource
 
     /**
      * @return array<int|string, \Filament\Schemas\Components\Component>
+     *                                                                   DEVE ESSERE FINAL !!
      */
     final public function getFormSchema(): array
     {
-        return static::getFormSchemaOld();
+        return [];
     }
 
     /**
@@ -141,6 +142,10 @@ abstract class XotBaseResource extends FilamentResource
      * ATTENZIONE: NON rendere `getFormSchema()` astratto senza prima migrare i
      * ~100 consumer che ancora implementano solo `getFormSchemaOld()` (grep
      * `getFormSchemaOld` su `Modules/*`) — vedi docs/chat/STOP-*-getformschema-*.md.
+     *
+     * NON final: ~55 Resource in Modules/* sovrascrivono questo metodo durante
+     * la migrazione. Con `final` ogni override fallisce al bootstrap
+     * ("Cannot override final method") e blocca anche PHPStan.
      *
      * @return array<int|string, \Filament\Schemas\Components\Component>
      */
@@ -154,20 +159,15 @@ abstract class XotBaseResource extends FilamentResource
      */
     public static function getFormClass(): string
     {
-        // return AuthorForm::configure($schema);
-        $name = class_basename(static::getModel());
-        $class = static::class.'\Schemas\\'.$name.'Form';
-        if (class_exists($class)) {
-            Assert::subclassOf($class, XotBaseResourceForm::class);
+        // return AuthorForm::configure($schema); -- esempio della doc Filament, tenuto come riferimento.
+        $resource = static::getResourceBaseName();
 
-            return $class;
-        }
-        $class1 = app(GetResourceClassNameByModelClassAction::class)->execute(static::getModel());
-        $class1 = $class1.'\Schemas\\'.$name.'Form';
-        Assert::subclassOf($class1, XotBaseResourceForm::class);
-
-        return $class1;
-
+        return static::resolveResourcePartClass(
+            folder: 'Schemas',
+            byModel: class_basename(static::getModel()).'Form',
+            byResource: $resource.'Form',
+            baseClass: XotBaseResourceForm::class,
+        );
     }
 
     final public static function form(Schema $schema): Schema
@@ -184,19 +184,14 @@ abstract class XotBaseResource extends FilamentResource
      */
     public static function getTableClass(): string
     {
-        $name = Str::plural(class_basename(static::getModel()));
-        $class = static::class.'\Tables\\'.$name.'Table';
-        if (class_exists($class)) {
-            Assert::subclassOf($class, XotBaseResourceTable::class);
+        $resource = static::getResourceBaseName();
 
-            return $class;
-        }
-
-        $class1 = app(GetResourceClassNameByModelClassAction::class)->execute(static::getModel());
-        $class1 = $class1.'\Tables\\'.$name.'Table';
-        Assert::subclassOf($class1, XotBaseResourceTable::class);
-
-        return $class1;
+        return static::resolveResourcePartClass(
+            folder: 'Tables',
+            byModel: Str::plural(class_basename(static::getModel())).'Table',
+            byResource: Str::plural($resource).'Table',
+            baseClass: XotBaseResourceTable::class,
+        );
     }
 
     public static function table(Table $table): Table
@@ -228,20 +223,63 @@ abstract class XotBaseResource extends FilamentResource
      */
     public static function getInfolistClass(): string
     {
-        // return AuthorForm::configure($schema);
-        $name = class_basename(static::getModel());
-        $class = static::class.'\Schemas\\'.$name.'Infolist';
-        if (class_exists($class)) {
-            Assert::subclassOf($class, XotBaseResourceInfolist::class);
+        // return AuthorForm::configure($schema); -- esempio della doc Filament, tenuto come riferimento.
+        $resource = static::getResourceBaseName();
 
-            return $class;
+        return static::resolveResourcePartClass(
+            folder: 'Schemas',
+            byModel: class_basename(static::getModel()).'Infolist',
+            byResource: $resource.'Infolist',
+            baseClass: XotBaseResourceInfolist::class,
+        );
+    }
+
+    /**
+     * Unico punto di risoluzione di Form, Table e Infolist di una Resource. Tre tentativi:
+     *
+     * 1. nome dal modello: `{Resource}\Tables\{ModelPlurale}Table` (regola storica);
+     * 2. nome dalla Resource: `SchedaPoResource` => `SchedaPoForm`, `SchedaPosTable`. Serve quando
+     *    piu' Resource condividono un modello (le varianti Progressioni di `Scheda`): il nome dal
+     *    modello sarebbe uguale per tutte;
+     * 3. la Resource registrata per il modello (`Filament::getModelResource()`), cioe' la prima
+     *    in ordine di discovery.
+     *
+     * Prima mancava il passo 2: le varianti finivano al passo 3, che restituiva `SchedaDipResource`
+     * anche per `SchedaPoResource`, e la pagina si fermava su un Assert.
+     *
+     * @see Modules/Xot/docs/stories/resource-part-class-by-resource-name.story.md
+     *
+     * @template TPart of object
+     *
+     * @param  class-string<TPart>  $baseClass
+     * @return class-string<TPart>
+     */
+    protected static function resolveResourcePartClass(string $folder, string $byModel, string $byResource, string $baseClass): string
+    {
+        foreach ([$byModel, $byResource] as $name) {
+            $class = static::class.'\\'.$folder.'\\'.$name;
+            if (class_exists($class)) {
+                Assert::subclassOf($class, $baseClass);
+
+                /** @var class-string<TPart> $class */
+                return $class;
+            }
         }
-        $class1 = app(GetResourceClassNameByModelClassAction::class)->execute(static::getModel());
-        $class1 = $class1.'\Schemas\\'.$name.'Infolist';
-        Assert::subclassOf($class1, XotBaseResourceInfolist::class);
 
-        return $class1;
+        $resource = app(GetResourceClassNameByModelClassAction::class)->execute(static::getModel());
+        $class = $resource.'\\'.$folder.'\\'.$byModel;
+        Assert::subclassOf($class, $baseClass);
 
+        /** @var class-string<TPart> $class */
+        return $class;
+    }
+
+    /**
+     * `SchedaPoResource` => `SchedaPo`.
+     */
+    protected static function getResourceBaseName(): string
+    {
+        return Str::beforeLast(class_basename(static::class), 'Resource');
     }
 
     /**

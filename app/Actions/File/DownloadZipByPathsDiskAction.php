@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\File;
 
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
@@ -41,7 +42,10 @@ class DownloadZipByPathsDiskAction
                         $zip->addFromString($attachment.'.pdf', $fileContent);
                     }
                 } else {
-                    dddx(['filePath' => $filePath]);
+                    Log::warning('DownloadZipByPathsDiskAction: file missing, skipped', [
+                        'disk' => $disk,
+                        'path' => $filePath,
+                    ]);
                 }
             }
             $zip->close();

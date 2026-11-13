@@ -13,7 +13,6 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\Blade\RegisterBladeComponentsAction;
 use Modules\Xot\Actions\File\GetComponentsAction;
-use Modules\Xot\Actions\Livewire\RegisterLivewireComponentsAction;
 use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
 use Nwidart\Modules\Traits\PathNamespace;
 use Webmozart\Assert\Assert;
@@ -41,7 +40,6 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         $this->registerConfig();
         $this->registerViews();
         $this->loadMigrationsFrom($this->module_dir.'/../../database/migrations');
-        // $this->registerLivewireComponents();  //usiamo filament widget
         $this->registerBladeComponents();
         $this->registerCommands();
         $this->registerPublicAssets();
@@ -135,13 +133,6 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         Blade::componentNamespace($namespace, $this->nameLower);
 
         app(RegisterBladeComponentsAction::class)->execute($componentClassPath, $this->module_ns);
-    }
-
-    public function registerLivewireComponents(): void
-    {
-        $prefix = '';
-        app(RegisterLivewireComponentsAction::class)
-            ->execute($this->module_dir.'/../Http/Livewire', Str::before($this->module_ns, '\Providers'), $prefix);
     }
 
     public function registerCommands(): void

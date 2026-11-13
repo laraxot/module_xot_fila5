@@ -3,6 +3,10 @@ title: "Xot - readme.md"
 module: Xot
 bmad: true
 status: active
+type: index
+updated: 2026-10-09
+tags: [docs, xot, wiki]
+qmd: "llm wiki (module) xot"
 ---
 # LLM Wiki (module)
 

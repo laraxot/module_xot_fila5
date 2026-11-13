@@ -614,6 +614,11 @@ class MetatagData extends Data implements Wireable
         $xot = XotData::make();
         $path = base_path('Modules/'.$xot->main_module.'/resources/svg/logo.svg');
 
+        // Il modulo principale puo' non avere un logo.svg: chi costruisce l'email non deve fallire (come getBrandLogoBase64()).
+        if (! File::exists($path)) {
+            return '';
+        }
+
         return file_get_contents($path);
     }
 

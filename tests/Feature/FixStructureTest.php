@@ -72,7 +72,7 @@ describe('Fix Structure', function () use (&$testDir): void {
         file_put_contents($testDir.'/Actions/test.php', 'echo "test";');
 
         // Copiamo lo script nella directory di test
-        $script = base_path('../bashscripts/fix_structure.sh');
+        $script = base_path('../bashscripts/utils/fix_structure.sh');
         $scriptContent = file_get_contents($script);
         file_put_contents($testDir.'/fix_structure.sh', $scriptContent);
         chmod($testDir.'/fix_structure.sh', 0o755);
@@ -92,7 +92,7 @@ describe('Fix Structure', function () use (&$testDir): void {
         file_put_contents($testDir.'/Config/test.php', 'echo "test";');
 
         // Copiamo lo script nella directory di test
-        $script = base_path('../bashscripts/fix_structure.sh');
+        $script = base_path('../bashscripts/utils/fix_structure.sh');
         $scriptContent = file_get_contents($script);
         file_put_contents($testDir.'/fix_structure.sh', $scriptContent);
         chmod($testDir.'/fix_structure.sh', 0o755);
@@ -115,7 +115,7 @@ describe('Fix Structure', function () use (&$testDir): void {
         file_put_contents($testDir.'/config/secondary.php', 'echo "secondary";');
 
         // Copiamo lo script nella directory di test
-        $script = base_path('../bashscripts/fix_structure.sh');
+        $script = base_path('../bashscripts/utils/fix_structure.sh');
         $scriptContent = file_get_contents($script);
         file_put_contents($testDir.'/fix_structure.sh', $scriptContent);
         chmod($testDir.'/fix_structure.sh', 0o755);

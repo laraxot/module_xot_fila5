@@ -46,12 +46,7 @@ class PerformanceMonitoringMiddleware
         // Registra la richiesta
         Assert::isInstanceOf($response, Response::class);
         $statusCode = $response->getStatusCode();
-        $this->recordRequest(
-            $request->method(),
-            $request->path(),
-            $responseTime,
-            $statusCode
-        );
+        $this->recordRequest($responseTime, $statusCode);
 
         // Registra utilizzo memoria finale
         $this->recordMemoryUsage();
@@ -101,10 +96,8 @@ class PerformanceMonitoringMiddleware
     /**
      * Registra richiesta.
      */
-    private function recordRequest(string $method, string $path, float $responseTime, int $statusCode): void
+    private function recordRequest(float $responseTime, int $statusCode): void
     {
-        Assert::string($method);
-        Assert::string($path);
         Cache::increment('total_requests');
         Cache::increment('requests_per_minute');
         // Aggiorna tempi di risposta

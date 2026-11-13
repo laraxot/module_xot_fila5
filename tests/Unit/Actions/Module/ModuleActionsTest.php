@@ -23,7 +23,7 @@ test('get module config action works', function (): void {
     $path = tempnam(sys_get_temp_dir(), 'test_module_config');
     unlink($path);
     mkdir($path);
-    File::put($path.'/test.php', "return ['a' => 1]);");
+    File::put($path.'/test.php', "<?php\nreturn ['a' => 1];\n");
 
     $pathAction = Mockery::mock(GetModulePathByGeneratorAction::class);
     $pathAction->allows(['execute' => $path]);

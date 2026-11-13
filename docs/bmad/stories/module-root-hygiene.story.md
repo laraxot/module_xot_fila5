@@ -1,7 +1,7 @@
 ---
 tags: [module-root, hygiene, workspace, bmad, guard]
 created: 2026-09-29
-updated: 2026-09-29
+updated: 2026-10-27
 issues: []
 discussions: []
 title: "Igiene della root dei moduli: cartelle, tooling, workspace, md"
@@ -9,7 +9,7 @@ type: story
 module: Xot
 status: in-progress
 track: docs-hygiene
-qmd: "module root hygiene code-workspace remote fila5 cartelle maiuscole tooling vietato readme changelog max sei md github skills gitignore"
+qmd: "module root hygiene code-workspace remote fila5 cartelle maiuscole tooling vietato readme changelog max sei md github skills gitignore docs archive"
 related:
   - ./docs-modules-themes-continuous-reorg.story.md
   - ./5.158-module-root-md-cap-five.story.md
@@ -140,6 +140,65 @@ Guardia aggiunta: caso `in Modules ci sono solo moduli: ogni cartella ha module.
 vede). Verde sullo stato attuale; rosso con una cartella di prova `Modules/zzprobe`
 ("cartelle in Modules che non sono moduli: zzprobe"). Casi 6-8: `Tests: 37 passed`,
 PHPStan `[OK] No errors`, PHPMD 0.
+
+## Regola 9: `docs/archive/` nei `.gitignore` (richiesta utente 2026-10-27)
+
+Richiesta: "la cartella docs/archive/ deve essere messa in tutti i .gitignore delle root
+dei moduli e dei temi".
+
+Perche': ogni `Modules/<Mod>` e `Themes/<T>` e' un repo Git separato, quindi l'ignore del
+monorepo non lo copre. `docs/archive/` e' tassonomia parallela vietata dalla wiki
+(`docs/wiki/concepts/no-docs-archive-rule.md`): se resta tracciata, ogni merge/sync tra
+basi diverse la riporta e sporca la storia.
+
+Misura (2026-10-27, 20 cartelle modulo e 4 temi, tutti con `.gitignore` in root):
+
+- gia' coperti con pattern equivalente: 19/20 moduli (`docs/archive`, `/docs/archive`,
+  `docs/**/archive/`, `docs/archive/**`) e 4/4 temi;
+- **Fixcity**: riga corrotta `docs/archive/agentdb.rvf` (concat di due pattern) che
+  ignora un file dentro `docs/archive/`, non la cartella, e non ignora `agentdb.rvf`
+  in root. Corretta in due righe: `docs/archive/` + `agentdb.rvf`;
+- mancanti: `laravel/Modules/.gitignore`, `laravel/Themes/.gitignore` e
+  `laravel/Modules/.gitignore_template` (futuri moduli). Aggiunta la riga.
+
+Nessun `git rm --cached` eseguito in questa sessione: shell non disponibile
+(`DAYTONA_API_KEY` assente), quindi lo stato dell'indice non e' stato verificato.
+Se qualche repo ha gia' `docs/archive/` tracciata, va sbloccata con
+`git -C Modules/<Mod> rm -r --cached -- docs/archive` (solo quel path).
+
+## Regola 10: `*.lock` nei `.gitignore` (richiesta utente 2026-11-04)
+
+Richiesta: "in ogni modulo nel file .gitignore deve esserci che ignoriamo *.lock".
+
+Perche': i lock degli agenti (`bashscripts/lock/lock.sh`) sono file `<path>.lock` accanto al file
+bloccato. Ogni modulo e' un repo a se', quindi l'ignore del monorepo (riga 22 del `.gitignore` di
+root) non li copre. Un lock committato resta li' quando l'agente sparisce e `claims-open.py` lo
+mostra come claim vivo per settimane.
+
+Misura (2026-11-04, 14 moduli con `.git`): 13 avevano gia' `*.lock`; **Notify** no, e aveva
+**5 lock tracciati** (2 di `opencode` del 5 ottobre, 3 di `notify`/`codex` del 28 ottobre).
+`Themes/Four` aveva la riga; `Themes/public` non e' un repo (lo copre il root).
+
+Fatto:
+
+- riga `*.lock` nel `.gitignore` di Notify (task `module-lock-ignore` di codex);
+- 5 lock tolti dall'indice con `git rm --cached` sui soli 5 path, nel solo repo Notify (commit
+  `4fa75386b`); i file restano su disco, quindi chi li tiene non perde il claim;
+- guardia: in `ModuleRootHygieneTest` il caso `modulo con *.lock nel .gitignore e nessun *.lock
+  tracciato`. Controlla la riga e `git ls-files '*.lock'` per modulo. RED vista su Notify (5 file
+  tracciati), poi verde.
+
+`AI/.gitignore` ripete `*.lock` tre volte (righe 21, 27, 99): innocuo, da ripulire quando si tocca
+quel file. `composer.lock` e `yarn.lock` erano gia' ignorati nei moduli, quindi la regola non cambia
+niente per loro.
+
+Stato della guardia intera dopo la regola 10: 85 verdi, 29 rossi. I 29 sono **debito delle regole
+1-7, preesistente e non toccato qui**: workspace con nome diverso da
+`_module_<nome>_fila5.code-workspace` (AI, Cms, Gdpr, Job, Lang, Media, Notify, UI), riga
+`/.github/skills/` mancante (AI, Cms, Gdpr, Trade), `resources/lang` ancora presente (Gdpr, Lang,
+Notify, Trade), `docs/graphify` ancora presente (Lang, Notify, UI), cartelle vietate (Activity
+`tools`, Notify `bashscripts` e `.github/skills`), `CHANGELOG.md` mancante in Trade. Cancellare
+cartelle richiede di guardare dentro prima: `resources/lang` puo' contenere traduzioni vere.
 
 ## Verifica finale
 

@@ -27,14 +27,19 @@ return [
     ],
     'actions' => [
         'refresh' => [
-            'label' => 'refresh',
-            'tooltip' => 'refresh',
+            'label' => 'Aggiorna',
+            'tooltip' => '',
             'icon' => 'refresh',
         ],
         'logout' => [
-            'tooltip' => 'logout',
+            'tooltip' => '',
+            'icon' => 'logout',
         ],
-        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+        'save' => [
+            'label' => 'Salva',
+            'icon' => 'save',
+            'tooltip' => '',
+        ],
     ],
     'label' => 'Health',
     'plural_label' => 'Health (Plurale)',
@@ -56,6 +61,11 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+        ],
+    ],
+    'page' => [
+        'last_check' => [
+            'label' => 'Ultimo controllo',
         ],
     ],
 ];

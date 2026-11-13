@@ -71,7 +71,7 @@ class MetatagPage extends XotBasePage
                             ->options($metatag->getFilamentColors()),
                         Select::make('color')
                             ->options(array_combine(array_keys(Color::all()), array_keys(Color::all())))
-                            ->reactive(),
+                            ->live(),
                         ColorPicker::make('hex')
                             ->required(),
                     ])

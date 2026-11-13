@@ -15,7 +15,10 @@ declare(strict_types=1);
 use Illuminate\Database\Capsule\Manager as Capsule;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Tests\Fixtures\Models\HasCommonScopesProbe;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 beforeEach(function (): void {
     $capsule = new Capsule;

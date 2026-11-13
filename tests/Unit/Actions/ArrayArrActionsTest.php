@@ -14,18 +14,28 @@ use function Safe\mkdir;
 
 uses(TestCase::class);
 
-it('normalizes nested numeric strings in diff fixType', function (): void {
-    $input = ['items' => [
-        ['a' => '1', 'b' => 'x'],
-        ['c' => '2.5'],
-    ]];
+it('normalizes numeric strings in diff rows through fixType', function (): void {
+    $input = [
+        'a' => [
+            'id' => '1',
+            'name' => 'x',
+        ],
+        'c' => [
+            'value' => '2.5',
+        ],
+    ];
 
     $normalized = DiffAssocRecursiveAction::fixType($input);
 
     Assert::assertSame([
-        ['a' => 1, 'b' => 'x'],
-        ['c' => 2.5],
-    ], $normalized['items']);
+        'a' => [
+            'id' => 1,
+            'name' => 'x',
+        ],
+        'c' => [
+            'value' => 2.5,
+        ],
+    ], $normalized);
 });
 
 it('throws when fixType receives a non-array item', function (): void {
@@ -37,19 +47,31 @@ it('throws when fixType receives a non-array item', function (): void {
     }
 });
 
-it('returns recursive diff', function (): void {
+it('returns rows of left that are missing in right', function (): void {
     $action = new DiffAssocRecursiveAction;
-    $left = ['items' => [
-        ['id' => '1', 'name' => 'a'],
-        ['id' => '2', 'name' => 'b'],
-    ]];
-    $right = ['items' => [
-        ['id' => 2, 'name' => 'b'],
-    ]];
+    $left = [
+        0 => [
+            'id' => '1',
+            'name' => 'a',
+        ],
+        1 => [
+            'id' => '2',
+            'name' => 'b',
+        ],
+    ];
+    $right = [
+        0 => [
+            'id' => 2,
+            'name' => 'b',
+        ],
+    ];
 
     Assert::assertSame([
-        ['id' => 1, 'name' => 'a'],
-    ], $action->execute($left, $right)['items']);
+        0 => [
+            'id' => 1,
+            'name' => 'a',
+        ],
+    ], $action->execute($left, $right));
 });
 
 it('covers all branches of range intersect', function (): void {
@@ -61,7 +83,7 @@ it('covers all branches of range intersect', function (): void {
     Assert::assertFalse($action->execute(10, 11, 1, 5));
     Assert::assertFalse($action->execute(7, 6, 5, 8));
     Assert::assertSame([4, 4], $action->execute(4, 10, 2, 4));
-    Assert::assertFalse($action->execute(1, 5, 2, 7));
+    Assert::assertSame([2, 5], $action->execute(1, 5, 2, 7));
 });
 
 it('writes JSON and PHP arrays', function (): void {

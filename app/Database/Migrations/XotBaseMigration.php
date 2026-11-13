@@ -236,6 +236,7 @@ abstract class XotBaseMigration extends LaravelMigration
                     return true;
                 }
             }
+
             return false;
         }
 
@@ -331,6 +332,54 @@ abstract class XotBaseMigration extends LaravelMigration
     }
 
     /**
+     * Crea solo gli indici che mancano, sulla connessione del modello della migrazione.
+     *
+     * Idempotente: un indice c'e' gia' se esiste con quel nome oppure sulle stesse colonne nello stesso
+     * ordine (`Builder::hasIndex()` accetta l'elenco), cosi' un indice equivalente con altro nome non viene
+     * duplicato. Salta la tabella o l'indice se manca una colonna: lo schema di un ambiente puo' essere piu'
+     * vecchio. Non toglie mai nulla: eliminare un indice in produzione e' una decisione dell'utente.
+     *
+     * Per una colonna di testo confrontata con un intero l'indice non basta (MySQL scandisce tutto l'indice):
+     * la query deve passare il valore come stringa.
+     *
+     * @param  array<string, array<string, list<string>>>  $indexes  tabella => nome indice => colonne in ordine
+     */
+    protected function ensureIndexes(array $indexes): void
+    {
+        $schema = $this->getConn();
+
+        foreach ($indexes as $tableName => $tableIndexes) {
+            if (! $schema->hasTable($tableName)) {
+                continue;
+            }
+
+            foreach ($tableIndexes as $indexName => $columns) {
+                if ($this->shouldSkipIndex($schema, $tableName, $indexName, $columns)) {
+                    continue;
+                }
+
+                $schema->table($tableName, static function (Blueprint $table) use ($columns, $indexName): void {
+                    $table->index($columns, $indexName);
+                });
+            }
+        }
+    }
+
+    /**
+     * @param  list<string>  $columns
+     */
+    private function shouldSkipIndex(Builder $schema, string $tableName, string $indexName, array $columns): bool
+    {
+        foreach ($columns as $column) {
+            if (! $schema->hasColumn($tableName, $column)) {
+                return true;
+            }
+        }
+
+        return $schema->hasIndex($tableName, $indexName) || $schema->hasIndex($tableName, $columns);
+    }
+
+    /**
      * @param  mixed  $result  Risultato di Connection::selectOne() (atteso array{count?: mixed}|object|null)
      */
     protected function extractPrimaryKeyCount(mixed $result): int
@@ -353,37 +402,38 @@ abstract class XotBaseMigration extends LaravelMigration
         $xot = XotData::make();
         $userClass = $xot->getUserClass();
 
-        // Check and add each timestamp column only if it doesn't exist
-        if (! $this->hasColumn('created_at')) {
+        // Listing fresca: evita "Duplicate column" quando RefreshDatabase / migrate
+        // in-process lasciano la cache Schema fuori sync rispetto a information_schema.
+        $columns = array_map(
+            static fn (mixed $name): string => is_string($name) ? strtolower($name) : '',
+            $this->getConn()->getColumnListing($this->getTable()),
+        );
+
+        if (! in_array('created_at', $columns, true)) {
             $table->timestamp('created_at')->nullable();
         }
 
-        if (! $this->hasColumn('updated_at')) {
+        if (! in_array('updated_at', $columns, true)) {
             $table->timestamp('updated_at')->nullable();
         }
 
-        // Check and add foreign key columns only if they don't exist
-        if (! $this->hasColumn('updated_by')) {
+        if (! in_array('updated_by', $columns, true)) {
             $table->foreignIdFor($userClass, 'updated_by')->nullable();
         }
 
-        if (! $this->hasColumn('created_by')) {
+        if (! in_array('created_by', $columns, true)) {
             $table->foreignIdFor($userClass, 'created_by')->nullable();
         }
 
-        // Handle soft deletes
         if ($hasSoftDeletes) {
-            if (! $this->hasColumn('deleted_at')) {
+            if (! in_array('deleted_at', $columns, true)) {
                 $table->softDeletes();
             }
-            if (! $this->hasColumn('deleted_by')) {
+            if (! in_array('deleted_by', $columns, true)) {
                 $table->foreignIdFor($userClass, 'deleted_by')->nullable();
             }
-        } else {
-            // If soft deletes are not requested but deleted_at exists, add deleted_by
-            if ($this->hasColumn('deleted_at') && ! $this->hasColumn('deleted_by')) {
-                $table->foreignIdFor($userClass, 'deleted_by')->nullable();
-            }
+        } elseif (in_array('deleted_at', $columns, true) && ! in_array('deleted_by', $columns, true)) {
+            $table->foreignIdFor($userClass, 'deleted_by')->nullable();
         }
     }
 
@@ -414,6 +464,46 @@ abstract class XotBaseMigration extends LaravelMigration
         if ($this->hasColumn('user_id') && $this->getColumnType('user_id') === 'bigint') {
             $table->uuid('user_id')->change();
         }
+    }
+
+    /**
+     * Converte user_id da bigint a UUID, solo se la colonna e' ancora bigint.
+     *
+     * Rifiuta la conversione se esistono valori: un id intero non diventa un UUID,
+     * e uno schema cambiato in silenzio corrompe i dati. Il mapping va deciso prima.
+     */
+    public function convertUserIdToUuidIfLegacyBigint(Blueprint $table, bool $nullable = true): void
+    {
+        if (! $this->hasColumn('user_id') || $this->getColumnType('user_id') !== 'bigint') {
+            return;
+        }
+
+        $legacyRows = DB::connection($this->getConnection())
+            ->table($this->getTable())
+            ->whereNotNull('user_id')
+            ->count();
+
+        if ($legacyRows > 0) {
+            throw new \RuntimeException(sprintf(
+                'Conversione user_id bloccata su %s: %d righe con valore bigint. Serve un mapping verso UUID prima della migrazione.',
+                $this->getTable(),
+                $legacyRows,
+            ));
+        }
+
+        // MariaDB 10.7+ has a native UUID type that refuses bigint -> uuid even on an empty
+        // column (error 4078 "Cannot cast 'bigint unsigned' as 'uuid'"); char(36) -> uuid is accepted.
+        if ($this->isMysqlFamilyDriver()) {
+            $table->char('user_id', 36)->nullable()->change();
+        }
+
+        if ($nullable) {
+            $table->uuid('user_id')->nullable()->change();
+
+            return;
+        }
+
+        $table->uuid('user_id')->change();
     }
 
     public function updateUserKeyInt(Blueprint $table): void

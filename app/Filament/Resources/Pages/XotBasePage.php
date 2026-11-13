@@ -166,7 +166,7 @@ abstract class XotBasePage extends FilamentPage implements HasForms
      *
      * @return class-string<Model>|null
      */
-    protected function getFormModel(): Model|string|null
+    protected function getFormModel(): ?string
     {
         return static::$model;
     }

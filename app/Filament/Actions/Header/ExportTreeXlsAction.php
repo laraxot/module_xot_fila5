@@ -44,7 +44,7 @@ class ExportTreeXlsAction extends XotBaseAction
                 // $query = $livewire->getFilteredTableQuery(); // ->getQuery(); // Staudenmeir\LaravelCte\Query\Builder
                 // $rows = $query->get();
                 Assert::implementsInterface($record, HasRecursiveRelationshipsContract::class);
-                /** @var Model&HasRecursiveRelationshipsContract $treeRecord */
+                /** @var Model&HasRecursiveRelationshipsContract<Model> $treeRecord */
                 $treeRecord = $record;
                 $rows = $treeRecord->descendantsAndSelf;
                 Assert::isInstanceOf($rows, Collection::class);

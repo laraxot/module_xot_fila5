@@ -4,13 +4,14 @@ issues: []
 discussions: []
 title: "Brainstorm Testcase Hierarchy Xotbase"
 type: concept
-status: deprecated
 module: "Xot"
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "deprecated BRAINSTORM-TestCase-Hierarchy-XotBase"
 related:
   - "./brainstorm-testcase-hierarchy-xotbase.md"
+status: superseded
+superseded_by: brainstorm-test-case-hierarchy-xot-base.md
 ---
 # Brainstorm Testcase Hierarchy Xotbase
 

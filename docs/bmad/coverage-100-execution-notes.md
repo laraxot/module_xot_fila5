@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "coverage 100 execution notes"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Coverage 100 - Execution Notes

@@ -26,10 +26,8 @@ beforeEach(function () use (&$action): void {
 describe('Get Pdf Content By Record Action', function () use (&$action): void {
     test('it generates pdf content from record', function (): void {
         // Arrange
-        $user = UserFactory::new()->createOne([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
+        // Email e id generati dalla factory: il DB di test e' condiviso, valori fissi collidono.
+        $user = UserFactory::new()->createOne(['name' => 'Test User']);
 
         // Mock view existence
         view()->addNamespace('user', resource_path('views'));
@@ -39,7 +37,7 @@ describe('Get Pdf Content By Record Action', function () use (&$action): void {
             app(GetPdfContentByRecordAction::class)->execute($user);
             Assert::fail('Expected exception was not thrown.');
         } catch (\Exception $e) {
-            Assert::assertSame("View 'user::user.show.pdf' not found", $e->getMessage());
+            Assert::assertSame("View 'user::user.show.pdf' not found for model ".$user::class, $e->getMessage());
         }
     });
 
@@ -62,7 +60,7 @@ describe('Get Pdf Content By Record Action', function () use (&$action): void {
 
     test('it generates correct filename for basic model', function () use (&$action): void {
         // Arrange
-        $user = UserFactory::new()->createOne(['id' => 123, 'name' => 'Test User']);
+        $user = UserFactory::new()->createOne(['name' => 'Test User']);
 
         // Use reflection to test protected method
         Assert::assertInstanceOf(GetPdfContentByRecordAction::class, $action);
@@ -74,7 +72,12 @@ describe('Get Pdf Content By Record Action', function () use (&$action): void {
         $filename = $method->invoke($action, $user);
 
         // Assert
-        Assert::assertEquals('user_123_test-user.pdf', $filename);
+        $key = $user->getKey();
+        if (! is_string($key)) {
+            throw new \RuntimeException('Il modello utente deve avere una chiave stringa (keyType string).');
+        }
+
+        Assert::assertEquals('user_'.$key.'_test-user.pdf', $filename);
     });
 
     test('it generates enhanced filename for performance models', function () use (&$action): void {
@@ -84,13 +87,9 @@ describe('Get Pdf Content By Record Action', function () use (&$action): void {
             protected $table = 'test_performance';
 
             protected $fillable = ['id', 'matr', 'cognome', 'nome'];
-
-            public function testGetKey(): int
-            {
-                return 456;
-            }
         };
 
+        $record->setAttribute('id', 456);
         $record->setAttribute('matr', 'ABC123');
         $record->setAttribute('cognome', 'Rossi');
         $record->setAttribute('nome', 'Mario');
@@ -160,7 +159,7 @@ describe('Get Pdf Content By Record Action', function () use (&$action): void {
             app(GetPdfContentByRecordAction::class)->execute($user, $customFilename);
             Assert::fail('Expected exception was not thrown.');
         } catch (\Exception $e) {
-            Assert::assertInstanceOf(\Exception::class, $e);
+            Assert::assertNotEmpty($e->getMessage());
         }
     });
 

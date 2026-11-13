@@ -63,6 +63,7 @@ docs/coverage-*.md
 docs/coverage.md
 docs/**/legacy/
 docs/legacy
+docs/archive/
 docs/phpstan/
 docs/**/scripts/
 docs/scripts/
@@ -164,12 +165,10 @@ vendor/
 /.windsurf
 /.windsurf/
 .windsurf~*
-graphify-out/
 tests/coverage-xot.xml
 
 # Laraxot -- forbidden module root folders (root hygiene directive 2026-09-29)
 /bashscripts/
-/graphify-out/
 /tools/
 /scripts/
 /.agents/
@@ -179,7 +178,6 @@ tests/coverage-xot.xml
 /.codex/
 /.opencode/
 /tests/graphify-out/
-graphify-out
 tools
 .agents
 .vscode

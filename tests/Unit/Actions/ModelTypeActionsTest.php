@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+use Illuminate\Database\Eloquent\Model as EloquentModel;
 use Illuminate\Support\Facades\Config;
 use Modules\Xot\Actions\GetModelClassByModelTypeAction;
 use Modules\Xot\Actions\GetModelTypeByModelAction;
@@ -18,6 +19,6 @@ it('resolves model types correctly', function (): void {
     Assert::assertSame(Log::class, $classAction->execute('log'));
 
     $typeAction = app(GetModelTypeByModelAction::class);
-    $result = $typeAction->execute(new class extends Log implements ModelContract {});
+    $result = $typeAction->execute(new class extends EloquentModel implements ModelContract {});
     Assert::assertIsString($result);
 });

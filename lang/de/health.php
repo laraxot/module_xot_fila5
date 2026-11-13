@@ -180,4 +180,9 @@ return [
     'title' => 'Zustand',
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+    'page' => [
+        'last_check' => [
+            'label' => 'Letzte Prüfung',
+        ],
+    ],
 ];

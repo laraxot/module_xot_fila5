@@ -8,8 +8,11 @@ use Mockery\MockInterface;
 use Modules\Xot\Actions\Blade\RegisterBladeComponentsAction;
 use Modules\Xot\Actions\File\GetComponentsAction;
 use Modules\Xot\Datas\ComponentFileData;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\LaravelData\DataCollection;
+
+uses(TestCase::class);
 
 it('registers blade components correctly', function (): void {
     $path = 'some/path';
@@ -31,8 +34,7 @@ it('registers blade components correctly', function (): void {
     app()->instance(GetComponentsAction::class, $getComponents);
 
     $action = app(RegisterBladeComponentsAction::class);
-    Assert::assertInstanceOf(RegisterBladeComponentsAction::class, $action);
-    Assert::assertSame(1, $mockComps->count());
+    Assert::assertCount(1, $mockComps);
 
     $action->execute($path, $namespace, $prefix);
 });
@@ -51,7 +53,7 @@ it('does nothing if no components found', function (): void {
 
     $action = app(RegisterBladeComponentsAction::class);
     Assert::assertInstanceOf(RegisterBladeComponentsAction::class, $action);
-    Assert::assertSame(0, $mockComps->count());
+    Assert::assertCount(0, $mockComps);
 
     $action->execute($path, $namespace);
 });

@@ -16,11 +16,14 @@ declare(strict_types=1);
  * Bonifica: python3 bashscripts/tools/audit/audit-case-collisions.py --fix-identical
  */
 
+use Modules\Xot\Tests\TestCase;
 use Symfony\Component\Process\Process;
 
 use function Safe\file_get_contents;
 use function Safe\file_put_contents;
 use function Safe\json_decode;
+
+uses(TestCase::class);
 
 function repoRoot(): string
 {

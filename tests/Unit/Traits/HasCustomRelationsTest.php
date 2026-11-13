@@ -39,5 +39,5 @@ it('creates custom relation', function (): void {
         $eagerMatcher
     );
 
-    Assert::assertInstanceOf(CustomRelation::class, $relation);
+    Assert::assertSame(CustomRelation::class, $relation::class);
 });

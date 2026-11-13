@@ -4,9 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit;
 
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Safe\shell_exec;
+
+uses(TestCase::class);
 
 /**
  * `laravel/config/local/<dominio_inverso>/` e' la configurazione per dominio (ptvx.local -> local/ptvx):

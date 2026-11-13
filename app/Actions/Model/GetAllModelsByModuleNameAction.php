@@ -28,8 +28,13 @@ class GetAllModelsByModuleNameAction
             return [];
         }
 
-        $mod_path = $mod->getPath().'/Models';
+        // I model vivono in app/Models (PSR-4 Modules\<Mod>\ => app/), non in <Mod>/Models.
+        $mod_path = $mod->getPath().'/app/Models';
         $mod_path = str_replace(['\\', '/'], [\DIRECTORY_SEPARATOR, \DIRECTORY_SEPARATOR], $mod_path);
+
+        if (! File::isDirectory($mod_path)) {
+            return [];
+        }
 
         $files = File::files($mod_path);
         /** @var array<string, class-string> $data */

@@ -26,10 +26,17 @@ class GetFactoryAction
     use QueueableAction;
 
     /**
-     * Execute the function with the given model class.
+     * Resolve (or generate) the Eloquent factory for a model class.
      *
-     * @param  string  $model_class  the class name of the model
-     * @return Factory<covariant Model>
+     * Scopo: unico punto di risoluzione per HasXotFactory (runtime). Per PHPStan
+     * `Model::factory()` e' tipizzato dal resolver che `XotServiceProvider` registra con
+     * `Factory::guessFactoryNamesUsing()` e che usa `getFactoryClass()`: nei test non serve
+     * ripiegare su `ModelFactory::new()` ne' su `assert($x instanceof Model)`.
+     *
+     * @template TModel of Model
+     *
+     * @param  class-string<TModel>  $model_class  the class name of the model
+     * @return Factory<TModel>
      *
      * @throws \Exception when the factory file cannot be loaded or generated
      */
@@ -45,7 +52,7 @@ class GetFactoryAction
         }
 
         if (class_exists($factory_class)) {
-            return $this->instantiateFactory($factory_class);
+            return $this->instantiateFactory($factory_class, $model_class);
         }
 
         $this->createFactory($model_class);
@@ -61,7 +68,7 @@ class GetFactoryAction
             ),
         );
 
-        return $this->instantiateFactory($factory_class);
+        return $this->instantiateFactory($factory_class, $model_class);
     }
 
     /**
@@ -169,11 +176,16 @@ class GetFactoryAction
     }
 
     /**
+     * @template TModel of Model
+     *
      * @param  class-string  $factory_class
-     * @return Factory<covariant Model>
+     * @param  class-string<TModel>  $model_class
+     * @return Factory<TModel>
      */
-    private function instantiateFactory(string $factory_class): Factory
+    private function instantiateFactory(string $factory_class, string $model_class): Factory
     {
+        Assert::classExists($model_class, "La classe del modello {$model_class} non esiste");
+
         $factory = $factory_class::new();
 
         Assert::isInstanceOf(
