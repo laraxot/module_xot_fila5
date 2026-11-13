@@ -5,7 +5,7 @@ declare(strict_types=1);
 return [
     'fields' => [
         'anno' => [
-            'label' => 'anno',
+            'label' => 'year',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',

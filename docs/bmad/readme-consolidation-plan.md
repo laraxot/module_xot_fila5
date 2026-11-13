@@ -3,10 +3,6 @@ title: "Xot - readme-consolidation-plan.md"
 module: Xot
 bmad: true
 status: active
-type: note
-updated: 2026-10-09
-tags: [docs, xot, bmad]
-qmd: "piano consolidamento file readme.md duplicati xot"
 ---
 # Piano Consolidamento File readme.md Duplicati
 

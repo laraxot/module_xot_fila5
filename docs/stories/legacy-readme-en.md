@@ -1,10 +1,13 @@
+<<<<<<< .merge_file_nW64Fm
+=======
 ---
 title: "Xot - legacy-readme-en.md"
 module: Xot
 bmad: true
 status: active
 ---
-# ⚡ Xot: English presentation
+>>>>>>> .merge_file_colt3P
+# ⚡ Xot — English presentation
 
 [![Core](https://img.shields.io/badge/Role-Platform%20Core-6A1B9A.svg)](#)
 [![Laravel 12](https://img.shields.io/badge/Laravel-12-red.svg)](https://laravel.com/)
@@ -16,7 +19,7 @@ status: active
 [![Laraxot Modules](https://img.shields.io/badge/Architecture-Modular-purple.svg)](#)
 [![FixCity Platform](https://img.shields.io/badge/Platform-FixCity-008758.svg)](#)
 
-> **Laraxot DNA.** BaseModel, XotBaseServiceProvider, Filament bases: conventions that keep 20+ modules aligned.
+> **Laraxot DNA.** BaseModel, XotBaseServiceProvider, Filament bases — conventions that keep 20+ modules aligned.
 
 ---
 
@@ -45,7 +48,7 @@ No FixCity without Xot: internal framework preventing duplication and architectu
 
 Want to build **platform**, not just features? Start here.
 
-Frontoffice stack: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filament v5**: see [STORY-133](../../../docs/stories/STORY-133-frontend-stack-religion-tailwind-alpine-lit.md).
+Frontoffice stack: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filament v5** — see [STORY-133](../../../docs/stories/STORY-133-frontend-stack-religion-tailwind-alpine-lit.md).
 
 ---
 
