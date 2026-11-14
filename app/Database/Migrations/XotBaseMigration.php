@@ -471,11 +471,6 @@ abstract class XotBaseMigration extends LaravelMigration
      *
      * Rifiuta la conversione se esistono valori: un id intero non diventa un UUID,
      * e uno schema cambiato in silenzio corrompe i dati. Il mapping va deciso prima.
-<<<<<<< .merge_file_V4OxRm
-     */
-    public function convertUserIdToUuidIfLegacyBigint(Blueprint $table, bool $nullable = true): void
-    {
-=======
      *
      * Con `preserveLegacyValues: true` la guardia non si applica: su MariaDB il
      * passo intermedio bigint -> char(36) conserva i valori esatti come stringhe
@@ -488,26 +483,10 @@ abstract class XotBaseMigration extends LaravelMigration
         bool $nullable = true,
         bool $preserveLegacyValues = false,
     ): void {
->>>>>>> .merge_file_x6IwHV
         if (! $this->hasColumn('user_id') || $this->getColumnType('user_id') !== 'bigint') {
             return;
         }
 
-<<<<<<< .merge_file_V4OxRm
-        $legacyRows = DB::connection($this->getConnection())
-            ->table($this->getTable())
-            ->whereNotNull('user_id')
-            ->count();
-
-        if ($legacyRows > 0) {
-            throw new \RuntimeException(sprintf(
-                'Conversione user_id bloccata su %s: %d righe con valore bigint. Serve un mapping verso UUID prima della migrazione.',
-                $this->getTable(),
-                $legacyRows,
-            ));
-        }
-
-=======
         $legacyQuery = DB::connection($this->getConnection())
             ->table($this->getTable())
             ->whereNotNull('user_id');
@@ -544,7 +523,6 @@ abstract class XotBaseMigration extends LaravelMigration
             return;
         }
 
->>>>>>> .merge_file_x6IwHV
         // MariaDB 10.7+ ha un tipo `uuid` nativo e rifiuta ALTER bigint -> uuid anche a tabella vuota
         // (errore 4078 "Cannot cast 'bigint unsigned' as 'uuid'"), mentre char(36) -> uuid e' accettato.
         // MySQL mappa uuid() su char(36) e non ha bisogno del passo intermedio. Lo stesso Blueprint emette

@@ -367,27 +367,12 @@ class XotData extends Data implements Wireable
     }
 
     /**
-<<<<<<< .merge_file_GruKBe
-     * Layout HTML delle e-mail: prima quelli del tema pubblico, poi quelli del modulo Notify.
-     * Un tema senza `resources/mail-layouts` (es. Two) faceva fallire l'invio delle e-mail da modello
-     * e la pagina «Nuovo modello e-mail» (2026-11-10).
-=======
      * Layout HTML delle email: prima quello del tema pubblico, se il tema non lo ha quello del modulo Notify.
      * Un tema senza `resources/mail-layouts` non deve far fallire l'invio (es. il reset della password).
->>>>>>> .merge_file_hDNmRA
      */
     public function getMailHtmlLayoutPath(string $key = ''): string
     {
         $themePath = base_path('Themes/'.$this->pub_theme.'/resources/mail-layouts/'.$key);
-<<<<<<< .merge_file_GruKBe
-        if (file_exists($themePath)) {
-            return $themePath;
-        }
-
-        $modulePath = base_path('Modules/Notify/resources/mail-layouts/'.$key);
-
-        return file_exists($modulePath) ? $modulePath : $themePath;
-=======
         if ($key === '' || is_file($themePath)) {
             return $themePath;
         }
@@ -395,7 +380,6 @@ class XotData extends Data implements Wireable
         $notifyPath = base_path('Modules/Notify/resources/mail-layouts/'.$key);
 
         return is_file($notifyPath) ? $notifyPath : $themePath;
->>>>>>> .merge_file_hDNmRA
     }
 
     /**

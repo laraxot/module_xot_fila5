@@ -120,17 +120,10 @@
         "psr-4": {
             "Modules\\Xot\\Tests\\": "tests/"
         },
-<<<<<<< .merge_file_lIc022
-        "classmap": ["tests/"]
-=======
-<<<<<<< .merge_file_9O9JRY
+        "classmap": ["tests/"],
         "files": [
             "tests/Support/helpers.php"
         ]
-=======
-        "classmap": ["tests/"]
->>>>>>> .merge_file_Uisczg
->>>>>>> .merge_file_wjCvWt
     },
     "scripts": {
         "analyse": "vendor/bin/phpstan analyse",
