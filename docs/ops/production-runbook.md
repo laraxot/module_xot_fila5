@@ -2,6 +2,8 @@
 title: "Runbook di produzione FixCity"
 type: runbook
 created: 2026-11-10
+updated: 2026-11-10
+
 updated: 2026-11-12
 related:
   - ../stories/ci-deploy-ops-hardening.story.md

@@ -1,11 +1,8 @@
 ---
-<<<<<<< .merge_file_SOOUOM
 tags: [documentation]
 qmd: "phpstan analyse modules 2026 09 24.story"
 issues: []
 discussions: []
-=======
->>>>>>> .merge_file_fWs8cb
 id: "Xot/phpstan-analyse-modules-2026-09-24"
 title: "PHPStan analyse Modules — verifica corrente e remediation swarm"
 type: story
@@ -19,16 +16,12 @@ related:
   - ./5.224-phpstan-analyse-modules.story.md
   - ./5.227-phpstan-modules-verify-coordinated.story.md
   - ./phpstan-fleet-swarm-2026-09-23.story.md
-<<<<<<< .merge_file_SOOUOM
   - ../../../../../../docs/wiki/skills/phpstan-solve-errors-no-ignores.md
   - ../../../../../../docs/wiki/memories/phpstan-fleet-fix-2026-09-23.md
-=======
   - ../../../../../docs/wiki/skills/phpstan-solve-errors-no-ignores.md
   - ../../../../../docs/wiki/memories/phpstan-fleet-fix-2026-09-23.md
->>>>>>> .merge_file_fWs8cb
 references:
   sprint_status: "Xot/phpstan-analyse-modules-2026-09-24"
----
 
 # PHPStan `analyse Modules` — verifica corrente e remediation swarm
 
@@ -204,4 +197,3 @@ nessun file PHP modificato dal presente swarm.
   annunciato prima in `docs/chat/phpstan-coordination.md`; `phpstan
   clear-result-cache` → exit 0. Gate freddo finale dopo il clear → exit 0,
   `totals.errors=0`, `totals.file_errors=0`; report rinnovati in
-  `build/phpstan-modules-final.json`, `.stderr` e `.exit`.

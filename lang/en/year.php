@@ -5,10 +5,6 @@ declare(strict_types=1);
 return [
     'fields' => [
         'anno' => [
-<<<<<<< .merge_file_CX9qMI
-            'label' => 'year',
-=======
->>>>>>> .merge_file_F0RGHr
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',

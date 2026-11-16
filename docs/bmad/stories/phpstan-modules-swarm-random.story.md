@@ -10,7 +10,6 @@ acceptance_criteria:
 references:
   - bashscripts/ai/wiki/memories/agent-standing-order.md
   - docs/sprint-status.yaml
----
 
 # PHPStan Modules swarm random + docs moduli/temi
 
@@ -142,8 +141,6 @@ swarm parallelo per singolo modulo in ordine random, come da pilastro 8.
     5. Fix 12 real bugs (Pdnd Firebase, Activity UserContract, Performance instanceof)
   - **Per-module logic assessment**: ALL CLEAN per purpose (no logic errors, only config/bootstrap issues)
   - **Story status**: cluster 5 analysis complete, report finalized, awaiting bootstrap configuration fixes
-<<<<<<< .merge_file_v3QMtB
-=======
 
 - 2026-10-20 (coordinatore Cursor, wave Modules gate vivo):
   - Gate: `cd laravel && ./vendor/bin/phpstan analyse Modules` → inventariato in
@@ -436,4 +433,3 @@ Fuori scope: `tools/visual/scratch-auth-fixture.sh` (nessun marker in `HEAD`), l
 5. Strumenti citati e assenti dopo `1af871d0c` (`tools/cms/`, `tools/heavy-slot.sh`, `tools/visual/parity-wizard-steps.sh`, `tools/migrations/`, `tools/pest-scratch-db.sh`): vedi «Incidente» sopra; non ripristinati.
 6. La tabella di `root-script-policy.md` (2026-10-13) elenca 4 script in radice; oggi ci sono anche `deploy.sh` e `phpstan-fix-script.sh` e in `laravel/` `compare-html.py`, `fix-vartag-xot.sh`: non aggiornata.
 7. Una riga della policy modulare cita `github.com/provt/` (progetto di un'altra macchina): lasciata, non verificabile qui.
->>>>>>> .merge_file_S43fAY

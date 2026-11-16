@@ -1,12 +1,8 @@
-<<<<<<< .merge_file_qQyjb4
-=======
 ---
 title: "Xot - 2026-10-06-phpstan-l10-systematic-resolution.story.md"
 module: Xot
 bmad: true
 status: active
----
->>>>>>> .merge_file_YUx2DH
 # BMAD Story: PHPStan Level 10 Systematic Resolution
 
 **Date**: 2026-10-06  
@@ -14,7 +10,6 @@ status: active
 **Owner**: Marco Xot  
 **Scope**: Resolve 25 PHPStan L10 errors across 4 modules + audit docs structure
 
----
 
 ## Goal
 Systematically resolve all PHPStan Level 10 errors across the codebase using parallel subagent swarm, BMAD workflow, and continuous learning/improvement.
@@ -26,7 +21,6 @@ Systematically resolve all PHPStan Level 10 errors across the codebase using par
 - **Verification**: Re-analyze after each fix
 - **Learning**: Update second brain with patterns
 
----
 
 ## Errors Fixed (25 total)
 
@@ -36,15 +30,11 @@ Systematically resolve all PHPStan Level 10 errors across the codebase using par
 | Line 89: Redundant assertIsArray() | Removed assert (already type-hinted) | ac8d17e30c |
 
 ### 2. IndennitaCondizioniLavoro Module (3 errors)
-| Error | Fix | Commit |
-|-------|-----|--------|
 | Line 6: Blueprint type hint missing | Added import + closure type-hinting | included |
 | Line 59: appendColumns() undefined | Added PHPDoc type-cast for PeriodoColumn | included |
 | Line 78: getTableFilters() return type | Added Filter assertion inline | included |
 
 ### 3. Ptv Module (2 errors)
-| Error | Fix | Commit |
-|-------|-----|--------|
 | Line 73: Custom filter type mismatch | Added @var array<string, Filter> | 296c6cd85f |
 | Line 28: form() deprecated (Filament 5) | Replaced with schema() | 296c6cd85f |
 
@@ -57,7 +47,6 @@ Systematically resolve all PHPStan Level 10 errors across the codebase using par
 | Type hints | 3 | Added return types to mixed getSchema() + callback types |
 | Factory override | 1 | Removed incompatible factory() method |
 
----
 
 ## Secondary Work: Docs Structure Audit
 
@@ -83,7 +72,6 @@ Systematically resolve all PHPStan Level 10 errors across the codebase using par
 
 **Action**: Created audit report + recommendations for follow-up phases.
 
----
 
 ## Lessons Learned (Second Brain)
 
@@ -107,7 +95,6 @@ Systematically resolve all PHPStan Level 10 errors across the codebase using par
    - 45% of modules lack stories → lost backlog/decision history
    - Pattern models are replicable; make them templates
 
----
 
 ## Verification
 
@@ -119,7 +106,6 @@ Ptv:                          ✅ [OK] No errors
 Sigma target files:           ✅ [OK] No errors
 ───────────────────────────────────────────────────
 TOTAL: 0/25 errors (100% resolved)
-```
 
 **Commits**:
 - ac8d17e30c: Performance test assertion fix
@@ -127,7 +113,6 @@ TOTAL: 0/25 errors (100% resolved)
 - 296c6cd85f: Ptv Filament fixes
 - (IndennitaCondizioniLavoro fixes embedded in story)
 
----
 
 ## Next Phases
 
@@ -145,6 +130,5 @@ TOTAL: 0/25 errors (100% resolved)
 - Update second brain with each fix pattern
 - Review CLAUDE.md conventions quarterly
 
----
 
 **BMAD Workflow Compliance**: ✅ All stories created + verified + documented
