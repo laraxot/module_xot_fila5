@@ -1,70 +1,32 @@
 ---
-id: Xot/module-audit
-title: "Audit brownfield del modulo Xot"
-status: in-progress
-epic: module-quality
+title: "Audit BMAD — Xot"
+type: audit
+status: review
+updated: 2026-11-16
 module: Xot
-qmd: "Xot audit architettura qualità PHPStan Pest BMAD"
-references:
-  - ../00-index.md
-  - ../../../../Xot/docs/ecc/00-index.md
+qmd: "audit BMAD Xot source-first qualità"
 ---
 
-# Audit del modulo Xot
+# Audit BMAD — Xot
 
-## Scopo e confini
+SSoT dettagliata: [audits/xot-audit.md](./audits/xot-audit.md)
 
-Questo documento è l'artefatto BMAD di ricognizione del modulo Xot. Descrive
-solo evidenze presenti nel worktree e separa i fatti verificati dalle attività
-ancora da eseguire. Il modulo appartiene all'applicazione Laravel modulare;
-le decisioni applicative devono restare nelle classi e nei test del modulo,
-mentre le convenzioni trasversali restano in Modules/Xot.
+## Sintesi (2026-11-16)
 
-## Inventario iniziale verificato
+| Metrica | Valore |
+|---|---:|
+| PHP `app/` | 602 |
+| Test | 329 |
+| Resources | 7 |
+| Actions | 238 |
+| Services | 2 |
+| Policy `return true` | 2 |
+| Marker | 0 |
 
-| Area | Conteggio | Evidenza/interpretazione |
-|---|---:|---|
-| PHP sotto app/ | 602 | superficie applicativa da mappare per responsabilità |
-| PHP sotto tests/ | 329 | contratti automatizzati presenti |
-| Markdown sotto docs/ | 1146 | patrimonio documentale da deduplicare e indicizzare |
-| Marker Git in PHP/JSON/YAML | 0 | controllo iniziale senza marker nei formati analizzati |
-| composer.json/module.json | validi | parsing JSON riuscito |
+## Lo scopo in una frase **Xot è il fondamento architetturale dell'intera piattaforma: fornisce classi base (`XotBaseModel`, `XotBaseResource`, `XotBasePage`), contract per la type-safety, e pattern riutilizzabili che tutti gli altri 17 moduli estendono.** Nessun modulo estende Filament direttamente. Si estende `XotBaseResource`, `XotBaseListRecords`, `XotBaseWidget`, `XotBaseServiceProvider`, `XotBaseMigration`. Questa è **la** regola fondamentale del progetto, e Xot è il posto dove vive.
 
-## Audit BMAD
+## Gate
 
-- Analisi: identificare responsabilità, dipendenze, entry point, Actions,
-  modelli, policy, risorse Filament, rotte, migrazioni e flussi di test.
-- Architettura: verificare che la logica di dominio resti nelle Queueable
-  Actions e che le estensioni Filament usino le basi Xot previste.
-- Qualità: eseguire PHPStan level massimo sul solo modulo, Pint/PHP lint sui
-  file toccati e Pest in ambiente testing non produttivo.
-- Rischi: cercare duplicazioni, merge irrisolti, import morti, cast da mixed,
-  test vuoti, documentazione ridondante e nomi Markdown instabili.
-- Piano: ogni finding deve diventare una story BMAD nel modulo con owner,
-  acceptance criteria, evidenza e gate; nessun finding viene chiuso per il solo
-  fatto che PHPStan non lo segnali.
-
-## Gate ancora da eseguire
-
-    cd laravel
-    php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules/Xot --no-progress
-    php -l Modules/Xot/app/<file>.php
-    ./vendor/bin/pest Modules/Xot/tests --no-coverage
-
-Il risultato del comando PHPStan e del gate Pest non è dichiarato qui finché non
-è stato eseguito e registrato con output osservabile. Non usare baseline,
-ignoreErrors, database distruttivi o Git LFS.
-
-## Deliverable successivi
-
-1. mappa architetturale e confini del modulo;
-2. inventario dei flussi utente e dei contratti dati;
-3. registro dei finding classificati per rischio;
-4. backlog BMAD con stories verificabili;
-5. indice QMD aggiornato dopo ogni modifica documentale.
-
-## Stato
-
-**In progress.** L'inventario statico è verificato; l'audit semantico e i gate
-per-modulo devono ancora essere completati.
-
+- PHPStan modulo / `Modules`: 0 errori (verifica 2026-11-16).
+- Pest: da eseguire in ambiente testing non produttivo.
+- Security/runtime: story figlie su finding P0/P1 dell'audit dettagliato.
