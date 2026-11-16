@@ -5,13 +5,9 @@ status: done
 epic: "PROJECT-TOOLING"
 module: Xot
 created: 2026-09-29
-<<<<<<< HEAD:docs/bmad/stories/pi-settings-extensions-migration-20260929.story.md
-updated: 2026-09-29
-=======
 updated: 2026-11-16
 tags: [docs, xot, bmad]
 qmd: "pi ripristino settings e migrazione hooks xot"
->>>>>>> laraxot/dev:docs/bmad/stories/pi-settings-extensions-migration.story.md
 ---
 
 # Pi — ripristino settings e migrazione hooks
