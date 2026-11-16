@@ -1,11 +1,5 @@
 ---
-title: "Xot - brainstorming.md"
-module: Xot
-bmad: true
-status: active
----
----
-title: "Xot: brainstorming BMAD"
+title: "Xot — brainstorming BMAD"
 type: brainstorming
 tags: [brainstorming, xot, architettura, refactoring, phpstan]
 created: 2026-09-28
@@ -17,10 +11,9 @@ related:
   - discussions/01-traits-composition.md
   - architecture.md
   - README.md
-status: draft
 ---
 
-# Xot: brainstorming
+# Xot — brainstorming
 
 > **SUMMARY**: Indice e raccolta di domande aperte, rischi e ipotesi per il refactoring architetturale di Xot. Gli shard specialistici sono in `brainstorming/` e `discussions/`.
 
@@ -53,7 +46,7 @@ Le risposte devono diventare story BMAD con acceptance criteria misurabili, rife
 ## Vedi anche
 
 - [Architecture](architecture.md)
-- [Stories](stories/): indice completo in [README.md](readme.md)
+- [Stories](stories/) — indice completo in [README.md](readme.md)
 - [Epics](epics/module-roadmap.md)
 # Brainstorming - Modulo Xot
 
