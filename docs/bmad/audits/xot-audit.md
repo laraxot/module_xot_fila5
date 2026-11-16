@@ -30,6 +30,24 @@ PHPStan/Pest proporzionati.
 | Marker di conflitto | 0 |
 | Label/tooltip letterali Filament | 25 |
 
+
+## Analisi Funzionale e Scopo di Dominio
+
+### Perché Esiste (Scopo Fondamentale)
+Core framework e fondazione architetturale agnostica di Laraxot.
+
+### Valore di Business e Utilità
+Fornisce le astrazioni fondamentali, la tipizzazione rigorosa, le convenzioni DRY+KISS e l'integrazione tra moduli Laravel e Filament.
+
+### Architettura e Pattern Laraxot
+Classi base (XotBaseModel, XotBaseResource, XotBasePage); helper universali; azioni Spatie Queueable riutilizzabili; isolamento da dettagli specifici del singolo progetto.
+
+### Standard di Qualità e Conformità
+- **PHPStan**: Confermato a Level Max con 0 errori.
+- **Filament**: Conformità Filament 5 con estensione delle classi XotBase*.
+- **Naming**: Convenzione kebab-case rigorosa per tutti i documenti e classi PSR-4.
+- **Trans**: Traduzioni dinamiche via Lang, nessun testo hardcoded.
+
 ## Audit per dimensione
 
 ### Architettura e confini

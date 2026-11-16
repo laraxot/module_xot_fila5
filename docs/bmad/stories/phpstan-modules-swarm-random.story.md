@@ -506,3 +506,13 @@ Regole rispettate: mixed ultima spiaggia, no ignore/baseline, BMAD + second brai
 
 `GetTenantNameActionTest` fallito per `SQLSTATE[HY000] [2002] Connection timed out` verso DB testing non raggiungibile da questo host (non e' 10.100.200.15, ma il DSN punta a un host irraggiungibile). Skip documentato: PHPStan Modules = 0 verificato; Pest mirato da ripetere quando DB testing e' raggiungibile.
 
+## Esito 2026-11-16 — Activity tests PHPStan 0 (laravel-testing-expert)
+
+Diario swarm (supersede del residuo Activity ~151 nei scan precedenti). Link: story modulo
+`Activity/docs/bmad/stories/phpstan-activity-tests-zero.story.md`. Istruzione utente:
+portare PHPStan Activity a 0; Pest se possibile; aggiornare docs bmad + questo diario.
+
+- **PHPStan** `analyse Modules/Activity --error-format=raw`: **0 errori**.
+- Cause tipiche fixate: FQCN TestCase doppio; `use` dopo `test()`; LogModel* `$activity`; harness paginate; `Helpers.php` in Pest; colonne event-sourcing.
+- **Pest:** hang TCP `10.100.200.53:3306` su connessione `user` (strace `EINPROGRESS`). `test_data.sqlite` creato; suite non verde finché `user` → sqlite condiviso.
+

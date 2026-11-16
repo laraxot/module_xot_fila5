@@ -1,7 +1,12 @@
 ---
-qmd: ECC audit modulo Xot verification security testing workflow
-title: ECC audit operativo modulo Xot
-status: baseline-review
+id: Xot/ecc-audit
+title: "ECC — audit operativo del modulo Xot"
+status: in-progress
+module: Xot
+qmd: "Xot ECC audit verification security testing"
+references:
+  - ../bmad/audit.md
+  - 00-index.md
 ---
 
 # ECC audit operativo modulo Xot
@@ -53,3 +58,4 @@ correzione minima, source-first, con lock prima dell'edit e gate dopo l'edit.
 Baseline ECC creata. Il modulo non è dichiarato conforme finché gli acceptance
 criteria del documento BMAD corrispondente non risultano verificati con output
 dei gate.
+
