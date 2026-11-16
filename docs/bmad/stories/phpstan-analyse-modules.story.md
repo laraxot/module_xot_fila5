@@ -1,10 +1,6 @@
 ---
 id: "Xot/phpstan-analyse-modules-2026-09-24"
-<<<<<<< .merge_file_mC3t0e
 title: "PHPStan analyse Modules — verifica corrente e remediation swarm"
-=======
-title: "PHPStan analyse Modules: verifica corrente e remediation swarm"
->>>>>>> .merge_file_xZPgMt
 type: story
 module: Xot
 epic: "5"
@@ -22,11 +18,7 @@ references:
   sprint_status: "Xot/phpstan-analyse-modules-2026-09-24"
 ---
 
-<<<<<<< .merge_file_mC3t0e
 # PHPStan `analyse Modules` — verifica corrente e remediation swarm
-=======
-# PHPStan `analyse Modules`: verifica corrente e remediation swarm
->>>>>>> .merge_file_xZPgMt
 
 ## Richiesta
 
@@ -152,28 +144,16 @@ nessun file PHP modificato dal presente swarm.
   nessun marker `<<<<<<<` in file `.php`. I marker nei `.md` sono esempi
   di documentazione (non conflitti reali).
 - `cd laravel && php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules`
-<<<<<<< .merge_file_mC3t0e
   → **`[OK] No errors` — EXIT 0** su tutto il tree `Modules/` (10.134+ file).
 - Zero segnalazioni PHPStan da sistemare. Nessun fix applicato.
 - Nessun file PHP modificato → `php -l`, PHPMD, PHPInsights gate non
   richiesti (scope PHPStan = 0).
 - Pest: **skippato** — DB `10.100.200.53:3306` irraggiungibile (stesso
-=======
-  → **`[OK] No errors`: EXIT 0** su tutto il tree `Modules/` (10.134+ file).
-- Zero segnalazioni PHPStan da sistemare. Nessun fix applicato.
-- Nessun file PHP modificato → `php -l`, PHPMD, PHPInsights gate non
-  richiesti (scope PHPStan = 0).
-- Pest: **skippato**: DB `10.100.200.53:3306` irraggiungibile (stesso
->>>>>>> .merge_file_xZPgMt
   problema noto documentato nella story); skip documentato, non un difetto.
 - Lock rilasciati, second brain aggiornato (questa voce). `qmd update` non
   disponibile in ambiente, documentato come skip.
 
-<<<<<<< .merge_file_mC3t0e
 ## Riapertura 2026-09-24 — richiesta reiterata e run corrente
-=======
-## Riapertura 2026-09-24: richiesta reiterata e run corrente
->>>>>>> .merge_file_xZPgMt
 
 - Tree condiviso ancora molto sporco; il run iniziale lanciato in questa sessione
   (`analyse Modules --error-format=json`) ha riportato **1.316 `file_errors` in
@@ -212,8 +192,4 @@ nessun file PHP modificato dal presente swarm.
   annunciato prima in `docs/chat/phpstan-coordination.md`; `phpstan
   clear-result-cache` → exit 0. Gate freddo finale dopo il clear → exit 0,
   `totals.errors=0`, `totals.file_errors=0`; report rinnovati in
-<<<<<<< .merge_file_mC3t0e
   `build/phpstan-modules-final.json`, `.stderr` e `.exit`.
-=======
-  `build/phpstan-modules-final.json`, `.stderr` e `.exit`.
->>>>>>> .merge_file_xZPgMt

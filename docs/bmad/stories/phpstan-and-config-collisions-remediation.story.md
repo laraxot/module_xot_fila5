@@ -38,6 +38,21 @@ usare Git LFS.
 - Ripuliti `.gitattributes`, `.gitignore` e `composer.json` di Job, Rating,
   Activity e Notify; mantenute regole binarie normali senza Git LFS.
 
+## Verifica tranche configurazioni
+
+- Risolte le sei entry non unite dell'indice Git sui `.gitattributes` di Job,
+  Rating e UI; nessun marker residuo nei `.gitattributes`, `.gitignore` o
+  `composer.json`.
+- Allineate le regole binarie di 15 `.gitattributes` più il prototipo
+  `bashscripts/templates/gitattributes.module`: rimosse `!merge`, `!diff` e
+  `!text` che annullavano la protezione `binary`; resta solo `binary !filter`.
+- Validati tutti i `composer.json` del progetto: JSON valido (`invalid=0`).
+- `bash bashscripts/tools/check-no-git-lfs.sh`: verde, nessun filtro attivo,
+  pointer, marker o hook LFS.
+- PHPStan globale resta in verifica concorrente: i run precedenti hanno prodotto
+  errori transitori durante la bonifica Activity e la cache condivisa; non si
+  considera chiuso finché un run isolato termina con exit 0.
+
 ## Rischi aperti
 
 Il worktree contiene modifiche concorrenti preesistenti. Ogni integrazione deve

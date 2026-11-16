@@ -1,7 +1,7 @@
 ---
 title: "Xot — marker conflitto PHP e bootstrap PHPStan"
 type: story
-status: in-progress
+status: done
 module: Xot
 epic: quality
 story_id: phpstan-conflict-markers-bootstrap
@@ -41,7 +41,7 @@ Fuori scope primario: debito marker nei soli `.md`.
 
 1. [x] Zero marker `<<<<<<<` in app/ e tests/ PHP.
 2. [x] `php -l` verde (app/tests; file noti OK).
-3. [ ] PHPStan `Modules/Xot` documentato (exit + errori; no ignore / no mixed).
+3. [x] PHPStan `Modules/Xot` documentato (exit + errori; no ignore / no mixed).
 4. [x] Story BMAD + entry sprint-status.
 
 ## Esito scansione 2026-11-16
@@ -51,12 +51,16 @@ Fuori scope primario: debito marker nei soli `.md`.
 | app/ | 0 | OK |
 | tests/ | 0 | OK |
 
-Nessun fix codice richiesto: i PHP noti sono già puliti.
+Marker PHP già assenti (file noti puliti). Fix collaterale PHPStan:
+`FilterBuilder::dateRange` resta su `->form()` (Filament tables 5.11: `schema()` è
+deprecato alias di `form()`).
+
 Debito residuo docs: ~35 `.md` con marker (non bloccano bootstrap PHPStan).
 
 ## PHPStan
 
-(da compilare dopo analyse)
+- Comando: `php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules/Xot`
+- Exit: **0** — errori: **0**
 
 ## Note
 
