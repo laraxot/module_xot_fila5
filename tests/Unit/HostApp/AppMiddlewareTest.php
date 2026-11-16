@@ -23,34 +23,59 @@ use Modules\Xot\Tests\TestCase;
  * Tutti i collaboratori che toccherebbero il database (guard di Auth, store di
  * sessione) sono sostituiti da mock sulla facade: il test descrive il contratto
  * del middleware, non la persistenza. Nessuna connessione aperta.
+ *
+ * Queste classi esistono solo negli host con lo scheletro completo (ptvx,
+ * predict, ...). Gli host con app/ minimale (restaurant, techplanner, ...)
+ * non le forniscono: ogni test salta se la classe mancante, invece di fallire.
+ * I valori di ritorno sono tipizzati con Assert::assertIs* perche' su host
+ * senza la classe PHPStan vede mixed.
  */
 
 uses(TestCase::class);
 
 test('trust hosts trusts every subdomain of the application url', function (): void {
+    if (! class_exists(TrustHosts::class)) {
+        $this->markTestSkipped('Host app senza App\Http\Middleware\TrustHosts.');
+    }
+
     $hosts = (new TrustHosts(app()))->hosts();
 
     $appHost = Str::of(Config::string('app.url'))->after('://')->before('/')->value();
 
+    Assert::assertIsArray($hosts);
     Assert::assertCount(1, $hosts);
-    Assert::assertIsString($hosts[0]);
+    $pattern = $hosts[0] ?? null;
+    Assert::assertIsString($pattern);
     // Il pattern di Laravel e' `^(.+\.)?<host quotato>$`: verifichiamo che copra
     // sia il dominio nudo sia un suo sottodominio, senza replicarne la stringa.
-    Assert::assertMatchesRegularExpression('#'.$hosts[0].'#', $appHost);
-    Assert::assertMatchesRegularExpression('#'.$hosts[0].'#', 'admin.'.$appHost);
+    Assert::assertMatchesRegularExpression('#'.$pattern.'#', $appHost);
+    Assert::assertMatchesRegularExpression('#'.$pattern.'#', 'admin.'.$appHost);
 });
 
 test('authenticate returns no redirect target for json requests', function (): void {
+    if (! class_exists(Authenticate::class)) {
+        $this->markTestSkipped('Host app senza App\Http\Middleware\Authenticate.');
+    }
+
     $request = Request::create('/protected', 'GET', server: ['HTTP_ACCEPT' => 'application/json']);
 
     $redirectTo = (function (Request $request): ?string {
-        return $this->redirectTo($request);
+        $target = $this->redirectTo($request);
+        if ($target !== null) {
+            Assert::assertIsString($target);
+        }
+
+        return $target;
     })->call(new Authenticate(app('auth')), $request);
 
     Assert::assertNull($redirectTo);
 });
 
 test('redirect if authenticated lets a guest through untouched', function (): void {
+    if (! class_exists(RedirectIfAuthenticated::class)) {
+        $this->markTestSkipped('Host app senza App\Http\Middleware\RedirectIfAuthenticated.');
+    }
+
     $guard = Mockery::mock();
     $guard->shouldReceive('check')->once()->andReturnFalse();
     Auth::shouldReceive('guard')->once()->with(null)->andReturn($guard);
@@ -64,6 +89,10 @@ test('redirect if authenticated lets a guest through untouched', function (): vo
 });
 
 test('redirect if authenticated sends an authenticated user home', function (): void {
+    if (! class_exists(RedirectIfAuthenticated::class)) {
+        $this->markTestSkipped('Host app senza App\Http\Middleware\RedirectIfAuthenticated.');
+    }
+
     $guard = Mockery::mock();
     $guard->shouldReceive('check')->once()->andReturnTrue();
     Auth::shouldReceive('guard')->once()->with('web')->andReturn($guard);
@@ -79,6 +108,10 @@ test('redirect if authenticated sends an authenticated user home', function (): 
 });
 
 test('logout action clears the web guard and the session', function (): void {
+    if (! class_exists(Logout::class)) {
+        $this->markTestSkipped('Host app senza App\Livewire\Actions\Logout.');
+    }
+
     $calls = [];
 
     $guard = Mockery::mock();

@@ -20,6 +20,10 @@ use Modules\Xot\Tests\TestCase;
  * risolvibili sotto Testbench: il test registra `tests/Unit/fixtures/views`
  * come percorso aggiuntivo, cosi' `view()` risolve senza montare un tema.
  * Nessun accesso al database.
+ *
+ * Queste classi esistono solo negli host con lo scheletro completo (ptvx,
+ * predict, ...). Gli host con app/ minimale (restaurant, techplanner, ...)
+ * non le forniscono: ogni test salta se la classe mancante, invece di fallire.
  */
 
 uses(TestCase::class);
@@ -29,6 +33,10 @@ beforeEach(function (): void {
 });
 
 test('alert component renders the alert view and keeps its payload', function (): void {
+    if (! class_exists(Alert::class)) {
+        $this->markTestSkipped('Host app senza App\View\Components\Alert.');
+    }
+
     $component = new Alert('danger', 'Qualcosa e andato storto');
 
     Assert::assertSame('danger', $component->type);
@@ -42,6 +50,10 @@ test('alert component renders the alert view and keeps its payload', function ()
 });
 
 test('input component renders the input view', function (): void {
+    if (! class_exists(Input::class)) {
+        $this->markTestSkipped('Host app senza App\View\Components\Input.');
+    }
+
     $view = (new Input)->render();
 
     Assert::assertInstanceOf(ViewContract::class, $view);
@@ -50,6 +62,10 @@ test('input component renders the input view', function (): void {
 });
 
 test('header component renders the header view', function (): void {
+    if (! class_exists(Header::class)) {
+        $this->markTestSkipped('Host app senza App\View\Components\Header.');
+    }
+
     $view = (new Header)->render();
 
     Assert::assertInstanceOf(ViewContract::class, $view);
@@ -58,13 +74,23 @@ test('header component renders the header view', function (): void {
 });
 
 test('app layout component renders the app layout', function (): void {
+    if (! class_exists(AppLayout::class)) {
+        $this->markTestSkipped('Host app senza App\View\Components\AppLayout.');
+    }
+
     $view = (new AppLayout)->render();
 
+    Assert::assertInstanceOf(ViewContract::class, $view);
     Assert::assertSame('layouts.app', $view->name());
 });
 
 test('guest layout component renders the guest layout', function (): void {
+    if (! class_exists(GuestLayout::class)) {
+        $this->markTestSkipped('Host app senza App\View\Components\GuestLayout.');
+    }
+
     $view = (new GuestLayout)->render();
 
+    Assert::assertInstanceOf(ViewContract::class, $view);
     Assert::assertSame('layouts.guest', $view->name());
 });
