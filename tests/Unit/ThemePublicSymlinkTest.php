@@ -13,17 +13,12 @@ use function Safe\readlink;
 uses(TestCase::class);
 
 /**
-<<<<<<< .merge_file_gZeUc9
- * `public_html/themes/<Tema>` deve essere un symlink RELATIVO a `../../laravel/Themes/<Tema>/public`
- * (output di `vite build`), mai una copia. In `public_html/` non devono stare `hot` ne' `info.php`.
-=======
  * Asset di temi e moduli nella document root, solo tramite symlink RELATIVI (mai copie):
  *   public_html/themes/<Tema>   -> ../../laravel/Themes/<Tema>/public    (php artisan xot:theme-link)
  *   public_html/assets/<modulo> -> ../../laravel/Modules/<Modulo>/public (php artisan xot:module-link)
  * I link si creano in ogni installazione e non si committano: li elencano public_html/themes/.gitignore e
  * public_html/assets/.gitignore, con due righe per nome (`<nome>/` cartella reale, `<nome>` symlink).
  * Un link non ancora creato (checkout nuovo, CI) fa saltare il test, non fallire.
->>>>>>> .merge_file_DntrYt
  * SSoT: laravel/Modules/Xot/docs/wiki/rules/theme-public-symlink.md
  */
 function themePublicSymlinkRepoRoot(): string
@@ -32,31 +27,6 @@ function themePublicSymlinkRepoRoot(): string
 }
 
 /**
-<<<<<<< .merge_file_gZeUc9
- * @return array<string, array{0: string}>
- */
-function themesWithBuild(): array
-{
-    $themes = [];
-    foreach (glob(themePublicSymlinkRepoRoot().'/laravel/Themes/*/public', GLOB_ONLYDIR) as $dir) {
-        if (! is_string($dir)) {
-            continue;
-        }
-        $theme = basename(dirname($dir));
-        $themes[$theme] = [$theme];
-    }
-
-    return $themes;
-}
-
-it('ogni tema con build ha il symlink relativo in public_html/themes', function (string $theme): void {
-    $link = themePublicSymlinkRepoRoot().'/public_html/themes/'.$theme;
-
-    expect(is_link($link))->toBeTrue('public_html/themes/'.$theme.' deve essere un symlink, non una copia')
-        ->and(readlink($link))->toBe('../../laravel/Themes/'.$theme.'/public')
-        ->and(is_file($link.'/manifest.json'))->toBeTrue('manifest Vite non raggiungibile da '.$link);
-})->with(themesWithBuild());
-=======
  * @return array<string, array{0: string|null, 1: string|null}> nome nel docroot => [nome, cartella public sorgente]
  */
 function publicAssetLinks(string $docrootDir, string $sourceGlob, bool $lowercase): array
@@ -120,7 +90,6 @@ it('i .gitignore del docroot escludono cartella reale e symlink di ogni link', f
     'temi' => ['themes', 'Themes/*/public', false],
     'moduli' => ['assets', 'Modules/*/public', true],
 ]);
->>>>>>> .merge_file_DntrYt
 
 it('public_html non contiene file di sviluppo o diagnostica', function (string $file): void {
     expect(file_exists(themePublicSymlinkRepoRoot().'/public_html/'.$file))->toBeFalse();
@@ -129,19 +98,6 @@ it('public_html non contiene file di sviluppo o diagnostica', function (string $
     'phpinfo esposto' => ['info.php'],
 ]);
 
-<<<<<<< .merge_file_gZeUc9
-it('nessun tema conserva lo script npm copy', function (string $theme): void {
-    $themeDir = themePublicSymlinkRepoRoot().'/laravel/Themes/'.$theme;
-    $packageJson = $themeDir.'/package.json';
-    if (! is_file($packageJson)) {
-        expect(is_dir($themeDir))->toBeTrue('la directory del tema deve esistere');
-
-        return;
-    }
-
-    expect(file_get_contents($packageJson))->not->toContain('"copy"');
-})->with(themesWithBuild());
-=======
 it('nessun tema conserva lo script npm copy', function (?string $link, ?string $theme): void {
     if ($theme === null) {
         $this->markTestSkipped('Nessun tema con public/ sotto laravel/Themes.');
@@ -153,4 +109,3 @@ it('nessun tema conserva lo script npm copy', function (?string $link, ?string $
 
     expect(file_get_contents($packageJson))->not->toContain('"copy"');
 })->with(publicAssetLinks('themes', 'Themes/*/public', false));
->>>>>>> .merge_file_DntrYt

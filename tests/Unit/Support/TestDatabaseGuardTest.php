@@ -42,8 +42,6 @@ it('reads driver and database from the connection url, like the runtime does', f
 
     expect($assert)->toThrow(RuntimeException::class);
 });
-<<<<<<< .merge_file_pvd6CG
-=======
 
 // I due casi qui sotto arrivano da laravel/tests/Architecture/TestDatabaseGuardTest.php,
 // accorpato qui il 2026-11-11 quando la cartella tests/ della radice e' stata
@@ -73,4 +71,3 @@ it('accepts the throwaway databases of pest-scratch-db.sh and ignores the legacy
         'liveuser_general' => ['driver' => 'mysql', 'database' => 'forge13'],
     ]))->not->toThrow(RuntimeException::class);
 });
->>>>>>> .merge_file_sy84gR

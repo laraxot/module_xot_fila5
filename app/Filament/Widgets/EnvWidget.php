@@ -71,8 +71,6 @@ class EnvWidget extends XotBaseSchemaWidget
 
             return;
         }
-<<<<<<< .merge_file_sXxv5y
-=======
 
         // Scrivere nel .env non basta: con la configurazione in cache
         // (`php artisan config:cache`, che è la norma in produzione) Laravel
@@ -90,7 +88,6 @@ class EnvWidget extends XotBaseSchemaWidget
         // sbagliare, rispetto a un'impostazione che non si applica in silenzio.
         Artisan::call('config:clear');
 
->>>>>>> .merge_file_omwXtk
         Notification::make()
             ->title('Saved successfully')
             ->success()

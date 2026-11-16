@@ -36,16 +36,8 @@ class ShowArtisanErrorLogAction
         }
 
         $pattern = '/url":"([^"]*)"/';
-<<<<<<< .merge_file_QB6hZU
-        $matches = [];
-        preg_match_all($pattern, $content, $matches);
-
-        // PREG_PATTERN_ORDER con un solo gruppo: $matches[1] esiste sempre (lista vuota se nessun match).
-        $urls = array_values(array_unique($matches[1]));
-=======
         // Str::matchAll restituisce il primo gruppo di ogni occorrenza (lista vuota se nessun match).
         $urls = Str::matchAll($pattern, $content)->unique()->values()->all();
->>>>>>> .merge_file_GyaeIv
         $view_params = [
             'view' => $view,
             'lang' => app()->getLocale(),

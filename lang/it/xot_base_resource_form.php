@@ -6,8 +6,6 @@ return [
     'actions' => [
         'submit' => [
             'label' => 'Invia',
-<<<<<<< .merge_file_MnxF3R
-=======
         ],
         'previous' => [
             'label' => 'Precedente',
@@ -25,7 +23,6 @@ return [
         ],
         'summary' => [
             'label' => 'Riepilogo',
->>>>>>> .merge_file_fawdpq
         ],
     ],
 ];

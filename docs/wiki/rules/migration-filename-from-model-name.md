@@ -26,9 +26,14 @@ YYYY_MM_DD_HHMMSS_<azione>_<modello_plurale>_table.php
 Esempi:
 
 - `2026_08_06_190100_create_translations_table.php`
+<<<<<<< .merge_file_QuZRDd
 <<<<<<< .merge_file_V8qA0f
 - `2026_11_05_100001_update_translations_table.php`
 =======
+=======
+- `2026_11_05_100001_update_translations_table.php`
+
+>>>>>>> .merge_file_jT3Lta
 - `2026_11_05_100001_create_translations_table.php`
 >>>>>>> .merge_file_4ZWNe3
 

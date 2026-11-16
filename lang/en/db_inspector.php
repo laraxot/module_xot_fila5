@@ -3,14 +3,11 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< .merge_file_0jsXHH
-=======
     'actions' => [
         'search' => [
             'label' => 'search',
         ],
     ],
->>>>>>> .merge_file_y0A5gH
     'sections' => [
         'table_name' => [
             'label' => 'Table name',

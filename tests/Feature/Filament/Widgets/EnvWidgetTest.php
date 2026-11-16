@@ -13,10 +13,7 @@ use Mockery\MockInterface;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Filament\Widgets\EnvWidget;
 use Modules\Xot\Tests\TestCase;
-<<<<<<< .merge_file_YNnqZZ
-=======
 use Symfony\Component\HttpKernel\Exception\HttpException;
->>>>>>> .merge_file_jiO754
 
 uses(TestCase::class);
 
@@ -173,11 +170,7 @@ it('refuses to write .env for a user who is not super-admin', function (): void 
     $widget->mount();
     $widget->data['telegram_bot_token'] = 'pest-test-'.uniqid('', true);
 
-<<<<<<< .merge_file_YNnqZZ
-    expect(fn () => $widget->submit())->toThrow(\Symfony\Component\HttpKernel\Exception\HttpException::class);
-=======
     expect(fn () => $widget->submit())->toThrow(HttpException::class);
->>>>>>> .merge_file_jiO754
     expect(File::get($this->envPath))->toBe($this->originalEnvContent);
 });
 

@@ -150,6 +150,34 @@ public_html/themes/<Tema>   ->   ../../laravel/Themes/<Tema>/public      (symlin
 public_html/assets/<modulo> ->   ../../laravel/Modules/<Modulo>/public   (symlink relativo)
 ```
 
+### Workflow Corretto
+```bash
+# 🚨 SEMPRE lavorare nella cartella del tema
+cd /Themes/One/
+
+# 1. Modifica i file sorgente in:
+# - resources/css/
+# - resources/js/
+# - resources/sass/
+
+# 2. Compila gli assets
+npm run build
+
+# 3. Copia nella directory pubblica Laravel
+# niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
+```
+
+## ⚠️ NON Fare Mai
+❌ **NON modificare** `/public/css/` o `/public/js/` direttamente
+❌ **NON usare** `npm run build` dalla root Laravel
+niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
+
+## ✅ Processo Corretto
+1. **Modifica sorgenti** in `/Themes/[Theme]/resources/`
+2. **Build assets** con `npm run build` dalla cartella tema
+3. niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
+4. **Verifica risultato** nel browser
+
 - `@vite([...], 'themes/<Tema>')` legge `public_html/themes/<Tema>/manifest.json`, cioè il manifest del tema.
 - `public_html` è la document root: non si cancella né si svuota mai.
 - I symlink sono **relativi** (restano validi se il progetto cambia percorso) e si creano una volta per
@@ -172,12 +200,62 @@ public_html/assets/<modulo> ->   ../../laravel/Modules/<Modulo>/public   (symlin
 
 ## Lavorare su un tema
 
-```bash
 cd laravel/Themes/Sixteen
 npm install
 npm run dev      # sviluppo con hot reload
 npm run build    # produzione: scrive in ./public (servito dal symlink)
-```
+
+
+## Lavorare su un tema
+
+cd Themes/One
+npm install          # Prima volta
+npm run build        # Compila Sass/JS
+
+### Tema Two
+cd Themes/Two
+npm install
+
+## 🎯 File di Configurazione
+
+### package.json (Tema)
+```json
+{
+  "scripts": {
+    "build": "vite build",
+    "copy": "cp -r public/* ../../public/"
+  }
+}
+
+### vite.config.js (Tema)
+```javascript
+export default defineConfig({
+  build: {
+    outDir: 'public'
+  }
+});
+
+## 🐛 Troubleshooting
+
+### Modifiche Non Visibili?
+1. Verificare di aver eseguito `npm run build`
+2. niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
+3. Svuotare cache browser (Ctrl+F5)
+4. Verificare path corretti in vite.config.js
+
+### Errori di Build?
+1. `npm install` nella cartella tema
+2. Verificare versioni Node/npm
+3. Controllare sintassi Sass/JS
+4. Verificare dipendenze in package.json
+
+---
+
+**⚠️ RICORDA**: Il workflow dei temi è DIVERSO dal normale workflow Laravel. Sempre theme → build → copy → public!
+
+cd laravel/Themes/Sixteen
+npm run dev      # sviluppo con hot reload
+npm run build    # produzione: scrive in ./public (servito dal symlink)
 
 Lo script `copy` è stato tolto da `package.json` dei temi: non serve più.
 
