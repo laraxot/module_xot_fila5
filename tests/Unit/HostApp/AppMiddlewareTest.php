@@ -42,7 +42,6 @@ test('trust hosts trusts every subdomain of the application url', function (): v
 
     $appHost = Str::of(Config::string('app.url'))->after('://')->before('/')->value();
 
-    Assert::assertIsArray($hosts);
     Assert::assertCount(1, $hosts);
     $pattern = $hosts[0] ?? null;
     Assert::assertIsString($pattern);
@@ -61,9 +60,6 @@ test('authenticate returns no redirect target for json requests', function (): v
 
     $redirectTo = (function (Request $request): ?string {
         $target = $this->redirectTo($request);
-        if ($target !== null) {
-            Assert::assertIsString($target);
-        }
 
         return $target;
     })->call(new Authenticate(app('auth')), $request);
