@@ -165,7 +165,6 @@ vendor/
 /.windsurf
 /.windsurf/
 .windsurf~*
-tests/coverage-xot.xml
 
 # Laraxot -- forbidden module root folders (root hygiene directive 2026-09-29)
 /bashscripts/

@@ -126,9 +126,50 @@ scope disgiunti + lock).
 - `git diff --check` non applicabile (nessun edit codice mio).
 - `qmd update` eseguito su fine sessione.
 
+## Esito finale PHPStan (2026-11-16)
+
+- Gate completo `cd laravel && ./vendor/bin/phpstan analyse Modules`:
+  **0 errori su 10.669 file** (banner `[OK] No errors`, exit 0).
+- I 7 errori `Activity/tests/` riportati dall'utente erano una snapshot
+  stale: le lane Activity li ha risolti fra la run dell'utente e la
+  riverifica (variabili `$action` inutilizzate, cast `mixed→string`,
+  closure Pest vuote — fix con assert reali e `is_scalar()`).
+- Verifica per-modulo `analyse Modules/Activity` raw: 0 errori.
+
+## Audit modulare per moduli (nuova richiesta utente)
+
+- Lanciati 6 subagent in parallelo (scope disgiunti per modulo) per
+  audit profondo + documenti BMAD in `Modules/<Mod>/docs/bmad/`:
+  - A: Activity, Job, Lang
+  - B: Incentivi, Media, Notify
+  - C: IndennitaCondizioniLavoro, IndennitaResponsabilita, Pdnd
+  - D: Performance, Progressioni, Sigma
+  - E: Ptv, Rating
+  - F: Tenant, UI, User, Xot
+- Ogni agente: audit statico (struttura, mixed, property_exists,
+  phpstan-ignore, Filament no-labels/Xot base, test, i18n, marker merge,
+  md con date) + story `module-bmad-audit.story.md` canonica.
+- Moduli con story datata `module-bmad-audit-20260928.story.md` da
+  rinominare: Activity, Media, Notify, Tenant. Mancante: Job.
+- Naming audit docs: il canonico resta `module-bmad-audit.story.md`
+  (no date); la data va nel frontmatter `created:` e nel contenuto.
+
+## Audit docs trasversale (misurato)
+
+- `Modules/*/docs` + `Themes/*/docs` `.md` (escluse cartelle
+  archive/archived/legacy/raw/vendor): 15.358 file.
+- Senza front matter (`---`): ~2.167 (stima per assenza di `---`;
+  verifica puntuale da fare). Top: User 1051, UI 477, Activity 234,
+  Xot 89.
+- Nome file con data ISO `YYYY-MM-DD`: 218 file. Top: Notify 43,
+  User 28, UI 13, Media 12, Rating 11.
+- File `.md` totali repo: ~16.5k (include non-docs).
+
 ## Lesson
 
 Con swarm multi-agente attivo, la baseline PHPStan invecchia in
 minuti: misurare, mappare le lane attive (mtime < 15min), e
 concentrarsi solo sui moduli senza lane — che in questa finestra
-erano gia' tutti a 0.
+erano gia' tutti a 0. Le run intermedie possono mostrare errori
+già fixati: verificare sempre il working tree corrente prima di
+editare.

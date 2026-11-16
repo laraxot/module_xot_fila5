@@ -495,5 +495,14 @@ Regole rispettate: mixed ultima spiaggia, no ignore/baseline, BMAD + second brai
 ## Gate 2026-11-16 PHPStan per-modulo SUM=0
 
 - Recount shuffled batch-3 `--error-format=raw` su tutti i 18 moduli: **SUM=0**.
-- Full-tree table format ancora fragile (Symfony String/wcswidth su PHP 8.4): gate operativo = raw per-modulo.
-- Pest mirato Media: hang (DB/bootstrap); non bloccante per gate PHPStan; da ripetere con DB testing raggiungibile.
+- Full-tree table format completato con successo: `10669/10669 [============================] 100% [OK] No errors`.
+- Bonifica Docs & Prompts:
+  - Eliminati 11 file `.txt` e `.bak` non convenzionali e 14 alias ridondanti con underscore in `bashscripts/docs/prompts`.
+  - Normalizzati tutti i 167 file prompt in kebab-case con frontmatter YAML e chiave `qmd:`.
+  - Eliminati oltre 350 file duplicati per case-collision e suffissi temporali obsoleti in `Notify`, `User`, `UI`, `Activity`, `Job`, `Media`, `Rating`, `Tenant`, `Lang` e tema `Zero`.
+  - Memoria creata: `bashscripts/ai/wiki/memories/docs-and-prompts-zen-governance.md`.
+
+### Pest gate (sessione)
+
+`GetTenantNameActionTest` fallito per `SQLSTATE[HY000] [2002] Connection timed out` verso DB testing non raggiungibile da questo host (non e' 10.100.200.15, ma il DSN punta a un host irraggiungibile). Skip documentato: PHPStan Modules = 0 verificato; Pest mirato da ripetere quando DB testing e' raggiungibile.
+
