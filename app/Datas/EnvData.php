@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Datas;
 
+use Illuminate\Support\Str;
 use Illuminate\Support\Facades\File;
 use Livewire\Wireable;
 use Spatie\LaravelData\Concerns\WireableData;
@@ -107,7 +108,11 @@ class EnvData extends Data implements Wireable
             return ($env_content === '' || str_ends_with($env_content, "\n") ? $env_content : $env_content."\n").$line;
         }
 
+<<<<<<< .merge_file_M0X47Z
         return preg_replace_callback($pattern, static fn (): string => $line, $env_content, 1);
+=======
+        return Str::of($env_content)->replaceMatches($pattern, static fn (): string => $line, 1)->toString();
+>>>>>>> .merge_file_VPNKGL
     }
 
     public function getLine(string $key, int|bool|string $value): string

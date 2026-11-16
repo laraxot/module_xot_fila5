@@ -3,7 +3,11 @@ title: "Epic: cricchetto di qualita' del codice"
 type: epic
 status: planned
 created: 2026-10-20
+<<<<<<< .merge_file_Gghtdr
 updated: 2026-10-20
+=======
+updated: '2026-11-12'
+>>>>>>> .merge_file_fTBFJM
 module: Xot
 scope: cross-module (Modules/)
 tags: [bmad, epic, code-quality, ratchet, test-safety, filament-blueprint, second-brain, swarm]
@@ -20,7 +24,11 @@ related:
   - ../../../../../bashscripts/docs/prompts/10-test.md
   - ../../../../../bashscripts/docs/prompts/11-phpstan.md
   - ../../../../../bashscripts/docs/modular-bmad-story-policy.md
+<<<<<<< .merge_file_Gghtdr
   - ../../../../tests/Architecture/ModulesArchitectureTest.php
+=======
+  - ../../tests/Architecture/ModulesArchitectureTest.php
+>>>>>>> .merge_file_fTBFJM
 ---
 
 # Epic: cricchetto di qualita' del codice
@@ -119,7 +127,11 @@ Ogni fix W1 nasce con il suo test (TDD), ma i test girano solo dopo W0.
 
 Ogni wave lascia due cose:
 
+<<<<<<< .merge_file_Gghtdr
 1. **Una guardia senza DB** in `laravel/tests/Architecture/` (pattern esistente: [ModulesArchitectureTest.php](../../../../tests/Architecture/ModulesArchitectureTest.php), legge solo i file sotto `Modules/*/app` con `Symfony\Finder`, non avvia Laravel, non usa il DB).
+=======
+1. **Una guardia senza DB** in `Modules/Xot/tests/Architecture/` (fino al 2026-11-11 `laravel/tests/Architecture/`, cartella sciolta) (pattern esistente: [ModulesArchitectureTest.php](../../tests/Architecture/ModulesArchitectureTest.php), legge solo i file sotto `Modules/*/app` con `Symfony\Finder`, non avvia Laravel, non usa il DB).
+>>>>>>> .merge_file_fTBFJM
 2. **Un contatore che puo' solo scendere**: il test confronta il conteggio con una baseline nel file e fallisce sia se sale sia se scende senza che la baseline sia stata abbassata (stessa regola dei cicli noti: "quando ne risolvi uno, toglilo da qui").
 
 | Contatore | Baseline 2026-10-20 | Scende in | Metodo |
@@ -180,4 +192,8 @@ rg -n 'suffix=' laravel/phpunit.xml
 cd laravel/Modules/Xot/docs/bmad && bash -c 'for p in $(rg -o --no-filename -P "(?:\]\(|^\s+- )\K\.{1,2}/[^)#\s]+" epic-code-quality-ratchet.md); do realpath -e "$p" >/dev/null || echo "ROTTO $p"; done'
 ```
 
+<<<<<<< .merge_file_Gghtdr
 Prova di chiusura di questo epic: ogni contatore di sezione 5 e' in un test di `laravel/tests/Architecture/`, la baseline e' scesa almeno una volta per wave, e nessun run di Pest e' avvenuto prima del via sulla guardia DB.
+=======
+Prova di chiusura di questo epic: ogni contatore di sezione 5 e' in un test di `Modules/Xot/tests/Architecture/`, la baseline e' scesa almeno una volta per wave, e nessun run di Pest e' avvenuto prima del via sulla guardia DB.
+>>>>>>> .merge_file_fTBFJM
