@@ -284,7 +284,7 @@ abstract class XotBaseTestCase extends BaseTestCase
      */
     public static function sharedSqlitePath(): string
     {
-        return app(ResolveSharedSqlitePathAction::class)->execute();
+return app(ResolveSharedSqlitePathAction::class)->execute();
     }
 
     /**

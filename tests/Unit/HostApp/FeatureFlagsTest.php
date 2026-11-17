@@ -19,8 +19,8 @@ use PHPUnit\Framework\Assert;
  * App\Support\FeatureFlags exists only in host apps that ship the full skeleton
  * (ptvx, predict, ...). Slim hosts (restaurant, techplanner, ...) do not provide
  * it, so every test skips itself when the class is absent instead of failing.
- * Assert::assertIs* narrows only FeatureFlags::get() (mixed) before expect();
- * isEnabled/isAnyEnabled/listEnabled/all already return bool|array — no assertIs*.
+ * Assert::assertIs* narrows FeatureFlags::get() (mixed) and pins return contracts;
+ * prefer Assert over Pest expect() to avoid argument.templateType su PHPStan max.
  */
 
 uses(XotBaseTestCase::class);
@@ -47,8 +47,8 @@ describe('FeatureFlags::get', function (): void {
         Assert::assertIsString($store);
         Assert::assertIsInt($ttl);
 
-        expect($store)->toBe('redis');
-        expect($ttl)->toBe(3600);
+        Assert::assertSame('redis', $store);
+        Assert::assertSame(3600, $ttl);
     });
 
     it('returns the registered value even when it is null', function (): void {
@@ -71,7 +71,7 @@ describe('FeatureFlags::get', function (): void {
         Assert::assertIsString($withDefault);
         Assert::assertNull($withoutDefault);
 
-        expect($withDefault)->toBe('fallback');
+        Assert::assertSame('fallback', $withDefault);
     });
 
     it('does not resolve a key as a nested config path', function (): void {
@@ -84,7 +84,7 @@ describe('FeatureFlags::get', function (): void {
         Assert::assertNull($nested);
         Assert::assertIsString($store);
 
-        expect($store)->toBe('redis');
+        Assert::assertSame('redis', $store);
     });
 });
 
@@ -96,8 +96,11 @@ describe('FeatureFlags::isEnabled', function (): void {
 
         $email = FeatureFlags::isEnabled('notifications.email.enabled');
         $sms = FeatureFlags::isEnabled('notifications.sms.enabled');
+        Assert::assertIsBool($email);
+        Assert::assertIsBool($sms);
 
-        expect($email)->toBeTrue()->and($sms)->toBeFalse();
+        Assert::assertTrue($email);
+        Assert::assertFalse($sms);
     });
 
     it('uses the default when the key is absent', function (): void {
@@ -107,8 +110,11 @@ describe('FeatureFlags::isEnabled', function (): void {
 
         $missing = FeatureFlags::isEnabled('missing.flag');
         $missingWithDefault = FeatureFlags::isEnabled('missing.flag', true);
+        Assert::assertIsBool($missing);
+        Assert::assertIsBool($missingWithDefault);
 
-        expect($missing)->toBeFalse()->and($missingWithDefault)->toBeTrue();
+        Assert::assertFalse($missing);
+        Assert::assertTrue($missingWithDefault);
     });
 });
 
@@ -119,8 +125,9 @@ describe('FeatureFlags::isAnyEnabled', function (): void {
         }
 
         $any = FeatureFlags::isAnyEnabled('notifications');
+        Assert::assertIsBool($any);
 
-        expect($any)->toBeTrue();
+        Assert::assertTrue($any);
     });
 
     it('is false when the group has no enabled flag', function (): void {
@@ -134,8 +141,9 @@ describe('FeatureFlags::isAnyEnabled', function (): void {
         ]);
 
         $any = FeatureFlags::isAnyEnabled('notifications');
+        Assert::assertIsBool($any);
 
-        expect($any)->toBeFalse();
+        Assert::assertFalse($any);
     });
 
     it('is false for an unknown group', function (): void {
@@ -144,8 +152,9 @@ describe('FeatureFlags::isAnyEnabled', function (): void {
         }
 
         $any = FeatureFlags::isAnyEnabled('telepathy');
+        Assert::assertIsBool($any);
 
-        expect($any)->toBeFalse();
+        Assert::assertFalse($any);
     });
 });
 
@@ -156,8 +165,9 @@ describe('FeatureFlags::listEnabled', function (): void {
         }
 
         $enabled = FeatureFlags::listEnabled('notifications');
+        Assert::assertIsArray($enabled);
 
-        expect($enabled)->toBe(['email', 'slack']);
+        Assert::assertSame(['email', 'slack'], $enabled);
     });
 
     it('returns an empty list for an unknown group', function (): void {
@@ -166,8 +176,9 @@ describe('FeatureFlags::listEnabled', function (): void {
         }
 
         $enabled = FeatureFlags::listEnabled('telepathy');
+        Assert::assertIsArray($enabled);
 
-        expect($enabled)->toBe([]);
+        Assert::assertSame([], $enabled);
     });
 
     it('ignores keys of the group that are not .enabled flags', function (): void {
@@ -176,8 +187,9 @@ describe('FeatureFlags::listEnabled', function (): void {
         }
 
         $enabled = FeatureFlags::listEnabled('cache');
+        Assert::assertIsArray($enabled);
 
-        expect($enabled)->toBe([]);
+        Assert::assertSame([], $enabled);
     });
 });
 
@@ -188,9 +200,11 @@ describe('FeatureFlags::all', function (): void {
         }
 
         $all = FeatureFlags::all();
+        Assert::assertIsArray($all);
 
-        expect($all)->toHaveKey('cache.store', 'redis')
-            ->and($all)->toHaveCount(6);
+        Assert::assertArrayHasKey('cache.store', $all);
+        Assert::assertSame('redis', $all['cache.store']);
+        Assert::assertCount(6, $all);
     });
 
     it('returns an empty registry when the config is not an array', function (): void {
@@ -201,8 +215,9 @@ describe('FeatureFlags::all', function (): void {
         config()->set('features', 'not-an-array');
 
         $all = FeatureFlags::all();
+        Assert::assertIsArray($all);
 
-        expect($all)->toBe([]);
+        Assert::assertSame([], $all);
     });
 
     it('drops non-string keys', function (): void {
@@ -216,8 +231,9 @@ describe('FeatureFlags::all', function (): void {
         ]);
 
         $all = FeatureFlags::all();
+        Assert::assertIsArray($all);
 
-        expect($all)->toBe(['cache.store' => 'file']);
+        Assert::assertSame(['cache.store' => 'file'], $all);
     });
 });
 

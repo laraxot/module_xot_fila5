@@ -145,7 +145,7 @@ rm -rf /tmp/phpstan && php -d memory_limit=3G ./vendor/bin/phpstan analyse Modul
 
 ## Piano
 
-[epics.md](../epics.md) · [decision-log.md](../decision-log.md) · [piano-miglioramento.md](../piano-miglioramento.md)
+[epics.md](../epics.md) · [decision-log.md](../../decision-log.md) · [piano-miglioramento.md](../piano-miglioramento.md)
 
 ## Riferimenti
 

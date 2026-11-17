@@ -25,7 +25,7 @@ it('refuses an environment that is not testing', function (): void {
 
 it('refuses a connection whose database does not end with _test', function (): void {
     $assert = static fn () => TestDatabaseGuard::assert('testing', [
-        'mariadb' => ['driver' => 'mariadb', 'database' => 'quaeris_data'],
+        'mariadb' => ['driver' => 'mariadb', 'database' => '<nome progetto>_data'],
     ]);
 
     expect($assert)->toThrow(RuntimeException::class);
@@ -36,7 +36,7 @@ it('reads driver and database from the connection url, like the runtime does', f
         'sqlite' => [
             'driver' => 'sqlite',
             'database' => ':memory:',
-            'url' => 'mysql://user:secret@localhost/quaeris_data',
+            'url' => 'mysql://user:secret@localhost/<nome progetto>_data',
         ],
     ]);
 
@@ -55,13 +55,13 @@ it('lets a DB_URL override the connection and never prints its password', functi
 
     try {
         TestDatabaseGuard::assert('testing', [
-            'sqlite' => ['driver' => 'sqlite', 'database' => ':memory:', 'url' => 'mysql://marco:segreto@127.0.0.1/quaeris_data'],
+            'sqlite' => ['driver' => 'sqlite', 'database' => ':memory:', 'url' => 'mysql://marco:segreto@127.0.0.1/<nome progetto>_data'],
         ]);
     } catch (RuntimeException $exception) {
         $message = $exception->getMessage();
     }
 
-    expect($message)->toContain('"sqlite" (mysql) -> database "quaeris_data"')
+    expect($message)->toContain('"sqlite" (mysql) -> database "<nome progetto>_data"')
         ->and($message)->not->toContain('segreto');
 });
 
