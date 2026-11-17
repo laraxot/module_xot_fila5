@@ -70,6 +70,8 @@ Le risposte devono diventare story BMAD con acceptance criteria misurabili, rife
 
 - [DOMANDA 1]
 - [DOMANDA 2]
+<<<<<<< .merge_file_2w7OZO
+=======
 
 ## Opzioni sui finding (2026-11-16)
 
@@ -114,3 +116,4 @@ Le risposte devono diventare story BMAD con acceptance criteria misurabili, rife
 
 - Chi consuma `RouteService` fuori da Xot (1 chiamante)?
 - I 9 trait senza consumer sono API per progetti fuori da questo repo?
+>>>>>>> .merge_file_FBqCED

@@ -159,6 +159,8 @@ Interfacce per l'iniezione di dipendenze.
 - Array PHP con una chiave per riga.
 - Form schema-driven tramite `XotBaseSchemaWidget` (`app/Filament/Widgets/XotBaseSchemaWidget.php`).
 - Contratti per l'iniezione di dipendenze in `app/Contracts/` (es. `DataContract`, `ExtraContract`).
+<<<<<<< .merge_file_SqCwUb
+=======
 
 ## Confini del core verificati (2026-11-16)
 
@@ -166,3 +168,4 @@ Interfacce per l'iniezione di dipendenze.
 - Barriere meccaniche da preservare: `laravel/app/Application.php` `publicPath()` → `public_html`; `tests/Support/TestDatabaseGuard.php` (solo DB `*_test`); `tests/XotBaseTestCase.php` (no `migrate:fresh`/`RefreshDatabase`); `Console/Commands/BuildTestSqliteCommand.php` (riscrive ogni connessione su SQLite prima di `migrate --force`).
 - Policy: `XotBasePolicy::before()` → bypass `{modulo}::admin` (ADR); le policy di sicurezza lo sovrascrivono (User: `BaseUserPolicy`).
 - Services residui: 2 file; Actions: 257 (210 con `QueueableAction`).
+>>>>>>> .merge_file_wmMSz5

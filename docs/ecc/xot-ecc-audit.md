@@ -4,13 +4,31 @@ type: ecc-audit
 status: review
 updated: 2026-11-16
 module: Xot
+<<<<<<< .merge_file_HCbjU5
+qmd: "ECC audit Xot verification security testing laravel"
+=======
 qmd: "ECC audit Xot security-review clean-code laravel-verification verification-loop tdd-workflow"
+>>>>>>> .merge_file_o2JyU9
 ---
 
 # ECC audit operativo — Xot
 
 ## Contratto PTVX
 
+<<<<<<< .merge_file_HCbjU5
+ECC non sostituisce AGENTS.md/BMAD. Ogni finding: story BMAD, lock, fix causa,
+PHPStan + Pest, aggiornamento docs/QMD.
+
+## Checklist
+
+- [ ] `clean-code`: DRY/KISS, Actions su Services, niente wrapper inutili
+- [ ] `security-review`: policy, mass assignment, export, log, privacy, tenant
+- [ ] `laravel-verification`: route, config, migration additive, container
+- [ ] `verification-loop`: PHPStan level max + Pest mirato
+- [ ] `tdd-workflow`: regressione sui finding P0
+- [ ] `documentation-sync`: story + indici + qmd
+- [ ] `context-engineering`: QMD/graphify prima; registrare il perché dopo
+=======
 ECC non sostituisce `AGENTS.md`/BMAD: ogni finding diventa story in [epics.md](../bmad/epics.md), con lock,
 fix alla causa, PHPStan + Pest, aggiornamento docs/QMD. Le abilità ECC sono scelte on-demand
 (`ecc-ptvx-workflow`); qui è registrato **l'esito**, non la checklist vuota.
@@ -26,11 +44,38 @@ fix alla causa, PHPStan + Pest, aggiornamento docs/QMD. Le abilità ECC sono sce
 | `tdd-workflow` (regressione sui P0) | aperto | test comportamentale su `XotBasePolicy::before` (3 casi) prima di rimuovere `once()` |
 | `documentation-sync` | fatto | pack aggiornato: [audit](../bmad/audits/xot-audit.md), [epics](../bmad/epics.md), [decision-log](../bmad/decision-log.md) |
 | `context-engineering` | fatto | source-first; il perché in [purpose](../bmad/purpose.md) |
+>>>>>>> .merge_file_o2JyU9
 
 ## Input misurato (2026-11-16)
 
 | Voce | N |
 |---|---:|
+<<<<<<< .merge_file_HCbjU5
+| app PHP | 602 |
+| test | 329 |
+| resources | 7 |
+| actions | 238 |
+| services | 2 |
+| policies (files approx) | 26 |
+
+## Gate osservati
+
+- PHPStan `Modules` (2026-11-16): 0 errori
+- Pest: pending (ambiente testing)
+
+## Anti-pattern vietati
+
+- baseline/`@phpstan-ignore` senza motivazione
+- test svuotati per silenziare errori
+- migrate:fresh / RefreshDatabase / --force
+- docs con date nel nome file
+- comportamento o screenshot inventati
+
+## Riferimenti
+
+- [00-index](./00-index.md)
+- [BMAD audit](../bmad/audit.md)
+=======
 | PHP `app/` | 602 |
 | Test PHP | 329 |
 | Models | 51 |
@@ -71,3 +116,4 @@ senza importare il modulo. Memoria: [module-portfolio-taxonomy-ptvx.md](../../..
 
 Nei FO: solo `Cms/FolioVoltServiceProvider`. Non registrare App `FolioServiceProvider`.
 PTVX: stub App inerte; niente surrogato. Memoria: [folio-owner-foliovolt-only.md](../../../../../docs/wiki/memories/folio-owner-foliovolt-only.md).
+>>>>>>> .merge_file_o2JyU9

@@ -47,6 +47,8 @@ audit dettagliato, piano, story, ECC index + ECC audit. PHPStan `Modules` = 0 er
 2. PHPStan già 0 su `Modules`.
 3. Pest per modulo in testing non-prod.
 4. Aggiornare ECC checklist con esiti reali + `qmd update`.
+<<<<<<< .merge_file_gxRE7z
+=======
 
 ## Audit approfondito source-first — 6 moduli (2026-11-16)
 
@@ -70,3 +72,4 @@ per costruzione (è il pannello di login pubblico, `User/app/Models/BaseUser.php
 **Nota di coordinamento:** `stories/all-modules-audit-pack.story.md` è lockato da un altro agente
 (`.lock` delle 17:01:53, Task unknown): non modificato. Da aggiungere appena libero: sezione "Esito audit approfondito 6 moduli"
 con rimando a questa tabella.
+>>>>>>> .merge_file_yypY5r
