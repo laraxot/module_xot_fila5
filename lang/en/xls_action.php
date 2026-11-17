@@ -7,7 +7,7 @@ return [
     'tipo' => 'tipo',
     'codice' => 'codice',
     'descr' => 'descr',
-    'anno' => 'anno',
+    'anno' => 'year',
     'created_at' => 'created_at',
     'created_by' => 'created_by',
     'updated_at' => 'updated_at',
@@ -23,8 +23,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-    'fields' => [
-    ],
-    'actions' => [
-    ],
 ];

@@ -1,36 +1,28 @@
 ---
-id: Xot/module-bmad-audit-20260928
-title: "Xot: baseline BMAD e analisi completa"
-status: ready-for-dev
+title: "Module BMAD audit — Xot"
+status: review
+updated: 2026-11-16
 module: Xot
-epic: module-governance
-priority: P1
-created: 2026-09-28
-references:
-  - ../architecture/module-boundary.md
-  - ../brainstorming/module-opportunities.md
-  - ../epics/module-roadmap.md
-type: story
-updated: 2026-10-07
-tags: [docs, xot, bmad]
-qmd: "story   xot: baseline bmad xot"
+bmad: true
+qmd: "story BMAD audit modulo Xot inventario gate"
 ---
-# Story: Xot: baseline BMAD
 
-Come manutentore del modulo Xot, voglio una baseline BMAD verificabile, così da poter pianificare lavoro senza confondere ipotesi, WIP e comportamento osservato.
+# Story: audit BMAD del modulo Xot
 
-## Acceptance criteria
+## Acceptance
 
-- [ ] Confermare API pubblica e confini con riferimenti a codice reale.
-- [ ] Inventariare i flussi critici e collegarli a test Pest.
-- [ ] Misurare PHPStan/Pest nel contesto stabile del modulo.
-- [ ] Registrare dipendenze, rischi e decisioni nel modulo.
-- [ ] Aggiornare lo stato reale in `docs/sprint-status.yaml`.
+- [x] Inventario source-first (2026-11-16).
+- [x] Audit + piano in `docs/bmad/`.
+- [x] Pack ECC in `docs/ecc/`.
+- [ ] Pest modulo eseguito in ambiente testing stabile.
+- [ ] Finding P0/P1 chiusi con regressione.
 
-## Task
+## Riferimenti
 
-- [ ] Revisione architettura.
-- [ ] Brainstorming con stakeholder.
-- [ ] Decomposizione epic in story più piccole.
-- [ ] Quality gate e second-brain write-back.
+- [audit](../audit.md)
+- [piano](../piano-miglioramento.md)
+- [ECC](../../ecc/xot-ecc-audit.md)
 
+## Esito
+
+Baseline audit aggiornata. PHPStan tree `Modules` a 0. Pest e chiusura P0/P1 aperti.

@@ -104,11 +104,12 @@ trait HasXotTable
         // dddx(method_exists($resource, 'canAttach'));
 
         $actions = [];
-        // Niente "Nuovo" se la risorsa non ha la pagina `create` (es. moderazione commenti):
-        // il pulsante portava a una rotta inesistente.
+        // No "New" button when the resource has no `create` page (e.g. comment moderation): it led to a missing route.
         $createPageResource = $this->resolveCreatePageResource();
         if ($createPageResource === null || array_key_exists('create', $createPageResource::getPages())) {
-            $actions[] = CreateAction::make();
+            $actions[] = CreateAction::make()->visible(
+                fn ($livewire): bool => ! ($livewire instanceof ListRecords) || $livewire::getResource()::canCreate()
+            );
         }
 
         if ($this->shouldShowAssociateAction()) {
@@ -348,11 +349,13 @@ trait HasXotTable
         }
         Assert::object($resource);
 
+        // Le tabelle con record array (`->records()`, es. riepiloghi nei widget) non hanno un modello da
+        // autorizzare: con `Model $record` la closure lanciava TypeError e la pagina andava in 500.
         if (method_exists($resource, 'canView')) {
             $actions['view'] = self::withRecordReturnTo(
                 ViewAction::make()
                     ->iconButton()
-                    ->visible(static fn (Model $record): bool => (bool) $resource->canView($record)),
+                    ->visible(static fn (mixed $record): bool => $record instanceof Model && (bool) $resource->canView($record)),
                 isAnchor: true,
             );
         }
@@ -361,7 +364,7 @@ trait HasXotTable
             $actions['edit'] = self::withRecordReturnTo(
                 EditAction::make()
                     ->iconButton()
-                    ->visible(static fn (Model $record): bool => (bool) $resource->canEdit($record)),
+                    ->visible(static fn (mixed $record): bool => $record instanceof Model && (bool) $resource->canEdit($record)),
                 isAnchor: ! isset($actions['view']),
             );
         }
@@ -369,7 +372,7 @@ trait HasXotTable
         if (method_exists($resource, 'canDelete')) {
             $actions['delete'] = DeleteAction::make()
                 ->iconButton()
-                ->visible(static fn (Model $record): bool => (bool) $resource->canDelete($record));
+                ->visible(static fn (mixed $record): bool => $record instanceof Model && (bool) $resource->canDelete($record));
         }
 
         if ($this->shouldShowReplicateAction()) {

@@ -1,62 +1,54 @@
 ---
 title: "Theme Assets Workflow - CSS/JS Frontend"
 type: note
-status: draft
-updated: 2026-10-18
-tags: [docs, xot]
-qmd: "theme assets workflow - css/js frontend xot"
+status: current
+updated: 2026-11-11
+tags: [docs, xot, assets, symlink]
+qmd: "theme assets workflow css js frontend build symlink public_html npm run copy obsoleto"
+related: [console/commands/xot-asset-links.md]
 ---
-# 🎨 Theme Assets Workflow - CSS/JS Frontend
+# Theme Assets Workflow - CSS/JS Frontend
 
-**⚠️ REGOLA CRITICA**: Per modifiche CSS/JS del frontend, lavorare SEMPRE nella cartella del tema, NON nella root Laravel.
+**Regola**: gli asset di temi e moduli si compilano nella cartella del tema/modulo e vengono serviti
+tramite **symlink** da `public_html/`. **`npm run copy` non esiste più e non va usato**: copiare i
+file in `public_html/` romperebbe il symlink e lascerebbe asset vecchi.
 
-## 📁 Struttura Corretta
+## Struttura
 
-### Directory Temi
 ```
-/Themes/
-├── One/           # Tema principale
-│   ├── resources/ # Sorgenti CSS/JS/Sass
-│   └── public/    # Assets compilati
-└── Two/           # Tema alternativo
+base_<progetto>/
+├── laravel/Themes/<Tema>/
+│   ├── resources/      sorgenti CSS/JS
+│   └── public/         asset compilati da Vite (outDir)
+└── public_html/        DOCUMENT ROOT — non va mai cancellata
+    ├── themes/<Tema>  -> ../../laravel/Themes/<Tema>/public   (symlink relativo)
+    └── assets/xot     -> ../../laravel/Modules/Xot/public     (symlink relativo)
 ```
 
-### Workflow Corretto
-```bash
-# 🚨 SEMPRE lavorare nella cartella del tema
-cd /Themes/One/
-
-# 1. Modifica i file sorgente in:
-# - resources/css/
-# - resources/js/
-# - resources/sass/
+I symlink sono **relativi** (restano validi se il progetto cambia percorso) e si creano una volta
+per installazione:
 
 # 2. Compila gli assets
 npm run build
 
 # 3. Copia nella directory pubblica Laravel
-npm run copy
 ```
 
 ## ⚠️ NON Fare Mai
 ❌ **NON modificare** `/public/css/` o `/public/js/` direttamente
 ❌ **NON usare** `npm run build` dalla root Laravel
-❌ **NON dimenticare** il comando `npm run copy`
+❌ **NON dimenticare** il comando `symlink public_html/themes (npm run copy obsoleto)`
 
 ## ✅ Processo Corretto
 1. **Modifica sorgenti** in `/Themes/[Theme]/resources/`
 2. **Build assets** con `npm run build` dalla cartella tema
-3. **Copy assets** con `npm run copy` dalla cartella tema
+3. **Copy assets** con `symlink public_html/themes (npm run copy obsoleto)` dalla cartella tema
 4. **Verifica risultato** nel browser
 
-## 🔄 Comandi di Build per Tema
-
-### Tema One
 ```bash
 cd Themes/One
 npm install          # Prima volta
 npm run build        # Compila Sass/JS
-npm run copy         # Copia in /public/
 ```
 
 ### Tema Two
@@ -64,35 +56,30 @@ npm run copy         # Copia in /public/
 cd Themes/Two
 npm install
 npm run build
-npm run copy
 ```
 
-## 🎯 File di Configurazione
+- Non modificare a mano i file compilati in `public/` o in `public_html/`.
+- Non lanciare `npm run build` dalla root Laravel per gli asset di un tema.
+- Non sostituire i symlink di `public_html/` con copie dei file, e non cancellare `public_html/`.
+- Non aggiungere uno script `copy` al `package.json`.
 
-### package.json (Tema)
+## package.json del tema
+
 ```json
 {
   "scripts": {
+    "dev": "vite",
     "build": "vite build",
-    "copy": "cp -r public/* ../../public/"
+    "watch": "vite build --watch"
   }
 }
 ```
 
-### vite.config.js (Tema)
-```javascript
-export default defineConfig({
-  build: {
-    outDir: 'public'
-  }
-});
-```
-
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Modifiche Non Visibili?
 1. Verificare di aver eseguito `npm run build`
-2. Verificare di aver eseguito `npm run copy`
+2. Verificare di aver eseguito `symlink public_html/themes (npm run copy obsoleto)`
 3. Svuotare cache browser (Ctrl+F5)
 4. Verificare path corretti in vite.config.js
 
@@ -104,4 +91,7 @@ export default defineConfig({
 
 ---
 
-**⚠️ RICORDA**: Il workflow dei temi è DIVERSO dal normale workflow Laravel. Sempre theme → build → copy → public!
+### Errori di build?
+1. `npm install` nella cartella del tema.
+2. Verificare le versioni di Node e npm.
+3. Controllare le dipendenze in `package.json`.

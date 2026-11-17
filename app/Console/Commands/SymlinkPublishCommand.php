@@ -5,9 +5,13 @@ declare(strict_types=1);
 namespace Modules\Xot\Console\Commands;
 
 use Illuminate\Console\Command;
-use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Facades\File;
+use Modules\Xot\Actions\File\CreateRelativeSymlinkAction;
+use Safe\Exceptions\FilesystemException;
 use Symfony\Component\Console\Attribute\AsCommand;
+
+use function Safe\realpath;
+use function Safe\unlink;
 
 #[AsCommand(name: 'symlink:publish')]
 class SymlinkPublishCommand extends Command
@@ -18,7 +22,7 @@ class SymlinkPublishCommand extends Command
 
     protected $description = 'Create symlinks for modules/themes with public folders (excludes modules without public folder)';
 
-    public function handle(Filesystem $files): int
+    public function handle(): int
     {
         $modulesPath = base_path('Modules');
         $themesPath = base_path('Themes');
@@ -59,6 +63,7 @@ class SymlinkPublishCommand extends Command
             foreach ($errors as $error) {
                 $this->line("  <error>✗</error> {$error}");
             }
+
             return self::FAILURE;
         }
 
@@ -70,6 +75,14 @@ class SymlinkPublishCommand extends Command
 
     /**
      * Process a directory (modules or themes) for public folder symlinks.
+     *
+     * @param  list<string>  $created
+     * @param  list<string>  $skipped
+     * @param  list<string>  $errors
+     *
+     * @param-out list<string> $created
+     * @param-out list<string> $skipped
+     * @param-out list<string> $errors
      */
     protected function processDirectory(
         string $sourcePath,
@@ -79,74 +92,91 @@ class SymlinkPublishCommand extends Command
         array &$skipped,
         array &$errors
     ): void {
-        if (!is_dir($sourcePath)) {
+        if (! is_dir($sourcePath)) {
             return;
         }
 
-        $directories = File::directories($sourcePath);
+        $force = (bool) $this->option('force');
+        $dryRun = (bool) $this->option('dry-run');
 
-        foreach ($directories as $dir) {
-            $name = basename($dir);
-            $publicDir = $dir . '/public';
-
-            if (!is_dir($publicDir)) {
-                $skipped[] = "{$type}/{$name} (no public folder)";
+        foreach (File::directories($sourcePath) as $dir) {
+            if (! is_string($dir)) {
                 continue;
             }
 
-            // Determine target path based on type
-            if ($type === 'modules') {
-                $targetDir = $targetBase;
-                $targetPath = $targetDir . '/' . $name;
-            } else {
-                // Themes go under public_html/themes/
-                $targetDir = public_path('themes');
-                $targetPath = $targetDir . '/' . $name;
+            $name = basename($dir);
+            $publicDir = $dir.'/public';
+
+            if (! is_dir($publicDir)) {
+                $skipped[] = "{$type}/{$name} (no public folder)";
+
+                continue;
             }
 
-            // Ensure target directory exists
-            if (!is_dir($targetDir)) {
+            // Modules go under the assets base, themes under public_html/themes/
+            $targetDir = $type === 'modules' ? $targetBase : public_path('themes');
+            $targetPath = $targetDir.'/'.$name;
+
+            // A dry run must leave the filesystem untouched, target directory included.
+            if (! $dryRun && ! is_dir($targetDir)) {
                 File::makeDirectory($targetDir, 0755, true);
             }
 
-            // Check if symlink already exists
-            if (is_link($targetPath)) {
-                $currentTarget = readlink($targetPath);
-                if ($currentTarget === $publicDir) {
+            $linker = app(CreateRelativeSymlinkAction::class);
+            $isLink = is_link($targetPath);
+            if ($isLink) {
+                if ($linker->isRelativeLinkTo($targetPath, $publicDir)) {
                     $this->line("  <info>=</info> {$type}/{$name} already linked correctly");
+
                     continue;
                 }
-                if ($this->option('force')) {
-                    unlink($targetPath);
-                } else {
+                // Same target through an absolute path: rewritten as relative, no --force needed.
+                $resolvedTarget = $this->realpathOrFalse($targetPath);
+                $sameTarget = $resolvedTarget !== false && $resolvedTarget === $this->realpathOrFalse($publicDir);
+                if (! $sameTarget && ! $force) {
                     $errors[] = "{$type}/{$name}: symlink already exists at {$targetPath}";
+
                     continue;
                 }
-            } elseif (is_dir($targetPath)) {
-                if ($this->option('force')) {
-                    $files = File::allFiles($targetPath);
-                    foreach ($files as $file) {
-                        File::delete($file);
-                    }
-                    rmdir($targetPath);
-                } else {
-                    $errors[] = "{$type}/{$name}: directory exists at {$targetPath}, use --force to overwrite";
-                    continue;
-                }
+            } elseif (is_dir($targetPath) && ! $force) {
+                $errors[] = "{$type}/{$name}: directory exists at {$targetPath}, use --force to overwrite";
+
+                continue;
             }
 
-            // Create symlink
-            if ($this->option('dry-run')) {
+            // Nothing is removed or created in a dry run (before, --force deleted the target even then).
+            if ($dryRun) {
                 $created[] = "{$type}/{$name} → {$publicDir}";
+
                 continue;
             }
 
             try {
-                symlink($publicDir, $targetPath);
+                // --force: replace the existing link; a real directory is never deleted, it is moved aside
+                // (it lives under the document root and may hold files nobody else has).
+                if ($isLink) {
+                    unlink($targetPath);
+                } elseif (is_dir($targetPath)) {
+                    File::moveDirectory($targetPath, $targetPath.'.bak-'.date('YmdHis'));
+                }
+
+                $linker->execute($publicDir, $targetPath);
                 $created[] = "{$type}/{$name} → {$targetPath}";
             } catch (\Throwable $e) {
                 $errors[] = "{$type}/{$name}: {$e->getMessage()}";
             }
+        }
+    }
+
+    /**
+     * realpath che restituisce false (non eccezione) se il percorso non esiste o il link e' rotto.
+     */
+    private function realpathOrFalse(string $path): string|false
+    {
+        try {
+            return realpath($path);
+        } catch (FilesystemException) {
+            return false;
         }
     }
 }
