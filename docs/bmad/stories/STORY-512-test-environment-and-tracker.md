@@ -15,6 +15,8 @@ related:
   - ../../testing-database-strategy.md
   - ../../wiki/concepts/env-testing-parity-copy-env.md
   - ../../../../../../docs/sprint-status.yaml
+superseded_by: "./story-512-test-environment-and-tracker.md"
+updated: 2026-11-17
 ---
 
 # STORY-512 — Ambiente test e tracker verificabili
@@ -48,3 +50,5 @@ all'account di sviluppo.
 - `APP_ENV=testing php artisan tinker ...`: sentinel credential risolte nel config senza connessione DB.
 - Pest applicativo: ancora SQLSTATE 1044, access denied su `fixcity_data_test`; 0 assertion.
 - `phpstan analyse Modules`: 0 errori nel controllo più recente della tranche Fixcity.
+
+> Deprecated alias. Canonico: [./story-512-test-environment-and-tracker.md](./story-512-test-environment-and-tracker.md).

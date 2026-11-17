@@ -1,4 +1,5 @@
 ---
+qmd: "xot architecture readme md"
 title: "Xot - readme.md"
 module: Xot
 bmad: true

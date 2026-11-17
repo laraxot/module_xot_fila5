@@ -1,4 +1,5 @@
 ---
+qmd: "xot investigation investigation md"
 type: investigation
 title: "Investigation Core Contract Refactoring"
 links: {github_issue: #XXX}

@@ -1,4 +1,5 @@
 ---
+qmd: "xot wiki mcp readme section md"
 title: "Xot - mcp-readme-section.md"
 module: Xot
 bmad: true

@@ -1,4 +1,5 @@
 ---
+qmd: "xot parcheggio readme md"
 title: "File parcheggiati — Xot"
 document_type: index
 category: documentation

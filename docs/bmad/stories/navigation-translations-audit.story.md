@@ -1,4 +1,5 @@
 ---
+qmd: "xot bmad stories navigation translations audit story md"
 title: "Audit traduzioni .navigation — modulo Xot"
 type: story
 module: Xot

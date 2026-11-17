@@ -1,4 +1,5 @@
 ---
+qmd: "xot note codice readme md"
 title: "Note di codice — Xot"
 document_type: index
 category: documentation
