@@ -102,7 +102,7 @@ con collegamenti bidirezionali...
 ```
 
 ## Collegamenti
-- [Regole di Documentazione](../documentation_rules.md)
+- [Regole di Documentazione](../archive/documentation_rules.md)
 - [Gestione della Documentazione](../DOCUMENTATION_MANAGEMENT.md)
 - [Gestione della Documentazione](../documentation_management.md)
 - [Best Practices](../best-practices.md)

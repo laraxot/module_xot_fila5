@@ -114,7 +114,7 @@ composer dump-autoload
 ## Collegamenti
 
 - [Testing Guide - Modulo <nome progetto>](../../<nome progetto>/project_docs/testing.md)
-- [PHPStan Configuration](./phpstan-configuration-fixes.md)
+- [PHPStan Configuration](archive/old_tasks/phpstan-configuration-fixes.md)
 - [Best Practices](./best-practices-consolidated.md)
 
 ---

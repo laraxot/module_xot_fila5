@@ -42,4 +42,8 @@ class MyCustomWidget extends XotBaseWidget
 ## Riferimenti
 
 - [Documentazione Filament Widgets](/var/www/html/base_generic/laravel/Modules/Xot/docs/filament/widgets/index.md)
-- [XotBaseWidget](/var/www/html/base_generic/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php) 
+- [XotBaseWidget](/var/www/html/base_generic/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php)
+
+## Vista `$view` e Larastan
+
+`$view` e' `string`, non `view-string`: i namespace Blade di modulo non sono verificabili staticamente; `resolveView()` usa `view()->exists()` a runtime.

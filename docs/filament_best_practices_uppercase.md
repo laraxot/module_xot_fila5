@@ -114,16 +114,16 @@ Quando si estende `XotBaseResource`, NON definire le seguenti proprietà e metod
 class DoctorResource extends XotBaseResource
 {
     protected static ?string $navigationIcon = 'heroicon-o-user'; // ERRORE
-    
+
     protected static ?string $navigationGroup = 'Pazienti'; // ERRORE
-    
+
     protected static ?int $navigationSort = 3; // ERRORE
-    
+
     public static function getRelations(): array
     {
         return []; // ERRORE: se vuoto, non definire
     }
-    
+
     public static function getPages(): array
     {
         return [
@@ -192,10 +192,10 @@ use Modules\Brain\Models\Socio;
 class SocioResource extends XotBaseResource
 {
     protected static ?string $model = Socio::class;
-    
+
     // NON definire $navigationIcon quando si estende XotBaseResource
     // NON definire $navigationSort quando si estende XotBaseResource
-    
+
     // Form Schema - CORRETTO ✅
     public function getFormSchema(): array
 ---
@@ -205,24 +205,24 @@ class SocioResource extends XotBaseResource
             TextInput::make('cognome')
                 ->required()
                 ->maxLength(255),
-            
+
             TextInput::make('nome')
                 ->required()
                 ->maxLength(255),
-            
+
             DatePicker::make('data_nascita'),
-            
+
             TextInput::make('email')
                 ->email()
                 ->required(),
-            
+
             Select::make('id_stato_socio')
                 ->relationship('statoSocio', 'descrizione'),
-            
+
             Toggle::make('is_attivo'),
         ];
     }
-    
+
     // Table - CORRETTO ✅
     public static function table(\Filament\Tables\Table $table): \Filament\Tables\Table
     {
@@ -231,21 +231,21 @@ class SocioResource extends XotBaseResource
                 TextColumn::make('cognome')
                     ->sortable()
                     ->searchable(),
-                
+
                 TextColumn::make('nome')
                     ->sortable()
                     ->searchable(),
-                
+
                 TextColumn::make('sezione.descrizione'),
-                
+
                 TextColumn::make('statoSocio.descrizione'),
-                
+
                 BooleanColumn::make('is_attivo'),
             ])
             ->filters([
                 SelectFilter::make('id_stato_socio')
                     ->relationship('statoSocio', 'descrizione'),
-                
+
                 SelectFilter::make('id_sezione')
                     ->relationship('sezione', 'descrizione'),
             ])
@@ -255,7 +255,7 @@ class SocioResource extends XotBaseResource
                 Action::make('delete'),
             ]);
     }
-    
+
     // Query Scope - CORRETTO ✅
     public static function getEloquentQuery(): Builder
     {
@@ -278,7 +278,7 @@ return [
     'navigation_icon' => 'heroicon-o-user',
     'navigation_sort' => 1,
     'description' => 'Gestione completa dei soci',
-    
+
     'fields' => [
         'id_socio' => [
             'label' => 'ID Socio',
@@ -316,7 +316,7 @@ return [
             'tooltip' => 'Indica se il socio è attualmente attivo'
         ]
     ],
-    
+
     'actions' => [
         'create' => [
             'label' => 'Nuovo Socio',
@@ -343,7 +343,7 @@ return [
             'tooltip' => 'Rimuovi questo socio dal sistema'
         ]
     ],
-    
+
     'sections' => [
         'personal_data' => [
             'label' => 'Dati Personali',
@@ -358,13 +358,13 @@ return [
             'tooltip' => 'Dettagli relativi all\'iscrizione'
         ]
     ],
-    
+
     'messages' => [
         'created' => 'Socio creato con successo',
         'updated' => 'Socio aggiornato con successo',
         'deleted' => 'Socio eliminato con successo'
     ],
-    
+
     'table' => [
         'empty_text' => 'Nessun socio trovato',
         'search_prompt' => 'Cerca soci...'
@@ -393,7 +393,7 @@ public function getFormSchema(): array
                         TextInput::make('nome')->required(),
                         DatePicker::make('data_nascita'),
                     ]),
-                
+
                 Forms\Components\Tabs\Tab::make(trans('socio-resource.sections.contact_info.label'))
                     ->icon('heroicon-o-mail')
                     ->schema([
@@ -418,13 +418,13 @@ Forms\Components\Section::make(trans('socio-resource.sections.personal_data.labe
                 TextInput::make('cognome')
                     ->required()
                     ->columnSpan(1),
-                
+
                 TextInput::make('nome')
                     ->required()
                     ->columnSpan(1),
             ])
             ->columns(2),
-            
+
         DatePicker::make('data_nascita')
             ->columnSpan('full'),
     ])
@@ -452,11 +452,11 @@ Per validazioni più complesse, utilizzare i metodi rules() o rule():
 ```php
 DatePicker::make('data_nascita')
     ->rules([
-        'required', 
-        'date', 
+        'required',
+        'date',
         'before:today'
     ])
-    
+
 TextInput::make('codice_fiscale')
     ->rule(fn() => function (string $attribute, $value, \Closure $fail) {
         if (!Str::isValidCF($value)) {
@@ -569,8 +569,8 @@ public static function getEloquentQuery(): Builder
 {
     return parent::getEloquentQuery()
         ->with([
-            'sezione', 
-            'statoSocio', 
+            'sezione',
+            'statoSocio',
             'convenzioni',
         ]);
 }
@@ -627,7 +627,7 @@ use Modules\Brain\Models\Socio;
 class SocioResource extends XotBaseResource
 {
     protected static ?string $model = Socio::class;
-    
+
     public function getFormSchema(): array
 ---
     public function getFormSchema(): array
@@ -637,7 +637,7 @@ class SocioResource extends XotBaseResource
             TextInput::make('cognome')->required(),
         ];
     }
-    
+
     public static function table(\Filament\Tables\Table $table): \Filament\Tables\Table
     {
         return $table
@@ -656,5 +656,5 @@ Consulta l'esempio completo all'inizio di questo documento per una implementazio
 ## Riferimenti
 
 - [Documentazione Filament](https://filamentphp.com/docs)
-- [Documentazione XotBaseResource](/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/Xot/project_docs/resource.md)
-- [Best Practices Laraxot](/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/Xot/project_docs/best-practices.md)
+- [Documentazione XotBaseResource](/var/www/html/exa/base_orisbroker_fila5/laravel/Modules/Xot/project_docs/resource.md)
+- [Best Practices Laraxot](/var/www/html/exa/base_orisbroker_fila5/laravel/Modules/Xot/project_docs/best-practices.md)

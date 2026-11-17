@@ -67,7 +67,7 @@ This document outlines the best practices for maintaining high code quality with
 - [Patient Module - Namespace Conventions](../../Patient/project_docs/NAMESPACE_CONVENTIONS.md)
 - [Patient Module - Validation Errors](../../Patient/project_docs/VALIDATION_ERRORS.md)
 - [PHP Strict Types](php-strict-types.md)
-- [PHPStan Implementation Guide](phpstan-implementation-guide.md)
+- [PHPStan Implementation Guide](archive/old_tasks/phpstan-implementation-guide.md)
 - [Naming Conventions](naming-conventions.md)
 - [Service Provider Best Practices](service-provider-best-practices.md)
 - [Filament Best Practices](filament-best-practices.md)

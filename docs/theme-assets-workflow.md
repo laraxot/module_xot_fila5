@@ -20,7 +20,6 @@ public_html/themes/<Tema>   ->   ../../laravel/Themes/<Tema>/public      (symlin
 public_html/assets/<modulo> ->   ../../laravel/Modules/<Modulo>/public   (symlink relativo)
 ```
 
-<<<<<<< .merge_file_s4aPuQ
 - `@vite([...], 'themes/<Tema>')` legge `public_html/themes/<Tema>/manifest.json`, cioè il manifest del tema.
 - `public_html` è la document root: non si cancella né si svuota mai.
 - I symlink sono **relativi** (restano validi se il progetto cambia percorso) e si creano una volta per
@@ -34,57 +33,12 @@ public_html/assets/<modulo> ->   ../../laravel/Modules/<Modulo>/public   (symlin
 
 **Perché un symlink e non `npm run copy`:**
 
-=======
-<<<<<<< .merge_file_N6jv8e
-### Workflow Corretto
-```bash
-# 🚨 SEMPRE lavorare nella cartella del tema
-cd /Themes/One/
-
-# 1. Modifica i file sorgente in:
-# - resources/css/
-# - resources/js/
-# - resources/sass/
-
-# 2. Compila gli assets
-npm run build
-
-# 3. Copia nella directory pubblica Laravel
-# niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
-```
-
-## ⚠️ NON Fare Mai
-❌ **NON modificare** `/public/css/` o `/public/js/` direttamente
-❌ **NON usare** `npm run build` dalla root Laravel
-niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
-
-## ✅ Processo Corretto
-1. **Modifica sorgenti** in `/Themes/[Theme]/resources/`
-2. **Build assets** con `npm run build` dalla cartella tema
-3. niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
-4. **Verifica risultato** nel browser
-=======
-- `@vite([...], 'themes/<Tema>')` legge `public_html/themes/<Tema>/manifest.json`, cioè il manifest del tema.
-- `public_html` è la document root: non si cancella né si svuota mai.
-- I symlink sono **relativi** (restano validi se il progetto cambia percorso) e si creano una volta per
-  installazione, in due modi equivalenti:
-  - `deploy.sh` (funzione `link_public_asset`), in modo idempotente. Se al posto del link c'è una cartella
-    vera, lo script avvisa e non la tocca: va sostituita a mano, dopo averne controllato il contenuto.
-  - i comandi artisan `php artisan xot:theme-link` e `php artisan xot:module-link` (con `--dry-run` per
-    provare). Dettagli: [console/commands/xot-asset-links.md](console/commands/xot-asset-links.md).
-    I comandi aggiungono anche il nome del link al `.gitignore` della cartella del docroot: il link non si
-    committa, lo crea ogni installazione.
-
-**Perché un symlink e non `npm run copy`:**
-
->>>>>>> .merge_file_wx9g7A
 - **Una sola copia degli asset.** L'output della build è versionato nel repository del tema (`Themes/<Tema>/public`),
   quindi ciò che si committa è ciò che si serve. Con la copia, `public_html` andava fuori sincronia appena qualcuno
   dimenticava il comando.
 - **Niente passo manuale nel deploy.** Basta il `git pull` del tema.
 - **Il web server vede solo `public`.** I sorgenti del tema (`resources`, `node_modules`, script) restano fuori dalla
   document root.
-<<<<<<< .merge_file_s4aPuQ
 
 ## Lavorare su un tema
 
@@ -95,13 +49,10 @@ npm run dev      # sviluppo con hot reload
 npm run build    # produzione: scrive in ./public (servito dal symlink)
 ```
 
-=======
->>>>>>> .merge_file_qKVgEi
 
 ## Lavorare su un tema
 
 ```bash
-<<<<<<< .merge_file_N6jv8e
 cd Themes/One
 npm install          # Prima volta
 npm run build        # Compila Sass/JS
@@ -154,14 +105,6 @@ export default defineConfig({
 ---
 
 **⚠️ RICORDA**: Il workflow dei temi è DIVERSO dal normale workflow Laravel. Sempre theme → build → copy → public!
-=======
-cd laravel/Themes/Sixteen
-npm install
-npm run dev      # sviluppo con hot reload
-npm run build    # produzione: scrive in ./public (servito dal symlink)
-```
-
->>>>>>> .merge_file_wx9g7A
 Lo script `copy` è stato tolto da `package.json` dei temi: non serve più.
 
 ## Non fare
@@ -201,7 +144,4 @@ Modulo nuovo con asset pubblici: crea `Modules/<Modulo>/public`, aggiungi `<modu
 | Icone delle categorie mancanti (`/assets/fixcity/svg/*.svg`) | Manca `public_html/assets/fixcity` | Lo crea `deploy.sh` o `php artisan xot:module-link` (link a `Modules/Fixcity/public`) |
 | Campo mappa assente nei pannelli (`assets/geo/manifest.json`) | Manca `public_html/assets/geo` o la build Geo non è committata | `deploy.sh` o `xot:module-link`; in sviluppo `cd Modules/Geo && ../../node_modules/.bin/vite build` e commit di `public/` |
 | Errori di build | Dipendenze o ambiente | `npm install` nella cartella del tema; verificare versioni di Node/npm; controllare `build.outDir` in `vite.config.js` (deve essere `public`) e le dipendenze in `package.json` |
-<<<<<<< .merge_file_s4aPuQ
-=======
->>>>>>> .merge_file_qKVgEi
 >>>>>>> .merge_file_wx9g7A

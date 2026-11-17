@@ -18,24 +18,24 @@ Analisi sistematica di tutti i moduli del progetto per identificare violazioni d
 ### 1. Violazioni DRY - Duplicazioni di Codice
 
 #### Singleton Pattern Duplicato
-**File**: `Modules/Quaeris/app/Services/LimeJsonService.php`, `Modules/Quaeris/app/Services/QuaerisService.php`
+**File**: `Modules/<nome progetto>/app/Services/LimeJsonService.php`, `Modules/<nome progetto>/app/Services/<nome progetto>Service.php`
 
 ```php
 // DUPLICATO in LimeJsonService.php
 private static ?self $instance = null;
 public static function getInstance(): self
 {
-    if (! self::$instance instanceof \Modules\Quaeris\Services\LimeJsonService) {
+    if (! self::$instance instanceof \Modules\<nome progetto>\Services\LimeJsonService) {
         self::$instance = new self();
     }
     return self::$instance;
 }
 
-// DUPLICATO in QuaerisService.php
+// DUPLICATO in <nome progetto>Service.php
 private static ?self $instance = null;
 public static function getInstance(): self
 {
-    if (! self::$instance instanceof \Modules\Quaeris\Services\QuaerisService) {
+    if (! self::$instance instanceof \Modules\<nome progetto>\Services\<nome progetto>Service) {
         self::$instance = new self();
     }
     return self::$instance;
@@ -45,13 +45,13 @@ public static function getInstance(): self
 **Soluzione**: Creare trait `SingletonTrait` in `Modules/Xot/app/Traits/SingletonTrait.php`
 
 #### Connection Hardcoded Duplicata
-**Problema**: `protected $connection = 'quaeris';` ripetuto in tutti i modelli Quaeris
+**Problema**: `protected $connection = '<nome progetto>';` ripetuto in tutti i modelli <nome progetto>
 **Soluzione**: Centralizzare in BaseModel o configurazione
 
 ### 2. Violazioni SOLID
 
 #### Single Responsibility Principle Violato
-**File**: `Modules/Quaeris/app/Models/BaseModel.php`
+**File**: `Modules/<nome progetto>/app/Models/BaseModel.php`
 
 ```php
 abstract class BaseModel extends Model implements ModelContract, HasMedia
@@ -74,7 +74,7 @@ abstract class BaseModel extends Model implements ModelContract, HasMedia
 **File**: `Modules/User/app/Models/BaseUser.php`
 
 ```php
-abstract class BaseUser extends Authenticatable implements 
+abstract class BaseUser extends Authenticatable implements
     HasMedia, HasName, HasTenants, MustVerifyEmail, UserContract
 {
     use HasApiTokens;
@@ -99,7 +99,7 @@ abstract class BaseUser extends Authenticatable implements
 ### 3. N+1 Query Problems
 
 #### Customer Model - Lazy Loading
-**File**: `Modules/Quaeris/app/Models/Customer.php`
+**File**: `Modules/<nome progetto>/app/Models/Customer.php`
 
 ```php
 public function surveyPdfsActive()
@@ -112,7 +112,7 @@ public function surveyPdfsActive()
 **Soluzione**: Usare query builder o eager loading
 
 #### AlertWidget - Query Complessa
-**File**: `Modules/Quaeris/app/Filament/Widgets/AlertWidget.php`
+**File**: `Modules/<nome progetto>/app/Filament/Widgets/AlertWidget.php`
 
 ```php
 return SurveyFlipResponse::where('survey_id', $this->getSurveyId())
@@ -135,7 +135,7 @@ return SurveyFlipResponse::where('survey_id', $this->getSurveyId())
 ### 4. Violazioni KISS - Complessità Eccessiva
 
 #### QuestionChart Model - Metodi Complessi
-**File**: `Modules/Quaeris/app/Models/QuestionChart.php`
+**File**: `Modules/<nome progetto>/app/Models/QuestionChart.php`
 
 ```php
 public function participants(): CustomRelation
@@ -162,7 +162,7 @@ public function participants(): CustomRelation
 ### 5. Gestione Errori Inadeguata
 
 #### SendInviteAction - Catch Vuoti
-**File**: `Modules/Quaeris/app/Actions/SendInviteAction.php`
+**File**: `Modules/<nome progetto>/app/Actions/SendInviteAction.php`
 
 ```php
 try {
@@ -182,7 +182,7 @@ try {
 ### 1. Filament Resources - Pattern Duplicati
 
 #### Schema Duplicato
-**File**: `Modules/Quaeris/app/Filament/Resources/ContactResource.php`, `CustomerResource.php`
+**File**: `Modules/<nome progetto>/app/Filament/Resources/ContactResource.php`, `CustomerResource.php`
 
 ```php
 // ContactResource.php
@@ -231,13 +231,13 @@ public function customer(): HasOneThrough
 **File**: Tutti i ServiceProvider dei moduli
 
 ```php
-class QuaerisServiceProvider extends XotBaseServiceProvider
+class <nome progetto>ServiceProvider extends XotBaseServiceProvider
 {
-    public string $name = 'Quaeris';
-    
+    public string $name = '<nome progetto>';
+
     protected string $module_dir = __DIR__;
     protected string $module_ns = __NAMESPACE__;
-    
+
     public function register(): void
     {
         parent::register();
@@ -333,20 +333,20 @@ trait SingletonTrait
 ```
 
 #### B. Separare BaseModel Responsibilities
-**File**: `Modules/Quaeris/app/Models/BaseModel.php`
+**File**: `Modules/<nome progetto>/app/Models/BaseModel.php`
 ```php
 abstract class BaseModel extends Model implements ModelContract
 {
     use HasFactory;
     use Updater;
-    
+
     // Rimuovere: Cachable, HasExtraTrait, InteractsWithMedia
     // Creare trait specifici per ogni concern
 }
 ```
 
 #### C. Implementare Repository Pattern
-**File**: `Modules/Quaeris/app/Repositories/SurveyFlipResponseRepository.php`
+**File**: `Modules/<nome progetto>/app/Repositories/SurveyFlipResponseRepository.php`
 ```php
 class SurveyFlipResponseRepository
 {
@@ -407,10 +407,10 @@ try {
 
 #### B. Configuration Centralization
 ```php
-// config/quaeris.php
+// config/<nome progetto>.php
 return [
     'database' => [
-        'connection' => env('QUAERIS_DB_CONNECTION', 'quaeris'),
+        'connection' => env('<nome progetto>_DB_CONNECTION', '<nome progetto>'),
     ],
     'limesurvey' => [
         'api' => [
@@ -445,7 +445,7 @@ return [
 
 ---
 
-**Data Analisi**: 2025-01-06  
-**Analista**: AI Code Review System  
-**Priorità**: CRITICA - Richiede intervento immediato  
+**Data Analisi**: 2025-01-06
+**Analista**: AI Code Review System
+**Priorità**: CRITICA - Richiede intervento immediato
 **Stima Effort**: 40-60 ore di refactoring

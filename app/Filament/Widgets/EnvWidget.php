@@ -78,7 +78,7 @@ class EnvWidget extends XotBaseSchemaWidget
         // .env nuovo viene ignorato. Senza questa riga l'utente cambiava
         // MAIL_HOST dal pannello, non succedeva niente, e concludeva che la
         // pagina non funziona — proprio il motivo per cui questa pagina esiste
-        // (module_quaeris_fila5#47: nessun accesso SSH al server).
+        // (module_<nome progetto>_fila5#47: nessun accesso SSH al server).
         //
         // `config:clear` e non `config:cache`: è quello che fa già
         // SocialiteProviderSettingsPage dopo aver scritto la sua

@@ -60,7 +60,7 @@ Per la regola universale sui prompt condivisi (come quelli in bashscripts/prompt
 
 ## Collegamenti
 - [Documentazione Generale](./documentation.md)
-- [Regole del Progetto](./rules.md)
+- [Regole del Progetto](archive/rules.md)
 - [Miglioramenti al Prompt docs.txt](./prompt_docs_improvements.md)
 
 - [Miglioramenti al Prompt docs.txt](./prompt_docs_improvements.md)b6f667c (.)

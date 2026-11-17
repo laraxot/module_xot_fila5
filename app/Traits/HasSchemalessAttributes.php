@@ -18,13 +18,10 @@ use function Safe\json_encode;
  * @property SchemalessAttributes|null $extra_attributes
  *
  * @see https://github.com/spatie/laravel-schemaless-attributes
-<<<<<<< .merge_file_nnfyhd
-=======
  *
->>>>>>> .merge_file_RfTNVR
- * @phpstan-ignore trait.unused
+ * Trait di piattaforma per extra_attributes schemaless (Spatie).
  */
-trait HasSchemalessAttributes // @phpstan-ignore trait.unused
+trait HasSchemalessAttributes
 {
     /**
      * Aggiunge extra_attributes al fillable.

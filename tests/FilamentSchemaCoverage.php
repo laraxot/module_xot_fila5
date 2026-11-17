@@ -104,8 +104,7 @@ final class FilamentSchemaCoverage
             }
 
             try {
-                /* @phpstan-ignore-next-line */
-                $schema = $class::getFormSchema();
+                $schema = (new $class)->getFormSchema();
                 $executed++;
                 if ($schema === []) {
                     continue;

@@ -2,7 +2,7 @@
 title: "RelationX Trait"
 type: note
 status: draft
-updated: 2026-10-18
+updated: 2026-11-17
 tags: [docs, xot, traits]
 qmd: "relationx trait xot"
 ---
@@ -74,3 +74,14 @@ Versione estesa di `morphToMany` con le stesse funzionalità di `belongsToManyX`
 
 ## Utilizzo nei Moduli
 Questo trait è utilizzato nei modelli base di tutti i moduli per standardizzare le relazioni complesse e garantire coerenza nell'accesso ai dati.
+
+
+## Lezione sessione 2026-11-17 — import duplicati
+
+`use Illuminate\Database\Eloquent\Relations\HasMany` era ripetuto due volte nel trait.
+In PHP e' un **Fatal** al class-load (`Cannot use ... because the name is already in use`),
+non un warning PHPStan. Cascata: ogni model che usa `RelationX`/`XotBaseModel` non carica,
+quindi artisan/`package:discover`/PHPStan escono 255.
+
+**Fix:** un solo `use` per simbolo. Prima di PHPStan, eseguire
+`bashscripts/quality-gates/class-load-fatals/find-class-load-fatals.sh`.

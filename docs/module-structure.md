@@ -249,7 +249,7 @@ User/
 
 ### Modulo UI
 - [Componenti Volt](../UI/project_docs/components/volt.md)
-- [Layout](../UI/project_docs/layouts.md)
+- [Layout](archive/layouts.md)
 - [Temi](../UI/project_docs/themes.md)
 - [Best Practices](../UI/project_docs/best-practices.md)
 
@@ -265,9 +265,9 @@ User/
 - [API Traduzioni](../Lang/project_docs/api.md)
 
 ### Modulo User
-- [Autenticazione](../User/project_docs/auth.md)
+- [Autenticazione](archive/install/auth.md)
 - [Permessi](../User/project_docs/permissions.md)
-- [Profilo](../User/project_docs/profile.md)
+- [Profilo](archive/service/profile.md)
 
 ### Modulo Patient
 - [Gestione Pazienti](../Patient/project_docs/patients.md)
@@ -281,7 +281,7 @@ User/
 
 ### Modulo Tenant
 - [Multi-tenant](../Tenant/project_docs/multi-tenant.md)
-- [Configurazione](../Tenant/project_docs/configuration.md)
+- [Configurazione](archive/configuration.md)
 - [Migrazione](../Tenant/project_docs/migration.md)
 
 ### Modulo Media
@@ -302,7 +302,7 @@ User/
 ### Modulo Gdpr
 - [Privacy](../Gdpr/project_docs/privacy.md)
 - [Consensi](../Gdpr/project_docs/consents.md)
-- [Sicurezza](../Gdpr/project_docs/security.md)
+- [Sicurezza](archive/roadmap/docs/html2pdf/security.md)
 
 ### Modulo Job
 - [Jobs](../Job/project_docs/jobs.md)

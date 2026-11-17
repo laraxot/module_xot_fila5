@@ -1,147 +1,110 @@
 ---
 title: "Convenzioni per Form Schema in Filament"
 type: note
-status: unverified
-created: 2026-09-24
-updated: 2026-10-20
+status: active
+updated: 2026-11-17
 module: Xot
-tags: [xot, docs]
-qmd: "Convenzioni per Form Schema in Filament"
+tags: [xot, docs, filament, form-schema]
+qmd: "Convenzioni per Form Schema in Filament XotBaseResourceForm final instance"
 ---
 # Convenzioni per Form Schema in Filament
 
-## Regola Fondamentale
+## Perché (contratto XotBase)
 
-In SaluteOra, il metodo `getFormSchema()` nelle risorse Filament deve **SEMPRE** restituire un array associativo con chiavi stringhe, mai un array numerico.
+Lo schema del form **non vive sulla Resource**. Vive sulla classe `Schemas/{Model}Form` che estende `XotBaseResourceForm`.
 
-## Implementazione Corretta
+| Classe | Metodo | Firma | Motivo |
+|--------|--------|-------|--------|
+| `XotBaseResource` | `getFormSchema()` | `final public function` → `[]` | Blocca override sulla Resource: codice lì è morto perché `form()` delega a `getFormClass()` → `XotBaseResourceForm::configure()` |
+| `XotBaseResourceForm` | `getFormSchema()` | `abstract public function` (istanza) | Unico posto in cui si dichiara lo schema; `configure()` fa `app(static::class)->form($schema)` |
+| `XotBaseResourceInfolist` | `getInfolistSchema()` | `abstract public function` (istanza) | Stesso pattern via `configure()` + istanza |
+
+### Fatal class-load tipici (da non riprodurre)
+
+1. **`Cannot override final method XotBaseResource::getFormSchema()`** — rimuovere l'override dalla Resource; spostare i campi in `Schemas/{Model}Form`.
+2. **`Cannot make non static method …::getFormSchema() static`** — allineare la figlia a metodo di istanza (`public function`, non `public static function`).
+3. **`Class … contains 1 abstract method … getFormSchema`** — implementare `public function getFormSchema(): array` (anche `return []` se lo schema reale è in metodi specializzati, es. widget auth FO).
+
+Questi errori interrompono il class loading PHP e quindi bloccano PHPStan/artisan: non sono warning, sono fatal.
+
+## Regola operativa
+
+1. Resource: **non** dichiarare `getFormSchema()`.
+2. Form/Infolist: metodo **di istanza**, array associativo con chiavi stringa.
+3. Bridge di migrazione: se serve ancora contenuto legacy sulla Resource, usare solo `getFormSchemaOld()` (non final), poi spostarlo nel Form e rimuoverlo.
+
+## Implementazione corretta
 
 ```php
-// ✅ CORRETTO
-public static function getFormSchema(): array
+// Schemas/ArticleForm.php
+final class ArticleForm extends XotBaseResourceForm
 {
-    return [
-        'title' => Forms\Components\TextInput::make('title')
-            ->required(),
-        'content' => Forms\Components\RichEditor::make('content')
-            ->columnSpan(2),
-        'status' => Forms\Components\Select::make('status')
-            ->options(StatusEnum::options()),
-    ];
-}
-```
-
-## Implementazione Errata
-
-```php
-// ❌ ERRATO
-public static function getFormSchema(): array
-{
-    return [
-        Forms\Components\TextInput::make('title')
-            ->required(),
-        Forms\Components\RichEditor::make('content')
-            ->columnSpan(2),
-        Forms\Components\Select::make('status')
-            ->options(StatusEnum::options()),
-    ];
-}
-```
-
-## Componenti Deprecati da Evitare
-
-La classe `Forms\Components\Card` è deprecata e **NON** deve essere utilizzata. Utilizzare invece:
-
-```php
-// ✅ CORRETTO
-'info_section' => Forms\Components\Section::make('Informazioni')
-    ->schema([
-        'name' => Forms\Components\TextInput::make('name'),
-        'email' => Forms\Components\TextInput::make('email'),
-    ]),
-```
-
-## Origine dei Campi
-
-I campi del form devono essere ricavati da:
-
-1. **Modello Eloquent**: Utilizzare le proprietà e le relazioni del modello
-2. **Migration**: Basarsi sui campi definiti nelle migrazioni
-3. **Vincoli di Business**: Riflettere i requisiti specifici dell'applicazione
-
-Non inventare o aggiungere arbitrariamente campi che non esistono nel modello o nelle migration.
-
-## Proprietà di Navigazione
-
-Nelle classi che estendono `XotBaseResource`, **NON** definire:
-
-- `protected static ?string $navigationIcon`
-- `protected static ?string $navigationGroup`
-- `protected static ?int $navigationSort`
-- `public static function getNavigationLabel()`
-- `public static function getPluralModelLabel()`
-- `public static function getModelLabel()`
-
-`XotBaseResource` gestisce automaticamente questi aspetti.
-
-## Esempi Completi
-
-### Prima (Non Corretto)
-
-```php
-class MyResource extends XotBaseResource
-{
-    protected static ?string $navigationIcon = 'heroicon-o-document';
-
-    public static function getRelations(): array
-    {
-        return [];
-    }
-
-    public static function getPages(): array
+    /**
+     * @return array<string, \Filament\Schemas\Components\Component>
+     */
+    public function getFormSchema(): array
     {
         return [
-            'index' => Pages\ListRecords::route('/'),
-            'create' => Pages\CreateRecord::route('/create'),
-            'edit' => Pages\EditRecord::route('/{record}/edit'),
-        ];
-    }
-
-    public static function getFormSchema(): array
-    {
-        return [
-            Forms\Components\TextInput::make('title'),
-            Forms\Components\RichEditor::make('content'),
+            'title' => TextInput::make('title')->required(),
+            'content' => RichEditor::make('content')->columnSpan(2),
+            'status' => Select::make('status')->options(StatusEnum::class),
         ];
     }
 }
 ```
 
-### Dopo (Corretto)
-
 ```php
-class MyResource extends XotBaseResource
+// Schemas/ArticleInfolist.php
+final class ArticleInfolist extends XotBaseResourceInfolist
 {
-    public static function getFormSchema(): array
+    /**
+     * @return array<string, \Filament\Schemas\Components\Component>
+     */
+    public function getInfolistSchema(): array
     {
         return [
-            'title' => Forms\Components\TextInput::make('title'),
-            'content' => Forms\Components\RichEditor::make('content'),
+            'title' => TextEntry::make('title'),
+            'status' => TextEntry::make('status'),
         ];
     }
 }
 ```
 
-## Vantaggi dell'Approccio Corretto
+## Implementazioni errate
 
-1. **Consistenza**: Mantiene coerenza in tutto il progetto
-2. **Mantenibilità**: Facilita la gestione e la modifica dei form
-3. **Chiarezza**: Rende esplicita l'associazione tra campi e componenti
-4. **Estensibilità**: Permette l'override parziale del form schema nelle classi derivate
+```php
+// Override su Resource (final → fatal al load)
+class ArticleResource extends XotBaseResource
+{
+    public static function getFormSchema(): array { /* … */ }
+}
 
-## Documentazione Correlata
+// Static su Form/Infolist (parent è instance → fatal al load)
+class ArticleForm extends XotBaseResourceForm
+{
+    public static function getFormSchema(): array { /* … */ }
+}
 
-- [XotBaseResource](./XOT_BASE_RESOURCE.md)
-- [Form Components](./FORM_COMPONENTS.md)
-- [Form Validation](./FORM_VALIDATION.md)
-- [Filament Best Practices](../../docs/rules/filament_best_practices.md)
+// Array numerico (rompe convenzione chiavi stringa / PHPStan)
+return [TextInput::make('title')];
+```
+
+## Widget FO multi-schema
+
+Se una classe estende `XotBaseResourceForm` ma espone più schema specializzati (es. `UserForm::getLoginFormSchema()`), deve comunque implementare l'astratto `getFormSchema()` — tipicamente `return []` — senza mischiare i flussi FO.
+
+## Origine dei campi
+
+I campi devono riflettere modello Eloquent, migration e vincoli di business: non inventare campi assenti.
+
+## Proprietà di navigazione
+
+Nelle Resource che estendono `XotBaseResource` non ridefinire navigation icon/group/sort/label: li gestisce la base.
+
+## Documentazione correlata
+
+- [XotBaseResource](filament/resources/xot-base-resource.md)
+- [Array keys rule](wiki/array-keys-rule.md)
+- [Compatibilità firme metodi](errors/method-signature-compatibility.md)
+- [Lessons learned — form schema sulla Form class](lessons-learned.md)
+- [Filament best practices](filament/filament-best-practices.md)

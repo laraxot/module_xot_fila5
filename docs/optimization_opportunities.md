@@ -61,18 +61,18 @@ php check_form_schema.php --mode=testing
 abstract class XotBaseModel extends Model
 {
     use HasFactory, Updater;
-    
+
     public static $snakeAttributes = true;
     public $incrementing = true;
     public $timestamps = true;
     protected $perPage = 30;
-    
+
     // Metodi comuni per tutti i moduli
     protected static function newFactory()
     {
         return app(GetFactoryAction::class)->execute(static::class);
     }
-    
+
     protected function casts(): array
     {
         return [
@@ -94,7 +94,7 @@ abstract class BaseModel extends XotBaseModel
 {
     // Solo configurazioni specifiche del modulo
     protected $connection = 'module_name';
-    
+
     // Override solo se necessario
 }
 ```
@@ -110,9 +110,9 @@ abstract class BaseModel extends XotBaseModel
 
 **Widget problematici**:
 - `Modules/UI/app/Filament/Widgets/StatsOverviewWidget.php` → estende `BaseWidget` (Filament)
-- `Modules/Quaeris/app/Filament/Widgets/StatsOverviewWidget.php` → estende `BaseWidget` (Filament)
+- `Modules/<nome progetto>/app/Filament/Widgets/StatsOverviewWidget.php` → estende `BaseWidget` (Filament)
 - `Modules/UI/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
-- `Modules/Quaeris/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
+- `Modules/<nome progetto>/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
 
 **Soluzione DRY + KISS**:
 ```php
@@ -121,7 +121,7 @@ abstract class UIBaseStatsWidget extends XotBaseStatsOverviewWidget
 {
     protected static ?int $sort = 0;
     protected static ?string $pollingInterval = null;
-    
+
     // Metodi comuni per tutti i widget di statistiche
 }
 
@@ -129,7 +129,7 @@ abstract class UIBaseTestWidget extends XotBaseWidget
 {
     protected static string $view = 'ui::filament.widgets.base-test';
     protected static ?bool $isLazyLoaded = true;
-    
+
     // Metodi comuni per tutti i widget di test
 }
 
@@ -161,12 +161,12 @@ class StatsOverviewWidget extends UIBaseStatsWidget
 abstract class XotBaseCreateRecord extends CreateRecord
 {
     protected static string $resource;
-    
+
     protected function getRedirectUrl(): string
     {
         return $this->getResource()::getUrl('index');
     }
-    
+
     protected function mutateFormDataBeforeCreate(array $data): array
     {
         // Logica comune per tutti i moduli
@@ -178,7 +178,7 @@ abstract class XotBaseCreateRecord extends CreateRecord
 class CreateUser extends XotBaseCreateRecord
 {
     protected static string $resource = UserResource::class;
-    
+
     // Override solo se serve logica specifica
 }
 ```
@@ -204,7 +204,7 @@ class FactoryManager
         // Logica centralizzata per creare factory
         return $this->resolveFactory($modelClass);
     }
-    
+
     public function createModel(string $modelClass, array $attributes = []): Model
     {
         // Logica centralizzata per creare modelli
@@ -226,12 +226,12 @@ class XotValidationRules
     {
         return ['required', 'email', 'max:255'];
     }
-    
+
     public static function name(): array
     {
         return ['required', 'string', 'max:100'];
     }
-    
+
     public static function description(): array
     {
         return ['nullable', 'string', 'max:1000'];
@@ -371,8 +371,8 @@ return array_merge(
 
 - [XotBase Patterns](../.ai/guidelines/xot-base-patterns.md)
 - [Architecture Guidelines](architecture.md)
-- [Development Workflow](development-workflow.md)
-- [Testing Strategy](testing-strategy.md)
+- [Development Workflow](archive/laraxot/development-workflow.md)
+- [Testing Strategy](archive/testing-strategy.md)
 
 ---
 

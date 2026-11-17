@@ -16,7 +16,7 @@ qmd: "Laraxot Architecture Rules - Xot Module"
 ```php
 // ❌ SBAGLIATO - Mai estendere direttamente
 class MyPage extends ViewRecord
-class MyPage extends CreateRecord  
+class MyPage extends CreateRecord
 class MyPage extends EditRecord
 class MyPage extends ListRecords
 class MyPage extends Page
@@ -56,14 +56,14 @@ use Filament\Resources\Resource;
 class MyResource extends XotBaseResource
 {
     protected static ?string $model = MyModel::class;
-    
+
     public static function getFormSchema(): array
     {
         return [
             // Form components
         ];
     }
-    
+
     // ❌ NON includere getTableColumns in XotBaseResource
     // public static function getTableColumns(): array
 }
@@ -89,7 +89,7 @@ class MyPage extends XotBasePage
     // protected static ?string $navigationIcon;
     // protected static ?string $title;
     // protected static ?string $navigationLabel;
-    
+
     public function getFormSchema(): array
     {
         return [
@@ -144,7 +144,7 @@ use Spatie\QueueableAction\QueueableAction;
 class MyAction
 {
     use QueueableAction;
-    
+
     public function execute()
     {
         // Action logic
@@ -160,12 +160,12 @@ class MyAction
 
 declare(strict_types=1);
 
-namespace Modules\Quaeris\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
+namespace Modules\<nome progetto>\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
 
 use Filament\Actions\Action;
 use Filament\Actions\DeleteAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
-use Modules\Quaeris\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
+use Modules\<nome progetto>\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
 
 class ViewQuestionChart extends XotBaseViewRecord
 {
@@ -177,11 +177,11 @@ class ViewQuestionChart extends XotBaseViewRecord
             Action::make('edit')
                 ->icon('heroicon-o-pencil')
                 ->url(fn () => static::getResource()::getUrl('edit', ['record' => $this->record])),
-            
+
             Action::make('generate')
                 ->icon('heroicon-o-chart-bar')
                 ->action('generateChart'),
-            
+
             DeleteAction::make()
                 ->requiresConfirmation(),
         ];
@@ -207,7 +207,7 @@ class ViewQuestionChart extends XotBaseViewRecord
 
 declare(strict_types=1);
 
-namespace Modules\Quaeris\Filament\Widgets;
+namespace Modules\<nome progetto>\Filament\Widgets;
 
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Select;
@@ -229,11 +229,11 @@ class QuestionChartFilterWidget extends XotBaseWidget
             DatePicker::make('dateFrom')
                 ->live()
                 ->afterStateUpdated(fn () => $this->updateFilters()),
-            
+
             DatePicker::make('dateTo')
                 ->live()
                 ->afterStateUpdated(fn () => $this->updateFilters()),
-            
+
             Select::make('answerFilter')
                 ->options([
                     'all' => 'All Answers',
@@ -263,10 +263,10 @@ class QuestionChartFilterWidget extends XotBaseWidget
 
 declare(strict_types=1);
 
-namespace Modules\Quaeris\Filament\Resources;
+namespace Modules\<nome progetto>\Filament\Resources;
 
 use Modules\Xot\Filament\Resources\XotBaseResource;
-use Modules\Quaeris\Models\QuestionChart;
+use Modules\<nome progetto>\Models\QuestionChart;
 
 class QuestionChartResource extends XotBaseResource
 {
