@@ -19,9 +19,8 @@ use PHPUnit\Framework\Assert;
  * App\Support\FeatureFlags exists only in host apps that ship the full skeleton
  * (ptvx, predict, ...). Slim hosts (restaurant, techplanner, ...) do not provide
  * it, so every test skips itself when the class is absent instead of failing.
- * Return values are narrowed with Assert::assertIs* before expect(): on hosts
- * without the class PHPStan sees mixed, and expect(mixed) cannot resolve its
- * template type.
+ * Assert::assertIs* narrows only FeatureFlags::get() (mixed) before expect();
+ * isEnabled/isAnyEnabled/listEnabled/all already return bool|array — no assertIs*.
  */
 
 uses(XotBaseTestCase::class);
@@ -96,9 +95,7 @@ describe('FeatureFlags::isEnabled', function (): void {
         }
 
         $email = FeatureFlags::isEnabled('notifications.email.enabled');
-        Assert::assertIsBool($email);
         $sms = FeatureFlags::isEnabled('notifications.sms.enabled');
-        Assert::assertIsBool($sms);
 
         expect($email)->toBeTrue();
         expect($sms)->toBeFalse();
@@ -110,9 +107,7 @@ describe('FeatureFlags::isEnabled', function (): void {
         }
 
         $missing = FeatureFlags::isEnabled('missing.flag');
-        Assert::assertIsBool($missing);
         $missingWithDefault = FeatureFlags::isEnabled('missing.flag', true);
-        Assert::assertIsBool($missingWithDefault);
 
         expect($missing)->toBeFalse();
         expect($missingWithDefault)->toBeTrue();
@@ -126,7 +121,6 @@ describe('FeatureFlags::isAnyEnabled', function (): void {
         }
 
         $any = FeatureFlags::isAnyEnabled('notifications');
-        Assert::assertIsBool($any);
 
         expect($any)->toBeTrue();
     });
@@ -142,7 +136,6 @@ describe('FeatureFlags::isAnyEnabled', function (): void {
         ]);
 
         $any = FeatureFlags::isAnyEnabled('notifications');
-        Assert::assertIsBool($any);
 
         expect($any)->toBeFalse();
     });
@@ -153,7 +146,6 @@ describe('FeatureFlags::isAnyEnabled', function (): void {
         }
 
         $any = FeatureFlags::isAnyEnabled('telepathy');
-        Assert::assertIsBool($any);
 
         expect($any)->toBeFalse();
     });
@@ -166,7 +158,6 @@ describe('FeatureFlags::listEnabled', function (): void {
         }
 
         $enabled = FeatureFlags::listEnabled('notifications');
-        Assert::assertIsArray($enabled);
 
         expect($enabled)->toBe(['email', 'slack']);
     });
@@ -177,7 +168,6 @@ describe('FeatureFlags::listEnabled', function (): void {
         }
 
         $enabled = FeatureFlags::listEnabled('telepathy');
-        Assert::assertIsArray($enabled);
 
         expect($enabled)->toBe([]);
     });
@@ -188,7 +178,6 @@ describe('FeatureFlags::listEnabled', function (): void {
         }
 
         $enabled = FeatureFlags::listEnabled('cache');
-        Assert::assertIsArray($enabled);
 
         expect($enabled)->toBe([]);
     });
@@ -201,7 +190,6 @@ describe('FeatureFlags::all', function (): void {
         }
 
         $all = FeatureFlags::all();
-        Assert::assertIsArray($all);
 
         expect($all)->toHaveKey('cache.store', 'redis')
             ->and($all)->toHaveCount(6);
@@ -215,7 +203,6 @@ describe('FeatureFlags::all', function (): void {
         config()->set('features', 'not-an-array');
 
         $all = FeatureFlags::all();
-        Assert::assertIsArray($all);
 
         expect($all)->toBe([]);
     });
@@ -225,10 +212,12 @@ describe('FeatureFlags::all', function (): void {
             $this->markTestSkipped('Host app senza App\Support\FeatureFlags.');
         }
 
-        config()->set('features', [0 => 'positional', 'cache.store' => 'file']);
+        config()->set('features', [
+            0 => 'positional',
+            'cache.store' => 'file',
+        ]);
 
         $all = FeatureFlags::all();
-        Assert::assertIsArray($all);
 
         expect($all)->toBe(['cache.store' => 'file']);
     });

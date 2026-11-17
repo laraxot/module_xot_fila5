@@ -27,8 +27,8 @@ use PHPUnit\Framework\Assert;
  * Queste classi esistono solo negli host con lo scheletro completo (ptvx,
  * predict, ...). Gli host con app/ minimale (restaurant, techplanner, ...)
  * non le forniscono: ogni test salta se la classe mancante, invece di fallire.
- * I valori di ritorno sono tipizzati con Assert::assertIs* perche' su host
- * senza la classe PHPStan vede mixed.
+ * Assert::assertIs* solo dove il tipo runtime non e' gia' noto a PHPStan
+ * (es. elemento di array); mai su return gia' tipizzati (array / const string).
  */
 
 uses(TestCase::class);
@@ -42,7 +42,6 @@ test('trust hosts trusts every subdomain of the application url', function (): v
 
     $appHost = Str::of(Config::string('app.url'))->after('://')->before('/')->value();
 
-    Assert::assertIsArray($hosts);
     Assert::assertCount(1, $hosts);
     $pattern = $hosts[0] ?? null;
     Assert::assertIsString($pattern);
@@ -104,9 +103,7 @@ test('redirect if authenticated sends an authenticated user home', function (): 
     );
 
     Assert::assertInstanceOf(RedirectResponse::class, $response);
-    $home = RouteServiceProvider::HOME;
-    Assert::assertIsString($home);
-    Assert::assertSame(url($home), $response->getTargetUrl());
+    Assert::assertSame(url(RouteServiceProvider::HOME), $response->getTargetUrl());
 });
 
 test('logout action clears the web guard and the session', function (): void {
