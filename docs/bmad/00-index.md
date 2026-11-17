@@ -13,6 +13,12 @@ qmd: "indice BMAD Xot audit purpose piano stories"
 - [Audit](./audit.md)
 - [Audit dettagliato](./audits/xot-audit.md)
 - [Piano di miglioramento](./piano-miglioramento.md)
+<<<<<<< .merge_file_p9Y0HL
+=======
+- [Epic e story](./epics.md)
+- [Decision log](./decision-log.md)
+- [Brainstorming](./brainstorming.md)
+>>>>>>> .merge_file_AEDKxI
 - [Story audit modulo](./stories/module-bmad-audit.story.md)
 - [ECC](../ecc/00-index.md)
 - [Purpose root](../purpose.md)
