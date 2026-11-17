@@ -97,8 +97,7 @@ describe('FeatureFlags::isEnabled', function (): void {
         $email = FeatureFlags::isEnabled('notifications.email.enabled');
         $sms = FeatureFlags::isEnabled('notifications.sms.enabled');
 
-        expect($email)->toBeTrue();
-        expect($sms)->toBeFalse();
+        expect($email)->toBeTrue()->and($sms)->toBeFalse();
     });
 
     it('uses the default when the key is absent', function (): void {
@@ -109,8 +108,7 @@ describe('FeatureFlags::isEnabled', function (): void {
         $missing = FeatureFlags::isEnabled('missing.flag');
         $missingWithDefault = FeatureFlags::isEnabled('missing.flag', true);
 
-        expect($missing)->toBeFalse();
-        expect($missingWithDefault)->toBeTrue();
+        expect($missing)->toBeFalse()->and($missingWithDefault)->toBeTrue();
     });
 });
 
