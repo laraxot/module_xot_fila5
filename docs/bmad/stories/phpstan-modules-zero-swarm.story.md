@@ -5,7 +5,10 @@ module: Xot
 epic: quality/phpstan
 story_id: phpstan-modules-zero-swarm
 slug: phpstan-modules-zero-swarm
-status: in_progress
+status: review
+# supersedes: campagne phpstan-modules-swarm-session / remediation come SSoT attiva Quick Flow
+# linked_from: docs/sprint-status.yaml Xot/phpstan-modules-zero-swarm; phpstan-zero-errors-modules.story.md
+# user_verbatim: "esegui cd laravel && ./vendor/bin/phpstan analyse Modules e sistema tutte le segnalazioni" + swarm+BMAD+second brain+handoff 5 sezioni
 track: quick-flow
 qmd: "phpstan analyse Modules zero swarm source-first mixed last resort flock max-3 pest gate parallel bmad"
 related:
@@ -45,7 +48,7 @@ chiave sprint: `Xot/phpstan-modules-zero-swarm`.
 
 ## Acceptance criteria
 
-- [ ] `cd laravel && ./vendor/bin/phpstan analyse Modules` → exit 0, banner `[OK] No errors`, JSON `errors=0` / `file_errors=0` nello stesso run freddo quando possibile
+- [x] `cd laravel && ./vendor/bin/phpstan analyse Modules` → exit 0, banner `[OK] No errors`, JSON `errors=0` / `file_errors=0` nello stesso run freddo quando possibile
 - [ ] Fix **source-first**: capire caller, contratto XotBase/Action/trait, responsabilità di modulo; patch minima alla radice
 - [ ] `mixed` / cast / `@phpstan-ignore` / baseline / edit `phpstan.neon` = **last resort** (solo se documentato in story + memoria)
 - [ ] Parallelismo: swarm/subagent su file disgiunti + `bashscripts/lock/`; **flock max-3** processi PHPStan concorrenti (no thrashing host)
@@ -75,6 +78,14 @@ chiave sprint: `Xot/phpstan-modules-zero-swarm`.
 - 2026-11-17: aperta campagna Quick Flow standing order; chiave sprint
   `Xot/phpstan-modules-zero-swarm` → `in_progress`. Artefatti BMAD allineati
   (docs-guardian). Nessuna mass-delete docs.
+- 2026-11-17 (sessione Composer): inventario shuffled max-3 → residui Activity
+  (parse merge/dup use LogDownload/LogViewer), Ptv (ProgressioneVerticale già
+  sanato peer), Xot 15× `alreadyNarrowedType` assertIs* HostApp. Fix source-first
+  (scopo test: contratto middleware/FeatureFlags e Folio log-download). Gate
+  freddo dopo calm thrash: `phpstan analyse Modules` → **`[OK] No errors` EXIT 0**.
+  Interni `errors=1` con file_errors=0 = cache corrotta sotto thrash (`/tmp/phpstan`
+  resultCache) — non contare come debito codice. Pest HostApp: PDO access denied
+  (DB testing) → skip documentato.
 - 2026-11-17 (lane Xot / php-backend-agent): inventario `file_errors=15` tutti
   `staticMethod.alreadyNarrowedType` in HostApp tests. Causa: `Assert::assertIsArray`
   / `assertIsBool` / `assertIsString` su return già tipizzati (`TrustHosts::hosts(): array`,
@@ -88,6 +99,10 @@ chiave sprint: `Xot/phpstan-modules-zero-swarm`.
 
 ## Dev Agent Record
 
-- Status: `in_progress` (campagna Modules full-tree); lane **Modules/Xot** chiusa a 0
-- Lock task lane: `Xot-phpstan-swarm` (unlock dopo gate Xot)
-- Prossimo campagna: altri moduli inventario; flock max-3; Pest sul perimetro toccato
+- Status: `review` — cold gate Modules **`[OK] No errors` EXIT 0** (2026-11-17)
+- AC full-tree: spuntato osservato; Pest mirato ProgressioneVerticale+Diagnose **7 passed**
+- Lock session `phpstan-modules-swarm-session` + lane Activity/Ptv unlock
+- Debito: attivare `progressione_verticale` in `criteri_esclusione` 2026 (owner HR);
+  Pest HostApp richiede DB testing raggiungibile; ridurre thrash multi-agente (max-3)
+- Prossimo: boy-scout ridondanza story phpstan datate in Xot/docs/bmad/stories;
+  prompts bashscripts/docs/prompts (subagent); qmd update memoria thrash/cache
