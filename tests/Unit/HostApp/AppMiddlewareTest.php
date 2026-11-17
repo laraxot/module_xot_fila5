@@ -14,8 +14,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Str;
-use PHPUnit\Framework\Assert;
 use Modules\Xot\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
 /*
  * Middleware e action HTTP dell'applicazione host (App\), non dei moduli.
@@ -42,6 +42,7 @@ test('trust hosts trusts every subdomain of the application url', function (): v
 
     $appHost = Str::of(Config::string('app.url'))->after('://')->before('/')->value();
 
+    Assert::assertIsArray($hosts);
     Assert::assertCount(1, $hosts);
     $pattern = $hosts[0] ?? null;
     Assert::assertIsString($pattern);
@@ -58,10 +59,8 @@ test('authenticate returns no redirect target for json requests', function (): v
 
     $request = Request::create('/protected', 'GET', server: ['HTTP_ACCEPT' => 'application/json']);
 
-    $redirectTo = (function (Request $request): ?string {
-        $target = $this->redirectTo($request);
-
-        return $target;
+    $redirectTo = (function (Request $request): mixed {
+        return $this->redirectTo($request);
     })->call(new Authenticate(app('auth')), $request);
 
     Assert::assertNull($redirectTo);
@@ -89,6 +88,11 @@ test('redirect if authenticated sends an authenticated user home', function (): 
         $this->markTestSkipped('Host app senza App\Http\Middleware\RedirectIfAuthenticated.');
     }
 
+    // Laravel 11+ non ha piu' RouteServiceProvider: senza HOME non c'e' destinazione da verificare.
+    if (! class_exists(RouteServiceProvider::class)) {
+        $this->markTestSkipped('Host app senza App\Providers\RouteServiceProvider.');
+    }
+
     $guard = Mockery::mock();
     $guard->shouldReceive('check')->once()->andReturnTrue();
     Auth::shouldReceive('guard')->once()->with('web')->andReturn($guard);
@@ -100,7 +104,9 @@ test('redirect if authenticated sends an authenticated user home', function (): 
     );
 
     Assert::assertInstanceOf(RedirectResponse::class, $response);
-    Assert::assertSame(url(RouteServiceProvider::HOME), $response->getTargetUrl());
+    $home = RouteServiceProvider::HOME;
+    Assert::assertIsString($home);
+    Assert::assertSame(url($home), $response->getTargetUrl());
 });
 
 test('logout action clears the web guard and the session', function (): void {

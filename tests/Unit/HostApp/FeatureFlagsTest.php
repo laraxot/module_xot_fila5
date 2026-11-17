@@ -96,7 +96,9 @@ describe('FeatureFlags::isEnabled', function (): void {
         }
 
         $email = FeatureFlags::isEnabled('notifications.email.enabled');
+        Assert::assertIsBool($email);
         $sms = FeatureFlags::isEnabled('notifications.sms.enabled');
+        Assert::assertIsBool($sms);
 
         expect($email)->toBeTrue();
         expect($sms)->toBeFalse();
@@ -108,7 +110,9 @@ describe('FeatureFlags::isEnabled', function (): void {
         }
 
         $missing = FeatureFlags::isEnabled('missing.flag');
+        Assert::assertIsBool($missing);
         $missingWithDefault = FeatureFlags::isEnabled('missing.flag', true);
+        Assert::assertIsBool($missingWithDefault);
 
         expect($missing)->toBeFalse();
         expect($missingWithDefault)->toBeTrue();
@@ -122,6 +126,7 @@ describe('FeatureFlags::isAnyEnabled', function (): void {
         }
 
         $any = FeatureFlags::isAnyEnabled('notifications');
+        Assert::assertIsBool($any);
 
         expect($any)->toBeTrue();
     });
@@ -137,6 +142,7 @@ describe('FeatureFlags::isAnyEnabled', function (): void {
         ]);
 
         $any = FeatureFlags::isAnyEnabled('notifications');
+        Assert::assertIsBool($any);
 
         expect($any)->toBeFalse();
     });
@@ -147,6 +153,7 @@ describe('FeatureFlags::isAnyEnabled', function (): void {
         }
 
         $any = FeatureFlags::isAnyEnabled('telepathy');
+        Assert::assertIsBool($any);
 
         expect($any)->toBeFalse();
     });
@@ -159,6 +166,7 @@ describe('FeatureFlags::listEnabled', function (): void {
         }
 
         $enabled = FeatureFlags::listEnabled('notifications');
+        Assert::assertIsArray($enabled);
 
         expect($enabled)->toBe(['email', 'slack']);
     });
@@ -169,6 +177,7 @@ describe('FeatureFlags::listEnabled', function (): void {
         }
 
         $enabled = FeatureFlags::listEnabled('telepathy');
+        Assert::assertIsArray($enabled);
 
         expect($enabled)->toBe([]);
     });
@@ -179,6 +188,7 @@ describe('FeatureFlags::listEnabled', function (): void {
         }
 
         $enabled = FeatureFlags::listEnabled('cache');
+        Assert::assertIsArray($enabled);
 
         expect($enabled)->toBe([]);
     });
@@ -191,6 +201,7 @@ describe('FeatureFlags::all', function (): void {
         }
 
         $all = FeatureFlags::all();
+        Assert::assertIsArray($all);
 
         expect($all)->toHaveKey('cache.store', 'redis')
             ->and($all)->toHaveCount(6);
@@ -204,6 +215,7 @@ describe('FeatureFlags::all', function (): void {
         config()->set('features', 'not-an-array');
 
         $all = FeatureFlags::all();
+        Assert::assertIsArray($all);
 
         expect($all)->toBe([]);
     });
@@ -216,6 +228,7 @@ describe('FeatureFlags::all', function (): void {
         config()->set('features', [0 => 'positional', 'cache.store' => 'file']);
 
         $all = FeatureFlags::all();
+        Assert::assertIsArray($all);
 
         expect($all)->toBe(['cache.store' => 'file']);
     });
