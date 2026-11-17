@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use App\Support\FeatureFlags;
 use Modules\Xot\Tests\XotBaseTestCase;
+use PHPUnit\Framework\Assert;
 
 /*
  * The feature registry lives in config/features.php with FLAT dot-notation keys
@@ -14,6 +15,13 @@ use Modules\Xot\Tests\XotBaseTestCase;
  *
  * XotBaseTestCase boots the application without DatabaseTransactions: these tests
  * only need the config repository, never the database.
+ *
+ * App\Support\FeatureFlags exists only in host apps that ship the full skeleton
+ * (ptvx, predict, ...). Slim hosts (restaurant, techplanner, ...) do not provide
+ * it, so every test skips itself when the class is absent instead of failing.
+ * Return values are narrowed with Assert::assertIs* before expect(): on hosts
+ * without the class PHPStan sees mixed, and expect(mixed) cannot resolve its
+ * template type.
  */
 
 uses(XotBaseTestCase::class);
@@ -31,86 +39,185 @@ beforeEach(function (): void {
 
 describe('FeatureFlags::get', function (): void {
     it('reads a flat dot-notation key from the registry', function (): void {
-        expect(FeatureFlags::get('cache.store'))->toBe('redis');
-        expect(FeatureFlags::get('cache.ttl'))->toBe(3600);
+        if (! class_exists(FeatureFlags::class)) {
+            $this->markTestSkipped('Host app senza App\Support\FeatureFlags.');
+        }
+
+        $store = FeatureFlags::get('cache.store');
+        $ttl = FeatureFlags::get('cache.ttl');
+        Assert::assertIsString($store);
+        Assert::assertIsInt($ttl);
+
+        expect($store)->toBe('redis');
+        expect($ttl)->toBe(3600);
     });
 
     it('returns the registered value even when it is null', function (): void {
-        expect(FeatureFlags::get('pdnd.client_id', 'fallback'))->toBeNull();
+        if (! class_exists(FeatureFlags::class)) {
+            $this->markTestSkipped('Host app senza App\Support\FeatureFlags.');
+        }
+
+        $value = FeatureFlags::get('pdnd.client_id', 'fallback');
+
+        Assert::assertNull($value);
     });
 
     it('falls back to the default for an unknown key', function (): void {
-        expect(FeatureFlags::get('does.not.exist', 'fallback'))->toBe('fallback');
-        expect(FeatureFlags::get('does.not.exist'))->toBeNull();
+        if (! class_exists(FeatureFlags::class)) {
+            $this->markTestSkipped('Host app senza App\Support\FeatureFlags.');
+        }
+
+        $withDefault = FeatureFlags::get('does.not.exist', 'fallback');
+        $withoutDefault = FeatureFlags::get('does.not.exist');
+        Assert::assertIsString($withDefault);
+        Assert::assertNull($withoutDefault);
+
+        expect($withDefault)->toBe('fallback');
     });
 
     it('does not resolve a key as a nested config path', function (): void {
-        expect(config('features.cache.store'))->toBeNull()
-            ->and(FeatureFlags::get('cache.store'))->toBe('redis');
+        if (! class_exists(FeatureFlags::class)) {
+            $this->markTestSkipped('Host app senza App\Support\FeatureFlags.');
+        }
+
+        $nested = config('features.cache.store');
+        $store = FeatureFlags::get('cache.store');
+        Assert::assertNull($nested);
+        Assert::assertIsString($store);
+
+        expect($store)->toBe('redis');
     });
 });
 
 describe('FeatureFlags::isEnabled', function (): void {
     it('coerces the registered value to bool', function (): void {
-        expect(FeatureFlags::isEnabled('notifications.email.enabled'))->toBeTrue();
-        expect(FeatureFlags::isEnabled('notifications.sms.enabled'))->toBeFalse();
+        if (! class_exists(FeatureFlags::class)) {
+            $this->markTestSkipped('Host app senza App\Support\FeatureFlags.');
+        }
+
+        $email = FeatureFlags::isEnabled('notifications.email.enabled');
+        $sms = FeatureFlags::isEnabled('notifications.sms.enabled');
+
+        expect($email)->toBeTrue();
+        expect($sms)->toBeFalse();
     });
 
     it('uses the default when the key is absent', function (): void {
-        expect(FeatureFlags::isEnabled('missing.flag'))->toBeFalse();
-        expect(FeatureFlags::isEnabled('missing.flag', true))->toBeTrue();
+        if (! class_exists(FeatureFlags::class)) {
+            $this->markTestSkipped('Host app senza App\Support\FeatureFlags.');
+        }
+
+        $missing = FeatureFlags::isEnabled('missing.flag');
+        $missingWithDefault = FeatureFlags::isEnabled('missing.flag', true);
+
+        expect($missing)->toBeFalse();
+        expect($missingWithDefault)->toBeTrue();
     });
 });
 
 describe('FeatureFlags::isAnyEnabled', function (): void {
     it('is true when at least one flag of the group is on', function (): void {
-        expect(FeatureFlags::isAnyEnabled('notifications'))->toBeTrue();
+        if (! class_exists(FeatureFlags::class)) {
+            $this->markTestSkipped('Host app senza App\Support\FeatureFlags.');
+        }
+
+        $any = FeatureFlags::isAnyEnabled('notifications');
+
+        expect($any)->toBeTrue();
     });
 
     it('is false when the group has no enabled flag', function (): void {
+        if (! class_exists(FeatureFlags::class)) {
+            $this->markTestSkipped('Host app senza App\Support\FeatureFlags.');
+        }
+
         config()->set('features', [
             'notifications.email.enabled' => false,
             'notifications.sms.enabled' => false,
         ]);
 
-        expect(FeatureFlags::isAnyEnabled('notifications'))->toBeFalse();
+        $any = FeatureFlags::isAnyEnabled('notifications');
+
+        expect($any)->toBeFalse();
     });
 
     it('is false for an unknown group', function (): void {
-        expect(FeatureFlags::isAnyEnabled('telepathy'))->toBeFalse();
+        if (! class_exists(FeatureFlags::class)) {
+            $this->markTestSkipped('Host app senza App\Support\FeatureFlags.');
+        }
+
+        $any = FeatureFlags::isAnyEnabled('telepathy');
+
+        expect($any)->toBeFalse();
     });
 });
 
 describe('FeatureFlags::listEnabled', function (): void {
     it('lists only the enabled features of the group, without prefix or suffix', function (): void {
-        expect(FeatureFlags::listEnabled('notifications'))->toBe(['email', 'slack']);
+        if (! class_exists(FeatureFlags::class)) {
+            $this->markTestSkipped('Host app senza App\Support\FeatureFlags.');
+        }
+
+        $enabled = FeatureFlags::listEnabled('notifications');
+
+        expect($enabled)->toBe(['email', 'slack']);
     });
 
     it('returns an empty list for an unknown group', function (): void {
-        expect(FeatureFlags::listEnabled('telepathy'))->toBe([]);
+        if (! class_exists(FeatureFlags::class)) {
+            $this->markTestSkipped('Host app senza App\Support\FeatureFlags.');
+        }
+
+        $enabled = FeatureFlags::listEnabled('telepathy');
+
+        expect($enabled)->toBe([]);
     });
 
     it('ignores keys of the group that are not .enabled flags', function (): void {
-        expect(FeatureFlags::listEnabled('cache'))->toBe([]);
+        if (! class_exists(FeatureFlags::class)) {
+            $this->markTestSkipped('Host app senza App\Support\FeatureFlags.');
+        }
+
+        $enabled = FeatureFlags::listEnabled('cache');
+
+        expect($enabled)->toBe([]);
     });
 });
 
 describe('FeatureFlags::all', function (): void {
     it('returns the whole registry', function (): void {
-        expect(FeatureFlags::all())->toHaveKey('cache.store', 'redis')
-            ->and(FeatureFlags::all())->toHaveCount(6);
+        if (! class_exists(FeatureFlags::class)) {
+            $this->markTestSkipped('Host app senza App\Support\FeatureFlags.');
+        }
+
+        $all = FeatureFlags::all();
+
+        expect($all)->toHaveKey('cache.store', 'redis')
+            ->and($all)->toHaveCount(6);
     });
 
     it('returns an empty registry when the config is not an array', function (): void {
+        if (! class_exists(FeatureFlags::class)) {
+            $this->markTestSkipped('Host app senza App\Support\FeatureFlags.');
+        }
+
         config()->set('features', 'not-an-array');
 
-        expect(FeatureFlags::all())->toBe([]);
+        $all = FeatureFlags::all();
+
+        expect($all)->toBe([]);
     });
 
     it('drops non-string keys', function (): void {
+        if (! class_exists(FeatureFlags::class)) {
+            $this->markTestSkipped('Host app senza App\Support\FeatureFlags.');
+        }
+
         config()->set('features', [0 => 'positional', 'cache.store' => 'file']);
 
-        expect(FeatureFlags::all())->toBe(['cache.store' => 'file']);
+        $all = FeatureFlags::all();
+
+        expect($all)->toBe(['cache.store' => 'file']);
     });
 });
 

@@ -28,7 +28,6 @@ base_<progetto>/
 I symlink sono **relativi** (restano validi se il progetto cambia percorso) e si creano una volta
 per installazione:
 
-<<<<<<< .merge_file_RPQgCs
 # 2. Compila gli assets
 npm run build
 
@@ -45,20 +44,8 @@ npm run build
 2. **Build assets** con `npm run build` dalla cartella tema
 3. **Copy assets** con `symlink public_html/themes (npm run copy obsoleto)` dalla cartella tema
 4. **Verifica risultato** nel browser
-=======
-```bash
-cd laravel
-php artisan xot:theme-link     # public_html/themes/<Tema>   -> ../../laravel/Themes/<Tema>/public
-php artisan xot:module-link    # public_html/assets/<modulo> -> ../../laravel/Modules/<Modulo>/public
-```
-
-Dettagli: [console/commands/xot-asset-links.md](console/commands/xot-asset-links.md).
-
-## Workflow
->>>>>>> .merge_file_KvhmoN
 
 ```bash
-<<<<<<< .merge_file_RPQgCs
 cd Themes/One
 npm install          # Prima volta
 npm run build        # Compila Sass/JS
@@ -70,18 +57,6 @@ cd Themes/Two
 npm install
 npm run build
 ```
-=======
-cd laravel/Themes/<Tema>
-npm install        # la prima volta
-npm run build      # compila in public/: e' gia' online tramite symlink
-# oppure
-npm run dev        # sviluppo con hot reload
-```
-
-Nessun passo di copia: dopo `npm run build` il browser vede subito i nuovi file.
-
-## Non fare
->>>>>>> .merge_file_KvhmoN
 
 - Non modificare a mano i file compilati in `public/` o in `public_html/`.
 - Non lanciare `npm run build` dalla root Laravel per gli asset di un tema.
@@ -102,7 +77,6 @@ Nessun passo di copia: dopo `npm run build` il browser vede subito i nuovi file.
 
 ## Troubleshooting
 
-<<<<<<< .merge_file_RPQgCs
 ### Modifiche Non Visibili?
 1. Verificare di aver eseguito `npm run build`
 2. Verificare di aver eseguito `symlink public_html/themes (npm run copy obsoleto)`
@@ -116,14 +90,6 @@ Nessun passo di copia: dopo `npm run build` il browser vede subito i nuovi file.
 4. Verificare dipendenze in package.json
 
 ---
-=======
-### Modifiche non visibili?
-1. `npm run build` eseguito nella cartella del tema?
-2. `public_html/themes/<Tema>` è un symlink? (`ls -la public_html/themes`). Se è una cartella
-   normale, è una copia vecchia: rinominarla, poi `php artisan xot:theme-link`.
-3. Svuotare la cache del browser (Ctrl+F5).
-4. Controllare `build.outDir` in `vite.config.js` (deve essere `public`).
->>>>>>> .merge_file_KvhmoN
 
 ### Errori di build?
 1. `npm install` nella cartella del tema.

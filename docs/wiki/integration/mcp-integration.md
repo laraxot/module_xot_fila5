@@ -3,10 +3,6 @@ title: "Xot - mcp-integration.md"
 module: Xot
 bmad: true
 status: active
-type: note
-updated: 2026-10-09
-tags: [docs, xot, wiki]
-qmd: "mcp (model context protocol) integration xot"
 ---
 # MCP (Model Context Protocol) Integration
 
