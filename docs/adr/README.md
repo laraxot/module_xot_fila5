@@ -17,7 +17,7 @@ Il nome del file e' l'argomento, senza date ne' numeri (la data sta nella frontm
 ---
 title: "ADR — <decisione in una riga>"
 type: decision
-status: accepted | superseded | deprecated
+status: proposed | accepted | superseded | deprecated
 created: AAAA-MM-GG
 updated: AAAA-MM-GG
 issues: []
@@ -40,6 +40,7 @@ Pro, contro, debito che resta, cosa misurare. Chi cambia la decisione scrive un 
 
 ## Decisioni
 
+- [architecture-rules-phparkitect](architecture-rules-phparkitect.md) — regole architetturali sulle classi con PHPArkitect e baseline (proposta)
 
 ## Decisioni precedenti (formato libero, non ancora ADR)
 
