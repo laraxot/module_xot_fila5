@@ -109,7 +109,10 @@ test('redirect if authenticated sends an authenticated user home', function (): 
     );
 
     Assert::assertInstanceOf(RedirectResponse::class, $response);
-    Assert::assertSame(url(RouteServiceProvider::HOME), $response->getTargetUrl());
+    // HOME e' una costante dell'app host: per PHPStan e' mixed finche' non si controlla che sia una stringa.
+    $home = RouteServiceProvider::HOME;
+    Assert::assertIsString($home);
+    Assert::assertSame(url($home), $response->getTargetUrl());
 });
 
 test('logout action clears the web guard and the session', function (): void {
