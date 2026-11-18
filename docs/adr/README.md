@@ -40,7 +40,8 @@ Pro, contro, debito che resta, cosa misurare. Chi cambia la decisione scrive un 
 
 ## Decisioni
 
-- [architecture-rules-phparkitect](architecture-rules-phparkitect.md) — regole architetturali sulle classi con PHPArkitect e baseline (proposta)
+- [architecture-tests-pest-arch](architecture-tests-pest-arch.md) — regole di architettura con Pest arch(): ambito esplicito, debito dichiarato, cinque trappole chiuse
+- [architecture-rules-phparkitect](architecture-rules-phparkitect.md) — PHPArkitect con baseline (superseded dal precedente)
 
 ## Decisioni precedenti (formato libero, non ancora ADR)
 

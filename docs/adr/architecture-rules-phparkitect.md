@@ -6,10 +6,11 @@ module: Xot
 tags: [adr, architettura, phparkitect, pest, ci, qualita]
 created: 2026-11-18
 updated: 2026-11-18
-status: proposed
+status: superseded
+superseded_by: architecture-tests-pest-arch.md
 issues:
-  - "https://github.com/laraxot/base_fixcity_fila5/issues/732"
-  - "https://github.com/laraxot/base_fixcity_fila5/issues/733"
+  - "progetto ospite #732"
+  - "progetto ospite #733"
 related:
   - ../../tests/Unit/Architecture/NoServicesTest.php
   - ../../tests/Unit/Docs/ModuleCodeIsProjectAgnosticTest.php
@@ -17,6 +18,9 @@ related:
 ---
 
 # ADR: le regole architetturali sulle classi si verificano con PHPArkitect, con baseline
+
+> **Superseded** il 2026-11-18 da [architecture-tests-pest-arch](architecture-tests-pest-arch.md): si usa Pest arch(),
+> gia' installato. Le misure qui sotto restano valide e motivano le protezioni di `tests/Arch/scope.php`.
 
 ## Contesto
 
@@ -29,7 +33,7 @@ Misure del 2026-11-18 su `dev`:
 
 - **Le guardie esistenti sono rosse e nessuno se n'e' accorto.** `NoServicesTest` fallisce 7 test su 8: dopo il commit
   `8a8f309737` («mirror al root di moduli e temi») esistono di nuovo `app/Services` in AI, Geo, Job, Seo, UI, Xot. Il test
-  non e' nelle suite bloccanti della CI (`phpunit.xml` ne ha tre: Fixcity, Geo, User) e richiede MariaDB anche se legge solo
+  non e' nelle suite bloccanti della CI (`phpunit.xml` ne aveva tre, nessuna di Xot) e richiede MariaDB anche se legge solo
   file.
 - **Pest `arch()` (gia' installato, `pestphp/pest-plugin-arch` 5.0) da' falsi verdi in questo layout.**
   `arch()->expect('Modules')->not->toHaveSuffix('Service')` passa, mentre `expect('Modules\Geo')` fallisce su
@@ -39,7 +43,7 @@ Misure del 2026-11-18 su `dev`:
   `database`): 6 secondi, nessun database, 89 violazioni. Di queste, 22 classi in `Modules\*\Services` (le stesse della
   guardia rossa), 54 classi in `Actions` senza suffisso `Action`, 13 Resource che non estendono *direttamente*
   `XotBaseResource` (falsi positivi: estendono `LangBaseResource`, che a sua volta la estende; con `IsA` al posto di `Extend`
-  spariscono). Zero violazioni su «i moduli condivisi non dipendono da `Modules\Fixcity`» e «i moduli non dipendono da
+  spariscono). Zero violazioni su «i moduli condivisi non dipendono dal modulo del progetto» e «i moduli non dipendono da
   `Themes`».
 - Un solo file Blade di Xot (`resources/views/rss/feed.blade.php`) rompe il parser: va escluso il percorso `resources/`.
 
@@ -78,5 +82,5 @@ Proposta (da confermare, aggiunge una dipendenza di sviluppo):
 - Debito visibile e misurabile: il numero di righe della baseline. Primo obiettivo: le 22 classi `Services` (story Xot sulla
   migrazione ad Action).
 - Rischio: la «mirror al root» riporta codice vecchio dai repository dei moduli; la baseline lo intercetta solo se il job CI
-  gira. Il job CI di `base_fixcity_fila5` oggi non parte (limite di spesa di GitHub Actions dell'account): finche' non riparte,
+  gira. Il job CI del progetto ospite oggi non parte (limite di spesa di GitHub Actions dell'account): finche' non riparte,
   il pre-commit e' l'unico punto di controllo.
