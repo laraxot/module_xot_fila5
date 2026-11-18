@@ -41,7 +41,11 @@ it('declares module_ns in every module service provider, apart from the known de
 });
 
 it('still registers the Geo routes despite the missing module_ns', function (): void {
-    $source = file_get_contents(dirname(__DIR__, 5).'/Modules/Geo/app/Providers/GeoServiceProvider.php');
+    $path = dirname(__DIR__, 5).'/Modules/Geo/app/Providers/GeoServiceProvider.php';
+    if (! is_file($path)) {
+        $this->markTestSkipped('Modulo Geo non presente in questo progetto');
+    }
+    $source = file_get_contents($path);
 
     Assert::assertStringContainsString('$this->app->register(RouteServiceProvider::class);', $source);
 });

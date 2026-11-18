@@ -154,5 +154,13 @@ return [
             'label' => 'Generale',
             'heading' => 'Generale',
         ],
+        'SMS' => [
+            'label' => 'SMS',
+            'heading' => 'SMS',
+        ],
+        'Mail' => [
+            'label' => 'Mail',
+            'heading' => 'Mail',
+        ],
     ],
 ];
