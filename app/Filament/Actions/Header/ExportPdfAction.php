@@ -8,9 +8,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Actions\Header;
 
 use Filament\Resources\Pages\ListRecords;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Contracts\Support\Htmlable;
-use Illuminate\Support\Facades\Gate;
 use Modules\Xot\Actions\GetTransKeyAction;
 use Modules\Xot\Actions\Pdf\DownloadPdfByViewAction;
 use Modules\Xot\Actions\View\GetViewByModelClassAction;
@@ -35,7 +33,6 @@ class ExportPdfAction extends XotBaseAction
             // ->color('danger'): non usato, il rosso segnala un'azione distruttiva; resta il
             // primario come i bottoni accanto.
             ->icon('xot-files.pdf')
-            ->authorize('graduatoriaPdf')
             ->tooltip(function (): string {
                 $livewire = $this->getLivewire();
                 if (! $livewire instanceof ListRecords) {
@@ -51,9 +48,6 @@ class ExportPdfAction extends XotBaseAction
                 return (string) __('xot::export_pdf.tooltip');
             })
             ->action(static function (ListRecords $livewire) {
-                $modelClass = $livewire->getResource()::getModel();
-                /** @var class-string<Model> $modelClass */
-                Gate::authorize('graduatoriaPdf', new $modelClass);
                 $filename =
                     class_basename($livewire).
                     '-'.

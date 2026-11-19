@@ -104,12 +104,14 @@ trait HasXotTable
         // dddx(method_exists($resource, 'canAttach'));
 
         $actions = [];
-        // No "New" button when the resource has no `create` page (e.g. comment moderation): it led to a missing route.
+        // Niente "Nuovo" se la risorsa non ha la pagina `create` (es. moderazione commenti):
+        // il pulsante portava a una rotta inesistente.
         $createPageResource = $this->resolveCreatePageResource();
         if ($createPageResource === null || array_key_exists('create', $createPageResource::getPages())) {
-            $actions[] = CreateAction::make()->visible(
-                fn ($livewire): bool => ! ($livewire instanceof ListRecords) || $livewire::getResource()::canCreate()
-            );
+            // Rispetta canCreate() della risorsa (es. registri in sola lettura): prima il pulsante compariva
+            // sempre e portava a una pagina 403.
+            $actions[] = CreateAction::make()
+                ->visible(static fn (): bool => $createPageResource === null || $createPageResource::canCreate());
         }
 
         if ($this->shouldShowAssociateAction()) {

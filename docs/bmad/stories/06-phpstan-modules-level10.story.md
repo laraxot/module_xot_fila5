@@ -127,7 +127,7 @@ sintattici, non il criterio funzionale del lavoro.
 - 2026-10-06: completati Progressioni, Rating e Sigma; PHPStan globale finale verde.
 =======
 
-## Seguito in base_quaeris_fila5
+## Seguito in base_<nome progetto>_fila5
 
 - 2026-10-06: il contratto tipizzato e' arrivato con il pull di Xot in un progetto dove altri
   moduli lo implementano ancora col trait vendor: stesso fatal (`Child process error`, primo

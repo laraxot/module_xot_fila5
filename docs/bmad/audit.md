@@ -71,5 +71,9 @@ SSoT dettagliata: [audits/xot-audit.md](./audits/xot-audit.md) · scopo: [purpos
 
 ## Seguito
 
+<<<<<<< HEAD
 [epics.md](./epics.md) · [decision-log.md](./decision-log.md) · [story](./stories/module-bmad-audit.story.md) · [ECC](../ecc/xot-ecc-audit.md)
+=======
+[epics.md](./epics.md) · [decision-log.md](../decision-log.md) · [story](./stories/module-bmad-audit.story.md) · [ECC](../ecc/xot-ecc-audit.md)
+>>>>>>> laraxot/dev
 >>>>>>> .merge_file_tbQRJ0

@@ -27,8 +27,8 @@ use PHPUnit\Framework\Assert;
  * Queste classi esistono solo negli host con lo scheletro completo (ptvx,
  * predict, ...). Gli host con app/ minimale (restaurant, techplanner, ...)
  * non le forniscono: ogni test salta se la classe mancante, invece di fallire.
- * I valori di ritorno sono tipizzati con Assert::assertIs* perche' su host
- * senza la classe PHPStan vede mixed.
+ * Assert::assertIs* solo dove il tipo runtime non e' gia' noto a PHPStan
+ * (es. elemento di array); mai su return gia' tipizzati (array / const string).
  */
 
 uses(TestCase::class);
@@ -38,14 +38,19 @@ test('trust hosts trusts every subdomain of the application url', function (): v
         $this->markTestSkipped('Host app senza App\Http\Middleware\TrustHosts.');
     }
 
-    $hosts = (new TrustHosts(app()))->hosts();
+    $hostsRaw = (new TrustHosts(app()))->hosts();
+    Assert::assertIsArray($hostsRaw);
+    /** @var list<string> $hosts */
+    $hosts = [];
+    foreach ($hostsRaw as $host) {
+        Assert::assertIsString($host);
+        $hosts[] = $host;
+    }
 
     $appHost = Str::of(Config::string('app.url'))->after('://')->before('/')->value();
 
-    Assert::assertIsArray($hosts);
     Assert::assertCount(1, $hosts);
-    $pattern = $hosts[0] ?? null;
-    Assert::assertIsString($pattern);
+    $pattern = $hosts[0];
     // Il pattern di Laravel e' `^(.+\.)?<host quotato>$`: verifichiamo che copra
     // sia il dominio nudo sia un suo sottodominio, senza replicarne la stringa.
     Assert::assertMatchesRegularExpression('#'.$pattern.'#', $appHost);
@@ -104,6 +109,7 @@ test('redirect if authenticated sends an authenticated user home', function (): 
     );
 
     Assert::assertInstanceOf(RedirectResponse::class, $response);
+    // HOME e' una costante dell'app host: per PHPStan e' mixed finche' non si controlla che sia una stringa.
     $home = RouteServiceProvider::HOME;
     Assert::assertIsString($home);
     Assert::assertSame(url($home), $response->getTargetUrl());

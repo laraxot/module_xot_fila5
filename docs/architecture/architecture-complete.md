@@ -1,14 +1,9 @@
 ---
-title: "architecture complete"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "architecture complete"
-issues: []
-discussions: []
+title: "Xot - architecture-complete.md"
+module: Xot
+bmad: true
+status: active
 ---
-
 # Xot Module - Complete Architecture Guide (2025)
 
 > **Last Updated:** 2025-11-19
@@ -25,15 +20,6 @@ discussions: []
 6. [Best Practices](#best-practices)
 
 ---
-
-title: "architecture complete"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "architecture complete"
-issues: []
-discussions: []
 ## Module Overview
 
 ### Primary Purpose

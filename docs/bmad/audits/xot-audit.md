@@ -116,13 +116,10 @@ file di Resource esistenti: generatore dev, non DB); `ThemeLinkCommand`, `Module
 `SymlinkPublishCommand.php:155`). Nessun `--force` su migrate fuori da SQLite di test. Accettabile;
 aggiungere un guard `app()->isProduction()` al generatore.
 
-<<<<<<< .merge_file_ZmyC1w
-=======
 ### P2-X6 — link relativi rotti in docs
 
 `docs/bmad/architecture.md` (3: `architecture/composite-filter-column-span.md`, `architecture/sync-modules-cli.md`, `architectural-rule-resource-vs-form.md`) e `docs/bmad/brainstorming.md` (2: `brainstorming/ternary-filter-compact-ui.md`, `discussions/01-traits-composition.md`) puntano a file inesistenti. Rimuovere o ricreare dove serve.
 
->>>>>>> .merge_file_ylOsvi
 ### P2-X5 — 18 `->label('...')` letterali e 14 import `Filament\...` diretti
 
 `Filament/Builders/FilterBuilder.php`, `Resources/XotBaseResource/Pages/XotBaseManageRelatedRecords.php`,
@@ -145,7 +142,11 @@ rm -rf /tmp/phpstan && php -d memory_limit=3G ./vendor/bin/phpstan analyse Modul
 
 ## Piano
 
+<<<<<<< HEAD
 [epics.md](../epics.md) · [decision-log.md](../decision-log.md) · [piano-miglioramento.md](../piano-miglioramento.md)
+=======
+[epics.md](../epics.md) · [decision-log.md](../../decision-log.md) · [piano-miglioramento.md](../piano-miglioramento.md)
+>>>>>>> laraxot/dev
 
 ## Riferimenti
 

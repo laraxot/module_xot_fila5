@@ -42,7 +42,11 @@ fix alla causa, PHPStan + Pest, aggiornamento docs/QMD. Le abilità ECC sono sce
 | `laravel-verification` (route, policy, migration additive) | ok | `publicPath()` → `public_html`; `TestDatabaseGuard` attivo (verificato da Pest); migration additive |
 | `verification-loop` (PHPStan max + Pest) | PHPStan ok, Pest skip | PHPStan 0 errori (rerun; prima passata 6+ errori in `FeatureFlagsTest` mentre un altro agente lo editava); Pest: skip documentato: DB di test `10.100.200.53:3306` irraggiungibile (TCP chiuso) e `Xot/tests/Support/TestDatabaseGuard.php:63` rifiuta DB non `*_test`; i test con DB restano appesi al connect MySQL (timeout 150 s osservato). Nessun test contro il MySQL locale (dati sacri). |
 | `tdd-workflow` (regressione sui P0) | aperto | test comportamentale su `XotBasePolicy::before` (3 casi) prima di rimuovere `once()` |
+<<<<<<< HEAD
 | `documentation-sync` | fatto | pack aggiornato: [audit](../bmad/audits/xot-audit.md), [epics](../bmad/epics.md), [decision-log](../bmad/decision-log.md) |
+=======
+| `documentation-sync` | fatto | pack aggiornato: [audit](../bmad/audits/xot-audit.md), [epics](../bmad/epics.md), [decision-log](../decision-log.md) |
+>>>>>>> laraxot/dev
 | `context-engineering` | fatto | source-first; il perché in [purpose](../bmad/purpose.md) |
 >>>>>>> .merge_file_o2JyU9
 

@@ -164,4 +164,18 @@ return [
     'title' => 'Environment',
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+    'sections' => [
+        'General' => [
+            'label' => 'General',
+            'heading' => 'General',
+        ],
+        'SMS' => [
+            'label' => 'SMS',
+            'heading' => 'SMS',
+        ],
+        'Mail' => [
+            'label' => 'Mail',
+            'heading' => 'Mail',
+        ],
+    ],
 ];

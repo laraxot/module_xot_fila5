@@ -1,14 +1,9 @@
 ---
-title: "agents"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "agents"
-issues: []
-discussions: []
+title: "Xot - agents.md"
+module: Xot
+bmad: true
+status: active
 ---
-
 # Xot {{TYPE^}} LLM Wiki Agent Instructions
 
 > **Module/Theme:** Xot
