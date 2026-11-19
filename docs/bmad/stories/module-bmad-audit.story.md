@@ -1,37 +1,10 @@
 ---
 title: "Module BMAD audit — Xot"
-<<<<<<< .merge_file_DO2A3a
-status: review
-updated: 2026-11-16
-module: Xot
-bmad: true
-qmd: "story BMAD audit modulo Xot inventario gate"
----
-
-# Story: audit BMAD del modulo Xot
-
-## Acceptance
-
-- [x] Inventario source-first (2026-11-16).
-- [x] Audit + piano in `docs/bmad/`.
-- [x] Pack ECC in `docs/ecc/`.
-- [ ] Pest modulo eseguito in ambiente testing stabile.
-- [ ] Finding P0/P1 chiusi con regressione.
-
-## Riferimenti
-
-- [audit](../audit.md)
-- [piano](../piano-miglioramento.md)
-- [ECC](../../ecc/xot-ecc-audit.md)
-
-## Esito
-
-Baseline audit aggiornata. PHPStan tree `Modules` a 0. Pest e chiusura P0/P1 aperti.
-=======
 type: story
 status: review
 updated: 2026-11-16
 module: Xot
+bmad: true
 qmd: "story BMAD audit modulo Xot inventario gate finding P0 P1"
 ---
 
@@ -45,11 +18,7 @@ Rendere verificabile lo stato di Xot: kernel Laraxot: classi base, Actions riusa
 
 - [x] Inventario source-first misurato (2026-11-16).
 - [x] Audit approfondito con finding P0/P1/P2 e path: [audits/xot-audit.md](../audits/xot-audit.md).
-<<<<<<< HEAD
-- [x] Pack: [audit](../audit.md), [decision-log](../decision-log.md), [epics](../epics.md), [brainstorming](../brainstorming.md), [ECC](../../ecc/xot-ecc-audit.md).
-=======
-- [x] Pack: [audit](../audit.md), [decision-log](../../decision-log.md), [epics](../epics.md), [brainstorming](../brainstorming.md), [ECC](../../ecc/xot-ecc-audit.md).
->>>>>>> laraxot/dev
+- [x] Pack: [audit](../audit.md), [decision-log](../../decision-log.md), [epics](../epics.md), [brainstorming](../brainstorming.md), [ECC](../../ecc/xot-ecc-audit.md), [piano](../piano-miglioramento.md).
 - [x] PHPStan `Modules/Xot`: 0 errori (rerun; prima passata 6+ errori in `FeatureFlagsTest` mentre un altro agente lo editava).
 - [ ] Pest modulo eseguito su DB `*_test` raggiungibile (oggi: skip documentato).
 - [ ] Finding P1 chiusi con regressione Pest.
@@ -66,4 +35,3 @@ Rendere verificabile lo stato di Xot: kernel Laraxot: classi base, Actions riusa
 ## Esito (2026-11-16)
 
 Baseline aggiornata, nessun codice applicativo modificato. Fix e Pest restano aperti (gate DB test).
->>>>>>> .merge_file_fNl3vh

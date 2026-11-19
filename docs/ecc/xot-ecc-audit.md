@@ -4,31 +4,13 @@ type: ecc-audit
 status: review
 updated: 2026-11-16
 module: Xot
-<<<<<<< .merge_file_HCbjU5
-qmd: "ECC audit Xot verification security testing laravel"
-=======
-qmd: "ECC audit Xot security-review clean-code laravel-verification verification-loop tdd-workflow"
->>>>>>> .merge_file_o2JyU9
+qmd: "ECC audit Xot verification security testing laravel security-review clean-code laravel-verification verification-loop tdd-workflow"
 ---
 
 # ECC audit operativo — Xot
 
 ## Contratto PTVX
 
-<<<<<<< .merge_file_HCbjU5
-ECC non sostituisce AGENTS.md/BMAD. Ogni finding: story BMAD, lock, fix causa,
-PHPStan + Pest, aggiornamento docs/QMD.
-
-## Checklist
-
-- [ ] `clean-code`: DRY/KISS, Actions su Services, niente wrapper inutili
-- [ ] `security-review`: policy, mass assignment, export, log, privacy, tenant
-- [ ] `laravel-verification`: route, config, migration additive, container
-- [ ] `verification-loop`: PHPStan level max + Pest mirato
-- [ ] `tdd-workflow`: regressione sui finding P0
-- [ ] `documentation-sync`: story + indici + qmd
-- [ ] `context-engineering`: QMD/graphify prima; registrare il perché dopo
-=======
 ECC non sostituisce `AGENTS.md`/BMAD: ogni finding diventa story in [epics.md](../bmad/epics.md), con lock,
 fix alla causa, PHPStan + Pest, aggiornamento docs/QMD. Le abilità ECC sono scelte on-demand
 (`ecc-ptvx-workflow`); qui è registrato **l'esito**, non la checklist vuota.
@@ -42,51 +24,20 @@ fix alla causa, PHPStan + Pest, aggiornamento docs/QMD. Le abilità ECC sono sce
 | `laravel-verification` (route, policy, migration additive) | ok | `publicPath()` → `public_html`; `TestDatabaseGuard` attivo (verificato da Pest); migration additive |
 | `verification-loop` (PHPStan max + Pest) | PHPStan ok, Pest skip | PHPStan 0 errori (rerun; prima passata 6+ errori in `FeatureFlagsTest` mentre un altro agente lo editava); Pest: skip documentato: DB di test `10.100.200.53:3306` irraggiungibile (TCP chiuso) e `Xot/tests/Support/TestDatabaseGuard.php:63` rifiuta DB non `*_test`; i test con DB restano appesi al connect MySQL (timeout 150 s osservato). Nessun test contro il MySQL locale (dati sacri). |
 | `tdd-workflow` (regressione sui P0) | aperto | test comportamentale su `XotBasePolicy::before` (3 casi) prima di rimuovere `once()` |
-<<<<<<< HEAD
-| `documentation-sync` | fatto | pack aggiornato: [audit](../bmad/audits/xot-audit.md), [epics](../bmad/epics.md), [decision-log](../bmad/decision-log.md) |
-=======
 | `documentation-sync` | fatto | pack aggiornato: [audit](../bmad/audits/xot-audit.md), [epics](../bmad/epics.md), [decision-log](../decision-log.md) |
->>>>>>> laraxot/dev
 | `context-engineering` | fatto | source-first; il perché in [purpose](../bmad/purpose.md) |
->>>>>>> .merge_file_o2JyU9
 
 ## Input misurato (2026-11-16)
 
 | Voce | N |
 |---|---:|
-<<<<<<< .merge_file_HCbjU5
-| app PHP | 602 |
-| test | 329 |
-| resources | 7 |
-| actions | 238 |
-| services | 2 |
-| policies (files approx) | 26 |
-
-## Gate osservati
-
-- PHPStan `Modules` (2026-11-16): 0 errori
-- Pest: pending (ambiente testing)
-
-## Anti-pattern vietati
-
-- baseline/`@phpstan-ignore` senza motivazione
-- test svuotati per silenziare errori
-- migrate:fresh / RefreshDatabase / --force
-- docs con date nel nome file
-- comportamento o screenshot inventati
-
-## Riferimenti
-
-- [00-index](./00-index.md)
-- [BMAD audit](../bmad/audit.md)
-=======
 | PHP `app/` | 602 |
 | Test PHP | 329 |
 | Models | 51 |
 | Policy | 15 |
 | Resource | 7 |
 | Widget | 16 |
-| Actions | 257 |
+| Actions | 238 in `app/Actions` (257 contando ogni cartella `Actions`) |
 | Services | 2 |
 | Migration | 10 |
 | Lang IT | 149 |
@@ -105,6 +56,7 @@ fix alla causa, PHPStan + Pest, aggiornamento docs/QMD. Le abilità ECC sono sce
 - baseline o `@phpstan-ignore` senza motivazione; test svuotati per silenziare errori;
 - `migrate:fresh`, `RefreshDatabase`, `--force` su migrate; `laravel/public` al posto di `public_html`;
 - nascondere la navigazione al posto di un controllo di accesso (`canAccess`/policy);
+- docs con date nel nome file;
 - comportamento, schermate o numeri inventati.
 
 ## Riferimenti
@@ -120,4 +72,3 @@ senza importare il modulo. Memoria: [module-portfolio-taxonomy-ptvx.md](../../..
 
 Nei FO: solo `Cms/FolioVoltServiceProvider`. Non registrare App `FolioServiceProvider`.
 PTVX: stub App inerte; niente surrogato. Memoria: [folio-owner-foliovolt-only.md](../../../../../docs/wiki/memories/folio-owner-foliovolt-only.md).
->>>>>>> .merge_file_o2JyU9
