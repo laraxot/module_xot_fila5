@@ -105,6 +105,12 @@ cost a fix; the linked rule files carry the full reasoning. Paths are relative t
 - `XotBaseServiceProvider::registerBladeIcons()` registers that folder with the lower-case module name as prefix:
   `Modules/User/resources/svg/device.svg` is referenced as `user-device`
   ([module-config-icon-svg](../../../../docs/wiki/rules/module-config-icon-svg.md)).
+- The folder is read directly with `module_path($name, 'resources/svg')`. Until 2026-11-19 it was derived
+  as `resources/assets/../svg`, which on Linux resolves only if `resources/assets` exists: removing that
+  empty scaffold (Tenant, 2026-11-17) silently dropped the module's icon set and `/admin` failed with
+  `SvgNotFound ... "tenant-icon" from set "default"`. A module does not need `resources/assets` to have
+  icons. Guard: `tests/Unit/ModuleSvgIconSetsAreRegisteredTest.php`
+  ([story](stories/blade-icons-set-from-resources-svg.story.md)).
 
 ## 11. Translation hygiene
 
