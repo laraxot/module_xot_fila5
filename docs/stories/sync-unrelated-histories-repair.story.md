@@ -85,7 +85,11 @@ loro antenato), 1 fuso a 3 vie, 5 di AI fusi a mano dall'agente insieme alle sue
 - Dopo le 12:11 una sessione esterna ha fatto `chown -R www-data` sull'intero repo (git: "dubious
   ownership", `composer.lock` non scrivibile). Ripristinato `marco:www-data` con scrittura di gruppo.
 - `public_html/assets/<modulo>` erano cartelle copiate, non symlink: 11 copie identiche sostituite
-  dal link; `fixcity`, `geo`, `ui` hanno contenuto diverso dal modulo e sono rimaste da decidere.
+  dal link. Poi anche `fixcity` (un `images/logo.svg` non referenziato da nessuna parte), `geo` (bundle
+  Vite vecchi che il manifest del modulo non usa) e `ui` (screenshot più vecchi di quelli del modulo):
+  ora tutti e 14 sono symlink. Tolta `XotAssetTest/`, cartella vuota lasciata da una versione vecchia di
+  `AssetActionsTest`. `public_html/assets/.gitignore` ha la voce di ogni modulo con `public/`
+  (la guardia `ModulePublicAssetsLinksTest` falliva per 11 moduli).
 
 ## Aperto
 
@@ -97,4 +101,5 @@ loro antenato), 1 fuso a 3 vie, 5 di AI fusi a mano dall'agente insieme alle sue
       `Xot/lang/pt_BR` e `pt_br`, `Notify/.github/ISSUE_CONTENT` e `issue_content`,
       `Notify/config/Config`, `Job/tests/feature`, `Lang/tests/unit`, `Geo/docs/*`. Le migrazioni
       doppie vanno guardate una per una prima di togliere qualcosa.
-- [ ] PHPStan: AI e Rating in corso (subagenti), poi `analyse Modules` a zero.
+- [x] PHPStan: `analyse Modules` a zero (commit `6debfe0f72`).
+- [x] Binding Pest: ADR `Xot/docs/adr/pest-testcase-binding-per-file.md` + guardia (commit `2d57064ac1`).
