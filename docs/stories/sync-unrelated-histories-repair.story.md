@@ -72,6 +72,83 @@ loro antenato), 1 fuso a 3 vie, 5 di AI fusi a mano dall'agente insieme alle sue
   perché `Gdpr/lang/en/register.php` contiene i testi di un altro progetto ("Start Your Pizza
   Journey"), presenti in tutte le versioni: debito di neutralità del modulo, non una regressione.
 
+## Mirror del 2026-11-17: differenze di significato
+
+Il commit del root `8a8f309737` ("chore: mirror al root di moduli e temi dopo il pull") ha riscritto
+13.250 file col contenuto dei repo dei pacchetti. Formattati entrambi i lati con Pint, restano **42
+file** in cui la versione prima del mirror (`8a8f309737~1`) e quella attuale dicono cose diverse.
+Nessuno dei 42 è stato toccato dopo il mirror, e la storia dei pacchetti è schiacciata in un solo
+commit "." del 19/11: la decisione si prende sul contenuto (codice, chiavi di traduzione presenti,
+test, ADR), mai scegliendo un lato per default.
+
+Schema emerso:
+- **Blade di Sixteen, mappa di UI**: prima del mirror le stringhe erano già chiavi `pub_theme::` /
+  `ui::` (presenti in it/en/de/es); il mirror ha rimesso il testo italiano/inglese scritto a mano.
+  Lavoro perso → ripristinato.
+- **PHP di Sixteen (`app/`, `routes/auth.php`)**: la versione prima del mirror **non compilava**
+  (righe vecchie e nuove incollate sulla stessa riga, `use` doppi: `php -l` fallisce su tutti e 11).
+  Quella attuale è il lato nuovo pulito di quella fusione (enum al posto delle costanti, tipi,
+  scope tipizzati) → si tiene.
+
+| File | Verdetto | Prova |
+|---|---|---|
+| `Modules/Activity/lang/it/activities.php` | attuale | tolto `'tooltip' => 'delete'`, segnaposto non tradotto |
+| `Modules/Activity/tests/Feature/ActivityManagementTest.php` | attuale | `uses(TestCase::class)` con import; il `beforeEach` che saltava i test senza DB nascondeva i fallimenti |
+| `Modules/Gdpr/app/Providers/GdprServiceProvider.php` | attuale | evoluzione DCP-153/445: `InjectCookieBanner` (esiste dal 14/10), vista e traduzioni `cookie-consent` del modulo; guardia `Gdpr/tests/Unit/Providers/CookieConsentWiringTest.php` |
+| `Modules/Geo/resources/views/maps/farmshops/index.blade.php` | **ripristinato** | il mirror aveva aggiunto `maximum-scale=1.0, user-scalable=no`: blocca lo zoom, viola WCAG 1.4.4 |
+| `Modules/Notify/lang/it/channel.php` | attuale | prima del mirror c'erano in più solo `fields.mail/sms/whatsapp` con valori segnaposto ("mail"); l'attuale ha le stesse chiavi di en/de |
+| `Modules/UI/lang/it/.php` | prima (solo forma) | stesso contenuto; l'attuale era un `var_export` (`array (`), riportato alla sintassi corta di Pint |
+| `Modules/UI/resources/views/livewire/components/map/interactive-map.blade.php` | **ripristinato** | 26 chiavi `ui::interactive_map.*` presenti in it/en/de/es, il mirror le aveva sostituite con testo italiano fisso |
+| `Modules/UI/resources/views/metatags.blade.php` | **corretto** | il mirror aveva `<meta nome="googlebot">` (attributo inesistente): torna `name=` |
+| `Modules/UI/tests/Feature/TimestampColumnTest.php` | **ripristinato + `group('no-ui-db')`** | il mirror aveva tolto `uses(TestCase::class)` (ADR `pest-testcase-binding-per-file`); il test non usa lo schema `ui`, senza il gruppo il TestCase di UI lo saltava |
+| `Modules/UI/tests/Fixtures/UiPhpstanTraitProbes.php` | attuale | namespace `Modules\UI\Tests\Fixtures` = PSR-4 di `UI/composer.json`; `Tests\Modules\UI\...` era sbagliato |
+| `Modules/User/lang/de/validation.php` | attuale | `uploaded` col messaggio "il file potrebbe essere troppo grande", lo stesso scelto in `Xot/lang/*/validation.php`; aggiunta la chiave `file` |
+| `Modules/User/lang/es/validation.php` | attuale | come sopra |
+| `Themes/Sixteen/app/Http/Livewire/Appointment/CreateAppointment.php` | attuale | prima: parse error riga 78 (fusione incollata); l'attuale è il lato tipizzato |
+| `Themes/Sixteen/app/Models/Appointment.php` | attuale | prima: parse error riga 142; costanti `STATUS_*`/`SERVICE_*` sostituite da `AppointmentStatusEnum`/`AppointmentServiceTypeEnum` (nessun uso residuo) |
+| `Themes/Sixteen/app/Models/Municipal/ContactPoint.php` | attuale | prima: parse error; `TYPES` → `ContactPointTypeEnum` |
+| `Themes/Sixteen/app/Models/Municipal/MunicipalEvent.php` | attuale | prima: parse error; costanti → enum `MunicipalEvent*Enum` |
+| `Themes/Sixteen/app/Models/Municipal/MunicipalLocation.php` | attuale | prima: parse error; costanti → enum `MunicipalLocation*Enum` |
+| `Themes/Sixteen/app/Models/Municipal/MunicipalNews.php` | attuale | prima: parse error; costanti → enum `MunicipalNews*Enum` |
+| `Themes/Sixteen/app/Models/Municipal/MunicipalService.php` | attuale | prima: parse error; relazioni con `static::class` e closure tipizzate |
+| `Themes/Sixteen/app/Models/Municipal/OrganizationalUnit.php` | attuale | prima: parse error; `TYPES` → `OrganizationalUnitTypeEnum` |
+| `Themes/Sixteen/app/Models/Municipal/PublicPerson.php` | attuale | prima: parse error; `CATEGORIES`/`ROLES` → `PublicPersonCategoryEnum`/`PublicPersonRoleEnum` |
+| `Themes/Sixteen/app/View/Composers/SixteenComposer.php` | attuale | prima: `use MenuBuilderAction` doppio (fatal); l'attuale aggiunge i controlli `is_array` sulla config del menu |
+| `Themes/Sixteen/routes/auth.php` | attuale | prima: quattro `use` duplicati (fatal) |
+| `Themes/Sixteen/resources/views/components/accessibility/contrast-toggle.blade.php` | **ripristinato** | chiavi `agid_components.contrast_toggle.*` |
+| `.../components/accessibility/font-size.blade.php` | **ripristinato** | chiavi `agid_components.font_size.*`; l'attuale aveva due righe spazzatura `f7ac8eda (.)` stampate nella pagina |
+| `.../components/blocks/appointment-step/partials/breadcrumb.blade.php` | **ripristinato** | `aria-label` tradotto invece di "breadcrumb" |
+| `.../components/blocks/geo/mappa-static.blade.php` | **ripristinato** | chiavi `blocks_content.mappa_static.*` |
+| `.../components/blocks/governance/cards.blade.php` | **ripristinato** | `alt` "random image" e titoli fissi → chiavi |
+| `.../components/blocks/rating/default.blade.php` | **ripristinato** | `aria-label` "Rating" e "N stelle" → `components_reports.rating.*` con `trans_choice` |
+| `.../components/bootstrap-italia/button.blade.php` | **ripristinato** | "Caricamento..." → chiave |
+| `.../components/confirms-password.blade.php` | **ripristinato** | chiavi `pub_theme::` invece delle stringhe inglesi di Jetstream |
+| `.../components/data-display/avatar.blade.php` | **ripristinato** | chiavi `components_common.*` |
+| `.../components/data-display/callout.blade.php` | **ripristinato** | chiavi |
+| `.../components/data-display/list-group.blade.php` | **ripristinato** | l'attuale aveva `icon="heroicon-o-{{" $item['icon'] }}`: virgolette spostate, icona rotta |
+| `.../components/data-display/modal.blade.php` | **ripristinato** | `aria-label="Close"` → chiave |
+| `.../components/forms/upload.blade.php` | **ripristinato** | 9 testi → `components_forms.upload.*` |
+| `.../components/layouts/navigation.blade.php` | **ripristinato** | chiavi del tema invece di `__('Dashboard')` ecc. |
+| `.../components/ui/cookiebar.blade.php` | **ripristinato** | chiavi |
+| `.../components/ui/hero.blade.php` | **ripristinato** | chiavi (l'attuale mescolava italiano e inglese) |
+| `.../components/ui/notifiche.blade.php` | **ripristinato** | chiave |
+| `.../components/ui/services-grid.blade.php` | **ripristinato** | chiavi |
+| `.../components/validation-errors.blade.php` | **ripristinato** | chiave invece di "Whoops! Something went wrong." |
+
+Le 66 chiavi `pub_theme::` e le 26 `ui::` rimesse esistono in tutte e quattro le lingue (controllo
+con script sulle `lang/{it,en,de,es}`). Ripristino fatto applicando al file attuale l'inverso del
+diff senza spazi (`patch -R -l`), così resta la formattazione corrente dove non c'è differenza di
+significato.
+
+Verifica: PHPStan `Modules/UI Modules/Geo` 0 errori; Pint pulito; ogni Blade toccata compila
+(`Blade::compileString` + `php -l`); `php -l` sugli 11 PHP di Sixteen tenuti; Pest con
+`pest-scratch-db.sh` su `TimestampColumnTest`, `BladeTemplatesCompileTest`,
+`BootstrapItaliaComponentsTest`, `HeaderAreaPersonaleLinksContractTest`: verdi; checksum di
+`laravel/config` e `Modules/*/lang` invariati prima/dopo.
+
+Da fare: le stesse correzioni vanno nei repo `module_ui_fila5`, `module_geo_fila5`,
+`theme_sixteen_fila5`, altrimenti il prossimo mirror le annulla di nuovo.
+
 ## Prevenzione
 
 - `merge_remote_repo_2.sh` usciva con errore senza `ALLOW_DEPRECATED_MERGE=1` (bashscripts
