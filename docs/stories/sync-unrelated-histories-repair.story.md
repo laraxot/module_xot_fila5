@@ -54,9 +54,31 @@ Metodo e strumenti: [sync-repair-tools](../../../../../bashscripts/docs/sync-rep
 - 8 copie in minuscolo dei test di `Cms/tests/Feature/Auth` tolte (PSR-4); per `LoginVolt` e
   `PasswordConfirmation` il contenuto vero ha sostituito i segnaposto `skip`.
 
+## Seconda passata: lavoro esistito solo sul remoto
+
+La punta di `laraxot/dev` non era una verità affidabile: i commit "." delle 11:50–12:04 sul remoto
+hanno "risolto" i loro conflitti cancellando un lato intero (es. `module_ai_fila5` `3a87af7`: ~3.100
+righe, il fornitore `local`, i binding degli agenti, le dipendenze). Il confronto giusto è con
+l'**ultimo commit remoto prima della sync** (`find_remote_only_losses.py`, `--before`).
+Su ~1.400 file diversi, quasi tutti erano blob dei mirror "." del 17/11; filtrando i commit con un
+messaggio vero restano **50 file di lavoro reale**: 44 ripristinati (il contenuto attuale era un
+loro antenato), 1 fuso a 3 vie, 5 di AI fusi a mano dall'agente insieme alle sue correzioni.
+- AI: PHPStan 28 → 0; trovati e corretti due bug runtime che bloccavano ogni run degli agenti
+  (binding `MessageStoreInterface`/`PersistenceInterface` persi; `EloquentPersistence` di neuron
+  esige `STRICT_TRANS_TABLES`, la connessione `mysql` del tenant è `strict => false`:
+  `StrictModeEloquentPersistence`).
+- Rating: PHPStan 71 → 0 (dettaglio nella story del modulo `2.3.phpstan-rating-tail-contracts`).
+- Gdpr/Lang: recuperati i test di registrazione agnostici e `info_banner`; 32 test Gdpr falliscono
+  perché `Gdpr/lang/en/register.php` contiene i testi di un altro progetto ("Start Your Pizza
+  Journey"), presenti in tutte le versioni: debito di neutralità del modulo, non una regressione.
+
 ## Prevenzione
 
-- `merge_remote_repo_2.sh` ora esce con errore senza `ALLOW_DEPRECATED_MERGE=1` (bashscripts `6e7813a27`).
+- `merge_remote_repo_2.sh` usciva con errore senza `ALLOW_DEPRECATED_MERGE=1` (bashscripts
+  `6e7813a27`); la guardia è stata tolta alle 12:27 dal commit "." `718a8ae47`. **Decisione
+  dell'utente**: rimetterla o sapere perché serve eseguirlo.
+- La sync automatica committa il working tree ogni minuto ("." `2f184dec3d`): una modifica a metà
+  finisce nella storia.
 
 ## Ambiente, trovato durante il lavoro
 
