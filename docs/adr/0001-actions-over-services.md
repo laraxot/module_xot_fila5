@@ -37,4 +37,4 @@ Scelta: **Actions**, perché è l'unica opzione in cui contract, test e docblock
 ### Confirmation
 
 - In revisione: una classe nuova sotto `app/Services/`, o un metodo pubblico nuovo in `RefundService`, si respinge con un rimando a questo ADR.
-- Ogni Action nuova ha `@contract` nel docblock e il suo contract è in `docs/contracts/INDEX.md`.
+- Ogni Action nuova ha `@contract` nel docblock e il suo contract è in `docs/contracts/index.md`.
