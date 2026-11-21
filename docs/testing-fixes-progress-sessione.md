@@ -3,11 +3,11 @@ title: "testing fixes progress sessione 2025 0"
 type: note
 tags: [documentation]
 created: 2026-09-26
-updated: 2026-09-26
+updated: 2026-11-17
 qmd: "testing fixes progress sessione 2025 0"
 issues: []
 discussions: []
-name: testing-fixes-progress-sessione-2025-0
+name: testing-fixes-progress-sessione
 description: "Data: 2025-01-22"
 metadata:
   type: documentation

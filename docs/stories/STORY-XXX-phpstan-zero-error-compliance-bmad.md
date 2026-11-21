@@ -7,27 +7,8 @@ updated: 2026-09-26
 qmd: "STORY XXX phpstan zero error compliance bmad"
 issues: []
 discussions: []
-title: "STORY XXX phpstan zero error compliance bmad"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "STORY XXX phpstan zero error compliance bmad"
-issues: []
-discussions: []
-title: "STORY XXX phpstan zero error compliance bmad"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "STORY XXX phpstan zero error compliance bmad"
-issues: []
-discussions: []
-title: PHPStan Zero Error Compliance Across All Modules
 story_id: XXX
 parent_story: STORY-302-PHPStan-Max-Level-Compliance
-updated: 2026-06-27
-created: 2026-06-27
 description: Achieve zero PHPStan errors across all modules (16/18 modules)
 priority: high
 bmad_links:
@@ -76,6 +57,8 @@ quality_gate:
 architectural_impact: low
 files_created: phpstan-baseline.md
 files_updated: phpstan.neon, multiple PHP files
+
+---
 
 ## Story Summary
 

@@ -1,3 +1,10 @@
+---
+title: "Struttura canonica della documentazione"
+qmd: "xot governance docs structure md"
+type: note
+tags: [documentation]
+---
+
 # Struttura canonica della documentazione
 
 Questo documento è il riferimento per la riorganizzazione delle docs di moduli,

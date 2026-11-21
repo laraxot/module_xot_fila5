@@ -1,4 +1,5 @@
 ---
+qmd: "xot wiki charts readme md"
 title: "Readme"
 type: reference
 tags: [wiki, no-frontmatter-fix]

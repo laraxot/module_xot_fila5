@@ -20,6 +20,8 @@ related_discussions: []
 status: active
 priority: medium
 effort_estimate: 2h
+superseded_by: "./st-xx-relationx-analysis.md"
+updated: 2026-11-17
 ---
 
 # ST-XX: RelationX Trait Analysis and Documentation
@@ -40,3 +42,5 @@ that rely on multi-database configurations.
 - [ ] Document database name comparison logic
 - [ ] Identify SQLite compatibility handling
 - [ ] Document in Modules/Xot/docs/relationx-analysis.md
+
+> Deprecated alias. Canonico: [./st-xx-relationx-analysis.md](./st-xx-relationx-analysis.md).

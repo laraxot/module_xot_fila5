@@ -2,9 +2,9 @@
 title: "Indice BMAD — Xot"
 type: index
 status: active
-updated: 2026-11-16
+updated: 2026-11-17
 module: Xot
-qmd: "indice BMAD Xot audit purpose piano stories"
+qmd: "indice BMAD Xot audit purpose piano stories phpstan modules zero swarm"
 ---
 
 # Indice BMAD — Xot
@@ -17,5 +17,6 @@ qmd: "indice BMAD Xot audit purpose piano stories"
 - [Decision log](./decision-log.md)
 - [Brainstorming](./brainstorming.md)
 - [Story audit modulo](./stories/module-bmad-audit.story.md)
+- [PHPStan Modules zero (swarm Quick Flow)](./stories/phpstan-modules-zero-swarm.story.md) — campagna attiva `Xot/phpstan-modules-zero-swarm`
 - [ECC](../ecc/00-index.md)
 - [Purpose root](../purpose.md)

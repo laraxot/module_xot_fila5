@@ -1,3 +1,10 @@
+---
+title: "Xot — documentazione"
+qmd: "xot readme md"
+type: note
+tags: [documentation]
+---
+
 # Xot — documentazione
 
 Xot è il modulo fondazionale Laraxot. Questa è la sede canonica delle sue

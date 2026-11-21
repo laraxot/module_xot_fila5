@@ -11,6 +11,8 @@ references:
   - bashscripts/ai/wiki/memories/agent-standing-order.md
   - docs/sprint-status.yaml
 
+---
+
 # PHPStan Modules swarm random + docs moduli/temi
 
 ## Contesto
@@ -510,4 +512,3 @@ portare PHPStan Activity a 0; Pest se possibile; aggiornare docs bmad + questo d
 - **PHPStan** `analyse Modules/Activity --error-format=raw`: **0 errori**.
 - Cause tipiche fixate: FQCN TestCase doppio; `use` dopo `test()`; LogModel* `$activity`; harness paginate; `Helpers.php` in Pest; colonne event-sourcing.
 - **Pest:** hang TCP `10.100.200.53:3306` su connessione `user` (strace `EINPROGRESS`). `test_data.sqlite` creato; suite non verde finché `user` → sqlite condiviso.
-

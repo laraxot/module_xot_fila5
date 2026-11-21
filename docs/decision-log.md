@@ -1,4 +1,5 @@
 ---
+qmd: "xot decision log md"
 type: decision-log
 title: "Decision Log — Xot"
 links: {github_issue: #XXX, discussion: #XXX}

@@ -1,4 +1,5 @@
 ---
+qmd: "xot bmad readme consolidation plan md"
 title: "Xot - readme-consolidation-plan.md"
 module: Xot
 bmad: true
