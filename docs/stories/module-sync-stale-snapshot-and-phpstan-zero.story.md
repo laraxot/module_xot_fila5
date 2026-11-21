@@ -11,8 +11,11 @@ tags: [phpstan, sync, merge, marker-conflitto, regressioni, qualita]
 qmd: "sync moduli copia vecchia snapshot stale marker conflitto merge_file regressioni silenziose phpstan zero 2026-11-17"
 related:
   - ../../../../../docs/wiki/memories/phpstan-quality-docs-bmad-standing-order.md
+<<<<<<< .merge_file_oTnP0q
+=======
   - ./phpstan-merge-bootstrap.story.md
   - ./fix-merge-conflicts.md
+>>>>>>> .merge_file_PSUb9t
 ---
 
 # Sync dei moduli da copia vecchia: marker, regressioni e PHPStan a zero
@@ -122,6 +125,8 @@ Il confronto è stato fatto con la storia del modulo:
 - **Script di sync**: non deve committare se il merge fallisce, né committare un working tree
   basato su un parent vecchio di giorni. È la seconda volta (vedi 2026-11-05).
 - **Docs con marker**: 206 file `.md` nelle repo dei moduli (soprattutto Geo e Gdpr).
+<<<<<<< .merge_file_oTnP0q
+=======
 
 ## Follow-up Xot PHP markers
 
@@ -190,3 +195,4 @@ rischio link rotti; elencati nel report agente).
   (`Modules/Lang/tests/Pest.php:100` vs `Modules/Rating/tests/Pest.php:10`) — conflitto da risolvere
   prima del gate Pest.
 - Merge/rebase root ancora aperto: nessun commit eseguito (regola git-forward + merge in corso).
+>>>>>>> .merge_file_PSUb9t

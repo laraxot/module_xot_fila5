@@ -5,7 +5,11 @@ module: Xot
 epic: quality/phpstan
 story_id: phpstan-modules-zero-swarm
 slug: phpstan-modules-zero-swarm
+<<<<<<< .merge_file_kqUWJo
+status: review
+=======
 status: done
+>>>>>>> .merge_file_LMzha0
 # supersedes: campagne phpstan-modules-swarm-session / remediation come SSoT attiva Quick Flow
 # linked_from: docs/sprint-status.yaml Xot/phpstan-modules-zero-swarm; phpstan-zero-errors-modules.story.md
 # user_verbatim: "esegui cd laravel && ./vendor/bin/phpstan analyse Modules e sistema tutte le segnalazioni" + swarm+BMAD+second brain+handoff 5 sezioni
@@ -99,9 +103,19 @@ chiave sprint: `Xot/phpstan-modules-zero-swarm`.
 
 ## Dev Agent Record
 
+<<<<<<< .merge_file_kqUWJo
+- Status: `review` — cold gate Modules **`[OK] No errors` EXIT 0** (2026-11-17)
+- AC full-tree: spuntato osservato; Pest mirato ProgressioneVerticale+Diagnose **7 passed**
+- Lock session `phpstan-modules-swarm-session` + lane Activity/Ptv unlock
+- Debito: attivare `progressione_verticale` in `criteri_esclusione` 2026 (owner HR);
+  Pest HostApp richiede DB testing raggiungibile; ridurre thrash multi-agente (max-3)
+- Prossimo: boy-scout ridondanza story phpstan datate in Xot/docs/bmad/stories;
+  prompts bashscripts/docs/prompts (subagent); qmd update memoria thrash/cache
+=======
 - Status: `done` — allineato a sprint `Xot/phpstan-modules-zero-swarm` (gate finale
   peer sotto flock: JSON `errors=0`/`file_errors=0` + banner `[OK] No errors`)
 - AC full-tree: spuntato; Pest mirato ProgressioneVerticale+Diagnose **7 passed**;
   FeatureFlagsTest 15 passed; AppMiddlewareTest skip DB documentato
 - Debito fuori gate PHPStan: attivare riga `criteri_esclusione.progressione_verticale`
   in campagna 2026 (owner HR); ridurre thrash multi-agente (max-3)
+>>>>>>> .merge_file_LMzha0

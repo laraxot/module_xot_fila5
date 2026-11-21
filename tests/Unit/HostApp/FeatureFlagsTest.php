@@ -19,8 +19,13 @@ use PHPUnit\Framework\Assert;
  * App\Support\FeatureFlags exists only in host apps that ship the full skeleton
  * (ptvx, predict, ...). Slim hosts (restaurant, techplanner, ...) do not provide
  * it, so every test skips itself when the class is absent instead of failing.
+<<<<<<< .merge_file_xeaLXs
+ * Assert::assertIs* narrows only FeatureFlags::get() (mixed) before expect();
+ * isEnabled/isAnyEnabled/listEnabled/all already return bool|array — no assertIs*.
+=======
  * Assert::assertIs* narrows FeatureFlags::get() (mixed) and pins return contracts;
  * prefer Assert over Pest expect() to avoid argument.templateType su PHPStan max.
+>>>>>>> .merge_file_oHZoz4
  */
 
 uses(XotBaseTestCase::class);
@@ -99,8 +104,12 @@ describe('FeatureFlags::isEnabled', function (): void {
         Assert::assertIsBool($email);
         Assert::assertIsBool($sms);
 
+<<<<<<< .merge_file_xeaLXs
+        expect($email)->toBeTrue()->and($sms)->toBeFalse();
+=======
         Assert::assertTrue($email);
         Assert::assertFalse($sms);
+>>>>>>> .merge_file_oHZoz4
     });
 
     it('uses the default when the key is absent', function (): void {
@@ -113,8 +122,12 @@ describe('FeatureFlags::isEnabled', function (): void {
         Assert::assertIsBool($missing);
         Assert::assertIsBool($missingWithDefault);
 
+<<<<<<< .merge_file_xeaLXs
+        expect($missing)->toBeFalse()->and($missingWithDefault)->toBeTrue();
+=======
         Assert::assertFalse($missing);
         Assert::assertTrue($missingWithDefault);
+>>>>>>> .merge_file_oHZoz4
     });
 });
 
