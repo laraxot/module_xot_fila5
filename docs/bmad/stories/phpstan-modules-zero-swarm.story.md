@@ -99,9 +99,25 @@ chiave sprint: `Xot/phpstan-modules-zero-swarm`.
 
 ## Dev Agent Record
 
+- Status: `review` — cold gate Modules **`[OK] No errors` EXIT 0** (2026-11-17)
+- AC full-tree: spuntato osservato; Pest mirato ProgressioneVerticale+Diagnose **7 passed**
+- Lock session `phpstan-modules-swarm-session` + lane Activity/Ptv unlock
+- Debito: attivare `progressione_verticale` in `criteri_esclusione` 2026 (owner HR);
+  Pest HostApp richiede DB testing raggiungibile; ridurre thrash multi-agente (max-3)
+- Prossimo: boy-scout ridondanza story phpstan datate in Xot/docs/bmad/stories;
+  prompts bashscripts/docs/prompts (subagent); qmd update memoria thrash/cache
 - Status: `done` — allineato a sprint `Xot/phpstan-modules-zero-swarm` (gate finale
   peer sotto flock: JSON `errors=0`/`file_errors=0` + banner `[OK] No errors`)
 - AC full-tree: spuntato; Pest mirato ProgressioneVerticale+Diagnose **7 passed**;
   FeatureFlagsTest 15 passed; AppMiddlewareTest skip DB documentato
 - Debito fuori gate PHPStan: attivare riga `criteri_esclusione.progressione_verticale`
   in campagna 2026 (owner HR); ridurre thrash multi-agente (max-3)
+- Wave corrente (2026-11-21): marker di conflitto Git annidati in PHP/test e Blade
+  risolti semanticamente; il gate `./vendor/bin/phpstan analyse Modules --error-format=raw --no-progress`
+  ha restituito exit 0. Pest mirato sui file modificati resta da eseguire.
+- Controprova finale: il comando canonico senza opzioni ha restituito `[OK] No errors` ed exit 0.
+- Pest User tenancy: 5 passed; Pest Cms è non verificabile nel bootstrap corrente (`Target class [modules] does not exist`).
+- Status corrente (2026-11-21): `done` — `cd laravel && ./vendor/bin/phpstan analyse Modules --no-progress --memory-limit=-1` → exit 0, `[OK] No errors`.
+- Causa della wave: marker di conflitto Git annidati in PHP/test; risolti semanticamente preservando il contratto Tenant e i binding Pest. La relazione tenant ora espone generics completi anche nel contesto del modello base.
+- Prompt audit: aggiornati `bashscripts/docs/prompts/00-master-prompt.md`, `12-dipendenze-tra-moduli.md`, `13-contracts.md`, `15-services-verso-actions.md`, `27-livewire-verso-filament-widget.md` e `35-model-factory-seeder.md` eliminando riferimenti rotti o ridondanti.
+- Verifiche: `php .harness/bin/verify-facts` → 13 fatti verificati; `graphify update .` completato; `git diff --check` pulito. Pest mirato non è verificabile nel bootstrap corrente: `config` non è registrato nei test Tenant e il test ADR segnala ADR legacy incompleti.

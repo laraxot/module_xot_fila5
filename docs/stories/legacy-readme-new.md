@@ -630,7 +630,7 @@ Located in `bashscripts/`:
 - [Creating Modules](./development/creating-modules.md) - Module creation guide
 - [Extending Base Classes](./development/extending-base-classes.md) - How to extend XotBase*
 - [Code Examples](./development/examples.md) - Practical code examples
-- [Contributing Guidelines](./development/contributing.md) - How to contribute
+- [Contributing Guidelines](./development/CONTRIBUTING.md) - How to contribute
 
 ### Best Practices
 - [PHPStan Level 10 Compliance](./phpstan-workflow.md) - Achieving PHPStan compliance
@@ -689,7 +689,7 @@ See [CHANGELOG.md](./CHANGELOG.md) for full history.
 - Real-time update support for widgets
 - Advanced caching strategies
 
-See [ROADMAP.md](roadmap.md) for details.
+See [roadmap.md](roadmap.md) for details.
 
 ---
 

@@ -9,7 +9,15 @@ track: quality/phpstan
 related:
   - ../../../../Rating/docs/bmad/stories/conflict-marker-resolution-phpstan-bootstrap-2026-10-06.story.md
   - ../../../../IndennitaCondizioniLavoro/docs/bmad/2026-10-06-phpstan-l10-fix.story.md
+<<<<<<< .merge_file_HIDuL8
   - ../../../../User/docs/bmad/stories/phpstan-l10-user-lang-fix.story.md
+=======
+<<<<<<< .merge_file_ZEw5ij
+  - ../../../../User/docs/bmad/stories/phpstan-l10-user-lang-fix-20261006.story.md
+=======
+  - ../../../../User/docs/bmad/stories/phpstan-l10-user-lang-fix.story.md
+>>>>>>> .merge_file_X9M1S1
+>>>>>>> .merge_file_I9eTJJ
 
 # PHPStan Level 10 — correzione fleet moduli
 
@@ -127,7 +135,15 @@ sintattici, non il criterio funzionale del lavoro.
 - 2026-10-06: completati Progressioni, Rating e Sigma; PHPStan globale finale verde.
 =======
 
+<<<<<<< .merge_file_HIDuL8
 ## Seguito in base_<nome progetto>_fila5
+=======
+<<<<<<< .merge_file_ZEw5ij
+## Seguito in base_quaeris_fila5
+=======
+## Seguito in base_<nome progetto>_fila5
+>>>>>>> .merge_file_X9M1S1
+>>>>>>> .merge_file_I9eTJJ
 
 - 2026-10-06: il contratto tipizzato e' arrivato con il pull di Xot in un progetto dove altri
   moduli lo implementano ancora col trait vendor: stesso fatal (`Child process error`, primo

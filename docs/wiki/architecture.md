@@ -1,10 +1,18 @@
 ---
+<<<<<<< .merge_file_uQbg9A
 title: "architecture"
+=======
+title: "Architecture"
+>>>>>>> .merge_file_0VN4cc
 type: note
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
+<<<<<<< .merge_file_uQbg9A
 qmd: "architecture"
+=======
+qmd: "Architecture"
+>>>>>>> .merge_file_0VN4cc
 issues: []
 discussions: []
 module: Xot

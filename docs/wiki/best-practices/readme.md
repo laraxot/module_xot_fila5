@@ -74,7 +74,11 @@ updated: 2026-08-24
 
 ---
 
+<<<<<<< .merge_file_yWuaCX
 <!-- Merged from readme.md, which collided with this file on case-insensitive filesystems. -->
+=======
+<!-- Merged from README.md, which collided with this file on case-insensitive filesystems. -->
+>>>>>>> .merge_file_7dogCN
 
 ---
 module: theme
