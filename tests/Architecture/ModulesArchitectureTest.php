@@ -47,7 +47,7 @@ function archKnownModuleCycles(): array
     return [
         'Activity<->User',
         'Lang<->Xot',
-        'Limesurvey<->Quaeris',
+        'Limesurvey<-><nome progetto>',
         'Media<->User',
         'Media<->Xot',
         'Notify<->User',
@@ -209,8 +209,6 @@ it('introduces no new module dependency cycles and drops the fixed ones from the
         ->and(array_values(array_diff(archKnownModuleCycles(), $found)))
         ->toBe([], 'cicli risolti: toglili dalla baseline');
 });
-<<<<<<< .merge_file_CkX4zS
-=======
 
 it('has no PHP classes under app/Console (commands live in Modules/*/app/Console/Commands)', function (): void {
     // Comandi artisan belong to the owning module: XotBaseServiceProvider::registerCommands()
@@ -230,4 +228,3 @@ it('has no PHP classes under app/Console (commands live in Modules/*/app/Console
 
     expect($offenders)->toBe([]);
 });
->>>>>>> .merge_file_RELWHa
