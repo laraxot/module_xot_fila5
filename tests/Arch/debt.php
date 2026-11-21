@@ -27,6 +27,7 @@ return [
         'Modules\Xot\Actions\Filament\GetNavigationItemByModulename',
         'Modules\Xot\Actions\File\DownloadZipByPathsDiskAction',
         'Modules\Xot\Filament\Traits\NavigationLabelTrait',
+<<<<<<< .merge_file_HXvU1Y
     ],
     // classi in un namespace Services (regola No Services, DCP-270); NoServicesTest le vede come cartelle
     //
@@ -39,6 +40,15 @@ return [
     // `module:list/disable/enable` vive in `Actions/Artisan/HandleArtisanActRequestAction`
     // con `ArtisanActEnum`.
     'services' => [],
+=======
+        'Modules\Xot\Services\RouteService',
+    ],
+    // classi in un namespace Services (regola No Services, DCP-270); NoServicesTest le vede come cartelle
+    'services' => [
+        'Modules\Xot\Services\Artisan\Handlers\ModuleCommandHandler',
+        'Modules\Xot\Services\RouteService',
+    ],
+>>>>>>> .merge_file_YpIdeE
     // classi che estendono Filament direttamente invece della base Xot (e una seconda XotBaseRelationManager duplicata)
     'xotbase' => [
         'Modules\Xot\Filament\Resources\XotBaseResource\RelationManager\XotBaseRelationManager',

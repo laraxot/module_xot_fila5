@@ -3,11 +3,16 @@ title: "Contratti"
 type: index
 tags: [contracts, actions, interfaces]
 created: 2026-11-18
+<<<<<<< .merge_file_PYF7hJ
 updated: 2026-11-19
+=======
+updated: 2026-11-18
+>>>>>>> .merge_file_4E9PIE
 ---
 
 # Contratti
 
+<<<<<<< .merge_file_PYF7hJ
 Cosa promette la superficie pubblica di questo pacchetto: le classi base `XotBase*` che gli altri moduli estendono,
 le Action che scrivono dati, chiamano servizi esterni o hanno effetti collaterali, e le interfacce (`app/Contracts`).
 Regola: `Modules/Xot/docs/rules/action-behavioral-contract.md`.
@@ -17,6 +22,10 @@ Regola: `Modules/Xot/docs/rules/action-behavioral-contract.md`.
 - [Contratto delle classi XotBase](xotbase-classes.md) — cosa garantiscono a chi le estende, cosa pretendono in
   cambio, le due trappole note (`registerConfig()` non ricorsiva, `tableUpdate()` che crea la tabella) e come si
   verifica una modifica che le tocca.
+=======
+Cosa promette la superficie pubblica di questo pacchetto: le Action che scrivono dati, chiamano servizi esterni o hanno
+effetti collaterali, e le interfacce (`app/Contracts`). Regola: `Modules/Xot/docs/rules/action-behavioral-contract.md`.
+>>>>>>> .merge_file_4E9PIE
 
 ## Contratto di comportamento di un'Action
 
