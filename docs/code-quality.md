@@ -292,7 +292,7 @@ unset($translations['existing_key']); // MAI!
 
 - [xot-base-classes.md](archive/xot-base-classes.md)
 - [filament-resource-rules.md](./filament-resource-rules.md)
-- [migration-standards.md](./migration-standards.md)
+- [migrations-consolidated.md](./migrations-consolidated.md)
 - [phpstan-implementation-guide.md](archive/old_tasks/phpstan-implementation-guide.md)
 - [translations-best-practices.md](./translations-best-practices.md)
 - [namespace-conventions.md](./namespace-conventions.md)

@@ -47,3 +47,26 @@ audit dettagliato, piano, story, ECC index + ECC audit. PHPStan `Modules` = 0 er
 2. PHPStan già 0 su `Modules`.
 3. Pest per modulo in testing non-prod.
 4. Aggiornare ECC checklist con esiti reali + `qmd update`.
+
+## Audit approfondito source-first — 6 moduli (2026-11-16)
+
+PHPStan per modulo: 0 errori su tutti e sei. Pest: skip documentato (DB test `10.100.200.53:3306`
+irraggiungibile; `TestDatabaseGuard` rifiuta DB non `*_test`). Ogni modulo: `docs/bmad/audits/<modulo>-audit.md`
+con inventario misurato, finding con path, epic in `docs/bmad/epics.md`, ADR proposti in `decision-log.md`.
+
+| Modulo | Top finding verificato | Audit |
+|---|---|---|
+| User | **P0** `user::admin` scavalca `RolePolicy/PermissionPolicy/TeamPolicy` (`before()`→true, riprodotto a runtime); `PermissionPolicy` tutto `true` | [audit](../../../User/docs/bmad/audits/user-audit.md) |
+| Incentivi | **P0** `EmployeePolicy::update()`=true, `ProjectPolicy::create/viewAny`=true; ruoli delle policy mai seminati; `approved` inesistente | [audit](../../../Incentivi/docs/bmad/audits/incentivi-audit.md) |
+| IndennitaCondizioniLavoro | **P0** `compila(): bool {return true}` senza utente né record | [audit](../../../IndennitaCondizioniLavoro/docs/bmad/audits/indennitacondizionilavoro-audit.md) |
+| IndennitaResponsabilita | **P0** `compila/viewAny/sendMail`=true; `UpdateDiriByCsv` cancella/ricrea `StabiDirigente` senza `canAccess` | [audit](../../../IndennitaResponsabilita/docs/bmad/audits/indennitaresponsabilita-audit.md) |
+| Xot | **P1** il core importa 33 classi da 7 moduli feature (55 `use`); Services/trait morti; guardie dati sacri confermate | [audit](./audits/xot-audit.md) |
+| UI | **P1** dashboard `ui::admin` con dati inventati; 3 test su modelli assenti (48 `@phpstan-ignore`) | [audit](../../../UI/docs/bmad/audits/ui-audit.md) |
+
+**Correzione alla priorità cross-module sopra:** `BaseUser::canAccessPanel` risponde `true` al pannello `access`
+per costruzione (è il pannello di login pubblico, `User/app/Models/BaseUser.php:292`): non è il P0 di User. Il P0 reale è nelle policy
+(`XotBasePolicy::before()` + bypass `{modulo}::admin` non sovrascritto in Role/Permission/Team).
+
+**Nota di coordinamento:** `stories/all-modules-audit-pack.story.md` è lockato da un altro agente
+(`.lock` delle 17:01:53, Task unknown): non modificato. Da aggiungere appena libero: sezione "Esito audit approfondito 6 moduli"
+con rimando a questa tabella.

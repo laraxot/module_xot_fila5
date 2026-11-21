@@ -2,7 +2,7 @@
 title: "Theme Assets Workflow - CSS/JS Frontend"
 type: note
 status: active
-updated: 2026-11-11
+updated: 2026-11-18
 tags: [docs, xot, themes, deploy]
 qmd: "theme assets workflow - css/js frontend xot symlink public_html themes"
 related:
@@ -24,12 +24,15 @@ public_html/assets/<modulo> ->   ../../laravel/Modules/<Modulo>/public   (symlin
 - `public_html` è la document root: non si cancella né si svuota mai.
 - I symlink sono **relativi** (restano validi se il progetto cambia percorso) e si creano una volta per
   installazione, in due modi equivalenti:
-  - `deploy.sh` (funzione `link_public_asset`), in modo idempotente. Se al posto del link c'è una cartella
-    vera, lo script avvisa e non la tocca: va sostituita a mano, dopo averne controllato il contenuto.
+  - `deploy.sh` (funzione `link_public`, prima di `composer install`), in modo idempotente. Se al posto del link
+    c'è una cartella vera (vecchia copia, ignorata da git), la sposta in `laravel/storage/backups/` senza
+    cancellarla e crea il link; un link con un percorso diverso viene corretto.
   - i comandi artisan `php artisan xot:theme-link` e `php artisan xot:module-link` (con `--dry-run` per
     provare). Dettagli: [console/commands/xot-asset-links.md](console/commands/xot-asset-links.md).
-    I comandi aggiungono anche il nome del link al `.gitignore` della cartella del docroot: il link non si
-    committa, lo crea ogni installazione.
+    I comandi aggiungono anche il nome del link al `.gitignore` della cartella del docroot (`<nome>/` e
+    `<nome>`). In questo repository i link esistenti sono comunque tracciati (`git add -f`), così un clone
+    funziona senza comandi; le due righe sono già presenti, per cui i comandi non modificano il `.gitignore`
+    sul server. Motivi e verifica: [wiki/concepts/public-html-symlink-assets.md](wiki/concepts/public-html-symlink-assets.md).
 
 **Perché un symlink e non `npm run copy`:**
 
@@ -144,4 +147,3 @@ Modulo nuovo con asset pubblici: crea `Modules/<Modulo>/public`, aggiungi `<modu
 | Icone delle categorie mancanti (`/assets/fixcity/svg/*.svg`) | Manca `public_html/assets/fixcity` | Lo crea `deploy.sh` o `php artisan xot:module-link` (link a `Modules/Fixcity/public`) |
 | Campo mappa assente nei pannelli (`assets/geo/manifest.json`) | Manca `public_html/assets/geo` o la build Geo non è committata | `deploy.sh` o `xot:module-link`; in sviluppo `cd Modules/Geo && ../../node_modules/.bin/vite build` e commit di `public/` |
 | Errori di build | Dipendenze o ambiente | `npm install` nella cartella del tema; verificare versioni di Node/npm; controllare `build.outDir` in `vite.config.js` (deve essere `public`) e le dipendenze in `package.json` |
->>>>>>> .merge_file_wx9g7A

@@ -98,7 +98,7 @@ Ogni risorsa concreta segue il pattern: `Resource.php` + `Pages/` + `Schemas/For
 ## Risorse File — pubbliche vs private
 
 - `public_path()` = `public_html/` (root repo), mai `laravel/public/`. Verificabile in `laravel/app/Application.php`.
-- Asset statici in `app/Resources/` (img, svg, sass, js, views). Il comando `AssetAction` copia asset in `public_html` in fase di boot (`app/Actions/Filament/...`).
+- Asset statici del modulo in `Modules/<Modulo>/public/` (ripiego storico: `resources/`). `Actions/File/AssetAction` **non copia nulla**: restituisce l'URL `assets/<modulo>/...`, servito dal symlink relativo `public_html/assets/<modulo>` → `../../laravel/Modules/<Modulo>/public` creato da `deploy.sh` / `php artisan xot:module-link` (temi: `xot:theme-link`). Vedi [public-html-symlink-assets](../wiki/concepts/public-html-symlink-assets.md).
 
 ## Shard architetturali
 
@@ -159,3 +159,10 @@ Interfacce per l'iniezione di dipendenze.
 - Array PHP con una chiave per riga.
 - Form schema-driven tramite `XotBaseSchemaWidget` (`app/Filament/Widgets/XotBaseSchemaWidget.php`).
 - Contratti per l'iniezione di dipendenze in `app/Contracts/` (es. `DataContract`, `ExtraContract`).
+
+## Confini del core verificati (2026-11-16)
+
+- Xot non dichiara dipendenze (`module.json` `requires: []`) ma `Xot/app` ha 55 `use Modules\<feature>` (User 13, UI 11, Tenant 11, Lang 9, Cms 6, Notify 4, Media 1): P1-X1, vedi [audit](./audits/xot-audit.md).
+- Barriere meccaniche da preservare: `laravel/app/Application.php` `publicPath()` → `public_html`; `tests/Support/TestDatabaseGuard.php` (solo DB `*_test`); `tests/XotBaseTestCase.php` (no `migrate:fresh`/`RefreshDatabase`); `Console/Commands/BuildTestSqliteCommand.php` (riscrive ogni connessione su SQLite prima di `migrate --force`).
+- Policy: `XotBasePolicy::before()` → bypass `{modulo}::admin` (ADR); le policy di sicurezza lo sovrascrivono (User: `BaseUserPolicy`).
+- Services residui: 2 file; Actions: 257 (210 con `QueueableAction`).

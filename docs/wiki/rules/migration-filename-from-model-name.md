@@ -8,7 +8,7 @@ updated: 2026-11-05
 tags: [migration, naming, model, database]
 qmd: "migration filename timestamp model plural snake case table XotBaseMigration model_class additive"
 related:
-  - ../../migration-standards.md
+  - ../../migrations-consolidated.md
   - ../../../../Lang/docs/migrations.md
   - ../../bmad/decision-log.md
 ---

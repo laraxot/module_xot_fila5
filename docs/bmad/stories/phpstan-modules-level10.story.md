@@ -127,7 +127,6 @@ sintattici, non il criterio funzionale del lavoro.
 - 2026-10-06: risolto cluster Tenant SushiToJson.php: aggiunto return type array<array<string,mixed>> a getRows() e risolta variabile $schema
 - 2026-10-06: organizzate docs moduli e temi secondo BMAD.
 - 2026-10-06: completati Progressioni, Rating e Sigma; PHPStan globale finale verde.
-=======
 
 ## Seguito in base_<nome progetto>_fila5
 
