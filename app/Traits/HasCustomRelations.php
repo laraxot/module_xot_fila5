@@ -16,6 +16,8 @@ use Webmozart\Assert\Assert;
 
 /**
  * Trait HasCustomRelations.
+ *
+ * API di piattaforma per relazioni custom Eloquent (consumer nei moduli dominio).
  */
 trait HasCustomRelations
 {

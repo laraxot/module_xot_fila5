@@ -18,6 +18,8 @@ use function Safe\json_encode;
  * @property SchemalessAttributes|null $extra_attributes
  *
  * @see https://github.com/spatie/laravel-schemaless-attributes
+ *
+ * Trait di piattaforma per extra_attributes schemaless (Spatie).
  */
 trait HasSchemalessAttributes
 {

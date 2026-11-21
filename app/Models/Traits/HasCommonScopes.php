@@ -28,6 +28,8 @@ use Illuminate\Support\Carbon;
  * ```
  *
  * @see docs/METODI_DUPLICATI_ANALISI.md - Proposta 4: Model Traits
+ *
+ * Trait di piattaforma riusabile: consumer nei modelli dominio / probe di test.
  */
 trait HasCommonScopes
 {

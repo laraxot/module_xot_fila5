@@ -20,6 +20,7 @@ use Filament\Tables\Filters\BaseFilter;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Events\MigrationsEnded;
 use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\URL;
@@ -31,6 +32,9 @@ use Modules\Xot\Actions\PaDesignColorsAction;
 use Modules\Xot\Console\Commands\BuildTestSqliteCommand;
 use Modules\Xot\Console\Commands\CheckAccessorTwinsCommand;
 use Modules\Xot\Console\Commands\GenerateFilamentResources;
+use Modules\Xot\Console\Commands\ModuleLinkCommand;
+use Modules\Xot\Console\Commands\SymlinkPublishCommand;
+use Modules\Xot\Console\Commands\ThemeLinkCommand;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Exports\Jobs\XotCreateXlsxFile;
 use Modules\Xot\Filament\Traits\HasXotTable;
@@ -54,6 +58,7 @@ class XotServiceProvider extends XotBaseServiceProvider
     public function boot(): void
     {
         parent::boot();
+        $this->prohibitDestructiveDatabaseCommands();
         $this->redirectSSL();
         $this->registerViewComposers();
         $this->registerEvents();
@@ -102,7 +107,7 @@ class XotServiceProvider extends XotBaseServiceProvider
     {
         Factory::guessFactoryNamesUsing(static function (string $modelName): string {
             if (str_starts_with($modelName, 'Modules\\')) {
-                $factoryClass = (new GetFactoryAction)->getFactoryClass($modelName);
+                $factoryClass = (new GetFactoryAction())->getFactoryClass($modelName);
             } else {
                 $modelsNamespace = app()->getNamespace().'Models\\';
                 $relativeName = Str::startsWith($modelName, $modelsNamespace)
@@ -136,7 +141,17 @@ class XotServiceProvider extends XotBaseServiceProvider
             return;
         }
 
-        (new RegisterRuntimePsr4NamespacesAction)->execute($loader);
+        (new RegisterRuntimePsr4NamespacesAction())->execute($loader);
+    }
+
+    /**
+     * In produzione db:wipe, migrate:fresh, migrate:refresh, migrate:reset e migrate:rollback si rifiutano
+     * (difese a strati, Modules/Xot/docs/testing/difese-database-nei-test.md). Un errore in produzione si
+     * corregge con una nuova migrazione, non cancellando tabelle. `migrate --force` resta permesso.
+     */
+    private function prohibitDestructiveDatabaseCommands(): void
+    {
+        DB::prohibitDestructiveCommands($this->app->isProduction());
     }
 
     public function registerTimezone(): void
@@ -258,6 +273,9 @@ class XotServiceProvider extends XotBaseServiceProvider
                 GenerateFilamentResources::class,
                 CheckAccessorTwinsCommand::class,
                 BuildTestSqliteCommand::class,
+                ThemeLinkCommand::class,
+                ModuleLinkCommand::class,
+                SymlinkPublishCommand::class,
                 // \Modules\Xot\Console\Commands\OptimizeFilamentMemoryCommand::class,
             ]);
         }

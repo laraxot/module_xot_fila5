@@ -129,7 +129,7 @@ return [
         ],
         'mail_from_name' => [
             'label' => 'Mittente: nome',
-            'placeholder' => 'Quaeris',
+            'placeholder' => '<nome progetto>',
             'helper_text' => 'Valore corrente di MAIL_FROM_NAME nel .env — nome che compare accanto all\'indirizzo mittente. Se nel .env vale ${APP_NAME} qui vedi il nome già risolto: lasciandolo invariato la riga non viene riscritta.',
             'description' => '',
         ],
@@ -145,9 +145,7 @@ return [
             'label' => 'Elimina Env',
         ],
         'save' => [
-            'label' => 'save',
             'icon' => 'save',
-            'tooltip' => 'save',
         ],
     ],
     'title' => 'Ambiente',

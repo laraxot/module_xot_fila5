@@ -8,7 +8,7 @@ return [
         'plural' => 'Comandi Artisan',
         'group' => [
             'name' => 'Sistema',
-            'description' => 'Gestione dei comandi Artisan',
+            'description' => 'Artisan command management',
         ],
         'sort' => '28',
         'label' => 'Comandi Artisan',
@@ -16,57 +16,29 @@ return [
     ],
     'pages' => [
         'artisan-commands' => [
-            'title' => 'Gestione Comandi Artisan',
-            'description' => 'Esegui e gestisci i comandi Artisan',
+            'title' => 'Artisan Commands Manager',
+            'description' => 'Run and manage Artisan commands',
             'commands' => [
                 'migrate' => [
                     'label' => 'Migrazione Database',
-                    'description' => 'Esegue le migrazioni del database',
+                    'description' => 'Runs the database migrations',
                 ],
                 'optimize' => [
                     'label' => 'Ottimizzazione',
-                    'description' => 'Ottimizza le prestazioni dell\'applicazione',
+                    'description' => 'Optimizes application performance',
                 ],
                 'cache' => [
-                    'label' => 'Gestione Cache',
-                    'description' => 'Comandi per la gestione della cache',
+                    'label' => 'Cache Management',
+                    'description' => 'Commands for managing the cache',
                 ],
             ],
             'notifications' => [
-                'success' => 'Comando eseguito con successo',
-                'error' => 'Errore nell\'esecuzione del comando',
+                'success' => 'Command executed successfully',
+                'error' => 'Error while running the command',
             ],
-        ],
-    ],
-    'actions' => [
-        'queue_restart' => [
-            'label' => 'queue_restart',
-        ],
-        'event_cache' => [
-            'label' => 'event_cache',
-        ],
-        'route_cache' => [
-            'label' => 'route_cache',
-        ],
-        'config_cache' => [
-            'label' => 'config_cache',
-        ],
-        'view_cache' => [
-            'label' => 'view_cache',
-        ],
-        'filament_optimize' => [
-            'label' => 'filament_optimize',
-        ],
-        'filament_upgrade' => [
-            'label' => 'filament_upgrade',
-        ],
-        'migrate' => [
-            'label' => 'migrate',
         ],
     ],
     'title' => 'Artisan Commands Manager',
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-    'fields' => [
-    ],
 ];
