@@ -4,6 +4,7 @@ type: story
 status: review
 updated: 2026-11-16
 module: Xot
+bmad: true
 qmd: "story BMAD audit modulo Xot inventario gate finding P0 P1"
 ---
 
@@ -17,7 +18,7 @@ Rendere verificabile lo stato di Xot: kernel Laraxot: classi base, Actions riusa
 
 - [x] Inventario source-first misurato (2026-11-16).
 - [x] Audit approfondito con finding P0/P1/P2 e path: [audits/xot-audit.md](../audits/xot-audit.md).
-- [x] Pack: [audit](../audit.md), [decision-log](../decision-log.md), [epics](../epics.md), [brainstorming](../brainstorming.md), [ECC](../../ecc/xot-ecc-audit.md).
+- [x] Pack: [audit](../audit.md), [decision-log](../../decision-log.md), [epics](../epics.md), [brainstorming](../brainstorming.md), [ECC](../../ecc/xot-ecc-audit.md), [piano](../piano-miglioramento.md).
 - [x] PHPStan `Modules/Xot`: 0 errori (rerun; prima passata 6+ errori in `FeatureFlagsTest` mentre un altro agente lo editava).
 - [ ] Pest modulo eseguito su DB `*_test` raggiungibile (oggi: skip documentato).
 - [ ] Finding P1 chiusi con regressione Pest.

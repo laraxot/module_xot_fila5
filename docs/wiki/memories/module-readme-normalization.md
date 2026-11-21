@@ -10,7 +10,11 @@ updated: 2026-09-28
 verified_at: 2026-09-28
 evidence:
   - "bashscripts/tools/normalize-module-readmes.py"
+<<<<<<< .merge_file_NG6jek
   - "laravel/Modules/Xot/docs/bmad/stories/module-readmes-normalization-20260928.story.md"
+=======
+  - "laravel/Modules/Xot/docs/bmad/stories/module-readmes-normalization.story.md"
+>>>>>>> .merge_file_DInNv7
 related:
   - "../../README.md"
   - "../../../../../../bashscripts/ai/wiki/concepts/second-brain-canonical-operating-model.md"

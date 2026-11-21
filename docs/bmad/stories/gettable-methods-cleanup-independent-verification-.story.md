@@ -11,7 +11,11 @@ related:
   - "./5.254-list-page-table-hooks.story.md"
   - "./5.255-doppi-header-actions-list-page.story.md"
   - "../filament-list-page-table-ownership.md"
+<<<<<<< .merge_file_ooW4cB
   - "../../../../User/docs/bmad/stories/user-filament-boundary-i18n-20260929.story.md"
+=======
+  - "../../../../User/docs/bmad/stories/user-filament-boundary-i18n.story.md"
+>>>>>>> .merge_file_MV7SB3
   - "../../../../../docs/wiki/audits/getTable-methods-audit-2026-09-29.md"
 ---
 
@@ -69,7 +73,11 @@ Già esistente e sufficiente: `laravel/Modules/Xot/docs/filament-list-page-table
 (dal 2026-09-10), rafforzata dalla story 5.254 con la catena di chiamate Filament
 verificata riga per riga nel vendor e dalle memorie
 `Xot/docs/wiki/memories/tabella-appartiene-alla-resource-non-alla-pagina.md` e
+<<<<<<< .merge_file_ooW4cB
 `header-actions-doppi-filament-5.md`. Non duplicata.
+=======
+`header-actions-doppi-filament.md`. Non duplicata.
+>>>>>>> .merge_file_MV7SB3
 
 ## Verifica gate
 

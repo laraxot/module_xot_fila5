@@ -17,7 +17,11 @@ artefatti nei docs del modulo:
 - `docs/bmad/architecture/module-boundary.md`;
 - `docs/bmad/brainstorming/module-opportunities.md`;
 - `docs/bmad/epics/module-roadmap.md`;
+<<<<<<< .merge_file_y0Vqmm
 - `docs/bmad/stories/module-bmad-audit-20260928.story.md`.
+=======
+- `docs/bmad/stories/module-bmad-audit-xot-baseline-analisi-completa.story.md`.
+>>>>>>> .merge_file_tjrVkE
 
 I conteggi PHP/test e le aree `app/` sono inventario statico verificato; le ipotesi
 di dominio sono marcate come domande da validare e non come fatti. Le story restano

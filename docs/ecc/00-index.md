@@ -4,7 +4,7 @@ type: index
 status: in-progress
 updated: 2026-11-17
 module: Xot
-qmd: "ECC indice Xot verification gates esito"
+qmd: "ECC indice Xot verification gates esito phpstan saturazione swarm"
 ---
 
 # ECC — modulo Xot
