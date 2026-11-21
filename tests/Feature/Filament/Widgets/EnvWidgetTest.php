@@ -12,13 +12,8 @@ use Mockery;
 use Mockery\MockInterface;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Filament\Widgets\EnvWidget;
-<<<<<<< .merge_file_Hj4T2D
-use Symfony\Component\HttpKernel\Exception\HttpException;
-use Tests\TestCase;
-=======
 use Modules\Xot\Tests\TestCase;
 use Symfony\Component\HttpKernel\Exception\HttpException;
->>>>>>> .merge_file_PiAXvq
 
 uses(TestCase::class);
 
@@ -205,7 +200,7 @@ it('resolves field labels and section headings from the translation file, not fr
 });
 
 /*
- * module_quaeris_fila5#47. Scrivere nel .env non basta: con la configurazione
+ * module_<nome progetto>_fila5#47. Scrivere nel .env non basta: con la configurazione
  * in cache (`php artisan config:cache`, la norma in produzione) Laravel legge
  * i valori da bootstrap/cache/config.php e il .env nuovo viene ignorato.
  * Senza la pulizia, l'utente cambiava MAIL_HOST dal pannello, non succedeva
