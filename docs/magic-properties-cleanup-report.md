@@ -3,11 +3,11 @@ title: "magic properties cleanup report 2025 1"
 type: note
 tags: [documentation]
 created: 2026-09-26
-updated: 2026-09-26
+updated: 2026-11-17
 qmd: "magic properties cleanup report 2025 1"
 issues: []
 discussions: []
-name: magic-properties-cleanup-report-2025-1
+name: magic-properties-cleanup-report
 description: "Report 2025-11-17: sostituzione di property_exists() con isset() sulle proprietà magiche dei modelli Eloquent"
 metadata:
   type: documentation

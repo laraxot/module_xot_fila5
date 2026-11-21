@@ -1,4 +1,5 @@
 ---
+qmd: "xot bmad readme new md"
 title: "Xot - readme-new.md"
 module: Xot
 bmad: true

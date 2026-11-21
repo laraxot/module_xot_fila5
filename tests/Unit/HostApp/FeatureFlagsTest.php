@@ -19,9 +19,8 @@ use PHPUnit\Framework\Assert;
  * App\Support\FeatureFlags exists only in host apps that ship the full skeleton
  * (ptvx, predict, ...). Slim hosts (restaurant, techplanner, ...) do not provide
  * it, so every test skips itself when the class is absent instead of failing.
- * Return values are narrowed with Assert::assertIs* before expect(): on hosts
- * without the class PHPStan sees mixed, and expect(mixed) cannot resolve its
- * template type.
+ * Assert::assertIs* narrows only FeatureFlags::get() (mixed) before expect();
+ * isEnabled/isAnyEnabled/listEnabled/all already return bool|array — no assertIs*.
  */
 
 uses(XotBaseTestCase::class);
@@ -98,8 +97,7 @@ describe('FeatureFlags::isEnabled', function (): void {
         $email = FeatureFlags::isEnabled('notifications.email.enabled');
         $sms = FeatureFlags::isEnabled('notifications.sms.enabled');
 
-        expect($email)->toBeTrue();
-        expect($sms)->toBeFalse();
+        expect($email)->toBeTrue()->and($sms)->toBeFalse();
     });
 
     it('uses the default when the key is absent', function (): void {
@@ -110,8 +108,7 @@ describe('FeatureFlags::isEnabled', function (): void {
         $missing = FeatureFlags::isEnabled('missing.flag');
         $missingWithDefault = FeatureFlags::isEnabled('missing.flag', true);
 
-        expect($missing)->toBeFalse();
-        expect($missingWithDefault)->toBeTrue();
+        expect($missing)->toBeFalse()->and($missingWithDefault)->toBeTrue();
     });
 });
 
@@ -213,7 +210,10 @@ describe('FeatureFlags::all', function (): void {
             $this->markTestSkipped('Host app senza App\Support\FeatureFlags.');
         }
 
-        config()->set('features', [0 => 'positional', 'cache.store' => 'file']);
+        config()->set('features', [
+            0 => 'positional',
+            'cache.store' => 'file',
+        ]);
 
         $all = FeatureFlags::all();
 

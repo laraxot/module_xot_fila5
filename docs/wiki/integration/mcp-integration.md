@@ -1,4 +1,5 @@
 ---
+qmd: "xot wiki integration mcp integration md"
 title: "Xot - mcp-integration.md"
 module: Xot
 bmad: true

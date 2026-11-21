@@ -1,3 +1,10 @@
+---
+title: "BMAD Story — Swarm parallel: analisi PHPStan modulare + docs org + wiki/second brain"
+qmd: "xot bmad stories swarm phpstan modular docs org story md"
+type: note
+tags: [documentation]
+---
+
 =======
 ---
 title: "Xot - swarm-phpstan-modular-docs-org.story.md"

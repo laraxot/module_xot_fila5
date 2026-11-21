@@ -14,8 +14,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Str;
-use PHPUnit\Framework\Assert;
 use Modules\Xot\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
 /*
  * Middleware e action HTTP dell'applicazione host (App\), non dei moduli.
@@ -27,8 +27,8 @@ use Modules\Xot\Tests\TestCase;
  * Queste classi esistono solo negli host con lo scheletro completo (ptvx,
  * predict, ...). Gli host con app/ minimale (restaurant, techplanner, ...)
  * non le forniscono: ogni test salta se la classe mancante, invece di fallire.
- * I valori di ritorno sono tipizzati con Assert::assertIs* perche' su host
- * senza la classe PHPStan vede mixed.
+ * Assert::assertIs* solo dove il tipo runtime non e' gia' noto a PHPStan
+ * (es. elemento di array); mai su return gia' tipizzati (array / const string).
  */
 
 uses(TestCase::class);
@@ -58,10 +58,8 @@ test('authenticate returns no redirect target for json requests', function (): v
 
     $request = Request::create('/protected', 'GET', server: ['HTTP_ACCEPT' => 'application/json']);
 
-    $redirectTo = (function (Request $request): ?string {
-        $target = $this->redirectTo($request);
-
-        return $target;
+    $redirectTo = (function (Request $request): mixed {
+        return $this->redirectTo($request);
     })->call(new Authenticate(app('auth')), $request);
 
     Assert::assertNull($redirectTo);
@@ -87,6 +85,11 @@ test('redirect if authenticated lets a guest through untouched', function (): vo
 test('redirect if authenticated sends an authenticated user home', function (): void {
     if (! class_exists(RedirectIfAuthenticated::class)) {
         $this->markTestSkipped('Host app senza App\Http\Middleware\RedirectIfAuthenticated.');
+    }
+
+    // Laravel 11+ non ha piu' RouteServiceProvider: senza HOME non c'e' destinazione da verificare.
+    if (! class_exists(RouteServiceProvider::class)) {
+        $this->markTestSkipped('Host app senza App\Providers\RouteServiceProvider.');
     }
 
     $guard = Mockery::mock();

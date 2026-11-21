@@ -1,4 +1,5 @@
 ---
+qmd: "xot bmad index md"
 title: "Xot - indice BMAD"
 module: Xot
 bmad: true

@@ -1,4 +1,5 @@
 ---
+qmd: "xot wiki readme md"
 title: "Xot - readme.md"
 module: Xot
 bmad: true
