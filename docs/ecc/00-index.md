@@ -15,8 +15,8 @@ Collega le verifiche ECC al workflow PTVX (BMAD → lock → fix → PHPStan/Pes
 Ordine sintetico: [workflows.md](./workflows.md).
 
 Su worktree condiviso: prima di PHPStan rispettare saturazione HARD
-([11-phpstan](../../../../../bashscripts/docs/prompts/11-phpstan.md),
-[46-swarm](../../../../../bashscripts/docs/prompts/46-multi-agent-module-swarm.md),
+([37-phpstan](../../../../../bashscripts/docs/prompts/37-phpstan.md),
+[04-swarm-multi-agente](../../../../../bashscripts/docs/prompts/04-swarm-multi-agente.md),
 [memoria](../../../../../bashscripts/ai/wiki/memories/phpstan-host-saturation-max-three.md),
 [STOP thrashing](../../../../../docs/chat/STOP-phpstan-process-thrashing.md)).
 
@@ -24,7 +24,7 @@ Su worktree condiviso: prima di PHPStan rispettare saturazione HARD
 |---|---|---|
 | Inventario statico | verificato (2026-11-16) | [audit](../bmad/audits/xot-audit.md) |
 | PHPStan `Modules/Xot` | 0 errori (rerun; prima passata 6+ errori in `FeatureFlagsTest` mentre un altro agente lo editava) | `phpstan analyse Modules/Xot` (17:10 / rerun 17:21) |
-| Pest | skip documentato | DB test `10.100.200.53` irraggiungibile + `TestDatabaseGuard` |
+| Pest | skip documentato | DB di test configurato irraggiungibile + `TestDatabaseGuard` |
 | Security review | parziale | P2-X3 `HandleArtisanActRequestAction`; `--force` solo su SQLite di test e symlink opt-in |
 | Docs pack | aggiornato | audit, epics, decision-log, brainstorming, story |
 
