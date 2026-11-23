@@ -25,6 +25,12 @@ In precedenza, il file `laravel/Modules/Cms/app/Http/Middleware/PageSlugMiddlewa
 - **`laravel/Modules/Fixcity/app/Http/Middleware/RedirectTicketTrackCodeMiddleware.php`** — esegue il reindirizzamento `/ticket/{code}` → `/segnalazione/{code}`
 - **`laravel/Modules/Cms/app/Http/Middleware/PageSlugMiddleware.php`** — solo la risoluzione delle pagine CMS
 
+## Alternative scartate
+
+- Importare Ticket o Fixcity nel Cms: invertirebbe la direzione delle dipendenze.
+- Lasciare il redirect nel middleware generico: renderebbe il Cms inutilizzabile
+  nei progetti privi del modulo Ticket.
+
 ## Conseguenze
 
 ### Positive

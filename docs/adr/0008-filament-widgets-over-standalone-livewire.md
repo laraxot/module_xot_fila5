@@ -28,6 +28,13 @@ Il progetto usa Filament 5 come pannello amministrativo e come sistema di compon
 3. **Filament Page** — per pagine standalone
 4. **Blade + Alpine.js** — per logica frontend semplice senza backend PHP
 
+## Alternative scartate
+
+- Creare componenti Livewire standalone per ogni interazione: duplica stato,
+  lifecycle e autorizzazione già forniti da Filament.
+- Usare Blade e JavaScript ad hoc come superficie primaria: rompe l'integrazione
+  con gli schemi Filament e rende più difficile il test.
+
 ## Conseguenze
 
 ### Positive

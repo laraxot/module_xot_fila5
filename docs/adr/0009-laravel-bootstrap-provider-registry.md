@@ -22,6 +22,14 @@ Il file `bootstrap/providers.php` precedente elencava manualmente tutti i provid
 
 I provider dei moduli sono registrati nei rispettivi `composer.json` tramite la chiave `extra.laravel.providers` e scoperti dal comando `package:discover`.
 
+## Alternative scartate
+
+- Elencare manualmente tutti i provider Laravel nel bootstrap: è responsabilità
+  del framework e crea una copia divergente del template ufficiale.
+- Elencare ogni provider di modulo nel root: introduce coupling e impedisce al
+  progetto di caricare i moduli tramite discovery.
+- Registrare direttamente i provider dev: fallisce con `composer install --no-dev`.
+
 ## Conseguenze
 
 ### Positive
@@ -40,6 +48,12 @@ I provider dei moduli sono registrati nei rispettivi `composer.json` tramite la 
 php artisan package:discover --ansi
 php artisan about --only=providers
 ```
+
+Quando cambia il registro dei provider o un `RouteServiceProvider`, la cache
+delle rotte deve essere rigenerata: in sviluppo `php artisan route:clear`, in
+deploy `route:trans:cache`. Una cache vecchia può lasciare fuori le rotte API
+del modulo e trasformare una richiesta PNG in una pagina HTML 404, causando
+anche l'errore MIME del browser.
 
 ## Cross-link
 
