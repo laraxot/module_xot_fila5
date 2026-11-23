@@ -127,3 +127,12 @@ chiave sprint: `Xot/phpstan-modules-zero-swarm`.
   `form()`→`schema()` invertito vs Filament 5.12. `php -l` OK su
   ProgressioneVerticale + Media test. Swarm lane Xot/User/Notify/docs in volo;
   gate freddo rimandato a `pgrep <= 6`. Memoria thrash aggiornata.
+- 2026-11-23 (upgrade coordinato, agente Devin): `maatwebsite/excel` 3.1.70
+  fissava `phpoffice/phpspreadsheet ^1.30.5` e il branch 1.x e' `@deprecated`
+  ("migrate to release 5"). Upgrade eseguito: `Modules/Xot/composer.json`
+  `^3.1`→`^4.0`, `composer update -W` → excel 4.0.7 + phpspreadsheet 5.12.0
+  (rimosso `ezyang/htmlpurifier` transitivo). Compatibile: illuminate ^12||^13,
+  PHP ^8.3; PHP 8.4 / Laravel 13 / Filament 5 OK. Codice gia' conforme a v5
+  (`setCellValue` con coordinate array); ignore `method.deprecatedClass`
+  rimosso da `ImportValutatoriAction`. Commit: padre `c3109b9028`,
+  modulo Xot `4c27f652d` (push laraxot/dev entrambi).

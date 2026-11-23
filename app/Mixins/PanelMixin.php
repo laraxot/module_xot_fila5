@@ -44,10 +44,7 @@ class PanelMixin
     {
         return function (): ?NwidartModule {
             $name = $this->getName();
-            $module = Module::find($name);
-            Assert::isInstanceOf($module, NwidartModule::class);
-
-            return $module;
+            return Module::find($name) ?: null;
         };
     }
 

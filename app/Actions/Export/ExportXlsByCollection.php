@@ -9,12 +9,9 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
 use Maatwebsite\Excel\Facades\Excel;
 use Modules\Xot\Exports\CollectionExport;
-<<<<<<< Updated upstream
-=======
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
->>>>>>> Stashed changes
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 
@@ -51,9 +48,6 @@ class ExportXlsByCollection
 
         return Excel::download($export, $filename);
     }
-<<<<<<< Updated upstream
-=======
-
     /**
      * Esporta una collezione in Excel utilizzando PhpSpreadsheet direttamente.
      *
@@ -69,7 +63,11 @@ class ExportXlsByCollection
             $rows = Collection::make($rows->toArray());
         }
 
+        // PhpSpreadsheet 1.x è imposto da maatwebsite/excel 3.1; l'upgrade alla 5.x
+        // richiede la migrazione coordinata di Laravel Excel.
+        /** @phpstan-ignore new.deprecatedClass */
         $spreadsheet = new Spreadsheet;
+        /** @phpstan-ignore method.deprecatedClass */
         $sheet = $spreadsheet->getActiveSheet();
 
         $this->writeHeader($sheet, $fields);
@@ -139,5 +137,4 @@ class ExportXlsByCollection
     {
         return Collection::make($eloquentCollection->toArray());
     }
->>>>>>> Stashed changes
 }
