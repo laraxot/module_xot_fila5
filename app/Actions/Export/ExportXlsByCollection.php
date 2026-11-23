@@ -65,9 +65,7 @@ class ExportXlsByCollection
 
         // PhpSpreadsheet 1.x è imposto da maatwebsite/excel 3.1; l'upgrade alla 5.x
         // richiede la migrazione coordinata di Laravel Excel.
-        /** @phpstan-ignore new.deprecatedClass */
         $spreadsheet = new Spreadsheet;
-        /** @phpstan-ignore method.deprecatedClass */
         $sheet = $spreadsheet->getActiveSheet();
 
         $this->writeHeader($sheet, $fields);

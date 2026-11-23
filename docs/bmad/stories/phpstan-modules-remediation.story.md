@@ -1,6 +1,6 @@
 ---
 title: "Remediation PHPStan globale dei moduli"
-status: review
+status: done
 qmd: "phpstan Modules errori 23 source-first swarm BMAD"
 ---
 
@@ -13,7 +13,7 @@ correggendo i contratti alla sorgente e preservando il comportamento di dominio.
 
 ## Acceptance criteria
 
-- [ ] Gate globale PHPStan eseguito in una sola lane isolata, exit 0.
+- [x] Gate globale PHPStan eseguito in una sola lane isolata, exit 0.
 - [x] Errori raggruppati per causa e corretti senza baseline o cast cosmetici.
 - [x] Test/gate Pest dello scope modificato tentato; blocco DB remoto documentato.
 - [x] QMD/second brain aggiornato e diff controllato.
@@ -34,9 +34,10 @@ ritorno nullable nel mixin e assert già ristrette nel test FeatureFlags.
 
 ## Verifica
 
-Fix swarm completati sui cluster Performance, Ptv, Xot e test Xot. Il risultato iniziale è stato salvato in
+Fix swarm completati sui cluster Performance, Ptv, Xot e test Xot. Il gate finale esclusivo ha restituito
+`/tmp/phpstan-current-final2/result.json` con `errors=0`, `file_errors=0`, exit 0. Il risultato iniziale è stato salvato in
 `/tmp/phpstan-current-unique/result.json`; nessun processo concorrente deve
-essere usato come evidenza del gate. Il gate globale finale è ancora da eseguire.
+essere usato come evidenza del gate.
 
 ## Riferimenti
 
