@@ -43,7 +43,16 @@ Il docblock dell'Action rimanda al file con il marker machine-readable
 ma il marker è il collegamento verificato dai test.
 Chi cambia il comportamento aggiorna il contratto nello stesso commit.
 
+Ogni invariante ha un ID stabile nel formato `<OWNER>-<OPERAZIONE>-INV-<N>` e
+indica il group Pest omonimo. Il test dell'invariante usa
+`->group('<OWNER>-<OPERAZIONE>-INV-<N>')`, così la conferma mirata è
+`vendor/bin/pest --group=<ID>`. Il [template operativo](behavioral-contract-template.md)
+contiene la tabella minima di mapping fra regola, group e test.
+
 ## Contratti
 
 - [Standard di authoring dei contratti](contract-authoring-standard.md)
+- [Template per Behavioral Contract](behavioral-contract-template.md) — IDs, gruppi Pest e comando di conferma
+- [ADR degli entrypoint di route vuoti](../adr/route-entrypoints-canonical-empty.md) — gli entrypoint senza route
+  restano presenti e delegano al percorso canonico senza registrare route.
 

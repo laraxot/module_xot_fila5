@@ -73,6 +73,13 @@ Il file di contratto deve esistere in `Modules/<M>/docs/contracts/` e deve segui
 - Non modifica i permessi dell'utente
 ```
 
+## Alternative scartate
+
+- Conservare soltanto testo libero nel docblock: non è verificabile in modo
+  affidabile dall'harness.
+- Copiare il contratto dentro il codice: duplica la documentazione e la rende
+  fragile quando cambia il comportamento.
+
 ## Conseguenze
 
 ### Positive

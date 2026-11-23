@@ -13,6 +13,11 @@ workshop Laravel Day. `docs/contracts/` descrive ciò che il codice promette;
 `docs/adr/` spiega perché è stata scelta quella forma. Non si documentano
 comportamenti ipotetici come se fossero già implementati.
 
+Fonte metodologica: [laravelday-harness-workshop](https://github.com/robertogallea/laravelday-harness-workshop),
+in particolare l'indice dei contract e il collegamento tra invarianti e gruppi
+Pest. Il progetto adotta la filosofia, non copia l'harness né il suo dominio
+ordini/rimborsi.
+
 ## Contratti di comportamento delle Action
 
 Un'Action che scrive dati, chiama servizi esterni o produce effetti collaterali
@@ -27,11 +32,13 @@ e, nell'ordine, `Input`, `Output`, `Invarianti`, `Effetti collaterali`,
 `Errori`, `Non fa`. Il docblock dell'Action contiene il marker machine-readable:
 
 ```text
+@see docs/contracts/<file>.md
 @contract docs/contracts/<file>.md
 ```
 
-`@contract` non è un tag PHPDoc standard né un attributo eseguibile: è un
-riferimento per harness, review e agenti. Il percorso è relativo alla cartella
+`@see` è il riferimento PHPDoc leggibile dagli IDE; `@contract` non è un tag
+PHPDoc standard né un attributo eseguibile: è il marker per harness, review e
+agenti. Il percorso è relativo alla cartella
 owner (`Modules/<M>` o `Themes/<T>`), così il contratto resta portabile nel
 repository del modulo. Il marker deve puntare al comportamento realmente
 implementato; non sostituisce i test e non autorizza requisiti inventati.

@@ -5,7 +5,7 @@ status: accepted
 created: 2026-11-23
 updated: 2026-11-23
 issues:
-  - "https://github.com/laraxot/module_cms_fila5/issues/ADR-0008"
+  - "https://github.com/laraxot/module_xot_fila5/issues/ADR-0008"
 ---
 
 # ADR 0008: No standalone Livewire, usa Filament widget
@@ -28,6 +28,7 @@ Il progetto usa Filament 5 come pannello amministrativo e come sistema di compon
 3. **Filament Page** — per pagine standalone
 4. **Blade + Alpine.js** — per logica frontend semplice senza backend PHP
 
+<<<<<<< .merge_file_zSFega
 ## Driver della decisione
 
 - I widget devono appartenere al pannello che li espone.
@@ -37,6 +38,14 @@ Il progetto usa Filament 5 come pannello amministrativo e come sistema di compon
 
 - Widget Livewire standalone fuori dal pannello.
 - Duplicazione dello stesso widget in più moduli.
+=======
+## Alternative scartate
+
+- Creare componenti Livewire standalone per ogni interazione: duplica stato,
+  lifecycle e autorizzazione già forniti da Filament.
+- Usare Blade e JavaScript ad hoc come superficie primaria: rompe l'integrazione
+  con gli schemi Filament e rende più difficile il test.
+>>>>>>> .merge_file_eeEBe6
 
 ## Conseguenze
 
@@ -88,6 +97,9 @@ class StatsWidget extends BaseWidget
 - [Wiki: no-standalone-livewire-classes](../../../../docs/wiki/rules/no-standalone-livewire-classes.md)
 - [Filament 5 Docs](https://filamentphp.com/docs/5.x)
 - [Laravel Livewire Docs](https://livewire.laravel.com/docs) (per riferimento)
+<<<<<<< .merge_file_zSFega
 ## Conferma
 
 La scelta è confermata dai test architetturali del modulo Xot e dalle classi base Filament owner.
+=======
+>>>>>>> .merge_file_eeEBe6

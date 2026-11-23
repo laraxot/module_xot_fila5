@@ -5,7 +5,7 @@ status: accepted
 created: 2026-11-23
 updated: 2026-11-23
 issues:
-  - "https://github.com/laraxot/base_fixcity_fila5/issues/ADR-0009"
+  - "https://github.com/laraxot/module_xot_fila5/issues/ADR-0009"
 ---
 
 # ADR 0009: Bootstrap Laravel 13 minimale e discovery dei moduli
@@ -22,6 +22,7 @@ Il file `bootstrap/providers.php` precedente elencava manualmente tutti i provid
 
 I provider dei moduli sono registrati nei rispettivi `composer.json` tramite la chiave `extra.laravel.providers` e scoperti dal comando `package:discover`.
 
+<<<<<<< .merge_file_3xMr8W
 ## Driver della decisione
 
 - Il bootstrap dei provider deve avere un registro unico leggibile da Laravel.
@@ -31,6 +32,15 @@ I provider dei moduli sono registrati nei rispettivi `composer.json` tramite la 
 
 - Registrare provider applicativi in file duplicati.
 - Registrare `AdminPanelProvider` direttamente nel registro bootstrap insieme ai package provider.
+=======
+## Alternative scartate
+
+- Elencare manualmente tutti i provider Laravel nel bootstrap: è responsabilità
+  del framework e crea una copia divergente del template ufficiale.
+- Elencare ogni provider di modulo nel root: introduce coupling e impedisce al
+  progetto di caricare i moduli tramite discovery.
+- Registrare direttamente i provider dev: fallisce con `composer install --no-dev`.
+>>>>>>> .merge_file_khz6LV
 
 ## Conseguenze
 
@@ -53,11 +63,20 @@ php artisan about --only=providers
 php artisan --version
 ```
 
+Quando cambia il registro dei provider o un `RouteServiceProvider`, la cache
+delle rotte deve essere rigenerata: in sviluppo `php artisan route:clear`, in
+deploy `route:trans:cache`. Una cache vecchia può lasciare fuori le rotte API
+del modulo e trasformare una richiesta PNG in una pagina HTML 404, causando
+anche l'errore MIME del browser.
+
 ## Cross-link
 
 - [Laravel 13.x bootstrap/providers.php](https://github.com/laravel/laravel/blob/13.x/bootstrap/providers.php)
 - [Laravel Package Discovery](https://laravel.com/docs/13.x/packages#package-discovery)
 - [nwidart/laravel-modules](https://github.com/nWidart/laravel-modules)
+<<<<<<< .merge_file_3xMr8W
 ## Conferma
 
 La decisione è confermata dal registro provider corrente e dai test di bootstrap del modulo Xot.
+=======
+>>>>>>> .merge_file_khz6LV
