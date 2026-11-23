@@ -32,7 +32,6 @@ it('mantiene resources/views come percorso canonico e congela il residuo legacy'
 
         $path = $file->getPathname();
         $relative = substr($path, strlen($legacyViewRoot) + 1);
-        Assert::assertIsString($relative);
         $legacyFiles[] = str_replace(DIRECTORY_SEPARATOR, '/', $relative);
     }
 

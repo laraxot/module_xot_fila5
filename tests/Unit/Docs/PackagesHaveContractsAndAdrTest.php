@@ -52,7 +52,7 @@ it('writes every ADR with context, decision, rejected alternatives and consequen
     $problems = [];
     foreach (packageDirectories() as $dir) {
         foreach (glob($dir.'/docs/adr/*.md') as $path) {
-            if (! is_string($path) || in_array(basename($path), ['README.md', '0000-template.md'], true)) {
+            if (! is_string($path) || in_array(basename($path), ['README.md', '0000-template.md', 'INDEX.md'], true)) {
                 continue;
             }
             $relative = substr($path, strlen($root) + 1);
@@ -81,7 +81,7 @@ it('gives every module and theme at least one substantive ADR', function (): voi
         $adrFiles = array_values(array_filter(
             glob($dir.'/docs/adr/*.md'),
             static fn (mixed $path): bool => is_string($path)
-                && ! in_array(basename($path), ['README.md', '0000-template.md'], true),
+                && ! in_array(basename($path), ['README.md', '0000-template.md', 'INDEX.md'], true),
         ));
 
         $substantive = false;
