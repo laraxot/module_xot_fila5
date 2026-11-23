@@ -1,5 +1,7 @@
-<<<<<<< .merge_file_dU7fwr
-=======
+---
+title: Xot behavioral contract index
+---
+
 # Xot behavioral contract index
 
 This is the machine-readable inventory of behavioral contracts owned by the **Xot** module.
@@ -17,7 +19,6 @@ A contract describes an existing public operation or boundary. It names the owne
 
 Use [Xot contract authoring standard](../../Xot/docs/contracts/contract-authoring-standard.md) and the shared template. Legacy behavior is documented as-is and is not a model for new code.
 
->>>>>>> .merge_file_08iUn0
 ---
 title: "INDEX — Xot"
 type: index
@@ -43,12 +44,8 @@ superficie di estensione per tutti i moduli figli.
 | Behavioral contract authoring | [behavioral-contract-template](behavioral-contract-template.md) | template standard | CONTRACT-AUTHOR-001 |
 | Contract authoring standard | [contract-authoring-standard](contract-authoring-standard.md) | standard | CONTRACT-AUTHOR-002 |
 
-<<<<<<< .merge_file_dU7fwr
-(End of file - total 22 lines)
-=======
 - [README dei contratti](README.md) — indice e convenzioni storiche del package.
 - [Standard di authoring](contract-authoring-standard.md) — regole di formato e
   verifica.
 - [Regola Action Behavioral Contract](../rules/action-behavioral-contract.md) —
   quando il contratto è obbligatorio.
->>>>>>> .merge_file_08iUn0
