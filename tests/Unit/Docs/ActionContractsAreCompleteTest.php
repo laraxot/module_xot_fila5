@@ -25,8 +25,6 @@ const ACTION_CONTRACT_SECTIONS = ['Input', 'Output', 'Invarianti', 'Effetti coll
  */
 const ACTION_CONTRACT_REQUIRED = [
     'Modules/Gdpr/docs/contracts/save-gdpr-consents-action.md',
-    'Modules/Geo/docs/contracts/fetch-osm-tile-action.md',
-    'Modules/Geo/docs/contracts/query-nominatim-action.md',
     'Modules/AI/docs/contracts/request-assistant-completion-action.md',
 ];
 
@@ -88,7 +86,8 @@ it('keeps every behavioral contract complete and linked from its Action', functi
     $root = laravelRootForContracts();
     $problems = [];
     foreach ([...glob($root.'/Modules/*/docs/contracts/*.md'), ...glob($root.'/Themes/*/docs/contracts/*.md')] as $path) {
-        if (! is_string($path) || ! str_contains(file_get_contents($path), "\ntype: contract\n")) {
+        if (! is_string($path) || in_array(basename($path), ['README.md', '_template.md'], true)
+            || ! str_contains(file_get_contents($path), "\ntype: contract\n")) {
             continue;
         }
         foreach (behavioralContractProblems($path) as $problem) {

@@ -1,5 +1,12 @@
 ---
 qmd: "xot architecture readme md"
+<<<<<<< .merge_file_PECR6V
+<<<<<<< .merge_file_KqUhW5
+title: "Xot - readme.md"
+=======
+title: "Xot - README.md"
+>>>>>>> .merge_file_9ZOwJX
+=======
 <<<<<<< .merge_file_A7RLaV
 =======
 <<<<<<< .merge_file_I4sGDJ
@@ -8,6 +15,7 @@ title: "Xot - readme.md"
 =======
 title: "Xot - README.md"
 >>>>>>> .merge_file_JaoTls
+>>>>>>> .merge_file_gtigS0
 module: Xot
 bmad: true
 status: active

@@ -35,6 +35,16 @@ final class SomeAction
 }
 ```
 
+## Driver della decisione
+
+- Il contratto deve essere trovabile dal codice senza duplicare la specifica nel docblock.
+- Un controllo statico deve poter verificare esistenza e collegamento del file.
+
+## Alternative scartate
+
+- Tenere il contratto solo nel docblock dell'Action.
+- Tenere un unico contratto globale senza collegamento all'Action concreta.
+
 Il file di contratto deve esistere in `Modules/<M>/docs/contracts/` e deve seguire il formato standard:
 
 ```markdown
@@ -80,6 +90,10 @@ Il file di contratto deve esistere in `Modules/<M>/docs/contracts/` e deve segui
 ### Negative
 - Debito iniziale per aggiungere i contratti alle Action esistenti
 - Mantenimento dei contratti quando le Action cambiano
+
+## Conferma
+
+La regola è verificata da `Modules/Xot/tests/Unit/Docs/ActionContractsAreCompleteTest.php` quando il contratto e l'Action esistono nel modulo owner.
 
 ## Cross-link
 

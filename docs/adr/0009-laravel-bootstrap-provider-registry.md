@@ -18,10 +18,21 @@ Il file `bootstrap/providers.php` precedente elencava manualmente tutti i provid
 
 ## Decisione
 
-**`bootstrap/providers.php` contiene solo `AppServiceProvider::class`.** Tutti gli altri provider sono scoperti automaticamente da Laravel 13.
+**`bootstrap/providers.php` contiene solo `AppServiceProvider::class`.** I provider dei moduli sono scoperti automaticamente da Laravel 13. L'application provider registra esplicitamente `App\Providers\Filament\AdminPanelProvider`, che appartiene all'app e non a un package Composer. `VoltServiceProvider` resta disponibile nel codice ma non è registrato perché non monta servizi.
 
 I provider dei moduli sono registrati nei rispettivi `composer.json` tramite la chiave `extra.laravel.providers` e scoperti dal comando `package:discover`.
 
+<<<<<<< .merge_file_3xMr8W
+## Driver della decisione
+
+- Il bootstrap dei provider deve avere un registro unico leggibile da Laravel.
+- Un provider non deve essere registrato sia nel bootstrap sia dall'application provider.
+
+## Alternative scartate
+
+- Registrare provider applicativi in file duplicati.
+- Registrare `AdminPanelProvider` direttamente nel registro bootstrap insieme ai package provider.
+=======
 ## Alternative scartate
 
 - Elencare manualmente tutti i provider Laravel nel bootstrap: è responsabilità
@@ -29,6 +40,7 @@ I provider dei moduli sono registrati nei rispettivi `composer.json` tramite la 
 - Elencare ogni provider di modulo nel root: introduce coupling e impedisce al
   progetto di caricare i moduli tramite discovery.
 - Registrare direttamente i provider dev: fallisce con `composer install --no-dev`.
+>>>>>>> .merge_file_khz6LV
 
 ## Conseguenze
 
@@ -40,6 +52,7 @@ I provider dei moduli sono registrati nei rispettivi `composer.json` tramite la 
 ### Negative
 - I provider dei moduli devono essere correttamente registrati nel composer.json
 - Il deploy deve eseguire `composer install` (o `composer dump-autoload`) per far funzionare la discovery
+- Il provider Filament applicativo deve restare registrato da `AppServiceProvider::register()`.
 
 ## Verifica
 
@@ -47,6 +60,7 @@ I provider dei moduli sono registrati nei rispettivi `composer.json` tramite la 
 # Verifica che i provider siano scoperti
 php artisan package:discover --ansi
 php artisan about --only=providers
+php artisan --version
 ```
 
 Quando cambia il registro dei provider o un `RouteServiceProvider`, la cache
@@ -60,3 +74,9 @@ anche l'errore MIME del browser.
 - [Laravel 13.x bootstrap/providers.php](https://github.com/laravel/laravel/blob/13.x/bootstrap/providers.php)
 - [Laravel Package Discovery](https://laravel.com/docs/13.x/packages#package-discovery)
 - [nwidart/laravel-modules](https://github.com/nWidart/laravel-modules)
+<<<<<<< .merge_file_3xMr8W
+## Conferma
+
+La decisione è confermata dal registro provider corrente e dai test di bootstrap del modulo Xot.
+=======
+>>>>>>> .merge_file_khz6LV

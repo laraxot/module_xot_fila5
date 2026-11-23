@@ -24,7 +24,11 @@ Questa cartella contiene gli standard di codice e le convenzioni utilizzate nel 
 Questi standard si applicano a tutti i moduli del progetto e devono essere seguiti per mantenere la coerenza del codice.
 
 ## Collegamenti tra versioni di README.md
+<<<<<<< .merge_file_0aTsEy
+<<<<<<< .merge_file_bPixAO
+=======
 <<<<<<< .merge_file_S7KiZT
+>>>>>>> .merge_file_Xzxzaf
 * [README.md](docs/laravel-app/phpstan/readme.md)
 * [README.md](docs/laravel-app/readme.md)
 * [README.md](docs/moduli/struttura/readme.md)
@@ -158,7 +162,11 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 * [README.md](../../../patient/docs/README.md)
 * [README.md](../../../patient/docs/standards/README.md)
 * [README.md](../../../patient/docs/value-objects/README.md)
+<<<<<<< .merge_file_0aTsEy
+>>>>>>> .merge_file_0SUltB
+=======
 >>>>>>> .merge_file_ohpyJ1
+>>>>>>> .merge_file_Xzxzaf
 * [README.md](../../../Cms/docs/blocks/README.md)
 * [README.md](../../../Cms/docs/README.md)
 * [README.md](../../../Cms/docs/standards/README.md)

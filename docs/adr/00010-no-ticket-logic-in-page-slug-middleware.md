@@ -20,6 +20,16 @@ In precedenza, il file `laravel/Modules/Cms/app/Http/Middleware/PageSlugMiddlewa
 
 **La logica di reindirizzamento dei ticket è stata rimossa da PageSlugMiddleware.** Il reindirizzamento è gestito dal modulo Fixcity tramite il middleware dedicato `RedirectTicketTrackCodeMiddleware`.
 
+## Driver della decisione
+
+- Il middleware CMS deve restare responsabile della risoluzione delle pagine.
+- La logica di dominio dei ticket deve appartenere al suo modulo owner.
+
+## Alternative scartate
+
+- Lasciare la logica dei ticket nel middleware CMS.
+- Duplicare il reindirizzamento in più middleware senza un owner unico.
+
 ### Dove vive ora la logica
 
 - **`laravel/Modules/Fixcity/app/Http/Middleware/RedirectTicketTrackCodeMiddleware.php`** — esegue il reindirizzamento `/ticket/{code}` → `/segnalazione/{code}`
@@ -41,6 +51,10 @@ In precedenza, il file `laravel/Modules/Cms/app/Http/Middleware/PageSlugMiddlewa
 ### Negative
 - Due middleware da configurare invece di uno solo
 - Possibile duplicazione della logica di reindirizzamento se non gestita correttamente
+
+## Conferma
+
+La separazione va confermata dai test di routing del modulo owner e dal codice corrente dei middleware indicati sopra.
 
 ## Cross-link
 

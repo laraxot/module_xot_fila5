@@ -8,6 +8,12 @@ updated: 2026-11-23
 
 # Architecture Decision Records
 
+## Metodo Harness
+
+Scrivere un ADR solo per una scelta difficile da invertire, sorprendente o fondata su un trade-off reale. Un ADR deve rendere leggibili contesto, driver, alternative, decisione, conseguenze e una conferma ripetibile; non è un diario né una spiegazione retroattiva inventata.
+
+Le decisioni vanno verificate contro codice e test correnti. Una modifica sostanziale crea un nuovo ADR e collega il precedente come superseded/deprecated.
+
 Il **perche'** delle scelte di questo pacchetto: una decisione per file, con le
 alternative scartate. I numeri sequenziali sono ammessi per gli ADR canonici;
 non si usano date o timestamp nel nome (la data sta nella frontmatter).
@@ -62,6 +68,7 @@ Test, audit o controllo ripetibile che dimostra il rispetto della decisione.
 - [0012-workshop-behavioral-contracts](0012-workshop-behavioral-contracts.md) — Behavioral Contract owner-local, invarianti e conferma Pest
 - [translation-key-protocol](translation-key-protocol.md) — chiavi Laravel con namespace, file, collezione, chiave e tipo esplicito
 - [agent-harness](agent-harness.md) — harness e guard per il lavoro coordinato
+- [route-entrypoints-canonical-empty](route-entrypoints-canonical-empty.md) — entrypoint no-op condiviso per moduli senza route
 - [architecture-tests-pest-arch](architecture-tests-pest-arch.md) — regole di architettura con Pest arch(): ambito esplicito, debito dichiarato, cinque trappole chiuse
 - [architecture-rules-phparkitect](architecture-rules-phparkitect.md) — PHPArkitect con baseline (superseded dal precedente)
 - [pest-testcase-binding-per-file](pest-testcase-binding-per-file.md) — il TestCase Pest del modulo si lega nel file che lo usa

@@ -52,7 +52,7 @@ it('writes every ADR with context, decision, rejected alternatives and consequen
     $problems = [];
     foreach (packageDirectories() as $dir) {
         foreach (glob($dir.'/docs/adr/*.md') as $path) {
-            if (! is_string($path) || basename($path) === 'README.md') {
+            if (! is_string($path) || in_array(basename($path), ['README.md', '0000-template.md'], true)) {
                 continue;
             }
             $relative = substr($path, strlen($root) + 1);
