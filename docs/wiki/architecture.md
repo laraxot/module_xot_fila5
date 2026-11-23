@@ -1,10 +1,18 @@
 ---
+<<<<<<< .merge_file_nNAS6n
 title: "architecture"
+=======
+title: "Architecture"
+>>>>>>> .merge_file_xQMJat
 type: note
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
+<<<<<<< .merge_file_nNAS6n
 qmd: "architecture"
+=======
+qmd: "Architecture"
+>>>>>>> .merge_file_xQMJat
 issues: []
 discussions: []
 module: Xot
