@@ -27,8 +27,8 @@ use PHPUnit\Framework\Assert;
  * Queste classi esistono solo negli host con lo scheletro completo (ptvx,
  * predict, ...). Gli host con app/ minimale (restaurant, techplanner, ...)
  * non le forniscono: ogni test salta se la classe mancante, invece di fallire.
- * Assert::assertIs* solo dove il tipo runtime non e' gia' noto a PHPStan
- * (es. elemento di array); mai su return gia' tipizzati (array / const string).
+ * Assert::assertIs* restringe i valori misti delle classi App\ opzionali
+ * (`hosts()` senza return type, `HOME` costante host): mai cast/`@var` cosmetici.
  */
 
 uses(TestCase::class);
@@ -38,22 +38,21 @@ test('trust hosts trusts every subdomain of the application url', function (): v
         $this->markTestSkipped('Host app senza App\Http\Middleware\TrustHosts.');
     }
 
+    // TrustHosts::hosts() in Laravel non ha return type: senza narrowing PHPStan
+    // vede mixed (foreach.nonIterable / binaryOp.invalid sul pattern).
     $hostsRaw = (new TrustHosts(app()))->hosts();
+    Assert::assertIsIterable($hostsRaw);
     $hosts = [];
     foreach ($hostsRaw as $host) {
-        if (! is_string($host)) {
-            Assert::fail('TrustHosts::hosts() deve restituire solo stringhe.');
-        }
+        Assert::assertIsString($host, 'TrustHosts::hosts() deve restituire solo stringhe.');
         $hosts[] = $host;
     }
 
     $appHost = Str::of(Config::string('app.url'))->after('://')->before('/')->value();
 
     Assert::assertCount(1, $hosts);
-    $pattern = $hosts[0] ?? null;
-    if (! is_string($pattern)) {
-        Assert::fail('TrustHosts deve produrre esattamente un pattern stringa.');
-    }
+    // Dopo assertIsString nel foreach, $hosts e' list<string>: $hosts[0] e' string.
+    $pattern = $hosts[0];
     // Il pattern di Laravel e' `^(.+\.)?<host quotato>$`: verifichiamo che copra
     // sia il dominio nudo sia un suo sottodominio, senza replicarne la stringa.
     Assert::assertMatchesRegularExpression('#'.$pattern.'#', $appHost);
@@ -112,7 +111,9 @@ test('redirect if authenticated sends an authenticated user home', function (): 
     );
 
     Assert::assertInstanceOf(RedirectResponse::class, $response);
+    // HOME e' una costante host senza tipo garantito a PHPStan sulle classi App\ opzionali.
     $home = RouteServiceProvider::HOME;
+    Assert::assertIsString($home);
     Assert::assertSame(url($home), $response->getTargetUrl());
 });
 
