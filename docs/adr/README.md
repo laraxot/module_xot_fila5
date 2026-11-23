@@ -60,6 +60,7 @@ Test, audit o controllo ripetibile che dimostra il rispetto della decisione.
 - [0010-no-ticket-logic-in-page-slug-middleware](0010-no-ticket-logic-in-page-slug-middleware.md) — ticket logic removed from PageSlugMiddleware; ownership Cms
 - [0011-contract-docblock-reference](0011-contract-docblock-reference.md) — @contract annotations on Actions per ADR 0002
 - [0012-workshop-behavioral-contracts](0012-workshop-behavioral-contracts.md) — Behavioral Contract owner-local, invarianti e conferma Pest
+- [translation-key-protocol](translation-key-protocol.md) — chiavi Laravel con namespace, file, collezione, chiave e tipo esplicito
 - [agent-harness](agent-harness.md) — harness e guard per il lavoro coordinato
 - [architecture-tests-pest-arch](architecture-tests-pest-arch.md) — regole di architettura con Pest arch(): ambito esplicito, debito dichiarato, cinque trappole chiuse
 - [architecture-rules-phparkitect](architecture-rules-phparkitect.md) — PHPArkitect con baseline (superseded dal precedente)
