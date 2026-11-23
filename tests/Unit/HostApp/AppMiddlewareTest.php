@@ -39,16 +39,24 @@ test('trust hosts trusts every subdomain of the application url', function (): v
     }
 
     $hostsRaw = (new TrustHosts(app()))->hosts();
-    /** @var list<string> $hosts */
+    if (! is_array($hostsRaw)) {
+        Assert::fail('TrustHosts::hosts() deve restituire un array.');
+    }
     $hosts = [];
     foreach ($hostsRaw as $host) {
+        if (! is_string($host)) {
+            Assert::fail('TrustHosts::hosts() deve restituire solo stringhe.');
+        }
         $hosts[] = $host;
     }
 
     $appHost = Str::of(Config::string('app.url'))->after('://')->before('/')->value();
 
     Assert::assertCount(1, $hosts);
-    $pattern = $hosts[0];
+    $pattern = $hosts[0] ?? null;
+    if (! is_string($pattern)) {
+        Assert::fail('TrustHosts deve produrre esattamente un pattern stringa.');
+    }
     // Il pattern di Laravel e' `^(.+\.)?<host quotato>$`: verifichiamo che copra
     // sia il dominio nudo sia un suo sottodominio, senza replicarne la stringa.
     Assert::assertMatchesRegularExpression('#'.$pattern.'#', $appHost);
@@ -109,6 +117,9 @@ test('redirect if authenticated sends an authenticated user home', function (): 
     Assert::assertInstanceOf(RedirectResponse::class, $response);
     // HOME e' una costante dell'app host: per PHPStan e' mixed finche' non si controlla che sia una stringa.
     $home = RouteServiceProvider::HOME;
+    if (! is_string($home)) {
+        Assert::fail('RouteServiceProvider::HOME deve essere una stringa.');
+    }
     Assert::assertSame(url($home), $response->getTargetUrl());
 });
 
