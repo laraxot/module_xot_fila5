@@ -5,17 +5,10 @@ type: note
 tags: [documentation]
 ---
 
-=======
 ---
-<<<<<<< .merge_file_xEAKm3
-title: "Xot - docs-100-fleet-merge-xot-story-md.story.md"
-=======
-<<<<<<< .merge_file_mYxLLG
 title: "Xot - docs-100-fleet-merge-20261005.story.md"
-=======
+
 title: "Xot - docs-100-fleet-merge-xot-story-md.story.md"
->>>>>>> .merge_file_RZkTzk
->>>>>>> .merge_file_nzaHqH
 module: Xot
 bmad: true
 status: active

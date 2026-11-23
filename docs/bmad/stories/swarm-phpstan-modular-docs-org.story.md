@@ -5,7 +5,6 @@ type: note
 tags: [documentation]
 ---
 
-=======
 ---
 title: "Xot - swarm-phpstan-modular-docs-org.story.md"
 module: Xot

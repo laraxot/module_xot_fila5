@@ -1,4 +1,3 @@
-=======
 ---
 title: "Xot - phpstan-l10-job-media-notify.story.md"
 module: Xot
