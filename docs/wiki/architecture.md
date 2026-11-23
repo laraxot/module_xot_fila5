@@ -1,34 +1,14 @@
 ---
-<<<<<<< .merge_file_l2DIHt
-<<<<<<< .merge_file_nNAS6n
 title: "architecture"
-=======
+
 title: "Architecture"
->>>>>>> .merge_file_xQMJat
-=======
-<<<<<<< .merge_file_uQbg9A
-title: "architecture"
-=======
-title: "Architecture"
->>>>>>> .merge_file_0VN4cc
->>>>>>> .merge_file_Vn0hvL
 type: note
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
-<<<<<<< .merge_file_l2DIHt
-<<<<<<< .merge_file_nNAS6n
 qmd: "architecture"
-=======
+
 qmd: "Architecture"
->>>>>>> .merge_file_xQMJat
-=======
-<<<<<<< .merge_file_uQbg9A
-qmd: "architecture"
-=======
-qmd: "Architecture"
->>>>>>> .merge_file_0VN4cc
->>>>>>> .merge_file_Vn0hvL
 issues: []
 discussions: []
 module: Xot

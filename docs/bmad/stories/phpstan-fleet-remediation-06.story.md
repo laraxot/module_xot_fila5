@@ -1,4 +1,3 @@
-=======
 ---
 title: "Xot - phpstan-fleet-remediation-2026-10-06.story.md"
 module: Xot

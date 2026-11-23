@@ -1,5 +1,4 @@
 ---
-<<<<<<< .merge_file_g0ZR1t
 title: "Xot — entrypoint route no-op canonico"
 type: decision
 status: accepted
@@ -29,7 +28,7 @@ Il caricamento delle route è deterministico anche per i moduli senza endpoint. 
 ## Conferma
 
 `php artisan --version` deve completare il boot senza errore di file mancante.
-=======
+
 title: "Canonicalizzazione degli entrypoint di route vuoti"
 type: adr
 status: accepted
@@ -43,14 +42,10 @@ issue: "#92"
 
 Accettato per Issue #92.
 
-## Contesto
-
 I moduli caricati da `XotBaseRouteServiceProvider` devono mantenere i propri
 file `routes/api.php` e `routes/web.php`, anche quando non espongono route.
 Molti di questi file contenevano lo stesso boilerplate o nessuna dichiarazione
 attiva, duplicando testo senza aggiungere comportamento.
-
-## Decisione
 
 I soli entrypoint privi di dichiarazioni attive e duplicati tra moduli
 delegano a `Modules/Xot/routes/empty.php`. Il provider continua a caricare il
@@ -67,13 +62,9 @@ consolidazione.
 - evita di accorpare route di domini diversi in un modulo non owner;
 - mantiene separati i contratti attivi di ogni modulo.
 
-## Alternative scartate
-
 - cancellare gli entrypoint: il provider comune li carica per percorso;
 - spostare route attive nel modulo Xot: violerebbe l'ownership;
 - modificare `XotBaseRouteServiceProvider`: scope più ampio e rischio sui moduli attivi.
-
-## Conseguenze
 
 - gli entrypoint vuoti restano presenti e continuano a rispettare il contratto
   del provider comune;
@@ -87,4 +78,3 @@ consolidazione.
 `Modules/Xot/tests/Unit/Routing/CanonicalEmptyRouteEntrypointsTest.php`
 verifica che ogni entrypoint consolidato deleghi al file canonico e che il file
 canonico non registri route.
->>>>>>> .merge_file_r0HY3H
