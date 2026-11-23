@@ -5,7 +5,7 @@ status: accepted
 created: 2026-11-23
 updated: 2026-11-23
 issues:
-  - "https://github.com/laraxot/module_cms_fila5/issues/ADR-0008"
+  - "https://github.com/laraxot/module_xot_fila5/issues/ADR-0008"
 ---
 
 # ADR 0008: No standalone Livewire, usa Filament widget

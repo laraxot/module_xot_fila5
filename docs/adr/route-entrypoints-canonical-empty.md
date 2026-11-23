@@ -1,3 +1,11 @@
+---
+title: "Canonicalizzazione degli entrypoint di route vuoti"
+type: adr
+status: accepted
+module: Xot
+issue: "#92"
+---
+
 # ADR: canonicalizzazione degli entrypoint di route vuoti
 
 ## Stato

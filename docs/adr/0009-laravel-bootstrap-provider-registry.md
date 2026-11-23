@@ -5,7 +5,7 @@ status: accepted
 created: 2026-11-23
 updated: 2026-11-23
 issues:
-  - "https://github.com/laraxot/base_fixcity_fila5/issues/ADR-0009"
+  - "https://github.com/laraxot/module_xot_fila5/issues/ADR-0009"
 ---
 
 # ADR 0009: Bootstrap Laravel 13 minimale e discovery dei moduli
