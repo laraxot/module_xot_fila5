@@ -32,13 +32,15 @@ della classe (`create-ticket-action.md`), frontmatter `type: contract` e `action
 ## Non fa
 ```
 
-Il docblock dell'Action rimanda al file, cosi' chi legge il codice lo trova:
+Il docblock dell'Action contiene il marker machine-readable `@contract`, cosi'
+chi legge il codice e gli strumenti del progetto trovano il file:
 
 ```php
 /**
  * Unico punto di creazione di una segnalazione.
  *
- * Contratto di comportamento: docs/contracts/create-ticket-action.md (sei sezioni: input, output, invarianti, effetti
+ * @contract docs/contracts/create-ticket-action.md
+ * Contratto di comportamento (sei sezioni: input, output, invarianti, effetti
  * collaterali, errori, non fa).
  */
 ```
@@ -53,7 +55,7 @@ Il docblock dell'Action rimanda al file, cosi' chi legge il codice lo trova:
 ## Verifica
 
 - `Modules/Xot/tests/Unit/Docs/ActionContractsAreCompleteTest.php`: ogni `docs/contracts/*.md` con `type: contract` ha le sei
-  sezioni nell'ordine, la sua `action` esiste e il docblock dell'Action rimanda al file; le Action dei moduli condivisi
+  sezioni nell'ordine, la sua `action` esiste e il docblock dell'Action contiene `@contract`; le Action dei moduli condivisi
   nell'elenco `REQUIRED` hanno il contratto.
 - Il modulo del progetto elenca le proprie Action obbligatorie nel suo test (es. `tests/Unit/ActionContractsTest.php`).
 - `Modules/Xot/tests/Unit/Docs/PackagesHaveContractsAndAdrTest.php`: ogni modulo e tema ha `docs/contracts/` e `docs/adr/`;

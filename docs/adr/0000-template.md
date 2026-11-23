@@ -1,7 +1,11 @@
 ---
-status: proposed            # proposed | accepted | rejected | deprecated | superseded by NNNN
-date: YYYY-MM-DD
-decision-makers:
+title: "ADR — <decisione in una riga>"
+type: decision
+status: proposed            # proposed | accepted | rejected | deprecated | superseded
+created: YYYY-MM-DD
+updated: YYYY-MM-DD
+decision-makers: []
+issues: []
 ---
 
 <!-- File: docs/adr/NNNN-titolo-con-trattini.md · formato MADR breve.
@@ -10,28 +14,37 @@ decision-makers:
 
 # <!-- Titolo: il problema risolto e la soluzione scelta -->
 
-## Context and Problem Statement
+## Contesto
 
 <!-- 2-3 frasi. Chiudi con la domanda a cui la decisione risponde. -->
 
-## Decision Drivers
+## Driver della decisione
 
 - <!-- forza o vincolo che pesa sulla scelta -->
 
-## Considered Options
+## Alternative scartate
 
 - <!-- opzione 1 -->
 - <!-- opzione 2 -->
 
-## Decision Outcome
+## Decisione
 
 Scelta: **<!-- opzione -->**, perché <!-- driver che la giustifica -->.
 
-### Consequences
+## Conseguenze
 
 - Buono, perché <!-- … -->
 - Cattivo, perché <!-- … -->
 
-### Confirmation
+## Conferma
 
 <!-- Come si controlla che il codice rispetti la decisione: un test, un controllo automatico, una voce di revisione. -->
+
+<!--
+     Convenzioni Xot da rispettare quando il nuovo ADR riguarda codice:
+- business operation in Action con `Spatie\\QueueableAction\\QueueableAction`;
+- test in Pest, non test PHPUnit scritti come classi PHPUnit;
+- un modello persistente = una migrazione canonical `create_<table>_table`;
+- modifiche successive additive in migrazioni forward-only con `tableUpdate()`;
+- filename ADR in kebab-case, senza date o timestamp; gli ADR canonici Xot possono usare la numerazione sequenziale gia' adottata (`0001-...`).
+-->

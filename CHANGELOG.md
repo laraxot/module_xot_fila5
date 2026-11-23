@@ -175,11 +175,19 @@ All notable changes to `:package_name` will be documented in this file.
 
 ---
 
+<<<<<<< .merge_file_MaF1KT
 <<<<<<< .merge_file_yOnFEz
 ## Contenuto assorbito da `changelog.md`
 =======
 ## Contenuto assorbito da `CHANGELOG.md`
 >>>>>>> .merge_file_7jkKXZ
+=======
+<<<<<<< .merge_file_VnR60A
+## Contenuto assorbito da `changelog.md`
+=======
+## Contenuto assorbito da `CHANGELOG.md`
+>>>>>>> .merge_file_AgHjty
+>>>>>>> .merge_file_lB2AGz
 
 # Changelog - Modulo Xot
 
@@ -308,11 +316,19 @@ All notable changes to `:package_name` will be documented in this file.
 ## 🔗 Collegamenti
 
 ### Documenti Correlati
+<<<<<<< .merge_file_MaF1KT
 <<<<<<< .merge_file_yOnFEz
 - [README.md](./docs/readme.md) - Entry point
 =======
 - [README.md](./docs/README.md) - Entry point
 >>>>>>> .merge_file_7jkKXZ
+=======
+<<<<<<< .merge_file_VnR60A
+- [README.md](./docs/readme.md) - Entry point
+=======
+- [README.md](./docs/README.md) - Entry point
+>>>>>>> .merge_file_AgHjty
+>>>>>>> .merge_file_lB2AGz
 - [File Locking Pattern](./docs/file-locking-pattern.md) - Nuova regola
 - [Architecture Rules](./docs/laraxot-architecture-rules.md) - Regole base
 - [Merge Conflict Resolution](./docs/merge-conflict-resolution-2025-11-04.md) - Latest fix

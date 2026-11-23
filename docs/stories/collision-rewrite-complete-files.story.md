@@ -198,8 +198,16 @@ Perimetro: le sei violazioni di `md-filenames.py check` in `User/docs` (quattro 
 - Ritirare le copie con nomi diversi elencate sopra (`phpstan-fixes-2025.md`, `phpstan-fixes-conflict*.md`, `../phpstan_fixes_2025.md`, stub `parse-error-orphan-methods-*`) e allineare `docs/actions-structure.md` in radice (propongo: ritiro o `superseded_by` verso i documenti nuovi).
 - `User/docs/quality-status.md` (radice) ha lo stesso corpo piu' un front matter `module: theme` incollato in fondo, con rinvio a `Themes/docs/shared-components/` inesistente: non toccato.
 - I `issues:`/`discussions:` verso `provtv/base_ptv_fila5` compaiono in centinaia di documenti del modulo; non sono di questo repository (`festionali/base_restaurant_fila5`).
+<<<<<<< .merge_file_h8VKGp
 <<<<<<< .merge_file_CXP5Nz
 - `fixrefs`: nessun link `.md` ai sei nomi ritirati nel repo (cercati con `rg` su `laravel`, `docs`, `bashscripts`; l'unico accostamento, `UI/docs-archive/INDEX.md`, riguarda file di un altro modulo); restano solo menzioni in testo libero in `dcp-201` e in log JSON di rinomina.
 =======
 - `fixrefs`: nessun link `.md` ai sei nomi ritirati nel repo (cercati con `rg` su `laravel`, `docs`, `bashscripts`; l'unico accostamento, `UI/docs-archive/index.md`, riguarda file di un altro modulo); restano solo menzioni in testo libero in `dcp-201` e in log JSON di rinomina.
 >>>>>>> .merge_file_1dd2dN
+=======
+<<<<<<< .merge_file_zSYJn4
+- `fixrefs`: nessun link `.md` ai sei nomi ritirati nel repo (cercati con `rg` su `laravel`, `docs`, `bashscripts`; l'unico accostamento, `UI/docs-archive/INDEX.md`, riguarda file di un altro modulo); restano solo menzioni in testo libero in `dcp-201` e in log JSON di rinomina.
+=======
+- `fixrefs`: nessun link `.md` ai sei nomi ritirati nel repo (cercati con `rg` su `laravel`, `docs`, `bashscripts`; l'unico accostamento, `UI/docs-archive/index.md`, riguarda file di un altro modulo); restano solo menzioni in testo libero in `dcp-201` e in log JSON di rinomina.
+>>>>>>> .merge_file_qc0qBr
+>>>>>>> .merge_file_YUidt7

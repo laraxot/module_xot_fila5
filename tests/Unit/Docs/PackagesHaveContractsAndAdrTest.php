@@ -52,7 +52,7 @@ it('writes every ADR with context, decision, rejected alternatives and consequen
     $problems = [];
     foreach (packageDirectories() as $dir) {
         foreach (glob($dir.'/docs/adr/*.md') as $path) {
-            if (! is_string($path) || basename($path) === 'README.md') {
+            if (! is_string($path) || in_array(basename($path), ['README.md', '0000-template.md'], true)) {
                 continue;
             }
             $relative = substr($path, strlen($root) + 1);
@@ -71,4 +71,42 @@ it('writes every ADR with context, decision, rejected alternatives and consequen
     }
 
     Assert::assertSame([], $problems);
+});
+
+it('gives every module and theme at least one substantive ADR', function (): void {
+    $root = dirname(__DIR__, 5);
+    $missing = [];
+
+    foreach (packageDirectories() as $dir) {
+        $adrFiles = array_values(array_filter(
+            glob($dir.'/docs/adr/*.md'),
+            static fn (mixed $path): bool => is_string($path)
+                && ! in_array(basename($path), ['README.md', '0000-template.md'], true),
+        ));
+
+        $substantive = false;
+        foreach ($adrFiles as $path) {
+            if (! is_string($path)) {
+                continue;
+            }
+
+            $contents = file_get_contents($path);
+            if (str_contains($contents, '## Contesto')
+                && (str_contains($contents, '## Driver della decisione') || str_contains($contents, '## Driver'))
+                && str_contains($contents, '## Alternative scartate')
+                && str_contains($contents, '## Decisione')
+                && str_contains($contents, '## Conseguenze')
+                && str_contains($contents, '## Conferma')) {
+                $substantive = true;
+
+                break;
+            }
+        }
+
+        if (! $substantive) {
+            $missing[] = substr($dir, strlen($root) + 1).'/docs/adr';
+        }
+    }
+
+    Assert::assertSame([], $missing);
 });
