@@ -60,6 +60,14 @@ progetto ha scelto Pest, gia' installato e nella stessa suite, senza dipendenze 
   onesto: ogni voce esiste ancora, e nessuna voce nasconde per prefisso una classe che non e' in lista (trappola 5).
 - Ogni regola e' stata provata con una violazione iniettata (sonda) prima di essere considerata attiva.
 
+## Driver della decisione
+
+- Pest e' gia' il runner applicativo standard e non introduce un secondo
+  strumento per le regole architetturali;
+- le regole devono fallire in modo ripetibile sui namespace PSR-4 reali dei
+  moduli nwidart;
+- il debito legacy deve essere esplicito e non trasformarsi in falsi verdi.
+
 ## Alternative scartate
 
 - **PHPArkitect**: niente trappole 1, 2 e 5, baseline nativa; scartato per non aggiungere una dipendenza quando Pest e' gia'
@@ -85,3 +93,11 @@ progetto ha scelto Pest, gia' installato e nella stessa suite, senza dipendenze 
 - La suite `Arch` va nella matrice bloccante della CI. Al 2026-11-18 la CI del progetto ospite non partiva per il limite di spesa
   di GitHub Actions dell'account: finche' non riparte, si lancia a mano prima del push.
 - Chi aggiunge una regola la prova con una sonda che la viola; chi aggiunge una voce di debito lo spiega nella PR.
+
+## Conferma
+
+- `vendor/bin/pest --testsuite=Arch` esegue la suite senza database;
+- `tests/Arch/scope.php` verifica che ogni namespace controllato sia realmente
+  visibile nell'autoload;
+- i test di documentazione verificano che questa decisione resti collegata al
+  modulo owner.

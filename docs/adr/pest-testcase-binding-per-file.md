@@ -46,6 +46,13 @@ nulla. Tolto il binding dal `Pest.php` e aggiunto ai file, 110 test che non part
 - Segnale in PHPStan: `Call to an undefined method PHPUnit\Framework\TestCase::<helper>()` in un test
   vuol dire che il file non lega il proprio TestCase.
 
+## Driver della decisione
+
+- runner root e runner locale devono produrre lo stesso bootstrap;
+- il contesto applicativo deve essere visibile nel file che lo richiede;
+- il controllo statico deve risolvere il TestCase corretto senza configurazione
+  globale implicita.
+
 ## Alternative scartate
 
 - **Binding solo nel `Pest.php` del modulo**: non gira col runner di root, che è quello usato da CI e
@@ -54,6 +61,16 @@ nulla. Tolto il binding dal `Pest.php` e aggiunto ai file, 110 test che non part
   un file di root che conosce ogni modulo, e torna il doppio binding con `--test-directory`.
 
 ## Guardia
+
+## Conferma
+
+`ModulePestBootstrapDoesNotBindTestCaseTest` controlla che i bootstrap dei
+moduli non registrino un TestCase globale. I test applicativi modificati sono
+verificati con il runner Pest dal contesto `laravel/`.
+
+## Conseguenze
+
+Il binding per file rende i test eseguibili nello stesso modo dal runner root e dal runner locale del modulo.
 
 `Modules/Xot/tests/Unit/ModulePestBootstrapDoesNotBindTestCaseTest.php` fallisce se un `Pest.php` di
 modulo o tema torna a legare un TestCase.
