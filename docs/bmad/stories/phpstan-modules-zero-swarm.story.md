@@ -121,3 +121,9 @@ chiave sprint: `Xot/phpstan-modules-zero-swarm`.
 - Causa della wave: marker di conflitto Git annidati in PHP/test; risolti semanticamente preservando il contratto Tenant e i binding Pest. La relazione tenant ora espone generics completi anche nel contesto del modello base.
 - Prompt audit: aggiornati `bashscripts/docs/prompts/00-master-prompt.md`, `12-dipendenze-tra-moduli.md`, `13-contracts.md`, `15-services-verso-actions.md`, `27-livewire-verso-filament-widget.md` e `35-model-factory-seeder.md` eliminando riferimenti rotti o ridondanti.
 - Verifiche: `php .harness/bin/verify-facts` → 13 fatti verificati; `graphify update .` completato; `git diff --check` pulito. Pest mirato non è verificabile nel bootstrap corrente: `config` non è registrato nei test Tenant e il test ADR segnala ADR legacy incompleti.
+- 2026-11-23 (sessione handoff): ripresa standing order. Host saturo (46–94
+  `phpstan analyse`, anche quaeris). Full-tree locale fallito (JSON vuoto).
+  Harvest `/tmp` stale: AI assente, Notify class.notFound falsi positivi,
+  `form()`→`schema()` invertito vs Filament 5.12. `php -l` OK su
+  ProgressioneVerticale + Media test. Swarm lane Xot/User/Notify/docs in volo;
+  gate freddo rimandato a `pgrep <= 6`. Memoria thrash aggiornata.
