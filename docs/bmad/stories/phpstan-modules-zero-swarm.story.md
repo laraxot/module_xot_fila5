@@ -127,6 +127,13 @@ chiave sprint: `Xot/phpstan-modules-zero-swarm`.
   `form()`→`schema()` invertito vs Filament 5.12. `php -l` OK su
   ProgressioneVerticale + Media test. Swarm lane Xot/User/Notify/docs in volo;
   gate freddo rimandato a `pgrep <= 6`. Memoria thrash aggiornata.
+- 2026-11-23 (wave corrente): corrette le segnalazioni Performance/Ptv/Xot
+  source-first: valori monetari finiti, chiavi array non-nulle, guardie accessor
+  persistenti, closure nullable di PanelMixin e asserzioni tautologiche nei test;
+  il boundary PhpSpreadsheet resta vincolato a Laravel Excel 3.1. PHPStan mirato
+  `Modules/Performance Modules/Ptv Modules/Xot` e gate globale `Modules` hanno
+  restituito `[OK] No errors`. Pest mirato è stato eseguito ma bloccato dal guard
+  dati sul DB remoto `10.100.200.53`; nessun test ha toccato il database.
 - 2026-11-23 (upgrade coordinato, agente Devin): `maatwebsite/excel` 3.1.70
   fissava `phpoffice/phpspreadsheet ^1.30.5` e il branch 1.x e' `@deprecated`
   ("migrate to release 5"). Upgrade eseguito: `Modules/Xot/composer.json`
