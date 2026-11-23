@@ -13,7 +13,8 @@ use function Safe\preg_match_all;
 
 /*
  * Regola: Modules/Xot/docs/rules/action-behavioral-contract.md. Source-level (nessuna app).
- * I contratti stanno in docs/contracts/ di ogni modulo e tema; il docblock dell'Action rimanda al file.
+ * I contratti stanno in docs/contracts/ di ogni modulo e tema; il docblock dell'Action
+ * contiene il riferimento machine-readable `@contract`.
  */
 
 const ACTION_CONTRACT_SECTIONS = ['Input', 'Output', 'Invarianti', 'Effetti collaterali', 'Errori', 'Non fa'];
@@ -59,8 +60,8 @@ function behavioralContractProblems(string $contractPath): array
     if (! is_file($classPath)) {
         return [...$problems, 'l\'Action '.$match[1].' non esiste'];
     }
-    if (! str_contains(file_get_contents($classPath), 'Contratto di comportamento: docs/contracts/'.basename($contractPath))) {
-        $problems[] = 'il docblock di '.$parts[count($parts) - 1].' non rimanda a docs/contracts/'.basename($contractPath);
+    if (! str_contains(file_get_contents($classPath), '@contract docs/contracts/'.basename($contractPath))) {
+        $problems[] = 'il docblock di '.$parts[count($parts) - 1].' non contiene @contract docs/contracts/'.basename($contractPath);
     }
 
     return $problems;

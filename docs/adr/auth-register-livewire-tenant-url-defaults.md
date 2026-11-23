@@ -7,14 +7,15 @@ status: accepted
 
 ## Contesto
 
-La pagina pubblica di registrazione usa Folio e Livewire, mentre il default
+La pagina pubblica di registrazione usa Folio e un Filament Widget (il cui
+runtime tecnico è Livewire), mentre il default
 tenant e' introdotto dal middleware per le rotte del pannello Filament. Se il
 default del pannello sopravvive al ciclo Livewire pubblico, lo snapshot puo'
 essere generato e verificato in contesti diversi.
 
 ## Driver della decisione
 
-- mantenere stabile il contesto Livewire fra GET iniziale e POST di update;
+- mantenere stabile il contesto tecnico Livewire fra GET iniziale e POST di update;
 - non modificare il comportamento di Filament o delle API tenant-aware;
 - limitare il bypass al solo percorso pubblico dimostrato dai test.
 
@@ -42,8 +43,8 @@ flow; all other web and API requests keep the existing Filament behaviour.
 
 ## Why
 
-The registration form is rendered by Sixteen/Folio and the GDPR registration
-widget. It is not a tenant-selected Filament panel. Injecting
+The registration form is rendered by Sixteen/Folio and the GDPR Filament
+registration widget. It is not a tenant-selected Filament panel. Injecting
 `Filament::getTenant()` into URL defaults on the initial page and again during
 the Livewire update can produce different request contexts. Livewire then
 rejects the submitted snapshot with `CorruptComponentPayloadException`.

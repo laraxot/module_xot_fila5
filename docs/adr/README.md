@@ -3,7 +3,7 @@ title: "Architecture Decision Records"
 type: index
 tags: [adr, decisioni]
 created: 2026-11-18
-updated: 2026-11-18
+updated: 2026-11-23
 ---
 
 # Architecture Decision Records
@@ -52,6 +52,13 @@ Test, audit o controllo ripetibile che dimostra il rispetto della decisione.
 - [0003-pest-as-test-runner](0003-pest-as-test-runner.md) — Pest come formato e runner applicativo
 - [0004-one-model-one-migration](0004-one-model-one-migration.md) — ownership dello schema e una migrazione owner per modello
 - [0005-owner-local-documentation](0005-owner-local-documentation.md) — decisioni e contratti nella documentazione dell'owner
+- [0006-no-standalone-livewire-widgets](0006-no-standalone-livewire-widgets.md) — formulazione precedente della decisione sui Widget Filament, consolidata nel 0008
+- [0006-xot-base-extension-points](0006-xot-base-extension-points.md) — i moduli estendono i punti base Xot del framework
+- [0007-module-local-pest-testcase-binding](0007-module-local-pest-testcase-binding.md) — il TestCase Pest si lega nel file di test che lo usa
+- [0008-filament-widgets-over-standalone-livewire](0008-filament-widgets-over-standalone-livewire.md) — No standalone Livewire, usare Filament widget
+- [0009-laravel-bootstrap-provider-registry](0009-laravel-bootstrap-provider-registry.md) — bootstrap Laravel 13 minimale e discovery dei moduli
+- [00010-no-ticket-logic-in-page-slug-middleware](00010-no-ticket-logic-in-page-slug-middleware.md) — ticket logic removed from PageSlugMiddleware; ownership Cms
+- [00011-contract-docblock-reference](00011-contract-docblock-reference.md) — @contract annotations on Actions per ADR 0002
 - [agent-harness](agent-harness.md) — harness e guard per il lavoro coordinato
 - [architecture-tests-pest-arch](architecture-tests-pest-arch.md) — regole di architettura con Pest arch(): ambito esplicito, debito dichiarato, cinque trappole chiuse
 - [architecture-rules-phparkitect](architecture-rules-phparkitect.md) — PHPArkitect con baseline (superseded dal precedente)

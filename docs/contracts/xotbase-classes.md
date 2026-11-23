@@ -1,6 +1,7 @@
 ---
 title: "Contratto delle classi XotBase"
-type: contract
+type: base-contract
+contract: Modules\\Xot
 tags: [xot, xotbase, contratti, ereditarieta, filament, phpstan]
 created: 2026-11-19
 updated: 2026-11-19
