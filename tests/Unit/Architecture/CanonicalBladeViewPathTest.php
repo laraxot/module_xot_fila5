@@ -19,6 +19,14 @@ it('mantiene resources/views come percorso canonico e congela il residuo legacy'
 
     Assert::assertDirectoryExists($canonicalViewRoot);
     Assert::assertDirectoryExists($legacyViewRoot);
+    Assert::assertFileExists($canonicalViewRoot.'/index.blade.php');
+
+    $expectedLegacy = [
+        'admin/index/acts/test.blade.php',
+        'admin/test/index/acts/test_mail.blade.php',
+        'livewire/test.blade.php',
+        'test.blade.php',
+    ];
 
     $legacyFiles = [];
     $iterator = new RecursiveIteratorIterator(
@@ -32,15 +40,22 @@ it('mantiene resources/views come percorso canonico e congela il residuo legacy'
 
         $path = $file->getPathname();
         $relative = substr($path, strlen($legacyViewRoot) + 1);
-        $legacyFiles[] = str_replace(DIRECTORY_SEPARATOR, '/', $relative);
+        $normalized = str_replace(DIRECTORY_SEPARATOR, '/', (string) $relative);
+
+        Assert::assertNotSame('', $normalized);
+        Assert::assertStringEndsWith('.blade.php', $normalized);
+        Assert::assertStringNotContainsString('..', $normalized);
+        Assert::assertFileExists($legacyViewRoot.'/'.$normalized);
+
+        $legacyFiles[] = $normalized;
     }
 
     sort($legacyFiles);
 
-    Assert::assertSame([
-        'admin/index/acts/test.blade.php',
-        'admin/test/index/acts/test_mail.blade.php',
-        'livewire/test.blade.php',
-        'test.blade.php',
-    ], $legacyFiles);
+    Assert::assertSame($expectedLegacy, $legacyFiles);
+
+    foreach ($expectedLegacy as $relativePath) {
+        Assert::assertFileExists($legacyViewRoot.'/'.$relativePath);
+        Assert::assertFileDoesNotExist($canonicalViewRoot.'/'.$relativePath);
+    }
 });

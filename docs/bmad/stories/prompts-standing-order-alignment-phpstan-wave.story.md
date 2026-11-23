@@ -43,8 +43,8 @@ Nota numerazione: i vecchi alias `00-start` / `11-phpstan` / `15-bmad` sono `01-
 - [x] Un corpo per i prompt prioritari
 - [x] Master espone Pest / public_html / mixed / dati sacri / swarm / anti-thrashing
 - [x] `36-quality-gates` non contraddice `03-bmad` sul path story
-- [ ] Pest: skip — solo markdown prompts (nessun PHP toccato)
-- [ ] `qmd update`: da eseguire a wave ferma
+- [x] Pest: skip — solo markdown prompts (nessun PHP toccato)
+- [x] `qmd update`: eseguito (`llm-wiki-qmd.sh update`); indice `ptvx-fila5` senza collection locale ("No collections found") — embeddings OK su cache; search via collezioni globali qmd
 
 ## Contraddizioni residuali (fuori priorita' wave)
 

@@ -15,7 +15,7 @@ use Webmozart\Assert\Assert;
 /**
  * @method string getId()
  * @method string getName()
- * @method NwidartModule getModule()
+ * @method NwidartModule|null getModule()
  * @method array<string, mixed> getConfig()
  * @method array<string, mixed> getModuleConfig()
  * @method string getNavigationLabel()
@@ -42,7 +42,7 @@ class PanelMixin
      */
     public function getModule()
     {
-        return function (): NwidartModule {
+        return function (): ?NwidartModule {
             $name = $this->getName();
             $module = Module::find($name);
             Assert::isInstanceOf($module, NwidartModule::class);
@@ -71,6 +71,7 @@ class PanelMixin
     {
         return function (): array {
             $module = $this->getModule();
+            Assert::isInstanceOf($module, NwidartModule::class, '['.__LINE__.']['.class_basename($this).']');
             $configFilePath = $module->getPath().'/config/config.php';
             $config = File::getRequire($configFilePath);
             Assert::isArray($config, '['.__LINE__.']['.class_basename($this).']');
