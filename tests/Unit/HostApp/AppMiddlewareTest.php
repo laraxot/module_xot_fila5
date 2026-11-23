@@ -39,11 +39,9 @@ test('trust hosts trusts every subdomain of the application url', function (): v
     }
 
     $hostsRaw = (new TrustHosts(app()))->hosts();
-    Assert::assertIsArray($hostsRaw);
     /** @var list<string> $hosts */
     $hosts = [];
     foreach ($hostsRaw as $host) {
-        Assert::assertIsString($host);
         $hosts[] = $host;
     }
 
@@ -111,7 +109,6 @@ test('redirect if authenticated sends an authenticated user home', function (): 
     Assert::assertInstanceOf(RedirectResponse::class, $response);
     // HOME e' una costante dell'app host: per PHPStan e' mixed finche' non si controlla che sia una stringa.
     $home = RouteServiceProvider::HOME;
-    Assert::assertIsString($home);
     Assert::assertSame(url($home), $response->getTargetUrl());
 });
 

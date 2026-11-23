@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_dU7fwr
+=======
 # Xot behavioral contract index
 
 This is the machine-readable inventory of behavioral contracts owned by the **Xot** module.
@@ -15,62 +17,38 @@ A contract describes an existing public operation or boundary. It names the owne
 
 Use [Xot contract authoring standard](../../Xot/docs/contracts/contract-authoring-standard.md) and the shared template. Legacy behavior is documented as-is and is not a model for new code.
 
+>>>>>>> .merge_file_08iUn0
 ---
-title: "Behavioral Contracts — indice operativo Xot"
+title: "INDEX — Xot"
 type: index
-owner: Xot
 status: active
+created: 2026-11-23
 updated: 2026-11-23
+decision-makers: []
 ---
 
-# Behavioral Contracts — indice operativo Xot
+<!-- File: docs/contracts/INDEX.md · formato MADR breve. -->
+# <!-- Titolo: indice operativo Xot -->
 
-Questo indice collega ogni promessa owner-local alla classe che la implementa, agli
-ID delle invarianti e ai gruppi Pest che la verificano. Il formato è definito da
-[behavioral-contract-template.md](behavioral-contract-template.md) e la decisione
-di governance da [ADR 0012](../adr/0012-behavioral-contract-governance.md).
+## Contratti di comportamento
 
-## Registro
+Xot è il modulo base: estende `XotBasePage`, `XotBaseResource`, `XotBaseServiceProvider`,
+`XotBaseMigration` e i relativi RelationManager. I contratti qui descritti sono la
+superficie di estensione per tutti i moduli figli.
 
-| Contratto | Owner / superficie | Invarianti e gruppi Pest | Verifica |
-| --- | --- | --- | --- |
-| [xotbase-classes.md](xotbase-classes.md) | `Modules\\Xot` — classi `XotBase*` | Contratto di base, non una Action; verifica consumer indicata nel documento | Vedi la sezione “Come verificare” del contratto |
+| Operazione | Contract | Classe | Invarianti |
+|---|---|---|---|
+| Bootstrap provider registry | [bootstrap-provider-registry](bootstrap-provider-registry.md) | `Modules\Xot\Providers\XotServiceProvider` | BOOTSTRAP-PROVIDERS-001..003 |
+| XotBase class surface | [xotbase-classes](xotbase-classes.md) | `XotBasePage`, `XotBaseResource`, `XotBaseServiceProvider`, `XotBaseMigration` | XOTBASE-001..004 |
+| Behavioral contract authoring | [behavioral-contract-template](behavioral-contract-template.md) | template standard | CONTRACT-AUTHOR-001 |
+| Contract authoring standard | [contract-authoring-standard](contract-authoring-standard.md) | standard | CONTRACT-AUTHOR-002 |
 
-Non ci sono ancora Behavioral Contract di Action owner Xot da registrare. I
-contratti di Action degli altri moduli restano nei rispettivi `docs/contracts/`;
-questo indice non li duplica.
-
-## Procedura per aggiungere un contratto
-
-1. Creare il file a partire dal [template](behavioral-contract-template.md), con
-   frontmatter `type: contract` e `action: <FQCN>`.
-2. Verificare che l'Action contenga sia `@see docs/contracts/<file>.md` sia
-   `@contract docs/contracts/<file>.md` e che il comportamento scritto sia quello
-   realmente implementato.
-3. Assegnare a ogni invariante un ID stabile `<SCOPE>-INV-<N>`; usare lo stesso ID
-   nella tabella, nel test Pest e in questo registro.
-4. Aggiungere il test al modulo owner con `->group('<ID>')`, quindi riportare il
-   comando isolato nella colonna “Verifica”.
-5. Aggiornare contratto, test e indice nella stessa modifica e lanciare i controlli
-   documentali Xot.
-
-## Comandi di controllo
-
-Da `laravel/`:
-
-```bash
-vendor/bin/pest Modules/Xot/tests/Unit/Docs/ActionContractsAreCompleteTest.php
-vendor/bin/pest Modules/Xot/tests/Unit/Docs/PackagesHaveContractsAndAdrTest.php
-vendor/bin/pest --group=<SCOPE>-INV-<N>
-```
-
-Il terzo comando è un segnaposto operativo: sostituire `<SCOPE>-INV-<N>` con un ID
-presente nel registro. Un contratto senza test associato non è completo.
-
-## Documentazione correlata
-
+<<<<<<< .merge_file_dU7fwr
+(End of file - total 22 lines)
+=======
 - [README dei contratti](README.md) — indice e convenzioni storiche del package.
 - [Standard di authoring](contract-authoring-standard.md) — regole di formato e
   verifica.
 - [Regola Action Behavioral Contract](../rules/action-behavioral-contract.md) —
   quando il contratto è obbligatorio.
+>>>>>>> .merge_file_08iUn0

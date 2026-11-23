@@ -1,50 +1,37 @@
 ---
-title: "ADR — <decisione in una riga>"
-type: decision
-status: proposed            # proposed | accepted | rejected | deprecated | superseded
-created: YYYY-MM-DD
-updated: YYYY-MM-DD
-decision-makers: []
-issues: []
+status: proposed
+date: YYYY-MM-DD
+decision-makers:
 ---
 
-<!-- File: docs/adr/NNNN-titolo-con-trattini.md · formato MADR breve.
-     Scrivi un ADR solo se la decisione è difficile da invertire, sorprendente e frutto di un trade-off reale
-     (di solito nasce da una Decision in .harness/memory/decisions.md). -->
+<!-- MADR breve adattato al modulo. Scrivi un ADR solo per una decisione difficile da invertire, sorprendente e frutto di un trade-off reale. -->
 
 # <!-- Titolo: il problema risolto e la soluzione scelta -->
 
-## Contesto
+## Context and Problem Statement
 
-<!-- 2-3 frasi. Chiudi con la domanda a cui la decisione risponde. -->
+<!-- Fatti verificabili e domanda decisionale. -->
 
-## Driver della decisione
+## Decision Drivers
 
-- <!-- forza o vincolo che pesa sulla scelta -->
+- <!-- vincolo, rischio o obiettivo -->
 
-## Alternative scartate
+## Considered Options
 
-- <!-- opzione 1 -->
-- <!-- opzione 2 -->
+- <!-- opzione seria 1 -->
+- <!-- opzione seria 2 -->
 
-## Decisione
+## Decision Outcome
 
-Scelta: **<!-- opzione -->**, perché <!-- driver che la giustifica -->.
+Scelta: **<!-- opzione -->**, perché <!-- driver -->.
 
-## Conseguenze
+### Consequences
 
-- Buono, perché <!-- … -->
-- Cattivo, perché <!-- … -->
+- Buono, perché <!-- effetto -->
+- Cattivo, perché <!-- costo o debito -->
 
-## Conferma
+### Confirmation
 
-<!-- Come si controlla che il codice rispetti la decisione: un test, un controllo automatico, una voce di revisione. -->
+<!-- Test Pest, PHPStan, guard source-level o review ripetibile. La presenza dell'ADR non prova l'implementazione. -->
 
-<!--
-     Convenzioni Xot da rispettare quando il nuovo ADR riguarda codice:
-- business operation in Action con `Spatie\\QueueableAction\\QueueableAction`;
-- test in Pest, non test PHPUnit scritti come classi PHPUnit;
-- un modello persistente = una migrazione canonical `create_<table>_table`;
-- modifiche successive additive in migrazioni forward-only con `tableUpdate()`;
-- filename ADR in kebab-case, senza date o timestamp; gli ADR canonici Xot possono usare la numerazione sequenziale gia' adottata (`0001-...`).
--->
+<!-- Collegare story BMAD owner-local; lock prima dell'edit; qmd update dopo. -->
