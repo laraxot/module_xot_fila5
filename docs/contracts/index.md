@@ -26,7 +26,7 @@ Verifica di un invariante: `rg -n "group\('<ID>'\)" laravel/Modules/Xot/tests`; 
 Non contengono invarianti propri e non vanno contati come contract.
 
 - [contract-authoring-standard](contract-authoring-standard.md) — standard di authoring (tipo `standard`).
-- [behavioral-contract-template](behavioral-contract-template.md), [0000-template](0000-template.md), [_template](_template.md) — modelli; gli ID `MODULE-INV-1` e `<SCOPE>-INV-1` sono segnaposto, **non coperto** e da non citare.
+- [behavioral-contract-template](behavioral-contract-template.md), [0000-template](0000-template.md), [_template](template.md) — modelli; gli ID `MODULE-INV-1` e `<SCOPE>-INV-1` sono segnaposto, **non coperto** e da non citare.
 - [README](README.md) — convenzioni storiche del pacchetto.
 - [Regola Action Behavioral Contract](../rules/action-behavioral-contract.md) — quando il contract è obbligatorio.
 

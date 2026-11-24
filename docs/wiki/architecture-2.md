@@ -1,5 +1,5 @@
 ---
-title: "Architecture.md (alias)"
+title: "architecture-2.md (alias)"
 status: superseded
 superseded_by: "./architecture.md"
 type: alias

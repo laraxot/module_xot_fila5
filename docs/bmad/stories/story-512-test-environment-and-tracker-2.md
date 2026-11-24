@@ -1,5 +1,5 @@
 ---
-title: "STORY-512-test-environment-and-tracker.md (alias)"
+title: "story-512-test-environment-and-tracker-2.md (alias)"
 status: superseded
 superseded_by: "./story-512-test-environment-and-tracker.md"
 type: alias
