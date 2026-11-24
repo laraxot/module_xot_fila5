@@ -11,7 +11,11 @@ related:
   - ../../../../IndennitaCondizioniLavoro/docs/bmad/2026-10-06-phpstan-l10-fix.story.md
   - ../../../../User/docs/bmad/stories/phpstan-l10-user-lang-fix.story.md
 
+<<<<<<< HEAD
   - ../../../../User/docs/bmad/stories/phpstan-l10-user-lang-fix-20261006.story.md
+=======
+- ../../../../User/docs/bmad/stories/phpstan-l10-user-lang-fix-20261006.story.md
+>>>>>>> laraxot/dev
 qmd: "xot 06 phpstan modules level10 story level"
 ---
 

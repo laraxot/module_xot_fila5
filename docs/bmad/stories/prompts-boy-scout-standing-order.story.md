@@ -42,7 +42,10 @@ Lane docs-guardian: boy-scout sui prompt prioritari (ordine random) senza mass-d
 | `05-second-brain.md` | rimuove `wiki-hygiene.py` assente |
 | `24-filament.md` / `28-setting-page.md` / `37-phpstan.md` | Filament 5 Schema vs Form legacy |
 | `README.md` / `index.md` | SSoT vs wiki/.agents prompts; related story |
+<<<<<<< HEAD
 | `98`, `44`, `10`, `15`, `17`, `51`, `54`, `56`, `11`, `53`, `16` | wave debito: BMAD path, flock max-3, Filament5 Schema, Pest/host, public_html, link 00-master |
+=======
+>>>>>>> laraxot/dev
 
 ## Criteri
 
@@ -58,6 +61,7 @@ Lane docs-guardian: boy-scout sui prompt prioritari (ordine random) senza mass-d
 | Quando | Agente | Scope | Nota |
 |---|---|---|---|
 | 2026-11-24 | docs-guardian | bashscripts/docs/prompts prioritari | lock `prompts`; shuffle swarm→closing→qg→audit→phpstan→boy→pony→master→sb→bmad |
+<<<<<<< HEAD
 | 2026-11-24 | docs-guardian | prompts 10/11/15/16/17/44/51/53/54/56/98 | lock `prompts`; wave debito legacy `docs/stories/` + flock/Filament5/Pest |
 
 ## Diario
@@ -69,5 +73,11 @@ Boy-scout su 11 prompt non prioritari (shuffle: 98→44→10→15→17→51→54
 ## Debito residuo
 
 - Spot-check residui `docs/stories/` fuori da questa wave (altri prompt non in lista).
+=======
+
+## Debito residuo
+
+- Prompt non prioritari ancora con `docs/stories/` primario (`10`, `15`, `17`, `44`, `98`) — vedi story alignment precedente.
+>>>>>>> laraxot/dev
 - `wiki-hygiene.py` citato in story storiche; non ripristinato (assente).
 - `bashscripts/ai/wiki/prompts` e `.agents/prompts` restano skill design separate (nessuna fusione).

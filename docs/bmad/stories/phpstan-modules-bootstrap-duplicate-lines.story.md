@@ -59,6 +59,7 @@ modulo Rating (voluto: `docs/redundancy-report.md`, righe 25 e 67-70), lasciando
 
 Totale al run con bootstrap funzionante: 21 errori in 7 file, tutti a 0 al run finale.
 
+<<<<<<< HEAD
 ## Secondo giro: marker annidati da un progetto fratello (20:37)
 
 Alle 20:40 PHPStan e' tornato a `exit 1` in 6 secondi (`unexpected token "<<"`): 126 PHP con marker in Activity (28), Job (9),
@@ -97,6 +98,8 @@ commit radice `41e757843a` (20:29) ne contiene 84; `d2ae03eb31` (20:27) ne aveva
 - **Cosa non so.** Chi ha lanciato il merge in questo working tree: l'autore del commit e' lo stesso git user locale, quindi non
   discrimina. So solo che il secondo genitore e' un commit del progetto fratello.
 
+=======
+>>>>>>> laraxot/dev
 ## Incidenti e lezioni
 
 - Prima diagnosi sbagliata: attribuito il difetto al merge `dc010170d4`. Corretto con il lint dei blob; memoria aggiornata.

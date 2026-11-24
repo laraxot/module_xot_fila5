@@ -12,6 +12,11 @@ namespace Modules\Xot\Filament\Actions\Header;
 use Exception;
 use Filament\Notifications\Notification;
 use Filament\Resources\Pages\ListRecords;
+<<<<<<< HEAD
+=======
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Gate;
+>>>>>>> laraxot/dev
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Gate;

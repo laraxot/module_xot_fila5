@@ -75,6 +75,7 @@ chiave sprint: `Xot/phpstan-modules-zero-swarm`.
 
 ## Diario
 
+<<<<<<< HEAD
 - 2026-11-24e (php-backend-agent / Notify parse-bad bootstrap): bootstrap PHPStan
   falliva su `syntax error, unexpected token "<<"` in discoverClusters Notify.
   Lista `/tmp/ptvx-phpstan/parse-bad.txt` (~42 Notify + 2 Activity). Lock
@@ -92,6 +93,8 @@ chiave sprint: `Xot/phpstan-modules-zero-swarm`.
   ammesso solo a un boundary realmente dinamico o vendor, con validazione,
   narrowing immediato, nessuna propagazione nell'API e motivazione BMAD.
 
+=======
+>>>>>>> laraxot/dev
 - 2026-11-24c (laravel-testing-expert / Pest hang diagnose su 192.168.1.40):
   **GateGuard facts (edit esistente):** nessun file nuovo; aggiorna diario di
   questa story già referenziata da `docs/sprint-status.yaml`
