@@ -59,6 +59,47 @@ modulo Rating (voluto: `../../../../Geo/docs/redundancy-report-2.md`, righe 25 e
 
 Totale al run con bootstrap funzionante: 21 errori in 7 file, tutti a 0 al run finale.
 
+<<<<<<< HEAD
+## Secondo giro: marker annidati da un progetto fratello (20:37)
+
+Alle 20:40 PHPStan e' tornato a `exit 1` in 6 secondi (`unexpected token "<<"`): 126 PHP con marker in Activity (28), Job (9),
+Lang (12), Media (3), Notify (74), gia' committati nei repo dei moduli e allineati a `laraxot/dev` (0 commit di scarto). Il
+commit radice `41e757843a` (20:29) ne contiene 84; `d2ae03eb31` (20:27) ne aveva 0 e fa da riferimento di sola lettura.
+
+- **Produttore fuori da questo repo.** `git merge laraxot/dev --allow-unrelated-histories -s resolve` vivo in
+  `base_laravelpizza_fila5` (cwd dei pid verificato), il cui sync fa `rm -rf .git/hooks`: nessun guard hook. Il rischio di
+  reimport resta finche' i remoti `laraxot/module_*_fila5` portano i marker.
+- **Classificazione** (stack per livello, token PHP contro `d2ae03eb31`): 94 cosmetici, 15 con stessi token tra i lati,
+  7 `THEIRS=BASE`, 1 `OURS=BASE`, 3 semantici, 6 file Notify (lang `en`/`it` di `template` e `sms`, `GenericNotification`) dove
+  nessun lato e' valido perche' due `=======` cadono nello stesso livello.
+- **Risoluzione non mia.** In 6 minuti altri agenti (`codex`, story `Activity/php-conflict-markers-20261124`, lock di modulo
+  `Notify.lock`) hanno portato i marker PHP a 0. Non ho scritto nei loro moduli: il lock non si forza, stale a 60 minuti.
+- **Mio intervento.** Tre `use` duplicati rimasti dopo i marker, fatal di compilazione che il parser di PHPStan non vede:
+  `Notify/tests/TestCase.php`, `User/tests/TestCase.php`, `User/tests/Unit/UserExecuteCoverage50Test.php`. Tolta la riga
+  fuori ordine, `php -l` OK. Lint dell'intero albero (`Modules`, `app`, `config`, `routes`, `bootstrap`): nessun altro
+  Fatal/Parse.
+- **Second brain.** Sezione "Variante 2026-11-24" in `merge-markers-committed-e7e667b11.md`; prompt `37-phpstan.md` esteso con
+  cache privata (`-c` + `tmpDir`) e diagnosi del commit con `php -l` sui blob.
+
+## Terzo giro: r5 fallita, due nuovi merge committati con marker (21:01 e 21:11)
+
+- **r5 non e' una misura valida.** Cache privata fredda, 20:59:05-21:09:16 UTC (10m11s), `exit=1`, `Result is incomplete because of
+  severe errors`: 4 parse error, Tenant `CreateJsonFileByRecordActionStringIdTest.php` e UI `ResolveLocalizedBlockDataAction`,
+  `NullGeocodingService`, `UIService`. Load average 124. L'exit 0 della notifica era quello del wrapper.
+- **Tenant, 21:01:52.** Merge `67c5e43` ("Merge remote-tracking branch 'laraxot/dev' into dev") con marker in 4 Actions + 1 test.
+  I 3 file UI sono stati riscritti da altri alle 21:09:10 (lint OK); le 4 Actions Tenant erano senza marker entro le 21:11
+  (working tree `M`). Non toccati da me.
+- **User, 21:11:01.** Merge `c492fc0fb` ("first") nel repo del modulo, genitori `6bc3f497e` (commit "." delle 21:10:54, di questo
+  repo) e `53fefcd99` (HEAD del modulo User di `base_laravelpizza_fila5`). Reflog: `commit (merge): first`, poi
+  `Branch: renamed refs/heads/dev to refs/heads/dev`. 147 PHP in `Modules/User` con marker, tutti con mtime 21:10:57, working tree pulito
+  (sono committati). Etichette `HEAD`/`laraxot/dev` (275 blocchi) e `.merge_file_*` (57): stessa firma del secondo giro.
+  Remote del modulo: `laraxot` (`module_user_fila5`). Nessun `MERGE_HEAD`, nessun processo di merge vivo, nessun lock o claim su User
+  alle 21:12.
+- **Cosa non so.** Chi ha lanciato il merge in questo working tree: l'autore del commit e' lo stesso git user locale, quindi non
+  discrimina. So solo che il secondo genitore e' un commit del progetto fratello.
+
+=======
+>>>>>>> laraxot/dev
 ## Incidenti e lezioni
 
 - Prima diagnosi sbagliata: attribuito il difetto al merge `dc010170d4`. Corretto con il lint dei blob; memoria aggiornata.

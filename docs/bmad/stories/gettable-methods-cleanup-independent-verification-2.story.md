@@ -13,7 +13,11 @@ related:
   - "../filament-list-page-table-ownership.md"
   - "../../../../User/docs/bmad/stories/user-filament-boundary-i18n.story.md"
 
+<<<<<<< HEAD
+  - "../../../../User/docs/bmad/stories/user-filament-boundary-i18n-20260929.story.md"
+=======
 - "../../../../User/docs/bmad/stories/user-filament-boundary-i18n-20260929.story.md"
+>>>>>>> laraxot/dev
   - "../../../../../docs/wiki/audits/getTable-methods-audit-2026-09-29.md"
 ---
 

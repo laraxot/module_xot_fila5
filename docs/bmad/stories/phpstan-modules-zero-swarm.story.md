@@ -75,6 +75,26 @@ chiave sprint: `Xot/phpstan-modules-zero-swarm`.
 
 ## Diario
 
+<<<<<<< HEAD
+- 2026-11-24e (php-backend-agent / Notify parse-bad bootstrap): bootstrap PHPStan
+  falliva su `syntax error, unexpected token "<<"` in discoverClusters Notify.
+  Lista `/tmp/ptvx-phpstan/parse-bad.txt` (~42 Notify + 2 Activity). Lock
+  `laravel/Modules/Notify` acquisito. Swarm parallelo aveva già ripulito quasi
+  tutti i marker nested HEAD/laraxot/dev su Actions/Models/Traits/tests/lang;
+  residuo `lang/en/template.php` risolto source-first (struttura IT espansa +
+  label EN + campi `body_text`/`body_html`/`preview_data` del modello). Activity
+  `SnapshotPolicyTest` + `LogDownloadPageTest` già OK. Gate: `token_get_all`/
+  `php -l` su tutti i path parse-bad → 0 fail; bootstrap → **BOOT_OK**;
+  `flock` cold5 → `/tmp/ptvx-phpstan/modules-cold5.json` totals
+  `errors=0` / `file_errors=9` (Tenant `T_SL` + User duplicate `use` — fuori
+  Notify; **zero** errori Notify). Unlock Notify.
+- 2026-11-24: aggiunto l'ADR Xot [0014-mixed-last-resort](../../adr/0014-mixed-last-resort.md)
+  e registrato nell'indice ADR. La decisione rende esplicito che `mixed` è
+  ammesso solo a un boundary realmente dinamico o vendor, con validazione,
+  narrowing immediato, nessuna propagazione nell'API e motivazione BMAD.
+
+=======
+>>>>>>> laraxot/dev
 - 2026-11-24c (laravel-testing-expert / Pest hang diagnose su 192.168.1.40):
   **GateGuard facts (edit esistente):** nessun file nuovo; aggiorna diario di
   questa story già referenziata da `docs/sprint-status.yaml`
