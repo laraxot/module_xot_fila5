@@ -19,6 +19,8 @@ An ADR records a difficult-to-reverse or surprising choice with a real trade-off
 - [0009-laravel-bootstrap-provider-registry](0009-laravel-bootstrap-provider-registry.md)
 - [00010-no-ticket-logic-in-page-slug-middleware](00010-no-ticket-logic-in-page-slug-middleware.md)
 - [00011-contract-docblock-reference](00011-contract-docblock-reference.md)
+- [0012-behavioral-contract-governance](0012-behavioral-contract-governance.md)
+- [0013-dati-sacri-migrazioni-e-test](0013-dati-sacri-migrazioni-e-test.md)
 - [agent-harness](agent-harness.md)
 - [architecture-tests-pest-arch](architecture-tests-pest-arch.md)
 - [architecture-rules-phparkitect](architecture-rules-phparkitect.md)
