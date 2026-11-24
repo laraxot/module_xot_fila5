@@ -18,7 +18,7 @@ remoto owner e' piccolo. `git gc` non basta se gli oggetti sono raggiungibili.
 | Path | .git ~MB | Note |
 |------|----------|------|
 | Notify | **~14** (was ~428–461) | **slimmed 2026-11-24 18:31**: depth-1 `--single-branch` tip `c642ea4 first`; bak `.git.polluted.bak.202611241827` kept. Full clone remoto ancora ~431MB/1930 (storia monorepo sul remoto; no force-push) |
-| Themes/Meetup | ~65 | PDF manuale + `repo.bundle` tracciato (~5MB) |
+| Themes/Meetup | **~63** (was ~63–65) | **2026-11-24 21:29**: `repo.bundle` già fuori da HEAD (`0b6be2c`) + gitignore ripulito da merge markers (`20e5851`); gc safe no-op su pack. **PDF KEEP** (~37MB tip, duplicati in storia): docs intenzionali (`manuale-utente/readme.md` → `build-pdf.mjs`, commit `.md`+`.pdf`). Storia tiene ancora blob `repo.bundle` ~5.3MB finché no filter-repo (fuori scope). |
 | User | ~40 | gc -2MB; path monorepo in object DB da verificare |
 | Xot/UI | ~30 | storia lunga allineata al remoto; gc marginale |
 | altri | <25 | dopo `reflog expire` + `repack -Ad` + `gc --prune=now` |
@@ -53,6 +53,7 @@ remoto owner e' piccolo. `git gc` non basta se gli oggetti sono raggiungibili.
 | coordinator | Notify pollution diagnostic (1930 vs 1 commit remoto) | 2026-11-24 18:12 done |
 | coordinator | Activity `.git-rewrite` rimosso | 2026-11-24 18:13 |
 | lane-notify-reclone | Notify slim: wait sync → full clone (= remoto polluto 431MB/1930) → depth-1 14MB/1; bak polluted kept; no force-push | 2026-11-24 18:31 done |
+| lane-meetup-theme | Meetup `.git` 63→63MB: untrack already done; gitignore markers fixed; PDF kept intentional; gc+repack; no filter-repo | 2026-11-24 21:29 done |
 
 ## Verify
 
