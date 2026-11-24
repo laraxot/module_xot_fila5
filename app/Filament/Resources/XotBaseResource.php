@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources;
 
-use Filament\Facades\Filament;
 use Filament\Pages\Enums\SubNavigationPosition;
 use Filament\Resources\Pages\Page;
 use Filament\Resources\Pages\PageRegistration;
@@ -316,12 +315,7 @@ abstract class XotBaseResource extends FilamentResource
     public static function getNavigationBadge(): ?string
     {
         try {
-            // Pannello con tenancy (es. ristoratore): si contano solo i record del tenant corrente,
-            // con la query della risorsa. La stima di information_schema conta le righe di tutti i
-            // tenant: numero sbagliato e dato di altri tenant esposto.
-            $count = Filament::getTenant() !== null
-                ? static::getEloquentQuery()->count()
-                : app(CountAction::class)->execute(static::getModel());
+            $count = app(CountAction::class)->execute(static::getModel());
 
             return number_format($count, 0).'';
         } catch (\Throwable $e) {
