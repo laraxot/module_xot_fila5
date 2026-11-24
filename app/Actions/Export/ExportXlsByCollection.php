@@ -9,7 +9,6 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
 use Maatwebsite\Excel\Facades\Excel;
 use Modules\Xot\Exports\CollectionExport;
-use PhpOffice\PhpSpreadsheet\Cell\Coordinate;
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
@@ -49,7 +48,6 @@ class ExportXlsByCollection
 
         return Excel::download($export, $filename);
     }
-
     /**
      * Esporta una collezione in Excel utilizzando PhpSpreadsheet direttamente.
      *
@@ -65,6 +63,8 @@ class ExportXlsByCollection
             $rows = Collection::make($rows->toArray());
         }
 
+        // PhpSpreadsheet 1.x è imposto da maatwebsite/excel 3.1; l'upgrade alla 5.x
+        // richiede la migrazione coordinata di Laravel Excel.
         $spreadsheet = new Spreadsheet;
         $sheet = $spreadsheet->getActiveSheet();
 
@@ -86,7 +86,7 @@ class ExportXlsByCollection
     protected function writeHeader(Worksheet $sheet, array $fields): void
     {
         foreach (array_values($fields) as $col => $field) {
-            $sheet->setCellValue(Coordinate::stringFromColumnIndex($col + 1).'1', $field);
+            $sheet->setCellValue([$col + 1, 1], $field);
         }
     }
 
@@ -105,7 +105,7 @@ class ExportXlsByCollection
             foreach ($fields as $key => $field) {
                 $path = \is_string($key) ? $key : $field;
                 $value = $this->extractValue($data, $path);
-                $sheet->setCellValue(Coordinate::stringFromColumnIndex($col + 1).(string) $row, $value);
+                $sheet->setCellValue([$col + 1, $row], $value);
                 $col++;
             }
             $row++;

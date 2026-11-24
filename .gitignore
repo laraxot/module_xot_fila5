@@ -165,6 +165,7 @@ vendor/
 /.windsurf
 /.windsurf/
 .windsurf~*
+tests/coverage-xot.xml
 
 # Laraxot -- forbidden module root folders (root hygiene directive 2026-09-29)
 /bashscripts/
@@ -198,3 +199,11 @@ yarn.lock
 test-results/
 xot.code-workspace
 .merge_*
+
+# Tooling locale e config agenti (module-theme-root-hygiene)
+.agents/
+.codex/
+.opencode/
+.qwen/
+.php-cs-fixer.php
+.php-cs-fixer.dist.php

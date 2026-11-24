@@ -149,7 +149,7 @@ scope disgiunti + lock).
 - Ogni agente: audit statico (struttura, mixed, property_exists,
   phpstan-ignore, Filament no-labels/Xot base, test, i18n, marker merge,
   md con date) + story `module-bmad-audit.story.md` canonica.
-- Moduli con story datata `module-bmad-audit-20260928.story.md` da
+- Moduli con story datata `module-bmad-audit-xot-baseline-analisi-completa.story.md` da
   rinominare: Activity, Media, Notify, Tenant. Mancante: Job.
 - Naming audit docs: il canonico resta `module-bmad-audit.story.md`
   (no date); la data va nel frontmatter `created:` e nel contenuto.

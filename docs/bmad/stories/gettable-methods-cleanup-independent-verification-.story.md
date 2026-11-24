@@ -11,7 +11,9 @@ related:
   - "./5.254-list-page-table-hooks.story.md"
   - "./5.255-doppi-header-actions-list-page.story.md"
   - "../filament-list-page-table-ownership.md"
-  - "../../../../User/docs/bmad/stories/user-filament-boundary-i18n-20260929.story.md"
+  - "../../../../User/docs/bmad/stories/user-filament-boundary-i18n.story.md"
+
+- "../../../../User/docs/bmad/stories/user-filament-boundary-i18n-20260929.story.md"
   - "../../../../../docs/wiki/audits/getTable-methods-audit-2026-09-29.md"
 ---
 
@@ -70,6 +72,8 @@ Già esistente e sufficiente: `laravel/Modules/Xot/docs/filament-list-page-table
 verificata riga per riga nel vendor e dalle memorie
 `Xot/docs/wiki/memories/tabella-appartiene-alla-resource-non-alla-pagina.md` e
 `header-actions-doppi-filament-5.md`. Non duplicata.
+
+`header-actions-doppi-filament.md`. Non duplicata.
 
 ## Verifica gate
 

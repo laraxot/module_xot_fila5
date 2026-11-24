@@ -5,9 +5,10 @@ type: note
 tags: [documentation]
 ---
 
-=======
 ---
 title: "Xot - phpstan-l10-job-media-notify-20261006.story.md"
+
+title: "Xot - phpstan-l10-job-media-notify.story.md"
 module: Xot
 bmad: true
 status: active

@@ -11,6 +11,8 @@ tags: [phpstan, sync, merge, marker-conflitto, regressioni, qualita]
 qmd: "sync moduli copia vecchia snapshot stale marker conflitto merge_file regressioni silenziose phpstan zero 2026-11-17"
 related:
   - ../../../../../docs/wiki/memories/phpstan-quality-docs-bmad-standing-order.md
+  - ./phpstan-merge-bootstrap.story.md
+  - ./fix-merge-conflicts.md
 ---
 
 # Sync dei moduli da copia vecchia: marker, regressioni e PHPStan a zero
@@ -120,3 +122,71 @@ Il confronto è stato fatto con la storia del modulo:
 - **Script di sync**: non deve committare se il merge fallisce, né committare un working tree
   basato su un parent vecchio di giorni. È la seconda volta (vedi 2026-11-05).
 - **Docs con marker**: 206 file `.md` nelle repo dei moduli (soprattutto Geo e Gdpr).
+
+## Follow-up Xot PHP markers
+
+I 9 `*.php` con marker in `Modules/Xot` sono chiusi in
+[phpstan-merge-bootstrap.story.md](./phpstan-merge-bootstrap.story.md).
+
+## Sessione 2026-11-17 (seconda ondata — rilancio post-merge)
+
+Dopo il primo passaggio la repo era ancora in merge (`MERGE_HEAD`/`REBASE_HEAD`, migliaia di
+path `UU`/`UD`) e PHPStan tornava 850 errori reali. Bootstrap ripristinato:
+
+- **`composer.json` di 18 moduli cancellati** dallo stale-sync (confermato: "~6.400 cancellati"):
+  ripristinati da `HEAD` di ogni repo modulo (16 repo propri) e da `HEAD` root per Blog/Comment/Rating.
+  `Modules/Comment/composer.json` in `HEAD` root conteneva marker committati → presa la versione
+  pulita di `bd640d2d5`.
+- **`Modules/Comment/module.json`** a 0 byte → ripristinato da `HEAD` root.
+- **`Modules/Rating/app/Models/Traits/RatingTrait.php`** referenziato in classmap ma rinominato
+  `HasRating.php` → `composer dump-autoload` ha riallineato.
+- **`phpstan.neon`**: la versione worktree aveva tutti gli include (Larastan/Pest/safe-rule/Carbon)
+  commentati per "risolvere" un conflitto — ripristinata la forma equivalente a `phpstan-strict.neon`
+  (gli extension sono auto-inclusi da `phpstan/extension-installer`).
+- **Parse error da merge**: `Seo/tests/Unit/Datas/SeoConfigDataTest.php` (codemod `expect()`→`Assert::`
+  rotto, import `PHPUnit\Framework\Assert` duplicato — ripristinato file Pest originale),
+  `Blog/app/Models/Taggable.php` (`public /**` spurio), `Lang/tests/Fixtures/NationalFlagSelectStub.php`
+  (`use` prima di `namespace`).
+- **`phpstan_bootstrap.php`**: registrati `addNamespace` per `Modules/*/resources/views` e
+  `Themes/*/resources/views` — senza, Larastan rifiutava ogni `view-string` letterale perché solo il
+  modulo Activity è abilitato in questa base (effetto: ~26 errori `view-string` spariti ovunque).
+
+### Stato errori per modulo (inventario iniziale → attuale)
+
+| Modulo | Iniziale | Esito |
+|--------|----------|-------|
+| Notify | 247 | 0 |
+| Blog | 224 | 0 |
+| TechPlanner | 78 | in corso (agente misc) |
+| Employee | 65 | 48 residui in `EmployeeTest.php` — modello ha perso API (da investigare: regressione vs test) |
+| Comment | 55 | 0 |
+| Tenant | 40 | 0 |
+| User | 37 | 16 residui — agente in corso |
+| Rating | 33 | 0 (fix: docblock `MorphToMany`, pluck→foreach con narrowing `string`) |
+| Xot | 28 | 0 |
+| UI | 14 | 0 |
+| Cms/Job/AI/Activity/Geo/Lang/Media | ~29 | in corso (agente misc) |
+
+### Bug reale trovato (non PHPStan)
+
+`HasXotFactory::factory()` e `HasFactory::factory()` hanno firme incompatibili: un modello che estende
+`XotBaseModel` e usa anche `HasFactory` va in **fatal PHP**. Pattern corretto nel repo:
+`HasXotFactory::factory insteadof HasFactory` (vedi `Activity/tests/Feature/TestActivityModel.php`).
+I modelli che estendono XotBaseModel NON devono `use HasFactory`.
+
+### Prompt audit (completato)
+
+`bashscripts/docs/prompts/` (~150 file): 28 file superseded marcati con banner, frontmatter `qmd:`
+verificato su tutti. `bashscripts/tools/prompts/`: duplicati phpstan consolidati in puntatori verso
+`11-phpstan.md`, rimossi `--level` vietati, versioni stack aggiornate (Laravel 13/Filament 5).
+File legacy rinominati possibili: `docs1-4.md`, `phpstan1.md`, `start1.md`, `test01.md` (non rinominati —
+rischio link rotti; elencati nel report agente).
+
+### Pendente
+
+- Completamento moduli residui (TechPlanner/Cms/Job/AI/Activity/Geo/Lang/Media, User, Employee).
+- Scansione globale finale `phpstan analyse Modules` → 0.
+- Pest: al momento `./vendor/bin/pest` va in fatal per `Cannot redeclare function ensure()`
+  (`Modules/Lang/tests/Pest.php:100` vs `Modules/Rating/tests/Pest.php:10`) — conflitto da risolvere
+  prima del gate Pest.
+- Merge/rebase root ancora aperto: nessun commit eseguito (regola git-forward + merge in corso).

@@ -19,6 +19,8 @@ artefatti nei docs del modulo:
 - `docs/bmad/epics/module-roadmap.md`;
 - `docs/bmad/stories/module-bmad-audit-20260928.story.md`.
 
+- `docs/bmad/stories/module-bmad-audit-xot-baseline-analisi-completa.story.md`.
+
 I conteggi PHP/test e le aree `app/` sono inventario statico verificato; le ipotesi
 di dominio sono marcate come domande da validare e non come fatti. Le story restano
 `ready-for-dev` finché API pubbliche, flussi critici, test e gate del singolo modulo
