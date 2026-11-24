@@ -145,24 +145,3 @@ Residui reali tracciati pre-wave: solo **7** (`Notify`×4, `Lang`×2, `UI`×1). 
 **Residui next:** Notify ignored `project_docs/roadmaps/*-2025-10` (~10) + root `work-completed`/`implementation-summary`; User archive leftovers 7; Rating ignored 6; Job/ICL 1 ciascuno.
 
 **Lezione:** la maggior parte del debito date è fuori da git index; wave “git mv only” sui tracked è piccola — archive va trattato con `mv`+stub senza `rm`, mai force-add di dump interi.
-<<<<<<< HEAD
-
-<!-- GateGuard facts: (1) no supersede — append only to existing docs-md-filename-date-debt.story.md; (2) linked-from: docs/sprint-status.yaml Xot/docs-md-filename-date-debt + User companion + Rating bonifica story; (3) edit existing not new file; (4) user: chunk REALISTICO max 15 Notify project_docs + User leftover + Rating ignored. -->
-
-### Wave 2026-11-24d — Notify project_docs + Rating ignored + User leftover (docs-guardian)
-
-Chunk **15**, solo filesystem `mv`+stub (`superseded_by`), **nessun rm**, no PHP, no phpstan.
-Path **gitignored** → `git mv` N/A (Notify `project_docs`, Rating `*-[0-9][0-9].md`, User `wiki/archive`).
-
-| Scope | N | Azione |
-|---|---|---|
-| **Notify** `project_docs/` + `roadmaps/` | 10 | `*-2025-10.md` → `*-oct-historical.md` + stub dated → bare canon (`final-implementation-report`, `agid-analysis-implementation`, …) |
-| **Rating** ignored | 2 | root `phpstan-fixes-2026-01` → `phpstan-fixes-jan-historical` + stub→`phpstan-fixes.md`; bmad promote → `phpstan-fixes.md` + stub dated |
-| **User** archive leftover | 3 | `old_tasks/phpstan-fixes-2025` → `*-year-historical` + stub; `old_tasks/phpstan-fixes-gennaio-2025` → `*-year-historical` + stub→`phpstan-fixes-gennaio.md`; `historical/phpstan-fixes-2025` → `phpstan-fixes-year-historical` + stub |
-
-**Post-wave ACTIVE ISO/year (excl. `cci-2026*`):** **~17** (pre ~27). Stub dated ~34.
-**Residui next:** Notify root ignored `work-completed-2025-10` + `implementation-summary-2025-01`; User root×3 + archive symlink×6 + historical theme-pointer×2 + wiki legacy×2; Themes/Zero×2.
-
-Link min: Rating `INDEX-GENERATED.md` / `bmad/index-generated.md` label `phpstan-fixes-2026-01` → canon. Memoria `docs-rename-no-delete-git-mv-only` confermata.
-=======
->>>>>>> laraxot/dev
