@@ -19,6 +19,7 @@ An ADR records a difficult-to-reverse or surprising choice with a real trade-off
 - [0009-laravel-bootstrap-provider-registry](0009-laravel-bootstrap-provider-registry.md)
 - [00010-no-ticket-logic-in-page-slug-middleware](00010-no-ticket-logic-in-page-slug-middleware.md)
 - [00011-contract-docblock-reference](00011-contract-docblock-reference.md)
+- [0013-data-sacred-testing](0013-data-sacred-testing.md) — dati sacri, migrazioni forward-only e `.env.testing` obbligatorio
 - [agent-harness](agent-harness.md)
 - [architecture-tests-pest-arch](architecture-tests-pest-arch.md)
 - [architecture-rules-phparkitect](architecture-rules-phparkitect.md)

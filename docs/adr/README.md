@@ -66,6 +66,7 @@ Test, audit o controllo ripetibile che dimostra il rispetto della decisione.
 - [0010-no-ticket-logic-in-page-slug-middleware](0010-no-ticket-logic-in-page-slug-middleware.md) — ticket logic removed from PageSlugMiddleware; ownership Cms
 - [0011-contract-docblock-reference](0011-contract-docblock-reference.md) — @contract annotations on Actions per ADR 0002
 - [0012-workshop-behavioral-contracts](0012-workshop-behavioral-contracts.md) — Behavioral Contract owner-local, invarianti e conferma Pest
+- [0013-data-sacred-testing](0013-data-sacred-testing.md) — dati sacri, migrazioni forward-only e test obbligatoriamente isolati con `.env.testing`
 - [translation-key-protocol](translation-key-protocol.md) — chiavi Laravel con namespace, file, collezione, chiave e tipo esplicito
 - [agent-harness](agent-harness.md) — harness e guard per il lavoro coordinato
 - [route-entrypoints-canonical-empty](route-entrypoints-canonical-empty.md) — entrypoint no-op condiviso per moduli senza route
