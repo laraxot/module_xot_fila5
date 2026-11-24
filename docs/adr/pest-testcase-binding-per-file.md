@@ -5,13 +5,16 @@ type: decision
 module: Xot
 tags: [adr, pest, test, testcase, phpstan]
 created: 2026-11-19
-updated: 2026-11-19
-status: accepted
+updated: 2026-11-24
+status: superseded by 0007-module-local-pest-testcase-binding.md
 related:
   - ../../tests/Unit/ModulePestBootstrapDoesNotBindTestCaseTest.php
   - ../stories/sync-unrelated-histories-repair.story.md
   - ../../../Rating/docs/testing-and-coverage.md
+superseded_by: 0007-module-local-pest-testcase-binding.md
 ---
+
+> Superseded da [0007-module-local-pest-testcase-binding.md](0007-module-local-pest-testcase-binding.md): stessa decisione (TestCase Pest legato per file); questo file resta come evidenza storica con le misure del 2026-11-19. Nessuna decisione nuova: il canonico prevale, questo file non va esteso.
 
 # ADR: il TestCase si lega per file
 

@@ -1,12 +1,15 @@
 ---
 title: "ADR 00011 — @contract docblock reference on Actions"
 type: decision
-status: accepted
+status: superseded by 0011-contract-docblock-reference.md
 created: 2026-11-23
-updated: 2026-11-23
+updated: 2026-11-24
 issues:
   - "https://github.com/laraxot/base_fixcity_fila5/issues/ADR-00011"
+superseded_by: 0011-contract-docblock-reference.md
 ---
+
+> Superseded da [0011-contract-docblock-reference.md](0011-contract-docblock-reference.md): numerazione malformata a cinque cifre della stessa decisione. Nessuna decisione nuova: il canonico prevale, questo file non va esteso.
 
 # ADR 00011: @contract docblock reference on Actions
 

@@ -6,6 +6,10 @@ namespace Modules\Xot\Actions\Arr;
 
 use Spatie\QueueableAction\QueueableAction;
 
+/**
+ * @see docs/contracts/save-array-action.md
+ * @contract docs/contracts/save-array-action.md
+ */
 class SaveArrayAction
 {
     use QueueableAction;

@@ -1,11 +1,14 @@
 ---
 title: "ADR — Nessun Livewire standalone: usare Filament Widget"
 type: decision
-status: accepted
+status: superseded by 0008-filament-widgets-over-standalone-livewire.md
 module: Xot
 created: 2026-11-23
-updated: 2026-11-23
+updated: 2026-11-24
+superseded_by: 0008-filament-widgets-over-standalone-livewire.md
 ---
+
+> Superseded da [0008-filament-widgets-over-standalone-livewire.md](0008-filament-widgets-over-standalone-livewire.md): stessa decisione (nessun Livewire standalone, usare Filament Widget), consolidata nel canonico 0008. Nessuna decisione nuova: il canonico prevale, questo file non va esteso.
 
 # Nessun Livewire standalone: usare Filament Widget
 

@@ -1,12 +1,15 @@
 ---
 title: "ADR — Pest come framework di test"
 type: decision
-status: accepted
+status: superseded by 0003-pest-as-test-runner.md
 created: 2026-11-23
-updated: 2026-11-23
+updated: 2026-11-24
 decision-makers: [team]
 issues: []
+superseded_by: 0003-pest-as-test-runner.md
 ---
+
+> Superseded da [0003-pest-as-test-runner.md](0003-pest-as-test-runner.md): alias senza numero della stessa decisione. Nessuna decisione nuova: il canonico prevale, questo file non va esteso.
 
 # Pest come framework di test
 

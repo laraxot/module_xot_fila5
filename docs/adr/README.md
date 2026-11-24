@@ -3,7 +3,7 @@ title: "Architecture Decision Records"
 type: index
 tags: [adr, decisioni]
 created: 2026-11-18
-updated: 2026-11-23
+updated: 2026-11-24
 ---
 
 # Architecture Decision Records
@@ -24,7 +24,8 @@ non si usano date o timestamp nel nome (la data sta nella frontmatter).
 ---
 title: "ADR — <decisione in una riga>"
 type: decision
-status: proposed | accepted | superseded | deprecated
+status: proposed | accepted | deprecated | superseded by <file-canonico>.md
+superseded_by: <file-canonico>.md   # solo se superseded
 created: AAAA-MM-GG
 updated: AAAA-MM-GG
 issues: []
@@ -51,36 +52,19 @@ Pro, contro, debito che resta, cosa misurare. Chi cambia la decisione scrive un 
 Test, audit o controllo ripetibile che dimostra il rispetto della decisione.
 ```
 
+## Sezioni obbligatorie e deroghe
+
+Ogni ADR non superseded ha, in questo ordine o equivalente: `## Contesto`, `## Driver della decisione`, `## Alternative scartate`, `## Decisione`, `## Conseguenze`, `## Conferma`. Una sezione può mancare solo con una deroga dichiarata nel file (esempio: [0010](0010-no-ticket-logic-in-page-slug-middleware.md), dove la Conferma non è eseguibile in Xot). Il modello breve in stile MADR è [0000-template](0000-template.md) (intestazioni inglesi: lo si adatta alle sezioni italiane qui sopra).
+
+La governance dei contratti comportamentali, collegati agli ADR tramite invarianti con ID stabile e gruppo Pest, è la decisione [0012](0012-behavioral-contract-governance.md); gli indici sono in [../contracts/INDEX.md](../contracts/INDEX.md).
+
+## Duplicati e superseded
+
+Un file duplicato non si cancella: riceve `status: superseded by <canonico>.md` nella frontmatter e, in cima al corpo, la riga «Superseded da ...». Il canonico è la versione numerata. Nei nomi file non ci sono date né timestamp.
+
 ## Decisioni
 
-- [0001-actions-over-services](0001-actions-over-services.md) — logica di business nuova in Actions
-- [0002-queueable-actions-over-framework-jobs](0002-queueable-actions-over-framework-jobs.md) — QueueableAction come unico ingresso di business
-- [0003-pest-as-test-runner](0003-pest-as-test-runner.md) — Pest come formato e runner applicativo
-- [0004-one-model-one-migration](0004-one-model-one-migration.md) — ownership dello schema e una migrazione owner per modello
-- [0005-owner-local-documentation](0005-owner-local-documentation.md) — decisioni e contratti nella documentazione dell'owner
-- [0006-no-standalone-livewire-widgets](0006-no-standalone-livewire-widgets.md) — formulazione precedente della decisione sui Widget Filament, consolidata nel 0008
-- [0006-xot-base-extension-points](0006-xot-base-extension-points.md) — i moduli estendono i punti base Xot del framework
-- [0007-module-local-pest-testcase-binding](0007-module-local-pest-testcase-binding.md) — il TestCase Pest si lega nel file di test che lo usa
-- [0008-filament-widgets-over-standalone-livewire](0008-filament-widgets-over-standalone-livewire.md) — No standalone Livewire, usare Filament widget
-- [0009-laravel-bootstrap-provider-registry](0009-laravel-bootstrap-provider-registry.md) — bootstrap Laravel 13 minimale e discovery dei moduli
-- [0010-no-ticket-logic-in-page-slug-middleware](0010-no-ticket-logic-in-page-slug-middleware.md) — ticket logic removed from PageSlugMiddleware; ownership Cms
-- [0011-contract-docblock-reference](0011-contract-docblock-reference.md) — @contract annotations on Actions per ADR 0002
-- [0012-workshop-behavioral-contracts](0012-workshop-behavioral-contracts.md) — Behavioral Contract owner-local, invarianti e conferma Pest
-- [0013-data-sacred-testing](0013-data-sacred-testing.md) — dati sacri, migrazioni forward-only e test obbligatoriamente isolati con `.env.testing`
-- [translation-key-protocol](translation-key-protocol.md) — chiavi Laravel con namespace, file, collezione, chiave e tipo esplicito
-- [agent-harness](agent-harness.md) — harness e guard per il lavoro coordinato
-- [route-entrypoints-canonical-empty](route-entrypoints-canonical-empty.md) — entrypoint no-op condiviso per moduli senza route
-- [architecture-tests-pest-arch](architecture-tests-pest-arch.md) — regole di architettura con Pest arch(): ambito esplicito, debito dichiarato, cinque trappole chiuse
-- [architecture-rules-phparkitect](architecture-rules-phparkitect.md) — PHPArkitect con baseline (superseded dal precedente)
-- [pest-testcase-binding-per-file](pest-testcase-binding-per-file.md) — il TestCase Pest del modulo si lega nel file che lo usa
-
-## Alias storici
-
-I file semantici non numerati `queueable-actions-over-jobs.md`,
-`pest-over-phpunit.md` e `one-model-one-migration.md` sono stati mantenuti
-come riferimenti compatibili con link già esistenti. Il set canonico e' quello
-numerato sopra: una decisione nuova aggiorna il canonico e non crea una terza
-copia.
+L'elenco completo, con numero, stato e canonico/superseded, è in [INDEX.md](INDEX.md): è l'unico inventario e va aggiornato nello stesso commit che aggiunge o modifica un ADR.
 
 ## Decisioni precedenti (formato libero, non ancora ADR)
 

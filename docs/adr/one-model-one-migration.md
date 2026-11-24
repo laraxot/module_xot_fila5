@@ -1,12 +1,15 @@
 ---
 title: "ADR — Un modello persistente, una migrazione di creazione"
 type: decision
-status: accepted
+status: superseded by 0004-one-model-one-migration.md
 created: 2026-11-23
-updated: 2026-11-23
+updated: 2026-11-24
 decision-makers: [team]
 issues: []
+superseded_by: 0004-one-model-one-migration.md
 ---
+
+> Superseded da [0004-one-model-one-migration.md](0004-one-model-one-migration.md): alias senza numero della stessa decisione. Nessuna decisione nuova: il canonico prevale, questo file non va esteso.
 
 # Un modello persistente, una migrazione di creazione
 

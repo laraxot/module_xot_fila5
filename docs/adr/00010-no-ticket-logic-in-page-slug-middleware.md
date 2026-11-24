@@ -1,12 +1,15 @@
 ---
 title: "ADR 00010 — No ticket logic in PageSlugMiddleware"
 type: decision
-status: accepted
+status: superseded by 0010-no-ticket-logic-in-page-slug-middleware.md
 created: 2026-11-23
-updated: 2026-11-23
+updated: 2026-11-24
 issues:
   - "https://github.com/laraxot/module_cms_fila5/issues/ADR-00010"
+superseded_by: 0010-no-ticket-logic-in-page-slug-middleware.md
 ---
+
+> Superseded da [0010-no-ticket-logic-in-page-slug-middleware.md](0010-no-ticket-logic-in-page-slug-middleware.md): numerazione malformata a cinque cifre della stessa decisione. Nessuna decisione nuova: il canonico prevale, questo file non va esteso.
 
 # ADR 00010: No ticket logic in PageSlugMiddleware
 

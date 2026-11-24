@@ -3,7 +3,7 @@ title: "ADR 0011 — @contract docblock reference su Actions"
 type: decision
 status: accepted
 created: 2026-11-23
-updated: 2026-11-23
+updated: 2026-11-24
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/ADR-0011"
 ---
@@ -21,14 +21,19 @@ Le `Actions` in `Modules/*/app/Actions/` sono classi che contengono logica appli
 Il docblock segue questo pattern:
 ```php
 /**
- * @see docs/contracts/{NomeAction}.md
- * @param string $paramName La descrizione del parametro
- * @return void
+ * @see docs/contracts/{nome-action}.md
+ * @contract docs/contracts/{nome-action}.md
  */
 class SaveTicketAction
 ```
 
 Se l'Action non scrive dati né chiama servizi esterni, non è necessaria la reference `@contract`.
+
+## Driver della decisione
+
+- il contratto deve essere trovabile dal codice senza duplicare la specifica nel docblock;
+- un controllo statico deve poter verificare esistenza e collegamento del file;
+- `@see` serve agli IDE, `@contract` è il marker per harness e agenti (vedi [standard di authoring](../contracts/contract-authoring-standard.md)).
 
 ## Alternative scartate
 
@@ -46,6 +51,12 @@ Se l'Action non scrive dati né chiama servizi esterni, non è necessaria la ref
 ### Negative
 - Richiede la creazione o la verifica di file `docs/contracts/{NomeAction}.md`
 - Alcune Action esistenti dovranno essere aggiornate con la nuova convenzione
+
+## Conferma
+
+`Modules/Xot/tests/Unit/Docs/ActionContractsAreCompleteTest.php` cerca `@contract docs/contracts/<file>.md` nel docblock di ogni Action che ha un contratto. Stato misurato il 2026-11-24: in `Modules/Xot/app/Actions` nessuna delle 238 Action contiene il marker `@contract` (`rg -c "@contract" app/Actions` vuoto): il test non fallisce perché Xot non ha contratti di Action, quindi la regola è oggi non applicata in Xot ed è debito dichiarato (vedi «Backlog contract» in [contracts/INDEX.md](../contracts/INDEX.md)).
+
+Il file `00011-contract-docblock-reference.md` è superseded da questo.
 
 ## Cross-link
 

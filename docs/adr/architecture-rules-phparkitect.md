@@ -5,8 +5,8 @@ type: decision
 module: Xot
 tags: [adr, architettura, phparkitect, pest, ci, qualita]
 created: 2026-11-18
-updated: 2026-11-18
-status: superseded
+updated: 2026-11-24
+status: superseded by architecture-tests-pest-arch.md
 superseded_by: architecture-tests-pest-arch.md
 issues:
   - "progetto ospite #732"
@@ -16,6 +16,8 @@ related:
   - ../../tests/Unit/Docs/ModuleCodeIsProjectAgnosticTest.php
   - ../rules/action-behavioral-contract.md
 ---
+
+> Superseded da [architecture-tests-pest-arch.md](architecture-tests-pest-arch.md): PHPArkitect con baseline sostituito da Pest arch(). Nessuna decisione nuova: il canonico prevale, questo file non va esteso.
 
 # ADR: le regole architetturali sulle classi si verificano con PHPArkitect, con baseline
 

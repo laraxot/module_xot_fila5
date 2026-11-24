@@ -11,6 +11,10 @@ use Modules\Xot\Actions\Export\PdfByModelAction;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
+/**
+ * @see docs/contracts/send-mail-by-record-action.md
+ * @contract docs/contracts/send-mail-by-record-action.md
+ */
 class SendMailByRecordAction
 {
     use QueueableAction;

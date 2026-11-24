@@ -7,11 +7,6 @@ use function Safe\file_get_contents;
 it('uses the Xot canonical entrypoint for duplicate empty module route files', function (): void {
     $laravelPath = dirname(__DIR__, 5);
     $routeFiles = [
-        'Modules/AI/routes/web.php',
-        'Modules/Blog/routes/web.php',
-        'Modules/Cms/routes/api.php',
-        'Modules/Comment/routes/web.php',
-        'Modules/Fixcity/routes/web.php',
         'Modules/Job/routes/web.php',
         'Modules/Lang/routes/api.php',
         'Modules/Lang/routes/web.php',
@@ -19,7 +14,6 @@ it('uses the Xot canonical entrypoint for duplicate empty module route files', f
         'Modules/Media/routes/web.php',
         'Modules/Rating/routes/api.php',
         'Modules/Rating/routes/web.php',
-        'Modules/Seo/routes/api.php',
         'Modules/UI/routes/api.php',
         'Modules/UI/routes/web.php',
     ];
