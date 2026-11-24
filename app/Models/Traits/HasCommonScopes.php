@@ -34,7 +34,6 @@ use Illuminate\Support\Carbon;
  *
  * Trait di piattaforma riusabile: consumer nei modelli dominio.
  * Wire solo su NotificationTemplate e/o Module — mai su XotBaseModel.
- *
  */
 trait HasCommonScopes
 {
@@ -45,6 +44,7 @@ trait HasCommonScopes
      *
      * @param  Builder<$this>  $query
      * @return Builder<$this>
+     *
      * @see Modules/Notify/docs/analisi-metodi-duplicati-master.md
      */
     public function scopeActive(Builder $query): Builder
@@ -57,6 +57,7 @@ trait HasCommonScopes
      *
      * @param  Builder<$this>  $query
      * @return Builder<$this>
+     *
      * @see Modules/Notify/docs/analisi-metodi-duplicati-master.md
      */
     public function scopeInactive(Builder $query): Builder
@@ -71,6 +72,7 @@ trait HasCommonScopes
      *
      * @param  Builder<$this>  $query
      * @return Builder<$this>
+     *
      * @see Modules/Notify/docs/analisi-metodi-duplicati-master.md
      */
     public function scopePublished(Builder $query): Builder
@@ -86,6 +88,7 @@ trait HasCommonScopes
      *
      * @param  Builder<$this>  $query
      * @return Builder<$this>
+     *
      * @see Modules/Notify/docs/analisi-metodi-duplicati-master.md
      */
     public function scopeDraft(Builder $query): Builder
@@ -101,6 +104,7 @@ trait HasCommonScopes
      *
      * @param  Builder<$this>  $query
      * @return Builder<$this>
+     *
      * @see Modules/Notify/docs/analisi-metodi-duplicati-master.md
      */
     public function scopeCreatedAfter(Builder $query, \DateTimeInterface|string|int $date): Builder
@@ -113,6 +117,7 @@ trait HasCommonScopes
      *
      * @param  Builder<$this>  $query
      * @return Builder<$this>
+     *
      * @see Modules/Notify/docs/analisi-metodi-duplicati-master.md
      */
     public function scopeCreatedBefore(Builder $query, \DateTimeInterface|string|int $date): Builder
@@ -125,6 +130,7 @@ trait HasCommonScopes
      *
      * @param  Builder<$this>  $query
      * @return Builder<$this>
+     *
      * @see Modules/Notify/docs/analisi-metodi-duplicati-master.md
      */
     public function scopeUpdatedAfter(Builder $query, \DateTimeInterface|string|int $date): Builder
@@ -137,6 +143,7 @@ trait HasCommonScopes
      *
      * @param  Builder<$this>  $query
      * @return Builder<$this>
+     *
      * @see Modules/Notify/docs/analisi-metodi-duplicati-master.md
      */
     public function scopeCreatedBy(Builder $query, string|int $userId): Builder
