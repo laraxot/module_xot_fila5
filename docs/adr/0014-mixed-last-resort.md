@@ -163,8 +163,8 @@ il trait, la relazione o il fixture owner; non si usa `property_exists()` né un
 - Audit ripetibile: `rg -lI '(: mixed\b|@(param|return|var) mixed\b)' laravel/Modules/*/app --glob '*.php' | wc -l`
   dava 37 il 2026-11-24 (15 in Xot). Un aumento fuori dalle `Safe*CastAction` va
   motivato nella story.
-- Story ADR: [xot-adr-mixed-ultima-spiaggia](../bmad/stories/xot-adr-mixed-ultima-spiaggia.story.md).
-- Campagna gate: [phpstan-modules-zero-swarm](../bmad/stories/phpstan-modules-zero-swarm.story.md).
+- Story ADR: [xot-adr-mixed-ultima-spiaggia](../bmad/stories/0171-xot-adr-mixed-ultima-spiaggia.story.md).
+- Campagna gate: [phpstan-modules-zero-swarm](../bmad/stories/0149-phpstan-modules-zero-swarm.story.md).
 - Prompt operativo: [37-phpstan.md](../../../../../../bashscripts/docs/prompts/quality-gates.md).
 
 ## Collegamenti (puntatori, non SSoT)

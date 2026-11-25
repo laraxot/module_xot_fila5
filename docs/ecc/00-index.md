@@ -28,6 +28,7 @@ Su worktree condiviso: prima di PHPStan rispettare saturazione HARD
 | Security review | parziale | P2-X3 `HandleArtisanActRequestAction`; `--force` solo su SQLite di test e symlink opt-in |
 | Docs pack | aggiornato | audit, epics, decision-log, brainstorming, story |
 | Action naming `Resolve*` → `Get*` | verificato (2026-11-25) | ADR [0016](../adr/0016-action-names-get-not-resolve.md); Pest `NoResolveActionNamingTest`; `app/Actions` Modules senza `Resolve*Action.php` |
+| No docs archive folders | verificato (2026-11-25) | ADR [0041](../adr/0041-no-docs-archive-folders.md); root [0006](../../../../../docs/adr/0006-no-docs-archive-folders.md); Pest `NoDocsArchiveFoldersTest`; gitignore fleet |
 
 Dettaglio: [xot-ecc-audit.md](./xot-ecc-audit.md)
 

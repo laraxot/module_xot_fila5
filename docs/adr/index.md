@@ -5,14 +5,14 @@ status: active
 owner: Xot
 created: 2026-11-23
 updated: 2026-11-25
-qmd: "xot adr indice decisioni canonico superseded numerazione doppia BMAD MADR 0039"
+qmd: "xot adr indice decisioni canonico superseded numerazione doppia BMAD MADR 0039 0040 0041 no docs archive story filenames NNNN"
 ---
 
 # Indice ADR — Xot
 
 Inventario di tutti gli ADR del pacchetto **Xot** (esclusi `README.md`, `index.md` e `0000-template.md`). Lo stato è quello della frontmatter di ciascun file. Formato e sezioni obbligatorie: [README](README.md); modello: [0000-template](0000-template.md); governance dei contratti: [0012](0012-behavioral-contract-governance.md).
 
-Totale: **30** ADR, di cui **21** canonici e **9** superseded (nessun file cancellato).
+Totale: **31** ADR, di cui **22** canonici e **9** superseded (nessun file cancellato).
 
 | N. | Titolo | Stato | Canonico / superseded | File |
 |---|---|---|---|---|
@@ -45,7 +45,9 @@ Totale: **30** ADR, di cui **21** canonici e **9** superseded (nessun file cance
 | — | Queueable Actions al posto di Job duplicati | superseded | superseded → [0002-queueable-actions-over-framework-jobs.md](0002-queueable-actions-over-framework-jobs.md) | [0035-queueable-actions-over-jobs.md](0035-queueable-actions-over-jobs.md) |
 | — | Xot — entrypoint route no-op canonico | accepted | canonico, senza numero | [0036-route-entrypoints-canonical-empty.md](0036-route-entrypoints-canonical-empty.md) |
 | — | Protocollo delle chiavi di traduzione | accepted | canonico, senza numero | [0037-translation-key-protocol.md](0037-translation-key-protocol.md) |
-| 0039 | BMAD stories use MADR (same spirit as harness ADR template) | accepted | canonico | [0039-bmad-stories-use-madr.md](0039-bmad-stories-use-madr.md) |
+| 0039 | BMAD stories use MADR (same spirit as harness ADR template) | accepted | canonico; filename clause → [0040](0040-bmad-stories-numbered-filenames.md) | [0039-bmad-stories-use-madr.md](0039-bmad-stories-use-madr.md) |
+| 0040 | BMAD stories use numbered filenames (NNNN-slug.story.md) | accepted | canonico | [0040-bmad-stories-numbered-filenames.md](0040-bmad-stories-numbered-filenames.md) |
+| 0041 | No docs archive folders — restore via Git only | accepted | canonico; root pointer → [docs/adr/0006](../../../../../docs/adr/0006-no-docs-archive-folders.md) | [0041-no-docs-archive-folders.md](0041-no-docs-archive-folders.md) |
 
 ## Note sui duplicati
 

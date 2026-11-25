@@ -5,14 +5,14 @@ status: active
 owner: Xot
 created: 2026-11-23
 updated: 2026-11-25
-qmd: "xot adr indice decisioni canonico superseded numerazione doppia BMAD MADR 0039"
+qmd: "xot adr indice decisioni canonico superseded numerazione doppia BMAD MADR 0039 0040 0041 no docs archive story filenames NNNN"
 ---
 
 # Indice ADR — Xot
 
 Inventario di tutti gli ADR del pacchetto **Xot** (esclusi `README.md`, `INDEX.md` e `0000-template.md`). Lo stato è quello della frontmatter di ciascun file. Formato e sezioni obbligatorie: [README](README.md); modello: [0000-template](0000-template.md); governance dei contratti: [0012](0012-behavioral-contract-governance.md).
 
-Totale: **29** ADR, di cui **21** canonici e **8** superseded (nessun file cancellato).
+Totale: **30** ADR, di cui **22** canonici e **8** superseded (nessun file cancellato).
 
 | N. | Titolo | Stato | Canonico / superseded | File |
 |---|---|---|---|---|
@@ -35,7 +35,9 @@ Totale: **29** ADR, di cui **21** canonici e **8** superseded (nessun file cance
 | 0014 | `mixed` solo come ultima spiaggia, con narrowing al boundary | accepted | canonico | [0014-mixed-last-resort.md](0014-mixed-last-resort.md) |
 | 0016 | I nomi delle Queueable Action non iniziano con `Resolve` (usa `Get*`) | accepted | canonico | [0016-action-names-get-not-resolve.md](0016-action-names-get-not-resolve.md) |
 | 0018 | Harness minimo per gli agenti: ambiente leggibile, memoria verificabile, guard sulle azioni vietate | accepted | canonico | [0018-agent-harness.md](0018-agent-harness.md) |
-| 0039 | BMAD stories use MADR (same spirit as harness ADR template) | accepted | canonico | [0039-bmad-stories-use-madr.md](0039-bmad-stories-use-madr.md) |
+| 0039 | BMAD stories use MADR (same spirit as harness ADR template) | accepted | canonico; filename clause → [0040](0040-bmad-stories-numbered-filenames.md) | [0039-bmad-stories-use-madr.md](0039-bmad-stories-use-madr.md) |
+| 0040 | BMAD stories use numbered filenames (NNNN-slug.story.md) | accepted | canonico | [0040-bmad-stories-numbered-filenames.md](0040-bmad-stories-numbered-filenames.md) |
+| 0041 | No docs archive folders — restore via Git only | accepted | canonico; root pointer → [docs/adr/0006](../../../../../docs/adr/0006-no-docs-archive-folders.md) | [0041-no-docs-archive-folders.md](0041-no-docs-archive-folders.md) |
 | — | Le regole architetturali sulle classi si verificano con PHPArkitect, con baseline | superseded | superseded → [0020-architecture-tests-pest-arch.md](0020-architecture-tests-pest-arch.md) | [0019-architecture-rules-phparkitect.md](0019-architecture-rules-phparkitect.md) |
 | — | Le regole di architettura si verificano con Pest arch(), con ambito esplicito e debito dichiarato | accepted | canonico, senza numero | [0020-architecture-tests-pest-arch.md](0020-architecture-tests-pest-arch.md) |
 | — | Auth register Livewire tenant URL defaults | accepted | canonico, senza numero | [0021-auth-register-livewire-tenant-url-defaults.md](0021-auth-register-livewire-tenant-url-defaults.md) |

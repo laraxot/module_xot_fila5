@@ -52,4 +52,4 @@ spesso lasciato da un merge (`<<<<<<<` / `>>>>>>> laraxot/dev`). Il file `empty.
 ## Related
 
 - Loader: `app/Providers/XotBaseRouteServiceProvider.php`
-- Story: [`../bmad/stories/no-shared-empty-route-file.story.md`](../bmad/stories/no-shared-empty-route-file.story.md)
+- Story: [`../bmad/stories/no-shared-empty-route-file.story.md`](../bmad/stories/0107-no-shared-empty-route-file.story.md)

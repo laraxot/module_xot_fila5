@@ -10,9 +10,15 @@ related:
 qmd: "bmad story template MADR <!-- keywords -->"
 ---
 
-<!-- File: docs/bmad/stories/<slug>.story.md (or docs/stories/<slug>.story.md).
-     Filename stays kebab `slug.story.md` — NO NNNN required on stories.
-     The only numbered exception is this template: `0000-template.story.md`.
+<!-- File MUST be: docs/bmad/stories/NNNN-titolo-con-trattini.story.md
+     (also docs/stories/NNNN-titolo-con-trattini.story.md).
+     Basename MUST match /^\d{4}-[a-z0-9]+(?:-[a-z0-9]+)*\.story\.md$/
+     — 4-digit zero-padded NNNN + kebab slug + suffix `.story.md`
+     (same spirit as ADR NNNN-titolo-con-trattini.md). Per-module sequence.
+     Exception: this template only — `0000-template.story.md`.
+     SSoT filename ADR: ../../adr/0040-bmad-stories-numbered-filenames.md
+     Body MADR ADR: ../../adr/0039-bmad-stories-use-madr.md
+     Pest gate: Modules/Xot/tests/Unit/Docs/BmadStoriesAreMadrFormatTest.php
      Inspiration (ADR MADR harness):
      https://raw.githubusercontent.com/robertogallea/laravelday-harness-workshop/refs/heads/main/docs/adr/0000-template.md
      Local ADR twin: ../../adr/0000-template.md

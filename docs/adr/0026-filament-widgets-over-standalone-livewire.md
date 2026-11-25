@@ -97,7 +97,7 @@ esterne che dipendono da Livewire si integrano tramite un wrapper Filament.
 ## Conferma
 
 - Il codice nuovo vive in `Filament/Widgets` del modulo owner; le basi Filament di Xot sono il punto di partenza.
-- Story di migrazione: [adr-0008-no-standalone-livewire-widgets](../stories/adr-0008-no-standalone-livewire-widgets.story.md).
+- Story di migrazione: [adr-0008-no-standalone-livewire-widgets](../stories/0018-adr-0008-no-standalone-livewire-widgets.story.md).
 - La scelta è confermata dai test architetturali del modulo Xot e dalle classi base Filament owner.
 
 ## Verifica

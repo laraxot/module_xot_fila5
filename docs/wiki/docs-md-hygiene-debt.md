@@ -96,6 +96,27 @@ Story: [docs-consolidate-redundant-md.story.md](../bmad/stories/docs-consolidate
 
 Oltre ai dated: [docs-consolidate-redundant-md.story.md](../bmad/stories/docs-consolidate-redundant-md.story.md) — exact-dup e cluster topic → canone + stub `superseded_by`.
 
+## Tetto docs (ordine 2026-11-25)
+
+Ogni `Modules/*/docs` e `Themes/*/docs` tiene al massimo **100** file `.md`
+(story [0174](../bmad/stories/0174-docs-ceiling-100-md.story.md); tool
+`bashscripts/tools/docs/docs-ceiling-100.py`).
+
+**Vietato** dumpare superseduti in `docs/archivio/` / `archive` / `_archive` /
+`backup` (ADR [0041](../adr/0041-no-docs-archive-folders.md)): ripristino solo
+via Git. Sopra il tetto: consolidare in canone vivo o eliminare (storia = Git).
+
+| Modulo | Prima | Dopo |
+|---|---:|---:|
+| Notify | 2346 | 231 |
+| User | 1671 | 212 |
+| Lang | 855 | 104 |
+| Xot | 699 | 386 |
+| Activity | 667 | 110 |
+| UI | 586 | 127 |
+
+Temi già sotto il tetto (Zero 318, One 112, Three 14). Il picco residuo è Media, 461.
+
 ## Vedi anche
 
 - Sprint: `docs/sprint-status.yaml` → `Xot/docs-md-filename-date-debt`
