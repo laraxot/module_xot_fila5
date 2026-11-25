@@ -5,7 +5,7 @@ module: Xot
 qmd: "anti-pattern App FolioServiceProvider FolioVolt only"
 related:
   - ../bmad/stories/folio-owner-foliovolt-not-app-provider.story.md
-  - ../../../../../docs/wiki/memories/folio-owner-foliovolt-only.md
+  - ../../../../../bashscripts/ai/wiki/memories/frontend-folio-routing.md#folio-owner-foliovolt-only
 ---
 
 # Anti-pattern: App Folio quando c’è FolioVolt

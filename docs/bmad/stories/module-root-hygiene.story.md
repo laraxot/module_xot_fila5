@@ -130,11 +130,7 @@ Richiesta: "laravel/Modules/test/ non deve esistere, capisci da solo il perche'"
 Perche': ogni cartella in `Modules/` e' trattata come modulo da nwidart, dal merge dei
 `composer.json`, da PHPStan (`paths: Modules/`) e da ogni script `for m in Modules/*`. La causa:
 `IndennitaResponsabilita\Actions\UpdateModuleDocumentation` faceva `mkdir` ricorsivo su qualunque
-<<<<<<< HEAD
 nome, e gli sweep di copertura la chiamavano con `'test'` (file `Modules/test/docs/changelog.md`,
-=======
-nome, e gli sweep di copertura la chiamavano con `'test'` (file `Modules/UI/docs/changelog.md`,
->>>>>>> laraxot/dev
 gia' committato nel repo root il 2026-09-02, `107f5184fc`). Fix di un'altra sessione (12:28):
 `resolveModulePath()` accetta solo nome alfanumerico con `module.json`; test
 `UpdateModuleDocumentationValidationTest` 4 passed (6 assertions).
@@ -165,7 +161,7 @@ PHPStan `[OK] No errors`, PHPMD 0.
   `laravel/Modules/Tenant/docs/bmad/stories/tenant-config-untracked-by-gitignore.story.md`.
 - `bashscripts/tools/audit-module-root-hygiene.sh` contiene marker di conflitto
   (soglia 5 vs 6) e non e' allineato a queste regole: da riconciliare, non duplicare.
-- `bashscripts/ai/wiki/memories/workspace-naming.md` descriveva `_<nome>.code-workspace`:
+- `bashscripts/ai/wiki/memories/git-sync-fleet-remotes.md#workspace-naming` descriveva `_<nome>.code-workspace`:
   superata da questa story.
 - Lock (`bashscripts/lock/`) prima di ogni edit.
 

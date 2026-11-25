@@ -15,7 +15,7 @@ qmd: "phpstan analyse Modules fix fleet swarm parallelo random RatingData AuditC
 related:
   - ./phpstan-analyse-modules-2026-09-24.story.md
   - ../../../../Rating/docs/wiki/rules/no-trait-name-static-calls.md
-  - ../../../../../../docs/wiki/memories/phpstan-merge-conflict-lock-coordination.md
+  - ../../../../../../bashscripts/ai/wiki/memories/git-merge-markers.md#phpstan-merge-conflict-lock-coordination
   - ../concepts/tests-audit-coverage-forbidden.md
 ---
 # phpstan-modules-2026-09-24
@@ -96,4 +96,4 @@ Gate deep: `phpstan analyse Modules` → **`[OK] No errors` EXIT 0** (certify po
 ## Esito
 
 **done**. Pest skip: `DB_HOST=10.100.200.53` DOWN. Memoria:
-`docs/wiki/memories/phpstan-modules-swarm-session.md`.
+`bashscripts/ai/wiki/memories/multi-agent-coordination.md#phpstan-modules-swarm-session`.

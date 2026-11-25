@@ -9,7 +9,7 @@ module: Xot
 tags: [bmad, services, queueable-actions, const, enum, trend, translators, xot]
 related:
   - ../../../../../bmad-output/epic-code-standards-services-mixed-const.md
-  - ../../../../../bashscripts/ai/wiki/rules/no-services-rule.md
+  - ../../../../../bashscripts/ai/wiki/rules/actions-business-logic.md
   - ../services.md
 qmd: "08 services to actions xot small"
 ---

@@ -22,7 +22,7 @@ related:
 
 Una decisione scritta, nel modulo Xot (nucleo trasversale, gia' sede degli ADR di governance), che dice quando `mixed`
 e' ammesso e cosa si fa al suo posto. Prima la regola era sparsa nelle story `*-mixed-type-reduction` di Job, Media, UI,
-Notify, User, Tenant e Lang, nel prompt `bashscripts/docs/prompts/37-phpstan.md` e in
+Notify, User, Tenant e Lang, nel prompt `bashscripts/docs/prompts/quality-gates.md` e in
 `Notify/docs/mixed-type-ultima-spiaggia.md`, senza un posto canonico.
 
 ## Richiesta utente (verbatim)
@@ -70,7 +70,7 @@ Aggiunto da questa story, tutto verificato:
   frontmatter, e 3 link morti: `Xot/docs/quality/phpstan-rules.md`, `Xot/docs/safe-casting-actions.md`,
   `Xot/docs/stories/5.10.mixed-narrowing-campaign.story.md` (nessuno dei tre esiste). Un `.md` non rompe PHPStan.
   Va corretto dal proprietario del modulo Notify, poi collegato a questo ADR.
-- `bashscripts/docs/prompts/37-phpstan.md` riga 123 dice "`Safe*CastAction` o `Assert`": coerente con la prova, nessuna
+- `bashscripts/docs/prompts/quality-gates.md` riga 123 dice "`Safe*CastAction` o `Assert`": coerente con la prova, nessuna
   modifica necessaria.
 - Guard `arch()` che conti i `mixed` fuori dalle `Safe*CastAction`: da progettare (audit di riferimento: 37 file).
 

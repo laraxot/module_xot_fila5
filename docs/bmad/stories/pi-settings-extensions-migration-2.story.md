@@ -40,5 +40,5 @@ Settings project già JSON valido; non ripristinare i `*.bak-corrupt*` /
 
 ## Riferimenti
 
-- Memoria: [pi-settings-extensions.md](../../../../../../docs/wiki/memories/pi-settings-extensions.md)
+- Memoria: [agent-conduct-tooling.md#pi-settings-extensions](../../../../../../bashscripts/ai/wiki/memories/agent-conduct-tooling.md#pi-settings-extensions)
 - Sprint: `docs/sprint-status.yaml` → `Xot/pi-settings-extensions-migration-20260929`

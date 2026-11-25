@@ -7,7 +7,7 @@ created: 2026-11-23
 updated: 2026-11-23
 qmd: "phpstan modules zero standing order flock cache parse prima dei tipi mixed ultima spiaggia"
 related:
-  - ../../../../../../bashscripts/docs/prompts/00-master-prompt.md
+  - ../../../../../../bashscripts/docs/prompts/agent-workflow.md
   - ../../../../../../bashscripts/docs/prompts/11-phpstan.md
   - ../../../../../../bashscripts/docs/prompts/INDEX.md
   - ../../stories/phpstan-merge-bootstrap.story.md

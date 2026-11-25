@@ -10,7 +10,7 @@ acceptance_criteria:
   - "Docs moduli/temi e bashscripts/docs/prompts migliorati senza date nei nomi file"
   - "Pest mirato eseguito o skip documentato (host/DB)"
 references:
-  - bashscripts/docs/prompts/00-master-prompt.md
+  - bashscripts/docs/prompts/agent-workflow.md
   - bashscripts/docs/prompts/11-phpstan.md
   - laravel/Modules/Xot/docs/bmad/stories/phpstan-modules-swarm-random.story.md
   - docs/sprint-status.yaml
@@ -55,7 +55,7 @@ rompe.
 - Audit parallelo (subagent): docs moduli/temi + prompts + residuali PHPStan.
 - 2026-11-17 ~09:24: host ~34 proc PHPStan, RAM satura. Harvest:
   Progressioni/Performance/Job → `[OK] No errors` EXIT=0 (file `/tmp/phpstan_*_raw.txt`).
-- Memoria nuova: `bashscripts/ai/wiki/memories/phpstan-host-saturation-max-three.md`.
+- Memoria nuova: `bashscripts/ai/wiki/memories/phpstan-swarm-config.md#phpstan-host-saturation-max-three`.
 - Prompt `11-phpstan.md` aggiornato con check saturazione HARD.
 - Sprint + claim: `docs/sprint-status.yaml`, `docs/chat/CLAIM-phpstan-modules-swarm-session.md`.
 - Prossimo: quando processi ≤6 e available ≥6GiB, inventario flock max-3 sui moduli
@@ -117,7 +117,7 @@ Host al lancio: ~33 proc phpstan, ~9 GiB available → no nuove analyse finché 
 - Prompt `17-*` drift: `17-git` e `17-gitmodules-sync` ripuliti ad alias puri
   (canonici `16-git-forward-only` / `48-gitmodules-sync`); `17-gitmodules-path-iteration`
   resta unico canonico inventario; nota in `README.md` sotto Git.
-- Memoria correlata: `phpstan-host-saturation-max-three.md` (gia' SSoT); STOP
+- Memoria correlata: `phpstan-swarm-config.md#phpstan-host-saturation-max-three` (gia' SSoT); STOP
   `docs/chat/STOP-phpstan-process-thrashing.md` referenziato da 46 + ECC.
 - Vietato: nessun phpstan lanciato, nessun commit, nessun delete (solo supersede alias).
 

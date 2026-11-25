@@ -27,7 +27,7 @@ Git LFS NON si usa in questo progetto.
   (`/tmp/phpstan_ptvx_fila5/full.json`, `phpstan-user-full.txt`,
   `phpstan-modules-152128.txt`). Bug bootstrap risolto da altri agenti
   (marker `<<<<<<<` e `use` duplicato in Activity erano residuo merge
-  salvato a meta', vedi wiki `phpstan-modules-swarm.md`).
+  salvato a meta', vedi wiki `modules-ops.md#phpstan-modules-swarm`).
 - **Activity module**: file PHP con parse error attivi
   (`Activity.php`, `lang/it/activity.php`, `lang/it/snapshot.php`,
   `ActionsTest.php`, `StoredEventBusinessLogicTest.php`,
@@ -114,11 +114,7 @@ scope disgiunti + lock).
   detection), non marker risolti. Alias/redirect system gia' sano.
 - Residui noti della story `prompts-audit.story.md` (nomi underscore/
   maiuscoli, `START1.md`, `README_phpstan1.md`, copie divergenti
-<<<<<<< HEAD
   `docs1-4`, `global_context.md`) appartengono alla story
-=======
-  `docs1-4`, `global-context.md`) appartengono alla story
->>>>>>> laraxot/dev
   `docs-prompts-reorganization` in review con agente attivo sui file
   (mtime < 2h): non toccati per non collidere.
 - Docs moduli/temi: story `docs-prompts-reorganization` copre gia'

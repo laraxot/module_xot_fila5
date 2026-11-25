@@ -101,7 +101,7 @@ swarm parallelo per singolo modulo in ordine random, come da pilastro 8.
     mentre erano in corso più scansioni PHP full-tree concorrenti. Non è un
     risultato PHPStan valido; ripetere in finestra quieta e continuare lo swarm
     random solo dopo aver ottenuto finding attendibili.
-  - Second brain aggiornato: `bashscripts/ai/wiki/memories/phpstan-bootstrap-merge-corruption.md`.
+  - Second brain aggiornato: `bashscripts/ai/wiki/memories/git-merge-markers.md#phpstan-bootstrap-merge-corruption`.
   - Audit documentale rapido sui temi: `laravel/Themes/docs-reorg.md` ha gia'
     inventario e proposta per One/Three/Zero; i duplicati divergono nel contenuto.
     Nessun consolidamento massivo applicato durante il fix bootstrap: il piano
@@ -415,12 +415,8 @@ Il vendor in ritardo e' quindi un sintomo di due insiemi di dipendenze diversi (
 ## Claim 2026-11-11 15:48 — i 19 file con marker in `HEAD` di `bashscripts` (54 blocchi)
 
 Fase BMAD: Dev, risoluzione senza perdite. Stesso regime dei prompt: niente `git add`, niente commit, niente rinomine, unione dei lati, `updated:` = piu' recente, contraddizioni risolte secondo le regole del progetto e annotate. L'indice non ha piu' stage (merge gia' committato): lati = `f7a39cc23:<path>` (nostro) e `eb15551b0:<path>` (`laraxot/dev`), base = `git merge-base` se esiste.
-- **P3 (28 blocchi):** `ai/wiki/rules/post-edit-quality-gate.md` (9), `ai/wiki/skills/cursor-second-brain-max-workflow.md` (9), `ai/wiki/rules/file-locking-validation-protocol.md` (6), `ai/wiki/rules/00-TRIGGER_MAP.md` (4).
-<<<<<<< HEAD
-- **P4 (26 blocchi):** `ai/wiki/rules/multi-agent-file-lock-protocol.md` (4), `ai/wiki/how-to/multi-agent-coordination-discipline.md` (5), `ai/.agents/docs/multi-agent-coordination.md` (3), `ai/wiki/rules/agent-chat-directory.md` (2), `ai/wiki/memories/docs-chat-slug-per-topic.md` (2) e un blocco ciascuno in `ai/.agents/00-ON_DEMAND_USAGE.md`, `ai/.agents/BOOTSTRAP.md`, `ai/.agents/docs/{git-workflow,index,INDEX}.md`, `ai/wiki/memories/phpstan-quality-docs-bmad-standing-order.md`, `ai/wiki/rules/{docs-chat-filename-no-dates,on-demand-pattern}.md`, `docs/{modular-bmad-story-policy,root-script-policy}.md`.
-=======
-- **P4 (26 blocchi):** `ai/wiki/rules/multi-agent-file-lock-protocol.md` (4), `ai/wiki/how-to/multi-agent-coordination-discipline.md` (5), `../../../../Geo/docs/raw/history/multi-agent-coordination-2.md` (3), `ai/wiki/rules/agent-chat-directory.md` (2), `ai/wiki/memories/docs-chat-slug-per-topic.md` (2) e un blocco ciascuno in `ai/.agents/00-ON_DEMAND_USAGE.md`, `ai/.agents/BOOTSTRAP.md`, `ai/.agents/docs/{git-workflow,index,INDEX}.md`, `ai/wiki/memories/phpstan-quality-docs-bmad-standing-order.md`, `ai/wiki/rules/{docs-chat-filename-no-dates,on-demand-pattern}.md`, `docs/{modular-bmad-story-policy,root-script-policy}.md`.
->>>>>>> laraxot/dev
+- **P3 (28 blocchi):** `ai/wiki/rules/quality-gates.md` (9), `ai/wiki/skills/cursor-second-brain-max-workflow.md` (9), `ai/wiki/rules/multi-agent-coordination.md` (6), `ai/wiki/rules/00-TRIGGER_MAP.md` (4).
+- **P4 (26 blocchi):** `ai/wiki/rules/multi-agent-coordination.md` (4), `ai/wiki/how-to/agents-context-tooling.md#multi-agent-coordination-discipline` (5), `ai/.agents/docs/workflow-methods.md#multi-agent-coordination` (3), `ai/wiki/rules/multi-agent-coordination.md` (2), `ai/wiki/memories/docs-second-brain.md#docs-chat-slug-per-topic` (2) e un blocco ciascuno in `ai/.agents/00-ON_DEMAND_USAGE.md`, `ai/.agents/BOOTSTRAP.md`, `ai/.agents/docs/{git-workflow,index,INDEX}.md`, `ai/wiki/memories/standing-orders.md#phpstan-quality-docs-bmad-standing-order`, `ai/wiki/rules/{docs-chat-filename-no-dates,on-demand-pattern}.md`, `docs/{modular-bmad-story-policy,root-script-policy}.md`.
 Fuori scope: `tools/visual/scratch-auth-fixture.sh` (nessun marker in `HEAD`), le copie speculari in `docs/wiki/` della radice (solo segnalare le divergenze).
 
 ## Esito 2026-11-11 15:58 — i 19 file con marker in `HEAD` di `bashscripts` (P3 + P4)
@@ -429,13 +425,13 @@ Fuori scope: `tools/visual/scratch-auth-fixture.sh` (nessun marker in `HEAD`), l
 - **Limite del controllo:** confronto riga per riga contro `HEAD` (entrambi i lati). Le righe non piu' identiche sono riformulazioni o fusioni dichiarate dai subagent (P3: 12+17+27+14; P4: 75 in totale). Non prova l'equivalenza di significato: l'ho controllata a campione sui tre file piu' riscritti.
 - **`docs/wiki/rules` e' un symlink a `bashscripts/ai/wiki/rules`** (verificato con `ls -ld`): i file omonimi nella radice sono lo stesso file, nessuna divergenza possibile.
 - **Contraddizioni risolte secondo `CLAUDE.md`:** `docs/chat/` solo archivio in sola lettura, coordinamento nelle story BMAD del modulo/tema owner; `bmad-output/` vietato per i documenti; nessuna `docs/stories/` globale. Scartati con prova (`find`/`ls`): `bashscripts/tools/bmad-story.sh`, la story `second-brain-bmad-skills-audit`, `docs/planning-artifacts/multi-agent-coordination-protocol.md`, `phpstan-cleanup-xot-app.story.md`, `bmad-output/epic-code-standards-services-mixed-const.md`.
-- **Correzioni mie dopo i report:** `cursor-second-brain-max-workflow.md` riga 158 («log.md + chat aggiornati») ora rimanda all'`## Esito` della story owner; `multi-agent-coordination-discipline.md` riga 32 non ammette piu' una `docs/stories/` globale.
+- **Correzioni mie dopo i report:** `cursor-second-brain-max-workflow.md` riga 158 («log.md + chat aggiornati») ora rimanda all'`## Esito` della story owner; `agents-context-tooling.md#multi-agent-coordination-discipline` riga 32 non ammette piu' una `docs/stories/` globale.
 
 **Aperto, non risolto (decisioni o lavoro a parte):**
 1. **Le versioni risolte sono solo nell'albero di lavoro.** `HEAD` ha ancora i marker in questi 19 file, nei 19 prompt e nella story; li ripulira' la prossima sync solo se non riporta dentro `laraxot/dev` altri conflitti. Se la sync parte durante un merge, rilanciare lo scan sopra.
-2. `ai/.agents/docs/index.md` e `INDEX.md` coesistono (320 e 84 righe): collisione solo di maiuscole, regola `no-case-variations`; serve una migration map, non una rinomina a mano.
+2. `ai/.agents/docs/00-INDEX.md` e `INDEX.md` coesistono (320 e 84 righe): collisione solo di maiuscole, regola `no-case-variations`; serve una migration map, non una rinomina a mano.
 3. `00-start.md` (prompt) tiene due versioni sovrapposte con una «Nota di fusione»: da sfoltire a mano.
-4. Link gia' rotti prima del merge: `docs/chat/second-brain-toolchain-rotta.md`, `bashscripts/docs/file-lock.md`, `ai/project/qmd-local-docs-search.md`, 7 in `ai/.agents/docs/index.md`; `docs/stories/bmad-stories-operational-source.story.md` citata e inesistente.
+4. Link gia' rotti prima del merge: `docs/chat/second-brain-toolchain-rotta.md`, `bashscripts/docs/file-lock.md`, `ai/project/qmd-local-docs-search.md`, 7 in `ai/.agents/docs/00-INDEX.md`; `docs/stories/bmad-stories-operational-source.story.md` citata e inesistente.
 5. Strumenti citati e assenti dopo `1af871d0c` (`tools/cms/`, `tools/heavy-slot.sh`, `tools/visual/parity-wizard-steps.sh`, `tools/migrations/`, `tools/pest-scratch-db.sh`): vedi «Incidente» sopra; non ripristinati.
 6. La tabella di `root-script-policy.md` (2026-10-13) elenca 4 script in radice; oggi ci sono anche `deploy.sh` e `phpstan-fix-script.sh` e in `laravel/` `compare-html.py`, `fix-vartag-xot.sh`: non aggiornata.
 7. Una riga della policy modulare cita `github.com/provt/` (progetto di un'altra macchina): lasciata, non verificabile qui.
@@ -501,7 +497,7 @@ Regole rispettate: mixed ultima spiaggia, no ignore/baseline, BMAD + second brai
   - Eliminati 11 file `.txt` e `.bak` non convenzionali e 14 alias ridondanti con underscore in `bashscripts/docs/prompts`.
   - Normalizzati tutti i 167 file prompt in kebab-case con frontmatter YAML e chiave `qmd:`.
   - Eliminati oltre 350 file duplicati per case-collision e suffissi temporali obsoleti in `Notify`, `User`, `UI`, `Activity`, `Job`, `Media`, `Rating`, `Tenant`, `Lang` e tema `Zero`.
-  - Memoria creata: `bashscripts/ai/wiki/memories/docs-and-prompts-zen-governance.md`.
+  - Memoria creata: `bashscripts/ai/wiki/memories/docs-second-brain.md#docs-and-prompts-zen-governance`.
 
 ### Pest gate (sessione)
 

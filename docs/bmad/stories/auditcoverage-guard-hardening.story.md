@@ -14,7 +14,7 @@ qmd: "audit-coverage guard upstream REMOTE HARNESS claude-audit bridge supersede
 related:
   - ../../../../Rating/docs/bmad/stories/auditcoverage-reinjection-2026-09-24.story.md
   - ../../wiki/concepts/tests-audit-coverage-forbidden.md
-  - ../../../../../../bashscripts/ai/wiki/rules/tests-auditcoverage-forbidden.md
+  - ../../../../../../bashscripts/ai/wiki/rules/quality-gates.md
 ---
 # auditcoverage-guard-hardening-2026-09-24
 

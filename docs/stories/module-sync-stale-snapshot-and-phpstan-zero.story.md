@@ -10,7 +10,7 @@ updated: 2026-11-17
 tags: [phpstan, sync, merge, marker-conflitto, regressioni, qualita]
 qmd: "sync moduli copia vecchia snapshot stale marker conflitto merge_file regressioni silenziose phpstan zero 2026-11-17"
 related:
-  - ../../../../../docs/wiki/memories/phpstan-quality-docs-bmad-standing-order.md
+  - ../../../../../bashscripts/ai/wiki/memories/standing-orders.md#phpstan-quality-docs-bmad-standing-order
   - ./phpstan-merge-bootstrap.story.md
   - ./fix-merge-conflicts.md
 ---

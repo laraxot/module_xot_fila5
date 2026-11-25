@@ -36,8 +36,4 @@ Removing these directories and applying targeted fixes has resulted in **0 error
 ---
 **See also:**
 - [ERRORE CRITICO: Mai Estendere Classi Filament Direttamente](../errori-critici/mai-estendere-filament-direttamente.md)
-<<<<<<< HEAD
 - [Directory Structure Rules](../../docs/wiki/rules/directory-structure.md)
-=======
-- [Directory Structure Rules](../../../Geo/docs/raw/history/directory-structure-2.md)
->>>>>>> laraxot/dev

@@ -10,7 +10,7 @@ issues:
 discussions: []
 related:
   - docs/wiki/rules/module-providers-manifest.md
-  - docs/wiki/memories/module-providers-manifest-not-manual-register.md
+  - bashscripts/ai/wiki/memories/migrations-composer-modules.md#module-providers-manifest-not-manual-register
 qmd: "adr 0009 bootstrap provider registry story"
 ---
 

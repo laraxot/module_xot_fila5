@@ -17,7 +17,7 @@ related:
   - ./phpstan-xot-test-fixtures-generics-mixed.story.md
   - ../../../../Rating/docs/bmad/stories/phpstan-rating-tests-missing-classes.story.md
   - ../../../../User/docs/bmad/stories/phpstan-user-lang-duplicate-keys.story.md
-  - ../../../../../../bashscripts/ai/wiki/memories/trait-merge-duplicate-methods-repair.md
+  - ../../../../../../bashscripts/ai/wiki/memories/git-merge-markers.md#trait-merge-duplicate-methods-repair
 ---
 
 # PHPStan Modules: bootstrap rotto da righe duplicate
@@ -33,7 +33,7 @@ funzione del codice e non solo all'errore.
 - [x] `phpstan analyse Modules` con `exit=0` e 0 errori (18:17-18:21 UTC, cache fredda, nessun PHP riscritto nella finestra).
 - [ ] Pest verde: non eseguibile per `TestDatabaseGuard` (`host "10.100.200.53" is not local`). Passato solo
   `ModuleRouteEntrypointsExistTest` (`1 passed, 2 assertions`). Da ripetere in ambiente di test isolato.
-- [x] Second brain: estesa la memoria `trait-merge-duplicate-methods-repair.md`.
+- [x] Second brain: estesa la memoria `git-merge-markers.md#trait-merge-duplicate-methods-repair`.
 
 ## Sovrapposizione con la sessione parallela
 
@@ -46,11 +46,7 @@ al commit `3db6193228` con lint dei blob, i cluster lang / Xot test / Rating, e 
 Il commit `3db6193228` (messaggio ".", non un merge) ha riaggiunto righe gia' presenti. Verificato sui blob con
 `git show <commit>:<file> | php -l`: i 5 file passano a `69c5e4aaf0` e a `dc010170d4` e si rompono solo a `3db6193228`.
 Il merge `dc010170d4` era a posto sui marker, ma ha cancellato i duplicati `Filament/Resources/HasRatingResource/*` del
-<<<<<<< HEAD
 modulo Rating (voluto: `docs/redundancy-report.md`, righe 25 e 67-70), lasciando test che li referenziavano.
-=======
-modulo Rating (voluto: `../../../../Geo/docs/redundancy-report-2.md`, righe 25 e 67-70), lasciando test che li referenziavano.
->>>>>>> laraxot/dev
 
 ## Esito per cluster (ordine random: Rating, Xot, User)
 
@@ -63,10 +59,6 @@ modulo Rating (voluto: `../../../../Geo/docs/redundancy-report-2.md`, righe 25 e
 
 Totale al run con bootstrap funzionante: 21 errori in 7 file, tutti a 0 al run finale.
 
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_yoj1hB
->>>>>>> laraxot/dev
 ## Secondo giro: marker annidati da un progetto fratello (20:37)
 
 Alle 20:40 PHPStan e' tornato a `exit 1` in 6 secondi (`unexpected token "<<"`): 126 PHP con marker in Activity (28), Job (9),
@@ -85,7 +77,7 @@ commit radice `41e757843a` (20:29) ne contiene 84; `d2ae03eb31` (20:27) ne aveva
   `Notify/tests/TestCase.php`, `User/tests/TestCase.php`, `User/tests/Unit/UserExecuteCoverage50Test.php`. Tolta la riga
   fuori ordine, `php -l` OK. Lint dell'intero albero (`Modules`, `app`, `config`, `routes`, `bootstrap`): nessun altro
   Fatal/Parse.
-- **Second brain.** Sezione "Variante 2026-11-24" in `merge-markers-committed-e7e667b11.md`; prompt `37-phpstan.md` esteso con
+- **Second brain.** Sezione "Variante 2026-11-24" in `git-merge-markers.md#merge-markers-committed-e7e667b11`; prompt `37-phpstan.md` esteso con
   cache privata (`-c` + `tmpDir`) e diagnosi del commit con `php -l` sui blob.
 
 ## Terzo giro: r5 fallita, due nuovi merge committati con marker (21:01 e 21:11)
@@ -123,11 +115,6 @@ commit radice `41e757843a` (20:29) ne contiene 84; `d2ae03eb31` (20:27) ne aveva
   Per questo lo slim dei `.git` non fa re-clone per ref. L'unico taglio di storia (Notify, `fetch --depth=1` sul commit di HEAD)
   e' stato fatto perche' li' HEAD coincide con `laraxot/dev`, quindi il merge-base esiste (vedi `module-theme-git-slim.story.md`).
 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> .merge_file_bHYxzl
->>>>>>> laraxot/dev
 ## Incidenti e lezioni
 
 - Prima diagnosi sbagliata: attribuito il difetto al merge `dc010170d4`. Corretto con il lint dei blob; memoria aggiornata.

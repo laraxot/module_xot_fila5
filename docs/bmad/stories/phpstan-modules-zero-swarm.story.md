@@ -5,7 +5,7 @@ module: Xot
 epic: quality/phpstan
 story_id: phpstan-modules-zero-swarm
 slug: phpstan-modules-zero-swarm
-status: done
+status: in_progress
 # supersedes: campagne phpstan-modules-swarm-session / remediation come SSoT attiva Quick Flow
 # linked_from: docs/sprint-status.yaml Xot/phpstan-modules-zero-swarm; phpstan-zero-errors-modules.story.md
 # user_verbatim: "esegui cd laravel && ./vendor/bin/phpstan analyse Modules e sistema tutte le segnalazioni" + swarm+BMAD+second brain+handoff 5 sezioni
@@ -18,8 +18,8 @@ related:
   - ./5.260-phpstan-modules-current-remediation.story.md
   - ./phpstan-modules-swarm-random.story.md
   - ../00-index.md
-  - ../../../../../../bashscripts/ai/wiki/memories/phpstan-modules-zero.md
-  - ../../../../../../bashscripts/ai/wiki/memories/phpstan-host-saturation-max-three.md
+  - ../../../../../../bashscripts/ai/wiki/memories/phpstan-swarm-config.md#phpstan-modules-zero
+  - ../../../../../../bashscripts/ai/wiki/memories/phpstan-swarm-config.md#phpstan-host-saturation-max-three
   - ../../../../../../docs/sprint-status.yaml
 ---
 
@@ -71,14 +71,18 @@ chiave sprint: `Xot/phpstan-modules-zero-swarm`.
 | [phpstan-modules-remediation](./phpstan-modules-remediation.story.md) | Remediation 2026-10-09 (review/done) |
 | [phpstan-modules-swarm-session](./phpstan-modules-swarm-session.story.md) | Sessione 2026-11-17 (vittoria full-tree; review) |
 | [5.260 current remediation](./5.260-phpstan-modules-current-remediation.story.md) | Baseline storica ottobre |
-| Memoria [phpstan-modules-zero](../../../../../../bashscripts/ai/wiki/memories/phpstan-modules-zero.md) | Invarianti gate + pattern |
+| Memoria [phpstan-modules-zero](../../../../../../bashscripts/ai/wiki/memories/phpstan-swarm-config.md#phpstan-modules-zero) | Invarianti gate + pattern |
 
 ## Diario
 
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_oDwLOX
->>>>>>> laraxot/dev
+- 2026-11-25 (docs-guardian / ripresa): **bootstrap FAIL per marker** — campagna riaperta.
+  Host WSL non `10.100.200.15`; flock max-3; moduli Notify/Lang/Activity/UI/User/Xot/Media/Job.
+  Diario collassato (rimossi marker `<<<<<<<` / `.merge_file_*` / `laraxot/dev` senza svuotare AC).
+  Preflight: 0 PHP con `<<<<<<<` nei 8 moduli al momento della misura; md ancora contaminati
+  (Notify ~2442 path). Cold `/tmp/ptvx-phpstan/cold-20261125.json` incompleto.
+  Handoff: `docs/chat/handoff-phpstan-modules-swarm.md`. Sprint key → `in_progress`.
+  Inventario `.git`: `docs/gitmodules-git-size-and-objects.md`.
+
 - 2026-11-24f **VITTORIA gate**: `/tmp/ptvx-phpstan/cold11.json` totals
   `errors=0`/`file_errors=0` + banner `[OK] No errors` (EXIT 0) sotto
   `flock /tmp/ptvx-phpstan-modules.flock`. Preflight: sweep markers → BOOT_OK.
@@ -112,11 +116,6 @@ chiave sprint: `Xot/phpstan-modules-zero-swarm`.
   ammesso solo a un boundary realmente dinamico o vendor, con validazione,
   narrowing immediato, nessuna propagazione nell'API e motivazione BMAD.
 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> .merge_file_jFqOCx
->>>>>>> laraxot/dev
 - 2026-11-24c (laravel-testing-expert / Pest hang diagnose su 192.168.1.40):
   **GateGuard facts (edit esistente):** nessun file nuovo; aggiorna diario di
   questa story già referenziata da `docs/sprint-status.yaml`
@@ -221,6 +220,10 @@ chiave sprint: `Xot/phpstan-modules-zero-swarm`.
 
 ## Dev Agent Record
 
+- Status: `in_progress` — riaperta 2026-11-25 (bootstrap markers). Gate freddo non ancora riverificato in questa ripresa.
+- AC restano validi; Pest gate obbligatorio a chiusura (o skip documentato).
+- Handoff: `docs/chat/handoff-phpstan-modules-swarm.md`
+
 - Status: `review` — cold gate Modules **`[OK] No errors` EXIT 0** (2026-11-17)
 - AC full-tree: spuntato osservato; Pest mirato ProgressioneVerticale+Diagnose **7 passed**
 - Lock session `phpstan-modules-swarm-session` + lane Activity/Ptv unlock
@@ -241,7 +244,7 @@ chiave sprint: `Xot/phpstan-modules-zero-swarm`.
 - Pest User tenancy: 5 passed; Pest Cms è non verificabile nel bootstrap corrente (`Target class [modules] does not exist`).
 - Status corrente (2026-11-21): `done` — `cd laravel && ./vendor/bin/phpstan analyse Modules --no-progress --memory-limit=-1` → exit 0, `[OK] No errors`.
 - Causa della wave: marker di conflitto Git annidati in PHP/test; risolti semanticamente preservando il contratto Tenant e i binding Pest. La relazione tenant ora espone generics completi anche nel contesto del modello base.
-- Prompt audit: aggiornati `bashscripts/docs/prompts/00-master-prompt.md`, `12-dipendenze-tra-moduli.md`, `13-contracts.md`, `15-services-verso-actions.md`, `27-livewire-verso-filament-widget.md` e `35-model-factory-seeder.md` eliminando riferimenti rotti o ridondanti.
+- Prompt audit: aggiornati `bashscripts/docs/prompts/agent-workflow.md`, `12-dipendenze-tra-moduli.md`, `13-contracts.md`, `15-services-verso-actions.md`, `27-livewire-verso-filament-widget.md` e `35-model-factory-seeder.md` eliminando riferimenti rotti o ridondanti.
 - Verifiche: `php .harness/bin/verify-facts` → 13 fatti verificati; `graphify update .` completato; `git diff --check` pulito. Pest mirato non è verificabile nel bootstrap corrente: `config` non è registrato nei test Tenant e il test ADR segnala ADR legacy incompleti.
 - 2026-11-23 (sessione handoff): ripresa standing order. Host saturo (46–94
   `phpstan analyse`, anche quaeris). Full-tree locale fallito (JSON vuoto).
@@ -292,3 +295,36 @@ chiave sprint: `Xot/phpstan-modules-zero-swarm`.
   `[OK] No errors`** dopo risoluzione marker. Pest extra: Rating unit
   174 passed/2 skipped (49s), Xot traits/models 13 passed — tutto con
   DB_HOST=127.0.0.1.
+
+- 2026-11-25 (sessione OpenCode, audit + igiene entry point): gate freddo
+  `phpstan analyse Modules` con `/tmp/phpstan` svuotato → **EXIT 0,
+  `errors=0`/`file_errors=0`** (`/tmp/phpstan_modules.json`). Un gate
+  concorrente lanciato 09:56 aveva riportato 7 errori su 2 test Activity
+  (`LogoutListenerTest`, `SnapshotBusinessLogicTest`): i file su disco erano
+  gia' corretti prima del mio run → era cache/risultato stantio, non
+  regressione. Conferma operativa: un gate vale solo se freddo e su disco
+  stabile.
+  **Entry point riparati (root `AGENTS.md` + `laravel/AGENTS.md`)**: 10 path
+  canonici puntavano a file inesistenti (`docs/wiki/rules/*`,
+  `docs/wiki/memories/*`, `Modules/Xot/docs/wiki/bmad-method.md`,
+  `actions-over-services.md`, `eloquent-magic-properties-rule.md`,
+  `public-path-public-html.md`, `context-overflow-prevention.md`). Ora
+  puntano ai SSoT reali (`bashscripts/ai/wiki/rules|memories|concepts`,
+  `docs/wiki/guidelines/modules/xot/...`). Resta scoperta la regola
+  "niente funzioni Pest ridichiarate": esiste solo la story 3.3, da
+  promuovere a regola.
+  **Prompts**: 11 file avevano `replaces:` autoreferenziale (stesso filename
+  ripetuto N volte); ora elenca gli ID legacy fusi (`"00"`, `"01"`, ...) e il
+  README documenta la semantica.
+  **Themes/Zero docs (ridondanza)**: `phpstan-dry-kiss-theme-guidelines`
+  esisteva in 2 copie identiche da 504 righe (differivano solo per `qmd`) e
+  `dry-kiss-best-practices` in 2 copie da ~235 righe; i nomi canonici erano
+  stub alias autoreferenziali e i nomi datati erano **symlink** al canonico.
+  Consolidato: 2 documenti canonici con contenuto (507 + 238 righe) e 6 alias
+  stub espliciti (niente symlink). Trappola registrata: riscrivere un alias
+  symlinkato sovrascrive il canonico.
+  **Backlog misurato** (non toccato): 15.336 `.md` in `Modules/*/docs`, 541
+  senza frontmatter (3,5%); 17 nomi con data in Modules (15 Notify legacy,
+  User, Rating, Activity) + 2 in Themes; `graphify` non installato
+  (`command -v graphify` vuoto) benche' citato in `AGENTS.md`.
+

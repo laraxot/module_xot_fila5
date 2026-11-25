@@ -12,18 +12,10 @@ evidence:
   - "bashscripts/tools/normalize-module-readmes.py"
   - "laravel/Modules/Xot/docs/bmad/stories/module-readmes-normalization-20260928.story.md"
 
-<<<<<<< HEAD
   - "laravel/Modules/Xot/docs/bmad/stories/module-readmes-normalization.story.md"
-=======
-<<<<<<< .merge_file_VP3GlJ
-  - "laravel/Modules/Xot/docs/bmad/stories/module-readmes-normalization.story.md"
-=======
-- "laravel/Modules/Xot/docs/bmad/stories/module-readmes-normalization.story.md"
->>>>>>> .merge_file_jNEn15
->>>>>>> laraxot/dev
 related:
   - "../../README.md"
-  - "../../../../../../bashscripts/ai/wiki/concepts/second-brain-canonical-operating-model.md"
+  - "../../../../../../bashscripts/ai/wiki/concepts/second-brain-llm-wiki.md#second-brain-canonical-operating-model"
 ---
 
 # README moduli: contratto di ingresso

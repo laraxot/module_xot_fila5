@@ -8,7 +8,7 @@ updated: 2026-10-01
 tags: [bmad, second-brain, wiki, hygiene, qmd]
 sources:
   - "../../../../../../../bashscripts/tools/wiki-hygiene.py"
-  - "../../../../../../../bashscripts/ai/wiki/how-to/agent-stack-trade-fila5-operating-model.md"
+  - "../../../../../../../bashscripts/ai/wiki/how-to/agents-context-tooling.md#agent-stack-trade-fila5-operating-model"
 qmd: "wiki hygiene maintenance 5258 report bmad"
 ---
 

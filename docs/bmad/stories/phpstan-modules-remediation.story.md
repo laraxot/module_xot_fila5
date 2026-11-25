@@ -44,4 +44,4 @@ essere usato come evidenza del gate.
 - `laravel/phpstan.neon`
 - `bashscripts/lock/`
 - `laravel/Modules/Xot/docs/ecc/00-index.md`
-- `bashscripts/ai/wiki/memories/source-first-before-fix.md`
+- `bashscripts/ai/wiki/memories/agent-conduct-tooling.md#source-first-before-fix`

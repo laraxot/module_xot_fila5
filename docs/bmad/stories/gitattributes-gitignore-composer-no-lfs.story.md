@@ -7,7 +7,7 @@ owner: Modules/Xot (policy git meta di moduli e temi)
 qmd: "gitattributes gitignore composer collisioni no-git-lfs binary filter sync prototipo"
 related:
   - ./gitattributes-svg-merge-markers.story.md
-  - ../../../../../bashscripts/ai/wiki/rules/no-git-lfs.md
+  - ../../../../../bashscripts/ai/wiki/rules/git-workflow.md
   - ../../../../../bashscripts/templates/gitattributes.module
 ---
 

@@ -6,8 +6,8 @@ module: Xot
 updated: 2026-11-16
 qmd: "module portfolio topology shared cms absent ptvx learn patterns measured taxonomy"
 related:
-  - ../../../../../../docs/wiki/memories/module-portfolio-taxonomy-ptvx.md
-  - ../../../../../../docs/wiki/memories/filament5-layout-contract-shared-modules.md
+  - ../../../../../../bashscripts/ai/wiki/memories/frontend-folio-routing.md#module-portfolio-taxonomy-ptvx
+  - ../../../../../../bashscripts/ai/wiki/memories/filament-tables-forms-xotbase.md#filament5-layout-contract-shared-modules
 ---
 
 # Topologia moduli: imparare senza importare

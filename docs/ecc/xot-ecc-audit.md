@@ -113,9 +113,9 @@ fix alla causa, PHPStan + Pest, aggiornamento docs/QMD. Le abilità ECC sono sce
 ## Tassonomia portfolio (ECC)
 
 PTVX senza Cms per dominio/confine: imparare pattern FO (layout Filament, FolioVolt)
-senza importare il modulo. Memoria: [module-portfolio-taxonomy-ptvx.md](../../../../../docs/wiki/memories/module-portfolio-taxonomy-ptvx.md).
+senza importare il modulo. Memoria: [frontend-folio-routing.md#module-portfolio-taxonomy-ptvx](../../../../../bashscripts/ai/wiki/memories/frontend-folio-routing.md#module-portfolio-taxonomy-ptvx).
 
 ## Folio owner (ECC)
 
 Nei FO: solo `Cms/FolioVoltServiceProvider`. Non registrare App `FolioServiceProvider`.
-PTVX: stub App inerte; niente surrogato. Memoria: [folio-owner-foliovolt-only.md](../../../../../docs/wiki/memories/folio-owner-foliovolt-only.md).
+PTVX: stub App inerte; niente surrogato. Memoria: [frontend-folio-routing.md#folio-owner-foliovolt-only](../../../../../bashscripts/ai/wiki/memories/frontend-folio-routing.md#folio-owner-foliovolt-only).

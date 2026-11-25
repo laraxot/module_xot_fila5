@@ -15,7 +15,7 @@ qmd: "marker conflitto git committati docs moduli Media Rating Tenant UI User re
 related:
   - ./git-status-fleet-merge-markers-xot.story.md
   - ./merge-marker-fleet-residue.story.md
-  - ../../../../../../docs/wiki/how-to/git-merge-marker-sweep.md
+  - ../../../../../../bashscripts/ai/wiki/how-to/git-github.md#git-merge-marker-sweep
 ---
 # git-conflicts-docs-markers-2026-09-24
 
@@ -46,8 +46,8 @@ Rating e il workspace Xot: l'inventario scade in minuti.
       85 con secondo swarm 8+8: 85/85 resolved, 0 intentional
 - [x] Verifica finale: scan contenuto su Modules/Themes/app/config/docs/bashscripts,
       0 marker fuori fence; 0 marker in php/blade/json/neon
-- [x] Memoria `bashscripts/ai/wiki/memories/committed-markers-invisible-to-git-status-8char.md`
-      + INDEX + TRIGGER_MAP + how-to `git-merge-marker-sweep.md`; riferimento morto
+- [x] Memoria `bashscripts/ai/wiki/memories/git-merge-markers.md#committed-markers-invisible-to-git-status-8char`
+      + INDEX + TRIGGER_MAP + how-to `git-github.md#git-merge-marker-sweep`; riferimento morto
       `resolve_merge_blocks.py` segnalato nella story fleet Xot
 - [x] Rilascio lock
 

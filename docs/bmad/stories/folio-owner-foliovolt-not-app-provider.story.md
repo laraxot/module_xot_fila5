@@ -6,8 +6,8 @@ module: Xot
 updated: 2026-11-16
 qmd: "folio owner FolioVoltServiceProvider not App FolioServiceProvider bootstrap"
 related:
-  - ../../../../../../docs/wiki/memories/folio-owner-foliovolt-only.md
-  - ../../../../../../docs/wiki/memories/filament5-layout-contract-shared-modules.md
+  - ../../../../../../bashscripts/ai/wiki/memories/frontend-folio-routing.md#folio-owner-foliovolt-only
+  - ../../../../../../bashscripts/ai/wiki/memories/filament-tables-forms-xotbase.md#filament5-layout-contract-shared-modules
   - ../../../Activity/docs/bmad/stories/folio-routing-centralization.story.md
 ---
 
@@ -32,5 +32,5 @@ incompleto → doppia catch-all e race. ECC: routing FO non vive in `app/Provide
 
 - [x] `bootstrap/providers.php` non registra `App\Providers\FolioServiceProvider`.
 - [x] Stub App annotato: non registrare / non surrogato Cms.
-- [x] Memoria `folio-owner-foliovolt-only.md`.
+- [x] Memoria `frontend-folio-routing.md#folio-owner-foliovolt-only`.
 - [x] Pest anti-regressione su bootstrap.

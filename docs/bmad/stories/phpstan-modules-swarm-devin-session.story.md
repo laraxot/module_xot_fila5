@@ -10,7 +10,7 @@ acceptance_criteria:
   - "Docs moduli/temi: audit organizzazione, fix sicuri, nessun rename bulk"
   - "Pest mirato eseguito o skip documentato"
 references:
-  - bashscripts/docs/prompts/00-master-prompt.md
+  - bashscripts/docs/prompts/agent-workflow.md
   - bashscripts/docs/prompts/11-phpstan.md
   - laravel/Modules/Xot/docs/bmad/stories/phpstan-modules-swarm-session.story.md
   - docs/sprint-status.yaml

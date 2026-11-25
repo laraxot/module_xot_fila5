@@ -73,7 +73,7 @@ perdere i repo indipendenti.
 - rimossi 2× `REBASE_HEAD` orfani (Lang, Media; nessun rebase attivo)
 - `git gc --prune=now` su 3 temi/moduli con loose objects
 - script ripetibile: `bashscripts/git/slim-nested-git-repos.sh`
-- memoria: `docs/wiki/memories/nested-git-slim-hygiene.md`
+- memoria: `bashscripts/ai/wiki/memories/git-sync-fleet-remotes.md#nested-git-slim-hygiene`
 
 **Non fatto (volutamente):** non toccato il pack Notify (~427 MiB / ~145k oggetti /
 2164 commit raggiungibili) — non è spazzatura; eventuale archive/shallow è ADR

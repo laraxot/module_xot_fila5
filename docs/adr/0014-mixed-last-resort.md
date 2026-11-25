@@ -165,7 +165,7 @@ il trait, la relazione o il fixture owner; non si usa `property_exists()` né un
   motivato nella story.
 - Story ADR: [xot-adr-mixed-ultima-spiaggia](../bmad/stories/xot-adr-mixed-ultima-spiaggia.story.md).
 - Campagna gate: [phpstan-modules-zero-swarm](../bmad/stories/phpstan-modules-zero-swarm.story.md).
-- Prompt operativo: [37-phpstan.md](../../../../../../bashscripts/docs/prompts/37-phpstan.md).
+- Prompt operativo: [37-phpstan.md](../../../../../../bashscripts/docs/prompts/quality-gates.md).
 
 ## Collegamenti (puntatori, non SSoT)
 

@@ -15,8 +15,8 @@ related:
   - ../stories/debug-leftovers-cleanup-xot.story.md
   - ../stories/test-database-guard.story.md
   - ../../../../../bmad-output/epic-services-to-queueable-actions.md
-  - ../../../../../bashscripts/ai/wiki/rules/data-sacred-no-destructive-db.md
-  - ../../../../../bashscripts/ai/wiki/rules/no-refresh-database-in-tests.md
+  - ../../../../../bashscripts/ai/wiki/rules/database.md
+  - ../../../../../bashscripts/ai/wiki/rules/testing-pest.md
   - ../../../../../bashscripts/docs/prompts/10-test.md
   - ../../../../../bashscripts/docs/prompts/11-phpstan.md
   - ../../../../../bashscripts/docs/governance/modular-bmad-story-policy.md
@@ -100,7 +100,7 @@ Ogni fix W1 nasce con il suo test (TDD), ma i test girano solo dopo W0.
 - I 23 file mai eseguiti: per ogni coppia, diff e corpo nel file con il nome giusto (`*Test.php`), scala di [10-test.md](../../../../../bashscripts/docs/prompts/10-test.md) quando il SUT manca (stub `->skip('<X> not implemented')` piu' story); il file in minuscolo si toglie solo dopo il diff. Per i file senza controparte basta rinominarli.
 - Skip e test finti: 7 `assertTrue(true)` vivi in Cms, 26 svuotati in User, 79 tautologie `>= 0`, 32 file harness. Sostituire con un'asserzione sul comportamento o con `skip` dichiarato; l'harness non conta come copertura.
 - Endpoint inesistenti (Notify `NotificationApiTest`, Geo `GeoApiTest`): stub `skip`, mai creare route per far passare un test.
-- `RefreshDatabase` (18 file) verso `DatabaseTransactions` del TestCase di modulo ([no-refresh-database-in-tests](../../../../../bashscripts/ai/wiki/rules/no-refresh-database-in-tests.md)); sqlite al posto di MySQL (Xot 9 file inline e 9 TestCase, Lang 2) contro [data-sacred-no-destructive-db](../../../../../bashscripts/ai/wiki/rules/data-sacred-no-destructive-db.md): dipende dalla decisione 7.4.
+- `RefreshDatabase` (18 file) verso `DatabaseTransactions` del TestCase di modulo ([no-refresh-database-in-tests](../../../../../bashscripts/ai/wiki/rules/testing-pest.md)); sqlite al posto di MySQL (Xot 9 file inline e 9 TestCase, Lang 2) contro [data-sacred-no-destructive-db](../../../../../bashscripts/ai/wiki/rules/database.md): dipende dalla decisione 7.4.
 - Cms `FolioRoutesTest.php:56,64,67`: `markTestSkipped` su 404 e 5xx dentro un loop nasconde errori.
 
 **W3: contratto Filament.**

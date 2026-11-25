@@ -15,7 +15,7 @@ qmd: "ECC workflow Xot BMAD lock PHPStan saturazione max 3 Pest docs"
 4. **PHPStan** — saturazione HARD: `pgrep`/`free`, max 3 lane, STOP se saturo
    ([11-phpstan](../../../../../bashscripts/docs/prompts/11-phpstan.md),
    [46-swarm](../../../../../bashscripts/docs/prompts/46-multi-agent-module-swarm.md),
-   [memoria](../../../../../bashscripts/ai/wiki/memories/phpstan-host-saturation-max-three.md),
+   [memoria](../../../../../bashscripts/ai/wiki/memories/phpstan-swarm-config.md#phpstan-host-saturation-max-three),
    [STOP](../../../../../docs/chat/STOP-phpstan-process-thrashing.md)).
 5. **Pest** — gate obbligatorio o skip documentato (host/DB).
 6. **Docs** — aggiorna pack modulo; indice: [00-index.md](./00-index.md); esito: [xot-ecc-audit.md](./xot-ecc-audit.md).

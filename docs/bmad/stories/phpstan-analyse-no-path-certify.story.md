@@ -15,8 +15,8 @@ qmd: "phpstan analyse certify no path type-coverage swarm bmad AuditCoverage"
 related:
   - ./phpstan-modules-2026-09-24.story.md
   - ../phpstan-status.md
-  - ../../../../../../docs/wiki/memories/merge-remote-repo-2-reinjects-conflict-markers.md
-  - ../../../../../../docs/wiki/memories/phpstan-modules-swarm-session.md
+  - ../../../../../../bashscripts/ai/wiki/memories/git-merge-markers.md#merge-remote-repo-2-reinjects-conflict-markers
+  - ../../../../../../bashscripts/ai/wiki/memories/multi-agent-coordination.md#phpstan-modules-swarm-session
 ---
 # phpstan-analyse-no-path-certify
 
@@ -27,11 +27,7 @@ in ordine random, parallelo, BMAD + second brain.
 
 Nota: il binario nudo stampa help; il certify SSoT è
 `./vendor/bin/phpstan analyse` **senza** path CLI (neon paths + type-coverage).
-<<<<<<< HEAD
 Vedi `phpstan-status.md`.
-=======
-Vedi `phpstan-status-2.md`.
->>>>>>> laraxot/dev
 
 ## Preflight
 

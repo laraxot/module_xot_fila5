@@ -9,11 +9,7 @@ updated: "2026-05-26"
 related:
   - concepts/code-redundancy-philosophy.md
   - concepts/redundancy-catalog.md
-<<<<<<< HEAD
   - redundancy-report.md
-=======
-  - redundancy-report-2.md
->>>>>>> laraxot/dev
   - redundancy-audit.md
 qmd: "redundancy audit ridondanza monorepo 20260526"
 ---
@@ -51,23 +47,14 @@ qmd: "redundancy audit ridondanza monorepo 20260526"
 | P1-4 | `Theme_One` vs `One` | Themes — perplessità #2 in filosofia |
 | P1-5 | `UserResource` omonimo Ptv/User | Documentare namespace |
 | P1-6 | `CriteriOptionResource` ×3 | Ptv — valutare base condivisa |
-<<<<<<< HEAD
 | P1-7 | ColumnBuilder ×2 in Xot | [redundancy-report.md](redundancy-report.md) §1 |
 | P1-8 | XotBaseRelationManager ×2 path | [redundancy-report.md](redundancy-report.md) §5 |
 
 ## P2 — documentazione
 
 - Notify: `filament-pages.md` / `filament_pages.md`, `index.md` / `INDEX.md`, cluster migrazione Filament.
-=======
-| P1-7 | ColumnBuilder ×2 in Xot | [redundancy-report-2.md](redundancy-report-2.md) §1 |
-| P1-8 | XotBaseRelationManager ×2 path | [redundancy-report-2.md](redundancy-report-2.md) §5 |
-
-## P2 — documentazione
-
-- Notify: `filament-pages-2.md` / `filament-pages-2.md`, `index.md` / `INDEX.md`, cluster migrazione Filament.
->>>>>>> laraxot/dev
 - User: 40+ file passport-cluster*.
-- Azione: [module-docs-deduplication.md](../../../../../docs/wiki/how-to/module-docs-deduplication.md), stub on-demand.
+- Azione: [modules-ops.md#module-docs-deduplication](../../../../../bashscripts/ai/wiki/how-to/modules-ops.md#module-docs-deduplication), stub on-demand.
 
 ## Schede owner (moduli / temi)
 

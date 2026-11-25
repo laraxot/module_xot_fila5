@@ -43,7 +43,7 @@ Dettaglio e lezioni: [dev-story](../stories/2026-10-06-phpstan-cleanup-xot-rest.
 - `app/Actions/Arr/ScratchNarrowingTest.php` e `ScratchNarrowingTest2.php` (3 errori):
   classi di prova sul narrowing di `Assert`, mai referenziate, arrivate col sync dentro
   `app/`. **Cancellate**, non corrette: è codice morto, stessa logica di
-  [phpstan-no-probes-rule](../../../../../bashscripts/ai/wiki/rules/phpstan-no-probes-rule.md)
+  [phpstan-no-probes-rule](../../../../../bashscripts/ai/wiki/rules/phpstan.md)
   ("rimuovere codice morto non referenziato").
 - `app/Actions/Arr/EnsureKeysAction.php` (`return.type`): `Arr::map()` di Laravel non ha
   tipo di ritorno generico, quindi il risultato era `array` nudo. Sostituito con un
@@ -59,7 +59,7 @@ Fuori da Xot: `analyse Modules/Tenant` riporta ancora errori su `SushiToJson`,
 `analyse Modules` dopo fix `@template TModel` / `@use GeoTrait<Address>`:
 **0** `file_errors`. Canon:
 [geo-trait.md](../../../Geo/docs/traits/geo-trait.md) ·
-[phpstan-journey.md](../../../../../bashscripts/ai/wiki/second-brain/phpstan-journey.md).
+[phpstan-journey.md](../../../../../bashscripts/ai/wiki/second-brain/second-brain.md#phpstan-journey).
 
 ## Misura 2026-09-24 — regressione naming (CloudStorage + Symplify)
 
@@ -72,7 +72,7 @@ Laraxot usa `*Contract` (non `*Interface`), basi `BaseModel` / `XotBase*` / `Tes
 (non `Abstract*`), trait `Has*` (non suffisso `*Trait`). Symplify
 `ExplicitClassPrefixSuffixRule` (via `naming-rules.neon`, `symplify.naming=true`)
 impone esattamente il contrario. Memoria:
-[contract-suffix-no-interfaces-folder.md](../../../../../bashscripts/ai/wiki/memories/contract-suffix-no-interfaces-folder.md).
+[architecture-models-actions.md#contract-suffix-no-interfaces-folder](../../../../../bashscripts/ai/wiki/memories/architecture-models-actions.md#contract-suffix-no-interfaces-folder).
 
 ### Cosa è successo
 
@@ -155,6 +155,6 @@ Per dichiarare «siamo a zero» serve il comando senza argomenti.
 - [phpstan-best-practices.md](./wiki/phpstan-best-practices.md) — pattern Pest
 - [18.59](./stories/18.59.phpstan-repo-wide-zero-2026-09-21.story.md) — drift 23→0 del 2026-09-21
 - [2026-10-08 regressioni Xot/app](../stories/2026-10-08-phpstan-xot-app-regressions.story.md) — `$models` di MorphMany, `urlAct` (row e beforeLast), assert finti
-- [phpstan-journey.md](../../../../../bashscripts/ai/wiki/second-brain/phpstan-journey.md) — second brain
+- [phpstan-journey.md](../../../../../bashscripts/ai/wiki/second-brain/second-brain.md#phpstan-journey) — second brain
 - [CloudStorage coverage](../../CloudStorage/docs/coverage.md) — incidente require-dev Symplify
-- [contract-suffix memory](../../../../../bashscripts/ai/wiki/memories/contract-suffix-no-interfaces-folder.md) — religione `*Contract`
+- [contract-suffix memory](../../../../../bashscripts/ai/wiki/memories/architecture-models-actions.md#contract-suffix-no-interfaces-folder) — religione `*Contract`

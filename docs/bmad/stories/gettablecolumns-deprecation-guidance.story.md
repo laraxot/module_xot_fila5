@@ -15,7 +15,7 @@ issues:
 discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/493"
 related:
-  - ../../../../../../docs/wiki/memories/filament-gettablecolumns-deprecation.md
+  - ../../../../../../bashscripts/ai/wiki/memories/filament-tables-forms-xotbase.md#filament-gettablecolumns-deprecation
   - ../../laravel/Modules/Xot/docs/forbidden-methods.md
   - ../../laravel/Modules/Xot/docs/no-table-override.md
   - ../../laravel/Modules/Xot/docs/stories/table-setter-deprecation-handling.story.md
@@ -88,7 +88,7 @@ Inoltre è soft deprecation: Filament la chiama ancora
 ## Risposta alla domanda: che cosa usare al suo posto
 
 Dipende dalla base class — tabella completa in
-[`docs/wiki/memories/filament-gettablecolumns-deprecation.md`](../wiki/memories/filament-gettablecolumns-deprecation.md).
+[`bashscripts/ai/wiki/memories/filament-tables-forms-xotbase.md#filament-gettablecolumns-deprecation`](../../../../../../bashscripts/ai/wiki/memories/filament-tables-forms-xotbase.md#filament-gettablecolumns-deprecation).
 
 | Base class | Cosa scrivere | `getTableColumns()` |
 |---|---|---|
@@ -139,7 +139,7 @@ Feature: guida getTableColumns
 
 | File | Azione |
 |------|--------|
-| `docs/wiki/memories/filament-gettablecolumns-deprecation.md` | nuova — risposta canonica |
+| `bashscripts/ai/wiki/memories/filament-tables-forms-xotbase.md#filament-gettablecolumns-deprecation` | nuova — risposta canonica |
 | `laravel/Modules/Xot/docs/forbidden-methods.md` | ambiguità rimossa + link |
 | `laravel/Modules/Xot/docs/stories/table-setter-deprecation-handling.story.md` | drift e AC allineati |
 | `docs/wiki/memories/INDEX.md` | index |

@@ -13,7 +13,7 @@ qmd: "quality gates prompt phpmd-ruleset pint parallel session files nested git 
 related:
   - ../../../../../../bashscripts/docs/prompts/03-quality-gates.md
   - ../../stories/3.30.quality-gates-prompt-improve-and-exec.story.md
-  - ../../../../../../docs/wiki/memories/03-quality-gates-workflow.md
+  - ../../../../../../bashscripts/ai/wiki/memories/quality-gates-tooling.md#03-quality-gates-workflow
   - ./cleanup-all-modules.story.md
 ---
 

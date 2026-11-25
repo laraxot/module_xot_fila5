@@ -50,7 +50,7 @@ Criterio usato: una firma di tipo «classe, metodo o vista mancante» e' **viva*
 
 1. **`Themes/Sixteen/resources/views/components/data-display/badge/status.blade.php`**: chiamava `TicketStatusEnum::getColorClass()` (esiste solo su `TicketPriorityEnum`): fatal latente. Ora usa `(string) $status->getColor()`; verificati tutti e 9 gli stati. Il componente non ha consumatori nel codice (solo docs): priorita' bassa.
 2. **`Themes/Sixteen/public/manifest.json`**: rigenerato con `npm run build` (app.css `assets/app-BS5umVni.css`), JSON valido. File generato ma tracciato in git: ogni onda di sync puo' ricreare il conflitto. **Aperto**: toglierlo dal tracciamento o rigenerarlo nel deploy.
-3. **Regola canonica** `bashscripts/ai/wiki/rules/merge-conflict-marker-resolution.md`: aggiunte tre sezioni (conflitto = collaborazione, file strutturati e conflitti a file intero, sync e due macchine) e puntatore in `CLAUDE.md` radice.
+3. **Regola canonica** `bashscripts/ai/wiki/rules/git-conflicts-merge.md`: aggiunte tre sezioni (conflitto = collaborazione, file strutturati e conflitti a file intero, sync e due macchine) e puntatore in `CLAUDE.md` radice.
 
 ## Produzione: `ticket_subscribers` (500 su `/it/tickets/1`)
 
@@ -76,11 +76,7 @@ Dopo la registrazione di `notify:check-dns` la voce `Command "notify:check-dns" 
 
 1. **Webhook inbound morto in silenzio.** `ProcessInboundMailAction` leggeva `config('notify.inbound_token')`; i file di config dei moduli sono montati come `<modulo>.<file>`, quindi la chiave reale e' `notify.notify.inbound_token`. Con la config vera il token era sempre vuoto e la guardia fail-closed rispondeva 401 a tutti. I 4 test passavano (falso verde) perche' impostavano la stessa chiave sbagliata. Corretti Action, test e doc; guardia nuova `tests/Unit/NotifyConfigMountTest.php` (prova inversa fatta). Memoria: `module-config-mounted-as-module-dot-file`.
 2. **Controllo DNS della posta.** Nuovi `CheckMailDnsAction` + `php artisan notify:check-dns` (sola lettura, exit 1 se una riga non e' ok) e blocco `mail_dns` in `config/notify.php`; il comando va anche in `Console/Commands/_components.json`, altrimenti non viene registrato. Misura reale: i 4 CNAME Mailtrap (`mt78`, `rwmt1._domainkey`, `rwmt2._domainkey`, `mt-link`) sono pubblicati **senza punto finale** (`missing-trailing-dot`), `_dmarc` e' ok (`p=none`). **Azione utente su Hetzner:** ripubblicarli con il punto finale e rilanciare il comando.
-<<<<<<< HEAD
 3. **Doc dell'altra sessione con valori non verificati** (`email/best-practices.md`, `bmad/stories/email-deliverability-setup.story.md`): SPF con IP `185.71.12.45`, `postconf dkim_*` inesistenti, «operativo» falso. Aggiunto un banner in testa con rinvio a `mail-deliverability.md` e a `notify:check-dns`; il resto non e' stato toccato.
-=======
-3. **Doc dell'altra sessione con valori non verificati** (`../../../Activity/docs/best-practices-3.md`, `bmad/stories/email-deliverability-setup.story.md`): SPF con IP `185.71.12.45`, `postconf dkim_*` inesistenti, «operativo» falso. Aggiunto un banner in testa con rinvio a `mail-deliverability.md` e a `notify:check-dns`; il resto non e' stato toccato.
->>>>>>> laraxot/dev
 4. **Letture di config mai definite** (`notify.tracking.*`, `notify.rate_limiting.*`, `notify.fcm.*`, `notify.cleanup.*`): danno `null` a ogni profondita', il codice gira sui default. Non e' lo stesso difetto; decisione del proprietario del modulo.
 
 ## Aperti

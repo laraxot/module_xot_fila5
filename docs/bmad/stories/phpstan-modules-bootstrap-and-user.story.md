@@ -5,7 +5,7 @@ status: review
 epic: quality-gates
 references:
   - ./fleet-blocking-merge-conflict-markers.story.md
-  - ../../../../../../bashscripts/ai/wiki/memories/phpstan-bootstrap-merge-file-markers.md
+  - ../../../../../../bashscripts/ai/wiki/memories/git-merge-markers.md#phpstan-bootstrap-merge-file-markers
 qmd: "phpstan modules bootstrap and user story"
 ---
 

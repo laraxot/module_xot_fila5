@@ -78,7 +78,7 @@ dipendenze reali in `module.json`. Mappa target in [module-boundary.md](../archi
 Solo 2 file, quindi correggibile: `RouteService` (354 righe, ~28 blocchi `dddx` commentati,
 **1** chiamante fuori da Xot) e `ModuleCommandHandler` (13 righe, wrapper di
 `RunArtisanCommandAction`). Convertire in Action o cancellare. Regola:
-[actions-over-services](../../../../../../bashscripts/ai/wiki/rules/actions-over-services.md) (nota: `AGENTS.md` cita `Modules/Xot/docs/actions-over-services.md`, che non esiste: link morto da correggere).
+[actions-over-services](../../../../../../bashscripts/ai/wiki/rules/actions-business-logic.md) (nota: `AGENTS.md` cita `Modules/Xot/docs/actions-over-services.md`, che non esiste: link morto da correggere).
 
 ### P2-X1 — `XotBasePolicy::before()` con `once()`
 

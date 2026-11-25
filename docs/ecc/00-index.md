@@ -15,9 +15,9 @@ Collega le verifiche ECC al workflow PTVX (BMAD → lock → fix → PHPStan/Pes
 Ordine sintetico: [workflows.md](./workflows.md).
 
 Su worktree condiviso: prima di PHPStan rispettare saturazione HARD
-([37-phpstan](../../../../../bashscripts/docs/prompts/37-phpstan.md),
-[04-swarm-multi-agente](../../../../../bashscripts/docs/prompts/04-swarm-multi-agente.md),
-[memoria](../../../../../bashscripts/ai/wiki/memories/phpstan-host-saturation-max-three.md),
+([37-phpstan](../../../../../bashscripts/docs/prompts/quality-gates.md),
+[04-swarm-multi-agente](../../../../../bashscripts/docs/prompts/agent-workflow.md),
+[memoria](../../../../../bashscripts/ai/wiki/memories/phpstan-swarm-config.md#phpstan-host-saturation-max-three),
 [STOP thrashing](../../../../../docs/chat/STOP-phpstan-process-thrashing.md)).
 
 | Controllo | Stato | Evidenza |

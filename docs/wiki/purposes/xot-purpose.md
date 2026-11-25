@@ -119,4 +119,4 @@ tensione: va sostituito da `config()`, non da un altro nome fisso.
 
 - `docs/wiki/rules/fundamental-xotbase-rule.md` — mai estendere Filament direttamente
 - `docs/wiki/rules/final-method-override.md` — perche' niente `final`
-- `docs/wiki/memories/public-path-is-public-html.md`
+- `bashscripts/ai/wiki/memories/frontend-themes-css.md#public-path-is-public-html`

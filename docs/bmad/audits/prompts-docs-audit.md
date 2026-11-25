@@ -108,28 +108,17 @@ Placeholder `{ModuleName}`/`<T>` in `docs1/2`, `test.md`, `coverage.md`,
   "mai cancellare"), MA **~20 prompt con status `active`/`stable`/`review`
   risultano senza entry**: `action.md`, `bugfix.md`, `debugbar-rule.md`,
   `filament-5-nested-resources.md`, `filament-rules.md`,
-  `global-context.md`, `init.md`, `jpgraph-guide.md`, `llm-wiki.md`,
+  `global-context.md`, `init.md`, `jpgraph-guide.md`, `workflow-methods.md#llm-wiki`,
   `llm-wiki-full.md`, `manifest.md`, `mcp.md`(superseded, ok),
-<<<<<<< HEAD
   `module-analysis.md` (review), `passport.md`, `prompt-template.md`,
-=======
-  `module-analysis-3.md` (review), `passport.md`, `prompt-template.md`,
->>>>>>> laraxot/dev
   `roadmap.md`, `sentry.md`, `spatie.md`, `theme.md`, `ui-ux.md`,
   `versioning.md`, `webmozarts-assert-rules.md`. L'indice non è completo
   vs la propria dichiarazione.
 - **14 link rotti** nei due indici, quasi tutti con nome underscore o
-<<<<<<< HEAD
   maiuscolo (`start_optimized.md`, `notify_module_context.md`,
   `nested_resources_tenancy_charts.md`, `vite_asset_troubleshooting.md`,
   `super_mucca.md`, `filament_class.md`, `phpstan_module.md`,
   `jpgraph_tenancy_integration.md`, `notify_continuation.md`,
-=======
-  maiuscolo (`start_optimized.md`, `notify-module-context.md`,
-  `nested_resources_tenancy_charts.md`, `vite_asset_troubleshooting.md`,
-  `super_mucca.md`, `filament-class.md`, `phpstan_module.md`,
-  `jpgraph_tenancy_integration.md`, `notify-continuation.md`,
->>>>>>> laraxot/dev
   `97-YAML-FRONTMATTER-CONVENTION.md`, `BMAD_PROMPT.md`, `INDEX.md`,
   `llm-wiki.txt`, `studied/`): indizio di rename kebab-case non
   propagato agli indici.
@@ -142,21 +131,17 @@ Placeholder `{ModuleName}`/`<T>` in `docs1/2`, `test.md`, `coverage.md`,
   `<<<<<<<`/`>>>>>>>` non risolti (nessun merge in corso). Localizzati:
   `bashscripts/ai/wiki/rules/11-forms/` (20 file, **incluso
   `00-TRIGGER_MAP.md`**, il router delle regole), `.agents/` e
-<<<<<<< HEAD
   `bashscripts/ai/.agents/` (CLAUDE.md con 2 blocchi, INDEX.md,
-=======
-  `bashscripts/ai/.agents/` (CLAUDE.md con 2 blocchi, index-3.md,
->>>>>>> laraxot/dev
-  methodologies.md, git-workflow.md, ~40 file in docs/guidelines/
+  workflow-methods.md#methodologies, git-workflow.md, ~40 file in docs/guidelines/
   memories/helpers/templates), `bashscripts/ai/wiki/rules/migrated-from-agents/`
   (2), `.ai/`, `.ai-context/`. I prompt in `bashscripts/docs/prompts/`
   sono puliti (0 marker) — coerente con la story
   `docs-prompts-reorganization` ("i prompt hanno ora zero blocchi").
-  Esiste memoria `merge-remote-repo-2-reinjects-conflict-markers.md`:
+  Esiste memoria `git-merge-markers.md#merge-remote-repo-2-reinjects-conflict-markers`:
   problema noto e ricorrente.
 - **`.agents/docs/`**: 282 `.md`; 37 con maiuscole/underscore
-  (`00-INDEX.md`, `GITHUB_ISSUES_WORKFLOW.md`,
-  `MODULAR_DOCUMENTATION_REFACTORING.md`, `REFACTOR-SUMMARY.md`, …)
+  (`00-INDEX.md`, `workflow-methods.md#github_issues_workflow`,
+  `reports-audits.md#modular_documentation_refactoring`, `reports-audits.md#refactor-summary`, …)
   contro la convenzione kebab-minuscolo. Indici frammentati: `INDEX.md`,
   `index.md`, `README.md` e `00-INDEX.md` ripetuti in ~20 sottodirectory.
   **Campione 80 file: 122/275 link interni rotti (44%)** — molti puntano
@@ -177,20 +162,16 @@ Placeholder `{ModuleName}`/`<T>` in `docs1/2`, `test.md`, `coverage.md`,
 ## 6. Memorie / standing order
 
 - `bashscripts/ai/wiki/memories/`: **687 file** (`.md`+`.mdc`).
-<<<<<<< HEAD
   `INDEX.md` ne referenzia solo 4: indice di fatto inutile, coerente
-=======
-  `index-3.md` ne referenzia solo 4: indice di fatto inutile, coerente
->>>>>>> laraxot/dev
   con la regola on-demand (recupero via `qmd`) ma da segnalare.
 - Violazioni naming: file con data `2026-02-26-*` (5+), maiuscolo
   (`STANDING-ORDER-MAI-DIMENTICARE*.md`, `HASXOTTABLE-*.story.md`,
   `MEMORY.md`), duplicati `.md`+`.mdc` (`model-testing-philosophy*`,
-  `testing-priority*`, `bash-permissions-memory.mdc`).
+  `testing-priority*`, `agent-conduct-tooling.md`).
 - Coerenza regole: OK sulle regole cardine — esistono e sono `active`
-  `pest-scratch-db-clone-order.md`, `public-path-is-public-html.md`,
-  `png-signature-cr-stripped-not-lfs-pointer.md` (no-LFS),
-  `pest-gate-mandatory-standing-order.md`, `no-tests-on-production.md`.
+  `testing-pest-database.md#pest-scratch-db-clone-order`, `frontend-themes-css.md#public-path-is-public-html`,
+  `git-merge-markers.md#png-signature-cr-stripped-not-lfs-pointer` (no-LFS),
+  `standing-orders.md#pest-gate-mandatory-standing-order`, `testing-pest-database.md#no-tests-on-production`.
 - **Rischio**: 102 memorie citano `.cursor/rules` — path ora ambiguo
   dopo la creazione di `.cursor/rules/` root (quasi vuoto) mentre le
   canoniche sono in `bashscripts/ai/.cursor/rules/` e
@@ -205,22 +186,14 @@ Placeholder `{ModuleName}`/`<T>` in `docs1/2`, `test.md`, `coverage.md`,
 
 1. **P0** — Risolvere i 106 file con marker di conflitto (partire da
    `bashscripts/ai/wiki/rules/11-forms/00-TRIGGER_MAP.md` e
-<<<<<<< HEAD
    `.agents/CLAUDE.md`): confronto dei due lati, mai scelta automatica.
-=======
-   `../../../../Geo/docs/root-md-files/claude.md`): confronto dei due lati, mai scelta automatica.
->>>>>>> laraxot/dev
    Esiste già la procedura in `51-conflitti-git-current-change.md` e lo
    script `bashscripts/tools/check-conflict-markers.sh`.
 2. **P1** — Allineare `.cursor/rules/` root con le canoniche
    (`bashscripts/ai/.cursor/rules/` + `wiki/rules/`) o correggere i
    riferimenti in `AGENTS.md`/memorie: 102 memorie + standing order
    puntano a path ambigui.
-<<<<<<< HEAD
 3. **P1** — Completare `prompts/index.md`: aggiungere le ~20 voci
-=======
-3. **P1** — Completare `../../../../Lang/docs/wiki/rules/index-3.md`: aggiungere le ~20 voci
->>>>>>> laraxot/dev
    attive non coperte e correggere i 14 link rotti (rename underscore →
    kebab già avvenuto sui file, non propagato).
 4. **P2** — Consolidare i cluster duplicati: `02`/`04b` (0.89),
