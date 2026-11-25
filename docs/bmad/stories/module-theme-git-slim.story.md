@@ -1,10 +1,24 @@
 ---
 title: "Snellire .git di moduli e temi"
-status: in-progress
-qmd: "git gc prune repack module theme multi-repo notify pollution sync"
+type: story
+status: review
+module: Xot
+epic: quality-gates
+story_id: module-theme-git-slim
+updated: 2026-11-24
+tags: [git, slim, gc, shallow, commit-graph, multi-repo]
+qmd: "git slim module theme refs original prefetch remote-tracking tag stash shallow depth-1 commit-graph symref gc prune grace notify fsck non riscrivere storia"
+related:
+  - ../../../../../../bashscripts/docs/operations/module-theme-git-slim.md
+  - ./phpstan-modules-bootstrap-duplicate-lines.story.md
 ---
 
 # Story — Snellire `.git` moduli/temi
+
+## Richiesta utente (verbatim, base_ptvx_fila5)
+
+«controlla  e sistema  le cartelle .git dei moduli e dei temi han troppi elementi dentro salvati devono essere piu' slim e
+probabilmente stanno tenendo delle cose che non serve tenere , fa tutto con bmad + second brain»
 
 ## Why
 
@@ -13,8 +27,96 @@ Dopo sync/`unrelated histories` i `.git` locali si gonfiano di oggetti
 monorepo (path `laravel/`, `node_modules/`, altri moduli) anche se il
 remoto owner e' piccolo. `git gc` non basta se gli oggetti sono raggiungibili.
 
-## Inventario (base_laravelpizza_fila5)
+## Esito misurato in base_ptvx_fila5 (2026-11-24, 21 repo: 18 moduli + 3 temi)
 
+Totale `.git`: **613 → 143 MiB**. Verifica indipendente dallo script, su tutti i 21 repo, contro un'istantanea presa prima:
+HEAD, hash dei branch locali, tip di `refs/stash` e numero di file modificati **identici**; `git fsck --connectivity-only` pulito.
+
+| Repo | Prima | Dopo | Cosa pesava |
+|------|------:|-----:|-------------|
+| Notify | 432 | 15 | 1940 commit di storia sotto HEAD (vedi "Taglio della storia") |
+| User | 38 | 9 | `laraxot/main` + duplicato in `refs/prefetch`, `refs/original` |
+| Xot | 30 | 29 | quasi tutto e' storia vera di HEAD |
+| UI | 28 | 21 | tag e ref remoti (12,6 MiB tenuti solo dai tag), `refs/original` non rimovibile |
+| Activity | 16 | 4 | ref remoti e `refs/original` |
+| Lang | 12 | 10 | ref remoti, tag |
+| Media | 8 | 6 | ref remoti |
+| altri 14 | 1-8 | invariati o −0..1 | gia' snelli |
+
+Cosa e' stato tolto (solo cio' che si riscarica o e' gia' coperto da altro):
+- `refs/prefetch/*` e `refs/remotes/laraxot/*` tranne `dev` e `HEAD`;
+- `refs/original/*` in 10 repo dove ogni oggetto era gia' raggiungibile da altri ref (`rev-list` vuoto); negli 11 repo dove
+  tenevano oggetti unici (Rating 213 ref, Progressioni 171 oggetti, Sigma 78, Pdnd 18...) sono rimasti;
+- 4 tag (Tenant 2, Rating 2), solo perche' il remoto ha lo stesso nome **e** lo stesso oggetto;
+- refspec di fetch di `laraxot` ristretto a `+refs/heads/dev:refs/remotes/laraxot/dev`, `maintenance.prefetch.enabled=false`:
+  senza queste due cose `git maintenance` rigenera tutto.
+
+Non toccati: branch locali, `refs/stash` (Xot, User), tag solo locali, working tree, URL dei remote, remoto.
+
+## Taglio della storia di Notify (passo manuale, non nello script)
+
+`git fetch --depth=1 laraxot <HEAD>` + `gc --prune=now`: **428 → 15 MiB**, 1940 → 1 commit, tree di HEAD invariato (4617 file),
+3119 file modificati del working tree intatti, `fsck` pulito. Precondizioni verificate, non presunte:
+HEAD == `laraxot/dev` locale; nessun commit solo locale; il remoto ha servito il commit per SHA (quindi ha anche tutti gli
+antenati). Provato prima su una copia del `.git` in scratchpad. **Recupero:** `git fetch --unshallow laraxot` (~431 MiB).
+Il remoto aveva nel frattempo un tip piu' avanti (`fddd1d09b`): il taglio e' stato fatto sul commit di HEAD, non sul tip,
+perche' spostare il branch richiederebbe un `reset`, vietato.
+
+## Procedura (sostituisce quella precedente di questa story)
+
+```bash
+bash bashscripts/tools/git/slim-module-theme-git.sh            # dry-run: PLAN per ogni repo
+bash bashscripts/tools/git/slim-module-theme-git.sh --apply Notify User
+```
+
+Il passo `reflog expire --expire=now` della versione precedente e' stato tolto: svuota le voci vecchie di `git stash list`.
+Il re-clone per ogni repo "inquinato" e' stato tolto dallo script: in User i due genitori del merge `c492fc0fb` non hanno
+merge-base (`git merge-base` vuoto, 40 file su 40 campionati add/add): una storia locale senza antenato comune con
+`laraxot/dev` e' la causa dei marker di merge, e un re-clone per ref non la sistema. Il taglio su Notify e' diverso: li' HEAD
+coincide con `laraxot/dev`, quindi il merge-base esiste.
+
+## Incidenti e lezioni
+
+- **Due `FAIL` al primo `--apply` (Rating, UI), nessun dato perso.** Entrambi difetti dello script, corretti e provati:
+  - UI: `refs/remotes/laraxot/HEAD` era un symref verso `laraxot/develop`, che avevo cancellato; `fsck` rc=2.
+    Ora lo script lo riposiziona su `dev`.
+  - Rating: la catena `commit-graph` (28 set) elencava 73 commit eliminati dal prune; `fsck` rc=16. In un repo shallow git non
+    usa ne' riscrive il commit-graph, quindi `commit-graph write` esce 0 senza scrivere nulla (mi ha ingannato). Ora lo
+    script elimina la catena se `commit-graph verify` fallisce.
+  - Prova: repo di scratch con entrambi i difetti; la copia con la logica vecchia da `fsck` rc=18, lo script corretto rc=0.
+- **Il `gc` non libera subito.** Dopo un `gc` appena fatto gli oggetti irraggiungibili hanno meno di un'ora e
+  `--prune=1.hour.ago` li tiene: Notify e' passato da 428 a **444 MiB** prima di scendere a 15 con `--prune=now`.
+  `--prune=now` solo con nessun git attivo nel repo (le voci dell'index contano come raggiungibili).
+- **Contato male lo stash.** `git stash list` legge il reflog, che era vuoto: sembrava che Xot e User non avessero stash,
+  ma `refs/stash` c'era e ha lo stesso hash di prima.
+- **Non posso escludere di aver perso voci vecchie del reflog di stash.** I due `--apply` sono stati lanciati prima che lo script
+  passasse `gc.reflogExpire=never`, e `git gc` applica da solo 90/30 giorni. Indizio contrario: nella misura precedente ai due
+  `--apply` i reflog di HEAD erano gia' a 0 righe quasi ovunque (User compreso, che alle 21:11 ne aveva uno): qualcuno li aveva
+  gia' svuotati. Il reflog dello stash non l'avevo misurato. Lo script ora conserva i reflog.
+- **Ho sostituito lo script del 21:32** (`slim-module-theme-git.sh`, 122 righe, non tracciato quindi non recuperabile da git).
+  Non l'ho eseguito, l'ho letto: cancellava tutti i tag, faceva `reflog expire --expire=now` e `gc --prune=now` senza controlli e
+  non verificava che i ref rimossi fossero coperti altrove. Se serviva qualcosa di quella versione, il testo e' nella cronologia
+  di questa sessione.
+
+## Acceptance criteria
+
+- [x] Ogni rimozione e' coperta da una prova (ref gia' raggiungibili da altro, o tag identici sul remoto).
+- [x] HEAD, branch, `refs/stash` e file modificati identici prima/dopo su 21 repo.
+- [x] `fsck --connectivity-only` pulito su 21 repo.
+- [x] Lo script e' idempotente: secondo `--apply`, 21 su 21 `OK`, exit 0.
+- [ ] Rating, UI, Progressioni e altri 8 con `refs/original` non rimovibile: decidere con il proprietario se i 213 ref di Rating
+  servono ancora (non decido io: contengono oggetti che non esistono altrove).
+- [ ] Il remoto `laraxot/module_notify_fila5` pesa ancora ~431 MiB di storia: si risolve solo li' (riscrittura), fuori scope.
+- [ ] Nessun guard automatico: se i `.git` ricrescono (sync a storie non correlate, `git maintenance`) lo slim va rilanciato.
+
+## Inventario base_laravelpizza_fila5 (progetto fratello, dichiarato dall'altra sessione, non verificato qui)
+
+<<<<<<< .merge_file_9v9x0X
+| Path | .git ~MB | Note |
+|------|----------|------|
+| Notify | ~14 (was ~428-461) | depth-1 `--single-branch` tip `c642ea4 first`; bak `.git.polluted.bak.202611241827` tenuto |
+| Themes/Meetup | ~65 | PDF manuale + `repo.bundle` tracciato (~5 MB) |
+=======
 **Wave 21:31**: totale **296MB → 202MB** (−94MB). Causa tipica: `HEAD` pulito ma
 `refs/original` + `refs/prefetch` + remote `develop`/`main`/`dev1` + tag vecchi
 tengono pack monorepo. Tool: `bash bashscripts/tools/git/slim-module-theme-git.sh`.
@@ -45,6 +147,7 @@ How-to: [module-theme-git-slim.md](../../../../../../bashscripts/docs/operations
 3. Se il **tip** contiene ancora path monorepo: re-clone depth-1 come Notify (backup `.git`; **no force-push**).
 4. Rimuovere leftover disco: `.git-rewrite/` — non e' storia.
 5. Theme PDF manuals: **KEEP** (linkati da `manuale-utente/readme.md`). `repo.bundle`: non tracciare.
+>>>>>>> .merge_file_q8DJ1m
 
 ## Coordinamento
 
@@ -56,22 +159,41 @@ How-to: [module-theme-git-slim.md](../../../../../../bashscripts/docs/operations
 | coordinator | Notify pollution diagnostic (1930 vs 1 commit remoto) | 2026-11-24 18:12 done |
 | coordinator | Activity `.git-rewrite` rimosso | 2026-11-24 18:13 |
 | lane-notify-reclone | Notify slim: wait sync → full clone (= remoto polluto 431MB/1930) → depth-1 14MB/1; bak polluted kept; no force-push | 2026-11-24 18:31 done |
+<<<<<<< .merge_file_9v9x0X
+| claude-fila5 | base_ptvx_fila5: slim 21 repo 613→143 MiB, script riscritto con gate fsck, Notify depth-1 sul HEAD | 2026-11-24 23:12 review |
+=======
 | lane-meetup-theme | Meetup `.git` 63→63MB: untrack already done; gitignore markers fixed; PDF kept intentional; gc+repack; no filter-repo | 2026-11-24 21:29 done |
+>>>>>>> .merge_file_q8DJ1m
 
 ## Verify
 
 ```bash
+<<<<<<< .merge_file_9v9x0X
+cd laravel && du -sm Modules/*/.git Themes/*/.git | sort -nr
+for d in Modules/* Themes/*; do git -C $d fsck --connectivity-only --no-progress >/dev/null 2>&1 || echo "KO $d"; done
+=======
 du -sm laravel/Modules/*/.git laravel/Themes/*/.git | sort -nr
 bash bashscripts/tools/git/slim-module-theme-git.sh   # idempotent
 # tip vs all objects (dopo slim devono coincidere circa)
 cd laravel/Modules/User && git rev-list --objects HEAD | wc -l
 git rev-list --objects --all | wc -l
+>>>>>>> .merge_file_q8DJ1m
 ```
 
 ## Related
 
+<<<<<<< .merge_file_9v9x0X
+- [how-to](../../../../../../bashscripts/docs/operations/module-theme-git-slim.md)
+- [git-repositories-slim-audit](./git-repositories-slim-audit.story.md) — passo parallelo (`gk`, `lfs`, `REBASE_HEAD`), con cui questa story
+  diverge su Notify (dichiarato li')
+- [nested-git-slim-hygiene](../../../../../../bashscripts/ai/wiki/memories/nested-git-slim-hygiene.md) — memoria condivisa, con le lezioni di questa story
+- [multi-repo map](../../../../../../bashscripts/ai/wiki/rules/multi-repo-modules-themes-map.md)
+- [git-push-pack-errors](../../../../../../bashscripts/ai/wiki/rules/git-push-pack-errors.md)
+=======
 - [module-theme-git-slim ops](../../../../../../bashscripts/docs/operations/module-theme-git-slim.md)
 - [multi-repo map](../../../../../../docs/wiki/rules/multi-repo-modules-themes-map.md)
 - [git-push-pack-errors](../../../../../../docs/wiki/rules/git-push-pack-errors.md)
+>>>>>>> .merge_file_q8DJ1m
 - [cleanup-git-rewrite-artifact](./cleanup-git-rewrite-artifact.story.md)
+- [phpstan bootstrap e marker](./phpstan-modules-bootstrap-duplicate-lines.story.md)
 - [phpstan standing](./phpstan-modules-zero-swarm-standing.story.md)

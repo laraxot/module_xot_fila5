@@ -66,6 +66,8 @@ Un file duplicato non si cancella: riceve `status: superseded by <canonico>.md` 
 
 L'elenco completo, con numero, stato e canonico/superseded, è in [index.md](index.md): è l'unico inventario e va aggiornato nello stesso commit che aggiunge o modifica un ADR.
 
+Regola tipizzazione trasversale (tutti i moduli): [0014 — `mixed` solo come ultima spiaggia](0014-mixed-last-resort.md).
+
 ## Decisioni precedenti (formato libero, non ancora ADR)
 
 - [module-admin-role-policy-bypass](../wiki/decisions/module-admin-role-policy-bypass.md)

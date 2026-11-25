@@ -75,6 +75,42 @@ chiave sprint: `Xot/phpstan-modules-zero-swarm`.
 
 ## Diario
 
+<<<<<<< .merge_file_oDwLOX
+- 2026-11-24f **VITTORIA gate**: `/tmp/ptvx-phpstan/cold11.json` totals
+  `errors=0`/`file_errors=0` + banner `[OK] No errors` (EXIT 0) sotto
+  `flock /tmp/ptvx-phpstan-modules.flock`. Preflight: sweep markers → BOOT_OK.
+  Fix wave: MassExtra `is_subclass_of` narrow; Notify `@use HasCommonScopes<static>`;
+  UI Safe preg_replace + Collection generics + assert tautologici rimossi;
+  User `base_profile_form` chiave `name` duplicata. Pest:
+  `NoCmsPhantomFolioImportsTest` smoke; Unit pieno ancora skip DB testing.
+
+- 2026-11-24f (orchestratore Composer): race merge-markers PHP (UI→Tenant→User→XotData)
+  bloccava bootstrap Larastan (`unexpected token "<<"` via morph map/`XotData::getUserClass`).
+  Collapse source-first + restore da `laraxot/dev` di 4 file User irrecuperabili.
+  cold9: 2 parse Xot (`use` duplicati ExportXls/InitialsAvatar — peer già sanati).
+  cold10 artifact `/tmp/ptvx-phpstan/cold10.json`: `errors=0` / `file_errors=14`
+  (Sigma MassExtra×6, UI tests×6, Notify generics, User lang dup key). Swarm fix in volo.
+  Preflight operativo sotto flock: sweep markers → BOOT_OK → analyse.
+
+- 2026-11-24e (php-backend-agent / Notify parse-bad bootstrap): bootstrap PHPStan
+  falliva su `syntax error, unexpected token "<<"` in discoverClusters Notify.
+  Lista `/tmp/ptvx-phpstan/parse-bad.txt` (~42 Notify + 2 Activity). Lock
+  `laravel/Modules/Notify` acquisito. Swarm parallelo aveva già ripulito quasi
+  tutti i marker nested HEAD/laraxot/dev su Actions/Models/Traits/tests/lang;
+  residuo `lang/en/template.php` risolto source-first (struttura IT espansa +
+  label EN + campi `body_text`/`body_html`/`preview_data` del modello). Activity
+  `SnapshotPolicyTest` + `LogDownloadPageTest` già OK. Gate: `token_get_all`/
+  `php -l` su tutti i path parse-bad → 0 fail; bootstrap → **BOOT_OK**;
+  `flock` cold5 → `/tmp/ptvx-phpstan/modules-cold5.json` totals
+  `errors=0` / `file_errors=9` (Tenant `T_SL` + User duplicate `use` — fuori
+  Notify; **zero** errori Notify). Unlock Notify.
+- 2026-11-24: aggiunto l'ADR Xot [0014-mixed-last-resort](../../adr/0014-mixed-last-resort.md)
+  e registrato nell'indice ADR. La decisione rende esplicito che `mixed` è
+  ammesso solo a un boundary realmente dinamico o vendor, con validazione,
+  narrowing immediato, nessuna propagazione nell'API e motivazione BMAD.
+
+=======
+>>>>>>> .merge_file_jFqOCx
 - 2026-11-24c (laravel-testing-expert / Pest hang diagnose su 192.168.1.40):
   **GateGuard facts (edit esistente):** nessun file nuovo; aggiorna diario di
   questa story già referenziata da `docs/sprint-status.yaml`

@@ -49,7 +49,11 @@ Nota numerazione: i vecchi alias `00-start` / `11-phpstan` / `15-bmad` sono `01-
 
 ## Contraddizioni residuali (fuori priorita' wave)
 
+<<<<<<< .merge_file_kyV9qD
+**Chiuso 2026-11-24 (docs-guardian):** `10`, `15`, `17`, `44`, `98` (+ `11`, `16`, `51`, `53`, `54`, `56`) allineati a `docs/bmad/stories/` primario; `docs/stories/` solo come legacy esplicito. Dettaglio: [prompts-boy-scout-standing-order.story.md](./prompts-boy-scout-standing-order.story.md).
+=======
 Prompt non prioritari ancora citano `docs/stories/` come path primario: `10-architettura.md`, `15-services-verso-actions.md`, `17-controller-verso-folio-actions.md`, `44-audit-autonomo.md`, `98-daily-report.md`. Canonico: `docs/bmad/stories/` (`99-closing-ritual.md` e `03-bmad.md` gia' allineati).
+>>>>>>> .merge_file_MRfxXx
 
 ## Spot-check docs moduli
 
@@ -67,6 +71,10 @@ Vedi [docs-md-filename-date-debt.story.md](./docs-md-filename-date-debt.story.md
 ### 2026-11-24
 
 - Lane docs-guardian boy-scout: vedi [prompts-boy-scout-standing-order.story.md](./prompts-boy-scout-standing-order.story.md). Flock path unificato; Filament 5 Schema; `wiki-hygiene.py` rimosso dai prompt.
+<<<<<<< .merge_file_kyV9qD
+- Seconda wave: debito `docs/stories/` su 10/15/17/44/98 chiuso; 51/54/56 + 11/16/53 allineati a master (flock max-3, Pest/host, public_html, mixed last resort).
+=======
+>>>>>>> .merge_file_MRfxXx
 
 ### 2026-11-23
 

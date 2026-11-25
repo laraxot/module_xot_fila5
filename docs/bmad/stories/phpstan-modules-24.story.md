@@ -1,27 +1,17 @@
 ---
-tags: [documentation]
-created: 2026-09-26
-issues: []
-discussions: []
-title: "Story — phpstan analyse Modules, fix fleet (2026-09-24)"
-type: story
-module: Xot
-epic: quality
-story_id: "phpstan-modules-2026-09-24"
-status: done
-track: quality/fleet
-updated: 2026-09-24
-qmd: "phpstan analyse Modules fix fleet swarm parallelo random RatingData AuditCoverage deep"
-related:
-  - ./phpstan-analyse-modules-2026-09-24.story.md
-  - ../../../../Rating/docs/wiki/rules/no-trait-name-static-calls.md
-  - ../../../../../../docs/wiki/memories/phpstan-merge-conflict-lock-coordination.md
-  - ../concepts/tests-audit-coverage-forbidden.md
+title: "phpstan-modules-24.story (alias)"
+status: superseded
+superseded_by: "./phpstan-modules.story.md"
+type: alias
+updated: 2026-11-24
+qmd: "xot phpstan-modules-24.story alias"
 ---
-# phpstan-modules-2026-09-24
 
-## Perche'
+# Alias
 
+<<<<<<< .merge_file_c0HJ2R
+Contenuto consolidato in [./phpstan-modules.story.md](./phpstan-modules.story.md).
+=======
 Richiesta: `cd laravel && ./vendor/bin/phpstan analyse Modules` e fix di tutti
 gli errori, swarm in parallelo in ordine random, BMAD + second brain.
 
@@ -97,3 +87,4 @@ Gate deep: `phpstan analyse Modules` → **`[OK] No errors` EXIT 0** (certify po
 
 **done**. Pest skip: `DB_HOST=10.100.200.53` DOWN. Memoria:
 `docs/wiki/memories/phpstan-modules-swarm-session.md`.
+>>>>>>> .merge_file_lWRnWH

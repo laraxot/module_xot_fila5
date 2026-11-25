@@ -33,7 +33,11 @@ portfolio: **Cms assente in PTVX**; pattern imparati dai sibling FO.
 ## Aperti (priorità)
 
 1. ~~Dual model Scheda/Progressioni~~ — **ADR** [dual-model](../../../Progressioni/docs/bmad/dual-model-scheda-progressioni-decision.md): tenere entrambi; canon=`Scheda`; no merge
+<<<<<<< .merge_file_gT3KLZ
+2. Inverse deps Ptv/Sigma → Progressioni — **chiuso app** (2026-11-24e): Factory Ptv, BaseAssenzaPolicy→BaseAssenza, Sigma MassExtra/Qua* via `config('ptv.models.*')` + SP Progressioni; residuo = Sigma→Performance/Indennita* (lane altra) + import solo in test — [inverse-deps](../../../Progressioni/docs/bmad/inverse-deps-ptv-sigma-decision.md)
+=======
 2. Inverse deps Ptv/Sigma → Progressioni — **parziale**: Ptv Scheda/`getClassName` + CriteriPrecedenzaService via config; residuo Factory/AssenzaPolicy + Sigma — [inverse-deps](../../../Progressioni/docs/bmad/inverse-deps-ptv-sigma-decision.md)
+>>>>>>> .merge_file_yaaf2O
 3. SoftDeletes Progressioni — **parziale**: claim massivo **smentito** (solo `coeff_progressione` ha `deleted_at` live); `Coeff` SoftDeletes; altri gated — [softdeletes](../../../Progressioni/docs/bmad/softdeletes-schema-first-decision.md)
 4. Feature Pest gap Progressioni + DB testing
 5. ~~PHPStan Media/UI~~ — **STALE** (Modules gate 0, 2026-11-24b)
@@ -81,7 +85,11 @@ Da audit paralleli ([Progressioni residuali](4f800c8b-3a7e-49ca-a666-5538f255541
 | P1 | refreshed_at prima del job queue | **fix** timestamp in RefreshHaDirittoAction post-Check |
 | P1 | Compila `canEdit` vs `compila` | **fix** solo `Gate::authorize('compila')` |
 | P1 | Giomo Attribute accessor | **fix** getGgCatecoPosfunFuoriSedeAttribute |
+<<<<<<< .merge_file_gT3KLZ
+| P2 | Dual Scheda/Progressioni + inverse deps | **ADR + inverse-deps app chiuso** (2026-11-24e; residuo peer Sigma→Performance/Indennita) |
+=======
 | P2 | Dual Scheda/Progressioni + inverse deps | **ADR + fix parziale** (vedi aperti 1–3 aggiornati 2026-11-24) |
+>>>>>>> .merge_file_yaaf2O
 
 
 ## Follow-up agent closure
@@ -120,3 +128,24 @@ su Progressioni + ExportXlsAction.
   `rg -n "use SoftDeletes" Modules/Progressioni/app/Models/Coeff.php` + ADR.
 - ADR: dual-model / softdeletes-schema-first / inverse-deps in
   `Modules/Progressioni/docs/bmad/`.
+<<<<<<< .merge_file_gT3KLZ
+
+### Wave inverse-deps 2026-11-24e
+
+- `rg use Modules\Progressioni` su `Ptv/app` + `Sigma/app`: **0 import live**
+- Fix: Factory CriteriEsclusione→Ptv; BaseAssenzaPolicy→BaseAssenza;
+  MassExtra/Qua*→`config('ptv.models.*')`; SP Progressioni registra scheda/
+  scheda_criteri/categoria_propro
+- PHPStan mirato (9 file, flock): **[OK] No errors**; recheck MassExtra post-pint OK
+- Pest: **skip** — `.env.testing` `DB_HOST=10.100.200.53` (Guard/non-local)
+- Residuo documentato: Sigma→Performance/Indennita* (lane separata); 9 import Progressioni solo in test
+## Diario
+
+- 2026-11-24f (follow-up swarm): audit [inverse-deps explore] conferma
+  `use Progressioni` live in Ptv/Sigma `app/` = 0. Residuo runtime reale:
+  Ptv→Indennita* (Cessati Actions + StabiDirigente Report pages) e
+  Ptv→Performance (~Individuale/Fondo/Mail/Filament); Sigma MassExtra ancora
+  peer Indennita/Performance. Priorità KISS: import morti BaseScheda → ownership
+  Cessati → StabiDirigente → Performance Actions. Gate PHPStan cold11 ancora 0/0.
+=======
+>>>>>>> .merge_file_yaaf2O
