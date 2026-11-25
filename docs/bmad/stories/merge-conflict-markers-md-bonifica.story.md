@@ -3,7 +3,7 @@ title: "Bonifica marker di conflitto committati nei file non-PHP dei moduli (d24
 type: story
 epic: tooling-quality
 module: Xot
-status: review
+status: done
 created: 2026-11-25
 qmd: "marker conflitto md committati d24d597f8b sync-repair nested_resolve resolve_by_common_blob notify user activity lang"
 related:
@@ -101,3 +101,31 @@ checkout d14a06fbe -- docs .github` solo dopo aver valutato la merge); poi push 
 - [x] Backup prima di ogni scrittura
 - [x] Report per modulo
 - [x] PHPStan Modules 0 errori (run cache fredda 10:2x)
+
+## Ripresa 10:35–10:55: chiusura dopo la sync
+
+Alla ripresa (script uscito) `merge_remote_repo_2.sh` aveva lasciato: Notify merge aperto (2053 UU),
+Media merge aperto (91 UU), Job: il merge aperto dalle 08:43 e' stato concluso dal `commit -am .` del run delle 10:27 (`89f76bc`, commit di merge a 2 genitori) con 19 file marcati, poi pushato. **Correzione:** non c'e' stata riscrittura di storia ne' push forzato: i `.git` dei moduli sono shallow (`.git/shallow`), da cui `rev-list --count` = 1.
+
+- **Notify/Media:** classificazione per file: `ours` (bonifica) pulito in tutti; `theirs` con marker in
+  2115/2144; i 29 puliti da entrambi → `ours` ha i link esistenti (verificati), alias dei nomi datati,
+  blocco fila5-guard. Risolti con `ours`; 10 file auto-merge con marker di theirs riportati al blob
+  `HEAD`. Notify: commit locale `a6a34ea77` (ahead 1, **non pushato**). Media: il merge e' stato
+  chiuso in parallelo da un commit "." `02cd0ca2` (10:38:57, gia' su laraxot/dev) con l'indice gia'
+  risolto → upstream Media ora senza marker.
+- **Job:** 19 file. Tentativo con scelta per hunk scartato (perdeva una sezione della base) e
+  ripristinato dal backup. Metodo finale: blob `c826d2258b` quando le righe fuori conflitto non
+  aggiungono nulla (13); 4 file dove le aggiunte erano solo riscritture `-N` del sync → base; 2 file
+  base + aggiunte vere (`superseded_by`, link story 02, minuscole); `tasks/cleanup-job-docs.md` senza
+  base: tenuta la riga roadmap piu' recente. Frontmatter validato.
+
+## Gate finale
+
+- `/usr/bin/grep` marker in `laravel/Modules` + `Themes`: **0**; `check-conflict-markers.sh`: ✅
+- `phpstan analyse Modules` cache fredda: exit 0, `{"errors":0,"file_errors":0}`
+- Pest: skip (TestDatabaseGuard, DB remoto); toccati solo .md/.gitignore/.gitattributes
+
+## Da decidere (utente)
+
+- Push di Notify `a6a34ea77` su `laraxot/dev` (l'upstream Notify ha ancora ~2400 file con marker).
+- `merge_remote_repo_2.sh` e' lo strumento di sync in uso (header "DEPRECATO" errato, corretto). Proposta: saltare il path se c'e' un merge/rebase aperto, come gia' fa `dummy_push` (guardia 2026-10-28).

@@ -86,12 +86,19 @@ Shallow con commit locali non pushati = push impossibile (il remoto riceverebbe 
 **HEAD == remote-tracking**, non negoziabile. `filter-repo` + force push e' l'unico modo per snellire il **remoto**: vietato
 da forward-only, serve decisione esplicita del proprietario.
 
-## Causa radice da correggere (altrimenti ricresce)
+## Perche' ricresce (corretto il 2026-11-25 su indicazione dell'utente)
 
-- Lo script di sync crea commit `first` orfani e merge `--allow-unrelated-histories` che reintroducono storia piena:
-  vedere `bashscripts/ai/wiki/memories/git-sync-fleet-remotes.md#git-status-fleet-allow-unrelated-histories-permitted`.
-- `git maintenance` globale registra Activity/Lang/Media/Notify/UI/User/Xot di ptvx (`git config --global --get-all maintenance.repo`): con refspec `refs/heads/*` il prefetch riscarica tutto.
-- `gitmodules.ini` dichiara `provtv/*`, i repo reali tracciano `laraxot/*`: inventario disallineato.
+`bashscripts/git/subtrees/merge_remote_repo_2.sh` e' lo strumento di sync **in uso e funzionante**, non un bug da
+eliminare (l'etichetta "DEPRECATO" del 2026-09-15 era errata). Contiene gia' il meccanismo di snellimento voluto:
+`MAX_GIT_OBJECTS=130000` → `git_delete_history` (orphan commit `first` + push -f) + `git_deep_cleanup`, bloccati da
+`_refuse_history_rewrite` senza `PTVX_ALLOW_HISTORY_REWRITE=1`. I commit `first` visti in Notify vengono da li'.
+La ricrescita nasce dal merge `--allow-unrelated-histories` con copie dello stesso remoto che conservano la storia
+vecchia (piu' progetti `base_*` condividono i remoti `laraxot/*`), non da un difetto dello script.
+
+Leve reali, da decidere con l'utente:
+- soglia `MAX_GIT_OBJECTS` 130000 vs obiettivo dichiarato 10000 (abbassarla = squash + force push alla prossima sync);
+- `git maintenance` globale registra Activity/Lang/Media/Notify/UI/User/Xot di ptvx (prefetch di tutti i branch);
+- `gitmodules.ini` dichiara `provtv/*`, i repo tracciano `laraxot/*` (lo script riscrive l'URL con l'argomento ORG).
 
 ## Acceptance criteria
 
@@ -99,7 +106,7 @@ da forward-only, serve decisione esplicita del proprietario.
 - [x] Diagnosi cause con evidenze
 - [x] 15/23 repo < 10000 oggetti, `fsck` pulito, working tree e allineamento invariati, backup verificato
 - [ ] 8 repo bloccati < 10000 (dopo rilascio lock e risoluzione divergenze)
-- [ ] Sync senza commit `first` / storia piena (story di tooling dedicata)
+- [ ] Decisione utente su soglia `MAX_GIT_OBJECTS` (10000?) e sul prefetch di `git maintenance`
 
 ## Gate
 

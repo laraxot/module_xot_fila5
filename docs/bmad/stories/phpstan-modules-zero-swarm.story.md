@@ -5,7 +5,7 @@ module: Xot
 epic: quality/phpstan
 story_id: phpstan-modules-zero-swarm
 slug: phpstan-modules-zero-swarm
-status: in_progress
+status: done
 # supersedes: campagne phpstan-modules-swarm-session / remediation come SSoT attiva Quick Flow
 # linked_from: docs/sprint-status.yaml Xot/phpstan-modules-zero-swarm; phpstan-zero-errors-modules.story.md
 # user_verbatim: "esegui cd laravel && ./vendor/bin/phpstan analyse Modules e sistema tutte le segnalazioni" + swarm+BMAD+second brain+handoff 5 sezioni
@@ -74,6 +74,27 @@ chiave sprint: `Xot/phpstan-modules-zero-swarm`.
 | Memoria [phpstan-modules-zero](../../../../../../bashscripts/ai/wiki/memories/phpstan-swarm-config.md#phpstan-modules-zero) | Invarianti gate + pattern |
 
 ## Diario
+
+- 2026-11-25c **VITTORIA gate freddo osservata**: preflight PHP markers=0 (esclusi
+  test intenzionali NoConflictMarkers*); `flock /tmp/ptvx-phpstan-modules.flock`;
+  cache `/tmp/phpstan` svuotata; JSON `/tmp/ptvx-phpstan/final-cold.json`
+  `errors=0`/`file_errors=0` EXIT 0 **e** banner `/tmp/ptvx-phpstan/final-cold-banner.txt`
+  `[OK] No errors` EXIT 0 (START 10:51:15 → END 10:55:15). Cause wave: marker
+  nested `.merge_file_*` Notify (Models template + lang + tests + Mailjet/Actions)
+  ripristinati da `laraxot/dev`. Pest Notify Unit mirato: **skip documentato**
+  (`SQLSTATE[HY000] [2002] Connection refused` su DB_HOST=127.0.0.1; 12 failed
+  bootstrap, 0 assertions) — non regressione del fix tipostatico.
+
+- 2026-11-25c (Composer / orchestratore): ripresa standing order + handoff 5 sezioni.
+  Peer `phpstan-full` silente (solo neon); cold recheck → **file_errors=18** parse
+  `T_SL` su Notify (Models MailTemplate*, NotificationTemplate, lang en/it, TestCase,
+  MailjetTransportTest, NotificationManagerTest) — JSON 0/0 precedente = **falso**.
+  Fix source-first: `git checkout laraxot/dev -- <paths>` (blob remoto senza marker);
+  sweep ulteriore Actions/Traits/lang it → **PHP markers Notify=0**, `php -l` OK,
+  `class_exists` MailTemplate/NotificationTemplate YES. Host thrash **19–21**
+  phpstan concorrenti (oltre max-3): gate freddo rimandato a calm. Alias User
+  `git-conflicts-resolution-2025-01-27.md` → stub superseded. Themes Zero dated
+  già alias. Lock: `phpstan-zero-20261125-composer.lock`.
 
 - 2026-11-25 (docs-guardian / ripresa): **bootstrap FAIL per marker** — campagna riaperta.
   Host WSL non `10.100.200.15`; flock max-3; moduli Notify/Lang/Activity/UI/User/Xot/Media/Job.
@@ -219,6 +240,9 @@ chiave sprint: `Xot/phpstan-modules-zero-swarm`.
   skip documentato (env testing, non regressione del fix). Lock `Xot-phpstan-swarm` rilasciato.
 
 ## Dev Agent Record
+
+- Status: `done` — final-cold 2026-11-25c JSON 0/0 + banner [OK] No errors (flock). Pest Notify skip DB 127.0.0.1 refused.
+
 
 - Status: `in_progress` — riaperta 2026-11-25 (bootstrap markers). Gate freddo non ancora riverificato in questa ripresa.
 - AC restano validi; Pest gate obbligatorio a chiusura (o skip documentato).
