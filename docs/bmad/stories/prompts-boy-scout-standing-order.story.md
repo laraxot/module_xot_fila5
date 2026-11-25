@@ -42,7 +42,14 @@ Lane docs-guardian: boy-scout sui prompt prioritari (ordine random) senza mass-d
 | `05-second-brain.md` | rimuove `wiki-hygiene.py` assente |
 | `24-filament.md` / `28-setting-page.md` / `37-phpstan.md` | Filament 5 Schema vs Form legacy |
 | `README.md` / `index.md` | SSoT vs wiki/.agents prompts; related story |
+<<<<<<< HEAD
 | `98`, `44`, `10`, `15`, `17`, `51`, `54`, `56`, `11`, `53`, `16` | wave debito: BMAD path, flock max-3, Filament5 Schema, Pest/host, public_html, link 00-master |
+=======
+<<<<<<< .merge_file_c0DTr0
+| `98`, `44`, `10`, `15`, `17`, `51`, `54`, `56`, `11`, `53`, `16` | wave debito: BMAD path, flock max-3, Filament5 Schema, Pest/host, public_html, link 00-master |
+=======
+>>>>>>> .merge_file_hFt8VQ
+>>>>>>> laraxot/dev
 
 ## Criteri
 
@@ -58,6 +65,10 @@ Lane docs-guardian: boy-scout sui prompt prioritari (ordine random) senza mass-d
 | Quando | Agente | Scope | Nota |
 |---|---|---|---|
 | 2026-11-24 | docs-guardian | bashscripts/docs/prompts prioritari | lock `prompts`; shuffle swarm→closing→qg→audit→phpstan→boy→pony→master→sb→bmad |
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_c0DTr0
+>>>>>>> laraxot/dev
 | 2026-11-24 | docs-guardian | prompts 10/11/15/16/17/44/51/53/54/56/98 | lock `prompts`; wave debito legacy `docs/stories/` + flock/Filament5/Pest |
 
 ## Debito residuo
@@ -76,3 +87,14 @@ Boy-scout su 11 prompt non prioritari (shuffle: 98→44→10→15→17→51→54
 ### 2026-11-24 (wave source-first / lessico baseline)
 
 Boy-scout mirato (max 8 file): inventario OK (64 `NN-*`, no date/MAIUSCOLE, FM+qmd ovunque). Allineato lessico **misura iniziale** vs baseline PHPStan vietata in `02`, `09`, `36`, `39`, `44`; `09` ha checklist BMAD + second brain + source-first + Pest gate + ECC; README sezione Inventario. Lock `prompts`. Nessun PHP → Pest skip documentato.
+<<<<<<< HEAD
+=======
+=======
+
+## Debito residuo
+
+- Prompt non prioritari ancora con `docs/stories/` primario (`10`, `15`, `17`, `44`, `98`) — vedi story alignment precedente.
+- `wiki-hygiene.py` citato in story storiche; non ripristinato (assente).
+- `bashscripts/ai/wiki/prompts` e `.agents/prompts` restano skill design separate (nessuna fusione).
+>>>>>>> .merge_file_hFt8VQ
+>>>>>>> laraxot/dev

@@ -49,7 +49,11 @@ La data vive nel frontmatter (`created`/`updated`), non nel path.
 - **Incidente mass-delete:** docs-guardian ha prodotto centinaia di `D`; recovery `git cat-file` da HEAD (User 476, Notify 68, Rating 14, Activity 9). STOP `docs/chat/STOP-docs-guardian-mass-delete.md`. Memoria `docs-rename-no-delete-git-mv-only.md`.
 - Audit docs [9505a256](9505a256-2305-4e10-a9e2-5a6a9ef7d38f): ~353 date-names; priorità SSoT story + phpstan.md unico per modulo.
 - Prossimo: solo `git mv` validati; niente nuovi guardian rename finché hygiene User/Notify stabile; Themes Zero F1 in lane dedicata.
+<<<<<<< HEAD
 - 2026-11-17 (docs-guardian / User): wave `Modules/User/docs` — **12** `git mv` → alias kebab `*-historical*` (11 superseded) + `stories/user-gap-analysis.story.md`. Link root aggiornati in `index.md`/`INDEX.md` + 4 file wiki/story. Residui User post-wave (scan completo): **~107**. Story modulo: `Modules/User/docs/bmad/stories/docs-md-filename-date-debt.story.md`.
+=======
+- 2026-11-17 (docs-guardian / User): wave `Modules/User/docs` — **12** `git mv` → alias kebab `*-historical*` (11 superseded) + `stories/user-gap-analysis.story.md`. Link root aggiornati in `index-3.md`/`index-3.md` + 4 file wiki/story. Residui User post-wave (scan completo): **~107**. Story modulo: `Modules/User/docs/bmad/stories/docs-md-filename-date-debt.story.md`.
+>>>>>>> laraxot/dev
 <!-- GateGuard: edit existing Xot story (not create). No supersede. Linked from User companion + sprint-status. User asked: "Append diario nella story Xot docs-md-filename-date-debt e nella story User." -->
 <!-- GateGuard facts: (1) no supersede/duplicate — append only to existing docs-md-filename-date-debt.story.md; (2) linked from Rating docs-filename-no-date-bonifica-rating + sprint-status; (3) edit existing not new file; (4) user: "Append breve esito nella story Xot date-debt e, se esiste, story locale bmad." -->
 - 2026-11-17 (docs-guardian / Notify+Rating): wave scope disgiunto, solo `git mv` + `superseded_by` (no delete).
@@ -70,8 +74,13 @@ Checker: `md-filenames.py` (`data`) + heuristic year-only. Nessun delete / phpst
 
 Lang `git mv`:
 
+<<<<<<< HEAD
 - `translation-audit-completion-2025.md` → `translation-audit-completion-historical.md`
 - `translation-errors-correction-2025.md` → `translation-errors-correction-historical.md`
+=======
+- `translation-audit-completion-3.md` → `translation-audit-completion-historical.md`
+- `translation-errors-correction-3.md` → `translation-errors-correction-historical.md`
+>>>>>>> laraxot/dev
 
 Link interni Lang: nessuno da riscrivere.
 
@@ -136,7 +145,11 @@ Residui reali tracciati pre-wave: solo **7** (`Notify`×4, `Lang`×2, `UI`×1). 
 |---|---|---|
 | **Notify** (tracked) | 4× `git mv` `*-2026-03.md` → `*-mar-historical.md` + stub dated → canon | D=0; canoni `documentation-improvement-summary.md` ecc. |
 | **UI** (tracked) | 1× `git mv` `roadmap/2025-q4-roadmap.md` → `q4-roadmap-year-historical.md` + stub → `q4-roadmap.md` | |
+<<<<<<< HEAD
 | **Lang** (tracked) | 2× rewrite stub (no mv: `*-historical.md` già presenti) → `translation-audit-completion.md` / `translation-errors-correction.md` | |
+=======
+| **Lang** (tracked) | 2× rewrite stub (no mv: `*-historical.md` già presenti) → `translation-audit-completion-4.md` / `translation-errors-correction-4.md` | |
+>>>>>>> laraxot/dev
 | **User** `wiki/archive/**` | 18× filesystem `mv`+stub (path **gitignore** → `git mv` N/A) | stub→canon dove esiste; legacy 2 content-kept in `*-historical.md`; **nessun rm** |
 | **Progressioni/Perf/Ptv/Xot** | 0 | già puliti |
 
@@ -145,6 +158,10 @@ Residui reali tracciati pre-wave: solo **7** (`Notify`×4, `Lang`×2, `UI`×1). 
 **Residui next:** Notify ignored `project_docs/roadmaps/*-2025-10` (~10) + root `work-completed`/`implementation-summary`; User archive leftovers 7; Rating ignored 6; Job/ICL 1 ciascuno.
 
 **Lezione:** la maggior parte del debito date è fuori da git index; wave “git mv only” sui tracked è piccola — archive va trattato con `mv`+stub senza `rm`, mai force-add di dump interi.
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_j5UXGc
+>>>>>>> laraxot/dev
 
 <!-- GateGuard facts: (1) no supersede — append only to existing docs-md-filename-date-debt.story.md; (2) linked-from: docs/sprint-status.yaml Xot/docs-md-filename-date-debt + User companion + Rating bonifica story; (3) edit existing not new file; (4) user: chunk REALISTICO max 15 Notify project_docs + User leftover + Rating ignored. -->
 
@@ -181,3 +198,8 @@ Ambito: solo `laravel/Modules/{Activity,Xot,UI}/docs`. Lock moduli (stale unlock
 **Indici:** Activity `docs/index.md` + `wiki/00-index.md`; UI `index.md` + `00-index.md` aggiornati ai canoni.
 
 **Prossimo (fuori chunk):** Notify root ignored dated; User archive leftovers; epic-num story rename wave dedicata; UPPERCASE residui dove esiste kebab.
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> .merge_file_cYdNUY
+>>>>>>> laraxot/dev

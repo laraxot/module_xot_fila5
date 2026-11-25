@@ -26,7 +26,11 @@ status: draft
 ## [2026-09-21] phpstan | zero certificato + wiki hygiene
 
 - `phpstan analyse` (senza path CLI) e `analyse Modules` entrambi 0, `totals.file_errors: 0`.
+<<<<<<< HEAD
 - Canon: [phpstan-status.md](../bmad/phpstan-status.md) · story [18.59](../stories/18.59.phpstan-repo-wide-zero-2026-09-21.story.md) _(target mancante, verificato 2026-10-14)_
+=======
+- Canon: [phpstan-status-2.md](../bmad/phpstan-status.md) · story [18.59](../stories/18.59.phpstan-repo-wide-zero-2026-09-21.story.md) _(target mancante, verificato 2026-10-14)_
+>>>>>>> laraxot/dev
 - Merge markers risolti in [phpstan-best-practices.md](phpstan-best-practices.md) _(target mancante, verificato 2026-10-14)_; rimosso duplicato `PHPSTAN-BEST-PRACTICES.md`.
 - Mute-gate Setting (`getFormSchema` final) + marker PHP Activity chiusi; certify ancora 0.
 
@@ -109,7 +113,11 @@ discussions:
 
 - `run-session-gate.sh --markdown [--phpstan]` precompila §7; exit code 1 su bloccanti.
 - Junction `.cursor`/`.windsurf` → `.agents`; regole in `.cursor/rules/` (= `.agents/rules/`).
+<<<<<<< HEAD
 - Sync ponytail: `bashscripts/tools/ponytail-sync.sh`; §4+§5 condensati → link AGENTS.md.
+=======
+- Sync ponytail: `bashscripts/tools/ponytail-sync.sh`; §4+§5 condensati → link agents-2.md.
+>>>>>>> laraxot/dev
 - PHPStan gate: `trait.unused≈N` nel report; baseline documentata in §6.1.
 
 ## [2026-06-30] prompts | start.txt v13: gate DRY + path Cursor rules
@@ -141,7 +149,11 @@ discussions:
 - §1.4 infra: WARN locale per `.claude`/`.cursor/rules` (skill ponytail resta obbligatoria)
 - §1.9 QMD con fallback `rg` su wiki se `qmd` assente
 - §1.10 GitHub cross-repo informativo
+<<<<<<< HEAD
 - Appendice eccellenza condensata (reflective, patterns: senza duplicare AGENTS.md)
+=======
+- Appendice eccellenza condensata (reflective, patterns: senza duplicare agents-2.md)
+>>>>>>> laraxot/dev
 
 ## [2026-06-30] prompts | start.txt v8: gate sessione
 
@@ -298,7 +310,11 @@ discussions:
 ## [2026-05-26] docs | codice nominale pivot / ThemeComposer / ProfileFactory scan
 
 - **Verifica sorgenti + script**: scaffold `Dashboard`/`RouteServiceProvider` per modulo (**atteso** moduli Laravel); divergenza reale famiglia **`BasePivot`** vs **`XotBasePivot`**; **`ProfileFactory`** basename ripetuto con hash diverso (User/Gdpr/Fixcity); **Cms ThemeComposer** duplicato nel path `resources/views/` fuori da PSR-4.
+<<<<<<< HEAD
 - **Deliverable**: [`redundancy/audit-profondo-ridondanze-holistic.md`](redundancy/audit-profondo-ridondanze-holistic.md) §5; modulo Cms **[`docs/redundancy-report.md`](../../../Cms/docs/redundancy-report.md)** §5; [`concepts/redundancy-catalog.md`](concepts/redundancy-catalog.md) _(target mancante, verificato 2026-10-14)_ (riga Cms).
+=======
+- **Deliverable**: [`redundancy/audit-profondo-ridondanze-holistic.md`](redundancy/audit-profondo-ridondanze-holistic.md) §5; modulo Cms **[`../../../Geo/docs/redundancy-report-2.md`](../../../Cms/docs/redundancy-report.md)** §5; [`concepts/redundancy-catalog.md`](concepts/redundancy-catalog.md) _(target mancante, verificato 2026-10-14)_ (riga Cms).
+>>>>>>> laraxot/dev
 
 ## [2026-05-25] docs | audit profondo ridondanze: second brain ripulito da merge-marker
 
@@ -344,7 +360,11 @@ discussions:
 
 ## [2026-05-21] docs | inventario ridondanze codebase + scaffold docs
 
+<<<<<<< HEAD
 - Nuovo hub concettuale [`concepts/ridondanze-cross-cutting-codebase.md`](concepts/ridondanze-cross-cutting-codebase.md) _(target mancante, verificato 2026-10-14)_: incrocia **`docs/redundancy-report.md`**, duplicazioni `second-brain-local-discipline`, doc wizard quasi gemelle nel tema Sixteen e cluster legacy modulo User; puntatori verso **`filament/redundancy-rules.md`**.
+=======
+- Nuovo hub concettuale [`concepts/ridondanze-cross-cutting-codebase.md`](concepts/ridondanze-cross-cutting-codebase.md) _(target mancante, verificato 2026-10-14)_: incrocia **`../../../Geo/docs/redundancy-report-2.md`**, duplicazioni `second-brain-local-discipline`, doc wizard quasi gemelle nel tema Sixteen e cluster legacy modulo User; puntatori verso **`filament/redundancy-rules.md`**.
+>>>>>>> laraxot/dev
 
 ## [2026-05-21] docs | LAMP: `docs/lamp/install.txt` riscritto
 

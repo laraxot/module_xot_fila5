@@ -13,7 +13,11 @@ updated: 2026-08-24
 
 ## Collegamenti
 - [Documentazione generale progetto](/project_docs/README.md)
+<<<<<<< HEAD
 - [Regole Filament](filament-best-practices.md)
+=======
+- [Regole Filament](filament-best-practices-2.md)
+>>>>>>> laraxot/dev
 - [Convenzioni Namespace](namespace-conventions.md)
 - [Standard di Codice](../../archive/code-standards.md)
 - [Documentazione](documentation-guidelines.md)

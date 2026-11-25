@@ -75,6 +75,10 @@ chiave sprint: `Xot/phpstan-modules-zero-swarm`.
 
 ## Diario
 
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_oDwLOX
+>>>>>>> laraxot/dev
 - 2026-11-24f **VITTORIA gate**: `/tmp/ptvx-phpstan/cold11.json` totals
   `errors=0`/`file_errors=0` + banner `[OK] No errors` (EXIT 0) sotto
   `flock /tmp/ptvx-phpstan-modules.flock`. Preflight: sweep markers → BOOT_OK.
@@ -108,6 +112,11 @@ chiave sprint: `Xot/phpstan-modules-zero-swarm`.
   ammesso solo a un boundary realmente dinamico o vendor, con validazione,
   narrowing immediato, nessuna propagazione nell'API e motivazione BMAD.
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> .merge_file_jFqOCx
+>>>>>>> laraxot/dev
 - 2026-11-24c (laravel-testing-expert / Pest hang diagnose su 192.168.1.40):
   **GateGuard facts (edit esistente):** nessun file nuovo; aggiorna diario di
   questa story già referenziata da `docs/sprint-status.yaml`

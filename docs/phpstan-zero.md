@@ -36,7 +36,11 @@ discussions: []
 - `phpstan.neon` MAI toccato (solo lettura, proprietario)
 - Nessuna `@phpstan-ignore*`, baseline, `ignoreErrors`
 - `declare(strict_types=1)` mantenuto
+<<<<<<< HEAD
 - `mixed` solo con motivazione esplicita (commento presente)
+=======
+- `mixed` solo come ultima spiaggia, con motivazione esplicita (commento presente): due soli casi ammessi, vedi [ADR 0015](adr/0015-mixed-solo-come-ultima-spiaggia.md)
+>>>>>>> laraxot/dev
 - Git solo avanti (`fetch laraxot/dev`, `push -u laraxot dev`, NO `revert/reset/rebase/force`)
 - Nessun branch creato
 - Operazioni dentro `laravel/Modules/Xot/` (repo indipendente)
@@ -44,7 +48,11 @@ discussions: []
 - Coverage: quality gate ripetuto dopo merge, antes/post verificato
 
 ## Coordinamento multi-agente
+<<<<<<< HEAD
 - `docs/chat/INDEX.md`: Xot presente in swarm (migration-foreignidfor, phpstan-modules-zero)
+=======
+- `docs/chat/index.md`: Xot presente in swarm (migration-foreignidfor, phpstan-modules-zero)
+>>>>>>> laraxot/dev
 
 - `docs/chat/index.md`: Xot presente in swarm (migration-foreignidfor, phpstan-modules-zero)
 - Nessun conflitto con `phpstan-metalwork-claim` (chiuso) o `platform-duplicate-assignment-standdown`

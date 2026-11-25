@@ -617,7 +617,11 @@ Located in `bashscripts/`:
 - [Architecture Overview](./architecture-overview.md) - Complete system architecture
 - [Module Structure](./architecture/module-structure.md) - Directory and file organization
 - [Design Patterns](./architecture/design-patterns.md) - Patterns used in Xot
+<<<<<<< HEAD
 - [Database Schema](./architecture/database-schema.md) - Base database structure
+=======
+- [Database Schema](../../../User/docs/database-schema-2.md) - Base database structure
+>>>>>>> laraxot/dev
 
 ### Core Components
 - [XotBase Classes](./architecture/xotbase-classes.md) - Complete XotBase* class reference
@@ -633,7 +637,11 @@ Located in `bashscripts/`:
 - [Contributing Guidelines](./development/CONTRIBUTING.md) - How to contribute
 
 ### Best Practices
+<<<<<<< HEAD
 - [PHPStan Level 10 Compliance](./phpstan-workflow.md) - Achieving PHPStan compliance
+=======
+- [PHPStan Level 10 Compliance](../consolidated/phpstan/phpstan-workflow-2.md) - Achieving PHPStan compliance
+>>>>>>> laraxot/dev
 - [Type Safety Guidelines](./development/type-safety.md) - Type hint best practices
 - [Naming Conventions](../naming_conventions_docs.md) - File and class naming
 - [Testing Guidelines](../archive/testing-strategy.md) - How to write tests
@@ -641,7 +649,11 @@ Located in `bashscripts/`:
 ### Quality & Tools
 - [Code Quality Tools](./code-quality-tools.md) - PHPStan, Pint, PHPInsights
 - [Automation Scripts](./bashscripts/README.md) - Available automation scripts
+<<<<<<< HEAD
 - [PHPStan Patterns](./phpstan-pattern-soluzioni.md) - Common PHPStan solutions
+=======
+- [PHPStan Patterns](../consolidated/phpstan/phpstan-pattern-soluzioni-2.md) - Common PHPStan solutions
+>>>>>>> laraxot/dev
 
 ### Migration & Upgrade
 - [Filament 4 Migration](../archive/filament-4-migration-guide.md) - Upgrading to Filament 4

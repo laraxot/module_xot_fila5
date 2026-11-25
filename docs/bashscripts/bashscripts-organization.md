@@ -60,7 +60,11 @@ bashscripts/
 - `check_before_phpstan.sh` - Controlli pre-analisi
 
 #### 7. **quality-assurance/** - Qualità del Codice
+<<<<<<< HEAD
 - `code_quality.md` - Documentazione qualità
+=======
+- `code-quality-2.md` - Documentazione qualità
+>>>>>>> laraxot/dev
 - `fix_errors.sh` - Correzione errori automatica
 
 #### 8. **translations/** - Gestione Traduzioni

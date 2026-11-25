@@ -128,7 +128,11 @@ Tutti i test corretti seguono questo principio:
 
 ## 🔗 Collegamenti
 
+<<<<<<< HEAD
 - [Testing Rules](../testing-rules.md)
+=======
+- [Testing Rules](../../User/docs/testing-rules-2.md)
+>>>>>>> laraxot/dev
 - [Activity TestCase Fix](../../Activity/docs/testing-testcase-database-connection-fix.md)
 - [Geo TestCase Fix](../../Geo/docs/testing-testcase-database-connection-fix.md)
 - [Media TestCase Fix](../../Media/docs/testing-testcase-database-connection-fix.md)

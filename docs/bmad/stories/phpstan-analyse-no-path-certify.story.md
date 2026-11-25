@@ -27,7 +27,11 @@ in ordine random, parallelo, BMAD + second brain.
 
 Nota: il binario nudo stampa help; il certify SSoT è
 `./vendor/bin/phpstan analyse` **senza** path CLI (neon paths + type-coverage).
+<<<<<<< HEAD
 Vedi `phpstan-status.md`.
+=======
+Vedi `phpstan-status-2.md`.
+>>>>>>> laraxot/dev
 
 ## Preflight
 

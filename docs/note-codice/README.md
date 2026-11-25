@@ -22,7 +22,11 @@ non le trovava, e chi legge `app/` le trovava senza cercarle.
 
 Il nome di ogni file dice da quale cartella di `app/` viene, cosi' il legame
 col codice non si perde: `console-commands-links.md` stava in
+<<<<<<< HEAD
 `app/Console/Commands/links.md`.
+=======
+`../../../Gdpr/docs/links-2.md`.
+>>>>>>> laraxot/dev
 
 ## Non sono stati cancellati
 
