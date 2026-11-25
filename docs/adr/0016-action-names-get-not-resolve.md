@@ -9,9 +9,10 @@ qmd: "ADR 0016 action naming Get not Resolve QueueableAction convention"
 related:
   - ../bmad/stories/action-names-resolve-to-get.story.md
   - ../../Progressioni/docs/adr/0011-action-names-get-not-resolve.md
+  - ../../Ptv/docs/adr/0003-get-not-resolve-naming.md
+  - ../../Ptv/docs/bmad/stories/5.249-rename-resolvescategori-ecocoloader-to-get.story.md
   - ../../Sigma/docs/adr/0001-action-names-get-not-resolve.md
   - ../../../../../bashscripts/ai/wiki/memories/action-names-get-not-resolve.md
-  - ../../../../../bashscripts/ai/wiki/rules/prefer-get-over-resolve-methods.md
 ---
 
 <!-- Fact-gate: edit ADR esistente; related cross-link Progressioni/Sigma/memoria;
@@ -42,9 +43,12 @@ delle Action di lettura (`Get*Action`, `Count*Action`, `List*Action`).
 1. **Vietato** creare nuove classi `*Action` il cui nome inizia con `Resolve`.
 2. Le Action di lettura/derivazione usano **`Get*`** (es.
    `GetCategoriaEcoByProproAction`, `GetLastEsperienzaAtAction`).
-3. Altri verbi restano ammessi quando descrivono l'effetto: `Update*`,
+3. **Stessa regola sui Concern/trait Filament** di lettura: mai `Resolve*` /
+   `Resolves*` (es. `GetCategoriaEcoColumn`, non `ResolvesCategoriaEcoColumn`)
+   — [Ptv 0003](../../Ptv/docs/adr/0003-get-not-resolve-naming.md).
+4. Altri verbi restano ammessi quando descrivono l'effetto: `Update*`,
    `Refresh*`, `Count*`, `List*`, `Send*`, `Build*`, …
-4. I file contratto kebab-case seguono il nome classe:
+5. I file contratto kebab-case seguono il nome classe:
    `get-categoria-eco-by-propro-action.md` (non `resolve-…`).
 
 ## Conseguenze
@@ -62,4 +66,6 @@ find laravel/Modules -path '*/app/Actions/*' -name 'Resolve*Action.php'
 # atteso: vuoto
 rg -n 'class Resolve\w+Action' laravel/Modules --glob '*Action.php'
 # atteso: vuoto
+test ! -f laravel/Modules/Ptv/app/Filament/Resources/SchedaResource/Pages/Concerns/ResolvesCategoriaEcoColumn.php
+# atteso: assente (SSoT = GetCategoriaEcoColumn)
 ```
