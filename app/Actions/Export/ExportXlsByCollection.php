@@ -7,18 +7,15 @@ namespace Modules\Xot\Actions\Export;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Storage;
+use Maatwebsite\Excel\Excel as ExcelWriter;
 use Maatwebsite\Excel\Facades\Excel;
 use Modules\Xot\Exports\CollectionExport;
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
-use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
-use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 
 /**
  * Classe per l'esportazione di collezioni in formato Excel.
- * @see docs/contracts/export-xls-by-collection.md
- * @contract docs/contracts/export-xls-by-collection.md
  */
 class ExportXlsByCollection
 {
@@ -50,8 +47,12 @@ class ExportXlsByCollection
 
         return Excel::download($export, $filename);
     }
+
     /**
-     * Esporta una collezione in Excel utilizzando PhpSpreadsheet direttamente.
+     * Esporta una collezione in Excel su disco e restituisce il percorso del file.
+     *
+     * PhpSpreadsheet 1.x è imposto da maatwebsite/excel 3.1 ed è deprecato: non
+     * si usa mai direttamente, si passa sempre da Laravel Excel (CollectionExport).
      *
      * @param  Collection<int|string, mixed>|EloquentCollection<int, Model>  $rows  La collezione da esportare
      * @param  array<int|string, string>  $fields  Campi da includere nell'export
@@ -60,81 +61,12 @@ class ExportXlsByCollection
      */
     public function executeWithSpreadsheet(Collection|EloquentCollection $rows, array $fields, string $filename): string
     {
-        // Converte EloquentCollection in Support\Collection se necessario
-        if ($rows instanceof EloquentCollection) {
-            $rows = Collection::make($rows->toArray());
-        }
+        $export = new CollectionExport(collection: $rows, fields: $fields);
 
-        // PhpSpreadsheet 1.x è imposto da maatwebsite/excel 3.1; l'upgrade alla 5.x
-        // richiede la migrazione coordinata di Laravel Excel.
-        $spreadsheet = new Spreadsheet;
-        $sheet = $spreadsheet->getActiveSheet();
+        // Excel::store() accoda gli export ShouldQueue (CollectionExport lo e'): si
+        // usa raw() + put() per una scrittura sincrona su disco.
+        Storage::disk('local')->put($filename, Excel::raw($export, ExcelWriter::XLSX));
 
-        $this->writeHeader($sheet, $fields);
-        $this->writeRows($sheet, $rows, $fields);
-
-        $writer = new Xlsx($spreadsheet);
-        $writer->save($filename);
-
-        return $filename;
-    }
-
-    /**
-     * Scrive l'intestazione nel foglio Excel.
-     *
-     * @param  Worksheet  $sheet  Il foglio Excel
-     * @param  array<int|string, string>  $fields  I campi da utilizzare come intestazioni
-     */
-    protected function writeHeader(Worksheet $sheet, array $fields): void
-    {
-        foreach (array_values($fields) as $col => $field) {
-            $sheet->setCellValue([$col + 1, 1], $field);
-        }
-    }
-
-    /**
-     * Scrive le righe nel foglio di lavoro.
-     *
-     * @param  Worksheet  $sheet  Il foglio di lavoro
-     * @param  Collection<int|string, mixed>  $rows  I dati da scrivere
-     * @param  array<int|string, string>  $fields  I campi da utilizzare per le colonne
-     */
-    protected function writeRows(Worksheet $sheet, Collection $rows, array $fields): void
-    {
-        $row = 2;
-        foreach ($rows as $data) {
-            $col = 0;
-            foreach ($fields as $key => $field) {
-                $path = \is_string($key) ? $key : $field;
-                $value = $this->extractValue($data, $path);
-                $sheet->setCellValue([$col + 1, $row], $value);
-                $col++;
-            }
-            $row++;
-        }
-    }
-
-    /**
-     * Estrae il valore da un oggetto o array usando il campo specificato.
-     *
-     * @param  mixed  $data  I dati da cui estrarre il valore
-     * @param  string  $field  Il campo da estrarre
-     * @return mixed Il valore estratto
-     */
-    protected function extractValue(mixed $data, string $field): mixed
-    {
-        // Usa data_get di Laravel per accesso sicuro ai dati nidificati
-        return data_get($data, $field, '');
-    }
-
-    /**
-     * Converte EloquentCollection in Support\Collection mantenendo i dati.
-     *
-     * @param  EloquentCollection<int, Model>  $eloquentCollection
-     * @return Collection<int, mixed>
-     */
-    protected function convertToSupportCollection(EloquentCollection $eloquentCollection): Collection
-    {
-        return Collection::make($eloquentCollection->toArray());
+        return Storage::disk('local')->path($filename);
     }
 }

@@ -11,8 +11,8 @@ related:
   - ../../../../IndennitaCondizioniLavoro/docs/bmad/2026-10-06-phpstan-l10-fix.story.md
   - ../../../../User/docs/bmad/stories/phpstan-l10-user-lang-fix.story.md
 
-- ../../../../User/docs/bmad/stories/phpstan-l10-user-lang-fix-20261006.story.md
-
+  - ../../../../User/docs/bmad/stories/phpstan-l10-user-lang-fix-20261006.story.md
+qmd: "phpstan modules level10 story level correzione"
 ---
 
 # PHPStan Level 10 — correzione fleet moduli

@@ -28,13 +28,47 @@ base_<progetto>/
     └── assets/xot     -> ../../laravel/Modules/Xot/public     (symlink relativo)
 ```
 
-## Come arrivano al browser
+### Workflow Corretto
+```bash
+# 🚨 SEMPRE lavorare nella cartella del tema
+cd /Themes/One/
+
+# 1. Modifica i file sorgente in:
+# - resources/css/
+# - resources/js/
+# - resources/sass/
+
+# 2. Compila gli assets
+npm run build
+- `@vite([...], 'themes/<Tema>')` legge `public_html/themes/<Tema>/manifest.json`, cioè il manifest del tema.
+- `public_html` è la document root: non si cancella né si svuota mai.
+- I symlink sono **relativi** (restano validi se il progetto cambia percorso) e si creano una volta per
+  installazione, in due modi equivalenti:
+  - `deploy.sh` (funzione `link_public`, prima di `composer install`), in modo idempotente. Se al posto del link
+    c'è una cartella vera (vecchia copia, ignorata da git), la sposta in `laravel/storage/backups/` senza
+    cancellarla e crea il link; un link con un percorso diverso viene corretto.
+  - i comandi artisan `php artisan xot:theme-link` e `php artisan xot:module-link` (con `--dry-run` per
+    provare). Dettagli: [console/commands/xot-asset-links.md](console/commands/xot-asset-links.md).
+    I comandi aggiungono anche il nome del link al `.gitignore` della cartella del docroot (`<nome>/` e
+    `<nome>`). In questo repository i link esistenti sono comunque tracciati (`git add -f`), così un clone
+    funziona senza comandi; le due righe sono già presenti, per cui i comandi non modificano il `.gitignore`
+    sul server. Motivi e verifica: [wiki/concepts/public-html-symlink-assets.md](wiki/concepts/public-html-symlink-assets.md).
 
 ```
 public_html/themes/<Tema>   ->   ../../laravel/Themes/<Tema>/public      (symlink relativo)
 public_html/assets/<modulo> ->   ../../laravel/Modules/<Modulo>/public   (symlink relativo)
 ```
 
+## ⚠️ NON Fare Mai
+❌ **NON modificare** `/public/css/` o `/public/js/` direttamente
+❌ **NON usare** `npm run build` dalla root Laravel
+niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
+
+## ✅ Processo Corretto
+1. **Modifica sorgenti** in `/Themes/[Theme]/resources/`
+2. **Build assets** con `npm run build` dalla cartella tema
+3. niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
+4. **Verifica risultato** nel browser
 - `@vite([...], 'themes/<Tema>')` legge `public_html/themes/<Tema>/manifest.json`, cioè il manifest del tema.
 - `public_html` è la document root: non si cancella né si svuota mai.
 - I symlink sono **relativi** (restano validi se il progetto cambia percorso) e si creano una volta per
@@ -61,6 +95,10 @@ public_html/assets/<modulo> ->   ../../laravel/Modules/<Modulo>/public   (symlin
 ## Lavorare su un tema
 
 ```bash
+cd Themes/One
+npm install          # Prima volta
+npm run build        # Compila Sass/JS
+# niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
 cd laravel/Themes/<Tema>
 npm install      # prima volta
 npm run dev      # sviluppo con hot reload
@@ -87,6 +125,29 @@ export default defineConfig({
     outDir: 'public'
   }
 });
+```
+
+## 🐛 Troubleshooting
+
+### Modifiche Non Visibili?
+1. Verificare di aver eseguito `npm run build`
+2. niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
+3. Svuotare cache browser (Ctrl+F5)
+4. Verificare path corretti in vite.config.js
+
+### Errori di Build?
+1. `npm install` nella cartella tema
+2. Verificare versioni Node/npm
+3. Controllare sintassi Sass/JS
+4. Verificare dipendenze in package.json
+
+---
+
+**⚠️ RICORDA**: Il workflow dei temi è DIVERSO dal normale workflow Laravel. Sempre theme → build → copy → public!
+cd laravel/Themes/Sixteen
+npm install
+npm run dev      # sviluppo con hot reload
+npm run build    # produzione: scrive in ./public (servito dal symlink)
 ```
 
 Lo script `copy` è stato tolto da `package.json` dei temi: non serve più.
@@ -129,4 +190,5 @@ Modulo nuovo con asset pubblici: crea `Modules/<Modulo>/public`, aggiungi `<modu
 | CSS vecchio dopo una modifica | Build del tema non eseguita o non committata | `npm run build` nel tema e commit di `public/` |
 | Icone di un modulo mancanti (`/assets/<modulo>/svg/*.svg`) | Manca `public_html/assets/<modulo>` | Lo crea `deploy.sh` o `php artisan xot:module-link` (link a `Modules/<Modulo>/public`) |
 | Campo mappa assente nei pannelli (`assets/geo/manifest.json`) | Manca `public_html/assets/geo` o la build Geo non è committata | `deploy.sh` o `xot:module-link`; in sviluppo `cd Modules/Geo && ../../node_modules/.bin/vite build` e commit di `public/` |
-| Errori di build | Dipendenze o ambiente | `npm install` nella cartella del tema; verificare versioni di Node/npm; controllare la sintassi Sass/JS, `build.outDir` in `vite.config.js` (deve essere `public`) e le dipendenze in `package.json` |
+| Errori di build | Dipendenze o ambiente | `npm install` nella cartella del tema; verificare versioni di Node/npm; controllare `build.outDir` in `vite.config.js` (deve essere `public`) e le dipendenze in `package.json` |
+| Errori di build | Dipendenze o ambiente | `npm install` nella cartella del tema; verificare versioni di Node/npm; controllare `build.outDir` in `vite.config.js` (deve essere `public`) e le dipendenze in `package.json` |

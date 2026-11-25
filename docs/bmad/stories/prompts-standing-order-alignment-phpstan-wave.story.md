@@ -4,12 +4,13 @@ type: story
 module: Xot
 status: review
 created: 2026-11-16
-updated: 2026-11-23
+updated: 2026-11-24
 tags: [bmad, prompts, standing-order, phpstan, pest, public_html, second-brain]
 qmd: "prompts standing order alignment phpstan wave BMAD second brain swarm pest public_html mixed anti-thrashing"
 related:
   - ./docs-prompts-reorganization.story.md
   - ./docs-md-filename-date-debt.story.md
+  - ./prompts-boy-scout-standing-order.story.md
 ---
 
 # prompts-standing-order-alignment-phpstan-wave
@@ -48,7 +49,7 @@ Nota numerazione: i vecchi alias `00-start` / `11-phpstan` / `15-bmad` sono `01-
 
 ## Contraddizioni residuali (fuori priorita' wave)
 
-Prompt non prioritari ancora citano `docs/stories/` come path primario: `10-architettura.md`, `15-services-verso-actions.md`, `17-controller-verso-folio-actions.md`, `44-audit-autonomo.md`, `98-daily-report.md`. Canonico: `docs/bmad/stories/` (`99-closing-ritual.md` e `03-bmad.md` gia' allineati).
+**Chiuso 2026-11-24 (docs-guardian):** `10`, `15`, `17`, `44`, `98` (+ `11`, `16`, `51`, `53`, `54`, `56`) allineati a `docs/bmad/stories/` primario; `docs/stories/` solo come legacy esplicito. Dettaglio: [prompts-boy-scout-standing-order.story.md](./prompts-boy-scout-standing-order.story.md).
 
 ## Spot-check docs moduli
 
@@ -62,6 +63,11 @@ Vedi [docs-md-filename-date-debt.story.md](./docs-md-filename-date-debt.story.md
 | 2026-11-23 | docs-guardian | prompts 00/04/05/36/37 + story debt | allineamento standing order; AI assente; Notify/Xot debito documentato |
 
 ## Diario
+
+### 2026-11-24
+
+- Lane docs-guardian boy-scout: vedi [prompts-boy-scout-standing-order.story.md](./prompts-boy-scout-standing-order.story.md). Flock path unificato; Filament 5 Schema; `wiki-hygiene.py` rimosso dai prompt.
+- Seconda wave: debito `docs/stories/` su 10/15/17/44/98 chiuso; 51/54/56 + 11/16/53 allineati a master (flock max-3, Pest/host, public_html, mixed last resort).
 
 ### 2026-11-23
 

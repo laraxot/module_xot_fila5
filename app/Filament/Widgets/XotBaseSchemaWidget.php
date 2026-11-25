@@ -33,6 +33,7 @@ use Webmozart\Assert\Assert;
  *
  * @property Schema $form
  * @property array<string, mixed>|null $data
+ *
  * @see ../../../docs/bmad/livewire-widget-decision-log.md
  */
 abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
@@ -48,6 +49,7 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
      * FQCN *Form (opzionale). Se presente, `form()` delega a `FormClass::{schemaMethod()}`.
      *
      * @return class-string|null
+     *
      * @see ../../../docs/bmad/livewire-widget-decision-log.md
      */
     protected static function formClass(): ?string
@@ -70,6 +72,7 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
      * Schema form (override nelle sottoclassi). Usato se `formClass()` è vuoto.
      *
      * @return array<int|string, Component>
+     *
      * @see ../../../docs/bmad/livewire-widget-decision-log.md
      */
     public function getFormSchema(): array
@@ -77,6 +80,9 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
         return [];
     }
 
+    /**
+     * @see Modules/Xot/docs/filament/xotbase-schema-widget.md
+     */
     public function form(Schema $schema): Schema
     {
         $formClass = static::formClass();
@@ -90,6 +96,7 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
 
             /** @var callable(): array<int|string, Component> $resolver */
             $resolver = [$formClass, $method];
+            /** @var array<int|string, Component> $components */
             $components = $resolver();
 
             return $schema->components($components)->statePath('data');
@@ -102,6 +109,7 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
      * @param  class-string  $formClass  Es. UserForm::class
      * @param  string  $method  Es. getRegisterFormSchema
      * @return array<int|string, Component>
+     *
      * @see ../../../docs/bmad/livewire-widget-decision-log.md
      */
     protected static function resourceFormSchema(string $formClass, string $method): array

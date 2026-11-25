@@ -12,6 +12,7 @@ references:
   - ../../../../../Themes/Three/docs/index.md
   - ../../../../../Themes/Three/docs/README.md
   - ./phpstan-modules-swarm-random.story.md
+qmd: "theme three refresh story indice completo"
 ---
 
 # Theme Three — indice docs completo e navigazione coerente

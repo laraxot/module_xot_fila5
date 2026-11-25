@@ -15,6 +15,8 @@ use Webmozart\Assert\Assert;
 
 /**
  * Trait Modules\Xot\Models\Traits\RelationX.
+ *
+ * @see Modules/Xot/docs/traits/relation-x.md
  */
 trait RelationX
 {
@@ -91,9 +93,13 @@ trait RelationX
      * Define a polymorphic many-to-many relationship.
      *
      * @template TRelatedModel of \Illuminate\Database\Eloquent\Model
+     * @template TPivot of \Illuminate\Database\Eloquent\Relations\MorphPivot
      *
      * @param  class-string<TRelatedModel>  $related
-     * @return MorphToMany<TRelatedModel, $this>
+     * @param  class-string<TPivot>|null  $pivotClass  Concrete pivot class; inferred from convention when null
+     * @return MorphToMany<TRelatedModel, $this, ($pivotClass is null ? MorphPivot : TPivot), 'pivot'>
+     *
+     * @see Modules/Xot/docs/traits/relation-x.md
      */
     public function morphToManyX(
         string $related,
@@ -105,11 +111,13 @@ trait RelationX
         ?string $relatedKey = null,
         ?string $relation = null,
         bool $inverse = false,
+        ?string $pivotClass = null,
     ): MorphToMany {
         Assert::subclassOf($related, Model::class);
         Assert::isInstanceOf($related_model = app($related), Model::class);
 
-        $pivot = $this->guessMorphPivot($related);
+        $pivot = $pivotClass !== null ? app($pivotClass) : $this->guessMorphPivot($related);
+        Assert::isInstanceOf($pivot, MorphPivot::class);
         $table = $this->qualifyPivotTable($pivot, $related_model, $pivot->getTable());
         $pivotFields = $pivot->getFillable();
 

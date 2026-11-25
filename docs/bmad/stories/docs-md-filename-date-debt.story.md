@@ -102,3 +102,82 @@ Ambito: moduli con errori PHPStan attesi (AI / Notify / Xot). Solo inventario; m
 | **Themes/Zero** | Ancora `f1-world-champion-2026-theme-analysis.md` + story dated `quality-gates-phpstan-swarm-2026-09-23.story.md` (lane dedicata, non mass-rename). |
 
 Prossimo (quando hygiene stabile): wave Notify indici (un canonico + link) e Xot `consolidated/phpstan` fuse/alias; Themes Zero F1 `git mv` singolo. Refs: [prompts-standing-order-alignment-phpstan-wave.story.md](./prompts-standing-order-alignment-phpstan-wave.story.md).
+
+<!-- GateGuard facts: (1) no supersede — append only to existing docs-md-filename-date-debt.story.md; (2) linked-from: docs/sprint-status.yaml Xot/docs-md-filename-date-debt + User companion story; (3) edit existing not new file; (4) user: "Story debito: ... avanza un chunk REALISTICO" + "Aggiorna docs/sprint-status.yaml riga Xot/docs-md-filename-date-debt". -->
+
+### Wave 2026-11-24 — prio Xot/User/Performance/Ptv/Themes Zero (docs-guardian)
+
+Ambito: chunk realistico (~18 path), solo `git mv` + stub `superseded_by`, **D=0**.
+Niente phpstan. Indici README aggiornati (Performance/Progressioni/Ptv + Zero).
+
+| Owner | Azione | Note |
+|---|---|---|
+| **Performance** | story datata → `phpstan-l10-performance-swarm.story.md` + stub | file era untracked: contenuto ricostruito da purpose/README/contract |
+| **Themes/Zero** | 2 dated → `*-historical` + stub; `METODI_*` → kebab; `CONFLICT_*` stub | F1 già stub; date ISO/year attive Zero = **0** |
+| **Xot** | `STORY-XXX` → kebab; UPPER `Architecture`/`STORY-512`/`ST-XX` → stub; `consolidated/.../gennaio-1` → batch (gitignored, recovery scratchpad) | date ISO/year attive Xot = **0** |
+| **User** | root dated → historical/stub verso canon (`phpstan-fixes*`, `roadmap`, `translation-syntax`, `git-conflicts`) | residui attivi: **24** (quasi tutti `wiki/archive/**`) |
+| **Ptv** | `METODI-DUPLICATI-ANALISI` → stub verso kebab | date attive = **0** |
+| **Progressioni** | nessun rename (0 violazioni date) | solo README backlink |
+
+**Inventario post-wave (ISO/year/compact, non-stub):** Modules+Themes **~56** attivi (tutti i filename con data incl. stub: **66**). UPPERCASE attivi ~649 (Notify dominante). `cci-2026-*` in IR = dominio CCI, non debt data.
+
+**Lezione:** mai stub-overwriting se `git mv` fallisce su untracked/gitignore — verificare exit code; recover immediato.
+
+Prossimo chunk: User `wiki/archive/**` dated (batch 15–20 stub→canon dove esiste), poi Notify dated root; UPPERCASE solo dove esiste già kebab canonico.
+
+<!-- GateGuard facts: (1) no supersede — append only to existing docs-md-filename-date-debt.story.md; (2) linked-from: docs/sprint-status.yaml Xot/docs-md-filename-date-debt + User companion story; (3) edit existing not new file; (4) user: "Append diario story Xot + companion modulo se esiste + riga docs/sprint-status.yaml Xot/docs-md-filename-date-debt". -->
+
+### Wave 2026-11-24c — Notify/UI tracked + User archive gitignored (docs-guardian)
+
+**Premessa inventario:** Progressioni / Performance / Ptv / Xot = **0** dated ACTIVE.
+Residui reali tracciati pre-wave: solo **7** (`Notify`×4, `Lang`×2, `UI`×1). Il grosso (~45) è **gitignored** (User `wiki/archive`, Notify `project_docs`, Rating `*-[0-9][0-9].md`).
+
+| Scope | Azione | Note |
+|---|---|---|
+| **Notify** (tracked) | 4× `git mv` `*-2026-03.md` → `*-mar-historical.md` + stub dated → canon | D=0; canoni `documentation-improvement-summary.md` ecc. |
+| **UI** (tracked) | 1× `git mv` `roadmap/2025-q4-roadmap.md` → `q4-roadmap-year-historical.md` + stub → `q4-roadmap.md` | |
+| **Lang** (tracked) | 2× rewrite stub (no mv: `*-historical.md` già presenti) → `translation-audit-completion.md` / `translation-errors-correction.md` | |
+| **User** `wiki/archive/**` | 18× filesystem `mv`+stub (path **gitignore** → `git mv` N/A) | stub→canon dove esiste; legacy 2 content-kept in `*-historical.md`; **nessun rm** |
+| **Progressioni/Perf/Ptv/Xot** | 0 | già puliti |
+
+**Post-wave ACTIVE ISO/year (Modules+Themes, excl. `cci-2026*`):** **~27** (pre ~52; story precedente citava ~56). Stub dated residui ~35.
+
+**Residui next:** Notify ignored `project_docs/roadmaps/*-2025-10` (~10) + root `work-completed`/`implementation-summary`; User archive leftovers 7; Rating ignored 6; Job/ICL 1 ciascuno.
+
+**Lezione:** la maggior parte del debito date è fuori da git index; wave “git mv only” sui tracked è piccola — archive va trattato con `mv`+stub senza `rm`, mai force-add di dump interi.
+
+<!-- GateGuard facts: (1) no supersede — append only to existing docs-md-filename-date-debt.story.md; (2) linked-from: docs/sprint-status.yaml Xot/docs-md-filename-date-debt + User companion + Rating bonifica story; (3) edit existing not new file; (4) user: chunk REALISTICO max 15 Notify project_docs + User leftover + Rating ignored. -->
+
+### Wave 2026-11-24d — Notify project_docs + Rating ignored + User leftover (docs-guardian)
+
+Chunk **15**, solo filesystem `mv`+stub (`superseded_by`), **nessun rm**, no PHP, no phpstan.
+Path **gitignored** → `git mv` N/A (Notify `project_docs`, Rating `*-[0-9][0-9].md`, User `wiki/archive`).
+
+| Scope | N | Azione |
+|---|---|---|
+| **Notify** `project_docs/` + `roadmaps/` | 10 | `*-2025-10.md` → `*-oct-historical.md` + stub dated → bare canon (`final-implementation-report`, `agid-analysis-implementation`, …) |
+| **Rating** ignored | 2 | root `phpstan-fixes-2026-01` → `phpstan-fixes-jan-historical` + stub→`phpstan-fixes.md`; bmad promote → `phpstan-fixes.md` + stub dated |
+| **User** archive leftover | 3 | `old_tasks/phpstan-fixes-2025` → `*-year-historical` + stub; `old_tasks/phpstan-fixes-gennaio-2025` → `*-year-historical` + stub→`phpstan-fixes-gennaio.md`; `historical/phpstan-fixes-2025` → `phpstan-fixes-year-historical` + stub |
+
+**Post-wave ACTIVE ISO/year (excl. `cci-2026*`):** **~17** (pre ~27). Stub dated ~34.
+**Residui next:** Notify root ignored `work-completed-2025-10` + `implementation-summary-2025-01`; User root×3 + archive symlink×6 + historical theme-pointer×2 + wiki legacy×2; Themes/Zero×2.
+
+Link min: Rating `INDEX-GENERATED.md` / `bmad/index-generated.md` label `phpstan-fixes-2026-01` → canon. Memoria `docs-rename-no-delete-git-mv-only` confermata.
+
+<!-- GateGuard facts: (1) no supersede — append only; (2) linked-from sprint-status Xot/docs-md-filename-date-debt; (3) edit existing; (4) user: Activity+Xot+UI chunk date-debt DRY+KISS. -->
+
+### Wave 2026-11-24e — Activity + Xot + UI (subagent date-debt)
+
+Ambito: solo `laravel/Modules/{Activity,Xot,UI}/docs`. Lock moduli (stale unlock → reclaim). **Nessun rm** su path dated (stub `superseded_by`); `readme.md` duplicato di `README.md` eliminato dopo promote contenuto utile. No PHP / no phpstan / no commit.
+
+| Owner | Azione | Esito |
+|---|---|---|
+| **Activity** | story `php-conflict-markers-20261124` → `php-conflict-markers.story.md` + stub; `phpstan-analysis-november` → snapshot-historical + stub→`phpstan.md`; inventory-april → snapshot-historical + stub; `ARCHITECTURE.md` → stub→`architecture.md`; 2× `readme.md` (bmad/wiki) eliminati dopo promote | **ACTIVE ISO/month = 0** |
+| **UI** | 7 month-named (`january`/`gennaio`/`november`) → `*-snapshot-*-historical` + stub→`phpstan-corrections`/`phpstan-fixes`/`translations-update`; `2025-q4` già stub; 2× `readme.md` eliminati; link in `index.md`/`00-index.md` | **ACTIVE = 0** |
+| **Xot** | 6 story suffix `-24`/`-25`/`-29` (duplicati identici del canon) → stub; `consolidated/.../gennaio-*` → batch-historical + stub; `standards`+`best-practices` `readme.md` eliminati (best-practices restored into README) | **ACTIVE = 0** |
+
+**Residuo in-scope:** solo stub dated/month (alias) + epic-num story BMAD (`5.xxx` / `8.x` / `1.4` / `7.15`) non toccati in questo chunk (non sono date ISO; debt naming numerico a parte).
+
+**Indici:** Activity `docs/index.md` + `wiki/00-index.md`; UI `index.md` + `00-index.md` aggiornati ai canoni.
+
+**Prossimo (fuori chunk):** Notify root ignored dated; User archive leftovers; epic-num story rename wave dedicata; UPPERCASE residui dove esiste kebab.

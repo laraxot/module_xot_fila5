@@ -2,11 +2,17 @@
 qmd: "xot decision log md"
 type: decision-log
 title: "Decision Log — Xot"
-links: {github_issue: #XXX, discussion: #XXX}
+links: {github_issue: "#XXX", discussion: "#XXX"}
 ---
 # Decision Log — Xot
 
 ## Decisions
+
+### 2026-11-24: Vietato `require` di `Modules/Xot/routes/empty.php`
+- **Choose**: stub locale minimo in `routes/web.php` / `routes/api.php` quando non ci sono rotte; ADR `docs/adr/no-shared-empty-route-file.md`.
+- **Over**: file condiviso `empty.php` in Xot, oppure omettere i file routes.
+- **Because**: `empty.php` non esisteva; il require era coupling a zero comportamento e residuo di merge conflict (UI/Lang/Cms). `XotBaseRouteServiceProvider` già fa `Route::group` sul file del modulo.
+- **Verifica**: `rg "Xot/routes/empty" laravel/Modules` vuoto; test `NoSharedEmptyRouteFileTest`.
 
 ### 2026-10-08: Riallineamento dell'intero modulo all'ultimo commit buono `cadb1578e`
 - **Choose**: Confronto a tre vie dell'intero modulo (app, config, routes, resources, lang, database, tests) con `cadb1578e` (06/10 18:00, commit irraggiungibile: la linea buona di Xot e' stata sostituita dal re-import senza genitori `2dc9faf42` del 07/10 13:11). Tra il 06/10 18:00 e il re-import non ci sono altri commit su Xot.
