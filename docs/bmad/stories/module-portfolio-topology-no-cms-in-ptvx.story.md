@@ -9,8 +9,25 @@ related:
   - ../../../../../../bashscripts/ai/wiki/memories/frontend-folio-routing.md#module-portfolio-taxonomy-ptvx
   - ../../../../../../bashscripts/ai/wiki/memories/filament-tables-forms-xotbase.md#filament5-layout-contract-shared-modules
 ---
-
 # Topologia moduli: imparare senza importare
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Istruzione
 
@@ -46,3 +63,13 @@ applicare su UI/User/Xot. **Mai** portare il modulo Cms in PTVX.
 - [x] Nessun `Modules/Cms` in checkout PTVX.
 - [x] Memoria tassonomia misurata.
 - [x] Layout Filament su UI/User; Activity senza `Folio::path`.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

@@ -8,8 +8,25 @@ updated: 2026-11-24
 tags: [bmad, ecc, second-brain, coverage, docs, gitignore, modules, themes]
 qmd: "coverage artifacts docs archive screenshots gitignore modules themes cleanup"
 ---
-
 # Story — artefatti generati fuori dai repository dei pacchetti
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Perché
 
@@ -52,3 +69,13 @@ Dopo l'autenticazione di `gh` sono state aperte le issue puntuali. Durante la ch
 in concorrenza gli ultimi due temi: TwentyOne `2eff07e`, Two `d584c35`. Il tentativo dell'agente ha trovato entrambi i
 working tree già puliti e non ha creato commit vuoti. Test pacchetto finali: TwentyOne 2 test/11 assertion; Two 2 test/232
 assertion, tutti verdi.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

@@ -59,6 +59,25 @@ files_created: phpstan-baseline.md
 files_updated: phpstan.neon, multiple PHP files
 
 ---
+# Story
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Story Summary
 
@@ -319,3 +338,13 @@ Achieving PHPStan zero errors across all modules is essential for:
 5. **Quality**: Meeting project quality standards
 
 Implementing this story will significantly improve the robustness and reliability of the entire project.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

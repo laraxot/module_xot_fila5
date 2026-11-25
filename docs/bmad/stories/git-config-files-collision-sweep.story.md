@@ -11,8 +11,25 @@ updated: 2026-11-16
 tags: [bmad, phpstan, git, gitattributes, gitignore, composer, swarm, second-brain]
 qmd: "gitattributes gitignore composer json merge conflict markers phpstan modules swarm"
 ---
-
 # Obiettivo
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 Richiesta utente 2026-11-16: eseguire `phpstan analyse Modules`, sistemare tutte
 le segnalazioni (swarm + subagent + BMAD + second brain, ordine random, focus su
@@ -173,3 +190,13 @@ concentrarsi solo sui moduli senza lane — che in questa finestra
 erano gia' tutti a 0. Le run intermedie possono mostrare errori
 già fixati: verificare sempre il working tree corrente prima di
 editare.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

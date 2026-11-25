@@ -20,6 +20,25 @@ related:
 ---
 # phpstan-modules-2026-09-24
 
+## Context and Problem Statement
+
+Richiesta: `cd laravel && ./vendor/bin/phpstan analyse Modules` e fix di tutti
+gli errori, swarm in parallelo in ordine random, BMAD + second brain.
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
 ## Perche'
 
 Richiesta: `cd laravel && ./vendor/bin/phpstan analyse Modules` e fix di tutti
@@ -97,3 +116,13 @@ Gate deep: `phpstan analyse Modules` → **`[OK] No errors` EXIT 0** (certify po
 
 **done**. Pest skip: `DB_HOST=10.100.200.53` DOWN. Memoria:
 `bashscripts/ai/wiki/memories/multi-agent-coordination.md#phpstan-modules-swarm-session`.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

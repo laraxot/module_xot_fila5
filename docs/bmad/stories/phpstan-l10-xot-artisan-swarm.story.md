@@ -9,8 +9,25 @@ track: quality/phpstan
 related:
   - ../../../../Xot/docs/bmad/stories/2026-10-06-phpstan-modules-level10.story.md
 ---
-
 # PHPStan L10 Xot Artisan actions
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 Claim: agente swarm-lang-tenant. Errori in elenco: 2 (`ShowArtisanErrorLogAction`, `ShowArtisanRouteListAction`), risolti 2.
 
@@ -27,3 +44,13 @@ Pagine di debug amministrativo: `ShowArtisanRouteListAction` mostra l'elenco rot
 
 ## Lezione
 Un `@var view-string` su un letterale di view e' lecito solo se la view esiste: verificarlo con `view()->exists()`, altrimenti nasconde un fatal a runtime.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+`phpstan analyse Modules/Xot/app/Actions/Artisan`: `[OK] No errors`. `view()->exists('xot::acts.artisan.error-show')` true; la view compila in PHP valido. Nessun test copre la view: renderla davvero richiede il layout del tema (non verificato).

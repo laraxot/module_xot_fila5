@@ -3,8 +3,25 @@ title: "Remediation PHPStan globale dei moduli"
 status: done
 qmd: "phpstan Modules errori 23 source-first swarm BMAD"
 ---
-
 # Story: remediation PHPStan globale dei moduli
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Obiettivo
 
@@ -45,3 +62,16 @@ essere usato come evidenza del gate.
 - `bashscripts/lock/`
 - `laravel/Modules/Xot/docs/ecc/00-index.md`
 - `bashscripts/ai/wiki/memories/agent-conduct-tooling.md#source-first-before-fix`
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Fix swarm completati sui cluster Performance, Ptv, Xot e test Xot. Il gate finale esclusivo ha restituito
+`/tmp/phpstan-current-final4/result.json` con `errors=0`, `file_errors=0`, exit 0. Il risultato iniziale è stato salvato in
+`/tmp/phpstan-current-unique/result.json`; nessun processo concorrente deve
+essere usato come evidenza del gate.

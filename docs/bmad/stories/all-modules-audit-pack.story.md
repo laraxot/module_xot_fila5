@@ -4,8 +4,25 @@ title: Audit completo di tutti i moduli con BMAD ed ECC
 status: review
 updated: 2026-11-16
 ---
-
 # Story: audit completo di tutti i moduli con BMAD ed ECC
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Obiettivo
 
@@ -33,3 +50,13 @@ completo in `docs/` del modulo.
 
 Pack documentale completo e audit approfonditi aggiornati. Implementazione P0
 aperta (story figlie per modulo). Pest resta gate aperto per DB testing.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

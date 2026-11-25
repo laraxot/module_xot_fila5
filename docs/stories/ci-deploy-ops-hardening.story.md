@@ -13,8 +13,25 @@ related:
   - ../ci/ci-pipeline.md
 qmd: "ci deploy ops hardening story operazioni"
 ---
-
 # CI, deploy e operazioni pronte per la produzione
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 Finding chiusi o ridotti: QA-01, OPS-01, OPS-02, OPS-03, OPS-08 (solo analisi), OPS-10, OPS-11 e OPS-13 (documentazione), OPS-12.
 
@@ -97,3 +114,23 @@ Finding chiusi o ridotti: QA-01, OPS-01, OPS-02, OPS-03, OPS-08 (solo analisi), 
 - **OPS-11.** `DatabaseBackUpCommand` di Xot ha ancora i difetti dell'audit. Il backup notturno è documentato nel runbook, ma il cron va installato sul server.
 - **OPS-13.** I check di `spatie/laravel-health` non sono registrati in un provider e `health:check` non è schedulato.
 - **Config.** `config/media-library.php` ha lo stesso schema autoreferenziale di `logging.php` (`config('media-library.disk_name', ...)`). Oggi lo maschera `config/local/fixcity/media-library.php`.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+- `python3` con il modulo `yaml`: `ci.yml` e `action.yml` validi.
+- `bash -n deploy.sh`: ok. Il PHP dentro `deploy.sh` passa `php -l` ed è stato provato con una config finta: deduplica le connessioni, scarta quelle sqlite, raddoppia i backslash nella password.
+- `php -l` su `config/logging.php`, `tests/Pest.php`, `Themes/Sixteen/config/cie.php` e `CieAuthAction.php`: ok.
+- `config/logging.php` provato con un `env()` finto:
+  - senza variabili, il default è `stack` e lo stack è `[daily]`;
+  - `LOG_CHANNEL=daily` viene rispettata;
+  - `slack` con l'URL `REDACTED_SLACK_WEBHOOK_URL` di `.env.testing` viene scartato;
+  - `critical_mail` è attivo solo con `LOG_CRITICAL_MAIL_TO`.
+- `phpunit.xml`: XML valido.
+- `npm install` e `vite build` di Geo: ok, il manifest è presente.
+- **Non eseguiti qui**, perché il sandbox ha PHP 8.3 e non ha `vendor/`: PHPStan, Pest e `composer update`. Il primo run della CI su GitHub è la verifica reale.

@@ -14,8 +14,25 @@ related:
   - ../../../../../../bashscripts/git/gitmodules.ini
   - ../../../../../../bashscripts/git/subtrees/sync_subtrees_safe.sh
 ---
-
 # Audit e manutenzione dei repository Git annidati
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Scopo
 
@@ -93,3 +110,13 @@ Recupero: `git fetch --unshallow laraxot`. Se la decisione contraria resta quell
 Lo script `slim-nested-git-repos.sh` e quello nuovo `tools/git/slim-module-theme-git.sh` sono complementari (artefatti di tooling
 contro ref/commit-graph): non unirli senza decidere chi tiene il `gc --prune=now` senza periodo di grazia.
 
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

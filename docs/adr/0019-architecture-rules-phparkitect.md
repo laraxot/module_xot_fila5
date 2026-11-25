@@ -6,8 +6,8 @@ module: Xot
 tags: [adr, architettura, phparkitect, pest, ci, qualita]
 created: 2026-11-18
 updated: 2026-11-24
-status: superseded by architecture-tests-pest-arch.md
-superseded_by: architecture-tests-pest-arch.md
+status: superseded by 0020-architecture-tests-pest-arch.md
+superseded_by: 0020-architecture-tests-pest-arch.md
 issues:
   - "progetto ospite #732"
   - "progetto ospite #733"
@@ -17,11 +17,11 @@ related:
   - ../rules/action-behavioral-contract.md
 ---
 
-> Superseded da [architecture-tests-pest-arch.md](architecture-tests-pest-arch.md): PHPArkitect con baseline sostituito da Pest arch(). Nessuna decisione nuova: il canonico prevale, questo file non va esteso.
+> Superseded da [0020-architecture-tests-pest-arch.md](0020-architecture-tests-pest-arch.md): PHPArkitect con baseline sostituito da Pest arch(). Nessuna decisione nuova: il canonico prevale, questo file non va esteso.
 
 # ADR: le regole architetturali sulle classi si verificano con PHPArkitect, con baseline
 
-> **Superseded** il 2026-11-18 da [architecture-tests-pest-arch](architecture-tests-pest-arch.md): si usa Pest arch(),
+> **Superseded** il 2026-11-18 da [architecture-tests-pest-arch](0020-architecture-tests-pest-arch.md): si usa Pest arch(),
 > gia' installato. Le misure qui sotto restano valide e motivano le protezioni di `tests/Arch/scope.php`.
 
 ## Contesto
@@ -85,7 +85,7 @@ Proposta (da confermare, aggiunge una dipendenza di sviluppo):
 ## Conferma
 
 Questo ADR e' verificato come `superseded` dal link a
-`architecture-tests-pest-arch.md`. Nuove regole architetturali sulle classi
+`0020-architecture-tests-pest-arch.md`. Nuove regole architetturali sulle classi
 devono essere aggiunte alla suite Pest arch() e non a una configurazione
 PHPArkitect separata.
 

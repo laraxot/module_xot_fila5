@@ -4,8 +4,25 @@ qmd: "xot stories xot log triage after log wipe story md"
 type: note
 tags: [documentation]
 ---
-
 # Story: triage dei log di errore dopo l'azzeramento dei file (2026-11-12)
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 **Modulo owner:** Xot (tooling e log; i fix toccano il tema Sixteen)
 **Fase BMAD:** verifica e rifinitura (quality gate), richiesta utente: «leggi log errori e sistemali utilizzando bmad + ecc + second brain e poi togli l'errore corretto dal log»
@@ -86,3 +103,13 @@ Dopo la registrazione di `notify:check-dns` la voce `Command "notify:check-dns" 
 - Server di posta (invio/ricezione propria): **non installato**. Serve la decisione dell'utente su quale macchina (zorin 192.168.1.40 oppure prod 46.225.90.178) e sull'architettura inbound prima di aprire un MTA pubblico.
 - Rinominare la migrazione di `inbound_emails` dal proprietario del modulo Notify.
 - Le due doc `log-error-resolution.md` (Tenant, Sixteen) sono state corrette con i fatti misurati (manifest con marker alle 21:23, archivio quasi vuoto); restano untracked: le committa la sync o il proprietario.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

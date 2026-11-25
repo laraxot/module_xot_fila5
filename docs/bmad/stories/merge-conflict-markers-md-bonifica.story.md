@@ -11,8 +11,42 @@ related:
   - ./git-collisions-merge-resolution.story.md
   - ../../../../../../bashscripts/docs/operations/sync-repair-tools.md
 ---
-
 # Bonifica marker `.md` committati
+
+## Context and Problem Statement
+
+Il commit root `d24d597f8b` (09:21, messaggio ".") ha portato 3624 file con marker
+`<<<<<<< HEAD` / `>>>>>>> laraxot/dev` (e `.merge_file_*` annidati) sotto `laravel/Modules`.
+La parte PHP e' gia' bonificata nel working tree (story gemella). Restano ~3650 file non-PHP
+(3641 `.md`, 17 `.mdc`, 5 `.gitignore`, 2 `.sh`, 1 yaml, 1 json): documentazione dei moduli
+illeggibile, link duplicati, front matter doppio, QMD che indicizza rumore.
+
+`SYNC_BASE = c826d2258b` (ultimo commit root prima del commit di massa: 19 file con marker contro 3624).
+
+| Modulo | File |
+|---|---:|
+| Notify | 2431 |
+| User | 555 |
+| Activity | 215 |
+| Lang | 204 |
+| UI | 87 |
+| Xot | 79 |
+| Media | 77 |
+| Job | 19 |
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Perche'
 
@@ -129,3 +163,13 @@ Media merge aperto (91 UU), Job: il merge aperto dalle 08:43 e' stato concluso d
 
 - Push di Notify `a6a34ea77` su `laraxot/dev` (l'upstream Notify ha ancora ~2400 file con marker).
 - `merge_remote_repo_2.sh` e' lo strumento di sync in uso (header "DEPRECATO" errato, corretto). Proposta: saltare il path se c'e' un merge/rebase aperto, come gia' fa `dummy_push` (guardia 2026-10-28).
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

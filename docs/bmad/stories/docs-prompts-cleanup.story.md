@@ -4,8 +4,26 @@ type: story
 status: draft
 qmd: "docs-prompts-cleanup"
 ---
-
 # Epic
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
 Cleanup ridondanza docs e prompt — PTVX
 
 # Acceptance Criteria
@@ -28,3 +46,13 @@ Cleanup ridondanza docs e prompt — PTVX
 - docs/task-summary.md (sezioni 1-5)
 - Rapporti verifica subagent (prompts + module docs)
 - Regole: no-date-nel-nome, zero-ridondanza, nessun-commit-senza-richiesta
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

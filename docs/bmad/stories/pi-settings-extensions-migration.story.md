@@ -9,8 +9,25 @@ updated: 2026-11-16
 tags: [docs, xot, bmad]
 qmd: "pi ripristino settings e migrazione hooks xot"
 ---
-
 # Pi — ripristino settings e migrazione hooks
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Problema
 
@@ -42,3 +59,16 @@ Settings project già JSON valido; non ripristinare i `*.bak-corrupt*` /
 
 - Memoria: [agent-conduct-tooling.md#pi-settings-extensions](../../../../../../bashscripts/ai/wiki/memories/agent-conduct-tooling.md#pi-settings-extensions)
 - Sprint: `docs/sprint-status.yaml` → `Xot/pi-settings-extensions-migration-20260929`
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+- `python3 -m json.tool bashscripts/ai/.agents/settings.json`: verde
+- `test ! -d bashscripts/ai/.agents/hooks`: ok
+- `pi --offline --help` / `pi list`: nessun Invalid settings / Failed to load extension
+- enforcement condiviso ancora in `bashscripts/ai/hooks/`

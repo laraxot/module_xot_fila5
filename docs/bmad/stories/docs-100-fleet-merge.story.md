@@ -8,8 +8,25 @@ updated: 2026-10-09
 tags: [docs, xot, bmad]
 qmd: "epic   docs ≤100 .md ricorsivi via merge (fleet-wide, 2026-10-05) xot"
 ---
-
 # Epic: Docs ≤100 .md ricorsivi via merge (fleet-wide, 2026-10-05)
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 > Status: in-progress. Owner: sessione corrente. Metodo: BMAD + second brain + ponytail.
 
@@ -121,3 +138,13 @@ Misura in sola lettura (`docs-organizer.py audit --out`), nessuna correzione: qu
 | **Totale** | 11090 | 2711 | 1082 | 643 | 25 | 50 | 1243 |
 
 Confronto con il 2026-10-29 sui sette moduli misurati in tutte e due le date: link rotti invariati in Activity (87), Notify (241), <nome progetto> (14), Tenant (70), User (134) e Xot (380), +1 in Geo (da 121 a 122). In Xot compare un nome con data, `bmad/stories/phpstan-analyse-modules.story.md`: aggiunto il 2026-09-24 da Marco Sottana e arrivato con il pull, non creato oggi. Zero non era nella misura del 2026-10-29. Le variazioni vengono dai commit di modulo fra le due misure (dettaglio in `docs/worklog/2026/11/03/`), non da correzioni del Passo 7.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

@@ -13,8 +13,25 @@ status: ready-for-dev
 created: 2026-09-22
 updated: 2026-09-22
 ---
-
 # 5.126 — Verifica e correzione max 5 .md in root modulo ($MODULO)
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Story
 
@@ -26,3 +43,13 @@ Nelle root dei moduli ci devono stare al massimo 5 file .md (README.md, CHANGELO
 2. Solo quelli ammessi presenti in root
 3. Contenuto dei file spostati conservato (merged se gemello in docs/)
 4. Gate verify-module-root-hygiene.sh passa
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

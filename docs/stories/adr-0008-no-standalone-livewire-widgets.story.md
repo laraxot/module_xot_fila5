@@ -11,8 +11,25 @@ related:
   - docs/wiki/rules/no-standalone-livewire-classes.md
 qmd: "adr 0008 no standalone livewire widgets"
 ---
-
 # Story: No standalone Livewire, usare Filament widget
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Descrizione
 
@@ -40,3 +57,13 @@ Aggiungere un ADR che vieta l'uso di componenti Livewire standalone in tutti i m
 
 - Issue: DA CREARE sul repo `laraxot/module_xot_fila5`
 - Comando: `gh issue create --title "ADR 0008: No standalone Livewire, usare Filament widget" --body "Vedi ADR in laravel/Modules/Xot/docs/adr/0008-filament-widgets-over-standalone-livewire.md"`
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

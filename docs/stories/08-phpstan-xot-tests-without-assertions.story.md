@@ -12,8 +12,25 @@ related:
   - ./2026-10-08-phpstan-xot-app-regressions.story.md
 qmd: "08 phpstan xot tests without assertions"
 ---
-
 # [STORY] PHPStan Xot/tests: test senza asserzioni
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## User Request
 
@@ -64,3 +81,16 @@ Giudizio sul resto del file (1130 righe, 23 test, ~150 asserzioni): misto. Il pr
 
 Issue: TODO (gh non installato su questa macchina)
 Discussion: TODO
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+- `php -l` sui 5 file: nessun errore di sintassi.
+- PHPStan (`phpstan analyse` sui 5 file, config `laravel/phpstan.neon`): `[OK] No errors`.
+- Pest, singolo file (con `DB_DATABASE_USER=fixcity_data_test`, vedi decisioni): `GetStrBetweenStartsWithActionTest` 4 passed (5 asserzioni); `SaveArrayActionTest` 3 passed (8); `CreateTableIndexByModelClassColumnsActionTest` 4 passed (10, DB reale `xot`); `XotFilamentSupportHundredCoverageTest` 12 passed (52); `XotExecuteCoverage50Test --filter="singleton configurato"` 1 passed (4).
+- Dopo il test DB: `test_index_table` non esiste piu' su `fixcity_data_test`.

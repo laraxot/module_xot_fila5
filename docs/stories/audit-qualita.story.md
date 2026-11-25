@@ -9,8 +9,25 @@ issue: "https://github.com/laraxot/base_techplanner_fila5/issues/64"
 tags: [xot, audit, docs, bmad]
 qmd: "audit qualita Xot docs naming date duplicati AssetAction symlink"
 ---
-
 # Story — audit qualità del modulo Xot
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 Come manutentore di Xot (modulo base di tutti gli altri), voglio documentazione senza
 duplicati né nomi datati e un `AssetAction` più semplice, senza cambiare nessuna firma
@@ -72,3 +89,13 @@ Test: `tests/Unit/Actions/File/AssetActionsTest.php` +2 casi (asset di tema, ass
 - Decidere sul ripiego `resources/` di `AssetAction` (test + inventario).
 - Classificare `consolidated/`, `parcheggio/`, `-integration/` e le coppie `snake_case`/`kebab-case`
   in radice `docs/` (es. `code-quality.md` / `code_quality.md`).
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

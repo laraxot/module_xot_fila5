@@ -13,8 +13,25 @@ tags: [test, database, isolamento, tooling]
 qmd: "dcp-45 I test lanciati con pest-scratch-db.sh possono finire sul DB di sviluppo"
 related: [dcp-35, dcp-40]
 ---
-
 # DCP-45: isolamento del database nei test
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Evidenza (subagent S3 e S1 di DCP-35, 2026-10-13)
 - Con `laravel/bootstrap/cache/config.php` presente le variabili d'ambiente non hanno effetto: tutte le connessioni restano su `fixcity_data` e `fixcity_user` (DB di sviluppo). Un run esplorativo con `GET` e riga creata dalla factory e' finito su `fixcity_data`, annullato dalla transazione di `DatabaseTransactions`; conteggi prima/dopo identici (utenti 7, ticket 2).
@@ -37,3 +54,13 @@ Output di un run con config in cache che mostra le connessioni su DB scratch; co
 
 ## Aggiornamento 14:28 UTC (lead DCP-35): i conteggi del DB di sviluppo sono cambiati, non per i test
 Alle 14:26 UTC il DB di sviluppo ha 9 utenti e 3 ticket (prima 7 e 2). I nuovi record non vengono da `pest-scratch-db.sh`: l'utente "Giulia Bianchi" `dcp-parity-test@example.test` (14:09 UTC), l'utente "David Heaney IV" e il ticket `AN4059281` (14:19 UTC) sono la fixture creata dalla sessione tema per le misure autenticate, dopo il "procedi" dell'utente (DCP-98). I conteggi prima/dopo di ogni run dei test (7/2, poi 9/3) sono comunque uguali: i test restano isolati. Origine dei 2 ticket Faker `TCK-CLIQUERY*` (12:54 UTC): ancora non tracciata.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Output di un run con config in cache che mostra le connessioni su DB scratch; conteggi del DB di sviluppo invariati.

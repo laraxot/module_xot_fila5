@@ -1,13 +1,15 @@
----
-title: "I dati sono sacri: mai migrate:fresh/reset/rollback/force, mai RefreshDatabase, test solo con .env.testing"
+---title: "I dati sono sacri: mai migrate:fresh/reset/rollback/force, mai RefreshDatabase, test solo con .env.testing"
 type: decision
-status: accepted
+status: superseded by 0013-dati-sacri-migrazioni-e-test.md
 created: 2026-11-23
 updated: 2026-11-24
 decision-makers: [team back office]
 issues: [251]
 qmd: "dati sacri migrazioni test sono migratefreshresetrollbackforce"
 ---
+
+Superseded da [0013-dati-sacri-migrazioni-e-test.md](0013-dati-sacri-migrazioni-e-test.md).
+
 
 # I dati sono sacri: migrazioni e test girano solo in avanti
 

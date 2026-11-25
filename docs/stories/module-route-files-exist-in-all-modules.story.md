@@ -9,10 +9,27 @@ module: Xot
 tags: [routes, provider, adr, xot-base]
 qmd: "route files exist all modules story"
 ---
-
 # [STORY] routes/web.php e routes/api.php esistono in tutti i moduli, niente require di empty.php
 
-Sostituisce la decisione dell'ADR [route-entrypoints-canonical-empty](../adr/route-entrypoints-canonical-empty.md) (issue #92), ora `superseded`.
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+Sostituisce la decisione dell'ADR [route-entrypoints-canonical-empty](../adr/0036-route-entrypoints-canonical-empty.md) (issue #92), ora `superseded`.
 
 ## User Request
 
@@ -50,3 +67,16 @@ L'ADR #92 aveva risolto il boilerplate con `require base_path('Modules/Xot/route
 - **Consegna nei repo dei moduli.** Nel repo root i sette file risultano modificati, ma nei repo di Lang e Media `routes/` non e' mai stata tracciata (`git log -- routes` vuoto) e in Cms `routes/api.php` e' non tracciato. Niente di questo lavoro e' committato (file route, test, story, cancellazione di `empty.php`). Un commit o una sync dalla sola radice lascia i repo `laraxot` di Lang, Media e Cms senza i file: chi li consuma da solo ottiene il fatale al boot. Il commit e' dell'owner.
 - `Xot` ha un proprio `RouteServiceProvider` (non il base) con `base_path('Modules/Xot/routes/web.php')`: fuori dalla regola, non toccato.
 - Fra i quindici file elencati dal vecchio test, Blog, Comment, Fixcity, Rating e Seo non esistono in questa checkout: se quei moduli tornano, la regola vale anche per loro e il nuovo test li copre da solo.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+- `php artisan route:list --json`: 505 route prima e dopo, stessi metodo/URI/nome/azione.
+- Logica del test eseguita in autonomia, con il solo `vendor/autoload.php` (Pest non lanciato: `.env.testing` ha credenziali reali, serve il via libera dell'owner): albero vero `checked=17 missing=[]`; albero finto con due `api.php` mancanti li elenca entrambi (controllo positivo).
+- Revisione ECC indipendente (`ecc:code-reviewer`, sola lettura): nessun rilievo CRITICAL o HIGH. Corretti: il test non vedeva che AI e Chart caricano le route di Xot (vedi Open), la ricerca di testo fragile, l'ADR con `superseded_by` e il comando di verifica obsoleto, l'indice ADR e `contracts/README.md` che presentavano ancora la decisione come attiva.
+- `php -l` pulito su provider, test e i sette file.

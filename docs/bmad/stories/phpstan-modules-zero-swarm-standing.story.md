@@ -4,8 +4,25 @@ status: in-progress
 updated: 2026-11-24
 qmd: "phpstan modules zero swarm conflict markers bootstrap"
 ---
-
 # Story — PHPStan Modules zero (standing)
+
+## Context and Problem Statement
+
+Gate `./vendor/bin/phpstan analyse Modules` must reach 0. Bootstrap failed on merge markers (`unexpected <<`) in `XotBaseServiceProvider`. Fix purpose/why at source; no `@phpstan-ignore`; `mixed` last resort.
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Current verification — 2026-11-24
 
@@ -124,3 +141,13 @@ Causa: `bashscripts/git/subtrees/merge_remote_repo_2.sh` (deprecato, 3 istanze v
 cd laravel && php -l Modules/Xot/app/Providers/XotBaseServiceProvider.php
 ./vendor/bin/phpstan analyse Modules --error-format=json --no-progress
 ```
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

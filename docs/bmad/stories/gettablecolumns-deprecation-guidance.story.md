@@ -20,8 +20,25 @@ related:
   - ../../laravel/Modules/Xot/docs/no-table-override.md
   - ../../laravel/Modules/Xot/docs/stories/table-setter-deprecation-handling.story.md
 ---
-
 # STORY-492 (Xot/bmad/stories) — `getTableColumns()`: che cosa usare al suo posto
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 **Epic:** EPIC-INF
 **Priority:** Should Have
@@ -157,3 +174,50 @@ Feature: guida getTableColumns
 
 - **2026-09-26** — creazione story; premessa utente verificata e **smentita** con
   evidenza vendor; tabella per base class scritta; drift doc↔codice registrato.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Eseguito, non dichiarato:
+
+```bash
+cd laravel
+sed -n '122,132p' vendor/filament/tables/src/Concerns/HasColumns.php
+```
+
+```
+    /**
+     * @deprecated Override the `table()` method to configure the table.
+     *
+     * @return array<Column | ColumnLayoutComponent>
+     */
+    protected function getTableColumns(): array
+    {
+        return [];
+    }
+```
+
+**Risultato: `getTableColumns()` È deprecata**, in `filament/tables 5.8.4`, da Filament
+stesso. L'utente si sbaglia su questo punto e va corretto con l'evidenza, non con un
+"hai ragione".
+
+**Però l'uso è legittimo su `XotBaseManageRelatedRecords`**, perché lì il consiglio di
+Filament è inapplicabile:
+
+```bash
+grep -n "final public function \(table\|form\)" \
+  Modules/Xot/app/Filament/Resources/Pages/XotBaseManageRelatedRecords.php
+# 206: final public function form(Schema $schema): Schema
+# 253: final public function table(Table $table): Table
+```
+
+`table()` è `final` ⇒ **non si può** seguire «override `table()`». I 5 hook sono il
+punto di estensione per sottoclasse, per scelta.
+
+Inoltre è soft deprecation: Filament la chiama ancora
+(`InteractsWithTable.php:204`). Nessun runtime break.

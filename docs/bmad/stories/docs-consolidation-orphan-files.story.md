@@ -7,8 +7,25 @@ updated: 2026-10-23
 tags: [docs, xot, bmad]
 qmd: "docs consolidation   orphan files + structure normalization   2026-10-06 xot"
 ---
-
 # Docs consolidation: orphan files + structure normalization: 2026-10-06
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Epic
 Documentation organization + knowledge base maintainability.
@@ -69,3 +86,12 @@ Per ogni modulo:
 
 ## Note
 Questa è una story di **consolidamento**, non rewriting. Files spostati, non ricreati. Data integrity non negoziabile. Se un file ha contenuto spurio/duplicato, documentar motivo della dedup nella story.
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

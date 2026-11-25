@@ -12,8 +12,25 @@ references:
   - docs/sprint-status.yaml
 qmd: "phpstan modules swarm random story modulitemi"
 ---
-
 # PHPStan Modules swarm random + docs moduli/temi
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Contesto
 `phpstan analyse Modules` full-tree supera 10 min (10179 file). Strategia:
@@ -512,3 +529,13 @@ portare PHPStan Activity a 0; Pest se possibile; aggiornare docs bmad + questo d
 - **PHPStan** `analyse Modules/Activity --error-format=raw`: **0 errori**.
 - Cause tipiche fixate: FQCN TestCase doppio; `use` dopo `test()`; LogModel* `$activity`; harness paginate; `Helpers.php` in Pest; colonne event-sourcing.
 - **Pest:** hang TCP `10.100.200.53:3306` su connessione `user` (strace `EINPROGRESS`). `test_data.sqlite` creato; suite non verde finché `user` → sqlite condiviso.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

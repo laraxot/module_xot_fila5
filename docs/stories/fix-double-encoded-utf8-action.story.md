@@ -9,8 +9,30 @@ related:
   - ../../../Quaeris/docs/stories/configurazione-automatica-question-chart.story.md
 qmd: "fix double encoded utf8 action story"
 ---
-
 # FixDoubleEncodedUtf8Action: riparare il testo UTF-8 codificato due volte
+
+## Context and Problem Statement
+
+Nei backup locali del 2026-10-23 (`geek_quaeris_backup_server_23_10_2025`, `quaeris_survey_23_10_2025`) i
+testi sono codificati due volte: «Sì» e' salvato come `SÃ¬` (byte `53 C383 C2AC` invece di `53 C3AC`), in
+colonne `utf8mb4` lette con connessione `utf8mb4`. E' la firma di un dump UTF-8 importato come `latin1`
+(che in MySQL e' Windows-1252). Il primo consumatore che se ne accorge e' il pulsante «Configura i grafici»
+di Quaeris: riconosce il Sì/No dal testo delle risposte e su `SÃ¬` non lo riconosce (story Quaeris
+«configurazione-automatica-question-chart», 2026-11-19).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 Fase BMAD: dev.
 
@@ -75,3 +97,13 @@ codificati due volte»).
 - [x] Ripara `SÃ¬`, `QualitÃ `, `â€™`.
 - [x] Lascia intatti testo ASCII, accenti puliti, emoji, testo non UTF-8.
 - [x] Primo consumatore collegato (Quaeris).
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

@@ -10,7 +10,7 @@ status: accepted
 issues:
   - "progetto ospite #732"
   - "progetto ospite #733"
-supersedes: architecture-rules-phparkitect.md
+supersedes: 0019-architecture-rules-phparkitect.md
 related:
   - ../../tests/Arch/ArchitectureTest.php
   - ../../tests/Arch/scope.php
@@ -39,7 +39,7 @@ che viola la regola:
 5. `ignoring()` confronta per prefisso di stringa (`str_starts_with`): ignorare `...\Render\Block` nasconde anche
    `...\Render\Blocks`, ignorare `AIService` nasconde `AIServicePromptBuilder`.
 
-PHPArkitect (ADR `architecture-rules-phparkitect.md`) non ha le trappole 1, 2 e 5 e ha una baseline; il proprietario del
+PHPArkitect (ADR `0019-architecture-rules-phparkitect.md`) non ha le trappole 1, 2 e 5 e ha una baseline; il proprietario del
 progetto ha scelto Pest, gia' installato e nella stessa suite, senza dipendenze nuove.
 
 ## Decisione

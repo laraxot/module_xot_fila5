@@ -22,8 +22,25 @@ related:
   - ../../../../../../bashscripts/ai/wiki/memories/phpstan-swarm-config.md#phpstan-host-saturation-max-three
   - ../../../../../../docs/sprint-status.yaml
 ---
-
 # PHPStan Modules zero — swarm Quick Flow
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Scopo e perché
 
@@ -358,7 +375,7 @@ chiave sprint: `Xot/phpstan-modules-zero-swarm`.
   **Entry point riparati (root `AGENTS.md` + `laravel/AGENTS.md`)**: 10 path
   canonici puntavano a file inesistenti (`docs/wiki/rules/*`,
   `docs/wiki/memories/*`, `Modules/Xot/docs/wiki/bmad-method.md`,
-  `actions-over-services.md`, `eloquent-magic-properties-rule.md`,
+  `0017-actions-over-services.md`, `eloquent-magic-properties-rule.md`,
   `public-path-public-html.md`, `context-overflow-prevention.md`). Ora
   puntano ai SSoT reali (`bashscripts/ai/wiki/rules|memories|concepts`,
   `docs/wiki/guidelines/modules/xot/...`). Resta scoperta la regola
@@ -395,3 +412,13 @@ chiave sprint: `Xot/phpstan-modules-zero-swarm`.
   qui (host `10.100.200.15`, nessun MySQL locale: `Connection refused`); il test
   e' puro ed e' coperto dalla prova runtime.
 
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

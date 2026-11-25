@@ -18,8 +18,27 @@ related:
   - ../../../app/Exports/CollectionExport.php
   - ../../../Ptv/app/Filament/Exports/SchedaExporter.php
 ---
-
 # export-eager-load-contract
+
+## Context and Problem Statement
+
+`ExportXlsAction` (Xot, generico) oggi hardcoda `['ratings','ratingMorphs']`
+con guard `method_exists` — conosce dettagli del dominio Rating. Stesso eager
+in `SchedaExporter::modifyQuery`. Funziona ma e' accoppiamento Xot→Rating.
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Perche'
 
@@ -49,3 +68,13 @@ public static function getXlsEagerLoad(): array; // ['ratings','ratingMorphs']
 ## Priorita'
 
 Bassa — refactor di pulizia, non bug. Fare dopo 5.152/5.153 Ptv.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

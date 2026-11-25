@@ -12,8 +12,25 @@ related:
   - ./2026-10-06-phpstan-cleanup-xot-app.story.md
   - ./2026-10-06-phpstan-cleanup-xot-app.dev.md
 ---
-
 # [STORY] PHPStan Xot/app: regressioni del cleanup del 2026-10-06
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## User Request
 
@@ -63,3 +80,16 @@ Chiamanti di `urlAct` in `laravel/Modules` e `laravel/Themes`: nessuno (solo la 
 
 - `OptimizeFilamentMemoryCommand` dichiara `{--verbose}`: Symfony ha gia' `--verbose|-v`, quindi eseguirlo fallisce con `An option named "verbose" already exists` (provato con un `Application` Symfony). Il comando e' commentato in `XotServiceProvider::registerCommands()` quindi oggi non gira. Va rimossa l'opzione usando `$this->output->isVerbose()`, ma `XotCommandsActionsHundredCoverageTest` asserisce `hasOption('verbose')`: da aggiornare insieme.
 - `UpdateAction` ricorsiva + `dddx()` nei rami "riga senza chiave" di `MorphMany`/`CustomRelation`: comportamento storico, non toccato.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+- PHPStan sui 5 file (`vendor/bin/phpstan analyse <5 file> -c phpstan.neon --no-progress`): prima 7 segnalazioni, dopo `[OK] No errors`.
+  Nota: una run intermedia ha dato `identical.alwaysTrue` su `$row === null` (con `$row = null` prima di `extract()` PHPStan non vede la sovrascrittura); risolto leggendo `$params['row'] ?? null` dopo `extract()`, senza `ignore`.
+- `php -l` su tutti i file modificati e sui 3 test: nessun errore di sintassi.
+- Pest: NON eseguibile da questo host. `Modules\Xot\Tests\TestCase` usa `DatabaseTransactions` su MySQL `10.100.200.53:3306` e la porta va in timeout (`rc=124`); in piu' non c'e' un `phpunit.xml` raggiungibile (Pest esce con `Could not read XML from file "--cache-directory"`). Le stesse asserzioni dei 3 test sono state eseguite con uno script standalone su container Laravel nudo: 10/10 PASS (MorphMany: `saveMany` chiamato una volta con i figli nell'ordine, payload vuoto senza effetti; CustomRelation: ogni riga a `UpdateAction` sul `related`; `urlAct`: caso base, ultimo segmento, ancora `#...`, parametro `row`). Il gate Pest va chiuso da un host che raggiunge il DB di test.

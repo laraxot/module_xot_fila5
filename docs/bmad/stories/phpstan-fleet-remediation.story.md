@@ -6,8 +6,25 @@ status: active
 type: story
 qmd: "xot phpstan fleet remediation story phpstanfleetremediation20261006storymd"
 ---
-
 # PHPStan fleet remediation — 2026-10-06
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Epic
 Qualità statica e manutenzione funzionale dei moduli PTVX.
@@ -167,3 +184,13 @@ cd laravel && ./vendor/bin/phpstan analyse Modules --no-progress --memory-limit=
 
 **Task status**: ✅ **DONE** — Fleet è clean, docs consolidated, learning loop captured, handoff stories created.
 
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

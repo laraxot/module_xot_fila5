@@ -9,8 +9,25 @@ owner: Xot
 created: 2026-11-11
 updated: 2026-11-11
 ---
-
 # Xot: symlink relativi per gli asset di moduli e temi
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Regola
 
@@ -56,6 +73,22 @@ Il caso è verificato con `git check-ignore`.
   esistono solo lì.
 
 ## Verifica
+
+`tests/Unit/Actions/File/CreateRelativeSymlinkActionTest.php` verifica tre casi:
+
+- il link creato è `../../laravel/Themes/TwentyOne/public`;
+- il link funziona anche dopo aver spostato il progetto;
+- un link assoluto non risulta relativo.
+
+PHPStan 0 sui file toccati.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
 
 `tests/Unit/Actions/File/CreateRelativeSymlinkActionTest.php` verifica tre casi:
 

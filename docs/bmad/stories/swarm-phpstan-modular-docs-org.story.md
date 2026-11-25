@@ -4,13 +4,25 @@ qmd: "xot bmad stories swarm phpstan modular docs org story md"
 type: note
 tags: [documentation]
 ---
-
----
-title: "Xot - swarm-phpstan-modular-docs-org.story.md"
-module: Xot
-bmad: true
-status: active
 # BMAD Story — Swarm parallel: analisi PHPStan modulare + docs org + wiki/second brain
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Epic
 SWARM-PHPSTAN-001
@@ -94,3 +106,13 @@ Principio: seguire `docs-archive-policy.md` (Zero/One/Three): niente cancellazio
 | 13 | `Themes/Zero/docs/README.md`: link `../../docs/gestionale-docs-index.md` e `../../docs/tenant-modules-navigation-discipline.md` | puntare al percorso reale (la cartella `Themes/docs/` non esiste) | link preesistenti rotti, fuori dal mio perimetro additivo | basso |
 
 Lezioni: (1) `docs/bmad/` puo' diventare un mirror della radice: misurare l'identita' byte per byte prima di toccare. (2) Il percorso citato `bashscripts/docs/governance/modular-bmad-story-policy.md` non esiste (confermato; vedi memoria `docs-moduli-temi-riorganizzazione-continua`): i riferimenti reali sono `bashscripts/ai/wiki/workflows/story-first.md` e `bashscripts/ai/wiki/rules/markdown-docs.md`. (3) Un indice generato e rigenerabile (marker start/end) evita di riscrivere a mano 100 voci.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

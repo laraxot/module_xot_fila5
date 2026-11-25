@@ -10,7 +10,7 @@ issues: [252]
 tags: [adr, git, gitignore, bashscripts, claude, symlink, sync]
 qmd: "bashscripts claude gitignore symlink git rm cached repo annidato bashscripts_fila5 gitmodules.ini sync indice working tree typechange"
 related:
-  - ./agent-harness.md
+  - ./0018-agent-harness.md
   - ../stories/root-untrack-bashscripts-and-claude.story.md
   - ../../tests/Unit/Docs/PackagesHaveContractsAndAdrTest.php
 ---

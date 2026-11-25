@@ -14,8 +14,25 @@ related:
   - ../../../../bmad-output/epic-code-standards-services-mixed-const.md
 qmd: "08 services to actions xot route"
 ---
-
 # [STORY] Services verso Actions: RouteService e RouteDynService
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## User Request
 
@@ -107,3 +124,16 @@ Test:
 - `BuildLanguageUrlAction` restituisce `?` (stub, corpo commentato nel Service originale), zero chiamanti: candidata a eliminazione insieme alla sua asserzione in `RouteActionsTest`.
 - `RegisterDynamicRoutesAction` non ha nessun chiamante nel repo (la DSL `dynamic_route` non e' usata da nessun `routes/*.php`): decidere se tenerla (possibile uso da progetti esterni) o eliminarla.
 - Documentazione storica che cita `RouteService`/`RouteDynService` (report PHPStan, audit, `helpers.md`) non e' stata riscritta: solo `wiki/decisions/services-to-actions-migration.md` ha la nota datata.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+- PHPStan: `vendor/bin/phpstan analyse Modules/Xot/app/Actions/Route Modules/Xot/tests/Unit/Actions/Route Modules/Xot/tests/Unit/XotExecuteCoverage50Test.php Modules/Xot/tests/Unit/XotArtisanCommandsHelpersCoverageTest.php Modules/Xot/tests/ModuleExecuteCoverage.php Modules/Xot/tests/Unit/XotExplicitZeroKillersTest.php -c phpstan.neon --no-progress` -> `[OK] No errors`.
+- `php -l` su tutti i file toccati: nessun errore.
+- Pest: `Modules\Xot\Tests\TestCase` usa `DatabaseTransactions` e il DB di test (`fixcity_user_test` su MariaDB locale) non esiste, quindi i test standard falliscono prima di girare. Eseguiti comunque, su copie temporanee con `XotBaseTestCase` al posto di `TestCase` (stessa app, niente transazioni; copie cancellate): `BuildActionUrlActionTest` 7/7, `CurrentRouteActionsTest` 4/4, `RegisterDynamicRoutesActionTest` 4/4, `RouteActionsTest`, `GetRouteMethodActionTest`, `XotExplicitZeroKillersTest` (action URLs), `XotExecuteCoverage50Test` (IsAdminRouteAction): tutti verdi. Il gate Pest sui file originali va chiuso con i DB di test creati.
+- Sonde di parita' (scratchpad, fuori repo): vedi Analysis.

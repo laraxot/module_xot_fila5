@@ -12,8 +12,28 @@ related:
   - ../../../../../../bashscripts/docs/operations/module-theme-git-slim.md
   - ./phpstan-modules-bootstrap-duplicate-lines.story.md
 ---
-
 # Story — Snellire `.git` moduli/temi
+
+## Context and Problem Statement
+
+Ogni `Modules/*` e `Themes/*` e' un repo indipendente (`git remote -v`).
+Dopo sync/`unrelated histories` i `.git` locali si gonfiano di oggetti
+monorepo (path `laravel/`, `node_modules/`, altri moduli) anche se il
+remoto owner e' piccolo. `git gc` non basta se gli oggetti sono raggiungibili.
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Richiesta utente (verbatim, base_ptvx_fila5)
 
@@ -165,7 +185,7 @@ fetch/merge `<ORG>/dev` (`--allow-unrelated-histories`, prima `-s resolve`) e pu
 **nessun hard-stop runtime**. La riscrittura storia scatta solo oltre
 `MAX_GIT_OBJECTS=130000` ed e' opt-in (`PTVX_ALLOW_HISTORY_REWRITE=1`). Corretti
 header dello script, `bashscripts/docs/operations/subtrees-scripts-index.md` e
-`docs/adr/independent-repository-sync.md`; resta l'avvertenza di chiudere i merge
+`docs/adr/0004-independent-repository-sync.md`; resta l'avvertenza di chiudere i merge
 aperti prima di rilanciare (il commit `"."` li pubblicherebbe).
 
 ## Related
@@ -179,3 +199,13 @@ aperti prima di rilanciare (il commit `"."` li pubblicherebbe).
 - [cleanup-git-rewrite-artifact](./cleanup-git-rewrite-artifact.story.md)
 - [phpstan bootstrap e marker](./phpstan-modules-bootstrap-duplicate-lines.story.md)
 - [phpstan standing](./phpstan-modules-zero-swarm-standing.story.md)
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

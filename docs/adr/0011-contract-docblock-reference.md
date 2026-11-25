@@ -63,6 +63,6 @@ Il file `00011-contract-docblock-reference.md` è superseded da questo.
 
 - `laravel/Modules/*/app/Actions/*.php` — tutte le Action del progetto
 - `docs/contracts/` — directory dei contratti comportamentali
-- `docs/wiki/rules/actions-over-services.md` — filosofia Actions vs Services
+- `docs/wiki/rules/0017-actions-over-services.md` — filosofia Actions vs Services
 - `laravel/Modules/Xot/tests/Unit/Docs/PackagesHaveContractsAndAdrTest.php` — test di conformità
 - `laravel/Modules/Xot/tests/Unit/Docs/ActionContractsAreCompleteTest.php` — test completamento contratti

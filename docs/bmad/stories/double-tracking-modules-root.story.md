@@ -16,8 +16,29 @@ related:
   - ../../../docs/bmad/stories/git-status-fleet-sync.story.md
   - ../../../../../../bashscripts/docs/prompts/03-quality-gates.md
 ---
-
 # double-tracking-modules-root
+
+## Context and Problem Statement
+
+`laravel/Modules/<Mod>` ha `.git` proprio (repo indipendente, `gitmodules.ini`
+= inventario, non submodules veri) **ma il repo root traccia gli stessi file**.
+Risultato: ogni change va committato due volte (submodulo + root sync) e
+`git status` root mostra sempre rumore. Daemon/peer committano nei submoduli,
+il root accumula drift finche' qualcuno non fa "sync root".
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Perche'
 
@@ -45,3 +66,13 @@ il root accumula drift finche' qualcuno non fa "sync root".
 
 - [ ] Una sola fonte di verita' per ogni file modulo
 - [ ] `git status` root pulito quando i submoduli sono puliti
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

@@ -15,8 +15,25 @@ related:
   - ./phpstan-xot-test-fixtures-generics-mixed.story.md
   - ./phpstan-modules-bootstrap-duplicate-lines.story.md
 ---
-
 # ADR Xot 0014: `mixed` solo come ultima spiaggia
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Obiettivo
 
@@ -85,3 +102,14 @@ Richiesta utente ripetuta: aggiornare `docs/adr` sul modulo più adatto.
 Rafforzato ADR 0014 (sezione Scopo/perché, SafeCast ~141, vietato ADR duplicati,
 link campagna zero + prompt 37). Notify note e memoria root ridotte a puntatori
 verso l'ADR. README ADR con riga esplicita su 0014.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Solo documentazione: nessun PHP toccato da questa story. Pest non pertinente. Controllo ripetibile:
+`grep -rIlE '(: mixed\b|@(param|return|var) mixed\b)' --include='*.php' laravel/Modules/*/app | wc -l`.

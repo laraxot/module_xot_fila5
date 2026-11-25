@@ -24,8 +24,25 @@ references:
   sprint_status: "Xot/phpstan-analyse-modules-2026-09-24"
 
 ---
-
 # PHPStan `analyse Modules` — verifica corrente e remediation swarm
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Richiesta
 
@@ -199,3 +216,13 @@ nessun file PHP modificato dal presente swarm.
   annunciato prima in `docs/chat/phpstan-coordination.md`; `phpstan
   clear-result-cache` → exit 0. Gate freddo finale dopo il clear → exit 0,
   `totals.errors=0`, `totals.file_errors=0`; report rinnovati in
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

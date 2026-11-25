@@ -19,8 +19,25 @@ related:
   - ../../../../Job/docs/bmad/stories/12.3.root-hygiene-conflict-markers.story.md
   - ../../../../../../bashscripts/ai/wiki/memories/git-merge-markers.md#job-git-clean-can-hide-committed-conflict-markers
 ---
-
 # Fleet: `git status` + marker in HEAD + quality tools
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 **Perché.** `git status` pulito sul nested repo del modulo **non** prova che HEAD sia sano: i marker `<<<<<<<` possono essere già committati. La campagna sistema i conflitti **reali** (PHP/lang/README/root uppercase), non i file in `docs/` che *documentano* i marker.
 
@@ -78,3 +95,13 @@ Canon: questa story (kebab, **senza data nel filename**). Il file datato `cleanu
 - Marker **dentro** `docs/` (citazioni / campagne 5.159 già chiuse o WIP Activity).
 - `Xot/.git-rewrite/` (artefatto git).
 - Cluster Livewire Job Status/Crud (12.2).
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

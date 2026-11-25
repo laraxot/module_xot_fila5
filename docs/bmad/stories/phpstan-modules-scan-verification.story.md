@@ -4,8 +4,25 @@ qmd: phpstan modules scan 2026-11-25 devin zero errors larastan stale cache
 epic: Xot
 status: done
 ---
-
 # PHPStan Modules full scan — 2026-11-25 (devin)
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Esito
 
@@ -22,3 +39,13 @@ Baseline PHPStan level max resta a 0 errori. Nessuna modifica codice necessaria.
 - `Xot/merge-conflict-markers-md-bonifica` (in-progress): ~3650 file non-PHP con marker.
 - `Xot/merge-conflict-markers-committed-bonifica` (in-progress): verificare chiusura lato PHP.
 - `Xot/phpstan-modules-bootstrap-duplicate-lines` (review): Pest bloccato da TestDatabaseGuard.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

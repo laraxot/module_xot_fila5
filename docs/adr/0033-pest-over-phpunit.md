@@ -32,7 +32,7 @@ Il runner del progetto è Pest e i test dei moduli devono funzionare con il boot
 
 ## Decisione
 
-I nuovi test sono scritti in Pest e lanciano `vendor/bin/pest`; ogni file che usa l'applicazione dichiara il proprio TestCase secondo l'ADR `pest-testcase-binding-per-file.md`. PHPUnit resta una dipendenza interna del runner, non la convenzione di scrittura.
+I nuovi test sono scritti in Pest e lanciano `vendor/bin/pest`; ogni file che usa l'applicazione dichiara il proprio TestCase secondo l'ADR `0034-pest-testcase-binding-per-file.md`. PHPUnit resta una dipendenza interna del runner, non la convenzione di scrittura.
 
 ## Conseguenze
 

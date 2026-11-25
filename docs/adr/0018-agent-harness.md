@@ -8,8 +8,8 @@ module: Xot
 tags: [adr, harness, agenti, guard, hook, memoria, bmad]
 qmd: "harness agenti AGENTS.md mappa topology commands environment pitfalls conflicts facts lessons guard pretooluse task contract behavioral contract"
 related:
-  - ./pest-testcase-binding-per-file.md
-  - ./architecture-tests-pest-arch.md
+  - ./0034-pest-testcase-binding-per-file.md
+  - ./0020-architecture-tests-pest-arch.md
   - ../stories/sync-unrelated-histories-repair.story.md
   - ../../tests/Unit/Harness/GuardTest.php
 ---

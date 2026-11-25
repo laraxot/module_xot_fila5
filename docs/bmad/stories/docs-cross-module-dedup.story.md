@@ -14,8 +14,30 @@ related:
   - ./docs-semantic-consolidation-swarm.story.md
   - ./8.25.docs-consolidation-audit-strategy.story.md
 ---
-
 # Docs cross-module: canonico unico
+
+## Context and Problem Statement
+
+Le lane per modulo (story `docs-semantic-consolidation-swarm`) fondono i duplicati
+**dentro** un modulo/tema. Restano i duplicati **tra** owner: 68 gruppi con corpo
+identico e 298 file (misura 2026-11-25, esclusi `raw/`, `stories/`, `bmad/`,
+template e nomi convenzionali). I piu' grandi: `Asset binari` in 17 owner,
+`Massima confidenza agente` in 13, `context-overflow-prevention` in 10,
+`html2pdf` in 4. Nessuna lane possiede la scelta del canonico cross-module.
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Perche'
 
@@ -59,3 +81,13 @@ template e nomi convenzionali). I piu' grandi: `Asset binari` in 17 owner,
 - 2026-11-25: censimento 68 gruppi cross-owner (298 file). Lane peer attive su
   tutti i moduli/temi (lock 11:38-11:39). Preparati story, tool e piano;
   applicazione rinviata a lock rilasciati.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

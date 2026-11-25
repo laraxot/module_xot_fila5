@@ -10,8 +10,25 @@ related:
 created: 2026-10-14
 updated: 2026-10-14
 ---
-
 # PHPStan: costanti di classe tipizzate
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 Fase BMAD: Quick Flow, implementazione + verifica. Story cross-modulo ospitata in Xot.
 
@@ -53,6 +70,19 @@ nativo e' il massimo che PHP 8.3 esprime per le costanti, il dettaglio dei valor
   nessun comando DB, resta `XotBaseMigration`.
 
 ## Verifica
+
+- `php -l` sui 4 file: nessun errore di sintassi.
+- `./vendor/bin/phpstan analyse <4 file> --memory-limit=-1`: `[OK] No errors`.
+- La chiusura dell'errore globale `constantTypeCoverage` si conferma solo con
+  `phpstan analyse Modules` sull'intero albero (a carico del coordinatore).
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
 
 - `php -l` sui 4 file: nessun errore di sintassi.
 - `./vendor/bin/phpstan analyse <4 file> --memory-limit=-1`: `[OK] No errors`.

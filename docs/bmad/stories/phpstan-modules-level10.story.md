@@ -14,8 +14,25 @@ related:
   - ../../../../User/docs/bmad/stories/phpstan-l10-user-lang-fix-20261006.story.md
 qmd: "phpstan modules level10 story level correzione"
 ---
-
 # PHPStan Level 10 — correzione fleet moduli
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Obiettivo funzionale
 
@@ -147,3 +164,13 @@ sintattici, non il criterio funzionale del lavoro.
 - Lezione: cambiare la firma di un contratto Xot richiede di censire chi lo implementa in ogni
   progetto che monta il modulo (`grep -rl HasRecursiveRelationshipsContract Modules`), non solo
   in quello corrente.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

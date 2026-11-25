@@ -13,8 +13,34 @@ qmd: "git-rewrite filter-branch leftover artifact untracked mirror docs cleanup"
 related:
   - ./docs-filename-no-date-bonifica-xot.story.md
 ---
-
 # Rimuovere `.git-rewrite/t/`
+
+## Context and Problem Statement
+
+`Modules/Xot/.git-rewrite/` e' interamente **non tracciato** (`git ls-files`
+vuoto, `git log --all -- .git-rewrite` vuoto): non e' storia git, e' la
+directory di lavoro temporanea che `git filter-branch` crea (`t/` = checkout
+di lavoro, `map/` = mapping vecchi->nuovi commit) e normalmente cancella da
+sola a fine run. Qui e' rimasta sul disco — la run e' stata interrotta o e'
+crashata prima della pulizia automatica.
+
+`.git-rewrite/t/` mirror l'intero albero del modulo (`app/`, `docs/`, `tests/`,
+`config/`, `lang/`, `routes/`, ecc. — non solo `docs/`, correzione rispetto
+alla nota precedente che la descriveva come mirror di `docs/` soltanto).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Perche'
 
@@ -63,3 +89,24 @@ e' un artefatto di processo (git lo confermerebbe come storia se fosse reale).
 - [ ] `.gitignore` copre `.git-rewrite/` per il futuro
 - [ ] Nessuna regressione: repo Xot pulito, PHPStan/Pest invariati (l'artefatto
       non e' codice caricato da nessun autoloader)
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+- `git -C laravel/Modules/Xot ls-files .git-rewrite` → vuoto (non tracciato)
+- `git -C laravel/Modules/Xot log --oneline --all -- .git-rewrite` → vuoto
+  (nessuna storia, mai committato)
+- `git -C laravel/Modules/Xot status --short .git-rewrite` → vuoto (non e'
+  nemmeno untracked secondo git — probabilmente coperto da `.gitignore`,
+  o il working tree e' fuori dal path che git status esamina di default;
+  da confermare con `git status --short --ignored .git-rewrite`)
+
+Per la memoria progetto "verificare prima di cancellare una copia"
+(28% dei presunti duplicati in questo repo erano l'unica copia buona):
+qui il criterio e' diverso e piu' forte — non e' un duplicato di contenuto,
+e' un artefatto di processo (git lo confermerebbe come storia se fosse reale).

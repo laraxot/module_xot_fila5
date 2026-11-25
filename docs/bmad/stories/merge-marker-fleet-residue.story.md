@@ -16,8 +16,27 @@ related:
   - ../../../docs/bmad/stories/git-status-fleet-sync.story.md
   - ../../../../../../bashscripts/docs/prompts/03-quality-gates.md
 ---
-
 # merge-marker-fleet-residue
+
+## Context and Problem Statement
+
+Sessione 2026-09-22: ~2644 marker `<<<<<<<` risolti prendendo lato HEAD, ma
+~900 file fuori scope (docs, WIP altrui) possono ancora contenerne. Marker in
+file PHP/JSON/blade = boot rotto o output corrotto.
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Perche'
 
@@ -42,3 +61,13 @@ file PHP/JSON/blade = boot rotto o output corrotto.
 - [ ] Zero marker in `.php`/`.json`/`.blade.php` su tutti i moduli
 - [ ] PHPStan Modules 0 errori post-bonifica
 - [ ] Memoria aggiornata con conteggio residuo trovato
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

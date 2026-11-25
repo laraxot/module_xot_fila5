@@ -18,8 +18,25 @@ phase: ricognizione
 type: story
 qmd: "xot phpstan ptv incentivi indennitaresponsabilita story swarm"
 ---
-
 # PHPStan L10 — Ptv, Incentivi, IndennitaResponsabilita swarm
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Contesto
 Tre moduli dominio chiave richiedono PHPStan L10 validation:
@@ -100,3 +117,13 @@ Tre moduli dominio (Ptv 338f, Incentivi 131f, IndennitaResponsabilita 194f) vali
 - [x] Business logic intent: unchanged
 - [x] Second brain updated: patterns documented
 
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

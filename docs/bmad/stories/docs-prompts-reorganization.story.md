@@ -11,8 +11,25 @@ updated: 2026-11-11
 tags: [bmad, docs, prompts, second-brain, swarm]
 qmd: "riorganizzazione docs prompt moduli temi second brain"
 ---
-
 # Obiettivo
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 Rendere navigabili e coerenti le docs di tutti i moduli e temi e revisionare
 tutti i prompt in `bashscripts/docs/prompts`, preservando il contenuto valido,
@@ -136,3 +153,18 @@ il codice applicativo durante questo epic documentale.
   gruppo. La query QMD MCP è andata in timeout; `qmd update` resta da eseguire.
 - Tranche sospesa per priorità al bug Login Pulse; lock rilasciati dopo questo
   handoff. Nessun commit creato.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+- PHPStan globale `php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules`:
+  0 errori.
+- `audit-prompts.sh`: 83 prompt, 0 bloccanti; restano solo avvisi di ruolo e
+  8 prompt voluminosi già noti.
+- Marker risolti nelle tranche Performance e IndennitaResponsabilita; nessun
+  lock residuo.

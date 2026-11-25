@@ -11,8 +11,25 @@ related:
   - ../bmad/phpstan-status.md
 qmd: "06 phpstan cleanup xot app dev"
 ---
-
 # [DEV] PHPStan cleanup Xot/app
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 Story: [2026-10-06-phpstan-cleanup-xot-app.story.md](./2026-10-06-phpstan-cleanup-xot-app.story.md)
 
@@ -92,3 +109,20 @@ Risultato: 147 (file errori) -> **21**, tutte `classConstant.nativeTypeNotSuppor
 - `Actions/Model/Update/{CustomRelation,MorphMany,Pivot}Action` e `Store/MorphToManyAction`: contengono ancora `dddx(...)` (WIP). `FilterRelationsAction` assert che ogni valore di `$data` sia una `Relation`: il flusso Store/Update e' incompleto.
 - `Actions/Filament/GenerateFormByFileAction`: comando `xot:generate-form` non genera nulla (WIP dalla prima commit).
 - `RouteService::urlAct`: nessun chiamante nel repo.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+```bash
+cd /mnt/nas07/var/www/_bases/base_techplanner_fila5/laravel
+./vendor/bin/phpstan analyse Modules/Xot/app --memory-limit=-1 --no-progress
+./vendor/bin/phpstan analyse Modules/Xot --memory-limit=-1 --no-progress   # contesti test (HasXotTable)
+php -l <file>                                                                # per ogni file modificato
+```
+
+Risultato: 147 (file errori) -> **21**, tutte `classConstant.nativeTypeNotSupported` ("Class constants with native types are supported only on PHP 8.3 and later"): PHPStan legge `laravel/composer.json` `"php": "^8.2"` e assume PHP 8.2, ma il runtime e' 8.4.26 e il `HEAD` ha gia' costanti tipizzate. Non risolvibile dentro `Xot/app`: serve `require.php: ^8.3` (o `phpVersion` nel neon, vietato). Con costanti non tipizzate si torna a `typeCoverage.constantTypeCoverage`: il conflitto e' nella dichiarazione di piattaforma, non nel codice.

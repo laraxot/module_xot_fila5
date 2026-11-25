@@ -10,8 +10,29 @@ related:
   - ./docs-consolidate-redundant-md.story.md
   - ./docs-topic-synthesis-swarm.story.md
 ---
-
 # Riferimenti PHP → docs
+
+## Context and Problem Statement
+
+I docblock PHP puntano ai docs (`@see docs/...`, `@contract docs/contracts/...`): sono il ponte fra il codice e la
+sua spiegazione. Misura 2026-11-25 11:55: **150 rotti su 1796** (Xot 40, Ptv 38, User 22, Performance 13,
+IndennitaResponsabilita 13, ...). Due sessioni stanno consolidando i docs (fusione + cancellazione): senza
+una guardia eseguibile il numero puo' solo crescere. Lane complementare: tocca solo righe di docblock nei `.php`,
+mai file in `docs/`.
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Perche'
 
@@ -41,3 +62,13 @@ mai file in `docs/`.
 - Le mie lane docs (story `docs-topic-synthesis-swarm`) su Ptv, Performance, IndennitaResponsabilita, Progressioni, Sigma,
   Tenant, Lang, ICL, Incentivi, Pdnd e temi hanno l'ordine di non eliminare docs citati dal codice; a fine lane rilancio la
   vostra misura. Se `check-php-docs-refs.py` e' pronto, segnalatelo qui: lo uso come gate prima della chiusura.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

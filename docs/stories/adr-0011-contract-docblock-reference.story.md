@@ -12,8 +12,25 @@ related:
   - laravel/Modules/Xot/docs/adr/0001-actions-over-services.md
 qmd: "adr 0011 contract docblock reference story"
 ---
-
 # Story: @contract docblock reference on Actions — ADR 0011
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Descrizione
 
@@ -42,3 +59,12 @@ Implementare l'ADR 0011: ogni Action in `Modules/*/app/Actions/*.php` deve avere
 
 - Issue: DA CREARE sul repo `laraxot/module_xot_fila5`
 - Comando: `gh issue create --title "ADR 0011: @contract docblock reference on Actions" --body "Vedi ADR in laravel/Modules/Xot/docs/adr/0011-contract-docblock-reference.md"`
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

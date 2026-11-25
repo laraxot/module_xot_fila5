@@ -1,12 +1,14 @@
----
-title: "ADR — Niente logica ticket in PageSlugMiddleware"
+---title: "ADR — Niente logica ticket in PageSlugMiddleware"
 type: decision
-status: accepted
+status: superseded by 0010-no-ticket-logic-in-page-slug-middleware.md
 created: 2026-11-23
 updated: 2026-11-24
 issues: []
 qmd: "no ticket logic page slug middleware"
 ---
+
+Superseded da [0010-no-ticket-logic-in-page-slug-middleware.md](0010-no-ticket-logic-in-page-slug-middleware.md).
+
 
 # ADR: niente logica ticket in PageSlugMiddleware
 
@@ -79,5 +81,5 @@ La separazione si conferma sul codice corrente dei middleware indicati e sui tes
 
 ## Cross-link
 
-- [owner-local-documentation](owner-local-documentation.md)
+- [owner-local-documentation](0032-owner-local-documentation.md)
 - [Cms: cms-owns-page-resolution](../../../Cms/docs/adr/cms-owns-page-resolution.md)

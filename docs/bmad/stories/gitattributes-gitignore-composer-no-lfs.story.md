@@ -10,8 +10,25 @@ related:
   - ../../../../../bashscripts/ai/wiki/rules/git-workflow.md
   - ../../../../../bashscripts/templates/gitattributes.module
 ---
-
 # Bonifica .gitattributes / .gitignore / composer.json (no LFS)
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 - Fase BMAD: Quick Flow + ECC verification-loop (check-attr + check-no-git-lfs)
 - Branch: `dev`
@@ -111,3 +128,13 @@ Scope disgiunto `gitignore-root-job-media` (lock 40):
 | `Xot/docs/.gitignore` | invariato | `---` = frontmatter YAML (non spurio) | 0 rule dups |
 
 Metodo: prima occorrenza vince sulle **regole** (righe non-vuote non-`#`); commenti conservati anche se ripetuti; max 2 blank consecutivi. Verifica `Counter` rule_extra = 0 su tutti i target. Nessun tocco a `.gitattributes` / `composer.json` / LFS. Unlock `gitignore-root-job-media`.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

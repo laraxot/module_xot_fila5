@@ -11,8 +11,29 @@ related:
   - ./8.25.docs-consolidation-audit-strategy.story.md
   - ../../../../../../bashscripts/ai/wiki/how-to/modules-ops.md
 ---
-
 # Consolidazione semantica docs
+
+## Context and Problem Statement
+
+12.468 `.md` in `laravel/{Modules,Themes}/*/docs` (Notify 2897, User 2108, Lang 872, UI 836, ...).
+Misura 2026-11-25 11:30: 1842 duplicati esatti di corpo, 1583 file in cartelle archivio
+(`archive`, `_archive`, `_da-riconciliare`, `parcheggio`), 838 nomi con suffisso `-N`, 1181 file con
+corpo < 300 caratteri, 364 alias/superseded. `docs-organizer.py` per scelta non cancella mai (marca
+`superseded`): la ridondanza si accumula. La strategia target esiste dalla story 8.25 ma non e' stata eseguita.
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Perche'
 
@@ -90,3 +111,13 @@ Scoperte utili per gli owner (verificate in sola lettura):
 - Contenuto inventato (classi inesistenti): Media `file-management-architecture.md`, ICL `bmad/architecture{,-patterns}.md`, Themes One/Three (Filament 4, `ThemeOneChartWidget`).
 - Tenant `bmad/architecture.md` e `bmad/brainstorming.md` contengono marker; Tenant `html2pdf/` duplica Media.
 - Job `no-phpstan-probe-policy.md` contraddice il codice (`app/Phpstan/FormatSecondsPhpstanProbe.php` esiste).
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

@@ -12,8 +12,27 @@ related:
   - ./git-objects-slimming-independent-repos.story.md
   - ./phpstan-modules-swarm-devin-session.story.md
 ---
-
 # Swarm docs moduli e temi
+
+## Context and Problem Statement
+
+Gate PHPStan `analyse Modules` = **0 errori** (2026-11-25, cache privata, exit 0; un primo run aveva 2 internal
+error transitori su Notify `MailTemplate`/`NotificationTemplate`, riscritti alle 10:37 dal merge `a6a34ea` durante l'analisi).
+Il debito reale e' nei docs: rumore che degrada QMD, gonfia la storia git (vedi story slim) e confonde gli agenti.
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Perche'
 
@@ -90,3 +109,13 @@ Eccezioni ai nomi kebab confermate dal codice (non rinominare): `adr/INDEX.md`, 
 ## Gate
 
 Solo `.md`: PHPStan/Pint/Pest non applicabili (skip documentato), PHPStan gia' 0.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

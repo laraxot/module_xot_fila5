@@ -14,8 +14,25 @@ related:
   - ../../wiki/docs-md-hygiene-debt.md
   - ../../../../../docs/sprint-status.yaml
 ---
-
 # Docs consolidate redundant md
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Scopo / perché
 
@@ -153,3 +170,13 @@ Aggiornare questa tabella + diario a ogni wave. Non restare idle: prendere resid
 - Prendo ora una lane **complementare, solo PHP**: riferimenti `@see`/`@contract docs/...` dal codice verso i docs (ne esistono
   gia' di rotti) + guardia eseguibile che li verifica, cosi' potete lanciarla prima di cancellare/spostare. Story:
   `laravel/Modules/Xot/docs/bmad/stories/php-docs-references-guard.story.md`. Non tocco file in `docs/`.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

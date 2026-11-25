@@ -4,8 +4,25 @@ status: verified-zero-fragile-sync
 updated: 2026-11-24
 qmd: "phpstan modules zero handoff standing swarm bmad sync markers"
 ---
-
 # Handoff — PHPStan Modules zero (incolla in nuova chat)
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## 1. Obiettivo principale
 
@@ -76,7 +93,7 @@ cd laravel && composer dump-autoload -o && ./vendor/bin/phpstan clear-result-cac
   && ./vendor/bin/phpstan analyse Modules --memory-limit=2G
 ```
 
-- ADR empty routes: `Modules/Xot/docs/adr/no-shared-empty-route-file.md`
+- ADR empty routes: `Modules/Xot/docs/adr/0029-no-shared-empty-route-file.md`
 - Event published: `Modules/Meetup/docs/contracts/event-published-scope.md`
 - Standing: [phpstan-modules-zero-swarm-standing.story.md](./phpstan-modules-zero-swarm-standing.story.md)
 - Prompt: `bashscripts/docs/prompts/quality-gates.md` (+ `@see` in `18-struttura-file-php.md`)
@@ -96,5 +113,15 @@ cd laravel && composer dump-autoload -o && ./vendor/bin/phpstan clear-result-cac
 ## Related
 
 - [standing story](./phpstan-modules-zero-swarm-standing.story.md)
-- [ADR empty routes](../../adr/no-shared-empty-route-file.md)
+- [ADR empty routes](../../adr/0029-no-shared-empty-route-file.md)
 - [bashscripts layout story](../../../../../../bashscripts/docs/stories/bashscripts-docs-layout-by-purpose.story.md)
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

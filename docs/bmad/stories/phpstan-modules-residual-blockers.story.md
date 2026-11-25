@@ -5,8 +5,25 @@ module: Xot
 status: blocked
 qmd: "phpstan modules residui mailjet composer lock drift test database contratti superseded"
 ---
-
 # PHPStan Modules: blocchi residui
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Obiettivo
 
@@ -55,3 +72,13 @@ Portare `php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules` a zero err
 - [x] `ActionContractsAreCompleteTest` verde (2/2)
 - [ ] Mailjet: dipendenza allineata (decisione richiesta)
 - [ ] Suite Pest completa verde (richiede DB di test locale)
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

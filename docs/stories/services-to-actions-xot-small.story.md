@@ -13,8 +13,25 @@ related:
   - ../../../../../bashscripts/ai/wiki/rules/actions-business-logic.md
   - ../services.md
 ---
-
 # [STORY] Services piccoli di Xot verso Actions, const verso tipi adatti
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Richiesta
 
@@ -129,3 +146,19 @@ sulla `GetAllModelsByModuleNameAction`. Eliminato senza riscrittura: riscriverlo
   file con lock dell'agente Artisan, che ha creato `Enums/ArtisanActEnum` con gli stessi valori `act`. Da chiudere li'.
   Handlers e `CommandRegistry` non hanno chiamanti fuori dal loro albero (il `match` e' in `HandleArtisanActRequestAction`).
 - I docblock "Replaces ... (archived to .bak)" nelle Actions `Html`, `Url`, `Theme`: i `.bak` non esistono, la riga e' solo storica.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+- `php -l` su `PaDesignColorEnum`, `PaDesignColors`, `PaDesignColorsAction`: nessun errore.
+- PHPStan mirato (12 file: i 3 toccati, i chiamanti `MetatagData`, `XotServiceProvider`, `MetatagDataTest` e i 6 file con
+  const che restano), da `laravel/`: `[OK] No errors`.
+- Probe senza DB (script fuori repo): palette di `PaDesignColors` e di `PaDesignColorsAction` identiche (`===`) a quella
+  attesa costruita con gli stessi hex; hex dell'enum e `execute()` invariati: `PROBE OK`.
+- Pest: non eseguito (MySQL di test 10.100.200.53 non raggiungibile da questo host). I test coinvolti
+  (`MetatagDataTest`, `ModuleServiceIntegrationTest`) non dipendono dai file eliminati.

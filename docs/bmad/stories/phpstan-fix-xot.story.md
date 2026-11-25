@@ -8,8 +8,25 @@ related:
   - ./phpstan-modules-remediation.story.md
   - ../../wiki/decisions/module-admin-role-policy-bypass.md
 ---
-
 # PHPStan fix modulo Xot — 5 errori azzerati
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 Cluster E della remediation `phpstan-modules-remediation`.
 
@@ -37,3 +54,13 @@ materializza i symlink git come copie). Convertiti in symlink reali
 - `XotBasePolicyTest` ha 1 failure **pre-esistente** (`hasRole('xot::admin')` non mockato):
   file lockato da altro agente (`codex-root`, task `xot-policy-ability-deny`) — non toccato,
   fix lasciato al detentore del lock.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

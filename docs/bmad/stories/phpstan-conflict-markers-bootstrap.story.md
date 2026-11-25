@@ -15,8 +15,25 @@ related:
   - ../../../Job/docs/bmad/stories/phpstan-conflict-markers-bootstrap.story.md
   - ../../../Notify/docs/bmad/stories/phpstan-conflict-markers-bootstrap.story.md
 ---
-
 # phpstan-conflict-markers-bootstrap (Xot)
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Scopo / perché
 
@@ -65,3 +82,13 @@ Debito residuo docs: ~35 `.md` con marker (non bloccano bootstrap PHPStan).
 ## Note
 
 Non re-litigare merge chiusi da 8.24 / fleet-blocking: verificare codice, non docs.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

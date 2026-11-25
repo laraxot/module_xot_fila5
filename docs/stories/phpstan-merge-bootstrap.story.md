@@ -11,8 +11,25 @@ related:
   - ./fix-merge-conflicts.md
   - ./module-sync-stale-snapshot-and-phpstan-zero.story.md
 ---
-
 # PHPStan merge bootstrap — conflitti PHP in `Modules/Xot`
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Scopo
 
@@ -57,3 +74,16 @@ php -l <ciascun-file>                               # No syntax errors
 
 - Story sync/stale: [module-sync-stale-snapshot-and-phpstan-zero.story.md](./module-sync-stale-snapshot-and-phpstan-zero.story.md)
 - Nota storica conflitti: [fix-merge-conflicts.md](./fix-merge-conflicts.md)
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+```bash
+rg -l '^<<<<<<<' laravel/Modules/Xot --glob '*.php'   # atteso: vuoto
+php -l <ciascun-file>                               # No syntax errors
+```

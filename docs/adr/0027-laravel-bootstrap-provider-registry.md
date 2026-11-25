@@ -1,12 +1,14 @@
----
-title: "ADR — Bootstrap Laravel 13 minimale e discovery dei moduli"
+---title: "ADR — Bootstrap Laravel 13 minimale e discovery dei moduli"
 type: decision
-status: proposed
+status: superseded by 0009-laravel-bootstrap-provider-registry.md
 created: 2026-11-23
 updated: 2026-11-24
 issues: []
 qmd: "laravel bootstrap provider registry minimale discovery"
 ---
+
+Superseded da [0009-laravel-bootstrap-provider-registry.md](0009-laravel-bootstrap-provider-registry.md).
+
 
 # ADR: Bootstrap Laravel 13 minimale e discovery dei moduli
 

@@ -8,12 +8,29 @@ updated: 2026-11-24
 tags: [harness, adr, contracts, guard, bmad, second-brain, ecc]
 qmd: "story harness adr contracts ogni modulo tema guard lessons invarianti group pest laravelday workshop"
 related:
-  - ../adr/agent-harness.md
+  - ../adr/0018-agent-harness.md
   - ../concepts/agent-harness-guide.md
   - ../rules/action-behavioral-contract.md
 ---
-
 # Story — harness: ADR e contratti verificabili in ogni pacchetto
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 Come agente (o persona) che lavora su un modulo o tema, voglio trovare nel pacchetto il **perché** delle sue forme di codice
 (`docs/adr/`) e **cosa promettono** le sue Action (`docs/contracts/`), con test che falliscono se queste guide sono vuote,
@@ -33,7 +50,7 @@ Riferimento: workshop laravelday-harness (R. Gallea) + OpenAI / Böckeler / Anth
 - [x] Sensori: `PackagesHaveContractsAndAdrTest` (frontmatter, 5 sezioni, nessun numero/data nel nome, README indicizza
       ogni file) e `ActionContractsAreCompleteTest` (`@contract`, formato ID, ID unici, group dichiarato esistente nei test).
 - [x] ADR Xot riparati: rimosso `0000-template.md`, `0001-actions-over-services.md` (testo del workshop, classi inesistenti)
-      riscritto come `actions-over-services.md` con fatti del progetto, `agent-harness.md` riscritto al formato e allo stato reale.
+      riscritto come `0017-actions-over-services.md` con fatti del progetto, `0018-agent-harness.md` riscritto al formato e allo stato reale.
 - [x] Guard `.harness/bin/guard` creato (l'hook condiviso lo cercava già); `GuardTest` reso source-level (L-005) ed esteso.
 - [x] `.harness/memory/lessons.md`: L-001…L-007, ogni lezione con pezzo e condizione di rimozione.
 - [x] AGENTS.md e `00-TRIGGER_MAP.md` rimandano al canon e ai comandi di verifica.
@@ -115,3 +132,23 @@ Riferimento: workshop laravelday-harness (R. Gallea) + OpenAI / Böckeler / Anth
   `spatiex/laravel-comments` ancora elencato), DB sqlite di test con schema vecchio, `core.symlinks=false`.
 - Commit: il lavoro è entrato nel commit di sync `cd558c016a` (14:01, già su `laraxot/dev`), insieme a lavoro di altre
   sessioni (pulizia di archivi docs, −446k righe, non di questa story).
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+docblock `@contract` ([regola](../rules/action-behavioral-contract.md)).
+- [x] Sensori: `PackagesHaveContractsAndAdrTest` (frontmatter, 5 sezioni, nessun numero/data nel nome, README indicizza
+      ogni file) e `ActionContractsAreCompleteTest` (`@contract`, formato ID, ID unici, group dichiarato esistente nei test).
+- [x] ADR Xot riparati: rimosso `0000-template.md`, `0001-actions-over-services.md` (testo del workshop, classi inesistenti)
+      riscritto come `0017-actions-over-services.md` con fatti del progetto, `0018-agent-harness.md` riscritto al formato e allo stato reale.
+- [x] Guard `.harness/bin/guard` creato (l'hook condiviso lo cercava già); `GuardTest` reso source-level (L-005) ed esteso.
+- [x] `.harness/memory/lessons.md`: L-001…L-007, ogni lezione con pezzo e condizione di rimozione.
+- [x] AGENTS.md e `00-TRIGGER_MAP.md` rimandano al canon e ai comandi di verifica.
+- [x] Ogni modulo e tema (26) ha README di `adr/` e `contracts/` specifici, ADR reali con Verifica, contratti per le Action
+      con effetti collaterali più importanti (lavoro in 6 lane parallele, vedi sotto).
+- [x] Sensori verdi sull'intero checkout: `composer harness:check` → 42 passed (63 assertions).

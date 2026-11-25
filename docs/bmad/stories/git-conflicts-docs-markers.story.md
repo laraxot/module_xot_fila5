@@ -19,6 +19,30 @@ related:
 ---
 # git-conflicts-docs-markers-2026-09-24
 
+## Context and Problem Statement
+
+`git status` del parent: 138 file (tutti `.md` in `docs/` o README) con marker
+`<<<<<<<`/`>>>>>>>` in Media 50, Rating 40, User 26, Tenant 12, UI 8, Xot 2.
+Nessun file *unmerged* nell'indice: i marker sono **committati nei repo annidati**
+dei moduli dopo merge ripetuti con `laraxot/dev` (annidamenti diff3, lati
+`.merge_file_*`, `df2ba808`). Il parent HEAD ha la versione pulita pre-merge
+(solo lato ours). Durante l'inventario un'altra sessione ha risolto 4 test
+Rating e il workspace Xot: l'inventario scade in minuti.
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
 ## Perche'
 
 `git status` del parent: 138 file (tutti `.md` in `docs/` o README) con marker
@@ -67,3 +91,13 @@ Rating e il workspace Xot: l'inventario scade in minuti.
   `provtv/base_ptv_fila5`; la cartella locale `base_ptvx_fila5` non è il nome del repo GitHub.
 - Link di profondità errata pre-esistenti (es. Rating `docs/wiki/memories/INDEX.md`).
 - Xot `docs/archive/structure.md`: residui vecchi merge (`### Versione HEAD`).
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

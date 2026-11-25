@@ -11,8 +11,25 @@ related:
   - ./5.260-phpstan-modules-current-remediation.story.md
 qmd: "project quality audit story qualità progetto"
 ---
-
 # Qualità progetto: verifica e correzioni prioritarie
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Obiettivo e criteri di accettazione
 
@@ -40,3 +57,13 @@ reale, correggere difetti riproducibili e registrare i limiti della verifica.
   `persistent_facts` in `bashscripts/ai/wiki/skills/bmad-build/customize.toml:30`.
 - Story 5.260 contiene riferimenti a Trade: non usarla come prova del baseline PTVX.
 - Alcuni puntatori `docs/wiki/` non esistono; sorgenti disponibili in `bashscripts/ai/wiki/`.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

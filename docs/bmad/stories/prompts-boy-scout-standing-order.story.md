@@ -12,8 +12,25 @@ related:
   - ./docs-prompts-reorganization.story.md
   - ../../../../../../bashscripts/docs/prompts/README.md
 ---
-
 # prompts-boy-scout-standing-order
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Scopo
 
@@ -87,3 +104,13 @@ Boy-scout su 11 prompt non prioritari (shuffle: 98→44→10→15→17→51→54
 ### 2026-11-24 (wave source-first / lessico baseline)
 
 Boy-scout mirato (max 8 file): inventario OK (64 `NN-*`, no date/MAIUSCOLE, FM+qmd ovunque). Allineato lessico **misura iniziale** vs baseline PHPStan vietata in `02`, `09`, `36`, `39`, `44`; `09` ha checklist BMAD + second brain + source-first + Pest gate + ECC; README sezione Inventario. Lock `prompts`. Nessun PHP → Pest skip documentato.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

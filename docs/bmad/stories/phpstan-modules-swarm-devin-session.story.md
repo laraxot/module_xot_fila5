@@ -19,8 +19,25 @@ related:
   - ./phpstan-modules-scan-remediation.story.md
   - ./docs-md-filename-date-debt.story.md
 ---
-
 # PHPStan Modules swarm session (Devin)
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Scopo e perche'
 
@@ -84,3 +101,13 @@ lo chiama, quale contratto XotBase/Action rompe — non come errore da spegnere.
 - **Condivisione worktree**: peer attivo su `index.md`/`README.md` dei prompts
   e baseline phpstan proprio (fallito per cache write error, non per errori
   di codice). Locks `bashscripts/lock/` rispettati; nessun lock residuo mio.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

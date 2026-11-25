@@ -8,8 +8,25 @@ qmd: "fix merge conflicts"
 issues: []
 discussions: []
 ---
-
 # BMAD Story — Fix Merge Conflicts in All Modules
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Understand
 - **Problem**: 890 PHP files across all modules contain unresolved git merge conflict markers (`<<<<<<< HEAD`, `=======`, `>>>>>>> laraxot/dev`) causing syntax errors and preventing PHPStan analysis
@@ -61,3 +78,12 @@ I 9 file `*.php` con marker sotto `laravel/Modules/Xot` sono stati risolti in
 [phpstan-merge-bootstrap.story.md](./phpstan-merge-bootstrap.story.md)
 (claim `phpstan-xot-merge`, forward-only). Contesto sync stale:
 [module-sync-stale-snapshot-and-phpstan-zero.story.md](./module-sync-stale-snapshot-and-phpstan-zero.story.md).
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

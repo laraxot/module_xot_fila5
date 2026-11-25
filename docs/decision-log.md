@@ -9,7 +9,7 @@ links: {github_issue: "#XXX", discussion: "#XXX"}
 ## Decisions
 
 ### 2026-11-24: Vietato `require` di `Modules/Xot/routes/empty.php`
-- **Choose**: stub locale minimo in `routes/web.php` / `routes/api.php` quando non ci sono rotte; ADR `docs/adr/no-shared-empty-route-file.md`.
+- **Choose**: stub locale minimo in `routes/web.php` / `routes/api.php` quando non ci sono rotte; ADR `docs/adr/0029-no-shared-empty-route-file.md`.
 - **Over**: file condiviso `empty.php` in Xot, oppure omettere i file routes.
 - **Because**: `empty.php` non esisteva; il require era coupling a zero comportamento e residuo di merge conflict (UI/Lang/Cms). `XotBaseRouteServiceProvider` già fa `Route::group` sul file del modulo.
 - **Verifica**: `rg "Xot/routes/empty" laravel/Modules` vuoto; test `NoSharedEmptyRouteFileTest`.

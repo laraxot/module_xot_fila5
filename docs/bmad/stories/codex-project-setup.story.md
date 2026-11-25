@@ -11,8 +11,25 @@ related:
   - ./project-quality-audit.story.md
 qmd: "codex project setup story installazione automazioni"
 ---
-
 # Installazione setup automazioni per Codex
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Richiesta
 
@@ -40,3 +57,13 @@ dipendenza applicativa o autorizzazione globale.
 - https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-code-setup
 - https://learn.chatgpt.com/docs/build-skills
 - https://developers.openai.com/plugins/guides/submit-claude-plugin
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

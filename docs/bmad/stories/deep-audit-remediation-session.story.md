@@ -10,8 +10,25 @@ related:
   - ./module-portfolio-topology-no-cms-in-ptvx.story.md
   - ./folio-owner-foliovolt-not-app-provider.story.md
 ---
-
 # Audit estremamente approfondito PTVX — remediation
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Scope e metodo
 
@@ -138,3 +155,13 @@ su Progressioni + ExportXlsAction.
   Ptv→Performance (~Individuale/Fondo/Mail/Filament); Sigma MassExtra ancora
   peer Indennita/Performance. Priorità KISS: import morti BaseScheda → ownership
   Cessati → StabiDirigente → Performance Actions. Gate PHPStan cold11 ancora 0/0.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

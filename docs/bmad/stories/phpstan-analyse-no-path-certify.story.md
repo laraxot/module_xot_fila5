@@ -20,6 +20,29 @@ related:
 ---
 # phpstan-analyse-no-path-certify
 
+## Context and Problem Statement
+
+Richiesta: `cd laravel && ./vendor/bin/phpstan` e fix di tutte le segnalazioni
+in ordine random, parallelo, BMAD + second brain.
+
+Nota: il binario nudo stampa help; il certify SSoT è
+`./vendor/bin/phpstan analyse` **senza** path CLI (neon paths + type-coverage).
+Vedi `phpstan-status.md`.
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
 ## Perche'
 
 Richiesta: `cd laravel && ./vendor/bin/phpstan` e fix di tutte le segnalazioni
@@ -61,3 +84,13 @@ Ripristino: `git -C Modules/Xot checkout HEAD -- tests/<file>.php` (non blob ant
 Certify: **`[OK] No errors` EXIT 0**. markers_app=0.
 
 Pest: skip ambientale — host ≠ `10.100.200.15`; `.env.testing` `DB_HOST=10.100.200.53` **DOWN** (tcp/3306).
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

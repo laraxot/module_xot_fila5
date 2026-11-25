@@ -13,8 +13,35 @@ related:
   - ./merge-conflict-markers-md-bonifica.story.md
   - ../../../../../../bashscripts/ai/wiki/memories/git-sync-fleet-remotes.md
 ---
-
 # Repo indipendenti sotto 10000 oggetti git
+
+## Context and Problem Statement
+
+`bashscripts/git/subtrees/merge_remote_repo_2.sh` e' lo strumento di sync **in uso e funzionante**, non un bug da
+eliminare (l'etichetta "DEPRECATO" del 2026-09-15 era errata). Contiene gia' il meccanismo di snellimento voluto:
+`MAX_GIT_OBJECTS=130000` → `git_delete_history` (orphan commit `first` + push -f) + `git_deep_cleanup`, bloccati da
+`_refuse_history_rewrite` senza `PTVX_ALLOW_HISTORY_REWRITE=1`. I commit `first` visti in Notify vengono da li'.
+La ricrescita nasce dal merge `--allow-unrelated-histories` con copie dello stesso remoto che conservano la storia
+vecchia (piu' progetti `base_*` condividono i remoti `laraxot/*`), non da un difetto dello script.
+
+Leve reali, da decidere con l'utente:
+- soglia `MAX_GIT_OBJECTS` 130000 vs obiettivo dichiarato 10000 (abbassarla = squash + force push alla prossima sync);
+- `git maintenance` globale registra Activity/Lang/Media/Notify/UI/User/Xot di ptvx (prefetch di tutti i branch);
+- `gitmodules.ini` dichiara `provtv/*`, i repo tracciano `laraxot/*` (lo script riscrive l'URL con l'argomento ORG).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 Follow-up di [module-theme-git-slim](./module-theme-git-slim.story.md) (24/11), non la sostituisce.
 
@@ -137,3 +164,13 @@ Nessun file PHP toccato: PHPStan/Pint/Pest non applicabili (skip documentato). G
 |---|---|---|
 | claude-opus-5.5 f3659729 | fase 1 su 15 repo, lock `bashscripts/lock/git-slim-20261125-*` | 2026-11-25 done, lock rilasciati |
 | claude-opus-5.5 8f1ecc86 | lock markers-md su 8 moduli | attivo, non toccato |
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

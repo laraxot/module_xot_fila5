@@ -5,8 +5,25 @@ bmad: true
 status: active
 qmd: "phpstan l10 systematic resolution story 20261006phpstanl10systematicresolutionstorymd"
 ---
-
 # BMAD Story: PHPStan Level 10 Systematic Resolution
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 **Date**: 2026-10-06  
 **Status**: COMPLETED ✅  
@@ -135,3 +152,26 @@ TOTAL: 0/25 errors (100% resolved)
 
 
 **BMAD Workflow Compliance**: ✅ All stories created + verified + documented
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+**Final PHPStan L10 Status** (target modules):
+```
+Performance:                  ✅ [OK] No errors
+IndennitaCondizioniLavoro:   ✅ [OK] No errors
+Ptv:                          ✅ [OK] No errors
+Sigma target files:           ✅ [OK] No errors
+───────────────────────────────────────────────────
+TOTAL: 0/25 errors (100% resolved)
+
+**Commits**:
+- ac8d17e30c: Performance test assertion fix
+- d761354095: Docs audit report + BMAD story
+- 296c6cd85f: Ptv Filament fixes
+- (IndennitaCondizioniLavoro fixes embedded in story)

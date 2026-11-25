@@ -14,8 +14,25 @@ references:
   - ./phpstan-modules-swarm-random.story.md
 qmd: "theme three refresh story indice completo"
 ---
-
 # Theme Three — indice docs completo e navigazione coerente
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Scopo
 
@@ -37,3 +54,13 @@ dei file e un README che citava una pagina `customization.md` inesistente.
 - Verifica link Markdown: 52 link locali presenti; 0 destinazioni mancanti.
 - Inventario verificato: 53 file Markdown totali, 43 al primo livello.
 - Nessuno spostamento delle altre cartelle: resta il piano Themes distinto.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

@@ -12,8 +12,25 @@ related:
   - ./phpstan-modules-swarm-session.story.md
 canonical: ./phpstan-modules-zero-swarm.story.md
 ---
-
 # PHPStan zero errori su Modules
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Stato
 
@@ -31,3 +48,13 @@ cast silenziatori. Standing order: `cd laravel && ./vendor/bin/phpstan analyse M
 - Swarm parallelo con lock; flock max-3
 - Pest gate obbligatorio (o skip documentato su production)
 - Non mass-delete docs; non toccare `vendor/`
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

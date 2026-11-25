@@ -1,12 +1,14 @@
----
-title: "ADR — @contract nel docblock delle Action"
+---title: "ADR — @contract nel docblock delle Action"
 type: decision
-status: accepted
+status: superseded by 00011-contract-docblock-reference.md
 created: 2026-11-23
 updated: 2026-11-24
 issues: []
 qmd: "contract docblock reference action"
 ---
+
+Superseded da [00011-contract-docblock-reference.md](00011-contract-docblock-reference.md).
+
 
 # ADR: @contract nel docblock delle Action
 
@@ -62,7 +64,7 @@ final class SomeAction
 
 - Buono: la documentazione del contratto punta a file markdown viventi e il riferimento è chiaro per chi legge il
   codice; un'Action con effetti collaterali senza `@contract` viene segnalata dai test; coerente con
-  [actions-over-services](actions-over-services.md) e con [behavioral-contract-governance](behavioral-contract-governance.md).
+  [actions-over-services](0017-actions-over-services.md) e con [behavioral-contract-governance](0023-behavioral-contract-governance.md).
 - Cattivo: richiede di creare o verificare i file `docs/contracts/<action-kebab>.md`; il debito iniziale è aggiungere
   contratti e `@contract` alle Action esistenti, e mantenerli quando le Action cambiano.
 

@@ -16,8 +16,25 @@ related:
   - ../../../../../../bashscripts/ai/wiki/memories/quality-gates-tooling.md#03-quality-gates-workflow
   - ./cleanup-all-modules.story.md
 ---
-
 # Esegui + migliora `03-quality-gates.md`
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 **Perché.** Il prompt è la legge operativa dei gate. Se i comandi al suo interno sono falsi, ogni agente fallisce lo stesso modo (PHPMD “Cannot find phpmd.xml”, Pint `--parallel` morto, dirty list della mother che non vede i moduli).
 
@@ -67,3 +84,13 @@ Scope (`laravel/storage/app/ai/qg-session-files.txt`): `SendNetfunSMSAction.php`
 - Non toccato `phpstan.neon`.
 - Non commit.
 - Non rubato lock prompt / sprint-status (codex `quality-gates-prompt-improve-20260922`).
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

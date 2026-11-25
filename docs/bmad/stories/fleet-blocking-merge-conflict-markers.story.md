@@ -14,8 +14,25 @@ related:
   - "../../../Progressioni/docs/bmad/stories/ceddiffs-table-class-migration-pending-20260929.story.md"
 qmd: "xot fleet blocking merge conflict markers story"
 ---
-
 # Marker di conflitto Git irrisolti — bloccavano tutta la fleet
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Contesto
 
@@ -150,3 +167,20 @@ Marker annidati `.merge_file_*` in documentazione fondazione: **38 file**
 risolti (innermost-first; HEAD preferito; single `phpstan.neon` / no
 `@phpstan-ignore` non contraddetti). Gate:
 `/bin/grep -rIln '^<<<<<<< \|^>>>>>>> \|^=\{7\}$' laravel/Modules/Xot/docs` → vuoto.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+- `php -l` verde su tutti i 13 file.
+- Nessun marker `<<<<<<<`/`=======`/`>>>>>>>` residuo in file non-`.md` sotto
+  `Modules/` e `Themes/` (i marker rimasti nei `.md` sono esempi documentali in
+  pagine sul tema "risoluzione conflitti", non conflitti reali).
+- `./vendor/bin/phpstan analyse Modules` ha superato il bootstrap (prima falliva
+  al 100%, 0 file analizzati) ed è ripartito in analisi reale.
+- Pest gate: da eseguire nella story di follow-up sulle segnalazioni PHPStan
+  effettive (questa story chiude solo lo sblocco bootstrap).

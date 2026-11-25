@@ -17,8 +17,28 @@ related:
   - ../../../app/Exports/CollectionExport.php
   - ../../../docs/bmad/stories/collection-export-intestazioni-esplicite.story.md
 ---
-
 # export-lazy-action-labels
+
+## Context and Problem Statement
+
+Canale lazy/streaming (`ExportXlsLazyAction`) estrae solo i percorsi da
+`getXlsFields()`: le label esplicite (`path => title`) degradano a path
+tecnico nell'header — stessa UX rotta risolta altrove per
+`CollectionExport`/`ExportXlsByCollection`.
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Perche'
 
@@ -40,3 +60,13 @@ tecnico nell'header — stessa UX rotta risolta altrove per
 ## Priorita'
 
 Bassa — canale secondario. Verificare prima se qualcuno lo monta.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

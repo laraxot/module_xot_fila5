@@ -10,8 +10,25 @@ related:
   - ./merge-conflict-markers-committed-bonifica.story.md
   - ../../../../../../bashscripts/docs/stories/history-rewrite-real-guard.story.md
 ---
-
 # Collisioni git 2026-11-25
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 Sessione Claude Opus 5.5 `48744b40`. Lock: `bashscripts/lock/git-collisions-20261125-{Progressioni,Tenant,Themes-Zero}`.
 
@@ -59,3 +76,13 @@ Tutti i commit `first` sono delle 08:38–09:07: merge committati senza risoluzi
 - [x] PHPStan verde sui moduli toccati
 - [ ] Marker nei moduli lockati: in carico a `merge-conflict-markers-committed-bonifica` (solo PHP); i ~3500 `.md` restano senza owner
 - [ ] Notify upstream `laraxot/dev` da bonificare alla fonte, altrimenti il prossimo sync li reintroduce
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

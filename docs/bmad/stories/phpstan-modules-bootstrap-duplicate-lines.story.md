@@ -19,8 +19,25 @@ related:
   - ../../../../User/docs/bmad/stories/phpstan-user-lang-duplicate-keys.story.md
   - ../../../../../../bashscripts/ai/wiki/memories/git-merge-markers.md#trait-merge-duplicate-methods-repair
 ---
-
 # PHPStan Modules: bootstrap rotto da righe duplicate
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Obiettivo
 
@@ -133,3 +150,13 @@ commit radice `41e757843a` (20:29) ne contiene 84; `d2ae03eb31` (20:27) ne aveva
   fosse davvero ridondante.
 - Docs: audit di sola lettura (37 nomi datati, 1.346 senza frontmatter, 670 gruppi di collisioni di maiuscole) non
   applicato: se ne occupa la story `docs-md-filename-date-debt`.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

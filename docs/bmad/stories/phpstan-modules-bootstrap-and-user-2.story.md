@@ -10,8 +10,25 @@ references:
   - ../../../../../../bashscripts/ai/wiki/memories/git-merge-markers.md#phpstan-bootstrap-merge-file-markers
 qmd: "phpstan modules bootstrap and user story"
 ---
-
 # Obiettivo
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 Eseguire `cd laravel && ./vendor/bin/phpstan analyse Modules` e correggere le
 cause funzionali delle segnalazioni, senza baseline né soppressioni.
@@ -38,6 +55,22 @@ cause funzionali delle segnalazioni, senza baseline né soppressioni.
   i widget tabellari restringono i valori misti prima di usarli.
 
 ## Verifica
+
+Comando:
+
+```text
+cd laravel && php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules --no-progress --error-format=json
+```
+
+Risultato del run finale: exit code `0`, `listed=0`.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
 
 Comando:
 

@@ -10,8 +10,25 @@ related:
   - 2026-10-06-phpstan-modules-level10.story.md
 qmd: "06 remove typedhasrecursiverelationships story wrapper vendor"
 ---
-
 # Remove TypedHasRecursiveRelationships wrapper
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Obiettivo funzionale
 
@@ -52,3 +69,12 @@ Modelli aggiornati:
 - `Modules\Cms\Models\Menu`
 
 File rimosso: `Modules/Xot/Models/Traits/TypedHasRecursiveRelationships.php`
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

@@ -1,12 +1,14 @@
----
-title: "ADR — Nessun Livewire standalone: usare Filament Widget, Resource e Page"
+---title: "ADR — Nessun Livewire standalone: usare Filament Widget, Resource e Page"
 type: decision
-status: accepted
+status: superseded by 0008-filament-widgets-over-standalone-livewire.md
 module: Xot
 created: 2026-11-23
 updated: 2026-11-24
 qmd: "filament widgets over standalone livewire nessun"
 ---
+
+Superseded da [0008-filament-widgets-over-standalone-livewire.md](0008-filament-widgets-over-standalone-livewire.md).
+
 
 # Nessun Livewire standalone: usare Filament Widget
 

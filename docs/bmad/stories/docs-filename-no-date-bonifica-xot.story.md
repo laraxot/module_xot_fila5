@@ -13,8 +13,32 @@ qmd: "docs filename no date timestamp bonifica xot git-rewrite artifact"
 related:
   - ../../../../../../docs/sprint-status.yaml
 ---
-
 # Xot — .md senza data/timestamp nel nome (batch trovato 2026-09-22)
+
+## Context and Problem Statement
+
+Direttiva utente questa sessione: nessun filename `.md` con data o timestamp.
+`docs/sprint-status.yaml:257` referenzia una story `"5.29-docs-filename-no-date-bonifica"`
+(status `review`) di cui **non esiste il file** in nessun modulo (puntatore
+rotto — stesso bug tracciato in `5.25-second-brain-puntatori-rotti`,
+in-progress). Quella campagna (2026-09-01) copriva User/Notify/Xot/Lang/
+Activity/UI/Media/Job/Ptv/Tenant/Rating/Pdnd/Zero con debito residuo
+dichiarato aperto su User (~37 file) — non e' chiaro se il batch sotto sia
+gia' incluso in quel conteggio o e' nuovo (creato dopo).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Perche'
 
@@ -98,3 +122,13 @@ riferimento lo usa, e' un candidato a `git rm -r`.
 - [ ] `docs/sprint-status.yaml:257` corretto: o il file 5.29 viene ricreato,
       o il puntatore viene rimosso/ricollegato a questa story
 - [ ] `qmd update`
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

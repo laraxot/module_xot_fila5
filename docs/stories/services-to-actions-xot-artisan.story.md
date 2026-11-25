@@ -14,8 +14,25 @@ related:
   - ../refactoring/artisan-service-refactoring-report.md
   - ../../../../bmad-output/epic-code-standards-services-mixed-const.md
 ---
-
 # [STORY] Xot: ArtisanService e Services/Artisan verso Actions
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Richiesta
 
@@ -96,3 +113,28 @@ vendor/bin/phpstan analyse Modules/Xot/tests/Unit/XotExecuteCoverage50Test.php -
 - Nessun entrypoint (route/Filament) espone `HandleArtisanActRequestAction`: e' infrastruttura senza consumatori. Se resta cosi', candidata alla rimozione in un passaggio dedicato (non cancellata qui: e' la copia canonica della 18.1).
 - Il report `docs/refactoring/artisan-service-refactoring-report.md` descrive il vecchio Strategy: marcato superseded con nota datata.
 - I residui degli altri cluster Xot in `app/Services/` (`ConfigService`, `HtmlService`, `ModuleService`, `RouteDynService`, `RouteService`, `ThemeService`, `UrlService`, `XotService`, `Trend`, `Translators`) sono fuori perimetro.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Da `laravel/`, in background, `nice -n 10`:
+
+```
+vendor/bin/phpstan analyse Modules/Xot/app/Enums/ArtisanActEnum.php Modules/Xot/app/Actions/Artisan \
+  Modules/Xot/tests/Unit/Actions/Artisan/HandleArtisanActRequestActionTest.php \
+  Modules/Xot/tests/Unit/XotArtisanCommandsHelpersCoverageTest.php -c phpstan.neon --no-progress --memory-limit=3G
+ [OK] No errors
+
+vendor/bin/phpstan analyse Modules/Xot/tests/Unit/XotExecuteCoverage50Test.php -c phpstan.neon ...
+ [OK] No errors
+```
+
+- `php -l` su tutti i file creati/modificati: nessun errore di sintassi.
+- `rg` su `Modules Themes config routes app bootstrap tests database` (esclusi docs, `*.md`, vendor) per `ArtisanService`, `Services\Artisan\`, `Actions\ArtisanAction`, `CommandHandlerInterface`, `CommandRegistry`, `*CommandHandler`: zero riferimenti vivi (restano due menzioni in docblock "ex ArtisanService").
+- Pest: `vendor/bin/pest Modules/Xot/tests/Unit/Actions/Artisan/HandleArtisanActRequestActionTest.php` non e' eseguibile qui: il `TestCase` di Xot apre transazioni sulle connessioni MySQL (`fixcity_user_test` inesistente), 16 failed su `SQLSTATE[HY000] [1049] Unknown database`, 0 assertion. Limite d'ambiente, non un verde.
+- Probe senza DB (script fuori repo, bootstrap dell'app con sqlite in memoria, `Artisan` facade finto): `ok=18 ko=0`. Coperti: act sconosciuto, i 9 act "un comando", `module-enable/disable` con nome modulo, `migrate` senza/con modulo (e l'`<h3>` che il ramo modulo stampa), `routelist1`, `error`, `error-show`, `module-list` reale (output in `<pre>`). `STDIN` definito. Non eseguiti per non cancellare file reali: `clear`, `error-clear`, `debugbar:clear` (Action `Clear*` invariate).

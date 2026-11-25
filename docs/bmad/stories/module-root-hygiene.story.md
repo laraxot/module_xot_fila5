@@ -16,8 +16,27 @@ related:
   - ../../../tests/Unit/ModuleRootHygieneTest.php
   - ../../../../../../docs/sprint-status.yaml
 ---
-
 # Igiene della root dei moduli
+
+## Context and Problem Statement
+
+Direttiva utente (2026-09-29) sulle root di `laravel/Modules/<Mod>/`. La guardia
+Pest `Modules/Xot/tests/Unit/ModuleRootHygieneTest.php` rende le regole osservabili:
+una regola senza test regredisce.
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Perche'
 
@@ -181,3 +200,14 @@ Gate: `bashscripts/quality-gates/audit-module-theme-root-files.sh` allineato (no
 Guardia Pest: `Modules/Xot/tests/Unit/ModuleRootHygieneTest.php`.
 
 Consigliati aggiuntivi (religione modulo): `config/config.php` (`name`+`icon`), `.gitignore` con tooling vietato, `docs/`.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+`vendor/bin/pest Modules/Xot/tests/Unit/ModuleRootHygieneTest.php` verde (mai su
+10.100.200.15: li' solo `php -l` + audit shell) e nessun ripristino da peer dopo 1 ora.

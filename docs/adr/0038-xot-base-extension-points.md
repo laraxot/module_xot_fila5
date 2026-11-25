@@ -1,13 +1,15 @@
----
-title: "I moduli estendono i punti base Xot del framework"
+---title: "I moduli estendono i punti base Xot del framework"
 type: decision
-status: accepted
+status: superseded by 0006-xot-base-extension-points.md
 created: 2026-11-23
 updated: 2026-11-24
 decision-makers: [team Laraxot]
 issues: []
 qmd: "xot base extension points moduli estendono"
 ---
+
+Superseded da [0006-xot-base-extension-points.md](0006-xot-base-extension-points.md).
+
 
 # I moduli estendono i punti base Xot del framework
 

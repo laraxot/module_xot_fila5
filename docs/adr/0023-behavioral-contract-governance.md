@@ -1,7 +1,6 @@
----
-title: "Governance dei Behavioral Contract con invarianti verificabili"
+---title: "Governance dei Behavioral Contract con invarianti verificabili"
 type: decision
-status: accepted
+status: superseded by 0012-behavioral-contract-governance.md
 created: 2026-11-23
 updated: 2026-11-24
 decision-makers: [team back office]
@@ -9,6 +8,9 @@ issues: []
 module: Xot
 qmd: "behavioral contract governance invarianti verificabili"
 ---
+
+Superseded da [0012-behavioral-contract-governance.md](0012-behavioral-contract-governance.md).
+
 
 # Governance dei Behavioral Contract con invarianti verificabili
 

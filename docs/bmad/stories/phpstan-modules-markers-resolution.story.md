@@ -3,8 +3,25 @@ title: Marker di merge in Notify/Media risolti — PHPStan 0 errori
 qmd: merge conflict markers notify media phpstan 2026-11-25 devin merge_remote_repo_2 sync
 status: done
 ---
-
 # Marker di merge in Notify/Media — 2026-11-25 (devin)
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Contesto scoperto
 
@@ -27,3 +44,13 @@ status: done
 
 - ~3650 file **non-PHP** con marker (story `Xot/merge-conflict-markers-md-bonifica`, in-progress).
 - Preventivo: il flusso merge_remote_repo_2 va eseguito solo a merge chiusi; valutare guardia pre-commit che rifiuti `<<<<<<<` (esiste gia' `NoConflictMarkersTest` in Xot — verificare copertura).
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

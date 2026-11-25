@@ -7,8 +7,25 @@ module: Xot
 bmad: true
 qmd: "story BMAD audit modulo Xot inventario gate finding P0 P1"
 ---
-
 # Story: audit BMAD ed ECC del modulo Xot
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 Come manutentore del modulo Xot, voglio una baseline BMAD verificabile, così da pianificare senza confondere ipotesi, WIP e comportamento osservato.
 
@@ -43,3 +60,13 @@ Rendere verificabile lo stato di Xot: kernel Laraxot: classi base, Actions riusa
 ## Esito (2026-11-16)
 
 Baseline aggiornata, nessun codice applicativo modificato. Fix e Pest restano aperti (gate DB test).
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

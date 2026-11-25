@@ -9,8 +9,25 @@ module: Xot
 tags: [gitignore, graphify, activity, sync, multi-progetto]
 qmd: "graphify out tests ignored all modules"
 ---
-
 # [STORY] tests/graphify-out/ ignorata in tutti i moduli e temi, cartella Activity rimossa
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## User Request
 
@@ -40,3 +57,13 @@ qmd: "graphify out tests ignored all modules"
 - `Modules/Job/docs/graphify/graphify-out` e `Modules/UI/docs/graphify/graphify-out` sono altri output graphify, sotto `docs/graphify` (gia' ignorato da una regola dedicata): non toccati, non chiesti.
 - Finche' ptvx lancia graphify su `tests/` e committa, la cartella puo' tornare nei repo che non hanno ancora la regola: ora ce l'hanno tutti, e un file ignorato non entra piu' con `git add -A`.
 - Collegata: [coverage-artifacts-gitignore-all-modules](./coverage-artifacts-gitignore-all-modules.story.md).
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+`git -C <repo> check-ignore --no-index -v tests/graphify-out/graph.json` in tutti e 19 i repo: ignorato, con la riga che lo ignora. Controllo negativo `tests/Unit/ExampleTest.php`: non ignorato (in AI c'e' una negazione esplicita `!tests/**`, la regola nuova viene dopo e vince). Marker residui nei `.gitignore` di moduli e temi: 0.

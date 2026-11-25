@@ -7,6 +7,24 @@ status: active
 ---
 # Piano Consolidamento File README.md Duplicati
 
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
 **Data**: 2026-01-09  
 **Metodologia**: Super Mucca  
 **Regola**: Solo `README.md` (maiuscolo) permesso, `README.md` (minuscolo) da rimuovere
@@ -71,3 +89,13 @@ status: active
 **Status**: 🧘 **IN PIANIFICAZIONE**
 
 **Ultimo aggiornamento**: 2026-01-09
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

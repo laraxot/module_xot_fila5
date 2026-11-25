@@ -7,6 +7,24 @@ status: active
 ---
 # ⚡ Xot: English presentation
 
+## Context and Problem Statement
+
+No FixCity without Xot: internal framework preventing duplication and architectural drift.
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
 [![Core](https://img.shields.io/badge/Role-Platform%20Core-6A1B9A.svg)](#)
 [![Laravel 12](https://img.shields.io/badge/Laravel-12-red.svg)](https://laravel.com/)
 [![Filament 5](https://img.shields.io/badge/Filament-5-ffab00.svg)](https://filamentphp.com/)
@@ -61,3 +79,13 @@ Frontoffice stack: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filamen
 ---
 
 **Module** `xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

@@ -1,13 +1,15 @@
----
-title: "Le decisioni vivono nella documentazione dell'owner"
+---title: "Le decisioni vivono nella documentazione dell'owner"
 type: decision
-status: accepted
+status: superseded by 0005-owner-local-documentation.md
 created: 2026-11-23
 updated: 2026-11-24
 decision-makers: [team Laraxot]
 issues: []
 qmd: "owner local decisioni vivono nella dellowner"
 ---
+
+Superseded da [0005-owner-local-documentation.md](0005-owner-local-documentation.md).
+
 
 # Le decisioni vivono nella documentazione dell'owner
 

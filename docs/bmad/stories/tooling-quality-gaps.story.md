@@ -16,8 +16,30 @@ related:
   - ../../../../../../bashscripts/docs/prompts/03-quality-gates.md
   - ../../../docs/bmad/stories/quality-gates-03-exec-improve.story.md
 ---
-
 # tooling-quality-gaps
+
+## Context and Problem Statement
+
+Quality gates (prompt 03 v3.32.0) girano ma con buchi documentati:
+
+- `phpinsights`: non installato → gate sempre skipped
+- `qmd embed`: ~34k hash senza vettori → ricerca semantica degradata
+- `graphify update .`: >10min su monorepo → spesso saltato/background
+- Pest dipende da DB 10.100.200.53: quando down, zero copertura test
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Perche'
 
@@ -43,3 +65,13 @@ Quality gates (prompt 03 v3.32.0) girano ma con buchi documentati:
 
 - [ ] Ogni gate del prompt 03 o funziona o e' marcato deprecated con motivo
 - [ ] Tempi graphify misurati e documentati
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

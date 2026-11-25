@@ -5,8 +5,25 @@ status: review
 module: Xot
 qmd: phpstan xot tests HasCommonScopesProbe ModuleRouteEntrypointsExistTest missingType.generics cast.string argument.type Safe glob
 ---
-
 # PHPStan Xot: fixture generico e test di routing
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Scopo dei test
 - `HasCommonScopesProbe`: fixture Eloquent senza DB per `HasCommonScopesTest` (scope = SQL ispezionato, helper booleani = PHP puro).
@@ -30,3 +47,13 @@ qmd: phpstan xot tests HasCommonScopesProbe ModuleRouteEntrypointsExistTest miss
 - `phpstan analyse` mirato sui due file: `[OK] No errors`.
 - Pest `Modules/Xot/tests/Unit/Routing/ModuleRouteEntrypointsExistTest.php`: 1 passed (2 assertions).
 - Pest `Modules/Xot/tests/Unit/Traits/HasCommonScopesTest.php`: non eseguibile qui, `TestDatabaseGuard` rifiuta il bootstrap (`connection "mysql" -> host "10.100.200.53" is not local`). Skip documentato; la modifica al fixture e' solo PHPDoc.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

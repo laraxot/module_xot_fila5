@@ -7,7 +7,7 @@ created: 2026-11-24
 updated: 2026-11-24
 qmd: "harness engineering agenti perche come usare adr contracts invarianti guard lessons bmad second brain ecc laravelday gallea openai fowler anthropic"
 related:
-  - ../adr/agent-harness.md
+  - ../adr/0018-agent-harness.md
   - ../rules/action-behavioral-contract.md
   - ../../../../../.harness/memory/lessons.md
 ---
@@ -74,7 +74,7 @@ Divergenze misurate il 2026-11-24:
 
 | ID | Dove | Divergenza | Per il codice nuovo |
 |---|---|---|---|
-| C1 | `Modules/AI/app/Services`, `Modules/Geo/app/Services`, `Modules/Job/app/Services` | logica in Services | Action QueueableAction ([ADR](../adr/actions-over-services.md)); debito in `tests/Arch/debt.php` |
+| C1 | `Modules/AI/app/Services`, `Modules/Geo/app/Services`, `Modules/Job/app/Services` | logica in Services | Action QueueableAction ([ADR](../adr/0017-actions-over-services.md)); debito in `tests/Arch/debt.php` |
 | C2 | 113 file di codice in 14 moduli, soprattutto User (28), Notify (21), Xot (17) (`ModuleCodeIsProjectAgnosticTest`) | il codice di un modulo condiviso nomina il progetto ospite | niente nomi di progetto: config, tenant, `XotData` |
 | C3 | docs dei moduli (4.094 occorrenze contro un tetto di 1.261, `ModuleDocsAreProjectAgnosticTest`) | i docs nominano il progetto ospite | descrivi il ruolo, non l'installazione |
 | C4 | contratti con invarianti a group `—` | promessa scritta ma non provata | chi tocca l'Action scrive il test del group |

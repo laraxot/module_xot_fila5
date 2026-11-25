@@ -15,8 +15,25 @@ related:
   - ../../../../../bashscripts/ai/wiki/how-to/git-github.md#git-merge-marker-sweep
 qmd: "collision rewrite complete files story collisioni"
 ---
-
 # Collisioni: riscrivere il file completo, non scegliere un lato
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Richiesta (ordine dell'utente, 2026-11-06)
 
@@ -200,3 +217,13 @@ Perimetro: le sei violazioni di `md-filenames.py check` in `User/docs` (quattro 
 - `fixrefs`: nessun link `.md` ai sei nomi ritirati nel repo (cercati con `rg` su `laravel`, `docs`, `bashscripts`; l'unico accostamento, `UI/docs-archive/INDEX.md`, riguarda file di un altro modulo); restano solo menzioni in testo libero in `dcp-201` e in log JSON di rinomina.
 
 - `fixrefs`: nessun link `.md` ai sei nomi ritirati nel repo (cercati con `rg` su `laravel`, `docs`, `bashscripts`; l'unico accostamento, `UI/docs-archive/index.md`, riguarda file di un altro modulo); restano solo menzioni in testo libero in `dcp-201` e in log JSON di rinomina.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

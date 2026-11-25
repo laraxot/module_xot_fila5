@@ -14,8 +14,25 @@ related:
   - ./phpstan-merge-bootstrap.story.md
   - ./fix-merge-conflicts.md
 ---
-
 # Sync dei moduli da copia vecchia: marker, regressioni e PHPStan a zero
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Scopo
 
@@ -190,3 +207,17 @@ rischio link rotti; elencati nel report agente).
   (`Modules/Lang/tests/Pest.php:100` vs `Modules/Rating/tests/Pest.php:10`) — conflitto da risolvere
   prima del gate Pest.
 - Merge/rebase root ancora aperto: nessun commit eseguito (regola git-forward + merge in corso).
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+- `cd laravel && ./vendor/bin/phpstan analyse Modules`: `{"errors":0,"file_errors":0}`, exit 0.
+- Pint passato su tutti i file PHP modificati.
+- Test toccati: tutti verdi quelli che non usano il database. Gli 84 che lo usano falliscono con
+  `Access denied for user 'marco'@'localhost'`: le credenziali di `laravel/.env.testing` non
+  valgono su ogni macchina. Il problema non dipende da questa story.

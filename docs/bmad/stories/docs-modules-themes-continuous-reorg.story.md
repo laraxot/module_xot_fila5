@@ -15,8 +15,35 @@ related:
   - ./git-conflicts-docs-markers-2026-09-24.story.md
   - ../../../../../../docs/sprint-status.yaml
 ---
-
 # Riorganizzazione continua docs moduli e temi
+
+## Context and Problem Statement
+
+Direttiva utente permanente (2026-09-29): studiare, aggiornare, migliorare e
+organizzare meglio `laravel/Modules/*/docs` e `laravel/Themes/*/docs`, sempre
+con BMAD + second brain. Questa story e' il registro della campagna: ogni
+passata aggiunge misura, azioni e backlog qui, non in nuovi file.
+
+Regole verificate sul filesystem (non sulla wiki): story in
+`docs/bmad/stories/`, nomi kebab-case, ogni modulo ha `docs/purpose.md`,
+frontmatter sui `.md`, mai cancellare ne' rinumerare story.
+La policy BMAD e' applicata dal bridge
+`bashscripts/ai/.agents/rules/00-ON_DEMAND_PATTERN.md`; il vecchio puntatore
+alla policy citato da alcune regole non esiste e non va usato.
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Perche'
 
@@ -178,3 +205,13 @@ come mappa di recupero.
 - [ ] Riga registrata in `docs/sprint-status.yaml` (bloccata: file troncato)
 - [ ] Prossime passate: backlog sopra, aggiornare la tabella qui
 - [x] Memoria second brain + `llm-wiki-qmd.sh update`
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

@@ -6,8 +6,25 @@ status: active
 type: story
 qmd: "100 fleet merge xot story docs100fleetmergexotstorymdstorymd"
 ---
-
 # Epic — Docs ≤100 .md ricorsivi via merge (fleet-wide, 2026-10-05)
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 > Status: in-progress. Owner: sessione corrente. Metodo: BMAD + second brain + ponytail.
 
@@ -56,3 +73,13 @@ Escluse (al limite, conformi): IndennitaCondizioniLavoro 100, Job 100, UI 100.
 
 - Flapping fleet (resurrezioni da snapshot): verifica finale dei conteggi dall'orchestratore.
 - `qmd` lento (timeout 120s il 2026-10-05): un solo `qmd update` finale con timeout, skip documentato se fallisce.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

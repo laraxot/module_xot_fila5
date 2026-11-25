@@ -10,8 +10,26 @@ qmd: "xot docs bonifica annidamento docs/bashscripts/docs/source/docs duplicati 
 related:
   - ./docs-zen-conventions-swarm.story.md
 ---
-
 # Xot: bonifica convenzioni docs
+
+## Context and Problem Statement
+
+Lane E dello swarm [docs-zen-conventions-swarm](./docs-zen-conventions-swarm.story.md) (story ombrello e
+`git-objects-slimming-independent-repos.story.md` non toccate).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Perche'
 
@@ -43,7 +61,7 @@ Lane E dello swarm [docs-zen-conventions-swarm](./docs-zen-conventions-swarm.sto
 - `wiki/Architecture.md` (alias superseded) -> `wiki/architecture.md`.
 - `wiki/agents.md` (stesso testo + frontmatter iniettato nel corpo) -> `wiki/AGENTS.md`.
 - `wiki/root-md-files/.md` e `untitled.md`: solo frontmatter (titolo "3"), nessun contenuto.
-- `qmd` aggiunto a `adr/README.md`, `adr/mixed-is-last-resort.md`.
+- `qmd` aggiunto a `adr/README.md`, `adr/0028-mixed-is-last-resort.md`.
 
 ## Casi lasciati in dubbio
 
@@ -58,3 +76,13 @@ Lane E dello swarm [docs-zen-conventions-swarm](./docs-zen-conventions-swarm.sto
 ## Gate
 
 Solo `.md`: PHPStan/Pint/Pest non applicabili (skip documentato, PHPStan gia' 0).
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

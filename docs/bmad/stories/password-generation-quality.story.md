@@ -9,8 +9,25 @@ related:
   - ./project-quality-audit.story.md
 qmd: "password generation quality story generazione lunghezza"
 ---
-
 # Generazione password: lunghezza e casualità crittografica
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Owned File/Module Scope
 
@@ -44,6 +61,29 @@ Per azioni pure usare Pest senza TestCase applicativo: i gruppi `no-db` da soli 
 disattivano `DatabaseTransactions` ereditato.
 
 ## Verifica e handoff
+
+- Pest prima del fix: 7 fallimenti, 4 verdi (31 assertion),
+  `/tmp/ptvx-password-pest-before.log`.
+- Pest dopo il fix: 11 verdi (61 assertion), exit 0,
+  `/tmp/ptvx-password-pest-after.log`.
+- PHP lint sui due file e Pint mirato: verdi. `git diff --check`: verde.
+- PHPStan sui due file con configurazione originale, `--debug --no-progress` e
+  `memory_limit=2G`: zero errori, `/tmp/ptvx-password-phpstan.log`.
+- Audit indipendente: HasXotTableNoResolveHooksTest e NoSemanticFolioPageDirectoriesTest
+  verdi, 4 test e 56 assertion (`/tmp/ptvx-quality-architecture-pest.log`).
+- Nessun accesso DB o boot applicativo. Suite completa, PHPMD e PHPInsights non eseguiti:
+  verifica limitata ai due file, non certifica il modulo intero.
+- Review Ponytail: nessuna dipendenza, nessun helper aggiunto, diff netto -42 righe.
+- Handoff al coordinatore per gate combinato, sprint e indicizzazione second brain.
+  Lock dei tre file rilasciati a conclusione; nessun commit o push.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
 
 - Pest prima del fix: 7 fallimenti, 4 verdi (31 assertion),
   `/tmp/ptvx-password-pest-before.log`.

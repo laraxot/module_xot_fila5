@@ -11,8 +11,25 @@ related:
   - ../../architecture/canonical-blade-view-path.md
   - ../../../../User/docs/bmad/stories/phpstan-filter-form-schema.story.md
 ---
-
 # Scopo
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 Chiudere 3 segnalazioni PHPStan residuali su Xot(+User) senza ignore e senza
 invertire l'API Filament corretta.
@@ -44,3 +61,13 @@ invertire l'API Filament corretta.
 - Pest mirato `CanonicalBladeViewPathTest`: **skip** — `TestDatabaseGuard` rifiuta
   host remoto `10.100.200.53` (`.env.testing`); 0 assertions, fail di bootstrap non
   di logica. Da rieseguire su host locale/`*_test` consentito.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

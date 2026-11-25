@@ -9,8 +9,25 @@ module: Xot
 tags: [phpstan, cleanup, xot, swarm, tests, pest, stubs]
 qmd: "06 phpstan cleanup xot rest story"
 ---
-
 # [STORY] PHPStan cleanup Xot (tests, helpers, stub) - gruppo Xot_rest
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## User Request
 
@@ -64,3 +81,13 @@ Issue: TODO (gh non installato su questa macchina)
 Discussion: TODO
 
 Vedi [dev](./2026-10-06-phpstan-cleanup-xot-rest.dev.md).
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

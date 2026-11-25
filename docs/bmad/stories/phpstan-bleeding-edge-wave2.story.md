@@ -7,8 +7,25 @@ repository: laraxot
 created: 2026-11-11
 updated: 2026-11-11
 ---
-
 # PHPStan wave 2 — bleedingEdge constant types + Safe functions + Pest/Mockery typing
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Contesto
 
@@ -54,6 +71,17 @@ su file toccati da lavoro concorrente dopo la wave 1 (che era a 0 errori):
   pre-esistenti Tenant da valutare in story separata.
 
 ## Verifica
+
+- `phpstan analyse` sugli scope toccati → 0.
+- `phpstan analyse Modules` completo → 0.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
 
 - `phpstan analyse` sugli scope toccati → 0.
 - `phpstan analyse Modules` completo → 0.

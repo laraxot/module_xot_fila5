@@ -20,8 +20,25 @@ related:
   - ./5.178-export-lazy-labels-dedup.story.md
   - ../../../../Rating/docs/bmad/stories/5.244-continuazione-domani-post-prompt-04-pack.story.md
 ---
-
 # Xot — Continuazione Domani
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 **SSoT pack:** [`5.247-tomorrow-pack-export-lazy-and-trigger-map.story.md`](./5.247-tomorrow-pack-export-lazy-and-trigger-map.story.md)
 **Pack cross-modulo:** Rating [`5.244`](../../../../Rating/docs/bmad/stories/5.244-continuazione-domani-post-prompt-04-pack.story.md)
@@ -41,3 +58,13 @@ related:
 
 Export headings collection (done), wiring action generic (5.166 done).
 `continuazione-perfezione-xot-domani.md` è del 2026-09-22, status done — storico.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

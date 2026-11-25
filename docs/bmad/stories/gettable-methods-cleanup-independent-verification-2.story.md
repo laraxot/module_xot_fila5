@@ -16,8 +16,25 @@ related:
 - "../../../../User/docs/bmad/stories/user-filament-boundary-i18n-20260929.story.md"
   - "../../../../../docs/wiki/audits/getTable-methods-audit-2026-09-29.md"
 ---
-
 # Verifica indipendente — hook `getTable*` nelle List page
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Obiettivo del task ricevuto
 
@@ -118,3 +135,22 @@ incidenti simili di divergenza oggi).
 1 audit di cross-verifica indipendente completato e documentato, 1 discrepanza
 metodologica segnalata (glob strict vs substring nella story User), 0 regole
 duplicate.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+- Rilettura dei 6 file: 0 metodi `getTable*` residui.
+- Confronto riga per riga fra ciò che è stato rimosso dalle pagine (`git diff`) e ciò
+  che è presente nelle rispettive `Tables/*Table.php`: nessuna perdita di colonne,
+  filtri o azioni.
+- Caso studiato a mano: `BaseListOptions::getTableFilters()` faceva
+  `[...parent::getTableFilters(), ...]`; risalendo la catena (`PtvBaseYearListRecords`
+  → `XotBaseListRecords`) non c'è nessuna implementazione di quel metodo prima dello
+  stub vuoto → equivalente confermato, nessuna regressione.
+- Rilancio dello scan grep-based su tutto `Modules`+`Themes` dopo il fix: **0
+  violazioni**.

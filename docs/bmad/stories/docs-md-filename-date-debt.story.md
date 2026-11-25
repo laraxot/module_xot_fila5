@@ -16,8 +16,25 @@ related:
   - ./prompts-standing-order-alignment-phpstan-wave.story.md
   - ./docs-prompts-reorganization.story.md
 ---
-
 # Docs md filename date debt
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Scopo
 
@@ -232,3 +249,13 @@ Lock: `bashscripts/lock/docs-md-boyscout-20261125-composer2.lock`.
 **Residuo ACTIVE dated (ISO-day Modules+Themes):** **0**. Marker md non-SSoT lasciati (policy no mass rewrite).
 
 <!-- GateGuard facts: (1) no supersede — append only; (2) linked-from sprint-status Xot/docs-md-filename-date-debt + User companion; (3) edit existing; (4) user: boy-scout markers Notify/Job SSoT + dated find max 5. -->
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

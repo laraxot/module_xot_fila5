@@ -24,8 +24,30 @@ related:
   - ../../../../../docs/audits/phpstan-configurazione.md
 qmd: "phpstan xot azzeramento la causa era"
 ---
-
 # PHPStan su Xot: da 193 a 0
+
+## Context and Problem Statement
+
+Nessuna delle tre forme sopra e' un difetto del codice di Xot: sono tutte conseguenze di un solo
+pacchetto non registrato. Non c'era niente da correggere nei test ne' nelle classi base, e la
+regola della consegna — *capire a cosa serviva quel codice prima di farlo tacere* — qui ha prodotto
+come risposta che il codice andava bene e lo strumento no.
+
+**Nessun `@phpstan-ignore` aggiunto, nessun `mixed` introdotto, nessuna firma allargata.**
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Story
 
@@ -208,3 +230,13 @@ moduli consumatori che il contratto adesso prescrive.
 - [Contratto delle classi XotBase](../contracts/xotbase-classes.md)
 - [Audit: perche' i conteggi PHPStan non tornavano](../../../../../docs/audits/phpstan-configurazione.md)
 - [Story gemella su Quaeris](../../../Quaeris/docs/stories/phpstan-quaeris-azzeramento-e-verifica.story.md)
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

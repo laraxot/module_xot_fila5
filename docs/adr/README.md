@@ -16,42 +16,35 @@ Scrivere un ADR solo per una scelta difficile da invertire, sorprendente o fonda
 Le decisioni vanno verificate contro codice e test correnti. Una modifica sostanziale crea un nuovo ADR e collega il precedente come superseded/deprecated.
 
 Il **perche'** delle scelte di questo pacchetto: una decisione per file, con le
-alternative scartate. I numeri sequenziali sono ammessi per gli ADR canonici;
+alternative scartate. **Ogni ADR ha basename `NNNN-slug.md`** (harness MADR);
 non si usano date o timestamp nel nome (la data sta nella frontmatter).
 
-## Formato
+Ispirazione obbligatoria:
+[harness 0000-template](https://raw.githubusercontent.com/robertogallea/laravelday-harness-workshop/refs/heads/main/docs/adr/0000-template.md)
+· copia locale [0000-template.md](./0000-template.md).
+
+Eccezioni al prefisso numerico: `README.md`, `INDEX.md`/`index.md`, `0000-template.md`.
+
+## Formato (MADR breve / harness)
 
 ```markdown
 ---
-title: "ADR — <decisione in una riga>"
-type: decision
-status: proposed | accepted | deprecated | superseded by <file-canonico>.md
-superseded_by: <file-canonico>.md   # solo se superseded
-created: AAAA-MM-GG
-updated: AAAA-MM-GG
-issues: []
+status: proposed | accepted | rejected | deprecated | superseded by NNNN
+date: YYYY-MM-DD
+decision-makers:
 ---
 
-# ADR: <decisione>
+# <!-- problema + soluzione -->
 
-## Contesto
-Fatti e vincoli che hanno reso necessaria la scelta (misure, norme, policy, incidenti).
-
-## Driver della decisione
-Vincoli e forze che pesano sulla scelta.
-
-## Decisione
-Cosa si fa, in concreto, e dove sta nel codice.
-
-## Alternative scartate
-Ogni alternativa seria, con il motivo per cui non e' stata scelta.
-
-## Conseguenze
-Pro, contro, debito che resta, cosa misurare. Chi cambia la decisione scrive un nuovo ADR e segna questo `superseded`.
-
-## Conferma
-Test, audit o controllo ripetibile che dimostra il rispetto della decisione.
+## Context and Problem Statement
+## Decision Drivers
+## Considered Options
+## Decision Outcome
+### Consequences
+### Confirmation
 ```
+
+File: `docs/adr/NNNN-titolo-con-trattini.md` (NNNN a 4 cifre, prossimo libero).
 
 ## Sezioni obbligatorie e deroghe
 

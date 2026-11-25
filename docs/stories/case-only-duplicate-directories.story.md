@@ -15,8 +15,25 @@ related:
   - ../../../../../docs/wiki/rules/case_sensitive_naming_critical.md
   - ../../tests/Unit/CaseCollisionsDoNotGrowTest.php
 ---
-
 # Cartelle che differiscono solo per maiuscole
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 Chiude il punto aperto «debito di nomi per maiuscole» della
 [story della sync](./sync-unrelated-histories-repair.story.md).
@@ -88,3 +105,13 @@ Inventario finale delle cartelle: **zero** coppie.
       e a mano per i differenti. Il cricchetto della guardia impedisce che crescano.
 - [ ] Ogni modulo toccato è anche un repo a sé: le cancellazioni vanno portate nei
       `laraxot/module_<m>_fila5` (branch `dev`), altrimenti il prossimo mirror al root le riporta.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

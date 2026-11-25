@@ -7,8 +7,25 @@ updated: '2026-11-19'
 status: review
 qmd: "blade icons set from resources svg"
 ---
-
 # Le icone dei moduli si registrano da `resources/svg`
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 Fase BMAD: dev (bugfix). I commit li fa l'utente.
 
@@ -95,3 +112,13 @@ php artisan tinker: svg('tenant-icon') OK (226 byte), quaeris-logo OK, geo-archi
 - Il commento "Blade UI Kit default set may already contain prefixes like geo" e il controllo
   `svg($prefix.'::non-existent-test')` non sono toccati: con il set `geo` registrato non c'e'
   collisione (la guardia lo prova per Geo).
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

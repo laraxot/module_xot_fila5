@@ -26,8 +26,25 @@ related:
 qmd: "eliminare Modules app Http Livewire convertire Filament widget XotBaseWidget XotBaseSchemaWidget refactor"
 description: "Rimozione totale delle directory Modules/*/app/Http/Livewire (e User/app/Livewire): le classi già convertite in widget Filament vengono ritirate (gemelli SSoT), quelle ancora vive (FO/vista) vengono ritirate se senza punto di montaggio, e viene smontata la registrazione automatica RegisterLivewireComponentsAction."
 ---
-
 # Story Xot: Eliminare Modules/*/app/Http/Livewire
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 Status: in_progress
 
@@ -107,3 +124,13 @@ chiamato incondizionatamente da `XotBaseServiceProvider::boot()` per ogni modulo
 AC aggiornato: "Classi FO senza punto di montaggio vivo sono ritirate" -> per Ptv questo
 AC non si applica (il punto di montaggio era vivo), la riga corretta è "classi con
 gemello widget creato in questa sessione sono rimosse" (vale per `EditFirma`/`Nav\StabiReparAnno`).
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

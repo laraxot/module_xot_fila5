@@ -12,8 +12,25 @@ related:
   - ../bmad/phpstan-status.md
 qmd: "06 phpstan cleanup xot rest dev"
 ---
-
 # [DEV] PHPStan cleanup Xot (tests, helpers, stub)
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 Story: [2026-10-06-phpstan-cleanup-xot-rest.story.md](./2026-10-06-phpstan-cleanup-xot-rest.story.md)
 
@@ -84,3 +101,20 @@ Risultato: 87 voci -> **0** in `Modules/Xot/{tests,helpers}`.
 - `XotBaseModelBusinessLogicTest` ha test gia' rotti a runtime (non parte della segnalazione): `serialize()` di una classe anonima lancia "Serialization of ... is not allowed" (test "can be serialized/unserialized") e `toArray()` di un modello vuoto e' `[]` (test "array conversion" fa `assertNotEmpty`). Servono un fixture nominato e attributi.
 - `docs/wiki/log.md` contiene marker di merge (`<<<<<<< .merge_file_...`).
 - `use Modules\User\Models\User;` inutilizzato in `CreateTableIndexByModelClassColumnsActionTest` (lasciato).
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+```bash
+cd /mnt/nas07/var/www/_bases/base_techplanner_fila5/laravel
+./vendor/bin/phpstan analyse Modules --memory-limit=-1 --no-progress --error-format=raw | grep "Modules/Xot/\(tests\|helpers\)"   # nessuna riga
+./vendor/bin/phpstan analyse Modules/Xot/helpers Modules/Xot/tests --memory-limit=-1 --no-progress
+php -l <file>                                                                                                              # per ogni file modificato
+```
+
+Risultato: 87 voci -> **0** in `Modules/Xot/{tests,helpers}`.

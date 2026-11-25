@@ -11,11 +11,28 @@ issues: [252]
 tags: [git, gitignore, bashscripts, claude, adr, docs]
 qmd: "bashscripts claude gitignore git rm cached adr conformita PackagesHaveContractsAndAdrTest marker README"
 related:
-  - ../adr/bashscripts-e-claude-fuori-dal-versionamento.md
+  - ../adr/0022-bashscripts-e-claude-fuori-dal-versionamento.md
   - ../../tests/Unit/Docs/PackagesHaveContractsAndAdrTest.php
 ---
-
 # bashscripts e .claude fuori dal versionamento del root, ADR conformi
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Scopo
 
@@ -41,7 +58,7 @@ misure stanno nell'ADR collegato: qui solo il lavoro e la chiusura.
 - `.gitignore`: aggiunta la riga `bashscripts` accanto a `bashscripts/` (due righe per nome, come in `guard.yml`);
   tolta la riga fusa `laravel/bootstrap/cache/*bashscripts/`.
 - `.claude`: già non tracciato (0 file) e coperto dalla riga `.claude`: nessuna modifica.
-- ADR `bashscripts-e-claude-fuori-dal-versionamento.md` in Xot.
+- ADR `0022-bashscripts-e-claude-fuori-dal-versionamento.md` in Xot.
 - Misura iniziale degli ADR (replica in sola lettura del test, senza Pest): 259 non conformità in 14 pacchetti.
 
 ## Esito ADR e contratti (24/11, 16:17 UTC, misura sul disco)
@@ -68,7 +85,7 @@ ADR sostanziale, path in `## Verifica`), senza Pest:
 - Misura sul working tree: ADR 0, contratti 0, marker in `docs/adr` e `docs/contracts` 0, marker nel codice 0 (rilevatore con
   controprova positiva). Gli ADR e i contratti di Media, Notify e Lang sono stati rimessi in conflitto tre volte dalla sync e
   ripristinati ogni volta da uno snapshot pulito (`restore_from_snapshot.py` nello scratchpad della sessione).
-- Un solo file differisce dallo snapshot senza marker: `Xot/docs/adr/route-entrypoints-canonical-empty.md`, ora `superseded`
+- Un solo file differisce dallo snapshot senza marker: `Xot/docs/adr/0036-route-entrypoints-canonical-empty.md`, ora `superseded`
   (il testo dichiara "decisione dell'utente"; chi l'ha scritto non l'ho verificato, il formato e' conforme): non si tocca.
 
 ## Aperti
@@ -107,3 +124,19 @@ peer. Ogni file si controlla con `stat -c %Y` prima di scrivere (sotto 120 s è 
 La replica del test e `git ls-files -c -i --exclude-standard` vanno rifatte prima di ogni commit, perche' la sync puo'
 rimettere i marker. Pest su `PackagesHaveContractsAndAdrTest` solo con via libera dell'utente (vedi memoria sui database
 di test, e `.env.testing` oggi assente).
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+- ADR: da 259 non conformità a 0. Contratti: da 47 a 0. Marker in `docs/adr` e `docs/contracts`: 0.
+- Fusioni "numerato in gemello" in Xot (nessuna decisione cancellata): `0001`→`actions-over-services`,
+  `0002`→`queueable-actions-over-jobs`, `0003`→`pest-over-phpunit`, `0004`→`one-model-one-migration`,
+  `0006`+`0008`→`filament-widgets-over-standalone-livewire`, `0007`→`pest-testcase-binding-per-file`; i doppi `0010`/`00010` e
+  `0011`/`00011` in un solo file ciascuno. Template e `INDEX.md` degli ADR tolti, il README è l'unico indice.
+- Un nuovo ADR vero: `Limesurvey/docs/adr/per-survey-tables-use-dynamic-models.md` (dall'ADR-001 della radice).
+- ADR sostanziale aggiunto (Driver + Conferma, contenuto ricavato dal codice) in AI, Gdpr, Job, Tenant, Themes/Zero.

@@ -1,7 +1,6 @@
----
-title: "ADR — La logica applicativa si scrive come Spatie QueueableAction, non come Service"
+---title: "ADR — La logica applicativa si scrive come Spatie QueueableAction, non come Service"
 type: decision
-status: accepted
+status: superseded by 0001-actions-over-services.md
 created: 2025-09-22
 updated: 2026-11-24
 module: Xot
@@ -9,8 +8,11 @@ tags: [adr, actions, queueable-action, services, harness]
 qmd: "adr actions over services queueable action spatie no services rule legacy AI Geo Job"
 related:
   - ../rules/action-behavioral-contract.md
-  - ./architecture-tests-pest-arch.md
+  - ./0020-architecture-tests-pest-arch.md
 ---
+
+Superseded da [0001-actions-over-services.md](0001-actions-over-services.md).
+
 
 # ADR: Actions, non Services
 

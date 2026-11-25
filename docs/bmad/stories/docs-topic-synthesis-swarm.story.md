@@ -12,8 +12,29 @@ related:
   - ./docs-zen-conventions-swarm.story.md
   - ./docs-consolidate-redundant-md.story.md
 ---
-
 # Un documento per argomento
+
+## Context and Problem Statement
+
+Dopo [docs-zen-conventions-swarm](./docs-zen-conventions-swarm.story.md) i nomi sono puliti ma il volume resta: 12467 `.md`,
+~60 MB senza story. Cause misurate: mega-file `*-consolidated.md` (fino a 778 KB) che **concatenano** invece di sintetizzare,
+cartelle `archive/` `_archive/` `historical/` (vietate da `docs-second-brain.md#no-docs-archive-folders`), artefatti generati
+(`coverage-full.md`, `project-docs-index.md` 855 KB), casi d'uso inventati (Activity `use_cases/bank|shop|prediction_market`),
+N file per lo stesso argomento.
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Richiesta utente (verbatim)
 
@@ -92,3 +113,13 @@ Scope assegnato a devin (lock `docs-*-devin*.lock` in `bashscripts/lock/`):
 Non toccati (altri owner): `laravel/Modules/*/docs`, `laravel/Themes/*/docs`, `docs/bmad/**`, `docs/chat/**` (archivio).
 
 Fatto diretto da devin: 118 `.md` vuoti rimossi da `docs/wiki`; 5 `.md` stale spostati `laravel/` → `docs/reports/` con frontmatter; `laravel/README.md` allineato (Laravel 13, 18 moduli); `.md/` dirs vuote rimosse; prompts verificati senza modifiche necessarie.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

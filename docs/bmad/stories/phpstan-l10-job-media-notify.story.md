@@ -6,8 +6,30 @@ status: active
 type: story
 qmd: "xot phpstan l10 job media notify story"
 ---
-
 # BMAD Story: PHPStan L10 Job, Media, Notify
+
+## Context and Problem Statement
+
+Three medium-sized, integration-heavy modules require PHPStan L10 remediation:
+- **Job**: batch/queue logic with action contracts and queue payload type narrowing
+- **Media**: file operations without filesystem error ignores; preserve error handling intent  
+- **Notify**: template + channel logic with notifiable interface validation
+
+Key constraint: `//...` developer marker comments are intentional and must NOT be removed.
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 **Epic**: 8.26  
 **Sprint**: 2026-10-06  
@@ -76,3 +98,13 @@ None initially; escalate if type narrowing requires base contract changes.
 
 - No destructive operations (no migrate:fresh, data sacred)
 - Second brain: pattern memory if batch action / file service / notification contracts differ from Xot base
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

@@ -16,8 +16,25 @@ related:
   - ../../wiki/concepts/env-testing-parity-copy-env.md
   - ../../../../../../docs/sprint-status.yaml
 ---
-
 # STORY-512 — Ambiente test e tracker verificabili
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## User story
 
@@ -48,3 +65,13 @@ all'account di sviluppo.
 - `APP_ENV=testing php artisan tinker ...`: sentinel credential risolte nel config senza connessione DB.
 - Pest applicativo: ancora SQLSTATE 1044, access denied su `fixcity_data_test`; 0 assertion.
 - `phpstan analyse Modules`: 0 errori nel controllo più recente della tranche Fixcity.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

@@ -9,8 +9,25 @@ updated: 2026-10-23
 tags: [docs, xot, bmad]
 qmd: "story xot"
 ---
-
 # Story
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 Come manutentore Filament, voglio che le Resource che estendono `XotBaseResource` non dichiarino `$navigationIcon`, così la navigazione segue le traduzioni e le convenzioni centralizzate del modulo invece di fissare metadati UI nelle classi.
 
@@ -44,3 +61,13 @@ Percorsi rimossi da `related` (conservati qui per cronologia, tutti con suffisso
 - Non introdurre label UI hardcoded: le traduzioni restano la fonte dei testi di navigazione.
 - Prima di ogni edit acquisire il lock sul file; non sovrascrivere modifiche già presenti.
 - Nessun `@phpstan-ignore` o cast usato per nascondere finding.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

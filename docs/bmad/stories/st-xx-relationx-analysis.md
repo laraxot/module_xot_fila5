@@ -21,8 +21,28 @@ status: active
 priority: medium
 effort_estimate: 2h
 ---
-
 # ST-XX: RelationX Trait Analysis and Documentation
+
+## Context and Problem Statement
+
+The RelationX trait in Modules/Xot/app/Models/Traits/RelationX.php provides
+extended Eloquent relationship methods that handle cross-database pivot tables.
+This study is required to document its conventions and prevent bugs in modules
+that rely on multi-database configurations.
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## As a Project Developer
 I need to fully understand the RelationX trait
@@ -40,3 +60,13 @@ that rely on multi-database configurations.
 - [ ] Document database name comparison logic
 - [ ] Identify SQLite compatibility handling
 - [ ] Document in Modules/Xot/docs/relationx-analysis.md
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).
