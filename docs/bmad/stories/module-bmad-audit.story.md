@@ -10,9 +10,17 @@ qmd: "story BMAD audit modulo Xot inventario gate finding P0 P1"
 
 # Story: audit BMAD ed ECC del modulo Xot
 
+Come manutentore del modulo Xot, voglio una baseline BMAD verificabile, così da pianificare senza confondere ipotesi, WIP e comportamento osservato.
+
 ## Perché
 
 Rendere verificabile lo stato di Xot: kernel Laraxot: classi base, Actions riusabili, contratti, guardie di test. Senza baseline misurata ogni fix successivo è ad hoc.
+
+## Riferimenti baseline (legacy id `Xot/module-bmad-audit-20260928`)
+
+- [module-boundary](../architecture/module-boundary.md)
+- [module-opportunities](../brainstorming/module-opportunities.md)
+- [module-roadmap](../epics/module-roadmap.md)
 
 ## Acceptance
 

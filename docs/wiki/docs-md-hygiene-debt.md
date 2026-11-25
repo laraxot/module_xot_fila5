@@ -69,11 +69,32 @@ Notify `final-implementation-report-2025-10`, User archive/`_archive` year-2025�
 User `git-conflicts-resolution-2025-01-27` (già alias). ISO-day find Modules+Themes:
 **3** path, tutti stub (Zero×2 + User×1).
 
+### Xot trailing-dash
+
+FULL `*-.story.md` vs clean: **0** (wave 2026-11-25i).
+
+### Residuo Notify filename clones
+
+Notify `*-2.md`: **~201** non-stub near-dup (body ≠ canone; measure 2026-11-25 Notify-neardup = 0 body-identical). Sintesi topic solo con peer/`docs-topic-synthesis` se overlap — non stub cieco.
+
 ## Non fare
 
 - Mass-delete / mass-rewrite indici auto-generati
 - Rinomine >10 senza lock + verifica collisioni
 - Trattare `cci-2026-*` come debt data
+
+
+### Exact-dup wave 2026-11-25g / 25h
+
+Stub `superseded_by` (niente delete): Lang 17+, Notify 5, User ~29, più Activity/UI
+in parallelo. Lane **Xot/Rating/Media/Job** (25h): exact actionable **0**; stub
+cumulativi tipici Xot~23 Media~11 Rating3 Job0; boy-scout case Media
+`01.media-phpstan-fix`. Residui = near-dup trailing-dash (vedi story).
+Story: [docs-consolidate-redundant-md.story.md](../bmad/stories/docs-consolidate-redundant-md.story.md).
+
+## Campagna consolidate (2026-11-25g)
+
+Oltre ai dated: [docs-consolidate-redundant-md.story.md](../bmad/stories/docs-consolidate-redundant-md.story.md) — exact-dup e cluster topic → canone + stub `superseded_by`.
 
 ## Vedi anche
 

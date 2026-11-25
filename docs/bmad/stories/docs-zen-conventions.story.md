@@ -51,7 +51,7 @@ Lane E dello swarm [docs-zen-conventions-swarm](./docs-zen-conventions-swarm.sto
 - `adr/INDEX.md`, `contracts/INDEX.md`, `contracts/_template.md`: vincolati da harness-audit e dal test Pest.
 - `bmad/stories/STORY-512-*.md`, `bmad/stories/ST-XX-*.md`, `stories/STORY-XXX-*.md` e le loro varianti kebab `-2.md` (diverse): story, nomi non toccati.
 - 22 copie esatte tra story (`*-.story.md`, `*-2.story.md`, `5-2.261`/`5.261`, `13-dcp-45`/`dcp-45`): vietato eliminare story; da marcare superseded in un passaggio dedicato.
-- `bmad/stories/phpstan-modules-scan-devin-20261125.story.md`: nome datato, story -> solo segnalato.
+- `bmad/stories/phpstan-modules-scan-verification.story.md`: nome datato, story -> solo segnalato.
 - `wiki/architecture-2.md` diverso da `wiki/architecture.md` (83 righe di diff): non fuso.
 - `laravel/Modules/Notify/docs/ai-agents/project-docs-index.md:6946` cita `Xot/docs/contracts/index.md` (Notify in lock lane A).
 

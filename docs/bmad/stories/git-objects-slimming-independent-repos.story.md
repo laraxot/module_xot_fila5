@@ -1,7 +1,7 @@
 ---
 title: "Repo indipendenti di gitmodules.ini sotto 10000 oggetti git"
 type: story
-status: in-progress
+status: review
 module: Xot
 epic: quality-gates
 story_id: git-objects-slimming-independent-repos
@@ -100,12 +100,31 @@ Leve reali, da decidere con l'utente:
 - `git maintenance` globale registra Activity/Lang/Media/Notify/UI/User/Xot di ptvx (prefetch di tutti i branch);
 - `gitmodules.ini` dichiara `provtv/*`, i repo tracciano `laraxot/*` (lo script riscrive l'URL con l'argomento ORG).
 
+
+## Esito finale (misura 2026-11-25 11:55)
+
+Tutti i 23 repo sono shallow e sotto soglia. Il taglio a depth 1 degli 8 repo bloccati non e' di questa sessione: dai reflog
+risulta fatto fra le 10:31 e le 10:42 (es. `Rating/.git/shallow` = `6adbe1b` delle 10:31, `Notify/.git/shallow` delle 10:42),
+poi il sync `merge_remote_repo_2.sh` delle 11:36 (commit `.`) ha committato e pushato anche le bonifiche docs.
+
+| Repo | Oggetti |
+|---|---:|
+| Notify | 9877 (al limite: primo a sforare) |
+| User | 6493 |
+| bashscripts | 6212 |
+| UI | 2574 |
+| Xot | 2919 |
+| altri 18 | 21–1925 |
+
+Attenzione: `MAX_GIT_OBJECTS` nello script resta 130000, quindi nessuna protezione automatica a 10000; Notify va rimisurato
+dopo i prossimi sync.
+
 ## Acceptance criteria
 
 - [x] Misura oggetti/dimensione per tutti i 23 path di `gitmodules.ini`
 - [x] Diagnosi cause con evidenze
 - [x] 15/23 repo < 10000 oggetti, `fsck` pulito, working tree e allineamento invariati, backup verificato
-- [ ] 8 repo bloccati < 10000 (dopo rilascio lock e risoluzione divergenze)
+- [x] 23/23 repo < 10000 (misura 2026-11-25 11:55; vedi "Esito finale")
 - [ ] Decisione utente su soglia `MAX_GIT_OBJECTS` (10000?) e sul prefetch di `git maintenance`
 
 ## Gate
