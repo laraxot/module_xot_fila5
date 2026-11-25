@@ -59,7 +59,6 @@ modulo Rating (voluto: `docs/redundancy-report.md`, righe 25 e 67-70), lasciando
 
 Totale al run con bootstrap funzionante: 21 errori in 7 file, tutti a 0 al run finale.
 
-<<<<<<< HEAD
 ## Secondo giro: marker annidati da un progetto fratello (20:37)
 
 Alle 20:40 PHPStan e' tornato a `exit 1` in 6 secondi (`unexpected token "<<"`): 126 PHP con marker in Activity (28), Job (9),
@@ -98,8 +97,24 @@ commit radice `41e757843a` (20:29) ne contiene 84; `d2ae03eb31` (20:27) ne aveva
 - **Cosa non so.** Chi ha lanciato il merge in questo working tree: l'autore del commit e' lo stesso git user locale, quindi non
   discrimina. So solo che il secondo genitore e' un commit del progetto fratello.
 
-=======
->>>>>>> laraxot/dev
+## Quarto giro: r6 verde (22:53-22:54)
+
+- **Esito.** `phpstan analyse Modules` con cache privata (`phpstan-private-r6.neon`, `tmpDir` scratch): 22:53:12-22:54:10, `exit=0`.
+  Un secondo run sulla stessa cache col formato a tabella stampa `[OK] No errors`. Marker di merge nei PHP: 0.
+- **Perche' ci credo.** `--error-format=raw` su un run pulito non stampa nulla, quindi l'output vuoto da solo non prova niente.
+  Controllo negativo con lo stesso neon: un file isolato con `needsInt($raw)` su `mixed` produce
+  `argument.type ... expects int, mixed given`. La cache privata ha 18308 file di analisi.
+- **Prima di r6.** `php -l` sui 758 PHP di `Modules`, `app`, `config`, `routes`, `bootstrap` modificati nelle ultime 3 ore: 0 fatal/parse.
+  Il primo tentativo con `find -newermt '-180 minutes'` dava 0 file per una data non valida, non per pulizia: lo ha
+  smascherato un controllo su `Utils.php`, che avevo modificato io. Corretto con `-mmin -180`.
+- **Limite.** Il lint copre i file recenti, non tutti gli 11.883 PHP sotto `Modules`. PHPStan non vede i `use` duplicati
+  (fatal di compilazione), quindi un residuo vecchio e mai toccato non sarebbe emerso da r6.
+- **Causa dei marker, confermata.** User: i due genitori del merge `c492fc0fb` non hanno merge-base (`git merge-base` vuoto), il
+  secondo genitore e' fuori dal confine shallow. Su 40 file con marker campionati, 40 non hanno versione nel merge-base: il merge
+  e' add/add su storie non correlate. Finche' i `.git` restano senza antenato comune con `laraxot/dev`, ogni sync riproduce i marker.
+  Per questo lo slim dei `.git` non fa re-clone per ref. L'unico taglio di storia (Notify, `fetch --depth=1` sul commit di HEAD)
+  e' stato fatto perche' li' HEAD coincide con `laraxot/dev`, quindi il merge-base esiste (vedi `module-theme-git-slim.story.md`).
+
 ## Incidenti e lezioni
 
 - Prima diagnosi sbagliata: attribuito il difetto al merge `dc010170d4`. Corretto con il lint dei blob; memoria aggiornata.

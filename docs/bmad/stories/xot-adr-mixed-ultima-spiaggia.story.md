@@ -1,7 +1,7 @@
 ---
 title: "ADR Xot 0014: mixed solo come ultima spiaggia"
 type: story
-status: review
+status: done
 module: Xot
 epic: quality-gates
 story_id: xot-adr-mixed-ultima-spiaggia
@@ -35,7 +35,7 @@ Notify, User, Tenant e Lang, nel prompt `bashscripts/docs/prompts/37-phpstan.md`
 - [x] Riga 0014 in `adr/INDEX.md` (totale 27: 19 canonici, 8 superseded).
 - [x] Ogni numero citato nell'ADR e' stato misurato il 2026-11-24 (vedi sotto).
 - [x] Una affermazione sbagliata corretta prima della chiusura (vedi "Incidenti").
-- [ ] `qmd update` dopo le modifiche `.md`.
+- [x] `qmd update` dopo le modifiche `.md`.
 - [ ] Guard automatico sui `mixed` (test `arch()`): non esiste, dichiarato come debito nell'ADR.
 
 ## Cosa e' successo
@@ -78,3 +78,10 @@ Aggiunto da questa story, tutto verificato:
 
 Solo documentazione: nessun PHP toccato da questa story. Pest non pertinente. Controllo ripetibile:
 `grep -rIlE '(: mixed\b|@(param|return|var) mixed\b)' --include='*.php' laravel/Modules/*/app | wc -l`.
+
+## Diario 2026-11-24f
+
+Richiesta utente ripetuta: aggiornare `docs/adr` sul modulo più adatto.
+Rafforzato ADR 0014 (sezione Scopo/perché, SafeCast ~141, vietato ADR duplicati,
+link campagna zero + prompt 37). Notify note e memoria root ridotte a puntatori
+verso l'ADR. README ADR con riga esplicita su 0014.

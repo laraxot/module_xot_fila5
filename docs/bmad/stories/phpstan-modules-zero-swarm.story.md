@@ -75,7 +75,22 @@ chiave sprint: `Xot/phpstan-modules-zero-swarm`.
 
 ## Diario
 
-<<<<<<< HEAD
+- 2026-11-24f **VITTORIA gate**: `/tmp/ptvx-phpstan/cold11.json` totals
+  `errors=0`/`file_errors=0` + banner `[OK] No errors` (EXIT 0) sotto
+  `flock /tmp/ptvx-phpstan-modules.flock`. Preflight: sweep markers → BOOT_OK.
+  Fix wave: MassExtra `is_subclass_of` narrow; Notify `@use HasCommonScopes<static>`;
+  UI Safe preg_replace + Collection generics + assert tautologici rimossi;
+  User `base_profile_form` chiave `name` duplicata. Pest:
+  `NoCmsPhantomFolioImportsTest` smoke; Unit pieno ancora skip DB testing.
+
+- 2026-11-24f (orchestratore Composer): race merge-markers PHP (UI→Tenant→User→XotData)
+  bloccava bootstrap Larastan (`unexpected token "<<"` via morph map/`XotData::getUserClass`).
+  Collapse source-first + restore da `laraxot/dev` di 4 file User irrecuperabili.
+  cold9: 2 parse Xot (`use` duplicati ExportXls/InitialsAvatar — peer già sanati).
+  cold10 artifact `/tmp/ptvx-phpstan/cold10.json`: `errors=0` / `file_errors=14`
+  (Sigma MassExtra×6, UI tests×6, Notify generics, User lang dup key). Swarm fix in volo.
+  Preflight operativo sotto flock: sweep markers → BOOT_OK → analyse.
+
 - 2026-11-24e (php-backend-agent / Notify parse-bad bootstrap): bootstrap PHPStan
   falliva su `syntax error, unexpected token "<<"` in discoverClusters Notify.
   Lista `/tmp/ptvx-phpstan/parse-bad.txt` (~42 Notify + 2 Activity). Lock
@@ -93,8 +108,6 @@ chiave sprint: `Xot/phpstan-modules-zero-swarm`.
   ammesso solo a un boundary realmente dinamico o vendor, con validazione,
   narrowing immediato, nessuna propagazione nell'API e motivazione BMAD.
 
-=======
->>>>>>> laraxot/dev
 - 2026-11-24c (laravel-testing-expert / Pest hang diagnose su 192.168.1.40):
   **GateGuard facts (edit esistente):** nessun file nuovo; aggiorna diario di
   questa story già referenziata da `docs/sprint-status.yaml`

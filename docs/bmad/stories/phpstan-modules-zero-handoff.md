@@ -1,10 +1,6 @@
 ---
 title: "PHPStan Modules zero — handoff nuova chat"
-<<<<<<< HEAD
 status: verified-zero-fragile-sync
-=======
-status: commit-wave-partial-sync-fragile
->>>>>>> laraxot/dev
 updated: 2026-11-24
 qmd: "phpstan modules zero handoff standing swarm bmad sync markers"
 ---
@@ -45,8 +41,6 @@ senza attendere conferma. Migliorare docs moduli/temi e `bashscripts/docs/prompt
 - bashscripts md wave: ~12890 → **12450**; lane A/B/C/D done (00-INDEX, links, path refs,
   Notify slim). Commit bashscripts ancora staged/pending se non fatto.
 
-<<<<<<< HEAD
-=======
 
 ## 3b. Git wave 2026-11-24 (BMAD + second brain)
 
@@ -68,7 +62,6 @@ Skipped / blocked:
 - Rebase: aborted User mid-rebase; prefer **merge** over rebase on shared `dev`; never force
 
 
->>>>>>> laraxot/dev
 ## 4. Dati / punti fermi
 
 ```bash
@@ -92,7 +85,6 @@ cd laravel && composer dump-autoload -o && ./vendor/bin/phpstan clear-result-cac
 
 ## 5. Prossimo passo
 
-<<<<<<< HEAD
 1. Sync ancora attivo (ultimo check cwd poteva essere **User** o **UI**): se rimette
    marker, **non** riparare sotto cwd; dopo uscita, `rg` + restore ptvx + cold analyse.
 2. Commit/push moduli toccati (Xot HasCommonScopes + empty.php rm; User/UI restore) nei
@@ -100,13 +92,6 @@ cd laravel && composer dump-autoload -o && ./vendor/bin/phpstan clear-result-cac
 3. Opzionale: commit bashscripts staged (43× `00-INDEX` + docs); rewrite path docs su
    copie private (fixcity/… 207 ref) quando sync porta layout nuovo.
 4. Se gate rosso: prima `clear-result-cache` + `dump-autoload -o`; poi marker; poi tipi.
-=======
-1. Se sync `merge_remote_repo_*` cwd su un modulo: **non** riparare sotto cwd; dopo uscita `rg '^<<<<<<<' app` + restore da HEAD/ptvx/quaeris.
-2. Xot/User: ripulire WT dai marker (checkout HEAD se HEAD clean) poi cold `analyse Modules`.
-3. Lang/Activity: aprire PR da `dev-laravelpizza-wave-20261124` → `dev` (remote history rewrite).
-4. Notify docs markers: wave dedicata o restore da sibling clean (techplanner ha meno docs sporchi).
-5. Root: merge `laraxot/dev` solo quando dirty scende e senza `.merge_file_*`.
->>>>>>> laraxot/dev
 
 ## Related
 

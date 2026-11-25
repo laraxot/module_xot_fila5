@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\AvatarProviders;
 
-<<<<<<< HEAD
-=======
-use Illuminate\Support\Str;
->>>>>>> laraxot/dev
 use Filament\AvatarProviders\Contracts\AvatarProvider;
 use Filament\Facades\Filament;
 use Illuminate\Contracts\Auth\Authenticatable;
