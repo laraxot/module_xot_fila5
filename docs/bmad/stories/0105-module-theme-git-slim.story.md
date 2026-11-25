@@ -153,6 +153,12 @@ cd laravel && du -sm Modules/*/.git Themes/*/.git | sort -nr
 for d in Modules/* Themes/*; do git -C $d fsck --connectivity-only --no-progress >/dev/null 2>&1 || echo "KO $d"; done
 ```
 
+## Misura base_laravelpizza_fila5 2026-11-25 18:15 — 16/16 < 10.000
+
+Dettaglio in [0087](0087-git-objects-slimming-independent-repos.story.md). Notify
+`slim-git-repos.sh --apply --shallow` 153k→3730; Job/Tenant/Xot depth-1 sul tip
+remoto. `fsck` ok. Script canon: `bashscripts/git/slim-git-repos.sh`.
+
 ## Misura 2026-11-25 — target < 10.000 oggetti per repo
 
 Metodo applicato (solo oggetti non raggiungibili, nessun `reset --hard`/`filter-repo`):

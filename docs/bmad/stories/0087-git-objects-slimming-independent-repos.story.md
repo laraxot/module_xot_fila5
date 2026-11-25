@@ -146,13 +146,33 @@ poi il sync `merge_remote_repo_2.sh` delle 11:36 (commit `.`) ha committato e pu
 Attenzione: `MAX_GIT_OBJECTS` nello script resta 130000, quindi nessuna protezione automatica a 10000; Notify va rimisurato
 dopo i prossimi sync.
 
+## Misura base_laravelpizza_fila5 (2026-11-25 18:15) — 16 path
+
+Target: `< 10000` oggetti (`count + in-pack`). Tool: `bashscripts/git/slim-git-repos.sh`.
+
+| Path | Prima | Dopo | Azione |
+|------|------:|-----:|--------|
+| Notify | 153523 / 432MB | 3730 / 13MB | `--apply --shallow` (HEAD==laraxot/dev; storia polluta `laravel/`+`node_modules`) |
+| Job | 29774 | 867 | depth-1 su tip remoto (push shallow falliva: parent mancanti) |
+| Tenant | 15326 | 405 | idem |
+| Xot | 103252 | 2240 | idem (ahead locali erano merge col tip remoto → storia intera raggiungibile) |
+| altri 12 | gia' <10k | invariati | — |
+
+**16/16 sotto soglia.** `fsck --connectivity-only` ok su tutti. Backup: `~/backups/git-slim-20261125-wave2/*.git.tar.zst`.
+
+Report tabellare completo: [git-slim-report.md](../../../../../../docs/git-slim-report.md).
+
+Lezione: con `HEAD` ahead di merge verso `laraxot/dev`, lo shallow file sul solo root locale **non** taglia la storia del secondo parent; serve depth-1 sul tip allineato o shallow roots su **tutti** i tip tenuti. Push da repo gia' shallow senza parent → `remote unpack failed`. I file dei commit ahead non pushati restano in WT come untracked (da ri-committare).
+
 ## Acceptance criteria
 
 - [x] Misura oggetti/dimensione per tutti i 23 path di `gitmodules.ini`
 - [x] Diagnosi cause con evidenze
 - [x] 15/23 repo < 10000 oggetti, `fsck` pulito, working tree e allineamento invariati, backup verificato
 - [x] 23/23 repo < 10000 (misura 2026-11-25 11:55; vedi "Esito finale")
+- [x] base_laravelpizza_fila5: 16/16 path < 10000 (2026-11-25 18:15)
 - [ ] Decisione utente su soglia `MAX_GIT_OBJECTS` (10000?) e sul prefetch di `git maintenance`
+- [ ] Job/Tenant/Xot: ri-committare i file ahead rimasti untracked dopo il depth-1 sul tip remoto
 
 ## Gate
 
