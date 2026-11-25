@@ -5,7 +5,7 @@ status: review
 module: Xot
 epic: quality-gates
 story_id: module-theme-git-slim
-updated: 2026-11-24
+updated: 2026-11-25
 tags: [git, slim, gc, shallow, commit-graph, multi-repo]
 qmd: "git slim module theme refs original prefetch remote-tracking tag stash shallow depth-1 commit-graph symref gc prune grace notify fsck non riscrivere storia"
 related:
@@ -132,6 +132,41 @@ coincide con `laraxot/dev`, quindi il merge-base esiste.
 cd laravel && du -sm Modules/*/.git Themes/*/.git | sort -nr
 for d in Modules/* Themes/*; do git -C $d fsck --connectivity-only --no-progress >/dev/null 2>&1 || echo "KO $d"; done
 ```
+
+## Misura 2026-11-25 — target < 10.000 oggetti per repo
+
+Metodo applicato (solo oggetti non raggiungibili, nessun `reset --hard`/`filter-repo`):
+`git reflog expire --expire=now --all` + `git gc --prune=now`; dove la storia era gia'
+troncata, boundary shallow riportato a HEAD; rimossi ref remoti non-`dev` e tag
+identici al remoto; `commit-graph` rigenerato se `fsck` segnalava commit potati.
+
+| Repo | Oggetti prima | Dopo | `.git` dopo |
+|------|--------------:|-----:|------------:|
+| Notify | 152.419 | 8.958 | 15 MB |
+| bashscripts | 21.040 | 6.065 | 26 MB |
+| User | 107.699 | 5.686 | 7 MB |
+| Xot | 107.187 | 2.867 | 6 MB |
+| UI | 62.507 | 2.470 | 18 MB |
+| Media | 32.547 | 1.211 | 4 MB |
+| Lang | 57.634 | 1.700 | 5 MB |
+| Activity | 40.182 | 1.421 | 4 MB |
+| Job | 32.060 | 1.285 | 2 MB |
+| Tenant | 15.869 | 765 | 2 MB |
+| Themes/Zero | 21.408 | 521 | 2 MB |
+| Altri 12 path | — | 89-1.600 | 1-4 MB |
+
+Gate: `git fsck --connectivity-only` pulito su tutti; `git status` e HEAD invariati.
+
+## Correzione 2026-11-25 — `merge_remote_repo_2.sh` non e' deprecato
+
+L'utente usa `merge_remote_repo_2.sh` come strumento di sync principale e ha chiesto
+di non etichettarlo deprecato. Verificato sul codice: per ogni path fa commit `"."`,
+fetch/merge `<ORG>/dev` (`--allow-unrelated-histories`, prima `-s resolve`) e push;
+**nessun hard-stop runtime**. La riscrittura storia scatta solo oltre
+`MAX_GIT_OBJECTS=130000` ed e' opt-in (`PTVX_ALLOW_HISTORY_REWRITE=1`). Corretti
+header dello script, `bashscripts/docs/operations/subtrees-scripts-index.md` e
+`docs/adr/independent-repository-sync.md`; resta l'avvertenza di chiudere i merge
+aperti prima di rilanciare (il commit `"."` li pubblicherebbe).
 
 ## Related
 

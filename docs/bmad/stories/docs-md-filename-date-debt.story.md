@@ -206,3 +206,29 @@ SSoT PHPStan md: **0** marker → nessun collapse md.
 **Residui ACTIVE:** 1 Notify `final-implementation-report-2025-10` + 4 User
 (archive/`_archive`/`git-conflicts-resolution-2025-01-27`). Proposte in wiki pointer.
 Marker md: documentati per modulo; non collassati.
+
+### Boy-scout 2026-11-25 — docs-guardian (markers Notify/Job + dated ≤5)
+
+Lock: `bashscripts/lock/docs-md-boyscout-20261125-composer2.lock`.
+
+| Metrica | Before | After |
+|---|---:|---:|
+| Notify `docs/**/*.md` con `<<<<<<<` | **12** | **12** (no collapse: non-SSoT) |
+| Job `docs/**/*.md` con `<<<<<<<` | **6** | **6** |
+| SSoT attivi (README/index/00-index) Notify+Job con marker | **0** | **0** |
+| Find ISO-day `*[YYYY-MM-DD]*.md` Modules+Themes | **3** (già stub Zero×2 + User×1) | **3** stub |
+| ACTIVE dated convertiti (max 5) | — | **4** → stub |
+
+**SSoT collapse:** nessuno (Notify `index`/`00-index`, Job `README`/`index`/`00-index` puliti; Notify senza `README.md`).
+
+**Stub convertiti (canon già presente, no delete):**
+1. `Notify/.../final-implementation-report-2025-10.md` → `./final-implementation-report.md` (hist oct identico hash)
+2. `User/docs/archive/password-translation-completion-2025.md` → `../password-translation-completion.md`
+3. `User/docs/archive/phpstan-fixes-2025.md` → `../phpstan-fixes.md`
+4. `User/docs/_archive/phpstan-fixes-2025.md` → `../phpstan-fixes.md`
+
+**Già stub (find ISO, no edit):** `User/.../git-conflicts-resolution-2025-01-27.md`, Zero `phpstan-dry-kiss-theme-guidelines-2025-10-17.md`, Zero `dry-kiss-best-practices-2025-10-15.md`.
+
+**Residuo ACTIVE dated (ISO-day Modules+Themes):** **0**. Marker md non-SSoT lasciati (policy no mass rewrite).
+
+<!-- GateGuard facts: (1) no supersede — append only; (2) linked-from sprint-status Xot/docs-md-filename-date-debt + User companion; (3) edit existing; (4) user: boy-scout markers Notify/Job SSoT + dated find max 5. -->

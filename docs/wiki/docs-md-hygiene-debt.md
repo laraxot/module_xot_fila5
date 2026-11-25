@@ -35,21 +35,21 @@ Date nel filename, duplicati exact/near e marker `<<<<<<<` degradano ricerca e g
 |---------|-------:|
 | Totale `.md` | **15909** |
 | Filename con data/year (tutti) | **~36** |
-| di cui ACTIVE (non stub, excl. `cci-2026*`) | **5** |
-| di cui stub `superseded_by` | **27** |
+| di cui ACTIVE (non stub, excl. `cci-2026*`) | **0** (boy-scout 2026-11-25b: 5→0) |
+| di cui stub `superseded_by` | **~32** |
 | di cui dominio CCI (`cci-2026*`) | **4** (non debt) |
 | Senza frontmatter `---` (sample globale) | **451** |
-| Con marker `<<<<<<<` in `docs/` | **862** |
+| Con marker `<<<<<<<` in `docs/` | **862** (stima sessione a; recount mirato sotto) |
 
 ### Conflict markers per owner (docs only)
 
-Notify **666**, Xot **49**, Job **25**, Rating **22**, Media **17**, User **15**,
-UI **14**, Activity **13**, Lang **11**, Themes/Zero **7**, altri ≤5.
+Recount boy-scout 2026-11-25b (solo `<<<<<<<` in `docs/**/*.md`):
+Notify **12**, Job **6**. Stima precedente Notify **666** / Job **25** = inventari
+più ampi o stale — non rieseguiti in massa qui.
 
-**Policy:** non collassare in massa i md. Collapse solo se il file è SSoT attivo
-citato dalla story PHPStan — al 2026-11-25 gli SSoT Xot
-(`phpstan-modules-zero-swarm.story.md`, `docs-md-filename-date-debt.story.md`)
-hanno **0** marker.
+**Policy:** non collassare in massa i md. Collapse solo SSoT attivi
+(`README.md` / `index.md` / `00-index.md` del modulo). Boy-scout: Notify+Job
+SSoT **0** marker → nessun collapse.
 
 ### Duplicati (Notify/User/Xot/Activity)
 

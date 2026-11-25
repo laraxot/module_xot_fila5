@@ -220,3 +220,4 @@ docs/visual-comparison/
 /tests/coverage/
 /tests/coverage.xml/
 /tests/*coverage*.xml
+docs/phpstan/
