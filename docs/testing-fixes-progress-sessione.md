@@ -133,7 +133,6 @@ Tutti i test corretti seguono questo principio:
 - [Geo TestCase Fix](../../Geo/docs/testing-testcase-database-connection-fix.md)
 - [Media TestCase Fix](../../Media/docs/testing-testcase-database-connection-fix.md)
 - [Notify TestCase Fix](../../Notify/docs/testing-testcase-database-connection-fix.md)
-- [User Command Integration Fix](../../User/docs/testing-user-command-integration-fix.md)
 
 ---
 

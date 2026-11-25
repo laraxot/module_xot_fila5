@@ -7,6 +7,7 @@ superseded_by: 0015-mixed-solo-come-ultima-spiaggia.md
 tags: [adr, phpstan, typing, mixed]
 created: 2026-11-24
 updated: 2026-11-24
+qmd: "xot adr mixed ultima spiaggia superseded 0015 phpstan tipi webmozart assert"
 ---
 
 # ADR: mixed solo come ultima spiaggia

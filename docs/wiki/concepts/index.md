@@ -1,10 +1,10 @@
 ---
-title: "index"
-type: note
+title: "Xot: indice concepts wiki"
+type: index
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
-qmd: "index"
+qmd: "xot concepts indice wiki asset pubblici symlink moduli skeleton provider panel migrazioni filament phpstan"
 issues: []
 discussions: []
 ---
@@ -62,12 +62,4 @@ qmd search "Xot concepts" --limit 5
 - Audit: `bash bashscripts/tools/audit-module-config-php.sh`
 
 ---
-title: "index"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "index"
-issues: []
-discussions: []
 *Updated: 2026-07-27*

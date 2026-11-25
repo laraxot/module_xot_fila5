@@ -3,7 +3,7 @@ title: "ArrayToRawJsAction — contratto"
 type: contract
 owner: Xot
 status: accepted
-updated: 2026-11-24
+updated: 2026-11-25
 action: "Modules\\Xot\\Actions\\Arr\\ArrayToRawJsAction"
 qmd: "ArrayToRawJsAction array PHP RawJs oggetto JavaScript x-data attributo HTML chiavi apici escape Chart.js"
 ---
@@ -25,7 +25,7 @@ Converte un array PHP in un letterale JavaScript (oggetto) incapsulato in `RawJs
 | ID | Regola | Prova nel codice | Test esistente |
 |---|---|---|---|
 | `ARR-RAWJS-INV-1` | Le chiavi che non sono identificatori (`^[a-zA-Z_][a-zA-Z0-9_]*$`) sono emesse tra apici singoli, con l'apice escapato. | righe 47-50 | `tests/Unit/Actions/Arr/ArrayToRawJsActionTest.php` (presente; copertura di questo ramo non verificata) |
-| `ARR-RAWJS-INV-2` | Un valore `RawJs` è emesso raw (`toHtml()`), senza quoting. | righe 34-35 | come sopra |
+| `ARR-RAWJS-INV-2` | Un valore `RawJs` è emesso raw via `(string) $raw` (Stringable/`__toString`), senza quoting. | `rawJsExpression()` | come sopra |
 | `ARR-RAWJS-INV-3` | Valori scalari: bool -> `true`/`false`, null -> `null`, numerici -> senza apici, altro -> stringa tra apici singoli con backslash e apice escapati (via `SafeStringCastAction`). | righe 52-66 | come sopra |
 | `ARR-RAWJS-INV-4` | Gli array annidati sono convertiti ricorsivamente nello stesso formato. | righe 36-37 | come sopra |
 

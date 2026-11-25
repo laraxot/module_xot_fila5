@@ -60,6 +60,7 @@ Lane docs-guardian: boy-scout sui prompt prioritari (ordine random) senza mass-d
 | 2026-11-24 | docs-guardian | bashscripts/docs/prompts prioritari | lock `prompts`; shuffle swarm→closing→qg→audit→phpstan→boy→pony→master→sb→bmad |
 | 2026-11-24 | docs-guardian | prompts 10/11/15/16/17/44/51/53/54/56/98 | lock `prompts`; wave debito legacy `docs/stories/` + flock/Filament5/Pest |
 | 2026-11-25 | composer-docs | `bashscripts/docs/prompts/*` (audit DRY) | lock `prompts-audit-20261125-composer`; peer Claude chiuso |
+| 2026-11-25 | docs-guardian/composer2 | `quality-gates` + `documentation` + memoria phpstan | lock `prompts-boy-scout-20261125-composer2`; falso 0/0 62B |
 
 ## Debito residuo
 
@@ -70,6 +71,10 @@ Lane docs-guardian: boy-scout sui prompt prioritari (ordine random) senza mass-d
 - Forme brevi `docs/bmad/stories/` restano OK **solo** con contesto owner esplicito (`cd Modules/<M>` o "dell'owner"); evitare one-liner ambigui verso root.
 
 ## Diario
+
+### 2026-11-25 (composer2 boy-scout prompts, docs-guardian)
+
+Lock `prompts-boy-scout-20261125-composer2.lock`. Shuffle inventario 12 file: link relativi 0 rotti, ancore prompt 0 rotte. Gap reale: [Vittoria verificata](../../../../../../bashscripts/docs/prompts/quality-gates.md#vittoria-verificata) non rifiutava esplicitamente il falso 0/0 (JSON ~62B `files:{}` senza banner). Aggiunte 2–3 righe + bullet in Da non fare, link a [phpstan-swarm-config.md#phpstan-modules-zero-session-20261125c](../../../../../../bashscripts/ai/wiki/memories/phpstan-swarm-config.md#phpstan-modules-zero-session-20261125c); indice memoria aggiornato. Typo reale in `documentation.md`: `README.md` duplicato → `INDEX.md`. Pest skip (solo markdown).
 
 ### 2026-11-25 (audit DRY+KISS, composer-docs)
 

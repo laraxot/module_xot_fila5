@@ -4,6 +4,7 @@ type: index
 tags: [adr, decisioni]
 created: 2026-11-18
 updated: 2026-11-24
+qmd: "xot adr architecture decision records indice metodo harness decisioni"
 ---
 
 # Architecture Decision Records
@@ -56,7 +57,7 @@ Test, audit o controllo ripetibile che dimostra il rispetto della decisione.
 
 Ogni ADR non superseded ha, in questo ordine o equivalente: `## Contesto`, `## Driver della decisione`, `## Alternative scartate`, `## Decisione`, `## Conseguenze`, `## Conferma`. Una sezione può mancare solo con una deroga dichiarata nel file (esempio: [0010](0010-no-ticket-logic-in-page-slug-middleware.md), dove la Conferma non è eseguibile in Xot). Il modello breve in stile MADR è [0000-template](0000-template.md) (intestazioni inglesi: lo si adatta alle sezioni italiane qui sopra).
 
-La governance dei contratti comportamentali, collegati agli ADR tramite invarianti con ID stabile e gruppo Pest, è la decisione [0012](0012-behavioral-contract-governance.md); gli indici sono in [../contracts/index.md](../contracts/index.md).
+La governance dei contratti comportamentali, collegati agli ADR tramite invarianti con ID stabile e gruppo Pest, è la decisione [0012](0012-behavioral-contract-governance.md); gli indici sono in [../contracts/index.md](../contracts/INDEX.md).
 
 ## Duplicati e superseded
 

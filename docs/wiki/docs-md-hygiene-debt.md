@@ -62,15 +62,12 @@ SSoT **0** marker → nessun collapse.
 10 path Notify ACTIVE → stub `superseded_by` (2 root: contenuto spostato in
 `*-historical.md`; 8 roadmaps: historical già presente). **Nessun delete.**
 
-## Residui ACTIVE (proposte rename, non applicate)
+## Residui ACTIVE
 
-| Path | Canon proposto |
-|------|----------------|
-| `Notify/.../final-implementation-report-2025-10.md` | stub → `final-implementation-report.md` (hist già ok) |
-| `User/docs/git-conflicts-resolution-2025-01-27.md` | `*-snapshot-historical` + stub → `git-conflicts-resolution.md` |
-| `User/docs/archive/password-translation-completion-2025.md` | stub → `../password-translation-completion.md` |
-| `User/docs/archive/phpstan-fixes-2025.md` | stub → `phpstan-fixes.md` (o root) |
-| `User/docs/_archive/phpstan-fixes-2025.md` | stub → stesso canon (exact dup) |
+**Chiusi boy-scout 2026-11-25b** (4 stub + 1 già stub ISO User):
+Notify `final-implementation-report-2025-10`, User archive/`_archive` year-2025×3,
+User `git-conflicts-resolution-2025-01-27` (già alias). ISO-day find Modules+Themes:
+**3** path, tutti stub (Zero×2 + User×1).
 
 ## Non fare
 

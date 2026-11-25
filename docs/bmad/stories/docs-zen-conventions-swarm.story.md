@@ -1,7 +1,7 @@
 ---
 title: "Swarm docs moduli e temi: convenzioni .md, ridondanza, inquinamento generato"
 type: story
-status: in-progress
+status: review
 module: Xot
 epic: docs-second-brain
 story_id: docs-zen-conventions-swarm
@@ -46,13 +46,46 @@ Il debito reale e' nei docs: rumore che degrada QMD, gonfia la storia git (vedi 
 
 Ogni lane scrive/aggiorna `docs/bmad/stories/docs-zen-conventions.story.md` nel modulo/tema owner.
 
+## Esito (6 lane chiuse, 2026-11-25)
+
+| Metrica | Prima | Dopo |
+|---|---:|---:|
+| `.md` in docs moduli/temi | 15908 | 12467 |
+| nomi con data (escluse story) | 20 | 0 |
+| non-kebab (escluse eccezioni) | ~1804 | 3 (story Xot `STORY-XXX`, `STORY-512`, `ST-XX`: nomi story non si cambiano) |
+| senza frontmatter | 439 | 0 |
+| senza `qmd` | 562 | 0 |
+| copie esatte | 1408 | 209 (76 gruppi = story protette; 47 gruppi cross-modulo) |
+| marker conflitto | 0 | 0 |
+
+Per lane: Notify 3855→2897, User 3207→2108 (link rotti 8222→2488), Lang 1148→872, UI 1024→836, Activity 995→730,
+Media 639→472, IndennitaResponsabilita 500→370, Rating 621→527, Job 476→412, Xot 716→700, altri −2..−50.
+Story di modulo: `laravel/Modules/*/docs/bmad/stories/docs-zen-conventions.story.md` (+ Themes One/Zero/Three).
+Backup User: `~/backups/docs-zen-20261125/`. Nessun commit.
+
+Eccezioni ai nomi kebab confermate dal codice (non rinominare): `adr/INDEX.md`, `contracts/INDEX.md`,
+`contracts/_template.md` (letti da `bashscripts/tools/harness/harness-audit.py` e
+`Modules/Xot/tests/Unit/Docs/ActionContractsAreCompleteTest.php`), `wiki/SCHEMA.md` (ricreato da
+`setup-llm-wiki-structure.sh`), `AGENTS.md`, `00-INDEX.md`, `README.md`, `CHANGELOG.md`.
+
+## Backlog (non eseguito, serve decisione o lettura umana)
+
+- 47 gruppi di doc generici identici fra moduli (`agent-confidence-protocol`, `gitmodules-sync-session`, `binary-assets`,
+  `adr/0000-template`): repo autonomi (copia) vs canonico unico nel second brain (link). Decisione architetturale.
+- Story duplicate identiche (76 gruppi): marcare `superseded`, mai eliminare.
+- Quarantene `_da-riconciliare/` (Notify 757 file, Lang): riconciliazione per lettura.
+- Sezioni `## Contenuto fuso da ...` create in automatico: da rileggere.
+- Link residui verso file rimossi in `Notify/docs/ai-agents/project-docs-index.md` (indice generato: rigenerare); 2488 link
+  rotti preesistenti in User; 4 link in `Themes/Zero/docs` verso file User rinominati.
+- `index-generated.md` di Job/Rating/Activity: rigenerare.
+
 ## Acceptance criteria
 
-- [ ] 0 nomi con data, 0 non-kebab (eccezioni README/CHANGELOG/00-INDEX, `*.story.md` invariati)
-- [ ] 0 file senza frontmatter/`qmd`
+- [x] 0 nomi con data, 0 non-kebab (eccezioni README/CHANGELOG/00-INDEX, `*.story.md` invariati)
+- [x] 0 file senza frontmatter/`qmd`
 - [ ] copie esatte e annidamenti generati rimossi con link aggiornati
 - [ ] nessun link nuovo rotto verso file rinominati/rimossi
-- [ ] story di modulo con prima/dopo; `qmd update`
+- [x] story di modulo con prima/dopo; `qmd update`
 
 ## Gate
 

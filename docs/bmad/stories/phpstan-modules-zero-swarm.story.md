@@ -75,6 +75,33 @@ chiave sprint: `Xot/phpstan-modules-zero-swarm`.
 
 ## Diario
 
+- 2026-11-25 (php-backend-agent / composer-isolated cold): peer `phpstan-full`
+  abortito senza `EXIT=` (solo nota neon). Harvest stale: banner 18× parse
+  `T_SL` Notify già collassati da peer (`php -l` OK, MARKER_PHP=0). Activity
+  test errors (LogoutListener/Snapshot) già sanati in tree. Thrash host
+  15–26 analyse → atteso calm=0. Cold isolato sotto
+  `flock /tmp/ptvx-phpstan-modules.flock` (cache `/tmp/phpstan` svuotata):
+  artifact `/tmp/ptvx-phpstan/composer-isolated.{json,banner.txt,meta}` →
+  **JSON_EXIT=0 / BANNER_EXIT=0**, totals `errors=0`/`file_errors=0`, banner
+  `[OK] No errors` (11:24:34→11:27:48). Nessun patch PHP in questa lane
+  (source già verde). Pest: `NoCmsPhantomFolioImportsTest` **2 passed**;
+  Activity Unit mirato → **skip documentato** `TestDatabaseGuard` (mysql →
+  `10.100.200.53` non local). Story resta `done`.
+
+- 2026-11-25e: ArrayToRawJsAction — PHPStan `RawJs::toHtml()` method.notFound +
+  binaryOp.invalid (10 errori segnalati utente). Scopo action: letterale JS per
+  `x-data`/Chart.js da array PHP con RawJs nested raw. Fix: estrazione via
+  `(string) $raw` (Stringable di Illuminate\Support\Js) in `rawJsExpression()`;
+  test allineato. Contract aggiornato. mixed resta solo sul confine `jsValue`.
+
+- 2026-11-25d (Composer re-verify standing order): primo reverify fallito con 3
+  *internal* `Could not read file` su vendor Laravel mentre un peer eseguiva
+  `composer update -W` + altri phpstan — **non** debito codice. Atteso calm
+  (composer=0, phpstan=0), preflight markers=0, cold
+  `/tmp/ptvx-phpstan/reverify3.json` `errors=0`/`file_errors=0` EXIT 0 **e**
+  banner `reverify3-banner.txt` `[OK] No errors` EXIT 0 (11:06:56→11:14:55,
+  flock). Lezione: non interpretare I/O vendor durante composer come errori tipizzati.
+
 - 2026-11-25c **VITTORIA gate freddo osservata**: preflight PHP markers=0 (esclusi
   test intenzionali NoConflictMarkers*); `flock /tmp/ptvx-phpstan-modules.flock`;
   cache `/tmp/phpstan` svuotata; JSON `/tmp/ptvx-phpstan/final-cold.json`
@@ -351,4 +378,20 @@ chiave sprint: `Xot/phpstan-modules-zero-swarm`.
   senza frontmatter (3,5%); 17 nomi con data in Modules (15 Notify legacy,
   User, Rating, Activity) + 2 in Themes; `graphify` non installato
   (`command -v graphify` vuoto) benche' citato in `AGENTS.md`.
+
+- 2026-11-25 (sessione OpenCode, falso positivo `RawJs::toHtml()`): una run
+  full concorrente ha riportato 10 errori su
+  `Xot/app/Actions/Arr/ArrayToRawJsAction.php` e sul test
+  (`method.notFound` su `Filament\Support\RawJs::toHtml()` + `binaryOp.invalid`).
+  Verifica alla sorgente: `RawJs extends Illuminate\Support\Js` e
+  `toHtml(): string` esiste in vendor; analisi dei due file → 0 errori; run full
+  isolata (stesso neon, `tmpDir` privato) → `0/0`; run canonica fredda con
+  `flock` → `0/0` e `[OK] No errors`; prova runtime `php -r` dell'Action →
+  output JS corretto. **Nessun edit PHP**: il codice era gia' corretto. Causa:
+  3 run full simultanee sulla stessa `tmpDir: /tmp/phpstan/` che riscrivevano la
+  reflection cache. Lezione in
+  `bashscripts/ai/wiki/memories/phpstan-swarm-config.md#phpstan-phantom-method-notfound-concurrent-runs`
+  e nel prompt `bashscripts/docs/prompts/quality-gates.md`. Pest non eseguibile
+  qui (host `10.100.200.15`, nessun MySQL locale: `Connection refused`); il test
+  e' puro ed e' coperto dalla prova runtime.
 
