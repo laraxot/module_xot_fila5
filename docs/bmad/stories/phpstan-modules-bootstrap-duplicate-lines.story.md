@@ -46,7 +46,7 @@ al commit `3db6193228` con lint dei blob, i cluster lang / Xot test / Rating, e 
 Il commit `3db6193228` (messaggio ".", non un merge) ha riaggiunto righe gia' presenti. Verificato sui blob con
 `git show <commit>:<file> | php -l`: i 5 file passano a `69c5e4aaf0` e a `dc010170d4` e si rompono solo a `3db6193228`.
 Il merge `dc010170d4` era a posto sui marker, ma ha cancellato i duplicati `Filament/Resources/HasRatingResource/*` del
-modulo Rating (voluto: `docs/redundancy-report.md`, righe 25 e 67-70), lasciando test che li referenziavano.
+modulo Rating (voluto: `../../../../Geo/docs/redundancy-report-2.md`, righe 25 e 67-70), lasciando test che li referenziavano.
 
 ## Esito per cluster (ordine random: Rating, Xot, User)
 
@@ -59,6 +59,7 @@ modulo Rating (voluto: `docs/redundancy-report.md`, righe 25 e 67-70), lasciando
 
 Totale al run con bootstrap funzionante: 21 errori in 7 file, tutti a 0 al run finale.
 
+<<<<<<< .merge_file_yoj1hB
 ## Secondo giro: marker annidati da un progetto fratello (20:37)
 
 Alle 20:40 PHPStan e' tornato a `exit 1` in 6 secondi (`unexpected token "<<"`): 126 PHP con marker in Activity (28), Job (9),
@@ -115,6 +116,8 @@ commit radice `41e757843a` (20:29) ne contiene 84; `d2ae03eb31` (20:27) ne aveva
   Per questo lo slim dei `.git` non fa re-clone per ref. L'unico taglio di storia (Notify, `fetch --depth=1` sul commit di HEAD)
   e' stato fatto perche' li' HEAD coincide con `laraxot/dev`, quindi il merge-base esiste (vedi `module-theme-git-slim.story.md`).
 
+=======
+>>>>>>> .merge_file_bHYxzl
 ## Incidenti e lezioni
 
 - Prima diagnosi sbagliata: attribuito il difetto al merge `dc010170d4`. Corretto con il lint dei blob; memoria aggiornata.

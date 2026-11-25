@@ -1,11 +1,24 @@
 ---
 title: "PHPStan Modules zero — handoff nuova chat"
+<<<<<<< .merge_file_I56muF
 status: verified-zero-fragile-sync
+=======
+status: verified-zero-notify-traits-wired
+>>>>>>> .merge_file_jDm3ie
 updated: 2026-11-24
-qmd: "phpstan modules zero handoff standing swarm bmad sync markers"
+qmd: "phpstan modules zero handoff standing swarm bmad sync markers notify traits"
 ---
 
 # Handoff — PHPStan Modules zero (incolla in nuova chat)
+
+## 0. Stato corrente (timeline 2026-11-24)
+
+| Quando | Gate ufficiale (neon di default, **senza `-c`**) | Nota |
+|--------|--------------------------------------------------|------|
+| **~21:07** | **`file_errors=3`**, tutti Notify `trait.unused` (`HasNotificationRateLimiting`, `HasNotificationTracking`, `HasTenantNotifications`) | Swarm fixing; sync era su **ptvx Tenant**, non pizza → riparazione OK |
+| **~21:18** | **`file_errors=0`** | Wire: `GenericNotification`←rate+tracking; `Notification`+`TenantNotifiable`←tenant. Hub: [generic-notification-traits.md](../../../Notify/docs/contracts/generic-notification-traits.md) |
+
+**Official gate = default neon only** ([37-phpstan.md](../../../../../../bashscripts/docs/prompts/37-phpstan.md)): un verde con neon scratch non aggiorna questo stato.
 
 ## 1. Obiettivo principale
 
@@ -19,14 +32,21 @@ senza attendere conferma. Migliorare docs moduli/temi e `bashscripts/docs/prompt
 - `bashscripts` → symlink `../base_ptvx_fila5/bashscripts/`.
 - Vietato: `@phpstan-ignore*`, baseline, edit `phpstan.neon`, `mixed` ultima spiaggia,
   `require …/Xot/routes/empty.php` (ADR `no-shared-empty-route-file`).
-- **Sync `merge_remote_repo_2.sh`**: controllare `/proc/<pid>/cwd` (non solo pgrep).
-  Non riparare il pacchetto sotto cwd sync — riscrive i marker.
+- **Sync `merge_remote_repo_2.sh`**: controllare `/proc/<pid>/cwd` (non solo pgrep);
+  distinzione **pizza vs ptvx**. Non riparare sotto cwd sync di **questa** base.
 - Fratello pulito spesso: `base_ptvx_fila5/laravel/Modules/<M>/` (copiare se disk clean).
 - md kebab, no date nel nome; `@see Modules/<M>/docs/...` su classi/metodi toccati.
 - Forward-only git; commit/push sul **repo owner** del modulo quando verde.
+- **`HasCommonScopes` mai su `XotBaseModel`.** Ghost `class.notFound` →
+  `composer dump-autoload -o` + `phpstan clear-result-cache` prima di riscrivere codice.
+- `trait.unused`: wire consumer in `app/` o park solo dopo censimento cross-base.
 
 ## 3. Decisioni e risultati
 
+- **2026-11-24 ~21:18**: cold `analyse Modules` → **`file_errors=0`** dopo wiring Notify
+  traits (erano 3 `trait.unused`). Sync era su **ptvx Tenant**, non pizza.
+  Consumer: `GenericNotification`←rate+tracking; `Notification`+`TenantNotifiable`←tenant.
+  Docs: `Notify/docs/contracts/generic-notification-traits.md`.
 - **2026-11-24 ~19:12**: cold `analyse Modules` → **`[OK] No errors`** (dopo clear-cache).
 - Bootstrap era FATAL su `RelationX.php` marker `<<`; `laraxot/dev` a volte ha marker
   sporchi → ripristino da **ptvx** sibling clean.
@@ -85,6 +105,7 @@ cd laravel && composer dump-autoload -o && ./vendor/bin/phpstan clear-result-cac
 
 ## 5. Prossimo passo
 
+<<<<<<< .merge_file_I56muF
 1. Sync ancora attivo (ultimo check cwd poteva essere **User** o **UI**): se rimette
    marker, **non** riparare sotto cwd; dopo uscita, `rg` + restore ptvx + cold analyse.
 2. Commit/push moduli toccati (Xot HasCommonScopes + empty.php rm; User/UI restore) nei
@@ -92,6 +113,13 @@ cd laravel && composer dump-autoload -o && ./vendor/bin/phpstan clear-result-cac
 3. Opzionale: commit bashscripts staged (43× `00-INDEX` + docs); rewrite path docs su
    copie private (fixcity/… 207 ref) quando sync porta layout nuovo.
 4. Se gate rosso: prima `clear-result-cache` + `dump-autoload -o`; poi marker; poi tipi.
+=======
+1. Se sync `merge_remote_repo_*` cwd su un modulo: **non** riparare sotto cwd; dopo uscita `rg '^<<<<<<<' app` + restore da HEAD/ptvx/quaeris.
+2. Xot/User: ripulire WT dai marker (checkout HEAD se HEAD clean) poi cold `analyse Modules`.
+3. Lang/Activity: aprire PR da `dev-laravelpizza-wave-20261124` → `dev` (remote history rewrite).
+4. Notify docs markers: wave dedicata o restore da sibling clean (techplanner ha meno docs sporchi).
+5. Root: merge `laraxot/dev` solo quando dirty scende e senza `.merge_file_*`.
+>>>>>>> .merge_file_jDm3ie
 
 ## Related
 

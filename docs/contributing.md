@@ -15,7 +15,7 @@ Xot is the foundation of Laraxot. Changes here propagate to 47 other modules. Co
 
 ## Before You Code
 
-1. **Read PHILOSOPHY.md** — understand the non-negotiables.
+1. **Read philosophy-3.md** — understand the non-negotiables.
 2. **Read architecture.md** — know the layers and discovery mechanisms.
 3. **Check `docs/`** — is there existing documentation? Update it first.
 4. **Check `git log`** — have similar changes been done before?
@@ -64,7 +64,7 @@ git checkout -b feature/laraxot-my-feature
 
 ### 3. Implement
 
-Follow the conventions in PHILOSOPHY.md:
+Follow the conventions in philosophy-3.md:
 - Use Actions for business logic
 - Extend base classes
 - Never use Services

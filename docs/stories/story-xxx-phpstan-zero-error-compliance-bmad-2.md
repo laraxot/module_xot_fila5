@@ -1,5 +1,5 @@
 ---
-title: "STORY-XXX-phpstan-zero-error-compliance-bmad.md (alias)"
+title: "story-xxx-phpstan-zero-error-compliance-bmad-2.md (alias)"
 status: superseded
 superseded_by: "./story-xxx-phpstan-zero-error-compliance-bmad.md"
 type: alias

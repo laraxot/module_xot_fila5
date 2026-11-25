@@ -1,5 +1,5 @@
 ---
-title: "ST-XX-relationx-analysis.md (alias)"
+title: "st-xx-relationx-analysis-2.md (alias)"
 status: superseded
 superseded_by: "./st-xx-relationx-analysis.md"
 type: alias

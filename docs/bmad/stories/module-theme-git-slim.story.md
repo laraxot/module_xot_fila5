@@ -111,36 +111,89 @@ coincide con `laraxot/dev`, quindi il merge-base esiste.
 
 ## Inventario base_laravelpizza_fila5 (progetto fratello, dichiarato dall'altra sessione, non verificato qui)
 
+<<<<<<< .merge_file_9v9x0X
 | Path | .git ~MB | Note |
 |------|----------|------|
 | Notify | ~14 (was ~428-461) | depth-1 `--single-branch` tip `c642ea4 first`; bak `.git.polluted.bak.202611241827` tenuto |
 | Themes/Meetup | ~65 | PDF manuale + `repo.bundle` tracciato (~5 MB) |
+=======
+**Wave 21:31**: totale **296MB → 202MB** (−94MB). Causa tipica: `HEAD` pulito ma
+`refs/original` + `refs/prefetch` + remote `develop`/`main`/`dev1` + tag vecchi
+tengono pack monorepo. Tool: `bash bashscripts/tools/git/slim-module-theme-git.sh`.
+
+| Path | .git MB | Note |
+|------|---------|------|
+| Themes/Meetup | **63** | **PDF KEEP** (~38MB tip): manuale utente; `repo.bundle` untracked+gitignore |
+| Geo | 20 | tip pulito; json/dump grandi in tree |
+| UI | **19** (was 29) | tip = screenshot; remotes pruned |
+| Notify | **15** | depth-1 slim storico; no `git pull` pieno |
+| Seo | 13 | storia lunga |
+| Lang | **5** (was 12) | pruned 21:36 quando sync ha lasciato Lang |
+| Job | 9 | storia lunga |
+| User | **8** (was 42) | tip 5723 objs; era 94803 via remotes/tags |
+| Tenant/Gdpr | 7 | storia lunga |
+| Xot | **6** (was 29) | remotes pruned |
+| Cms | **6** (was 10) | remotes pruned |
+| Meetup (mod) / AI | 5 | ok |
+| Activity | **4** (was 16) | remotes pruned |
+| Media | **3** (was 8) | remotes pruned |
+
+## Procedura sicura (KISS)
+
+How-to: [module-theme-git-slim.md](../../../../../../bashscripts/docs/operations/module-theme-git-slim.md)
+
+1. **Mai** sul pacchetto sotto cwd di `merge_remote_repo_2.sh` (`/proc/<pid>/cwd`).
+2. `bash bashscripts/tools/git/slim-module-theme-git.sh` (o lista moduli).
+3. Se il **tip** contiene ancora path monorepo: re-clone depth-1 come Notify (backup `.git`; **no force-push**).
+4. Rimuovere leftover disco: `.git-rewrite/` — non e' storia.
+5. Theme PDF manuals: **KEEP** (linkati da `manuale-utente/readme.md`). `repo.bundle`: non tracciare.
+>>>>>>> .merge_file_q8DJ1m
 
 ## Coordinamento
 
 | Agente | Scope | Claim |
 |--------|-------|-------|
+| coordinator | **21:31** prune wave 296→202MB; script+ops doc; Theme PDF kept; Lang skip sync; initiative `kp-49f7fb357f59473da7964d9a262ece3a` | 2026-11-24 21:31 |
+| lane-theme-meetup | Theme Meetup: repo.bundle confirm untracked; PDF KEEP; gitignore markers | 2026-11-24 21:29 |
 | coordinator | inventario + gc safe (skip Notify/Job sync) → 740→736MB | 2026-11-24 18:10 done |
 | coordinator | Notify pollution diagnostic (1930 vs 1 commit remoto) | 2026-11-24 18:12 done |
 | coordinator | Activity `.git-rewrite` rimosso | 2026-11-24 18:13 |
 | lane-notify-reclone | Notify slim: wait sync → full clone (= remoto polluto 431MB/1930) → depth-1 14MB/1; bak polluted kept; no force-push | 2026-11-24 18:31 done |
+<<<<<<< .merge_file_9v9x0X
 | claude-fila5 | base_ptvx_fila5: slim 21 repo 613→143 MiB, script riscritto con gate fsck, Notify depth-1 sul HEAD | 2026-11-24 23:12 review |
+=======
+| lane-meetup-theme | Meetup `.git` 63→63MB: untrack already done; gitignore markers fixed; PDF kept intentional; gc+repack; no filter-repo | 2026-11-24 21:29 done |
+>>>>>>> .merge_file_q8DJ1m
 
 ## Verify
 
 ```bash
+<<<<<<< .merge_file_9v9x0X
 cd laravel && du -sm Modules/*/.git Themes/*/.git | sort -nr
 for d in Modules/* Themes/*; do git -C $d fsck --connectivity-only --no-progress >/dev/null 2>&1 || echo "KO $d"; done
+=======
+du -sm laravel/Modules/*/.git laravel/Themes/*/.git | sort -nr
+bash bashscripts/tools/git/slim-module-theme-git.sh   # idempotent
+# tip vs all objects (dopo slim devono coincidere circa)
+cd laravel/Modules/User && git rev-list --objects HEAD | wc -l
+git rev-list --objects --all | wc -l
+>>>>>>> .merge_file_q8DJ1m
 ```
 
 ## Related
 
+<<<<<<< .merge_file_9v9x0X
 - [how-to](../../../../../../bashscripts/docs/operations/module-theme-git-slim.md)
 - [git-repositories-slim-audit](./git-repositories-slim-audit.story.md) — passo parallelo (`gk`, `lfs`, `REBASE_HEAD`), con cui questa story
   diverge su Notify (dichiarato li')
 - [nested-git-slim-hygiene](../../../../../../bashscripts/ai/wiki/memories/nested-git-slim-hygiene.md) — memoria condivisa, con le lezioni di questa story
 - [multi-repo map](../../../../../../bashscripts/ai/wiki/rules/multi-repo-modules-themes-map.md)
 - [git-push-pack-errors](../../../../../../bashscripts/ai/wiki/rules/git-push-pack-errors.md)
+=======
+- [module-theme-git-slim ops](../../../../../../bashscripts/docs/operations/module-theme-git-slim.md)
+- [multi-repo map](../../../../../../docs/wiki/rules/multi-repo-modules-themes-map.md)
+- [git-push-pack-errors](../../../../../../docs/wiki/rules/git-push-pack-errors.md)
+>>>>>>> .merge_file_q8DJ1m
 - [cleanup-git-rewrite-artifact](./cleanup-git-rewrite-artifact.story.md)
 - [phpstan bootstrap e marker](./phpstan-modules-bootstrap-duplicate-lines.story.md)
 - [phpstan standing](./phpstan-modules-zero-swarm-standing.story.md)

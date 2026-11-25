@@ -12,7 +12,11 @@ evidence:
   - "bashscripts/tools/normalize-module-readmes.py"
   - "laravel/Modules/Xot/docs/bmad/stories/module-readmes-normalization-20260928.story.md"
 
+<<<<<<< .merge_file_VP3GlJ
   - "laravel/Modules/Xot/docs/bmad/stories/module-readmes-normalization.story.md"
+=======
+- "laravel/Modules/Xot/docs/bmad/stories/module-readmes-normalization.story.md"
+>>>>>>> .merge_file_jNEn15
 related:
   - "../../README.md"
   - "../../../../../../bashscripts/ai/wiki/concepts/second-brain-canonical-operating-model.md"
