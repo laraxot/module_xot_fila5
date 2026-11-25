@@ -25,7 +25,7 @@ Restituisce le opzioni anno per un filtro o select condiviso, secondo il modulo 
 
 | ID | Regola | Prova nel codice | Test esistente |
 |---|---|---|---|
-| `CONFIG-ANNI-INV-1` | Se la `ConfigData` del modulo implementa `YearsConfigContract`, ritorna `getAnniOptions()` di quella. | righe 27-30 | `tests/Unit/Actions/Config/ResolveModuleConfigDataActionTest.php:29` |
+| `CONFIG-ANNI-INV-1` | Se la `ConfigData` del modulo implementa `YearsConfigContract`, ritorna `getAnniOptions()` di quella. | righe 27-30 | `tests/Unit/Actions/Config/GetModuleConfigDataActionTest.php:29` |
 | `CONFIG-ANNI-INV-2` | Altrimenti ritorna il fallback in ordine inverso, con etichetta uguale all'anno come stringa. | righe 32-37 | come sopra |
 
 ## Effetti collaterali
@@ -34,7 +34,7 @@ Nessuno. Lettura di configurazione.
 
 ## Errori
 
-- Nessuna eccezione propria. Gli errori di `ResolveModuleConfigDataAction` si propagano.
+- Nessuna eccezione propria. Gli errori di `GetModuleConfigDataAction` si propagano.
 
 ## Non fa
 

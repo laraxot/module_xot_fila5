@@ -19,7 +19,7 @@ use function Safe\glob;
  *
  * @contract docs/contracts/resolve-shared-sqlite-path-action.md
  */
-class ResolveSharedSqlitePathAction
+class GetSharedSqlitePathAction
 {
     use QueueableAction;
 

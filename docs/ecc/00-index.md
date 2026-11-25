@@ -2,9 +2,9 @@
 title: "ECC — indice operativo Xot"
 type: index
 status: review
-updated: 2026-11-24
+updated: 2026-11-25
 module: Xot
-qmd: "ECC indice Xot verification gates esito phpstan saturazione swarm"
+qmd: "ECC indice Xot verification gates esito phpstan saturazione swarm action naming"
 ---
 
 # ECC — modulo Xot
@@ -27,6 +27,7 @@ Su worktree condiviso: prima di PHPStan rispettare saturazione HARD
 | Pest | skip documentato | DB di test configurato irraggiungibile + `TestDatabaseGuard` |
 | Security review | parziale | P2-X3 `HandleArtisanActRequestAction`; `--force` solo su SQLite di test e symlink opt-in |
 | Docs pack | aggiornato | audit, epics, decision-log, brainstorming, story |
+| Action naming `Resolve*` → `Get*` | verificato (2026-11-25) | ADR [0016](../adr/0016-action-names-get-not-resolve.md); Pest `NoResolveActionNamingTest`; `app/Actions` Modules senza `Resolve*Action.php` |
 
 Dettaglio: [xot-ecc-audit.md](./xot-ecc-audit.md)
 

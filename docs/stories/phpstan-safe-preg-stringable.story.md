@@ -25,7 +25,7 @@ stringa (lo stesso schema già adottato nei moduli di dominio di Roosko). È sta
 
 - **Xot**: `ShowArtisanErrorLogAction` (`Str::matchAll`), `BuildTestSqliteCommand::firstLine`, `EnvData::updateVar`,
   `InitialsAvatarProvider`.
-- **Cms**: `ComposeDocumentTitleAction`, `ResolvePageDescriptionAction`, `Head::siteRoot`, `HasBlocks::renderAllowedExpressions`.
+- **Cms**: `ComposeDocumentTitleAction`, `GetPageDescriptionAction`, `Head::siteRoot`, `HasBlocks::renderAllowedExpressions`.
 - **Tenant**: `GetEnteDataAction`, `EnteData::link`.
 
 `ThemePublicSymlinkTest` verifica anche `public_html/assets/<modulo>` e i `.gitignore` del docroot. Un link non ancora creato

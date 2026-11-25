@@ -82,7 +82,7 @@ Riferimento: workshop laravelday-harness (R. Gallea) + OpenAI / Böckeler / Anth
 | `Modules/Xot` `SendMailByRecordAction` | PDF sempre in `my_doc.pdf` sul disco `cache`: due invii paralleli possono allegare il PDF di un altro | da decidere |
 | `Modules/Job/app/Filament/Widgets/ScheduleStatusWidget.php` | esegue comandi Artisan senza `SuperAdminOnlyTrait` né autorizzazione ripetuta | da decidere (ADR `artisan-commands-from-ui-exact-match-allowlist`) |
 | `Modules/Job` `ClearScheduleCacheAction` | chiavi `job::cache.*` inesistenti: `ScheduleClearCacheCommand` fallisce | da decidere |
-| `Themes/TwentyOne` `ResolveFeaturedMarketsGridDataAction` | `$this__(` ×11 invece di `$this->tx(`: fallisce a ogni esecuzione; dipende da un modulo assente | da decidere |
+| `Themes/TwentyOne` `GetFeaturedMarketsGridDataAction` | `$this__(` ×11 invece di `$this->tx(`: fallisce a ogni esecuzione; dipende da un modulo assente | da decidere |
 | `Themes/Two` blocco `company/data` | iframe Nominatim contro l'ADR `map-blocks-static-image-and-link` | da decidere |
 | `Themes/Two/docs/README.md`, `Themes/Zero/docs/README.md` | marker di merge non risolti | **corretto** (scelta in base ai file esistenti; Two senza nomi di progetto; Zero: 13 coppie di nomi che collidono per maiuscola, ora dichiarate come debito) |
 | DB sqlite di test condiviso | mancano `users.state`, colonne di `consents`, tabella `inbound_emails`: test Gdpr/Notify rossi, invarianti senza group | da decidere (migrazioni non applicate al DB di test) |

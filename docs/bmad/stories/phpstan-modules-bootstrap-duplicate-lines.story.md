@@ -83,7 +83,7 @@ commit radice `41e757843a` (20:29) ne contiene 84; `d2ae03eb31` (20:27) ne aveva
 ## Terzo giro: r5 fallita, due nuovi merge committati con marker (21:01 e 21:11)
 
 - **r5 non e' una misura valida.** Cache privata fredda, 20:59:05-21:09:16 UTC (10m11s), `exit=1`, `Result is incomplete because of
-  severe errors`: 4 parse error, Tenant `CreateJsonFileByRecordActionStringIdTest.php` e UI `ResolveLocalizedBlockDataAction`,
+  severe errors`: 4 parse error, Tenant `CreateJsonFileByRecordActionStringIdTest.php` e UI `GetLocalizedBlockDataAction`,
   `NullGeocodingService`, `UIService`. Load average 124. L'exit 0 della notifica era quello del wrapper.
 - **Tenant, 21:01:52.** Merge `67c5e43` ("Merge remote-tracking branch 'laraxot/dev' into dev") con marker in 4 Actions + 1 test.
   I 3 file UI sono stati riscritti da altri alle 21:09:10 (lint OK); le 4 Actions Tenant erano senza marker entro le 21:11

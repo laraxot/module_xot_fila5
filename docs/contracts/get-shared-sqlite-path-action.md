@@ -1,16 +1,16 @@
 ---
-title: "ResolveSharedSqlitePathAction — contratto"
+title: "GetSharedSqlitePathAction — contratto"
 type: contract
 owner: Xot
 status: accepted
 updated: 2026-11-24
-action: "Modules\\Xot\\Actions\\Testing\\ResolveSharedSqlitePathAction"
-qmd: "ResolveSharedSqlitePathAction percorso sqlite condiviso test xot.testing.sqlite_file database test_data"
+action: "Modules\\Xot\\Actions\\Testing\\GetSharedSqlitePathAction"
+qmd: "GetSharedSqlitePathAction percorso sqlite condiviso test xot.testing.sqlite_file database test_data"
 ---
 
-# ResolveSharedSqlitePathAction
+# GetSharedSqlitePathAction
 
-Risolve il percorso del file SQLite condiviso dalla suite di test. Codice: `app/Actions/Testing/ResolveSharedSqlitePathAction.php` (classe a riga 20, `execute()` a riga 25).
+Risolve il percorso del file SQLite condiviso dalla suite di test. Codice: `app/Actions/Testing/GetSharedSqlitePathAction.php` (classe a riga 20, `execute()` a riga 25).
 
 ## Input
 

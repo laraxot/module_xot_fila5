@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 use Modules\Xot\Actions\Config\GetYearOptionsAction;
-use Modules\Xot\Actions\Config\ResolveModuleConfigDataAction;
+use Modules\Xot\Actions\Config\GetModuleConfigDataAction;
 use Modules\Xot\Datas\XotConfigData;
 use Modules\Xot\Tests\TestCase;
 
@@ -12,8 +12,8 @@ uses(TestCase::class);
 // Il modulo e' il PRIMO segmento dopo `Modules\`: con Str::between (che taglia all'ultimo
 // separatore) `Modules\X\Filament\Pages\P` dava `X\Filament\Pages` e nessuna Data veniva trovata.
 test('module without a config data resolves to null', function (string $class): void {
-    expect(ResolveModuleConfigDataAction::dataClassFor($class))->toBeNull()
-        ->and(app(ResolveModuleConfigDataAction::class)->execute($class))->toBeNull();
+    expect(GetModuleConfigDataAction::dataClassFor($class))->toBeNull()
+        ->and(app(GetModuleConfigDataAction::class)->execute($class))->toBeNull();
 })->with([
     'modulo che non esiste' => ['Modules\\Inesistente\\Filament\\Pages\\Pagina'],
     'classe fuori dai moduli' => ['App\\Models\\User'],
@@ -21,7 +21,7 @@ test('module without a config data resolves to null', function (string $class): 
 ]);
 
 test('a nested class resolves the config data of the first segment after Modules', function (): void {
-    expect(ResolveModuleConfigDataAction::dataClassFor('Modules\\Xot\\Filament\\Pages\\XotBasePage'))
+    expect(GetModuleConfigDataAction::dataClassFor('Modules\\Xot\\Filament\\Pages\\XotBasePage'))
         ->toBe(XotConfigData::class);
 });
 

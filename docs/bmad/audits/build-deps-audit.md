@@ -112,7 +112,7 @@ Audit **statico e read-only** di build/dependency/config/CI. Scope: `laravel/com
   - Rimedio: nessuno per codice attivo; eventualmente ripulire doc storiche se generano falsi positivi.
 
 - **F-14 — Config tenant versionata ma con duplicazione estesa** — `M`
-  - Percorsi: `laravel/config/localhost/**`, `laravel/config/local/ptvx/**`, `laravel/config/local/ptvx-mono/**`, `laravel/config/local/tv/prov/personale2019/**`, `laravel/config/local/tv/prov/personale2022/**`; caricamento ricorsivo Laravel e merge runtime in `laravel/Modules/Tenant/app/Providers/TenantServiceProvider.php:38-78,154-167,188-203` e `ResolveTenantConfigValueAction.php:31-56`.
+  - Percorsi: `laravel/config/localhost/**`, `laravel/config/local/ptvx/**`, `laravel/config/local/ptvx-mono/**`, `laravel/config/local/tv/prov/personale2019/**`, `laravel/config/local/tv/prov/personale2022/**`; caricamento ricorsivo Laravel e merge runtime in `laravel/Modules/Tenant/app/Providers/TenantServiceProvider.php:38-78,154-167,188-203` e `GetTenantConfigValueAction.php:31-56`.
   - Evidenza: `config/localhost/database.php` ha 99 occorrenze `env()`, `config/database.php` 85; file come `app.php`, `auth.php`, `database.php`, `filesystems.php`, `metatag.php`, `services.php` si ripetono tra tenant.
   - Impatto: drift tra tenant e default; ogni file duplicato va mantenuto a mano.
   - Rimedio: definire una matrice tenant→override e ridurre i file tenant a sole chiavi effettivamente diverse; documentare che `config/local` è intenzionalmente versionato (vedi `.gitignore:233-235`).

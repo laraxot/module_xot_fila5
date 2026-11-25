@@ -4,7 +4,7 @@ type: index
 status: active
 owner: Xot
 created: 2026-11-23
-updated: 2026-11-24
+updated: 2026-11-25
 qmd: "xot adr indice decisioni canonico superseded numerazione doppia"
 ---
 
@@ -12,7 +12,7 @@ qmd: "xot adr indice decisioni canonico superseded numerazione doppia"
 
 Inventario di tutti gli ADR del pacchetto **Xot** (esclusi `README.md`, `INDEX.md` e `0000-template.md`). Lo stato è quello della frontmatter di ciascun file. Formato e sezioni obbligatorie: [README](README.md); modello: [0000-template](0000-template.md); governance dei contratti: [0012](0012-behavioral-contract-governance.md).
 
-Totale: **27** ADR, di cui **19** canonici e **8** superseded (nessun file cancellato).
+Totale: **28** ADR, di cui **20** canonici e **8** superseded (nessun file cancellato).
 
 | N. | Titolo | Stato | Canonico / superseded | File |
 |---|---|---|---|---|
@@ -33,6 +33,7 @@ Totale: **27** ADR, di cui **19** canonici e **8** superseded (nessun file cance
 | 0012 | Governance dei Behavioral Contract con invarianti verificabili | accepted | canonico | [0012-behavioral-contract-governance.md](0012-behavioral-contract-governance.md) |
 | 0013 | I dati sono sacri: mai migrate:fresh/reset/rollback/force, mai RefreshDatabase, test solo con .env.testing | accepted | canonico | [0013-dati-sacri-migrazioni-e-test.md](0013-dati-sacri-migrazioni-e-test.md) |
 | 0014 | `mixed` solo come ultima spiaggia, con narrowing al boundary | accepted | canonico | [0014-mixed-last-resort.md](0014-mixed-last-resort.md) |
+| 0016 | I nomi delle Queueable Action non iniziano con `Resolve` (usa `Get*`) | accepted | canonico | [0016-action-names-get-not-resolve.md](0016-action-names-get-not-resolve.md) |
 | — | Harness minimo per gli agenti: ambiente leggibile, memoria verificabile, guard sulle azioni vietate | accepted | canonico, senza numero | [agent-harness.md](agent-harness.md) |
 | — | Le regole architetturali sulle classi si verificano con PHPArkitect, con baseline | superseded | superseded → [architecture-tests-pest-arch.md](architecture-tests-pest-arch.md) | [architecture-rules-phparkitect.md](architecture-rules-phparkitect.md) |
 | — | Le regole di architettura si verificano con Pest arch(), con ambito esplicito e debito dichiarato | accepted | canonico, senza numero | [architecture-tests-pest-arch.md](architecture-tests-pest-arch.md) |

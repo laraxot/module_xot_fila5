@@ -25,7 +25,7 @@ chiamate senza asserzioni.
   o `laravel/Themes`.
 - Lo scopo funzionale di `getModels()` è già implementato da
   `Actions\\Model\\GetAllModelsByModuleNameAction`.
-- L'Action è usata da `GetAllModelsAction`, da `Tenant\\Actions\\Models\\ResolveTenantModelClassAction`
+- L'Action è usata da `GetAllModelsAction`, da `Tenant\\Actions\\Models\\GetTenantModelClassAction`
   e dalla `ModuleServiceIntegrationTest`.
 - La Feature test verifica il contratto attuale: modulo inesistente, moduli reali,
   classi concrete, esclusione delle astratte, namespace, chiavi snake_case e

@@ -19,7 +19,7 @@ use Spatie\QueueableAction\QueueableAction;
  *
  * @contract docs/contracts/resolve-module-config-data-action.md
  */
-class ResolveModuleConfigDataAction
+class GetModuleConfigDataAction
 {
     use QueueableAction;
 

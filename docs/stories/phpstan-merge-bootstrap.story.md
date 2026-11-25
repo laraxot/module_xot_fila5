@@ -43,7 +43,7 @@ checkout/restore/reset (forward-only), tenendo entrambe le funzionalità utili (
 | `XotData.php` | `is_file` + fallback Notify se `$key !== ''` | Tema senza mail-layouts non rompe reset/modelli email |
 | `HasCommonScopes` / `HasCustomRelations` / `HasSchemalessAttributes` | Docblock con riga vuota; rimossi `@phpstan-ignore` | Conflitto era solo spacing; ignore vietati dalle regole |
 | `health_overview.php` | Tenuta chiave `sections.empty` | Serve al pattern Filament/lang espanso |
-| `XotBaseTestCase.php` | `app(ResolveSharedSqlitePathAction::class)` via import | Stesso comportamento, DRY sull'FQCN |
+| `XotBaseTestCase.php` | `app(GetSharedSqlitePathAction::class)` via import | Stesso comportamento, DRY sull'FQCN |
 | `AssetActionsTest.php` | Assert su `assets/xotassettest/...` | Allineato a `Str::lower` in AssetAction |
 
 ## Verifica
