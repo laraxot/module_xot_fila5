@@ -19,4 +19,4 @@ test('GetRouteMethodAction restituisce il metodo dichiarato as-is (Arr::wrap non
 
 test('GetRouteMethodAction torna al default get+post se method non e specificato', function (): void {
     Assert::assertSame(['get', 'post'], app(GetRouteMethodAction::class)->execute([]));
-});
+})->group('ROUTE-METHOD-INV-2');

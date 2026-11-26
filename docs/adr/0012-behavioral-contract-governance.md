@@ -3,7 +3,7 @@ title: "Governance dei Behavioral Contract con invarianti verificabili"
 type: decision
 status: accepted
 created: 2026-11-23
-updated: 2026-11-23
+updated: 2026-11-26
 decision-makers: [team back office]
 issues: []
 module: Xot
@@ -78,6 +78,14 @@ gruppi Pest omonimi**, perché conserva l'ownership del modulo e rende la catena
   suo ID e aggiornare l'indice.
 - Cattivo, perché l'indice può diventare obsoleto se una modifica aggiorna il codice
   senza aggiornare la documentazione owner.
+
+## Stato attuale
+
+Misurato il 2026-11-26 leggendo i file; Pest non eseguito.
+
+- Il registro dei contratti non è `docs/contracts/index.md`: quel file ha `status: superseded` e `superseded_by: INDEX.md` (frontmatter, righe 5-6) e rimanda a `INDEX.md`, che elenca soltanto i titoli. Il registro con scopo, numero di invarianti e invarianti dimostrate per contratto è oggi `docs/contracts/README.md`; non riporta l'owner né un comando Pest per ogni contratto (il comando è `vendor/bin/pest --group=<ID>`, uguale per tutti).
+- La regola «ogni ID compare in almeno un test con lo stesso `->group('<ID>')`» è rispettata da 8 invarianti su 598 (`rg -oN "[A-Z][A-Z0-9-]*-INV-[0-9]+" Modules/Xot/tests` elenca gli ID presenti nei test: otto distinti; la tabella di ogni contratto ha la colonna `Group Pest`). Le altre 590 sono dichiarate «— (non dimostrato)» e il backlog dei test sta in `docs/contracts/README.md`.
+- Questa decisione vale per tutti i tenant: Xot è condiviso e i contratti descrivono il comportamento delle Action del modulo, non di un progetto ospite.
 
 ## Conferma
 

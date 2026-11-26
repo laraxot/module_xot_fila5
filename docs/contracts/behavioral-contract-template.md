@@ -7,15 +7,15 @@ created: 2026-11-26
 updated: 2026-11-26
 ---
 
----
+```yaml
 title: "Contratto — <operazione>"
-type: contract
+type: <contract-type>
 module: <Module>
-action: "Modules\\<Module>\\Actions\\<Action>"
+action: "<FQCN>"
 status: accepted
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
----
+```
 
 # Contratto — <operazione>
 

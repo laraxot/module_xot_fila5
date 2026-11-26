@@ -24,7 +24,7 @@ describe('GetExportFileNameAction — stesso nome file per export_xls e export_x
         ];
 
         Assert::assertSame('ListRecordsStub-2026-580-1', app(GetExportFileNameAction::class)->execute($page));
-    });
+    })->group('EXP-NAME-INV-1');
 
     test('filtri assenti o nulli non rompono il nome', function (): void {
         $page = new ListRecordsStub;
@@ -35,5 +35,5 @@ describe('GetExportFileNameAction — stesso nome file per export_xls e export_x
         ];
 
         Assert::assertSame('ListRecordsStub-', app(GetExportFileNameAction::class)->execute($page));
-    });
+    })->group('EXP-NAME-INV-1');
 });

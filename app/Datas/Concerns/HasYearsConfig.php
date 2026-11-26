@@ -17,7 +17,8 @@ namespace Modules\Xot\Datas\Concerns;
  * @phpstan-ignore trait.unused
  */
 trait HasYearsConfig // @phpstan-ignore trait.unused
-{/**
+{
+    /**
      * @var list<int>
      */
     public array $anni = [];

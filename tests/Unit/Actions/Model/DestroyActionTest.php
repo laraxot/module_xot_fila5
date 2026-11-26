@@ -29,7 +29,7 @@ it('deletes model and returns it', function (): void {
 
     Assert::assertSame($mockModel, $result);
     Assert::assertTrue($mockModel->deleted);
-});
+})->group('DESTROY-INV-1');
 
 it('flashes status message on successful delete', function (): void {
     $mockModel = new class extends BaseModel
@@ -43,7 +43,7 @@ it('flashes status message on successful delete', function (): void {
     app(DestroyAction::class)->execute($mockModel, [], []);
 
     Assert::assertSame('eliminato', Session::get('status'));
-});
+})->group('DESTROY-INV-1');
 
 it('flashes failure message when delete returns false', function (): void {
     $mockModel = new class extends BaseModel
@@ -57,4 +57,4 @@ it('flashes failure message when delete returns false', function (): void {
     app(DestroyAction::class)->execute($mockModel, [], []);
 
     Assert::assertSame('NON eliminato', Session::get('status'));
-});
+})->group('DESTROY-INV-1');

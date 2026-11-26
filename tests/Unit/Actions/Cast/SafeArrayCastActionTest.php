@@ -54,7 +54,7 @@ it('casts various values to array correctly', function (): void {
     Assert::assertSame([123], $action->execute(123));
     // Fallback
     Assert::assertSame(['fallback'], $action->execute(fopen('php://memory', 'r'), ['fallback']));
-});
+})->group('CAST-ARR-INV-1', 'CAST-ARR-INV-2', 'CAST-ARR-INV-3');
 
 it('validates required keys correctly', function (): void {
     $action = app(SafeArrayCastAction::class);
@@ -62,7 +62,7 @@ it('validates required keys correctly', function (): void {
 
     Assert::assertSame($data, $action->executeWithKeys($data, ['a', 'b']));
     Assert::assertSame(['error' => true], $action->executeWithKeys($data, ['a', 'c'], ['error' => true]));
-});
+})->group('CAST-ARR-INV-4');
 
 it('filters keys correctly', function (): void {
     $action = app(SafeArrayCastAction::class);

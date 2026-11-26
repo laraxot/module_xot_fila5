@@ -3,7 +3,7 @@ title: "Ogni modello persistente ha una migrazione owner"
 type: decision
 status: accepted
 created: 2026-11-23
-updated: 2026-11-23
+updated: 2026-11-26
 decision-makers: [team Laraxot]
 issues: []
 qmd: "0004 one model migration ogni modello"
@@ -50,8 +50,8 @@ cartella canonica è `database/migrations/` minuscola e la migrazione usa
 
 ## Conferma
 
-- `MigrationConventionsTest` e gli audit del modulo verificano naming, owner e schema;
+- `Modules/Fixcity/tests/Unit/MigrationConventionsTest.php` verifica soltanto che `ticket_subscribers` abbia una sola migrazione owner con la forma attesa; la regola generale «un modello, una migrazione» non ha oggi un test (proposta: un test di architettura nel modulo Xot che confronta modelli e migrazioni);
 - prima di una migrazione si controllano modello, tabella, connessione e caller;
-- riferimenti: [migration filename rule](../wiki/rules/migration-filename-from-model-name.md),
+- riferimenti: migration filename rule (riferimento non presente in questo checkout),
   [one migration per model](../../../../../docs/ai-agents/rules/one-migration-per-model.md)
   e [XotBaseMigration](../../app/Database/Migrations/XotBaseMigration.php).

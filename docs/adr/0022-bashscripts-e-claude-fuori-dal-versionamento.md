@@ -72,7 +72,7 @@ Scelta: **il root non versiona né `bashscripts` né `.claude`**.
 - Cattivo: su una macchina dove `bashscripts` è ancora il symlink tracciato, il primo `git pull` della decisione lo
   toglie; se quella macchina lo usa va ricreato a mano.
 
-## Verifica
+## Conferma
 
 ```bash
 git ls-files -s bashscripts | wc -l                 # 0

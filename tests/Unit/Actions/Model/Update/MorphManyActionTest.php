@@ -74,7 +74,7 @@ it('passes the rows updated by UpdateAction to saveMany', function (): void {
     expect($relation->calls)->toBe(1)
         ->and(array_map(static fn (Model $row): mixed => $row->getAttribute('body'), $relation->saved))->toBe(['a', 'b'])
         ->and(array_map(static fn (Model $row): mixed => $row->getKey(), $relation->saved))->toBe([1, 2]);
-});
+})->group('UPDATE-MORPH-MANY-INV-2');
 
 it('does not update anything when the payload is empty', function (): void {
     $relation = morphManyRelationSpy();

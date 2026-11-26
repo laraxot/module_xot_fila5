@@ -38,7 +38,7 @@ test('view path action works', function (): void {
     $expected = str_replace(['/', '\\'], [DIRECTORY_SEPARATOR, DIRECTORY_SEPARATOR], $expected);
 
     Assert::assertSame($expected, $result);
-});
+})->group('FILE-VIEWPATH-INV-1');
 
 test('asset path action works', function (): void {
     // Spy on Module facade
@@ -48,7 +48,7 @@ test('asset path action works', function (): void {
 
     $action = app(AssetPathAction::class);
     Assert::assertSame('/module/path/resources/css/style.css', $action->execute('test_module::css/style.css'));
-});
+})->group('FILE-ASSETPATH-INV-2');
 
 test('asset action handles absolute urls', function (): void {
     $action = app(AssetAction::class);

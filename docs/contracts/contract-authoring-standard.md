@@ -2,6 +2,7 @@
 title: "Standard di authoring dei Behavioral Contract"
 type: standard
 module: Xot
+owner: Xot
 status: accepted
 created: 2026-11-26
 updated: 2026-11-26
@@ -13,6 +14,10 @@ qmd: "behavioral contract authoring standard invariants Pest harness receipt"
 Questo documento è il riferimento comune per `docs/contracts/` di tutti i moduli e
 temi. Il contratto appartiene al package che possiede l'Action o l'interfaccia; non
 si crea un catalogo duplicato nel root.
+
+Fonte metodologica: [laravelday-harness-workshop](https://github.com/robertogallea/laravelday-harness-workshop).
+FixCity adotta i suoi pattern di separazione fra promessa, prova e receipt senza
+copiarne dominio, hook o lifecycle.
 
 ## Quando serve
 
@@ -62,6 +67,6 @@ php ../.harness/bin/verify-facts
 ```
 
 La story BMAD del modulo owner conserva il perimetro e le decisioni di lavoro; un
-ADR registra solo scelte architetturali difficili da invertire. Il workshop
-Laravel Day ispira la separazione fra promessa, prova e receipt, ma non sostituisce
-queste convenzioni locali.
+ADR registra solo scelte architetturali difficili da invertire. Il receipt completo
+del workshop resta opzionale finché non esiste un test owner-local che lo renda
+utile.

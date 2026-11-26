@@ -1,7 +1,8 @@
 ---
 title: "mixed solo come ultima spiaggia"
 type: decision
-status: accepted
+status: superseded by 0015-mixed-solo-come-ultima-spiaggia.md
+superseded_by: 0015-mixed-solo-come-ultima-spiaggia.md
 created: 2026-11-24
 updated: 2026-11-24
 decision-makers: [team back office]
@@ -11,6 +12,8 @@ qmd: "mixed PHPStan ultima spiaggia narrowing boundary vendor source-first tipiz
 ---
 
 # mixed solo come ultima spiaggia
+
+> **Superseded** da [0015-mixed-solo-come-ultima-spiaggia.md](0015-mixed-solo-come-ultima-spiaggia.md): stessa decisione, formulazione canonica in MADR. Questo file resta come formulazione alternativa con il «perché» esteso; non va esteso.
 
 ## Scopo e perché (SSoT trasversale)
 
@@ -163,11 +166,11 @@ il trait, la relazione o il fixture owner; non si usa `property_exists()` né un
 - Audit ripetibile: `rg -lI '(: mixed\b|@(param|return|var) mixed\b)' laravel/Modules/*/app --glob '*.php' | wc -l`
   dava 37 il 2026-11-24 (15 in Xot). Un aumento fuori dalle `Safe*CastAction` va
   motivato nella story.
-- Story ADR: [xot-adr-mixed-ultima-spiaggia](../bmad/stories/0171-xot-adr-mixed-ultima-spiaggia.story.md).
-- Campagna gate: [phpstan-modules-zero-swarm](../bmad/stories/0149-phpstan-modules-zero-swarm.story.md).
-- Prompt operativo: [37-phpstan.md](../../../../../../bashscripts/docs/prompts/quality-gates.md).
+- Story ADR: xot-adr-mixed-ultima-spiaggia (riferimento non presente in questo checkout).
+- Campagna gate: phpstan-modules-zero-swarm (riferimento non presente in questo checkout).
+- Prompt operativo: [37-phpstan.md](../../../../../bashscripts/docs/prompts/quality-gates.md).
 
 ## Collegamenti (puntatori, non SSoT)
 
-- Nota storica Notify (esempi locali): [mixed-type-ultima-spiaggia](../../../Notify/docs/mixed-type-ultima-spiaggia.md)
+- Nota storica Notify (esempi locali): mixed-type-ultima-spiaggia (riferimento non presente in questo checkout)
 - Indice ADR: [INDEX.md](INDEX.md)

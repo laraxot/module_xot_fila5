@@ -18,7 +18,7 @@ test('action URLs fall back to an explicit fragment outside a route', function (
     $paramsArray = $params->toArray();
 
     expect((new BuildActionUrlAction)->execute($paramsArray))->toBe('#edit');
-});
+})->group('ROUTE-ACTURL-INV-1');
 
 test('component analyzer exposes its supported filters', function (): void {
     $definition = app(AnalyzeComponentsCommand::class)->getDefinition();

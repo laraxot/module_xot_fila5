@@ -16,4 +16,4 @@ test('a missing model or a non model class means no column, not an exception', f
 
     expect($action->execute(null, 'id'))->toBeFalse()
         ->and($action->execute(stdClass::class, 'id'))->toBeFalse();
-});
+})->group('MODEL-HAS-COLUMN-INV-1');

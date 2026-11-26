@@ -39,7 +39,7 @@ it('returns path if asset already exists in public folder', function (): void {
             unlink($absolute);
         }
     }
-});
+})->group('FILE-ASSET-INV-2');
 
 /**
  * public_html/assets/<module> is a symlink to Modules/<Module>/public, so the asset is served from
@@ -74,7 +74,7 @@ it('resolves a module asset to its public url without copying anything into publ
             unlink($resourceFile);
         }
     }
-});
+})->group('FILE-ASSET-INV-5');
 
 it('does not throw when public assets dir is a plain file left by a checkout without symlinks', function (): void {
     $moduleRoot = sys_get_temp_dir().'/xot_mod_'.uniqid('', true);
@@ -106,7 +106,7 @@ it('does not throw when public assets dir is a plain file left by a checkout wit
             }
         }
     }
-});
+})->group('FILE-ASSET-INV-5');
 
 it('calculates asset path correctly in AssetPathAction', function (): void {
     Module::partialMock()
@@ -118,7 +118,7 @@ it('calculates asset path correctly in AssetPathAction', function (): void {
     $result = $action->execute('User::js/app.js');
 
     Assert::assertSame('/path/to/User/resources/js/app.js', $result);
-});
+})->group('FILE-ASSETPATH-INV-2');
 
 it('resolves a public URL path to a file under the document root', function (): void {
     $action = app(AssetPathAction::class);

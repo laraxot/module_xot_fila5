@@ -21,4 +21,4 @@ it('throws exception when start marker is missing', function (): void {
 
     expect(fn (): string => $action->execute('prefix { content } suffix', 'missing', '{', '}'))
         ->toThrow(Exception::class, 'Cannot find missing');
-});
+})->group('STR-BETWEEN-INV-1');

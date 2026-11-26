@@ -14,4 +14,4 @@ it('normalizes driver names correctly', function (): void {
     Assert::assertSame('mydriver', $action->execute('My_Driver'));
     Assert::assertSame('spacesinname', $action->execute('Spaces In Name'));
     Assert::assertSame('uppercase', $action->execute('UPPERcase'));
-});
+})->group('STR-DRIVER-INV-1', 'STR-DRIVER-INV-2');

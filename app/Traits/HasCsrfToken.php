@@ -11,7 +11,8 @@ use Illuminate\Support\Facades\Session;
  * @phpstan-ignore trait.unused
  */
 trait HasCsrfToken // @phpstan-ignore trait.unused
-{/**
+{
+    /**
      * CSRF token for the current request.
      */
     public string $_token;

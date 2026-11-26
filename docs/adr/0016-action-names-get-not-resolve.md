@@ -45,7 +45,7 @@ delle Action di lettura (`Get*Action`, `Count*Action`, `List*Action`).
    `GetCategoriaEcoByProproAction`, `GetLastEsperienzaAtAction`).
 3. **Stessa regola sui Concern/trait Filament** di lettura: mai `Resolve*` /
    `Resolves*` (es. `GetCategoriaEcoColumn`, non `ResolvesCategoriaEcoColumn`)
-   — [Ptv 0003](../../Ptv/docs/adr/0003-get-not-resolve-naming.md).
+   — Ptv 0003 (riferimento non presente in questo checkout).
 4. Altri verbi restano ammessi quando descrivono l'effetto: `Update*`,
    `Refresh*`, `Count*`, `List*`, `Send*`, `Build*`, …
 5. I file contratto kebab-case seguono il nome classe:

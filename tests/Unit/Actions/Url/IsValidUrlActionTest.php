@@ -12,11 +12,11 @@ it('validates correct urls', function (): void {
     Assert::assertTrue($action->execute('https://google.com'));
     Assert::assertTrue($action->execute('http://localhost'));
     Assert::assertTrue($action->execute('ftp://server.com'));
-});
+})->group('URL-VALID-INV-1');
 
 it('invalidates incorrect urls', function (): void {
     $action = app(IsValidUrlAction::class);
     Assert::assertFalse($action->execute('not-a-url'));
     Assert::assertFalse($action->execute('http:///double-slash'));
     Assert::assertFalse($action->execute(''));
-});
+})->group('URL-VALID-INV-1');

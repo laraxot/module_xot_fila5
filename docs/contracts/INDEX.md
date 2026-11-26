@@ -4,50 +4,264 @@ type: index
 status: active
 owner: Xot
 created: 2026-11-23
-updated: 2026-11-24
-qmd: "xot contract indice invarianti pest group coperto non coperto backlog contract action"
+updated: 2026-11-26
+qmd: "xot contract indice action behavioral contract FQCN docblock"
 ---
 
 # Indice contract — Xot
 
-Inventario dei contratti comportamentali del pacchetto **Xot**. Un contratto descrive un'operazione o un confine pubblico esistente; ogni invariante ha un ID stabile e, se esiste un test, un gruppo Pest con lo stesso ID. L'assenza di copertura è dichiarata, non sottintesa. Formato: [contract-authoring-standard](contract-authoring-standard.md), [README](README.md), decisione [ADR 0012](../adr/0012-behavioral-contract-governance.md).
+Inventario dei contratti del pacchetto **Xot**: un file per Action o superficie con `type: contract` e `action: "<FQCN>"`, più i contract di framework (`type: framework-contract`) per le classi base e il bootstrap. Il docblock di ogni Action contiene `@contract docs/contracts/<file>.md`; la prova minima di un'invariante è `vendor/bin/pest --group=<ID>` da `laravel/`.
 
-Verifica di un invariante: `rg -n "group\('<ID>'\)" laravel/Modules/Xot/tests`; esecuzione: `vendor/bin/pest --group=<ID>` da `laravel/`.
+Formati e regole: [README](README.md), [contract-authoring-standard](contract-authoring-standard.md), [regola Action Behavioral Contract](../rules/action-behavioral-contract.md), decisione [ADR 0012](../adr/0012-behavioral-contract-governance.md).
 
-## Contract
+## Contract delle Action
 
-| Contract | Owner / classe | Invarianti | Stato copertura |
-|---|---|---|---|
-| [bootstrap-provider-registry](bootstrap-provider-registry.md) | `bootstrap/providers.php` (registro provider Laravel) | `BOOTSTRAP-PROVIDERS-001`, `BOOTSTRAP-PROVIDERS-002`, `BOOTSTRAP-PROVIDERS-003` | non coperto (nessun `group('...')` con questi ID in `Modules/Xot/tests`) |
-| [xotbase-classes](xotbase-classes.md) | famiglia `XotBase*` (`XotBaseResource`, `XotBaseModel`, `XotBasePolicy`, `XotBaseServiceProvider`, `XotBaseMigration`, `XotBaseTestCase`) | nessun ID dichiarato nel file | non coperto: contratto narrativo senza invarianti con ID |
+- [_template](_template.md)
+- [AbstractAdapter — contratto](abstract-adapter.md)
+- [AddStrictTypesDeclarationAction — contratto](add-strict-types-declaration-action.md)
+- [ApertiumTranslateAction — contratto](apertium-translate-action.md)
+- [ApplyMetatagToPanelAction — contratto](apply-metatag-to-panel-action.md)
+- [ApplyTenancyToPanelAction — contratto](apply-tenancy-to-panel-action.md)
+- [ArrayAction — contratto](array-action.md)
+- [ArrayToRawJsAction — contratto](array-to-raw-js-action.md)
+- [AssetAction — contratto](asset-action.md)
+- [AssetPathAction — contratto](asset-path-action.md)
+- [AutoLabelAction — contratto](auto-label-action.md)
+- [BaseFormatAction — contratto](base-format-action.md)
+- [BaseTranslateAction — contratto](base-translate-action.md)
+- [BuildActionUrlAction — contratto](build-action-url-action.md)
+- [BuildLanguageUrlAction — contratto](build-language-url-action.md)
+- [BuildNestedRouteNameAction — contratto](build-nested-route-name-action.md)
+- [BuildTrendCollectionAction — contratto](build-trend-collection-action.md)
+- [ChatOllamaAction — contratto](chat-ollama-action.md)
+- [GetFilenameByClassnameAction — contratto](class-get-filename-by-classname-action.md)
+- [GetFilenameByClassnameAction — contratto](classes-get-filename-by-classname-action.md)
+- [ClearArtisanDebugbarFilesAction — contratto](clear-artisan-debugbar-files-action.md)
+- [ClearArtisanErrorLogAction — contratto](clear-artisan-error-log-action.md)
+- [ClearArtisanSessionFilesAction — contratto](clear-artisan-session-files-action.md)
+- [ConfigAction — contratto](config-action.md)
+- [ContentPdfAction — contratto](content-pdf-action.md)
+- [CopyAction — contratto](copy-action.md)
+- [CopyFromLastYearButton — contratto](copy-from-last-year-button.md)
+- [CountAction — contratto](count-action.md)
+- [CreateDirectoryForFilenameAction — contratto](create-directory-for-filename-action.md)
+- [CreateMorphToOneRelatedModelAction — contratto](create-morph-to-one-related-model-action.md)
+- [CreateRelativeSymlinkAction — contratto](create-relative-symlink-action.md)
+- [CreateTableIndexByModelClassColumnsAction — contratto](create-table-index-by-model-class-columns-action.md)
+- [CustomRelationAction — contratto](custom-relation-action.md)
+- [DeepLTranslateAction — contratto](deep-l-translate-action.md)
+- [DeleteTableIndexByModelClassIndexNameAction — contratto](delete-table-index-by-model-class-index-name-action.md)
+- [DestroyAction — contratto](destroy-action.md)
+- [DownloadPdfByViewAction — contratto](download-pdf-by-view-action.md)
+- [DownloadZipByPathsDiskAction — contratto](download-zip-by-paths-disk-action.md)
+- [EnsureGitignoreEntriesAction — contratto](ensure-gitignore-entries-action.md)
+- [EnsureKeysAction — contratto](ensure-keys-action.md)
+- [ExecuteArtisanCommandAction — contratto](execute-artisan-command-action.md)
+- [ExecuteComposerDumpAutoloadAction — contratto](execute-composer-dump-autoload-action.md)
+- [ExportButton — contratto](export-button.md)
+- [PdfByHtmlAction — contratto](export-pdf-by-html-action.md)
+- [ExportXlsByCollection — contratto](export-xls-by-collection.md)
+- [ExportXlsByLazyCollection — contratto](export-xls-by-lazy-collection.md)
+- [ExportXlsByQuery — contratto](export-xls-by-query.md)
+- [ExportXlsByView — contratto](export-xls-by-view.md)
+- [ExportXlsStreamByLazyCollection — contratto](export-xls-stream-by-lazy-collection.md)
+- [FakeSeederAction — contratto](fake-seeder-action.md)
+- [CopyFromLastYearAction — contratto](filament-actions-copy-from-last-year-action.md)
+- [ViewCopyAction — contratto](filament-actions-view-copy-action.md)
+- [GetViewNameSpacePathAction (File) — contratto](file-get-view-name-space-path-action.md)
+- [FilterRelationsAction — contratto](filter-relations-action.md)
+- [FixDoubleEncodedUtf8Action — contratto](fix-double-encoded-utf8-action.md)
+- [FixPathAction — contratto](fix-path-action.md)
+- [GenerateFormByFileAction — contratto](generate-form-by-file-action.md)
+- [GenerateModelByModelClass — contratto](generate-model-by-model-class.md)
+- [GenerateModelByTableAction — contratto](generate-model-by-table-action.md)
+- [GenerateOllamaAction — contratto](generate-ollama-action.md)
+- [GeneratePdfAction — contratto](generate-pdf-action.md)
+- [GenerateTableColumnsByFileAction — contratto](generate-table-columns-by-file-action.md)
+- [GetAllModelsAction — contratto](get-all-models-action.md)
+- [GetAllModelsByModuleNameAction — contratto](get-all-models-by-module-name-action.md)
+- [GetClassNameByPathAction — contratto](get-class-name-by-path-action.md)
+- [GetComponentsAction — contratto](get-components-action.md)
+- [GetCurrentRouteActionNameAction — contratto](get-current-route-action-name-action.md)
+- [GetCurrentRouteControllerNameAction — contratto](get-current-route-controller-name-action.md)
+- [GetCurrentRouteHandlerAction — contratto](get-current-route-handler-action.md)
+- [GetCurrentRouteModuleNameAction — contratto](get-current-route-module-name-action.md)
+- [GetCurrentRouteViewAction — contratto](get-current-route-view-action.md)
+- [GetDistanceExpressionAction — contratto](get-distance-expression-action.md)
+- [GetExportFileNameAction — contratto](get-export-file-name-action.md)
+- [GetFactoryAction — contratto](get-factory-action.md)
+- [GetFakerAction — contratto](get-faker-action.md)
+- [GetFieldnamesByTablenameAction — contratto](get-fieldnames-by-tablename-action.md)
+- [GetFirstModelClassByModelNameAction — contratto](get-first-model-class-by-model-name-action.md)
+- [GetMethodBodyAction — contratto](get-method-body-action.md)
+- [GetModelByModelTypeAction — contratto](get-model-by-model-type-action.md)
+- [GetModelClassByModelNameAction — contratto](get-model-class-by-model-name-action.md)
+- [GetModelClassByModelTypeAction — contratto](get-model-class-by-model-type-action.md)
+- [GetModelFieldsByModelAction — contratto](get-model-fields-by-model-action.md)
+- [GetModelTypeByModelAction — contratto](get-model-type-by-model-action.md)
+- [GetModuleConfigAction — contratto](get-module-config-action.md)
+- [GetModuleNameByClassAction — contratto](get-module-name-by-class-action.md)
+- [GetModuleNameByModelAction — contratto](get-module-name-by-model-action.md)
+- [GetModuleNameByModelClassAction — contratto](get-module-name-by-model-class-action.md)
+- [GetModulePathAction (File) — contratto](get-module-path-action.md)
+- [GetModulePathByGeneratorAction — contratto](get-module-path-by-generator-action.md)
+- [GetModulesNavigationItems — contratto](get-modules-navigation-items.md)
+- [GetNavigationItemByModulename — contratto](get-navigation-item-by-modulename.md)
+- [GetPaFilamentPaletteAction — contratto](get-pa-filament-palette-action.md)
+- [GetPanelsNavigationItems — contratto](get-panels-navigation-items.md)
+- [GetPdfContentByRecordAction — contratto](get-pdf-content-by-record-action.md)
+- [GetProductsArrayDummyAction — contratto](get-products-array-dummy-action.md)
+- [GetPronounceablePasswordAction — contratto](get-pronounceable-password-action.md)
+- [GetPropertiesFromMethodsByModelAction — contratto](get-properties-from-methods-by-model-action.md)
+- [GetRelatedResourceClassAction — contratto](get-related-resource-class-action.md)
+- [GetResourceClassNameByModelClassAction — contratto](get-resource-class-name-by-model-class-action.md)
+- [GetRouteMethodAction — contratto](get-route-method-action.md)
+- [GetRouteParametersAction — contratto](get-route-parameters-action.md)
+- [GetSchemaManagerByModelClassAction — contratto](get-schema-manager-by-model-class-action.md)
+- [GetSicureArrayByModelAction — contratto](get-sicure-array-by-model-action.md)
+- [GetSidebarStateScriptAction — contratto](get-sidebar-state-script-action.md)
+- [GetStrBetweenStartsWithAction — contratto](get-str-between-starts-with-action.md)
+- [GetTableIndexesByModelClassAction — contratto](get-table-indexes-by-model-class-action.md)
+- [GetTenantClassAction — contratto](get-tenant-class-action.md)
+- [GetTenantConfigArrayAction — contratto](get-tenant-config-array-action.md)
+- [GetTenantConfigPathAction — contratto](get-tenant-config-path-action.md)
+- [GetThemeAction — contratto](get-theme-action.md)
+- [GetThemeContextAction — contratto](get-theme-context-action.md)
+- [GetThemePathAction — contratto](get-theme-path-action.md)
+- [GetTransFilenameAction — contratto](get-trans-filename-action.md)
+- [Contratto — GetTransKeyAction](get-trans-key-action.md)
+- [GetTreeOptionsByModelClassAction — contratto](get-tree-options-by-model-class-action.md)
+- [GetViewAction — contratto](get-view-action.md)
+- [GetViewBlocksOptionsByTypeAction — contratto](get-view-blocks-options-by-type-action.md)
+- [GetViewByClassAction — contratto](get-view-by-class-action.md)
+- [GetViewByModelClassAction — contratto](get-view-by-model-class-action.md)
+- [GetViewDirAction — contratto](get-view-dir-action.md)
+- [GetViewPathAction — contratto](get-view-path-action.md)
+- [GetViewsSiblingsAndSelfAction — contratto](get-views-siblings-and-self-action.md)
+- [GetYearFilter — contratto](get-year-filter.md)
+- [GetYearOptionsAction — contratto](get-year-options-action.md)
+- [GoogleTranslateAction — contratto](google-translate-action.md)
+- [GuessMorphPivotAction — contratto](guess-morph-pivot-action.md)
+- [GuessPivotAction — contratto](guess-pivot-action.md)
+- [GuessPivotFullClassAction — contratto](guess-pivot-full-class-action.md)
+- [HandleArtisanActRequestAction — contratto](handle-artisan-act-request-action.md)
+- [HasColumnAction — contratto](has-column-action.md)
+- [HtmlAction — contratto](html-action.md)
+- [HtmlToPdfAction — contratto](html-to-pdf-action.md)
+- [ImportButton — contratto](import-button.md)
+- [ImportCsvAction — contratto](import-csv-action.md)
+- [IsAdminRouteAction — contratto](is-admin-route-action.md)
+- [IsThemeAction — contratto](is-theme-action.md)
+- [IsValidUrlAction — contratto](is-valid-url-action.md)
+- [ListMainModuleCandidatesAction — contratto](list-main-module-candidates-action.md)
+- [ListSupportedLocalesAction — contratto](list-supported-locales-action.md)
+- [MakePdfSpatieTestAction — contratto](make-pdf-spatie-test-action.md)
+- [MeasureAction — contratto](measure-action.md)
+- [CopyFromLastYearAction — contratto](model-class-copy-from-last-year-action.md)
+- [TableExistsByModelClassActions — contratto](model-class-table-exists-by-model-class-actions.md)
+- [GetTransKeyByModelClassAction — contratto](model-get-trans-key-by-model-class-action.md)
+- [ModelHasColumnAction — contratto](model-has-column-action.md)
+- [TableExistsByModelClassActions — contratto](model-table-exists-by-model-class-actions.md)
+- [ModuleAction — contratto](module-action.md)
+- [MyMemoryTranslateAction — contratto](my-memory-translate-action.md)
+- [MySqlAdapter — contratto](my-sql-adapter.md)
+- [MySqlFormatAction — contratto](my-sql-format-action.md)
+- [NormalizeDriverNameAction — contratto](normalize-driver-name-action.md)
+- [PaDesignColorsAction — contratto](pa-design-colors-action.md)
+- [PanelModuleAction — contratto](panel-module-action.md)
+- [ParsePrintPageStringAction — contratto](parse-print-page-string-action.md)
+- [PdfByHtmlAction_Portrait — contratto](pdf-by-html-action-portrait.md)
+- [PdfByModelAction — contratto](pdf-by-model-action.md)
+- [PdfByViewAction — contratto](pdf-by-view-action.md)
+- [PdfEngineEnum — contratto](pdf-engine-enum.md)
+- [PdfByHtmlAction — contratto](pdf-pdf-by-html-action.md)
+- [PgsqlAdapter — contratto](pgsql-adapter.md)
+- [PgsqlFormatAction — contratto](pgsql-format-action.md)
+- [PlainTextFromFilamentValueAction — contratto](plain-text-from-filament-value-action.md)
+- [RangeIntersectAction (Arr) — contratto](range-intersect-action.md)
+- [RegisterBladeComponentsAction — contratto](register-blade-components-action.md)
+- [RegisterDynamicRoutesAction — contratto](register-dynamic-routes-action.md)
+- [RegisterRuntimePsr4NamespacesAction — contratto](register-runtime-psr4-namespaces-action.md)
+- [RelationAction — contratto](relation-action.md)
+- [RenderContextNavigation — contratto](render-context-navigation.md)
+- [GetModuleConfigDataAction — contratto](resolve-module-config-data-action.md)
+- [GetSharedSqlitePathAction — contratto](resolve-shared-sqlite-path-action.md)
+- [RunArtisanCommandAction — contratto](run-artisan-command-action.md)
+- [SafeArrayByModelCastAction — contratto](safe-array-by-model-cast-action.md)
+- [SafeArrayCastAction — contratto](safe-array-cast-action.md)
+- [SafeAttributeCastAction — contratto](safe-attribute-cast-action.md)
+- [SafeBooleanCastAction — contratto](safe-boolean-cast-action.md)
+- [SafeEloquentCastAction — contratto](safe-eloquent-cast-action.md)
+- [SafeFloatCastAction — contratto](safe-float-cast-action.md)
+- [SafeIntCastAction — contratto](safe-int-cast-action.md)
+- [SafeNullableStringCastAction — contratto](safe-nullable-string-cast-action.md)
+- [SafeObjectCastAction — contratto](safe-object-cast-action.md)
+- [SafeStringCastAction — contratto](safe-string-cast-action.md)
+- [SanitizeAction — contratto](sanitize-action.md)
+- [SaveArrayAction — contratto](save-array-action.md)
+- [SaveJsonArrayAction — contratto](save-json-array-action.md)
+- [SavePhpArrayAction — contratto](save-php-array-action.md)
+- [SelectAction — contratto](select-action.md)
+- [SendMailByRecordAction — contratto](send-mail-by-record-action.md)
+- [SendMailByRecordsAction — contratto](send-mail-by-records-action.md)
+- [SetThemeAction — contratto](set-theme-action.md)
+- [ShowArtisanErrorLogAction — contratto](show-artisan-error-log-action.md)
+- [ShowArtisanRouteListAction — contratto](show-artisan-route-list-action.md)
+- [SpatiePdfByHtmlAction — contratto](spatie-pdf-by-html-action.md)
+- [SpipuPdfByHtmlAction — contratto](spipu-pdf-by-html-action.md)
+- [SqliteAdapter — contratto](sqlite-adapter.md)
+- [SqliteFormatAction — contratto](sqlite-format-action.md)
+- [StartQueryLogAction — contratto](start-query-log-action.md)
+- [StoreAction — contratto](store-action.md)
+- [BelongsToAction — contratto](store-belongs-to-action.md)
+- [BelongsToManyAction — contratto](store-belongs-to-many-action.md)
+- [HasManyAction — contratto](store-has-many-action.md)
+- [HasManyDeepAction — contratto](store-has-many-deep-action.md)
+- [HasManyThroughAction — contratto](store-has-many-through-action.md)
+- [HasOneAction — contratto](store-has-one-action.md)
+- [MorphManyAction — contratto](store-morph-many-action.md)
+- [MorphOneAction — contratto](store-morph-one-action.md)
+- [MorphToManyAction — contratto](store-morph-to-many-action.md)
+- [MorphToOneAction — contratto](store-morph-to-one-action.md)
+- [MorphedByManyAction — contratto](store-morphed-by-many-action.md)
+- [PivotAction — contratto](store-pivot-action.md)
+- [StreamDownloadPdfAction — contratto](stream-download-pdf-action.md)
+- [SvgExistsAction — contratto](svg-exists-action.md)
+- [SystranTranslateAction — contratto](systran-translate-action.md)
+- [ThemeAction — contratto](theme-action.md)
+- [TransCollectionAction — contratto](trans-collection-action.md)
+- [GetTransKeyByModelClassAction — contratto](trans-get-trans-key-by-model-class-action.md)
+- [UpdateAction — contratto](update-action.md)
+- [BelongsToAction — contratto](update-belongs-to-action.md)
+- [BelongsToManyAction — contratto](update-belongs-to-many-action.md)
+- [UpdateCountAction — contratto](update-count-action.md)
+- [HasManyAction — contratto](update-has-many-action.md)
+- [HasManyDeepAction — contratto](update-has-many-deep-action.md)
+- [HasManyThroughAction — contratto](update-has-many-through-action.md)
+- [HasOneAction — contratto](update-has-one-action.md)
+- [MorphManyAction — contratto](update-morph-many-action.md)
+- [MorphOneAction — contratto](update-morph-one-action.md)
+- [MorphToManyAction — contratto](update-morph-to-many-action.md)
+- [MorphToOneAction — contratto](update-morph-to-one-action.md)
+- [MorphedByManyAction — contratto](update-morphed-by-many-action.md)
+- [PivotAction — contratto](update-pivot-action.md)
+- [UrlAction — contratto](url-action.md)
+- [DiffAssocRecursiveAction — contratto](utilities-diff-assoc-recursive-action.md)
+- [RangeIntersectAction (Utilities) — contratto](utilities-range-intersect-action.md)
+- [ViewCopyAction — contratto](view-copy-action.md)
+- [GetViewNameSpacePathAction (View) — contratto](view-get-view-name-space-path-action.md)
+- [ViewPathAction (File) — contratto](view-path-action.md)
+- [XlsByModelClassAction — contratto](xls-by-model-class-action.md)
+- [XotAction — contratto](xot-action.md)
+
+## Contract di framework
+
+- [Contract — registro dei provider Laravel](bootstrap-provider-registry.md)
+- [Contract — classi base XotBase](xotbase-classes.md)
 
 ## Documenti di metodo (non sono contract)
 
-Non contengono invarianti propri e non vanno contati come contract.
-
-- [contract-authoring-standard](contract-authoring-standard.md) — standard di authoring (tipo `standard`).
+- [contract-authoring-standard](contract-authoring-standard.md) — standard di authoring.
 - [behavioral-contract-template](behavioral-contract-template.md), [0000-template](0000-template.md), [_template](_template.md) — modelli; gli ID `MODULE-INV-1` e `<SCOPE>-INV-1` sono segnaposto, **non coperto** e da non citare.
-- [README](README.md) — convenzioni storiche del pacchetto.
-- [Regola Action Behavioral Contract](../rules/action-behavioral-contract.md) — quando il contract è obbligatorio.
-
-## Stato di copertura
-
-| ID | Contract | Gruppo Pest | Stato |
-|---|---|---|---|
-| `BOOTSTRAP-PROVIDERS-001` | bootstrap-provider-registry | assente | non coperto |
-| `BOOTSTRAP-PROVIDERS-002` | bootstrap-provider-registry | assente | non coperto |
-| `BOOTSTRAP-PROVIDERS-003` | bootstrap-provider-registry | assente | non coperto |
-| `MODULE-INV-1` | modello (segnaposto) | assente | non coperto |
-
-Divergenza docs-codice rilevata il 2026-11-24: `BOOTSTRAP-PROVIDERS-001` (e [ADR 0009](../adr/0009-laravel-bootstrap-provider-registry.md)) dicono che `bootstrap/providers.php` contiene solo `AppServiceProvider`, ma il file in `laravel/bootstrap/providers.php` elenca anche `App\Providers\Filament\AdminPanelProvider`. Va deciso se correggere il contract o il file; in attesa il contract non è verificato. Il test `Modules/Xot/tests/Unit/Bootstrap/FolioProviderNotRegisteredTest.php` controlla solo l'assenza di `FolioServiceProvider` e non copre nessun ID.
-
-Divergenza di formato: il [README](README.md) prescrive ID `<OWNER>-<OPERAZIONE>-INV-<N>`, il template `<SCOPE>-INV-<N>`; gli ID del contract bootstrap (`BOOTSTRAP-PROVIDERS-00N`) seguono un terzo schema. Quando si scrive il primo test si allineano.
-
-## Backlog contract
-
-Nessun contract nuovo in questo giro. Xot ha **238 file** in `app/Actions`, nessun contract di Action e nessun marker `@contract` nei docblock (`rg -c "@contract" app/Actions` vuoto). Contract da scrivere per rischio decrescente, solo dove il codice lo dimostra:
-
-- Action che scrivono su filesystem o config: `SavePhpArrayAction` (`app/Actions/Arr`), azioni in `Actions/File`, `Actions/Config`, `Actions/Composer`, `Actions/Artisan`.
-- Action sul confine con i tenant: `GetTenantConfigArrayAction`.
-- Invarianti di `XotBaseMigration` (`tableCreate()` / `tableUpdate()`, forward-only) già descritte in [xotbase-classes](xotbase-classes.md): da estrarre con ID e gruppo Pest.
-- Le restanti Action di lettura/trasformazione non hanno effetti collaterali e restano fuori scopo ([ADR 0011](../adr/0011-contract-docblock-reference.md)).
+- [README](README.md) — convenzioni del pacchetto.
+- [index](index.md) — puntatore a questo indice.

@@ -16,7 +16,7 @@ it('rispetta la lunghezza richiesta e le categorie di caratteri', function (int 
     Assert::assertMatchesRegularExpression('/[0-9]/', $password);
     Assert::assertMatchesRegularExpression('/[!#*_=+:?\-]/', $password);
     Assert::assertMatchesRegularExpression('/\A[a-zA-Z0-9!#*_=+:?\-]+\z/', $password);
-})->with([-1, 0, 2, 4, 5, 6, 8, 12, 16, 64]);
+})->with([-1, 0, 2, 4, 5, 6, 8, 12, 16, 64])->group('PWD-PRON-INV-1', 'PWD-PRON-INV-2');
 
 it('genera dodici caratteri per impostazione predefinita', function (): void {
     Assert::assertSame(12, strlen((new GetPronounceablePasswordAction)->execute()));

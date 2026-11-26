@@ -3,7 +3,7 @@ title: "I dati sono sacri: mai migrate:fresh/reset/rollback/force, mai RefreshDa
 type: decision
 status: accepted
 created: 2026-11-23
-updated: 2026-11-23
+updated: 2026-11-26
 decision-makers: [team back office]
 issues: [250]
 qmd: "0013 dati sacri migrazioni test sono"
@@ -44,4 +44,5 @@ Scelta: **regola permanente**, perché i dati sono sacri e l'isolamento multi-te
 ## Conferma
 
 - In revisione: un comando `migrate:fresh|reset|rollback`, `--force` o `RefreshDatabase` in codice o script si respinge con un rimando a questo ADR.
-- `Modules/Xot/tests/Arch/` (ArchitectureTest) e le skill `git-forward-only`, `laravel-tdd`, `agents.md` (sezione testing) citano questo ADR come riferimento.
+- `Modules/Xot/tests/Unit/Harness/GuardTest.php` (righe 35-53) prova che il guard dell'harness (`.harness/bin/guard`) blocca `dropColumn` in una migrazione (regola `migration.destructive`) e `RefreshDatabase` in un test (regola `db.fresh`); il guard protegge gli agenti, non la CI né chi lancia i comandi a mano;
+- nessun test di architettura vieta `RefreshDatabase` o i comandi distruttivi di migrazione nel codice versionato: resta la revisione (proposta: regola Pest arch nel modulo Xot).

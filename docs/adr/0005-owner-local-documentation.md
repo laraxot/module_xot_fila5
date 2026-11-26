@@ -3,7 +3,7 @@ title: "Le decisioni vivono nella documentazione dell'owner"
 type: decision
 status: accepted
 created: 2026-11-23
-updated: 2026-11-23
+updated: 2026-11-26
 decision-makers: [team Laraxot]
 issues: []
 qmd: "0005 owner local decisioni vivono nella"
@@ -46,6 +46,6 @@ solo quando sono dimostrate dal codice e dai test.
 
 ## Conferma
 
-- il test documentale verifica cartelle e ADR sostanziali per ogni pacchetto;
+- `Modules/Xot/tests/Unit/Docs/PackagesHaveContractsAndAdrTest.php` verifica cartelle, README e ADR sostanziali per ogni modulo e tema;
 - i nuovi documenti usano nomi senza date o timestamp;
 - il lavoro BMAD resta nella story del modulo/tema owner.

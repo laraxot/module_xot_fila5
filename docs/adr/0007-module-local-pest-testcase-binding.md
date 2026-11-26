@@ -3,7 +3,7 @@ title: "Il TestCase Pest si lega nel file di test che lo usa"
 type: decision
 status: accepted
 created: 2026-11-23
-updated: 2026-11-23
+updated: 2026-11-26
 decision-makers: [team Laraxot]
 issues: []
 qmd: "0007 local pest testcase binding lega"
@@ -48,6 +48,6 @@ cartella.
 ## Conferma
 
 - [`0034-pest-testcase-binding-per-file.md`](0034-pest-testcase-binding-per-file.md) (superseded da questo ADR) conserva le misure del 2026-11-19 come evidenza storica;
-- `ModulePestBootstrapDoesNotBindTestCaseTest` impedisce il ritorno al binding
+- `Modules/Xot/tests/Unit/ModulePestBootstrapDoesNotBindTestCaseTest.php` (riga 22: «keeps the TestCase binding out of every module and theme Pest.php») impedisce il ritorno al binding
   globale;
 - un test applicativo senza `uses(...)` viene corretto prima del merge.

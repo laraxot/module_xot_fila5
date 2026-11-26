@@ -5,7 +5,7 @@ type: decision
 module: Xot
 tags: [adr, pest, test, testcase, phpstan]
 created: 2026-11-19
-updated: 2026-11-24
+updated: 2026-11-26
 status: superseded by 0007-module-local-pest-testcase-binding.md
 related:
   - ../../tests/Unit/ModulePestBootstrapDoesNotBindTestCaseTest.php
@@ -67,7 +67,7 @@ nulla. Tolto il binding dal `Pest.php` e aggiunto ai file, 110 test che non part
 
 ## Conferma
 
-`ModulePestBootstrapDoesNotBindTestCaseTest` controlla che i bootstrap dei
+`Modules/Xot/tests/Unit/ModulePestBootstrapDoesNotBindTestCaseTest.php` controlla che i bootstrap dei
 moduli non registrino un TestCase globale. I test applicativi modificati sono
 verificati con il runner Pest dal contesto `laravel/`.
 

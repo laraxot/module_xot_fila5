@@ -57,7 +57,7 @@ it('returns a marked anchor when the action route does not exist', function (): 
     $this->get('/xot-url-act/lonely')->assertOk();
 
     expect(app(BuildActionUrlAction::class)->execute(['act' => 'show']))->toBe('#xot_url_act.lonely.show');
-});
+})->group('ROUTE-ACTURL-INV-2');
 
 it('returns an anchor on the action when the current route has no name', function (): void {
     Route::get('/xot-url-act/anonymous', static fn (): string => 'ok');
@@ -65,7 +65,7 @@ it('returns an anchor on the action when the current route has no name', functio
     $this->get('/xot-url-act/anonymous')->assertOk();
 
     expect(app(BuildActionUrlAction::class)->execute(['act' => 'edit']))->toBe('#edit');
-});
+})->group('ROUTE-ACTURL-INV-1');
 
 it('passes the optional row as positional route parameter', function (): void {
     Route::get('/xot-url-act/rows', static fn (): string => 'ok')->name('xot_url_act.rows.index');

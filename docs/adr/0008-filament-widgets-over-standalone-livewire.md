@@ -3,7 +3,7 @@ title: "ADR 0008 — No standalone Livewire, usa Filament widget"
 type: decision
 status: accepted
 created: 2026-11-23
-updated: 2026-11-23
+updated: 2026-11-26
 qmd: "0008 filament widgets over standalone livewire"
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/ADR-0008"
@@ -89,10 +89,10 @@ class StatsWidget extends BaseWidget
 
 ## Cross-link
 
-- [Wiki: no-standalone-livewire-classes](../../../../docs/wiki/rules/no-standalone-livewire-classes.md)
+- Wiki: no-standalone-livewire-classes (riferimento non presente in questo checkout)
 - [Filament 5 Docs](https://filamentphp.com/docs/5.x)
 - [Laravel Livewire Docs](https://livewire.laravel.com/docs) (per riferimento)
 
 ## Conferma
 
-La scelta è confermata dai test architetturali del modulo Xot e dalle classi base Filament owner.
+Conferma parziale: `Modules/Xot/tests/Unit/NoLivewireDirectoriesInModulesTest.php` (da `laravel/`: `vendor/bin/pest Modules/Xot/tests/Unit/NoLivewireDirectoriesInModulesTest.php`) fallisce se ricompare una cartella `Modules/*/app/Http/Livewire`. Non prova che i widget siano Filament né che non esistano componenti Livewire altrove: per questo resta una voce di review (una classe `Livewire\Component` nuova in un modulo si respinge con un rimando a questo ADR). Il test c'è ma non è eseguito in questa passata.

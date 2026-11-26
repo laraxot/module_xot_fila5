@@ -21,7 +21,7 @@ PHPStan gira a `level: max` su `Modules/` (`laravel/phpstan.neon`), senza baseli
 
 Lo scopo del lavoro PHPStan non è far sparire il messaggio: è far tornare ogni pezzo di codice a fare ciò per cui esiste. Un `mixed` quasi sempre indica che manca la forma del dato (una shape, una classe Data, un'union).
 
-La regola esisteva già, ma in due righe sparse e senza il perché: [code-quality](../code-quality.md) («NEVER use `mixed` types unless absolutely necessary») e [phpstan-zero](../phpstan-zero.md) («`mixed` solo con motivazione esplicita»). Non diceva quando `mixed` è lecito e non aveva una verifica.
+La regola esisteva già, ma in due righe sparse e senza il perché: code-quality (riferimento non presente in questo checkout) («NEVER use `mixed` types unless absolutely necessary») e phpstan-zero (riferimento non presente in questo checkout) («`mixed` solo con motivazione esplicita»). Non diceva quando `mixed` è lecito e non aveva una verifica.
 
 Misura del 2026-11-24 su `Modules/*/app` (non è uno stato corrente: si rimisura con il comando in *Conferma*): circa 300 occorrenze di `mixed` nei tipi nativi (Xot 127, Geo 31, User 30, AI 24, UI 18, Cms 15, Lang 13, Notify 11) e 89 nei docblock. Quante siano confini legittimi e quante scorciatoie non è ancora classificato: è il debito da misurare.
 
@@ -92,6 +92,6 @@ Regole che valgono sempre:
 ## Riferimenti
 
 - [mixed-is-last-resort](0028-mixed-is-last-resort.md): la stessa decisione scritta in parallelo senza numero, ora *superseded* da questo ADR. Da quel testo si è recuperato che il `mixed` esistente va tolto quando la sorgente diventa conoscibile e che un payload dinamico confinato in un adapter non richiede una classe Data. Non si è recuperato il narrowing con `assert()` nativo, vietato dalle regole del progetto (ammesso solo `Webmozart\Assert\Assert`).
-- [code-quality](../code-quality.md) e [phpstan-zero](../phpstan-zero.md): le regole sintetiche che rimandano qui.
+- code-quality (riferimento non presente in questo checkout) e phpstan-zero (riferimento non presente in questo checkout): le regole sintetiche che rimandano qui.
 - [architecture-tests-pest-arch](0020-architecture-tests-pest-arch.md): come si verificano le regole di architettura, con ambito esplicito e debito dichiarato.
 - [0012-behavioral-contract-governance](0012-behavioral-contract-governance.md): i contratti comportamentali che fissano i tipi pubblici.

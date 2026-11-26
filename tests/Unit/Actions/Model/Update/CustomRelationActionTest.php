@@ -45,4 +45,4 @@ it('updates every row of the payload on the related model', function (): void {
 
     expect($updateSpy->rows)->toBe([['id' => 1, 'title' => 'a'], ['id' => 2, 'title' => 'b']])
         ->and($updateSpy->targets)->toBe([$related, $related]);
-});
+})->group('UPDATE-CUSTOM-INV-2');

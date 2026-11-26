@@ -16,4 +16,4 @@ it('executes the converted route use cases through the container', function (): 
         app(BuildNestedRouteNameAction::class)->execute(['in_admin' => true, 'n' => 1, 'act' => 'edit']),
     );
     Assert::assertSame('?', app(BuildLanguageUrlAction::class)->execute());
-});
+})->group('ROUTE-LANGURL-INV-1', 'ROUTE-NESTED-INV-2');

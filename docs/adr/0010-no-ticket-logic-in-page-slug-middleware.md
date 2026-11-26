@@ -3,7 +3,7 @@ title: "ADR 0010 — Ticket logic rimossa da PageSlugMiddleware"
 type: decision
 status: accepted
 created: 2026-11-23
-updated: 2026-11-24
+updated: 2026-11-26
 issues:
   - "https://github.com/laraxot/module_fixcity_fila5/issues/ADR-0010"
 qmd: "0010 no ticket logic page slug"
@@ -50,12 +50,19 @@ Il reindirizzamento `/ticket/{code}` → `/segnalazione/{code}` è gestito da `R
 - Cambiamenti al dominio Ticket non richiedono toccare Cms
 
 ### Negative
-- Bisogna ricordarsi di registrare `RedirectTicketTrackCodeMiddleware` nelle route web di Fixcity
+- Bisogna ricordarsi di aggiungere `RedirectTicketTrackCodeMiddleware` all'allowlist `cms.config.page_middleware_allowlist` (lo fa `FixcityServiceProvider`)
 - Due middleware per gestire un flusso simile (ma domini diversi)
 
 ## Conferma
 
-Deroga di verificabilità: i moduli Cms e Fixcity non sono presenti in questo checkout (`laravel/Modules/`), quindi la separazione va confermata nel repository del modulo owner con i test di routing e con il codice dei due middleware citati in Cross-link. Xot ospita il file solo perché nasce dalla documentazione condivisa.
+Nessun test dedicato prova l'assenza della logica ticket nel middleware; la conferma è un comando, eseguibile da `laravel/`, che deve restare senza output:
+
+```bash
+rg -n -i 'ticket|fixcity' Modules/Cms/app/Http/Middleware/PageSlugMiddleware.php
+rg -n 'Modules.Fixcity' Modules/Cms/app --glob '*.php'
+```
+
+Il 2026-11-26 entrambi i comandi non danno nessuna corrispondenza (codice di uscita 1): il middleware CMS non nomina né i ticket né Fixcity e nessun file di `Modules/Cms/app` usa il namespace `Modules\Fixcity`. Il reindirizzamento vive in `Modules/Fixcity/app/Http/Middleware/RedirectTicketTrackCodeMiddleware.php`, che `FixcityServiceProvider` aggiunge a `cms.config.page_middleware_allowlist` (righe 58-61 di `Modules/Fixcity/app/Providers/FixcityServiceProvider.php`). Proposta: trasformare i due comandi in un test di architettura nel modulo Cms.
 
 Il file `00010-no-ticket-logic-in-page-slug-middleware.md` è superseded da questo.
 
@@ -63,4 +70,4 @@ Il file `00010-no-ticket-logic-in-page-slug-middleware.md` è superseded da ques
 
 - `laravel/Modules/Cms/app/Http/Middleware/PageSlugMiddleware.php` — middleware pulito
 - `laravel/Modules/Fixcity/app/Http/Middleware/RedirectTicketTrackCodeMiddleware.php` — middleware dedicato ticket
-- [Wiki: folio-page-shell-no-props-extends](../../../../docs/wiki/rules/folio-page-shell-no-props-extends.md)
+- Wiki: folio-page-shell-no-props-extends (riferimento non presente in questo checkout)

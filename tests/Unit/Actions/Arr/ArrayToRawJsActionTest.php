@@ -31,4 +31,4 @@ it('converts mixed PHP arrays to RawJs correctly', function (): void {
     Assert::assertStringContainsString('number: 12.5', $js);
     Assert::assertStringContainsString('none: null', $js);
     Assert::assertStringContainsString('formatter: value => value * 2', $js);
-});
+})->group('ARR-RAWJS-INV-2', 'ARR-RAWJS-INV-4');

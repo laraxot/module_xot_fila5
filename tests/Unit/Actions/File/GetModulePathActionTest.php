@@ -20,7 +20,7 @@ it('gets module path from facade correctly', function (): void {
     $result = $action->execute('Xot');
 
     Assert::assertSame('/path/to/Xot/', $result);
-});
+})->group('FILE-MODPATH-INV-1');
 
 it('gets module path from fallback correctly', function (): void {
     // We assume Modules directory exists in base_path
@@ -52,4 +52,4 @@ it('gets module path from fallback correctly', function (): void {
     }
 
     Assert::assertSame($dummyModule, $result);
-});
+})->group('FILE-MODPATH-INV-3');

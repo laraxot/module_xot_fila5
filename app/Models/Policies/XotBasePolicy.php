@@ -38,7 +38,6 @@ abstract class XotBasePolicy
                 return true;
             }
 
-            return null;
         });
     }
 

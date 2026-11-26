@@ -1,13 +1,13 @@
 ---
-status: accepted
-date: 2026-11-25
-decision-makers:
-  - Xot
-title: "BMAD stories use MADR (same spirit as harness ADR template)"
+title: "Le story BMAD usano MADR (stesso spirito del template ADR dell'harness)"
 type: decision
+status: accepted
+created: 2026-11-25
+updated: 2026-11-26
 module: Xot
+decision-makers: [Xot]
 qmd: "ADR 0039 BMAD stories MADR template 0000-template.story migrate on touch"
-note: "Filename clause (kebab-only / no NNNN) superseded by 0040 — body MADR rules remain."
+note: "La clausola sul nome file (solo kebab, senza NNNN) è superata da 0040; le regole sul corpo MADR restano."
 superseded_by_filename: ./0040-bmad-stories-numbered-filenames.md
 related:
   - ../bmad/stories/0000-template.story.md
@@ -17,72 +17,50 @@ related:
   - ../../../../../bashscripts/ai/wiki/memories/bmad-stories-madr-format.md
 ---
 
-# BMAD stories use MADR (same spirit as harness ADR template)
+# Le story BMAD usano MADR (stesso spirito del template ADR dell'harness)
 
-## Context and Problem Statement
+> Regola valida per tutti i tenant che usano Xot: vale per le story di ogni modulo e tema.
 
-BMAD stories across modules used ad-hoc shapes (Fact-gate / Fix / Verifica, free
-Italian prose, numbered epic prefixes). Agents and humans could not skim a
-story the same way they skim an ADR. How do we make every new or edited BMAD
-story share one scannable decision format without inventing a second docs tree?
+## Contesto
 
-## Decision Drivers
+Le story BMAD dei vari moduli usavano forme ad hoc (Fact-gate / Fix / Verifica, prosa libera in italiano, prefissi numerici di epic). Agenti e persone non potevano scorrere una story come scorrono un ADR. Come rendiamo ogni story nuova o modificata leggibile nello stesso formato di decisione, senza inventare un secondo albero di documenti?
 
-- Same MADR spirit as the harness ADR template (Context → Drivers → Options →
-  Outcome → Consequences → Confirmation)
-- Stories stay under existing `docs/bmad/stories/` (or `docs/stories/`) — no new
-  folders
-- Body shape must match harness MADR (filename policy later split to 0040)
-- Legacy debt migrates on touch (boy-scout), not a big-bang rewrite
-- Fact-gate / Fix / Pest map cleanly into MADR + BMAD extensions
+## Driver della decisione
 
-## Considered Options
+- Stesso spirito del template ADR dell'harness (Contesto → Driver → Opzioni → Esito → Conseguenze → Conferma).
+- Le story restano nelle cartelle esistenti `docs/bmad/stories/` (o `docs/stories/`): nessuna cartella nuova.
+- Il corpo deve coincidere con il MADR dell'harness (la politica sul nome file è stata separata in 0040).
+- Il debito legacy si migra quando si tocca il file (boy-scout), non con una riscrittura di massa.
+- Fact-gate / Fix / Pest si mappano senza perdita su MADR più estensioni BMAD.
 
-- Keep free-form story markdown per author
-- Invent a BMAD-only schema unrelated to MADR
-- Require `NNNN-` prefixes on every story (like ADR) — **body decision deferred;
-  filename decided in [0040](0040-bmad-stories-numbered-filenames.md)**
-- **Adopt MADR English section order for stories, with BMAD extensions after
-  Confirmation, SSoT in Xot `0000-template.story.md`**
+## Alternative considerate
 
-## Decision Outcome
+- Lasciare a ogni autore la propria forma libera.
+- Inventare uno schema solo-BMAD scollegato da MADR.
+- Imporre il prefisso `NNNN-` su ogni story come per gli ADR — **decisione sul corpo rinviata; il nome file è deciso in [0040](0040-bmad-stories-numbered-filenames.md)**.
+- **Adottare l'ordine di sezioni MADR inglese per le story, con le estensioni BMAD dopo Confirmation, e come fonte unica il template Xot `0000-template.story.md`** (scelta).
 
-Chosen: **Adopt MADR English section order for all new/edited BMAD stories**,
-because it reuses the harness mental model agents already know for ADR and lives
-in the existing Xot `docs/bmad/` tree.
+## Decisione
 
-Rules:
+Scelta: **adottare l'ordine di sezioni MADR inglese per tutte le story BMAD nuove o modificate**, perché riusa il modello mentale dell'harness che gli agenti già conoscono per gli ADR e vive nell'albero `docs/bmad/` di Xot.
 
-1. Every **new** or **edited** story under `Modules/*/docs/bmad/stories/` or
-   `Modules/*/docs/stories/` (and theme equivalents) must follow
-   [0000-template.story.md](../bmad/stories/0000-template.story.md).
-2. Required body sections (English headings): Context and Problem Statement,
-   Decision Drivers, Considered Options, Decision Outcome, Consequences,
-   Confirmation; then BMAD extensions Acceptance Criteria and Esito.
-3. **Legacy:** migrate to this template when the file is touched; no mandatory
-   fleet rewrite.
-4. **Filename (superseded):** the kebab-only / no-`NNNN` rule that lived here is
-   **superseded by [0040](0040-bmad-stories-numbered-filenames.md)** —
-   basenames must be `NNNN-slug.story.md` (exception `0000-template.story.md`).
-5. ADR basename rules (`NNNN-slug.md`) are unchanged — see
-   [0000-template.md](./0000-template.md) and memory
-   `adr-numbered-madr-template`.
+Regole:
 
-### Consequences
+1. Ogni story **nuova** o **modificata** sotto `Modules/*/docs/bmad/stories/` o `Modules/*/docs/stories/` (e gli equivalenti dei temi) segue [0000-template.story.md](../bmad/stories/0000-template.story.md).
+2. Sezioni obbligatorie del corpo (intestazioni inglesi, per stabilità del grep): Context and Problem Statement, Decision Drivers, Considered Options, Decision Outcome, Consequences, Confirmation; poi le estensioni BMAD Acceptance Criteria ed Esito. Le intestazioni inglesi valgono per le **story**; gli **ADR** usano le intestazioni italiane (Contesto, Driver della decisione, Alternative scartate, Decisione, Conseguenze, Conferma).
+3. **Legacy:** si migra al template quando il file viene toccato; nessuna riscrittura obbligatoria della flotta.
+4. **Nome file (superata):** la regola kebab-only / senza `NNNN` che stava qui è **superata da [0040](0040-bmad-stories-numbered-filenames.md)** — il basename è `NNNN-slug.story.md` (eccezione `0000-template.story.md`).
+5. Le regole sul nome degli ADR (`NNNN-slug.md`) non cambiano: vedi [0000-template.md](./0000-template.md) e la memoria `adr-numbered-madr-template`.
 
-- Good, because stories and ADR share one decision-reading grammar; Fact-gate
-  maps to Context+Drivers, Fix to Decision Outcome, Pest to Confirmation/Esito.
-- Good, because SSoT is a single template under Xot BMAD — modules link, do not
-  fork.
-- Bad, because editing a legacy story costs a format pass before the functional
-  change.
-- Bad, because English headings may feel heavy next to Italian prose elsewhere;
-  keep UI/lang Italian, keep MADR headings English for grep stability.
+## Conseguenze
 
-### Confirmation
+- Buono: story e ADR condividono una grammatica di lettura; Fact-gate corrisponde a Contesto + Driver, Fix a Esito della decisione, Pest a Conferma/Esito.
+- Buono: la fonte unica è un solo template sotto Xot BMAD; i moduli lo linkano, non lo copiano.
+- Cattivo: modificare una story legacy costa prima un passaggio di formato.
+- Cattivo: le intestazioni inglesi stonano accanto alla prosa italiana; si mantiene italiano per UI e lang, inglese per le intestazioni MADR delle story.
 
-- New/edited stories contain the six MADR headings plus Acceptance Criteria and
-  Esito.
-- `docs/sprint-status.yaml` key for the work points at a MADR-shaped story.
-- Review: reject story-only work that invents a parallel template outside
-  `0000-template.story.md`.
+## Conferma
+
+- `cd laravel && vendor/bin/pest Modules/Xot/tests/Unit/Docs/BmadStoriesAreMadrFormatTest.php`: il test «ogni BMAD story ha le sezioni MADR obbligatorie» (riga 110) controlla le sei intestazioni inglesi in ogni `*.story.md` di `Modules/*/docs/bmad/stories`, `Modules/*/docs/stories` e degli stessi percorsi nei temi (esclusi `0000-template.story.md`, `README.md`, `INDEX.md`, `index.md`).
+- Non controllati dal test: Acceptance Criteria ed Esito, e il legame fra la chiave di `docs/sprint-status.yaml` e una story in formato MADR. Sono regole di review.
+- In review: respingere una story che inventa un template parallelo fuori da `0000-template.story.md`.

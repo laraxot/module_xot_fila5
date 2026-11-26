@@ -118,7 +118,7 @@ class MetatagData extends Data implements Wireable
      * Altri profili ufficiali del sito (LinkedIn, GitHub, Wikidata…): URL assoluti in https. Con i link social sopra
      * diventano lo `sameAs` dell'Organization nel JSON-LD della home; un valore che non e' un URL https si scarta.
      *
-     * @see Modules/Seo/docs/adr/search-engine-presence.md
+     * @see Modules/Seo/docs/adr/0002-search-engine-presence.md
      *
      * @var list<string>
      */
@@ -392,7 +392,7 @@ class MetatagData extends Data implements Wireable
      * Profili ufficiali per lo `sameAs` di schema.org: link social e `same_as`, solo URL https validi, senza doppioni.
      * Un valore segnaposto (es. `aa`) non diventa un'identita' dichiarata.
      *
-     * @see Modules/Seo/docs/adr/search-engine-presence.md
+     * @see Modules/Seo/docs/adr/0002-search-engine-presence.md
      *
      * @return list<string>
      */
@@ -413,7 +413,7 @@ class MetatagData extends Data implements Wireable
     /**
      * Meta di verifica dei motori di ricerca da stampare in home: nome del meta => token, solo quelli valorizzati.
      *
-     * @see Modules/Seo/docs/adr/search-engine-presence.md
+     * @see Modules/Seo/docs/adr/0002-search-engine-presence.md
      *
      * @return array<string, string>
      */

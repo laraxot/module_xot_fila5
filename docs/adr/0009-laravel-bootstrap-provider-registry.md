@@ -3,7 +3,7 @@ title: "ADR 0009 — Bootstrap Laravel 13 minimale e discovery dei moduli"
 type: decision
 status: accepted
 created: 2026-11-23
-updated: 2026-11-23
+updated: 2026-11-26
 qmd: "0009 laravel bootstrap provider registry minimale"
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/ADR-0009"
@@ -48,6 +48,14 @@ I provider dei moduli sono registrati nei rispettivi `composer.json` tramite la 
 - I provider dei moduli devono essere correttamente registrati nel composer.json
 - Il deploy deve eseguire `composer install` (o `composer dump-autoload`) per far funzionare la discovery
 - Il provider Filament applicativo deve restare registrato da `AppServiceProvider::register()`.
+
+## Stato attuale
+
+Misurato il 2026-11-26 leggendo i file (Pest e Artisan non eseguiti). Vale per il checkout FixCity; Xot è condiviso con altri progetti ospiti, dove `bootstrap/providers.php` e `app/Providers` possono essere diversi.
+
+- Vero: `laravel/bootstrap/providers.php` contiene solo `AppServiceProvider::class` (righe 5-7); `Modules/Xot/tests/Unit/Bootstrap/FolioProviderNotRegisteredTest.php` impone che non contenga `FolioServiceProvider`.
+- Non vero: `App\Providers\AppServiceProvider::register()` non registra `App\Providers\Filament\AdminPanelProvider`; registra solo `CacheServiceProvider` (riga 44) e `LaravelModulesServiceProvider` (riga 48), dopo `registerRuntimeNamespaces()` (riga 38). Un `rg` su `app/`, `bootstrap/`, `config/`, `routes/` e `composer.json` non trova nessun riferimento a `App\Providers\Filament\AdminPanelProvider` (la classe esiste, `app/Providers/Filament/AdminPanelProvider.php`, e estende `XotBaseMainPanelProvider`); il pannello arriva da `Modules\Xot\Providers\Filament\AdminPanelProvider`, dichiarato in `Modules/Xot/composer.json` (righe 146-147, `extra.laravel.providers`). Come l'`AdminPanelProvider` dell'app venga caricato, se lo è, non è stato accertato.
+- Da sapere: `laravel/config/app.php` elenca `VoltServiceProvider` e `FolioServiceProvider` del vendor (righe 216-217) nell'array `providers`: il registro bootstrap non è l'unico posto in cui si registrano provider.
 
 ## Verifica
 

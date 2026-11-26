@@ -3,7 +3,7 @@ title: "I moduli estendono i punti base Xot del framework"
 type: decision
 status: accepted
 created: 2026-11-23
-updated: 2026-11-23
+updated: 2026-11-26
 decision-makers: [team Laraxot]
 issues: []
 qmd: "0006 xot base extension points moduli"
@@ -49,6 +49,6 @@ motivata nel documento dell'owner.
 
 ## Conferma
 
-- i test architetturali del modulo verificano le basi ammesse;
+- `Modules/Xot/tests/Arch/ArchitectureTest.php` (da `laravel/`: `vendor/bin/pest --testsuite=Arch`) impone, per le otto famiglie Filament elencate in `XOTBASE_FAMILIES` (righe 29-38: Resource, tre Pages, RelationManager, tre Widget), l'estensione tramite la base `XotBase*`; il debito dichiarato sta in `Modules/*/tests/Arch/debt.php`; le altre famiglie (per esempio `Page`, `Action`, migrazioni) non hanno una regola;
 - la code review controlla la classe base prima del comportamento della classe;
-- [Xot architecture](../bmad/architecture.md) documenta la gerarchia verificata.
+- Xot architecture (riferimento non presente in questo checkout) documenta la gerarchia verificata.

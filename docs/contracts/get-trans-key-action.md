@@ -5,8 +5,9 @@ action: "Modules\\Xot\\Actions\\GetTransKeyAction"
 status: active
 tags: [contract, action, translations, lang]
 created: 2026-11-25
-updated: 2026-11-25
+updated: 2026-11-26
 qmd: "gettranskeyaction chiave traduzione dashboard snake vuota lang it php navigation group backtrace menu utente"
+module: Xot
 ---
 
 # GetTransKeyAction
@@ -29,10 +30,11 @@ senza il suffisso del tipo (`...Resource`, `...Action`, `...FormSchema`) e senza
 
 ## Invarianti
 
-- `XOT-TRANSKEY-INV-1`: il prefisso `list|get|manage|edit|view|create|dashboard` si toglie solo se resta un resto
-  (`ListRatings` → `ratings`). Se la classe è proprio `Dashboard`, la chiave resta `modulo::dashboard`.
-- La chiave non finisce mai con `::` e non ha mai la parte dopo `::` vuota: nessuna classe Filament dei moduli (448 verificate)
-  produce `modulo::`. Una chiave così farebbe scrivere a `SaveTransAction` un file di lingua chiamato `lang/it/.php`.
+| ID | Regola | Group Pest |
+|---|---|---|
+| `XOT-TRANSKEY-INV-1` | Il primo segmento del nome classe in snake_case, se è uno fra `dashboard`, `list`, `get`, `manage`, `edit`, `view`, `create`, si toglie solo se resta un resto (righe 83-88): `Modules\AI\Filament\Pages\Dashboard` resta `ai::dashboard`; `Modules\Rating\Filament\Resources\RatingResource\Pages\ListRatings` diventa `rating::rating` (tolto `list_`, il resto è singolarizzato, righe 98-103). | `XOT-TRANSKEY-INV-1` |
+| `XOT-TRANSKEY-INV-2` | La parte dopo `::` non è mai vuota: una chiave `modulo::` farebbe scrivere a `SaveTransAction` un file di lingua `lang/it/.php`. Verificata una tantum su 448 classi Filament dei moduli (misura di chi ha scritto il contratto, non ripetibile con un comando). Il codice non la garantisce: se il nome della classe coincide con il suo tipo (per esempio `Modules\M\Actions\Action`), `Str::beforeLast` restituisce una stringa vuota (righe 70-71) e la chiave diventa `m::` (ragionamento sul codice, non riprodotto). | — (non dimostrato) |
+| `XOT-TRANSKEY-INV-3` | Il suffisso del tipo (singolare della cartella del namespace: `Action`, `Resource`, `RelationManager`…) è tolto dal nome classe, come i suffissi `_action` e `_form_schema`; per i `RelationManager` il resto è singolarizzato (righe 66-75, 89-95): `LogActivityAction` → `activity::log_activity`, `ProfilesRelationManager` → `user::profile`. Test esistente senza group, da annotare: `tests/Unit/Actions/GetTransKeyActionTest.php:10-19`. | — (non dimostrato) |
 
 ## Effetti collaterali
 
@@ -49,6 +51,6 @@ Nessuno sui dati: legge solo il nome della classe e il backtrace. Chi usa la chi
 - Non legge né scrive file di lingua e non traduce niente: restituisce solo la chiave.
 - Non verifica che il file di lingua esista.
 - Non decide il percorso del file: lo fa `GetTransPathAction` (modulo Lang), che a sua volta rifiuta una chiave senza nome file
-  (`LANG-SAVETRANS-INV-6`).
+  (invariante 6 di `Modules/Lang/docs/contracts/save-trans-action.md`).
 
 Test: `Modules/Xot/tests/Unit/Actions/GetTransKeyActionTest.php`.

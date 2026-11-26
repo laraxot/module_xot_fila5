@@ -2,15 +2,17 @@
 title: "Behavioral and surface contracts — Xot"
 type: index
 unit: Xot
-status: active
+status: superseded
+superseded_by: INDEX.md
 created: 2026-11-26
 updated: 2026-11-26
 ---
 
 # Behavioral and surface contracts — Xot
 
-Indice operativo della cartella owner-local. Il formato e la governance condivisi sono in [Xot](../../../Xot/docs/contracts/README.md).
+> **Superseded** da [INDEX.md](INDEX.md): l'inventario completo dei contratti
+> (una voce per file) vive lì. Questo file resta come puntatore per i link
+> storici al nome minuscolo.
 
-- [behavioral-contract-template.md](behavioral-contract-template.md)
-- [contract-authoring-standard.md](contract-authoring-standard.md)
-- [get-trans-key-action.md](get-trans-key-action.md)
+Documenti di metodo: [behavioral-contract-template.md](behavioral-contract-template.md),
+[contract-authoring-standard.md](contract-authoring-standard.md).

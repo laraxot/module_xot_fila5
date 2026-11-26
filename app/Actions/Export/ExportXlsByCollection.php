@@ -16,6 +16,10 @@ use Symfony\Component\HttpFoundation\BinaryFileResponse;
 
 /**
  * Classe per l'esportazione di collezioni in formato Excel.
+ *
+ * @see docs/contracts/export-xls-by-collection.md
+ *
+ * @contract docs/contracts/export-xls-by-collection.md
  */
 class ExportXlsByCollection
 {

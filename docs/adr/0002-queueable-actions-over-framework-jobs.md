@@ -3,7 +3,7 @@ title: "Le operazioni applicative usano Queueable Actions, non Job duplicati"
 type: decision
 status: accepted
 created: 2026-11-23
-updated: 2026-11-23
+updated: 2026-11-26
 decision-makers: [team Laraxot]
 issues: []
 qmd: "0002 queueable actions over framework jobs"
@@ -48,6 +48,7 @@ contenitore della stessa logica di dominio.
 
 ## Conferma
 
-- nuova logica in `app/Services` o un nuovo Job che duplica un'Action viene respinta in review;
-- il test architetturale e PHPStan verificano il pattern QueueableAction dove richiesto;
+- `Modules/Xot/tests/Unit/Architecture/NoJobsTest.php` fallisce se compare una cartella `Jobs` o un namespace `Jobs` nel codice di produzione di `Modules/*/app`, `Themes/*/app`, `Themes/*/src` e `app`; `Modules/Xot/tests/Unit/Architecture/NoServicesTest.php` fa lo stesso per `Services` (vedi [0001](0001-actions-over-services.md));
+- nessun test verifica che una Action usi davvero `QueueableAction`: resta una voce di review (proposta: regola Pest arch nel modulo Xot);
+- una nuova logica in `app/Services` o un Job che duplica un'Action si respinge in review;
 - riferimento operativo: [0001 Actions over Services](0001-actions-over-services.md).
