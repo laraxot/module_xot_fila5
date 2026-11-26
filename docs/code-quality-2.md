@@ -52,5 +52,5 @@ chi corregge una classe la toglie dalla lista, chi aggiunge una voce la motiva (
 ## Decisioni e story collegate
 
 - [adr/0015-mixed-solo-come-ultima-spiaggia.md](adr/0015-mixed-solo-come-ultima-spiaggia.md), [adr/0014-mixed-last-resort.md](adr/0014-mixed-last-resort.md)
-- [bmad/stories/0148-phpstan-modules-zero-swarm-standing.story.md](bmad/stories/0148-phpstan-modules-zero-swarm-standing.story.md) (ordine permanente "PHPStan zero")
-- [bmad/stories/0160-project-quality-audit.story.md](bmad/stories/0160-project-quality-audit.story.md)
+- [bmad/stories/0148-phpstan-modules-zero-swarm-standing.story.md](../archive/docs-legacy/bmad-stories/0148-phpstan-modules-zero-swarm-standing.story.md) (ordine permanente "PHPStan zero")
+- [bmad/stories/0160-project-quality-audit.story.md](../archive/docs-legacy/bmad-stories/0160-project-quality-audit.story.md)

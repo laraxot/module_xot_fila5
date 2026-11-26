@@ -13,7 +13,7 @@ qmd: "xot contratti indice behavioral contract action invarianti group pest cope
 
 Un contratto descrive cosa **promette** un'Action di Xot (input, output, invarianti con ID stabile, effetti collaterali, errori, cosa non fa) e distingue il **promesso** dal **dimostrato**: la colonna `Group Pest` contiene l'ID quando esiste un test con `->group('<ID>')`, altrimenti `— (non dimostrato)`. Xot è condiviso con altri progetti: i contratti descrivono comportamenti validi per ogni tenant che lo usa, salvo dove il testo dice il contrario.
 
-Regole e riferimenti: [standard di authoring](contract-authoring-standard.md), [regola Action Behavioral Contract](../rules/action-behavioral-contract.md), [ADR 0012 — governance dei contratti](../adr/0012-behavioral-contract-governance.md), [ADR 0011 — riferimento `@contract` nel docblock](../adr/0011-contract-docblock-reference.md), [template](behavioral-contract-template.md). [INDEX.md](INDEX.md) è l'elenco alfabetico per titolo (solo collegamenti); `index.md` rimanda a `INDEX.md`. Questo README aggiunge scopo, copertura e backlog; le due liste devono citare gli stessi file.
+Regole e riferimenti: [standard di authoring](contract-authoring-standard.md), [regola Action Behavioral Contract](../rules/action-behavioral-contract.md), [ADR 0012 — governance dei contratti](../adr/0012-behavioral-contract-governance.md), [ADR 0011 — riferimento `@contract` nel docblock](../adr/0011-contract-docblock-reference.md), [template](behavioral-contract-template.md). [INDEX.md](INDEX.md) è l'elenco alfabetico per titolo (solo collegamenti). **Stato (2026-12, issue #151):** gli stub per-Action sono archiviati in [`archive/docs-legacy/contracts/`](../../archive/docs-legacy/contracts/) per il tetto di 100 file `.md` in `docs/`; i collegamenti di questo README e dell'INDEX puntano lì. Restano qui formato, template e standard.
 
 Ogni file ha frontmatter `type: contract` e `action: "<FQCN>"`, le sei sezioni `Input`, `Output`, `Invarianti`, `Effetti collaterali`, `Errori`, `Non fa`, e il docblock dell'Action contiene `@see` e `@contract docs/contracts/<file>.md`.
 
@@ -52,495 +52,495 @@ Un file per Action, raggruppati per area del namespace `Modules\Xot\…`. Colonn
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [array-action.md](array-action.md) | 3 / 0 | Contenitore di due helper statici su array e intervalli, più un `execute()` vuoto. |
-| [config-action.md](config-action.md) | 1 / 0 | Singleton senza comportamento. |
-| [execute-artisan-command-action.md](execute-artisan-command-action.md) | 3 / 2 | Esegue un comando Artisan da una lista chiusa di comandi consentiti. |
-| [execute-composer-dump-autoload-action.md](execute-composer-dump-autoload-action.md) | 3 / 0 | Esegue `composer dump-autoload` e nient'altro, per rigenerare l'autoloader senza accesso SSH. |
-| [generate-pdf-action.md](generate-pdf-action.md) | 4 / 0 | Genera un PDF da HTML con Html2Pdf, in una delle tre modalità di uscita. |
-| [get-model-by-model-type-action.md](get-model-by-model-type-action.md) | 3 / 1 | Restituisce un modello dal suo tipo morph e, se dato, dal suo id. |
-| [get-model-class-by-model-type-action.md](get-model-class-by-model-type-action.md) | 2 / 0 | Risolve il FQCN da un tipo morph leggendo `config('morph_map')`. |
-| [get-model-type-by-model-action.md](get-model-type-by-model-action.md) | 1 / 0 | Restituisce il tipo di un modello come nome snake del basename della classe. |
-| [get-trans-key-action.md](get-trans-key-action.md) | 3 / 1 | Deriva la chiave di traduzione `modulo::file` dal FQCN di una classe Filament (`Modules\AI\Filament\Pages\Dashboard` → `ai::dashboard`). La usano `TransFuncTrait`,… |
-| [get-view-action.md](get-view-action.md) | 4 / 0 | Risolve il nome della vista Blade da un file o dal chiamante, con priorità al tema pubblico. |
-| [get-view-by-class-action.md](get-view-by-class-action.md) | 2 / 0 | Crea una vista Blade il cui nome deriva dal basename della classe. |
-| [html-action.md](html-action.md) | 3 / 0 | Converte HTML in PDF con Html2Pdf, o restituisce l'HTML in modalità debug. |
-| [list-main-module-candidates-action.md](list-main-module-candidates-action.md) | 3 / 1 | Elenca i moduli abilitati che possono essere il modulo principale, cioè quelli con un pannello Filament. |
-| [list-supported-locales-action.md](list-supported-locales-action.md) | 2 / 0 | Elenca le lingue supportate con il nome nativo. |
-| [module-action.md](module-action.md) | 3 / 0 | Oggetto con nome di modulo mutabile, singleton, che elenca i modelli di un modulo. |
-| [pa-design-colors-action.md](pa-design-colors-action.md) | 2 / 0 | Espone i colori del design system PA e la palette Filament corrispondente. |
-| [parse-print-page-string-action.md](parse-print-page-string-action.md) | 3 / 1 | Converte una stringa di pagine come `1-4,6,7` in un elenco di numeri. |
-| [theme-action.md](theme-action.md) | 2 / 0 | Gestisce il nome del tema attivo con stato statico del processo. |
-| [url-action.md](url-action.md) | 1 / 0 | Verifica se una stringa è un URL sintatticamente valido. |
-| [xot-action.md](xot-action.md) | 1 / 0 | Contenitore con `getTenantClass()`. |
+| [array-action.md](../../archive/docs-legacy/contracts/array-action.md) | 3 / 0 | Contenitore di due helper statici su array e intervalli, più un `execute()` vuoto. |
+| [config-action.md](../../archive/docs-legacy/contracts/config-action.md) | 1 / 0 | Singleton senza comportamento. |
+| [execute-artisan-command-action.md](../../archive/docs-legacy/contracts/execute-artisan-command-action.md) | 3 / 2 | Esegue un comando Artisan da una lista chiusa di comandi consentiti. |
+| [execute-composer-dump-autoload-action.md](../../archive/docs-legacy/contracts/execute-composer-dump-autoload-action.md) | 3 / 0 | Esegue `composer dump-autoload` e nient'altro, per rigenerare l'autoloader senza accesso SSH. |
+| [generate-pdf-action.md](../../archive/docs-legacy/contracts/generate-pdf-action.md) | 4 / 0 | Genera un PDF da HTML con Html2Pdf, in una delle tre modalità di uscita. |
+| [get-model-by-model-type-action.md](../../archive/docs-legacy/contracts/get-model-by-model-type-action.md) | 3 / 1 | Restituisce un modello dal suo tipo morph e, se dato, dal suo id. |
+| [get-model-class-by-model-type-action.md](../../archive/docs-legacy/contracts/get-model-class-by-model-type-action.md) | 2 / 0 | Risolve il FQCN da un tipo morph leggendo `config('morph_map')`. |
+| [get-model-type-by-model-action.md](../../archive/docs-legacy/contracts/get-model-type-by-model-action.md) | 1 / 0 | Restituisce il tipo di un modello come nome snake del basename della classe. |
+| [get-trans-key-action.md](../../archive/docs-legacy/contracts/get-trans-key-action.md) | 3 / 1 | Deriva la chiave di traduzione `modulo::file` dal FQCN di una classe Filament (`Modules\AI\Filament\Pages\Dashboard` → `ai::dashboard`). La usano `TransFuncTrait`,… |
+| [get-view-action.md](../../archive/docs-legacy/contracts/get-view-action.md) | 4 / 0 | Risolve il nome della vista Blade da un file o dal chiamante, con priorità al tema pubblico. |
+| [get-view-by-class-action.md](../../archive/docs-legacy/contracts/get-view-by-class-action.md) | 2 / 0 | Crea una vista Blade il cui nome deriva dal basename della classe. |
+| [html-action.md](../../archive/docs-legacy/contracts/html-action.md) | 3 / 0 | Converte HTML in PDF con Html2Pdf, o restituisce l'HTML in modalità debug. |
+| [list-main-module-candidates-action.md](../../archive/docs-legacy/contracts/list-main-module-candidates-action.md) | 3 / 1 | Elenca i moduli abilitati che possono essere il modulo principale, cioè quelli con un pannello Filament. |
+| [list-supported-locales-action.md](../../archive/docs-legacy/contracts/list-supported-locales-action.md) | 2 / 0 | Elenca le lingue supportate con il nome nativo. |
+| [module-action.md](../../archive/docs-legacy/contracts/module-action.md) | 3 / 0 | Oggetto con nome di modulo mutabile, singleton, che elenca i modelli di un modulo. |
+| [pa-design-colors-action.md](../../archive/docs-legacy/contracts/pa-design-colors-action.md) | 2 / 0 | Espone i colori del design system PA e la palette Filament corrispondente. |
+| [parse-print-page-string-action.md](../../archive/docs-legacy/contracts/parse-print-page-string-action.md) | 3 / 1 | Converte una stringa di pagine come `1-4,6,7` in un elenco di numeri. |
+| [theme-action.md](../../archive/docs-legacy/contracts/theme-action.md) | 2 / 0 | Gestisce il nome del tema attivo con stato statico del processo. |
+| [url-action.md](../../archive/docs-legacy/contracts/url-action.md) | 1 / 0 | Verifica se una stringa è un URL sintatticamente valido. |
+| [xot-action.md](../../archive/docs-legacy/contracts/xot-action.md) | 1 / 0 | Contenitore con `getTenantClass()`. |
 
 ### Actions/AI/Ollama (2)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [chat-ollama-action.md](chat-ollama-action.md) | 4 / 0 | Invia un messaggio a un'istanza Ollama tramite `/api/chat` e restituisce testo, ragionamento, token e durate. |
-| [generate-ollama-action.md](generate-ollama-action.md) | 3 / 0 | Genera testo da un prompt tramite `/api/generate` di Ollama. |
+| [chat-ollama-action.md](../../archive/docs-legacy/contracts/chat-ollama-action.md) | 4 / 0 | Invia un messaggio a un'istanza Ollama tramite `/api/chat` e restituisce testo, ragionamento, token e durate. |
+| [generate-ollama-action.md](../../archive/docs-legacy/contracts/generate-ollama-action.md) | 3 / 0 | Genera testo da un prompt tramite `/api/generate` di Ollama. |
 
 ### Actions/Arr (6)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [array-to-raw-js-action.md](array-to-raw-js-action.md) | 4 / 2 | Converte un array PHP in un letterale JavaScript (oggetto) incapsulato in `RawJs`, pronto per attributi HTML tipo `x-data="..."`. |
-| [ensure-keys-action.md](ensure-keys-action.md) | 4 / 0 | Allinea ogni riga di un dataset alle chiavi attese dallo schema: le chiavi mancanti diventano `null`, quelle presenti sono conservate. |
-| [range-intersect-action.md](range-intersect-action.md) | 5 / 3 | Calcola l'intersezione tra due intervalli interi `[a0, b0]` e `[a1, b1]` con una catena di rami. |
-| [save-array-action.md](save-array-action.md) | 2 / 1 | Punto di ingresso unico per salvare un array su file, scegliendo il formato. |
-| [save-json-array-action.md](save-json-array-action.md) | 4 / 1 | Scrive un array come JSON formattato su file, creando la cartella se manca. |
-| [save-php-array-action.md](save-php-array-action.md) | 5 / 3 | Salva un array come file PHP `return [...]` con una chiave per riga, senza array annidati inline. |
+| [array-to-raw-js-action.md](../../archive/docs-legacy/contracts/array-to-raw-js-action.md) | 4 / 2 | Converte un array PHP in un letterale JavaScript (oggetto) incapsulato in `RawJs`, pronto per attributi HTML tipo `x-data="..."`. |
+| [ensure-keys-action.md](../../archive/docs-legacy/contracts/ensure-keys-action.md) | 4 / 0 | Allinea ogni riga di un dataset alle chiavi attese dallo schema: le chiavi mancanti diventano `null`, quelle presenti sono conservate. |
+| [range-intersect-action.md](../../archive/docs-legacy/contracts/range-intersect-action.md) | 5 / 3 | Calcola l'intersezione tra due intervalli interi `[a0, b0]` e `[a1, b1]` con una catena di rami. |
+| [save-array-action.md](../../archive/docs-legacy/contracts/save-array-action.md) | 2 / 1 | Punto di ingresso unico per salvare un array su file, scegliendo il formato. |
+| [save-json-array-action.md](../../archive/docs-legacy/contracts/save-json-array-action.md) | 4 / 1 | Scrive un array come JSON formattato su file, creando la cartella se manca. |
+| [save-php-array-action.md](../../archive/docs-legacy/contracts/save-php-array-action.md) | 5 / 3 | Salva un array come file PHP `return [...]` con una chiave per riga, senza array annidati inline. |
 
 ### Actions/Artisan (7)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [clear-artisan-debugbar-files-action.md](clear-artisan-debugbar-files-action.md) | 2 / 0 | Cancella i file JSON di Debugbar in `storage/debugbar` e restituisce un messaggio di esito. Sostituisce `ArtisanService::debugbarClear()`. |
-| [clear-artisan-error-log-action.md](clear-artisan-error-log-action.md) | 2 / 0 | Cancella i file `.log` in `storage/logs` e restituisce un messaggio di esito. Sostituisce `ArtisanService::errorClear()`. |
-| [clear-artisan-session-files-action.md](clear-artisan-session-files-action.md) | 2 / 0 | Cancella i file di sessione su disco in `storage/framework/sessions`. Sostituisce `ArtisanService::sessionClear()`. |
-| [handle-artisan-act-request-action.md](handle-artisan-act-request-action.md) | 5 / 2 | Entrypoint unico del parametro legacy `act` (ex `ArtisanService::act()`). Traduce un `ArtisanActEnum` in una o più azioni artisan. |
-| [run-artisan-command-action.md](run-artisan-command-action.md) | 3 / 0 | Esegue un singolo comando artisan via facade e restituisce l'output avvolto in `<pre>`, oppure il messaggio dell'eccezione. Sostituisce `ArtisanService::exe()`. |
-| [show-artisan-error-log-action.md](show-artisan-error-log-action.md) | 4 / 0 | Prepara la vista di consultazione dei log in `storage/logs`, con il contenuto del file richiesto e l'elenco degli URL trovati nel log. Sostituisce… |
-| [show-artisan-route-list-action.md](show-artisan-route-list-action.md) | 2 / 0 | Renderizza in HTML l'elenco delle rotte registrate, con la vista `xot::acts.artisan.show_route_list`. Sostituisce `ArtisanService::showRouteList()`. |
+| [clear-artisan-debugbar-files-action.md](../../archive/docs-legacy/contracts/clear-artisan-debugbar-files-action.md) | 2 / 0 | Cancella i file JSON di Debugbar in `storage/debugbar` e restituisce un messaggio di esito. Sostituisce `ArtisanService::debugbarClear()`. |
+| [clear-artisan-error-log-action.md](../../archive/docs-legacy/contracts/clear-artisan-error-log-action.md) | 2 / 0 | Cancella i file `.log` in `storage/logs` e restituisce un messaggio di esito. Sostituisce `ArtisanService::errorClear()`. |
+| [clear-artisan-session-files-action.md](../../archive/docs-legacy/contracts/clear-artisan-session-files-action.md) | 2 / 0 | Cancella i file di sessione su disco in `storage/framework/sessions`. Sostituisce `ArtisanService::sessionClear()`. |
+| [handle-artisan-act-request-action.md](../../archive/docs-legacy/contracts/handle-artisan-act-request-action.md) | 5 / 2 | Entrypoint unico del parametro legacy `act` (ex `ArtisanService::act()`). Traduce un `ArtisanActEnum` in una o più azioni artisan. |
+| [run-artisan-command-action.md](../../archive/docs-legacy/contracts/run-artisan-command-action.md) | 3 / 0 | Esegue un singolo comando artisan via facade e restituisce l'output avvolto in `<pre>`, oppure il messaggio dell'eccezione. Sostituisce `ArtisanService::exe()`. |
+| [show-artisan-error-log-action.md](../../archive/docs-legacy/contracts/show-artisan-error-log-action.md) | 4 / 0 | Prepara la vista di consultazione dei log in `storage/logs`, con il contenuto del file richiesto e l'elenco degli URL trovati nel log. Sostituisce… |
+| [show-artisan-route-list-action.md](../../archive/docs-legacy/contracts/show-artisan-route-list-action.md) | 2 / 0 | Renderizza in HTML l'elenco delle rotte registrate, con la vista `xot::acts.artisan.show_route_list`. Sostituisce `ArtisanService::showRouteList()`. |
 
 ### Actions/Blade (1)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [register-blade-components-action.md](register-blade-components-action.md) | 2 / 0 | Registra nel compilatore Blade i componenti trovati sotto un percorso, con namespace e prefisso. |
+| [register-blade-components-action.md](../../archive/docs-legacy/contracts/register-blade-components-action.md) | 2 / 0 | Registra nel compilatore Blade i componenti trovati sotto un percorso, con namespace e prefisso. |
 
 ### Actions/Cast (10)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [safe-array-by-model-cast-action.md](safe-array-by-model-cast-action.md) | 2 / 0 | Converte gli attributi di un modello in array, con fallback attributo per attributo se la conversione fallisce. |
-| [safe-array-cast-action.md](safe-array-cast-action.md) | 5 / 4 | Converte un valore `mixed` in array, con default per i casi non gestiti. |
-| [safe-attribute-cast-action.md](safe-attribute-cast-action.md) | 4 / 1 | Legge gli attributi di un modello Eloquent con cast tipati e default. |
-| [safe-boolean-cast-action.md](safe-boolean-cast-action.md) | 3 / 1 | Converte un valore `mixed` in `bool` con default. |
-| [safe-eloquent-cast-action.md](safe-eloquent-cast-action.md) | 3 / 2 | Versione Eloquent dei getter tipati, con fallback su un secondo attributo. |
-| [safe-float-cast-action.md](safe-float-cast-action.md) | 4 / 1 | Converte un valore `mixed` in `float` con default, con helper per intervallo, precisione, percentuale e valuta. |
-| [safe-int-cast-action.md](safe-int-cast-action.md) | 4 / 2 | Converte un valore `mixed` in `int` con default. |
-| [safe-nullable-string-cast-action.md](safe-nullable-string-cast-action.md) | 2 / 0 | Converte un valore in `?string`: la stringa vuota diventa null. |
-| [safe-object-cast-action.md](safe-object-cast-action.md) | 4 / 1 | Legge proprietà di un oggetto generico con controllo `isset` e default; chiama metodi in modo protetto. |
-| [safe-string-cast-action.md](safe-string-cast-action.md) | 3 / 2 | Converte un valore `mixed` in `string` senza eccezioni. |
+| [safe-array-by-model-cast-action.md](../../archive/docs-legacy/contracts/safe-array-by-model-cast-action.md) | 2 / 0 | Converte gli attributi di un modello in array, con fallback attributo per attributo se la conversione fallisce. |
+| [safe-array-cast-action.md](../../archive/docs-legacy/contracts/safe-array-cast-action.md) | 5 / 4 | Converte un valore `mixed` in array, con default per i casi non gestiti. |
+| [safe-attribute-cast-action.md](../../archive/docs-legacy/contracts/safe-attribute-cast-action.md) | 4 / 1 | Legge gli attributi di un modello Eloquent con cast tipati e default. |
+| [safe-boolean-cast-action.md](../../archive/docs-legacy/contracts/safe-boolean-cast-action.md) | 3 / 1 | Converte un valore `mixed` in `bool` con default. |
+| [safe-eloquent-cast-action.md](../../archive/docs-legacy/contracts/safe-eloquent-cast-action.md) | 3 / 2 | Versione Eloquent dei getter tipati, con fallback su un secondo attributo. |
+| [safe-float-cast-action.md](../../archive/docs-legacy/contracts/safe-float-cast-action.md) | 4 / 1 | Converte un valore `mixed` in `float` con default, con helper per intervallo, precisione, percentuale e valuta. |
+| [safe-int-cast-action.md](../../archive/docs-legacy/contracts/safe-int-cast-action.md) | 4 / 2 | Converte un valore `mixed` in `int` con default. |
+| [safe-nullable-string-cast-action.md](../../archive/docs-legacy/contracts/safe-nullable-string-cast-action.md) | 2 / 0 | Converte un valore in `?string`: la stringa vuota diventa null. |
+| [safe-object-cast-action.md](../../archive/docs-legacy/contracts/safe-object-cast-action.md) | 4 / 1 | Legge proprietà di un oggetto generico con controllo `isset` e default; chiama metodi in modo protetto. |
+| [safe-string-cast-action.md](../../archive/docs-legacy/contracts/safe-string-cast-action.md) | 3 / 2 | Converte un valore `mixed` in `string` senza eccezioni. |
 
 ### Actions/Class (1)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [class-get-filename-by-classname-action.md](class-get-filename-by-classname-action.md) | 3 / 0 | Ritorna il percorso del file sorgente di una classe. |
+| [class-get-filename-by-classname-action.md](../../archive/docs-legacy/contracts/class-get-filename-by-classname-action.md) | 3 / 0 | Ritorna il percorso del file sorgente di una classe. |
 
 ### Actions/Classes (1)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [classes-get-filename-by-classname-action.md](classes-get-filename-by-classname-action.md) | 1 / 0 | Ritorna il percorso del file sorgente di una classe. |
+| [classes-get-filename-by-classname-action.md](../../archive/docs-legacy/contracts/classes-get-filename-by-classname-action.md) | 1 / 0 | Ritorna il percorso del file sorgente di una classe. |
 
 ### Actions/Collection (1)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [trans-collection-action.md](trans-collection-action.md) | 3 / 2 | Traduce ogni elemento di una collezione tramite una chiave di traduzione, con fallback che sostituisce i punti con underscore. |
+| [trans-collection-action.md](../../archive/docs-legacy/contracts/trans-collection-action.md) | 3 / 2 | Traduce ogni elemento di una collezione tramite una chiave di traduzione, con fallback che sostituisce i punti con underscore. |
 
 ### Actions/Composer (1)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [register-runtime-psr4-namespaces-action.md](register-runtime-psr4-namespaces-action.md) | 2 / 0 | Registra a runtime i namespace PSR-4 di temi e seeders che restano fuori da `composer.json`. |
+| [register-runtime-psr4-namespaces-action.md](../../archive/docs-legacy/contracts/register-runtime-psr4-namespaces-action.md) | 2 / 0 | Registra a runtime i namespace PSR-4 di temi e seeders che restano fuori da `composer.json`. |
 
 ### Actions/Config (4)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [get-tenant-config-array-action.md](get-tenant-config-array-action.md) | 3 / 2 | Legge il file di configurazione del tenant `{name}.php` e restituisce il suo array con sole chiavi stringa. |
-| [get-tenant-config-path-action.md](get-tenant-config-path-action.md) | 1 / 1 | Restituisce il percorso del file di configurazione del tenant aggiungendo `.php` al nome e delegando a `Tenant`. |
-| [get-year-options-action.md](get-year-options-action.md) | 2 / 1 | Restituisce le opzioni anno per un filtro o select condiviso, secondo il modulo a cui appartiene la classe chiamante. |
-| [resolve-module-config-data-action.md](resolve-module-config-data-action.md) | 3 / 1 | Dalla classe di un modello, Resource o pagina di un modulo, risolve la sua `{Modulo}ConfigData` e ne restituisce un'istanza. |
+| [get-tenant-config-array-action.md](../../archive/docs-legacy/contracts/get-tenant-config-array-action.md) | 3 / 2 | Legge il file di configurazione del tenant `{name}.php` e restituisce il suo array con sole chiavi stringa. |
+| [get-tenant-config-path-action.md](../../archive/docs-legacy/contracts/get-tenant-config-path-action.md) | 1 / 1 | Restituisce il percorso del file di configurazione del tenant aggiungendo `.php` al nome e delegando a `Tenant`. |
+| [get-year-options-action.md](../../archive/docs-legacy/contracts/get-year-options-action.md) | 2 / 1 | Restituisce le opzioni anno per un filtro o select condiviso, secondo il modulo a cui appartiene la classe chiamante. |
+| [resolve-module-config-data-action.md](../../archive/docs-legacy/contracts/resolve-module-config-data-action.md) | 3 / 1 | Dalla classe di un modello, Resource o pagina di un modulo, risolve la sua `{Modulo}ConfigData` e ne restituisce un'istanza. |
 
 ### Actions/Debug (1)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [measure-action.md](measure-action.md) | 3 / 0 | Esegue una closure, misura tempo e memoria, e mostra il risultato come notifica. |
+| [measure-action.md](../../archive/docs-legacy/contracts/measure-action.md) | 3 / 0 | Esegue una closure, misura tempo e memoria, e mostra il risultato come notifica. |
 
 ### Actions/Design (1)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [get-pa-filament-palette-action.md](get-pa-filament-palette-action.md) | 2 / 0 | Restituisce la palette Filament dei design PA delegando a `PaDesignColorsAction`. |
+| [get-pa-filament-palette-action.md](../../archive/docs-legacy/contracts/get-pa-filament-palette-action.md) | 2 / 0 | Restituisce la palette Filament dei design PA delegando a `PaDesignColorsAction`. |
 
 ### Actions/Dummy (1)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [get-products-array-dummy-action.md](get-products-array-dummy-action.md) | 3 / 1 | Scarica prodotti di prova da `dummyjson.com` e ne tiene otto campi. |
+| [get-products-array-dummy-action.md](../../archive/docs-legacy/contracts/get-products-array-dummy-action.md) | 3 / 1 | Scarica prodotti di prova da `dummyjson.com` e ne tiene otto campi. |
 
 ### Actions/Export (11)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [export-pdf-by-html-action.md](export-pdf-by-html-action.md) | 3 / 0 | Converte HTML in PDF, lo salva su disco e restituisce un download, il contenuto o il percorso in base a `$out`. Versione in namespace Export (duplicata da… |
-| [export-xls-by-collection.md](export-xls-by-collection.md) | 3 / 0 | Esporta una collezione di record o di array in un file Excel tramite `CollectionExport` (Laravel Excel): `execute()` risponde con un download, `executeWithSpreadsheet()`… |
-| [export-xls-by-lazy-collection.md](export-xls-by-lazy-collection.md) | 2 / 0 | Esporta una `LazyCollection` in Excel tramite `LazyCollectionExport`. |
-| [export-xls-by-query.md](export-xls-by-query.md) | 2 / 0 | Esporta il risultato di un Eloquent Builder in Excel, con limite opzionale applicato al builder. |
-| [export-xls-by-view.md](export-xls-by-view.md) | 1 / 0 | Esporta una vista Blade in Excel tramite `ViewExport`. |
-| [export-xls-stream-by-lazy-collection.md](export-xls-stream-by-lazy-collection.md) | 5 / 0 | Esporta una `LazyCollection` come CSV in streaming, con intestazione tradotta opzionale e tre righe finali di tabulazioni. |
-| [get-export-file-name-action.md](get-export-file-name-action.md) | 2 / 1 | Costruisce il nome file (senza estensione) di un export da lista: nome della pagina più i valori scalari dei filtri. |
-| [pdf-by-html-action-portrait.md](pdf-by-html-action-portrait.md) | 2 / 0 | Variante di `Export\PdfByHtmlAction` con orientamento fisso verticale (`P`) e senza parametro `orientation`. |
-| [pdf-by-model-action.md](pdf-by-model-action.md) | 3 / 0 | Genera un PDF da un modello Eloquent: risolve la vista `.show.pdf` della classe e delega il rendering a `Export\PdfByHtmlAction`. |
-| [pdf-by-view-action.md](pdf-by-view-action.md) | 1 / 0 | Renderizza una `View` Laravel e delega la conversione a `Export\PdfByHtmlAction`. |
-| [xls-by-model-class-action.md](xls-by-model-class-action.md) | 4 / 0 | Esporta in Excel le righe di un modello, con filtri di uguaglianza, relazioni, colonne da includere/escludere e callback per riga. |
+| [export-pdf-by-html-action.md](../../archive/docs-legacy/contracts/export-pdf-by-html-action.md) | 3 / 0 | Converte HTML in PDF, lo salva su disco e restituisce un download, il contenuto o il percorso in base a `$out`. Versione in namespace Export (duplicata da… |
+| [export-xls-by-collection.md](../../archive/docs-legacy/contracts/export-xls-by-collection.md) | 3 / 0 | Esporta una collezione di record o di array in un file Excel tramite `CollectionExport` (Laravel Excel): `execute()` risponde con un download, `executeWithSpreadsheet()`… |
+| [export-xls-by-lazy-collection.md](../../archive/docs-legacy/contracts/export-xls-by-lazy-collection.md) | 2 / 0 | Esporta una `LazyCollection` in Excel tramite `LazyCollectionExport`. |
+| [export-xls-by-query.md](../../archive/docs-legacy/contracts/export-xls-by-query.md) | 2 / 0 | Esporta il risultato di un Eloquent Builder in Excel, con limite opzionale applicato al builder. |
+| [export-xls-by-view.md](../../archive/docs-legacy/contracts/export-xls-by-view.md) | 1 / 0 | Esporta una vista Blade in Excel tramite `ViewExport`. |
+| [export-xls-stream-by-lazy-collection.md](../../archive/docs-legacy/contracts/export-xls-stream-by-lazy-collection.md) | 5 / 0 | Esporta una `LazyCollection` come CSV in streaming, con intestazione tradotta opzionale e tre righe finali di tabulazioni. |
+| [get-export-file-name-action.md](../../archive/docs-legacy/contracts/get-export-file-name-action.md) | 2 / 1 | Costruisce il nome file (senza estensione) di un export da lista: nome della pagina più i valori scalari dei filtri. |
+| [pdf-by-html-action-portrait.md](../../archive/docs-legacy/contracts/pdf-by-html-action-portrait.md) | 2 / 0 | Variante di `Export\PdfByHtmlAction` con orientamento fisso verticale (`P`) e senza parametro `orientation`. |
+| [pdf-by-model-action.md](../../archive/docs-legacy/contracts/pdf-by-model-action.md) | 3 / 0 | Genera un PDF da un modello Eloquent: risolve la vista `.show.pdf` della classe e delega il rendering a `Export\PdfByHtmlAction`. |
+| [pdf-by-view-action.md](../../archive/docs-legacy/contracts/pdf-by-view-action.md) | 1 / 0 | Renderizza una `View` Laravel e delega la conversione a `Export\PdfByHtmlAction`. |
+| [xls-by-model-class-action.md](../../archive/docs-legacy/contracts/xls-by-model-class-action.md) | 4 / 0 | Esporta in Excel le righe di un modello, con filtri di uguaglianza, relazioni, colonne da includere/escludere e callback per riga. |
 
 ### Actions/Factory (3)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [get-factory-action.md](get-factory-action.md) | 4 / 0 | Risolve la factory di un modello, caricandola da disco o generandola con `module:make-factory`. |
-| [get-faker-action.md](get-faker-action.md) | 2 / 0 | Restituisce il frammento di codice Faker da usare per una colonna. |
-| [get-properties-from-methods-by-model-action.md](get-properties-from-methods-by-model-action.md) | 4 / 0 | Cerca nei metodi del modello le relazioni `belongsTo` e propone la chiave esterna con la factory del correlato. |
+| [get-factory-action.md](../../archive/docs-legacy/contracts/get-factory-action.md) | 4 / 0 | Risolve la factory di un modello, caricandola da disco o generandola con `module:make-factory`. |
+| [get-faker-action.md](../../archive/docs-legacy/contracts/get-faker-action.md) | 2 / 0 | Restituisce il frammento di codice Faker da usare per una colonna. |
+| [get-properties-from-methods-by-model-action.md](../../archive/docs-legacy/contracts/get-properties-from-methods-by-model-action.md) | 4 / 0 | Cerca nei metodi del modello le relazioni `belongsTo` e propone la chiave esterna con la factory del correlato. |
 
 ### Actions/Filament (12)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [auto-label-action.md](auto-label-action.md) | 3 / 0 | Applica a un componente Filament la label letta dalle traduzioni del modulo. Marcata WIP. |
-| [generate-form-by-file-action.md](generate-form-by-file-action.md) | 3 / 0 | Dato il file di una Resource, conta i campi fillable del modello che corrispondono a metodi della Resource. Nome "Generate" ma non genera. Marcata WIP. |
-| [generate-table-columns-by-file-action.md](generate-table-columns-by-file-action.md) | 3 / 0 | Riscrive il sorgente di una Resource Filament: sostituisce il contenuto di `columns()` e `schema()` con segnaposto `TODO` e, se il modello ha `anno`, inserisce un filtro… |
-| [get-modules-navigation-items.md](get-modules-navigation-items.md) | 3 / 0 | Costruisce le voci di navigazione Filament per i moduli abilitati al tenant, e una variante cache dei dati di configurazione. |
-| [get-navigation-item-by-modulename.md](get-navigation-item-by-modulename.md) | 3 / 0 | Costruisce la voce di navigazione Filament di un singolo modulo. Lancia se la config manca. |
-| [get-panels-navigation-items.md](get-panels-navigation-items.md) | 2 / 0 | Costruisce una voce di navigazione per ogni pannello Filament registrato. |
-| [get-related-resource-class-action.md](get-related-resource-class-action.md) | 3 / 0 | Risolve la `XotBaseResource` del modello mostrato da una pagina di gestione dei record correlati. |
-| [get-resource-class-name-by-model-class-action.md](get-resource-class-name-by-model-class-action.md) | 3 / 0 | Restituisce la Resource Filament registrata nel pannello corrente per un modello. |
-| [get-sidebar-state-script-action.md](get-sidebar-state-script-action.md) | 2 / 0 | Restituisce lo snippet JavaScript che inizializza lo stato dei gruppi della sidebar Filament nel localStorage. |
-| [panel-module-action.md](panel-module-action.md) | 4 / 0 | Legge la configurazione del modulo nwidart a cui appartiene un pannello Filament, con helper statici. |
-| [plain-text-from-filament-value-action.md](plain-text-from-filament-value-action.md) | 3 / 0 | Converte un valore Filament eterogeneo (Htmlable, enum `HasLabel`, scalare) in testo semplice. |
-| [render-context-navigation.md](render-context-navigation.md) | 3 / 0 | Registra due render hook nella sidebar Filament con il nome del modulo e un link alla dashboard. |
+| [auto-label-action.md](../../archive/docs-legacy/contracts/auto-label-action.md) | 3 / 0 | Applica a un componente Filament la label letta dalle traduzioni del modulo. Marcata WIP. |
+| [generate-form-by-file-action.md](../../archive/docs-legacy/contracts/generate-form-by-file-action.md) | 3 / 0 | Dato il file di una Resource, conta i campi fillable del modello che corrispondono a metodi della Resource. Nome "Generate" ma non genera. Marcata WIP. |
+| [generate-table-columns-by-file-action.md](../../archive/docs-legacy/contracts/generate-table-columns-by-file-action.md) | 3 / 0 | Riscrive il sorgente di una Resource Filament: sostituisce il contenuto di `columns()` e `schema()` con segnaposto `TODO` e, se il modello ha `anno`, inserisce un filtro… |
+| [get-modules-navigation-items.md](../../archive/docs-legacy/contracts/get-modules-navigation-items.md) | 3 / 0 | Costruisce le voci di navigazione Filament per i moduli abilitati al tenant, e una variante cache dei dati di configurazione. |
+| [get-navigation-item-by-modulename.md](../../archive/docs-legacy/contracts/get-navigation-item-by-modulename.md) | 3 / 0 | Costruisce la voce di navigazione Filament di un singolo modulo. Lancia se la config manca. |
+| [get-panels-navigation-items.md](../../archive/docs-legacy/contracts/get-panels-navigation-items.md) | 2 / 0 | Costruisce una voce di navigazione per ogni pannello Filament registrato. |
+| [get-related-resource-class-action.md](../../archive/docs-legacy/contracts/get-related-resource-class-action.md) | 3 / 0 | Risolve la `XotBaseResource` del modello mostrato da una pagina di gestione dei record correlati. |
+| [get-resource-class-name-by-model-class-action.md](../../archive/docs-legacy/contracts/get-resource-class-name-by-model-class-action.md) | 3 / 0 | Restituisce la Resource Filament registrata nel pannello corrente per un modello. |
+| [get-sidebar-state-script-action.md](../../archive/docs-legacy/contracts/get-sidebar-state-script-action.md) | 2 / 0 | Restituisce lo snippet JavaScript che inizializza lo stato dei gruppi della sidebar Filament nel localStorage. |
+| [panel-module-action.md](../../archive/docs-legacy/contracts/panel-module-action.md) | 4 / 0 | Legge la configurazione del modulo nwidart a cui appartiene un pannello Filament, con helper statici. |
+| [plain-text-from-filament-value-action.md](../../archive/docs-legacy/contracts/plain-text-from-filament-value-action.md) | 3 / 0 | Converte un valore Filament eterogeneo (Htmlable, enum `HasLabel`, scalare) in testo semplice. |
+| [render-context-navigation.md](../../archive/docs-legacy/contracts/render-context-navigation.md) | 3 / 0 | Registra due render hook nella sidebar Filament con il nome del modulo e un link alla dashboard. |
 
 ### Actions/Filament/Actions (5)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [copy-from-last-year-button.md](copy-from-last-year-button.md) | 2 / 0 | Costruisce un bottone Filament che copia i dati dell'anno precedente tramite `ModelClass\CopyFromLastYearAction`. |
-| [export-button.md](export-button.md) | 1 / 0 | Bottone Filament per l'export XLS. È visibile, ma l'azione non è implementata. |
-| [filament-actions-copy-from-last-year-action.md](filament-actions-copy-from-last-year-action.md) | 3 / 0 | Azione Filament di copia dei dati dall'anno precedente: valida gli argomenti e delega a `ModelClass\CopyFromLastYearAction`. |
-| [filament-actions-view-copy-action.md](filament-actions-view-copy-action.md) | 1 / 0 | Azione Filament per copiare una vista. Il metodo `execute` è un segnaposto vuoto. |
-| [import-button.md](import-button.md) | 1 / 0 | Bottone Filament per l'import XLS. È visibile, ma l'azione non è implementata. |
+| [copy-from-last-year-button.md](../../archive/docs-legacy/contracts/copy-from-last-year-button.md) | 2 / 0 | Costruisce un bottone Filament che copia i dati dell'anno precedente tramite `ModelClass\CopyFromLastYearAction`. |
+| [export-button.md](../../archive/docs-legacy/contracts/export-button.md) | 1 / 0 | Bottone Filament per l'export XLS. È visibile, ma l'azione non è implementata. |
+| [filament-actions-copy-from-last-year-action.md](../../archive/docs-legacy/contracts/filament-actions-copy-from-last-year-action.md) | 3 / 0 | Azione Filament di copia dei dati dall'anno precedente: valida gli argomenti e delega a `ModelClass\CopyFromLastYearAction`. |
+| [filament-actions-view-copy-action.md](../../archive/docs-legacy/contracts/filament-actions-view-copy-action.md) | 1 / 0 | Azione Filament per copiare una vista. Il metodo `execute` è un segnaposto vuoto. |
+| [import-button.md](../../archive/docs-legacy/contracts/import-button.md) | 1 / 0 | Bottone Filament per l'import XLS. È visibile, ma l'azione non è implementata. |
 
 ### Actions/Filament/Block (1)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [get-view-blocks-options-by-type-action.md](get-view-blocks-options-by-type-action.md) | 3 / 0 | Elenca i blocchi Blade di un tipo in tutti i moduli, restituendo vista→nome oppure vista→URL dello screenshot. Marcata WIP. |
+| [get-view-blocks-options-by-type-action.md](../../archive/docs-legacy/contracts/get-view-blocks-options-by-type-action.md) | 3 / 0 | Elenca i blocchi Blade di un tipo in tutti i moduli, restituendo vista→nome oppure vista→URL dello screenshot. Marcata WIP. |
 
 ### Actions/Filament/Filter (1)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [get-year-filter.md](get-year-filter.md) | 2 / 0 | Costruisce un `SelectFilter` Filament con le opzioni di anno da un valore iniziale a uno finale, inclusi. |
+| [get-year-filter.md](../../archive/docs-legacy/contracts/get-year-filter.md) | 2 / 0 | Costruisce un `SelectFilter` Filament con le opzioni di anno da un valore iniziale a uno finale, inclusi. |
 
 ### Actions/File (16)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [add-strict-types-declaration-action.md](add-strict-types-declaration-action.md) | 5 / 0 | Aggiunge `declare(strict_types=1);` a un file PHP che non lo ha. |
-| [asset-action.md](asset-action.md) | 7 / 2 | Risolve l'URL pubblico di un asset, secondo namespace (modulo o tema) e presenza del file. Non copia nulla: gli asset sono serviti da symlink. |
-| [asset-path-action.md](asset-path-action.md) | 3 / 1 | Restituisce il percorso su disco di un asset: sotto la document root per gli URL pubblici, sotto `resources/` del modulo per `Modulo::file`. |
-| [copy-action.md](copy-action.md) | 4 / 0 | Copia un file nella destinazione senza sovrascriverla, creando la cartella di destinazione se manca. |
-| [create-directory-for-filename-action.md](create-directory-for-filename-action.md) | 2 / 0 | Crea la cartella che contiene un file, se manca. |
-| [create-relative-symlink-action.md](create-relative-symlink-action.md) | 4 / 1 | Crea un symlink con destinazione relativa alla cartella del link, così il progetto resta valido se cambia percorso. |
-| [download-zip-by-paths-disk-action.md](download-zip-by-paths-disk-action.md) | 5 / 0 | Crea uno ZIP temporaneo con i file indicati presi da un disco e lo restituisce come download. |
-| [ensure-gitignore-entries-action.md](ensure-gitignore-entries-action.md) | 4 / 1 | Aggiunge a un `.gitignore` le due righe necessarie per un link di asset (`<nome>/` e `<nome>`), se mancano. |
-| [file-get-view-name-space-path-action.md](file-get-view-name-space-path-action.md) | 3 / 0 | Restituisce il percorso registrato per un namespace di viste, leggendo gli hint del view finder, o la cartella del tema. |
-| [fix-path-action.md](fix-path-action.md) | 1 / 0 | Sostituisce `/` e `\` con il separatore di directory del sistema. |
-| [get-class-name-by-path-action.md](get-class-name-by-path-action.md) | 2 / 0 | Ricava il FQCN di una classe leggendo il file PHP con regex (namespace e prima dichiarazione `class`). |
-| [get-components-action.md](get-components-action.md) | 5 / 0 | Scansiona una cartella di classi componente, ne ricava nome, classe e namespace, e li salva in `_components.json` come cache. |
-| [get-module-path-action.md](get-module-path-action.md) | 4 / 2 | Restituisce la cartella di un modulo, con fallback su `base_path('Modules')` se nwidart non lo trova. |
-| [svg-exists-action.md](svg-exists-action.md) | 2 / 0 | Verifica se un'icona SVG esiste nei set registrati di BladeUI Icons. |
-| [view-copy-action.md](view-copy-action.md) | 1 / 0 | Copia il file Blade di una vista in un'altra vista, risolvendo entrambi i nomi in percorsi. |
-| [view-path-action.md](view-path-action.md) | 2 / 1 | Converte un nome di vista `ns::a.b` nel percorso del file `.blade.php` usando la cartella del namespace risolta da `File\GetViewNameSpacePathAction`. |
+| [add-strict-types-declaration-action.md](../../archive/docs-legacy/contracts/add-strict-types-declaration-action.md) | 5 / 0 | Aggiunge `declare(strict_types=1);` a un file PHP che non lo ha. |
+| [asset-action.md](../../archive/docs-legacy/contracts/asset-action.md) | 7 / 2 | Risolve l'URL pubblico di un asset, secondo namespace (modulo o tema) e presenza del file. Non copia nulla: gli asset sono serviti da symlink. |
+| [asset-path-action.md](../../archive/docs-legacy/contracts/asset-path-action.md) | 3 / 1 | Restituisce il percorso su disco di un asset: sotto la document root per gli URL pubblici, sotto `resources/` del modulo per `Modulo::file`. |
+| [copy-action.md](../../archive/docs-legacy/contracts/copy-action.md) | 4 / 0 | Copia un file nella destinazione senza sovrascriverla, creando la cartella di destinazione se manca. |
+| [create-directory-for-filename-action.md](../../archive/docs-legacy/contracts/create-directory-for-filename-action.md) | 2 / 0 | Crea la cartella che contiene un file, se manca. |
+| [create-relative-symlink-action.md](../../archive/docs-legacy/contracts/create-relative-symlink-action.md) | 4 / 1 | Crea un symlink con destinazione relativa alla cartella del link, così il progetto resta valido se cambia percorso. |
+| [download-zip-by-paths-disk-action.md](../../archive/docs-legacy/contracts/download-zip-by-paths-disk-action.md) | 5 / 0 | Crea uno ZIP temporaneo con i file indicati presi da un disco e lo restituisce come download. |
+| [ensure-gitignore-entries-action.md](../../archive/docs-legacy/contracts/ensure-gitignore-entries-action.md) | 4 / 1 | Aggiunge a un `.gitignore` le due righe necessarie per un link di asset (`<nome>/` e `<nome>`), se mancano. |
+| [file-get-view-name-space-path-action.md](../../archive/docs-legacy/contracts/file-get-view-name-space-path-action.md) | 3 / 0 | Restituisce il percorso registrato per un namespace di viste, leggendo gli hint del view finder, o la cartella del tema. |
+| [fix-path-action.md](../../archive/docs-legacy/contracts/fix-path-action.md) | 1 / 0 | Sostituisce `/` e `\` con il separatore di directory del sistema. |
+| [get-class-name-by-path-action.md](../../archive/docs-legacy/contracts/get-class-name-by-path-action.md) | 2 / 0 | Ricava il FQCN di una classe leggendo il file PHP con regex (namespace e prima dichiarazione `class`). |
+| [get-components-action.md](../../archive/docs-legacy/contracts/get-components-action.md) | 5 / 0 | Scansiona una cartella di classi componente, ne ricava nome, classe e namespace, e li salva in `_components.json` come cache. |
+| [get-module-path-action.md](../../archive/docs-legacy/contracts/get-module-path-action.md) | 4 / 2 | Restituisce la cartella di un modulo, con fallback su `base_path('Modules')` se nwidart non lo trova. |
+| [svg-exists-action.md](../../archive/docs-legacy/contracts/svg-exists-action.md) | 2 / 0 | Verifica se un'icona SVG esiste nei set registrati di BladeUI Icons. |
+| [view-copy-action.md](../../archive/docs-legacy/contracts/view-copy-action.md) | 1 / 0 | Copia il file Blade di una vista in un'altra vista, risolvendo entrambi i nomi in percorsi. |
+| [view-path-action.md](../../archive/docs-legacy/contracts/view-path-action.md) | 2 / 1 | Converte un nome di vista `ns::a.b` nel percorso del file `.blade.php` usando la cartella del namespace risolta da `File\GetViewNameSpacePathAction`. |
 
 ### Actions/Generate (1)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [generate-model-by-model-class.md](generate-model-by-model-class.md) | 5 / 0 | Esegue `module:make-model` per un modello e riscrive il file generato: base class `BaseModel`, import HasXotFactory rimosso, eventuale `$table`. |
+| [generate-model-by-model-class.md](../../archive/docs-legacy/contracts/generate-model-by-model-class.md) | 5 / 0 | Esegue `module:make-model` per un modello e riscrive il file generato: base class `BaseModel`, import HasXotFactory rimosso, eventuale `$table`. |
 
 ### Actions/Geo (1)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [get-distance-expression-action.md](get-distance-expression-action.md) | 1 / 0 | Costruisce l'espressione SQL per la distanza tra un punto e le righe. |
+| [get-distance-expression-action.md](../../archive/docs-legacy/contracts/get-distance-expression-action.md) | 1 / 0 | Costruisce l'espressione SQL per la distanza tra un punto e le righe. |
 
 ### Actions/Html (1)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [html-to-pdf-action.md](html-to-pdf-action.md) | 3 / 0 | Converte HTML in PDF con Html2Pdf, con tre modalità di output selezionate dal parametro `$out`. |
+| [html-to-pdf-action.md](../../archive/docs-legacy/contracts/html-to-pdf-action.md) | 3 / 0 | Converte HTML in PDF con Html2Pdf, con tre modalità di output selezionate dal parametro `$out`. |
 
 ### Actions/Import (1)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [import-csv-action.md](import-csv-action.md) | 4 / 0 | Importa un file CSV in una tabella con `LOAD DATA LOCAL INFILE`. |
+| [import-csv-action.md](../../archive/docs-legacy/contracts/import-csv-action.md) | 4 / 0 | Importa un file CSV in una tabella con `LOAD DATA LOCAL INFILE`. |
 
 ### Actions/Mail (2)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [send-mail-by-record-action.md](send-mail-by-record-action.md) | 6 / 1 | Invia una mail a un record con oggetto e corpo letti dal record, allega il PDF del modello e registra l'invio nei log. |
-| [send-mail-by-records-action.md](send-mail-by-records-action.md) | 2 / 0 | Invia la mail a ciascun record di una collezione, delegando a `SendMailByRecordAction`. |
+| [send-mail-by-record-action.md](../../archive/docs-legacy/contracts/send-mail-by-record-action.md) | 6 / 1 | Invia una mail a un record con oggetto e corpo letti dal record, allega il PDF del modello e registra l'invio nei log. |
+| [send-mail-by-records-action.md](../../archive/docs-legacy/contracts/send-mail-by-records-action.md) | 2 / 0 | Invia la mail a ciascun record di una collezione, delegando a `SendMailByRecordAction`. |
 
 ### Actions/Model (19)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [create-morph-to-one-related-model-action.md](create-morph-to-one-related-model-action.md) | 2 / 0 | Crea il modello correlato di una relazione morphToOne chiamando `create()` sull'oggetto relazione. |
-| [delete-table-index-by-model-class-index-name-action.md](delete-table-index-by-model-class-index-name-action.md) | 2 / 0 | Elimina un indice dalla tabella di un modello, sulla connessione del modello. |
-| [destroy-action.md](destroy-action.md) | 2 / 1 | Cancella il modello passato e segnala l'esito in sessione. |
-| [filter-relations-action.md](filter-relations-action.md) | 2 / 0 | Indicizza un elenco di relazioni Eloquent per nome breve del modello correlato. |
-| [generate-model-by-table-action.md](generate-model-by-table-action.md) | 1 / 0 | Stub: la generazione di un modello da una tabella non è implementata. |
-| [get-all-models-action.md](get-all-models-action.md) | 2 / 0 | Raccoglie i modelli di tutti i moduli, delegando per modulo a `GetAllModelsByModuleNameAction`. |
-| [get-all-models-by-module-name-action.md](get-all-models-by-module-name-action.md) | 4 / 1 | Elenca le classi modello di un modulo leggendo `app/Models`. |
-| [get-first-model-class-by-model-name-action.md](get-first-model-class-by-model-name-action.md) | 2 / 0 | Risolve il FQCN di un modello per nome snake, scansionando tutti i moduli. |
-| [get-model-class-by-model-name-action.md](get-model-class-by-model-name-action.md) | 3 / 0 | Risolve il FQCN di un modello per nome, prima dal `morph_map` e poi, in mancanza, scansionando i moduli. |
-| [get-model-fields-by-model-action.md](get-model-fields-by-model-action.md) | 1 / 0 | Restituisce i nomi delle colonne della tabella del modello. |
-| [get-schema-manager-by-model-class-action.md](get-schema-manager-by-model-class-action.md) | 2 / 0 | Ottiene lo schema manager Doctrine per la connessione di un modello. |
-| [get-sicure-array-by-model-action.md](get-sicure-array-by-model-action.md) | 2 / 0 | Converte un modello in array tollerando valori enum non validi. |
-| [get-table-indexes-by-model-class-action.md](get-table-indexes-by-model-class-action.md) | 2 / 0 | Elenca gli indici della tabella di un modello, via schema manager Doctrine. |
-| [has-column-action.md](has-column-action.md) | 1 / 0 | Verifica se la tabella del modello ha una colonna, leggendo lo schema a ogni chiamata. |
-| [model-get-trans-key-by-model-class-action.md](model-get-trans-key-by-model-class-action.md) | 2 / 0 | Costruisce la chiave di traduzione `modulo::chiave-kebab` da un FQCN di modello. |
-| [model-has-column-action.md](model-has-column-action.md) | 3 / 1 | Dice se la tabella di un modello ha una colonna, con cache statica per processo. |
-| [model-table-exists-by-model-class-actions.md](model-table-exists-by-model-class-actions.md) | 3 / 0 | Dice se esiste la tabella di un modello. I modelli Sushi sono considerati sempre con tabella. |
-| [store-action.md](store-action.md) | 4 / 0 | Crea e salva un modello, poi applica le relazioni presenti nei dati tramite le Action `Model/Store/<Tipo>Action`. |
-| [update-action.md](update-action.md) | 4 / 0 | Aggiorna un modello (o ne crea/recupera uno dalla chiave) e applica le relazioni presenti nei dati tramite `Model/Update/RelationAction`. |
+| [create-morph-to-one-related-model-action.md](../../archive/docs-legacy/contracts/create-morph-to-one-related-model-action.md) | 2 / 0 | Crea il modello correlato di una relazione morphToOne chiamando `create()` sull'oggetto relazione. |
+| [delete-table-index-by-model-class-index-name-action.md](../../archive/docs-legacy/contracts/delete-table-index-by-model-class-index-name-action.md) | 2 / 0 | Elimina un indice dalla tabella di un modello, sulla connessione del modello. |
+| [destroy-action.md](../../archive/docs-legacy/contracts/destroy-action.md) | 2 / 1 | Cancella il modello passato e segnala l'esito in sessione. |
+| [filter-relations-action.md](../../archive/docs-legacy/contracts/filter-relations-action.md) | 2 / 0 | Indicizza un elenco di relazioni Eloquent per nome breve del modello correlato. |
+| [generate-model-by-table-action.md](../../archive/docs-legacy/contracts/generate-model-by-table-action.md) | 1 / 0 | Stub: la generazione di un modello da una tabella non è implementata. |
+| [get-all-models-action.md](../../archive/docs-legacy/contracts/get-all-models-action.md) | 2 / 0 | Raccoglie i modelli di tutti i moduli, delegando per modulo a `GetAllModelsByModuleNameAction`. |
+| [get-all-models-by-module-name-action.md](../../archive/docs-legacy/contracts/get-all-models-by-module-name-action.md) | 4 / 1 | Elenca le classi modello di un modulo leggendo `app/Models`. |
+| [get-first-model-class-by-model-name-action.md](../../archive/docs-legacy/contracts/get-first-model-class-by-model-name-action.md) | 2 / 0 | Risolve il FQCN di un modello per nome snake, scansionando tutti i moduli. |
+| [get-model-class-by-model-name-action.md](../../archive/docs-legacy/contracts/get-model-class-by-model-name-action.md) | 3 / 0 | Risolve il FQCN di un modello per nome, prima dal `morph_map` e poi, in mancanza, scansionando i moduli. |
+| [get-model-fields-by-model-action.md](../../archive/docs-legacy/contracts/get-model-fields-by-model-action.md) | 1 / 0 | Restituisce i nomi delle colonne della tabella del modello. |
+| [get-schema-manager-by-model-class-action.md](../../archive/docs-legacy/contracts/get-schema-manager-by-model-class-action.md) | 2 / 0 | Ottiene lo schema manager Doctrine per la connessione di un modello. |
+| [get-sicure-array-by-model-action.md](../../archive/docs-legacy/contracts/get-sicure-array-by-model-action.md) | 2 / 0 | Converte un modello in array tollerando valori enum non validi. |
+| [get-table-indexes-by-model-class-action.md](../../archive/docs-legacy/contracts/get-table-indexes-by-model-class-action.md) | 2 / 0 | Elenca gli indici della tabella di un modello, via schema manager Doctrine. |
+| [has-column-action.md](../../archive/docs-legacy/contracts/has-column-action.md) | 1 / 0 | Verifica se la tabella del modello ha una colonna, leggendo lo schema a ogni chiamata. |
+| [model-get-trans-key-by-model-class-action.md](../../archive/docs-legacy/contracts/model-get-trans-key-by-model-class-action.md) | 2 / 0 | Costruisce la chiave di traduzione `modulo::chiave-kebab` da un FQCN di modello. |
+| [model-has-column-action.md](../../archive/docs-legacy/contracts/model-has-column-action.md) | 3 / 1 | Dice se la tabella di un modello ha una colonna, con cache statica per processo. |
+| [model-table-exists-by-model-class-actions.md](../../archive/docs-legacy/contracts/model-table-exists-by-model-class-actions.md) | 3 / 0 | Dice se esiste la tabella di un modello. I modelli Sushi sono considerati sempre con tabella. |
+| [store-action.md](../../archive/docs-legacy/contracts/store-action.md) | 4 / 0 | Crea e salva un modello, poi applica le relazioni presenti nei dati tramite le Action `Model/Store/<Tipo>Action`. |
+| [update-action.md](../../archive/docs-legacy/contracts/update-action.md) | 4 / 0 | Aggiorna un modello (o ne crea/recupera uno dalla chiave) e applica le relazioni presenti nei dati tramite `Model/Update/RelationAction`. |
 
 ### Actions/Model/Store (12)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [store-belongs-to-action.md](store-belongs-to-action.md) | 2 / 0 | Crea il modello correlato di una `belongsTo` e lo associa al padre in memoria. |
-| [store-belongs-to-many-action.md](store-belongs-to-many-action.md) | 2 / 0 | Collega il modello ai correlati di una `belongsToMany` con `sync()`. |
-| [store-has-many-action.md](store-has-many-action.md) | 2 / 0 | Crea un figlio della relazione `hasMany`. |
-| [store-has-many-deep-action.md](store-has-many-deep-action.md) | 1 / 0 | Stub per la creazione di una `hasManyDeep`: non implementato. |
-| [store-has-many-through-action.md](store-has-many-through-action.md) | 1 / 0 | Stub per la creazione di una `hasManyThrough`: non implementato. |
-| [store-has-one-action.md](store-has-one-action.md) | 2 / 0 | Collega un correlato esistente a una `hasOne`, solo nel caso di un id singolo. |
-| [store-morph-many-action.md](store-morph-many-action.md) | 1 / 0 | Stub per la creazione di una `morphMany`: non implementato. |
-| [store-morph-one-action.md](store-morph-one-action.md) | 1 / 0 | Crea o aggiorna il figlio di una `morphOne`. |
-| [store-morph-to-many-action.md](store-morph-to-many-action.md) | 3 / 0 | Sincronizza la relazione `morphToMany` con una lista di id. |
-| [store-morph-to-one-action.md](store-morph-to-one-action.md) | 2 / 0 | Crea il modello correlato di una `morphToOne`, delegando a `CreateMorphToOneRelatedModelAction`. |
-| [store-morphed-by-many-action.md](store-morphed-by-many-action.md) | 1 / 0 | Stub per la creazione di una `morphedByMany`: non implementato. |
-| [store-pivot-action.md](store-pivot-action.md) | 1 / 0 | Stub per la creazione di dati pivot: non implementato. |
+| [store-belongs-to-action.md](../../archive/docs-legacy/contracts/store-belongs-to-action.md) | 2 / 0 | Crea il modello correlato di una `belongsTo` e lo associa al padre in memoria. |
+| [store-belongs-to-many-action.md](../../archive/docs-legacy/contracts/store-belongs-to-many-action.md) | 2 / 0 | Collega il modello ai correlati di una `belongsToMany` con `sync()`. |
+| [store-has-many-action.md](../../archive/docs-legacy/contracts/store-has-many-action.md) | 2 / 0 | Crea un figlio della relazione `hasMany`. |
+| [store-has-many-deep-action.md](../../archive/docs-legacy/contracts/store-has-many-deep-action.md) | 1 / 0 | Stub per la creazione di una `hasManyDeep`: non implementato. |
+| [store-has-many-through-action.md](../../archive/docs-legacy/contracts/store-has-many-through-action.md) | 1 / 0 | Stub per la creazione di una `hasManyThrough`: non implementato. |
+| [store-has-one-action.md](../../archive/docs-legacy/contracts/store-has-one-action.md) | 2 / 0 | Collega un correlato esistente a una `hasOne`, solo nel caso di un id singolo. |
+| [store-morph-many-action.md](../../archive/docs-legacy/contracts/store-morph-many-action.md) | 1 / 0 | Stub per la creazione di una `morphMany`: non implementato. |
+| [store-morph-one-action.md](../../archive/docs-legacy/contracts/store-morph-one-action.md) | 1 / 0 | Crea o aggiorna il figlio di una `morphOne`. |
+| [store-morph-to-many-action.md](../../archive/docs-legacy/contracts/store-morph-to-many-action.md) | 3 / 0 | Sincronizza la relazione `morphToMany` con una lista di id. |
+| [store-morph-to-one-action.md](../../archive/docs-legacy/contracts/store-morph-to-one-action.md) | 2 / 0 | Crea il modello correlato di una `morphToOne`, delegando a `CreateMorphToOneRelatedModelAction`. |
+| [store-morphed-by-many-action.md](../../archive/docs-legacy/contracts/store-morphed-by-many-action.md) | 1 / 0 | Stub per la creazione di una `morphedByMany`: non implementato. |
+| [store-pivot-action.md](../../archive/docs-legacy/contracts/store-pivot-action.md) | 1 / 0 | Stub per la creazione di dati pivot: non implementato. |
 
 ### Actions/Model/Update (14)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [custom-relation-action.md](custom-relation-action.md) | 3 / 1 | Aggiorna i campi delle righe di una relazione custom, senza associarle né scollegarle. |
-| [relation-action.md](relation-action.md) | 2 / 0 | Dispatcher: per ogni relazione trovata nei dati, chiama la Action `Model/Update/<TipoRelazione>Action`. |
-| [update-belongs-to-action.md](update-belongs-to-action.md) | 4 / 0 | Aggiorna la relazione `belongsTo`: associa un correlato esistente per id, oppure aggiorna/crea il correlato con i dati del form. |
-| [update-belongs-to-many-action.md](update-belongs-to-many-action.md) | 3 / 0 | Aggiorna una `belongsToMany`: con `to`/`from` sincronizza gli id; altrimenti aggiorna ogni correlato per chiave e ne collega gli id senza staccare gli altri. |
-| [update-has-many-action.md](update-has-many-action.md) | 3 / 0 | Aggiorna i figli di una `hasMany` e ne gestisce il collegamento al padre. |
-| [update-has-many-deep-action.md](update-has-many-deep-action.md) | 1 / 0 | Stub per l'aggiornamento di una `hasManyDeep`: non implementato. |
-| [update-has-many-through-action.md](update-has-many-through-action.md) | 1 / 0 | Stub per l'aggiornamento di una `hasManyThrough`: non implementato. |
-| [update-has-one-action.md](update-has-one-action.md) | 4 / 0 | Aggiorna il correlato di una `hasOne` o ne crea uno nuovo. |
-| [update-morph-many-action.md](update-morph-many-action.md) | 3 / 1 | Aggiorna i figli di una `morphMany` e li riassocia al padre con `saveMany()`. |
-| [update-morph-one-action.md](update-morph-one-action.md) | 3 / 0 | Aggiorna o crea il figlio di una `morphOne`, impostando `lang` e scartando i valori `null`. |
-| [update-morph-to-many-action.md](update-morph-to-many-action.md) | 3 / 0 | Aggiorna una `morphToMany`: con lista di id fa `sync`, con dati pivot fa `syncWithoutDetaching`. |
-| [update-morph-to-one-action.md](update-morph-to-one-action.md) | 3 / 0 | Gestisce una `morphToOne` nel flusso di aggiornamento. |
-| [update-morphed-by-many-action.md](update-morphed-by-many-action.md) | 1 / 0 | Stub per l'aggiornamento di una `morphedByMany`: non implementato. |
-| [update-pivot-action.md](update-pivot-action.md) | 1 / 0 | Stub per l'aggiornamento dei dati pivot: non implementato. |
+| [custom-relation-action.md](../../archive/docs-legacy/contracts/custom-relation-action.md) | 3 / 1 | Aggiorna i campi delle righe di una relazione custom, senza associarle né scollegarle. |
+| [relation-action.md](../../archive/docs-legacy/contracts/relation-action.md) | 2 / 0 | Dispatcher: per ogni relazione trovata nei dati, chiama la Action `Model/Update/<TipoRelazione>Action`. |
+| [update-belongs-to-action.md](../../archive/docs-legacy/contracts/update-belongs-to-action.md) | 4 / 0 | Aggiorna la relazione `belongsTo`: associa un correlato esistente per id, oppure aggiorna/crea il correlato con i dati del form. |
+| [update-belongs-to-many-action.md](../../archive/docs-legacy/contracts/update-belongs-to-many-action.md) | 3 / 0 | Aggiorna una `belongsToMany`: con `to`/`from` sincronizza gli id; altrimenti aggiorna ogni correlato per chiave e ne collega gli id senza staccare gli altri. |
+| [update-has-many-action.md](../../archive/docs-legacy/contracts/update-has-many-action.md) | 3 / 0 | Aggiorna i figli di una `hasMany` e ne gestisce il collegamento al padre. |
+| [update-has-many-deep-action.md](../../archive/docs-legacy/contracts/update-has-many-deep-action.md) | 1 / 0 | Stub per l'aggiornamento di una `hasManyDeep`: non implementato. |
+| [update-has-many-through-action.md](../../archive/docs-legacy/contracts/update-has-many-through-action.md) | 1 / 0 | Stub per l'aggiornamento di una `hasManyThrough`: non implementato. |
+| [update-has-one-action.md](../../archive/docs-legacy/contracts/update-has-one-action.md) | 4 / 0 | Aggiorna il correlato di una `hasOne` o ne crea uno nuovo. |
+| [update-morph-many-action.md](../../archive/docs-legacy/contracts/update-morph-many-action.md) | 3 / 1 | Aggiorna i figli di una `morphMany` e li riassocia al padre con `saveMany()`. |
+| [update-morph-one-action.md](../../archive/docs-legacy/contracts/update-morph-one-action.md) | 3 / 0 | Aggiorna o crea il figlio di una `morphOne`, impostando `lang` e scartando i valori `null`. |
+| [update-morph-to-many-action.md](../../archive/docs-legacy/contracts/update-morph-to-many-action.md) | 3 / 0 | Aggiorna una `morphToMany`: con lista di id fa `sync`, con dati pivot fa `syncWithoutDetaching`. |
+| [update-morph-to-one-action.md](../../archive/docs-legacy/contracts/update-morph-to-one-action.md) | 3 / 0 | Gestisce una `morphToOne` nel flusso di aggiornamento. |
+| [update-morphed-by-many-action.md](../../archive/docs-legacy/contracts/update-morphed-by-many-action.md) | 1 / 0 | Stub per l'aggiornamento di una `morphedByMany`: non implementato. |
+| [update-pivot-action.md](../../archive/docs-legacy/contracts/update-pivot-action.md) | 1 / 0 | Stub per l'aggiornamento dei dati pivot: non implementato. |
 
 ### Actions/ModelClass (10)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [count-action.md](count-action.md) | 2 / 1 | Restituisce il numero di record di un modello dal contatore memorizzato in `InformationSchemaTable`. |
-| [fake-seeder-action.md](fake-seeder-action.md) | 4 / 0 | Inserisce record fittizi generati dalla factory del modello, a blocchi, con limite per chiamata e rinvio in coda del resto. |
-| [get-method-body-action.md](get-method-body-action.md) | 2 / 0 | Restituisce il sorgente di un metodo di classe leggendo le righe dal file. |
-| [guess-morph-pivot-action.md](guess-morph-pivot-action.md) | 2 / 0 | Individua e istanzia la classe pivot morph per una relazione, con nome `{Related}Morph`. |
-| [guess-pivot-action.md](guess-pivot-action.md) | 2 / 0 | Individua e istanzia la classe pivot di una relazione many-to-many, con nome formato dai basename dei due modelli in ordine alfabetico. |
-| [guess-pivot-full-class-action.md](guess-pivot-full-class-action.md) | 3 / 0 | Cerca il FQCN di una classe pivot nel namespace del modello dichiarante, poi in quello del correlato, poi risalendo le classi genitrici. |
-| [model-class-copy-from-last-year-action.md](model-class-copy-from-last-year-action.md) | 3 / 0 | Copia i record dell'anno precedente in quello corrente, cambiando il campo anno. |
-| [model-class-table-exists-by-model-class-actions.md](model-class-table-exists-by-model-class-actions.md) | 3 / 0 | Dice se la tabella del modello esiste nel database; per i modelli Sushi risponde sempre `true`. |
-| [select-action.md](select-action.md) | 1 / 0 | Esegue una query SQL grezza sulla connessione del modello indicato. |
-| [update-count-action.md](update-count-action.md) | 2 / 2 | Scrive nel contatore `InformationSchemaTable` il numero di record indicato per un modello. |
+| [count-action.md](../../archive/docs-legacy/contracts/count-action.md) | 2 / 1 | Restituisce il numero di record di un modello dal contatore memorizzato in `InformationSchemaTable`. |
+| [fake-seeder-action.md](../../archive/docs-legacy/contracts/fake-seeder-action.md) | 4 / 0 | Inserisce record fittizi generati dalla factory del modello, a blocchi, con limite per chiamata e rinvio in coda del resto. |
+| [get-method-body-action.md](../../archive/docs-legacy/contracts/get-method-body-action.md) | 2 / 0 | Restituisce il sorgente di un metodo di classe leggendo le righe dal file. |
+| [guess-morph-pivot-action.md](../../archive/docs-legacy/contracts/guess-morph-pivot-action.md) | 2 / 0 | Individua e istanzia la classe pivot morph per una relazione, con nome `{Related}Morph`. |
+| [guess-pivot-action.md](../../archive/docs-legacy/contracts/guess-pivot-action.md) | 2 / 0 | Individua e istanzia la classe pivot di una relazione many-to-many, con nome formato dai basename dei due modelli in ordine alfabetico. |
+| [guess-pivot-full-class-action.md](../../archive/docs-legacy/contracts/guess-pivot-full-class-action.md) | 3 / 0 | Cerca il FQCN di una classe pivot nel namespace del modello dichiarante, poi in quello del correlato, poi risalendo le classi genitrici. |
+| [model-class-copy-from-last-year-action.md](../../archive/docs-legacy/contracts/model-class-copy-from-last-year-action.md) | 3 / 0 | Copia i record dell'anno precedente in quello corrente, cambiando il campo anno. |
+| [model-class-table-exists-by-model-class-actions.md](../../archive/docs-legacy/contracts/model-class-table-exists-by-model-class-actions.md) | 3 / 0 | Dice se la tabella del modello esiste nel database; per i modelli Sushi risponde sempre `true`. |
+| [select-action.md](../../archive/docs-legacy/contracts/select-action.md) | 1 / 0 | Esegue una query SQL grezza sulla connessione del modello indicato. |
+| [update-count-action.md](../../archive/docs-legacy/contracts/update-count-action.md) | 2 / 2 | Scrive nel contatore `InformationSchemaTable` il numero di record indicato per un modello. |
 
 ### Actions/Module (5)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [get-module-config-action.md](get-module-config-action.md) | 3 / 2 | Carica il file di configurazione `{config}.php` della cartella `config` di un modulo e restituisce il suo array con sole chiavi stringa. |
-| [get-module-name-by-class-action.md](get-module-name-by-class-action.md) | 2 / 1 | Estrae il nome del modulo da un FQCN di modello, come il segmento tra `Modules\` e `\Models\`. |
-| [get-module-name-by-model-action.md](get-module-name-by-model-action.md) | 1 / 0 | Dato un modello Eloquent, restituisce il nome del modulo a cui appartiene la sua classe. |
-| [get-module-name-by-model-class-action.md](get-module-name-by-model-class-action.md) | 2 / 1 | Estrae il nome del modulo da un FQCN di modello, come il segmento tra `Modules\` e `\Models\`. È usata da `GetViewByModelClassAction`. |
-| [get-module-path-by-generator-action.md](get-module-path-by-generator-action.md) | 3 / 0 | Restituisce il percorso di una cartella di un modulo, risolto dalla chiave `modules.paths.generator.{generatorPath}.path` della configurazione nwidart. |
+| [get-module-config-action.md](../../archive/docs-legacy/contracts/get-module-config-action.md) | 3 / 2 | Carica il file di configurazione `{config}.php` della cartella `config` di un modulo e restituisce il suo array con sole chiavi stringa. |
+| [get-module-name-by-class-action.md](../../archive/docs-legacy/contracts/get-module-name-by-class-action.md) | 2 / 1 | Estrae il nome del modulo da un FQCN di modello, come il segmento tra `Modules\` e `\Models\`. |
+| [get-module-name-by-model-action.md](../../archive/docs-legacy/contracts/get-module-name-by-model-action.md) | 1 / 0 | Dato un modello Eloquent, restituisce il nome del modulo a cui appartiene la sua classe. |
+| [get-module-name-by-model-class-action.md](../../archive/docs-legacy/contracts/get-module-name-by-model-class-action.md) | 2 / 1 | Estrae il nome del modulo da un FQCN di modello, come il segmento tra `Modules\` e `\Models\`. È usata da `GetViewByModelClassAction`. |
+| [get-module-path-by-generator-action.md](../../archive/docs-legacy/contracts/get-module-path-by-generator-action.md) | 3 / 0 | Restituisce il percorso di una cartella di un modulo, risolto dalla chiave `modules.paths.generator.{generatorPath}.path` della configurazione nwidart. |
 
 ### Actions/Panel (2)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [apply-metatag-to-panel-action.md](apply-metatag-to-panel-action.md) | 2 / 0 | Applica a un pannello Filament colori, logo, nome, favicon letti da `MetatagData`; in caso di errore logga e restituisce il pannello. |
-| [apply-tenancy-to-panel-action.md](apply-tenancy-to-panel-action.md) | 4 / 0 | Configura la multi-tenancy di un pannello Filament con la classe tenant di `XotData`, registrazione e profilo del modulo User. |
+| [apply-metatag-to-panel-action.md](../../archive/docs-legacy/contracts/apply-metatag-to-panel-action.md) | 2 / 0 | Applica a un pannello Filament colori, logo, nome, favicon letti da `MetatagData`; in caso di errore logga e restituisce il pannello. |
+| [apply-tenancy-to-panel-action.md](../../archive/docs-legacy/contracts/apply-tenancy-to-panel-action.md) | 4 / 0 | Configura la multi-tenancy di un pannello Filament con la classe tenant di `XotData`, registrazione e profilo del modulo User. |
 
 ### Actions/Pdf (7)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [content-pdf-action.md](content-pdf-action.md) | 4 / 0 | Genera il contenuto binario di un PDF da HTML diretto o da una vista Blade, per allegati email. |
-| [download-pdf-by-view-action.md](download-pdf-by-view-action.md) | 2 / 0 | Genera un PDF da una vista Blade e restituisce la risposta di download, delegando a `StreamDownloadPdfAction`. |
-| [get-pdf-content-by-record-action.md](get-pdf-content-by-record-action.md) | 5 / 1 | Genera il contenuto binario di un PDF da un record Eloquent, risolvendo la vista per convenzione `modulo::modello.show.pdf`. |
-| [make-pdf-spatie-test-action.md](make-pdf-spatie-test-action.md) | 3 / 0 | Costruisce una risposta di download PDF di prova con `spatie/laravel-pdf` (Browsershot) da una vista di test. |
-| [pdf-engine-enum.md](pdf-engine-enum.md) | 1 / 0 | Enum stub con il solo engine `SPIPU`, duplicato dell'enum `Modules\Xot\Enums\PdfEngineEnum`. Non è una Action. |
-| [pdf-pdf-by-html-action.md](pdf-pdf-by-html-action.md) | 2 / 0 | Converte HTML in PDF tramite `PdfData` e restituisce download o percorso. Namespace `Pdf` (duplicato di `Export\PdfByHtmlAction`). |
-| [stream-download-pdf-action.md](stream-download-pdf-action.md) | 3 / 0 | Genera un PDF da HTML o da vista e restituisce una risposta di download in streaming. |
+| [content-pdf-action.md](../../archive/docs-legacy/contracts/content-pdf-action.md) | 4 / 0 | Genera il contenuto binario di un PDF da HTML diretto o da una vista Blade, per allegati email. |
+| [download-pdf-by-view-action.md](../../archive/docs-legacy/contracts/download-pdf-by-view-action.md) | 2 / 0 | Genera un PDF da una vista Blade e restituisce la risposta di download, delegando a `StreamDownloadPdfAction`. |
+| [get-pdf-content-by-record-action.md](../../archive/docs-legacy/contracts/get-pdf-content-by-record-action.md) | 5 / 1 | Genera il contenuto binario di un PDF da un record Eloquent, risolvendo la vista per convenzione `modulo::modello.show.pdf`. |
+| [make-pdf-spatie-test-action.md](../../archive/docs-legacy/contracts/make-pdf-spatie-test-action.md) | 3 / 0 | Costruisce una risposta di download PDF di prova con `spatie/laravel-pdf` (Browsershot) da una vista di test. |
+| [pdf-engine-enum.md](../../archive/docs-legacy/contracts/pdf-engine-enum.md) | 1 / 0 | Enum stub con il solo engine `SPIPU`, duplicato dell'enum `Modules\Xot\Enums\PdfEngineEnum`. Non è una Action. |
+| [pdf-pdf-by-html-action.md](../../archive/docs-legacy/contracts/pdf-pdf-by-html-action.md) | 2 / 0 | Converte HTML in PDF tramite `PdfData` e restituisce download o percorso. Namespace `Pdf` (duplicato di `Export\PdfByHtmlAction`). |
+| [stream-download-pdf-action.md](../../archive/docs-legacy/contracts/stream-download-pdf-action.md) | 3 / 0 | Genera un PDF da HTML o da vista e restituisce una risposta di download in streaming. |
 
 ### Actions/Pdf/Engine (2)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [spatie-pdf-by-html-action.md](spatie-pdf-by-html-action.md) | 2 / 0 | Engine PDF con nome `Spatie` che in realtà usa `spipu/html2pdf`; corpo identico a `SpipuPdfByHtmlAction`. |
-| [spipu-pdf-by-html-action.md](spipu-pdf-by-html-action.md) | 2 / 0 | Engine PDF basato su `spipu/html2pdf`; corpo identico a `SpatiePdfByHtmlAction`. |
+| [spatie-pdf-by-html-action.md](../../archive/docs-legacy/contracts/spatie-pdf-by-html-action.md) | 2 / 0 | Engine PDF con nome `Spatie` che in realtà usa `spipu/html2pdf`; corpo identico a `SpipuPdfByHtmlAction`. |
+| [spipu-pdf-by-html-action.md](../../archive/docs-legacy/contracts/spipu-pdf-by-html-action.md) | 2 / 0 | Engine PDF basato su `spipu/html2pdf`; corpo identico a `SpatiePdfByHtmlAction`. |
 
 ### Actions/Query (3)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [create-table-index-by-model-class-columns-action.md](create-table-index-by-model-class-columns-action.md) | 5 / 5 | Crea un indice su una tabella di modello, saltandolo se esiste già per nome. |
-| [get-fieldnames-by-tablename-action.md](get-fieldnames-by-tablename-action.md) | 4 / 0 | Restituisce i nomi delle colonne di una tabella su una connessione indicata. |
-| [start-query-log-action.md](start-query-log-action.md) | 2 / 0 | Registra un listener che scrive ogni query SQL su un file di log dedicato. |
+| [create-table-index-by-model-class-columns-action.md](../../archive/docs-legacy/contracts/create-table-index-by-model-class-columns-action.md) | 5 / 5 | Crea un indice su una tabella di modello, saltandolo se esiste già per nome. |
+| [get-fieldnames-by-tablename-action.md](../../archive/docs-legacy/contracts/get-fieldnames-by-tablename-action.md) | 4 / 0 | Restituisce i nomi delle colonne di una tabella su una connessione indicata. |
+| [start-query-log-action.md](../../archive/docs-legacy/contracts/start-query-log-action.md) | 2 / 0 | Registra un listener che scrive ogni query SQL su un file di log dedicato. |
 
 ### Actions/Route (12)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [build-action-url-action.md](build-action-url-action.md) | 3 / 2 | Costruisce l'URL di un'azione sulla route corrente, sostituendo l'ultimo segmento del nome route con l'azione richiesta. |
-| [build-language-url-action.md](build-language-url-action.md) | 1 / 1 | Dovrebbe costruire l'URL di cambio lingua. Nel codice restituisce sempre un placeholder. |
-| [build-nested-route-name-action.md](build-nested-route-name-action.md) | 3 / 1 | Costruisce il nome di una route annidata: `[admin.]container0...containerN.azione`. |
-| [get-current-route-action-name-action.md](get-current-route-action-name-action.md) | 1 / 1 | Restituisce il nome del metodo del controller della route corrente, in snake_case. |
-| [get-current-route-controller-name-action.md](get-current-route-controller-name-action.md) | 1 / 1 | Restituisce il nome del controller della route corrente, senza namespace fino a `Http\Controllers\` e senza suffisso `Controller`. |
-| [get-current-route-handler-action.md](get-current-route-handler-action.md) | 2 / 1 | Restituisce la stringa `Classe@metodo` della route corrente. |
-| [get-current-route-module-name-action.md](get-current-route-module-name-action.md) | 1 / 1 | Restituisce il nome del modulo a cui appartiene il controller della route corrente. |
-| [get-current-route-view-action.md](get-current-route-view-action.md) | 3 / 1 | Costruisce un nome di vista in notazione puntata dal controller della route corrente, sostituendo i segmenti con i parametri della route. |
-| [get-route-method-action.md](get-route-method-action.md) | 2 / 1 | Restituisce i metodi HTTP per una definizione di route dinamica. |
-| [get-route-parameters-action.md](get-route-parameters-action.md) | 2 / 0 | Restituisce i parametri della route corrente come array associativo. |
-| [is-admin-route-action.md](is-admin-route-action.md) | 3 / 0 | Stabilisce se la richiesta corrente è una rotta di amministrazione. |
-| [register-dynamic-routes-action.md](register-dynamic-routes-action.md) | 5 / 0 | Registra nel router le route descritte da un array di definizioni: risorsa, azioni extra e sotto-definizioni annidate. |
+| [build-action-url-action.md](../../archive/docs-legacy/contracts/build-action-url-action.md) | 3 / 2 | Costruisce l'URL di un'azione sulla route corrente, sostituendo l'ultimo segmento del nome route con l'azione richiesta. |
+| [build-language-url-action.md](../../archive/docs-legacy/contracts/build-language-url-action.md) | 1 / 1 | Dovrebbe costruire l'URL di cambio lingua. Nel codice restituisce sempre un placeholder. |
+| [build-nested-route-name-action.md](../../archive/docs-legacy/contracts/build-nested-route-name-action.md) | 3 / 1 | Costruisce il nome di una route annidata: `[admin.]container0...containerN.azione`. |
+| [get-current-route-action-name-action.md](../../archive/docs-legacy/contracts/get-current-route-action-name-action.md) | 1 / 1 | Restituisce il nome del metodo del controller della route corrente, in snake_case. |
+| [get-current-route-controller-name-action.md](../../archive/docs-legacy/contracts/get-current-route-controller-name-action.md) | 1 / 1 | Restituisce il nome del controller della route corrente, senza namespace fino a `Http\Controllers\` e senza suffisso `Controller`. |
+| [get-current-route-handler-action.md](../../archive/docs-legacy/contracts/get-current-route-handler-action.md) | 2 / 1 | Restituisce la stringa `Classe@metodo` della route corrente. |
+| [get-current-route-module-name-action.md](../../archive/docs-legacy/contracts/get-current-route-module-name-action.md) | 1 / 1 | Restituisce il nome del modulo a cui appartiene il controller della route corrente. |
+| [get-current-route-view-action.md](../../archive/docs-legacy/contracts/get-current-route-view-action.md) | 3 / 1 | Costruisce un nome di vista in notazione puntata dal controller della route corrente, sostituendo i segmenti con i parametri della route. |
+| [get-route-method-action.md](../../archive/docs-legacy/contracts/get-route-method-action.md) | 2 / 1 | Restituisce i metodi HTTP per una definizione di route dinamica. |
+| [get-route-parameters-action.md](../../archive/docs-legacy/contracts/get-route-parameters-action.md) | 2 / 0 | Restituisce i parametri della route corrente come array associativo. |
+| [is-admin-route-action.md](../../archive/docs-legacy/contracts/is-admin-route-action.md) | 3 / 0 | Stabilisce se la richiesta corrente è una rotta di amministrazione. |
+| [register-dynamic-routes-action.md](../../archive/docs-legacy/contracts/register-dynamic-routes-action.md) | 5 / 0 | Registra nel router le route descritte da un array di definizioni: risorsa, azioni extra e sotto-definizioni annidate. |
 
 ### Actions/String (5)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [fix-double-encoded-utf8-action.md](fix-double-encoded-utf8-action.md) | 4 / 3 | Ripara il testo UTF-8 codificato due volte (es. `SÃ¬` → `Sì`) passando per Windows-1252. |
-| [get-pronounceable-password-action.md](get-pronounceable-password-action.md) | 3 / 2 | Genera una password pronunciabile con lettere, una cifra e un simbolo, con sorgente CSPRNG. |
-| [get-str-between-starts-with-action.md](get-str-between-starts-with-action.md) | 3 / 1 | Estrae da `$body` il blocco che inizia alla prima occorrenza di `$start` e si chiude quando il numero di `$open` eguaglia quello di `$close`. |
-| [normalize-driver-name-action.md](normalize-driver-name-action.md) | 2 / 2 | Riduce il nome di un driver a soli caratteri `[a-z0-9]` in minuscolo. |
-| [sanitize-action.md](sanitize-action.md) | 2 / 2 | Rimuove i tag HTML, decodifica le entità e applica `trim`. |
+| [fix-double-encoded-utf8-action.md](../../archive/docs-legacy/contracts/fix-double-encoded-utf8-action.md) | 4 / 3 | Ripara il testo UTF-8 codificato due volte (es. `SÃ¬` → `Sì`) passando per Windows-1252. |
+| [get-pronounceable-password-action.md](../../archive/docs-legacy/contracts/get-pronounceable-password-action.md) | 3 / 2 | Genera una password pronunciabile con lettere, una cifra e un simbolo, con sorgente CSPRNG. |
+| [get-str-between-starts-with-action.md](../../archive/docs-legacy/contracts/get-str-between-starts-with-action.md) | 3 / 1 | Estrae da `$body` il blocco che inizia alla prima occorrenza di `$start` e si chiude quando il numero di `$open` eguaglia quello di `$close`. |
+| [normalize-driver-name-action.md](../../archive/docs-legacy/contracts/normalize-driver-name-action.md) | 2 / 2 | Riduce il nome di un driver a soli caratteri `[a-z0-9]` in minuscolo. |
+| [sanitize-action.md](../../archive/docs-legacy/contracts/sanitize-action.md) | 2 / 2 | Rimuove i tag HTML, decodifica le entità e applica `trim`. |
 
 ### Actions/Testing (1)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [resolve-shared-sqlite-path-action.md](resolve-shared-sqlite-path-action.md) | 3 / 0 | Risolve il percorso del file SQLite condiviso dalla suite di test. |
+| [resolve-shared-sqlite-path-action.md](../../archive/docs-legacy/contracts/resolve-shared-sqlite-path-action.md) | 3 / 0 | Risolve il percorso del file SQLite condiviso dalla suite di test. |
 
 ### Actions/Theme (5)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [get-theme-action.md](get-theme-action.md) | 2 / 1 | Restituisce il nome del tema attivo letto da `config('theme.active')`. |
-| [get-theme-context-action.md](get-theme-context-action.md) | 5 / 0 | Restituisce il contesto tematico della data corrente (natale, pasqua, estate, halloween, default). |
-| [get-theme-path-action.md](get-theme-path-action.md) | 2 / 1 | Restituisce il percorso della cartella del tema attivo sotto `resources/themes`. |
-| [is-theme-action.md](is-theme-action.md) | 2 / 1 | Dice se il tema passato è quello attivo. |
-| [set-theme-action.md](set-theme-action.md) | 2 / 1 | Imposta il tema attivo in memoria, cambiando `config('theme.active')`. |
+| [get-theme-action.md](../../archive/docs-legacy/contracts/get-theme-action.md) | 2 / 1 | Restituisce il nome del tema attivo letto da `config('theme.active')`. |
+| [get-theme-context-action.md](../../archive/docs-legacy/contracts/get-theme-context-action.md) | 5 / 0 | Restituisce il contesto tematico della data corrente (natale, pasqua, estate, halloween, default). |
+| [get-theme-path-action.md](../../archive/docs-legacy/contracts/get-theme-path-action.md) | 2 / 1 | Restituisce il percorso della cartella del tema attivo sotto `resources/themes`. |
+| [is-theme-action.md](../../archive/docs-legacy/contracts/is-theme-action.md) | 2 / 1 | Dice se il tema passato è quello attivo. |
+| [set-theme-action.md](../../archive/docs-legacy/contracts/set-theme-action.md) | 2 / 1 | Imposta il tema attivo in memoria, cambiando `config('theme.active')`. |
 
 ### Actions/Trans (2)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [get-trans-filename-action.md](get-trans-filename-action.md) | 3 / 0 | Calcola il percorso assoluto del file di traduzione PHP per il locale corrente, dato un nome nel formato `modulo::file.chiave`. |
-| [trans-get-trans-key-by-model-class-action.md](trans-get-trans-key-by-model-class-action.md) | 2 / 0 | Costruisce la chiave di traduzione `modulo::modello{suffisso}` per una classe modello. |
+| [get-trans-filename-action.md](../../archive/docs-legacy/contracts/get-trans-filename-action.md) | 3 / 0 | Calcola il percorso assoluto del file di traduzione PHP per il locale corrente, dato un nome nel formato `modulo::file.chiave`. |
+| [trans-get-trans-key-by-model-class-action.md](../../archive/docs-legacy/contracts/trans-get-trans-key-by-model-class-action.md) | 2 / 0 | Costruisce la chiave di traduzione `modulo::modello{suffisso}` per una classe modello. |
 
 ### Actions/Translation (6)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [apertium-translate-action.md](apertium-translate-action.md) | 1 / 0 | Provider di traduzione Apertium: implementazione stub che restituisce sempre stringa vuota. |
-| [base-translate-action.md](base-translate-action.md) | 1 / 0 | Classe astratta che fissa la firma comune dei provider di traduzione. Non è eseguibile direttamente. |
-| [deep-l-translate-action.md](deep-l-translate-action.md) | 1 / 0 | Provider di traduzione DeepL: implementazione stub che restituisce sempre stringa vuota. |
-| [google-translate-action.md](google-translate-action.md) | 1 / 0 | Provider di traduzione Google: implementazione stub che restituisce sempre stringa vuota. |
-| [my-memory-translate-action.md](my-memory-translate-action.md) | 1 / 0 | Provider di traduzione MyMemory: implementazione stub che restituisce sempre stringa vuota. |
-| [systran-translate-action.md](systran-translate-action.md) | 1 / 0 | Provider di traduzione Systran: implementazione stub che restituisce sempre stringa vuota. |
+| [apertium-translate-action.md](../../archive/docs-legacy/contracts/apertium-translate-action.md) | 1 / 0 | Provider di traduzione Apertium: implementazione stub che restituisce sempre stringa vuota. |
+| [base-translate-action.md](../../archive/docs-legacy/contracts/base-translate-action.md) | 1 / 0 | Classe astratta che fissa la firma comune dei provider di traduzione. Non è eseguibile direttamente. |
+| [deep-l-translate-action.md](../../archive/docs-legacy/contracts/deep-l-translate-action.md) | 1 / 0 | Provider di traduzione DeepL: implementazione stub che restituisce sempre stringa vuota. |
+| [google-translate-action.md](../../archive/docs-legacy/contracts/google-translate-action.md) | 1 / 0 | Provider di traduzione Google: implementazione stub che restituisce sempre stringa vuota. |
+| [my-memory-translate-action.md](../../archive/docs-legacy/contracts/my-memory-translate-action.md) | 1 / 0 | Provider di traduzione MyMemory: implementazione stub che restituisce sempre stringa vuota. |
+| [systran-translate-action.md](../../archive/docs-legacy/contracts/systran-translate-action.md) | 1 / 0 | Provider di traduzione Systran: implementazione stub che restituisce sempre stringa vuota. |
 
 ### Actions/Tree (1)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [get-tree-options-by-model-class-action.md](get-tree-options-by-model-class-action.md) | 3 / 0 | Produce le opzioni per un select ad albero da un modello gerarchico. |
+| [get-tree-options-by-model-class-action.md](../../archive/docs-legacy/contracts/get-tree-options-by-model-class-action.md) | 3 / 0 | Produce le opzioni per un select ad albero da un modello gerarchico. |
 
 ### Actions/Trend (1)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [build-trend-collection-action.md](build-trend-collection-action.md) | 4 / 0 | Costruisce una serie temporale aggregata da una query con `Flowframe\Trend`. |
+| [build-trend-collection-action.md](../../archive/docs-legacy/contracts/build-trend-collection-action.md) | 4 / 0 | Costruisce una serie temporale aggregata da una query con `Flowframe\Trend`. |
 
 ### Actions/Trend/Adapters (4)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [abstract-adapter.md](abstract-adapter.md) | 1 / 0 | Classe astratta per gli adapter SQL del trend: definisce `format(column, interval)`. |
-| [my-sql-adapter.md](my-sql-adapter.md) | 1 / 0 | Adapter MySQL per il raggruppamento temporale: produce `date_format(colonna, formato)`. |
-| [pgsql-adapter.md](pgsql-adapter.md) | 1 / 0 | Adapter PostgreSQL per il raggruppamento temporale: produce `to_char(colonna, formato)`. |
-| [sqlite-adapter.md](sqlite-adapter.md) | 1 / 0 | Adapter SQLite per il raggruppamento temporale: produce `strftime(formato, colonna)`. |
+| [abstract-adapter.md](../../archive/docs-legacy/contracts/abstract-adapter.md) | 1 / 0 | Classe astratta per gli adapter SQL del trend: definisce `format(column, interval)`. |
+| [my-sql-adapter.md](../../archive/docs-legacy/contracts/my-sql-adapter.md) | 1 / 0 | Adapter MySQL per il raggruppamento temporale: produce `date_format(colonna, formato)`. |
+| [pgsql-adapter.md](../../archive/docs-legacy/contracts/pgsql-adapter.md) | 1 / 0 | Adapter PostgreSQL per il raggruppamento temporale: produce `to_char(colonna, formato)`. |
+| [sqlite-adapter.md](../../archive/docs-legacy/contracts/sqlite-adapter.md) | 1 / 0 | Adapter SQLite per il raggruppamento temporale: produce `strftime(formato, colonna)`. |
 
 ### Actions/Trend/Format (4)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [base-format-action.md](base-format-action.md) | 1 / 0 | Classe astratta delle Action di formato data SQL del trend. Duplica il ruolo di `AbstractAdapter`. |
-| [my-sql-format-action.md](my-sql-format-action.md) | 1 / 0 | Formato data MySQL per il trend, come `Trend\Adapters\MySqlAdapter` ma con `InvalidArgumentException`. |
-| [pgsql-format-action.md](pgsql-format-action.md) | 1 / 0 | Formato data PostgreSQL per il trend, come `Trend\Adapters\PgsqlAdapter` ma con `InvalidArgumentException`. |
-| [sqlite-format-action.md](sqlite-format-action.md) | 1 / 0 | Formato data SQLite per il trend, come `Trend\Adapters\SqliteAdapter` ma con `InvalidArgumentException`. |
+| [base-format-action.md](../../archive/docs-legacy/contracts/base-format-action.md) | 1 / 0 | Classe astratta delle Action di formato data SQL del trend. Duplica il ruolo di `AbstractAdapter`. |
+| [my-sql-format-action.md](../../archive/docs-legacy/contracts/my-sql-format-action.md) | 1 / 0 | Formato data MySQL per il trend, come `Trend\Adapters\MySqlAdapter` ma con `InvalidArgumentException`. |
+| [pgsql-format-action.md](../../archive/docs-legacy/contracts/pgsql-format-action.md) | 1 / 0 | Formato data PostgreSQL per il trend, come `Trend\Adapters\PgsqlAdapter` ma con `InvalidArgumentException`. |
+| [sqlite-format-action.md](../../archive/docs-legacy/contracts/sqlite-format-action.md) | 1 / 0 | Formato data SQLite per il trend, come `Trend\Adapters\SqliteAdapter` ma con `InvalidArgumentException`. |
 
 ### Actions/Url (1)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [is-valid-url-action.md](is-valid-url-action.md) | 1 / 1 | Verifica sintatticamente una stringa come URL con `filter_var`. |
+| [is-valid-url-action.md](../../archive/docs-legacy/contracts/is-valid-url-action.md) | 1 / 1 | Verifica sintatticamente una stringa come URL con `filter_var`. |
 
 ### Actions/Utilities (2)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [utilities-diff-assoc-recursive-action.md](utilities-diff-assoc-recursive-action.md) | 3 / 0 | Restituisce gli elementi di primo livello di `$arr_1` che non compaiono in `$arr_2`. |
-| [utilities-range-intersect-action.md](utilities-range-intersect-action.md) | 2 / 0 | Calcola l'intersezione tra due intervalli numerici chiusi `[a, b]` e `[c, d]` come `[max(inizi), min(fini)]`. |
+| [utilities-diff-assoc-recursive-action.md](../../archive/docs-legacy/contracts/utilities-diff-assoc-recursive-action.md) | 3 / 0 | Restituisce gli elementi di primo livello di `$arr_1` che non compaiono in `$arr_2`. |
+| [utilities-range-intersect-action.md](../../archive/docs-legacy/contracts/utilities-range-intersect-action.md) | 2 / 0 | Calcola l'intersezione tra due intervalli numerici chiusi `[a, b]` e `[c, d]` come `[max(inizi), min(fini)]`. |
 
 ### Actions/View (5)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [get-view-by-model-class-action.md](get-view-by-model-class-action.md) | 3 / 0 | Trova la vista di un modello nel modulo del modello o, se manca, nei moduli delle classi antenate. |
-| [get-view-dir-action.md](get-view-dir-action.md) | 2 / 0 | Converte un nome di vista `ns::a.b` nella cartella che la contiene su disco. |
-| [get-view-path-action.md](get-view-path-action.md) | 1 / 0 | Converte un nome di vista `ns::a.b` nel percorso del file `.blade.php` su disco. |
-| [get-views-siblings-and-self-action.md](get-views-siblings-and-self-action.md) | 3 / 0 | Elenca le viste `.blade.php` che stanno nella stessa cartella della vista indicata, inclusa la vista stessa. |
-| [view-get-view-name-space-path-action.md](view-get-view-name-space-path-action.md) | 2 / 0 | Restituisce la cartella delle viste di un modulo (`resources/views`), o quella globale `resource_path('views')` se il modulo non è indicato. |
+| [get-view-by-model-class-action.md](../../archive/docs-legacy/contracts/get-view-by-model-class-action.md) | 3 / 0 | Trova la vista di un modello nel modulo del modello o, se manca, nei moduli delle classi antenate. |
+| [get-view-dir-action.md](../../archive/docs-legacy/contracts/get-view-dir-action.md) | 2 / 0 | Converte un nome di vista `ns::a.b` nella cartella che la contiene su disco. |
+| [get-view-path-action.md](../../archive/docs-legacy/contracts/get-view-path-action.md) | 1 / 0 | Converte un nome di vista `ns::a.b` nel percorso del file `.blade.php` su disco. |
+| [get-views-siblings-and-self-action.md](../../archive/docs-legacy/contracts/get-views-siblings-and-self-action.md) | 3 / 0 | Elenca le viste `.blade.php` che stanno nella stessa cartella della vista indicata, inclusa la vista stessa. |
+| [view-get-view-name-space-path-action.md](../../archive/docs-legacy/contracts/view-get-view-name-space-path-action.md) | 2 / 0 | Restituisce la cartella delle viste di un modulo (`resources/views`), o quella globale `resource_path('views')` se il modulo non è indicato. |
 
 ### Actions/Xot (1)
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [get-tenant-class-action.md](get-tenant-class-action.md) | 1 / 0 | Restituisce la classe del modello Tenant. Sostituisce `Modules\Xot\Services\XotService::getTenantClass()`. |
+| [get-tenant-class-action.md](../../archive/docs-legacy/contracts/get-tenant-class-action.md) | 1 / 0 | Restituisce la classe del modello Tenant. Sostituisce `Modules\Xot\Services\XotService::getTenantClass()`. |
 
 ## Contract di framework
 
 Non sono Action: descrivono confini del framework. Hanno `type: framework-contract` e una tabella di invarianti con ID (`XOT-BOOTSTRAP-INV-N`, `XOT-XOTBASE-INV-N`): 6 invarianti, nessuna con group Pest, tre con un test o una regola Pest arch esistente da annotare. Non sono nei conteggi della copertura qui sopra (che riguardano i contratti di Action).
 
-- [bootstrap-provider-registry.md](bootstrap-provider-registry.md) — Contract — registro dei provider Laravel
-- [xotbase-classes.md](xotbase-classes.md) — Contract — classi base XotBase
+- [bootstrap-provider-registry.md](../../archive/docs-legacy/contracts/bootstrap-provider-registry.md) — Contract — registro dei provider Laravel
+- [xotbase-classes.md](../../archive/docs-legacy/contracts/xotbase-classes.md) — Contract — classi base XotBase
 
 ## Documenti di metodo (non sono contratti)
 
 - [contract-authoring-standard.md](contract-authoring-standard.md) — standard di authoring dei contratti, valido per ogni modulo e tema.
 - [behavioral-contract-template.md](behavioral-contract-template.md), [0000-template.md](0000-template.md), [_template.md](_template.md) — modelli; gli ID segnaposto (`<OWNER>-<OPERATION>-INV-1`, `MODULE-INV-1`) non sono invarianti reali.
-- [INDEX.md](INDEX.md), [index.md](index.md) — elenco alfabetico per titolo e puntatore storico al nome minuscolo.
+- [INDEX.md](INDEX.md), [index.md](../../archive/docs-legacy/contracts/index.md) — elenco alfabetico per titolo e puntatore storico al nome minuscolo.
 - [Regola Action Behavioral Contract](../rules/action-behavioral-contract.md) — quando il contratto è obbligatorio.
 
 ## Backlog contract
@@ -548,12 +548,12 @@ Non sono Action: descrivono confini del framework. Hanno `type: framework-contra
 Action di `app/Actions` ancora senza `@contract` (il 2026-11-26, `rg -L "@contract docs/contracts/" app/Actions`):
 
 - `app/Actions/Artisan/Handlers/ModuleCommandHandler.php` — **residuo deprecato senza chiamanti** (`@deprecated` nel docblock; l'alias `app/Services/Artisan/Handlers/ModuleCommandHandler.php` lo estende). Lancia `module:disable <nome>` / `module:enable <nome>` tramite `RunArtisanCommandAction` con un nome preso dal chiamante e non filtrato. Non merita un contratto: proposta di cancellarlo insieme all'alias (decisione umana; l'alias in `app/Services` viola anche la regola «niente Services», ADR 0001).
-- `app/Actions/Arr/DiffAssocRecursiveAction.php` — pura, senza effetti collaterali, duplicata da `Utilities/DiffAssocRecursiveAction` (già in [utilities-diff-assoc-recursive-action.md](utilities-diff-assoc-recursive-action.md)); nessun contratto proprio finché i due non si unificano (vedi [array-action.md](array-action.md)).
+- `app/Actions/Arr/DiffAssocRecursiveAction.php` — pura, senza effetti collaterali, duplicata da `Utilities/DiffAssocRecursiveAction` (già in [utilities-diff-assoc-recursive-action.md](../../archive/docs-legacy/contracts/utilities-diff-assoc-recursive-action.md)); nessun contratto proprio finché i due non si unificano (vedi [array-action.md](../../archive/docs-legacy/contracts/array-action.md)).
 
 Nessuna Action che scrive dati o chiama un servizio esterno è rimasta senza contratto (lo script `audit_docs.py` non ne segnala più). Il rischio più alto che i contratti segnalano come **Limite noto**, non corretto in questa passata:
 
-- [export-xls-by-collection.md](export-xls-by-collection.md): `ExportTreeXlsAction` ed `ExportXlsTableAction` esportano campi di record senza un'autorizzazione esplicita nel proprio file (a differenza di `ExportXlsAction`).
-- [execute-artisan-command-action.md](execute-artisan-command-action.md): `migrate` è nella lista dei comandi consentiti; da confrontare con la regola sui dati sacri.
+- [export-xls-by-collection.md](../../archive/docs-legacy/contracts/export-xls-by-collection.md): `ExportTreeXlsAction` ed `ExportXlsTableAction` esportano campi di record senza un'autorizzazione esplicita nel proprio file (a differenza di `ExportXlsAction`).
+- [execute-artisan-command-action.md](../../archive/docs-legacy/contracts/execute-artisan-command-action.md): `migrate` è nella lista dei comandi consentiti; da confrontare con la regola sui dati sacri.
 
 ## Backlog test
 

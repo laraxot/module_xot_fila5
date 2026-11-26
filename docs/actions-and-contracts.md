@@ -50,8 +50,9 @@ progetto ospite), `tests/Unit/Docs/PackagesHaveContractsAndAdrTest.php` (README 
 
 `GetViewByModelClassAction::execute(string $model_class, string $suffix)` restituisce `{modulo}::{modello_snake}{suffisso}` (es. `progressioni::scheda.index.pdf`).
 Se il modulo del modello non ha la view, la cerca nei moduli delle classi antenate con lo stesso nome di modello (una foglia eredita le view della piattaforma finche'
-non le personalizza); se non ne trova nessuna lancia un'eccezione che elenca tutte le view provate. Il docblock cita `docs/contracts/get-view-by-model-class-action.md`, che
-oggi non esiste: va scritto, oppure il riferimento va tolto.
+non le personalizza); se non ne trova nessuna lancia un'eccezione che elenca tutte le view provate. Il docblock cita `docs/contracts/get-view-by-model-class-action.md`: il contratto esiste nell'archivio
+[`archive/docs-legacy/contracts/get-view-by-model-class-action.md`](../archive/docs-legacy/contracts/get-view-by-model-class-action.md)
+(gli stub per-Action sono archiviati per il tetto di 100 file `.md` in `docs/`, issue #151).
 
 Perche' ripiega sulle classi antenate: il modello di una foglia estende la Base della piattaforma (`Progressioni\Models\Scheda` => `Ptv\Models\BaseScheda`): quando mancava
 la view nel modulo della foglia (`progressioni::scheda.index.pdf`) l'export andava in `Exception: view [...] not Exists`, costringendo ogni modulo a copiare il template.

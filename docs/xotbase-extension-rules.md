@@ -156,7 +156,7 @@ Eccezione, i moduli con **permessi operativi** (es. Roosko: operatore di piazzal
 fare lo dicono i permessi. Con il bypass, l'operatore che ha il ruolo del pannello per usare la pagina di scansione poteva rettificare pesi ed eliminare conferimenti. Le loro
 policy estendono `OperationalXotBasePolicy`, che compone `Concerns\RequiresOperationalPermissions`: `moduleAdminRole()` restituisce `null`, quindi passa solo il super-admin.
 Il trait ha consumatori veri solo in altri progetti (Roosko, 33 policy): in questo progetto `trait.unused` lo segnala, ma non si parcheggia ne' si cancella (censimento nella story
-[0148](bmad/stories/0148-phpstan-modules-zero-swarm-standing.story.md)). Guardia: `tests/Unit/Models/Policies/RequiresOperationalPermissionsTest.php` (con `tests/Fixtures/Policies/OperationalPermissionsPolicyProbe.php`),
+[0148](../archive/docs-legacy/bmad-stories/0148-phpstan-modules-zero-swarm-standing.story.md)). Guardia: `tests/Unit/Models/Policies/RequiresOperationalPermissionsTest.php` (con `tests/Fixtures/Policies/OperationalPermissionsPolicyProbe.php`),
 unico test del trait qui: non va cancellato.
 
 ## Decisioni collegate

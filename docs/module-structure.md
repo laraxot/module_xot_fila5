@@ -46,7 +46,7 @@ Per ogni modulo con repository git propria (`Modules/<Mod>/.git`):
 7. `resources/lang` assente e ignorato nei moduli (non nei temi, che caricano da li');
 8. `*.lock` ignorato e mai tracciato (i lock degli agenti `bashscripts/lock/lock.sh` stanno accanto al file bloccato).
 
-Story: [bmad/stories/0103-module-root-hygiene.story.md](bmad/stories/0103-module-root-hygiene.story.md).
+Story: [bmad/stories/0103-module-root-hygiene.story.md](../archive/docs-legacy/bmad-stories/0103-module-root-hygiene.story.md).
 
 ## Route
 
