@@ -17,7 +17,7 @@ uses(TestCase::class);
 test('get module name by class action works', function (): void {
     $action = app(GetModuleNameByClassAction::class);
     Assert::assertSame('User', $action->execute('Modules\User\Models\User'));
-});
+})->group('MODULE-NAME-CLASS-INV-1');
 
 test('get module config action works', function (): void {
     $path = tempnam(sys_get_temp_dir(), 'test_module_config');
@@ -34,4 +34,4 @@ test('get module config action works', function (): void {
 
     Assert::assertSame(['a' => 1], $result);
     File::deleteDirectory($path);
-});
+})->group('MODULE-CONFIG-INV-1');

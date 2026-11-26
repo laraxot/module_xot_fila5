@@ -2,11 +2,12 @@
 status: proposed            # proposed | accepted | rejected | deprecated | superseded by NNNN
 date: YYYY-MM-DD
 decision-makers:
+qmd: "0000 template adr MADR harness NNNN-slug"
 ---
 
-<!-- File: docs/adr/NNNN-titolo-con-trattini.md · formato MADR breve.
-     Scrivi un ADR solo se la decisione è difficile da invertire, sorprendente e frutto di un trade-off reale
-     (di solito nasce da una Decision in .harness/memory/decisions.md). -->
+<!-- File: docs/adr/NNNN-titolo-con-trattini.md · formato MADR breve (harness).
+     Il basename DEVE iniziare con NNNN- (es. 0001-...). Eccezioni: README.md, INDEX.md/index.md, 0000-template.md. Mai kebab-only non numerato.
+     Scrivi un ADR solo se la decisione è difficile da invertire, sorprendente e frutto di un trade-off reale. -->
 
 # <!-- Titolo: il problema risolto e la soluzione scelta -->
 

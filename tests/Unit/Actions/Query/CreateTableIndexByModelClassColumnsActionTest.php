@@ -38,7 +38,7 @@ it('creates table index correctly', function (): void {
 
     // Duplicate creation should skip
     Assert::assertFalse($action->execute($model::class, ['test_col']));
-});
+})->group('CREATE-INDEX-INV-4', 'CREATE-INDEX-INV-5');
 
 it('throws exception for invalid model class', function (): void {
     $action = app(CreateTableIndexByModelClassColumnsAction::class);
@@ -49,7 +49,7 @@ it('throws exception for invalid model class', function (): void {
 
     expect(fn (): mixed => $execute->invoke($action, stdClass::class, ['id']))
         ->toThrow(InvalidArgumentException::class, 'must be a subclass of');
-});
+})->group('CREATE-INDEX-INV-1');
 
 it('throws exception for missing table', function (): void {
     $model = new class extends XotBaseModel
@@ -60,7 +60,7 @@ it('throws exception for missing table', function (): void {
 
     expect(fn (): bool => $action->execute($model::class, ['id']))
         ->toThrow(RuntimeException::class, "Table 'missing_table' does not exist on connection 'xot'.");
-});
+})->group('CREATE-INDEX-INV-2');
 
 it('throws exception for missing column and creates no index', function (): void {
     $model = new class extends XotBaseModel
@@ -74,4 +74,4 @@ it('throws exception for missing column and creates no index', function (): void
 
     $indexNames = array_column(Schema::connection('xot')->getIndexes('test_index_table'), 'name');
     Assert::assertNotContains('test_index_table_missing_col_index', $indexNames);
-});
+})->group('CREATE-INDEX-INV-3');

@@ -39,4 +39,4 @@ test('count actions work', function (): void {
         Schema::dropIfExists('test_xot_table');
         File::deleteDirectory($tenantDir);
     }
-});
+})->group('MODEL-COUNT-INV-1', 'MODEL-UPCOUNT-INV-1', 'MODEL-UPCOUNT-INV-2');

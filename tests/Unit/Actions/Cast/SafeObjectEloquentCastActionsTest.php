@@ -60,7 +60,7 @@ test('safe object cast action works', function (): void {
     Assert::assertFalse($action->hasMethod($obj, 'invalid'));
     Assert::assertSame('def', $action->callMethodSafely($obj, 'invalid', [], 'def'));
     Assert::assertSame('hello', $action->callMethodSafely($obj, 'testMethod', ['hello']));
-});
+})->group('CAST-OBJ-INV-2');
 
 test('safe eloquent cast action works', function (): void {
     $action = app(SafeEloquentCastAction::class);
@@ -99,4 +99,4 @@ test('safe eloquent cast action works', function (): void {
     Assert::assertSame('test', $action->getAttributeWithFallback($model, 'null_val', 'str', 'string'));
     Assert::assertSame(123, SafeEloquentCastAction::get($model, 'int', 'int'));
     Assert::assertTrue(SafeEloquentCastAction::has($model, 'str'));
-});
+})->group('CAST-ELOQ-INV-1');

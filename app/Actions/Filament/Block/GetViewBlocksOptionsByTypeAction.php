@@ -17,6 +17,10 @@ use Webmozart\Assert\Assert;
 
 /**
  * Classe per ottenere le opzioni dei blocchi di vista per un tipo specifico.
+ *
+ * @see docs/contracts/get-view-blocks-options-by-type-action.md
+ *
+ * @contract docs/contracts/get-view-blocks-options-by-type-action.md
  */
 class GetViewBlocksOptionsByTypeAction
 {
@@ -49,7 +53,6 @@ class GetViewBlocksOptionsByTypeAction
         Assert::isCallable([$fixPathAction, 'execute'], 'FixPathAction::execute deve essere chiamabile');
 
         $opts = Arr::mapWithKeys($files, function (string $path) use ($img, $type, $fixPathAction): array {
-
             // Normalizziamo il percorso
             $pathStr = $fixPathAction->execute($path);
             Assert::stringNotEmpty($pathStr, 'Il percorso normalizzato non può essere vuoto');

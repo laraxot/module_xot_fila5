@@ -33,5 +33,5 @@ describe('Safe Attribute Cast Action', function (): void {
         Assert::assertSame(123, $action->getIntAttribute($model, 'id'));
         Assert::assertTrue($action->getBooleanAttribute($model, 'active'));
         Assert::assertTrue($action->hasAttributeValue($model, 'id', 123));
-    });
+    })->group('CAST-ATTR-INV-2');
 });

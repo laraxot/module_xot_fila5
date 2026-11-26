@@ -7,7 +7,7 @@ declare(strict_types=1);
  * Misurato il 2026-11-18. Solo in discesa: chi corregge una classe la toglie, chi aggiunge una voce lo spiega nella PR.
  * Ogni voce deve stare nel namespace di questo pacchetto (lo verifica ArchitectureTest).
 
- * ADR: Modules/Xot/docs/adr/architecture-tests-pest-arch.md
+ * ADR: Modules/Xot/docs/adr/0020-architecture-tests-pest-arch.md
  */
 
 return [
@@ -27,13 +27,18 @@ return [
         'Modules\Xot\Actions\Filament\GetNavigationItemByModulename',
         'Modules\Xot\Actions\File\DownloadZipByPathsDiskAction',
         'Modules\Xot\Filament\Traits\NavigationLabelTrait',
-        'Modules\Xot\Services\RouteService',
     ],
     // classi in un namespace Services (regola No Services, DCP-270); NoServicesTest le vede come cartelle
-    'services' => [
-        'Modules\Xot\Services\Artisan\Handlers\ModuleCommandHandler',
-        'Modules\Xot\Services\RouteService',
-    ],
+    //
+    // Vuota dal 2026-11-20 (base_quaeris_fila5#247). `RouteService` era una copia
+    // morta: tutti e otto i metodi pubblici vivono in `Actions/Route/`, con test.
+    // Via anche dalla chiave `security`, dove stava per i tre `extract($params)`.
+    // `Services/.../ModuleCommandHandler` era un alias di 13 righe che estendeva
+    // l'Action omonima: cancellato l'alias, anche quella restava a zero
+    // riferimenti, quindi sono andate via entrambe. Il comportamento
+    // `module:list/disable/enable` vive in `Actions/Artisan/HandleArtisanActRequestAction`
+    // con `ArtisanActEnum`.
+    'services' => [],
     // classi che estendono Filament direttamente invece della base Xot (e una seconda XotBaseRelationManager duplicata)
     'xotbase' => [
         'Modules\Xot\Filament\Resources\XotBaseResource\RelationManager\XotBaseRelationManager',

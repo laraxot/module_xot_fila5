@@ -132,4 +132,4 @@ it('casts scientific notation', function (): void {
 it('handles decimal comma', function (): void {
     $result = app(SafeFloatCastAction::class)->execute('123,45');
     Assert::assertSame(123.45, $result);
-});
+})->group('CAST-FLOAT-INV-1');

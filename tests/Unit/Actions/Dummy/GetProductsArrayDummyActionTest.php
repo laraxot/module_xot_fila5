@@ -55,4 +55,4 @@ it('returns empty item when product entry is not an array', function (): void {
     $result = app(GetProductsArrayDummyAction::class)->execute();
 
     Assert::assertSame([[]], $result);
-});
+})->group('DUMMY-PRODUCTS-INV-3');

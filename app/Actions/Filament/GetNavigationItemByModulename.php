@@ -22,6 +22,10 @@ use function Safe\json_encode;
 /**
  * Classe per gestire gli elementi di navigazione per i moduli.
  * Ottimizzata per ridurre memory usage.
+ *
+ * @see docs/contracts/get-navigation-item-by-modulename.md
+ *
+ * @contract docs/contracts/get-navigation-item-by-modulename.md
  */
 class GetNavigationItemByModulename
 {
@@ -32,7 +36,6 @@ class GetNavigationItemByModulename
      */
     public function execute(string $module): NavigationItem
     {
-
         $module_low = Str::lower($module);
         Assert::stringNotEmpty($module_low, 'Il nome del modulo convertito in minuscolo non può essere vuoto');
 
@@ -85,7 +88,6 @@ class GetNavigationItemByModulename
             ->group('Modules')
             ->sort($navigation_sort)
             ->visible(static function () use ($role): bool {
-
                 /**
                  * @var Authenticatable|null $user
                  */
@@ -102,7 +104,6 @@ class GetNavigationItemByModulename
                 $res = (bool) $user->hasRole($role);
 
                 return $res;
-
             });
 
         return $nav;

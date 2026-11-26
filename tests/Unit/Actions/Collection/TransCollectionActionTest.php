@@ -30,7 +30,7 @@ it('translates collection items correctly', function (): void {
         'Banana',
         'Spremuta d\'arancia',
     ], $result->all());
-});
+})->group('TRANS-COLL-INV-2');
 
 it('returns original items if transKey is null', function (): void {
     /** @var Collection<int|string, mixed> $collection */
@@ -39,7 +39,7 @@ it('returns original items if transKey is null', function (): void {
     $result = $action->execute($collection, null);
 
     Assert::assertSame(['a', '1', ''], $result->all());
-});
+})->group('TRANS-COLL-INV-1');
 
 it('returns original item if translation not found', function (): void {
     /** @var Collection<int|string, mixed> $collection */
@@ -48,4 +48,4 @@ it('returns original item if translation not found', function (): void {
     $result = $action->execute($collection, 'missing');
 
     Assert::assertSame(['unknown'], $result->all());
-});
+})->group('TRANS-COLL-INV-2');

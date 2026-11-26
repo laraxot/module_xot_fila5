@@ -36,5 +36,5 @@ describe('GetAllModelsByModuleNameAction (ex ModuleService::getModels)', functio
         foreach ($models as $class) {
             Assert::assertFalse((new ReflectionClass($class))->isAbstract());
         }
-    });
+    })->group('GET-ALL-MODELS-MOD-INV-3');
 });

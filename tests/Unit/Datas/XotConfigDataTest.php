@@ -75,7 +75,7 @@ test('the main module can only be one that has an admin panel', function (): voi
 
         expect(is_file($module->getPath().'/app/Providers/Filament/AdminPanelProvider.php'))->toBeTrue("{$name} has no admin panel");
     }
-});
+})->group('MAIN-MODULE-CANDIDATES-INV-2');
 
 test('the primary language can only be one the site supports', function (): void {
     $locales = app(ListSupportedLocalesAction::class)->execute();

@@ -74,9 +74,9 @@ function storyNumberCollisions(): array
 }
 
 /**
- * Tetto misurato il 2026-09-08. Scende con la bonifica, non sale mai.
+ * Tetto misurato il 2026-11-26 (era 57 il 2026-09-08). Scende con la bonifica, non sale mai.
  */
-const STORY_NUMBER_COLLISION_BASELINE = 57;
+const STORY_NUMBER_COLLISION_BASELINE = 4;
 
 test('nessuna story nuova riusa un numero gia preso', function (): void {
     $collisions = storyNumberCollisions();

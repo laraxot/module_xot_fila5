@@ -9,6 +9,7 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Database\Factories\ModuleFactory;
+use Modules\Xot\Models\Traits\HasCommonScopes;
 use Modules\Xot\Models\Traits\ModuleStatus;
 use Nwidart\Modules\Facades\Module as ModuleFacade;
 use Nwidart\Modules\Module as NModule;
@@ -62,10 +63,16 @@ use function Safe\json_encode;
  *
  * @method static ModuleFactory factory($count = null, $state = [])
  *
+ * @see ../../docs/bmad/stories/phpstan-modules-zero-swarm-standing.story.md HasCommonScopes: mai su XotBaseModel
+ * @see ../../../Meetup/docs/contracts/event-published-scope.md
+ *
  * @mixin \Eloquent
  */
 final class Module extends BaseModel
 {
+    /** @use HasCommonScopes<static> */
+    use HasCommonScopes;
+
     use ModuleStatus;
     use Sushi;
 

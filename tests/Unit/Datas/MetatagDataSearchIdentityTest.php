@@ -13,7 +13,7 @@ uses(TestCase::class);
 /*
  * Identita' del sito per i motori di ricerca: sameAs del JSON-LD e meta di verifica.
  *
- * @see Modules/Seo/docs/adr/search-engine-presence.md
+ * @see Modules/Seo/docs/adr/0002-search-engine-presence.md
  */
 
 it('keeps only https profiles in sameAs, without placeholders or duplicates', function (): void {

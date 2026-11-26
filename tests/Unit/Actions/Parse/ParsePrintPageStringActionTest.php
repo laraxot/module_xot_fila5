@@ -14,7 +14,7 @@ it('parses single pages and ranges', function (): void {
     Assert::assertSame($expected, ParsePrintPageStringAction::execute($str));
     Assert::assertSame([5], ParsePrintPageStringAction::execute('5'));
     Assert::assertSame([1, 2, 3], ParsePrintPageStringAction::execute('1-3'));
-});
+})->group('PARSE-PAGES-INV-1');
 
 it('throws when no valid page number exists')->todo();
 

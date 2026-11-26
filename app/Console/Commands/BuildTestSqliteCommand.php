@@ -4,15 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Console\Commands;
 
-use Illuminate\Support\Str;
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Config\Repository;
 use Illuminate\Support\Facades\DB;
-use Modules\Xot\Actions\Testing\ResolveSharedSqlitePathAction;
+use Illuminate\Support\Str;
+use Modules\Xot\Actions\Testing\GetSharedSqlitePathAction;
 use Throwable;
 
 use function Safe\glob;
-use function Safe\preg_replace;
 use function Safe\touch;
 use function Safe\unlink;
 
@@ -50,7 +49,7 @@ class BuildTestSqliteCommand extends Command
 
     public function handle(Repository $config): int
     {
-        $target = $this->stringOption('path') ?? app(ResolveSharedSqlitePathAction::class)->execute();
+        $target = $this->stringOption('path') ?? app(GetSharedSqlitePathAction::class)->execute();
 
         if ($this->option('fresh') === true && file_exists($target)) {
             unlink($target);

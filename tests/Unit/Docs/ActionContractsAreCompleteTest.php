@@ -13,21 +13,23 @@ use function Safe\preg_match_all;
 
 /*
  * Regola: Modules/Xot/docs/rules/action-behavioral-contract.md. Source-level (nessuna app).
- * I contratti stanno in docs/contracts/ di ogni modulo e tema; il docblock dell'Action rimanda al file.
+ * I contratti stanno in docs/contracts/ di ogni modulo e tema; il docblock dell'Action
+ * contiene il riferimento machine-readable `@contract`.
  */
 
 const ACTION_CONTRACT_SECTIONS = ['Input', 'Output', 'Invarianti', 'Effetti collaterali', 'Errori', 'Non fa'];
 
 /**
- * Action dei moduli condivisi che trattano dati personali o chiamano servizi esterni: il contratto e' obbligatorio.
- * Le Action del modulo del progetto ospite le elenca il suo test (es. tests/Unit/ActionContractsTest.php del modulo).
+ * Punto di estensione: Action dei moduli condivisi che trattano dati personali o chiamano servizi
+ * esterni, per cui il contratto e' obbligatorio. Il modulo condiviso non elenca nessuna Action
+ * (resta vuoto); il progetto ospite le elenca nel proprio test (es. tests/Unit/ActionContractsTest.php).
+ *
+ * @return list<string> percorsi relativi a laravel/ dei file di contratto
  */
-const ACTION_CONTRACT_REQUIRED = [
-    'Modules/Gdpr/docs/contracts/save-gdpr-consents-action.md',
-    'Modules/Geo/docs/contracts/fetch-osm-tile-action.md',
-    'Modules/Geo/docs/contracts/query-nominatim-action.md',
-    'Modules/AI/docs/contracts/request-assistant-completion-action.md',
-];
+function actionContractRequired(): array
+{
+    return [];
+}
 
 function laravelRootForContracts(): string
 {
@@ -59,8 +61,8 @@ function behavioralContractProblems(string $contractPath): array
     if (! is_file($classPath)) {
         return [...$problems, 'l\'Action '.$match[1].' non esiste'];
     }
-    if (! str_contains(file_get_contents($classPath), 'Contratto di comportamento: docs/contracts/'.basename($contractPath))) {
-        $problems[] = 'il docblock di '.$parts[count($parts) - 1].' non rimanda a docs/contracts/'.basename($contractPath);
+    if (! str_contains(file_get_contents($classPath), '@contract docs/contracts/'.basename($contractPath))) {
+        $problems[] = 'il docblock di '.$parts[count($parts) - 1].' non contiene @contract docs/contracts/'.basename($contractPath);
     }
 
     return $problems;
@@ -68,7 +70,7 @@ function behavioralContractProblems(string $contractPath): array
 
 it('gives a behavioral contract to every shared-module Action that handles personal data or external services', function (): void {
     $problems = [];
-    foreach (ACTION_CONTRACT_REQUIRED as $relative) {
+    foreach (actionContractRequired() as $relative) {
         $path = laravelRootForContracts().'/'.$relative;
         if (! is_file($path)) {
             $problems[] = $relative.': file mancante';
@@ -87,7 +89,8 @@ it('keeps every behavioral contract complete and linked from its Action', functi
     $root = laravelRootForContracts();
     $problems = [];
     foreach ([...glob($root.'/Modules/*/docs/contracts/*.md'), ...glob($root.'/Themes/*/docs/contracts/*.md')] as $path) {
-        if (! is_string($path) || ! str_contains(file_get_contents($path), "\ntype: contract\n")) {
+        if (! is_string($path) || in_array(basename($path), ['README.md', '_template.md'], true)
+            || ! str_contains(file_get_contents($path), "\ntype: contract\n")) {
             continue;
         }
         foreach (behavioralContractProblems($path) as $problem) {

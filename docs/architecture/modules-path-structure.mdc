@@ -81,7 +81,7 @@ class User extends Model {
 - **Enum PHP usato come state**: va migrato a State Class.
 
 ## Docs collegate
-- [.windsurf/rules/model-states.mdc](../../../.windsurf/rules/model-states.mdc)
+- [.windsurf/rules/enums-states.md](../../../.windsurf/rules/enums-states.md)
 - [<nome progetto>/docs/uso-label-filament.mdc](../../<nome progetto>/docs/uso-label-filament.mdc)
 - https://github.com/spatie/laravel-model-states
 
@@ -108,7 +108,7 @@ class User extends Model {
 - **Valori statici, nessuna logica?** → enum PHP.
 
 ## 5. Collegamenti
-- [.windsurf/rules/model-states.mdc](../../../.windsurf/rules/model-states.mdc)
+- [.windsurf/rules/enums-states.md](../../../.windsurf/rules/enums-states.md)
 - [<nome progetto>/docs/uso-label-filament.mdc](../../<nome progetto>/docs/uso-label-filament.mdc)
 - https://github.com/spatie/laravel-model-states
 

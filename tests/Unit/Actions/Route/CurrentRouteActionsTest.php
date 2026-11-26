@@ -39,7 +39,7 @@ it('derives module, controller, action and view from the current controller rout
         ->and(app(GetCurrentRouteControllerNameAction::class)->execute())->toBe('Profile')
         ->and(app(GetCurrentRouteActionNameAction::class)->execute())->toBe('edit_profile')
         ->and(app(GetCurrentRouteViewAction::class)->execute())->toBe('profile');
-});
+})->group('ROUTE-CUR-ACT-INV-1', 'ROUTE-CUR-CTRL-INV-1', 'ROUTE-CUR-HDL-INV-1', 'ROUTE-CUR-MOD-INV-1');
 
 it('drops the Module and Item namespaces from the view name', function (): void {
     xotRouteWithHandler('/xot-route-actions/posts', 'Modules\Foo\Http\Controllers\Module\Item\PostsController@index');
@@ -48,7 +48,7 @@ it('drops the Module and Item namespaces from the view name', function (): void 
 
     expect(app(GetCurrentRouteControllerNameAction::class)->execute())->toBe('Module\Item\Posts')
         ->and(app(GetCurrentRouteViewAction::class)->execute())->toBe('posts');
-});
+})->group('ROUTE-CUR-CTRL-INV-1', 'ROUTE-VIEW-INV-1');
 
 it('replaces the containers part of the view with the container route parameters', function (): void {
     xotRouteWithHandler(

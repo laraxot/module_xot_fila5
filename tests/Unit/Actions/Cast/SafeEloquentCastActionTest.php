@@ -36,7 +36,7 @@ it('returns defaults for missing attributes by type', function (): void {
     Assert::assertSame(0.0, $action->getFloatAttribute($model, 'missing'));
     Assert::assertFalse($action->getBooleanAttribute($model, 'missing'));
     Assert::assertSame([], $action->getArrayAttribute($model, 'missing'));
-});
+})->group('CAST-ELOQ-INV-2');
 
 it('casts generic typed getter and validation helpers', function (): void {
     [$action, $model] = SafeEloquentCastFixture::make();
@@ -58,7 +58,7 @@ it('checks condition and fallback helpers', function (): void {
     Assert::assertTrue($action->hasAttributeCondition($model, 'age', fn (int $v): bool => SafeStringCastAction::cast($v) === '42'));
     Assert::assertSame('Mario', $action->getAttributeWithFallback($model, 'name', 'missing', 'string'));
     Assert::assertSame('SuperMario', $action->getAttributeWithFallback($model, 'missing', 'nickname', 'string'));
-});
+})->group('CAST-ELOQ-INV-1');
 
 it('exposes static helper methods', function (): void {
     [, $model] = SafeEloquentCastFixture::make();

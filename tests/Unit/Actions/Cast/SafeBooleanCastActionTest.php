@@ -30,4 +30,4 @@ it('casts various values to boolean correctly', function (): void {
     // Arrays
     Assert::assertTrue($action->execute(['a']));
     Assert::assertFalse($action->execute([]));
-});
+})->group('CAST-BOOL-INV-1');

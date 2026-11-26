@@ -10,6 +10,11 @@ namespace Modules\Xot\Actions\Model;
 
 use Spatie\QueueableAction\QueueableAction;
 
+/**
+ * @see docs/contracts/generate-model-by-table-action.md
+ *
+ * @contract docs/contracts/generate-model-by-table-action.md
+ */
 class GenerateModelByTableAction
 {
     use QueueableAction;
