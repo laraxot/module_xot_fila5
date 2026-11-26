@@ -6,6 +6,7 @@ namespace Modules\Xot\Tests\Unit\Docs;
 
 use function Safe\file_get_contents;
 use function Safe\glob;
+use function Safe\hash_file;
 use function Safe\preg_match_all;
 
 /**
@@ -29,6 +30,11 @@ function manualShotsAdoptingUnits(): array
 
     foreach ([dirname(__DIR__, 4), dirname(__DIR__, 5).'/Themes'] as $root) {
         foreach (glob($root.'/*/docs/manuals/screenshots.json') as $manifest) {
+            // Safe\glob tipizza list senza elementi: restringi prima di file_get_contents/dirname.
+            if (! is_string($manifest)) {
+                continue;
+            }
+
             /** @var array{shots?: list<array{name?: string, captured?: array{sha256?: string}}>} $data */
             $data = json_decode(file_get_contents($manifest), true, 512, JSON_THROW_ON_ERROR);
             $shots = [];
@@ -52,6 +58,10 @@ it('ogni immagine di un manuale con screenshots.json ha una cattura registrata e
 
     foreach (manualShotsAdoptingUnits() as $unit => $info) {
         foreach (glob($info['dir'].'/*.md') as $manual) {
+            if (! is_string($manual)) {
+                continue;
+            }
+
             preg_match_all('/!\[[^\]]*\]\((assets\/[^)\s]+)\)/', file_get_contents($manual), $matches);
 
             foreach ($matches[1] as $relative) {

@@ -73,7 +73,7 @@ gruppi Pest omonimi**, perché conserva l'ownership del modulo e rende la catena
 - Buono, perché i gruppi Pest permettono una verifica mirata (`--group=<ID>`) senza
   perdere la suite completa.
 - Buono, perché il formato resta compatibile con `ActionContractsAreCompleteTest` e
-  con l'ownership già descritta in `contract-authoring-standard.md`.
+  con l'ownership già descritta in `docs/contracts/contract-authoring-standard.md` e in `docs/rules/action-behavioral-contract.md`.
 - Cattivo, perché ogni nuova invariante richiede disciplina nel mantenere unico il
   suo ID e aggiornare l'indice.
 - Cattivo, perché l'indice può diventare obsoleto se una modifica aggiorna il codice

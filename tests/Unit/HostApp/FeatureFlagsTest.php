@@ -190,7 +190,9 @@ describe('FeatureFlags::all', function (): void {
         }
 
         $all = FeatureFlags::all();
-
+        // FeatureFlags::all() e' mixed sull'host senza la classe: restringi ad array
+        // (assertCount non accetta ArrayAccess; assertArrayHasKey sì).
+        Assert::assertIsArray($all);
         Assert::assertArrayHasKey('cache.store', $all);
         Assert::assertSame('redis', $all['cache.store']);
         Assert::assertCount(6, $all);

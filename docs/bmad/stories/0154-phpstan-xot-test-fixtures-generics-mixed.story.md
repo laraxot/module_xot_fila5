@@ -1,9 +1,9 @@
 ---
 title: PHPStan Xot test fixtures - generics e mixed
 type: story
-status: review
+status: done
 module: Xot
-qmd: phpstan xot tests HasCommonScopesProbe ModuleRouteEntrypointsExistTest missingType.generics cast.string argument.type Safe glob
+qmd: phpstan xot tests HasCommonScopesProbe ModuleRouteEntrypointsExistTest missingType.generics cast.string argument.type Safe glob hash_file RegexIterator FeatureFlags AppMiddleware
 ---
 # PHPStan Xot: fixture generico e test di routing
 
@@ -57,3 +57,14 @@ Scelta: **implementare**, perché i driver sopra.
 ### Confirmation
 
 Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).
+
+## Status note (wave test HostApp / Docs / Filament)
+
+Chiusi 14 errori PHPStan nei test Xot (source-first: `is_string`/`is_array`/`Assert::assertIs*`, `Safe\*`; niente ignore/baseline/cast):
+
+- `ManualScreenshotsHaveProvenanceTest`: narrow `Safe\glob` → string; `use function Safe\hash_file`.
+- `NoDomainPrefixedTableColumnsTest`: rimosso `RegexIterator` (generics SPL incompatibili con stub a 1 template); filtro `str_ends_with` + `Safe\preg_match_all`.
+- `AppMiddlewareTest`: `hosts()`/`HOME` mixed → `assertIsArray`/`assertIsString` + callback `mixed`.
+- `FeatureFlagsTest`: `all()` mixed → `assertIsArray` prima di `assertArrayHasKey`/`assertCount`.
+
+Evidenza: `flock … phpstan analyse Modules/Xot` → `[OK] No errors` (2026-11-26).

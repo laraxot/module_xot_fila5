@@ -38,17 +38,20 @@ test('trust hosts trusts every subdomain of the application url', function (): v
         $this->markTestSkipped('Host app senza App\Http\Middleware\TrustHosts.');
     }
 
-    // Host app tipizza hosts(): array<int, string|null>; filtriamo i null e
-    // verifichiamo il contratto di dominio (un pattern che copre dominio e sottodomini).
+    // Host app tipizza hosts(): array<int, string|null>; su host senza stub PHPStan
+    // il ritorno e' mixed — restringi ad array, poi filtra i non-string.
+    $rawHosts = (new TrustHosts(app()))->hosts();
+    Assert::assertIsArray($rawHosts);
     $hosts = array_values(array_filter(
-        (new TrustHosts(app()))->hosts(),
-        static fn (?string $host): bool => is_string($host) && $host !== '',
+        $rawHosts,
+        static fn (mixed $host): bool => is_string($host) && $host !== '',
     ));
 
     $appHost = Str::of(Config::string('app.url'))->after('://')->before('/')->value();
 
     Assert::assertCount(1, $hosts);
     $pattern = $hosts[0];
+    Assert::assertIsString($pattern);
     // Il pattern di Laravel e' `^(.+\.)?<host quotato>$`: verifichiamo che copra
     // sia il dominio nudo sia un suo sottodominio, senza replicarne la stringa.
     Assert::assertMatchesRegularExpression('#'.$pattern.'#', $appHost);
@@ -107,8 +110,11 @@ test('redirect if authenticated sends an authenticated user home', function (): 
     );
 
     Assert::assertInstanceOf(RedirectResponse::class, $response);
-    // RouteServiceProvider::HOME e' const string '/home' nell'host app.
-    Assert::assertSame(url(RouteServiceProvider::HOME), $response->getTargetUrl());
+    // RouteServiceProvider::HOME e' const string '/home' nell'host app; senza
+    // la classe reale PHPStan lo vede mixed — restringi prima di url().
+    $home = RouteServiceProvider::HOME;
+    Assert::assertIsString($home);
+    Assert::assertSame(url($home), $response->getTargetUrl());
 });
 
 test('logout action clears the web guard and the session', function (): void {

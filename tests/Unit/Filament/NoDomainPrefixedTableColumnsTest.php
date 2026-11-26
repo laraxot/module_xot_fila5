@@ -6,10 +6,10 @@ namespace Modules\Xot\Tests\Unit\Filament;
 
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
-use RegexIterator;
 use SplFileInfo;
 
 use function Safe\file_get_contents;
+use function Safe\preg_match_all;
 
 /*
  * Vietato inventare get{Domain}TableColumns al posto del contratto getTableColumns.
@@ -29,15 +29,16 @@ function domainPrefixedTableColumnHooks(): array
     $iterator = new RecursiveIteratorIterator(
         new RecursiveDirectoryIterator($modulesRoot, RecursiveDirectoryIterator::SKIP_DOTS)
     );
-    /** @var RegexIterator<SplFileInfo> $phpFiles */
-    $phpFiles = new RegexIterator($iterator, '/\.php$/');
 
-    foreach ($phpFiles as $fileInfo) {
+    foreach ($iterator as $fileInfo) {
         if (! $fileInfo instanceof SplFileInfo || ! $fileInfo->isFile()) {
             continue;
         }
 
         $path = $fileInfo->getPathname();
+        if (! str_ends_with($path, '.php')) {
+            continue;
+        }
         if (str_contains($path, DIRECTORY_SEPARATOR.'vendor'.DIRECTORY_SEPARATOR)) {
             continue;
         }
@@ -46,12 +47,12 @@ function domainPrefixedTableColumnHooks(): array
         }
 
         $contents = file_get_contents($path);
-        if (! preg_match_all(
+        if (preg_match_all(
             '/^([ \t]*(?:public|protected|private|final|abstract|static|\s)*function\s+get(?!TableColumns\b|GridTableColumns\b)(\w+)TableColumns\s*\()/m',
             $contents,
             $matches,
             PREG_OFFSET_CAPTURE
-        )) {
+        ) === 0) {
             continue;
         }
 
