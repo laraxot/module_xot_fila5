@@ -20,13 +20,15 @@ regole trasversali e ogni package conserva i propri contratti e ADR.
 
 ## Stato
 
-- [x] studiata la struttura del workshop: guard fail-closed, post-edit feedback,
-  task contract, receipt, checkpoint e replay;
-- [x] aggiunti lo standard comune e il template in `Modules/Xot/docs/contracts/`;
-- [x] registrato il confine architetturale nell'ADR 0042;
-- [ ] uniformare gli indici locali di tutti i moduli e temi senza cancellare storia;
-- [ ] decidere, con test, se receipt/checkpoint portano valore sufficiente per FixCity;
-- [ ] aggiornare questa story con gli esiti dei controlli ripetibili.
+- [x] studiata la struttura del workshop (`takeaway/scheda-porting.md`);
+- [x] standard + template in `Modules/Xot/docs/contracts/`;
+- [x] confine ADR 0042 / 0018;
+- [x] gate `PackagesHaveContractsAndAdrTest` verde (IT+EN, `## Verifica`, `index.md` escluso);
+- [x] contracts owner-local dove mancavano (AI, Activity, Event, Job, Mobile, Notify, Rating, Tenant, TwentyOne);
+- [x] ADR sostanziali Blog/Rating/Seo/Sixteen/TwentyOne (Driver + Verifica/Conferma);
+- [ ] Pest `--group=<INV>` che mordono per i nuovi ID;
+- [ ] receipt/checkpoint workshop solo se fallimento reale;
+- [x] story aggiornata 2026-11-26.
 
 ## Criteri di accettazione
 
