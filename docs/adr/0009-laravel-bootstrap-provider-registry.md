@@ -4,6 +4,7 @@ type: decision
 status: accepted
 created: 2026-11-23
 updated: 2026-11-23
+qmd: "0009 laravel bootstrap provider registry minimale"
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/ADR-0009"
 ---
@@ -29,15 +30,12 @@ I provider dei moduli sono registrati nei rispettivi `composer.json` tramite la 
 
 ## Alternative scartate
 
-- Registrare provider applicativi in file duplicati.
-- Registrare `AdminPanelProvider` direttamente nel registro bootstrap insieme ai package provider.
-## Alternative scartate
-
 - Elencare manualmente tutti i provider Laravel nel bootstrap: è responsabilità
   del framework e crea una copia divergente del template ufficiale.
 - Elencare ogni provider di modulo nel root: introduce coupling e impedisce al
   progetto di caricare i moduli tramite discovery.
 - Registrare direttamente i provider dev: fallisce con `composer install --no-dev`.
+- Registrare `AdminPanelProvider` direttamente nel registro bootstrap insieme ai package provider.
 
 ## Conseguenze
 
@@ -71,6 +69,7 @@ anche l'errore MIME del browser.
 - [Laravel 13.x bootstrap/providers.php](https://github.com/laravel/laravel/blob/13.x/bootstrap/providers.php)
 - [Laravel Package Discovery](https://laravel.com/docs/13.x/packages#package-discovery)
 - [nwidart/laravel-modules](https://github.com/nWidart/laravel-modules)
+
 ## Conferma
 
 La decisione è confermata dal registro provider corrente e dai test di bootstrap del modulo Xot.

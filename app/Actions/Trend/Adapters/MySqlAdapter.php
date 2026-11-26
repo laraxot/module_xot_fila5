@@ -7,6 +7,11 @@ namespace Modules\Xot\Actions\Trend\Adapters;
 use Error;
 use Override;
 
+/**
+ * @see docs/contracts/my-sql-adapter.md
+ *
+ * @contract docs/contracts/my-sql-adapter.md
+ */
 class MySqlAdapter extends AbstractAdapter
 {
     #[Override]

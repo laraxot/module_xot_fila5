@@ -4,6 +4,7 @@ type: decision
 status: accepted
 created: 2026-11-23
 updated: 2026-11-23
+qmd: "0008 filament widgets over standalone livewire"
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/ADR-0008"
 ---
@@ -35,14 +36,11 @@ Il progetto usa Filament 5 come pannello amministrativo e come sistema di compon
 
 ## Alternative scartate
 
-- Widget Livewire standalone fuori dal pannello.
-- Duplicazione dello stesso widget in più moduli.
-## Alternative scartate
-
 - Creare componenti Livewire standalone per ogni interazione: duplica stato,
   lifecycle e autorizzazione già forniti da Filament.
 - Usare Blade e JavaScript ad hoc come superficie primaria: rompe l'integrazione
   con gli schemi Filament e rende più difficile il test.
+- Duplicazione dello stesso widget in più moduli.
 
 ## Conseguenze
 
@@ -94,6 +92,7 @@ class StatsWidget extends BaseWidget
 - [Wiki: no-standalone-livewire-classes](../../../../docs/wiki/rules/no-standalone-livewire-classes.md)
 - [Filament 5 Docs](https://filamentphp.com/docs/5.x)
 - [Laravel Livewire Docs](https://livewire.laravel.com/docs) (per riferimento)
+
 ## Conferma
 
 La scelta è confermata dai test architetturali del modulo Xot e dalle classi base Filament owner.

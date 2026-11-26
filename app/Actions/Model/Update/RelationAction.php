@@ -9,6 +9,11 @@ use Modules\Xot\Actions\Model\FilterRelationsAction;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
+/**
+ * @see docs/contracts/relation-action.md
+ *
+ * @contract docs/contracts/relation-action.md
+ */
 class RelationAction
 {
     use QueueableAction;

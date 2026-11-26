@@ -6,6 +6,11 @@ namespace Modules\Xot\Actions\Route;
 
 use Spatie\QueueableAction\QueueableAction;
 
+/**
+ * @see docs/contracts/build-language-url-action.md
+ *
+ * @contract docs/contracts/build-language-url-action.md
+ */
 class BuildLanguageUrlAction
 {
     use QueueableAction;

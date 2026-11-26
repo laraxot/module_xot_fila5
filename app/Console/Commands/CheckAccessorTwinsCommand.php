@@ -21,7 +21,7 @@ use function Safe\preg_match;
  * l'accessor gestisce cache/coercizione/persistenza, il gemello contiene il calcolo puro,
  * invocabile ed analizzabile staticamente.
  *
- * @see docs/wiki/rules/accessor-twin-method.md
+ * @see Modules/Xot/docs/models.md
  */
 class CheckAccessorTwinsCommand extends Command
 {
@@ -152,7 +152,7 @@ class CheckAccessorTwinsCommand extends Command
      * regola accessor => gemello (generare accessor dai gemelli e' dannoso: maschera le relazioni e ignora il
      * valore gia' in DB), ma il segnale che un calcolo e' rimasto scollegato.
      *
-     * @see Modules/Ptv/docs/orphan-twin-methods.md
+     * @see Modules/Xot/docs/models.md
      */
     private function reportOrphanTwins(string $pattern): int
     {
@@ -260,8 +260,11 @@ class CheckAccessorTwinsCommand extends Command
      * Verifica se un metodo `get{X}Attribute()` origina da un trait/vendor class
      * (es. HasFactory::getUseFactoryAttribute, HasTranslations::getTranslatableColumnsFromAttribute).
      * I metodi ereditati da trait vendor non sono accessor di dominio e vanno esclusi.
+     *
+     * Risale trait e classi padre, quindi il tipo e' `ReflectionClass<object>`: non solo i Model.
+     *
+     * @param  \ReflectionClass<covariant object>  $reflection
      */
-    /** @phpstan-ignore-next-line missingType.generics */
     private function methodFromVendor(\ReflectionClass $reflection, \ReflectionMethod $method): bool
     {
         $checked = [];

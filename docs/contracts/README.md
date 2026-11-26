@@ -4,6 +4,7 @@ type: index
 tags: [contracts, actions, interfaces]
 created: 2026-11-18
 updated: 2026-11-23
+qmd: "contratti"
 ---
 
 # Contratti
@@ -53,6 +54,6 @@ contiene la tabella minima di mapping fra regola, group e test.
 
 - [Standard di authoring dei contratti](contract-authoring-standard.md)
 - [Template per Behavioral Contract](behavioral-contract-template.md) — IDs, gruppi Pest e comando di conferma
-- [ADR degli entrypoint di route vuoti](../adr/route-entrypoints-canonical-empty.md) — gli entrypoint senza route
+- [ADR degli entrypoint di route vuoti](../adr/0036-route-entrypoints-canonical-empty.md) — gli entrypoint senza route
   restano presenti e delegano al percorso canonico senza registrare route.
 

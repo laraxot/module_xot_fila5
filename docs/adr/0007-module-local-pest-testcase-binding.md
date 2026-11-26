@@ -6,6 +6,7 @@ created: 2026-11-23
 updated: 2026-11-23
 decision-makers: [team Laraxot]
 issues: []
+qmd: "0007 local pest testcase binding lega"
 ---
 
 # Il TestCase Pest si lega nel file di test che lo usa
@@ -46,7 +47,7 @@ cartella.
 
 ## Conferma
 
-- `pest-testcase-binding-per-file.md` descrive il comportamento osservato;
+- [`0034-pest-testcase-binding-per-file.md`](0034-pest-testcase-binding-per-file.md) (superseded da questo ADR) conserva le misure del 2026-11-19 come evidenza storica;
 - `ModulePestBootstrapDoesNotBindTestCaseTest` impedisce il ritorno al binding
   globale;
 - un test applicativo senza `uses(...)` viene corretto prima del merge.

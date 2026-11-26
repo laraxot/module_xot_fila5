@@ -7,6 +7,11 @@ namespace Modules\Xot\Actions\Module;
 use Illuminate\Support\Str;
 use Spatie\QueueableAction\QueueableAction;
 
+/**
+ * @see docs/contracts/get-module-name-by-class-action.md
+ *
+ * @contract docs/contracts/get-module-name-by-class-action.md
+ */
 class GetModuleNameByClassAction
 {
     use QueueableAction;

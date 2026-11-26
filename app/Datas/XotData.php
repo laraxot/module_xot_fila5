@@ -125,7 +125,7 @@ class XotData extends Data implements Wireable
     public function getUserByEmail(string $email): UserContract
     {
         $user_class = $this->getUserClass();
-        $userInstance = new $user_class();
+        $userInstance = new $user_class;
         if (! in_array('email', $userInstance->getFillable(), true)) {
             throw new \Exception("Attribute 'email' not found in model ".$userInstance::class);
         }
@@ -374,11 +374,17 @@ class XotData extends Data implements Wireable
     public function getMailHtmlLayoutPath(string $key = ''): string
     {
         $themePath = base_path('Themes/'.$this->pub_theme.'/resources/mail-layouts/'.$key);
-        if ($key === '' || is_file($themePath)) {
-            return $themePath;
+        $notifyPath = base_path('Modules/Notify/resources/mail-layouts/'.$key);
+
+        // Senza chiave serve la cartella (HtmlLayoutPathSelect ne elenca i file): un tema senza mail-layouts
+        // usa quella di Notify, altrimenti «Nuovo modello e-mail» va in errore leggendo una cartella inesistente.
+        if ($key === '') {
+            return is_dir($themePath) || ! is_dir($notifyPath) ? $themePath : $notifyPath;
         }
 
-        $notifyPath = base_path('Modules/Notify/resources/mail-layouts/'.$key);
+        if (is_file($themePath)) {
+            return $themePath;
+        }
 
         return is_file($notifyPath) ? $notifyPath : $themePath;
     }

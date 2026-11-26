@@ -7,6 +7,11 @@ namespace Modules\Xot\Actions\Module;
 use Illuminate\Database\Eloquent\Model;
 use Spatie\QueueableAction\QueueableAction;
 
+/**
+ * @see docs/contracts/get-module-name-by-model-action.md
+ *
+ * @contract docs/contracts/get-module-name-by-model-action.md
+ */
 class GetModuleNameByModelAction
 {
     use QueueableAction;

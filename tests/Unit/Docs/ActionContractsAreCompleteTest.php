@@ -20,13 +20,16 @@ use function Safe\preg_match_all;
 const ACTION_CONTRACT_SECTIONS = ['Input', 'Output', 'Invarianti', 'Effetti collaterali', 'Errori', 'Non fa'];
 
 /**
- * Action dei moduli condivisi che trattano dati personali o chiamano servizi esterni: il contratto e' obbligatorio.
- * Le Action del modulo del progetto ospite le elenca il suo test (es. tests/Unit/ActionContractsTest.php del modulo).
+ * Punto di estensione: Action dei moduli condivisi che trattano dati personali o chiamano servizi
+ * esterni, per cui il contratto e' obbligatorio. Il modulo condiviso non elenca nessuna Action
+ * (resta vuoto); il progetto ospite le elenca nel proprio test (es. tests/Unit/ActionContractsTest.php).
+ *
+ * @return list<string> percorsi relativi a laravel/ dei file di contratto
  */
-const ACTION_CONTRACT_REQUIRED = [
-    'Modules/Gdpr/docs/contracts/save-gdpr-consents-action.md',
-    'Modules/AI/docs/contracts/request-assistant-completion-action.md',
-];
+function actionContractRequired(): array
+{
+    return [];
+}
 
 function laravelRootForContracts(): string
 {
@@ -67,7 +70,7 @@ function behavioralContractProblems(string $contractPath): array
 
 it('gives a behavioral contract to every shared-module Action that handles personal data or external services', function (): void {
     $problems = [];
-    foreach (ACTION_CONTRACT_REQUIRED as $relative) {
+    foreach (actionContractRequired() as $relative) {
         $path = laravelRootForContracts().'/'.$relative;
         if (! is_file($path)) {
             $problems[] = $relative.': file mancante';

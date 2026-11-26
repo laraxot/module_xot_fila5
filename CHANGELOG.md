@@ -172,25 +172,3 @@ e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.
 **Versioning:** [Semantic Versioning](https://semver.org/)
 
 ---
-
-## Contenuto assorbito da `changelog.md`
-## Contenuto assorbito da `CHANGELOG.md`
-## Contenuto assorbito da `changelog.md`
-## Contenuto assorbito da `CHANGELOG.md`
-
----
-
----
-
----
-
----
-
-### Documenti Correlati
-- [README.md](./docs/readme.md) - Entry point
-- [README.md](./docs/README.md) - Entry point
-- [File Locking Pattern](./docs/file-locking-pattern.md) - Nuova regola
-- [Architecture Rules](./docs/laraxot-architecture-rules.md) - Regole base
-- [Merge Conflict Resolution](./docs/merge-conflict-resolution-2025-11-04.md) - Latest fix
-
----

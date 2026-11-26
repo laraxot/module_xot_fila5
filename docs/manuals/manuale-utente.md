@@ -1,89 +1,190 @@
 ---
-title: "Manuale utente — Xot"
+title: "Manuale utente — Xot (pannello amministrazione)"
 type: user-manual
 status: active
-screenshot: assets/front-office-home.png
+module: Xot
+screenshots: assets/*.webp (catturati 2026-11-25 dall'istanza di prova isolata, DB senza dati)
+updated: 2026-11-25
+qmd: "manuale utente xot pannello admin"
 ---
 
-> Screenshot reale del front office FixCity, verificato il 23 novembre 2026. È una superficie condivisa e non una prova di una UI propria di Xot.
+# Xot — pannello di amministrazione
 
-![Screenshot reale](assets/front-office-home.png)
+## Scopo
 
-# Manuale d'uso per attori — Xot
+Xot è il framework Laraxot / XotBase. Non ha un front office proprio: il suo
+contributo visibile all'utente è il **pannello Filament `xot/admin`**, usato per
+controllare moduli, log, cache, sessioni, salute dell'applicazione e impostazioni
+generali. Le pagine sotto descritte sono quelle verificate con screenshot reali.
 
-## Scopo e perimetro
+Gli screenshot provengono da un'istanza di prova con database usa-e-getta: le
+tabelle sono vuote tranne i log e i moduli (16 moduli, 2 file di log). Dove una
+lista è vuota è indicato «Nessun risultato», che è lo stato reale della prova e
+non un difetto.
 
-Xot è la base infrastrutturale condivisa: contratti utente, policy comuni,
-provider e base dei pannelli Filament, discovery di risorse/pagine/widget,
-navigazione, impostazioni tecniche e supporto opzionale alla tenancy. Non è
-un'area business né un'area personale per gli utenti finali.
+## Accesso
 
-## Attori e capacità effettive
+- URL di accesso: `/xot/admin/login` (pagina di login del pannello, screenshot `login`).
+- Il pannello richiede autenticazione; dopo il login l'utente va alla dashboard.
+- **Dashboard e ruoli:** `MainDashboard::mount()` (`app/Filament/Pages/MainDashboard.php`)
+  mostra i moduli per cui l'utente ha il ruolo `<modulo>::admin`
+  (`User/app/Models/Traits/HasModules.php`). Se l'utente non ha nessun modulo,
+  la dashboard reindirizza alla home pubblica `/{locale}`. Con un solo modulo
+  reindirizza direttamente a `/<modulo>/admin`. Nella prova l'utente sintetico non
+  aveva ruoli `<modulo>::admin`: la dashboard non è stata catturata (vedi Difetti).
+- Health e Ambiente (`EnvPage`) sono riservate al super-admin
+  (`SuperAdminOnlyTrait`).
 
-| Attore | Capacità nel modulo Xot |
+## Attori
+
+| Attore | Accesso verificato nel codice |
 |---|---|
-| Ospite | N/A per funzioni infrastrutturali riservate. Può incontrare il chrome o la resa di un pannello pubblico, ma Xot non gli attribuisce capacità di dominio. |
-| Utente autenticato | N/A come operatore Xot. Usa indirettamente login, middleware e pannelli forniti dalle basi Xot, se il modulo applicativo lo abilita. |
-| Utente in gruppo/ruolo | N/A: Xot non trasforma membership o ruolo applicativo in permessi di business. |
-| Admin | N/A come ruolo globale. Il ruolo `<modulo>::admin` viene interpretato dalle policy del modulo proprietario, non da Xot come amministrazione universale. |
-| Operatore/moderatore | N/A: Xot non definisce CRUD o moderazione per questi ruoli. Le policy del modulo concreto decidono le operazioni. |
-| Super-admin | Supera il `before()` di `XotBasePolicy` e può accedere alle pagine infrastrutturali esplicitamente protette dal tratto `SuperAdminOnlyTrait`, come impostazioni, ambiente, salute e gestione comandi, quando registrate nel pannello. |
+| Ospite | Nessuno: il pannello reindirizza al login. |
+| Utente con ruolo `<modulo>::admin` | Vede la dashboard e le risorse del proprio modulo. |
+| Super-admin | Pagine di sistema: Health, Ambiente, Artisan Commands Manager, Impostazioni. |
 
-## Flussi operativi
+## Menu laterale
 
-### Accesso ai pannelli
+Il menu raggruppa le voci in: **Sistema** (Artisan Commands Manager),
+**Admin** (Health Page, Lock Cache, Ambiente, Extra, Log, Meta Tag, Moduli,
+Sessione, Cache), **Sviluppo** (Test), **Configurazione** (Impostazioni).
+I badge numerici accanto alle voci mostrano il conteggio dei record (es. Moduli 16,
+Log 2).
 
-`XotBasePanelProvider` fornisce la base comune per login, reset password,
-middleware di autenticazione, discovery di risorse/pagine/widget e tenancy
-opzionale. L'accesso effettivo al pannello è poi deciso dal modello User e dal
-ruolo richiesto dal pannello; Xot non apre automaticamente tutte le aree.
+## Pagine
 
-### Autorizzazione delle risorse
+### Moduli — `/xot/admin/modules` (screenshot `modules`)
 
-`XotBasePolicy` concede il bypass al super-admin e, quando la policy concreta lo
-ricava dal namespace, al ruolo `<modulo>::admin`. Il default `viewAny()` è
-negato. Le abilità Filament non dichiarate, incluse operazioni come delete
-massivo, restore, reorder e attach/detach, sono negate dal trait comune; una
-policy concreta deve dichiararle per concederle. Eventuali permessi operativi
-restano responsabilità del modulo proprietario.
+Lista dei moduli Laraxot.
 
-### Impostazioni infrastrutturali
+- Colonne visibili: **Name**, **Description**, **Status** (icona booleana),
+  **Priority**. La colonna **path** è nascosta di default (`ModulesTable.php`).
+- Azioni di riga: visualizza, modifica, elimina. Pulsante **Nuovo** / **Crea Module**
+  per creare un record.
+- Form di modifica: `ModuleForm.php`; sola lettura: `ModuleInfolist.php`.
 
-Le pagine base di ambiente, salute, comandi e impostazioni usano una protezione
-esplicita super-admin. Non sono funzioni destinate all'ospite, all'utente
-ordinario o al moderatore.
+### Log — `/xot/admin/logs` (screenshot `logs`)
 
-## Prerequisiti
+Elenco dei file di log dello storage.
 
-- autenticazione e ruolo ammesso dal pannello;
-- policy concreta del modulo risorsa, con abilità dichiarate;
-- registrazione/discovery del pannello e dei componenti applicativi;
-- super-admin per le pagine protette con `SuperAdminOnlyTrait`.
+- Colonne: **Name** (es. `laravel`, `browser`), **Size**.
+- Filtro **Level name** (valori Tutti / livelli), pulsante **Applica filtri** e **Reimposta**.
+- Azioni di riga: **Vedi** (apre `/xot/admin/logs/{record}`) ed **Elimina**.
+  Non verificato a fondo cosa cancelli l'azione Elimina: leggere `LogResource/Tables/LogsTable.php` prima di usarla.
 
-## Limiti e casi N/A
+### Cache — `/xot/admin/caches` (screenshot `caches`)
 
-- Xot non assegna ruoli né permessi e non sostituisce le policy applicative.
-- Il bypass `<modulo>::admin` vale solo quando la policy concreta estende il
-  comportamento comune e ricava quel ruolo.
-- Un ruolo di ingresso al pannello non implica automaticamente delete, restore,
-  reorder, attach o detach.
-- La tenancy è opzionale e deve essere configurata dal pannello; non è una
-  garanzia globale dell'applicazione.
+Elenco delle voci di cache gestite dal pannello.
 
-## Fonti verificabili
+- Colonne: **Key**, **Expiration**. Nella prova la lista era vuota.
+- Pulsanti di intestazione (presenti, **non eseguiti** durante la cattura):
+  **Nuovo**, **Route:list**, **Icons:cache**, **Filament:cache components**,
+  **Filament:clear cached components**. Eseguono comandi Artisan/Filament:
+  verificare la definizione in `CacheResource/Pages/ListCaches.php` prima di usarli.
 
-- `app/Models/Policies/XotBasePolicy.php` — bypass, ruolo modulo-admin e
-  default `viewAny()` negato.
-- `app/Models/Policies/Concerns/DeniesUndeclaredFilamentAbilities.php` —
-  abilità Filament non dichiarate negate.
-- `app/Models/Policies/Concerns/RequiresOperationalPermissions.php` —
-  distinzione tra ingresso al pannello e permessi operativi.
-- `app/Filament/Traits/SuperAdminOnlyTrait.php` e
-  `app/Filament/Pages/BaseSettingPage.php` — pagine riservate.
-- `app/Providers/Filament/XotBasePanelProvider.php` — basi dei pannelli e
-  tenancy opzionale.
-- `app/Actions/Filament/GetModulesNavigationItems.php` — filtraggio della
-  navigazione per ruolo modulo.
-- `app/Contracts/UserContract.php` — contratto comune per autenticazione,
-  ruoli e tenant.
+### Lock Cache — `/xot/admin/cache-locks` (screenshot `cache-locks`)
 
+Elenco dei lock della cache (`CacheLockResource`).
+
+- Colonne: **Chiave** (key), **Scadenza** (expiration). La colonna **Proprietario**
+  (owner) è nascosta di default.
+- Pulsante **Crea Cache Lock** per creare un lock manuale (`CacheLockForm.php`).
+- Nella prova la lista era vuota.
+
+### Sessione — `/xot/admin/sessions` (screenshot `sessions`)
+
+Elenco delle sessioni utente registrate nel database (`SessionResource`).
+
+- Colonne: **Utente** (user_id), **Indirizzo IP** (ip_address), **Ultima attività**
+  (last_activity). Nascoste di default: user agent e identificativo.
+- Pulsante **Crea Session** presente. Nella prova la lista era vuota.
+
+### Health Page — `/xot/admin/health-page` (screenshot `health-page`, solo super-admin)
+
+Controlli di salute dell'applicazione (`HealthPage.php`, check Spatie Health).
+
+- Titolo **Salute applicazione** e sottotitolo con la descrizione dei controlli.
+- Pulsante **Aggiorna**: esegue tutti i check e salva i risultati (`refresh()`).
+  Non è stato premuto durante la cattura, perché scrive i risultati nello store.
+- Nella cattura il corpo della pagina era vuoto prima di premere **Aggiorna**.
+- Vista: `resources/views/filament/pages/health.blade.php`, che mostra «Ultimo controllo».
+
+### Impostazioni — `/xot/admin/setting` (screenshot `setting`)
+
+Impostazioni generali del pannello (`SettingPage.php`, `lang/it/setting.php`).
+
+| Campo | Tipo | Significato |
+|---|---|---|
+| Modulo principale | Select (obbligatorio) | Modulo il cui pannello è quello predefinito. Default nella prova: Meetup. |
+| Lingua primaria | Select (obbligatorio) | Lingua dei contenuti usata quando manca la traduzione (nella prova: italiano). |
+| Forza https | Toggle | Genera URL https. Ignorato in locale (localhost, 127.0.0.1). |
+| Nascondi le notifiche del pannello | Toggle | Attivo: nessuna campanella nei pannelli. Spento: la campanella legge le notifiche dal database. |
+
+Pulsante **Salva**.
+
+### Artisan Commands Manager — `/xot/admin/artisan-commands-manager` (screenshot `artisan-commands-manager`)
+
+Pagina con pulsanti che lanciano comandi Artisan (`ArtisanCommandsManager.php`).
+
+- Pulsanti visibili: **Migrazione Database**, **Aggiorna Filament**,
+  **Ottimizza Filament**, **Cache delle View**, **Cache della Configurazione**,
+  **Cache delle Route**, **Cache degli Eventi**, **Riavvia Code**,
+  **Composer Dump Autoload**, **Importa Vecchi Template Email/SMS**.
+- Ogni pulsante esegue il comando in modo sincrono (`executeCommand`). Alcuni
+  richiedono conferma. **Migrazione Database** modifica lo schema del database.
+- Non eseguiti durante la cattura. Prima di usarli leggere la documentazione dei
+  singoli comandi.
+
+### Ambiente — `/xot/admin/env-page` (non catturata)
+
+Pagina del file `.env` per il super-admin (`EnvPage.php`, `Widgets/EnvWidget.php`).
+Non è stata catturata: vedi Difetti noti, punto 3. Campi: gruppi Generale (app_url,
+debugbar, Google Maps, token Telegram), SMS (driver, token Netfun), Mail (mailer,
+host, porta, cifratura, utente, password, mittente). Il salvataggio chiama
+`config:clear`.
+
+## Difetti noti
+
+1. **Dashboard non catturabile con l'utente di prova.** `MainDashboard::mount()`
+   reindirizza a `/it` quando `getModules()` è vuoto (`MainDashboard.php`, riga 39-49).
+   Nella prova lo screenshot `dashboard` ha restituito «redirect a /it».
+   Causa: l'utente non ha il ruolo `<modulo>::admin`, non un errore di pagina.
+   Il manuale non documenta la dashboard con screenshot.
+
+2. **Password in chiaro nel form Ambiente.** `EnvWidget.php` (riga ~173) usa
+   `TextInput::make('mail_password')` senza `->password()`; stesso problema per
+   `google_maps_api_key`, `telegram_bot_token` e `netfun_token`. Il valore del
+   `.env` viene mostrato in chiaro a chiunque abbia accesso alla pagina e allo
+   schermo. Non corretto: cambia il comportamento del form. Da correggere
+   aggiungendo `->password()->revealable()`.
+
+3. **Ambiente non fotografata.** Per il punto 2, lo screenshot della pagina
+   Ambiente non è stato prodotto: avrebbe mostrato segreti in chiaro.
+
+4. **Etichette in inglese residue.** Corrette nella stessa modifica:
+   `lang/it/cache_locks.php` (key, owner, expiration) e `lang/it/sessions.php`
+   (user_id, ip_address, last_activity, user_agent). Restano in inglese:
+   «Crea Session», «Modifica Session», «Elimina Session» (`lang/it/session.php`,
+   righe 55-63); «Level name» nel filtro dei log; «Crea Module» (`ModuleResource`, pulsante di intestazione).
+
+5. **Chiavi di traduzione grezze in Health (corrette).** La pagina mostrava
+   `xot::health.heading` e `xot::health.sub_heading`, e il titolo della finestra
+   `xot::health.title`: `NavigationPageLabelTrait` cerca le chiavi al primo livello
+   di `lang/it/health.php`, che le aveva solo sotto `pages.health_check_results`.
+   Aggiunte al primo livello in `lang/it/health.php`. `lang/en/health.php` ha lo
+   stesso problema e non è stato toccato.
+
+6. **Refuso nel testo Impostazioni (corretto).** «Il suo pannello e' quello
+   predefinito» in `lang/it/setting.php` (riga 19) è diventato «è».
+
+## Fonti verificate
+
+- Screenshot: `assets/login.webp`, `modules.webp`, `logs.webp`, `caches.webp`,
+  `cache-locks.webp`, `sessions.webp`, `health-page.webp`, `setting.webp`,
+  `artisan-commands-manager.webp` (aperti e verificati a vista; manifest
+  `screenshots.json` con data, HTTP e sha256).
+- Codice letto: `app/Filament/Pages/{MainDashboard,HealthPage,SettingPage,EnvPage,ArtisanCommandsManager}.php`,
+  `app/Filament/Widgets/EnvWidget.php`,
+  `app/Filament/Resources/{ModuleResource,LogResource,CacheResource,CacheLockResource,SessionResource}/Tables/*.php`,
+  `User/app/Models/Traits/HasModules.php`, `lang/it/{health,setting,sessions,cache_locks}.php`.
+- Route: `php artisan route:list --path=xot/admin` (prefisso `filament.xot::admin.*`).

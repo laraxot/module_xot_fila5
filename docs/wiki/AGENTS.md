@@ -1,5 +1,5 @@
 ---
-qmd: "AGENTS"
+qmd: "xot llm wiki agent instructions ruolo frontmatter schema karpathy"
 issues: []
 discussions: []
 title: "Agents"

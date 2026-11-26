@@ -4,13 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\AvatarProviders;
 
-use Illuminate\Support\Str;
 use Filament\AvatarProviders\Contracts\AvatarProvider;
 use Filament\Facades\Filament;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
-
-use function Safe\preg_replace;
+use Illuminate\Support\Str;
 
 /**
  * Avatar predefinito dei pannelli Filament, generato in locale (DCP-139, DCP-137).
@@ -18,6 +16,8 @@ use function Safe\preg_replace;
  * Il provider di Filament (`UiAvatarsProvider`) carica l'immagine da `ui-avatars.com` a ogni pagina del back office: un servizio terzo riceve l'indirizzo
  * IP e le iniziali di chi amministra, e una CSP con `img-src 'self'` lo bloccherebbe. Qui le iniziali (al massimo due) diventano un SVG incorporato
  * (`data:`), senza nessuna richiesta di rete e senza trasferire dati personali a terzi.
+ *
+ * @see docs/ecc/00-index.md
  */
 final class InitialsAvatarProvider implements AvatarProvider
 {

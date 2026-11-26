@@ -3,9 +3,10 @@ title: "ADR 0010 — Ticket logic rimossa da PageSlugMiddleware"
 type: decision
 status: accepted
 created: 2026-11-23
-updated: 2026-11-23
+updated: 2026-11-24
 issues:
   - "https://github.com/laraxot/module_fixcity_fila5/issues/ADR-0010"
+qmd: "0010 no ticket logic page slug"
 ---
 
 # ADR 0010: Ticket logic rimossa da PageSlugMiddleware
@@ -29,6 +30,12 @@ La risoluzione delle pagine Folio si affida a:
 
 Il reindirizzamento `/ticket/{code}` → `/segnalazione/{code}` è gestito da `RedirectTicketTrackCodeMiddleware` nel modulo `Fixcity`.
 
+## Driver della decisione
+
+- il middleware CMS resta responsabile della sola risoluzione delle pagine;
+- la logica di dominio dei ticket appartiene al suo modulo owner;
+- la dipendenza Cms verso Fixcity va eliminata, non spostata.
+
 ## Alternative scartate
 
 - Mantenere la logica ticket in Cms: viola la separazione dei domini
@@ -45,6 +52,12 @@ Il reindirizzamento `/ticket/{code}` → `/segnalazione/{code}` è gestito da `R
 ### Negative
 - Bisogna ricordarsi di registrare `RedirectTicketTrackCodeMiddleware` nelle route web di Fixcity
 - Due middleware per gestire un flusso simile (ma domini diversi)
+
+## Conferma
+
+Deroga di verificabilità: i moduli Cms e Fixcity non sono presenti in questo checkout (`laravel/Modules/`), quindi la separazione va confermata nel repository del modulo owner con i test di routing e con il codice dei due middleware citati in Cross-link. Xot ospita il file solo perché nasce dalla documentazione condivisa.
+
+Il file `00010-no-ticket-logic-in-page-slug-middleware.md` è superseded da questo.
 
 ## Cross-link
 
