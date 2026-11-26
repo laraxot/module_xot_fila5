@@ -99,6 +99,7 @@ Un file per decisione. Colonne: stato dalla frontmatter, scopo (il titolo dell'A
 | [0040-bmad-stories-numbered-filenames](0040-bmad-stories-numbered-filenames.md) | accepted | Le story BMAD usano nomi numerati (NNNN-slug.story.md) | test: `BmadStoriesAreMadrFormatTest.php` |
 | [0041-no-docs-archive-folders](0041-no-docs-archive-folders.md) | accepted | Nessuna cartella di archivio nei docs: il ripristino passa da Git (Stato attuale: il codice contraddice) | comando |
 | [0042-laravel-day-harness-adoption-boundary](0042-laravel-day-harness-adoption-boundary.md) | accepted | adozione incrementale dell'harness Laravel Day | test: `PackagesHaveContractsAndAdrTest.php`, `GuardTest.php` |
+| [0043-github-readme-per-pacchetto](0043-github-readme-per-pacchetto.md) | accepted | Ogni modulo e tema ha `.github/README.md`, generato da fatti verificati | test: `PackagesHaveGithubReadmeTest.php` |
 
 Modello: [0000-template.md](0000-template.md). Regola tipizzazione trasversale (tutti i moduli): [0015 — `mixed` solo come ultima spiaggia](0015-mixed-solo-come-ultima-spiaggia.md) (formulazione estesa superseded: [0014-mixed-last-resort](0014-mixed-last-resort.md)).
 
@@ -108,13 +109,13 @@ Misurato il 2026-11-26 leggendo i file (Pest non eseguito in questa passata).
 
 | Misura | Valore |
 |---|---|
-| ADR (esclusi README, index, INDEX, template) | 37 |
-| di cui canonici (non superseded) | 26 |
+| ADR (esclusi README, index, INDEX, template) | 38 |
+| di cui canonici (non superseded) | 27 |
 | di cui superseded da un altro ADR (alias o duplicati, mai cancellati) | 11 |
-| ADR con le sei sezioni (Contesto, Driver, Alternative, Decisione, Conseguenze, Conferma) | 37 / 37 |
-| Canonici con conferma che cita un test esistente | 17 / 26 |
-| Canonici con conferma solo a comando | 9 / 26 |
-| Canonici con conferma solo di review | 0 / 26 |
+| ADR con le sei sezioni (Contesto, Driver, Alternative, Decisione, Conseguenze, Conferma) | 38 / 38 |
+| Canonici con conferma che cita un test esistente | 18 / 27 |
+| Canonici con conferma solo a comando | 9 / 27 |
+| Canonici con conferma solo di review | 0 / 27 |
 | ADR con «Stato attuale» (il codice di oggi contraddice la decisione) | 3 (`0001`, `0029`, `0041`) |
 
 Una conferma «test» o «comando» dice che un controllo esiste, non che passa: nessun test è stato eseguito qui.

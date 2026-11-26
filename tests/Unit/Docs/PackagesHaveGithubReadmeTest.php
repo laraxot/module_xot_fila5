@@ -41,8 +41,9 @@ it('gives every module and theme a non-empty .github/README.md that opens with a
 
             continue;
         }
-        if (! str_starts_with(ltrim(file_get_contents($readme)), '# ')) {
-            $problems[] = $label.': non inizia con un titolo `# `';
+        $body = (string) preg_replace('/\A---\R.*?\R---\R/s', '', ltrim(file_get_contents($readme)), 1);
+        if (! str_starts_with(ltrim($body), '# ')) {
+            $problems[] = $label.': dopo l\'eventuale frontmatter non inizia con un titolo `# `';
         }
     }
 
