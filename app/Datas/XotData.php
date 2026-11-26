@@ -367,8 +367,9 @@ class XotData extends Data implements Wireable
     }
 
     /**
-     * Layout HTML delle email: prima quello del tema pubblico, se il tema non lo ha quello del modulo Notify.
-     * Un tema senza `resources/mail-layouts` non deve far fallire l'invio (es. il reset della password).
+     * Layout HTML delle e-mail: prima quelli del tema pubblico, poi quelli del modulo Notify.
+     * Un tema senza `resources/mail-layouts` (es. Two) non deve far fallire l'invio
+     * (reset password, modelli e-mail, pagina «Nuovo modello e-mail»).
      */
     public function getMailHtmlLayoutPath(string $key = ''): string
     {

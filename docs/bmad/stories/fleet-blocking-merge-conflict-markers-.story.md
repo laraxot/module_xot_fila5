@@ -80,6 +80,7 @@ il duplicato"):
   `getNotifyThemeTableFilters()` (nome non `getTable*`, quindi fuori dalla regola
   meccanica, e condivisi con altro codice per docblock).
   **Aggiornamento 2026-10-06**: i due helper statici sono stati poi rimossi dal sync
+<<<<<<< .merge_file_7c8J7h
   di Notify; l'ultimo chiamante (`Quaeris/.../ManageNotifyThemes`) ora eredita i filtri
   da `NotifyThemesTable` — vedi
   [story Quaeris](../../../../Quaeris/docs/stories/manage-notify-themes-table-filters-phpstan.story.md).
@@ -87,6 +88,15 @@ il duplicato"):
   poi rimossi dal sync di Notify e l'ultimo chiamante (`Quaeris/.../ManageNotifyThemes`,
   modulo non presente in questo repo) eredita i filtri da `NotifyThemesTable` (story
   `manage-notify-themes-table-filters-phpstan` nel modulo Quaeris). In questo repo i due
+=======
+  di Notify; l'ultimo chiamante (`<nome progetto>/.../ManageNotifyThemes`) ora eredita i filtri
+  da `NotifyThemesTable` — vedi
+  [story <nome progetto>](../../../../<nome progetto>/docs/stories/manage-notify-themes-table-filters-phpstan.story.md).
+  **Aggiornamento upstream 2026-10-06** (`laraxot/dev`): i due helper statici sono stati
+  poi rimossi dal sync di Notify e l'ultimo chiamante (`<nome progetto>/.../ManageNotifyThemes`,
+  modulo non presente in questo repo) eredita i filtri da `NotifyThemesTable` (story
+  `manage-notify-themes-table-filters-phpstan` nel modulo <nome progetto>). In questo repo i due
+>>>>>>> .merge_file_LFjBkh
   helper sono ancora presenti in `ListNotifyThemes.php` (verificato 2026-10-07), quindi
   lo stato upstream non e' adottato qui.
 - `Notify/.../NotificationResource/Pages/ListNotifications.php` — rimosso solo il

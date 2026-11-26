@@ -259,7 +259,7 @@ swarm parallelo per singolo modulo in ordine random, come da pilastro 8.
 - Causa comune del gruppo piu' grande: i 31 file di `Modules/Fixcity/config/` sono stati riscritti dal commit `.` delle 14:34
   (radice `7430d1efe6`, vicino al pull del pomeriggio citato da `d8b0f413b6`). `config('env.DB_DATABASE') ?? 'database'`
   (convenzione del progetto, vedi DCP-179) e' diventato `env('DB_DATABASE', ...)`, che con `config:cache` restituisce `null`.
-  Dentro ci sono anche chiavi che non sono di FixCity (`limesurvey`, `quaeris`, `totem`, `orbit`, `survey_pdf`). Se le abbia
+  Dentro ci sono anche chiavi che non sono di FixCity (`limesurvey`, `<nome progetto>`, `totem`, `orbit`, `survey_pdf`). Se le abbia
   scritte l'altra macchina non e' provato: il repo annidato del modulo ha ancora HEAD `4ec9fd1` (08:30) con la forma vecchia.
 
 | Gruppo | N | Dove | Primo passo | Claim |

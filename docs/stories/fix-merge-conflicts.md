@@ -54,3 +54,10 @@ discussions: []
 - **Branch**: dev
 - **Module**: Xot (primary), all modules affected
 - **Next**: Analyze conflict patterns and create resolution strategy
+
+## Update — conflitti PHP Xot risolti
+
+I 9 file `*.php` con marker sotto `laravel/Modules/Xot` sono stati risolti in
+[phpstan-merge-bootstrap.story.md](./phpstan-merge-bootstrap.story.md)
+(claim `phpstan-xot-merge`, forward-only). Contesto sync stale:
+[module-sync-stale-snapshot-and-phpstan-zero.story.md](./module-sync-stale-snapshot-and-phpstan-zero.story.md).

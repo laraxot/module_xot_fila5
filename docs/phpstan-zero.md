@@ -13,13 +13,13 @@ discussions: []
 
 **Status:** COMPLETED (Fase 6 — Second brain + docs)
 **Story:** 18.12.phpstan-zero-per-module
-**Agent:** AI agent (collaborazione multi-agente, INDEX.md)
+**Agent:** AI agent (collaborazione multi-agente, index.md)
 **Module directory:** laravel/Modules/Xot (repo git indipendente)
 
 ## Fasi completate
 0. Ricognizione (git blame, lettura file)
 1. BMAD story (file creato: /tmp/xot_phpstan_story.md + docs/stories/)
-2. Validazione (swarm INDEX.md, nessun conflitto)
+2. Validazione (swarm index.md, nessun conflitto)
 3. Implementazione (3 file, 6 errori → 0)
 4. Quality gate (syntax OK, PHPStan 0, no suppress)
 5. Sincronizzazione git (fetch laraxot/dev, merge -s resolve, push -u laraxot dev — no --force)
@@ -44,6 +44,6 @@ discussions: []
 - Coverage: quality gate ripetuto dopo merge, antes/post verificato
 
 ## Coordinamento multi-agente
-- `docs/chat/INDEX.md`: Xot presente in swarm (migration-foreignidfor, phpstan-modules-zero)
+- `docs/chat/index.md`: Xot presente in swarm (migration-foreignidfor, phpstan-modules-zero)
 - Nessun conflitto con `phpstan-metalwork-claim` (chiuso) o `platform-duplicate-assignment-standdown`
 - Lock per-file rispettato (solo file Xot toccati)

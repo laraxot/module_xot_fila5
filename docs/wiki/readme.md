@@ -1,6 +1,10 @@
 ---
 qmd: "xot wiki readme md"
+<<<<<<< .merge_file_KoSe1L
 title: "Xot - readme.md"
+=======
+title: "Xot - README.md"
+>>>>>>> .merge_file_hyGW1J
 module: Xot
 bmad: true
 status: active

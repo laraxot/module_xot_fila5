@@ -1,7 +1,7 @@
 ---
 tags: [module-root, hygiene, workspace, bmad, guard]
 created: 2026-09-29
-updated: 2026-09-29
+updated: 2026-11-17
 issues: []
 discussions: []
 title: "Igiene della root dei moduli: cartelle, tooling, workspace, md"
@@ -164,3 +164,20 @@ PHPStan `[OK] No errors`, PHPMD 0.
 - `bashscripts/ai/wiki/memories/workspace-naming.md` descriveva `_<nome>.code-workspace`:
   superata da questa story.
 - Lock (`bashscripts/lock/`) prima di ogni edit.
+
+
+## Riverifica 2026-11-17 — file root obbligatori
+
+Direttiva: ogni modulo/tema deve avere in root:
+
+- `_<nome_repo_snake>.code-workspace` (es. `_module_xot_fila5.code-workspace`, dal remote, **con** `_fila5`)
+- `.releaserc.json`, `composer.json`, `module.json` (moduli) / `theme.json` (temi)
+- `package.json`, `tailwind.config.js`, `postcss.config.js`, `vite.config.js`
+- `testbench.yaml`
+- `README.md`, `LICENSE`, `CHANGELOG.md`
+
+Recupero forward-only: `git show HEAD:<file>` dove tracciato; altrimenti template da Activity/Xot.
+Gate: `bashscripts/quality-gates/audit-module-theme-root-files.sh` allineato (non strippa piu' `_filaN`).
+Guardia Pest: `Modules/Xot/tests/Unit/ModuleRootHygieneTest.php`.
+
+Consigliati aggiuntivi (religione modulo): `config/config.php` (`name`+`icon`), `.gitignore` con tooling vietato, `docs/`.

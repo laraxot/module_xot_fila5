@@ -14,7 +14,11 @@ qmd: "indice BMAD Xot audit purpose piano stories phpstan modules zero swarm"
 - [Audit dettagliato](./audits/xot-audit.md)
 - [Piano di miglioramento](./piano-miglioramento.md)
 - [Epic e story](./epics.md)
+<<<<<<< .merge_file_txAWaS
 - [Decision log](./decision-log.md)
+=======
+- [Decision log](../decision-log.md)
+>>>>>>> .merge_file_s2xqMn
 - [Brainstorming](./brainstorming.md)
 - [Story audit modulo](./stories/module-bmad-audit.story.md)
 - [PHPStan Modules zero (swarm Quick Flow)](./stories/phpstan-modules-zero-swarm.story.md) — campagna attiva `Xot/phpstan-modules-zero-swarm`

@@ -1,6 +1,10 @@
 ---
 qmd: "xot architecture readme md"
+<<<<<<< .merge_file_myEBU7
 title: "Xot - readme.md"
+=======
+title: "Xot - README.md"
+>>>>>>> .merge_file_Hl3QTz
 module: Xot
 bmad: true
 status: active

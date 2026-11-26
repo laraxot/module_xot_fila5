@@ -15,7 +15,7 @@ updated: 2026-08-24
 - [Documentazione generale progetto](/project_docs/README.md)
 - [Regole Filament](filament-best-practices.md)
 - [Convenzioni Namespace](namespace-conventions.md)
-- [Standard di Codice](code-standards.md)
+- [Standard di Codice](../../archive/code-standards.md)
 - [Documentazione](documentation-guidelines.md)
 
 ## Processo di Correzione Errori

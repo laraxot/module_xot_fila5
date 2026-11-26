@@ -7,7 +7,11 @@ tags: [documentation]
 
 =======
 ---
+<<<<<<< .merge_file_zdcnuR
 title: "Xot - phpstan-l10-job-media-notify-20261006.story.md"
+=======
+title: "Xot - phpstan-l10-job-media-notify.story.md"
+>>>>>>> .merge_file_ZSUAWj
 module: Xot
 bmad: true
 status: active
