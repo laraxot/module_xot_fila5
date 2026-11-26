@@ -13,37 +13,17 @@ discussions: []
 
 **Status:** COMPLETED (Fase 6 — Second brain + docs)
 **Story:** 18.12.phpstan-zero-per-module
-<<<<<<< .merge_file_TogjTj
-<<<<<<< .merge_file_OEhng7
 **Agent:** AI agent (collaborazione multi-agente, INDEX.md)
-=======
 **Agent:** AI agent (collaborazione multi-agente, index.md)
->>>>>>> .merge_file_glDLCi
-=======
-<<<<<<< .merge_file_PqKHnw
 **Agent:** AI agent (collaborazione multi-agente, INDEX.md)
-=======
 **Agent:** AI agent (collaborazione multi-agente, index.md)
->>>>>>> .merge_file_1NSZ1W
->>>>>>> .merge_file_DpA32o
 **Module directory:** laravel/Modules/Xot (repo git indipendente)
 
 ## Fasi completate
 0. Ricognizione (git blame, lettura file)
 1. BMAD story (file creato: /tmp/xot_phpstan_story.md + docs/stories/)
-<<<<<<< .merge_file_TogjTj
-<<<<<<< .merge_file_OEhng7
 2. Validazione (swarm INDEX.md, nessun conflitto)
-=======
 2. Validazione (swarm index.md, nessun conflitto)
->>>>>>> .merge_file_glDLCi
-=======
-<<<<<<< .merge_file_PqKHnw
-2. Validazione (swarm INDEX.md, nessun conflitto)
-=======
-2. Validazione (swarm index.md, nessun conflitto)
->>>>>>> .merge_file_1NSZ1W
->>>>>>> .merge_file_DpA32o
 3. Implementazione (3 file, 6 errori → 0)
 4. Quality gate (syntax OK, PHPStan 0, no suppress)
 5. Sincronizzazione git (fetch laraxot/dev, merge -s resolve, push -u laraxot dev — no --force)
@@ -68,18 +48,7 @@ discussions: []
 - Coverage: quality gate ripetuto dopo merge, antes/post verificato
 
 ## Coordinamento multi-agente
-<<<<<<< .merge_file_TogjTj
-<<<<<<< .merge_file_OEhng7
 - `docs/chat/INDEX.md`: Xot presente in swarm (migration-foreignidfor, phpstan-modules-zero)
-=======
 - `docs/chat/index.md`: Xot presente in swarm (migration-foreignidfor, phpstan-modules-zero)
->>>>>>> .merge_file_glDLCi
-=======
-<<<<<<< .merge_file_PqKHnw
-- `docs/chat/INDEX.md`: Xot presente in swarm (migration-foreignidfor, phpstan-modules-zero)
-=======
-- `docs/chat/index.md`: Xot presente in swarm (migration-foreignidfor, phpstan-modules-zero)
->>>>>>> .merge_file_1NSZ1W
->>>>>>> .merge_file_DpA32o
 - Nessun conflitto con `phpstan-metalwork-claim` (chiuso) o `platform-duplicate-assignment-standdown`
 - Lock per-file rispettato (solo file Xot toccati)

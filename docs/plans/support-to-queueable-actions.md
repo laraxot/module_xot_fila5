@@ -1,18 +1,8 @@
 ---
 title: "Support to Queueable Actions"
 type: note
-<<<<<<< .merge_file_hX2KWf
 status: draft
 updated: 2026-10-22
-=======
-<<<<<<< .merge_file_87APbA
-status: in-progress
-updated: 2026-11-20
-=======
-status: draft
-updated: 2026-10-22
->>>>>>> .merge_file_7FnBuA
->>>>>>> .merge_file_1klCue
 tags: [docs, xot, plans]
 qmd: "support to queueable actions xot"
 ---
@@ -71,15 +61,11 @@ The first two commands must return no active application references. Runtime
 tests remain subject to the configured test database and are reported as
 unverified if that external dependency is unavailable.
 
-
 ## Status 2026-10-22
 
 Production `app/Support` = **0**. Faux-Action cleanup: Geo config → `Infrastructure\Config`;
 AI registry → `Adapters`; Blog ArticleDelegates morto rimosso. Ratchet: `NoServicesTest`.
 Process: `docs/second-brain/process/no-app-support-queueable-actions.md`.
-<<<<<<< .merge_file_hX2KWf
-=======
-<<<<<<< .merge_file_87APbA
 
 ## Status 2026-11-20: erano tornate
 
@@ -130,6 +116,3 @@ Il cancello di verifica di questo piano, rimisurato:
 ```
 find laravel/Modules/*/app laravel/Themes -type d -name Support     (vuoto)
 ```
-=======
->>>>>>> .merge_file_7FnBuA
->>>>>>> .merge_file_1klCue

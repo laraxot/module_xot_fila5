@@ -24,11 +24,6 @@ Questa cartella contiene gli standard di codice e le convenzioni utilizzate nel 
 Questi standard si applicano a tutti i moduli del progetto e devono essere seguiti per mantenere la coerenza del codice.
 
 ## Collegamenti tra versioni di README.md
-<<<<<<< .merge_file_0aTsEy
-<<<<<<< .merge_file_bPixAO
-=======
-<<<<<<< .merge_file_S7KiZT
->>>>>>> .merge_file_Xzxzaf
 * [README.md](docs/laravel-app/phpstan/readme.md)
 * [README.md](docs/laravel-app/readme.md)
 * [README.md](docs/moduli/struttura/readme.md)
@@ -76,7 +71,6 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 * [README.md](../../../dental/docs/readme.md)
 * [README.md](../../../user/docs/phpstan/readme.md)
 * [README.md](../../../User/docs/readme.md)
-* [README.md](../../../User/docs/readme.md)
 * [README.md](../../../ui/docs/phpstan/readme.md)
 * [README.md](../../../UI/docs/README.md)
 * [README.md](../../../ui/docs/standards/readme.md)
@@ -95,7 +89,6 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 * [README.md](../../../patient/docs/readme.md)
 * [README.md](../../../patient/docs/standards/readme.md)
 * [README.md](../../../patient/docs/value-objects/readme.md)
-=======
 * [README.md](docs/laravel-app/phpstan/README.md)
 * [README.md](docs/laravel-app/README.md)
 * [README.md](docs/moduli/struttura/README.md)
@@ -127,46 +120,28 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 * [README.md](docs/implementazione/isee/README.md)
 * [README.md](docs/it/README.md)
 * [README.md](laravel/vendor/mockery/mockery/docs/README.md)
-* [README.md](../../../Chart/docs/README.md)
 * [README.md](../../../reporting/docs/README.md)
 * [README.md](../../../gdpr/docs/phpstan/README.md)
-* [README.md](../../../Gdpr/docs/README.md)
 * [README.md](../../../notify/docs/phpstan/README.md)
-* [README.md](../../../Notify/docs/README.md)
 * [README.md](../../../xot/docs/filament/README.md)
 * [README.md](../../../xot/docs/phpstan/README.md)
 * [README.md](../../../xot/docs/exceptions/README.md)
-* [README.md](../README.md)
 * [README.md](readme.md)
 * [README.md](../../../xot/docs/conventions/README.md)
 * [README.md](../../../xot/docs/development/README.md)
 * [README.md](../../../dental/docs/README.md)
 * [README.md](../../../user/docs/phpstan/README.md)
-* [README.md](../../../User/docs/README.md)
-* [README.md](../../../User/docs/README.md)
 * [README.md](../../../ui/docs/phpstan/README.md)
-* [README.md](../../../UI/docs/README.md)
-* [README.md](../../../UI/docs/standards/README.md)
 * [README.md](../../../ui/docs/themes/README.md)
 * [README.md](../../../ui/docs/components/README.md)
 * [README.md](../../../lang/docs/phpstan/README.md)
-* [README.md](../../../Lang/docs/README.md)
 * [README.md](../../../job/docs/phpstan/README.md)
-* [README.md](../../../Job/docs/README.md)
 * [README.md](../../../media/docs/phpstan/README.md)
-* [README.md](../../../Media/docs/README.md)
 * [README.md](../../../tenant/docs/phpstan/README.md)
-* [README.md](../../../Tenant/docs/README.md)
 * [README.md](../../../activity/docs/phpstan/README.md)
-* [README.md](../../../Activity/docs/README.md)
 * [README.md](../../../patient/docs/README.md)
 * [README.md](../../../patient/docs/standards/README.md)
 * [README.md](../../../patient/docs/value-objects/README.md)
-<<<<<<< .merge_file_0aTsEy
->>>>>>> .merge_file_0SUltB
-=======
->>>>>>> .merge_file_ohpyJ1
->>>>>>> .merge_file_Xzxzaf
 * [README.md](../../../Cms/docs/blocks/README.md)
 * [README.md](../../../Cms/docs/README.md)
 * [README.md](../../../Cms/docs/standards/README.md)

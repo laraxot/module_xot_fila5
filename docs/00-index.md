@@ -10,14 +10,8 @@ qmd: "Xot foundation module documentation index"
 # Xot — indice canonico
 
 - [README](README.md) — identità e aree della documentazione;
-<<<<<<< .merge_file_N4KXoX
-=======
-<<<<<<< .merge_file_O3xiuo
 - [contracts/xotbase-classes.md](contracts/xotbase-classes.md) — **cosa garantiscono le classi `XotBase*` a chi le
   estende**: il contratto che rende prevedibile ogni modifica a questo modulo;
-=======
->>>>>>> .merge_file_mM4MDO
->>>>>>> .merge_file_t7hkas
 - [architecture/](architecture/) — architettura fondazionale;
 - [bmad/](bmad/) — decisioni e storie;
 - [wiki/](wiki/) — regole operative;
