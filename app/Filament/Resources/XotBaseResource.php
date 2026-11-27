@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources;
 
+use Filament\Facades\Filament;
 use Filament\Pages\Enums\SubNavigationPosition;
 use Filament\Resources\Pages\Page;
 use Filament\Resources\Pages\PageRegistration;
@@ -247,7 +248,7 @@ abstract class XotBaseResource extends FilamentResource
      * Prima mancava il passo 2: le varianti finivano al passo 3, che restituiva `SchedaDipResource`
      * anche per `SchedaPoResource`, e la pagina si fermava su un Assert.
      *
-     * @see Modules/Xot/docs/stories/resource-part-class-by-resource-name.story.md
+     * @see Modules/Xot/docs/xotbase-extension-rules.md
      *
      * @template TPart of object
      *
@@ -315,7 +316,12 @@ abstract class XotBaseResource extends FilamentResource
     public static function getNavigationBadge(): ?string
     {
         try {
-            $count = app(CountAction::class)->execute(static::getModel());
+            // Pannello con tenancy (es. ristoratore): si contano solo i record del tenant corrente,
+            // con la query della risorsa. La stima di information_schema conta le righe di tutti i
+            // tenant: numero sbagliato e dato di altri tenant esposto.
+            $count = Filament::getTenant() !== null
+                ? static::getEloquentQuery()->count()
+                : app(CountAction::class)->execute(static::getModel());
 
             return number_format($count, 0).'';
         } catch (\Throwable $e) {

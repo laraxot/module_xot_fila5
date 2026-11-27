@@ -32,7 +32,7 @@ it('crea public_html/themes/<tema> come ../../laravel/Themes/<tema>/public', fun
         ->and(readlink($link))->toBe('../../laravel/Themes/TwentyOne/public')
         ->and(is_file($link.'/manifest.json'))->toBeTrue()
         ->and(app(CreateRelativeSymlinkAction::class)->isRelativeLinkTo($link, $source))->toBeTrue();
-});
+})->group('FILE-SYMLINK-INV-1');
 
 it('il link relativo funziona anche dopo aver spostato il progetto', function (): void {
     app(CreateRelativeSymlinkAction::class)->execute(
@@ -44,7 +44,7 @@ it('il link relativo funziona anche dopo aver spostato il progetto', function ()
     $this->root = $moved;
 
     expect(is_file($moved.'/public_html/themes/TwentyOne/manifest.json'))->toBeTrue();
-});
+})->group('FILE-SYMLINK-INV-1');
 
 it('un link assoluto alla stessa cartella non conta come relativo', function (): void {
     $link = $this->root.'/public_html/themes/TwentyOne';

@@ -32,7 +32,7 @@ it('returns config array from module config file', function (): void {
         unlink($file);
         rmdir($tempDir);
     }
-});
+})->group('MODULE-CONFIG-INV-1');
 
 it('throws when config file is missing', function (): void {
     $pathAction = Mockery::mock(GetModulePathByGeneratorAction::class);
@@ -46,7 +46,7 @@ it('throws when config file is missing', function (): void {
     } catch (Exception $e) {
         Assert::assertStringContainsString('Config file', $e->getMessage());
     }
-});
+})->group('MODULE-CONFIG-INV-1');
 
 it('throws when config file does not return array', function (): void {
     $tempDir = sys_get_temp_dir().'/xot_modcfg_scalar_'.uniqid('', true);
@@ -67,4 +67,4 @@ it('throws when config file does not return array', function (): void {
         unlink($file);
         rmdir($tempDir);
     }
-});
+})->group('MODULE-CONFIG-INV-2');

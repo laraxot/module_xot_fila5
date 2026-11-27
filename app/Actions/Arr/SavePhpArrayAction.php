@@ -16,6 +16,11 @@ use function Safe\file_put_contents;
  * (ordine utente 2026-09-16; SSoT `.codestyle-preferences.md` + memoria
  * `php-array-one-key-per-line.md`).
  *
+<<<<<<< .merge_file_gUQVSH
+=======
+ * @see docs/contracts/save-php-array-action.md
+ *
+>>>>>>> .merge_file_7bzyV8
  * @contract docs/contracts/save-php-array-action.md
  */
 class SavePhpArrayAction

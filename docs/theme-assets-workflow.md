@@ -34,7 +34,22 @@ base_<progetto>/
     └── assets/xot     -> ../../laravel/Modules/Xot/public     (symlink relativo)
 ```
 
+<<<<<<< .merge_file_fXlEVW
 <<<<<<< .merge_file_AhS8xc
+=======
+### Workflow Corretto
+```bash
+# 🚨 SEMPRE lavorare nella cartella del tema
+cd /Themes/One/
+
+# 1. Modifica i file sorgente in:
+# - resources/css/
+# - resources/js/
+# - resources/sass/
+
+# 2. Compila gli assets
+npm run build
+>>>>>>> .merge_file_p7mjUX
 - `@vite([...], 'themes/<Tema>')` legge `public_html/themes/<Tema>/manifest.json`, cioè il manifest del tema.
 - `public_html` è la document root: non si cancella né si svuota mai.
 - I symlink sono **relativi** (restano validi se il progetto cambia percorso) e si creano una volta per
@@ -48,14 +63,27 @@ base_<progetto>/
     `<nome>`). In questo repository i link esistenti sono comunque tracciati (`git add -f`), così un clone
     funziona senza comandi; le due righe sono già presenti, per cui i comandi non modificano il `.gitignore`
     sul server. Motivi e verifica: [wiki/concepts/public-html-symlink-assets.md](wiki/concepts/public-html-symlink-assets.md).
+<<<<<<< .merge_file_fXlEVW
 =======
 ## Come arrivano al browser
+=======
+>>>>>>> .merge_file_p7mjUX
 
 ```
 public_html/themes/<Tema>   ->   ../../laravel/Themes/<Tema>/public      (symlink relativo)
 public_html/assets/<modulo> ->   ../../laravel/Modules/<Modulo>/public   (symlink relativo)
 ```
 
+## ⚠️ NON Fare Mai
+❌ **NON modificare** `/public/css/` o `/public/js/` direttamente
+❌ **NON usare** `npm run build` dalla root Laravel
+niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
+
+## ✅ Processo Corretto
+1. **Modifica sorgenti** in `/Themes/[Theme]/resources/`
+2. **Build assets** con `npm run build` dalla cartella tema
+3. niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
+4. **Verifica risultato** nel browser
 - `@vite([...], 'themes/<Tema>')` legge `public_html/themes/<Tema>/manifest.json`, cioè il manifest del tema.
 - `public_html` è la document root: non si cancella né si svuota mai.
 - I symlink sono **relativi** (restano validi se il progetto cambia percorso) e si creano una volta per
@@ -83,6 +111,10 @@ public_html/assets/<modulo> ->   ../../laravel/Modules/<Modulo>/public   (symlin
 ## Lavorare su un tema
 
 ```bash
+cd Themes/One
+npm install          # Prima volta
+npm run build        # Compila Sass/JS
+# niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
 cd laravel/Themes/<Tema>
 npm install      # prima volta
 npm run dev      # sviluppo con hot reload
@@ -131,7 +163,10 @@ export default defineConfig({
 });
 ```
 
+<<<<<<< .merge_file_fXlEVW
 <<<<<<< .merge_file_AhS8xc
+=======
+>>>>>>> .merge_file_p7mjUX
 ## 🐛 Troubleshooting
 
 ### Modifiche Non Visibili?
@@ -149,8 +184,17 @@ export default defineConfig({
 ---
 
 **⚠️ RICORDA**: Il workflow dei temi è DIVERSO dal normale workflow Laravel. Sempre theme → build → copy → public!
+<<<<<<< .merge_file_fXlEVW
 =======
 >>>>>>> .merge_file_A5tGLd
+=======
+cd laravel/Themes/Sixteen
+npm install
+npm run dev      # sviluppo con hot reload
+npm run build    # produzione: scrive in ./public (servito dal symlink)
+```
+
+>>>>>>> .merge_file_p7mjUX
 Lo script `copy` è stato tolto da `package.json` dei temi: non serve più.
 
 ## Non fare
@@ -191,8 +235,13 @@ Modulo nuovo con asset pubblici: crea `Modules/<Modulo>/public`, aggiungi `<modu
 | CSS vecchio dopo una modifica | Build del tema non eseguita o non committata | `npm run build` nel tema e commit di `public/` |
 | Icone di un modulo mancanti (`/assets/<modulo>/svg/*.svg`) | Manca `public_html/assets/<modulo>` | Lo crea `deploy.sh` o `php artisan xot:module-link` (link a `Modules/<Modulo>/public`) |
 | Campo mappa assente nei pannelli (`assets/geo/manifest.json`) | Manca `public_html/assets/geo` o la build Geo non è committata | `deploy.sh` o `xot:module-link`; in sviluppo `cd Modules/Geo && ../../node_modules/.bin/vite build` e commit di `public/` |
+<<<<<<< .merge_file_fXlEVW
 <<<<<<< .merge_file_AhS8xc
 | Errori di build | Dipendenze o ambiente | `npm install` nella cartella del tema; verificare versioni di Node/npm; controllare `build.outDir` in `vite.config.js` (deve essere `public`) e le dipendenze in `package.json` |
 =======
 | Errori di build | Dipendenze o ambiente | `npm install` nella cartella del tema; verificare versioni di Node/npm; controllare la sintassi Sass/JS, `build.outDir` in `vite.config.js` (deve essere `public`) e le dipendenze in `package.json` |
 >>>>>>> .merge_file_A5tGLd
+=======
+| Errori di build | Dipendenze o ambiente | `npm install` nella cartella del tema; verificare versioni di Node/npm; controllare `build.outDir` in `vite.config.js` (deve essere `public`) e le dipendenze in `package.json` |
+| Errori di build | Dipendenze o ambiente | `npm install` nella cartella del tema; verificare versioni di Node/npm; controllare `build.outDir` in `vite.config.js` (deve essere `public`) e le dipendenze in `package.json` |
+>>>>>>> .merge_file_p7mjUX

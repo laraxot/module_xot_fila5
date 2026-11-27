@@ -71,4 +71,4 @@ it('manages object properties safely', function (): void {
     Assert::assertSame('hello', $action->callMethodSafely($complexObj, 'test', ['hello']));
     Assert::assertSame('default', $action->callMethodSafely($complexObj, 'missing', [], 'default'));
     Assert::assertSame('error', $action->callMethodSafely($complexObj, 'fail', [], 'error'));
-});
+})->group('CAST-OBJ-INV-2');

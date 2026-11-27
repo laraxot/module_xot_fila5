@@ -7,7 +7,11 @@ namespace Modules\Xot\Actions\Arr;
 use Spatie\QueueableAction\QueueableAction;
 
 /**
+<<<<<<< .merge_file_YsL36j
  * Scrive un array su file PHP o JSON (sovrascrive).
+=======
+ * @see docs/contracts/save-array-action.md
+>>>>>>> .merge_file_1MHW0w
  *
  * @contract docs/contracts/save-array-action.md
  */

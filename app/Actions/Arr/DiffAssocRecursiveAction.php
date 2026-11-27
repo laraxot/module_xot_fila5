@@ -8,6 +8,8 @@ use Spatie\QueueableAction\QueueableAction;
 
 /**
  * ---.
+ *
+ * @see Modules/Xot/docs/actions-and-contracts.md
  */
 class DiffAssocRecursiveAction
 {

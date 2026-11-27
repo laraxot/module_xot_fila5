@@ -24,7 +24,7 @@ it('returns empty array when tenant config file does not exist', function (): vo
     $result = app(GetTenantConfigArrayAction::class)->execute('missing-config');
 
     expect($result)->toBe([]);
-});
+})->group('CONFIG-TENANT-ARR-INV-1');
 
 it('returns config array when file exists and contains array', function (): void {
     $path = sys_get_temp_dir().'/xot_tenant_config_'.uniqid('', true).'.php';
@@ -42,7 +42,7 @@ it('returns config array when file exists and contains array', function (): void
     } finally {
         unlink($path);
     }
-});
+})->group('CONFIG-TENANT-ARR-INV-1');
 
 it('returns empty array when required file does not return an array', function (): void {
     $path = sys_get_temp_dir().'/xot_tenant_config_scalar_'.uniqid('', true).'.php';
@@ -60,4 +60,4 @@ it('returns empty array when required file does not return an array', function (
     } finally {
         unlink($path);
     }
-});
+})->group('CONFIG-TENANT-ARR-INV-2');

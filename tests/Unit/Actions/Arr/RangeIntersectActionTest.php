@@ -25,4 +25,4 @@ it('calculates range intersection correctly', function (): void {
 
     // Final fallback case: return [$a0, $b1]
     Assert::assertSame([15, 20], $action->execute(15, 20, 10, 25)); // Also Case 2
-});
+})->group('ARR-RANGE-INV-1', 'ARR-RANGE-INV-2', 'ARR-RANGE-INV-3');

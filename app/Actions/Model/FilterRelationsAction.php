@@ -8,6 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Webmozart\Assert\Assert;
 
+/**
+ * @see docs/contracts/filter-relations-action.md
+ *
+ * @contract docs/contracts/filter-relations-action.md
+ */
 class FilterRelationsAction
 {
     /**

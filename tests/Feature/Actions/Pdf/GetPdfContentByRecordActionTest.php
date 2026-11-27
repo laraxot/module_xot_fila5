@@ -39,7 +39,7 @@ describe('Get Pdf Content By Record Action', function () use (&$action): void {
         } catch (\Exception $e) {
             Assert::assertSame("View 'user::user.show.pdf' not found for model ".$user::class, $e->getMessage());
         }
-    });
+    })->group('PDF-REC-INV-1');
 
     test('it generates correct view name', function () use (&$action): void {
         // Arrange
@@ -56,7 +56,7 @@ describe('Get Pdf Content By Record Action', function () use (&$action): void {
 
         // Assert
         Assert::assertEquals('user::user.show.pdf', $viewName);
-    });
+    })->group('PDF-REC-INV-1');
 
     test('it generates correct filename for basic model', function () use (&$action): void {
         // Arrange
@@ -141,7 +141,7 @@ describe('Get Pdf Content By Record Action', function () use (&$action): void {
         } catch (\Exception $e) {
             Assert::assertMatchesRegularExpression("/View 'user::user\.show\.pdf' not found/", $e->getMessage());
         }
-    });
+    })->group('PDF-REC-INV-1');
 
     test('it throws exception for empty html content', function (): void {
         // This test would require mocking view rendering to return empty content

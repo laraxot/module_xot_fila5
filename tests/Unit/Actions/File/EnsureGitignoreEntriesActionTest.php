@@ -28,7 +28,7 @@ it('aggiunge le due righe del link (cartella reale e symlink) una sola volta', f
         ->and($action->execute($path, 'geo', '# intestazione'))->toBe([])
         ->and($action->execute($path, 'roosko'))->toBe(['roosko/', 'roosko'])
         ->and(File::get($path))->toBe("# intestazione\ngeo/\ngeo\nroosko/\nroosko\n");
-});
+})->group('FILE-GITIGNORE-INV-2');
 
 it('il pattern senza barra fa ignorare a git anche il symlink', function (): void {
     exec('git --version', $out, $code);

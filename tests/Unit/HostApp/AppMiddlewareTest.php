@@ -27,8 +27,9 @@ use PHPUnit\Framework\Assert;
  * Queste classi esistono solo negli host con lo scheletro completo (ptvx,
  * predict, ...). Gli host con app/ minimale (restaurant, techplanner, ...)
  * non le forniscono: ogni test salta se la classe mancante, invece di fallire.
- * Assert::assertIs* solo dove il tipo runtime non e' gia' noto a PHPStan
- * (es. elemento di array); mai su return gia' tipizzati (array / const string).
+ * Assert::assertIs* restringe solo i valori misti delle classi App\ opzionali
+ * (`hosts()` senza return type); mai su costanti gia' tipizzate (`HOME` const
+ * string) e mai cast/`@var` cosmetici.
  */
 
 uses(TestCase::class);
@@ -38,19 +39,20 @@ test('trust hosts trusts every subdomain of the application url', function (): v
         $this->markTestSkipped('Host app senza App\Http\Middleware\TrustHosts.');
     }
 
-    $hostsRaw = (new TrustHosts(app()))->hosts();
-    Assert::assertIsArray($hostsRaw);
-    /** @var list<string> $hosts */
-    $hosts = [];
-    foreach ($hostsRaw as $host) {
-        Assert::assertIsString($host);
-        $hosts[] = $host;
-    }
+    // Host app tipizza hosts(): array<int, string|null>; su host senza stub PHPStan
+    // il ritorno e' mixed: restringi ad array, poi filtra i non-string.
+    $rawHosts = (new TrustHosts(app()))->hosts();
+    Assert::assertIsArray($rawHosts);
+    $hosts = array_values(array_filter(
+        $rawHosts,
+        static fn (mixed $host): bool => is_string($host) && $host !== '',
+    ));
 
     $appHost = Str::of(Config::string('app.url'))->after('://')->before('/')->value();
 
     Assert::assertCount(1, $hosts);
     $pattern = $hosts[0];
+    Assert::assertIsString($pattern);
     // Il pattern di Laravel e' `^(.+\.)?<host quotato>$`: verifichiamo che copra
     // sia il dominio nudo sia un suo sottodominio, senza replicarne la stringa.
     Assert::assertMatchesRegularExpression('#'.$pattern.'#', $appHost);
@@ -83,7 +85,7 @@ test('redirect if authenticated lets a guest through untouched', function (): vo
     $request = Request::create('/login');
     $expected = new Response('form di login');
 
-    $response = (new RedirectIfAuthenticated)->handle($request, fn (): Response => $expected);
+    $response = (new RedirectIfAuthenticated())->handle($request, fn (): Response => $expected);
 
     Assert::assertSame($expected, $response);
 });
@@ -102,13 +104,17 @@ test('redirect if authenticated sends an authenticated user home', function (): 
     $guard->shouldReceive('check')->once()->andReturnTrue();
     Auth::shouldReceive('guard')->once()->with('web')->andReturn($guard);
 
-    $response = (new RedirectIfAuthenticated)->handle(
+    $response = (new RedirectIfAuthenticated())->handle(
         Request::create('/login'),
         fn (): Response => new Response('non deve arrivarci'),
         'web',
     );
 
     Assert::assertInstanceOf(RedirectResponse::class, $response);
+<<<<<<< .merge_file_nARPFm
+=======
+    // RouteServiceProvider::HOME e' const string '/home' nell'host app: gia' tipizzata, nessun assertIsString.
+>>>>>>> .merge_file_bpJr9y
     Assert::assertSame(url(RouteServiceProvider::HOME), $response->getTargetUrl());
 });
 
@@ -134,7 +140,7 @@ test('logout action clears the web guard and the session', function (): void {
         $calls[] = 'regenerateToken';
     });
 
-    (new Logout)();
+    (new Logout())();
 
     Assert::assertSame(['logout', 'invalidate', 'regenerateToken'], $calls);
 });

@@ -16,7 +16,7 @@ it('extracts module name from class and model class', function (): void {
 
     Assert::assertSame('Cms', $byClass);
     Assert::assertSame('Xot', $byModelClass);
-});
+})->group('MODULE-NAME-CLASS-INV-1', 'MODULE-NAME-MODELCLASS-INV-1');
 
 it('returns extracted fragment for non-module class signatures', function (): void {
     $byClass = app(GetModuleNameByClassAction::class)->execute('App\\Models\\User');
@@ -24,7 +24,7 @@ it('returns extracted fragment for non-module class signatures', function (): vo
 
     Assert::assertSame('App', $byClass);
     Assert::assertSame('App', $byModelClass);
-});
+})->group('MODULE-NAME-CLASS-INV-1', 'MODULE-NAME-MODELCLASS-INV-1');
 
 it('delegates model instance class to model class action', function (): void {
     $model = new class extends Model

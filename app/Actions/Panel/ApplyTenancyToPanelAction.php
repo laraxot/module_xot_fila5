@@ -10,6 +10,11 @@ use Modules\User\Filament\Pages\Tenancy\RegisterTenant;
 use Modules\Xot\Datas\XotData;
 use Spatie\QueueableAction\QueueableAction;
 
+/**
+ * @see docs/contracts/apply-tenancy-to-panel-action.md
+ *
+ * @contract docs/contracts/apply-tenancy-to-panel-action.md
+ */
 class ApplyTenancyToPanelAction
 {
     use QueueableAction;

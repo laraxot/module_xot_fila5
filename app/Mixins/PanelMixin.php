@@ -8,14 +8,14 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
-use Nwidart\Modules\Facades\Module;
+use Nwidart\Modules\Contracts\RepositoryInterface as ModuleRepositoryContract;
 use Nwidart\Modules\Module as NwidartModule;
 use Webmozart\Assert\Assert;
 
 /**
  * @method string getId()
  * @method string getName()
- * @method NwidartModule getModule()
+ * @method NwidartModule|null getModule()
  * @method array<string, mixed> getConfig()
  * @method array<string, mixed> getModuleConfig()
  * @method string getNavigationLabel()
@@ -42,11 +42,10 @@ class PanelMixin
      */
     public function getModule()
     {
-        return function (): NwidartModule {
+        return function (): ?NwidartModule {
             $name = $this->getName();
-            $module = Module::find($name);
 
-            return $module;
+            return app(ModuleRepositoryContract::class)->find($name);
         };
     }
 
@@ -70,6 +69,7 @@ class PanelMixin
     {
         return function (): array {
             $module = $this->getModule();
+            Assert::isInstanceOf($module, NwidartModule::class, '['.__LINE__.']['.class_basename($this).']');
             $configFilePath = $module->getPath().'/config/config.php';
             $config = File::getRequire($configFilePath);
             Assert::isArray($config, '['.__LINE__.']['.class_basename($this).']');

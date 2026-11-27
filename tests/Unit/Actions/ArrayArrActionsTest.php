@@ -124,4 +124,4 @@ it('throws on unsupported save format in SaveArrayAction', function (): void {
     } catch (InvalidArgumentException) {
         // Expected
     }
-});
+})->group('ARR-SAVE-INV-2');

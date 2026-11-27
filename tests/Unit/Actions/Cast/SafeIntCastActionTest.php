@@ -38,7 +38,7 @@ it('casts various values to integer correctly', function (): void {
         }
     };
     Assert::assertSame(20, $action->execute($obj));
-});
+})->group('CAST-INT-INV-1', 'CAST-INT-INV-2');
 
 it('clams integer within range correctly', function (): void {
     $action = app(SafeIntCastAction::class);

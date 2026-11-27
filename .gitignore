@@ -165,8 +165,6 @@ vendor/
 /.windsurf
 /.windsurf/
 .windsurf~*
-tests/coverage-xot.xml
-
 # Laraxot -- forbidden module root folders (root hygiene directive 2026-09-29)
 /bashscripts/
 /tools/
@@ -186,10 +184,8 @@ build
 .github/skills
 docs/graphify
 resources/lang
-
 # docs/chat — coordination notes replaced by BMAD stories in docs/bmad/
 docs/chat
-
 # Laraxot — app/Application forbidden (belongs to laravel/app/, not module app/)
 app/Application
 /.docs-archive/
@@ -199,14 +195,14 @@ yarn.lock
 test-results/
 xot.code-workspace
 .merge_*
-
-# Tooling locale e config agenti (module-theme-root-hygiene)
+# Regole portate dal remoto laraxot/dev (sync del 24/11), unite alla base senza perdere nulla
 .agents/
 .codex/
 .opencode/
 .qwen/
 .php-cs-fixer.php
 .php-cs-fixer.dist.php
+<<<<<<< .merge_file_vue12y
 <<<<<<< .merge_file_FDV5Zw
 
 # screenshot di comparazione visiva (artefatti locali)
@@ -216,3 +212,34 @@ docs/visual-comparison/
 tests/coverage-*.*
 docs/screenshots/
 >>>>>>> .merge_file_3ox3FV
+=======
+tests/coverage-*.*
+docs/screenshots/
+# screenshot di comparazione visiva (artefatti locali)
+docs/project/visual-comparison/
+docs/visual-comparison/
+# fila5-guard: mai nel repo di un modulo/tema
+/node_modules/
+/laravel/
+/tests/coverage/
+/tests/coverage.xml/
+/tests/*coverage*.xml
+docs/archivio/
+docs/**/archivio/
+# Niente cartelle di backup/archivio in docs: lo storico e' git (ADR Xot 0041)
+docs/**/_archive/
+docs/**/*backup*/
+docs/**/wiki-archive/
+docs/**/historical/
+# No docs archive folders — restore via Git only (Xot ADR 0041)
+docs/_archive/
+docs/archived/
+docs/historical/
+docs/backup/
+docs/**/backup/
+docs/backups/
+docs/**/backups/
+.docs-archive/
+# Indice vettoriale locale (non versionare)
+ruvector.db
+>>>>>>> .merge_file_MxObe2

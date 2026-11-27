@@ -11,7 +11,11 @@ use function Safe\file_put_contents;
 use function Safe\json_encode;
 
 /**
+<<<<<<< .merge_file_cTSU3q
  * Scrive un array come JSON, creando la cartella se manca.
+=======
+ * @see docs/contracts/save-json-array-action.md
+>>>>>>> .merge_file_YEjJ03
  *
  * @contract docs/contracts/save-json-array-action.md
  */

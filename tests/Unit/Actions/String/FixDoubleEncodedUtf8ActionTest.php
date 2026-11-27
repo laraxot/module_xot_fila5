@@ -40,4 +40,4 @@ it('lascia com\'e\' il testo che non e\' codificato due volte', function (string
     'emoji' => ["Ottimo \u{1F600}"],
     // Non e' UTF-8 valido: non e' compito di questa Action indovinare cosa sia.
     'non utf-8' => ["\xC3\x28"],
-]);
+])->group('STR-FIX-UTF8-INV-1', 'STR-FIX-UTF8-INV-2', 'STR-FIX-UTF8-INV-4');

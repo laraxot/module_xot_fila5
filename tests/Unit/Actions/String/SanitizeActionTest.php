@@ -14,4 +14,4 @@ it('sanitizes strings correctly', function (): void {
     $expected = "alert('xss') Hello & Welcome!";
 
     Assert::assertSame($expected, $action->execute($input));
-});
+})->group('STR-SANITIZE-INV-1', 'STR-SANITIZE-INV-2');

@@ -52,7 +52,7 @@ it('instantiates model by type when id is null', function (): void {
     $result = app(GetModelByModelTypeAction::class)->execute('demo', null);
 
     Assert::assertFalse($result->exists);
-});
+})->group('GET-MODEL-BY-TYPE-INV-2');
 
 it('loads model by id when record exists', function (): void {
     config()->set('morph_map', ['demo' => FakeQueryableModel::class]);
@@ -62,7 +62,7 @@ it('loads model by id when record exists', function (): void {
     $result = app(GetModelByModelTypeAction::class)->execute('demo', '123');
 
     Assert::assertSame(123, SafeIntCastAction::cast($result->getKey()));
-});
+})->group('GET-MODEL-BY-TYPE-INV-2');
 
 it('throws when model id is provided but record is missing', function (): void {
     config()->set('morph_map', ['demo' => FakeQueryableModel::class]);

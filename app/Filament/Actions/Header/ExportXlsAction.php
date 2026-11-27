@@ -12,9 +12,9 @@ namespace Modules\Xot\Filament\Actions\Header;
 use Exception;
 use Filament\Notifications\Notification;
 use Filament\Resources\Pages\ListRecords;
+use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Gate;
-use Illuminate\Contracts\Support\Htmlable;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Export\ExportXlsByCollection;
 use Modules\Xot\Actions\Export\GetExportFileNameAction;
@@ -50,7 +50,7 @@ class ExportXlsAction extends XotBaseAction
                 return (string) __('xot::export_xls.tooltip');
             })
             ->icon('xot-files.xls')
-            // Ability tipica: policy del model della Resource; undeclared = deny; admin via before().
+            // Ability dichiarata (default deny) in XotBasePolicy: senza il metodo Laravel salta before() e nega anche super-admin.
             ->authorize('xlsExport')
             ->action(static function (ListRecords $livewire, ExportXlsAction $action) {
                 $modelClass = $livewire->getResource()::getModel();
@@ -78,7 +78,7 @@ class ExportXlsAction extends XotBaseAction
                     self::notifyNoColumns();
                     $action->halt();
 
-                    return null;
+                    return;
                 }
 
                 return app(ExportXlsByCollection::class)->execute($query->get(), $filename, $transKey, $fields);

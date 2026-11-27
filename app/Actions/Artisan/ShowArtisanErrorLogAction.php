@@ -4,17 +4,19 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Artisan;
 
-use Illuminate\Support\Str;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Str;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
-use function Safe\preg_match_all;
-
 /**
  * Replaces Modules\Xot\Services\ArtisanService::errorShow().
+ *
+ * @see docs/contracts/show-artisan-error-log-action.md
+ *
+ * @contract docs/contracts/show-artisan-error-log-action.md
  */
 class ShowArtisanErrorLogAction
 {

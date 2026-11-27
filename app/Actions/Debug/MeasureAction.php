@@ -11,6 +11,10 @@ use Filament\Notifications\Notification;
  * Classe per misurare le performance di esecuzione di un blocco di codice.
  *
  * @template T
+ *
+ * @see docs/contracts/measure-action.md
+ *
+ * @contract docs/contracts/measure-action.md
  */
 class MeasureAction
 {

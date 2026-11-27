@@ -28,7 +28,7 @@ test('act sconosciuto restituisce stringa vuota senza toccare artisan', function
     Artisan::shouldReceive('call')->never();
 
     expect(app(HandleArtisanActRequestAction::class)->execute('unknown-command'))->toBe('');
-});
+})->group('ARTISAN-ACT-INV-1');
 
 test('i valori dell enum sono esattamente gli act storici', function (): void {
     expect(array_map(static fn (ArtisanActEnum $case): string => $case->value, ArtisanActEnum::cases()))
@@ -86,7 +86,7 @@ test('migrate con modulo lancia module:migrate per quel modulo', function (): vo
     ob_end_clean();
 
     expect($result)->toContain('Module migration');
-});
+})->group('ARTISAN-ACT-INV-4');
 
 test('un parametro module non stringa viene ignorato', function (): void {
     Request::replace(['module' => ['not', 'a', 'string']]);

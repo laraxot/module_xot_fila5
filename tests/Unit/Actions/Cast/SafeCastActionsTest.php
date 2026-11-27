@@ -47,7 +47,7 @@ test('safe array cast action works', function (): void {
     Assert::assertSame([1, 2], $action->executeWithValueType(['1', '2'], 'int'));
     Assert::assertTrue($action->canCast([]));
     Assert::assertSame([], SafeArrayCastAction::cast(null));
-});
+})->group('CAST-ARR-INV-1', 'CAST-ARR-INV-2', 'CAST-ARR-INV-3', 'CAST-ARR-INV-4');
 
 test('safe string cast action works', function (): void {
     $action = app(SafeStringCastAction::class);
@@ -59,7 +59,7 @@ test('safe string cast action works', function (): void {
     Assert::assertSame('123', $action->execute(123));
     Assert::assertSame('', $action->execute([]));
     Assert::assertSame('456', SafeStringCastAction::cast(456));
-});
+})->group('CAST-STR-INV-2');
 
 test('safe int cast action works', function (): void {
     $action = app(SafeIntCastAction::class);
@@ -86,7 +86,7 @@ test('safe int cast action works', function (): void {
     Assert::assertSame(10, $action->executeAsId(10));
     Assert::assertSame(1, $action->executeAsId(0));
     Assert::assertSame(99, SafeIntCastAction::cast('99'));
-});
+})->group('CAST-INT-INV-1', 'CAST-INT-INV-2');
 
 test('safe boolean cast action works', function (): void {
     $action = app(SafeBooleanCastAction::class);

@@ -37,7 +37,7 @@ describe('Get Tenant Config Actions', function (): void {
 
         Assert::assertSame($configData, $result);
         File::delete($tempPath);
-    });
+    })->group('CONFIG-TENANT-PATH-INV-1');
 
     test('returns empty array if tenant config file does not exist', function (): void {
         $configName = 'non_existent';

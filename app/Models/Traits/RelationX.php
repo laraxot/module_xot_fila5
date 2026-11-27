@@ -15,6 +15,8 @@ use Webmozart\Assert\Assert;
 
 /**
  * Trait Modules\Xot\Models\Traits\RelationX.
+ *
+ * @see Modules/Xot/docs/traits/relation-x.md
  */
 trait RelationX
 {
@@ -96,6 +98,11 @@ trait RelationX
      * @param  class-string<TRelatedModel>  $related
      * @param  class-string<TPivot>|null  $pivotClass  Concrete pivot class; inferred from convention when null
      * @return MorphToMany<TRelatedModel, $this, ($pivotClass is null ? MorphPivot : TPivot), 'pivot'>
+<<<<<<< .merge_file_yzxGDE
+=======
+     *
+     * @see Modules/Xot/docs/traits/relation-x.md
+>>>>>>> .merge_file_UrF1ed
      */
     public function morphToManyX(
         string $related,
@@ -112,7 +119,11 @@ trait RelationX
         Assert::subclassOf($related, Model::class);
         Assert::isInstanceOf($related_model = app($related), Model::class);
 
+<<<<<<< .merge_file_yzxGDE
         $pivot = null !== $pivotClass ? app($pivotClass) : $this->guessMorphPivot($related);
+=======
+        $pivot = $pivotClass !== null ? app($pivotClass) : $this->guessMorphPivot($related);
+>>>>>>> .merge_file_UrF1ed
         Assert::isInstanceOf($pivot, MorphPivot::class);
         $table = $this->qualifyPivotTable($pivot, $related_model, $pivot->getTable());
         $pivotFields = $pivot->getFillable();

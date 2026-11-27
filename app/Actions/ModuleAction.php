@@ -11,6 +11,10 @@ use Spatie\QueueableAction\QueueableAction;
 
 /**
  * Class ModuleAction.
+ *
+ * @see docs/contracts/module-action.md
+ *
+ * @contract docs/contracts/module-action.md
  */
 class ModuleAction
 {

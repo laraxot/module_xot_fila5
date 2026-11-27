@@ -15,7 +15,7 @@ use function Safe\json_encode;
  * progetto e lascia passare tutto il resto: ogni regola ha almeno un caso che la fa scattare e uno vicino che no.
  * Source-level (niente app): il guard deve funzionare proprio quando Laravel non parte, e così il suo test.
  *
- * @see Modules/Xot/docs/adr/agent-harness.md
+ * @see Modules/Xot/docs/adr/0018-agent-harness.md
  */
 
 /**
