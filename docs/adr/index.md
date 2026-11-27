@@ -10,9 +10,9 @@ qmd: "xot adr indice decisioni canonico superseded numerazione doppia BMAD MADR 
 
 # Indice ADR — Xot
 
-Inventario di tutti gli ADR del pacchetto **Xot** (esclusi `README.md`, `index.md` e `0000-template.md`). Lo stato è quello della frontmatter di ciascun file. Formato e sezioni obbligatorie: [README](README.md); modello: [0000-template](0000-template.md); governance dei contratti: [0012](0012-behavioral-contract-governance.md).
+Inventario di tutti gli ADR del pacchetto **Xot** (esclusi `README.md`, `index.md` e `0000-template.md`). Il file `0000-template.md` non è presente in questa cartella: il modello canonico è il template dell'harness ([README](README.md)). Lo stato è quello della frontmatter di ciascun file. Formato e sezioni obbligatorie: [README](README.md); governance dei contratti: [0012](0012-behavioral-contract-governance.md).
 
-Totale: **37** ADR, di cui **26** canonici e **11** superseded (nessun file cancellato).
+Totale: **38** ADR, di cui **27** canonici e **11** superseded (nessun file cancellato).
 
 | N. | Titolo | Stato | Canonico / superseded | File |
 |---|---|---|---|---|
@@ -53,6 +53,7 @@ Totale: **37** ADR, di cui **26** canonici e **11** superseded (nessun file canc
 | 0040 | BMAD stories use numbered filenames (NNNN-slug.story.md) | accepted | canonico | [0040-bmad-stories-numbered-filenames.md](0040-bmad-stories-numbered-filenames.md) |
 | 0041 | No docs archive folders — restore via Git only | accepted | canonico; root pointer → docs/adr/0006 (riferimento non presente in questo checkout) | [0041-no-docs-archive-folders.md](0041-no-docs-archive-folders.md) |
 | 0042 | Adozione incrementale dell'harness Laravel Day | accepted | canonico | [0042-laravel-day-harness-adoption-boundary.md](0042-laravel-day-harness-adoption-boundary.md) |
+| 0043 | Ogni modulo e tema ha `.github/README.md`, generato da fatti verificati | accepted | canonico | [0043-github-readme-per-pacchetto.md](0043-github-readme-per-pacchetto.md) |
 
 ## Note sui duplicati
 

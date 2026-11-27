@@ -21,9 +21,9 @@ non si usano date o timestamp nel nome (la data sta nella frontmatter).
 
 Ispirazione obbligatoria:
 [harness 0000-template](https://raw.githubusercontent.com/robertogallea/laravelday-harness-workshop/refs/heads/main/docs/adr/0000-template.md)
-· copia locale [0000-template.md](./0000-template.md).
+· la copia locale `0000-template.md` non è presente in questa cartella: il modello resta quello remoto sopra.
 
-Eccezioni al prefisso numerico: `README.md`, `INDEX.md`/`index.md`, `0000-template.md`.
+Eccezioni al prefisso numerico: `README.md`, `INDEX.md`/`index.md` e, se presente, `0000-template.md`.
 
 ## Formato (MADR breve / harness)
 
@@ -48,7 +48,7 @@ File: `docs/adr/NNNN-titolo-con-trattini.md` (NNNN a 4 cifre, prossimo libero).
 
 ## Sezioni obbligatorie e deroghe
 
-Ogni ADR non superseded ha, in questo ordine o equivalente: `## Contesto`, `## Driver della decisione`, `## Alternative scartate`, `## Decisione`, `## Conseguenze`, `## Conferma`. Una sezione può mancare solo con una deroga dichiarata nel file. Il modello breve in stile MADR è [0000-template](0000-template.md) (intestazioni inglesi: lo si adatta alle sezioni italiane qui sopra).
+Ogni ADR non superseded ha, in questo ordine o equivalente: `## Contesto`, `## Driver della decisione`, `## Alternative scartate`, `## Decisione`, `## Conseguenze`, `## Conferma`. Una sezione può mancare solo con una deroga dichiarata nel file. Il modello breve in stile MADR è il [template dell'harness](https://raw.githubusercontent.com/robertogallea/laravelday-harness-workshop/refs/heads/main/docs/adr/0000-template.md) (intestazioni inglesi: lo si adatta alle sezioni italiane qui sopra).
 
 La governance dei contratti comportamentali, collegati agli ADR tramite invarianti con ID stabile e gruppo Pest, è la decisione [0012](0012-behavioral-contract-governance.md); il registro dei contratti è [../contracts/README.md](../contracts/README.md).
 
@@ -101,7 +101,7 @@ Un file per decisione. Colonne: stato dalla frontmatter, scopo (il titolo dell'A
 | [0042-laravel-day-harness-adoption-boundary](0042-laravel-day-harness-adoption-boundary.md) | accepted | adozione incrementale dell'harness Laravel Day | test: `PackagesHaveContractsAndAdrTest.php`, `GuardTest.php` |
 | [0043-github-readme-per-pacchetto](0043-github-readme-per-pacchetto.md) | accepted | Ogni modulo e tema ha `.github/README.md`, generato da fatti verificati | test: `PackagesHaveGithubReadmeTest.php` |
 
-Modello: [0000-template.md](0000-template.md). Regola tipizzazione trasversale (tutti i moduli): [0015 — `mixed` solo come ultima spiaggia](0015-mixed-solo-come-ultima-spiaggia.md) (formulazione estesa superseded: [0014-mixed-last-resort](0014-mixed-last-resort.md)).
+Modello: il [template dell'harness](https://raw.githubusercontent.com/robertogallea/laravelday-harness-workshop/refs/heads/main/docs/adr/0000-template.md) (`0000-template.md` non è versionato qui). Regola tipizzazione trasversale (tutti i moduli): [0015 — `mixed` solo come ultima spiaggia](0015-mixed-solo-come-ultima-spiaggia.md) (formulazione estesa superseded: [0014-mixed-last-resort](0014-mixed-last-resort.md)).
 
 ## Stato di copertura
 
@@ -126,7 +126,7 @@ Una conferma «test» o «comando» dice che un controllo esiste, non che passa:
 - **Alias a cinque cifre**: `00010`, `00011` sono copie superseded di `0010` e `0011` (restano per i link storici).
 - **Numeri non usati** (nessun file): 0017, 0023, 0024, 0025, 0026, 0027, 0030, 0032, 0038.
 - **Superseded**: `00010` → `0010`, `00011` → `0011`, `0006/no` → `0008`, `0014/mixed` → `0015`, `0019` → `0020`, `0028` → `0015`, `0031` → `0004`, `0033` → `0003`, `0034` → `0007`, `0035` → `0002`, `0036` → `0029`.
-- **Non sono decisioni** ma stanno in questa cartella: `README.md`, [index.md](index.md), [INDEX.md](INDEX.md) (puntatore storico a `index.md`), [0000-template.md](0000-template.md). Nessun log o piano da spostare.
+- **Non sono decisioni** ma stanno in questa cartella: `README.md`, [index.md](index.md), [INDEX.md](INDEX.md) (puntatore storico a `index.md`). `0000-template.md` non è presente: il modello è quello remoto dell'harness. Nessun log o piano da spostare.
 
 ## Backlog conferme
 

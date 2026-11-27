@@ -13,7 +13,7 @@ qmd: "xot contratti indice behavioral contract action invarianti group pest cope
 
 Un contratto descrive cosa **promette** un'Action di Xot (input, output, invarianti con ID stabile, effetti collaterali, errori, cosa non fa) e distingue il **promesso** dal **dimostrato**: la colonna `Group Pest` contiene l'ID quando esiste un test con `->group('<ID>')`, altrimenti `— (non dimostrato)`. Xot è condiviso con altri progetti: i contratti descrivono comportamenti validi per ogni tenant che lo usa, salvo dove il testo dice il contrario.
 
-Regole e riferimenti: [standard di authoring](contract-authoring-standard.md), [regola Action Behavioral Contract](../rules/action-behavioral-contract.md), [ADR 0012 — governance dei contratti](../adr/0012-behavioral-contract-governance.md), [ADR 0011 — riferimento `@contract` nel docblock](../adr/0011-contract-docblock-reference.md), [template](behavioral-contract-template.md). [INDEX.md](INDEX.md) è l'elenco alfabetico per titolo (solo collegamenti). **Stato (2026-12, issue #151):** gli stub per-Action sono archiviati in [`archive/docs-legacy/contracts/`](../../archive/docs-legacy/contracts/) per il tetto di 100 file `.md` in `docs/`; i collegamenti di questo README e dell'INDEX puntano lì. Restano qui formato, template e standard.
+Regole e riferimenti: [standard di authoring](contract-authoring-standard.md), [regola Action Behavioral Contract](../rules/action-behavioral-contract.md), [ADR 0012 — governance dei contratti](../adr/0012-behavioral-contract-governance.md), [ADR 0011 — riferimento `@contract` nel docblock](../adr/0011-contract-docblock-reference.md), [template](behavioral-contract-template.md). [INDEX.md](INDEX.md) è l'elenco alfabetico per titolo (solo collegamenti). **Stato (2026-12, issue #151):** gli stub per-Action sono archiviati in [`archive/docs-legacy/contracts/`](../../archive/docs-legacy/contracts/) per il tetto di 100 file `.md` in `docs/`; i collegamenti di questo README e dell'INDEX puntano lì, tranne i cinque contratti locali `execute-artisan-command-action`, `save-array-action`, `save-json-array-action`, `save-php-array-action` e `send-mail-by-record-action`: i loro docblock `@contract` risolvono a `docs/contracts/` e portano gli ID dimostrati dai group Pest. Restano qui anche formato, template e standard.
 
 Ogni file ha frontmatter `type: contract` e `action: "<FQCN>"`, le sei sezioni `Input`, `Output`, `Invarianti`, `Effetti collaterali`, `Errori`, `Non fa`, e il docblock dell'Action contiene `@see` e `@contract docs/contracts/<file>.md`.
 
@@ -54,7 +54,7 @@ Un file per Action, raggruppati per area del namespace `Modules\Xot\…`. Colonn
 |---|---|---|
 | [array-action.md](../../archive/docs-legacy/contracts/array-action.md) | 3 / 0 | Contenitore di due helper statici su array e intervalli, più un `execute()` vuoto. |
 | [config-action.md](../../archive/docs-legacy/contracts/config-action.md) | 1 / 0 | Singleton senza comportamento. |
-| [execute-artisan-command-action.md](../../archive/docs-legacy/contracts/execute-artisan-command-action.md) | 3 / 2 | Esegue un comando Artisan da una lista chiusa di comandi consentiti. |
+| [execute-artisan-command-action.md](execute-artisan-command-action.md) | 3 / 2 | Esegue un comando Artisan da una lista chiusa di comandi consentiti. |
 | [execute-composer-dump-autoload-action.md](../../archive/docs-legacy/contracts/execute-composer-dump-autoload-action.md) | 3 / 0 | Esegue `composer dump-autoload` e nient'altro, per rigenerare l'autoloader senza accesso SSH. |
 | [generate-pdf-action.md](../../archive/docs-legacy/contracts/generate-pdf-action.md) | 4 / 0 | Genera un PDF da HTML con Html2Pdf, in una delle tre modalità di uscita. |
 | [get-model-by-model-type-action.md](../../archive/docs-legacy/contracts/get-model-by-model-type-action.md) | 3 / 1 | Restituisce un modello dal suo tipo morph e, se dato, dal suo id. |
@@ -87,9 +87,9 @@ Un file per Action, raggruppati per area del namespace `Modules\Xot\…`. Colonn
 | [array-to-raw-js-action.md](../../archive/docs-legacy/contracts/array-to-raw-js-action.md) | 4 / 2 | Converte un array PHP in un letterale JavaScript (oggetto) incapsulato in `RawJs`, pronto per attributi HTML tipo `x-data="..."`. |
 | [ensure-keys-action.md](../../archive/docs-legacy/contracts/ensure-keys-action.md) | 4 / 0 | Allinea ogni riga di un dataset alle chiavi attese dallo schema: le chiavi mancanti diventano `null`, quelle presenti sono conservate. |
 | [range-intersect-action.md](../../archive/docs-legacy/contracts/range-intersect-action.md) | 5 / 3 | Calcola l'intersezione tra due intervalli interi `[a0, b0]` e `[a1, b1]` con una catena di rami. |
-| [save-array-action.md](../../archive/docs-legacy/contracts/save-array-action.md) | 2 / 1 | Punto di ingresso unico per salvare un array su file, scegliendo il formato. |
-| [save-json-array-action.md](../../archive/docs-legacy/contracts/save-json-array-action.md) | 4 / 1 | Scrive un array come JSON formattato su file, creando la cartella se manca. |
-| [save-php-array-action.md](../../archive/docs-legacy/contracts/save-php-array-action.md) | 5 / 3 | Salva un array come file PHP `return [...]` con una chiave per riga, senza array annidati inline. |
+| [save-array-action.md](save-array-action.md) | 3 / 3 | Punto di ingresso unico per salvare un array su file, scegliendo il formato. |
+| [save-json-array-action.md](save-json-array-action.md) | 2 / 1 | Scrive un array come JSON formattato su file, creando la cartella se manca. |
+| [save-php-array-action.md](save-php-array-action.md) | 3 / 3 | Salva un array come file PHP `return [...]` con una chiave per riga, senza array annidati inline. |
 
 ### Actions/Artisan (7)
 
@@ -287,7 +287,7 @@ Un file per Action, raggruppati per area del namespace `Modules\Xot\…`. Colonn
 
 | Contratto | INV | Scopo |
 |---|---|---|
-| [send-mail-by-record-action.md](../../archive/docs-legacy/contracts/send-mail-by-record-action.md) | 6 / 1 | Invia una mail a un record con oggetto e corpo letti dal record, allega il PDF del modello e registra l'invio nei log. |
+| [send-mail-by-record-action.md](send-mail-by-record-action.md) | 4 / 1 | Invia una mail a un record con oggetto e corpo letti dal record, allega il PDF del modello e registra l'invio nei log. |
 | [send-mail-by-records-action.md](../../archive/docs-legacy/contracts/send-mail-by-records-action.md) | 2 / 0 | Invia la mail a ciascun record di una collezione, delegando a `SendMailByRecordAction`. |
 
 ### Actions/Model (19)
@@ -553,7 +553,7 @@ Action di `app/Actions` ancora senza `@contract` (il 2026-11-26, `rg -L "@contra
 Nessuna Action che scrive dati o chiama un servizio esterno è rimasta senza contratto (lo script `audit_docs.py` non ne segnala più). Il rischio più alto che i contratti segnalano come **Limite noto**, non corretto in questa passata:
 
 - [export-xls-by-collection.md](../../archive/docs-legacy/contracts/export-xls-by-collection.md): `ExportTreeXlsAction` ed `ExportXlsTableAction` esportano campi di record senza un'autorizzazione esplicita nel proprio file (a differenza di `ExportXlsAction`).
-- [execute-artisan-command-action.md](../../archive/docs-legacy/contracts/execute-artisan-command-action.md): `migrate` è nella lista dei comandi consentiti; da confrontare con la regola sui dati sacri.
+- [execute-artisan-command-action.md](execute-artisan-command-action.md): `migrate` è nella lista dei comandi consentiti; da confrontare con la regola sui dati sacri.
 
 ## Backlog test
 

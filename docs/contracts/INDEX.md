@@ -12,7 +12,7 @@ qmd: "xot contract indice action behavioral contract FQCN docblock"
 
 Inventario dei contratti del pacchetto **Xot**. Un file per Action o superficie con `type: contract` e `action: "<FQCN>"`, più i contract di framework (`type: framework-contract`) per le classi base e il bootstrap. Il docblock di ogni Action contiene `@contract docs/contracts/<file>.md`; la prova minima di un'invariante è `vendor/bin/pest --group=<ID>` da `laravel/`.
 
-**Stato (2026-12):** per rispettare il tetto di 100 file `.md` in `docs/` (issue #151), gli stub per-Action sono stati consolidati in questo indice e archiviati in [`archive/docs-legacy/contracts/`](../../archive/docs-legacy/contracts/): i collegamenti sotto puntano lì. In `docs/contracts/` restano formato, template e standard.
+**Stato (2026-12):** per rispettare il tetto di 100 file `.md` in `docs/` (issue #151), gli stub per-Action sono stati consolidati in questo indice e archiviati in [`archive/docs-legacy/contracts/`](../../archive/docs-legacy/contracts/): i collegamenti sotto puntano lì, tranne i cinque contratti locali qui presenti — `execute-artisan-command-action`, `save-array-action`, `save-json-array-action`, `save-php-array-action`, `send-mail-by-record-action` — che restano in `docs/contracts/` perché i docblock `@contract` delle Action risolvono a quel percorso e portano gli ID `<SCOPE>-INV-<N>` dimostrati dai group Pest. In `docs/contracts/` restano anche formato, template e standard.
 
 Formati e regole: [README](README.md), [contract-authoring-standard](contract-authoring-standard.md), [regola Action Behavioral Contract](../rules/action-behavioral-contract.md), decisione [ADR 0012](../adr/0012-behavioral-contract-governance.md).
 
@@ -58,7 +58,7 @@ Formati e regole: [README](README.md), [contract-authoring-standard](contract-au
 - [DownloadZipByPathsDiskAction — contratto](../../archive/docs-legacy/contracts/download-zip-by-paths-disk-action.md)
 - [EnsureGitignoreEntriesAction — contratto](../../archive/docs-legacy/contracts/ensure-gitignore-entries-action.md)
 - [EnsureKeysAction — contratto](../../archive/docs-legacy/contracts/ensure-keys-action.md)
-- [ExecuteArtisanCommandAction — contratto](../../archive/docs-legacy/contracts/execute-artisan-command-action.md)
+- [ExecuteArtisanCommandAction — contratto](execute-artisan-command-action.md)
 - [ExecuteComposerDumpAutoloadAction — contratto](../../archive/docs-legacy/contracts/execute-composer-dump-autoload-action.md)
 - [ExportButton — contratto](../../archive/docs-legacy/contracts/export-button.md)
 - [PdfByHtmlAction — contratto](../../archive/docs-legacy/contracts/export-pdf-by-html-action.md)
@@ -200,11 +200,11 @@ Formati e regole: [README](README.md), [contract-authoring-standard](contract-au
 - [SafeObjectCastAction — contratto](../../archive/docs-legacy/contracts/safe-object-cast-action.md)
 - [SafeStringCastAction — contratto](../../archive/docs-legacy/contracts/safe-string-cast-action.md)
 - [SanitizeAction — contratto](../../archive/docs-legacy/contracts/sanitize-action.md)
-- [SaveArrayAction — contratto](../../archive/docs-legacy/contracts/save-array-action.md)
-- [SaveJsonArrayAction — contratto](../../archive/docs-legacy/contracts/save-json-array-action.md)
-- [SavePhpArrayAction — contratto](../../archive/docs-legacy/contracts/save-php-array-action.md)
+- [SaveArrayAction — contratto](save-array-action.md)
+- [SaveJsonArrayAction — contratto](save-json-array-action.md)
+- [SavePhpArrayAction — contratto](save-php-array-action.md)
 - [SelectAction — contratto](../../archive/docs-legacy/contracts/select-action.md)
-- [SendMailByRecordAction — contratto](../../archive/docs-legacy/contracts/send-mail-by-record-action.md)
+- [SendMailByRecordAction — contratto](send-mail-by-record-action.md)
 - [SendMailByRecordsAction — contratto](../../archive/docs-legacy/contracts/send-mail-by-records-action.md)
 - [SetThemeAction — contratto](../../archive/docs-legacy/contracts/set-theme-action.md)
 - [ShowArtisanErrorLogAction — contratto](../../archive/docs-legacy/contracts/show-artisan-error-log-action.md)

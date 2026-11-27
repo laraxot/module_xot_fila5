@@ -8,7 +8,7 @@ updated: 2026-11-24
 tags: [harness, adr, contracts, guard, bmad, second-brain, ecc]
 qmd: "story harness adr contracts ogni modulo tema guard lessons invarianti group pest laravelday workshop"
 related:
-  - ../adr/agent-harness.md
+  - ../adr/0018-agent-harness.md
   - ../concepts/agent-harness-guide.md
   - ../rules/action-behavioral-contract.md
 ---

@@ -179,7 +179,7 @@ Da fare: le stesse correzioni vanno nei repo `module_ui_fila5`, `module_geo_fila
       `Notify/config/Config`, `Job/tests/feature`, `Lang/tests/unit`, `Geo/docs/*`. Le migrazioni
       doppie vanno guardate una per una prima di togliere qualcosa.
 - [x] PHPStan: `analyse Modules` a zero (commit `6debfe0f72`).
-- [x] Binding Pest: ADR `Xot/docs/adr/pest-testcase-binding-per-file.md` + guardia (commit `2d57064ac1`).
+- [x] Binding Pest: ADR `Xot/docs/adr/0034-pest-testcase-binding-per-file.md` + guardia (commit `2d57064ac1`).
 
 ## Terza occorrenza: 2026-11-24, PHPStan non boota
 

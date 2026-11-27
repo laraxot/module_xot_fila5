@@ -9,7 +9,7 @@ tags: [adr, actions, queueable-action, services, harness]
 qmd: "adr actions over services queueable action spatie no services rule legacy AI Geo Job"
 related:
   - ../rules/action-behavioral-contract.md
-  - ./architecture-tests-pest-arch.md
+  - ./0020-architecture-tests-pest-arch.md
 ---
 
 # ADR: Actions, non Services
