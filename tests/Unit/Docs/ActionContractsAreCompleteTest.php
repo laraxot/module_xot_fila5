@@ -61,7 +61,6 @@ function behavioralContractProblems(string $contractPath): array
     if (! is_file($classPath)) {
         return [...$problems, 'l\'Action '.$match[1].' non esiste'];
     }
-<<<<<<< .merge_file_0qw0hA
     $classSource = file_get_contents($classPath);
     $reference = 'docs/contracts/'.basename($contractPath);
     if (! str_contains($classSource, '@contract '.$reference) && ! str_contains($classSource, 'Contratto di comportamento: '.$reference)) {
@@ -108,10 +107,6 @@ function invariantProblems(string $contract, string $packageDir): array
         if (! packageTestsDeclareGroup($packageDir, $group)) {
             $problems[] = 'nessun test in '.basename($packageDir).'/tests con ->group(\''.$group.'\')';
         }
-=======
-    if (! str_contains(file_get_contents($classPath), '@contract docs/contracts/'.basename($contractPath))) {
-        $problems[] = 'il docblock di '.$parts[count($parts) - 1].' non contiene @contract docs/contracts/'.basename($contractPath);
->>>>>>> .merge_file_y1cvgk
     }
 
     return $problems;
