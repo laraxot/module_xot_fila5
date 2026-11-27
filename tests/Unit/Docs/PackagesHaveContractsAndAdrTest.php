@@ -31,7 +31,10 @@ function packageDirectories(): array
     $root = dirname(__DIR__, 5);
     $packages = [];
 
-    foreach ([...glob($root.'/Modules/*', GLOB_ONLYDIR) ?: [], ...glob($root.'/Themes/*', GLOB_ONLYDIR) ?: []] as $directory) {
+    $moduleDirectories = glob($root.'/Modules/*', GLOB_ONLYDIR) ?: [];
+    $themeDirectories = glob($root.'/Themes/*', GLOB_ONLYDIR) ?: [];
+
+    foreach ([...$moduleDirectories, ...$themeDirectories] as $directory) {
         if (is_string($directory) && (
             is_file($directory.'/module.json')
             || is_file($directory.'/theme.json')
