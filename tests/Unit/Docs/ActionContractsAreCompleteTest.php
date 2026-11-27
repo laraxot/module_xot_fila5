@@ -52,14 +52,14 @@ function behavioralContractProblems(string $contractPath): array
     }
 
     $match = [];
-    if (preg_match('/^action: "?([^"\n]+)"?$/m', $source, $match) !== 1 || ! isset($match[1])) {
-        return [...$problems, 'manca action: <FQCN> nella frontmatter'];
+    if (preg_match('/^(?:action|interface): "?([^"\n]+)"?$/m', $source, $match) !== 1 || ! isset($match[1])) {
+        return [...$problems, 'manca action: o interface: <FQCN> nella frontmatter'];
     }
     // Modules\Geo\Actions\Osm\X -> Modules/Geo/app/Actions/Osm/X.php
     $parts = explode('\\', str_replace('\\\\', '\\', trim($match[1])));
     $classPath = $root.'/'.$parts[0].'/'.$parts[1].'/app/'.implode('/', array_slice($parts, 2)).'.php';
     if (! is_file($classPath)) {
-        return [...$problems, 'l\'Action '.$match[1].' non esiste'];
+        return [...$problems, 'la classe o interfaccia '.$match[1].' non esiste'];
     }
     $classSource = file_get_contents($classPath);
     $reference = 'docs/contracts/'.basename($contractPath);
