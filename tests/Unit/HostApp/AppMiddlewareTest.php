@@ -27,8 +27,9 @@ use PHPUnit\Framework\Assert;
  * Queste classi esistono solo negli host con lo scheletro completo (ptvx,
  * predict, ...). Gli host con app/ minimale (restaurant, techplanner, ...)
  * non le forniscono: ogni test salta se la classe mancante, invece di fallire.
- * Assert::assertIs* restringe i valori misti delle classi App\ opzionali
- * (`hosts()` senza return type, `HOME` costante host): mai cast/`@var` cosmetici.
+ * Assert::assertIs* restringe solo i valori misti delle classi App\ opzionali
+ * (`hosts()` senza return type); mai su costanti gia' tipizzate (`HOME` const
+ * string) e mai cast/`@var` cosmetici.
  */
 
 uses(TestCase::class);
@@ -39,7 +40,7 @@ test('trust hosts trusts every subdomain of the application url', function (): v
     }
 
     // Host app tipizza hosts(): array<int, string|null>; su host senza stub PHPStan
-    // il ritorno e' mixed — restringi ad array, poi filtra i non-string.
+    // il ritorno e' mixed: restringi ad array, poi filtra i non-string.
     $rawHosts = (new TrustHosts(app()))->hosts();
     Assert::assertIsArray($rawHosts);
     $hosts = array_values(array_filter(
@@ -84,7 +85,7 @@ test('redirect if authenticated lets a guest through untouched', function (): vo
     $request = Request::create('/login');
     $expected = new Response('form di login');
 
-    $response = (new RedirectIfAuthenticated)->handle($request, fn (): Response => $expected);
+    $response = (new RedirectIfAuthenticated())->handle($request, fn (): Response => $expected);
 
     Assert::assertSame($expected, $response);
 });
@@ -103,18 +104,15 @@ test('redirect if authenticated sends an authenticated user home', function (): 
     $guard->shouldReceive('check')->once()->andReturnTrue();
     Auth::shouldReceive('guard')->once()->with('web')->andReturn($guard);
 
-    $response = (new RedirectIfAuthenticated)->handle(
+    $response = (new RedirectIfAuthenticated())->handle(
         Request::create('/login'),
         fn (): Response => new Response('non deve arrivarci'),
         'web',
     );
 
     Assert::assertInstanceOf(RedirectResponse::class, $response);
-    // RouteServiceProvider::HOME e' const string '/home' nell'host app; senza
-    // la classe reale PHPStan lo vede mixed — restringi prima di url().
-    $home = RouteServiceProvider::HOME;
-    Assert::assertIsString($home);
-    Assert::assertSame(url($home), $response->getTargetUrl());
+    // RouteServiceProvider::HOME e' const string '/home' nell'host app: gia' tipizzata, nessun assertIsString.
+    Assert::assertSame(url(RouteServiceProvider::HOME), $response->getTargetUrl());
 });
 
 test('logout action clears the web guard and the session', function (): void {
@@ -139,7 +137,7 @@ test('logout action clears the web guard and the session', function (): void {
         $calls[] = 'regenerateToken';
     });
 
-    (new Logout)();
+    (new Logout())();
 
     Assert::assertSame(['logout', 'invalidate', 'regenerateToken'], $calls);
 });

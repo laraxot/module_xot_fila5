@@ -9,6 +9,7 @@ use PHPUnit\Framework\Assert;
 use function Safe\file_get_contents;
 use function Safe\glob;
 use function Safe\preg_match_all;
+use function Safe\preg_replace;
 
 /*
  * Ogni modulo e tema ha `.github/README.md`: la pagina che GitHub mostra al posto del README principale quando il
