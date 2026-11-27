@@ -1,35 +1,16 @@
 ---
 title: "Contratti — Xot"
 type: index
-<<<<<<< .merge_file_on0beC
-tags: [contracts, actions, xot]
-created: 2026-11-18
-updated: 2026-11-24
-=======
 module: Xot
 status: active
 tags: [contracts, actions, interfaces]
 created: 2026-11-18
 updated: 2026-11-26
 qmd: "xot contratti indice behavioral contract action invarianti group pest copertura backlog"
->>>>>>> .merge_file_48J4p6
 ---
 
 # Contratti — Xot
 
-<<<<<<< .merge_file_on0beC
-Xot è la base di tutti i moduli: qui stanno i contratti delle sue Action con effetti collaterali **chiamate dagli
-altri moduli** — scrittura di array su file (traduzioni, config dei tenant, model su JSON), esecuzione di comandi
-Artisan dal pannello, invio di mail con PDF. Un cambiamento qui si propaga a Lang, Tenant, User, Notify e a tutto ciò
-che le usa.
-
-**Quando leggerli**: prima di chiamare una di queste Action da un modulo, di cambiarne il comportamento, o di
-scrivere un'Action simile (che invece di imitare il codice dovrebbe riusarle).
-
-Formato (6 sezioni, tabella invarianti con ID e group Pest, `@contract` nel docblock):
-[action-behavioral-contract](../rules/action-behavioral-contract.md). Un'invariante con group si verifica con
-`vendor/bin/pest Modules/Xot/tests --group=<ID>`; `—` è debito dichiarato.
-=======
 Un contratto descrive cosa **promette** un'Action di Xot (input, output, invarianti con ID stabile, effetti collaterali, errori, cosa non fa) e distingue il **promesso** dal **dimostrato**: la colonna `Group Pest` contiene l'ID quando esiste un test con `->group('<ID>')`, altrimenti `— (non dimostrato)`. Xot è condiviso con altri progetti: i contratti descrivono comportamenti validi per ogni tenant che lo usa, salvo dove il testo dice il contrario.
 
 Regole e riferimenti: [standard di authoring](contract-authoring-standard.md), [regola Action Behavioral Contract](../rules/action-behavioral-contract.md), [ADR 0012 — governance dei contratti](../adr/0012-behavioral-contract-governance.md), [ADR 0011 — riferimento `@contract` nel docblock](../adr/0011-contract-docblock-reference.md), [template](behavioral-contract-template.md). [INDEX.md](INDEX.md) è l'elenco alfabetico per titolo (solo collegamenti). **Stato (2026-12, issue #151):** gli stub per-Action sono archiviati in [`archive/docs-legacy/contracts/`](../../archive/docs-legacy/contracts/) per il tetto di 100 file `.md` in `docs/`; i collegamenti di questo README e dell'INDEX puntano lì. Restano qui formato, template e standard.
@@ -728,19 +709,28 @@ Ordine: prima le aree che scrivono su filesystem o lanciano processi (`File`, `A
 
 - `bootstrap-provider-registry.md`: `XOT-BOOTSTRAP-INV-2` e `XOT-BOOTSTRAP-INV-3` hanno un test (`tests/Unit/Bootstrap/FolioProviderNotRegisteredTest.php`, `tests/Unit/Bootstrap/ModuleProvidersDeclareTheirNamespaceTest.php`); `XOT-BOOTSTRAP-INV-1` non ne ha.
 - `xotbase-classes.md`: `XOT-XOTBASE-INV-1` ha le regole Pest arch di `tests/Arch/ArchitectureTest.php` (righe 29-38 e 165), `XOT-XOTBASE-INV-2` il test dei provider; `XOT-XOTBASE-INV-3` è una voce di review senza controllo.
->>>>>>> .merge_file_48J4p6
 
 ## Avvertenze
 
-<<<<<<< .merge_file_on0beC
-- [SaveArrayAction](save-array-action.md) — scrive un array su file PHP (default) o JSON, sovrascrivendo; punto unico usato da Lang, Tenant e Xot.
-- [SavePhpArrayAction](save-php-array-action.md) — file PHP con `strict_types`, una chiave per riga, rileggibile con `require`.
-- [SaveJsonArrayAction](save-json-array-action.md) — file JSON pretty-print, crea la cartella se manca.
-- [ExecuteArtisanCommandAction](execute-artisan-command-action.md) — esegue `php artisan <cmd>` solo per comandi identici all'allowlist.
-- [SendMailByRecordAction](send-mail-by-record-action.md) — PDF del record via SMTP all'email del record, poi log `sendMail`.
-=======
 - Gli ID di `save-php-array-action`, `save-json-array-action`, `execute-artisan-command-action` e `send-mail-by-record-action` sono stati rinominati per coincidere con i group che i loro test portavano già (`XOT-SAVE-PHP-INV-N`, `XOT-SAVE-JSON-INV-N`, `XOT-ARTISAN-EXEC-INV-N`, `XOT-MAIL-RECORD-INV-N`); la corrispondenza vecchio→nuovo è scritta sotto la tabella di ciascun contratto. I contratti non erano ancora tracciati in Git e nessun altro documento cita gli ID precedenti.
 - Gli altri contratti sono stati riportati al formato `| ID | Regola | Group Pest |` senza riscriverne il contenuto: il testo di ogni regola, i riferimenti a riga e i test citati sono quelli del contratto precedente (colonne «Prova nel codice» e «Test esistente» confluite nella cella Regola come «Codice:» e «Test citato»).
 - Riferimenti a riga: «classe a riga N» e «`execute()` a riga N» sono stati ricontrollati contro il sorgente il 2026-11-26 e corretti (128 numeri in 65 contratti, scarto da 1 a 5 righe). Gli intervalli «righe N-M» dentro le tabelle non sono stati ricontrollati contratto per contratto e possono avere lo stesso scarto: fanno fede il nome del metodo e la regola, non il numero.
 - Il numero di invarianti dimostrate (93) non è una misura di qualità del codice: dice solo quante promesse hanno un comando `--group` che le prova.
->>>>>>> .merge_file_48J4p6
+
+## Harness minimo: ownership, evidenza e recupero (2026-11-27)
+
+I contratti di **module_xot_fila5** restano accanto alle Action, interfacce o superfici di questo package; root e Xot definiscono lo standard, non copiano le promesse. Un contratto comportamentale esplicita **Input, Output, Invarianti, Effetti collaterali, Errori, Non fa**; ogni ID di invariante punta a un group Pest effettivo oppure segnala `non dimostrata`. Se esiste la classe, il docblock deve rimandare al file con `@contract` e `@see`; per temi senza classi PHP non inventare Action/contratti.
+
+- [Standard Xot](https://github.com/laraxot/module_xot_fila5/blob/dev/docs/contracts/contract-authoring-standard.md) · [ownership root](https://github.com/laraxot/base_ptvx_fila5/blob/dev/docs/adr/0001-harness-minimo-e-ownership.md) · [runbook ECC/Second Brain](https://github.com/laraxot/base_ptvx_fila5/blob/dev/docs/harness/README.md).
+- **BMAD**: prima di cambiare una promessa, fissa nella story owner scope, esclusioni, evidenza e approvazioni richieste.
+- **ECC**: i marker di merge rendono invalido l'indice; citare una suite non significa averla eseguita. Distingui `pass`, `fail`, `non eseguito` e registra il debito in [rollout #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).
+
+## Documenti del package da riconciliare nell'indice
+
+I seguenti file **esistono nel repository su `dev`** e non erano tutti collegati nel ramo d'indice più recente. Sono preservati come puntatori documentali; il loro stato di approvazione, la copertura e l'eventuale sostituzione con ADR numerati devono essere verificati nell'owner. Nessuna prova di esecuzione è implicita.
+
+- [ExecuteArtisanCommandAction](./execute-artisan-command-action.md)
+- [SaveArrayAction](./save-array-action.md)
+- [SaveJsonArrayAction](./save-json-array-action.md)
+- [SavePhpArrayAction](./save-php-array-action.md)
+- [SendMailByRecordAction](./send-mail-by-record-action.md)
