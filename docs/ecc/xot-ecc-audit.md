@@ -4,13 +4,18 @@ type: ecc-audit
 status: review
 updated: 2026-11-16
 module: Xot
+<<<<<<< .merge_file_05zmnp
 qmd: "ECC audit Xot security-review clean-code laravel-verification verification-loop tdd-workflow"
+=======
+qmd: "ECC audit Xot verification security testing laravel security-review clean-code laravel-verification verification-loop tdd-workflow"
+>>>>>>> .merge_file_ZAWZVf
 ---
 
 # ECC audit operativo — Xot
 
 ## Contratto PTVX
 
+<<<<<<< .merge_file_05zmnp
 ECC non sostituisce AGENTS.md/BMAD. Ogni finding: story BMAD, lock, fix causa,
 PHPStan + Pest, aggiornamento docs/QMD.
 
@@ -23,6 +28,8 @@ PHPStan + Pest, aggiornamento docs/QMD.
 - [ ] `tdd-workflow`: regressione sui finding P0
 - [ ] `documentation-sync`: story + indici + qmd
 - [ ] `context-engineering`: QMD/graphify prima; registrare il perché dopo
+=======
+>>>>>>> .merge_file_ZAWZVf
 ECC non sostituisce `AGENTS.md`/BMAD: ogni finding diventa story in [epics.md](../bmad/epics.md), con lock,
 fix alla causa, PHPStan + Pest, aggiornamento docs/QMD. Le abilità ECC sono scelte on-demand
 (`ecc-ptvx-workflow`); qui è registrato **l'esito**, non la checklist vuota.
@@ -43,6 +50,7 @@ fix alla causa, PHPStan + Pest, aggiornamento docs/QMD. Le abilità ECC sono sce
 
 | Voce | N |
 |---|---:|
+<<<<<<< .merge_file_05zmnp
 | app PHP | 602 |
 | test | 329 |
 | resources | 7 |
@@ -67,13 +75,15 @@ fix alla causa, PHPStan + Pest, aggiornamento docs/QMD. Le abilità ECC sono sce
 
 - [00-index](./00-index.md)
 - [BMAD audit](../bmad/audit.md)
+=======
+>>>>>>> .merge_file_ZAWZVf
 | PHP `app/` | 602 |
 | Test PHP | 329 |
 | Models | 51 |
 | Policy | 15 |
 | Resource | 7 |
 | Widget | 16 |
-| Actions | 257 |
+| Actions | 238 in `app/Actions` (257 contando ogni cartella `Actions`) |
 | Services | 2 |
 | Migration | 10 |
 | Lang IT | 149 |
@@ -92,6 +102,7 @@ fix alla causa, PHPStan + Pest, aggiornamento docs/QMD. Le abilità ECC sono sce
 - baseline o `@phpstan-ignore` senza motivazione; test svuotati per silenziare errori;
 - `migrate:fresh`, `RefreshDatabase`, `--force` su migrate; `laravel/public` al posto di `public_html`;
 - nascondere la navigazione al posto di un controllo di accesso (`canAccess`/policy);
+- docs con date nel nome file;
 - comportamento, schermate o numeri inventati.
 
 ## Riferimenti

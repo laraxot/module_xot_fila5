@@ -1,5 +1,8 @@
 ---
+<<<<<<< .merge_file_6XOrHS
 qmd: "xot bmad stories theme three docs index refresh story md"
+=======
+>>>>>>> .merge_file_PhtRok
 title: "Theme Three — indice docs completo e navigazione coerente"
 status: done
 epic: documentation-quality

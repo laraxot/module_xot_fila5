@@ -207,3 +207,12 @@ xot.code-workspace
 .qwen/
 .php-cs-fixer.php
 .php-cs-fixer.dist.php
+<<<<<<< .merge_file_FDV5Zw
+
+# screenshot di comparazione visiva (artefatti locali)
+docs/project/visual-comparison/
+docs/visual-comparison/
+=======
+tests/coverage-*.*
+docs/screenshots/
+>>>>>>> .merge_file_3ox3FV

@@ -102,6 +102,36 @@ class EnvWidget extends XotBaseSchemaWidget
     }
 
     /**
+     * Driver di invio: quelli noti con un nome leggibile piu' tutti i mailer configurati in config/mail.php
+     * (array, failover, roundrobin, mailgun...). Un valore attuale fuori dall'elenco faceva fallire la
+     * validazione della Select e nessun campo del widget si poteva piu' salvare.
+     *
+     * @return array<string, string>
+     */
+    public static function mailerOptions(): array
+    {
+        $options = [
+            'smtp' => 'SMTP',
+            'ses' => 'Amazon SES',
+            'postmark' => 'Postmark',
+            'resend' => 'Resend',
+            'sendmail' => 'Sendmail',
+            'log' => 'Log (nessun invio reale)',
+        ];
+
+        $configured = config('mail.mailers');
+        if (is_array($configured)) {
+            foreach (array_keys($configured) as $name) {
+                if (is_string($name) && ! isset($options[$name])) {
+                    $options[$name] = $name;
+                }
+            }
+        }
+
+        return $options;
+    }
+
+    /**
      * @return array<Component>
      */
     public function getFormSchema(): array
@@ -130,14 +160,7 @@ class EnvWidget extends XotBaseSchemaWidget
                 ]),
             'netfun_token' => TextInput::make('netfun_token'),
             'mail_mailer' => Select::make('mail_mailer')
-                ->options([
-                    'smtp' => 'SMTP',
-                    'ses' => 'Amazon SES',
-                    'postmark' => 'Postmark',
-                    'resend' => 'Resend',
-                    'sendmail' => 'Sendmail',
-                    'log' => 'Log (nessun invio reale)',
-                ]),
+                ->options(self::mailerOptions()),
             'mail_host' => TextInput::make('mail_host'),
             'mail_port' => TextInput::make('mail_port'),
             'mail_encryption' => Select::make('mail_encryption')

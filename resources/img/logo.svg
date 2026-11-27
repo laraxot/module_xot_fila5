@@ -2,7 +2,7 @@
   <g fill="none" stroke="#3498db" stroke-width="2">
     <!-- XOT Icon -->
     <path d="M64,32 L72,48 M72,48 L60,48 M60,48 L64,32 Z" />
-    <!-- fila5 Arrow -->
+    <!-- Fila3 Arrow -->
     <path d="M80,88 L84,92 M84,92 L90,86 M90,86 L80,88 Z" />
     <!-- Robot Mascotte (Iron Man-inspired) -->
     <g transform="translate(72,64)">

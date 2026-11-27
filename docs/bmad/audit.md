@@ -4,11 +4,16 @@ type: audit
 status: review
 updated: 2026-11-16
 module: Xot
+<<<<<<< .merge_file_LGJrAx
 qmd: "audit BMAD Xot sintesi finding P0 P1 PHPStan Pest"
+=======
+qmd: "audit BMAD Xot sintesi source-first qualità finding P0 P1 PHPStan Pest"
+>>>>>>> .merge_file_vMOzWJ
 ---
 
 # Audit BMAD — Xot
 
+<<<<<<< .merge_file_LGJrAx
 SSoT dettagliata: [audits/xot-audit.md](./audits/xot-audit.md)
 
 ## Sintesi (2026-11-16)
@@ -30,9 +35,11 @@ SSoT dettagliata: [audits/xot-audit.md](./audits/xot-audit.md)
 - PHPStan modulo / `Modules`: 0 errori (verifica 2026-11-16).
 - Pest: da eseguire in ambiente testing non produttivo.
 - Security/runtime: story figlie su finding P0/P1 dell'audit dettagliato.
+=======
+>>>>>>> .merge_file_vMOzWJ
 SSoT dettagliata: [audits/xot-audit.md](./audits/xot-audit.md) · scopo: [purpose.md](./purpose.md)
 
-**In una frase:** kernel Laraxot: classi base, Actions riusabili, contratti, guardie di test.
+**In una frase:** Xot è il fondamento architetturale (kernel Laraxot): classi base (`XotBaseModel`, `XotBaseResource`, `XotBasePage`), Actions riusabili, contratti per la type-safety, guardie di test e pattern che tutti gli altri moduli estendono. Nessun modulo estende Filament direttamente: si estendono `XotBaseResource`, `XotBaseListRecords`, `XotBaseWidget`, `XotBaseServiceProvider`, `XotBaseMigration`. Questa è **la** regola fondamentale, e Xot è il posto dove vive.
 
 ## Inventario misurato (2026-11-16)
 
@@ -44,12 +51,14 @@ SSoT dettagliata: [audits/xot-audit.md](./audits/xot-audit.md) · scopo: [purpos
 | Policy | 15 |
 | Resource | 7 |
 | Widget | 16 |
-| Actions | 257 |
+| Actions | 238 in `app/Actions` (257 contando ogni cartella `Actions`) |
 | Services | 2 |
 | Migration | 10 |
 | Lang IT | 149 |
 | `->label('..')` letterali | 18 |
 | `@phpstan-ignore` | 20 |
+| Policy `return true` | 2 |
+| Marker conflitto | 0 |
 
 ## Top finding
 
@@ -61,7 +70,8 @@ SSoT dettagliata: [audits/xot-audit.md](./audits/xot-audit.md) · scopo: [purpos
 ## Gate
 
 - PHPStan `Modules/Xot`: **0 errori (rerun; prima passata 6+ errori in `FeatureFlagsTest` mentre un altro agente lo editava)** (17:10 / rerun 17:21).
-- Pest: skip documentato: DB di test `10.100.200.53:3306` irraggiungibile (TCP chiuso) e `Xot/tests/Support/TestDatabaseGuard.php:63` rifiuta DB non `*_test`; i test con DB restano appesi al connect MySQL (timeout 150 s osservato). Nessun test contro il MySQL locale (dati sacri).
+- Pest: skip documentato: DB di test `10.100.200.53:3306` irraggiungibile (TCP chiuso) e `Xot/tests/Support/TestDatabaseGuard.php:63` rifiuta DB non `*_test`; i test con DB restano appesi al connect MySQL (timeout 150 s osservato). Nessun test contro il MySQL locale (dati sacri). Pest va eseguito in ambiente testing non produttivo.
+- Security/runtime: story figlie sui finding P1 dell'audit dettagliato.
 
 ## Seguito
 

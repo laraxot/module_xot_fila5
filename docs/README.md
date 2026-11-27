@@ -21,6 +21,8 @@ l'**indice canonico** della cartella `docs/` (`00-index.md` rimanda qui).
 - [Architettura](architecture/) — XotBase, struttura dei moduli, regole Laraxot.
 - [Standard](standards/) — naming, namespace, coding standard.
 - [Governance docs](governance/docs-structure.md) — come è organizzata questa cartella.
+- [Harness per agenti](concepts/agent-harness-guide.md) — perché ogni modulo e tema ha `docs/adr/` e `docs/contracts/`, guard, lezioni.
+- [ADR di Xot](adr/README.md) · [Contratti di Xot](contracts/README.md) · [Regola ADR e contratti](rules/action-behavioral-contract.md).
 
 ## Asset, symlink e temi
 

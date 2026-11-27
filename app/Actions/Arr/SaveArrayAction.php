@@ -6,6 +6,11 @@ namespace Modules\Xot\Actions\Arr;
 
 use Spatie\QueueableAction\QueueableAction;
 
+/**
+ * Scrive un array su file PHP o JSON (sovrascrive).
+ *
+ * @contract docs/contracts/save-array-action.md
+ */
 class SaveArrayAction
 {
     use QueueableAction;

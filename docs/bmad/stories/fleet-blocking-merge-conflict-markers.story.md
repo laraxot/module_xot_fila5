@@ -12,7 +12,11 @@ discussions: []
 related:
   - "./5.254-list-page-table-hooks.story.md"
   - "../../../Progressioni/docs/bmad/stories/ceddiffs-table-class-migration-pending-20260929.story.md"
+<<<<<<< .merge_file_2aV7Zi
 ---
+=======
+=======
+>>>>>>> .merge_file_NfDl9p
 
 # Marker di conflitto Git irrisolti — bloccavano tutta la fleet
 

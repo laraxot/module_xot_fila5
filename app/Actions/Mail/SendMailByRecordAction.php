@@ -11,6 +11,11 @@ use Modules\Xot\Actions\Export\PdfByModelAction;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
+/**
+ * Invia al record il suo PDF via SMTP e registra l'invio nei suoi log.
+ *
+ * @contract docs/contracts/send-mail-by-record-action.md
+ */
 class SendMailByRecordAction
 {
     use QueueableAction;

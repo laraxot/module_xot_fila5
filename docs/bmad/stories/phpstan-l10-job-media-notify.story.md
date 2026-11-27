@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_70Nugv
 ---
 title: "BMAD Story: PHPStan L10 Job, Media, Notify"
 qmd: "xot bmad stories phpstan l10 job media notify story md"
@@ -8,6 +9,14 @@ bmad: true
 status: active
 ---
 
+=======
+=======
+---
+title: "Xot - phpstan-l10-job-media-notify.story.md"
+module: Xot
+bmad: true
+status: active
+>>>>>>> .merge_file_CrOjVd
 # BMAD Story: PHPStan L10 Job, Media, Notify
 
 **Epic**: 8.26  
