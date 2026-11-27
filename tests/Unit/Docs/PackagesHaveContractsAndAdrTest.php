@@ -125,6 +125,27 @@ it('rejects unresolved Git merge markers in owner-local ADR and contract indices
     Assert::assertSame([], $problems);
 });
 
+it('rejects unresolved merge markers in every package-owned ADR and contract document', function (): void {
+    $problems = [];
+
+    foreach (packageDirectories() as $directory) {
+        foreach (['adr', 'contracts'] as $category) {
+            foreach (glob($directory.'/docs/'.$category.'/*.md') ?: [] as $path) {
+                if (! is_string($path)) {
+                    continue;
+                }
+
+                $source = (string) file_get_contents($path);
+                if (preg_match('/^(?:<<<<<<<|=======\s*$|>>>>>>>)/m', $source) === 1) {
+                    $problems[] = $path.': marker di merge non risolto';
+                }
+            }
+        }
+    }
+
+    Assert::assertSame([], $problems);
+});
+
 it('mentions each present owner-local ADR or contract in its folder index', function (): void {
     $missing = [];
 
