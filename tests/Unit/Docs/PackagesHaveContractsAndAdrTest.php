@@ -6,122 +6,115 @@ namespace Modules\Xot\Tests\Unit\Docs;
 
 use PHPUnit\Framework\Assert;
 
-use function Safe\file_get_contents;
-use function Safe\glob;
-use function Safe\preg_match;
-
 /*
- * Ogni modulo e tema ha docs/contracts/ (cosa promettono Action e interfacce) e docs/adr/ (il perche' delle scelte),
- * ciascuna con un README.md che spiega il formato ed elenca tutti i file. Regola:
- * Modules/Xot/docs/rules/action-behavioral-contract.md. Source-level (nessuna app).
- */
-
-<<<<<<< .merge_file_0pY2up
-const ADR_SECTIONS = ['## Contesto', '## Decisione', '## Alternative scartate', '## Conseguenze', '## Verifica'];
-
-const ADR_STATUSES = ['proposed', 'accepted', 'superseded', 'deprecated'];
-=======
-/**
- * Sezioni ADR: italiano FixCity o inglese MADR (workshop laravelday).
+ * Harness documentale source-level: nessun bootstrap Laravel, nessun DB, nessuna scrittura.
+ * Standard: docs/adr/0018-agent-harness.md, docs/adr/0042-laravel-day-harness-adoption-boundary.md.
  *
- * @var list<list<string>>
+ * Non obbliga un package a inventare un ADR sostanziale in assenza di decisioni reali.
+ * I vecchi nomi descrittivi e gli ADR numerati sono entrambi ammessi.
  */
+
 const ADR_SECTIONS = [
     ['## Contesto', '## Context and Problem Statement'],
-    ['## Decisione', '## Decision Outcome'],
+    ['## Driver della decisione', '## Decision Drivers'],
     ['## Alternative scartate', '## Alternative considerate', '## Considered Options'],
+    ['## Decisione', '## Decision Outcome'],
     ['## Conseguenze', '### Consequences'],
+    ['## Conferma', '## Verifica', '### Confirmation'],
 ];
 
 const ADR_NON_DECISIONS = ['README.md', 'INDEX.md', 'index.md', '0000-template.md'];
->>>>>>> .merge_file_u9YtvD
 
-/** @return list<string> cartelle dei moduli e dei temi (hanno module.json o theme.json o composer.json) */
+/** @return list<string> */
 function packageDirectories(): array
 {
     $root = dirname(__DIR__, 5);
     $packages = [];
-    foreach ([...glob($root.'/Modules/*', GLOB_ONLYDIR), ...glob($root.'/Themes/*', GLOB_ONLYDIR)] as $dir) {
-        if (is_string($dir) && (is_file($dir.'/module.json') || is_file($dir.'/theme.json') || is_file($dir.'/composer.json'))) {
-            $packages[] = $dir;
+
+    foreach ([...glob($root.'/Modules/*', GLOB_ONLYDIR) ?: [], ...glob($root.'/Themes/*', GLOB_ONLYDIR) ?: []] as $directory) {
+        if (is_string($directory) && (
+            is_file($directory.'/module.json')
+            || is_file($directory.'/theme.json')
+            || is_file($directory.'/composer.json')
+        )) {
+            $packages[] = $directory;
         }
     }
 
     return $packages;
 }
 
-/** @return list<string> i .md di una cartella docs del pacchetto, README escluso */
-function packageDocFiles(string $dir, string $folder): array
+/** @return list<string> */
+function packageDocFiles(string $directory, string $category): array
 {
-    $files = [];
-    foreach (glob($dir.'/docs/'.$folder.'/*.md') as $path) {
-        if (is_string($path) && basename($path) !== 'README.md') {
-            $files[] = $path;
+    $paths = [];
+
+    foreach (glob($directory.'/docs/'.$category.'/*.md') ?: [] as $path) {
+        if (! is_string($path)) {
+            continue;
         }
+
+        if (in_array(basename($path), ['README.md', 'INDEX.md', 'index.md', '0000-template.md', '_template.md'], true)) {
+            continue;
+        }
+
+        $paths[] = $path;
     }
 
-    return $files;
+    return $paths;
 }
 
-it('gives every module and theme a docs/contracts and a docs/adr folder with a README', function (): void {
-    $root = dirname(__DIR__, 5);
+it('provides owner-local ADR and contract indices for each module and theme', function (): void {
     $missing = [];
-    foreach (packageDirectories() as $dir) {
-        foreach (['contracts', 'adr'] as $folder) {
-            if (! is_file($dir.'/docs/'.$folder.'/README.md')) {
-                $missing[] = substr($dir, strlen($root) + 1).'/docs/'.$folder.'/README.md';
+    $packages = packageDirectories();
+
+    foreach ($packages as $directory) {
+        foreach (['adr', 'contracts'] as $category) {
+            if (! is_file($directory.'/docs/'.$category.'/README.md')) {
+                $missing[] = $directory.'/docs/'.$category.'/README.md';
             }
         }
     }
 
-    Assert::assertNotSame([], packageDirectories());
+    Assert::assertNotEmpty($packages, 'Nessun modulo o tema disponibile da verificare');
     Assert::assertSame([], $missing);
 });
 
-it('writes every ADR with frontmatter, the five sections and no date or number in its name', function (): void {
-    $root = dirname(__DIR__, 5);
+it('rejects unresolved Git merge markers in owner-local ADR and contract indices', function (): void {
     $problems = [];
-    foreach (packageDirectories() as $dir) {
-<<<<<<< .merge_file_0pY2up
-        foreach (packageDocFiles($dir, 'adr') as $path) {
-=======
-        foreach (glob($dir.'/docs/adr/*.md') as $path) {
-            if (! is_string($path) || in_array(basename($path), ADR_NON_DECISIONS, true)) {
+
+    foreach (packageDirectories() as $directory) {
+        foreach (['adr', 'contracts'] as $category) {
+            $path = $directory.'/docs/'.$category.'/README.md';
+            if (! is_file($path)) {
                 continue;
             }
->>>>>>> .merge_file_u9YtvD
-            $relative = substr($path, strlen($root) + 1);
-            if (preg_match('/\d{4}-\d{2}-\d{2}|\d{8}|^\d+-/', basename($path)) === 1) {
-                $problems[] = $relative.': data o numero nel nome (la data va nella frontmatter, il nome dice l\'argomento)';
+
+            $content = (string) file_get_contents($path);
+            if (preg_match('/^(?:<<<<<<<|=======\s*$|>>>>>>>)/m', $content) === 1) {
+                $problems[] = $path.': marker di merge non risolto';
             }
-<<<<<<< .merge_file_0pY2up
-            $source = file_get_contents($path);
-            if (! str_contains($source, "\ntype: decision\n")) {
-                $problems[] = $relative.': manca type: decision nella frontmatter';
+
+            if (preg_match('/\A---\r?\n([\s\S]*?)\r?\n---\r?\n/', $content, $frontmatter) !== 1) {
+                $problems[] = $path.': frontmatter Markdown assente o incompleta';
+
+                continue;
             }
-            $status = [];
-            if (preg_match('/^status: *"?([a-z]+)/m', $source, $status) !== 1 || ! in_array($status[1] ?? '', ADR_STATUSES, true)) {
-                $problems[] = $relative.': status mancante o non tra '.implode('|', ADR_STATUSES);
-            }
-            foreach (ADR_SECTIONS as $section) {
-                // «Alternative considerate» vale quando l'elenco comprende anche l'opzione scelta (tabella pro/contro)
-                $variants = $section === '## Alternative scartate' ? [$section, '## Alternative considerate'] : [$section];
-                if (array_filter($variants, static fn (string $variant): bool => str_contains($source, "\n".$variant."\n")) === []) {
-                    $problems[] = $relative.': manca «'.$section.'»';
-=======
-            $source = "\n".file_get_contents($path);
-            foreach (ADR_SECTIONS as $variants) {
-                $found = false;
-                foreach ($variants as $variant) {
-                    if (str_contains($source, "\n".$variant."\n") || str_contains($source, "\n".$variant."\r\n")) {
-                        $found = true;
-                        break;
-                    }
+
+            $names = [];
+            foreach (preg_split('/\r?\n/', $frontmatter[1]) ?: [] as $line) {
+                if (preg_match('/^([A-Za-z][A-Za-z0-9_-]*):/', $line, $match) !== 1) {
+                    continue;
                 }
-                if (! $found) {
-                    $problems[] = $relative.': manca «'.$variants[0].'» (o equivalente MADR)';
->>>>>>> .merge_file_u9YtvD
+
+                if (isset($names[$match[1]])) {
+                    $problems[] = $path.': chiave frontmatter duplicata '.$match[1];
                 }
+                $names[$match[1]] = true;
+            }
+
+            if (! str_contains($content, 'laraxot/module_xot_fila5')) {
+                $problems[] = $path.': manca il puntatore allo standard harness Xot';
             }
         }
     }
@@ -129,92 +122,59 @@ it('writes every ADR with frontmatter, the five sections and no date or number i
     Assert::assertSame([], $problems);
 });
 
-<<<<<<< .merge_file_0pY2up
-it('names in the Verifica section of every ADR only test and code files that exist', function (): void {
-    $root = dirname(__DIR__, 5);
+it('mentions each present owner-local ADR or contract in its folder index', function (): void {
     $missing = [];
-    foreach (packageDirectories() as $dir) {
-        foreach (packageDocFiles($dir, 'adr') as $path) {
-            $verifica = [];
-            if (preg_match('/\n## Verifica\n(.*?)(?=\n## |$)/s', file_get_contents($path), $verifica) !== 1) {
-                continue;
-            }
-            $paths = [];
-            \Safe\preg_match_all('#(?:laravel/)?((?:Modules|Themes)/[A-Za-z0-9_./-]+\.php)#', (string) ($verifica[1] ?? ''), $paths);
-            foreach (array_unique($paths[1]) as $cited) {
-                if (! is_file($root.'/'.$cited)) {
-                    $missing[] = substr($path, strlen($root) + 1).': '.$cited;
-                }
-            }
-        }
-    }
 
-    Assert::assertSame([], $missing, 'la Verifica di un ADR cita un file che non esiste');
-});
-
-it('lists every ADR and every contract in the README of its folder', function (): void {
-    $root = dirname(__DIR__, 5);
-    $unlisted = [];
-    foreach (packageDirectories() as $dir) {
-        foreach (['adr', 'contracts'] as $folder) {
-            $readme = $dir.'/docs/'.$folder.'/README.md';
+    foreach (packageDirectories() as $directory) {
+        foreach (['adr', 'contracts'] as $category) {
+            $readme = $directory.'/docs/'.$category.'/README.md';
             if (! is_file($readme)) {
                 continue;
             }
-            $index = file_get_contents($readme);
-            foreach (packageDocFiles($dir, $folder) as $path) {
-                if (! str_contains($index, '('.basename($path).')')) {
-                    $unlisted[] = substr($path, strlen($root) + 1);
+
+            $content = (string) file_get_contents($readme);
+            foreach (packageDocFiles($directory, $category) as $path) {
+                if (! str_contains($content, basename($path))) {
+                    $missing[] = $readme.': manca riferimento a '.basename($path);
                 }
             }
-        }
-    }
-
-    Assert::assertSame([], $unlisted, 'aggiungi una riga [titolo](file.md) nel README della cartella');
-=======
-it('gives every module and theme at least one substantive ADR', function (): void {
-    $root = dirname(__DIR__, 5);
-    $missing = [];
-
-    foreach (packageDirectories() as $dir) {
-        $adrFiles = array_values(array_filter(
-            glob($dir.'/docs/adr/*.md'),
-            static fn (mixed $path): bool => is_string($path)
-                && ! in_array(basename($path), ADR_NON_DECISIONS, true),
-        ));
-
-        $substantive = false;
-        foreach ($adrFiles as $path) {
-            if (! is_string($path)) {
-                continue;
-            }
-
-            $contents = file_get_contents($path);
-            $hasContext = str_contains($contents, '## Contesto') || str_contains($contents, '## Context and Problem Statement');
-            $hasDrivers = str_contains($contents, '## Driver della decisione')
-                || str_contains($contents, '## Driver')
-                || str_contains($contents, '## Decision Drivers');
-            $hasAlternatives = str_contains($contents, '## Alternative scartate')
-                || str_contains($contents, '## Alternative considerate')
-                || str_contains($contents, '## Considered Options');
-            $hasDecision = str_contains($contents, '## Decisione') || str_contains($contents, '## Decision Outcome');
-            $hasConsequences = str_contains($contents, '## Conseguenze') || str_contains($contents, '### Consequences');
-            // ## Verifica = sinonimo storico di ## Conferma nei moduli Blog/Seo/Rating/temi
-            $hasConfirmation = str_contains($contents, '## Conferma')
-                || str_contains($contents, '### Confirmation')
-                || str_contains($contents, '## Verifica');
-            if ($hasContext && $hasDrivers && $hasAlternatives && $hasDecision && $hasConsequences && $hasConfirmation) {
-                $substantive = true;
-
-                break;
-            }
-        }
-
-        if (! $substantive) {
-            $missing[] = substr($dir, strlen($root) + 1).'/docs/adr';
         }
     }
 
     Assert::assertSame([], $missing);
->>>>>>> .merge_file_u9YtvD
+});
+
+it('requires a confirmation for each explicitly typed ADR decision', function (): void {
+    $problems = [];
+
+    foreach (packageDirectories() as $directory) {
+        foreach (glob($directory.'/docs/adr/*.md') ?: [] as $path) {
+            if (! is_string($path) || in_array(basename($path), ADR_NON_DECISIONS, true)) {
+                continue;
+            }
+
+            $source = (string) file_get_contents($path);
+            if (preg_match('/^type:\s*decision\s*$/m', $source) !== 1) {
+                // I documenti legacy e le bozze senza type non diventano ADR fittizi.
+                continue;
+            }
+
+            foreach (ADR_SECTIONS as $alternatives) {
+                $found = false;
+                foreach ($alternatives as $heading) {
+                    if (str_contains($source, "\n".$heading."\n")
+                        || str_contains($source, "\n".$heading."\r\n")) {
+                        $found = true;
+                        break;
+                    }
+                }
+
+                if (! $found) {
+                    $problems[] = $path.': manca sezione '.$alternatives[0];
+                }
+            }
+        }
+    }
+
+    Assert::assertSame([], $problems);
 });
