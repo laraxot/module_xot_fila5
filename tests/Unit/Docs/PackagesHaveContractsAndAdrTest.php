@@ -6,6 +6,11 @@ namespace Modules\Xot\Tests\Unit\Docs;
 
 use PHPUnit\Framework\Assert;
 
+use function Safe\file_get_contents;
+use function Safe\glob;
+use function Safe\preg_match;
+use function Safe\preg_split;
+
 /*
  * Harness documentale source-level: nessun bootstrap Laravel, nessun DB, nessuna scrittura.
  * Standard: docs/adr/0018-agent-harness.md, docs/adr/0042-laravel-day-harness-adoption-boundary.md.
@@ -25,21 +30,30 @@ const ADR_SECTIONS = [
 
 const ADR_NON_DECISIONS = ['README.md', 'INDEX.md', 'index.md', '0000-template.md'];
 
+/**
+ * `Safe\glob()` dichiara solo `list`: qui servono i percorsi, che sono stringhe.
+ *
+ * @return list<string>
+ */
+function docsPackageGlob(string $pattern, int $flags = 0): array
+{
+    return array_values(array_filter(glob($pattern, $flags), is_string(...)));
+}
+
 /** @return list<string> */
 function packageDirectories(): array
 {
     $root = dirname(__DIR__, 5);
     $packages = [];
 
-    $moduleDirectories = glob($root.'/Modules/*', GLOB_ONLYDIR) ?: [];
-    $themeDirectories = glob($root.'/Themes/*', GLOB_ONLYDIR) ?: [];
+    $moduleDirectories = docsPackageGlob($root.'/Modules/*', GLOB_ONLYDIR);
+    $themeDirectories = docsPackageGlob($root.'/Themes/*', GLOB_ONLYDIR);
 
     foreach ([...$moduleDirectories, ...$themeDirectories] as $directory) {
-        if (is_string($directory) && (
-            is_file($directory.'/module.json')
+        if (is_file($directory.'/module.json')
             || is_file($directory.'/theme.json')
             || is_file($directory.'/composer.json')
-        )) {
+        ) {
             $packages[] = $directory;
         }
     }
@@ -52,11 +66,7 @@ function packageDocFiles(string $directory, string $category): array
 {
     $paths = [];
 
-    foreach (glob($directory.'/docs/'.$category.'/*.md') ?: [] as $path) {
-        if (! is_string($path)) {
-            continue;
-        }
-
+    foreach (docsPackageGlob($directory.'/docs/'.$category.'/*.md') as $path) {
         if (in_array(basename($path), ['README.md', 'INDEX.md', 'index.md', '0000-template.md', '_template.md'], true)) {
             continue;
         }
@@ -104,16 +114,26 @@ it('rejects unresolved Git merge markers in owner-local ADR and contract indices
                 continue;
             }
 
+            $frontmatterBody = $frontmatter[1] ?? '';
             $names = [];
-            foreach (preg_split('/\r?\n/', $frontmatter[1]) ?: [] as $line) {
+            foreach (preg_split('/\r?\n/', $frontmatterBody) as $line) {
+                if (! is_string($line)) {
+                    continue;
+                }
+
                 if (preg_match('/^([A-Za-z][A-Za-z0-9_-]*):/', $line, $match) !== 1) {
                     continue;
                 }
 
-                if (isset($names[$match[1]])) {
-                    $problems[] = $path.': chiave frontmatter duplicata '.$match[1];
+                $key = $match[1] ?? '';
+                if ($key === '') {
+                    continue;
                 }
-                $names[$match[1]] = true;
+
+                if (isset($names[$key])) {
+                    $problems[] = $path.': chiave frontmatter duplicata '.$key;
+                }
+                $names[$key] = true;
             }
 
             if (! str_contains($content, 'laraxot/module_xot_fila5')) {
@@ -130,11 +150,7 @@ it('rejects unresolved merge markers in every package-owned ADR and contract doc
 
     foreach (packageDirectories() as $directory) {
         foreach (['adr', 'contracts'] as $category) {
-            foreach (glob($directory.'/docs/'.$category.'/*.md') ?: [] as $path) {
-                if (! is_string($path)) {
-                    continue;
-                }
-
+            foreach (docsPackageGlob($directory.'/docs/'.$category.'/*.md') as $path) {
                 $source = (string) file_get_contents($path);
                 if (preg_match('/^(?:<<<<<<<|=======\s*$|>>>>>>>)/m', $source) === 1) {
                     $problems[] = $path.': marker di merge non risolto';
@@ -172,8 +188,8 @@ it('requires a confirmation for each explicitly typed ADR decision', function ()
     $problems = [];
 
     foreach (packageDirectories() as $directory) {
-        foreach (glob($directory.'/docs/adr/*.md') ?: [] as $path) {
-            if (! is_string($path) || in_array(basename($path), ADR_NON_DECISIONS, true)) {
+        foreach (docsPackageGlob($directory.'/docs/adr/*.md') as $path) {
+            if (in_array(basename($path), ADR_NON_DECISIONS, true)) {
                 continue;
             }
 
