@@ -3,34 +3,12 @@ title: "ADR — Xot"
 type: index
 tags: [adr, decisioni, harness]
 created: 2026-11-18
-<<<<<<< .merge_file_7vtXVi
-updated: 2026-11-24
-qmd: "xot adr indice decisioni actions services harness pest arch testcase"
-=======
 updated: 2026-11-26
 qmd: "xot adr architecture decision records indice metodo harness decisioni"
->>>>>>> .merge_file_00GI9k
 ---
 
 # ADR di Xot
 
-<<<<<<< .merge_file_7vtXVi
-Il **perché** delle forme di codice che Xot impone a tutti i moduli: Actions invece di Services, regole di architettura
-eseguibili, binding del TestCase, harness degli agenti. Leggili **prima** di "semplificare" qualcosa che sembra strano o
-di scegliere tra due forme di codice. Formato (cinque sezioni, nome senza date né numeri) e quando scrivere un ADR:
-[regola](../rules/action-behavioral-contract.md); perché esiste: [guida all'harness](../concepts/agent-harness-guide.md).
-
-## Decisioni in vigore
-
-- [actions-over-services](actions-over-services.md) — la logica applicativa è una Spatie QueueableAction; i Services di AI, Geo, Job sono debito
-- [agent-harness](agent-harness.md) — harness minimo: ADR e contratti in ogni pacchetto, test-sensore source-level, guard PreToolUse, lezioni
-- [architecture-tests-pest-arch](architecture-tests-pest-arch.md) — regole di architettura con Pest `arch()`, ambito esplicito e debito dichiarato
-- [pest-testcase-binding-per-file](pest-testcase-binding-per-file.md) — il TestCase del modulo si lega in ogni file di test, mai con `uses()->in()`
-
-## Superate
-
-- [architecture-rules-phparkitect](architecture-rules-phparkitect.md) — PHPArkitect con baseline (superseded da architecture-tests-pest-arch)
-=======
 ## Metodo Harness
 
 Scrivere un ADR solo per una scelta difficile da invertire, sorprendente o fondata su un trade-off reale. Un ADR deve rendere leggibili contesto, driver, alternative, decisione, conseguenze e una conferma ripetibile; non è un diario né una spiegazione retroattiva inventata.
@@ -156,9 +134,27 @@ Nessun ADR canonico ha oggi una conferma solo di review.
 
 ADR dove la conferma esiste ma è parziale (lo dice il file): `0001` (21 file in `app/Services` contraddicono `NoServicesTest`), `0004` (un solo test, su `ticket_subscribers`), `0006-xot-base-extension-points` (otto famiglie Filament su molte), `0008` (solo l'assenza di cartelle Livewire), `0013` (il guard protegge gli agenti, non la CI), `0014-merge-misto-ultima-spiaggia` (nessuna conferma automatica per la regola 1), `0021` (il caso opposto non è testato), `0029` (due test si contraddicono), `0039`/`0040` (nessun controllo su criteri di accettazione e unicità del numero), `0041` (15 cartelle vietate presenti).
 
->>>>>>> .merge_file_00GI9k
 
 ## Decisioni precedenti (formato libero, da portare ad ADR quando si toccano)
 
 - module-admin-role-policy-bypass (riferimento non presente in questo checkout)
 - security-middleware-csrf-order (riferimento non presente in questo checkout)
+
+## Harness minimo: ownership, evidenza e recupero (2026-11-27)
+
+Questo indice appartiene a **module_xot_fila5**: ogni decisione su codice, dominio o tema va nell'ADR del package owner; il root registra soltanto i vincoli di composizione. Un ADR richiede una scelta reale con alternative e conseguenze, più una **Conferma** ripetibile (oppure la dichiarazione esplicita che manca). Non creare ADR fittizi per riempire un indice.
+
+- [Confine LaravelDay/harness Xot](https://github.com/laraxot/module_xot_fila5/blob/dev/docs/adr/0042-laravel-day-harness-adoption-boundary.md); [ownership root](https://github.com/laraxot/base_ptvx_fila5/blob/dev/docs/adr/0001-harness-minimo-e-ownership.md).
+- **BMAD**: la story owner-local conserva `scope`, `must_not_change`, `evidence`, `approval_required` nei cambi rischiosi.
+- **ECC**: nessun marker di merge; distinguere la prova eseguita dal semplice riferimento a un test; se la conferma non è disponibile segnare `non eseguita`.
+- **Second Brain**: QMD/Graphify e `.harness/memory/{facts,lessons}.md` sono puntatori a evidenza datata, non copie degli ADR. [Runbook](https://github.com/laraxot/base_ptvx_fila5/blob/dev/docs/harness/README.md) · [Rollout #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).
+
+## Documenti del package da riconciliare nell'indice
+
+I seguenti file **esistono nel repository su `dev`** e non erano tutti collegati nel ramo d'indice più recente. Sono preservati come puntatori documentali; il loro stato di approvazione, la copertura e l'eventuale sostituzione con ADR numerati devono essere verificati nell'owner. Nessuna prova di esecuzione è implicita.
+
+- [actions-over-services](./actions-over-services.md)
+- [agent-harness](./agent-harness.md)
+- [architecture-rules-phparkitect](./architecture-rules-phparkitect.md)
+- [architecture-tests-pest-arch](./architecture-tests-pest-arch.md)
+- [pest-testcase-binding-per-file](./pest-testcase-binding-per-file.md)
