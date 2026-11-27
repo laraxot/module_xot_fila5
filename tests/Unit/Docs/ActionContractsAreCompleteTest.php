@@ -101,7 +101,8 @@ function invariantProblems(string $contract, string $packageDir): array
         }
         $seen[$id] = true;
         $group = trim($row[2]);
-        if ($group === '' || $group === '—' || $group === '-') {
+        // «—» e quanto segue («— (non dimostrato)», «— (motivo)») e' debito dichiarato, non un group Pest.
+        if ($group === '' || $group === '-' || str_starts_with($group, '—')) {
             continue;
         }
         if (! packageTestsDeclareGroup($packageDir, $group)) {
@@ -120,7 +121,7 @@ function packageTestsDeclareGroup(string $packageDir, string $group): bool
     $files = new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator($packageDir.'/tests', \FilesystemIterator::SKIP_DOTS));
     foreach ($files as $file) {
         if ($file instanceof \SplFileInfo && $file->getExtension() === 'php'
-            && preg_match('/group\([^)]*[\'"]'.preg_quote($group, '/').'[\'"]/', file_get_contents($file->getPathname())) === 1) {
+            && preg_match('/(?:->|#\[)\s*group\([^)]*[\'"]'.preg_quote($group, '/').'[\'"]/i', file_get_contents($file->getPathname())) === 1) {
             return true;
         }
     }
