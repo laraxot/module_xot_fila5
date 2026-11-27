@@ -23,6 +23,15 @@ Ogni modulo Laraxot ha `app/Actions/` (800 classi nel checkout del 2026-11-24) e
 quelle esistenti copia la forma del file più vicino: se il vicino è un Service, nasce un Service nuovo.
 Che forma ha un'operazione applicativa nuova, sapendo che i Services legacy restano finché qualcuno non li migra?
 
+## Driver della decisione
+
+- Coerenza con la regola di progetto `no-services-rule` e con la forma dominante del codebase (800 classi in
+  `app/Actions/`): l'operazione nuova deve essere la forma che l'agente o lo sviluppatore copia più facilmente.
+- Un'operazione = un file = un contratto = un group di test: discoverability e verifica mirata.
+- I Services legacy restano in produzione: servono confini chiari (non estendere con metodi pubblici nuovi, non
+  migrare fuori scope) per non trasformare il debito in modello.
+- La stessa operazione deve poter girare sincrona, in coda, da Filament, da console e da Volt senza duplicazione.
+
 ## Decisione
 
 - Ogni operazione applicativa nuova è una classe in `Modules/<Modulo>/app/Actions/<Area>/<Verbo><Oggetto>Action.php`

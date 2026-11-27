@@ -26,7 +26,7 @@ Nel codebase esistevano decine di `Resolve*Action`. Il verbo **Resolve** e'
 ambiguo (routing CMS, DI, path) e non allinea la convenzione gia' dominante
 delle Action di lettura (`Get*Action`, `Count*Action`, `List*Action`).
 
-## Driver
+## Driver della decisione
 
 - Convenzione unica e ricercabile: lettura/derivazione → **`Get*`**
 - Evitare falsi positivi di naming e drift tra moduli
